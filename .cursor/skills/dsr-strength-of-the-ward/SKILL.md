@@ -1,42 +1,58 @@
 ---
 name: dsr-strength-of-the-ward
 description: >-
-  Components of Strength of the Ward in Dragonsong's Reprise Thordan: Lightning
-  Storm, Heavy Impact, Spiral Thrust, Ascalon's Mercy Concealed, Skyward Leap,
-  the Dragon's Rage, Holy Shield Bash, Holy Bladedance, and the towers. Use
-  when those casts land together about 42 to 65 seconds into phase 2.
+  Components of Strength of the Ward in Dragonsong's Reprise Thordan: the
+  knight dashes, Lightning Storm, Heavy Impact, Ascalon's Mercy Concealed,
+  the tether tankbusters, the blue markers, the stack, the floor puddles,
+  and the towers. Use when those casts land together about 42 to 65 seconds
+  into phase 2.
 ---
 
 # Strength of the Ward
 
-Follow `mechanic-components`. Draft from the FFXIV wiki's Dragonsong's Reprise page and from where the guids land in `XVz8bCqgPw1KRh9d`. The person confirms what belongs. Fault for a killing blow stays in that component's skill.
+Follow `mechanic-components`. The person described this sequence. Fault for a killing blow stays in that component's skill.
 
-This is the first knights sequence, about 42–65 seconds after phase 2 starts. The session stop is Strength of the Ward (`strength-of-the-ward`). Thordan leaves the arena. The hits come in two waves.
+This is the first knights sequence, about 42–65 seconds after phase 2 starts. The session stop is Strength of the Ward (`strength-of-the-ward`). Thordan becomes untargetable. Three knights appear at three cardinal or intercardinal positions.
 
-## First wave
+## Dashes and the spread
 
-These resolve together while the party is out from the center.
+The knights dash in straight lines across the arena. That leaves two triangles of safe space on opposing sides. Spiral Thrust is that dash. This log has no guid for it. Do not invent one. A hit is that player's mistake.
 
-| Component | Guid | What it does |
-|---|---|---|
-| Lightning Storm | 25549, about 42–44s | A circle on every player. A clean spread is one hit each. Overlap is lethal. This log stores a hit on every pull, so the spread always connects. |
-| Heavy Impact | 25560 and 25559 | Ser Guerrique's ring, pulsing outward. Both guids are this ring. A clean pull takes 0. A hit stuns and is that player's mistake. |
-| Spiral Thrust | not stored | Three knights charge in straight lines across the arena. A hit knocks back and kills. No guid is in this log yet. Do not invent one. |
-| Ascalon's Mercy Concealed | 25545, about 50s | The same cones as the opener. One tank in front, everyone else stacked close behind, then dodge. A hit is that player's mistake. The out-of-stack baiter rule is the same as the opener. |
-
-## Second wave
-
-These land together around 58–65 seconds. Thordan's new position is the local north for this wave.
+Lightning Storm resolves in those triangles.
 
 | Component | Guid | What it does |
 |---|---|---|
-| Skyward Leap | 25565, about 58–60s | Three players without a tank role get a blue marker. A dragoon drops on each marker in a large circle and applies Physical Vulnerability Up and Magic Vulnerability Up. Towers then have to be soaked. A 59–70k hit is a real soak. A hit over 150k, about 600–760k, is an empty tower. |
-| the Dragon's Rage | 25551, about 58–60s | A split hit on a random non-tank who does not have the blue marker. A lived share is about five people: the unmarked players and the two tanks. A short share under the cap is missing bodies. A hit over 200,000 is the failed cleave. |
-| Holy Shield Bash | 25297, about 58–60s | Ser Adelphel and Ser Janlenoux each tether a player who does not have the blue marker. The tanks take the tethers. The knights dash in, stun, and hit. The hit gets smaller as the tether gets longer. A hit in the hundreds of thousands or millions is the failed bash. |
-| Holy Bladedance | 25299, about 61–65s | The cone that follows each bash. Several hits. The tank mitigates it. Anyone standing in the cone besides that tank is clipped. A normal tank hit is about 12–22k. Hits around 230k and 370k are the failed cone. |
-| Dimensional Collapse | 25564 | The wiki names Ser Grinnaux's growing black puddles Dimensional Slash. This log's death ability is Dimensional Collapse, with one hit near 50k and no lived band. Treat that death as this puddle only after the person says the names are the same component. Until then it stays a fail with no raw band. |
+| Spiral Thrust | not stored | Three knights dash straight across. Two triangles of safe space are left on opposing sides. A hit is that player's mistake. |
+| Lightning Storm | 25549, about 43s | The spread inside each triangle. Healer in front, melee to the left, ranged to the right, tank at the back. One of each. Two melees, two healers, or two ranged on the same side is a mistake. Clipping another player is a mistake. Standing anywhere else is a mistake. |
 
-Eternal Conviction `25568` also hits around 63 seconds, and again around 130 seconds during Sanctity. The wiki's tower cast is Conviction, and this log has a separate Conviction guid `29564` only in the later window. Do not fold the 63-second Eternal Conviction into Sanctity, and do not call the later one Strength, until the person says which tower each hit is.
+## Pulses and the cones
+
+A knight then pulses an earthquake outward from itself. The cast in this log is Heavy Impact. A hit stuns and applies Damage Down. That is a mistake. While the party dodges the pulses, Thordan is in the middle and casts Ascalon's Mercy Concealed. The dodge is the same as the opener.
+
+| Component | Guid | What it does |
+|---|---|---|
+| Heavy Impact | 25560 and 25559, about 45–47s | The pulses, outward from the knight. Both guids are this ring. A clean pull takes 0. A hit stuns, applies Damage Down, and is that player's mistake. |
+| Ascalon's Mercy Concealed | 25545, about 50s | Thordan, in the middle, during the pulses. Same cones as the opener. One tank in front, everyone else stacked close behind, then dodge. A hit is that player's mistake. The out-of-stack baiter rule is the same as the opener. |
+
+## Second pulse
+
+As the second pulse goes off, three knights drop. Two of them spawn tethers. Each tank picks up one. Thordan appears at the edge, opposite those two tethered knights.
+
+Three non-tanks get a blue marker. A large area goes off on that marker. Those three stand opposite Thordan and to the left and right, away from him. The other three players stack under Thordan. The tanks stretch their tethers and use personal mitigation for the tankbuster. Everyone dodges the puddles on the floor. A puddle hit applies Heavy and Damage Down.
+
+| Component | Guid | What it does |
+|---|---|---|
+| Skyward Leap | 25565, about 59–60s | The blue markers, and towers on the same guid. Three non-tanks have the marker. A 59–70k hit is the stored soak. A hit over 150k, about 600–760k, is an empty tower. The person also described six towers after this wave. Clean casts store three of these hits, not six. |
+| the Dragon's Rage | 25551, about 59–60s | The stack under Thordan. The person assigned the three non-tanks who do not have the blue marker. Lived hits in this log are usually those three plus both tanks. |
+| Holy Shield Bash | 25297, about 60s | The two tethers. One tank each. Stretch the tether. A non-tank hit, or a short tether, is the failed bash. |
+| Holy Bladedance | 25299, about 62–64s | The cone after each tether. Several hits on that tank. The tank uses personal mitigation. Anyone else in the cone owns that hit. |
+| Dimensional Collapse | 25564, about 59s | The puddles on the floor. The person named them with this wave. A hit applies Heavy and Damage Down and is a mistake. No lived band is stored. |
+
+## Towers
+
+Six towers spawn after that. Three near the players who spread for the blue markers, three near the players who stacked. Each non-tank has to be inside a tower when it goes off. An empty tower is a mistake. Which stored hit is one of those six soaks is still open on Skyward Leap. Do not retune the 59–70k band until that is settled.
+
+Eternal Conviction `25568` also hits around 63 seconds, and again around 130 seconds during Sanctity. The person did not assign the 63-second hit. Do not fold it into Sanctity, and do not call the later one Strength.
 
 ## Not this mechanic
 

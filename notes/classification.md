@@ -48,7 +48,7 @@ Pull 68, wiped at 65.1%: Kitana's Skyward Leap is the only raw death. Loki and S
 
 ## Ability bands
 
-Unmitigated amounts. A hit at or under the cap for that role is raw. Far above it is a fail. Ascalon's Might and Heavenly Heel are the exception: a tank death on the real hit without personal mitigation is a fail.
+Unmitigated amounts. A hit at or under the cap for that role is raw. Far above it is a fail. Ascalon's Might, Heavenly Heel, and Holy Bladedance are the exception: a tank death on the real hit without personal mitigation is a fail.
 
 | Guid | Ability | Lived | Fatal that still counts | Fail |
 |---|---|---|---|---|
@@ -59,17 +59,17 @@ Unmitigated amounts. A hit at or under the cap for that role is raw. Far above i
 | 25565 | Skyward Leap | 59–70k unmitigated, 33 lived soaks, usually 5–10% mit and 13–39k shield. | Healer/DPS ≤78k. | Empty towers about 600–760k, and anything over 150k. |
 | 25543 | Heavenly Heel | Tanks who live it: 159–174k before mit, with Rampart and Sheltron. | Nothing. One tank takes it. The other tank takes the three-hit Ascalon's Might. | A non-tank hit is theirs. Pull 60 Gigalad is the real 165,404 hit with only 10% mit and Desperate Measures. That is his missing personal mitigation, not raw. |
 | 25575 | Hiemal Storm | 25–40k. | Nothing in this log. The 114k vs 76k gap on pull 49 is not a short stack. | Every death, minimum about 104k. |
-| 25549 | Lightning Storm | About 40k on a clean spread. | Inside the role cap (DPS 60k, healer 55k, tank 40k). None of the deaths were. | The two overlaps at 430–470k. |
-| 25299 | Holy Bladedance | About 12–22k on the tank. | Tank ≤55k, and under 15k HP goes to **low**. | The hits at ~230k and ~370k. |
+| 25549 | Lightning Storm | One hit each. Tanks 26–29k, healers 38–42k, DPS 38–45k. Healer front, melee left, ranged right, tank back, one of each per triangle. | Inside the role cap (DPS 60k, healer 55k, tank 40k). None of the deaths were. | A clip. Pull 31 is Kite Noodle and Spring Nymphar, both bolts, about 431–468k. Both own it. A doubled non-tank role, a wrong spot, and a Spiral Thrust hit are also mistakes. This log has no positions, so those are not called from damage. |
+| 25299 | Holy Bladedance | About 20–22k on the tethered tank, with personal mitigation. | Tank ≤55k, and under 15k HP goes to **low**. A tank death on that hit without personal mitigation is a fail. | A non-tank in the cone. The hits at ~230k and ~370k. |
 | 25295 | Bright Flare | About 64k. | ≤85k. The one at 12k HP is **low**. | Overlaps above that. |
 | 25545 | Ascalon's Mercy Concealed | Clean pulls take 0. One tank in front, everyone else stacked tight behind, then dodge. | | Any hit, about 190–220k. The player who is hit owns it. A cone baited from outside the stack is also the baiter's mistake. |
-| 25560, 25559 | Heavy Impact | Clean pulls take 0. | | Rings, about 51–57k. Both ids. |
+| 25560, 25559 | Heavy Impact | Clean pulls take 0. | | The knight's pulses. A hit stuns and applies Damage Down. About 51–57k. Both ids. |
 | 25554, 25553 | Dragon's Glory / Gaze | A successful gaze is 0. | | About 40–45k. |
-| 25297 | Holy Shield Bash | | | Hundreds of thousands to millions. |
+| 25297 | Holy Shield Bash | A stretched tether on a tank is often fully shielded. No lived unmitigated band. | | A non-tank, or a short tether. Hundreds of thousands to millions, with Physical Vulnerability Up. |
 | 25570 | Shining Blade | | | Failed cleave. |
 | 28591 | Heavens' Stake | | | Standing in the fire. Not the meteor. |
 | 25541 | Ascalon's Might | One tank, about 71–86k. The warrior invulns it or heavy-mits it. The later cast is the other tank from the Heavenly Heel swap. | | A second body, a non-tank, or a tank who dies on the real hit without personal mitigation. Pull 14 Gigachad ate the 153k cleave as the extra body. |
-| 25564 | Dimensional Collapse | No lived sample in the fetched events. | | Kept out of the raw count. One death, about 50k, pull 29. |
+| 25564 | Dimensional Collapse | No lived sample in the fetched events. | | The floor puddles in the second wave. A hit applies Heavy and Damage Down. One death, pull 29. |
 | 1002946 | Frostbite | | | Failed ice soak. |
 
 Role caps used when the packet had an unmitigated amount:
@@ -107,7 +107,9 @@ Useful paths, hostility 0, boss filter `-1.0.-1.-1`, cutoff 0, classes Any:
 
 ## Still open
 
-- Dimensional Collapse `25564` has no lived baseline. It is excluded, not proven.
+- Dimensional Collapse `25564` is a failed puddle: Heavy and Damage Down. It has no lived baseline, so the one death stays a fail.
+- Dragon's Rage: the three unmarked non-tanks stack under Thordan. Lived hits are usually those three plus both tanks. Whether the tanks belong in that stack is still open, so a share of 3 stays the short 5-share.
+- Skyward Leap: six towers, one per non-tank. Clean casts store three hits at 59–70k on the players outside the stack. Whether that 60k is the blue marker or three of the six towers is still open, so the soak-versus-explosion rule stays.
 - Party mit and shields are missing on many damage packets, so a vuln that never landed on the packet would be missed.
 - Eternal Conviction and Holy Impact have no lived healer or DPS sample in this log. The 90–108k and 95–103k bands are the death cluster, matched against the tank hit of the same cast (~64k). That is why they are raw.
 - The next reviews (other phases, other reports) should reuse these bands only for Thordan. Other phases need their own lived samples.

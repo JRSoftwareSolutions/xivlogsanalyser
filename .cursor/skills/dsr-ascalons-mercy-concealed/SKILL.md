@@ -17,7 +17,7 @@ Cones. A correct cast hits nobody. There is no raw band. Hits in this log are ab
 
 **Opener, about 14 seconds.** One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together.
 
-**Second cast, about 50 seconds, inside Strength of the Ward.** The same cones. Same rule: nobody is hit.
+**Second cast, about 50 seconds, inside Strength of the Ward.** Thordan is in the middle while Heavy Impact pulses outward. The same cones. Same rule: nobody is hit.
 
 ## How to tell
 

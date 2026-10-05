@@ -37,7 +37,7 @@ Apply these in order:
 4. `any_hit_is_fail` → **fail**. Use the mechanic skill for whose fault.
 5. Unmitigated above `fail_above`, or above the role cap → **fail**. Use the mechanic skill. Overkill on a failed hit is still a fail.
 6. Unmitigated at or under the role cap, and HP already under 15,000 → **low**. The hit is the normal one.
-7. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might or Heavenly Heel without the required personal mitigation is a fail.
+7. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might, Heavenly Heel, or Holy Bladedance without the required personal mitigation is a fail.
 
 ## Say this
 

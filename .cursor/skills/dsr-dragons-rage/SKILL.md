@@ -28,4 +28,10 @@ Fail: `{player}` took the failed Dragon's Rage hit. Missing bodies do not explai
 
 ## Parameters
 
-Follow `analyze-mechanic-parameters`. Not walked in cast order yet. Survey every cast. Record bodies per cast and unmitigated by stack size on hits people lived. The current parameters: usual share 5, a share of 3 around 102–113k under the role cap and under 200,000 is two missing bodies, anything over 200,000 is the fail shape. Who is assigned to the stack is not confirmed.
+Follow `analyze-mechanic-parameters`. One cast, about 59–60 seconds, under Thordan, with the tethers and the blue markers.
+
+The person assigned the stack to the three non-tanks who do not have the blue marker. They stand under Thordan. The tanks are stretching tethers at the same time.
+
+45 casts. Lived shares are usually 5 bodies: those three non-tanks plus both tanks, about 60–80k on a non-tank and about 26k on a tank. A share of 3 lands around 102–113k. Body counts in this log: 5 on 19 casts, 4 on 14, 3 on 9, and 1 or 2 on the failed cleaves.
+
+The current reading stays until the person says whether the tanks belong in the stack. A share of 5 is the lived share. A share of 3 under the role cap and under 200,000 is two bodies missing and stays raw. The five raw deaths are that short share. Anything over 200,000, or Magic Vulnerability Up, is the failed cleave. Do not change `typical_targets` on a guess. The five raw deaths would still be raw either way. The fault sentence would change.

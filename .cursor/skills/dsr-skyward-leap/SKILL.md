@@ -25,4 +25,10 @@ Fail: the tower was empty. `{player}` died to the explosion. The mistake is the 
 
 ## Parameters
 
-Follow `analyze-mechanic-parameters`. Not walked in cast order yet. Survey every cast, not only deaths. Record bodies and unmitigated on soaks people lived (the current lived band is 59–70k, usually 5–10% mit and a 13–39k shield) versus explosions over 150,000 (about 600–760k). Who is assigned to each tower is not confirmed. A real soak that kills is the resolve. An explosion means the tower was missed.
+Follow `analyze-mechanic-parameters`. One cast, about 59–60 seconds, with the stack and the tethers.
+
+The person assigned the blue markers to three non-tanks. They stand opposite Thordan and to the left and right, away from him. The other three non-tanks are under him for Dragon's Rage. On a clean cast this guid hits three non-tanks, and those three are the ones outside the stack. Lived soaks are 59–70k unmitigated, usually with 5–10% mit and a 13–39k shield. 50 casts. 41 of them are three bodies.
+
+After that wave, six towers spawn. Three near the spread, three near the stack. Each of the six non-tanks has to be inside one. An empty tower is a mistake. The player who dies to the explosion owns the missed soak. Pull 68, Kiara Blaiddyd, is that case. Kitana Kahn on the same pull is the 65k soak and stays raw.
+
+Clean casts store three Skyward Leap hits, not six. The 59–70k band stays the real soak, and anything over 150,000 stays the empty tower, until the person says whether the 60k is the blue-marker hit or three of the six towers. Do not retune the caps or the 4 raw deaths on that guess.

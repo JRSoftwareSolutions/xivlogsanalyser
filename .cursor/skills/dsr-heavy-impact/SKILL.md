@@ -8,9 +8,15 @@ description: >-
 
 # Heavy Impact
 
-Follow `review-mechanic` for the packet, the outcome order, and a correction. Entry `heavy-impact` in `fights/dsr/mechanics.json`. Guids `25560` and `25559`. `any_hit_is_fail` is true. Part of Strength of the Ward (`dsr-strength-of-the-ward`).
+Follow `review-mechanic` for the packet, the outcome order, and a correction. Follow `analyze-mechanic-parameters` when changing these parameters. Entry `heavy-impact` in `fights/dsr/mechanics.json`. Guids `25560` and `25559`. `any_hit_is_fail` is true. Part of Strength of the Ward (`dsr-strength-of-the-ward`).
 
-These are rings. Both guids are this mechanic. A clean pull takes 0. A hit is about 51–57k.
+## Parameters
+
+The knight's pulses, after Lightning Storm and while Thordan casts Ascalon's Mercy Concealed from the middle. The person described an earthquake that pulses outward. These two guids are that cast. Deaths land about 45–47 seconds into phase 2. `25559` is the earlier pulse in this log (pull 42, 45.2 seconds). `25560` is the later one (about 46.8 seconds).
+
+A correct pull takes 0. There is no lived band. A hit is about 51–57k where an amount is stored. It stuns and applies Damage Down. The player who is hit owns it.
+
+This log has no ability file for either guid, so the survey is the deaths, not every cast. Clean pulls are the ones with no death on these ids.
 
 ## How to tell
 
@@ -18,10 +24,6 @@ Any damage from either guid is a fail. A 51–57k ring is not raw raid damage an
 
 ## Fault
 
-`{player}` stood in the Heavy Impact ring.
+`{player}` stood in the Heavy Impact pulse. It stuns and applies Damage Down.
 
 Pull 68: Kite Noodle dies to Heavy Impact. That death is a fail.
-
-## Parameters
-
-Follow `analyze-mechanic-parameters`. Not walked in cast order yet. Survey both guids together, `25560` and `25559`. Record time in the phase and unmitigated on hits (currently about 51–57k) versus pulls that took 0. The current parameter is that both ids are this ring and `any_hit_is_fail`. Confirm no lived band exists before keeping that. The player who is hit owns the mistake.
