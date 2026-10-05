@@ -42,15 +42,15 @@ Three non-tanks get a blue marker. A large area goes off on that marker. Those t
 
 | Component | Guid | What it does |
 |---|---|---|
-| Skyward Leap | 25565, about 59–60s | The blue markers, and towers on the same guid. Three non-tanks have the marker. A 59–70k hit is the stored soak. A hit over 150k, about 600–760k, is an empty tower. The person also described six towers after this wave. Clean casts store three of these hits, not six. |
-| the Dragon's Rage | 25551, about 59–60s | The stack under Thordan. The person assigned the three non-tanks who do not have the blue marker. Lived hits in this log are usually those three plus both tanks. |
-| Holy Shield Bash | 25297, about 60s | The two tethers. One tank each. Stretch the tether. A non-tank hit, or a short tether, is the failed bash. |
+| Skyward Leap | 25565, about 59–60s | The blue marker on three non-tanks. A real leap is 59–70k. |
+| the Dragon's Rage | 25551, about 59–60s | The stack under Thordan for the three non-tanks without the marker. The person does not know whether the tanks share it. Lived hits in this log are usually those three plus both tanks. |
+| Holy Shield Bash | 25297, about 60s | The two tethers. One tank each. The hit stuns. A non-tank who takes that stun dies. Stretch the tether. A short tether is the failed bash. |
 | Holy Bladedance | 25299, about 62–64s | The cone after each tether. Several hits on that tank. The tank uses personal mitigation. Anyone else in the cone owns that hit. |
 | Dimensional Collapse | 25564, about 59s | The puddles on the floor. The person named them with this wave. A hit applies Heavy and Damage Down and is a mistake. No lived band is stored. |
 
 ## Towers
 
-Six towers spawn after that. Three near the players who spread for the blue markers, three near the players who stacked. Each non-tank has to be inside a tower when it goes off. An empty tower is a mistake. Which stored hit is one of those six soaks is still open on Skyward Leap. Do not retune the 59–70k band until that is settled.
+Six towers spawn after the marker. Three near the players who spread, three near the players who stacked. Each non-tank has to be inside a tower when it goes off. A soaked tower does not deal Skyward Leap's damage. An empty tower explodes for about 600–760k, on the Skyward Leap guid in this log, and applies Damage Down and Paralysis to everyone. That explosion is a fail.
 
 Eternal Conviction `25568` also hits around 63 seconds, and again around 130 seconds during Sanctity. The person did not assign the 63-second hit. Do not fold it into Sanctity, and do not call the later one Strength.
 

@@ -67,7 +67,7 @@
       "scales_with_stack": true,
       "typical_targets": 5,
       "fail_above": 200000,
-      "should_have_been": "A lived share is about 60–80k, usually 5 people. A stack of 3 around 102–113k is that share with two bodies missing.",
+      "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60–80k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102–113k is that share with two bodies missing.",
       "roles": {
         "tank": {"unmitigated_max": 130000, "lived": "about 26k"},
         "healer": {"unmitigated_max": 140000, "lived": "about 63k"},
@@ -82,7 +82,7 @@
       "category": "tower",
       "scales_with_stack": false,
       "fail_above": 150000,
-      "should_have_been": "A real tower is 59–70k unmitigated. Lived soaks usually have 5–10% mit and a 13–39k shield. An empty tower is about 600–760k.",
+      "should_have_been": "The blue marker on three non-tanks. A real leap is 59–70k. A soaked tower does not deal that. An empty tower explodes for about 600–760k and applies Damage Down and Paralysis to everyone.",
       "roles": {
         "tank": {"unmitigated_max": 55000, "lived": "about 37k"},
         "healer": {"unmitigated_max": 78000, "lived": "59–65k"},
@@ -211,7 +211,7 @@
       "category": "dodge",
       "any_hit_is_fail": true,
       "tanks_only": true,
-      "should_have_been": "Each tank takes one tether, stretches it, and uses personal mitigation. A non-tank hit, or a short tether, is the failed bash: hundreds of thousands to millions."
+      "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions."
     },
     {
       "id": "shining-blade",
@@ -279,7 +279,7 @@
       "phase": 2,
       "starts": 40,
       "skill": "dsr-strength-of-the-ward",
-      "summary": "About 43 to 65 seconds. Three knights dash and leave two safe triangles. Each triangle spreads Lightning Storm: healer in front, melee left, ranged right, tank in back. Heavy Impact then pulses outward while Thordan, in the middle, casts Ascalon's Mercy Concealed. On the second pulse the knights drop. Tanks take the two tethers. Three non-tanks take the blue markers away from Thordan, and the other three stack under him. Floor puddles go out with that. Towers follow for the non-tanks. Eternal Conviction still hits as this ends.",
+      "summary": "About 43 to 65 seconds. Three knights dash and leave two safe triangles. Each triangle spreads Lightning Storm: healer in front, melee left, ranged right, tank in back. Heavy Impact then pulses outward while Thordan, in the middle, casts Ascalon's Mercy Concealed. On the second pulse the knights drop. Tanks take the two tethers. The tether stuns, and a non-tank who takes it dies. Three non-tanks take Skyward Leap away from Thordan, and the other three stack under him. Floor puddles go out with that. Six towers follow. A soaked tower deals little. An empty one explodes. Eternal Conviction still hits as this ends.",
       "parts": [
         {"id": "lightning-storm"},
         {"id": "heavy-impact"},

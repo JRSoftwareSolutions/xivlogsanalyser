@@ -2,33 +2,31 @@
 name: dsr-skyward-leap
 description: >-
   Identify Skyward Leap (guid 25565) deaths in Dragonsong's Reprise Thordan:
-  a real tower soak versus an empty tower, and whose fault it was. Use when
-  the killing blow is Skyward Leap or 25565.
+  the blue marker versus an empty-tower explosion, and whose fault it was.
+  Use when the killing blow is Skyward Leap or 25565.
 ---
 
 # Skyward Leap
 
-Follow `review-mechanic` for the packet, the outcome order, and a correction. Entry `skyward-leap` in `fights/dsr/mechanics.json`. Guid `25565`. Part of Strength of the Ward (`dsr-strength-of-the-ward`).
+Follow `review-mechanic` for the packet, the outcome order, and a correction. Follow `analyze-mechanic-parameters` when changing these parameters. Entry `skyward-leap` in `fights/dsr/mechanics.json`. Guid `25565`. Part of Strength of the Ward (`dsr-strength-of-the-ward`).
 
-This is a tower. A real soak is 59–70k unmitigated, usually with 5–10% mit and a 13–39k shield. `fail_above` is 150,000. An empty tower is about 600–760k.
+The blue marker is Skyward Leap. Three non-tanks have it. They stand opposite Thordan and to the left and right, away from him. A real leap is 59–70k unmitigated, usually with 5–10% mit and a 13–39k shield. `fail_above` is 150,000.
+
+The six towers are a later soak. A soaked tower does not deal this much. An empty tower explodes for about 600–760k on this same guid and applies Damage Down and Paralysis to everyone.
 
 ## How to tell
 
-- Healer or DPS at or under the role cap: a real soak. A death on that hit is raw, or low if they were already under 15,000 HP. Pull 68, Kitana Kahn, is the settled raw Skyward Leap. It is the only raw death on that pull.
-- Over 150,000, including 600–760k: the tower exploded. That is a fail, not a soak with bad mit.
+- Healer or DPS at or under the role cap: the blue marker. A death on that hit is raw, or low if they were already under 15,000 HP. Pull 68, Kitana Kahn, is the settled raw Skyward Leap. It is the only raw death on that pull.
+- Over 150,000, including 600–760k: a tower exploded. That is a fail. It is not a marker with bad mit.
 
 ## Fault
 
-Raw: the resolve. Name the shield, the mit, and the HP. The tower was soaked.
+Raw: the resolve. Name the shield, the mit, and the HP. The blue marker was the real Skyward Leap.
 
-Fail: the tower was empty. `{player}` died to the explosion. The mistake is the missed soak. Pull 68, Kiara Blaiddyd, is that case, separate from Kitana's real soak.
+Fail: a tower was empty. `{player}` died to the explosion. The explosion applies Damage Down and Paralysis to everyone. The mistake is the missed soak. Pull 68, Kiara Blaiddyd, is that case, separate from Kitana's marker.
 
 ## Parameters
 
-Follow `analyze-mechanic-parameters`. One cast, about 59–60 seconds, with the stack and the tethers.
+One cast, about 59–60 seconds, with the stack and the tethers. 50 casts. 41 of them are three bodies, the non-tanks outside the Dragon's Rage stack. Those hits, when people live them, are 59–70k. That is the marker.
 
-The person assigned the blue markers to three non-tanks. They stand opposite Thordan and to the left and right, away from him. The other three non-tanks are under him for Dragon's Rage. On a clean cast this guid hits three non-tanks, and those three are the ones outside the stack. Lived soaks are 59–70k unmitigated, usually with 5–10% mit and a 13–39k shield. 50 casts. 41 of them are three bodies.
-
-After that wave, six towers spawn. Three near the spread, three near the stack. Each of the six non-tanks has to be inside one. An empty tower is a mistake. The player who dies to the explosion owns the missed soak. Pull 68, Kiara Blaiddyd, is that case. Kitana Kahn on the same pull is the 65k soak and stays raw.
-
-Clean casts store three Skyward Leap hits, not six. The 59–70k band stays the real soak, and anything over 150,000 stays the empty tower, until the person says whether the 60k is the blue-marker hit or three of the six towers. Do not retune the caps or the 4 raw deaths on that guess.
+Clean casts do not store six tower soaks. A soaked tower is not this band. The explosions in this log are the same guid: pull 68 Kiara Blaiddyd at 713,570, and the other deaths from 655k to 762k. No Damage Down or Paralysis aura is on those packets. The person stated that effect. The damage is what the log shows.
