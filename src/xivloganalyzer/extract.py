@@ -9,11 +9,12 @@ from __future__ import annotations
 import json
 import re
 from collections import defaultdict
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from html import unescape
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack
+from xivloganalyzer.mitigations import load_mitigations, mitigations_for
 
 ROW_RE = re.compile(r'<tr style="cursor:pointer".*?</script>', re.S)
 NAME_RE = re.compile(r'class="main-table-link ([^"]+)">([^<]+)')
@@ -48,6 +49,7 @@ class DeathFact:
     buffs: list[str]
     boss_pct: float
     pull_ms: int
+    mitigations: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -209,6 +211,7 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
         party = json.loads(party_path.read_text(encoding="utf-8"))
     actors = {actor["name"]: actor for actor in meta.get("friendlies") or []}
     by_guid = _load_events(report)
+    mitigation_tables = load_mitigations(report)
 
     facts: list[DeathFact] = []
     for fight in meta["fights"]:
@@ -248,6 +251,7 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                     _fact(
                         fight, phase, start, timestamp, when, name, job, pack, 0, "Environment",
                         0, None, None, None, 0, None, [], boss_pct, party,
+                        mitigations_for(mitigation_tables, fight["id"], target, None, 0, timestamp),
                     )
                 )
                 continue
@@ -284,10 +288,14 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                 stack = _stack_size(by_guid[guid], fight["id"], timestamp)
             if mult is not None:
                 mult = float(mult)
+            source = (event or {}).get("sourceID")
+            mits = mitigations_for(
+                mitigation_tables, fight["id"], target, source, guid, timestamp,
+            )
             facts.append(
                 _fact(
                     fight, phase, start, timestamp, when, name, job, pack, guid, ability,
-                    total, hp, unmit, mult, int(absorb), stack, buffs, boss_pct, party,
+                    total, hp, unmit, mult, int(absorb), stack, buffs, boss_pct, party, mits,
                 )
             )
     facts.sort(key=lambda fact: (fact.fight, fact.t, fact.name))
@@ -296,7 +304,7 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
 
 def _fact(
     fight, phase, start, timestamp, when, name, job, pack, guid, ability,
-    total, hp, unmit, mult, absorb, stack, buffs, boss_pct, party,
+    total, hp, unmit, mult, absorb, stack, buffs, boss_pct, party, mitigations,
 ) -> DeathFact:
     if timestamp is None:
         t = _clock_seconds(when)
@@ -323,6 +331,7 @@ def _fact(
         buffs=buffs,
         boss_pct=boss_pct,
         pull_ms=fight["end_time"] - start,
+        mitigations=mitigations,
     )
 
 

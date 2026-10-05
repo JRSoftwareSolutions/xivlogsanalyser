@@ -44,6 +44,8 @@ def _comma(value: int | None) -> str:
 def _mit(multiplier: float | None) -> str:
     if multiplier is None:
         return "mit unknown"
+    if multiplier > 1.01:
+        return f"{round((multiplier - 1) * 100)}% amp"
     if multiplier >= 0.995:
         return "no party mit"
     return f"{round((1 - multiplier) * 100)}% mit"
@@ -69,7 +71,32 @@ def _happened(fact: DeathFact, mechanic: Mechanic | None) -> str:
         parts.append("no shield")
     if mechanic and mechanic.scales_with_stack and fact.stack and mechanic.typical_targets:
         parts.append(f"stack {fact.stack} of {mechanic.typical_targets}")
+    owners = _mit_owners(fact)
+    if owners:
+        parts.append(owners)
     return " · ".join(parts)
+
+
+def _mit_owners(fact: DeathFact) -> str:
+    bits = []
+    for mit in fact.mitigations:
+        who = mit.get("by") or "unknown"
+        label = f"{mit['name']} from {who}"
+        via = mit.get("via")
+        if via:
+            label += f" ({via})"
+        amount = mit.get("amount") or 0
+        pct = mit.get("pct")
+        if amount:
+            label += f", shield {_comma(amount)}"
+        elif pct is not None and pct != 100:
+            delta = round(100 - pct)
+            if delta > 0:
+                label += f", {delta}%"
+            elif delta < 0:
+                label += f", {abs(delta)}% amp"
+        bits.append(label)
+    return "; ".join(bits)
 
 
 def _vuln(fact: DeathFact) -> bool:
