@@ -144,7 +144,11 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
                 fact, mechanic, happened, "fail",
                 f"{fact.name} died to the real {mechanic.name}. Personal mitigation was not enough.",
             )
+        if mechanic.id == "skyward-leap":
+            return _done(fact, mechanic, happened, "fail", _skyward_marker(fact))
         return _done(fact, mechanic, happened, "raw", _raw_fault(fact, mechanic))
+    if mechanic.id == "skyward-leap":
+        return _done(fact, mechanic, happened, "fail", _skyward_clip(fact, hit))
     return _done(fact, mechanic, happened, "fail", _oversized(fact, mechanic, hit))
 
 
@@ -177,6 +181,26 @@ def _oversized(fact: DeathFact, mechanic: Mechanic, hit: int) -> str:
     if mechanic.category == "puddle":
         return f"{fact.name} failed {mechanic.name}. {_comma(hit)} is well above a placed hit."
     return f"{fact.name} took {_comma(hit)}, which is not the real {mechanic.name}."
+
+
+def _skyward_marker(fact: DeathFact) -> str:
+    if fact.max_hp and fact.hp is not None and fact.hp < fact.max_hp:
+        return (
+            f"{fact.name} was at {_comma(fact.hp)} of {_comma(fact.max_hp)}. "
+            "The healers did not fully heal them."
+        )
+    shield = "no shield" if fact.absorb < 1000 else f"a {_comma(fact.absorb)} shield"
+    return (
+        f"{fact.name} was fully healed. Skyward Leap had {_mit(fact.multiplier)} and {shield}. "
+        "The players who were supposed to mitigate it own that death."
+    )
+
+
+def _skyward_clip(fact: DeathFact, hit: int) -> str:
+    return (
+        f"{fact.name} was clipped by another Skyward Leap ({_comma(hit)}). "
+        "The player who was out of the spot owns it."
+    )
 
 
 def _raw_fault(fact: DeathFact, mechanic: Mechanic) -> str:

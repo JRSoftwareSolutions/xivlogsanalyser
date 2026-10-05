@@ -67,7 +67,7 @@
       "scales_with_stack": true,
       "typical_targets": 5,
       "fail_above": 200000,
-      "should_have_been": "A lived share is about 60–80k, usually 5 people. A stack of 3 around 102–113k is that share with two bodies missing.",
+      "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60–80k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102–113k is that share with two bodies missing.",
       "roles": {
         "tank": {"unmitigated_max": 130000, "lived": "about 26k"},
         "healer": {"unmitigated_max": 140000, "lived": "about 63k"},
@@ -82,7 +82,7 @@
       "category": "tower",
       "scales_with_stack": false,
       "fail_above": 150000,
-      "should_have_been": "A real tower is 59–70k unmitigated. Lived soaks usually have 5–10% mit and a 13–39k shield. An empty tower is about 600–760k.",
+      "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600–760k and applies Damage Down and Paralysis to everyone.",
       "roles": {
         "tank": {"unmitigated_max": 55000, "lived": "about 37k"},
         "healer": {"unmitigated_max": 78000, "lived": "59–65k"},
@@ -113,7 +113,9 @@
       "guids": [25299],
       "category": "tankbuster",
       "scales_with_stack": false,
-      "should_have_been": "The normal tank hit is about 12–22k.",
+      "tanks_only": true,
+      "requires_personal_mit": true,
+      "should_have_been": "The cone after each tether. That tank takes several hits around 20–22k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
       "roles": {
         "tank": {"unmitigated_max": 55000, "lived": "about 21k"},
         "healer": {"unmitigated_max": 50000, "lived": "not a healer hit"},
@@ -127,7 +129,7 @@
       "guids": [25549],
       "category": "spread",
       "scales_with_stack": false,
-      "should_have_been": "A clean spread is about 40k. Overlaps are several times that.",
+      "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26–29k, everyone else about 38–45k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430–470k, and both players own it.",
       "roles": {
         "tank": {"unmitigated_max": 40000, "lived": "about 27k"},
         "healer": {"unmitigated_max": 55000, "lived": "about 40k"},
@@ -172,7 +174,7 @@
       "guids": [25545],
       "category": "dodge",
       "any_hit_is_fail": true,
-      "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind it, then dodges together. Nobody is hit. A player who gets hit owns that mistake. If someone baited their cone from outside the stack, they share the blame for the player that cone hits."
+      "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake."
     },
     {
       "id": "heavy-impact",
@@ -181,7 +183,7 @@
       "guids": [25560, 25559],
       "category": "dodge",
       "any_hit_is_fail": true,
-      "should_have_been": "Dodge rings. Clean pulls take 0. Both ability ids are this ring."
+      "should_have_been": "The knight's pulses, outward. A hit stuns and applies Damage Down. Clean pulls take 0. Both ability ids are this ring."
     },
     {
       "id": "dragons-glory",
@@ -208,7 +210,8 @@
       "guids": [25297],
       "category": "dodge",
       "any_hit_is_fail": true,
-      "should_have_been": "The bash that kills is the failed version, hundreds of thousands to millions."
+      "tanks_only": true,
+      "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions."
     },
     {
       "id": "shining-blade",
@@ -244,7 +247,7 @@
       "guids": [25564],
       "category": "puddle",
       "any_hit_is_fail": true,
-      "should_have_been": "No lived sample is stored yet, so any hit stays a fail until a baseline is added."
+      "should_have_been": "Puddles on the floor during the second wave. A hit applies Heavy and Damage Down. Any hit is a mistake. No lived band is stored."
     }
   ],
   "clusters": [
@@ -254,7 +257,7 @@
       "phase": 2,
       "starts": 0,
       "skill": "dsr-thordan-opener",
-      "summary": "About 14 seconds. One tank stands in front of the boss. Everyone else stacks tight behind it, then dodges together. Nobody is hit. The same cones come back inside Strength of the Ward.",
+      "summary": "About 14 seconds. One tank stands in front of the boss. Everyone else stacks tight behind it, then dodges together. Nobody is hit. The cones come back inside Strength of the Ward as a 4/4 split.",
       "parts": [
         {"id": "ascalons-mercy-concealed", "until": 30}
       ]
@@ -276,7 +279,7 @@
       "phase": 2,
       "starts": 40,
       "skill": "dsr-strength-of-the-ward",
-      "summary": "About 43 to 65 seconds. Light parties spread for Lightning Storm while Heavy Impact rings out, then dodge a second Ascalon's Mercy Concealed. Thordan becomes north: Skyward Leap, the Dragon's Rage stack, Holy Shield Bash tethers, then Holy Bladedance. Eternal Conviction hits the party as that ends.",
+      "summary": "About 43 to 65 seconds. Three knights dash and leave two safe triangles. Each triangle spreads Lightning Storm: healer in front, melee left, ranged right, tank in back. Heavy Impact then pulses outward. The party walks toward the middle, and Thordan's Ascalon's Mercy Concealed is a 4/4 split. On the second pulse the knights drop. Tanks take the two tethers. The tether stuns, and a non-tank who takes it dies. Three non-tanks take Skyward Leap: opposite Thordan as far as possible, east and west slightly toward the north. The other three stack under him. A leap death is a healer, a missing mitigation, or a clip. Floor puddles go out with that. Six towers follow. The three that are not on the Skyward Leap markers are not fixed, and two people in one of them is a miscommunication. A soaked tower deals little. An empty one explodes. Eternal Conviction still hits as this ends.",
       "parts": [
         {"id": "lightning-storm"},
         {"id": "heavy-impact"},
