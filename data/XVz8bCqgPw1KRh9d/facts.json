@@ -19,7 +19,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 120293
+    "pull_ms": 120293,
+    "mitigations": []
   },
   {
     "fight": 10,
@@ -41,7 +42,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 120293
+    "pull_ms": 120293,
+    "mitigations": []
   },
   {
     "fight": 10,
@@ -65,7 +67,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 35.1,
-    "pull_ms": 120293
+    "pull_ms": 120293,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 332,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 10,
@@ -89,7 +104,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 35.1,
-    "pull_ms": 120293
+    "pull_ms": 120293,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 10,
@@ -113,7 +141,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 35.1,
-    "pull_ms": 120293
+    "pull_ms": 120293,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 10,
@@ -137,7 +178,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 35.1,
-    "pull_ms": 120293
+    "pull_ms": 120293,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 332,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 10,
@@ -159,7 +213,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 120293
+    "pull_ms": 120293,
+    "mitigations": []
   },
   {
     "fight": 10,
@@ -181,7 +236,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 120293
+    "pull_ms": 120293,
+    "mitigations": []
   },
   {
     "fight": 11,
@@ -203,7 +259,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 36.7,
-    "pull_ms": 140899
+    "pull_ms": 140899,
+    "mitigations": []
   },
   {
     "fight": 11,
@@ -225,7 +282,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 36.7,
-    "pull_ms": 140899
+    "pull_ms": 140899,
+    "mitigations": []
   },
   {
     "fight": 11,
@@ -247,7 +305,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 36.7,
-    "pull_ms": 140899
+    "pull_ms": 140899,
+    "mitigations": []
   },
   {
     "fight": 11,
@@ -271,7 +330,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 36.7,
-    "pull_ms": 140899
+    "pull_ms": 140899,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 11,
@@ -295,7 +367,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 36.7,
-    "pull_ms": 140899
+    "pull_ms": 140899,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 11,
@@ -319,7 +404,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 36.7,
-    "pull_ms": 140899
+    "pull_ms": 140899,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 332,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 11,
@@ -341,7 +439,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 36.7,
-    "pull_ms": 140899
+    "pull_ms": 140899,
+    "mitigations": []
   },
   {
     "fight": 11,
@@ -363,7 +462,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 36.7,
-    "pull_ms": 140899
+    "pull_ms": 140899,
+    "mitigations": []
   },
   {
     "fight": 12,
@@ -385,7 +485,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": []
   },
   {
     "fight": 12,
@@ -407,7 +508,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": []
   },
   {
     "fight": 12,
@@ -429,7 +531,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": []
   },
   {
     "fight": 12,
@@ -451,7 +554,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": []
   },
   {
     "fight": 12,
@@ -473,7 +577,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 12,
@@ -495,7 +623,20 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": [
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 9110,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 12,
@@ -517,7 +658,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 12,
@@ -539,7 +693,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Paulecrain",
+        "by_id": 188,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 12,
@@ -564,7 +731,31 @@
       "Bloodwhetting"
     ],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 12,
@@ -589,7 +780,31 @@
       "Holy Sheltron"
     ],
     "boss_pct": 69.2,
-    "pull_ms": 68773
+    "pull_ms": 68773,
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 13,
@@ -611,7 +826,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 66.3,
-    "pull_ms": 63603
+    "pull_ms": 63603,
+    "mitigations": []
   },
   {
     "fight": 13,
@@ -633,7 +849,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 66.3,
-    "pull_ms": 63603
+    "pull_ms": 63603,
+    "mitigations": []
   },
   {
     "fight": 13,
@@ -655,7 +872,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 66.3,
-    "pull_ms": 63603
+    "pull_ms": 63603,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": "Succor"
+      }
+    ]
   },
   {
     "fight": 13,
@@ -677,7 +907,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 66.3,
-    "pull_ms": 63603
+    "pull_ms": 63603,
+    "mitigations": []
   },
   {
     "fight": 13,
@@ -699,7 +930,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 66.3,
-    "pull_ms": 63603
+    "pull_ms": 63603,
+    "mitigations": []
   },
   {
     "fight": 13,
@@ -721,7 +953,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 66.3,
-    "pull_ms": 63603
+    "pull_ms": 63603,
+    "mitigations": []
   },
   {
     "fight": 13,
@@ -743,7 +976,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 66.3,
-    "pull_ms": 63603
+    "pull_ms": 63603,
+    "mitigations": []
   },
   {
     "fight": 13,
@@ -765,7 +999,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 66.3,
-    "pull_ms": 63603
+    "pull_ms": 63603,
+    "mitigations": []
   },
   {
     "fight": 13,
@@ -789,7 +1024,20 @@
       "Shield Samba"
     ],
     "boss_pct": 66.3,
-    "pull_ms": 63603
+    "pull_ms": 63603,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -814,7 +1062,31 @@
       "Holy Sheltron"
     ],
     "boss_pct": 38.5,
-    "pull_ms": 141016
+    "pull_ms": 141016,
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -836,7 +1108,31 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 38.5,
-    "pull_ms": 141016
+    "pull_ms": 141016,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 7384,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -858,7 +1154,31 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 38.5,
-    "pull_ms": 141016
+    "pull_ms": 141016,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 12195,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -880,7 +1200,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 38.5,
-    "pull_ms": 141016
+    "pull_ms": 141016,
+    "mitigations": []
   },
   {
     "fight": 14,
@@ -902,7 +1223,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 38.5,
-    "pull_ms": 141016
+    "pull_ms": 141016,
+    "mitigations": []
   },
   {
     "fight": 14,
@@ -924,7 +1246,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 38.5,
-    "pull_ms": 141016
+    "pull_ms": 141016,
+    "mitigations": []
   },
   {
     "fight": 14,
@@ -946,7 +1269,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 38.5,
-    "pull_ms": 141016
+    "pull_ms": 141016,
+    "mitigations": []
   },
   {
     "fight": 14,
@@ -968,7 +1292,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 38.5,
-    "pull_ms": 141016
+    "pull_ms": 141016,
+    "mitigations": []
   },
   {
     "fight": 14,
@@ -990,7 +1315,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 38.5,
-    "pull_ms": 141016
+    "pull_ms": 141016,
+    "mitigations": []
   },
   {
     "fight": 15,
@@ -1014,7 +1340,31 @@
       "Sacred Soil"
     ],
     "boss_pct": 35.4,
-    "pull_ms": 141063
+    "pull_ms": 141063,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": 7481,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -1038,7 +1388,31 @@
       "Sacred Soil"
     ],
     "boss_pct": 35.4,
-    "pull_ms": 141063
+    "pull_ms": 141063,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 7356,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -1060,7 +1434,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.4,
-    "pull_ms": 141063
+    "pull_ms": 141063,
+    "mitigations": []
   },
   {
     "fight": 15,
@@ -1084,7 +1459,20 @@
       "Sacred Soil"
     ],
     "boss_pct": 35.4,
-    "pull_ms": 141063
+    "pull_ms": 141063,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -1106,7 +1494,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 35.4,
-    "pull_ms": 141063
+    "pull_ms": 141063,
+    "mitigations": []
   },
   {
     "fight": 15,
@@ -1130,7 +1519,20 @@
       "Sacred Soil"
     ],
     "boss_pct": 35.4,
-    "pull_ms": 141063
+    "pull_ms": 141063,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -1154,7 +1556,20 @@
       "Sacred Soil"
     ],
     "boss_pct": 35.4,
-    "pull_ms": 141063
+    "pull_ms": 141063,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -1178,7 +1593,20 @@
       "Sacred Soil"
     ],
     "boss_pct": 35.4,
-    "pull_ms": 141063
+    "pull_ms": 141063,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -1200,7 +1628,53 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.8,
-    "pull_ms": 68552
+    "pull_ms": 68552,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 8065,
+        "via": "Succor"
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 16276,
+        "via": "Aspected Helios"
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 5063,
+        "via": "Consolation"
+      }
+    ]
   },
   {
     "fight": 16,
@@ -1224,7 +1698,20 @@
       "Shield Samba"
     ],
     "boss_pct": 64.8,
-    "pull_ms": 68552
+    "pull_ms": 68552,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -1248,7 +1735,31 @@
       "Shield Samba"
     ],
     "boss_pct": 64.8,
-    "pull_ms": 68552
+    "pull_ms": 68552,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Manaward",
+        "guid": 1000168,
+        "by": "Kitana Kahn",
+        "by_id": 164,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 18521,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -1270,7 +1781,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.8,
-    "pull_ms": 68552
+    "pull_ms": 68552,
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -1294,7 +1829,20 @@
       "Shield Samba"
     ],
     "boss_pct": 64.8,
-    "pull_ms": 68552
+    "pull_ms": 68552,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -1319,7 +1867,31 @@
       "Rampart"
     ],
     "boss_pct": 64.8,
-    "pull_ms": 68552
+    "pull_ms": 68552,
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -1343,7 +1915,20 @@
       "Shield Samba"
     ],
     "boss_pct": 64.8,
-    "pull_ms": 68552
+    "pull_ms": 68552,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -1367,7 +1952,20 @@
       "Shield Samba"
     ],
     "boss_pct": 64.8,
-    "pull_ms": 68552
+    "pull_ms": 68552,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 17,
@@ -1389,7 +1987,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.0,
-    "pull_ms": 129501
+    "pull_ms": 129501,
+    "mitigations": []
   },
   {
     "fight": 17,
@@ -1411,7 +2010,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.0,
-    "pull_ms": 129501
+    "pull_ms": 129501,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Intersection",
+        "guid": 1001889,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 15964,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 17,
@@ -1433,7 +2056,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.0,
-    "pull_ms": 129501
+    "pull_ms": 129501,
+    "mitigations": []
   },
   {
     "fight": 17,
@@ -1455,7 +2079,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.0,
-    "pull_ms": 129501
+    "pull_ms": 129501,
+    "mitigations": []
   },
   {
     "fight": 17,
@@ -1477,7 +2102,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.0,
-    "pull_ms": 129501
+    "pull_ms": 129501,
+    "mitigations": []
   },
   {
     "fight": 17,
@@ -1499,7 +2125,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.0,
-    "pull_ms": 129501
+    "pull_ms": 129501,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 17,
@@ -1521,7 +2160,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.0,
-    "pull_ms": 129501
+    "pull_ms": 129501,
+    "mitigations": []
   },
   {
     "fight": 17,
@@ -1543,7 +2183,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.0,
-    "pull_ms": 129501
+    "pull_ms": 129501,
+    "mitigations": []
   },
   {
     "fight": 18,
@@ -1565,7 +2206,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": []
   },
   {
     "fight": 18,
@@ -1589,7 +2231,31 @@
       "Shield Samba"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 9011,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 18,
@@ -1613,7 +2279,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 18,
@@ -1637,7 +2316,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 18,
@@ -1661,7 +2353,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 18,
@@ -1683,7 +2388,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": []
   },
   {
     "fight": 18,
@@ -1705,7 +2411,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": []
   },
   {
     "fight": 18,
@@ -1727,7 +2434,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": [
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 18,
@@ -1749,7 +2480,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 18,
@@ -1771,7 +2526,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 85516
+    "pull_ms": 85516,
+    "mitigations": []
   },
   {
     "fight": 19,
@@ -1793,7 +2549,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.0,
-    "pull_ms": 72308
+    "pull_ms": 72308,
+    "mitigations": [
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 8853,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 19,
@@ -1817,7 +2586,42 @@
       "Shield Samba"
     ],
     "boss_pct": 63.0,
-    "pull_ms": 72308
+    "pull_ms": 72308,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 14495,
+        "via": null
+      },
+      {
+        "name": "Shade Shift",
+        "guid": 1000488,
+        "by": "Kite Noodle",
+        "by_id": 152,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 13643,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 19,
@@ -1841,7 +2645,31 @@
       "Shield Samba"
     ],
     "boss_pct": 63.0,
-    "pull_ms": 72308
+    "pull_ms": 72308,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 8827,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 19,
@@ -1866,7 +2694,31 @@
       "Shield Samba"
     ],
     "boss_pct": 63.0,
-    "pull_ms": 72308
+    "pull_ms": 72308,
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 19,
@@ -1892,7 +2744,42 @@
       "Holy Sheltron"
     ],
     "boss_pct": 63.0,
-    "pull_ms": 72308
+    "pull_ms": 72308,
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 19,
@@ -1916,7 +2803,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.0,
-    "pull_ms": 72308
+    "pull_ms": 72308,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 19,
@@ -1940,7 +2840,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.0,
-    "pull_ms": 72308
+    "pull_ms": 72308,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 19,
@@ -1964,7 +2877,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.0,
-    "pull_ms": 72308
+    "pull_ms": 72308,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 19,
@@ -1986,7 +2912,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.0,
-    "pull_ms": 72308
+    "pull_ms": 72308,
+    "mitigations": []
   },
   {
     "fight": 20,
@@ -2008,7 +2935,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 34.5,
-    "pull_ms": 128476
+    "pull_ms": 128476,
+    "mitigations": []
   },
   {
     "fight": 20,
@@ -2030,7 +2958,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 34.5,
-    "pull_ms": 128476
+    "pull_ms": 128476,
+    "mitigations": []
   },
   {
     "fight": 20,
@@ -2052,7 +2981,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 34.5,
-    "pull_ms": 128476
+    "pull_ms": 128476,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": "Succor"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 20,
@@ -2074,7 +3027,20 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 34.5,
-    "pull_ms": 128476
+    "pull_ms": 128476,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Succor"
+      }
+    ]
   },
   {
     "fight": 20,
@@ -2096,7 +3062,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 34.5,
-    "pull_ms": 128476
+    "pull_ms": 128476,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 20,
@@ -2118,7 +3097,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 34.5,
-    "pull_ms": 128476
+    "pull_ms": 128476,
+    "mitigations": []
   },
   {
     "fight": 20,
@@ -2140,7 +3120,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 34.5,
-    "pull_ms": 128476
+    "pull_ms": 128476,
+    "mitigations": []
   },
   {
     "fight": 20,
@@ -2162,7 +3143,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 34.5,
-    "pull_ms": 128476
+    "pull_ms": 128476,
+    "mitigations": []
   },
   {
     "fight": 21,
@@ -2184,7 +3166,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 69249
+    "pull_ms": 69249,
+    "mitigations": [
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 5306,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 9242,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 21,
@@ -2208,7 +3214,20 @@
       "Shield Samba"
     ],
     "boss_pct": 62.8,
-    "pull_ms": 69249
+    "pull_ms": 69249,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 21,
@@ -2230,7 +3249,64 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 69249
+    "pull_ms": 69249,
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 9228,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 5096,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 9260,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 21,
@@ -2254,7 +3330,20 @@
       "Shield Samba"
     ],
     "boss_pct": 62.8,
-    "pull_ms": 69249
+    "pull_ms": 69249,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 21,
@@ -2276,7 +3365,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 69249
+    "pull_ms": 69249,
+    "mitigations": []
   },
   {
     "fight": 21,
@@ -2298,7 +3388,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 69249
+    "pull_ms": 69249,
+    "mitigations": []
   },
   {
     "fight": 21,
@@ -2320,7 +3411,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 69249
+    "pull_ms": 69249,
+    "mitigations": []
   },
   {
     "fight": 21,
@@ -2345,7 +3437,31 @@
       "Shield Samba"
     ],
     "boss_pct": 62.8,
-    "pull_ms": 69249
+    "pull_ms": 69249,
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -2369,7 +3485,20 @@
       "Fey Illumination"
     ],
     "boss_pct": 35.8,
-    "pull_ms": 141163
+    "pull_ms": 141163,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -2394,7 +3523,31 @@
       "Sacred Soil"
     ],
     "boss_pct": 35.8,
-    "pull_ms": 141163
+    "pull_ms": 141163,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -2416,7 +3569,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 35.8,
-    "pull_ms": 141163
+    "pull_ms": 141163,
+    "mitigations": []
   },
   {
     "fight": 22,
@@ -2438,7 +3592,20 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 35.8,
-    "pull_ms": 141163
+    "pull_ms": 141163,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 11699,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -2460,7 +3627,20 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 35.8,
-    "pull_ms": 141163
+    "pull_ms": 141163,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": 8152,
+        "via": "Succor"
+      }
+    ]
   },
   {
     "fight": 22,
@@ -2482,7 +3662,8 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 35.8,
-    "pull_ms": 141163
+    "pull_ms": 141163,
+    "mitigations": []
   },
   {
     "fight": 22,
@@ -2504,7 +3685,8 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 35.8,
-    "pull_ms": 141163
+    "pull_ms": 141163,
+    "mitigations": []
   },
   {
     "fight": 22,
@@ -2526,7 +3708,8 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 35.8,
-    "pull_ms": 141163
+    "pull_ms": 141163,
+    "mitigations": []
   },
   {
     "fight": 23,
@@ -2548,7 +3731,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 78.7,
-    "pull_ms": 24725
+    "pull_ms": 24725,
+    "mitigations": []
   },
   {
     "fight": 23,
@@ -2570,7 +3754,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 78.7,
-    "pull_ms": 24725
+    "pull_ms": 24725,
+    "mitigations": []
   },
   {
     "fight": 23,
@@ -2592,7 +3777,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 78.7,
-    "pull_ms": 24725
+    "pull_ms": 24725,
+    "mitigations": []
   },
   {
     "fight": 23,
@@ -2614,7 +3800,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 78.7,
-    "pull_ms": 24725
+    "pull_ms": 24725,
+    "mitigations": []
   },
   {
     "fight": 23,
@@ -2636,7 +3823,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 78.7,
-    "pull_ms": 24725
+    "pull_ms": 24725,
+    "mitigations": [
+      {
+        "name": "Holmgang",
+        "guid": 1000409,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 23,
@@ -2658,7 +3858,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 78.7,
-    "pull_ms": 24725
+    "pull_ms": 24725,
+    "mitigations": []
   },
   {
     "fight": 23,
@@ -2680,7 +3881,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 78.7,
-    "pull_ms": 24725
+    "pull_ms": 24725,
+    "mitigations": []
   },
   {
     "fight": 23,
@@ -2702,7 +3904,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 78.7,
-    "pull_ms": 24725
+    "pull_ms": 24725,
+    "mitigations": []
   },
   {
     "fight": 24,
@@ -2727,7 +3930,42 @@
       "Sacred Soil"
     ],
     "boss_pct": 63.6,
-    "pull_ms": 81998
+    "pull_ms": 81998,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 7379,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 24,
@@ -2752,7 +3990,42 @@
       "Sacred Soil"
     ],
     "boss_pct": 63.6,
-    "pull_ms": 81998
+    "pull_ms": 81998,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 7393,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 24,
@@ -2776,7 +4049,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.6,
-    "pull_ms": 81998
+    "pull_ms": 81998,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 24,
@@ -2801,7 +4087,42 @@
       "Sacred Soil"
     ],
     "boss_pct": 63.6,
-    "pull_ms": 81998
+    "pull_ms": 81998,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 7401,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 24,
@@ -2826,7 +4147,31 @@
       "Sacred Soil"
     ],
     "boss_pct": 63.6,
-    "pull_ms": 81998
+    "pull_ms": 81998,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 24,
@@ -2848,7 +4193,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.6,
-    "pull_ms": 81998
+    "pull_ms": 81998,
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 24,
@@ -2870,7 +4250,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 63.6,
-    "pull_ms": 81998
+    "pull_ms": 81998,
+    "mitigations": []
   },
   {
     "fight": 24,
@@ -2892,7 +4273,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.6,
-    "pull_ms": 81998
+    "pull_ms": 81998,
+    "mitigations": []
   },
   {
     "fight": 25,
@@ -2914,7 +4296,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.3,
-    "pull_ms": 66668
+    "pull_ms": 66668,
+    "mitigations": []
   },
   {
     "fight": 25,
@@ -2936,7 +4319,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.3,
-    "pull_ms": 66668
+    "pull_ms": 66668,
+    "mitigations": []
   },
   {
     "fight": 25,
@@ -2958,7 +4342,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.3,
-    "pull_ms": 66668
+    "pull_ms": 66668,
+    "mitigations": []
   },
   {
     "fight": 25,
@@ -2980,7 +4365,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.3,
-    "pull_ms": 66668
+    "pull_ms": 66668,
+    "mitigations": []
   },
   {
     "fight": 25,
@@ -3002,7 +4388,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.3,
-    "pull_ms": 66668
+    "pull_ms": 66668,
+    "mitigations": []
   },
   {
     "fight": 25,
@@ -3026,7 +4413,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.3,
-    "pull_ms": 66668
+    "pull_ms": 66668,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 25,
@@ -3050,7 +4450,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.3,
-    "pull_ms": 66668
+    "pull_ms": 66668,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 25,
@@ -3075,7 +4488,31 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 63.3,
-    "pull_ms": 66668
+    "pull_ms": 66668,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 26,
@@ -3097,7 +4534,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 140877
+    "pull_ms": 140877,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 26,
@@ -3119,7 +4580,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 140877
+    "pull_ms": 140877,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 26,
@@ -3141,7 +4626,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 140877
+    "pull_ms": 140877,
+    "mitigations": []
   },
   {
     "fight": 26,
@@ -3163,7 +4649,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 140877
+    "pull_ms": 140877,
+    "mitigations": []
   },
   {
     "fight": 26,
@@ -3185,7 +4672,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 140877
+    "pull_ms": 140877,
+    "mitigations": []
   },
   {
     "fight": 26,
@@ -3207,7 +4695,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 140877
+    "pull_ms": 140877,
+    "mitigations": []
   },
   {
     "fight": 26,
@@ -3229,7 +4718,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 140877
+    "pull_ms": 140877,
+    "mitigations": []
   },
   {
     "fight": 26,
@@ -3251,7 +4741,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 140877
+    "pull_ms": 140877,
+    "mitigations": []
   },
   {
     "fight": 27,
@@ -3273,7 +4764,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 36.4,
-    "pull_ms": 120958
+    "pull_ms": 120958,
+    "mitigations": [
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 11833,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -3295,7 +4810,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 36.4,
-    "pull_ms": 120958
+    "pull_ms": 120958,
+    "mitigations": [
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 7374,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -3317,7 +4856,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 36.4,
-    "pull_ms": 120958
+    "pull_ms": 120958,
+    "mitigations": [
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 7318,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -3339,7 +4902,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 36.4,
-    "pull_ms": 120958
+    "pull_ms": 120958,
+    "mitigations": [
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 7211,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -3363,7 +4950,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 36.4,
-    "pull_ms": 120958
+    "pull_ms": 120958,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 332,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 27,
@@ -3387,7 +4987,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 36.4,
-    "pull_ms": 120958
+    "pull_ms": 120958,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -3411,7 +5024,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 36.4,
-    "pull_ms": 120958
+    "pull_ms": 120958,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -3435,7 +5061,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 36.4,
-    "pull_ms": 120958
+    "pull_ms": 120958,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 28,
@@ -3457,7 +5096,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.1,
-    "pull_ms": 68825
+    "pull_ms": 68825,
+    "mitigations": []
   },
   {
     "fight": 28,
@@ -3479,7 +5119,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.1,
-    "pull_ms": 68825
+    "pull_ms": 68825,
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 28,
@@ -3504,7 +5179,42 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 64.1,
-    "pull_ms": 68825
+    "pull_ms": 68825,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 332,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 28,
@@ -3529,7 +5239,31 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 64.1,
-    "pull_ms": 68825
+    "pull_ms": 68825,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 28,
@@ -3557,7 +5291,64 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 64.1,
-    "pull_ms": 68825
+    "pull_ms": 68825,
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Knight's Resolve",
+        "guid": 1002675,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 28,
@@ -3585,7 +5376,64 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 64.1,
-    "pull_ms": 68825
+    "pull_ms": 68825,
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Stem the Flow",
+        "guid": 1002679,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 28,
@@ -3611,7 +5459,42 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 64.1,
-    "pull_ms": 68825
+    "pull_ms": 68825,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 28,
@@ -3636,7 +5519,31 @@
       "Fey Illumination"
     ],
     "boss_pct": 64.1,
-    "pull_ms": 68825
+    "pull_ms": 68825,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 29,
@@ -3658,7 +5565,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.3,
-    "pull_ms": 68876
+    "pull_ms": 68876,
+    "mitigations": []
   },
   {
     "fight": 29,
@@ -3680,7 +5588,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.3,
-    "pull_ms": 68876
+    "pull_ms": 68876,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": 9041,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": 10238,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 29,
@@ -3704,7 +5647,42 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 62.3,
-    "pull_ms": 68876
+    "pull_ms": 68876,
+    "mitigations": [
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 8898,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 9315,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 29,
@@ -3732,7 +5710,64 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 62.3,
-    "pull_ms": 68876
+    "pull_ms": 68876,
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Stem the Flow",
+        "guid": 1002679,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 29,
@@ -3757,7 +5792,31 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 62.3,
-    "pull_ms": 68876
+    "pull_ms": 68876,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 29,
@@ -3779,7 +5838,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.3,
-    "pull_ms": 68876
+    "pull_ms": 68876,
+    "mitigations": []
   },
   {
     "fight": 29,
@@ -3801,7 +5861,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.3,
-    "pull_ms": 68876
+    "pull_ms": 68876,
+    "mitigations": []
   },
   {
     "fight": 29,
@@ -3823,7 +5884,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 62.3,
-    "pull_ms": 68876
+    "pull_ms": 68876,
+    "mitigations": []
   },
   {
     "fight": 30,
@@ -3845,7 +5907,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.7,
-    "pull_ms": 68548
+    "pull_ms": 68548,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": 11606,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": 14881,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -3867,7 +5953,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.7,
-    "pull_ms": 68548
+    "pull_ms": 68548,
+    "mitigations": []
   },
   {
     "fight": 30,
@@ -3889,7 +5976,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.7,
-    "pull_ms": 68548
+    "pull_ms": 68548,
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -3914,7 +6036,42 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 63.7,
-    "pull_ms": 68548
+    "pull_ms": 68548,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 332,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 30,
@@ -3939,7 +6096,31 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 63.7,
-    "pull_ms": 68548
+    "pull_ms": 68548,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Paulecrain",
+        "by_id": 188,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -3964,7 +6145,31 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 63.7,
-    "pull_ms": 68548
+    "pull_ms": 68548,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -3986,7 +6191,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.7,
-    "pull_ms": 68548
+    "pull_ms": 68548,
+    "mitigations": []
   },
   {
     "fight": 30,
@@ -4014,7 +6220,53 @@
       "1000087"
     ],
     "boss_pct": 63.7,
-    "pull_ms": 68548
+    "pull_ms": 68548,
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 9045,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 31,
@@ -4036,7 +6288,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.6,
-    "pull_ms": 55533
+    "pull_ms": 55533,
+    "mitigations": []
   },
   {
     "fight": 31,
@@ -4058,7 +6311,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.6,
-    "pull_ms": 55533
+    "pull_ms": 55533,
+    "mitigations": []
   },
   {
     "fight": 31,
@@ -4080,7 +6334,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.6,
-    "pull_ms": 55533
+    "pull_ms": 55533,
+    "mitigations": []
   },
   {
     "fight": 31,
@@ -4102,7 +6357,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.6,
-    "pull_ms": 55533
+    "pull_ms": 55533,
+    "mitigations": []
   },
   {
     "fight": 31,
@@ -4124,7 +6380,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 64.6,
-    "pull_ms": 55533
+    "pull_ms": 55533,
+    "mitigations": []
   },
   {
     "fight": 31,
@@ -4146,7 +6403,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.6,
-    "pull_ms": 55533
+    "pull_ms": 55533,
+    "mitigations": []
   },
   {
     "fight": 31,
@@ -4168,7 +6426,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.6,
-    "pull_ms": 55533
+    "pull_ms": 55533,
+    "mitigations": []
   },
   {
     "fight": 31,
@@ -4190,7 +6449,20 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 64.6,
-    "pull_ms": 55533
+    "pull_ms": 55533,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 8777,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 32,
@@ -4212,7 +6484,42 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 37.9,
-    "pull_ms": 140632
+    "pull_ms": 140632,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 6170,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 32,
@@ -4234,7 +6541,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 37.9,
-    "pull_ms": 140632
+    "pull_ms": 140632,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 32,
@@ -4256,7 +6587,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 37.9,
-    "pull_ms": 140632
+    "pull_ms": 140632,
+    "mitigations": []
   },
   {
     "fight": 32,
@@ -4278,7 +6610,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 37.9,
-    "pull_ms": 140632
+    "pull_ms": 140632,
+    "mitigations": []
   },
   {
     "fight": 32,
@@ -4300,7 +6633,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 37.9,
-    "pull_ms": 140632
+    "pull_ms": 140632,
+    "mitigations": []
   },
   {
     "fight": 32,
@@ -4322,7 +6656,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 37.9,
-    "pull_ms": 140632
+    "pull_ms": 140632,
+    "mitigations": []
   },
   {
     "fight": 32,
@@ -4344,7 +6679,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 37.9,
-    "pull_ms": 140632
+    "pull_ms": 140632,
+    "mitigations": []
   },
   {
     "fight": 32,
@@ -4366,7 +6702,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 37.9,
-    "pull_ms": 140632
+    "pull_ms": 140632,
+    "mitigations": []
   },
   {
     "fight": 33,
@@ -4388,7 +6725,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.8,
-    "pull_ms": 63212
+    "pull_ms": 63212,
+    "mitigations": []
   },
   {
     "fight": 33,
@@ -4410,7 +6748,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.8,
-    "pull_ms": 63212
+    "pull_ms": 63212,
+    "mitigations": []
   },
   {
     "fight": 33,
@@ -4432,7 +6771,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.8,
-    "pull_ms": 63212
+    "pull_ms": 63212,
+    "mitigations": []
   },
   {
     "fight": 33,
@@ -4454,7 +6794,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.8,
-    "pull_ms": 63212
+    "pull_ms": 63212,
+    "mitigations": []
   },
   {
     "fight": 33,
@@ -4476,7 +6817,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.8,
-    "pull_ms": 63212
+    "pull_ms": 63212,
+    "mitigations": []
   },
   {
     "fight": 33,
@@ -4498,7 +6840,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.8,
-    "pull_ms": 63212
+    "pull_ms": 63212,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 7460,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 33,
@@ -4520,7 +6875,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.8,
-    "pull_ms": 63212
+    "pull_ms": 63212,
+    "mitigations": []
   },
   {
     "fight": 33,
@@ -4542,7 +6898,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.8,
-    "pull_ms": 63212
+    "pull_ms": 63212,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": 7230,
+        "via": "Succor"
+      }
+    ]
   },
   {
     "fight": 33,
@@ -4564,7 +6933,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.8,
-    "pull_ms": 63212
+    "pull_ms": 63212,
+    "mitigations": []
   },
   {
     "fight": 34,
@@ -4586,7 +6956,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.9,
-    "pull_ms": 139827
+    "pull_ms": 139827,
+    "mitigations": []
   },
   {
     "fight": 34,
@@ -4608,7 +6979,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.9,
-    "pull_ms": 139827
+    "pull_ms": 139827,
+    "mitigations": []
   },
   {
     "fight": 34,
@@ -4630,7 +7002,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 33.9,
-    "pull_ms": 139827
+    "pull_ms": 139827,
+    "mitigations": []
   },
   {
     "fight": 34,
@@ -4652,7 +7025,31 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 33.9,
-    "pull_ms": 139827
+    "pull_ms": 139827,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 34,
@@ -4674,7 +7071,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 33.9,
-    "pull_ms": 139827
+    "pull_ms": 139827,
+    "mitigations": []
   },
   {
     "fight": 34,
@@ -4696,7 +7094,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 33.9,
-    "pull_ms": 139827
+    "pull_ms": 139827,
+    "mitigations": []
   },
   {
     "fight": 34,
@@ -4718,7 +7117,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 33.9,
-    "pull_ms": 139827
+    "pull_ms": 139827,
+    "mitigations": []
   },
   {
     "fight": 34,
@@ -4740,7 +7140,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.9,
-    "pull_ms": 139827
+    "pull_ms": 139827,
+    "mitigations": []
   },
   {
     "fight": 35,
@@ -4762,7 +7163,20 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 32.7,
-    "pull_ms": 120488
+    "pull_ms": 120488,
+    "mitigations": [
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 35,
@@ -4784,7 +7198,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 32.7,
-    "pull_ms": 120488
+    "pull_ms": 120488,
+    "mitigations": [
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Intersection",
+        "guid": 1001889,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 9488,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 35,
@@ -4806,7 +7244,20 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 32.7,
-    "pull_ms": 120488
+    "pull_ms": 120488,
+    "mitigations": [
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 35,
@@ -4830,7 +7281,20 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 32.7,
-    "pull_ms": 120488
+    "pull_ms": 120488,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 35,
@@ -4855,7 +7319,31 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 32.7,
-    "pull_ms": 120488
+    "pull_ms": 120488,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 35,
@@ -4880,7 +7368,31 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 32.7,
-    "pull_ms": 120488
+    "pull_ms": 120488,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 35,
@@ -4905,7 +7417,31 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 32.7,
-    "pull_ms": 120488
+    "pull_ms": 120488,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 35,
@@ -4930,7 +7466,31 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 32.7,
-    "pull_ms": 120488
+    "pull_ms": 120488,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -4952,7 +7512,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.9,
-    "pull_ms": 66764
+    "pull_ms": 66764,
+    "mitigations": []
   },
   {
     "fight": 36,
@@ -4974,7 +7535,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.9,
-    "pull_ms": 66764
+    "pull_ms": 66764,
+    "mitigations": []
   },
   {
     "fight": 36,
@@ -4996,7 +7558,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.9,
-    "pull_ms": 66764
+    "pull_ms": 66764,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 7486,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5018,7 +7593,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.9,
-    "pull_ms": 66764
+    "pull_ms": 66764,
+    "mitigations": []
   },
   {
     "fight": 36,
@@ -5042,7 +7618,42 @@
       "Shield Samba"
     ],
     "boss_pct": 62.9,
-    "pull_ms": 66764
+    "pull_ms": 66764,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 7411,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 9008,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5066,7 +7677,20 @@
       "Shield Samba"
     ],
     "boss_pct": 62.9,
-    "pull_ms": 66764
+    "pull_ms": 66764,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5091,7 +7715,31 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 62.9,
-    "pull_ms": 66764
+    "pull_ms": 66764,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5113,7 +7761,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.9,
-    "pull_ms": 66764
+    "pull_ms": 66764,
+    "mitigations": []
   },
   {
     "fight": 36,
@@ -5135,7 +7784,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.9,
-    "pull_ms": 66764
+    "pull_ms": 66764,
+    "mitigations": []
   },
   {
     "fight": 37,
@@ -5157,7 +7807,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 141351
+    "pull_ms": 141351,
+    "mitigations": []
   },
   {
     "fight": 37,
@@ -5179,7 +7830,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 141351
+    "pull_ms": 141351,
+    "mitigations": []
   },
   {
     "fight": 37,
@@ -5201,7 +7853,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 141351
+    "pull_ms": 141351,
+    "mitigations": []
   },
   {
     "fight": 37,
@@ -5223,7 +7876,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 141351
+    "pull_ms": 141351,
+    "mitigations": []
   },
   {
     "fight": 37,
@@ -5245,7 +7899,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 141351
+    "pull_ms": 141351,
+    "mitigations": []
   },
   {
     "fight": 37,
@@ -5267,7 +7922,8 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 141351
+    "pull_ms": 141351,
+    "mitigations": []
   },
   {
     "fight": 37,
@@ -5289,7 +7945,8 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 141351
+    "pull_ms": 141351,
+    "mitigations": []
   },
   {
     "fight": 37,
@@ -5311,7 +7968,8 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 141351
+    "pull_ms": 141351,
+    "mitigations": []
   },
   {
     "fight": 38,
@@ -5333,7 +7991,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.8,
-    "pull_ms": 63544
+    "pull_ms": 63544,
+    "mitigations": []
   },
   {
     "fight": 38,
@@ -5355,7 +8014,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.8,
-    "pull_ms": 63544
+    "pull_ms": 63544,
+    "mitigations": []
   },
   {
     "fight": 38,
@@ -5377,7 +8037,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.8,
-    "pull_ms": 63544
+    "pull_ms": 63544,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": null,
+        "via": "Succor"
+      }
+    ]
   },
   {
     "fight": 38,
@@ -5399,7 +8072,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.8,
-    "pull_ms": 63544
+    "pull_ms": 63544,
+    "mitigations": []
   },
   {
     "fight": 38,
@@ -5421,7 +8095,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.8,
-    "pull_ms": 63544
+    "pull_ms": 63544,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 7441,
+        "via": "Succor"
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 14716,
+        "via": "Aspected Helios"
+      }
+    ]
   },
   {
     "fight": 38,
@@ -5443,7 +8141,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.8,
-    "pull_ms": 63544
+    "pull_ms": 63544,
+    "mitigations": []
   },
   {
     "fight": 38,
@@ -5465,7 +8164,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 64.8,
-    "pull_ms": 63544
+    "pull_ms": 63544,
+    "mitigations": []
   },
   {
     "fight": 38,
@@ -5489,7 +8189,42 @@
       "Shield Samba"
     ],
     "boss_pct": 64.8,
-    "pull_ms": 63544
+    "pull_ms": 63544,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 7321,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 8930,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 39,
@@ -5511,7 +8246,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 39,
@@ -5533,7 +8269,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 39,
@@ -5555,7 +8292,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 39,
@@ -5577,7 +8315,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 39,
@@ -5599,7 +8338,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 39,
@@ -5621,7 +8361,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 39,
@@ -5643,7 +8384,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 39,
@@ -5665,7 +8407,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 39,
@@ -5687,7 +8430,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 39,
@@ -5709,7 +8453,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.6,
-    "pull_ms": 141533
+    "pull_ms": 141533,
+    "mitigations": []
   },
   {
     "fight": 40,
@@ -5733,7 +8478,20 @@
       "Desperate Measures"
     ],
     "boss_pct": 34.2,
-    "pull_ms": 141710
+    "pull_ms": 141710,
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 40,
@@ -5755,7 +8513,20 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 141710
+    "pull_ms": 141710,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 11704,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 40,
@@ -5777,7 +8548,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 141710
+    "pull_ms": 141710,
+    "mitigations": []
   },
   {
     "fight": 40,
@@ -5799,7 +8571,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 141710
+    "pull_ms": 141710,
+    "mitigations": []
   },
   {
     "fight": 40,
@@ -5821,7 +8594,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 141710
+    "pull_ms": 141710,
+    "mitigations": []
   },
   {
     "fight": 40,
@@ -5843,7 +8617,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 141710
+    "pull_ms": 141710,
+    "mitigations": []
   },
   {
     "fight": 40,
@@ -5865,7 +8640,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 141710
+    "pull_ms": 141710,
+    "mitigations": []
   },
   {
     "fight": 40,
@@ -5887,7 +8663,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 141710
+    "pull_ms": 141710,
+    "mitigations": []
   },
   {
     "fight": 40,
@@ -5909,7 +8686,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 141710
+    "pull_ms": 141710,
+    "mitigations": []
   },
   {
     "fight": 41,
@@ -5931,7 +8709,42 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.2,
-    "pull_ms": 147190
+    "pull_ms": 147190,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 11800,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 41,
@@ -5953,7 +8766,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 35.2,
-    "pull_ms": 147190
+    "pull_ms": 147190,
+    "mitigations": []
   },
   {
     "fight": 41,
@@ -5975,7 +8789,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.2,
-    "pull_ms": 147190
+    "pull_ms": 147190,
+    "mitigations": []
   },
   {
     "fight": 41,
@@ -5997,7 +8812,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 35.2,
-    "pull_ms": 147190
+    "pull_ms": 147190,
+    "mitigations": []
   },
   {
     "fight": 41,
@@ -6019,7 +8835,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 35.2,
-    "pull_ms": 147190
+    "pull_ms": 147190,
+    "mitigations": []
   },
   {
     "fight": 41,
@@ -6041,7 +8858,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 35.2,
-    "pull_ms": 147190
+    "pull_ms": 147190,
+    "mitigations": []
   },
   {
     "fight": 41,
@@ -6063,7 +8881,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 35.2,
-    "pull_ms": 147190
+    "pull_ms": 147190,
+    "mitigations": []
   },
   {
     "fight": 41,
@@ -6085,7 +8904,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 35.2,
-    "pull_ms": 147190
+    "pull_ms": 147190,
+    "mitigations": []
   },
   {
     "fight": 41,
@@ -6107,7 +8927,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 35.2,
-    "pull_ms": 147190
+    "pull_ms": 147190,
+    "mitigations": []
   },
   {
     "fight": 42,
@@ -6129,7 +8950,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 71118
+    "pull_ms": 71118,
+    "mitigations": []
   },
   {
     "fight": 42,
@@ -6153,7 +8975,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 71118
+    "pull_ms": 71118,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6177,7 +9012,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 71118
+    "pull_ms": 71118,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6199,7 +9047,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 71118
+    "pull_ms": 71118,
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6223,7 +9106,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 71118
+    "pull_ms": 71118,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6245,7 +9141,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 71118
+    "pull_ms": 71118,
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6269,7 +9189,20 @@
       "Shield Samba"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 71118
+    "pull_ms": 71118,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6293,7 +9226,31 @@
       "Shield Samba"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 71118
+    "pull_ms": 71118,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Manaward",
+        "guid": 1000168,
+        "by": "Kitana Kahn",
+        "by_id": 164,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 18521,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 43,
@@ -6315,7 +9272,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 33.6,
-    "pull_ms": 141449
+    "pull_ms": 141449,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 43,
@@ -6337,7 +9318,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 33.6,
-    "pull_ms": 141449
+    "pull_ms": 141449,
+    "mitigations": []
   },
   {
     "fight": 43,
@@ -6359,7 +9341,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.6,
-    "pull_ms": 141449
+    "pull_ms": 141449,
+    "mitigations": []
   },
   {
     "fight": 43,
@@ -6381,7 +9364,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.6,
-    "pull_ms": 141449
+    "pull_ms": 141449,
+    "mitigations": []
   },
   {
     "fight": 43,
@@ -6403,7 +9387,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 33.6,
-    "pull_ms": 141449
+    "pull_ms": 141449,
+    "mitigations": []
   },
   {
     "fight": 43,
@@ -6425,7 +9410,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 33.6,
-    "pull_ms": 141449
+    "pull_ms": 141449,
+    "mitigations": []
   },
   {
     "fight": 43,
@@ -6447,7 +9433,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 33.6,
-    "pull_ms": 141449
+    "pull_ms": 141449,
+    "mitigations": []
   },
   {
     "fight": 43,
@@ -6469,7 +9456,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 33.6,
-    "pull_ms": 141449
+    "pull_ms": 141449,
+    "mitigations": []
   },
   {
     "fight": 43,
@@ -6491,7 +9479,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 33.6,
-    "pull_ms": 141449
+    "pull_ms": 141449,
+    "mitigations": []
   },
   {
     "fight": 44,
@@ -6513,7 +9502,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 34.3,
-    "pull_ms": 140966
+    "pull_ms": 140966,
+    "mitigations": []
   },
   {
     "fight": 44,
@@ -6535,7 +9525,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 34.3,
-    "pull_ms": 140966
+    "pull_ms": 140966,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 44,
@@ -6557,7 +9560,53 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 34.3,
-    "pull_ms": 140966
+    "pull_ms": 140966,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 7510,
+        "via": "Succor"
+      },
+      {
+        "name": "Manaward",
+        "guid": 1000168,
+        "by": "Kitana Kahn",
+        "by_id": 164,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 18521,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 44,
@@ -6579,7 +9628,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 34.3,
-    "pull_ms": 140966
+    "pull_ms": 140966,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 44,
@@ -6601,7 +9663,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 34.3,
-    "pull_ms": 140966
+    "pull_ms": 140966,
+    "mitigations": []
   },
   {
     "fight": 44,
@@ -6623,7 +9686,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 34.3,
-    "pull_ms": 140966
+    "pull_ms": 140966,
+    "mitigations": []
   },
   {
     "fight": 44,
@@ -6645,7 +9709,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 34.3,
-    "pull_ms": 140966
+    "pull_ms": 140966,
+    "mitigations": []
   },
   {
     "fight": 44,
@@ -6667,7 +9732,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 34.3,
-    "pull_ms": 140966
+    "pull_ms": 140966,
+    "mitigations": []
   },
   {
     "fight": 44,
@@ -6689,7 +9755,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 34.3,
-    "pull_ms": 140966
+    "pull_ms": 140966,
+    "mitigations": []
   },
   {
     "fight": 45,
@@ -6711,7 +9778,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 77.7,
-    "pull_ms": 29412
+    "pull_ms": 29412,
+    "mitigations": []
   },
   {
     "fight": 45,
@@ -6733,7 +9801,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 77.7,
-    "pull_ms": 29412
+    "pull_ms": 29412,
+    "mitigations": []
   },
   {
     "fight": 45,
@@ -6755,7 +9824,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 77.7,
-    "pull_ms": 29412
+    "pull_ms": 29412,
+    "mitigations": [
+      {
+        "name": "Holmgang",
+        "guid": 1000409,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 45,
@@ -6777,7 +9859,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 77.7,
-    "pull_ms": 29412
+    "pull_ms": 29412,
+    "mitigations": []
   },
   {
     "fight": 45,
@@ -6799,7 +9882,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 77.7,
-    "pull_ms": 29412
+    "pull_ms": 29412,
+    "mitigations": []
   },
   {
     "fight": 45,
@@ -6821,7 +9905,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 77.7,
-    "pull_ms": 29412
+    "pull_ms": 29412,
+    "mitigations": []
   },
   {
     "fight": 45,
@@ -6843,7 +9928,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 77.7,
-    "pull_ms": 29412
+    "pull_ms": 29412,
+    "mitigations": []
   },
   {
     "fight": 45,
@@ -6865,7 +9951,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 77.7,
-    "pull_ms": 29412
+    "pull_ms": 29412,
+    "mitigations": []
   },
   {
     "fight": 46,
@@ -6887,7 +9974,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 63072
+    "pull_ms": 63072,
+    "mitigations": []
   },
   {
     "fight": 46,
@@ -6909,7 +9997,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 63072
+    "pull_ms": 63072,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 7536,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 46,
@@ -6931,7 +10032,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 63072
+    "pull_ms": 63072,
+    "mitigations": []
   },
   {
     "fight": 46,
@@ -6953,7 +10055,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 63072
+    "pull_ms": 63072,
+    "mitigations": []
   },
   {
     "fight": 46,
@@ -6975,7 +10078,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 63072
+    "pull_ms": 63072,
+    "mitigations": []
   },
   {
     "fight": 46,
@@ -6997,7 +10101,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 63072
+    "pull_ms": 63072,
+    "mitigations": []
   },
   {
     "fight": 46,
@@ -7019,7 +10124,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 63072
+    "pull_ms": 63072,
+    "mitigations": []
   },
   {
     "fight": 46,
@@ -7041,7 +10147,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 63072
+    "pull_ms": 63072,
+    "mitigations": []
   },
   {
     "fight": 47,
@@ -7066,7 +10173,42 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.6,
-    "pull_ms": 75685
+    "pull_ms": 75685,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 8032,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 47,
@@ -7091,7 +10233,42 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.6,
-    "pull_ms": 75685
+    "pull_ms": 75685,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 7873,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 47,
@@ -7116,7 +10293,42 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.6,
-    "pull_ms": 75685
+    "pull_ms": 75685,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 6111,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 47,
@@ -7138,7 +10350,53 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.6,
-    "pull_ms": 75685
+    "pull_ms": 75685,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 47,
@@ -7163,7 +10421,42 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.6,
-    "pull_ms": 75685
+    "pull_ms": 75685,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 13230,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 47,
@@ -7188,7 +10481,31 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.6,
-    "pull_ms": 75685
+    "pull_ms": 75685,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 47,
@@ -7210,7 +10527,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.6,
-    "pull_ms": 75685
+    "pull_ms": 75685,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 47,
@@ -7235,7 +10587,31 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.6,
-    "pull_ms": 75685
+    "pull_ms": 75685,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 48,
@@ -7260,7 +10636,31 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 32.4,
-    "pull_ms": 141489
+    "pull_ms": 141489,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 48,
@@ -7282,7 +10682,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 32.4,
-    "pull_ms": 141489
+    "pull_ms": 141489,
+    "mitigations": []
   },
   {
     "fight": 48,
@@ -7304,7 +10705,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 32.4,
-    "pull_ms": 141489
+    "pull_ms": 141489,
+    "mitigations": []
   },
   {
     "fight": 48,
@@ -7326,7 +10728,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 32.4,
-    "pull_ms": 141489
+    "pull_ms": 141489,
+    "mitigations": []
   },
   {
     "fight": 48,
@@ -7348,7 +10751,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 32.4,
-    "pull_ms": 141489
+    "pull_ms": 141489,
+    "mitigations": []
   },
   {
     "fight": 48,
@@ -7370,7 +10774,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 32.4,
-    "pull_ms": 141489
+    "pull_ms": 141489,
+    "mitigations": []
   },
   {
     "fight": 48,
@@ -7392,7 +10797,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 32.4,
-    "pull_ms": 141489
+    "pull_ms": 141489,
+    "mitigations": []
   },
   {
     "fight": 48,
@@ -7414,7 +10820,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 32.4,
-    "pull_ms": 141489
+    "pull_ms": 141489,
+    "mitigations": []
   },
   {
     "fight": 49,
@@ -7436,7 +10843,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 30.3,
-    "pull_ms": 139550
+    "pull_ms": 139550,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -7458,7 +10889,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 30.3,
-    "pull_ms": 139550
+    "pull_ms": 139550,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -7482,7 +10937,20 @@
       "Shield Samba"
     ],
     "boss_pct": 30.3,
-    "pull_ms": 139550
+    "pull_ms": 139550,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -7506,7 +10974,31 @@
       "Shield Samba"
     ],
     "boss_pct": 30.3,
-    "pull_ms": 139550
+    "pull_ms": 139550,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Manaward",
+        "guid": 1000168,
+        "by": "Kitana Kahn",
+        "by_id": 164,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 18521,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -7528,7 +11020,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 30.3,
-    "pull_ms": 139550
+    "pull_ms": 139550,
+    "mitigations": []
   },
   {
     "fight": 49,
@@ -7550,7 +11043,20 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 30.3,
-    "pull_ms": 139550
+    "pull_ms": 139550,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 11526,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -7572,7 +11078,8 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 30.3,
-    "pull_ms": 139550
+    "pull_ms": 139550,
+    "mitigations": []
   },
   {
     "fight": 49,
@@ -7594,7 +11101,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 30.3,
-    "pull_ms": 139550
+    "pull_ms": 139550,
+    "mitigations": []
   },
   {
     "fight": 50,
@@ -7616,7 +11124,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 32.3,
-    "pull_ms": 134506
+    "pull_ms": 134506,
+    "mitigations": []
   },
   {
     "fight": 50,
@@ -7638,7 +11147,42 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 32.3,
-    "pull_ms": 134506
+    "pull_ms": 134506,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 12144,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -7660,7 +11204,42 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 32.3,
-    "pull_ms": 134506
+    "pull_ms": 134506,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 12144,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -7682,7 +11261,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 32.3,
-    "pull_ms": 134506
+    "pull_ms": 134506,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 50,
@@ -7704,7 +11296,42 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 32.3,
-    "pull_ms": 134506
+    "pull_ms": 134506,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 12144,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -7726,7 +11353,31 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 32.3,
-    "pull_ms": 134506
+    "pull_ms": 134506,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 11528,
+        "via": null
+      },
+      {
+        "name": "Manaward",
+        "guid": 1000168,
+        "by": "Kitana Kahn",
+        "by_id": 164,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 18521,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -7748,7 +11399,8 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 32.3,
-    "pull_ms": 134506
+    "pull_ms": 134506,
+    "mitigations": []
   },
   {
     "fight": 50,
@@ -7770,7 +11422,20 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 32.3,
-    "pull_ms": 134506
+    "pull_ms": 134506,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 7520,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -7795,7 +11460,64 @@
       "Sacred Soil"
     ],
     "boss_pct": 62.8,
-    "pull_ms": 73365
+    "pull_ms": 73365,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 7558,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 8907,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 9315,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -7820,7 +11542,53 @@
       "Sacred Soil"
     ],
     "boss_pct": 62.8,
-    "pull_ms": 73365
+    "pull_ms": 73365,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 8206,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 5255,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -7844,7 +11612,20 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.8,
-    "pull_ms": 73365
+    "pull_ms": 73365,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -7866,7 +11647,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 73365
+    "pull_ms": 73365,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -7890,7 +11706,42 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.8,
-    "pull_ms": 73365
+    "pull_ms": 73365,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 7905,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": 8536,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -7915,7 +11766,53 @@
       "Sacred Soil"
     ],
     "boss_pct": 62.8,
-    "pull_ms": 73365
+    "pull_ms": 73365,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": 8278,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": 5157,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -7937,7 +11834,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.8,
-    "pull_ms": 73365
+    "pull_ms": 73365,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -7961,7 +11893,42 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.8,
-    "pull_ms": 73365
+    "pull_ms": 73365,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 8299,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 8389,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 52,
@@ -7983,7 +11950,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.7,
-    "pull_ms": 69333
+    "pull_ms": 69333,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 8265,
+        "via": "Succor"
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 9242,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8005,7 +12007,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.7,
-    "pull_ms": 69333
+    "pull_ms": 69333,
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8029,7 +12055,20 @@
       "Fey Illumination"
     ],
     "boss_pct": 62.7,
-    "pull_ms": 69333
+    "pull_ms": 69333,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8051,7 +12090,31 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 62.7,
-    "pull_ms": 69333
+    "pull_ms": 69333,
+    "mitigations": [
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 9676,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 10299,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8073,7 +12136,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.7,
-    "pull_ms": 69333
+    "pull_ms": 69333,
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8095,7 +12193,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 62.7,
-    "pull_ms": 69333
+    "pull_ms": 69333,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Paulecrain",
+        "by_id": 188,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8120,7 +12231,31 @@
       "Holy Sheltron"
     ],
     "boss_pct": 62.7,
-    "pull_ms": 69333
+    "pull_ms": 69333,
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8142,7 +12277,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 62.7,
-    "pull_ms": 69333
+    "pull_ms": 69333,
+    "mitigations": []
   },
   {
     "fight": 57,
@@ -8164,7 +12300,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 33.1,
-    "pull_ms": 146663
+    "pull_ms": 146663,
+    "mitigations": []
   },
   {
     "fight": 57,
@@ -8186,7 +12323,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 33.1,
-    "pull_ms": 146663
+    "pull_ms": 146663,
+    "mitigations": []
   },
   {
     "fight": 57,
@@ -8208,7 +12346,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 33.1,
-    "pull_ms": 146663
+    "pull_ms": 146663,
+    "mitigations": []
   },
   {
     "fight": 57,
@@ -8230,7 +12369,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 33.1,
-    "pull_ms": 146663
+    "pull_ms": 146663,
+    "mitigations": []
   },
   {
     "fight": 57,
@@ -8252,7 +12392,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 33.1,
-    "pull_ms": 146663
+    "pull_ms": 146663,
+    "mitigations": []
   },
   {
     "fight": 57,
@@ -8274,7 +12415,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 33.1,
-    "pull_ms": 146663
+    "pull_ms": 146663,
+    "mitigations": []
   },
   {
     "fight": 57,
@@ -8296,7 +12438,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 33.1,
-    "pull_ms": 146663
+    "pull_ms": 146663,
+    "mitigations": []
   },
   {
     "fight": 57,
@@ -8318,7 +12461,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 33.1,
-    "pull_ms": 146663
+    "pull_ms": 146663,
+    "mitigations": []
   },
   {
     "fight": 58,
@@ -8340,7 +12484,20 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 32.8,
-    "pull_ms": 142211
+    "pull_ms": 142211,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 58,
@@ -8362,7 +12519,20 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 32.8,
-    "pull_ms": 142211
+    "pull_ms": 142211,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 7238,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 58,
@@ -8386,7 +12556,20 @@
       "Shield Samba"
     ],
     "boss_pct": 32.8,
-    "pull_ms": 142211
+    "pull_ms": 142211,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 58,
@@ -8411,7 +12594,31 @@
       "Sacred Soil"
     ],
     "boss_pct": 32.8,
-    "pull_ms": 142211
+    "pull_ms": 142211,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 58,
@@ -8436,7 +12643,31 @@
       "Sacred Soil"
     ],
     "boss_pct": 32.8,
-    "pull_ms": 142211
+    "pull_ms": 142211,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 58,
@@ -8461,7 +12692,31 @@
       "Sacred Soil"
     ],
     "boss_pct": 32.8,
-    "pull_ms": 142211
+    "pull_ms": 142211,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 58,
@@ -8485,7 +12740,20 @@
       "Shield Samba"
     ],
     "boss_pct": 32.8,
-    "pull_ms": 142211
+    "pull_ms": 142211,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 58,
@@ -8509,7 +12777,20 @@
       "Shield Samba"
     ],
     "boss_pct": 32.8,
-    "pull_ms": 142211
+    "pull_ms": 142211,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 59,
@@ -8531,7 +12812,64 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 69576
+    "pull_ms": 69576,
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Paulecrain",
+        "by_id": 188,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Paulecrain",
+        "by_id": 188,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 12012,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 9307,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 10299,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 59,
@@ -8553,7 +12891,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 69576
+    "pull_ms": 69576,
+    "mitigations": []
   },
   {
     "fight": 59,
@@ -8575,7 +12914,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 69576
+    "pull_ms": 69576,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 59,
@@ -8603,7 +12955,64 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 69576
+    "pull_ms": 69576,
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Knight's Resolve",
+        "guid": 1002675,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 59,
@@ -8625,7 +13034,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 69576
+    "pull_ms": 69576,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 59,
@@ -8649,7 +13071,20 @@
       "Sacred Soil"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 69576
+    "pull_ms": 69576,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 59,
@@ -8671,7 +13106,8 @@
     "stack": 3,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 69576
+    "pull_ms": 69576,
+    "mitigations": []
   },
   {
     "fight": 59,
@@ -8696,7 +13132,31 @@
       "Sacred Soil"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 69576
+    "pull_ms": 69576,
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 60,
@@ -8720,7 +13180,42 @@
       "Desperate Measures"
     ],
     "boss_pct": 35.9,
-    "pull_ms": 126058
+    "pull_ms": 126058,
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 177,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 5055,
+        "via": null
+      },
+      {
+        "name": "The Spire",
+        "guid": 1003892,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 10284,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 60,
@@ -8742,7 +13237,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 126058
+    "pull_ms": 126058,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 60,
@@ -8764,7 +13283,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 126058
+    "pull_ms": 126058,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Loki Doki",
+        "on_id": 167,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 60,
@@ -8786,7 +13329,20 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 126058
+    "pull_ms": 126058,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 60,
@@ -8808,7 +13364,31 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 126058
+    "pull_ms": 126058,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 60,
@@ -8830,7 +13410,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 126058
+    "pull_ms": 126058,
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 181,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 60,
@@ -8854,7 +13458,20 @@
       "Shield Samba"
     ],
     "boss_pct": 35.9,
-    "pull_ms": 126058
+    "pull_ms": 126058,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 60,
@@ -8876,7 +13493,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 126058
+    "pull_ms": 126058,
+    "mitigations": []
   },
   {
     "fight": 60,
@@ -8898,7 +13516,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.9,
-    "pull_ms": 126058
+    "pull_ms": 126058,
+    "mitigations": []
   },
   {
     "fight": 61,
@@ -8923,7 +13542,31 @@
       "Sacred Soil"
     ],
     "boss_pct": 33.3,
-    "pull_ms": 142063
+    "pull_ms": 142063,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 165,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 61,
@@ -8945,7 +13588,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 142063
+    "pull_ms": 142063,
+    "mitigations": []
   },
   {
     "fight": 61,
@@ -8967,7 +13611,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 142063
+    "pull_ms": 142063,
+    "mitigations": []
   },
   {
     "fight": 61,
@@ -8989,7 +13634,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 142063
+    "pull_ms": 142063,
+    "mitigations": []
   },
   {
     "fight": 61,
@@ -9011,7 +13657,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 142063
+    "pull_ms": 142063,
+    "mitigations": []
   },
   {
     "fight": 61,
@@ -9033,7 +13680,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 142063
+    "pull_ms": 142063,
+    "mitigations": []
   },
   {
     "fight": 61,
@@ -9055,7 +13703,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 142063
+    "pull_ms": 142063,
+    "mitigations": []
   },
   {
     "fight": 61,
@@ -9077,7 +13726,8 @@
     "stack": 4,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 142063
+    "pull_ms": 142063,
+    "mitigations": []
   },
   {
     "fight": 62,
@@ -9099,7 +13749,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.5,
-    "pull_ms": 147226
+    "pull_ms": 147226,
+    "mitigations": []
   },
   {
     "fight": 62,
@@ -9121,7 +13772,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.5,
-    "pull_ms": 147226
+    "pull_ms": 147226,
+    "mitigations": []
   },
   {
     "fight": 62,
@@ -9143,7 +13795,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.5,
-    "pull_ms": 147226
+    "pull_ms": 147226,
+    "mitigations": []
   },
   {
     "fight": 62,
@@ -9165,7 +13818,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.5,
-    "pull_ms": 147226
+    "pull_ms": 147226,
+    "mitigations": []
   },
   {
     "fight": 62,
@@ -9187,7 +13841,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.5,
-    "pull_ms": 147226
+    "pull_ms": 147226,
+    "mitigations": []
   },
   {
     "fight": 62,
@@ -9209,7 +13864,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.5,
-    "pull_ms": 147226
+    "pull_ms": 147226,
+    "mitigations": []
   },
   {
     "fight": 62,
@@ -9231,7 +13887,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 33.5,
-    "pull_ms": 147226
+    "pull_ms": 147226,
+    "mitigations": []
   },
   {
     "fight": 62,
@@ -9253,7 +13910,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 33.5,
-    "pull_ms": 147226
+    "pull_ms": 147226,
+    "mitigations": []
   },
   {
     "fight": 63,
@@ -9275,7 +13933,42 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 69367
+    "pull_ms": 69367,
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 63,
@@ -9300,7 +13993,31 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 69367
+    "pull_ms": 69367,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 186,
+        "on": "Kite Noodle",
+        "on_id": 152,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 63,
@@ -9325,7 +14042,31 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 69367
+    "pull_ms": 69367,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Speed Panda",
+        "on_id": 166,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 63,
@@ -9351,7 +14092,42 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 69367
+    "pull_ms": 69367,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 63,
@@ -9379,7 +14155,108 @@
       "Physical Vulnerability Up"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 69367
+    "pull_ms": 69367,
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Stem the Flow",
+        "guid": 1002679,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 13222,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 167,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 9993,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 14795,
+        "via": null
+      },
+      {
+        "name": "Stem the Tide",
+        "guid": 1002680,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": null,
+        "amount": 7384,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Absolute Gigalad",
+        "on_id": 162,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 63,
@@ -9405,7 +14282,42 @@
       "Magic Vulnerability Up"
     ],
     "boss_pct": 63.9,
-    "pull_ms": 69367
+    "pull_ms": 69367,
+    "mitigations": [
+      {
+        "name": "Fey Illumination",
+        "guid": 1000317,
+        "by": "Spring Nymphar",
+        "by_id": 168,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Vellguine",
+        "by_id": 189,
+        "on": "Kitana Kahn",
+        "on_id": 164,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 63,
@@ -9427,7 +14339,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 69367
+    "pull_ms": 69367,
+    "mitigations": []
   },
   {
     "fight": 63,
@@ -9449,7 +14362,8 @@
     "stack": 1,
     "buffs": [],
     "boss_pct": 63.9,
-    "pull_ms": 69367
+    "pull_ms": 69367,
+    "mitigations": []
   },
   {
     "fight": 64,
@@ -9471,7 +14385,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 148159
+    "pull_ms": 148159,
+    "mitigations": []
   },
   {
     "fight": 64,
@@ -9493,7 +14408,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 148159
+    "pull_ms": 148159,
+    "mitigations": []
   },
   {
     "fight": 64,
@@ -9515,7 +14431,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 148159
+    "pull_ms": 148159,
+    "mitigations": []
   },
   {
     "fight": 64,
@@ -9537,7 +14454,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 148159
+    "pull_ms": 148159,
+    "mitigations": []
   },
   {
     "fight": 64,
@@ -9559,7 +14477,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 148159
+    "pull_ms": 148159,
+    "mitigations": []
   },
   {
     "fight": 64,
@@ -9581,7 +14500,8 @@
     "stack": 7,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 148159
+    "pull_ms": 148159,
+    "mitigations": []
   },
   {
     "fight": 64,
@@ -9603,7 +14523,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 148159
+    "pull_ms": 148159,
+    "mitigations": []
   },
   {
     "fight": 64,
@@ -9625,7 +14546,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 148159
+    "pull_ms": 148159,
+    "mitigations": []
   },
   {
     "fight": 65,
@@ -9647,7 +14569,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 142138
+    "pull_ms": 142138,
+    "mitigations": []
   },
   {
     "fight": 65,
@@ -9669,7 +14592,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 142138
+    "pull_ms": 142138,
+    "mitigations": []
   },
   {
     "fight": 65,
@@ -9693,7 +14617,20 @@
       "Sacred Soil"
     ],
     "boss_pct": 35.1,
-    "pull_ms": 142138
+    "pull_ms": 142138,
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 65,
@@ -9715,7 +14652,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 142138
+    "pull_ms": 142138,
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 163,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 65,
@@ -9737,7 +14698,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 142138
+    "pull_ms": 142138,
+    "mitigations": []
   },
   {
     "fight": 65,
@@ -9759,7 +14721,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 142138
+    "pull_ms": 142138,
+    "mitigations": []
   },
   {
     "fight": 65,
@@ -9781,7 +14744,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 142138
+    "pull_ms": 142138,
+    "mitigations": []
   },
   {
     "fight": 65,
@@ -9803,7 +14767,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 142138
+    "pull_ms": 142138,
+    "mitigations": []
   },
   {
     "fight": 65,
@@ -9825,7 +14790,8 @@
     "stack": 5,
     "buffs": [],
     "boss_pct": 35.1,
-    "pull_ms": 142138
+    "pull_ms": 142138,
+    "mitigations": []
   },
   {
     "fight": 66,
@@ -9847,7 +14813,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 152938
+    "pull_ms": 152938,
+    "mitigations": []
   },
   {
     "fight": 66,
@@ -9869,7 +14836,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 152938
+    "pull_ms": 152938,
+    "mitigations": []
   },
   {
     "fight": 66,
@@ -9891,7 +14859,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 152938
+    "pull_ms": 152938,
+    "mitigations": []
   },
   {
     "fight": 66,
@@ -9913,7 +14882,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 152938
+    "pull_ms": 152938,
+    "mitigations": []
   },
   {
     "fight": 66,
@@ -9935,7 +14905,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 152938
+    "pull_ms": 152938,
+    "mitigations": []
   },
   {
     "fight": 66,
@@ -9957,7 +14928,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 152938
+    "pull_ms": 152938,
+    "mitigations": []
   },
   {
     "fight": 66,
@@ -9979,7 +14951,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 152938
+    "pull_ms": 152938,
+    "mitigations": []
   },
   {
     "fight": 66,
@@ -10001,7 +14974,8 @@
     "stack": 6,
     "buffs": [],
     "boss_pct": 33.3,
-    "pull_ms": 152938
+    "pull_ms": 152938,
+    "mitigations": []
   },
   {
     "fight": 67,
@@ -10023,7 +14997,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 146031
+    "pull_ms": 146031,
+    "mitigations": []
   },
   {
     "fight": 67,
@@ -10045,7 +15020,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 146031
+    "pull_ms": 146031,
+    "mitigations": []
   },
   {
     "fight": 67,
@@ -10067,7 +15043,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 146031
+    "pull_ms": 146031,
+    "mitigations": []
   },
   {
     "fight": 67,
@@ -10089,7 +15066,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 146031
+    "pull_ms": 146031,
+    "mitigations": []
   },
   {
     "fight": 67,
@@ -10111,7 +15089,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 146031
+    "pull_ms": 146031,
+    "mitigations": []
   },
   {
     "fight": 67,
@@ -10133,7 +15112,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 146031
+    "pull_ms": 146031,
+    "mitigations": []
   },
   {
     "fight": 67,
@@ -10155,7 +15135,8 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 146031
+    "pull_ms": 146031,
+    "mitigations": []
   },
   {
     "fight": 67,
@@ -10177,7 +15158,20 @@
     "stack": 8,
     "buffs": [],
     "boss_pct": 34.2,
-    "pull_ms": 146031
+    "pull_ms": 146031,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Absolute Gigachad",
+        "on_id": 163,
+        "pct": null,
+        "amount": 3960,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 68,
@@ -10199,7 +15193,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 65.1,
-    "pull_ms": 63588
+    "pull_ms": 63588,
+    "mitigations": []
   },
   {
     "fight": 68,
@@ -10221,7 +15216,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 65.1,
-    "pull_ms": 63588
+    "pull_ms": 63588,
+    "mitigations": []
   },
   {
     "fight": 68,
@@ -10243,7 +15239,31 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 65.1,
-    "pull_ms": 63588
+    "pull_ms": 63588,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 7372,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Spring Nymphar",
+        "on_id": 161,
+        "pct": null,
+        "amount": 9242,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 68,
@@ -10265,7 +15285,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 65.1,
-    "pull_ms": 63588
+    "pull_ms": 63588,
+    "mitigations": []
   },
   {
     "fight": 68,
@@ -10287,7 +15308,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 65.1,
-    "pull_ms": 63588
+    "pull_ms": 63588,
+    "mitigations": []
   },
   {
     "fight": 68,
@@ -10309,7 +15331,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 65.1,
-    "pull_ms": 63588
+    "pull_ms": 63588,
+    "mitigations": []
   },
   {
     "fight": 68,
@@ -10331,7 +15354,8 @@
     "stack": null,
     "buffs": [],
     "boss_pct": 65.1,
-    "pull_ms": 63588
+    "pull_ms": 63588,
+    "mitigations": []
   },
   {
     "fight": 68,
@@ -10353,7 +15377,8 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 65.1,
-    "pull_ms": 63588
+    "pull_ms": 63588,
+    "mitigations": []
   },
   {
     "fight": 68,
@@ -10375,6 +15400,30 @@
     "stack": 2,
     "buffs": [],
     "boss_pct": 65.1,
-    "pull_ms": 63588
+    "pull_ms": 63588,
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 161,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 7379,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 162,
+        "on": "Kiara Blaiddyd",
+        "on_id": 165,
+        "pct": null,
+        "amount": 10299,
+        "via": null
+      }
+    ]
   }
 ]
