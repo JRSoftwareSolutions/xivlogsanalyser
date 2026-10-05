@@ -18,8 +18,8 @@ class ReferenceReportTest(unittest.TestCase):
         facts = extract_report(REPORT, pack)
         judgments = judge_report(facts, pack)
         counts = Counter(item.outcome for item in judgments)
-        self.assertEqual(counts["raw"], 187)
-        self.assertEqual(counts["fail"], 133)
+        self.assertEqual(counts["raw"], 183)
+        self.assertEqual(counts["fail"], 137)
         self.assertEqual(counts["low"], 11)
         self.assertEqual(counts["unknown"], 0)
         raw = Counter(item.mechanic for item in judgments if item.outcome == "raw")
@@ -27,7 +27,7 @@ class ReferenceReportTest(unittest.TestCase):
         self.assertEqual(raw["Sacred Sever"], 36)
         self.assertEqual(raw["Holy Impact"], 21)
         self.assertEqual(raw["Dragon's Rage"], 5)
-        self.assertEqual(raw["Skyward Leap"], 4)
+        self.assertNotIn("Skyward Leap", raw)
         self.assertNotIn("Heavenly Heel", raw)
         heel = [
             item for item in judgments
@@ -55,10 +55,23 @@ class ReferenceReportTest(unittest.TestCase):
             item for item in judgments
             if item.fact.fight == 68 and item.outcome == "raw"
         ]
-        self.assertEqual(len(pull_68), 1)
-        self.assertEqual(pull_68[0].fact.name, "Kitana Kahn")
-        self.assertEqual(pull_68[0].mechanic, "Skyward Leap")
-        self.assertIn("resolve was fine", pull_68[0].went_wrong)
+        self.assertEqual(len(pull_68), 0)
+        kitana = [
+            item for item in judgments
+            if item.fact.fight == 68 and item.fact.name == "Kitana Kahn"
+            and item.mechanic == "Skyward Leap"
+        ]
+        self.assertEqual(len(kitana), 1)
+        self.assertEqual(kitana[0].outcome, "fail")
+        self.assertIn("fully healed", kitana[0].went_wrong)
+        self.assertIn("mitigate", kitana[0].went_wrong)
+        kiara = [
+            item for item in judgments
+            if item.fact.fight == 13 and item.mechanic == "Skyward Leap"
+        ]
+        self.assertEqual(len(kiara), 1)
+        self.assertEqual(kiara[0].outcome, "fail")
+        self.assertIn("healers", kiara[0].went_wrong)
         strength = pack.cluster_for("skyward-leap", 59.5, 2)
         self.assertEqual(strength.name, "Strength of the Ward")
         opener = pack.cluster_for("ascalons-might", 16.7, 2)

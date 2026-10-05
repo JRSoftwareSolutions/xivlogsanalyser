@@ -26,7 +26,7 @@ Use damage events in `data/<report>/abilities/ab_<guid>.json`. Deaths are the fa
 
 ## Parameters to write down
 
-Fill these on the mechanic skill, then on `fights/dsr/mechanics.json` where a field exists. Update `notes/classification.md` when the reason changes. Run `python -m xivloganalyzer reanalyze`. Touch `tests/test_reference.py` only when the 187 raw deaths on `XVz8bCqgPw1KRh9d` are meant to change.
+Fill these on the mechanic skill, then on `fights/dsr/mechanics.json` where a field exists. Update `notes/classification.md` when the reason changes. Run `python -m xivloganalyzer reanalyze`. Touch `tests/test_reference.py` only when the 183 raw deaths on `XVz8bCqgPw1KRh9d` are meant to change.
 
 | Parameter | What to record |
 |---|---|

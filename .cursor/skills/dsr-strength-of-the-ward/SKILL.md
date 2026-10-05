@@ -32,7 +32,7 @@ A knight then pulses an earthquake outward from itself. The cast in this log is 
 | Component | Guid | What it does |
 |---|---|---|
 | Heavy Impact | 25560 and 25559, about 45–47s | The pulses, outward from the knight. Both guids are this ring. A clean pull takes 0. A hit stuns, applies Damage Down, and is that player's mistake. |
-| Ascalon's Mercy Concealed | 25545, about 50s | Thordan, in the middle, during the pulses. Same cones as the opener. One tank in front, everyone else stacked close behind, then dodge. A hit is that player's mistake. The out-of-stack baiter rule is the same as the opener. |
+| Ascalon's Mercy Concealed | 25545, about 50s | Thordan, in the middle, while the party walks in and dodges the pulses. A 4/4 split. The opener's one-in-front, seven-behind stack does not apply. A hit is that player's mistake. |
 
 ## Second pulse
 
@@ -42,7 +42,7 @@ Three non-tanks get a blue marker. A large area goes off on that marker. Those t
 
 | Component | Guid | What it does |
 |---|---|---|
-| Skyward Leap | 25565, about 59–60s | The blue marker on three non-tanks. A real leap is 59–70k. |
+| Skyward Leap | 25565, about 59–60s | The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. A death on it is a healer mistake, a missing mitigation, or a clip. |
 | the Dragon's Rage | 25551, about 59–60s | The stack under Thordan for the three non-tanks without the marker. The person does not know whether the tanks share it. Lived hits in this log are usually those three plus both tanks. |
 | Holy Shield Bash | 25297, about 60s | The two tethers. One tank each. The hit stuns. A non-tank who takes that stun dies. Stretch the tether. A short tether is the failed bash. |
 | Holy Bladedance | 25299, about 62–64s | The cone after each tether. Several hits on that tank. The tank uses personal mitigation. Anyone else in the cone owns that hit. |
