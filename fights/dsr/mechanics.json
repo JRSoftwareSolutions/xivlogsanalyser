@@ -115,7 +115,7 @@
       "scales_with_stack": false,
       "tanks_only": true,
       "requires_personal_mit": true,
-      "should_have_been": "The cone after each tether. That tank takes several hits around 12–22k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+      "should_have_been": "The cone after each tether. That tank takes several hits around 20–22k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
       "roles": {
         "tank": {"unmitigated_max": 55000, "lived": "about 21k"},
         "healer": {"unmitigated_max": 50000, "lived": "not a healer hit"},
