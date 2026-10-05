@@ -64,8 +64,7 @@ Unmitigated amounts. A hit at or under the cap for that role is raw. Far above i
 | 25295 | Bright Flare | About 64k. | ≤85k. The one at 12k HP is **low**. | Overlaps above that. |
 | 25545 | Ascalon's Mercy Concealed | Clean pulls take 0. The opener is one in front and seven behind. During Strength the party is walking in through Heavy Impact, so that cast is a 4/4 split. | | Any hit, about 190–220k. The player who is hit owns it. The out-of-stack baiter rule is the opener only. |
 | 25560, 25559 | Heavy Impact | Clean pulls take 0. | | The knight's pulses. A hit stuns and applies Damage Down. About 51–57k. Both ids. |
-| 25553 | Dragon's Gaze | A correct resolve is 0 on all 8, about 112s. 28 of 30 casts are clean. | Nothing. | Looking. The two hits are 43,749 and 45,156, multiplier 1.00. Pull 50 Kite Noodle lives 43,749 behind a 22,065 shield. Pull 11 he dies at 19,763 HP with no shield. |
-| 25554 | Dragon's Glory | A successful gaze is 0. | | About 40–45k. |
+| 25554, 25553 | Dragon's Glory / Gaze | A successful gaze is 0. | | About 40–45k. |
 | 25297 | Holy Shield Bash | A stretched tether on a tank is often fully shielded. The hit stuns. No lived unmitigated band. | | A non-tank takes the stun and dies. A short tether is hundreds of thousands to millions, with Physical Vulnerability Up. |
 | 25570 | Shining Blade | | | Failed cleave. |
 | 28591 | Heavens' Stake | | | Standing in the fire. Not the meteor. |

@@ -11,7 +11,7 @@ description: >-
 
 Parameters answer what a correct cast looks like, so a later review can say what happened, what it should have been, and whose fault a miss was. Which casts are one mechanic, and what each component does, is `mechanic-components`. The person confirms that list. Caps already stored in `fights/dsr/mechanics.json` are the current numbers. This pass checks them against every cast, then adds the plan the damage numbers do not show.
 
-Walk abilities in the order they hit during the phase. The death catalog is not that order. The first pass named Ascalon's Might, then Lightning Storm, then the Heavenly Heel tank swap with the second Might, then Dragon's Gaze.
+Walk abilities in the order they hit during the phase. The death catalog is not that order. The first pass named Ascalon's Might, then Lightning Storm, then the Heavenly Heel tank swap with the second Might.
 
 ## Survey the casts
 
