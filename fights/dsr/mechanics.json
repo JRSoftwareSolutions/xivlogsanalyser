@@ -82,7 +82,7 @@
       "category": "tower",
       "scales_with_stack": false,
       "fail_above": 150000,
-      "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. An empty tower explodes for about 600–760k and applies Damage Down and Paralysis to everyone.",
+      "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600–760k and applies Damage Down and Paralysis to everyone.",
       "roles": {
         "tank": {"unmitigated_max": 55000, "lived": "about 37k"},
         "healer": {"unmitigated_max": 78000, "lived": "59–65k"},
@@ -279,7 +279,7 @@
       "phase": 2,
       "starts": 40,
       "skill": "dsr-strength-of-the-ward",
-      "summary": "About 43 to 65 seconds. Three knights dash and leave two safe triangles. Each triangle spreads Lightning Storm: healer in front, melee left, ranged right, tank in back. Heavy Impact then pulses outward. The party walks toward the middle, and Thordan's Ascalon's Mercy Concealed is a 4/4 split. On the second pulse the knights drop. Tanks take the two tethers. The tether stuns, and a non-tank who takes it dies. Three non-tanks take Skyward Leap: opposite Thordan as far as possible, east and west slightly toward the north. The other three stack under him. A leap death is a healer, a missing mitigation, or a clip. Floor puddles go out with that. Six towers follow. A soaked tower deals little. An empty one explodes. Eternal Conviction still hits as this ends.",
+      "summary": "About 43 to 65 seconds. Three knights dash and leave two safe triangles. Each triangle spreads Lightning Storm: healer in front, melee left, ranged right, tank in back. Heavy Impact then pulses outward. The party walks toward the middle, and Thordan's Ascalon's Mercy Concealed is a 4/4 split. On the second pulse the knights drop. Tanks take the two tethers. The tether stuns, and a non-tank who takes it dies. Three non-tanks take Skyward Leap: opposite Thordan as far as possible, east and west slightly toward the north. The other three stack under him. A leap death is a healer, a missing mitigation, or a clip. Floor puddles go out with that. Six towers follow. The three that are not on the Skyward Leap markers are not fixed, and two people in one of them is a miscommunication. A soaked tower deals little. An empty one explodes. Eternal Conviction still hits as this ends.",
       "parts": [
         {"id": "lightning-storm"},
         {"id": "heavy-impact"},

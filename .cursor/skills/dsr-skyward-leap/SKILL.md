@@ -14,7 +14,7 @@ The blue marker is Skyward Leap. Three non-tanks have it. The one directly oppos
 
 A death on that leap is a mistake. It is not raw.
 
-The six towers are a later soak. A soaked tower does not deal this much. An empty tower explodes for about 600–760k on this same guid and applies Damage Down and Paralysis to everyone.
+The six towers are a later soak. Three are on the Skyward Leap markers and are fixed. The other three are not fixed, so the players there have to sort them out. Two people in one of those towers is a miscommunication, and another tower is left empty. A soaked tower does not deal this much. An empty tower explodes for about 600–760k on this same guid and applies Damage Down and Paralysis to everyone.
 
 ## How to tell
 
@@ -36,8 +36,10 @@ Clip: `{player}` was clipped by another Skyward Leap. The player who was out of 
 
 Empty tower: `{player}` died to the explosion. The explosion applies Damage Down and Paralysis to everyone. The mistake is the missed soak.
 
+Two people in one tower: a miscommunication. The three towers that are not on the Skyward Leap markers are not fixed. This log has no positions, so an explosion does not name which pair shared a tower.
+
 ## Parameters
 
 One cast, about 59–60 seconds, with the stack and the tethers. 50 casts. 41 of them are three bodies, the non-tanks outside the Dragon's Rage stack. Those hits, when people live them, are 59–70k. That is the marker.
 
-Clean casts do not store six tower soaks. A soaked tower is not this band. The explosions in this log are the same guid: pull 68 Kiara Blaiddyd at 713,570, and the other deaths from 655k to 762k. No Damage Down or Paralysis aura is on those packets. The person stated that effect. The damage is what the log shows.
+Clean casts do not store six tower soaks. A soaked tower is not this band. The explosions in this log are the same guid: pull 68 Kiara Blaiddyd at 713,570, and the other deaths from 655k to 762k. No Damage Down or Paralysis aura is on those packets. The person stated that effect. The damage is what the log shows. Two players in one of the unfixed towers is not visible here.
