@@ -40,7 +40,7 @@ The session line for a phase is `clusters` in `fights/dsr/mechanics.json`, top t
 | Ascalon's Mercy Concealed | `ascalons-mercy-opener` | cones, about 14s | `dsr-thordan-opener` |
 | Ascalon's Might | `ascalons-might-opener` | three-hit, about 17s | `dsr-thordan-opener` |
 | Strength of the Ward | `strength-of-the-ward` | about 43–65s | `dsr-strength-of-the-ward` |
-| Heavenly Heel | `heavenly-heel-swap` | tank swap, about 81s | `dsr-heavenly-heel` |
+| Heavenly Heel | `heavenly-heel-swap` | heel, then three mitigated cleaves, about 81s | `dsr-heavenly-heel` |
 | Sanctity of the Ward | `sanctity-of-the-ward` | gazes and jumps, about 112s | `dsr-sanctity-of-the-ward` |
 | Meteors | `meteors` | ice, fire, towers, meteors, about 130s | `dsr-sanctity-of-the-ward` |
 
