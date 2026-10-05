@@ -50,7 +50,9 @@ Should have been: {from the mechanic entry}
 Fault: {from the mechanic skill}
 ```
 
-For a whole pull, add one line: how many raw, fail, low, and no-packet deaths.
+For a whole pull, add one line: how many raw, fail, low, and no-packet deaths. Name the stop the pull wiped to. That stop is where the people still on their first life died.
+
+A player who already died earlier in the pull was raised. Judge the later hit on its own. It can still be a fail, a raw death, or low. When that hit is on a later mechanic, say the pull wiped to the earlier stop. Pull 18 is the pattern: Kiara Blaiddyd's Heavenly Heel is her mistake after Skyward Leap, and the pull wiped to Strength of the Ward.
 
 Name the player. A raw hit on a full share is the resolve: shield, mit, and HP. A short stack that scales is the missing bodies. A failed shape is the player who took it, unless that mechanic's skill says the miss belongs to someone who was not in the tower.
 

@@ -12,6 +12,12 @@ A death is a **failed mechanic** when it is a cone, ring, gaze, empty tower, ice
 
 **Environment** means the deaths table has no damage packet. 88 rows had a timestamp and an empty ability. 39 more had an empty tooltip and no timestamp. The page reports 127. They are usually the body after a raise. Weakness (`1000043`) is the raise debuff. It does not increase damage taken.
 
+## After a raise
+
+A player who dies and later dies again was raised in between. The second hit is judged on its own. It can be a fail, a raw death, or low. That hit is their mark on the mechanic they died to.
+
+The pull wiped on the stop where the people still on their first life died. A raised player's next mechanic can be the only death there, and the pull still wiped earlier. Pull 18: Kiara Blaiddyd died to Skyward Leap, was raised, and died to Heavenly Heel. Heavenly Heel is her mistake. The pull wiped to Strength of the Ward, on Eternal Conviction. Pull 43: Loki Doki's Heavens' Stake is the same kind of mark. The pull wiped to Meteors.
+
 ## Which pulls
 
 55 pulls: `lastPhaseForPercentageDisplay >= 2` and at least 20 seconds after the phase 2 start. Deaths before the phase 2 start are skipped. Fights 9 and 56 only touch phase 2 for the Pure of Heart / Brightwing transition and are out. None of the 55 pulls reached phase 3.

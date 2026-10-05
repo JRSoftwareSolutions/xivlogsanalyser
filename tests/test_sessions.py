@@ -2,10 +2,13 @@
 
 import json
 import unittest
+from dataclasses import fields
 from pathlib import Path
 
 from xivloganalyzer.catalog import load_pack
-from xivloganalyzer.dashboard import build_timeline, library_payload, session_clock, wall_clock
+from xivloganalyzer.dashboard import build_timeline, library_payload, session_clock, session_payload, wall_clock
+from xivloganalyzer.extract import DeathFact
+from xivloganalyzer.judge import Judgment
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "data" / "XVz8bCqgPw1KRh9d"
@@ -101,6 +104,78 @@ class ClusterTimelineTest(unittest.TestCase):
                 self.assertIn(part.mechanic_id, known)
                 covered.add(part.mechanic_id)
         self.assertEqual(covered, known)
+
+
+def _judgments(report: Path) -> list[Judgment]:
+    rows = json.loads((report / "judgments.json").read_text(encoding="utf-8"))
+    names = {item.name for item in fields(DeathFact)}
+    built = []
+    for row in rows:
+        fact = DeathFact(**{key: row[key] for key in names})
+        built.append(
+            Judgment(
+                fact=fact,
+                mechanic_id=row["mechanic_id"],
+                mechanic=row["mechanic"],
+                outcome=row["outcome"],
+                happened=row["happened"],
+                should_have_been=row["should_have_been"],
+                went_wrong=row["went_wrong"],
+            )
+        )
+    return built
+
+
+class RaiseVersusWipeTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        pack = load_pack(ROOT / "fights" / "dsr")
+        payload = session_payload(_judgments(REPORT), pack, REPORT.name)
+        cls.pulls = {pull["id"]: pull for pull in payload["pulls"]}
+
+    def _death(self, pull_id, name, mechanic):
+        pull = self.pulls[pull_id]
+        return next(
+            row for row in pull["deaths"]
+            if row["name"] == name and row["cast"] == mechanic
+        )
+
+    def test_a_raised_players_next_mechanic_stays_a_mistake(self):
+        pull = self.pulls[18]
+        heel = self._death(18, "Kiara Blaiddyd", "Heavenly Heel")
+        leap = self._death(18, "Kiara Blaiddyd", "Skyward Leap")
+        conviction = self._death(18, "Spring Nymphar", "Eternal Conviction")
+        self.assertEqual(heel["outcome"], "fail")
+        self.assertTrue(heel["afterRaise"])
+        self.assertFalse(leap["afterRaise"])
+        self.assertTrue(conviction["afterRaise"])
+        self.assertEqual(conviction["outcome"], "raw")
+        self.assertEqual(pull["wiped"], "Strength of the Ward")
+        self.assertIn("Eternal Conviction", pull["wipedCasts"])
+        self.assertNotIn("Heavenly Heel", pull["wipedCasts"])
+
+    def test_stake_after_a_raise_is_not_the_meteors_wipe(self):
+        pull = self.pulls[43]
+        stake = self._death(43, "Loki Doki", "Heavens' Stake")
+        self.assertEqual(stake["outcome"], "fail")
+        self.assertTrue(stake["afterRaise"])
+        self.assertEqual(pull["wiped"], "Meteors")
+        self.assertIn("Eternal Conviction", pull["wipedCasts"])
+        self.assertNotIn("Heavens' Stake", pull["wipedCasts"])
+
+    def test_one_later_death_does_not_move_the_wipe(self):
+        pull = self.pulls[11]
+        gigalad = self._death(11, "Absolute Gigalad", "Eternal Conviction")
+        self.assertFalse(gigalad["afterRaise"])
+        self.assertEqual(pull["wiped"], "Sanctity of the Ward")
+        self.assertIn("Sacred Sever", pull["wipedCasts"])
+
+    def test_pull_68_wipes_during_strength(self):
+        pull = self.pulls[68]
+        leap = self._death(68, "Kitana Kahn", "Skyward Leap")
+        self.assertFalse(leap["afterRaise"])
+        self.assertEqual(leap["outcome"], "fail")
+        self.assertEqual(pull["wiped"], "Strength of the Ward")
 
 
 class SessionLibraryTest(unittest.TestCase):

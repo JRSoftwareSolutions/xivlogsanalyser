@@ -82,7 +82,8 @@
   .job-icon { width: 20px; height: 20px; display: block; }
   .cols { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 12px; margin-top: 6px; font-size: 14px; }
   .cols b { display: block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
-  .quiet { color: var(--muted); }
+  .quiet, .raised { color: var(--muted); }
+  .raised { margin: 6px 0 0; font-size: 14px; }
   .clean { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
   button.session-card {
     width: 100%; display: block; text-align: left; font: inherit; color: inherit;
@@ -183,8 +184,13 @@ function jobMark(job) {
   if (!src) return `<span class="job">${job}</span>`;
   return `<img class="job-icon" alt="${job}" title="${job}" src="${src}">`;
 }
-function deathCard(row) {
+function deathCard(row, pull) {
   const cast = row.cast ? `<span class="time">${row.cast}</span>` : "";
+  const casts = (pull && pull.wipedCasts) || [];
+  const elsewhere = row.afterRaise && pull && pull.wiped && !casts.includes(row.cast);
+  const raised = row.afterRaise
+    ? `<p class="raised">Raised from an earlier death.${elsewhere ? ` The pull wiped to ${pull.wiped}.` : ""}</p>`
+    : "";
   return `<div class="death">
     <div class="who"><span class="time">${row.time}</span>${cast}<strong>${row.name}</strong>${jobMark(row.job)}</div>
     <div class="cols">
@@ -192,6 +198,7 @@ function deathCard(row) {
       <div><b>What it should have been</b>${row.should}</div>
       <div><b>Whose fault</b>${row.wrong}</div>
     </div>
+    ${raised}
   </div>`;
 }
 function route() {
@@ -333,8 +340,7 @@ function chart(pulls, markers) {
       ? `s/${SESSION.code}/pull/${pull.id}`
       : `s/${SESSION.code}/fight/${pull.id}`;
     const mark = pull.id === bestId ? " best" : "";
-    const where = pull.mechanic ? `${pull.mechanic} · ` : "";
-    return `<button class="bar${mark}" data-go="${go}" title="Pull ${pull.id} · ${where}${pull.phaseName} ${pull.bossPct}% · ${pull.clock}" style="height:${height}%;background:${phaseColor(pull.phase)}"></button>`;
+    return `<button class="bar${mark}" data-go="${go}" title="Pull ${pull.id} · ${pullWhere(pull)}${pull.phaseName} ${pull.bossPct}% · ${pull.clock}" style="height:${height}%;background:${phaseColor(pull.phase)}"></button>`;
   }).join("");
   return `<div class="reach"><div class="reach-names">${names}</div><div class="chart"><div class="plot">${lines}${bars}</div></div></div>`;
 }
@@ -428,6 +434,18 @@ function renderAll() {
     </div>
     ${phases}`;
 }
+function reviewedPull(id) {
+  return (SESSION.pulls || []).find(row => row.id === id);
+}
+function pullWhere(pull) {
+  const reviewed = reviewedPull(pull.id);
+  const reached = pull.mechanic || "";
+  const wiped = reviewed && reviewed.wiped;
+  if (wiped && reached && wiped !== reached) return `wiped to ${wiped} · reached ${reached} · `;
+  if (wiped) return `wiped to ${wiped} · `;
+  if (reached) return `${reached} · `;
+  return "";
+}
 function renderFight(id) {
   const pull = overviewOf(SESSION).pulls.find(row => String(row.id) === String(id));
   if (!pull) return `<p>Pull ${id} is not in this session.</p>`;
@@ -458,8 +476,11 @@ function renderPull(id) {
     <div class="mech-head">
       <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${mech.id}">${mech.name}</button></h3>
     </div>
-    ${rows.map(deathCard).join("")}
+    ${rows.map(row => deathCard(row, pull)).join("")}
   </div>`).join("");
+  const wiped = pull.wiped
+    ? `<p>Wiped to <button class="link" data-go="s/${SESSION.code}/mechanic/${pull.wipedId}">${pull.wiped}</button>.</p>`
+    : "";
   const rest = clean.length
     ? `<p class="meta" style="margin-top:14px">No deaths</p><div class="clean">${clean.map(mech => `<button class="link" data-go="s/${SESSION.code}/mechanic/${mech.id}">${mech.name}</button>`).join("")}</div>`
     : "";
@@ -468,11 +489,12 @@ function renderPull(id) {
     <header>
       <div>
         <h1>Pull ${pull.id}</h1>
-        <p class="meta">${pull.when ? pull.when + " · " : ""}${pull.bossPct}% wipe · ${pull.clock} in ${pull.phase}</p>
+        <p class="meta">${pull.when ? pull.when + " · " : ""}${pull.bossPct}% · ${pull.clock} in ${pull.phase}</p>
       </div>
       <p class="meta"><a href="${logHref(pull.id)}">Open this pull</a></p>
     </header>
     <section>
+      ${wiped}
       ${blocks || `<p class="quiet">No judged deaths on this pull.</p>`}
       ${rest}
       ${packets}
@@ -490,7 +512,7 @@ function renderMechanic(id) {
       <div class="mech-head">
         <h3><button class="link" data-go="s/${SESSION.code}/pull/${pull.id}">Pull ${pull.id}</button> <span class="meta">${pull.when ? pull.when + " · " : ""}${pull.bossPct}%</span></h3>
       </div>
-      ${rows.map(deathCard).join("")}
+      ${rows.map(row => deathCard(row, pull)).join("")}
     </div>`);
   }
   return `

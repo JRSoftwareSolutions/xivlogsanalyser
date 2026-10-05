@@ -222,6 +222,44 @@ def _cluster_of(item: Judgment, pack: FightPack):
     return pack.cluster_for(item.mechanic_id, item.fact.t, item.fact.phase)
 
 
+def _mark_wipe(pull: dict, pack: FightPack) -> None:
+    """A raised player's next death can be their mistake. The wipe is the stop
+    where the people still on their first life died.
+    """
+    seen: set[str] = set()
+    for row in pull["deaths"]:
+        row["afterRaise"] = row["name"] in seen
+        seen.add(row["name"])
+    counts: Counter[str] = Counter()
+    for row in pull["deaths"]:
+        if row["outcome"] == "environment" or row["afterRaise"] or not row.get("mechanicId"):
+            continue
+        counts[row["mechanicId"]] += 1
+    if not counts:
+        pull["wiped"] = ""
+        pull["wipedId"] = ""
+        pull["wipedCasts"] = []
+        return
+    clusters = {cluster.id: cluster for cluster in pack.clusters}
+
+    def rank(mechanic_id: str) -> tuple:
+        cluster = clusters.get(mechanic_id)
+        return (counts[mechanic_id], cluster.phase if cluster else 0, cluster.starts if cluster else 0)
+
+    best = max(counts, key=rank)
+    named = next(
+        (row["mechanic"] for row in pull["deaths"] if row.get("mechanicId") == best and row["mechanic"]),
+        best,
+    )
+    pull["wipedId"] = best
+    pull["wiped"] = clusters[best].name if best in clusters else named
+    pull["wipedCasts"] = sorted({
+        row["cast"]
+        for row in pull["deaths"]
+        if row.get("mechanicId") == best and not row["afterRaise"] and row["outcome"] != "environment"
+    })
+
+
 def session_payload(judgments: list[Judgment], pack: FightPack, code: str, when: dict | None = None) -> dict:
     grouped: dict[str, list[Judgment]] = {cluster.id: [] for cluster in pack.clusters}
     for item in judgments:
@@ -283,6 +321,7 @@ def session_payload(judgments: list[Judgment], pack: FightPack, code: str, when:
     for pull in pulls.values():
         pull["deaths"].sort(key=lambda row: (row["t"], row["name"]))
         pull["counts"] = Counter(row["outcome"] for row in pull["deaths"])
+        _mark_wipe(pull, pack)
     unknown = [
         item.mechanic
         for item in judgments
