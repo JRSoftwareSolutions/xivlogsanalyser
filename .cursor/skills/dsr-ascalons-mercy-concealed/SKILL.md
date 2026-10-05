@@ -31,6 +31,6 @@ Cones. A correct cast hits nobody. There is no raw band. Hits in this log are ab
 
 Edge case: someone stood out of the stack, so their cone was baited away from the group. On the dodge, that cone hits someone else. The player who was hit still owns being in the cone. The player who baited from outside the stack shares the blame, even when that baiter took no damage.
 
-This log has no positions. A death names the player who was hit. Do not pick a loose baiter from a second death on the same cast. Two players hit means both of them were in a cone. Pulls 12, 23, and 45 each have two opener deaths at the same timestamp. Those are two hits, not a named baiter.
+Positions for this log are in `data/<code>/positions/fight-<id>.json`. A sample is `[timestamp, actorId, x, y, facing, friendly]`, with `x` and `y` stored as in-game coordinates times 100. A death names the player who was hit. Do not pick a loose baiter from a second death on the same cast. Two players hit means both of them were in a cone. Pulls 12, 23, and 45 each have two opener deaths at the same timestamp. Those are two hits, not a named baiter.
 
 Pull 68: Loki Doki on the opener, Spring Nymphar during Strength. Both fails.

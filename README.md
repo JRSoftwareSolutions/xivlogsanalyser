@@ -15,6 +15,7 @@ Put a report folder in `reports/<code>/` (or `data/<code>/`) with:
 - `fights.json` from `/reports/fights-and-participants/<code>/0`
 - `deaths-html.json`, a list of `{id, html}` death tables
 - `abilities/ab_<guid>.json` for damage-taken on the mechanics we already know
+- `positions/fight-<id>.json` from `/reports/replaysegment/<code>/<boss>/<start>/<end>`. Each sample is `[timestamp, actorId, x, y, facing, friendly]`. `x` and `y` are the in-game coordinates times 100, and `facing` is the actor's facing on that sample. `actors` maps those ids to names.
 - `party.json` optional, name to max HP
 - `aura_map.json` optional
 - `session.json` optional, with `started` (ISO-8601 time of report zero), `title`, and `owner`. That is what places the log on a day and a clock. A `start` unix time on `fights.json` is used when the sidecar is missing.
