@@ -4,7 +4,7 @@ Session reviews for FFLogs. Dragonsong's Reprise is the first fight. The dashboa
 
 ## Current session
 
-[XVz8bCqgPw1KRh9d](https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d), Kite21, Ultimates (Legacy). Played Sat 3 Oct 2026, 21:17–00:03 (pull 68 is the 12:02 AM label from the log). Thordan: **187 raw deaths** across 55 pulls. Pull 68 is Kitana Kahn on a real Skyward Leap.
+[XVz8bCqgPw1KRh9d](https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d), Kite21, Ultimates (Legacy). Played Sat 3 Oct 2026, 21:17–00:03 (pull 68 is the 12:02 AM label from the log). Thordan: **183 raw deaths** across 55 pulls. Pull 68 has no raw death. Kitana Kahn's Skyward Leap was full HP with no mitigation.
 
 Open [dashboard.html](dashboard.html) after an analysis run. Every log is a session, listed by the day and the time it was played. Each session opens on a pull chart (taller means further into the fight), then the pull count and the mechanics for each phase. Those mechanics are the `clusters` in `fights/dsr/mechanics.json`, in `starts` order, drawn as a line. `markers` in `fight.json` are chart labels only. The side panel keeps the session list, the pulls, and the mechanics. The main area changes in place.
 
@@ -37,4 +37,4 @@ Mechanic knowledge lives in `fights/dsr/mechanics.json`. A correction such as "t
 python -m xivloganalyzer reanalyze
 ```
 
-Every saved log is judged again. `notes/classification.md` is the write-up of why Thordan is called the way it is. `tests/test_reference.py` keeps the current 187 until we change a call on purpose.
+Every saved log is judged again. `notes/classification.md` is the write-up of why Thordan is called the way it is. `tests/test_reference.py` keeps the current 183 until we change a call on purpose.

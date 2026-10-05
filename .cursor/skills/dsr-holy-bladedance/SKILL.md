@@ -8,21 +8,26 @@ description: >-
 
 # Holy Bladedance
 
-Follow `review-mechanic` for the packet, the outcome order, and a correction. Entry `holy-bladedance` in `fights/dsr/mechanics.json`. Guid `25299`. Part of Strength of the Ward (`dsr-strength-of-the-ward`), the cone after Holy Shield Bash.
-
-The tank hit people live is about 12–22k. The tank cap is 55,000.
-
-## How to tell
-
-- Tank at or under the cap: the real buster. If they were already under 15,000 HP, the outcome is low, not raw.
-- Hits around 230k and 370k, or anything over the role cap: the failed version.
-
-## Fault
-
-Low or raw inside the cap: the buster was normal. Low means they were already under 15,000. Raw means the resolve (shield, mit, HP) lost to the normal hit.
-
-Fail: `{player}` took the failed Holy Bladedance, not the 12–22k tank hit.
+Follow `review-mechanic` for the packet, the outcome order, and a correction. Follow `analyze-mechanic-parameters` when changing these parameters. Entry `holy-bladedance` in `fights/dsr/mechanics.json`. Guid `25299`. `tanks_only` is true. `requires_personal_mit` is true. Part of Strength of the Ward (`dsr-strength-of-the-ward`), the cone after Holy Shield Bash.
 
 ## Parameters
 
-Follow `analyze-mechanic-parameters`. Not walked in cast order yet. Survey every cast. Record who is hit, hits per cast, and the unmitigated band of hits tanks lived (currently about 12–22k, cap 55,000) versus the failed hits around 230k and 370k. Whether a tank death on the small hit without personal mitigation is their mistake is not confirmed. Until it is, a normal hit on someone already under 15,000 HP is low.
+About 62–64 seconds, after the tethers. Two cones, one after each bash. On a clean cast both tanks are hit, several times each. Lived tank hits are about 20–22k unmitigated, median about 21k. The tank cap is 55,000.
+
+The tank who stretched that tether uses personal mitigation. A tank who dies on a normal-sized hit without it owns the death. It is not raw. The reference deaths on the small hit were already under 15,000 HP and had personal mitigation, so they stay low.
+
+Anyone who is not a tank in the cone owns that hit. Pull 25, Kiara Blaiddyd, 372,472, with Physical Vulnerability Up.
+
+## How to tell
+
+- Tank, unmitigated at or under 55,000, with personal mitigation: the real cone. Under 15,000 HP is low.
+- Tank, normal-sized hit, dead, no personal mitigation: fail. Theirs.
+- Anyone who is not a tank, including a hit around 230k or 370k: fail. They stood in the cone.
+
+## Fault
+
+`{player}` is not a tank: they stood in Holy Bladedance. Only the tethered tank takes that cone.
+
+`{player}` is the tank and the hit is the real one, but personal mitigation is missing: they died to the real Holy Bladedance. Personal mitigation was not enough.
+
+Low: the hit was the normal cone and they were already under 15,000 HP.
