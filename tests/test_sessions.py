@@ -5,7 +5,15 @@ import unittest
 from pathlib import Path
 
 from xivloganalyzer.catalog import load_pack
-from xivloganalyzer.dashboard import build_timeline, library_payload, session_clock, wall_clock
+from xivloganalyzer.dashboard import (
+    build_timeline,
+    library_payload,
+    session_clock,
+    session_payload,
+    wall_clock,
+)
+from xivloganalyzer.extract import read_facts
+from xivloganalyzer.judge import judge_report
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "data" / "XVz8bCqgPw1KRh9d"
@@ -101,6 +109,89 @@ class ClusterTimelineTest(unittest.TestCase):
                 self.assertIn(part.mechanic_id, known)
                 covered.add(part.mechanic_id)
         self.assertEqual(covered, known)
+
+
+def _payload():
+    pack = load_pack(ROOT / "fights" / "dsr")
+    meta = json.loads((REPORT / "fights.json").read_text(encoding="utf-8"))
+    when = session_clock(REPORT, meta)
+    judgments = judge_report(read_facts(REPORT), pack)
+    return session_payload(judgments, pack, REPORT.name, when, meta)
+
+
+def _seats(part):
+    return {seat["name"]: seat for seat in part["seats"]}
+
+
+class PullCardsTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.payload = _payload()
+
+    def _pull(self, pull_id):
+        return next(pull for pull in self.payload["pulls"] if pull["id"] == pull_id)
+
+    def _card(self, pull_id, card_id):
+        return next(card for card in self._pull(pull_id)["cards"] if card["id"] == card_id)
+
+    def test_concealed_opener_marks_the_player_who_was_hit(self):
+        card = self._card(68, "ascalons-mercy-opener")
+        self.assertEqual([part["name"] for part in card["parts"]], ["Ascalon's Mercy Concealed"])
+        seats = _seats(card["parts"][0])
+        self.assertEqual(len(seats), 8)
+        self.assertFalse(seats["Loki Doki"]["passed"])
+        self.assertEqual(seats["Loki Doki"]["job"], "AST")
+        self.assertTrue(seats["Spring Nymphar"]["passed"])
+        self.assertEqual(
+            [seat["name"] for seat in card["parts"][0]["seats"][:2]],
+            ["Absolute Gigachad", "Absolute Gigalad"],
+        )
+
+    def test_strength_cards_mark_each_component(self):
+        card = self._card(68, "strength-of-the-ward")
+        by_name = {part["name"]: part for part in card["parts"]}
+        self.assertEqual(
+            [part["name"] for part in card["parts"]],
+            [
+                "Lightning Storm",
+                "Heavy Impact",
+                "Ascalon's Mercy Concealed",
+                "Dimensional Collapse",
+                "Skyward Leap",
+                "Dragon's Rage",
+                "Holy Shield Bash",
+                "Holy Bladedance",
+                "Eternal Conviction",
+            ],
+        )
+        self.assertTrue(all(seat["passed"] for seat in by_name["Lightning Storm"]["seats"]))
+        self.assertFalse(_seats(by_name["Heavy Impact"])["Kite Noodle"]["passed"])
+        self.assertTrue(_seats(by_name["Heavy Impact"])["Loki Doki"]["passed"])
+        concealed = _seats(by_name["Ascalon's Mercy Concealed"])
+        self.assertFalse(concealed["Spring Nymphar"]["passed"])
+        self.assertTrue(concealed["Loki Doki"]["passed"])
+        leap = _seats(by_name["Skyward Leap"])
+        self.assertFalse(leap["Kitana Kahn"]["passed"])
+        self.assertFalse(leap["Kiara Blaiddyd"]["passed"])
+        self.assertTrue(leap["Spring Nymphar"]["passed"])
+        names = {card["id"] for card in self._pull(68)["cards"]}
+        self.assertNotIn("heavenly-heel-swap", names)
+        self.assertNotIn("meteors", names)
+
+    def test_a_raw_death_still_passes_the_component(self):
+        card = self._card(12, "strength-of-the-ward")
+        rage = next(part for part in card["parts"] if part["id"] == "dragons-rage")
+        self.assertTrue(_seats(rage)["Loki Doki"]["passed"])
+        opener = self._card(12, "ascalons-mercy-opener")
+        hit = _seats(opener["parts"][0])
+        self.assertFalse(hit["Kitana Kahn"]["passed"])
+        self.assertFalse(hit["Spring Nymphar"]["passed"])
+
+    def test_a_pull_that_wipes_in_the_opener_has_no_strength_card(self):
+        names = [card["name"] for card in self._pull(23)["cards"]]
+        self.assertEqual(names, ["Ascalon's Mercy Concealed", "Ascalon's Might"])
+        might = self._card(23, "ascalons-might-opener")
+        self.assertTrue(all(seat["passed"] for seat in might["parts"][0]["seats"]))
 
 
 class SessionLibraryTest(unittest.TestCase):
