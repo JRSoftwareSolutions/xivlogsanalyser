@@ -69,9 +69,8 @@
   .fold .countline { color: var(--muted); font-size: 12px; letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
   details.session > summary {
     text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 600; color: var(--ink);
-    align-items: flex-start;
   }
-  details.session > summary::before { margin-top: 5px; }
+  details.session > summary .countline { font-size: 13px; }
   details.session.on > summary { background: var(--raw-bg); color: var(--ink); }
   .session-body { padding: 2px 0 6px 12px; }
   .session-body > .fold { margin: 0; }
@@ -264,8 +263,14 @@ function fold(id, title, count, body, open, opts) {
   </details>`;
 }
 function sessionStamp(item) {
-  const day = item.dayLabel && item.dayLabel !== "No date" ? item.dayLabel : "";
-  return [day, item.timeLabel].filter(Boolean).join(" · ") || item.code;
+  const session = byCode[item.code] || item;
+  const day = session.dayLabel && session.dayLabel !== "No date" ? session.dayLabel : "";
+  const time = session.timeLabel || item.timeLabel || "";
+  return {
+    title: day || time || item.code,
+    time: day ? time : "",
+    label: [day, time, item.fight, item.title, item.owner, item.code, "overview pulls mechanics"].filter(Boolean).join(" ").toLowerCase(),
+  };
 }
 function byStartedDesc(a, b) {
   const as = (byCode[a.code] || {}).started || "";
@@ -315,7 +320,7 @@ function sessionEntry(item, where) {
   if (!session) return "";
   const open = where.code === item.code;
   const pullCount = (session.overview && session.overview.pulls.length) || session.pulls.length;
-  const label = `${sessionStamp(item)} ${item.fight} ${item.title} ${item.owner} ${item.code} overview pulls mechanics`.toLowerCase();
+  const stamp = sessionStamp(item);
   const overview = `<button class="nav" data-go="s/${item.code}" data-keep="1" data-label="overview">
       <span>Overview</span><span class="countline">${pullCount}</span>
     </button>`;
@@ -335,11 +340,11 @@ function sessionEntry(item, where) {
   );
   return fold(
     `session-${item.code}`,
-    sessionStamp(item),
-    "",
+    stamp.title,
+    stamp.time,
     `<div class="session-body">${overview}${pulls}${mechs}</div>`,
     open,
-    { className: "session", label },
+    { className: "session", label: stamp.label },
   );
 }
 function fightHeader(name) {
