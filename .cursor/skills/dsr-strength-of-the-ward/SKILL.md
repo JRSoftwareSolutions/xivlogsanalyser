@@ -56,4 +56,4 @@ Eternal Conviction `25568` also hits around 63 seconds, and again around 130 sec
 
 ## Not this mechanic
 
-Heavenly Heel and the second Ascalon's Might, about 81–88 seconds, are the tank swap (`dsr-heavenly-heel`).
+Heavenly Heel and the second Ascalon's Might, about 81–88 seconds, are the tank swap (`dsr-heavenly-heel`). Both are properly mitigated, and the tanks swap. Sanctity of the Ward is next.

@@ -99,8 +99,7 @@
       "tanks_only": true,
       "one_target": true,
       "requires_personal_mit": true,
-      "off_tank_takes": true,
-      "should_have_been": "The off tank takes Heavenly Heel. They provoke so they have aggro when it locks. The main tank takes the three-hit Ascalon's Might. A lived heel is about 159–174k before mit, with Rampart and Sheltron. Anyone who is not a tank getting hit is their mistake. If the main tank dies because the off tank did not have aggro when it locked, that death is the off tank's. An off tank who dies to the real heel without personal mitigation owns that death.",
+      "should_have_been": "One tank takes Heavenly Heel with personal mitigation, then the other tank takes the three-hit Ascalon's Might, also with personal mitigation. A lived heel is about 159–174k before mit. The tanks swap: the same tank does not take both. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real heel without personal mitigation owns that death.",
       "roles": {
         "tank": {"unmitigated_max": 190000, "lived": "159–174k before mit"},
         "healer": {"unmitigated_max": 140000, "lived": "not a healer hit"},
@@ -161,7 +160,7 @@
       "tanks_only": true,
       "one_target": true,
       "requires_personal_mit": true,
-      "should_have_been": "One tank takes the three hits, about 71–86k each. When the warrior takes it, he invulns it or heavy-mits it. The later three-hit is the main tank's, after the off tank takes Heavenly Heel. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
+      "should_have_been": "One tank takes the three hits with personal mitigation. The opener is about 71–86k. The later three-hit follows Heavenly Heel: the other tank takes it, properly mitigated, about 59–86k. The tank who took the heel does not take these. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
       "roles": {
         "tank": {"unmitigated_max": 110000, "lived": "about 71–86k"},
         "healer": {"unmitigated_max": 110000, "lived": "not a healer hit"},
@@ -299,7 +298,7 @@
       "phase": 2,
       "starts": 75,
       "skill": "dsr-heavenly-heel",
-      "summary": "The tank swap, about 81 seconds. The off tank provokes and takes Heavenly Heel. The main tank takes the three-hit Ascalon's Might. If the main tank dies to the heel because the off tank did not have aggro when it locked, that death is the off tank's. Anyone who is not a tank getting hit owns that mistake. An off tank who dies on the real heel without personal mitigation owns that death.",
+      "summary": "About 81 seconds. One tank takes Heavenly Heel, then the other tank takes the three Ascalon's Might hits. Both are properly mitigated, and the tanks swap. Anyone who is not a tank getting hit owns that mistake. A tank who dies on the real hit without personal mitigation owns that death. Sanctity of the Ward is next.",
       "parts": [
         {"id": "heavenly-heel"},
         {"id": "ascalons-might", "after": 50}

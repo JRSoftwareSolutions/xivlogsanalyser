@@ -45,11 +45,11 @@ def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
     if pack is None:
         raise SystemExit(f"No fight knowledge matches zone {sorted(zone_ids)} in {report.name}")
     facts = extract_report(report, pack)
-    judgments = judge_report(facts, pack, report)
+    judgments = judge_report(facts, pack)
     write_facts(report, facts)
     write_judgments(report, judgments)
     when = session_clock(report, meta)
-    payload = session_payload(judgments, pack, report.name, when)
+    payload = session_payload(judgments, pack, report.name, when, meta)
     judged = {pull["id"] for pull in payload["pulls"]}
     payload["overview"] = build_timeline(meta, when, judged)
     write_session_page(report, payload)

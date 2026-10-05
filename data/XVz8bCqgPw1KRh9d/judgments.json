@@ -1301,7 +1301,7 @@
     "mechanic": "Ascalon's Might",
     "outcome": "fail",
     "happened": "152,770 unmitigated \u00b7 HP 64,527 (65%) \u00b7 32% mit \u00b7 no shield \u00b7 Holy Sheltron from Absolute Gigachad, 15%; Rampart from Absolute Gigachad, 20%",
-    "should_have_been": "One tank takes the three hits, about 71\u201386k each. When the warrior takes it, he invulns it or heavy-mits it. The later three-hit is the main tank's, after the off tank takes Heavenly Heel. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
+    "should_have_been": "One tank takes the three hits with personal mitigation. The opener is about 71\u201386k. The later three-hit follows Heavenly Heel: the other tank takes it, properly mitigated, about 59\u201386k. The tank who took the heel does not take these. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
     "went_wrong": "Only one tank takes Ascalon's Might. Absolute Gigachad ate the extra hit (152,770)."
   },
   {
@@ -2994,7 +2994,7 @@
     "mechanic": "Heavenly Heel",
     "outcome": "fail",
     "happened": "250,619 unmitigated \u00b7 HP 16,476 (24%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The off tank takes Heavenly Heel. They provoke so they have aggro when it locks. The main tank takes the three-hit Ascalon's Might. A lived heel is about 159\u2013174k before mit, with Rampart and Sheltron. Anyone who is not a tank getting hit is their mistake. If the main tank dies because the off tank did not have aggro when it locked, that death is the off tank's. An off tank who dies to the real heel without personal mitigation owns that death.",
+    "should_have_been": "One tank takes Heavenly Heel with personal mitigation, then the other tank takes the three-hit Ascalon's Might, also with personal mitigation. A lived heel is about 159\u2013174k before mit. The tanks swap: the same tank does not take both. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real heel without personal mitigation owns that death.",
     "went_wrong": "Kiara Blaiddyd got Heavenly Heel. Only a tank takes this."
   },
   {
@@ -15518,8 +15518,8 @@
     "mechanic": "Heavenly Heel",
     "outcome": "fail",
     "happened": "165,404 unmitigated \u00b7 HP 61,710 (52%) \u00b7 10% mit \u00b7 shield 15,339 \u00b7 Desperate Measures from Spring Nymphar, 10%; Seraphic Veil from Spring Nymphar, shield 5,055; The Spire from Loki Doki, shield 10,284",
-    "should_have_been": "The off tank takes Heavenly Heel. They provoke so they have aggro when it locks. The main tank takes the three-hit Ascalon's Might. A lived heel is about 159\u2013174k before mit, with Rampart and Sheltron. Anyone who is not a tank getting hit is their mistake. If the main tank dies because the off tank did not have aggro when it locked, that death is the off tank's. An off tank who dies to the real heel without personal mitigation owns that death.",
-    "went_wrong": "Absolute Gigachad did not provoke for Heavenly Heel. They did not have aggro when it locked onto Absolute Gigalad."
+    "should_have_been": "One tank takes Heavenly Heel with personal mitigation, then the other tank takes the three-hit Ascalon's Might, also with personal mitigation. A lived heel is about 159\u2013174k before mit. The tanks swap: the same tank does not take both. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real heel without personal mitigation owns that death.",
+    "went_wrong": "Absolute Gigalad died to the real Heavenly Heel. Personal mitigation was not enough."
   },
   {
     "fight": 60,

@@ -7,7 +7,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, Mechanic
-from xivloganalyzer.extract import DeathFact, tank_pairs
+from xivloganalyzer.extract import DeathFact
 
 
 @dataclass
@@ -113,11 +113,7 @@ def _hit(fact: DeathFact) -> int:
     return fact.total
 
 
-def judge_fact(
-    fact: DeathFact,
-    pack: FightPack,
-    tanks: tuple[str | None, str | None] = (None, None),
-) -> Judgment:
+def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
     happened = ""
     if fact.guid == 0:
         return Judgment(
@@ -165,9 +161,6 @@ def judge_fact(
     if cap is None:
         return _done(fact, mechanic, happened, "unknown", "No fault assigned. This role is not covered yet.")
     if hit <= cap:
-        missed = _missed_offtank_provoke(fact, mechanic, tanks)
-        if missed:
-            return _done(fact, mechanic, happened, "fail", missed)
         if fact.hp is not None and fact.hp < pack.low_hp:
             return _done(
                 fact, mechanic, happened, "low",
@@ -184,24 +177,6 @@ def judge_fact(
     if mechanic.id == "skyward-leap":
         return _done(fact, mechanic, happened, "fail", _skyward_clip(fact, hit))
     return _done(fact, mechanic, happened, "fail", _oversized(fact, mechanic, hit))
-
-
-def _missed_offtank_provoke(
-    fact: DeathFact,
-    mechanic: Mechanic,
-    tanks: tuple[str | None, str | None],
-) -> str | None:
-    if not mechanic.off_tank_takes:
-        return None
-    main_tank, off_tank = tanks
-    if not main_tank or not off_tank or fact.name != main_tank:
-        return None
-    if fact.stack is not None and fact.stack > 1:
-        return None
-    return (
-        f"{off_tank} did not provoke for {mechanic.name}. "
-        f"They did not have aggro when it locked onto {fact.name}."
-    )
 
 
 def _personal_mit(fact: DeathFact, pack: FightPack) -> bool:
@@ -286,9 +261,8 @@ def _done(fact: DeathFact, mechanic: Mechanic, happened: str, outcome: str, wron
     )
 
 
-def judge_report(facts: list[DeathFact], pack: FightPack, report: Path | None = None) -> list[Judgment]:
-    pairs = tank_pairs(report, pack) if report is not None else {}
-    return [judge_fact(fact, pack, pairs.get(fact.fight, (None, None))) for fact in facts]
+def judge_report(facts: list[DeathFact], pack: FightPack) -> list[Judgment]:
+    return [judge_fact(fact, pack) for fact in facts]
 
 
 def write_judgments(report: Path, judgments: list[Judgment]) -> Path:

@@ -16,7 +16,7 @@ class ReferenceReportTest(unittest.TestCase):
     def test_settled_thordan_counts(self):
         pack = pack_for_zone(968, load_catalog(ROOT))
         facts = extract_report(REPORT, pack)
-        judgments = judge_report(facts, pack, REPORT)
+        judgments = judge_report(facts, pack)
         counts = Counter(item.outcome for item in judgments)
         self.assertEqual(counts["raw"], 183)
         self.assertEqual(counts["fail"], 137)
@@ -36,9 +36,7 @@ class ReferenceReportTest(unittest.TestCase):
         ]
         self.assertEqual(len(heel), 1)
         self.assertEqual(heel[0].outcome, "fail")
-        self.assertIn("Absolute Gigachad", heel[0].went_wrong)
-        self.assertIn("did not have aggro", heel[0].went_wrong)
-        self.assertIn("Absolute Gigalad", heel[0].went_wrong)
+        self.assertIn("Personal mitigation", heel[0].went_wrong)
         might = [
             item for item in judgments
             if item.fact.fight == 14 and item.mechanic == "Ascalon's Might"
