@@ -713,7 +713,7 @@
     "mechanic": "Holy Bladedance",
     "outcome": "low",
     "happened": "22,060 unmitigated \u00b7 HP 1,480 (1%) \u00b7 28% mit \u00b7 no shield",
-    "should_have_been": "The normal tank hit is about 12\u201322k.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 12\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Absolute Gigalad was already at 1,480. The hit itself is the normal one."
   },
   {
@@ -744,7 +744,7 @@
     "mechanic": "Holy Bladedance",
     "outcome": "low",
     "happened": "21,933 unmitigated \u00b7 HP 8,723 (9%) \u00b7 40% mit \u00b7 no shield",
-    "should_have_been": "The normal tank hit is about 12\u201322k.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 12\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Absolute Gigachad was already at 8,723. The hit itself is the normal one."
   },
   {
@@ -940,7 +940,7 @@
     "mechanic": "Heavy Impact",
     "outcome": "fail",
     "happened": "51,913 unmitigated \u00b7 HP 26,616 (43%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "Dodge rings. Clean pulls take 0. Both ability ids are this ring.",
+    "should_have_been": "The knight's pulses, outward. A hit stuns and applies Damage Down. Clean pulls take 0. Both ability ids are this ring.",
     "went_wrong": "Loki Doki failed Heavy Impact."
   },
   {
@@ -3884,7 +3884,7 @@
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
     "happened": "372,472 unmitigated \u00b7 HP 29,983 (44%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The normal tank hit is about 12\u201322k.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 12\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Kiara Blaiddyd had vulnerability or damage down. The amp is from a failed mechanic."
   },
   {
@@ -4492,7 +4492,7 @@
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "454,757 unmitigated \u00b7 HP 99,211 (100%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The bash that kills is the failed version, hundreds of thousands to millions.",
+    "should_have_been": "Each tank takes one tether, stretches it, and uses personal mitigation. A non-tank hit, or a short tether, is the failed bash: hundreds of thousands to millions.",
     "went_wrong": "Absolute Gigachad had vulnerability or damage down. The amp is from a failed mechanic."
   },
   {
@@ -4526,7 +4526,7 @@
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "526,983 unmitigated \u00b7 HP 118,362 (100%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The bash that kills is the failed version, hundreds of thousands to millions.",
+    "should_have_been": "Each tank takes one tether, stretches it, and uses personal mitigation. A non-tank hit, or a short tether, is the failed bash: hundreds of thousands to millions.",
     "went_wrong": "Absolute Gigalad had vulnerability or damage down. The amp is from a failed mechanic."
   },
   {
@@ -4645,7 +4645,7 @@
     "mechanic": "Dimensional Collapse",
     "outcome": "fail",
     "happened": "49,941 unmitigated \u00b7 HP 11,610 (17%) \u00b7 mit unknown \u00b7 shield 19,279",
-    "should_have_been": "No lived sample is stored yet, so any hit stays a fail until a baseline is added.",
+    "should_have_been": "Puddles on the floor during the second wave. A hit applies Heavy and Damage Down. Any hit is a mistake. No lived band is stored.",
     "went_wrong": "Speed Panda failed the Dimensional Collapse soak."
   },
   {
@@ -4709,7 +4709,7 @@
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "617,362 unmitigated \u00b7 HP 118,362 (100%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The bash that kills is the failed version, hundreds of thousands to millions.",
+    "should_have_been": "Each tank takes one tether, stretches it, and uses personal mitigation. A non-tank hit, or a short tether, is the failed bash: hundreds of thousands to millions.",
     "went_wrong": "Absolute Gigalad had vulnerability or damage down. The amp is from a failed mechanic."
   },
   {
@@ -4970,7 +4970,7 @@
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "4,228,180 unmitigated \u00b7 HP 43,837 (71%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The bash that kills is the failed version, hundreds of thousands to millions.",
+    "should_have_been": "Each tank takes one tether, stretches it, and uses personal mitigation. A non-tank hit, or a short tether, is the failed bash: hundreds of thousands to millions.",
     "went_wrong": "Kitana Kahn had vulnerability or damage down. The amp is from a failed mechanic."
   },
   {
@@ -5063,7 +5063,7 @@
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
     "happened": "231,857 unmitigated \u00b7 HP 118,362 (100%) \u00b7 no party mit \u00b7 shield 9,045",
-    "should_have_been": "The normal tank hit is about 12\u201322k.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 12\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Absolute Gigalad had vulnerability or damage down. The amp is from a failed mechanic."
   },
   {
@@ -5203,7 +5203,7 @@
     "mechanic": "Lightning Storm",
     "outcome": "fail",
     "happened": "467,734 unmitigated \u00b7 HP 68,218 (100%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "A clean spread is about 40k. Overlaps are several times that.",
+    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430\u2013470k, and both players own it.",
     "went_wrong": "Kite Noodle took 467,734, which is not the real Lightning Storm."
   },
   {
@@ -5287,7 +5287,7 @@
     "mechanic": "Lightning Storm",
     "outcome": "fail",
     "happened": "431,068 unmitigated \u00b7 HP 28,217 (46%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "A clean spread is about 40k. Overlaps are several times that.",
+    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430\u2013470k, and both players own it.",
     "went_wrong": "Spring Nymphar took 431,068, which is not the real Lightning Storm."
   },
   {
@@ -5679,7 +5679,7 @@
     "mechanic": "Heavy Impact",
     "outcome": "fail",
     "happened": "57,422 unmitigated \u00b7 HP 41,068 (60%) \u00b7 mit unknown \u00b7 shield 7,460",
-    "should_have_been": "Dodge rings. Clean pulls take 0. Both ability ids are this ring.",
+    "should_have_been": "The knight's pulses, outward. A hit stuns and applies Damage Down. Clean pulls take 0. Both ability ids are this ring.",
     "went_wrong": "Kite Noodle failed Heavy Impact."
   },
   {
@@ -5707,7 +5707,7 @@
     "mechanic": "Heavy Impact",
     "outcome": "fail",
     "happened": "51,618 unmitigated \u00b7 HP 30,199 (49%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "Dodge rings. Clean pulls take 0. Both ability ids are this ring.",
+    "should_have_been": "The knight's pulses, outward. A hit stuns and applies Damage Down. Clean pulls take 0. Both ability ids are this ring.",
     "went_wrong": "Loki Doki failed Heavy Impact."
   },
   {
@@ -6428,7 +6428,7 @@
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "4,126,915 unmitigated \u00b7 HP 20,915 (34%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The bash that kills is the failed version, hundreds of thousands to millions.",
+    "should_have_been": "Each tank takes one tether, stretches it, and uses personal mitigation. A non-tank hit, or a short tether, is the failed bash: hundreds of thousands to millions.",
     "went_wrong": "Loki Doki had vulnerability or damage down. The amp is from a failed mechanic."
   },
   {
@@ -7748,7 +7748,7 @@
     "mechanic": "Heavy Impact",
     "outcome": "fail",
     "happened": "51,692 unmitigated \u00b7 HP 33,245 (54%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "Dodge rings. Clean pulls take 0. Both ability ids are this ring.",
+    "should_have_been": "The knight's pulses, outward. A hit stuns and applies Damage Down. Clean pulls take 0. Both ability ids are this ring.",
     "went_wrong": "Spring Nymphar failed Heavy Impact."
   },
   {
@@ -8710,7 +8710,7 @@
     "mechanic": "Heavy Impact",
     "outcome": "fail",
     "happened": "53,221 unmitigated \u00b7 HP 46,506 (75%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "Dodge rings. Clean pulls take 0. Both ability ids are this ring.",
+    "should_have_been": "The knight's pulses, outward. A hit stuns and applies Damage Down. Clean pulls take 0. Both ability ids are this ring.",
     "went_wrong": "Kitana Kahn failed Heavy Impact."
   },
   {
@@ -10876,7 +10876,7 @@
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "1,093,894 unmitigated \u00b7 HP 99,211 (100%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The bash that kills is the failed version, hundreds of thousands to millions.",
+    "should_have_been": "Each tank takes one tether, stretches it, and uses personal mitigation. A non-tank hit, or a short tether, is the failed bash: hundreds of thousands to millions.",
     "went_wrong": "Absolute Gigachad had vulnerability or damage down. The amp is from a failed mechanic."
   },
   {
@@ -11856,7 +11856,7 @@
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "669,153 unmitigated \u00b7 HP 118,362 (100%) \u00b7 no party mit \u00b7 shield 45,394",
-    "should_have_been": "The bash that kills is the failed version, hundreds of thousands to millions.",
+    "should_have_been": "Each tank takes one tether, stretches it, and uses personal mitigation. A non-tank hit, or a short tether, is the failed bash: hundreds of thousands to millions.",
     "went_wrong": "Absolute Gigalad had vulnerability or damage down. The amp is from a failed mechanic."
   },
   {
@@ -12926,7 +12926,7 @@
     "mechanic": "Heavy Impact",
     "outcome": "fail",
     "happened": "52,463 unmitigated \u00b7 HP 31,987 (47%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "Dodge rings. Clean pulls take 0. Both ability ids are this ring.",
+    "should_have_been": "The knight's pulses, outward. A hit stuns and applies Damage Down. Clean pulls take 0. Both ability ids are this ring.",
     "went_wrong": "Kite Noodle failed Heavy Impact."
   },
   {
