@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thordan review — Dragonsong's Reprise</title>
+<style>
+  :root {
+    --bg: #f4f1ea;
+    --paper: #fffcf7;
+    --ink: #1c1915;
+    --muted: #5e584f;
+    --line: #e2dbd0;
+    --raw: #9a3412;
+    --raw-bg: #fff1e8;
+    --fail: #7c4a12;
+    --fail-bg: #fbf3e4;
+    --env: #3f4a57;
+    --env-bg: #eef2f5;
+    --ok: #1f5c45;
+    --ok-bg: #e7f4ee;
+    --accent: #243056;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.45 "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+  header {
+    display: flex; justify-content: space-between; gap: 16px;
+    align-items: flex-end; margin-bottom: 20px;
+  }
+  h1 { font-size: 28px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.03em; }
+  h2 { margin: 0 0 8px; font-size: 20px; }
+  .meta { color: var(--muted); margin: 0; }
+  a { color: var(--accent); }
+  .verdict {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--raw);
+    border-radius: 12px;
+    padding: 22px 24px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .count {
+    font-size: 64px; font-weight: 700; line-height: 0.9;
+    letter-spacing: -0.04em; color: var(--raw);
+  }
+  .count span {
+    display: block; font-size: 13px; font-weight: 650;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); margin-top: 6px;
+  }
+  .verdict p { margin: 0; color: var(--muted); }
+  section {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+  h3 {
+    margin: 0 0 12px; font-size: 13px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .who { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin-bottom: 8px; }
+  .who strong { font-size: 20px; }
+  .tag {
+    display: inline-block; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    padding: 3px 8px; border-radius: 999px; white-space: nowrap;
+  }
+  .tag.raw { background: var(--raw-bg); color: var(--raw); }
+  .tag.fail { background: var(--fail-bg); color: var(--fail); }
+  .tag.env { background: var(--env-bg); color: var(--env); }
+  .tag.ok { background: var(--ok-bg); color: var(--ok); }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 12px 0; }
+  .stat { background: #f7f4ee; border-radius: 8px; padding: 10px 12px; }
+  .stat b { display: block; font-size: 18px; letter-spacing: -0.02em; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 650; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .bar-row { display: grid; grid-template-columns: 168px 1fr 88px; gap: 8px; align-items: center; margin: 6px 0; font-size: 13px; }
+  .track { background: #efeae2; border-radius: 999px; height: 10px; overflow: hidden; }
+  .fill { height: 100%; border-radius: 999px; }
+  .fill.ok { background: #3d8f72; }
+  .fill.raw { background: #c2410c; }
+  .note { color: var(--muted); font-size: 14px; margin: 10px 0 0; }
+  .timeline { list-style: none; margin: 8px 0 0; padding: 0; }
+  .timeline li {
+    display: grid; grid-template-columns: 52px 1fr auto;
+    gap: 10px; align-items: start; padding: 8px 0; border-bottom: 1px solid var(--line);
+  }
+  .timeline li:last-child { border-bottom: 0; }
+  .time { font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 650; }
+  .job { color: var(--muted); font-size: 13px; }
+  .reason { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  details {
+    border-top: 1px solid var(--line); padding: 0;
+  }
+  details:last-child { border-bottom: 0; }
+  summary {
+    cursor: pointer; display: flex; gap: 12px; align-items: center;
+    padding: 10px 0; list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary .pull { font-weight: 700; min-width: 72px; }
+  summary .wipe, summary .dur { color: var(--muted); font-variant-numeric: tabular-nums; }
+  summary .tag { margin-left: auto; }
+  .pulls { padding-top: 0; padding-bottom: 8px; }
+  .pulls h3 { padding-top: 4px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  @media (max-width: 700px) {
+    .stats { grid-template-columns: 1fr 1fr; }
+    .verdict, header, .timeline li, summary { display: block; }
+    .count { margin-bottom: 8px; }
+    summary .tag { margin: 6px 0 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>Thordan, all 55 pulls</h1>
+      <p class="meta">Dragonsong's Reprise · Kite21 · 4 Oct 2026 · phase 2 only</p>
+    </div>
+    <p class="meta"><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=68&type=deaths">Open the log</a></p>
+  </header>
+
+  <div class="verdict">
+    <div class="count">188<span>raw deaths</span></div>
+    <div>
+      <h2>46 of 55 pulls have at least one</h2>
+      <p>121 of them are Eternal Conviction. That hit is about 64k on a tank and about 97k on everyone else, and in this log no healer or DPS survived it. Cones, rings, gazes, empty towers, ice fails, and million-damage cleaves are not in this number.</p>
+    </div>
+  </div>
+
+  <section>
+    <h3>By mechanic</h3>
+    <table>
+      <thead>
+        <tr><th>Killing blow</th><th class="num">Raw</th><th>What gets lived</th><th>What killed them</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Eternal Conviction</td><td class="num">121</td>
+          <td>Tanks live it at 61–67k. No non-tank in these pulls lived it.</td>
+          <td>Non-tanks take 90–108k of the same cast. Tanks who die are in the 61–68k band and were low.</td>
+        </tr>
+        <tr>
+          <td>Sacred Sever</td><td class="num">36</td>
+          <td>A 4-person share people live is about 35–63k.</td>
+          <td>That same share into someone around 33k HP, or a stack of 1–2 around 85–104k.</td>
+        </tr>
+        <tr>
+          <td>Holy Impact</td><td class="num">21</td>
+          <td>Tanks live it at 61–67k.</td>
+          <td>Same shape as Conviction. Pulls 66 and 67 are the whole party, no shield, no party mit.</td>
+        </tr>
+        <tr>
+          <td>Dragon's Rage</td><td class="num">5</td>
+          <td>About 60–80k on a stack of 5.</td>
+          <td>Stack of 3, about 102–113k, mostly from full HP. Shields of 9–28k were up.</td>
+        </tr>
+        <tr>
+          <td>Skyward Leap</td><td class="num">4</td>
+          <td>A real tower is 59–70k. 33 soaks were lived.</td>
+          <td>Towers in that band with little or no shield. Includes Kitana on pull 68.</td>
+        </tr>
+        <tr>
+          <td>Heavenly Heel</td><td class="num">1</td>
+          <td>Tanks who live it take 159–174k before mit.</td>
+          <td>Gigalad, pull 60, 165k before mit, only 10% mit, 15k shield, 62k HP.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">A short stack is counted when the hit scales with the missing bodies and stays in that predicted band. A hit several times larger than anything lived, or a cone, ring, or gaze, is a failed mechanic.</p>
+  </section>
+
+  <section>
+    <h3>Eternal Conviction · 121</h3>
+    <div class="stats">
+      <div class="stat"><b>98</b><span>Healers and DPS. Hit about 90–108k.</span></div>
+      <div class="stat"><b>23</b><span>Tanks. Same 61–68k the tanks who live it take.</span></div>
+      <div class="stat"><b>108</b><span>Had under 1,000 shield.</span></div>
+      <div class="stat"><b>74</b><span>No party mit on the packet. 41 were above 55k HP.</span></div>
+    </div>
+    <div class="bar-row"><span>Tank, lived median</span><div class="track"><div class="fill ok" style="width:58%"></div></div><span>64k</span></div>
+    <div class="bar-row"><span>Non-tank health</span><div class="track"><div class="fill ok" style="width:59%"></div></div><span>~62–68k</span></div>
+    <div class="bar-row"><span>Non-tank, this log</span><div class="track"><div class="fill raw" style="width:88%"></div></div><span>97k</span></div>
+    <p class="note">Bars are scaled to 110k. Tanks live the cast because their hit is about 64k. A non-tank takes about 97k into a 62–68k health bar, so without a large shield it kills from full. Across these 55 pulls, that survival did not happen. The deaths sit in one tight band, which is the defense difference, not a second failed version of the mechanic.</p>
+    <details>
+      <summary>All 121 conviction deaths</summary>
+      
+    <table>
+      <thead>
+        <tr>
+          <th>Pull</th><th class="num">Time</th><th>Who</th>
+          <th class="num">HP</th><th class="num">Unmitigated</th>
+          <th class="num">Mit</th><th class="num">Shield</th><th class="num">Stack</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=11&type=deaths">11</a></td><td class="num">2:18</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">23,850 · 20%</td><td class="num">67,905</td><td class="num">none</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=14&type=deaths">14</a></td><td class="num">2:18</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">28,034 · 41%</td><td class="num">105,251</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=15&type=deaths">15</a></td><td class="num">2:18</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">28,873 · 47%</td><td class="num">90,727</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=15&type=deaths">15</a></td><td class="num">2:18</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">58,946 · 86%</td><td class="num">97,404</td><td class="num">10%</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=15&type=deaths">15</a></td><td class="num">2:18</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">40,945 · 60%</td><td class="num">103,015</td><td class="num">10%</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=15&type=deaths">15</a></td><td class="num">2:18</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">39,213 · 33%</td><td class="num">63,749</td><td class="num">10%</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=16&type=deaths">16</a></td><td class="num">1:05</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">42,122 · 61%</td><td class="num">104,023</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=16&type=deaths">16</a></td><td class="num">1:05</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">61,737 · 100%</td><td class="num">99,378</td><td class="num">10%</td><td class="num">18,521</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=16&type=deaths">16</a></td><td class="num">1:05</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">40,787 · 60%</td><td class="num">102,419</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=16&type=deaths">16</a></td><td class="num">1:06</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">29,848 · 25%</td><td class="num">61,975</td><td class="num">28%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=16&type=deaths">16</a></td><td class="num">1:06</td><td>Loki Doki <span class="job">AST</span></td><td class="num">51,451 · 83%</td><td class="num">98,220</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=16&type=deaths">16</a></td><td class="num">1:06</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">67,268 · 99%</td><td class="num">96,018</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=18&type=deaths">18</a></td><td class="num">1:06</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">39,774 · 58%</td><td class="num">98,810</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=18&type=deaths">18</a></td><td class="num">1:06</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">57,188 · 93%</td><td class="num">90,953</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=18&type=deaths">18</a></td><td class="num">1:07</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">52,809 · 77%</td><td class="num">100,902</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=18&type=deaths">18</a></td><td class="num">1:07</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">31,863 · 52%</td><td class="num">98,959</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=18&type=deaths">18</a></td><td class="num">1:07</td><td>Loki Doki <span class="job">AST</span></td><td class="num">30,633 · 49%</td><td class="num">92,456</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=19&type=deaths">19</a></td><td class="num">1:06</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">36,744 · 31%</td><td class="num">64,327</td><td class="num">28%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=19&type=deaths">19</a></td><td class="num">1:06</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">17,290 · 17%</td><td class="num">65,261</td><td class="num">46%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=19&type=deaths">19</a></td><td class="num">1:07</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">16,817 · 25%</td><td class="num">96,393</td><td class="num">10%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=19&type=deaths">19</a></td><td class="num">1:07</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">22,711 · 33%</td><td class="num">103,225</td><td class="num">10%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=21&type=deaths">21</a></td><td class="num">1:07</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">15,109 · 13%</td><td class="num">67,417</td><td class="num">28%</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=22&type=deaths">22</a></td><td class="num">2:18</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">54,174 · 79%</td><td class="num">98,317</td><td class="num">none</td><td class="num">0</td><td class="num">3</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=22&type=deaths">22</a></td><td class="num">2:18</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">68,218 · 100%</td><td class="num">98,018</td><td class="num">none</td><td class="num">0</td><td class="num">3</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=24&type=deaths">24</a></td><td class="num">1:06</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">61,615 · 100%</td><td class="num">90,178</td><td class="num">19%</td><td class="num">7,379</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=24&type=deaths">24</a></td><td class="num">1:06</td><td>Loki Doki <span class="job">AST</span></td><td class="num">62,101 · 100%</td><td class="num">101,036</td><td class="num">19%</td><td class="num">7,393</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=24&type=deaths">24</a></td><td class="num">1:07</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">61,737 · 100%</td><td class="num">96,240</td><td class="num">10%</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=24&type=deaths">24</a></td><td class="num">1:07</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">68,662 · 100%</td><td class="num">108,204</td><td class="num">19%</td><td class="num">7,401</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=24&type=deaths">24</a></td><td class="num">1:07</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">68,259 · 100%</td><td class="num">105,017</td><td class="num">19%</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=24&type=deaths">24</a></td><td class="num">1:07</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">60,244 · 88%</td><td class="num">105,266</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=26&type=deaths">26</a></td><td class="num">2:18</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">37,912 · 55%</td><td class="num">104,474</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=26&type=deaths">26</a></td><td class="num">2:18</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">27,608 · 28%</td><td class="num">61,885</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=26&type=deaths">26</a></td><td class="num">2:18</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">45,900 · 67%</td><td class="num">96,635</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=28&type=deaths">28</a></td><td class="num">1:06</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">43,329 · 70%</td><td class="num">94,584</td><td class="num">14%</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=29&type=deaths">29</a></td><td class="num">1:06</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">61,328 · 100%</td><td class="num">96,782</td><td class="num">none</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=32&type=deaths">32</a></td><td class="num">2:18</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">18,618 · 16%</td><td class="num">63,094</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=32&type=deaths">32</a></td><td class="num">2:18</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">29,184 · 43%</td><td class="num">103,465</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=32&type=deaths">32</a></td><td class="num">2:18</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">30,950 · 45%</td><td class="num">103,155</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=32&type=deaths">32</a></td><td class="num">2:18</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">28,346 · 29%</td><td class="num">65,634</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=37&type=deaths">37</a></td><td class="num">2:18</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">20,047 · 17%</td><td class="num">65,620</td><td class="num">none</td><td class="num">0</td><td class="num">3</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=37&type=deaths">37</a></td><td class="num">2:18</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">35,104 · 51%</td><td class="num">98,561</td><td class="num">none</td><td class="num">0</td><td class="num">3</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=37&type=deaths">37</a></td><td class="num">2:19</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">26,408 · 27%</td><td class="num">67,020</td><td class="num">none</td><td class="num">0</td><td class="num">3</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=39&type=deaths">39</a></td><td class="num">2:18</td><td>Loki Doki <span class="job">AST</span></td><td class="num">38,619 · 62%</td><td class="num">86,279</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=39&type=deaths">39</a></td><td class="num">2:18</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">46,291 · 75%</td><td class="num">95,170</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=39&type=deaths">39</a></td><td class="num">2:18</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">31,800 · 52%</td><td class="num">92,919</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=39&type=deaths">39</a></td><td class="num">2:18</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">17,949 · 26%</td><td class="num">96,319</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=39&type=deaths">39</a></td><td class="num">2:19</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">39,426 · 40%</td><td class="num">63,125</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=39&type=deaths">39</a></td><td class="num">2:19</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">29,086 · 25%</td><td class="num">61,360</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=40&type=deaths">40</a></td><td class="num">2:18</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">54,876 · 80%</td><td class="num">101,844</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=40&type=deaths">40</a></td><td class="num">2:18</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">39,465 · 64%</td><td class="num">92,284</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=40&type=deaths">40</a></td><td class="num">2:19</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">56,329 · 82%</td><td class="num">102,467</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=40&type=deaths">40</a></td><td class="num">2:19</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">27,943 · 28%</td><td class="num">62,643</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=40&type=deaths">40</a></td><td class="num">2:19</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">58,133 · 94%</td><td class="num">93,480</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=40&type=deaths">40</a></td><td class="num">2:19</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">27,911 · 24%</td><td class="num">63,676</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=41&type=deaths">41</a></td><td class="num">2:18</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">55,193 · 80%</td><td class="num">99,183</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=41&type=deaths">41</a></td><td class="num">2:18</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">49,995 · 73%</td><td class="num">99,941</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=41&type=deaths">41</a></td><td class="num">2:18</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">42,120 · 68%</td><td class="num">96,698</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=41&type=deaths">41</a></td><td class="num">2:19</td><td>Loki Doki <span class="job">AST</span></td><td class="num">34,221 · 55%</td><td class="num">96,575</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=42&type=deaths">42</a></td><td class="num">1:07</td><td>Loki Doki <span class="job">AST</span></td><td class="num">25,749 · 41%</td><td class="num">90,335</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=42&type=deaths">42</a></td><td class="num">1:07</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">45,122 · 66%</td><td class="num">96,264</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=42&type=deaths">42</a></td><td class="num">1:07</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">53,587 · 79%</td><td class="num">104,527</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=42&type=deaths">42</a></td><td class="num">1:07</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">42,778 · 62%</td><td class="num">102,345</td><td class="num">10%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=42&type=deaths">42</a></td><td class="num">1:07</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">40,827 · 66%</td><td class="num">90,062</td><td class="num">10%</td><td class="num">18,521</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=43&type=deaths">43</a></td><td class="num">2:18</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">68,218 · 100%</td><td class="num">100,039</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=43&type=deaths">43</a></td><td class="num">2:18</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">35,445 · 58%</td><td class="num">90,644</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=43&type=deaths">43</a></td><td class="num">2:18</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">34,121 · 50%</td><td class="num">96,783</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=43&type=deaths">43</a></td><td class="num">2:19</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">15,224 · 15%</td><td class="num">64,160</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=43&type=deaths">43</a></td><td class="num">2:19</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">19,377 · 16%</td><td class="num">62,089</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=44&type=deaths">44</a></td><td class="num">2:18</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">36,866 · 54%</td><td class="num">100,442</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=47&type=deaths">47</a></td><td class="num">1:07</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">61,615 · 100%</td><td class="num">94,986</td><td class="num">14%</td><td class="num">8,032</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=47&type=deaths">47</a></td><td class="num">1:07</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">61,737 · 100%</td><td class="num">102,615</td><td class="num">14%</td><td class="num">7,873</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=47&type=deaths">47</a></td><td class="num">1:07</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">54,148 · 79%</td><td class="num">104,166</td><td class="num">14%</td><td class="num">6,111</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=47&type=deaths">47</a></td><td class="num">1:07</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">68,662 · 100%</td><td class="num">107,400</td><td class="num">14%</td><td class="num">13,230</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=47&type=deaths">47</a></td><td class="num">1:07</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">58,010 · 85%</td><td class="num">102,757</td><td class="num">14%</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=47&type=deaths">47</a></td><td class="num">1:08</td><td>Loki Doki <span class="job">AST</span></td><td class="num">57,475 · 93%</td><td class="num">94,930</td><td class="num">14%</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=48&type=deaths">48</a></td><td class="num">2:18</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">30,157 · 44%</td><td class="num">105,319</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=48&type=deaths">48</a></td><td class="num">2:18</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">31,746 · 47%</td><td class="num">102,272</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=48&type=deaths">48</a></td><td class="num">2:18</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">17,240 · 17%</td><td class="num">66,275</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=48&type=deaths">48</a></td><td class="num">2:18</td><td>Loki Doki <span class="job">AST</span></td><td class="num">38,076 · 61%</td><td class="num">95,856</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=48&type=deaths">48</a></td><td class="num">2:19</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">35,581 · 30%</td><td class="num">61,723</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=51&type=deaths">51</a></td><td class="num">1:07</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">26,667 · 39%</td><td class="num">105,736</td><td class="num">14%</td><td class="num">13,461</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=51&type=deaths">51</a></td><td class="num">1:07</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">35,193 · 57%</td><td class="num">93,706</td><td class="num">5%</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=51&type=deaths">51</a></td><td class="num">1:07</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">37,216 · 55%</td><td class="num">107,270</td><td class="num">5%</td><td class="num">16,441</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=51&type=deaths">51</a></td><td class="num">1:07</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">37,366 · 55%</td><td class="num">102,690</td><td class="num">14%</td><td class="num">13,435</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=51&type=deaths">51</a></td><td class="num">1:07</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">48,529 · 79%</td><td class="num">103,470</td><td class="num">5%</td><td class="num">16,688</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=52&type=deaths">52</a></td><td class="num">1:07</td><td>Loki Doki <span class="job">AST</span></td><td class="num">56,096 · 90%</td><td class="num">89,989</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=57&type=deaths">57</a></td><td class="num">2:19</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">60,529 · 89%</td><td class="num">100,198</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=57&type=deaths">57</a></td><td class="num">2:19</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">60,100 · 88%</td><td class="num">104,798</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=57&type=deaths">57</a></td><td class="num">2:19</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">61,737 · 100%</td><td class="num">93,758</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=57&type=deaths">57</a></td><td class="num">2:19</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">68,218 · 100%</td><td class="num">100,531</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=57&type=deaths">57</a></td><td class="num">2:20</td><td>Loki Doki <span class="job">AST</span></td><td class="num">62,101 · 100%</td><td class="num">92,741</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=57&type=deaths">57</a></td><td class="num">2:20</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">61,615 · 100%</td><td class="num">90,319</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=58&type=deaths">58</a></td><td class="num">2:19</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">62,050 · 91%</td><td class="num">97,684</td><td class="num">10%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=58&type=deaths">58</a></td><td class="num">2:19</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">61,615 · 100%</td><td class="num">91,040</td><td class="num">19%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=58&type=deaths">58</a></td><td class="num">2:19</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">45,278 · 38%</td><td class="num">62,734</td><td class="num">19%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=58&type=deaths">58</a></td><td class="num">2:19</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">66,047 · 96%</td><td class="num">105,655</td><td class="num">19%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=58&type=deaths">58</a></td><td class="num">2:19</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">46,584 · 75%</td><td class="num">98,154</td><td class="num">10%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=58&type=deaths">58</a></td><td class="num">2:19</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">43,795 · 44%</td><td class="num">64,302</td><td class="num">10%</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=59&type=deaths">59</a></td><td class="num">1:07</td><td>Loki Doki <span class="job">AST</span></td><td class="num">51,283 · 83%</td><td class="num">96,776</td><td class="num">10%</td><td class="num">0</td><td class="num">3</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=59&type=deaths">59</a></td><td class="num">1:07</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">56,165 · 91%</td><td class="num">95,365</td><td class="num">none</td><td class="num">0</td><td class="num">3</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=59&type=deaths">59</a></td><td class="num">1:07</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">41,661 · 35%</td><td class="num">65,991</td><td class="num">28%</td><td class="num">0</td><td class="num">3</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=61&type=deaths">61</a></td><td class="num">2:19</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">60,960 · 89%</td><td class="num">91,600</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=61&type=deaths">61</a></td><td class="num">2:19</td><td>Loki Doki <span class="job">AST</span></td><td class="num">40,478 · 65%</td><td class="num">93,892</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=61&type=deaths">61</a></td><td class="num">2:19</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">62,027 · 90%</td><td class="num">98,304</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=61&type=deaths">61</a></td><td class="num">2:19</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">32,264 · 52%</td><td class="num">97,585</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=62&type=deaths">62</a></td><td class="num">2:18</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">56,476 · 82%</td><td class="num">100,713</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=62&type=deaths">62</a></td><td class="num">2:18</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">66,566 · 98%</td><td class="num">105,178</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=62&type=deaths">62</a></td><td class="num">2:19</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">55,471 · 90%</td><td class="num">96,125</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=62&type=deaths">62</a></td><td class="num">2:19</td><td>Loki Doki <span class="job">AST</span></td><td class="num">54,139 · 87%</td><td class="num">97,860</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=62&type=deaths">62</a></td><td class="num">2:19</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">61,852 · 91%</td><td class="num">104,299</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=63&type=deaths">63</a></td><td class="num">1:07</td><td>Loki Doki <span class="job">AST</span></td><td class="num">39,410 · 63%</td><td class="num">97,424</td><td class="num">none</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=64&type=deaths">64</a></td><td class="num">2:19</td><td>Loki Doki <span class="job">AST</span></td><td class="num">60,438 · 97%</td><td class="num">94,206</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=64&type=deaths">64</a></td><td class="num">2:19</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">66,539 · 97%</td><td class="num">100,029</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=64&type=deaths">64</a></td><td class="num">2:19</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">58,018 · 85%</td><td class="num">98,164</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=64&type=deaths">64</a></td><td class="num">2:20</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">40,362 · 66%</td><td class="num">99,261</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=64&type=deaths">64</a></td><td class="num">2:20</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">47,337 · 77%</td><td class="num">97,701</td><td class="num">none</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=65&type=deaths">65</a></td><td class="num">2:19</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">52,805 · 77%</td><td class="num">97,824</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=65&type=deaths">65</a></td><td class="num">2:19</td><td>Loki Doki <span class="job">AST</span></td><td class="num">29,847 · 48%</td><td class="num">99,338</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=65&type=deaths">65</a></td><td class="num">2:19</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">30,576 · 45%</td><td class="num">97,070</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=65&type=deaths">65</a></td><td class="num">2:19</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">38,185 · 56%</td><td class="num">100,827</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=65&type=deaths">65</a></td><td class="num">2:19</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">21,983 · 19%</td><td class="num">66,880</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+      </tbody>
+    </table>
+    </details>
+  </section>
+
+  <section>
+    <h3>Sacred Sever · 36</h3>
+    <p class="note" style="margin-top:0">People live a full share at about 35–63k (DPS median about 43k). Most of these deaths are that hit into someone around 20–45k HP, with no shield. Twenty-one more Sacred Severs were cleaves in the millions and are excluded.</p>
+    <p class="note">Short shares: Gigachad pull 10 took 102,145 alone (usual stack is 4) from full HP. Gigalad pull 34 took 104,442 alone at 16k HP. Loki pull 11 took 87,600 in a stack of 2. Kite pull 35 took 81,519 on a full share of 4, from full HP. Lived 4-shares top out around 63k, so that one is the hot end of a real share.</p>
+    <details>
+      <summary>All 36 sever deaths</summary>
+      
+    <table>
+      <thead>
+        <tr>
+          <th>Pull</th><th class="num">Time</th><th>Who</th>
+          <th class="num">HP</th><th class="num">Unmitigated</th>
+          <th class="num">Mit</th><th class="num">Shield</th><th class="num">Stack</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=10&type=deaths">10</a></td><td class="num">1:57</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">99,211 · 100%</td><td class="num">102,145</td><td class="num">none</td><td class="num">0</td><td class="num">1 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=11&type=deaths">11</a></td><td class="num">1:56</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">25,358 · 41%</td><td class="num">35,368</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=11&type=deaths">11</a></td><td class="num">1:56</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">26,467 · 39%</td><td class="num">32,799</td><td class="num">none</td><td class="num">0</td><td class="num">5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=11&type=deaths">11</a></td><td class="num">1:59</td><td>Loki Doki <span class="job">AST</span></td><td class="num">23,135 · 37%</td><td class="num">87,600</td><td class="num">none</td><td class="num">0</td><td class="num">2 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=14&type=deaths">14</a></td><td class="num">2:00</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">45,306 · 66%</td><td class="num">55,664</td><td class="num">none</td><td class="num">0</td><td class="num">3 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=14&type=deaths">14</a></td><td class="num">2:00</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">44,805 · 73%</td><td class="num">58,737</td><td class="num">none</td><td class="num">0</td><td class="num">3 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=17&type=deaths">17</a></td><td class="num">1:58</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">28,456 · 46%</td><td class="num">45,821</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=17&type=deaths">17</a></td><td class="num">1:58</td><td>Loki Doki <span class="job">AST</span></td><td class="num">39,875 · 64%</td><td class="num">42,408</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=17&type=deaths">17</a></td><td class="num">1:58</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">39,503 · 58%</td><td class="num">43,755</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=17&type=deaths">17</a></td><td class="num">1:59</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">28,502 · 42%</td><td class="num">42,993</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=17&type=deaths">17</a></td><td class="num">1:59</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">28,734 · 42%</td><td class="num">42,171</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=17&type=deaths">17</a></td><td class="num">1:59</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">21,089 · 34%</td><td class="num">46,553</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=20&type=deaths">20</a></td><td class="num">1:58</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">29,100 · 43%</td><td class="num">43,076</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=20&type=deaths">20</a></td><td class="num">1:58</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">29,872 · 48%</td><td class="num">42,974</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=20&type=deaths">20</a></td><td class="num">1:58</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">30,119 · 44%</td><td class="num">40,878</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=20&type=deaths">20</a></td><td class="num">1:59</td><td>Loki Doki <span class="job">AST</span></td><td class="num">21,297 · 34%</td><td class="num">42,790</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=20&type=deaths">20</a></td><td class="num">1:59</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">29,896 · 44%</td><td class="num">43,717</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=20&type=deaths">20</a></td><td class="num">1:59</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">21,784 · 35%</td><td class="num">44,097</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=26&type=deaths">26</a></td><td class="num">1:59</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">39,106 · 63%</td><td class="num">43,815</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=26&type=deaths">26</a></td><td class="num">1:59</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">37,260 · 60%</td><td class="num">46,262</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=32&type=deaths">32</a></td><td class="num">1:57</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">43,916 · 71%</td><td class="num">45,264</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=32&type=deaths">32</a></td><td class="num">1:57</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">33,345 · 54%</td><td class="num">45,222</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=34&type=deaths">34</a></td><td class="num">1:59</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">16,420 · 14%</td><td class="num">104,442</td><td class="num">none</td><td class="num">0</td><td class="num">1 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=35&type=deaths">35</a></td><td class="num">1:54</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">68,218 · 100%</td><td class="num">81,519</td><td class="num">none</td><td class="num">9,921</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=41&type=deaths">41</a></td><td class="num">2:00</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">44,659 · 72%</td><td class="num">46,752</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=43&type=deaths">43</a></td><td class="num">1:59</td><td>Loki Doki <span class="job">AST</span></td><td class="num">25,521 · 41%</td><td class="num">45,895</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=44&type=deaths">44</a></td><td class="num">1:56</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">40,738 · 66%</td><td class="num">67,071</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=44&type=deaths">44</a></td><td class="num">2:00</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">58,711 · 95%</td><td class="num">59,646</td><td class="num">none</td><td class="num">0</td><td class="num">3 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=49&type=deaths">49</a></td><td class="num">1:59</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">36,214 · 53%</td><td class="num">53,729</td><td class="num">10%</td><td class="num">0</td><td class="num">3 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=49&type=deaths">49</a></td><td class="num">2:00</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">26,545 · 43%</td><td class="num">59,754</td><td class="num">10%</td><td class="num">18,521</td><td class="num">3 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=50&type=deaths">50</a></td><td class="num">1:58</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">42,674 · 69%</td><td class="num">43,495</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=50&type=deaths">50</a></td><td class="num">1:59</td><td>Loki Doki <span class="job">AST</span></td><td class="num">28,663 · 46%</td><td class="num">57,632</td><td class="num">none</td><td class="num">0</td><td class="num">3 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=50&type=deaths">50</a></td><td class="num">1:59</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">40,436 · 59%</td><td class="num">58,431</td><td class="num">none</td><td class="num">0</td><td class="num">3 of 4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=60&type=deaths">60</a></td><td class="num">1:57</td><td>Loki Doki <span class="job">AST</span></td><td class="num">32,683 · 53%</td><td class="num">42,834</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=60&type=deaths">60</a></td><td class="num">1:58</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">36,551 · 59%</td><td class="num">46,519</td><td class="num">none</td><td class="num">0</td><td class="num">4</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=60&type=deaths">60</a></td><td class="num">1:59</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">39,862 · 65%</td><td class="num">60,455</td><td class="num">10%</td><td class="num">0</td><td class="num">3 of 4</td></tr>
+      </tbody>
+    </table>
+    </details>
+  </section>
+
+  <section>
+    <h3>Holy Impact · 21</h3>
+    <p class="note" style="margin-top:0">Same pattern as Conviction. Tanks take about 61–67k and sometimes live it. Everyone else takes about 95–103k. Shields on these deaths are 0, and party mit on the packet is none. Pulls 66, 67 are the full party eating it.</p>
+    <details>
+      <summary>All 21 holy impact deaths</summary>
+      
+    <table>
+      <thead>
+        <tr>
+          <th>Pull</th><th class="num">Time</th><th>Who</th>
+          <th class="num">HP</th><th class="num">Unmitigated</th>
+          <th class="num">Mit</th><th class="num">Shield</th><th class="num">Stack</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=41&type=deaths">41</a></td><td class="num">2:24</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">27,007 · 23%</td><td class="num">62,877</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=57&type=deaths">57</a></td><td class="num">2:24</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">40,862 · 41%</td><td class="num">66,262</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=57&type=deaths">57</a></td><td class="num">2:24</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">36,631 · 31%</td><td class="num">62,057</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=62&type=deaths">62</a></td><td class="num">2:24</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">53,067 · 53%</td><td class="num">61,464</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=62&type=deaths">62</a></td><td class="num">2:24</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">41,810 · 35%</td><td class="num">66,163</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=64&type=deaths">64</a></td><td class="num">2:25</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">40,426 · 34%</td><td class="num">66,034</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=64&type=deaths">64</a></td><td class="num">2:25</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">36,067 · 36%</td><td class="num">64,621</td><td class="num">none</td><td class="num">0</td><td class="num">2</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=66&type=deaths">66</a></td><td class="num">2:30</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">51,567 · 84%</td><td class="num">96,406</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=66&type=deaths">66</a></td><td class="num">2:30</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">55,309 · 81%</td><td class="num">99,506</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=66&type=deaths">66</a></td><td class="num">2:30</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">30,579 · 26%</td><td class="num">67,185</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=66&type=deaths">66</a></td><td class="num">2:30</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">47,840 · 70%</td><td class="num">101,637</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=66&type=deaths">66</a></td><td class="num">2:30</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">36,771 · 37%</td><td class="num">62,007</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=66&type=deaths">66</a></td><td class="num">2:30</td><td>Loki Doki <span class="job">AST</span></td><td class="num">46,860 · 75%</td><td class="num">98,025</td><td class="num">none</td><td class="num">0</td><td class="num">6</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=67&type=deaths">67</a></td><td class="num">2:22</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">68,259 · 100%</td><td class="num">102,819</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=67&type=deaths">67</a></td><td class="num">2:22</td><td>Loki Doki <span class="job">AST</span></td><td class="num">62,101 · 100%</td><td class="num">90,179</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=67&type=deaths">67</a></td><td class="num">2:23</td><td>Absolute Gigalad <span class="job">WAR</span></td><td class="num">27,588 · 23%</td><td class="num">63,911</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=67&type=deaths">67</a></td><td class="num">2:23</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">68,662 · 100%</td><td class="num">100,103</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=67&type=deaths">67</a></td><td class="num">2:23</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">68,218 · 100%</td><td class="num">95,491</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=67&type=deaths">67</a></td><td class="num">2:23</td><td>Spring Nymphar <span class="job">SCH</span></td><td class="num">61,615 · 100%</td><td class="num">90,104</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=67&type=deaths">67</a></td><td class="num">2:23</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">50,630 · 82%</td><td class="num">97,509</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=67&type=deaths">67</a></td><td class="num">2:23</td><td>Absolute Gigachad <span class="job">PLD</span></td><td class="num">51,966 · 52%</td><td class="num">60,719</td><td class="num">none</td><td class="num">0</td><td class="num">8</td></tr>
+      </tbody>
+    </table>
+    </details>
+  </section>
+
+  <section>
+    <h3>Dragon's Rage · 5</h3>
+    <p class="note" style="margin-top:0">Lived hits are about 60–80k, usually 5 people. These five are stacks of 3 at 102–113k, which is what a 5-share looks like with two bodies missing. Four of the five were above 55k HP, and shields of 9–28k were on them. Hits over 200k on this ability are excluded.</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Pull</th><th class="num">Time</th><th>Who</th>
+          <th class="num">HP</th><th class="num">Unmitigated</th>
+          <th class="num">Mit</th><th class="num">Shield</th><th class="num">Stack</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=12&type=deaths">12</a></td><td class="num">1:01</td><td>Loki Doki <span class="job">AST</span></td><td class="num">54,855 · 88%</td><td class="num">101,856</td><td class="num">none</td><td class="num">9,110</td><td class="num">3 of 5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=19&type=deaths">19</a></td><td class="num">1:01</td><td>Kite Noodle <span class="job">NIN</span></td><td class="num">68,218 · 100%</td><td class="num">110,027</td><td class="num">10%</td><td class="num">28,138</td><td class="num">3 of 5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=19&type=deaths">19</a></td><td class="num">1:01</td><td>Loki Doki <span class="job">AST</span></td><td class="num">62,101 · 100%</td><td class="num">108,316</td><td class="num">10%</td><td class="num">8,827</td><td class="num">3 of 5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=51&type=deaths">51</a></td><td class="num">1:02</td><td>Loki Doki <span class="job">AST</span></td><td class="num">62,101 · 100%</td><td class="num">106,874</td><td class="num">14%</td><td class="num">25,780</td><td class="num">3 of 5</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=52&type=deaths">52</a></td><td class="num">1:01</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">64,900 · 95%</td><td class="num">113,372</td><td class="num">none</td><td class="num">19,975</td><td class="num">3 of 5</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h3>Skyward Leap · 4</h3>
+    <p class="note" style="margin-top:0">33 soaks across the pulls that placed the towers were lived at 59–70k unmitigated, usually with 5–10% mit and 13–39k of shield, so about 23–46k actually reached HP. These four are the same tower with the shield missing. Empty towers around 600–760k are excluded (13 of those).</p>
+    <div class="bar-row"><span>Typical damage to HP</span><div class="track"><div class="fill ok" style="width:48%"></div></div><span>~31k</span></div>
+    <div class="bar-row"><span>Roughest lived soak</span><div class="track"><div class="fill ok" style="width:79%"></div></div><span>54k</span></div>
+    <div class="bar-row"><span>These four deaths</span><div class="track"><div class="fill raw" style="width:100%"></div></div><span>65–69k</span></div>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Pull</th><th class="num">Time</th><th>Who</th>
+          <th class="num">HP</th><th class="num">Unmitigated</th>
+          <th class="num">Mit</th><th class="num">Shield</th><th class="num">Stack</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=13&type=deaths">13</a></td><td class="num">1:01</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">36,457 · 53%</td><td class="num">66,170</td><td class="num">10%</td><td class="num">0</td><td class="num">tower</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=18&type=deaths">18</a></td><td class="num">1:01</td><td>Kiara Blaiddyd <span class="job">DNC</span></td><td class="num">51,175 · 75%</td><td class="num">69,160</td><td class="num">10%</td><td class="num">9,011</td><td class="num">tower</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=25&type=deaths">25</a></td><td class="num">1:01</td><td>Speed Panda <span class="job">VPR</span></td><td class="num">48,117 · 70%</td><td class="num">65,954</td><td class="num">10%</td><td class="num">0</td><td class="num">tower</td></tr>
+<tr><td><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=68&type=deaths">68</a></td><td class="num">1:01</td><td>Kitana Kahn <span class="job">BLM</span></td><td class="num">61,737 · 100%</td><td class="num">64,954</td><td class="num">none</td><td class="num">0</td><td class="num">tower</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Pull 68 is Kitana Kahn, black mage, 1:01, full 61,737 HP, 64,954 unmitigated, no party mit, shield already gone. A 10% mit or a normal ~13k shield would have kept her up. Kiara on that same pull also took a real tower and then the empty-tower hit, so Kiara is in the excluded count.</p>
+  </section>
+
+  <section>
+    <h3>Heavenly Heel · 1</h3>
+    <p class="note" style="margin-top:0">Absolute Gigalad, pull 60, 1:23. Unmitigated 165,404. Tanks who live this tankbuster take 159–174k before mit (median 168k). He had 10% mit and a 15,339 shield, at 61,710 HP. The one Heavenly Heel excluded from the raw count is a cleave on a DPS.</p>
+  </section>
+
+  <section>
+    <h3>Not counted</h3>
+    <div class="stats">
+      <div class="stat"><b>132</b><span>Failed mechanic. Cone, ring, gaze, empty tower, ice, or a hit far above the lived band.</span></div>
+      <div class="stat"><b>127</b><span>No damage packet. Usually the body after a raise. 39 of these had an empty tooltip.</span></div>
+      <div class="stat"><b>11</b><span>Normal-sized hit, but they were already under 15k.</span></div>
+      <div class="stat"><b>2</b><span>Pulls that only touched phase 2 for a couple of seconds were skipped.</span></div>
+    </div>
+    <table>
+      <thead><tr><th>Failed mechanic</th><th class="num">Deaths</th><th>Why it is out</th></tr></thead>
+      <tbody>
+        <tr><td>Hiemal Storm</td><td class="num">28</td><td>Lived hits are about 25–40k. These are 100k or more.</td></tr><tr><td>Ascalon&#x27;s Mercy Concealed</td><td class="num">23</td><td>Dodge cones. Clean pulls take 0.</td></tr><tr><td>Sacred Sever</td><td class="num">21</td><td>The cleave, usually over a million.</td></tr><tr><td>Skyward Leap</td><td class="num">13</td><td>Empty towers, about 600–760k. A real tower is about 65k.</td></tr><tr><td>Bright Flare</td><td class="num">12</td><td>Orb overlap, above the ~64k hit people live.</td></tr><tr><td>the Dragon&#x27;s Rage</td><td class="num">9</td><td>The failed version, well above the 60–110k band.</td></tr><tr><td>Holy Shield Bash</td><td class="num">7</td><td>Failed bash, hundreds of thousands to millions.</td></tr><tr><td>Heavy Impact</td><td class="num">6</td><td>Dodge rings. Clean pulls take 0.</td></tr><tr><td>Heavens&#x27; Stake</td><td class="num">3</td><td>Failed meteor.</td></tr><tr><td>Holy Bladedance</td><td class="num">2</td><td>Far above the ~22k tank hit.</td></tr><tr><td>Lightning Storm</td><td class="num">2</td><td>Spread overlap, about 430–470k. A clean spread is about 40k.</td></tr><tr><td>Shining Blade</td><td class="num">2</td><td>Failed cleave.</td></tr><tr><td>the Dragon&#x27;s Gaze</td><td class="num">1</td><td>Failed gaze. A successful gaze is 0.</td></tr><tr><td>Ascalon&#x27;s Might</td><td class="num">1</td><td>Tankbuster above the lived band.</td></tr><tr><td>Heavenly Heel</td><td class="num">1</td><td>Cleave, not the tankbuster people live.</td></tr><tr><td>Dimensional Collapse</td><td class="num">1</td><td>Single puddle. No lived baseline in this log, so it stays out of the raw count.</td></tr>
+      </tbody>
+    </table>
+    <details>
+      <summary>Already under 15k · 11</summary>
+      <table>
+        <thead><tr><th>Pull</th><th class="num">Time</th><th>Who</th><th>Hit</th><th class="num">HP</th><th class="num">Unmitigated</th></tr></thead>
+        <tbody><tr><td>12</td><td class="num">1:06</td><td>Absolute Gigalad <span class="job">WAR</span></td><td>Holy Bladedance</td><td class="num">1,480</td><td class="num">22,060</td></tr><tr><td>12</td><td class="num">1:06</td><td>Absolute Gigachad <span class="job">PLD</span></td><td>Holy Bladedance</td><td class="num">8,723</td><td class="num">21,933</td></tr><tr><td>14</td><td class="num">2:18</td><td>Absolute Gigalad <span class="job">WAR</span></td><td>Eternal Conviction</td><td class="num">12,969</td><td class="num">62,267</td></tr><tr><td>15</td><td class="num">2:18</td><td>Loki Doki <span class="job">AST</span></td><td>Eternal Conviction</td><td class="num">7,454</td><td class="num">97,377</td></tr><tr><td>19</td><td class="num">1:07</td><td>Kitana Kahn <span class="job">BLM</span></td><td>Eternal Conviction</td><td class="num">13,249</td><td class="num">99,020</td></tr><tr><td>22</td><td class="num">2:00</td><td>Absolute Gigalad <span class="job">WAR</span></td><td>Bright Flare</td><td class="num">12,360</td><td class="num">66,728</td></tr><tr><td>22</td><td class="num">2:18</td><td>Spring Nymphar <span class="job">SCH</span></td><td>Eternal Conviction</td><td class="num">7,112</td><td class="num">90,260</td></tr><tr><td>26</td><td class="num">2:18</td><td>Absolute Gigalad <span class="job">WAR</span></td><td>Eternal Conviction</td><td class="num">14,286</td><td class="num">67,680</td></tr><tr><td>41</td><td class="num">2:24</td><td>Absolute Gigachad <span class="job">PLD</span></td><td>Holy Impact</td><td class="num">7,220</td><td class="num">60,780</td></tr><tr><td>44</td><td class="num">2:18</td><td>Absolute Gigalad <span class="job">WAR</span></td><td>Eternal Conviction</td><td class="num">11,220</td><td class="num">65,017</td></tr><tr><td>52</td><td class="num">1:07</td><td>Absolute Gigachad <span class="job">PLD</span></td><td>Eternal Conviction</td><td class="num">10,126</td><td class="num">63,784</td></tr></tbody>
+      </table>
+      <p class="note">The two Holy Bladedances are the normal ~22k tank hit landing on a tank at 1.5k and 8.7k. The rest are Conviction, Holy Impact, or a normal Bright Flare on someone already nearly down.</p>
+    </details>
+  </section>
+
+  <section class="pulls">
+    <h3>Every pull</h3>
+    <p class="note" style="margin-top:0">Wipe percent is the boss HP. Time in phase is how long Thordan lasted. Open a pull for the raw deaths.</p>
+    <details>
+          <summary>
+            <span class="pull">Pull 10</span>
+            <span class="wipe">35.1%</span>
+            <span class="dur">2:00 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 5 failed mechanics · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=10&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:57</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Sacred Sever. 102,145 unmitigated · HP 99,211 · 100% · mit none · no shield · stack 1 of 4.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 4 Sacred Sever, 1 Bright Flare.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 11</span>
+            <span class="wipe">36.7%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">4 raw</span>
+          </summary>
+          <p class="note">4 raw · 4 failed mechanics. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=11&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:56</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Sacred Sever. 35,368 unmitigated · HP 25,358 · 41% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:56</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Sacred Sever. 32,799 unmitigated · HP 26,467 · 39% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Sacred Sever. 87,600 unmitigated · HP 23,135 · 37% · mit none · no shield · stack 2 of 4.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 67,905 unmitigated · HP 23,850 · 20% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 3 Sacred Sever, 1 the Dragon&#x27;s Gaze.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 12</span>
+            <span class="wipe">69.2%</span>
+            <span class="dur">1:09 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 3 failed mechanics · 4 no damage packet · 2 already under 15k. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=12&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:01</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">the Dragon&#x27;s Rage. 101,856 unmitigated · HP 54,855 · 88% · mit none · shield 9,110 · stack 3 of 5.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 3 Ascalon&#x27;s Mercy Concealed.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 13</span>
+            <span class="wipe">66.3%</span>
+            <span class="dur">1:04 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 3 failed mechanics · 5 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=13&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:01</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Skyward Leap. 66,170 unmitigated · HP 36,457 · 53% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Ascalon&#x27;s Mercy Concealed, 1 Heavy Impact.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 14</span>
+            <span class="wipe">38.5%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">3 raw</span>
+          </summary>
+          <p class="note">3 raw · 5 failed mechanics · 1 already under 15k. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=14&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:00</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Sacred Sever. 55,664 unmitigated · HP 45,306 · 66% · mit none · no shield · stack 3 of 4.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:00</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Sacred Sever. 58,737 unmitigated · HP 44,805 · 73% · mit none · no shield · stack 3 of 4.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 105,251 unmitigated · HP 28,034 · 41% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 3 Hiemal Storm, 1 Ascalon&#x27;s Might, 1 Bright Flare.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 15</span>
+            <span class="wipe">35.4%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">4 raw</span>
+          </summary>
+          <p class="note">4 raw · 2 failed mechanics · 1 no damage packet · 1 already under 15k. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=15&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:18</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 90,727 unmitigated · HP 28,873 · 47% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 103,015 unmitigated · HP 40,945 · 60% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 97,404 unmitigated · HP 58,946 · 86% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 63,749 unmitigated · HP 39,213 · 33% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Heavens&#x27; Stake, 1 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 16</span>
+            <span class="wipe">64.8%</span>
+            <span class="dur">1:09 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 1 failed mechanic · 1 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=16&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:05</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 104,023 unmitigated · HP 42,122 · 61% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:05</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 99,378 unmitigated · HP 61,737 · 100% · mit 10% · shield 18,521.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:05</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 102,419 unmitigated · HP 40,787 · 60% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:06</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 61,975 unmitigated · HP 29,848 · 25% · mit 28% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:06</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 98,220 unmitigated · HP 51,451 · 83% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:06</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 96,018 unmitigated · HP 67,268 · 99% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Ascalon&#x27;s Mercy Concealed.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 17</span>
+            <span class="wipe">35.0%</span>
+            <span class="dur">2:10 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=17&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:58</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Sacred Sever. 45,821 unmitigated · HP 28,456 · 46% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:58</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Sacred Sever. 42,408 unmitigated · HP 39,875 · 64% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:58</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Sacred Sever. 43,755 unmitigated · HP 39,503 · 58% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Sacred Sever. 42,993 unmitigated · HP 28,502 · 42% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Sacred Sever. 42,171 unmitigated · HP 28,734 · 42% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Sacred Sever. 46,553 unmitigated · HP 21,089 · 34% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 18</span>
+            <span class="wipe">63.9%</span>
+            <span class="dur">1:26 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 failed mechanics · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=18&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:01</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Skyward Leap. 69,160 unmitigated · HP 51,175 · 75% · mit 10% · shield 9,011.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:06</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 98,810 unmitigated · HP 39,774 · 58% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:06</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 90,953 unmitigated · HP 57,188 · 93% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 100,902 unmitigated · HP 52,809 · 77% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 98,959 unmitigated · HP 31,863 · 52% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 92,456 unmitigated · HP 30,633 · 49% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Ascalon&#x27;s Mercy Concealed, 1 Heavenly Heel.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 19</span>
+            <span class="wipe">63.0%</span>
+            <span class="dur">1:12 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 1 failed mechanic · 1 no damage packet · 1 already under 15k. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=19&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:01</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">the Dragon&#x27;s Rage. 110,027 unmitigated · HP 68,218 · 100% · mit 10% · shield 28,138 · stack 3 of 5.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:01</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">the Dragon&#x27;s Rage. 108,316 unmitigated · HP 62,101 · 100% · mit 10% · shield 8,827 · stack 3 of 5.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:06</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 64,327 unmitigated · HP 36,744 · 31% · mit 28% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:06</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Eternal Conviction. 65,261 unmitigated · HP 17,290 · 17% · mit 46% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 96,393 unmitigated · HP 16,817 · 25% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 103,225 unmitigated · HP 22,711 · 33% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Ascalon&#x27;s Mercy Concealed.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 20</span>
+            <span class="wipe">34.5%</span>
+            <span class="dur">2:08 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=20&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:58</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Sacred Sever. 42,974 unmitigated · HP 29,872 · 48% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:58</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Sacred Sever. 43,076 unmitigated · HP 29,100 · 43% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:58</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Sacred Sever. 40,878 unmitigated · HP 30,119 · 44% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Sacred Sever. 43,717 unmitigated · HP 29,896 · 44% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Sacred Sever. 42,790 unmitigated · HP 21,297 · 34% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Sacred Sever. 44,097 unmitigated · HP 21,784 · 35% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 21</span>
+            <span class="wipe">62.8%</span>
+            <span class="dur">1:09 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 4 failed mechanics · 3 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=21&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:07</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 67,417 unmitigated · HP 15,109 · 13% · mit 28% · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 3 Skyward Leap, 1 Ascalon&#x27;s Mercy Concealed.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 22</span>
+            <span class="wipe">35.8%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">2 raw</span>
+          </summary>
+          <p class="note">2 raw · 4 failed mechanics · 2 already under 15k. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=22&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:18</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 98,018 unmitigated · HP 68,218 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 98,317 unmitigated · HP 54,174 · 79% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 3 Hiemal Storm, 1 Bright Flare.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 23</span>
+            <span class="wipe">78.7%</span>
+            <span class="dur">0:25 in phase</span>
+            <span class="tag ok">0 raw</span>
+          </summary>
+          <p class="note">0 raw · 2 failed mechanics · 6 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=23&type=deaths">Deaths table</a></p>
+          <p class="note" style="margin-top:8px">No raw deaths on this pull.</p><p class="note">Failed mechanics: 2 Ascalon&#x27;s Mercy Concealed.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 24</span>
+            <span class="wipe">63.6%</span>
+            <span class="dur">1:22 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=24&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:06</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 90,178 unmitigated · HP 61,615 · 100% · mit 19% · shield 7,379.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:06</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 101,036 unmitigated · HP 62,101 · 100% · mit 19% · shield 7,393.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 96,240 unmitigated · HP 61,737 · 100% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 108,204 unmitigated · HP 68,662 · 100% · mit 19% · shield 7,401.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 105,017 unmitigated · HP 68,259 · 100% · mit 19% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 105,266 unmitigated · HP 60,244 · 88% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 25</span>
+            <span class="wipe">63.3%</span>
+            <span class="dur">1:07 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 3 failed mechanics · 4 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=25&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:01</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Skyward Leap. 65,954 unmitigated · HP 48,117 · 70% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Ascalon&#x27;s Mercy Concealed, 1 Skyward Leap, 1 Holy Bladedance.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 26</span>
+            <span class="wipe">35.9%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">5 raw</span>
+          </summary>
+          <p class="note">5 raw · 2 failed mechanics · 1 already under 15k. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=26&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:59</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Sacred Sever. 43,815 unmitigated · HP 39,106 · 63% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Sacred Sever. 46,262 unmitigated · HP 37,260 · 60% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 104,474 unmitigated · HP 37,912 · 55% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 96,635 unmitigated · HP 45,900 · 67% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Eternal Conviction. 61,885 unmitigated · HP 27,608 · 28% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 27</span>
+            <span class="wipe">36.4%</span>
+            <span class="dur">2:01 in phase</span>
+            <span class="tag ok">0 raw</span>
+          </summary>
+          <p class="note">0 raw · 8 failed mechanics. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=27&type=deaths">Deaths table</a></p>
+          <p class="note" style="margin-top:8px">No raw deaths on this pull.</p><p class="note">Failed mechanics: 8 Sacred Sever.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 28</span>
+            <span class="wipe">64.1%</span>
+            <span class="dur">1:09 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 5 failed mechanics · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=28&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:06</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 94,584 unmitigated · HP 43,329 · 70% · mit 14% · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 3 the Dragon&#x27;s Rage, 2 Holy Shield Bash.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 29</span>
+            <span class="wipe">62.3%</span>
+            <span class="dur">1:09 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 5 failed mechanics · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=29&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:06</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 96,782 unmitigated · HP 61,328 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Ascalon&#x27;s Mercy Concealed, 1 Dimensional Collapse, 1 Skyward Leap, 1 the Dragon&#x27;s Rage, 1 Holy Shield Bash.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 30</span>
+            <span class="wipe">63.7%</span>
+            <span class="dur">1:09 in phase</span>
+            <span class="tag ok">0 raw</span>
+          </summary>
+          <p class="note">0 raw · 5 failed mechanics · 3 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=30&type=deaths">Deaths table</a></p>
+          <p class="note" style="margin-top:8px">No raw deaths on this pull.</p><p class="note">Failed mechanics: 2 the Dragon&#x27;s Rage, 1 Ascalon&#x27;s Mercy Concealed, 1 Holy Shield Bash, 1 Holy Bladedance.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 31</span>
+            <span class="wipe">64.6%</span>
+            <span class="dur">0:56 in phase</span>
+            <span class="tag ok">0 raw</span>
+          </summary>
+          <p class="note">0 raw · 2 failed mechanics · 6 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=31&type=deaths">Deaths table</a></p>
+          <p class="note" style="margin-top:8px">No raw deaths on this pull.</p><p class="note">Failed mechanics: 2 Lightning Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 32</span>
+            <span class="wipe">37.9%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 failed mechanics. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=32&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:57</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Sacred Sever. 45,264 unmitigated · HP 43,916 · 71% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:57</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Sacred Sever. 45,222 unmitigated · HP 33,345 · 54% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 63,094 unmitigated · HP 18,618 · 16% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 103,465 unmitigated · HP 29,184 · 43% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 103,155 unmitigated · HP 30,950 · 45% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Eternal Conviction. 65,634 unmitigated · HP 28,346 · 29% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 33</span>
+            <span class="wipe">63.8%</span>
+            <span class="dur">1:03 in phase</span>
+            <span class="tag ok">0 raw</span>
+          </summary>
+          <p class="note">0 raw · 3 failed mechanics · 6 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=33&type=deaths">Deaths table</a></p>
+          <p class="note" style="margin-top:8px">No raw deaths on this pull.</p><p class="note">Failed mechanics: 2 Heavy Impact, 1 Ascalon&#x27;s Mercy Concealed.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 34</span>
+            <span class="wipe">33.9%</span>
+            <span class="dur">2:20 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 4 failed mechanics · 3 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=34&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:59</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Sacred Sever. 104,442 unmitigated · HP 16,420 · 14% · mit none · no shield · stack 1 of 4.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 3 Hiemal Storm, 1 Bright Flare.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 35</span>
+            <span class="wipe">32.7%</span>
+            <span class="dur">2:00 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 7 failed mechanics. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=35&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:54</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Sacred Sever. 81,519 unmitigated · HP 68,218 · 100% · mit none · shield 9,921.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 6 Sacred Sever, 1 Shining Blade.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 36</span>
+            <span class="wipe">62.9%</span>
+            <span class="dur">1:07 in phase</span>
+            <span class="tag ok">0 raw</span>
+          </summary>
+          <p class="note">0 raw · 4 failed mechanics · 5 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=36&type=deaths">Deaths table</a></p>
+          <p class="note" style="margin-top:8px">No raw deaths on this pull.</p><p class="note">Failed mechanics: 2 Skyward Leap, 1 Ascalon&#x27;s Mercy Concealed, 1 Holy Shield Bash.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 37</span>
+            <span class="wipe">35.9%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">3 raw</span>
+          </summary>
+          <p class="note">3 raw · 5 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=37&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:18</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 65,620 unmitigated · HP 20,047 · 17% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 98,561 unmitigated · HP 35,104 · 51% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Eternal Conviction. 67,020 unmitigated · HP 26,408 · 27% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 38</span>
+            <span class="wipe">64.8%</span>
+            <span class="dur">1:04 in phase</span>
+            <span class="tag ok">0 raw</span>
+          </summary>
+          <p class="note">0 raw · 2 failed mechanics · 6 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=38&type=deaths">Deaths table</a></p>
+          <p class="note" style="margin-top:8px">No raw deaths on this pull.</p><p class="note">Failed mechanics: 1 Ascalon&#x27;s Mercy Concealed, 1 Skyward Leap.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 39</span>
+            <span class="wipe">34.6%</span>
+            <span class="dur">2:22 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 failed mechanics · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=39&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:18</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 86,279 unmitigated · HP 38,619 · 62% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 95,170 unmitigated · HP 46,291 · 75% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 92,919 unmitigated · HP 31,800 · 52% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 96,319 unmitigated · HP 17,949 · 26% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Eternal Conviction. 63,125 unmitigated · HP 39,426 · 40% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 61,360 unmitigated · HP 29,086 · 25% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Bright Flare.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 40</span>
+            <span class="wipe">34.2%</span>
+            <span class="dur">2:22 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 failed mechanics · 1 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=40&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:18</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 101,844 unmitigated · HP 54,876 · 80% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 92,284 unmitigated · HP 39,465 · 64% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 102,467 unmitigated · HP 56,329 · 82% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Eternal Conviction. 62,643 unmitigated · HP 27,943 · 28% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 93,480 unmitigated · HP 58,133 · 94% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 63,676 unmitigated · HP 27,911 · 24% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Bright Flare, 1 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 41</span>
+            <span class="wipe">35.2%</span>
+            <span class="dur">2:27 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 1 failed mechanic · 1 no damage packet · 1 already under 15k. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=41&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:00</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Sacred Sever. 46,752 unmitigated · HP 44,659 · 72% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 99,183 unmitigated · HP 55,193 · 80% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 99,941 unmitigated · HP 49,995 · 73% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 96,698 unmitigated · HP 42,120 · 68% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 96,575 unmitigated · HP 34,221 · 55% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:24</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Holy Impact. 62,877 unmitigated · HP 27,007 · 23% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 42</span>
+            <span class="wipe">63.9%</span>
+            <span class="dur">1:11 in phase</span>
+            <span class="tag raw">5 raw</span>
+          </summary>
+          <p class="note">5 raw · 1 failed mechanic · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=42&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:07</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 90,335 unmitigated · HP 25,749 · 41% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 96,264 unmitigated · HP 45,122 · 66% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 104,527 unmitigated · HP 53,587 · 79% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 102,345 unmitigated · HP 42,778 · 62% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 90,062 unmitigated · HP 40,827 · 66% · mit 10% · shield 18,521.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Heavy Impact.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 43</span>
+            <span class="wipe">33.6%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 1 failed mechanic · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=43&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:59</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Sacred Sever. 45,895 unmitigated · HP 25,521 · 41% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 90,644 unmitigated · HP 35,445 · 58% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 100,039 unmitigated · HP 68,218 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 96,783 unmitigated · HP 34,121 · 50% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Eternal Conviction. 64,160 unmitigated · HP 15,224 · 15% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 62,089 unmitigated · HP 19,377 · 16% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Heavens&#x27; Stake.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 44</span>
+            <span class="wipe">34.3%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">3 raw</span>
+          </summary>
+          <p class="note">3 raw · 3 failed mechanics · 2 no damage packet · 1 already under 15k. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=44&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:56</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Sacred Sever. 67,071 unmitigated · HP 40,738 · 66% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:00</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Sacred Sever. 59,646 unmitigated · HP 58,711 · 95% · mit none · no shield · stack 3 of 4.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 100,442 unmitigated · HP 36,866 · 54% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Hiemal Storm, 1 Heavens&#x27; Stake.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 45</span>
+            <span class="wipe">77.7%</span>
+            <span class="dur">0:29 in phase</span>
+            <span class="tag ok">0 raw</span>
+          </summary>
+          <p class="note">0 raw · 2 failed mechanics · 6 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=45&type=deaths">Deaths table</a></p>
+          <p class="note" style="margin-top:8px">No raw deaths on this pull.</p><p class="note">Failed mechanics: 2 Ascalon&#x27;s Mercy Concealed.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 46</span>
+            <span class="wipe">62.8%</span>
+            <span class="dur">1:03 in phase</span>
+            <span class="tag ok">0 raw</span>
+          </summary>
+          <p class="note">0 raw · 2 failed mechanics · 6 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=46&type=deaths">Deaths table</a></p>
+          <p class="note" style="margin-top:8px">No raw deaths on this pull.</p><p class="note">Failed mechanics: 1 Heavy Impact, 1 Ascalon&#x27;s Mercy Concealed.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 47</span>
+            <span class="wipe">62.6%</span>
+            <span class="dur">1:16 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=47&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:07</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 94,986 unmitigated · HP 61,615 · 100% · mit 14% · shield 8,032.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 102,615 unmitigated · HP 61,737 · 100% · mit 14% · shield 7,873.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 104,166 unmitigated · HP 54,148 · 79% · mit 14% · shield 6,111.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 107,400 unmitigated · HP 68,662 · 100% · mit 14% · shield 13,230.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 102,757 unmitigated · HP 58,010 · 85% · mit 14% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:08</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 94,930 unmitigated · HP 57,475 · 93% · mit 14% · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 48</span>
+            <span class="wipe">32.4%</span>
+            <span class="dur">2:21 in phase</span>
+            <span class="tag raw">5 raw</span>
+          </summary>
+          <p class="note">5 raw · 2 failed mechanics · 1 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=48&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:18</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 105,319 unmitigated · HP 30,157 · 44% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 102,272 unmitigated · HP 31,746 · 47% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Eternal Conviction. 66,275 unmitigated · HP 17,240 · 17% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 95,856 unmitigated · HP 38,076 · 61% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 61,723 unmitigated · HP 35,581 · 30% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Shining Blade, 1 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 49</span>
+            <span class="wipe">30.3%</span>
+            <span class="dur">2:20 in phase</span>
+            <span class="tag raw">2 raw</span>
+          </summary>
+          <p class="note">2 raw · 2 failed mechanics · 4 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=49&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:59</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Sacred Sever. 53,729 unmitigated · HP 36,214 · 53% · mit 10% · no shield · stack 3 of 4.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:00</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Sacred Sever. 59,754 unmitigated · HP 26,545 · 43% · mit 10% · shield 18,521 · stack 3 of 4.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 50</span>
+            <span class="wipe">32.3%</span>
+            <span class="dur">2:15 in phase</span>
+            <span class="tag raw">3 raw</span>
+          </summary>
+          <p class="note">3 raw · 3 failed mechanics · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=50&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:58</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Sacred Sever. 43,495 unmitigated · HP 42,674 · 69% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Sacred Sever. 57,632 unmitigated · HP 28,663 · 46% · mit none · no shield · stack 3 of 4.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Sacred Sever. 58,431 unmitigated · HP 40,436 · 59% · mit none · no shield · stack 3 of 4.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 3 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 51</span>
+            <span class="wipe">62.8%</span>
+            <span class="dur">1:13 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=51&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:02</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">the Dragon&#x27;s Rage. 106,874 unmitigated · HP 62,101 · 100% · mit 14% · shield 25,780 · stack 3 of 5.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 105,736 unmitigated · HP 26,667 · 39% · mit 14% · shield 13,461.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 93,706 unmitigated · HP 35,193 · 57% · mit 5% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 107,270 unmitigated · HP 37,216 · 55% · mit 5% · shield 16,441.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 102,690 unmitigated · HP 37,366 · 55% · mit 14% · shield 13,435.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 103,470 unmitigated · HP 48,529 · 79% · mit 5% · shield 16,688.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 52</span>
+            <span class="wipe">62.7%</span>
+            <span class="dur">1:09 in phase</span>
+            <span class="tag raw">2 raw</span>
+          </summary>
+          <p class="note">2 raw · 2 failed mechanics · 3 no damage packet · 1 already under 15k. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=52&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:01</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">the Dragon&#x27;s Rage. 113,372 unmitigated · HP 64,900 · 95% · mit none · shield 19,975 · stack 3 of 5.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 89,989 unmitigated · HP 56,096 · 90% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Ascalon&#x27;s Mercy Concealed, 1 Skyward Leap.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 57</span>
+            <span class="wipe">33.1%</span>
+            <span class="dur">2:27 in phase</span>
+            <span class="tag raw">8 raw</span>
+          </summary>
+          <p class="note">8 raw. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=57&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:19</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 100,198 unmitigated · HP 60,529 · 89% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 104,798 unmitigated · HP 60,100 · 88% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 93,758 unmitigated · HP 61,737 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 100,531 unmitigated · HP 68,218 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:20</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 92,741 unmitigated · HP 62,101 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:20</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 90,319 unmitigated · HP 61,615 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:24</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Holy Impact. 66,262 unmitigated · HP 40,862 · 41% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:24</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Holy Impact. 62,057 unmitigated · HP 36,631 · 31% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 58</span>
+            <span class="wipe">32.8%</span>
+            <span class="dur">2:22 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 failed mechanics. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=58&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:19</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 97,684 unmitigated · HP 62,050 · 91% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 91,040 unmitigated · HP 61,615 · 100% · mit 19% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 62,734 unmitigated · HP 45,278 · 38% · mit 19% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 98,154 unmitigated · HP 46,584 · 75% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 105,655 unmitigated · HP 66,047 · 96% · mit 19% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Eternal Conviction. 64,302 unmitigated · HP 43,795 · 44% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Bright Flare, 1 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 59</span>
+            <span class="wipe">63.9%</span>
+            <span class="dur">1:10 in phase</span>
+            <span class="tag raw">3 raw</span>
+          </summary>
+          <p class="note">3 raw · 3 failed mechanics · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=59&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:07</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 96,776 unmitigated · HP 51,283 · 83% · mit 10% · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 95,365 unmitigated · HP 56,165 · 91% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:07</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 65,991 unmitigated · HP 41,661 · 35% · mit 28% · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Skyward Leap, 1 Holy Shield Bash.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 60</span>
+            <span class="wipe">35.9%</span>
+            <span class="dur">2:06 in phase</span>
+            <span class="tag raw">4 raw</span>
+          </summary>
+          <p class="note">4 raw · 1 failed mechanic · 4 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=60&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:23</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Heavenly Heel. 165,404 unmitigated · HP 61,710 · 52% · mit 10% · shield 15,339.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:57</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Sacred Sever. 42,834 unmitigated · HP 32,683 · 53% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:58</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Sacred Sever. 46,519 unmitigated · HP 36,551 · 59% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">1:59</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Sacred Sever. 60,455 unmitigated · HP 39,862 · 65% · mit 10% · no shield · stack 3 of 4.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 1 Bright Flare.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 61</span>
+            <span class="wipe">33.3%</span>
+            <span class="dur">2:22 in phase</span>
+            <span class="tag raw">4 raw</span>
+          </summary>
+          <p class="note">4 raw · 3 failed mechanics · 1 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=61&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:19</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 93,892 unmitigated · HP 40,478 · 65% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 91,600 unmitigated · HP 60,960 · 89% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 97,585 unmitigated · HP 32,264 · 52% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 98,304 unmitigated · HP 62,027 · 90% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Hiemal Storm, 1 Bright Flare.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 62</span>
+            <span class="wipe">33.5%</span>
+            <span class="dur">2:27 in phase</span>
+            <span class="tag raw">7 raw</span>
+          </summary>
+          <p class="note">7 raw · 1 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=62&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:18</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 100,713 unmitigated · HP 56,476 · 82% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:18</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 105,178 unmitigated · HP 66,566 · 98% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 96,125 unmitigated · HP 55,471 · 90% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 97,860 unmitigated · HP 54,139 · 87% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 104,299 unmitigated · HP 61,852 · 91% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:24</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Holy Impact. 66,163 unmitigated · HP 41,810 · 35% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:24</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Holy Impact. 61,464 unmitigated · HP 53,067 · 53% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 63</span>
+            <span class="wipe">63.9%</span>
+            <span class="dur">1:09 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 5 failed mechanics · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=63&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:07</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 97,424 unmitigated · HP 39,410 · 63% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 3 the Dragon&#x27;s Rage, 1 Skyward Leap, 1 Holy Shield Bash.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 64</span>
+            <span class="wipe">33.3%</span>
+            <span class="dur">2:28 in phase</span>
+            <span class="tag raw">7 raw</span>
+          </summary>
+          <p class="note">7 raw · 1 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=64&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:19</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 94,206 unmitigated · HP 60,438 · 97% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 100,029 unmitigated · HP 66,539 · 97% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 98,164 unmitigated · HP 58,018 · 85% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:20</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Eternal Conviction. 99,261 unmitigated · HP 40,362 · 66% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:20</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Eternal Conviction. 97,701 unmitigated · HP 47,337 · 77% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:25</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Holy Impact. 66,034 unmitigated · HP 40,426 · 34% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:25</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Holy Impact. 64,621 unmitigated · HP 36,067 · 36% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 65</span>
+            <span class="wipe">35.1%</span>
+            <span class="dur">2:22 in phase</span>
+            <span class="tag raw">5 raw</span>
+          </summary>
+          <p class="note">5 raw · 3 failed mechanics · 1 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=65&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:19</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Eternal Conviction. 99,338 unmitigated · HP 29,847 · 48% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Eternal Conviction. 97,824 unmitigated · HP 52,805 · 77% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Eternal Conviction. 97,070 unmitigated · HP 30,576 · 45% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Eternal Conviction. 100,827 unmitigated · HP 38,185 · 56% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:19</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Eternal Conviction. 66,880 unmitigated · HP 21,983 · 19% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Bright Flare, 1 Hiemal Storm.</p>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 66</span>
+            <span class="wipe">33.3%</span>
+            <span class="dur">2:33 in phase</span>
+            <span class="tag raw">6 raw</span>
+          </summary>
+          <p class="note">6 raw · 2 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=66&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:30</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Holy Impact. 96,406 unmitigated · HP 51,567 · 84% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:30</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Holy Impact. 99,506 unmitigated · HP 55,309 · 81% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:30</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Holy Impact. 67,185 unmitigated · HP 30,579 · 26% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:30</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Holy Impact. 101,637 unmitigated · HP 47,840 · 70% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:30</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Holy Impact. 62,007 unmitigated · HP 36,771 · 37% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:30</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Holy Impact. 98,025 unmitigated · HP 46,860 · 75% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 67</span>
+            <span class="wipe">34.2%</span>
+            <span class="dur">2:26 in phase</span>
+            <span class="tag raw">8 raw</span>
+          </summary>
+          <p class="note">8 raw. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=67&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">2:22</div><div><strong>Speed Panda</strong> <span class="job">VPR</span><p class="reason">Holy Impact. 102,819 unmitigated · HP 68,259 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:22</div><div><strong>Loki Doki</strong> <span class="job">AST</span><p class="reason">Holy Impact. 90,179 unmitigated · HP 62,101 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:23</div><div><strong>Absolute Gigalad</strong> <span class="job">WAR</span><p class="reason">Holy Impact. 63,911 unmitigated · HP 27,588 · 23% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:23</div><div><strong>Kiara Blaiddyd</strong> <span class="job">DNC</span><p class="reason">Holy Impact. 100,103 unmitigated · HP 68,662 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:23</div><div><strong>Kite Noodle</strong> <span class="job">NIN</span><p class="reason">Holy Impact. 95,491 unmitigated · HP 68,218 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:23</div><div><strong>Spring Nymphar</strong> <span class="job">SCH</span><p class="reason">Holy Impact. 90,104 unmitigated · HP 61,615 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:23</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Holy Impact. 97,509 unmitigated · HP 50,630 · 82% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li><li><div class="time">2:23</div><div><strong>Absolute Gigachad</strong> <span class="job">PLD</span><p class="reason">Holy Impact. 60,719 unmitigated · HP 51,966 · 52% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul>
+        </details><details>
+          <summary>
+            <span class="pull">Pull 68</span>
+            <span class="wipe">65.1%</span>
+            <span class="dur">1:04 in phase</span>
+            <span class="tag raw">1 raw</span>
+          </summary>
+          <p class="note">1 raw · 4 failed mechanics · 4 no damage packet. <a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=68&type=deaths">Deaths table</a></p>
+          <ul class="timeline"><li><div class="time">1:01</div><div><strong>Kitana Kahn</strong> <span class="job">BLM</span><p class="reason">Skyward Leap. 64,954 unmitigated · HP 61,737 · 100% · mit none · no shield.</p></div><span class="tag raw">Raw</span></li></ul><p class="note">Failed mechanics: 2 Ascalon&#x27;s Mercy Concealed, 1 Heavy Impact, 1 Skyward Leap.</p>
+        </details>
+  </section>
+
+  <footer>
+    Raw means the killing blow is in the size band of that hit on that role when people live it, including a short stack whose damage matches the missing bodies.
+    Party mitigation is the multiplier on the damage packet. Shield is absorb. Vulnerability Up and Damage Down were checked when the packet carried buffs. Many packets have an empty buff list, so a vuln that never landed on the packet would be missed. The conviction and holy impact deaths sit in one tight band, which a vuln amp would have broken.
+  </footer>
+</main>
+</body>
+</html>

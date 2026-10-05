@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+  :root {
+    --bg: #f4f1ea; --paper: #fffcf7; --ink: #1c1915; --muted: #5e584f;
+    --line: #e2dbd0; --raw: #9a3412; --raw-bg: #fff1e8; --fail: #7c4a12;
+    --fail-bg: #fbf3e4; --ok: #1f5c45; --ok-bg: #e7f4ee; --env: #3f4a57; --env-bg: #eef2f5;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; display: grid; grid-template-columns: 300px 1fr;
+    background: var(--bg); color: var(--ink); font: 16px/1.45 "Segoe UI", system-ui, sans-serif;
+  }
+  aside {
+    background: var(--paper); border-right: 1px solid var(--line);
+    overflow: auto; padding: 16px 12px 28px;
+  }
+  main { overflow: auto; padding: 24px 28px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.03em; }
+  h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
+  h3 { margin: 0; font-size: 18px; }
+  .brand { margin: 0 4px 12px; }
+  .brand strong { display: block; font-size: 15px; }
+  .meta { color: var(--muted); margin: 0; }
+  a { color: #243056; }
+  button.nav, button.link {
+    font: inherit; color: inherit; cursor: pointer; text-align: left;
+  }
+  button.link { background: none; border: 0; padding: 0; color: #243056; }
+  button.nav {
+    width: 100%; display: flex; justify-content: space-between; gap: 8px; align-items: baseline;
+    border: 0; border-radius: 8px; background: transparent; padding: 7px 8px;
+  }
+  button.nav:hover { background: #f7f4ee; }
+  button.nav[hidden] { display: none; }
+  button.nav.on { background: var(--raw-bg); }
+  button.nav .countline { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  button.nav.on .countline { color: var(--raw); }
+  .fold { margin: 10px 0 2px; }
+  .fold summary {
+    display: flex; align-items: center; gap: 8px; cursor: pointer; list-style: none;
+    padding: 7px 8px; border-radius: 8px; color: var(--muted);
+    font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .fold summary::-webkit-details-marker { display: none; }
+  .fold summary::marker { content: ""; }
+  .fold summary::before {
+    content: ""; flex: 0 0 auto; width: 0; height: 0;
+    border-style: solid; border-width: 4px 0 4px 5px;
+    border-color: transparent transparent transparent currentColor;
+  }
+  .fold[open] > summary::before { transform: rotate(90deg); }
+  .fold summary:hover { background: #f7f4ee; color: var(--ink); }
+  .fold-title { flex: 1; }
+  .fold .countline { color: var(--muted); font-size: 12px; letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
+  input.filter {
+    width: 100%; margin: 4px 0 8px; padding: 7px 8px; border-radius: 8px;
+    border: 1px solid var(--line); font: inherit; background: #fff;
+  }
+  header { display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; margin-bottom: 16px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .stat { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .stat b { display: block; font-size: 28px; letter-spacing: -0.03em; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  section { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 16px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; margin-right: 4px; }
+  .tag.raw { background: var(--raw-bg); color: var(--raw); }
+  .tag.fail { background: var(--fail-bg); color: var(--fail); }
+  .tag.low, .tag.env, .tag.unknown { background: var(--env-bg); color: var(--env); }
+  .tag.ok { background: var(--ok-bg); color: var(--ok); }
+  .mech, .pull-block { border-top: 1px solid var(--line); padding: 12px 0; }
+  .mech:first-of-type, .pull-block:first-of-type { border-top: 0; padding-top: 0; }
+  .mech-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+  .death { padding: 10px 0 4px; }
+  .who { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .time, .job { color: var(--muted); }
+  .job-icon { width: 20px; height: 20px; display: block; }
+  .cols { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 12px; margin-top: 6px; font-size: 14px; }
+  .cols b { display: block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .quiet { color: var(--muted); }
+  .clean { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  button.session-card {
+    width: 100%; display: block; text-align: left; font: inherit; color: inherit;
+    background: transparent; border: 0; border-top: 1px solid var(--line);
+    padding: 12px 0 4px; cursor: pointer;
+  }
+  button.session-card:hover { background: #f7f4ee; }
+  .reach {
+    display: grid; grid-template-columns: 12.5rem minmax(0, 1fr); height: 480px; margin-top: 4px;
+  }
+  .reach-names { position: relative; }
+  .reach-names span {
+    position: absolute; right: 8px; transform: translateY(50%);
+    font-size: 12px; line-height: 1.15; color: var(--muted); text-align: right; white-space: nowrap;
+  }
+  .chart, .strip { position: relative; }
+  .chart { height: 100%; overflow-x: auto; }
+  .plot, .strip { display: flex; align-items: flex-end; gap: 2px; }
+  .plot { position: relative; height: 100%; min-width: 100%; width: max-content; }
+  .strip { height: 52px; width: 100%; margin: 8px 0 4px; }
+  .hline {
+    position: absolute; left: 0; right: 0; height: 0;
+    border-top: 2px dotted #5c554c;
+    pointer-events: none; z-index: 2;
+  }
+  .strip .hline { border-top-width: 1px; border-top-color: rgba(94, 88, 79, 0.7); }
+  .chart .bar {
+    position: relative; z-index: 1;
+    width: 9px; flex: 0 0 9px; min-height: 4px; border: 0; padding: 0; cursor: pointer;
+    border-radius: 2px 2px 0 0;
+  }
+  .chart .bar:hover, .chart .bar.on { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .chart .bar.best { box-shadow: inset 0 -3px 0 var(--ink); }
+  .strip i.tick { flex: 1 1 2px; min-width: 2px; min-height: 3px; border-radius: 2px 2px 0 0; display: block; }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0 0; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; }
+  .swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .route {
+    --stop: #8a5a2b;
+    list-style: none; margin: 14px 0 2px; padding: 2px 0;
+  }
+  .route li {
+    display: grid; grid-template-columns: 28px minmax(0, 1fr);
+    align-items: stretch; min-height: 46px;
+  }
+  .route .rail {
+    position: relative; display: flex; justify-content: center; align-items: center;
+  }
+  .route .rail::before {
+    content: ""; position: absolute; left: 50%; width: 3px; margin-left: -1.5px;
+    top: 0; bottom: 0; background: var(--stop); border-radius: 2px;
+  }
+  .route li:first-child .rail::before { top: 50%; }
+  .route li:last-child .rail::before { bottom: 50%; }
+  .route li:only-child .rail::before { content: none; }
+  .route .dot {
+    width: 14px; height: 14px; border-radius: 50%; box-sizing: border-box;
+    background: var(--paper); border: 3px solid var(--stop);
+    box-shadow: 0 0 0 4px var(--paper);
+    position: relative; z-index: 1;
+  }
+  .route button.station {
+    font: inherit; font-size: 18px; font-weight: 600; line-height: 1.3;
+    color: #243056; background: transparent; border: 0; border-radius: 8px;
+    text-align: left; cursor: pointer; padding: 10px 10px 10px 4px; width: 100%;
+  }
+  .route li:hover button.station { background: #f7f4ee; }
+  .route li:hover .dot { background: var(--stop); }
+  .route button.station:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  @media (max-width: 860px) {
+    body { display: block; }
+    aside { border-right: 0; border-bottom: 1px solid var(--line); max-height: 42vh; }
+    .stats, .cols, header, .mech-head { display: block; }
+    .reach { grid-template-columns: 9.5rem minmax(0, 1fr); height: 420px; }
+    .reach-names span { font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+<aside id="nav"></aside>
+<main id="app"></main>
+<script>
+const DATA = __DATA__;
+const JOB_ICONS = __JOB_ICONS__;
+const byCode = Object.fromEntries(DATA.sessions.map(item => [item.code, item]));
+let SESSION = null;
+
+function counts(deaths) {
+  const c = { raw: 0, fail: 0, low: 0, environment: 0, unknown: 0 };
+  for (const row of deaths) c[row.outcome] = (c[row.outcome] || 0) + 1;
+  return c;
+}
+function judged(deaths) {
+  return deaths.filter(row => row.outcome !== "environment");
+}
+function jobMark(job) {
+  const src = JOB_ICONS[job];
+  if (!src) return `<span class="job">${job}</span>`;
+  return `<img class="job-icon" alt="${job}" title="${job}" src="${src}">`;
+}
+function deathCard(row) {
+  const cast = row.cast ? `<span class="time">${row.cast}</span>` : "";
+  return `<div class="death">
+    <div class="who"><span class="time">${row.time}</span>${cast}<strong>${row.name}</strong>${jobMark(row.job)}</div>
+    <div class="cols">
+      <div><b>What happened</b>${row.happened}</div>
+      <div><b>What it should have been</b>${row.should}</div>
+      <div><b>Whose fault</b>${row.wrong}</div>
+    </div>
+  </div>`;
+}
+function route() {
+  const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
+  const parts = hash.split("/").filter(Boolean);
+  if (parts[0] === "s" && byCode[parts[1]]) {
+    if (parts[2] === "pull") return { view: "pull", code: parts[1], id: parts[3] };
+    if (parts[2] === "fight") return { view: "fight", code: parts[1], id: parts[3] };
+    if (parts[2] === "mechanic") return { view: "mechanic", code: parts[1], id: parts.slice(3).join("/") };
+    return { view: "all", code: parts[1] };
+  }
+  const only = DATA.sessions.length === 1 ? DATA.sessions[0].code : "";
+  if (parts[0] === "pull" && only) return { view: "pull", code: only, id: parts[1] };
+  if (parts[0] === "mechanic" && only) return { view: "mechanic", code: only, id: parts.slice(1).join("/") };
+  if (!hash && only) return { view: "all", code: only };
+  return { view: "home", code: "" };
+}
+function currentGo() {
+  const where = route();
+  if (!where.code) return "home";
+  if (where.view === "pull") return `s/${where.code}/pull/${where.id}`;
+  if (where.view === "fight") return `s/${where.code}/fight/${where.id}`;
+  if (where.view === "mechanic") return `s/${where.code}/mechanic/${where.id}`;
+  return `s/${where.code}`;
+}
+function logHref(pullId) {
+  const base = `https://www.fflogs.com/reports/${SESSION.code}`;
+  return pullId ? `${base}?fight=${pullId}&type=deaths` : `${base}?type=deaths`;
+}
+function findPull(id) {
+  return SESSION.pulls.find(pull => String(pull.id) === String(id));
+}
+function findMech(id) {
+  return SESSION.mechanics.find(mech => mech.id === id);
+}
+const foldState = {};
+function fold(id, title, count, body, open) {
+  const shown = id in foldState ? foldState[id] : open;
+  return `<details class="fold" data-fold="${id}" data-default="${open ? "1" : "0"}"${shown ? " open" : ""}>
+    <summary><span class="fold-title">${title}</span><span class="countline">${count}</span></summary>
+    ${body}
+  </details>`;
+}
+function sessionList(openDays) {
+  return DATA.days.map(day => {
+    const rows = day.sessions.map(item => {
+      const label = `${day.label} ${item.timeLabel} ${item.fight} ${item.title} ${item.owner} ${item.code}`.toLowerCase();
+      return `<button class="nav" data-go="s/${item.code}" data-label="${label}">
+        <span>${item.timeLabel || item.code}</span>
+      </button>`;
+    }).join("");
+    const id = `day-${day.day || day.label}`;
+    return fold(id, day.label, day.sessions.length, rows, openDays);
+  }).join("");
+}
+function renderNav() {
+  const where = route();
+  const sessions = sessionList(!SESSION);
+  if (!SESSION) {
+    document.getElementById("nav").innerHTML = `
+      <p class="brand"><strong>Sessions</strong><span class="meta">${DATA.sessions.length === 1 ? "1 log" : DATA.sessions.length + " logs"}</span></p>
+      <input class="filter" id="filter" placeholder="Find a session" aria-label="Find a session">
+      ${sessions}`;
+    return;
+  }
+  const stamp = [SESSION.dayLabel, SESSION.timeLabel].filter(part => part && part !== "No date").join(" · ");
+  const pulls = SESSION.pulls.map(pull => {
+    const when = pull.when ? `${pull.when} · ` : "";
+    return `<button class="nav" data-go="s/${SESSION.code}/pull/${pull.id}" data-label="pull ${pull.id} ${pull.when || ""}">
+      <span>Pull ${pull.id} <span class="quiet">${when}${pull.bossPct}%</span></span>
+    </button>`;
+  }).join("");
+  const mechs = SESSION.mechanics.slice().sort(byTimeline).map(mech => {
+    return `<button class="nav" data-go="s/${SESSION.code}/mechanic/${mech.id}" data-label="${mech.name.toLowerCase()}">
+      <span>${mech.name}</span>
+    </button>`;
+  }).join("");
+  const home = DATA.sessions.length > 1
+    ? `<button class="nav" data-go="home" data-keep="1"><span>All sessions</span><span class="countline">${DATA.sessions.length}</span></button>`
+    : "";
+  const pullCount = (SESSION.overview && SESSION.overview.pulls.length) || SESSION.pulls.length;
+  document.getElementById("nav").innerHTML = `
+    <p class="brand"><strong>${SESSION.fight}</strong><span class="meta">${stamp}</span></p>
+    <input class="filter" id="filter" placeholder="Find a pull, mechanic, or session" aria-label="Find a pull, mechanic, or session">
+    ${home}
+    <button class="nav" data-go="s/${SESSION.code}" data-keep="1" data-label="overview"><span>Overview</span><span class="countline">${pullCount}</span></button>
+    ${sessions}
+    ${fold("pulls", "Pulls", SESSION.pulls.length, pulls, where.view === "pull" || where.view === "fight")}
+    ${fold("mechanics", "Mechanics", SESSION.mechanics.length, mechs, where.view === "mechanic")}`;
+}
+function byTimeline(a, b) {
+  return a.phase - b.phase || a.starts - b.starts || a.name.localeCompare(b.name);
+}
+function phaseRoute(mechs, color) {
+  if (!mechs.length) return `<p class="quiet">No mechanic review for this phase.</p>`;
+  const stops = mechs.map(mech => `<li>
+      <span class="rail" aria-hidden="true"><span class="dot"></span></span>
+      <button class="station" data-go="s/${SESSION.code}/mechanic/${mech.id}">${mech.name}</button>
+    </li>`).join("");
+  return `<ol class="route" style="--stop:${color}">${stops}</ol>`;
+}
+function phaseColor(id) {
+  const colors = ["#3d6b8a", "#b45309", "#9f1239", "#6d28d9", "#0f766e", "#a16207", "#1d4ed8", "#854d0e"];
+  return colors[(Number(id) - 1) % colors.length] || "#5e584f";
+}
+function overviewOf(session) {
+  return (session && session.overview) || { pulls: [], phases: [], best: null };
+}
+function reachScale(pulls) {
+  return Math.max(1, ...pulls.map(pull => pull.reached || 0));
+}
+function visibleMarks(markers, scale) {
+  return (markers || []).filter(mark => mark.at > 0 && mark.at < scale);
+}
+function strip(pulls, markers) {
+  const scale = reachScale(pulls);
+  const lines = visibleMarks(markers, scale).map(mark => {
+    return `<i class="hline" style="bottom:${(mark.at / scale) * 100}%"></i>`;
+  }).join("");
+  const bars = pulls.map(pull => {
+    const height = Math.max(8, ((pull.reached || 0) / scale) * 100);
+    return `<i class="tick" style="height:${height}%;background:${phaseColor(pull.phase)}"></i>`;
+  }).join("");
+  return `<span class="strip">${lines}${bars}</span>`;
+}
+function chart(pulls, markers) {
+  const scale = reachScale(pulls);
+  const marks = visibleMarks(markers, scale);
+  const bestId = (overviewOf(SESSION).best || {}).id;
+  const names = marks.map(mark => {
+    return `<span style="bottom:${(mark.at / scale) * 100}%">${mark.name}</span>`;
+  }).join("");
+  const lines = marks.map(mark => {
+    return `<i class="hline" title="${mark.name}" style="bottom:${(mark.at / scale) * 100}%"></i>`;
+  }).join("");
+  const bars = pulls.map(pull => {
+    const height = Math.max(6, ((pull.reached || 0) / scale) * 100);
+    const go = pull.judged
+      ? `s/${SESSION.code}/pull/${pull.id}`
+      : `s/${SESSION.code}/fight/${pull.id}`;
+    const mark = pull.id === bestId ? " best" : "";
+    const where = pull.mechanic ? `${pull.mechanic} · ` : "";
+    return `<button class="bar${mark}" data-go="${go}" title="Pull ${pull.id} · ${where}${pull.phaseName} ${pull.bossPct}% · ${pull.clock}" style="height:${height}%;background:${phaseColor(pull.phase)}"></button>`;
+  }).join("");
+  return `<div class="reach"><div class="reach-names">${names}</div><div class="chart"><div class="plot">${lines}${bars}</div></div></div>`;
+}
+function legend(pulls) {
+  const seen = [];
+  for (const pull of pulls) {
+    if (!seen.some(row => row.phase === pull.phase)) seen.push(pull);
+  }
+  return `<p class="legend">${seen.map(pull => `<span><i class="swatch" style="background:${phaseColor(pull.phase)}"></i>${pull.phaseName}</span>`).join("")}</p>`;
+}
+function renderHome() {
+  const blocks = DATA.days.map(day => `<section>
+      <h2>${day.label}</h2>
+      ${day.sessions.map(item => {
+        const session = byCode[item.code];
+        const overview = overviewOf(session);
+        const best = overview.best;
+        const detail = [
+          item.title,
+          item.owner,
+          overview.pulls.length ? `${overview.pulls.length} pulls` : "",
+          best ? `best ${best.phaseName} ${best.bossPct}%` : "",
+        ].filter(Boolean).join(" · ");
+        return `<button class="session-card" data-go="s/${item.code}">
+          <div class="mech-head">
+            <div>
+              <h3>${item.timeLabel || item.code} <span class="meta">${item.fight}</span></h3>
+              <p class="meta">${detail}</p>
+            </div>
+          </div>
+          ${strip(overview.pulls, overview.markers)}
+        </button>`;
+      }).join("")}
+    </section>`).join("");
+  return `
+    <header>
+      <div>
+        <h1>Sessions</h1>
+        <p class="meta">${DATA.sessions.length === 1 ? "1 log" : DATA.sessions.length + " logs"}. Each bar is a pull. Taller means further into the fight.</p>
+      </div>
+    </header>
+    ${blocks || `<p class="quiet">No sessions yet. Drop a log and analyze it.</p>`}`;
+}
+function renderAll() {
+  const overview = overviewOf(SESSION);
+  const best = overview.best;
+  const stamp = [SESSION.dayLabel, SESSION.timeLabel, SESSION.owner].filter(part => part && part !== "No date").join(" · ");
+  const byPhase = new Map();
+  for (const pull of overview.pulls) {
+    if (!byPhase.has(pull.phase)) byPhase.set(pull.phase, []);
+    byPhase.get(pull.phase).push(pull);
+  }
+  const phases = [...byPhase.entries()].map(([id, pulls]) => {
+    const sample = pulls[0];
+    const mechs = SESSION.mechanics.filter(mech => mech.phase === id).sort(byTimeline);
+    const reviewed = pulls.filter(pull => pull.judged).length;
+    const rows = phaseRoute(mechs, phaseColor(id));
+    const note = mechs.length && reviewed !== pulls.length
+      ? `<p class="meta">${reviewed} pulls have a death review.</p>`
+      : "";
+    return `<section>
+      <div class="mech-head">
+        <h3>${sample.phaseName}</h3>
+        <span class="meta">${pulls.length} pull${pulls.length === 1 ? "" : "s"} ended here</span>
+      </div>
+      <p class="meta">${sample.phaseFull}</p>
+      ${note}
+      ${rows}
+    </section>`;
+  }).join("");
+  const bestLine = best
+    ? `Best pull ${best.id}, ${best.phaseName} ${best.bossPct}%.`
+    : "";
+  return `
+    <header>
+      <div>
+        <h1>${SESSION.fight}</h1>
+        <p class="meta">${stamp}. ${overview.pulls.length} pulls. ${bestLine}</p>
+      </div>
+      <p class="meta"><a href="${logHref()}">Open the log</a></p>
+    </header>
+    <section>
+      <h2>How far each pull got</h2>
+      ${chart(overview.pulls, overview.markers)}
+      ${legend(overview.pulls)}
+      <p class="meta">Taller is further through the fight. A bar that crosses a line reached that mechanic.</p>
+    </section>
+    <div class="stats">
+      <div class="stat"><b>${overview.pulls.length}</b><span>pulls</span></div>
+      <div class="stat"><b>${best ? best.bossPct + "%" : "–"}</b><span>${best ? "best · " + best.phaseName : "best"}</span></div>
+    </div>
+    ${phases}`;
+}
+function renderFight(id) {
+  const pull = overviewOf(SESSION).pulls.find(row => String(row.id) === String(id));
+  if (!pull) return `<p>Pull ${id} is not in this session.</p>`;
+  return `
+    <header>
+      <div>
+        <h1>Pull ${pull.id}</h1>
+        <p class="meta">${pull.when ? pull.when + " · " : ""}${pull.phaseFull} · ${pull.bossPct}% · ${pull.clock}</p>
+      </div>
+    </header>
+    <section>
+      <p>This pull ended in ${pull.phaseName} at ${pull.bossPct}%.</p>
+      <p class="quiet">There is no death review for this pull.</p>
+    </section>`;
+}
+function renderPull(id) {
+  const pull = findPull(id);
+  if (!pull) return `<p>Pull ${id} is not in this session.</p>`;
+  const c = counts(pull.deaths);
+  const hit = [];
+  const clean = [];
+  for (const mech of SESSION.mechanics.slice().sort(byTimeline)) {
+    const rows = judged(pull.deaths).filter(row => row.mechanicId === mech.id);
+    if (rows.length) hit.push({ mech, rows, mc: counts(rows) });
+    else if ((pull.duration || 0) >= (mech.starts || 0)) clean.push(mech);
+  }
+  const blocks = hit.map(({ mech, rows }) => `<div class="mech">
+    <div class="mech-head">
+      <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${mech.id}">${mech.name}</button></h3>
+    </div>
+    ${rows.map(deathCard).join("")}
+  </div>`).join("");
+  const rest = clean.length
+    ? `<p class="meta" style="margin-top:14px">No deaths</p><div class="clean">${clean.map(mech => `<button class="link" data-go="s/${SESSION.code}/mechanic/${mech.id}">${mech.name}</button>`).join("")}</div>`
+    : "";
+  const packets = c.environment ? `<p class="meta" style="margin-top:12px">${c.environment} deaths had no damage packet.</p>` : "";
+  return `
+    <header>
+      <div>
+        <h1>Pull ${pull.id}</h1>
+        <p class="meta">${pull.when ? pull.when + " · " : ""}${pull.bossPct}% wipe · ${pull.clock} in ${pull.phase}</p>
+      </div>
+      <p class="meta"><a href="${logHref(pull.id)}">Open this pull</a></p>
+    </header>
+    <section>
+      ${blocks || `<p class="quiet">No judged deaths on this pull.</p>`}
+      ${rest}
+      ${packets}
+    </section>`;
+}
+function renderMechanic(id) {
+  const mech = findMech(id);
+  if (!mech) return `<p>That mechanic is not defined.</p>`;
+  const blocks = [];
+  let clean = 0;
+  for (const pull of SESSION.pulls) {
+    const rows = judged(pull.deaths).filter(row => row.mechanicId === mech.id);
+    if (!rows.length) { clean += 1; continue; }
+    blocks.push(`<div class="pull-block">
+      <div class="mech-head">
+        <h3><button class="link" data-go="s/${SESSION.code}/pull/${pull.id}">Pull ${pull.id}</button> <span class="meta">${pull.when ? pull.when + " · " : ""}${pull.bossPct}%</span></h3>
+      </div>
+      ${rows.map(deathCard).join("")}
+    </div>`);
+  }
+  return `
+    <header>
+      <div>
+        <h1>${mech.name}</h1>
+        <p class="meta">${clean} pulls had no deaths to this.</p>
+      </div>
+    </header>
+    <section>
+      <p>${mech.should}</p>
+    </section>
+    <section>
+      <h2>Pulls where someone died</h2>
+      ${blocks.join("") || `<p class="quiet">Nobody died to this.</p>`}
+    </section>`;
+}
+function paintActive() {
+  const where = route();
+  const go = currentGo();
+  for (const button of document.querySelectorAll("#nav button.nav")) {
+    const sameSession = Boolean(where.code) && button.dataset.go === `s/${where.code}`;
+    button.classList.toggle("on", button.dataset.go === go || (sameSession && where.view !== "all"));
+  }
+  const active = document.querySelector(`#nav button.nav[data-go="${CSS.escape(go)}"]`);
+  if (!active) return;
+  const fold = active.closest("details.fold");
+  if (fold && !fold.open) {
+    fold.open = true;
+    foldState[fold.dataset.fold] = true;
+  }
+  active.scrollIntoView({ block: "nearest" });
+}
+function render() {
+  const where = route();
+  SESSION = where.code ? byCode[where.code] : null;
+  if (render.navCode !== (where.code || "")) {
+    const query = document.getElementById("filter")?.value || "";
+    renderNav();
+    render.navCode = where.code || "";
+    const input = document.getElementById("filter");
+    if (input && query) {
+      input.value = query;
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    }
+  }
+  const app = document.getElementById("app");
+  if (!SESSION) app.innerHTML = renderHome();
+  else if (where.view === "pull") app.innerHTML = renderPull(where.id);
+  else if (where.view === "fight") app.innerHTML = renderFight(where.id);
+  else if (where.view === "mechanic") app.innerHTML = renderMechanic(where.id);
+  else app.innerHTML = renderAll();
+  paintActive();
+  const stamp = SESSION ? [SESSION.dayLabel, SESSION.timeLabel].filter(Boolean).join(" ") : "Sessions";
+  document.title = !SESSION
+    ? "Sessions"
+    : where.view === "pull" || where.view === "fight"
+      ? `Pull ${where.id} · ${stamp}`
+      : where.view === "mechanic"
+        ? `${(findMech(where.id) || {}).name || where.id} · ${stamp}`
+        : stamp;
+}
+document.body.addEventListener("click", event => {
+  const summary = event.target.closest("#nav summary");
+  if (summary) {
+    const fold = summary.parentElement;
+    foldState[fold.dataset.fold] = !fold.open;
+  }
+  const row = event.target.closest("[data-go]");
+  if (!row) return;
+  const next = row.dataset.go;
+  if ((location.hash.replace(/^#/, "") || "") === next) render();
+  location.hash = next;
+});
+document.body.addEventListener("input", event => {
+  if (event.target.id !== "filter") return;
+  const query = event.target.value.trim().toLowerCase();
+  for (const button of document.querySelectorAll("#nav button.nav")) {
+    if (button.dataset.keep) continue;
+    const label = button.dataset.label || "";
+    button.hidden = query !== "" && !label.includes(query);
+  }
+  const active = document.querySelector("#nav button.nav.on");
+  for (const fold of document.querySelectorAll("#nav details.fold")) {
+    const buttons = [...fold.querySelectorAll("button.nav")];
+    if (query) {
+      fold.open = buttons.some(button => !button.hidden);
+      continue;
+    }
+    const saved = fold.dataset.fold in foldState ? foldState[fold.dataset.fold] : fold.dataset.default === "1";
+    fold.open = saved || Boolean(active && fold.contains(active));
+  }
+});
+window.addEventListener("hashchange", render);
+render();
+</script>
+</body>
+</html>

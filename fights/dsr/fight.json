@@ -1,0 +1,39 @@
+{
+  "id": "dsr",
+  "name": "Dragonsong's Reprise",
+  "zone_id": 968,
+  "low_hp": 15000,
+  "personal_mit": [
+    "Rampart",
+    "Vengeance",
+    "Sentinel",
+    "Hallowed Ground",
+    "Holy Sheltron",
+    "Knight's Resolve",
+    "Bloodwhetting",
+    "Stem the Flow",
+    "Shake It Off",
+    "Shake It Off (Over Time)"
+  ],
+  "roles": {
+    "tank": ["Paladin", "Warrior", "Gunbreaker", "DarkKnight"],
+    "healer": ["Astrologian", "Scholar", "WhiteMage", "Sage"]
+  },
+  "phases": [
+    {
+      "id": 2,
+      "name": "Thordan",
+      "min_duration_ms": 20000
+    }
+  ],
+  "clock": [
+    {"phase": 1, "at": 0},
+    {"phase": 2, "at": 153}
+  ],
+  "markers": [
+    {"name": "Empty Dimension", "phase": 1, "starts": 8},
+    {"name": "Hyperdimensional Slash", "phase": 1, "starts": 40},
+    {"name": "Faith Unmoving", "phase": 1, "starts": 75},
+    {"name": "Pure of Heart", "phase": 1, "starts": 125}
+  ]
+}

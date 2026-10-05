@@ -1,0 +1,335 @@
+{
+  "fight": "dsr",
+  "mechanics": [
+    {
+      "id": "eternal-conviction",
+      "name": "Eternal Conviction",
+      "phase": 2,
+      "guids": [25568],
+      "category": "raidwide",
+      "scales_with_stack": false,
+      "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
+      "roles": {
+        "tank": {"unmitigated_max": 75000, "lived": "61–67k"},
+        "healer": {"unmitigated_max": 115000, "lived": "about 86–103k"},
+        "dps": {"unmitigated_max": 115000, "lived": "about 90–108k"}
+      }
+    },
+    {
+      "id": "sacred-sever",
+      "name": "Sacred Sever",
+      "phase": 2,
+      "guids": [25571],
+      "category": "stack",
+      "scales_with_stack": true,
+      "typical_targets": 4,
+      "should_have_been": "A full share of 4 that people live is about 35–63k. A stack of 1 or 2 is larger, and still this mechanic if it stays under the role cap. Cleaves are a different hit.",
+      "roles": {
+        "tank": {"unmitigated_max": 120000, "lived": "about 27k on a full share"},
+        "healer": {"unmitigated_max": 90000, "lived": "about 45k on a full share"},
+        "dps": {"unmitigated_max": 85000, "lived": "about 43k on a full share"}
+      }
+    },
+    {
+      "id": "hiemal-storm",
+      "name": "Hiemal Storm",
+      "phase": 2,
+      "guids": [25575],
+      "category": "puddle",
+      "scales_with_stack": false,
+      "should_have_been": "A placed ice hit is about 25–40k. This does not split like a stack.",
+      "roles": {
+        "tank": {"unmitigated_max": 90000, "lived": "about 24k, up to 76k"},
+        "healer": {"unmitigated_max": 55000, "lived": "about 36k"},
+        "dps": {"unmitigated_max": 55000, "lived": "about 38k"}
+      }
+    },
+    {
+      "id": "holy-impact",
+      "name": "Holy Impact",
+      "phase": 2,
+      "guids": [25578],
+      "category": "raidwide",
+      "scales_with_stack": false,
+      "should_have_been": "Same shape as Eternal Conviction. Tanks take about 63k. Everyone else takes about 95–103k, even in a full party of 8.",
+      "roles": {
+        "tank": {"unmitigated_max": 78000, "lived": "61–67k"},
+        "healer": {"unmitigated_max": 115000, "lived": "about 90–98k"},
+        "dps": {"unmitigated_max": 115000, "lived": "about 95–103k"}
+      }
+    },
+    {
+      "id": "dragons-rage",
+      "name": "Dragon's Rage",
+      "phase": 2,
+      "guids": [25551],
+      "category": "stack",
+      "scales_with_stack": true,
+      "typical_targets": 5,
+      "fail_above": 200000,
+      "should_have_been": "A lived share is about 60–80k, usually 5 people. A stack of 3 around 102–113k is that share with two bodies missing.",
+      "roles": {
+        "tank": {"unmitigated_max": 130000, "lived": "about 26k"},
+        "healer": {"unmitigated_max": 140000, "lived": "about 63k"},
+        "dps": {"unmitigated_max": 140000, "lived": "about 67k"}
+      }
+    },
+    {
+      "id": "skyward-leap",
+      "name": "Skyward Leap",
+      "phase": 2,
+      "guids": [25565],
+      "category": "tower",
+      "scales_with_stack": false,
+      "fail_above": 150000,
+      "should_have_been": "A real tower is 59–70k unmitigated. Lived soaks usually have 5–10% mit and a 13–39k shield. An empty tower is about 600–760k.",
+      "roles": {
+        "tank": {"unmitigated_max": 55000, "lived": "about 37k"},
+        "healer": {"unmitigated_max": 78000, "lived": "59–65k"},
+        "dps": {"unmitigated_max": 78000, "lived": "59–70k"}
+      }
+    },
+    {
+      "id": "heavenly-heel",
+      "name": "Heavenly Heel",
+      "phase": 2,
+      "guids": [25543],
+      "category": "tankbuster",
+      "scales_with_stack": false,
+      "tanks_only": true,
+      "one_target": true,
+      "requires_personal_mit": true,
+      "should_have_been": "One tank takes Heavenly Heel. The other tank takes the three-hit Ascalon's Might. A lived heel is about 159–174k before mit, with Rampart and Sheltron. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real heel without personal mitigation owns that death.",
+      "roles": {
+        "tank": {"unmitigated_max": 190000, "lived": "159–174k before mit"},
+        "healer": {"unmitigated_max": 140000, "lived": "not a healer hit"},
+        "dps": {"unmitigated_max": 140000, "lived": "not a DPS hit"}
+      }
+    },
+    {
+      "id": "holy-bladedance",
+      "name": "Holy Bladedance",
+      "phase": 2,
+      "guids": [25299],
+      "category": "tankbuster",
+      "scales_with_stack": false,
+      "should_have_been": "The normal tank hit is about 12–22k.",
+      "roles": {
+        "tank": {"unmitigated_max": 55000, "lived": "about 21k"},
+        "healer": {"unmitigated_max": 50000, "lived": "not a healer hit"},
+        "dps": {"unmitigated_max": 50000, "lived": "not a DPS hit"}
+      }
+    },
+    {
+      "id": "lightning-storm",
+      "name": "Lightning Storm",
+      "phase": 2,
+      "guids": [25549],
+      "category": "spread",
+      "scales_with_stack": false,
+      "should_have_been": "A clean spread is about 40k. Overlaps are several times that.",
+      "roles": {
+        "tank": {"unmitigated_max": 40000, "lived": "about 27k"},
+        "healer": {"unmitigated_max": 55000, "lived": "about 40k"},
+        "dps": {"unmitigated_max": 60000, "lived": "about 42k"}
+      }
+    },
+    {
+      "id": "bright-flare",
+      "name": "Bright Flare",
+      "phase": 2,
+      "guids": [25295],
+      "category": "orb",
+      "scales_with_stack": false,
+      "should_have_been": "A single orb is about 64k. Overlaps sit above the role cap.",
+      "roles": {
+        "tank": {"unmitigated_max": 85000, "lived": "about 64k"},
+        "healer": {"unmitigated_max": 85000, "lived": "about 64k"},
+        "dps": {"unmitigated_max": 85000, "lived": "about 64k"}
+      }
+    },
+    {
+      "id": "ascalons-might",
+      "name": "Ascalon's Might",
+      "phase": 2,
+      "guids": [25541],
+      "category": "tankbuster",
+      "scales_with_stack": false,
+      "tanks_only": true,
+      "one_target": true,
+      "requires_personal_mit": true,
+      "should_have_been": "One tank takes the three hits, about 71–86k each. When the warrior takes it, he invulns it or heavy-mits it. The later three-hit is the swap: the tank who did not take Heavenly Heel takes this. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
+      "roles": {
+        "tank": {"unmitigated_max": 110000, "lived": "about 71–86k"},
+        "healer": {"unmitigated_max": 110000, "lived": "not a healer hit"},
+        "dps": {"unmitigated_max": 110000, "lived": "not a DPS hit"}
+      }
+    },
+    {
+      "id": "ascalons-mercy-concealed",
+      "name": "Ascalon's Mercy Concealed",
+      "phase": 2,
+      "guids": [25545],
+      "category": "dodge",
+      "any_hit_is_fail": true,
+      "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind it, then dodges together. Nobody is hit. A player who gets hit owns that mistake. If someone baited their cone from outside the stack, they share the blame for the player that cone hits."
+    },
+    {
+      "id": "heavy-impact",
+      "name": "Heavy Impact",
+      "phase": 2,
+      "guids": [25560, 25559],
+      "category": "dodge",
+      "any_hit_is_fail": true,
+      "should_have_been": "Dodge rings. Clean pulls take 0. Both ability ids are this ring."
+    },
+    {
+      "id": "dragons-glory",
+      "name": "Dragon's Glory",
+      "phase": 2,
+      "guids": [25554],
+      "category": "gaze",
+      "any_hit_is_fail": true,
+      "should_have_been": "A successful gaze is 0."
+    },
+    {
+      "id": "dragons-gaze",
+      "name": "Dragon's Gaze",
+      "phase": 2,
+      "guids": [25553],
+      "category": "gaze",
+      "any_hit_is_fail": true,
+      "should_have_been": "A successful gaze is 0."
+    },
+    {
+      "id": "holy-shield-bash",
+      "name": "Holy Shield Bash",
+      "phase": 2,
+      "guids": [25297],
+      "category": "dodge",
+      "any_hit_is_fail": true,
+      "should_have_been": "The bash that kills is the failed version, hundreds of thousands to millions."
+    },
+    {
+      "id": "shining-blade",
+      "name": "Shining Blade",
+      "phase": 2,
+      "guids": [25570],
+      "category": "dodge",
+      "any_hit_is_fail": true,
+      "should_have_been": "Hits that kill are the failed cleave."
+    },
+    {
+      "id": "heavens-stake",
+      "name": "Heavens' Stake",
+      "phase": 2,
+      "guids": [28591],
+      "category": "dodge",
+      "any_hit_is_fail": true,
+      "should_have_been": "Hits that kill are standing in the fire."
+    },
+    {
+      "id": "frostbite",
+      "name": "Frostbite",
+      "phase": 2,
+      "guids": [1002946],
+      "category": "puddle",
+      "any_hit_is_fail": true,
+      "should_have_been": "Frostbite is the failed ice soak."
+    },
+    {
+      "id": "dimensional-collapse",
+      "name": "Dimensional Collapse",
+      "phase": 2,
+      "guids": [25564],
+      "category": "puddle",
+      "any_hit_is_fail": true,
+      "should_have_been": "No lived sample is stored yet, so any hit stays a fail until a baseline is added."
+    }
+  ],
+  "clusters": [
+    {
+      "id": "ascalons-mercy-opener",
+      "name": "Ascalon's Mercy Concealed",
+      "phase": 2,
+      "starts": 0,
+      "skill": "dsr-thordan-opener",
+      "summary": "About 14 seconds. One tank stands in front of the boss. Everyone else stacks tight behind it, then dodges together. Nobody is hit. The same cones come back inside Strength of the Ward.",
+      "parts": [
+        {"id": "ascalons-mercy-concealed", "until": 30}
+      ]
+    },
+    {
+      "id": "ascalons-might-opener",
+      "name": "Ascalon's Might",
+      "phase": 2,
+      "starts": 14,
+      "skill": "dsr-thordan-opener",
+      "summary": "The opener tankbuster, about 17 seconds in. Three hits on one tank. When the warrior takes it, he invulns it or heavy-mits it. The same three-hit comes back with Heavenly Heel as the tank swap.",
+      "parts": [
+        {"id": "ascalons-might", "until": 50}
+      ]
+    },
+    {
+      "id": "strength-of-the-ward",
+      "name": "Strength of the Ward",
+      "phase": 2,
+      "starts": 40,
+      "skill": "dsr-strength-of-the-ward",
+      "summary": "About 43 to 65 seconds. Light parties spread for Lightning Storm while Heavy Impact rings out, then dodge a second Ascalon's Mercy Concealed. Thordan becomes north: Skyward Leap, the Dragon's Rage stack, Holy Shield Bash tethers, then Holy Bladedance. Eternal Conviction hits the party as that ends.",
+      "parts": [
+        {"id": "lightning-storm"},
+        {"id": "heavy-impact"},
+        {"id": "ascalons-mercy-concealed", "after": 30},
+        {"id": "dimensional-collapse"},
+        {"id": "skyward-leap"},
+        {"id": "dragons-rage"},
+        {"id": "holy-shield-bash"},
+        {"id": "holy-bladedance"},
+        {"id": "eternal-conviction", "until": 100}
+      ]
+    },
+    {
+      "id": "heavenly-heel-swap",
+      "name": "Heavenly Heel",
+      "phase": 2,
+      "starts": 75,
+      "skill": "dsr-heavenly-heel",
+      "summary": "The tank swap, about 81 seconds. One tank takes Heavenly Heel. The other tank takes the three-hit Ascalon's Might. Anyone who is not a tank getting hit owns that mistake. A tank who dies on the real hit without personal mitigation owns that death.",
+      "parts": [
+        {"id": "heavenly-heel"},
+        {"id": "ascalons-might", "after": 50}
+      ]
+    },
+    {
+      "id": "sanctity-of-the-ward",
+      "name": "Sanctity of the Ward",
+      "phase": 2,
+      "starts": 105,
+      "skill": "dsr-sanctity-of-the-ward",
+      "summary": "About 112 seconds. Look away from Dragon's Gaze and Dragon's Glory. Sacred Sever is the shared jump between the sword markers while the knights dash. Shining Blade is a failed dash. Bright Flare is a failed orb.",
+      "parts": [
+        {"id": "dragons-gaze"},
+        {"id": "dragons-glory"},
+        {"id": "sacred-sever"},
+        {"id": "shining-blade"},
+        {"id": "bright-flare"}
+      ]
+    },
+    {
+      "id": "meteors",
+      "name": "Meteors",
+      "phase": 2,
+      "starts": 125,
+      "skill": "dsr-sanctity-of-the-ward",
+      "summary": "The second half of Sanctity, about 130 seconds. Pairs drop Hiemal Storm. Frostbite is a failed ice. Heavens' Stake is the fire, not the meteor. Holy Comet is the meteor drop and has not killed anyone in this log. Eternal Conviction and Holy Impact are the heavy hits that follow.",
+      "parts": [
+        {"id": "heavens-stake"},
+        {"id": "hiemal-storm"},
+        {"id": "frostbite"},
+        {"id": "eternal-conviction", "after": 100},
+        {"id": "holy-impact"}
+      ]
+    }
+  ]
+}

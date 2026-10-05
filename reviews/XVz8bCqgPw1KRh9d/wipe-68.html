@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wipe 68 review — Dragonsong's Reprise</title>
+<style>
+  :root {
+    --bg: #f4f1ea;
+    --paper: #fffcf7;
+    --ink: #1c1915;
+    --muted: #5e584f;
+    --line: #e2dbd0;
+    --raw: #9a3412;
+    --raw-bg: #fff1e8;
+    --fail: #7c4a12;
+    --fail-bg: #fbf3e4;
+    --env: #3f4a57;
+    --env-bg: #eef2f5;
+    --ok: #1f5c45;
+    --ok-bg: #e7f4ee;
+    --accent: #243056;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.45 "Segoe UI", system-ui, sans-serif;
+  }
+  main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 1.15;
+    margin: 0 0 6px;
+    letter-spacing: -0.03em;
+  }
+  .meta { color: var(--muted); margin: 0; }
+  a { color: var(--accent); }
+  .verdict {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--raw);
+    border-radius: 12px;
+    padding: 22px 24px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+  .count {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    color: var(--raw);
+  }
+  .count span {
+    display: block;
+    font-size: 13px;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .verdict h2 { margin: 0 0 6px; font-size: 22px; }
+  .verdict p { margin: 0; color: var(--muted); }
+  section {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+  h3 {
+    margin: 0 0 12px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .who {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+  .who strong { font-size: 20px; }
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
+  .tag.raw { background: var(--raw-bg); color: var(--raw); }
+  .tag.fail { background: var(--fail-bg); color: var(--fail); }
+  .tag.env { background: var(--env-bg); color: var(--env); }
+  .tag.ok { background: var(--ok-bg); color: var(--ok); }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 12px 0 16px;
+  }
+  .stat {
+    background: #f7f4ee;
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .stat b { display: block; font-size: 18px; letter-spacing: -0.02em; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 8px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th { color: var(--muted); font-weight: 650; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .bar-row { display: grid; grid-template-columns: 140px 1fr 72px; gap: 8px; align-items: center; margin: 6px 0; font-size: 13px; }
+  .track { background: #efeae2; border-radius: 999px; height: 10px; position: relative; overflow: hidden; }
+  .fill { height: 100%; border-radius: 999px; }
+  .fill.ok { background: #3d8f72; }
+  .fill.raw { background: #c2410c; }
+  .hpmark {
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    width: 2px;
+    background: var(--ink);
+  }
+  .note { color: var(--muted); font-size: 14px; margin: 10px 0 0; }
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    gap: 10px;
+    align-items: start;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .timeline li:last-child { border-bottom: 0; }
+  .time { font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 650; }
+  .job { color: var(--muted); font-size: 13px; }
+  .reason { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  @media (max-width: 700px) {
+    .stats { grid-template-columns: 1fr 1fr; }
+    .verdict, header, .timeline li { display: block; }
+    .count { margin-bottom: 8px; }
+    .tag { margin-top: 6px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>Wipe 68 session review</h1>
+      <p class="meta">Dragonsong's Reprise · Phase 2 · 65% · 1:02 pull</p>
+      <p class="meta">This page is pull 68 only. <a href="thordan.html">All 55 Thordan pulls</a> are in the session review.</p>
+    </div>
+    <p class="meta"><a href="https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d?fight=68&type=deaths">Open the log</a></p>
+  </header>
+
+  <div class="verdict">
+    <div class="count">1<span>raw death</span></div>
+    <div>
+      <h2>Kitana Kahn, Skyward Leap</h2>
+      <p>Normal tower damage onto a full-HP black mage, with no percent mit and an empty shield. Every other death on this pull is a failed mechanic or an environment death after a raise.</p>
+    </div>
+  </div>
+
+  <section>
+    <h3>The death that counts</h3>
+    <div class="who">
+      <strong>Kitana Kahn · Black Mage · 1:01</strong>
+      <span class="tag raw">Raw damage</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>100%</b><span>HP before the hit · 61,737</span></div>
+      <div class="stat"><b>64,954</b><span>Unmitigated tower</span></div>
+      <div class="stat"><b>1.00×</b><span>No Shield Samba, no Fey Illumination</span></div>
+      <div class="stat"><b>3,217</b><span>Overkill. Shield left was ~37</span></div>
+    </div>
+    <p class="note">Neutral Sect, Shake It Off, and Galvanize were still showing, and the barrier was already gone. No Vulnerability Up and no Damage Down.</p>
+    <p class="note">A usual 10% mit (64,954 × 0.9 = 58,459) or a normal ~13k shield would have kept her up. She had neither.</p>
+  </section>
+
+  <section>
+    <h3>Same tower on pulls where it was soaked</h3>
+    <p class="note" style="margin-top:0">33 soaks across 11 pulls that got through Skyward Leap. Unmitigated damage stays in a tight band. People live because of mit and shields, not because the tower is smaller.</p>
+    <div style="margin: 14px 0 6px">
+      <div class="bar-row"><span>Typical hit to HP</span><div class="track"><div class="fill ok" style="width:48%"></div></div><span>~31k</span></div>
+      <div class="bar-row"><span>Roughest lived soak</span><div class="track"><div class="fill ok" style="width:79%"></div></div><span>54k</span></div>
+      <div class="bar-row"><span>Kitana, this pull</span><div class="track"><div class="fill raw" style="width:100%"></div></div><span>65k</span></div>
+    </div>
+    <p class="note">Bars are the hit compared with a 61,737 HP black mage. The rough soak was on a ninja (68k HP) with a 13k shield.</p>
+    <table>
+      <thead>
+        <tr>
+          <th> </th>
+          <th class="num">Unmitigated</th>
+          <th class="num">Percent mit</th>
+          <th class="num">Shield</th>
+          <th class="num">To HP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lived towers</td>
+          <td class="num">59k–69k</td>
+          <td class="num">usually 5–10%</td>
+          <td class="num">13k–39k</td>
+          <td class="num">23k–46k</td>
+        </tr>
+        <tr>
+          <td>Kitana, wipe 68</td>
+          <td class="num">64,954</td>
+          <td class="num">none</td>
+          <td class="num">0</td>
+          <td class="num">64,954</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">Her tower is a normal solo soak. Towers are one person each. The 700k number below is the empty-tower explosion, and that one is excluded.</p>
+  </section>
+
+  <section>
+    <h3>Full pull</h3>
+    <ul class="timeline">
+      <li>
+        <div class="time">0:16</div>
+        <div>
+          <strong>Loki Doki</strong> <span class="job">Astrologian</span>
+          <p class="reason">Ascalon's Mercy Concealed. Seven cones at once, about 210k each, full HP, only Well Fed. Clean pulls take none of this.</p>
+        </div>
+        <span class="tag fail">Failed cone</span>
+      </li>
+      <li>
+        <div class="time">0:48</div>
+        <div>
+          <strong>Kite Noodle</strong> <span class="job">Ninja · 47% HP</span>
+          <p class="reason">Heavy Impact, 52,463, no mit. Only the person in the ring takes it. Same hit killed Loki on pull 33. Clean pulls take none.</p>
+        </div>
+        <span class="tag fail">Stood in ring</span>
+      </li>
+      <li>
+        <div class="time">0:51</div>
+        <div>
+          <strong>Spring Nymphar</strong> <span class="job">Scholar · 82% HP</span>
+          <p class="reason">Ascalon's Mercy Concealed. Four cones, about 207k–216k. Shake It Off and Galvanize absorbed 16,614. Still the full cone, not a shared stack.</p>
+        </div>
+        <span class="tag fail">Failed cone</span>
+      </li>
+      <li>
+        <div class="time">0:55</div>
+        <div>
+          <strong>Absolute Gigachad</strong> <span class="job">Paladin · already raised</span>
+          <p class="reason">Environment. No damage packet. Weakness was up. Full HP.</p>
+        </div>
+        <span class="tag env">Environment</span>
+      </li>
+      <li>
+        <div class="time">0:56</div>
+        <div>
+          <strong>Absolute Gigalad</strong> <span class="job">Warrior · already raised</span>
+          <p class="reason">Environment. No damage packet. Weakness was up. Holmgang had been used earlier in the pull.</p>
+        </div>
+        <span class="tag env">Environment</span>
+      </li>
+      <li>
+        <div class="time">0:57</div>
+        <div>
+          <strong>Speed Panda</strong> <span class="job">Viper · already raised</span>
+          <p class="reason">Environment. No damage packet. Weakness was up. About 92% HP.</p>
+        </div>
+        <span class="tag env">Environment</span>
+      </li>
+      <li>
+        <div class="time">0:57</div>
+        <div>
+          <strong>Loki Doki</strong> <span class="job">Astrologian · second death</span>
+          <p class="reason">Environment after the 0:16 raise. No damage packet. Weakness was up. About 93% HP.</p>
+        </div>
+        <span class="tag env">Environment</span>
+      </li>
+      <li>
+        <div class="time">1:01</div>
+        <div>
+          <strong>Kitana Kahn</strong> <span class="job">Black Mage · 100% HP</span>
+          <p class="reason">Skyward Leap, 64,954. Normal tower. No percent mit, empty shield. Died by 3,217.</p>
+        </div>
+        <span class="tag raw">Raw damage</span>
+      </li>
+      <li>
+        <div class="time">1:01</div>
+        <div>
+          <strong>Kiara Blaiddyd</strong> <span class="job">Dancer</span>
+          <p class="reason">One real tower (68,816, 17,678 absorbed, left at 17% HP) and a second hit of 713,570. That is an empty tower, about 10× a real soak.</p>
+        </div>
+        <span class="tag fail">Empty tower</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    Compared with pulls 10, 14, 17, 22, 26, 34, 43, 48, 57, 64, and 67 for Skyward Leap, and with pulls that reached this point without taking Mercy Concealed or Heavy Impact. Report XVz8bCqgPw1KRh9d, fight 68.
+  </footer>
+</main>
+</body>
+</html>

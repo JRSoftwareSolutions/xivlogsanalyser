@@ -1,0 +1,20 @@
+---
+description: How to analyze logs and apply corrections in xivloganalyzer
+alwaysApply: true
+---
+
+# Log analysis
+
+The dashboard is `dashboard.html` at the repo root. It lists every saved log as a session, grouped by day and time. `<report>/session.html` is that one session. Both are generated. Do not hand-edit them.
+
+A session's day and clock come from `<report>/session.json` (`started`, `title`, `owner`). `started` is the report's time zero. When the user corrects when a log was played, update that file and reanalyze.
+
+Mechanic knowledge for Dragonsong's Reprise lives in `fights/dsr/mechanics.json`. Use it to say what happened, what the mechanic should have been, and whose fault the death was. `notes/classification.md` explains the Thordan calls.
+
+A phase's reviewed mechanics are the `clusters` in that file, drawn top to bottom by `starts`. `skill` on a cluster is the skill for that stop. Do not hardcode the order in the page. `markers` in `fights/dsr/fight.json` are pull-chart labels for moments with no death review. They are not stops on that line.
+
+When the user corrects a call ("X should be Y", "Z is not a mistake", "that one is actually a fail"), update `fights/dsr/mechanics.json` to match, then run `python -m xivloganalyzer reanalyze` so every saved report is judged again. Update `tests/test_reference.py` only when the correction is meant to change the settled Thordan counts.
+
+The settled Thordan headline is 187 raw deaths on report `XVz8bCqgPw1KRh9d`. A tank who dies to the real Ascalon's Might or Heavenly Heel without personal mitigation owns that death. It is not raw. Pull 68 has one raw death: Kitana Kahn, Skyward Leap. Eternal Conviction and Holy Impact do not scale with stack size. Hiemal Storm deaths are fails. Heavy Impact ids 25560 and 25559 are both fails.
+
+A new log goes in `reports/<code>/` with `fights.json`, `deaths-html.json`, and ability files, then `python -m xivloganalyzer analyze <code>`.

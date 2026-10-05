@@ -1,0 +1,36 @@
+---
+name: dsr-ascalons-mercy-concealed
+description: >-
+  Parameters and faults for Ascalon's Mercy Concealed (guid 25545) in
+  Dragonsong's Reprise Thordan. One tank in front, everyone else stacked
+  behind, then dodge. Any hit is a mistake. Use when refining or judging
+  Ascalon's Mercy Concealed or 25545.
+---
+
+# Ascalon's Mercy Concealed
+
+Follow `analyze-mechanic-parameters` when changing these parameters. Follow `review-mechanic` when judging a death. Entry `ascalons-mercy-concealed` in `fights/dsr/mechanics.json`. Guid `25545`. `any_hit_is_fail` is true. The cones about 14 seconds in are the opener (`dsr-thordan-opener`). The cones about 50 seconds in are Strength of the Ward (`dsr-strength-of-the-ward`). Same cones both times.
+
+## Parameters
+
+Cones. A correct cast hits nobody. There is no raw band. Hits in this log are about 190–220k.
+
+**Opener, about 14 seconds.** One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together.
+
+**Second cast, about 50 seconds, inside Strength of the Ward.** The same cones. Same rule: nobody is hit.
+
+## How to tell
+
+- No damage from this guid: the dodge was clean.
+- Any hit: fail. The player who took it owns that mistake.
+- There is no lived band and no short-stack reading.
+
+## Fault
+
+`{player}` got hit by Ascalon's Mercy Concealed. Nobody should be hit.
+
+Edge case: someone stood out of the stack, so their cone was baited away from the group. On the dodge, that cone hits someone else. The player who was hit still owns being in the cone. The player who baited from outside the stack shares the blame, even when that baiter took no damage.
+
+This log has no positions. A death names the player who was hit. Do not pick a loose baiter from a second death on the same cast. Two players hit means both of them were in a cone. Pulls 12, 23, and 45 each have two opener deaths at the same timestamp. Those are two hits, not a named baiter.
+
+Pull 68: Loki Doki on the opener, Spring Nymphar during Strength. Both fails.
