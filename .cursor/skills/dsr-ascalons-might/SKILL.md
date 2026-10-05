@@ -17,7 +17,7 @@ Two assignments of the same guid. Survey them separately.
 
 **Opener, about 17 seconds.** Three physical hits on exactly one tank. In this log that tank is the warrior, Absolute Gigalad, on every opener. Lived hits are about 71–84k unmitigated, median about 80k. Nothing on the opener went over 85k, and nobody died to it. Many of those openers show no mitigation and he still lives, because the hit is about 80k on a warrior health pool. Correct play is still an invuln or heavy personal mitigation. A death without that is his.
 
-**Second cast, about 85 seconds, after Heavenly Heel.** Same shape: three hits, one tank, about 79k unmitigated on the casts that matched. This is the tank swap. The tank who took Heavenly Heel does not take this. The other tank does. In this log the warrior's take uses Vengeance and Bloodwhetting.
+**Second cast, about 85 seconds, after Heavenly Heel.** Same shape: three hits, one tank, about 79k unmitigated on the casts that matched. This is the tank swap. The off tank takes Heavenly Heel. The main tank, the one who took the opener, takes this three-hit. In this log the warrior's take uses Vengeance and Bloodwhetting.
 
 Correct for either cast:
 

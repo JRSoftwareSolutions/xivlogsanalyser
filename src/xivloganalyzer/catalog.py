@@ -29,6 +29,7 @@ class Mechanic:
     tanks_only: bool = False
     one_target: bool = False
     requires_personal_mit: bool = False
+    off_tank_takes: bool = False
 
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
@@ -183,6 +184,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 tanks_only=bool(raw.get("tanks_only", False)),
                 one_target=bool(raw.get("one_target", False)),
                 requires_personal_mit=bool(raw.get("requires_personal_mit", False)),
+                off_tank_takes=bool(raw.get("off_tank_takes", False)),
             )
         )
     return FightPack(

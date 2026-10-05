@@ -45,7 +45,7 @@ def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
     if pack is None:
         raise SystemExit(f"No fight knowledge matches zone {sorted(zone_ids)} in {report.name}")
     facts = extract_report(report, pack)
-    judgments = judge_report(facts, pack)
+    judgments = judge_report(facts, pack, report)
     write_facts(report, facts)
     write_judgments(report, judgments)
     when = session_clock(report, meta)

@@ -48,7 +48,7 @@ Pull 68, wiped at 65.1%: no raw death. Kitana Kahn was at full HP with no mitiga
 
 ## Ability bands
 
-Unmitigated amounts. A hit at or under the cap for that role is raw. Far above it is a fail. Ascalon's Might, Heavenly Heel, and Holy Bladedance are the exception: a tank death on the real hit without personal mitigation is a fail.
+Unmitigated amounts. A hit at or under the cap for that role is raw. Far above it is a fail. Ascalon's Might, Heavenly Heel, and Holy Bladedance are the exception: a tank death on the real hit without personal mitigation is a fail. Heavenly Heel belongs to the off tank. A main-tank death, because the off tank did not have aggro when it locked, is the off tank's fail.
 
 | Guid | Ability | Lived | Fatal that still counts | Fail |
 |---|---|---|---|---|
@@ -57,7 +57,7 @@ Unmitigated amounts. A hit at or under the cap for that role is raw. Far above i
 | 25578 | Holy Impact | Tanks 61–67k. | Same caps as Conviction. | Same shape. Pulls 66 and 67 are the whole party, shield 0, mit 1.00. |
 | 25551 | Dragon's Rage | About 60–80k, usual stack 5: the three unmarked non-tanks plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. | ≤140k. Stack of 3 at 102–113k matches a 5-share with two missing. | Over 200k. |
 | 25565 | Skyward Leap | The blue marker. 59–70k on three non-tanks, usually 5–10% mit and a 13–39k shield. Opposite Thordan is as far as possible. East and west are slightly toward the north. The three towers on those markers are fixed. The other three are not. | Nothing. A death on the real leap is a fail. Not full HP is the healers. Full HP is missing mitigation. Pull 68 Kitana Kahn was full, multiplier 1.00, no shield. | A clip above the role cap and at or under 150k. Two people in one unfixed tower is a miscommunication. An empty tower is about 600–760k and applies Damage Down and Paralysis to everyone. |
-| 25543 | Heavenly Heel | Tanks who live it: 159–174k before mit, with Rampart and Sheltron. | Nothing. One tank takes it. The other tank takes the three-hit Ascalon's Might. | A non-tank hit is theirs. Pull 60 Gigalad is the real 165,404 hit with only 10% mit and Desperate Measures. That is his missing personal mitigation, not raw. |
+| 25543 | Heavenly Heel | Tanks who live it: 159–174k before mit, with Rampart and Sheltron. The paladin takes it. | Nothing. The off tank provokes and takes it. The main tank takes the three-hit Ascalon's Might. | A non-tank hit is theirs. Pull 60 locked onto Gigalad, the main tank, for 165,404. Gigachad did not have aggro. That death is the off tank's missed provoke. |
 | 25575 | Hiemal Storm | 25–40k. | Nothing in this log. The 114k vs 76k gap on pull 49 is not a short stack. | Every death, minimum about 104k. |
 | 25549 | Lightning Storm | One hit each. Tanks 26–29k, healers 38–42k, DPS 38–45k. Healer front, melee left, ranged right, tank back, one of each per triangle. | Inside the role cap (DPS 60k, healer 55k, tank 40k). None of the deaths were. | A clip. Pull 31 is Kite Noodle and Spring Nymphar, both bolts, about 431–468k. Both own it. A doubled non-tank role, a wrong spot, and a Spiral Thrust hit are also mistakes. This log has no positions, so those are not called from damage. |
 | 25299 | Holy Bladedance | About 20–22k on the tethered tank, with personal mitigation. | Tank ≤55k, and under 15k HP goes to **low**. A tank death on that hit without personal mitigation is a fail. | A non-tank in the cone. The hits at ~230k and ~370k. |

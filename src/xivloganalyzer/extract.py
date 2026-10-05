@@ -335,6 +335,65 @@ def _fact(
     )
 
 
+def _opener_until(pack: FightPack) -> float:
+    for cluster in pack.clusters:
+        for part in cluster.parts:
+            if part.mechanic_id == "ascalons-might" and part.after is None and part.until is not None:
+                return part.until
+    return 50
+
+
+def tank_pairs(report: Path, pack: FightPack) -> dict[int, tuple[str | None, str | None]]:
+    """Who held the opener, and the other tank.
+
+    The tank hit by the opener Ascalon's Might had aggro. That is the main tank.
+    The other tank is the off tank. Heavenly Heel locks to whoever has aggro.
+    """
+    meta_path = report / "fights.json"
+    if not meta_path.is_file():
+        return {}
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    actors = {actor["id"]: actor for actor in meta.get("friendlies") or []}
+    tank_jobs = set(pack.roles.get("tank") or [])
+    tanks = [actor for actor in actors.values() if actor.get("type") in tank_jobs]
+    guid = next((mech.guids[0] for mech in pack.mechanics if mech.id == "ascalons-might" and mech.guids), None)
+    events: list[dict] = []
+    if guid is not None:
+        path = report / "abilities" / f"ab_{guid}.json"
+        if path.is_file():
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            events = [event for event in payload.get("events") or [] if event.get("type") == "damage"]
+    opener_until = _opener_until(pack)
+    pairs: dict[int, tuple[str | None, str | None]] = {}
+    for fight in meta.get("fights") or []:
+        windows = _qualifying_phases(fight, pack)
+        if not windows:
+            continue
+        _phase, start, _end = windows[0]
+        counts: dict[int, int] = {}
+        for event in events:
+            if event.get("fight") != fight["id"]:
+                continue
+            if (event["timestamp"] - start) / 1000 >= opener_until or event["timestamp"] < start:
+                continue
+            target = event.get("targetID")
+            if target is None:
+                continue
+            counts[int(target)] = counts.get(int(target), 0) + 1
+        if not counts:
+            pairs[fight["id"]] = (None, None)
+            continue
+        main_id = max(counts, key=counts.get)
+        main = actors.get(main_id) or {}
+        if main.get("type") not in tank_jobs:
+            pairs[fight["id"]] = (None, None)
+            continue
+        others = [tank.get("name") for tank in tanks if tank["id"] != main_id and tank.get("name")]
+        off = others[0] if len(others) == 1 else None
+        pairs[fight["id"]] = (main.get("name"), off)
+    return pairs
+
+
 def write_facts(report: Path, facts: list[DeathFact]) -> Path:
     path = report / "facts.json"
     path.write_text(

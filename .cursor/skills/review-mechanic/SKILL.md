@@ -37,7 +37,7 @@ Apply these in order:
 4. `any_hit_is_fail` → **fail**. Use the mechanic skill for whose fault.
 5. Unmitigated above `fail_above`, or above the role cap → **fail**. Use the mechanic skill. Overkill on a failed hit is still a fail.
 6. Unmitigated at or under the role cap, and HP already under 15,000 → **low**. The hit is the normal one.
-7. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might, Heavenly Heel, or Holy Bladedance without the required personal mitigation is a fail. A Skyward Leap death on the real marker is a fail: short of full HP belongs to the healers, and full HP is missing mitigation.
+7. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might, Heavenly Heel, or Holy Bladedance without the required personal mitigation is a fail. Heavenly Heel is the off tank's hit. If the main tank dies to it because the off tank did not have aggro when it locked, that death is the off tank's. A Skyward Leap death on the real marker is a fail: short of full HP belongs to the healers, and full HP is missing mitigation.
 
 ## Say this
 
