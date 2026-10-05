@@ -24,8 +24,17 @@
   h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.03em; }
   h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
   h3 { margin: 0; font-size: 18px; }
-  .brand { margin: 0 4px 12px; }
-  .brand strong { display: block; font-size: 15px; }
+  .fight-head {
+    margin: 0 8px 10px; font-size: 18px; font-weight: 700;
+    letter-spacing: -0.02em; line-height: 1.25;
+  }
+  button.fight-head {
+    display: block; width: 100%; font: inherit; font-size: 18px; font-weight: 700;
+    letter-spacing: -0.02em; line-height: 1.25; text-align: left; color: inherit;
+    background: transparent; border: 0; border-radius: 8px; cursor: pointer;
+    margin: 0 0 10px; padding: 4px 8px;
+  }
+  button.fight-head:hover, button.fight-head.on { background: #f7f4ee; }
   .meta { color: var(--muted); margin: 0; }
   a { color: #243056; }
   button.nav, button.link {
@@ -58,6 +67,17 @@
   .fold summary:hover { background: #f7f4ee; color: var(--ink); }
   .fold-title { flex: 1; }
   .fold .countline { color: var(--muted); font-size: 12px; letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
+  details.session > summary {
+    text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 600; color: var(--ink);
+    align-items: flex-start;
+  }
+  details.session > summary::before { margin-top: 5px; }
+  details.session.on > summary { background: var(--raw-bg); color: var(--ink); }
+  .session-body { padding: 2px 0 6px 12px; }
+  .session-body > .fold { margin: 0; }
+  .session-body > .fold > summary {
+    text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 600; color: var(--ink);
+  }
   input.filter {
     width: 100%; margin: 4px 0 8px; padding: 7px 8px; border-radius: 8px;
     border: 1px solid var(--line); font: inherit; background: #fff;
@@ -227,60 +247,122 @@ function findPull(id) {
 function findMech(id) {
   return SESSION.mechanics.find(mech => mech.id === id);
 }
+function esc(value) {
+  return String(value ?? "").replace(/[&<>"']/g, ch => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  }[ch]));
+}
 const foldState = {};
-function fold(id, title, count, body, open) {
+function fold(id, title, count, body, open, opts) {
   const shown = id in foldState ? foldState[id] : open;
-  return `<details class="fold" data-fold="${id}" data-default="${open ? "1" : "0"}"${shown ? " open" : ""}>
-    <summary><span class="fold-title">${title}</span><span class="countline">${count}</span></summary>
+  const extra = opts && opts.className ? ` ${opts.className}` : "";
+  const label = opts && opts.label ? ` data-label="${esc(opts.label)}"` : "";
+  const countHtml = count === "" || count == null ? "" : `<span class="countline">${count}</span>`;
+  return `<details class="fold${extra}" data-fold="${esc(id)}"${label} data-default="${open ? "1" : "0"}"${shown ? " open" : ""}>
+    <summary><span class="fold-title">${esc(title)}</span>${countHtml}</summary>
     ${body}
   </details>`;
 }
-function sessionList(openDays) {
-  return DATA.days.map(day => {
-    const rows = day.sessions.map(item => {
-      const label = `${day.label} ${item.timeLabel} ${item.fight} ${item.title} ${item.owner} ${item.code}`.toLowerCase();
-      return `<button class="nav" data-go="s/${item.code}" data-label="${label}">
-        <span>${item.timeLabel || item.code}</span>
-      </button>`;
-    }).join("");
-    const id = `day-${day.day || day.label}`;
-    return fold(id, day.label, day.sessions.length, rows, openDays);
-  }).join("");
+function sessionStamp(item) {
+  const day = item.dayLabel && item.dayLabel !== "No date" ? item.dayLabel : "";
+  return [day, item.timeLabel].filter(Boolean).join(" · ") || item.code;
 }
-function renderNav() {
-  const where = route();
-  const sessions = sessionList(!SESSION);
-  if (!SESSION) {
-    document.getElementById("nav").innerHTML = `
-      <p class="brand"><strong>Sessions</strong><span class="meta">${DATA.sessions.length === 1 ? "1 log" : DATA.sessions.length + " logs"}</span></p>
-      <input class="filter" id="filter" placeholder="Find a session" aria-label="Find a session">
-      ${sessions}`;
-    return;
+function byStartedDesc(a, b) {
+  const as = (byCode[a.code] || {}).started || "";
+  const bs = (byCode[b.code] || {}).started || "";
+  if (as !== bs) return as < bs ? 1 : -1;
+  return a.code.localeCompare(b.code);
+}
+function sessionGroups() {
+  const items = [];
+  for (const day of DATA.days) {
+    for (const item of day.sessions) items.push(item);
   }
-  const stamp = [SESSION.dayLabel, SESSION.timeLabel].filter(part => part && part !== "No date").join(" · ");
-  const pulls = SESSION.pulls.map(pull => {
+  items.sort(byStartedDesc);
+  const groups = [];
+  const index = new Map();
+  for (const item of items) {
+    const name = item.fight || "Sessions";
+    let group = index.get(name);
+    if (!group) {
+      group = { name, sessions: [] };
+      index.set(name, group);
+      groups.push(group);
+    }
+    group.sessions.push(item);
+  }
+  return groups;
+}
+function pullNav(session) {
+  return session.pulls.map(pull => {
     const when = pull.when ? `${pull.when} · ` : "";
-    return `<button class="nav" data-go="s/${SESSION.code}/pull/${pull.id}" data-label="pull ${pull.id} ${pull.when || ""}">
+    const label = `pull ${pull.id} ${pull.when || ""}`.toLowerCase();
+    return `<button class="nav" data-go="s/${session.code}/pull/${pull.id}" data-label="${esc(label)}">
       <span>Pull ${pull.id} <span class="quiet">${when}${pull.bossPct}%</span></span>
     </button>`;
   }).join("");
-  const mechs = SESSION.mechanics.slice().sort(byTimeline).map(mech => {
-    return `<button class="nav" data-go="s/${SESSION.code}/mechanic/${mech.id}" data-label="${mech.name.toLowerCase()}">
+}
+function mechNav(session) {
+  return session.mechanics.slice().sort(byTimeline).map(mech => {
+    const label = mech.name.toLowerCase();
+    return `<button class="nav" data-go="s/${session.code}/mechanic/${mech.id}" data-label="${esc(label)}">
       <span>${mech.name}</span>
     </button>`;
   }).join("");
-  const home = DATA.sessions.length > 1
-    ? `<button class="nav" data-go="home" data-keep="1"><span>All sessions</span><span class="countline">${DATA.sessions.length}</span></button>`
-    : "";
-  const pullCount = (SESSION.overview && SESSION.overview.pulls.length) || SESSION.pulls.length;
-  document.getElementById("nav").innerHTML = `
-    <p class="brand"><strong>${SESSION.fight}</strong><span class="meta">${stamp}</span></p>
-    <input class="filter" id="filter" placeholder="Find a pull, mechanic, or session" aria-label="Find a pull, mechanic, or session">
-    ${home}
-    <button class="nav" data-go="s/${SESSION.code}" data-keep="1" data-label="overview"><span>Overview</span><span class="countline">${pullCount}</span></button>
-    ${sessions}
-    ${fold("pulls", "Pulls", SESSION.pulls.length, pulls, where.view === "pull" || where.view === "fight")}
-    ${fold("mechanics", "Mechanics", SESSION.mechanics.length, mechs, where.view === "mechanic")}`;
+}
+function sessionEntry(item, where) {
+  const session = byCode[item.code];
+  if (!session) return "";
+  const open = where.code === item.code;
+  const pullCount = (session.overview && session.overview.pulls.length) || session.pulls.length;
+  const label = `${sessionStamp(item)} ${item.fight} ${item.title} ${item.owner} ${item.code} overview pulls mechanics`.toLowerCase();
+  const overview = `<button class="nav" data-go="s/${item.code}" data-keep="1" data-label="overview">
+      <span>Overview</span><span class="countline">${pullCount}</span>
+    </button>`;
+  const pulls = fold(
+    `pulls-${item.code}`,
+    "Pulls",
+    session.pulls.length,
+    pullNav(session),
+    open && (where.view === "pull" || where.view === "fight"),
+  );
+  const mechs = fold(
+    `mechanics-${item.code}`,
+    "Mechanics",
+    session.mechanics.length,
+    mechNav(session),
+    open && where.view === "mechanic",
+  );
+  return fold(
+    `session-${item.code}`,
+    sessionStamp(item),
+    "",
+    `<div class="session-body">${overview}${pulls}${mechs}</div>`,
+    open,
+    { className: "session", label },
+  );
+}
+function fightHeader(name) {
+  if (DATA.sessions.length > 1) {
+    return `<button class="fight-head" data-go="home" data-keep="1">${esc(name)}</button>`;
+  }
+  return `<p class="fight-head">${esc(name)}</p>`;
+}
+function renderNav() {
+  const where = route();
+  const groups = sessionGroups();
+  let html = "";
+  groups.forEach((group, index) => {
+    html += fightHeader(group.name);
+    if (index === 0) {
+      html += `<input class="filter" id="filter" placeholder="Find a session, pull, or mechanic" aria-label="Find a session, pull, or mechanic">`;
+    }
+    html += group.sessions.map(item => sessionEntry(item, where)).join("");
+  });
+  if (!groups.length) {
+    html = `<p class="fight-head">Sessions</p>`;
+  }
+  document.getElementById("nav").innerHTML = html;
 }
 function byTimeline(a, b) {
   return a.phase - b.phase || a.starts - b.starts || a.name.localeCompare(b.name);
@@ -512,15 +594,23 @@ function paintActive() {
   const where = route();
   const go = currentGo();
   for (const button of document.querySelectorAll("#nav button.nav")) {
-    const sameSession = Boolean(where.code) && button.dataset.go === `s/${where.code}`;
-    button.classList.toggle("on", button.dataset.go === go || (sameSession && where.view !== "all"));
+    button.classList.toggle("on", button.dataset.go === go);
+  }
+  for (const head of document.querySelectorAll("#nav button.fight-head")) {
+    head.classList.toggle("on", !where.code);
+  }
+  for (const session of document.querySelectorAll("#nav details.session")) {
+    session.classList.toggle("on", session.dataset.fold === `session-${where.code}`);
   }
   const active = document.querySelector(`#nav button.nav[data-go="${CSS.escape(go)}"]`);
   if (!active) return;
-  const fold = active.closest("details.fold");
-  if (fold && !fold.open) {
-    fold.open = true;
-    foldState[fold.dataset.fold] = true;
+  let fold = active.closest("details.fold");
+  while (fold) {
+    if (!fold.open) {
+      fold.open = true;
+      foldState[fold.dataset.fold] = true;
+    }
+    fold = fold.parentElement ? fold.parentElement.closest("details.fold") : null;
   }
   active.scrollIntoView({ block: "nearest" });
 }
@@ -565,23 +655,41 @@ document.body.addEventListener("click", event => {
   if ((location.hash.replace(/^#/, "") || "") === next) render();
   location.hash = next;
 });
+function savedOpen(fold, active) {
+  const saved = fold.dataset.fold in foldState ? foldState[fold.dataset.fold] : fold.dataset.default === "1";
+  return saved || Boolean(active && fold.contains(active));
+}
 document.body.addEventListener("input", event => {
   if (event.target.id !== "filter") return;
   const query = event.target.value.trim().toLowerCase();
-  for (const button of document.querySelectorAll("#nav button.nav")) {
-    if (button.dataset.keep) continue;
-    const label = button.dataset.label || "";
-    button.hidden = query !== "" && !label.includes(query);
+  for (const session of document.querySelectorAll("#nav details.session")) {
+    const label = (session.dataset.label || "").toLowerCase();
+    session.dataset.hit = query && label.includes(query) ? "1" : "";
   }
-  const active = document.querySelector("#nav button.nav.on");
-  for (const fold of document.querySelectorAll("#nav details.fold")) {
-    const buttons = [...fold.querySelectorAll("button.nav")];
-    if (query) {
-      fold.open = buttons.some(button => !button.hidden);
+  for (const button of document.querySelectorAll("#nav button.nav")) {
+    if (button.dataset.keep) {
+      button.hidden = false;
       continue;
     }
-    const saved = fold.dataset.fold in foldState ? foldState[fold.dataset.fold] : fold.dataset.default === "1";
-    fold.open = saved || Boolean(active && fold.contains(active));
+    const session = button.closest("details.session");
+    const sessionHit = session && session.dataset.hit === "1";
+    const label = button.dataset.label || "";
+    button.hidden = query !== "" && !sessionHit && !label.includes(query);
+  }
+  const active = document.querySelector("#nav button.nav.on");
+  for (const session of document.querySelectorAll("#nav details.session")) {
+    const buttons = [...session.querySelectorAll("button.nav")].filter(button => !button.dataset.keep);
+    const matched = !query || session.dataset.hit === "1" || buttons.some(button => !button.hidden);
+    session.hidden = Boolean(query) && !matched;
+    session.open = query ? matched : savedOpen(session, active);
+  }
+  for (const fold of document.querySelectorAll("#nav details.fold:not(.session)")) {
+    const buttons = [...fold.querySelectorAll("button.nav")].filter(button => !button.dataset.keep);
+    if (query) {
+      fold.open = buttons.some(button => (button.dataset.label || "").includes(query));
+      continue;
+    }
+    fold.open = savedOpen(fold, active);
   }
 });
 window.addEventListener("hashchange", render);
