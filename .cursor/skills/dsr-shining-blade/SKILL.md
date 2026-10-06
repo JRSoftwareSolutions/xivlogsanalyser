@@ -10,7 +10,7 @@ description: >-
 
 Follow `review-mechanic` for the packet, the outcome order, and a correction. Entry `shining-blade` in `fights/dsr/mechanics.json`. Guid `25570`. `any_hit_is_fail` is true. Part of Sanctity of the Ward (`dsr-sanctity-of-the-ward`), the paladin dash. Bright Flare `25295` is the orbs from the same dash.
 
-Hits that kill are the failed cleave. A clean resolution of this mechanic deals no killing blow of this guid.
+The two knights dash in an hourglass. Hits that connect are the failed cleave. A clean resolution stores none of this guid. A player in Hysteria from a gaze was carried into the dash. These packets do not show Hysteria, so the death stays this hit.
 
 ## How to tell
 
@@ -22,4 +22,4 @@ Any damage from this guid is a fail. It is not a raidwide with a raw band.
 
 ## Parameters
 
-Follow `analyze-mechanic-parameters`. Not walked in cast order yet. Survey every cast, including resolves that dealt no hit of this guid. The current parameter is `any_hit_is_fail`: a killing hit is the failed cleave, not a raidwide band. Confirm that no lived cluster exists before keeping it. The player who is hit owns the mistake.
+Follow `analyze-mechanic-parameters`. Walked on `8DYNHQx4C7ytdLb9`. Thirty of 31 Sanctity pulls store no hit. Pull 17 is one DPS death, about 3.7 million. There is no lived cluster. The player who is hit owns the mistake.

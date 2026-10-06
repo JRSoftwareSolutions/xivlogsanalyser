@@ -22,4 +22,4 @@ Any Frostbite damage is a fail. Do not read it as a large Hiemal share or a shor
 
 ## Parameters
 
-Follow `analyze-mechanic-parameters`. Not walked in cast order yet. Survey this guid separately from Hiemal Storm `25575`. The current parameter is `any_hit_is_fail`: Frostbite is the failed-ice tick, not a large Hiemal share. Confirm the casts sit on failed soaks and that no lived Frostbite band exists. The player who dies to it failed the ice soak.
+Follow `analyze-mechanic-parameters`. Walked on `8DYNHQx4C7ytdLb9`, separate from Hiemal Storm `25575`. The ticks sit about 134–137 seconds, around 49–63k, after the placed ice. Pull 5 has one lived tick, and it is still a failed soak. There is no correct Frostbite band. The player who is hit failed to run out of the ice.

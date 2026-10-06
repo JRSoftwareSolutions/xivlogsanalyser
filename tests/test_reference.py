@@ -19,14 +19,14 @@ class ReferenceReportTest(unittest.TestCase):
         facts = extract_report(REPORT, pack)
         judgments = judge_report(facts, pack)
         counts = Counter(item.outcome for item in judgments)
-        self.assertEqual(counts["raw"], 183)
-        self.assertEqual(counts["fail"], 137)
-        self.assertEqual(counts["low"], 11)
+        self.assertEqual(counts["raw"], 86)
+        self.assertEqual(counts["fail"], 241)
+        self.assertEqual(counts["low"], 4)
         self.assertEqual(counts["unknown"], 0)
         raw = Counter(item.mechanic for item in judgments if item.outcome == "raw")
-        self.assertEqual(raw["Eternal Conviction"], 121)
+        self.assertEqual(raw["Eternal Conviction"], 45)
         self.assertEqual(raw["Sacred Sever"], 36)
-        self.assertEqual(raw["Holy Impact"], 21)
+        self.assertNotIn("Holy Impact", raw)
         self.assertEqual(raw["Dragon's Rage"], 5)
         self.assertNotIn("Skyward Leap", raw)
         self.assertNotIn("Heavenly Heel", raw)
@@ -133,9 +133,10 @@ class ReferenceReportTest(unittest.TestCase):
                 [("Kitana Kahn", 50), ("Speed Panda", 50)],
             )
         self.assertEqual(
-            owners(one(22, "Kitana Kahn", "Bright Flare")),
-            [("Kitana Kahn", 50), ("Another player", 50)],
+            sorted(owners(one(22, "Kitana Kahn", "Bright Flare"))),
+            [("Absolute Gigalad", 50), ("Kitana Kahn", 50)],
         )
+        self.assertEqual(one(22, "Absolute Gigalad", "Bright Flare").outcome, "fail")
         self.assertEqual(owners(one(10, "Kitana Kahn", "Bright Flare")), [("Kitana Kahn", 100)])
 
         self.assertEqual(
@@ -155,12 +156,23 @@ class ReferenceReportTest(unittest.TestCase):
         self.assertEqual(owners(one(12, "Loki Doki", "Dragon's Rage")), [("Missing bodies", 50)])
 
         self.assertEqual(
+            owners(one(16, "Kiara Blaiddyd", "Eternal Conviction")),
+            [("Loki Doki", 50), ("Spring Nymphar", 50)],
+        )
+        self.assertEqual(one(16, "Kiara Blaiddyd", "Eternal Conviction").outcome, "raw")
+        self.assertEqual(one(14, "Kiara Blaiddyd", "Eternal Conviction").outcome, "fail")
+        self.assertEqual(
             owners(one(14, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Loki Doki", 33), ("Spring Nymphar", 33), ("Party mitigation", 33)],
+            [("Missed soak", 50)],
         )
         self.assertEqual(
             owners(one(15, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Loki Doki", 50), ("Spring Nymphar", 50)],
+            [("Missed soak", 50)],
+        )
+        self.assertEqual(one(41, "Absolute Gigachad", "Holy Impact").outcome, "fail")
+        self.assertEqual(
+            owners(one(41, "Absolute Gigachad", "Holy Impact")),
+            [("Prey markers", 50)],
         )
         self.assertEqual(
             owners(one(12, "Absolute Gigalad", "Holy Bladedance")),

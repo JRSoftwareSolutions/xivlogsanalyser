@@ -25,7 +25,7 @@ Online text is a draft. The person decides what belongs and what a component doe
 
 Do not retune role caps or the 183 raw deaths while only regrouping components. Fault for a single killing blow stays in that ability's skill. If the guide and that skill disagree about what a hit means, say so and wait for the person.
 
-Do not invent a guid for a cast this log has not stored. Spiral Thrust, Ancient Quaga, Faith Unmoving, Ultimate End, Broad Swing, and Aetheric Burst are in the phase write-up and are not studied components yet.
+Do not invent a guid for a cast this log has not stored. Spiral Thrust, Ancient Quaga, Ultimate End, Broad Swing, and Aetheric Burst are in the phase write-up and are not studied components yet. Faith Unmoving is `25308` inside Sanctity.
 
 ## Where a stop is drawn
 
@@ -42,7 +42,7 @@ The session line for a phase is `clusters` in `fights/dsr/mechanics.json`, top t
 | Strength of the Ward | `strength-of-the-ward` | about 43–65s | `dsr-strength-of-the-ward` |
 | Heavenly Heel | `heavenly-heel-swap` | off tank's heel, then the main tank's three cleaves, about 81s | `dsr-heavenly-heel` |
 | Sanctity of the Ward | `sanctity-of-the-ward` | gazes and jumps, about 112s | `dsr-sanctity-of-the-ward` |
-| Meteors | `meteors` | ice, fire, towers, meteors, about 130s | `dsr-sanctity-of-the-ward` |
+| Meteors | `meteors` | fire, ice, towers, comets, knockback, about 130s | `dsr-sanctity-of-the-ward` |
 
 The opener is two stops. Sanctity is two stops: Meteors is the second wave, and `dsr-sanctity-of-the-ward` still explains it. Fault for a killing blow stays in that ability's skill.
 

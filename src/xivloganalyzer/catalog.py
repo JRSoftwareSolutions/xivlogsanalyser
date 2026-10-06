@@ -15,12 +15,17 @@ class RoleBand:
 
 @dataclass
 class Moment:
-    """A different resolution of the same ability. `above` is an unmitigated hit."""
+    """A different resolution of the same ability. `above` is an unmitigated hit.
+
+    `fail` means a hit in this window is a mistake even when it fits the role cap.
+    """
 
     should_have_been: str
     after: float | None = None
     until: float | None = None
     above: int | None = None
+    fail: bool = False
+    cause: str = ""
 
     def matches(self, t: float, hit: int) -> bool:
         if self.after is not None and t < self.after:
@@ -229,6 +234,8 @@ def load_pack(fight_dir: Path) -> FightPack:
                         after=row.get("after"),
                         until=row.get("until"),
                         above=row.get("above"),
+                        fail=bool(row.get("fail", False)),
+                        cause=row.get("cause") or "",
                     )
                     for row in raw.get("moments") or []
                 ],

@@ -182,7 +182,26 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             "personal", pack,
         )
     if mechanic.any_hit_is_fail:
+        if mechanic.id == "bright-flare" and (fact.stack or 0) > 1:
+            return _done(
+                fact, mechanic, happened, "fail",
+                f"{fact.name} overlapped Bright Flare.",
+                "overlap", pack,
+            )
+        if mechanic.id == "holy-impact":
+            return _done(
+                fact, mechanic, happened, "fail",
+                "The two prey players dropped comets too close. The explosion hit the party.",
+                "prey", pack,
+            )
         return _done(fact, mechanic, happened, "fail", _personal(fact, mechanic), "personal", pack)
+    failed = _failed_moment(mechanic, fact, hit)
+    if failed:
+        return _done(
+            fact, mechanic, happened, "fail",
+            _moment_fault(fact, failed),
+            failed.cause or "personal", pack,
+        )
     if mechanic.fail_above is not None and hit > mechanic.fail_above:
         return _done(
             fact, mechanic, happened, "fail", _oversized(fact, mechanic, hit),
@@ -221,6 +240,19 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
         fact, mechanic, happened, "fail", _oversized(fact, mechanic, hit),
         _oversized_cause(fact, mechanic), pack,
     )
+
+
+def _failed_moment(mechanic: Mechanic, fact: DeathFact, hit: int):
+    for moment in mechanic.moments:
+        if moment.fail and moment.matches(fact.t, hit):
+            return moment
+    return None
+
+
+def _moment_fault(fact: DeathFact, moment) -> str:
+    if moment.cause == "tower":
+        return f"A tower was empty. {fact.name} died to the explosion, not a real soak."
+    return f"{fact.name} got the failed version of this cast."
 
 
 def _personal_mit(fact: DeathFact, pack: FightPack) -> bool:
@@ -435,6 +467,8 @@ def _assign_blame(
             item.blames = _group("Assigned mitigation", 2)
         elif item.cause == "tower":
             item.blames = _group("Missed soak", 2)
+        elif item.cause == "prey":
+            item.blames = _group("Prey markers", 2)
         elif item.cause == "clip":
             item.blames = _group("Out of position", 3)
         elif item.cause == "missing":

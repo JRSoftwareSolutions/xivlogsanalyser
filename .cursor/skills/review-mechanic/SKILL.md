@@ -36,10 +36,11 @@ Apply these in order:
 1. No damage packet → **environment**. No mechanic fault. Usually the body after a raise, or a wipe tick. Weakness `1000043` is the raise debuff and does not increase damage taken.
 2. Guid is not in `mechanics.json` for this phase → **unknown**. No fault. Ask what the hit should mean.
 3. Magic Vulnerability Up `1002941`, Physical Vulnerability Up `1002940`, or Damage Down on the packet → **fail**. The amp is a failed mechanic. `buffs` is often empty on the damage packet even when a calculated-damage sibling had the aura. Check that sibling before calling a borderline hit raw.
-4. `any_hit_is_fail` → **fail**. Use the mechanic skill for whose fault.
-5. Unmitigated above `fail_above`, or above the role cap → **fail**. Use the mechanic skill. Overkill on a failed hit is still a fail.
-6. Unmitigated at or under the role cap, and HP already under 15,000 → **low**. The hit is the normal one.
-7. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might, Heavenly Heel, or Holy Bladedance without the required personal mitigation is a fail. Heavenly Heel belongs to the off tank: the main tank taking it is a fail. A Skyward Leap death on the real marker is a fail: short of full HP belongs to the healers, and full HP is missing mitigation.
+4. `any_hit_is_fail` → **fail**. Use the mechanic skill for whose fault. A Bright Flare overlap still splits across the players in the burst. Holy Impact is the two prey players.
+5. A `moments` row with `fail` true, when the time matches → **fail**. Sanctity Eternal Conviction, after 100 seconds, is the empty tower. The Strength hit around 63 seconds stays the raidwide.
+6. Unmitigated above `fail_above`, or above the role cap → **fail**. Use the mechanic skill. Overkill on a failed hit is still a fail.
+7. Unmitigated at or under the role cap, and HP already under 15,000 → **low**. The hit is the normal one.
+8. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might, Heavenly Heel, or Holy Bladedance without the required personal mitigation is a fail. Heavenly Heel belongs to the off tank: the main tank taking it is a fail. A Skyward Leap death on the real marker is a fail: short of full HP belongs to the healers, and full HP is missing mitigation.
 
 ## Say this
 
@@ -67,7 +68,8 @@ These are the shared calls:
 - Lightning Storm clip, and a Bright Flare overlap: each player in the overlap. A second body who lived is "Another player".
 - Skyward Leap under full HP: the healers, named, split evenly.
 - Skyward Leap at full HP: "Assigned mitigation" at 50. The plan is more than one player, and the log does not name them.
-- Empty tower: "Missed soak" at 50. The player who died is the one the explosion hit.
+- Empty tower: "Missed soak" at 50. The player who died is the one the explosion hit. Sanctity Eternal Conviction after 100 seconds is this call.
+- Holy Impact: "Prey markers" at 50. The two prey players dropped the comets too close.
 - Skyward Leap clip: "Out of position" at 33. Three players have the marker.
 - Short stack: "Missing bodies" at 100 divided by the number missing. One missing body is 100. Three missing bodies is 33.
 - Raw hit on a full share: the healers, 50 each. "Party mitigation" takes a third share, 33, when the packet has no party mit or the mit is unknown.
@@ -109,5 +111,8 @@ Update `tests/test_reference.py` only when the settled headline is meant to chan
 | Heavens' Stake | 28591 | `dsr-heavens-stake` |
 | Frostbite | 1002946 | `dsr-frostbite` |
 | Dimensional Collapse | 25564 | `dsr-dimensional-collapse` |
+| Conviction | 29564, 28651 | `dsr-conviction` |
+| Holy Comet | 25577 | `dsr-holy-comet` |
+| Faith Unmoving | 25308 | `dsr-faith-unmoving` |
 
 Other phases need their own lived samples. Reuse these bands only for Thordan.
