@@ -148,6 +148,11 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             fact, mechanic, happened, "fail",
             f"{fact.name} got {mechanic.name}. Only a tank takes this.",
         )
+    if mechanic.off_tank and fact.name != mechanic.off_tank:
+        wrong = f"The off tank takes {mechanic.name}. {fact.name} took it."
+        if mechanic.requires_personal_mit and not _personal_mit(fact, pack):
+            wrong += " Personal mitigation was not enough."
+        return _done(fact, mechanic, happened, "fail", wrong)
     if mechanic.one_target and fact.stack and fact.stack > 1:
         return _done(
             fact, mechanic, happened, "fail",
