@@ -12,7 +12,7 @@ description: >-
 
 Follow `mechanic-components`. Draft from the FFXIV wiki's Dragonsong's Reprise page and from where the guids land in `XVz8bCqgPw1KRh9d`. The person confirms what belongs. Fault for a killing blow stays in that component's skill.
 
-One knight sequence in two waves. It follows the Heavenly Heel tank swap. The person named Sanctity as the next mechanic. The session draws two stops. Sanctity of the Ward (`sanctity-of-the-ward`) is the first wave, about 112–119 seconds. Meteors (`meteors`) is the second wave, about 130–149 seconds. Both use this skill.
+One knight sequence in two waves. It follows Heavenly Heel, where the off tank takes the heel and the main tank takes the three cleaves. The person named Sanctity as the next mechanic. The session draws two stops. Sanctity of the Ward (`sanctity-of-the-ward`) is the first wave, about 112–119 seconds. Meteors (`meteors`) is the second wave, about 130–149 seconds. Both use this skill.
 
 ## First wave: gazes, jumps, dashes
 

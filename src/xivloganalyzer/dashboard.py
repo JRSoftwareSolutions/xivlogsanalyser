@@ -222,17 +222,136 @@ def _cluster_of(item: Judgment, pack: FightPack):
     return pack.cluster_for(item.mechanic_id, item.fact.t, item.fact.phase)
 
 
-def session_payload(judgments: list[Judgment], pack: FightPack, code: str, when: dict | None = None) -> dict:
+_ROLE_RANK = {"tank": 0, "healer": 1, "dps": 2}
+_REACH_SLACK = 1.0
+
+
+def _fight_ids(raw: str) -> list[int]:
+    return [int(piece) for piece in str(raw).split(".") if piece.isdigit()]
+
+
+def _party(meta: dict, pack: FightPack) -> list[dict]:
+    """Players in the log, tanks then healers then DPS."""
+    rows = []
+    for actor in meta.get("friendlies") or []:
+        job = actor.get("type") or ""
+        if not actor.get("server") or job in {"LimitBreak", "NPC", "Pet"}:
+            continue
+        rows.append(
+            {
+                "name": actor["name"],
+                "job": JOB.get(job, job),
+                "role": pack.role_of(job),
+                "fights": _fight_ids(actor.get("fights") or ""),
+            }
+        )
+    rows.sort(key=lambda row: (_ROLE_RANK.get(row["role"], 9), row["name"]))
+    return rows
+
+
+def _later_start(clusters, cluster) -> float | None:
+    later = [
+        other.starts
+        for other in clusters
+        if other.phase == cluster.phase and other.starts > cluster.starts
+    ]
+    return min(later) if later else None
+
+
+def _resolves(part, cluster, later: float | None, judgments: list[Judgment]) -> float | None:
+    """Earliest judged hit of this component inside its window, in phase seconds."""
+    start = part.after if part.after is not None else cluster.starts
+    end = part.until if part.until is not None else later
+    times = []
+    for item in judgments:
+        if item.mechanic_id != part.mechanic_id or item.fact.phase != cluster.phase:
+            continue
+        if item.outcome == "environment" or item.fact.t < start:
+            continue
+        if end is not None and item.fact.t >= end:
+            continue
+        times.append(item.fact.t)
+    return min(times) if times else None
+
+
+def _part_gate(mech: dict, part: dict) -> float:
+    if part["resolves"] is not None:
+        return float(part["resolves"])
+    if part["after"] is not None:
+        return float(part["after"])
+    return float(mech["starts"])
+
+
+def _pull_cards(pull: dict, mechanics: list[dict], party: list[dict]) -> list[dict]:
+    """Mechanic cards for one pull.
+
+    A component is on the card once the pull lasted until that component resolves,
+    or someone died to it. A player failed it when a death there was judged a fail.
+    Everyone else in the party passed.
+    """
+    roster = [player for player in party if pull["id"] in player["fights"]]
+    duration = float(pull["duration"] or 0)
+    cards = []
+    for mech in mechanics:
+        if mech["phase"] != pull.get("phaseId"):
+            continue
+        parts_out = []
+        for part in mech["parts"]:
+            rows = [
+                row
+                for row in pull["deaths"]
+                if row["outcome"] != "environment"
+                and row["mechanicId"] == mech["id"]
+                and row["componentId"] == part["id"]
+            ]
+            if not rows and duration + _REACH_SLACK < _part_gate(mech, part):
+                continue
+            failed = {row["name"] for row in rows if row["outcome"] == "fail"}
+            seats = [
+                {"name": player["name"], "job": player["job"], "passed": player["name"] not in failed}
+                for player in roster
+            ]
+            known = {seat["name"] for seat in seats}
+            for row in rows:
+                if row["outcome"] == "fail" and row["name"] not in known:
+                    seats.append({"name": row["name"], "job": row["job"], "passed": False})
+                    known.add(row["name"])
+            parts_out.append({"id": part["id"], "name": part["name"], "seats": seats})
+        if parts_out:
+            cards.append({"id": mech["id"], "name": mech["name"], "parts": parts_out})
+    return cards
+
+
+def session_payload(
+    judgments: list[Judgment],
+    pack: FightPack,
+    code: str,
+    when: dict | None = None,
+    meta: dict | None = None,
+) -> dict:
     grouped: dict[str, list[Judgment]] = {cluster.id: [] for cluster in pack.clusters}
     for item in judgments:
         cluster = _cluster_of(item, pack)
         if cluster is not None:
             grouped[cluster.id].append(item)
+    names = {mechanic.id: mechanic.name for mechanic in pack.mechanics}
     mechanics = []
     ordered = sorted(pack.clusters, key=lambda cluster: (cluster.phase, cluster.starts, cluster.name))
     for cluster in ordered:
         rows = grouped[cluster.id]
         counts = Counter(item.outcome for item in rows)
+        later = _later_start(pack.clusters, cluster)
+        parts = []
+        for part in cluster.parts:
+            parts.append(
+                {
+                    "id": part.mechanic_id,
+                    "name": names.get(part.mechanic_id, part.mechanic_id),
+                    "after": part.after,
+                    "until": part.until,
+                    "resolves": _resolves(part, cluster, later, judgments),
+                }
+            )
         mechanics.append(
             {
                 "id": cluster.id,
@@ -243,6 +362,7 @@ def session_payload(judgments: list[Judgment], pack: FightPack, code: str, when:
                 "raw": counts["raw"],
                 "fail": counts["fail"],
                 "low": counts["low"],
+                "parts": parts,
             }
         )
     when = when or {}
@@ -258,6 +378,7 @@ def session_payload(judgments: list[Judgment], pack: FightPack, code: str, when:
                 "id": item.fact.fight,
                 "bossPct": item.fact.boss_pct,
                 "phase": item.fact.phase_name,
+                "phaseId": item.fact.phase,
                 "clock": _pull_clock(item.fact.pull_ms),
                 "duration": item.fact.pull_ms / 1000,
                 "when": wall_clock(started, starts.get(item.fact.fight, 0)),
@@ -273,6 +394,7 @@ def session_payload(judgments: list[Judgment], pack: FightPack, code: str, when:
                 "job": JOB.get(item.fact.job, item.fact.job),
                 "mechanicId": cluster.id if cluster else item.mechanic_id,
                 "mechanic": cluster.name if cluster else item.mechanic,
+                "componentId": item.mechanic_id,
                 "cast": item.mechanic,
                 "outcome": item.outcome,
                 "happened": item.happened,
@@ -281,9 +403,11 @@ def session_payload(judgments: list[Judgment], pack: FightPack, code: str, when:
                 "blames": [blame.to_dict() for blame in item.blames],
             }
         )
+    roster = _party(meta or {}, pack)
     for pull in pulls.values():
         pull["deaths"].sort(key=lambda row: (row["t"], row["name"]))
         pull["counts"] = Counter(row["outcome"] for row in pull["deaths"])
+        pull["cards"] = _pull_cards(pull, mechanics, roster)
     unknown = [
         item.mechanic
         for item in judgments

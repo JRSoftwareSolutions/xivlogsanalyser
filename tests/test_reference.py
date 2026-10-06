@@ -37,6 +37,7 @@ class ReferenceReportTest(unittest.TestCase):
         ]
         self.assertEqual(len(heel), 1)
         self.assertEqual(heel[0].outcome, "fail")
+        self.assertIn("off tank", heel[0].went_wrong)
         self.assertIn("Personal mitigation", heel[0].went_wrong)
         might = [
             item for item in judgments
