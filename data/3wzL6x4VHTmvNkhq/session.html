@@ -166,6 +166,30 @@
   .legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0 0; }
   .legend span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; }
   .swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .pip {
+    width: 10px; height: 10px; border-radius: 2px; flex: 0 0 auto;
+    box-shadow: inset 0 0 0 1px rgba(28, 25, 21, 0.18);
+  }
+  .pct {
+    display: inline-block; font-size: 12px; font-weight: 700; line-height: 1.45;
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+    border-radius: 999px; padding: 0 6px; border: 1px solid transparent;
+  }
+  button.nav.pull {
+    box-shadow: inset 4px 0 0 var(--phase, transparent);
+    scroll-margin-top: 120px;
+  }
+  .pull-name { display: inline-flex; align-items: center; gap: 6px; min-width: 0; }
+  .pull-key {
+    position: sticky; top: -16px; z-index: 3;
+    display: grid; gap: 4px; padding: 16px 8px 8px;
+    background: var(--paper); border-bottom: 1px solid var(--line);
+  }
+  .key-phase { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+  .key-phase-name {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 12px; font-weight: 650; margin-right: 2px;
+  }
   .route {
     --stop: #8a5a2b;
     list-style: none; margin: 14px 0 2px; padding: 2px 0;
@@ -333,12 +357,142 @@ function sessionGroups() {
   }
   return groups;
 }
+function overviewMap(session) {
+  return new Map(((session.overview && session.overview.pulls) || []).map(pull => [pull.id, pull]));
+}
+function phaseMarks(session, phaseId) {
+  return ((session.overview && session.overview.markers) || [])
+    .filter(mark => mark.phase === phaseId)
+    .slice()
+    .sort((a, b) => a.at - b.at || a.name.localeCompare(b.name));
+}
+function hexToHsl(hex) {
+  const r = parseInt(hex.slice(1, 3), 16) / 255;
+  const g = parseInt(hex.slice(3, 5), 16) / 255;
+  const b = parseInt(hex.slice(5, 7), 16) / 255;
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const l = (max + min) / 2;
+  if (max === min) return [0, 0, l * 100];
+  const d = max - min;
+  const s = d / (1 - Math.abs(2 * l - 1));
+  let h = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  h *= 60;
+  if (h < 0) h += 360;
+  return [h, s * 100, l * 100];
+}
+function hslToRgb(h, s, l) {
+  s /= 100;
+  l /= 100;
+  const c = (1 - Math.abs(2 * l - 1)) * s;
+  const hp = ((h % 360) + 360) % 360 / 60;
+  const x = c * (1 - Math.abs(hp % 2 - 1));
+  let r = 0;
+  let g = 0;
+  let b = 0;
+  if (hp < 1) [r, g, b] = [c, x, 0];
+  else if (hp < 2) [r, g, b] = [x, c, 0];
+  else if (hp < 3) [r, g, b] = [0, c, x];
+  else if (hp < 4) [r, g, b] = [0, x, c];
+  else if (hp < 5) [r, g, b] = [x, 0, c];
+  else [r, g, b] = [c, 0, x];
+  const m = l - c / 2;
+  return [(r + m) * 255, (g + m) * 255, (b + m) * 255];
+}
+function channel(v) {
+  const n = v / 255;
+  return n <= 0.03928 ? n / 12.92 : ((n + 0.055) / 1.055) ** 2.4;
+}
+function relLum(r, g, b) {
+  return 0.2126 * channel(r) + 0.7152 * channel(g) + 0.0722 * channel(b);
+}
+function contrast(a, b) {
+  const hi = Math.max(a, b);
+  const lo = Math.min(a, b);
+  return (hi + 0.05) / (lo + 0.05);
+}
+function inkFor(h, s, l) {
+  const [r, g, b] = hslToRgb(h, s, l);
+  const lum = relLum(r, g, b);
+  const dark = relLum(28, 25, 21);
+  const light = relLum(255, 252, 247);
+  return contrast(lum, dark) >= contrast(lum, light) ? "#1c1915" : "#fffcf7";
+}
+function progressTint(phaseId, t) {
+  const id = Number(phaseId);
+  if (!id) return { bg: "#eef2f5", fg: "#3f4a57", border: "#c5ced6" };
+  const [h, s] = hexToHsl(phaseColor(id));
+  const clamped = Math.min(1, Math.max(0, t));
+  const L = 86 + (24 - 86) * clamped;
+  const sat = Math.min(94, 46 + clamped * Math.max(28, s - 8));
+  return {
+    bg: `hsl(${Math.round(h)} ${Math.round(sat)}% ${Math.round(L)}%)`,
+    fg: inkFor(h, sat, L),
+    border: `hsl(${Math.round(h)} ${Math.round(Math.min(94, sat + 6))}% ${Math.round(Math.max(24, L - 16))}%)`,
+  };
+}
+function mechanicTint(phaseId, index, count) {
+  const t = count <= 1 ? 0.72 : index / (count - 1);
+  return progressTint(phaseId, t);
+}
+function depthTint(phaseId, bossPct) {
+  const pct = Number(bossPct);
+  if (!Number.isFinite(pct)) return progressTint(0, 0);
+  return progressTint(phaseId, 1 - Math.min(100, Math.max(0, pct)) / 100);
+}
+function shortMech(name) {
+  return String(name).replace(/^Ascalon's /, "").replace(/ of the Ward$/, "").replace(/^Hyperdimensional /, "");
+}
+function pullReach(session, pull, far) {
+  const phaseId = far ? far.phase : pull.phaseId;
+  const phaseName = far ? far.phaseName : (pull.phase || "");
+  const bossPct = far ? far.bossPct : pull.bossPct;
+  const mechanic = far && far.mechanic ? far.mechanic : "";
+  const marks = phaseMarks(session, phaseId);
+  const index = mechanic ? marks.findIndex(mark => mark.name === mechanic) : -1;
+  const tint = index >= 0 ? mechanicTint(phaseId, index, marks.length) : depthTint(phaseId, bossPct);
+  return { phaseId, phaseName, bossPct, mechanic, tint, phase: phaseColor(phaseId) };
+}
+function tintStyle(tint) {
+  return `background:${tint.bg};color:${tint.fg};border-color:${tint.border}`;
+}
+function pullKey(session) {
+  const overview = overviewMap(session);
+  const phases = new Map();
+  for (const pull of session.pulls) {
+    const far = overview.get(pull.id);
+    if (!far) continue;
+    let bucket = phases.get(far.phase);
+    if (!bucket) {
+      bucket = { id: far.phase, name: far.phaseName, mechs: new Set() };
+      phases.set(far.phase, bucket);
+    }
+    if (far.mechanic) bucket.mechs.add(far.mechanic);
+  }
+  const rows = [...phases.values()].sort((a, b) => a.id - b.id);
+  if (!rows.length) return "";
+  const body = rows.map(row => {
+    const marks = phaseMarks(session, row.id);
+    const chips = marks.filter(mark => row.mechs.has(mark.name)).map(mark => {
+      const tint = mechanicTint(row.id, marks.indexOf(mark), marks.length);
+      return `<span class="pct" style="${tintStyle(tint)}" title="${esc(mark.name)}">${esc(shortMech(mark.name))}</span>`;
+    }).join("");
+    const hint = chips ? "" : ` title="The percent shade follows how much HP is left in ${esc(row.name)}"`;
+    return `<div class="key-phase"${hint}><span class="key-phase-name"><i class="pip" style="background:${phaseColor(row.id)}" aria-hidden="true"></i>${esc(row.name)}</span>${chips}</div>`;
+  }).join("");
+  return `<div class="pull-key">${body}</div>`;
+}
 function pullNav(session) {
+  const overview = overviewMap(session);
   return session.pulls.map(pull => {
+    const reach = pullReach(session, pull, overview.get(pull.id));
     const when = pull.when ? `${pull.when} · ` : "";
-    const label = `pull ${pull.id} ${pull.when || ""}`.toLowerCase();
-    return `<button class="nav" data-go="s/${session.code}/pull/${pull.id}" data-label="${esc(label)}">
-      <span>Pull ${pull.id} <span class="quiet">${when}${pull.bossPct}%</span></span>
+    const where = reach.mechanic ? `${reach.mechanic} · ` : "";
+    const label = `pull ${pull.id} ${pull.when || ""} ${reach.phaseName} ${reach.mechanic} ${reach.bossPct}`.toLowerCase();
+    const title = `Pull ${pull.id} · ${reach.phaseName}${reach.mechanic ? " · " + reach.mechanic : ""} · ${reach.bossPct}%`;
+    return `<button class="nav pull" data-go="s/${session.code}/pull/${pull.id}" data-label="${esc(label)}" title="${esc(title)}" style="--phase:${reach.phase}">
+      <span class="pull-name"><i class="pip" style="background:${reach.phase}" title="${esc(reach.phaseName)}" aria-hidden="true"></i>Pull ${pull.id} <span class="quiet">${when}</span><span class="sr">${esc(reach.phaseName)}${reach.mechanic ? ", " + esc(reach.mechanic) : ""}</span></span>
+      <span class="pct" style="${tintStyle(reach.tint)}" title="${esc(where)}${reach.bossPct}%">${reach.bossPct}%</span>
     </button>`;
   }).join("");
 }
@@ -363,7 +517,7 @@ function sessionEntry(item, where) {
     `pulls-${item.code}`,
     "Pulls",
     session.pulls.length,
-    pullNav(session),
+    pullKey(session) + pullNav(session),
     open && (where.view === "pull" || where.view === "fight"),
   );
   const mechs = fold(
@@ -588,6 +742,7 @@ function componentDeaths(pull, card, part) {
 function renderPull(id) {
   const pull = findPull(id);
   if (!pull) return `<p>Pull ${id} is not in this session.</p>`;
+  const reach = pullReach(SESSION, pull, overviewMap(SESSION).get(pull.id));
   const c = counts(pull.deaths);
   const cards = pull.cards || [];
   const blocks = cards.map(card => {
@@ -627,16 +782,11 @@ function renderPull(id) {
   const packets = c.environment
     ? `<p class="meta">${c.environment} deaths had no damage packet.</p>`
     : "";
-  const ended = overviewOf(SESSION).pulls.find(row => String(row.id) === String(pull.id));
-  const phase = ended ? ended.phaseName : pull.phase;
-  const boss = ended ? ended.bossPct : pull.bossPct;
-  const clock = ended ? ended.clock : pull.clock;
-  const when = ended && ended.when ? ended.when : pull.when;
   return `
     <header>
       <div>
         <h1>Pull ${pull.id}</h1>
-        <p class="meta">${when ? when + " · " : ""}${boss}% wipe · ${clock} in ${phase}</p>
+        <p class="meta">${pull.when ? pull.when + " · " : ""}${esc(reach.phaseName)} · ${reach.bossPct}% wipe · ${pull.clock}</p>
       </div>
       <p class="meta"><a href="${logHref(pull.id)}">Open this pull</a></p>
     </header>
