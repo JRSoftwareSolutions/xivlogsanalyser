@@ -10,7 +10,7 @@ description: >-
 
 Follow `review-mechanic` for the packet, the outcome order, and a correction. Follow `analyze-mechanic-parameters` when changing these parameters. Entry `skyward-leap` in `fights/dsr/mechanics.json`. Guid `25565`. Part of Strength of the Ward (`dsr-strength-of-the-ward`).
 
-The blue marker is Skyward Leap. Three non-tanks have it. The one directly opposite Thordan stands as far away as possible. East and west are slightly offset toward the north, not too far. A real leap is 59–70k unmitigated, usually with 5–10% mit and a 13–39k shield. `fail_above` is 150,000.
+The blue marker is Skyward Leap. Three non-tanks have it. The one directly opposite Thordan stands as far away as possible. East and west are slightly offset toward the north, not too far. A real leap is 59–70k unmitigated, usually with 5–10% mit and a 13–39k shield. `fail_above` is 150,000. A death on the marker uses that line only. A death over 150,000 uses the tower line only. The `moments` row with `above` 150000 is that tower line.
 
 A death on that leap is a mistake. It is not raw.
 

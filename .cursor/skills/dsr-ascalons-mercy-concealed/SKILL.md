@@ -15,9 +15,9 @@ Follow `analyze-mechanic-parameters` when changing these parameters. Follow `rev
 
 Cones. A correct cast hits nobody. There is no raw band. Hits in this log are about 190–220k.
 
-**Opener, about 14 seconds.** One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together.
+**Opener, about 14 seconds.** One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. The death line for this cast is that stack and the dodge. It does not describe the Strength cast.
 
-**Second cast, about 50 seconds, inside Strength of the Ward.** The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. The opener's one-in-front, seven-behind stack does not apply here. Nobody is hit. The out-of-stack baiter rule is the opener only.
+**Second cast, about 50 seconds, inside Strength of the Ward.** The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. The opener's one-in-front, seven-behind stack does not apply here. Nobody is hit. The out-of-stack baiter rule is the opener only. The death line for this cast is the 4/4 split. It does not describe the opener.
 
 ## How to tell
 

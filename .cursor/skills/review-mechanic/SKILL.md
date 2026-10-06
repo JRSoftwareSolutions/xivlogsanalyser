@@ -11,6 +11,8 @@ description: >-
 
 Thordan (phase 2) is the fight these skills know. Caps and `should_have_been` live in `fights/dsr/mechanics.json`. How to tell the cases apart lives in the mechanic skill. `notes/classification.md` is why the settled calls look like this.
 
+The death line is only this cast. A later cast of the same ability stays out of it. `should_have_been` on the mechanic is the default. A cluster part's own `should_have_been` is the line for deaths inside that part's `after` / `until` window. A `moments` row, with `above` set to an unmitigated hit, replaces the line when the hit is larger than that. Use it when one guid covers two resolutions at the same time, such as a Skyward Leap marker and an empty tower.
+
 Read the mechanic skill for the killing blow before you assign fault. Setting or checking parameters uses `analyze-mechanic-parameters`, then that mechanic's Parameters section. Which casts belong together, and what each one does, is `mechanic-components`. The session line lists those clusters by `starts`. That file names the skill for the stop. The killing-blow index is below.
 
 ## Killing blow
@@ -46,7 +48,7 @@ One block per death:
 ```
 **Pull {id} · {player} · {mechanic}** — {raw|fail|low|environment|unknown}
 Happened: {unmitigated, HP, mit, shield, stack if it scales}
-Should have been: {from the mechanic entry}
+Should have been: {this cast only}
 Fault: {who} {confidence}% — {from the mechanic skill}
 ```
 

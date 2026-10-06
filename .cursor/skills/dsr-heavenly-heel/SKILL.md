@@ -17,7 +17,7 @@ The swap is about 81–88 seconds after phase 2 starts. The session stop is Heav
 
 | Component | Guid | What it does |
 |---|---|---|
-| Heavenly Heel | 25543, about 81s | One tankbuster on the off tank, with personal mitigation. It applies Slashing Resistance Down, so that tank cannot take the cleaves that follow. |
+| Heavenly Heel | 25543, about 81s | One tankbuster on the off tank, with personal mitigation. It applies Slashing Resistance Down, so that tank cannot take the cleaves that follow. The death line for a heel is only this hit. The three Ascalon's Might hits have their own line. |
 | Ascalon's Might | 25541, the cast about 85s | Three cleaves on the main tank, also with personal mitigation. The opener Might, about 16s, is `dsr-thordan-opener`, not this swap. |
 
 Anyone who is not a tank getting either hit owns that mistake. The main tank taking the heel owns that mistake. The off tank does not take the three hits. The off tank who dies on the real heel without personal mitigation owns that death.

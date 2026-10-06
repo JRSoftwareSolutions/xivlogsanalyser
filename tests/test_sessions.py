@@ -187,6 +187,48 @@ class PullCardsTest(unittest.TestCase):
         self.assertFalse(hit["Kitana Kahn"]["passed"])
         self.assertFalse(hit["Spring Nymphar"]["passed"])
 
+    def test_should_have_been_names_only_this_cast(self):
+        pack = load_pack(ROOT / "fights" / "dsr")
+        opener = pack.part_for("ascalons-might", 17, 2)
+        swap = pack.part_for("ascalons-might", 85, 2)
+        self.assertNotIn("Heavenly Heel", opener.should_have_been)
+        self.assertNotIn("opener", swap.should_have_been.lower())
+        self.assertNotIn("71", swap.should_have_been)
+        for pull in self.payload["pulls"]:
+            for row in pull["deaths"]:
+                text = row["should"]
+                cast = row["cast"]
+                if cast == "Ascalon's Mercy Concealed" and row["t"] < 30:
+                    self.assertIn("in front", text)
+                    self.assertNotIn("4/4", text)
+                    self.assertNotIn("Strength", text)
+                if cast == "Ascalon's Mercy Concealed" and row["t"] >= 30:
+                    self.assertIn("4/4", text)
+                    self.assertNotIn("in front", text)
+                    self.assertNotIn("baiter", text)
+                if cast == "Ascalon's Might" and row["t"] >= 50:
+                    self.assertNotIn("opener", text.lower())
+                    self.assertNotIn("71", text)
+                    self.assertIn("Heavenly Heel", text)
+                if cast == "Heavenly Heel":
+                    self.assertNotIn("Ascalon's Might", text)
+                    self.assertNotIn("three hits", text)
+                    self.assertNotIn("three-hit", text)
+                if cast != "Skyward Leap":
+                    continue
+                head = row["happened"].split(" unmitigated", 1)[0].replace(",", "")
+                if not head.isdigit():
+                    continue
+                hit = int(head)
+                if hit > 150000:
+                    self.assertIn("explodes", text)
+                    self.assertNotIn("East and west", text)
+                    self.assertNotIn("59", text)
+                else:
+                    self.assertIn("blue marker", text)
+                    self.assertNotIn("explodes", text)
+                    self.assertNotIn("600", text)
+
     def test_a_pull_that_wipes_in_the_opener_has_no_strength_card(self):
         names = [card["name"] for card in self._pull(23)["cards"]]
         self.assertEqual(names, ["Ascalon's Mercy Concealed", "Ascalon's Might"])

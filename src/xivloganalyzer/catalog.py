@@ -14,6 +14,25 @@ class RoleBand:
 
 
 @dataclass
+class Moment:
+    """A different resolution of the same ability. `above` is an unmitigated hit."""
+
+    should_have_been: str
+    after: float | None = None
+    until: float | None = None
+    above: int | None = None
+
+    def matches(self, t: float, hit: int) -> bool:
+        if self.after is not None and t < self.after:
+            return False
+        if self.until is not None and t >= self.until:
+            return False
+        if self.above is not None and hit <= self.above:
+            return False
+        return True
+
+
+@dataclass
 class Mechanic:
     id: str
     name: str
@@ -30,6 +49,7 @@ class Mechanic:
     one_target: bool = False
     requires_personal_mit: bool = False
     off_tank: str = ""
+    moments: list[Moment] = field(default_factory=list)
 
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
@@ -45,6 +65,7 @@ class ClusterPart:
     mechanic_id: str
     after: float | None = None
     until: float | None = None
+    should_have_been: str = ""
 
 
 @dataclass
@@ -118,6 +139,22 @@ class FightPack:
                 return cluster
         return None
 
+    def part_for(self, mechanic_id: str | None, t: float, phase: int) -> ClusterPart | None:
+        if not mechanic_id:
+            return None
+        for cluster in self.clusters:
+            if cluster.phase != phase:
+                continue
+            for part in cluster.parts:
+                if part.mechanic_id != mechanic_id:
+                    continue
+                if part.after is not None and t < part.after:
+                    continue
+                if part.until is not None and t >= part.until:
+                    continue
+                return part
+        return None
+
     def phase(self, phase_id: int) -> Phase | None:
         for phase in self.phases:
             if phase.id == phase_id:
@@ -143,6 +180,7 @@ def _clusters(raw_clusters: list[dict]) -> list[Cluster]:
                     mechanic_id=part["id"],
                     after=part.get("after"),
                     until=part.get("until"),
+                    should_have_been=part.get("should_have_been") or "",
                 )
             )
         clusters.append(
@@ -185,6 +223,15 @@ def load_pack(fight_dir: Path) -> FightPack:
                 one_target=bool(raw.get("one_target", False)),
                 requires_personal_mit=bool(raw.get("requires_personal_mit", False)),
                 off_tank=raw.get("off_tank") or "",
+                moments=[
+                    Moment(
+                        should_have_been=row.get("should_have_been") or "",
+                        after=row.get("after"),
+                        until=row.get("until"),
+                        above=row.get("above"),
+                    )
+                    for row in raw.get("moments") or []
+                ],
             )
         )
     return FightPack(
