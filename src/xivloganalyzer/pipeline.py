@@ -14,6 +14,7 @@ from xivloganalyzer.dashboard import (
     write_session_page,
 )
 from xivloganalyzer.extract import extract_report, write_facts
+from xivloganalyzer.frames import attach_frames
 from xivloganalyzer.judge import judge_report, roster_from_meta, write_judgments
 
 
@@ -50,6 +51,7 @@ def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
     write_judgments(report, judgments)
     when = session_clock(report, meta)
     payload = session_payload(judgments, pack, report.name, when, meta)
+    attach_frames(report, payload, pack)
     judged = {pull["id"] for pull in payload["pulls"]}
     payload["overview"] = build_timeline(meta, when, judged)
     write_session_page(report, payload)
