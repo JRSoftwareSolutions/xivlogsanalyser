@@ -627,11 +627,16 @@ function renderPull(id) {
   const packets = c.environment
     ? `<p class="meta">${c.environment} deaths had no damage packet.</p>`
     : "";
+  const ended = overviewOf(SESSION).pulls.find(row => String(row.id) === String(pull.id));
+  const phase = ended ? ended.phaseName : pull.phase;
+  const boss = ended ? ended.bossPct : pull.bossPct;
+  const clock = ended ? ended.clock : pull.clock;
+  const when = ended && ended.when ? ended.when : pull.when;
   return `
     <header>
       <div>
         <h1>Pull ${pull.id}</h1>
-        <p class="meta">${pull.when ? pull.when + " · " : ""}${pull.bossPct}% wipe · ${pull.clock} in ${pull.phase}</p>
+        <p class="meta">${when ? when + " · " : ""}${boss}% wipe · ${clock} in ${phase}</p>
       </div>
       <p class="meta"><a href="${logHref(pull.id)}">Open this pull</a></p>
     </header>
