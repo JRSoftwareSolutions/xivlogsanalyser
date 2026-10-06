@@ -166,6 +166,9 @@ def build_timeline(meta: dict, when: dict, judged: set[int]) -> dict:
     Bar height is seconds along the fight script, so a mechanic line sits where
     that mechanic starts. Fight percentage stays flat while a boss is untargetable,
     which would stack Strength of the Ward and Sanctity of the Ward on top of each other.
+    Each phase needs a clock in fight.json. Nidhogg is 350: Thordan's 153, plus
+    about 197 seconds until that phase starts. Without it, a phase 3 wipe is only
+    the seconds into Nidhogg and draws shorter than Thordan.
     """
     started = when.get("started")
     if isinstance(started, str):

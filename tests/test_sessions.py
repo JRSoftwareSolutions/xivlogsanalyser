@@ -84,6 +84,27 @@ class SessionClockTest(unittest.TestCase):
         self.assertGreater(by_id[49]["reached"], marks["Sanctity of the Ward"])
         self.assertLess(by_id[49]["reached"], marks["Meteors"])
         self.assertGreater(by_id[66]["reached"], marks["Meteors"])
+        self.assertGreater(marks["Dive from Grace"], marks["Meteors"])
+
+
+class NidhoggChartTest(unittest.TestCase):
+    def test_phase_three_bars_sit_above_thordan(self):
+        report = ROOT / "data" / "8DYNHQx4C7ytdLb9"
+        meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
+        when = session_clock(report, meta)
+        overview = build_timeline(meta, when, judged=set())
+        by_phase = {}
+        for pull in overview["pulls"]:
+            by_phase.setdefault(pull["phase"], []).append(pull)
+        thordan = by_phase[2]
+        nidhogg = by_phase[3]
+        self.assertEqual(len(nidhogg), 8)
+        self.assertGreater(min(pull["reached"] for pull in nidhogg), max(pull["reached"] for pull in thordan))
+        self.assertTrue(all(pull["phaseName"] == "Nidhogg" for pull in nidhogg))
+        self.assertTrue(all(pull["mechanic"] == "Dive from Grace" for pull in nidhogg))
+        marks = {mark["name"]: mark["at"] for mark in overview["markers"]}
+        self.assertGreater(marks["Dive from Grace"], marks["Meteors"])
+        self.assertGreater(min(pull["reached"] for pull in nidhogg), marks["Dive from Grace"])
 
 
 class ClusterTimelineTest(unittest.TestCase):
@@ -237,24 +258,6 @@ class PullCardsTest(unittest.TestCase):
         self.assertEqual(names, ["Ascalon's Mercy Concealed", "Ascalon's Might"])
         might = self._card(23, "ascalons-might-opener")
         self.assertTrue(all(seat["passed"] for seat in might["parts"][0]["seats"]))
-
-
-class NidhoggClockTest(unittest.TestCase):
-    def test_a_nidhogg_pull_sits_past_meteors(self):
-        """350s is Thordan's 153s mark plus the transition on the checkpoint pulls."""
-        report = ROOT / "data" / "8DYNHQx4C7ytdLb9"
-        meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
-        when = session_clock(report, meta)
-        overview = build_timeline(meta, when, judged=set())
-        marks = {mark["name"]: mark["at"] for mark in overview["markers"]}
-        self.assertEqual(marks["Nidhogg"], 350)
-        self.assertGreater(marks["Nidhogg"], marks["Meteors"])
-        pull = next(row for row in overview["pulls"] if row["id"] == 46)
-        self.assertEqual(pull["phaseName"], "Nidhogg")
-        self.assertEqual(pull["mechanic"], "Nidhogg")
-        self.assertGreater(pull["reached"], marks["Nidhogg"])
-        furthest = max(overview["pulls"], key=lambda row: row["reached"])
-        self.assertEqual(furthest["id"], 46)
 
 
 class UnscoredPullTest(unittest.TestCase):
