@@ -100,6 +100,20 @@ def _pack_for(meta: dict) -> FightPack | None:
     return None
 
 
+def _percent_left(raw) -> float:
+    """Boss HP remaining, in percent. A pull FFLogs did not score stays at 0."""
+    if raw is None:
+        return 0.0
+    return round(raw / 100, 1)
+
+
+def _progress(raw) -> float:
+    """How far the pull got. Missing fight percentage is an unscored pull, not a clear."""
+    if raw is None:
+        return 0.0
+    return round(100 - raw / 100, 1)
+
+
 def _into_phase(fight: dict) -> tuple[int, float]:
     """Seconds into the phase the pull ended in. Cast time is from the pull start."""
     phase_id = int(fight.get("lastPhaseForPercentageDisplay") or 0)
@@ -176,8 +190,8 @@ def build_timeline(meta: dict, when: dict, judged: set[int]) -> dict:
                 "phase": phase_id,
                 "phaseName": phase["short"],
                 "phaseFull": phase["name"],
-                "bossPct": round(fight.get("bossPercentage", 0) / 100, 1),
-                "progress": round(100 - fight.get("fightPercentage", 0) / 100, 1),
+                "bossPct": _percent_left(fight.get("bossPercentage")),
+                "progress": _progress(fight.get("fightPercentage")),
                 "reached": round(offset + into, 1),
                 "mechanic": _reached_name(marks, phase_id, into, offset),
                 "clock": _pull_clock(duration),

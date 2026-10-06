@@ -236,6 +236,20 @@ class PullCardsTest(unittest.TestCase):
         self.assertTrue(all(seat["passed"] for seat in might["parts"][0]["seats"]))
 
 
+class UnscoredPullTest(unittest.TestCase):
+    def test_a_pull_without_a_percentage_does_not_win(self):
+        report = ROOT / "data" / "3wzL6x4VHTmvNkhq"
+        meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
+        when = session_clock(report, meta)
+        overview = build_timeline(meta, when, judged=set())
+        self.assertEqual(when["day"], "2026-09-30")
+        self.assertEqual(when["timeLabel"], "21:44–00:03")
+        self.assertEqual(len(overview["pulls"]), 66)
+        self.assertEqual(overview["best"]["id"], 66)
+        self.assertEqual(overview["best"]["phaseName"], "Thordan")
+        self.assertEqual(overview["best"]["bossPct"], 32.6)
+
+
 class SessionLibraryTest(unittest.TestCase):
     def test_newest_day_first_and_same_day_in_time_order(self):
         older = _session("aaa", "2026-10-01T18:00:00+02:00", "2026-10-01", "Thu 1 Oct 2026", "18:00–19:00")

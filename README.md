@@ -6,6 +6,8 @@ Session reviews for FFLogs. Dragonsong's Reprise is the first fight. The dashboa
 
 [XVz8bCqgPw1KRh9d](https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d), Kite21, Ultimates (Legacy). Played Sat 3 Oct 2026, 21:17–00:03 (pull 68 is the 12:02 AM label from the log). Thordan: **86 raw deaths** across 55 pulls. Pull 68 has no raw death. Kitana Kahn's Skyward Leap was full HP with no mitigation.
 
+The other two nights are [8DYNHQx4C7ytdLb9](https://www.fflogs.com/reports/8DYNHQx4C7ytdLb9) (Mon 5 Oct 2026, 21:31–00:14) and [3wzL6x4VHTmvNkhq](https://www.fflogs.com/reports/3wzL6x4VHTmvNkhq) (Wed 30 Sep 2026, 21:44–00:03).
+
 Open [dashboard.html](dashboard.html) after an analysis run. The side panel is the fight, then the sessions newest first. Open a session for its overview, pulls, and mechanics. The main area is that session: a pull chart (taller means further into the fight), then the pull count and the mechanics for each phase. Those mechanics are the `clusters` in `fights/dsr/mechanics.json`, in `starts` order, drawn as a line. `markers` in `fight.json` are chart labels only.
 
 ## How a log gets in
