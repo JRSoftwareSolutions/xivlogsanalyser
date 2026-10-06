@@ -14,7 +14,7 @@ from xivloganalyzer.dashboard import (
     write_session_page,
 )
 from xivloganalyzer.extract import extract_report, write_facts
-from xivloganalyzer.judge import judge_report, write_judgments
+from xivloganalyzer.judge import judge_report, roster_from_meta, write_judgments
 
 
 def report_dirs(root: Path | None = None) -> list[Path]:
@@ -45,7 +45,7 @@ def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
     if pack is None:
         raise SystemExit(f"No fight knowledge matches zone {sorted(zone_ids)} in {report.name}")
     facts = extract_report(report, pack)
-    judgments = judge_report(facts, pack)
+    judgments = judge_report(facts, pack, roster_from_meta(meta, pack))
     write_facts(report, facts)
     write_judgments(report, judgments)
     when = session_clock(report, meta)

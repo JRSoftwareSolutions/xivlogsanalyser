@@ -47,12 +47,31 @@ One block per death:
 **Pull {id} · {player} · {mechanic}** — {raw|fail|low|environment|unknown}
 Happened: {unmitigated, HP, mit, shield, stack if it scales}
 Should have been: {from the mechanic entry}
-Fault: {from the mechanic skill}
+Fault: {who} {confidence}% — {from the mechanic skill}
 ```
 
 For a whole pull, add one line: how many raw, fail, low, and no-packet deaths.
 
 Name the player. A raw hit on a full share is the resolve: shield, mit, and HP. A short stack that scales is the missing bodies. A failed shape is the player who took it, unless that mechanic's skill says the miss belongs to someone who was not in the tower.
+
+## Blame confidence
+
+Every blame has a percent. 100 means one owner. When several people made a mistake and the log cannot say who owns which part, each of them gets an equal share of 100, rounded down. Two owners is 50 each. Three is 33. An unnamed group is one chip at that same share.
+
+A gaze, a ring, a cone, a puddle, a cleave, vulnerability, a non-tank on a tank hit, or a tank's own missing personal mitigation stays at 100 on that player. Another player dying to their own separate mistake on the same cast leaves that 100 in place.
+
+These are the shared calls:
+
+- Lightning Storm clip, and a Bright Flare overlap: each player in the overlap. A second body who lived is "Another player".
+- Skyward Leap under full HP: the healers, named, split evenly.
+- Skyward Leap at full HP: "Assigned mitigation" at 50. The plan is more than one player, and the log does not name them.
+- Empty tower: "Missed soak" at 50. The player who died is the one the explosion hit.
+- Skyward Leap clip: "Out of position" at 33. Three players have the marker.
+- Short stack: "Missing bodies" at 100 divided by the number missing. One missing body is 100. Three missing bodies is 33.
+- Raw hit on a full share: the healers, 50 each. "Party mitigation" takes a third share, 33, when the packet has no party mit or the mit is unknown.
+- Already under 15,000 HP: the healers and "Earlier damage", 33 each.
+
+No damage packet, and an ability that is not understood yet, have no blame.
 
 ## When a call is wrong
 

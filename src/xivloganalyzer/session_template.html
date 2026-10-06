@@ -101,6 +101,15 @@
   .job-icon { width: 20px; height: 20px; display: block; }
   .cols { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 12px; margin-top: 6px; font-size: 14px; }
   .cols b { display: block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .blames { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 6px; }
+  .blame {
+    display: inline-flex; align-items: baseline; gap: 6px;
+    background: var(--fail-bg); color: var(--ink);
+    border-radius: 999px; padding: 1px 8px; font-size: 13px;
+  }
+  .blame b { display: inline; font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--fail); font-variant-numeric: tabular-nums; }
+  .blame.sure { background: var(--ok-bg); }
+  .blame.sure b { color: var(--ok); }
   .quiet { color: var(--muted); }
   .clean { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
   button.session-card {
@@ -202,6 +211,14 @@ function jobMark(job) {
   if (!src) return `<span class="job">${job}</span>`;
   return `<img class="job-icon" alt="${job}" title="${job}" src="${src}">`;
 }
+function blameChips(row) {
+  const blames = row.blames || [];
+  if (!blames.length) return "";
+  return `<div class="blames">${blames.map(blame => {
+    const sure = blame.confidence >= 100 ? " sure" : "";
+    return `<span class="blame${sure}" title="How sure this blame is">${esc(blame.who)} <b>${blame.confidence}%</b></span>`;
+  }).join("")}</div>`;
+}
 function deathCard(row) {
   const cast = row.cast ? `<span class="time">${row.cast}</span>` : "";
   return `<div class="death">
@@ -209,7 +226,7 @@ function deathCard(row) {
     <div class="cols">
       <div><b>What happened</b>${row.happened}</div>
       <div><b>What it should have been</b>${row.should}</div>
-      <div><b>Whose fault</b>${row.wrong}</div>
+      <div><b>Whose fault</b>${blameChips(row)}${row.wrong}</div>
     </div>
   </div>`;
 }

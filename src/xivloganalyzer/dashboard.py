@@ -278,6 +278,7 @@ def session_payload(judgments: list[Judgment], pack: FightPack, code: str, when:
                 "happened": item.happened,
                 "should": item.should_have_been,
                 "wrong": item.went_wrong,
+                "blames": [blame.to_dict() for blame in item.blames],
             }
         )
     for pull in pulls.values():
