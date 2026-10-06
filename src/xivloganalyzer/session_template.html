@@ -14,9 +14,11 @@
     --scroll-track: #0b1322; --scroll-thumb: #7ea4d4; --scroll-thumb-hover: #a9c4e8;
   }
   * { box-sizing: border-box; }
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+  @supports not selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+    }
   }
   *::-webkit-scrollbar { width: 14px; height: 14px; }
   *::-webkit-scrollbar-track {
