@@ -49,7 +49,7 @@ def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
     write_facts(report, facts)
     write_judgments(report, judgments)
     when = session_clock(report, meta)
-    payload = session_payload(judgments, pack, report.name, when)
+    payload = session_payload(judgments, pack, report.name, when, meta)
     judged = {pull["id"] for pull in payload["pulls"]}
     payload["overview"] = build_timeline(meta, when, judged)
     write_session_page(report, payload)

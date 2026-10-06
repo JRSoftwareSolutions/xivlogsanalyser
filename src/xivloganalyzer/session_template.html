@@ -103,6 +103,24 @@
   .cols b { display: block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
   .quiet { color: var(--muted); }
   .clean { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .component { border-top: 1px solid var(--line); padding: 12px 0; }
+  .component:first-of-type { border-top: 0; padding-top: 4px; }
+  .component-name { font-weight: 650; margin: 0 0 8px; }
+  .seats { display: flex; flex-wrap: wrap; gap: 6px; }
+  .seat {
+    display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+    border-radius: 999px; padding: 3px 8px 3px 4px; border: 1px solid var(--line);
+    background: #f7f4ee;
+  }
+  .seat.ok { background: var(--ok-bg); border-color: #cfe3d8; color: var(--ok); }
+  .seat.fail { background: var(--fail-bg); border-color: #e6d3b0; color: var(--fail); }
+  .seat .job-icon { width: 24px; height: 24px; }
+  .seat-name { color: var(--ink); font-weight: 650; }
+  .mark { width: 16px; height: 16px; display: block; flex: 0 0 auto; }
+  .sr {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;
+  }
   button.session-card {
     width: 100%; display: block; text-align: left; font: inherit; color: inherit;
     background: transparent; border: 0; border-top: 1px solid var(--line);
@@ -530,27 +548,68 @@ function renderFight(id) {
       <p class="quiet">There is no death review for this pull.</p>
     </section>`;
 }
+function markIcon(passed) {
+  if (passed) {
+    return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M4.2 8.2 6.7 10.6 11.8 5.2" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  }
+  return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M5 5l6 6M11 5 5 11" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+}
+function seatMark(seat, partName) {
+  const passed = Boolean(seat.passed);
+  const word = passed ? "passed" : "failed";
+  const name = passed ? "" : `<span class="seat-name">${seat.name}</span>`;
+  return `<span class="seat ${passed ? "ok" : "fail"}" title="${seat.name} ${word} ${partName}">
+    ${jobMark(seat.job)}
+    ${markIcon(passed)}
+    ${name}
+    <span class="sr">${seat.name} ${word} ${partName}</span>
+  </span>`;
+}
+function componentDeaths(pull, card, part) {
+  return judged(pull.deaths).filter(row => row.mechanicId === card.id && row.componentId === part.id);
+}
 function renderPull(id) {
   const pull = findPull(id);
   if (!pull) return `<p>Pull ${id} is not in this session.</p>`;
   const c = counts(pull.deaths);
-  const hit = [];
-  const clean = [];
-  for (const mech of SESSION.mechanics.slice().sort(byTimeline)) {
-    const rows = judged(pull.deaths).filter(row => row.mechanicId === mech.id);
-    if (rows.length) hit.push({ mech, rows, mc: counts(rows) });
-    else if ((pull.duration || 0) >= (mech.starts || 0)) clean.push(mech);
-  }
-  const blocks = hit.map(({ mech, rows }) => `<div class="mech">
-    <div class="mech-head">
-      <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${mech.id}">${mech.name}</button></h3>
-    </div>
-    ${rows.map(deathCard).join("")}
-  </div>`).join("");
-  const rest = clean.length
-    ? `<p class="meta" style="margin-top:14px">No deaths</p><div class="clean">${clean.map(mech => `<button class="link" data-go="s/${SESSION.code}/mechanic/${mech.id}">${mech.name}</button>`).join("")}</div>`
+  const cards = pull.cards || [];
+  const blocks = cards.map(card => {
+    const failed = new Set();
+    for (const part of card.parts) {
+      for (const seat of part.seats) if (!seat.passed) failed.add(seat.name);
+    }
+    const stamp = failed.size
+      ? `<span class="tag fail">${failed.size === 1 ? "1 player failed" : failed.size + " players failed"}</span>`
+      : `<span class="tag ok">Clear</span>`;
+    const parts = card.parts.map(part => {
+      const rows = componentDeaths(pull, card, part);
+      const solo = card.parts.length === 1 && part.name === card.name;
+      return `<div class="component">
+        ${solo ? "" : `<div class="component-name">${part.name}</div>`}
+        <div>
+          <div class="seats">${part.seats.map(seat => seatMark(seat, part.name)).join("")}</div>
+          ${rows.map(deathCard).join("")}
+        </div>
+      </div>`;
+    }).join("");
+    return `<section>
+      <div class="mech-head">
+        <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${card.id}">${card.name}</button></h3>
+        ${stamp}
+      </div>
+      ${parts}
+    </section>`;
+  }).join("");
+  const covered = (row) => cards.some(card =>
+    card.parts.some(part => row.mechanicId === card.id && row.componentId === part.id)
+  );
+  const loose = judged(pull.deaths).filter(row => !covered(row));
+  const rest = loose.length
+    ? `<section><h2>Other deaths</h2>${loose.map(deathCard).join("")}</section>`
     : "";
-  const packets = c.environment ? `<p class="meta" style="margin-top:12px">${c.environment} deaths had no damage packet.</p>` : "";
+  const packets = c.environment
+    ? `<p class="meta">${c.environment} deaths had no damage packet.</p>`
+    : "";
   return `
     <header>
       <div>
@@ -559,11 +618,9 @@ function renderPull(id) {
       </div>
       <p class="meta"><a href="${logHref(pull.id)}">Open this pull</a></p>
     </header>
-    <section>
-      ${blocks || `<p class="quiet">No judged deaths on this pull.</p>`}
-      ${rest}
-      ${packets}
-    </section>`;
+    ${blocks || `<section><p class="quiet">No mechanic review for this pull.</p></section>`}
+    ${rest}
+    ${packets}`;
 }
 function renderMechanic(id) {
   const mech = findMech(id);
@@ -589,6 +646,7 @@ function renderMechanic(id) {
     </header>
     <section>
       <p>${mech.should}</p>
+      ${(mech.parts || []).length ? `<p class="meta">${mech.parts.map(part => part.name).join(" · ")}</p>` : ""}
     </section>
     <section>
       <h2>Pulls where someone died</h2>
