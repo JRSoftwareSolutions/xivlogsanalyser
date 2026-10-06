@@ -307,6 +307,133 @@
         "healer": {"unmitigated_max": 8000, "lived": "about 4.7–5.2k"},
         "dps": {"unmitigated_max": 8000, "lived": "about 4.5–5.1k"}
       }
+    },
+    {
+      "id": "dark-high-jump",
+      "name": "Dark High Jump",
+      "phase": 3,
+      "guids": [26382],
+      "category": "spread",
+      "scales_with_stack": false,
+      "fail_above": 150000,
+      "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9–23k. Anyone else in that landing is a mistake.",
+      "roles": {
+        "tank": {"unmitigated_max": 150000, "lived": "about 9–23k"},
+        "healer": {"unmitigated_max": 150000, "lived": "about 9–23k"},
+        "dps": {"unmitigated_max": 150000, "lived": "about 9–23k"}
+      }
+    },
+    {
+      "id": "dark-elusive-jump",
+      "name": "Dark Elusive Jump",
+      "phase": 3,
+      "guids": [26384],
+      "category": "spread",
+      "scales_with_stack": false,
+      "fail_above": 150000,
+      "should_have_been": "The down arrow. East, facing east, so the tower drops behind them on the east side of the hitbox. Anyone else in that landing is a mistake. This log has no small hit stored.",
+      "roles": {
+        "tank": {"unmitigated_max": 150000, "lived": "no small hit stored"},
+        "healer": {"unmitigated_max": 150000, "lived": "no small hit stored"},
+        "dps": {"unmitigated_max": 150000, "lived": "no small hit stored"}
+      }
+    },
+    {
+      "id": "eye-of-the-tyrant",
+      "name": "Eye of the Tyrant",
+      "phase": 3,
+      "guids": [26388],
+      "category": "stack",
+      "scales_with_stack": false,
+      "typical_targets": 5,
+      "fail_above": 100000,
+      "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37–48k. Everyone else lives about 50–70k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
+      "roles": {
+        "tank": {"unmitigated_max": 80000, "lived": "about 37–48k"},
+        "healer": {"unmitigated_max": 90000, "lived": "about 50–70k"},
+        "dps": {"unmitigated_max": 90000, "lived": "about 50–70k"}
+      }
+    },
+    {
+      "id": "gnashing-wheel",
+      "name": "Gnashing Wheel",
+      "phase": 3,
+      "guids": [26389],
+      "category": "dodge",
+      "scales_with_stack": false,
+      "any_hit_is_fail": true,
+      "should_have_been": "Inside the hitbox. Out is safe. Gnash and Lash means out, then in. The hit is about 12–23k and applies Damage Down. Any hit is a fail.",
+      "roles": {
+        "tank": {"unmitigated_max": 40000, "lived": "about 12–23k"},
+        "healer": {"unmitigated_max": 40000, "lived": "about 12–23k"},
+        "dps": {"unmitigated_max": 40000, "lived": "about 12–23k"}
+      }
+    },
+    {
+      "id": "lashing-wheel",
+      "name": "Lashing Wheel",
+      "phase": 3,
+      "guids": [26390],
+      "category": "dodge",
+      "scales_with_stack": false,
+      "any_hit_is_fail": true,
+      "should_have_been": "Outside the hitbox. In is safe. Lash and Gnash means in, then out. The hit is about 12–23k and applies Damage Down. Any hit is a fail.",
+      "roles": {
+        "tank": {"unmitigated_max": 40000, "lived": "about 12–23k"},
+        "healer": {"unmitigated_max": 40000, "lived": "about 12–23k"},
+        "dps": {"unmitigated_max": 40000, "lived": "about 12–23k"}
+      }
+    },
+    {
+      "id": "darkdragon-dive-debuff",
+      "name": "Darkdragon Dive",
+      "phase": 3,
+      "guids": [26385],
+      "category": "soak",
+      "scales_with_stack": false,
+      "any_hit_is_fail": true,
+      "should_have_been": "The player who soaks does not still have Fire Resistance Down II or Physical Vulnerability Up. A soak with those debuffs is about 445–570k. That player owns it.",
+      "roles": {
+        "tank": {"unmitigated_max": 200000, "lived": "no lived hit"},
+        "healer": {"unmitigated_max": 200000, "lived": "no lived hit"},
+        "dps": {"unmitigated_max": 200000, "lived": "no lived hit"}
+      }
+    },
+    {
+      "id": "darkdragon-dive",
+      "name": "Darkdragon Dive",
+      "phase": 3,
+      "guids": [26395],
+      "category": "tower",
+      "scales_with_stack": false,
+      "fail_above": 150000,
+      "should_have_been": "One player soaks the tower. Tanks take about 32–54k. A non-tank soak that killed from a high bar was about 59–80k. A shield keeps them alive. Dying to that hit is the healers.",
+      "moments": [
+        {
+          "above": 150000,
+          "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4–3.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak."
+        }
+      ],
+      "roles": {
+        "tank": {"unmitigated_max": 80000, "lived": "about 32–54k"},
+        "healer": {"unmitigated_max": 100000, "lived": "about 59–80k killed; no survived non-tank soak is stored"},
+        "dps": {"unmitigated_max": 100000, "lived": "about 59–80k killed; no survived non-tank soak is stored"}
+      }
+    },
+    {
+      "id": "geirskogul",
+      "name": "Geirskogul",
+      "phase": 3,
+      "guids": [26378],
+      "category": "dodge",
+      "scales_with_stack": false,
+      "any_hit_is_fail": true,
+      "should_have_been": "The soaker baits the clone's line out of the arena and steps through when the clone glows. Any hit is a fail. One player in the line owns it. Several players in one line means the baiter aimed it through them.",
+      "roles": {
+        "tank": {"unmitigated_max": 120000, "lived": "about 68k killed a low tank"},
+        "healer": {"unmitigated_max": 150000, "lived": "no lived hit"},
+        "dps": {"unmitigated_max": 150000, "lived": "about 109k killed a ninja"}
+      }
     }
   ],
   "clusters": [
@@ -414,6 +541,24 @@
         {"id": "holy-comet"},
         {"id": "faith-unmoving"},
         {"id": "holy-impact"}
+      ]
+    },
+    {
+      "id": "dive-from-grace",
+      "name": "Dive from Grace",
+      "phase": 3,
+      "starts": 17,
+      "skill": "dsr-dive-from-grace",
+      "summary": "About 17 seconds. Easthogg, true north, Nidhogg facing north. When the numbers appear, the 1s and 3s claim west, south, and east, and the 2s claim northwest and northeast. An up arrow takes west and faces east. A circle takes south. A down arrow takes east and faces east. A number with no arrows keeps the spots it claimed. The 3s soak the towers the 1s drop. The east and west 1s soak the towers the 2s drop. The 2s and the south 1 soak the towers the 3s drop. Five players who are not diving stack north for Eye of the Tyrant. Gnash and Lash is out, then in. Lash and Gnash is in, then out. After a soak, bait Geirskogul out and step through when the clone glows.",
+      "parts": [
+        {"id": "dark-high-jump"},
+        {"id": "dark-elusive-jump"},
+        {"id": "eye-of-the-tyrant"},
+        {"id": "gnashing-wheel"},
+        {"id": "lashing-wheel"},
+        {"id": "darkdragon-dive-debuff"},
+        {"id": "darkdragon-dive"},
+        {"id": "geirskogul"}
       ]
     }
   ]

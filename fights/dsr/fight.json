@@ -24,6 +24,11 @@
       "id": 2,
       "name": "Thordan",
       "min_duration_ms": 20000
+    },
+    {
+      "id": 3,
+      "name": "Nidhogg",
+      "min_duration_ms": 20000
     }
   ],
   "clock": [
@@ -35,7 +40,6 @@
     {"name": "Empty Dimension", "phase": 1, "starts": 8},
     {"name": "Hyperdimensional Slash", "phase": 1, "starts": 40},
     {"name": "Faith Unmoving", "phase": 1, "starts": 75},
-    {"name": "Pure of Heart", "phase": 1, "starts": 125},
-    {"name": "Dive from Grace", "phase": 3, "starts": 17}
+    {"name": "Pure of Heart", "phase": 1, "starts": 125}
   ]
 }

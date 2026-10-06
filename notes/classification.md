@@ -122,3 +122,20 @@ A Lightning Storm clip or a Bright Flare overlap splits across the players in th
 - Strength Eternal Conviction, around 63 seconds, still has no lived healer or DPS sample. The 90–108k band is the death cluster of that raidwide, matched against the tank hit (~64k). That window stays raw. Sanctity Eternal Conviction is the empty tower and is a fail. Holy Impact is the comet overlap and is a fail. The prey players own Holy Impact. Missed soak owns the empty tower.
 - Conviction `29564` (about 135s) and `28651` (about 148s) are the soaked towers, about 3k on a tank and 5k on everyone else. Holy Comet `25577` is the light meteor drop, about 1–2k. Faith Unmoving `25308` is the knockback, about 3–5k. None of those guids killed anyone in the reference log.
 - The next reviews (other phases, other reports) should reuse these bands only for Thordan. Other phases need their own lived samples.
+
+## Dive from Grace
+
+Report `8DYNHQx4C7ytdLb9`. Eight pulls reached Nidhogg. The strat is LPDU Easthogg. Ability files for these guids are not stored, and the packets have no unmitigated amount, so the number is the total hit. This is the baseline, not a cast survey.
+
+Final Chorus and the auto cleave are not this stop. A blank killing blow at the dive, with the dive in the last hits, is the knock into the wall. Pull 33. It stays a no-packet death.
+
+| Guid | What the hit is | Call |
+|---|---|---|
+| 26382, 26384 | Over 150k, several players | Fail. Each player in the landing. |
+| 26388 | About 37–70k | Raw when they were healthy. The healers, and party mitigation when the mit is unknown. |
+| 26388 | Over 100k | Fail. Short stack. Missing bodies. Pull 16. |
+| 26389, 26390 | About 12–23k | Fail. Wrong side of the in-and-out. Still a fail under 15k HP. |
+| 26385 | About 445–570k | Fail. Soaked while they still had the dive debuff. |
+| 26395 | Tanks about 32–54k, others about 59–80k | Raw, or low when already under 15k HP. |
+| 26395 | About 1.4–3.0 million | Fail. Empty tower. Missed soak. The first towers are the 3s, and the log cannot name which. |
+| 26378 | One player in the line | Fail. That player. |

@@ -114,5 +114,12 @@ Update `tests/test_reference.py` only when the settled headline is meant to chan
 | Conviction | 29564, 28651 | `dsr-conviction` |
 | Holy Comet | 25577 | `dsr-holy-comet` |
 | Faith Unmoving | 25308 | `dsr-faith-unmoving` |
+| Dark High Jump | 26382 | `dsr-dive-from-grace` |
+| Dark Elusive Jump | 26384 | `dsr-dive-from-grace` |
+| Eye of the Tyrant | 26388 | `dsr-dive-from-grace` |
+| Gnashing Wheel | 26389 | `dsr-dive-from-grace` |
+| Lashing Wheel | 26390 | `dsr-dive-from-grace` |
+| Darkdragon Dive | 26385, 26395 | `dsr-dive-from-grace` |
+| Geirskogul | 26378 | `dsr-dive-from-grace` |
 
-Other phases need their own lived samples. Reuse these bands only for Thordan.
+Thordan bands stay on Thordan. Nidhogg uses `dsr-dive-from-grace`. Phase 4 and later need their own samples.
