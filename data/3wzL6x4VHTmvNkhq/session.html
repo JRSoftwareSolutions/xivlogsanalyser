@@ -7,13 +7,33 @@
 <style>
   :root {
     color-scheme: dark;
-    --bg: #1c1916; --paper: #26231e; --ink: #e3dcd1; --muted: #a79e92;
-    --line: #3c372f; --raw: #d7a898; --raw-bg: #3c2e28; --fail: #d2c0a0;
-    --fail-bg: #353026; --ok: #a3c4b4; --ok-bg: #26332d; --env: #b7c0c8; --env-bg: #2c333a;
-    --hover: #312d27; --accent: #c9d2e4; --field: #1f1c18; --rule: #8d8478;
+    --bg: #0d1526; --paper: #152033; --ink: #e4ecf7; --muted: #93a4bd;
+    --line: #2a3b56; --raw: #e0b0a4; --raw-bg: #3a2a32; --fail: #d9c4a4;
+    --fail-bg: #332e28; --ok: #a8cfc0; --ok-bg: #1d3330; --env: #b7c4d4; --env-bg: #243244;
+    --hover: #1c2b44; --accent: #9eb6e8; --field: #10192c; --rule: #7f93ad;
+    --scroll-track: #0b1322; --scroll-thumb: #7ea4d4; --scroll-thumb-hover: #a9c4e8;
     --nav-width: 300px;
   }
   * { box-sizing: border-box; }
+  @supports not selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+    }
+  }
+  *::-webkit-scrollbar { width: 14px; height: 14px; }
+  *::-webkit-scrollbar-track {
+    background: var(--scroll-track);
+    border-radius: 999px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #a9c4e8, #6d94c6);
+    border: 3px solid var(--scroll-track);
+    border-radius: 999px;
+  }
+  *::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hover); }
+  *::-webkit-scrollbar-corner { background: transparent; }
+  ::selection { background: #2a4a78; color: var(--ink); }
   html, body { height: 100%; }
   body {
     margin: 0; display: grid; grid-template-columns: var(--nav-width) minmax(0, 1fr);
@@ -159,8 +179,8 @@
     border-radius: 999px; padding: 3px 8px 3px 4px; border: 1px solid var(--line);
     background: var(--hover);
   }
-  .seat.ok { background: var(--ok-bg); border-color: #4d6b5e; color: var(--ok); }
-  .seat.fail { background: var(--fail-bg); border-color: #6d5e46; color: var(--fail); }
+  .seat.ok { background: var(--ok-bg); border-color: #3f6a5e; color: var(--ok); }
+  .seat.fail { background: var(--fail-bg); border-color: #6d624c; color: var(--fail); }
   .seat .job-icon { width: 24px; height: 24px; }
   .seat-name { color: var(--ink); font-weight: 650; }
   .mark { width: 16px; height: 16px; display: block; flex: 0 0 auto; }
@@ -192,7 +212,7 @@
     border-top: 2px dotted var(--rule);
     pointer-events: none; z-index: 2;
   }
-  .strip .hline { border-top-width: 1px; border-top-color: rgba(167, 158, 146, 0.55); }
+  .strip .hline { border-top-width: 1px; border-top-color: rgba(147, 164, 189, 0.55); }
   .chart .bar {
     position: relative; z-index: 1;
     width: 9px; flex: 0 0 9px; min-height: 4px; border: 0; padding: 0; cursor: pointer;
@@ -206,7 +226,7 @@
   .swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
   .pip {
     width: 10px; height: 10px; border-radius: 2px; flex: 0 0 auto;
-    box-shadow: inset 0 0 0 1px rgba(227, 220, 209, 0.22);
+    box-shadow: inset 0 0 0 1px rgba(228, 236, 247, 0.22);
   }
   .pct {
     display: inline-block; font-size: 12px; font-weight: 700; line-height: 1.45;
@@ -243,7 +263,7 @@
   }
   .pull-empty { margin: 6px 8px; font-size: 13px; }
   .route {
-    --stop: #9a7d5b;
+    --stop: #6a81a0;
     list-style: none; margin: 14px 0 2px; padding: 2px 0;
   }
   .route li {
@@ -597,13 +617,13 @@ function contrast(a, b) {
 function inkFor(h, s, l) {
   const [r, g, b] = hslToRgb(h, s, l);
   const lum = relLum(r, g, b);
-  const dark = relLum(28, 25, 22);
-  const light = relLum(227, 220, 209);
-  return contrast(lum, dark) >= contrast(lum, light) ? "#1c1916" : "#e3dcd1";
+  const dark = relLum(13, 21, 38);
+  const light = relLum(228, 236, 247);
+  return contrast(lum, dark) >= contrast(lum, light) ? "#0d1526" : "#e4ecf7";
 }
 function progressTint(phaseId, t) {
   const id = Number(phaseId);
-  if (!id) return { bg: "#2c333a", fg: "#b7c0c8", border: "#46505a" };
+  if (!id) return { bg: "#243244", fg: "#b7c4d4", border: "#3d5168" };
   const [h] = hexToHsl(phaseColor(id));
   const clamped = Math.min(1, Math.max(0, t));
   const L = 32 - clamped * 8;
@@ -754,7 +774,7 @@ function phaseRoute(mechs, color) {
 }
 function phaseColor(id) {
   const colors = ["#61879e", "#a87557", "#9e6173", "#7f6f9b", "#5b8f85", "#a38b5c", "#6a81a0", "#9a7d5b"];
-  return colors[(Number(id) - 1) % colors.length] || "#a79e92";
+  return colors[(Number(id) - 1) % colors.length] || "#93a4bd";
 }
 function overviewOf(session) {
   return (session && session.overview) || { pulls: [], phases: [], best: null };
@@ -904,9 +924,9 @@ function renderFight(id) {
 }
 function markIcon(passed) {
   if (passed) {
-    return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M4.2 8.2 6.7 10.6 11.8 5.2" fill="none" stroke="#1c1916" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M4.2 8.2 6.7 10.6 11.8 5.2" fill="none" stroke="#0d1526" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   }
-  return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M5 5l6 6M11 5 5 11" fill="none" stroke="#1c1916" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+  return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M5 5l6 6M11 5 5 11" fill="none" stroke="#0d1526" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 }
 function seatMark(seat, partName) {
   const passed = Boolean(seat.passed);
