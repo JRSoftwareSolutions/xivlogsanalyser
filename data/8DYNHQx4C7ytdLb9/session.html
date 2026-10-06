@@ -11,17 +11,20 @@
     --line: #2a3b56; --raw: #e0b0a4; --raw-bg: #3a2a32; --fail: #d9c4a4;
     --fail-bg: #332e28; --ok: #a8cfc0; --ok-bg: #1d3330; --env: #b7c4d4; --env-bg: #243244;
     --hover: #1c2b44; --accent: #9eb6e8; --field: #10192c; --rule: #7f93ad;
-    --scroll-track: #10192c; --scroll-thumb: #3d5578; --scroll-thumb-hover: #5d7ba6;
+    --scroll-track: #0b1322; --scroll-thumb: #7ea4d4; --scroll-thumb-hover: #a9c4e8;
   }
   * { box-sizing: border-box; }
   * {
     scrollbar-width: thin;
     scrollbar-color: var(--scroll-thumb) var(--scroll-track);
   }
-  *::-webkit-scrollbar { width: 12px; height: 12px; }
-  *::-webkit-scrollbar-track { background: var(--scroll-track); }
+  *::-webkit-scrollbar { width: 14px; height: 14px; }
+  *::-webkit-scrollbar-track {
+    background: var(--scroll-track);
+    border-radius: 999px;
+  }
   *::-webkit-scrollbar-thumb {
-    background: var(--scroll-thumb);
+    background: linear-gradient(180deg, #a9c4e8, #6d94c6);
     border: 3px solid var(--scroll-track);
     border-radius: 999px;
   }
