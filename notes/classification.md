@@ -105,6 +105,14 @@ Useful paths, hostility 0, boss filter `-1.0.-1.-1`, cutoff 0, classes Any:
 - Deaths table: `/reports/deaths/<code>/<fight>/<start>/<end>/0/0/0/-1.0.-1.-1/0/Any/0/<start>`
 - Damage taken: `/reports/events/damage-taken/<code>/<fight ids dotted>/<start>/<end>/source/0/0/0/0/0/<ability>/-1.0.-1.-1/0/Any/Any/0`
 
+## Blame confidence
+
+Each blame names an owner and a percent. 100 is one person. When several people could own the death, each gets an equal share of 100, rounded down: 50 for two, 33 for three.
+
+A personal miss stays at 100 even when someone else died to a different miss on the same cast: a gaze, a ring, a cone, a puddle, a cleave, vulnerability, a non-tank tankbuster, or a tank's own missing personal mitigation.
+
+A Lightning Storm clip or a Bright Flare overlap splits across the players in that overlap, 50 each. Skyward Leap under full HP splits across the two healers, 50 each. Full HP with the mit missing is "Assigned mitigation" at 50. An empty tower is "Missed soak" at 50. A clip is "Out of position" at 33. A short stack is "Missing bodies" at 100 divided by the missing count. A raw full share blames the healers at 50, and "Party mitigation" joins them at 33 when the packet shows no party mit. A low hit blames the healers and "Earlier damage" at 33.
+
 ## Still open
 
 - Dimensional Collapse `25564` is a failed puddle: Heavy and Damage Down. It has no lived baseline, so the one death stays a fail.

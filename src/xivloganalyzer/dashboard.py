@@ -400,6 +400,7 @@ def session_payload(
                 "happened": item.happened,
                 "should": item.should_have_been,
                 "wrong": item.went_wrong,
+                "blames": [blame.to_dict() for blame in item.blames],
             }
         )
     roster = _party(meta or {}, pack)

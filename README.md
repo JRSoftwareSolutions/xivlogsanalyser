@@ -1,6 +1,6 @@
 # xivloganalyzer
 
-Session reviews for FFLogs. Dragonsong's Reprise is the first fight. The dashboard says what happened, what the mechanic should have been, and whose fault the death was.
+Session reviews for FFLogs. Dragonsong's Reprise is the first fight. The dashboard says what happened, what the mechanic should have been, and whose fault the death was. Each blame has a confidence: 100% when one person owns it, and a lower share when several people made a mistake.
 
 ## Current session
 
