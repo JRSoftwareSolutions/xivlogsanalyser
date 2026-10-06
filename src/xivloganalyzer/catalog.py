@@ -71,6 +71,7 @@ class ClusterPart:
     after: float | None = None
     until: float | None = None
     should_have_been: str = ""
+    at: float | None = None
 
 
 @dataclass
@@ -186,6 +187,7 @@ def _clusters(raw_clusters: list[dict]) -> list[Cluster]:
                     after=part.get("after"),
                     until=part.get("until"),
                     should_have_been=part.get("should_have_been") or "",
+                    at=part.get("at"),
                 )
             )
         clusters.append(

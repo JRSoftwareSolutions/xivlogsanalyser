@@ -539,7 +539,7 @@
           "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58–66k of that explosion. Everyone else takes about 90–105k. The players who missed the tower own it."
         },
         {"id": "holy-comet"},
-        {"id": "faith-unmoving"},
+        {"id": "faith-unmoving", "at": 145.5},
         {"id": "holy-impact"}
       ]
     },

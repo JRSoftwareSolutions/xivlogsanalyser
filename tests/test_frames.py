@@ -6,7 +6,14 @@ import unittest
 from pathlib import Path
 
 from xivloganalyzer.catalog import load_pack
-from xivloganalyzer.frames import FrameBook, attach_frames, facing_vector
+from xivloganalyzer.frames import (
+    CastClock,
+    FrameBook,
+    _bursts,
+    _waves,
+    attach_frames,
+    facing_vector,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "data" / "XVz8bCqgPw1KRh9d"
@@ -122,3 +129,163 @@ class StillFrameTest(unittest.TestCase):
         rows = json.loads((other / "judgments.json").read_text(encoding="utf-8"))
         fail = next(row for row in rows if row["outcome"] == "fail" and row["phase"] == 2)
         self.assertIsNone(book.frame(_death(fail), PACK))
+
+
+class MechanicStillTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.book = FrameBook(REPORT)
+        cls.rows = json.loads((REPORT / "judgments.json").read_text(encoding="utf-8"))
+        cls.clock = CastClock(REPORT, PACK, _pulls(cls.rows))
+
+    def test_far_apart_casts_keep_two_stills(self):
+        self.assertEqual(_waves(_bursts([135.0, 135.2, 148.0, 148.4])), [135.0, 148.0])
+        self.assertEqual(len(_waves(_bursts([113.0, 114.8, 116.6, 118.4]))), 1)
+
+    def test_a_clear_gaze_shows_the_party_and_both_eyes(self):
+        times = self.clock.times(14, "sanctity-of-the-ward", "dragons-gaze")
+        self.assertTrue(times)
+        self.assertAlmostEqual(times[0], 112.6, delta=2)
+        frame = self.book.mechanic_frame(
+            14, 2, times[0], "dragons-gaze", "Dragon's Gaze", [], PACK,
+        )
+        self.assertIsNotNone(frame)
+        self.assertIn("Dragon's Gaze", frame["title"])
+        self.assertGreaterEqual(sum(mark["kind"] == "gaze" for mark in frame["marks"]), 2)
+        self.assertGreaterEqual(len(frame["players"]), 8)
+        self.assertTrue(all(player.get("face") for player in frame["players"]))
+        self.assertNotIn("killed", frame["caption"].lower())
+        self.assertIn("two marks", frame["caption"])
+
+    def test_a_dodged_cone_uses_the_usual_cast(self):
+        times = self.clock.times(11, "ascalons-mercy-opener", "ascalons-mercy-concealed")
+        self.assertTrue(times)
+        self.assertAlmostEqual(times[0], 14.5, delta=1)
+        frame = self.book.mechanic_frame(
+            11, 2, times[0], "ascalons-mercy-concealed", "Ascalon's Mercy Concealed", [], PACK,
+        )
+        self.assertEqual(sum(mark["kind"] == "boss" for mark in frame["marks"]), 1)
+        self.assertEqual(sum(mark["kind"] == "hit" for mark in frame["marks"]), 0)
+        self.assertFalse(any(player.get("failed") for player in frame["players"]))
+
+    def test_a_failed_cone_draws_a_line_to_that_player(self):
+        frame = self.book.mechanic_frame(
+            68, 2, 14.5, "ascalons-mercy-concealed", "Ascalon's Mercy Concealed",
+            ["Loki Doki"], PACK,
+        )
+        victim = next(player for player in frame["players"] if player["name"] == "Loki Doki")
+        self.assertTrue(victim["failed"])
+        hits = [mark for mark in frame["marks"] if mark["kind"] == "hit"]
+        self.assertEqual(len(hits), 1)
+        self.assertEqual(hits[0]["x2"], victim["x"])
+        self.assertIn("Loki Doki failed", frame["caption"])
+
+    def test_attach_frames_puts_a_still_on_the_mechanic(self):
+        row = next(
+            item for item in self.rows
+            if item["fight"] == 11 and item["name"] == "Kite Noodle" and item["mechanic_id"] == "dragons-gaze"
+        )
+        payload = {
+            "mechanics": [{
+                "id": "sanctity-of-the-ward",
+                "phase": 2,
+                "parts": [{"id": "dragons-gaze"}],
+            }],
+            "pulls": [{
+                "id": 11,
+                "deaths": [_death(row)],
+                "cards": [{
+                    "id": "sanctity-of-the-ward",
+                    "name": "Sanctity of the Ward",
+                    "parts": [{
+                        "id": "dragons-gaze",
+                        "name": "Dragon's Gaze",
+                        "seats": [
+                            {"name": "Kite Noodle", "passed": False},
+                            {"name": "Loki Doki", "passed": True},
+                        ],
+                    }],
+                }],
+            }],
+        }
+        attach_frames(REPORT, payload, PACK)
+        frames = payload["pulls"][0]["cards"][0]["parts"][0]["frames"]
+        self.assertTrue(frames)
+        self.assertIn("Dragon's Gaze", frames[0]["title"])
+        failed = [player["name"] for player in frames[0]["players"] if player.get("failed")]
+        self.assertEqual(failed, ["Kite Noodle"])
+        self.assertEqual(payload["pulls"][0]["deaths"][0]["frame"]["killedBy"], "Dragon's Gaze")
+
+    def test_faith_uses_its_known_time_once_the_pull_is_still_going(self):
+        early = _faith_payload(11, 136.7)
+        attach_frames(REPORT, early, PACK)
+        self.assertNotIn("frames", early["pulls"][0]["cards"][0]["parts"][0])
+        late = _faith_payload(41, 147.0)
+        attach_frames(REPORT, late, PACK)
+        frames = late["pulls"][0]["cards"][0]["parts"][0]["frames"]
+        self.assertEqual(len(frames), 1)
+        self.assertIn("2:26", frames[0]["title"])
+        self.assertGreaterEqual(len(frames[0]["players"]), 8)
+
+    def test_a_log_without_a_replay_has_no_mechanic_still(self):
+        other = ROOT / "data" / "8DYNHQx4C7ytdLb9"
+        rows = json.loads((other / "judgments.json").read_text(encoding="utf-8"))
+        fail = next(row for row in rows if row["outcome"] == "fail" and row["phase"] == 2)
+        payload = {
+            "mechanics": [{"id": "ascalons-mercy-opener", "phase": 2, "parts": [{"id": fail["mechanic_id"]}]}],
+            "pulls": [{
+                "id": fail["fight"],
+                "deaths": [_death(fail)],
+                "cards": [{
+                    "id": "ascalons-mercy-opener",
+                    "parts": [{
+                        "id": fail["mechanic_id"],
+                        "name": fail["mechanic"],
+                        "seats": [{"name": fail["name"], "passed": False}],
+                    }],
+                }],
+            }],
+        }
+        attach_frames(other, payload, PACK)
+        self.assertNotIn("frame", payload["pulls"][0]["deaths"][0])
+        self.assertNotIn("frames", payload["pulls"][0]["cards"][0]["parts"][0])
+
+
+def _faith_payload(fight_id, died_at):
+    return {
+        "mechanics": [{"id": "meteors", "phase": 2, "parts": [{"id": "faith-unmoving"}]}],
+        "pulls": [{
+            "id": fight_id,
+            "deaths": [{
+                "outcome": "raw",
+                "t": died_at,
+                "phaseId": 2,
+                "name": "Kite Noodle",
+                "componentId": "eternal-conviction",
+                "mechanicId": "meteors",
+            }],
+            "cards": [{
+                "id": "meteors",
+                "parts": [{
+                    "id": "faith-unmoving",
+                    "name": "Faith Unmoving",
+                    "seats": [{"name": "Kite Noodle", "passed": True}],
+                }],
+            }],
+        }],
+    }
+
+
+def _pulls(rows):
+    pulls = {}
+    for row in rows:
+        pull = pulls.setdefault(row["fight"], {"id": row["fight"], "deaths": []})
+        cluster = PACK.cluster_for(row["mechanic_id"], row["t"], row["phase"])
+        pull["deaths"].append({
+            "outcome": row["outcome"],
+            "t": row["t"],
+            "phaseId": row["phase"],
+            "componentId": row["mechanic_id"],
+            "mechanicId": cluster.id if cluster else row["mechanic_id"],
+        })
+    return list(pulls.values())
