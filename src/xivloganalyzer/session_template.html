@@ -11,18 +11,48 @@
     --line: #3c372f; --raw: #d7a898; --raw-bg: #3c2e28; --fail: #d2c0a0;
     --fail-bg: #353026; --ok: #a3c4b4; --ok-bg: #26332d; --env: #b7c0c8; --env-bg: #2c333a;
     --hover: #312d27; --accent: #c9d2e4; --field: #1f1c18; --rule: #8d8478;
+    --nav-width: 300px;
   }
   * { box-sizing: border-box; }
   html, body { height: 100%; }
   body {
-    margin: 0; display: grid; grid-template-columns: 300px 1fr;
+    margin: 0; display: grid; grid-template-columns: var(--nav-width) minmax(0, 1fr);
     background: var(--bg); color: var(--ink); font: 16px/1.45 "Segoe UI", system-ui, sans-serif;
   }
   aside {
+    grid-column: 1; grid-row: 1; min-width: 0;
     background: var(--paper); border-right: 1px solid var(--line);
     overflow: auto; padding: 16px 12px 28px;
   }
-  main { overflow: auto; padding: 24px 28px 64px; }
+  #nav-split {
+    position: fixed; z-index: 5; top: 0; bottom: 0;
+    left: calc(var(--nav-width) - 3px); width: 12px;
+    border: 0; padding: 0; background: transparent;
+    cursor: col-resize; touch-action: none; user-select: none;
+  }
+  #nav-split::before {
+    content: ""; position: absolute; top: 0; bottom: 0; left: 3px; width: 1px;
+    background: transparent;
+  }
+  #nav-split::after {
+    content: ""; position: absolute; top: 50%; left: 1px; width: 4px; height: 4px;
+    margin-top: -2px; border-radius: 50%; background: var(--muted);
+    box-shadow: 0 -7px 0 var(--muted), 0 7px 0 var(--muted);
+    opacity: 0.45;
+  }
+  #nav-split:hover::before,
+  #nav-split:focus-visible::before,
+  body.nav-resizing #nav-split::before {
+    background: var(--accent); width: 2px; left: 2px;
+  }
+  #nav-split:hover::after,
+  #nav-split:focus-visible::after,
+  body.nav-resizing #nav-split::after {
+    opacity: 1; background: var(--accent);
+    box-shadow: 0 -7px 0 var(--accent), 0 7px 0 var(--accent);
+  }
+  #nav-split:focus-visible { outline: none; }
+  main { grid-column: 2; grid-row: 1; overflow: auto; padding: 24px 28px 64px; min-width: 0; }
   h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.03em; }
   h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
   h3 { margin: 0; font-size: 18px; }
@@ -47,6 +77,7 @@
     width: 100%; display: flex; justify-content: space-between; gap: 8px; align-items: baseline;
     border: 0; border-radius: 8px; background: transparent; padding: 7px 8px;
   }
+  button.nav > span:first-child { min-width: 0; }
   button.nav:hover { background: var(--hover); }
   button.nav[hidden] { display: none; }
   button.nav.on { background: var(--raw-bg); }
@@ -67,7 +98,7 @@
   }
   .fold[open] > summary::before { transform: rotate(90deg); }
   .fold summary:hover { background: var(--hover); color: var(--ink); }
-  .fold-title { flex: 1; }
+  .fold-title { flex: 1; min-width: 0; }
   .fold .countline { color: var(--muted); font-size: 12px; letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
   details.session > summary {
     text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 600; color: var(--ink);
@@ -243,17 +274,33 @@
   .route li:hover button.station { background: var(--hover); }
   .route li:hover .dot { background: var(--stop); }
   .route button.station:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  body.nav-resizing { cursor: col-resize; user-select: none; }
+  body.nav-resizing * { cursor: col-resize; }
+  body.nav-resizing aside,
+  body.nav-resizing main { pointer-events: none; }
   @media (max-width: 860px) {
     body { display: block; }
     aside { border-right: 0; border-bottom: 1px solid var(--line); max-height: 42vh; }
+    #nav-split { display: none; }
     .stats, .cols, header, .mech-head, .death-body { display: block; }
     .reach { grid-template-columns: 9.5rem minmax(0, 1fr); height: 420px; }
     .reach-names span { font-size: 11px; }
   }
 </style>
+<script>
+var NAV = { key: "nav-width", min: 200, gutter: 320, def: 300 };
+try {
+  var savedNav = Number(localStorage.getItem(NAV.key));
+  if (savedNav >= NAV.min) {
+    var navCap = Math.max(NAV.min, innerWidth - NAV.gutter);
+    document.documentElement.style.setProperty("--nav-width", Math.round(Math.min(navCap, savedNav)) + "px");
+  }
+} catch (e) {}
+</script>
 </head>
 <body>
 <aside id="nav"></aside>
+<div id="nav-split" role="separator" aria-orientation="vertical" aria-label="Resize sidebar" aria-description="Drag to resize the sidebar. Double-click to reset." aria-valuemin="200" aria-valuenow="300" tabindex="0"></div>
 <main id="app"></main>
 <script>
 const DATA = __DATA__;
@@ -1135,6 +1182,86 @@ document.body.addEventListener("input", event => {
 });
 window.addEventListener("hashchange", render);
 render();
+
+function navMax() {
+  return Math.max(NAV.min, window.innerWidth - NAV.gutter);
+}
+function clampNav(px) {
+  return Math.round(Math.min(navMax(), Math.max(NAV.min, px)));
+}
+function shownNav() {
+  const n = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--nav-width"));
+  return Number.isFinite(n) ? n : NAV.def;
+}
+let navPreferred = NAV.def;
+try {
+  const saved = Number(localStorage.getItem(NAV.key));
+  if (saved >= NAV.min) navPreferred = saved;
+} catch (e) {}
+function applyNavWidth(persist) {
+  const shown = clampNav(navPreferred);
+  document.documentElement.style.setProperty("--nav-width", shown + "px");
+  const handle = document.getElementById("nav-split");
+  if (handle) {
+    handle.setAttribute("aria-valuenow", String(shown));
+    handle.setAttribute("aria-valuemin", String(NAV.min));
+    handle.setAttribute("aria-valuemax", String(navMax()));
+  }
+  if (!persist) return;
+  try { localStorage.setItem(NAV.key, String(Math.round(navPreferred))); } catch (e) {}
+}
+applyNavWidth(false);
+const navSplit = document.getElementById("nav-split");
+if (navSplit) {
+  let drag = null;
+  navSplit.addEventListener("pointerdown", event => {
+    if (event.button !== 0) return;
+    event.preventDefault();
+    navSplit.setPointerCapture(event.pointerId);
+    drag = { id: event.pointerId, offset: shownNav() - event.clientX, moved: false };
+    document.body.classList.add("nav-resizing");
+  });
+  navSplit.addEventListener("pointermove", event => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const next = clampNav(event.clientX + drag.offset);
+    if (next === clampNav(navPreferred)) return;
+    drag.moved = true;
+    navPreferred = next;
+    applyNavWidth(false);
+  });
+  function endNavDrag(event) {
+    if (!drag || event.pointerId !== drag.id) return;
+    const moved = drag.moved;
+    drag = null;
+    document.body.classList.remove("nav-resizing");
+    if (moved) applyNavWidth(true);
+  }
+  navSplit.addEventListener("pointerup", endNavDrag);
+  navSplit.addEventListener("pointercancel", endNavDrag);
+  navSplit.addEventListener("click", event => {
+    event.preventDefault();
+    event.stopPropagation();
+  });
+  navSplit.addEventListener("dblclick", event => {
+    event.preventDefault();
+    navPreferred = NAV.def;
+    applyNavWidth(true);
+  });
+  navSplit.addEventListener("keydown", event => {
+    const step = event.shiftKey ? 48 : 16;
+    const shown = shownNav();
+    let next = null;
+    if (event.key === "ArrowLeft") next = shown - step;
+    else if (event.key === "ArrowRight") next = shown + step;
+    else if (event.key === "Home") next = NAV.min;
+    else if (event.key === "End") next = navMax();
+    else return;
+    event.preventDefault();
+    navPreferred = clampNav(next);
+    applyNavWidth(true);
+  });
+}
+window.addEventListener("resize", () => applyNavWidth(false));
 </script>
 </body>
 </html>
