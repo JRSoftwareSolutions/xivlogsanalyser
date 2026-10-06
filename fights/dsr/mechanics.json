@@ -82,7 +82,13 @@
       "category": "tower",
       "scales_with_stack": false,
       "fail_above": 150000,
-      "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600–760k and applies Damage Down and Paralysis to everyone.",
+      "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
+      "moments": [
+        {
+          "above": 150000,
+          "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600–760k and applies Damage Down and Paralysis to everyone."
+        }
+      ],
       "roles": {
         "tank": {"unmitigated_max": 55000, "lived": "about 37k"},
         "healer": {"unmitigated_max": 78000, "lived": "59–65k"},
@@ -100,7 +106,7 @@
       "one_target": true,
       "requires_personal_mit": true,
       "off_tank": "Absolute Gigachad",
-      "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. In this log that is the paladin, Absolute Gigachad. The main tank, the warrior Absolute Gigalad, then takes the three-hit Ascalon's Might, also with personal mitigation. A lived heel is about 159–174k before mit. The main tank does not take the heel, and the off tank does not take the three hits. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
+      "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. In this log that is the paladin, Absolute Gigachad. A lived heel is about 159–174k before mit. The main tank does not take the heel. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
       "roles": {
         "tank": {"unmitigated_max": 190000, "lived": "159–174k before mit"},
         "healer": {"unmitigated_max": 140000, "lived": "not a healer hit"},
@@ -161,7 +167,7 @@
       "tanks_only": true,
       "one_target": true,
       "requires_personal_mit": true,
-      "should_have_been": "One tank takes the three hits with personal mitigation. The opener is about 71–86k, on the main tank. The later three-hit follows Heavenly Heel: the main tank takes it, properly mitigated, about 59–86k. The off tank who took the heel does not take these. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
+      "should_have_been": "One tank takes the three hits with personal mitigation. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
       "roles": {
         "tank": {"unmitigated_max": 110000, "lived": "about 71–86k"},
         "healer": {"unmitigated_max": 110000, "lived": "not a healer hit"},
@@ -175,7 +181,7 @@
       "guids": [25545],
       "category": "dodge",
       "any_hit_is_fail": true,
-      "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake."
+      "should_have_been": "Nobody is hit."
     },
     {
       "id": "heavy-impact",
@@ -258,9 +264,13 @@
       "phase": 2,
       "starts": 0,
       "skill": "dsr-thordan-opener",
-      "summary": "About 14 seconds. One tank stands in front of the boss. Everyone else stacks tight behind it, then dodges together. Nobody is hit. The cones come back inside Strength of the Ward as a 4/4 split.",
+      "summary": "About 14 seconds. One tank stands in front of the boss. Everyone else stacks tight behind it, then dodges together. Nobody is hit.",
       "parts": [
-        {"id": "ascalons-mercy-concealed", "until": 30}
+        {
+          "id": "ascalons-mercy-concealed",
+          "until": 30,
+          "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake."
+        }
       ]
     },
     {
@@ -269,9 +279,13 @@
       "phase": 2,
       "starts": 14,
       "skill": "dsr-thordan-opener",
-      "summary": "The opener tankbuster, about 17 seconds in. Three hits on the main tank. When the warrior takes it, he invulns it or heavy-mits it. The same three-hit comes back after Heavenly Heel, still on the main tank.",
+      "summary": "The opener tankbuster, about 17 seconds in. Three hits on the main tank. When the warrior takes it, he invulns it or heavy-mits it.",
       "parts": [
-        {"id": "ascalons-might", "until": 50}
+        {
+          "id": "ascalons-might",
+          "until": 50,
+          "should_have_been": "The main tank takes the three hits with personal mitigation, about 71–86k. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death."
+        }
       ]
     },
     {
@@ -284,7 +298,11 @@
       "parts": [
         {"id": "lightning-storm"},
         {"id": "heavy-impact"},
-        {"id": "ascalons-mercy-concealed", "after": 30},
+        {
+          "id": "ascalons-mercy-concealed",
+          "after": 30,
+          "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit."
+        },
         {"id": "dimensional-collapse"},
         {"id": "skyward-leap"},
         {"id": "dragons-rage"},
@@ -302,7 +320,11 @@
       "summary": "About 81 seconds. The off tank takes Heavenly Heel, then the main tank takes the three Ascalon's Might hits. Both are properly mitigated. In this log the paladin is the off tank and the warrior is the main tank. Anyone else getting hit owns that mistake. The off tank who dies on the real hit without personal mitigation owns that death. Sanctity of the Ward is next.",
       "parts": [
         {"id": "heavenly-heel"},
-        {"id": "ascalons-might", "after": 50}
+        {
+          "id": "ascalons-might",
+          "after": 50,
+          "should_have_been": "The main tank takes the three hits with personal mitigation, about 59–86k. The off tank who took Heavenly Heel does not take these. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death."
+        }
       ]
     },
     {

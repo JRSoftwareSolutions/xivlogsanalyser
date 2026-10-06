@@ -697,7 +697,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "206,205 unmitigated \u00b7 HP 61,737 (100%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
     "went_wrong": "Kitana Kahn got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -732,7 +732,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "212,449 unmitigated \u00b7 HP 61,615 (100%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -797,7 +797,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "192,670 unmitigated \u00b7 HP 35,839 (52%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Kiara Blaiddyd got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -1154,7 +1154,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "183,984 unmitigated \u00b7 HP 61,615 (100%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -1386,7 +1386,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "221,183 unmitigated \u00b7 HP 10,552 (17%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -1435,7 +1435,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "66,170 unmitigated \u00b7 HP 36,457 (53%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
     "went_wrong": "Kiara Blaiddyd was at 36,457 of 68,662. The healers did not fully heal them.",
     "blames": [
       {
@@ -1500,7 +1500,7 @@
     "mechanic": "Ascalon's Might",
     "outcome": "fail",
     "happened": "152,770 unmitigated \u00b7 HP 64,527 (65%) \u00b7 32% mit \u00b7 no shield \u00b7 Holy Sheltron from Absolute Gigachad, 15%; Rampart from Absolute Gigachad, 20%",
-    "should_have_been": "One tank takes the three hits with personal mitigation. The opener is about 71\u201386k, on the main tank. The later three-hit follows Heavenly Heel: the main tank takes it, properly mitigated, about 59\u201386k. The off tank who took the heel does not take these. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
+    "should_have_been": "The main tank takes the three hits with personal mitigation, about 59\u201386k. The off tank who took Heavenly Heel does not take these. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
     "went_wrong": "Only one tank takes Ascalon's Might. Absolute Gigachad ate the extra hit (152,770).",
     "blames": [
       {
@@ -2331,7 +2331,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "215,287 unmitigated \u00b7 HP 45,573 (74%) \u00b7 mit unknown \u00b7 shield 29,404 \u00b7 Fey Illumination from Spring Nymphar; Galvanize from Spring Nymphar (Succor), shield 8,065; Neutral Sect from Loki Doki (Aspected Helios), shield 16,276; Seraphic Veil from Spring Nymphar (Consolation), shield 5,063",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -3113,7 +3113,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "211,122 unmitigated \u00b7 HP 61,615 (100%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -3173,7 +3173,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "69,160 unmitigated \u00b7 HP 51,175 (75%) \u00b7 10% mit \u00b7 shield 9,011 \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Neutral Sect from Loki Doki, shield 9,011",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
     "went_wrong": "Kiara Blaiddyd was at 51,175 of 68,662. The healers did not fully heal them.",
     "blames": [
       {
@@ -3563,7 +3563,7 @@
     "mechanic": "Heavenly Heel",
     "outcome": "fail",
     "happened": "250,619 unmitigated \u00b7 HP 16,476 (24%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. In this log that is the paladin, Absolute Gigachad. The main tank, the warrior Absolute Gigalad, then takes the three-hit Ascalon's Might, also with personal mitigation. A lived heel is about 159\u2013174k before mit. The main tank does not take the heel, and the off tank does not take the three hits. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
+    "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. In this log that is the paladin, Absolute Gigachad. A lived heel is about 159\u2013174k before mit. The main tank does not take the heel. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
     "went_wrong": "Kiara Blaiddyd got Heavenly Heel. Only a tank takes this.",
     "blames": [
       {
@@ -3610,7 +3610,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "218,139 unmitigated \u00b7 HP 34,420 (56%) \u00b7 mit unknown \u00b7 shield 8,853 \u00b7 Neutral Sect from Loki Doki, shield 8,853",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -4499,7 +4499,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "209,490 unmitigated \u00b7 HP 34,924 (57%) \u00b7 mit unknown \u00b7 shield 14,548 \u00b7 Seraphic Veil from Spring Nymphar, shield 5,306; Shake It Off from Absolute Gigalad, shield 9,242",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -4548,7 +4548,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "662,685 unmitigated \u00b7 HP 62,101 (100%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Loki Doki died to the explosion (662,685), not a real soak.",
     "blames": [
       {
@@ -4639,7 +4639,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "702,350 unmitigated \u00b7 HP 24,173 (39%) \u00b7 no party mit \u00b7 no shield \u00b7 Magic Vulnerability Up from Ser Ignasse (Skyward Leap); Physical Vulnerability Up from Ser Ignasse (Skyward Leap); Neutral Sect from Loki Doki, shield 9,228; Seraphic Veil from Spring Nymphar, shield 5,096; Shake It Off from Absolute Gigalad, shield 9,260",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Kitana Kahn died to the explosion (702,350), not a real soak.",
     "blames": [
       {
@@ -4688,7 +4688,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "724,263 unmitigated \u00b7 HP 39,185 (57%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Kite Noodle died to the explosion (724,263), not a real soak.",
     "blames": [
       {
@@ -5258,7 +5258,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "205,826 unmitigated \u00b7 HP 62,101 (100%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
     "went_wrong": "Loki Doki got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -5293,7 +5293,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "206,100 unmitigated \u00b7 HP 61,615 (100%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -6123,7 +6123,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "123,110 unmitigated \u00b7 HP 35,151 (30%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Absolute Gigalad got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -6172,7 +6172,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "681,187 unmitigated \u00b7 HP 49,467 (80%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Loki Doki died to the explosion (681,187), not a real soak.",
     "blames": [
       {
@@ -6221,7 +6221,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "65,954 unmitigated \u00b7 HP 48,117 (70%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
     "went_wrong": "Speed Panda was at 48,117 of 68,259. The healers did not fully heal them.",
     "blames": [
       {
@@ -7682,7 +7682,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "211,626 unmitigated \u00b7 HP 34,308 (50%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Kiara Blaiddyd got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -7822,7 +7822,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "655,281 unmitigated \u00b7 HP 15,722 (25%) \u00b7 232% amp \u00b7 no shield \u00b7 Neutral Sect from Loki Doki, shield 8,898; Shake It Off from Absolute Gigalad, shield 9,315; Magic Vulnerability Up from Ser Ignasse, 232% amp",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "Loki Doki had vulnerability or damage down. The amp is from a failed mechanic.",
     "blames": [
       {
@@ -8141,7 +8141,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "104,672 unmitigated \u00b7 HP 23,979 (24%) \u00b7 mit unknown \u00b7 no shield \u00b7 Galvanize from Spring Nymphar, shield 11,606; Shake It Off from Absolute Gigalad, shield 14,881",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Absolute Gigachad got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -9479,7 +9479,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "126,533 unmitigated \u00b7 HP 87,010 (88%) \u00b7 mit unknown \u00b7 shield 7,230 \u00b7 Galvanize from Spring Nymphar (Succor), shield 7,230",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Absolute Gigachad got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -10361,7 +10361,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "124,289 unmitigated \u00b7 HP 54,919 (46%) \u00b7 mit unknown \u00b7 shield 7,486 \u00b7 Galvanize from Spring Nymphar, shield 7,486",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Absolute Gigalad got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -10462,7 +10462,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "757,450 unmitigated \u00b7 HP 22,226 (32%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Galvanize from Spring Nymphar, shield 7,411; Neutral Sect from Loki Doki, shield 9,008",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion (757,450), not a real soak.",
     "blames": [
       {
@@ -10511,7 +10511,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "696,697 unmitigated \u00b7 HP 61,737 (100%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Kitana Kahn died to the explosion (696,697), not a real soak.",
     "blames": [
       {
@@ -11101,7 +11101,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "130,356 unmitigated \u00b7 HP 45,715 (39%) \u00b7 mit unknown \u00b7 shield 22,157 \u00b7 Galvanize from Spring Nymphar (Succor), shield 7,441; Neutral Sect from Loki Doki (Aspected Helios), shield 14,716",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Absolute Gigalad got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -11232,7 +11232,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "666,040 unmitigated \u00b7 HP 20,192 (33%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Galvanize from Spring Nymphar, shield 7,321; Neutral Sect from Loki Doki, shield 8,930",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Loki Doki died to the explosion (666,040), not a real soak.",
     "blames": [
       {
@@ -13649,7 +13649,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "106,831 unmitigated \u00b7 HP 99,211 (100%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
     "went_wrong": "Absolute Gigachad got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -13684,7 +13684,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "209,555 unmitigated \u00b7 HP 68,662 (100%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
     "went_wrong": "Kiara Blaiddyd got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -13958,7 +13958,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "216,393 unmitigated \u00b7 HP 53,504 (87%) \u00b7 mit unknown \u00b7 shield 7,536 \u00b7 Galvanize from Spring Nymphar, shield 7,536",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -16504,7 +16504,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "221,800 unmitigated \u00b7 HP 48,659 (79%) \u00b7 mit unknown \u00b7 shield 17,507 \u00b7 Fey Illumination from Spring Nymphar; Galvanize from Spring Nymphar (Succor), shield 8,265; Shake It Off from Absolute Gigalad, shield 9,242",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -16606,7 +16606,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "696,752 unmitigated \u00b7 HP 466 (1%) \u00b7 5% mit \u00b7 no shield \u00b7 Fey Illumination from Spring Nymphar, 5%",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Kitana Kahn died to the explosion (696,752), not a real soak.",
     "blames": [
       {
@@ -17765,7 +17765,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "761,871 unmitigated \u00b7 HP 32,175 (47%) \u00b7 no party mit \u00b7 no shield \u00b7 Magic Vulnerability Up from Ser Paulecrain (Skyward Leap); Physical Vulnerability Up from Ser Paulecrain (Skyward Leap); Galvanize from Spring Nymphar, shield 12,012; Neutral Sect from Loki Doki, shield 9,307; Shake It Off from Absolute Gigalad, shield 10,299",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion (761,871), not a real soak.",
     "blames": [
       {
@@ -17800,7 +17800,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "658,295 unmitigated \u00b7 HP 61,737 (100%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Kitana Kahn died to the explosion (658,295), not a real soak.",
     "blames": [
       {
@@ -18213,7 +18213,7 @@
     "mechanic": "Heavenly Heel",
     "outcome": "fail",
     "happened": "165,404 unmitigated \u00b7 HP 61,710 (52%) \u00b7 10% mit \u00b7 shield 15,339 \u00b7 Desperate Measures from Spring Nymphar, 10%; Seraphic Veil from Spring Nymphar, shield 5,055; The Spire from Loki Doki, shield 10,284",
-    "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. In this log that is the paladin, Absolute Gigachad. The main tank, the warrior Absolute Gigalad, then takes the three-hit Ascalon's Might, also with personal mitigation. A lived heel is about 159\u2013174k before mit. The main tank does not take the heel, and the off tank does not take the three hits. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
+    "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. In this log that is the paladin, Absolute Gigachad. A lived heel is about 159\u2013174k before mit. The main tank does not take the heel. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
     "went_wrong": "The off tank takes Heavenly Heel. Absolute Gigalad took it. Personal mitigation was not enough.",
     "blames": [
       {
@@ -19396,7 +19396,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "707,389 unmitigated \u00b7 HP 36,039 (53%) \u00b7 215% amp \u00b7 no shield \u00b7 Fey Illumination from Spring Nymphar, 5%; Magic Vulnerability Up from Ser Ignasse, 232% amp",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "Kite Noodle had vulnerability or damage down. The amp is from a failed mechanic.",
     "blames": [
       {
@@ -21252,7 +21252,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "215,729 unmitigated \u00b7 HP 62,101 (100%) \u00b7 mit unknown \u00b7 no shield",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
     "went_wrong": "Loki Doki got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -21345,7 +21345,7 @@
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
     "happened": "207,324 unmitigated \u00b7 HP 50,337 (82%) \u00b7 mit unknown \u00b7 shield 16,614 \u00b7 Galvanize from Spring Nymphar, shield 7,372; Shake It Off from Absolute Gigalad, shield 9,242",
-    "should_have_been": "The opener is one tank in front and everyone else stacked behind, then a dodge. During Strength of the Ward the party is walking toward the middle while dodging Heavy Impact, so that cast is a 4/4 split. The front-and-back stack does not apply there. Nobody is hit either time. On the opener, a cone baited from outside the stack is also the baiter's mistake.",
+    "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
     "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
     "blames": [
       {
@@ -21500,7 +21500,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "64,954 unmitigated \u00b7 HP 61,737 (100%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
     "went_wrong": "Kitana Kahn was fully healed. Skyward Leap had no party mit and no shield. The players who were supposed to mitigate it own that death.",
     "blames": [
       {
@@ -21558,7 +21558,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "713,570 unmitigated \u00b7 HP 11,755 (17%) \u00b7 no party mit \u00b7 no shield \u00b7 Galvanize from Spring Nymphar, shield 7,379; Shake It Off from Absolute Gigalad, shield 10,299",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, a mitigation mistake when they were full and the mit was missing, or a clip when someone was out of that spot. A soaked tower does not deal this. The three towers that are not on those markers are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
+    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
     "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion (713,570), not a real soak.",
     "blames": [
       {

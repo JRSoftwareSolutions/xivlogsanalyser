@@ -161,63 +161,65 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
         return _done(
             fact, mechanic, happened, "fail",
             f"{fact.name} had vulnerability or damage down. The amp is from a failed mechanic.",
-            "personal",
+            "personal", pack,
         )
     hit = _hit(fact)
     if mechanic.tanks_only and fact.role != "tank":
         return _done(
             fact, mechanic, happened, "fail",
             f"{fact.name} got {mechanic.name}. Only a tank takes this.",
-            "personal",
+            "personal", pack,
         )
     if mechanic.off_tank and fact.name != mechanic.off_tank:
         wrong = f"The off tank takes {mechanic.name}. {fact.name} took it."
         if mechanic.requires_personal_mit and not _personal_mit(fact, pack):
             wrong += " Personal mitigation was not enough."
-        return _done(fact, mechanic, happened, "fail", wrong, "personal")
+        return _done(fact, mechanic, happened, "fail", wrong, "personal", pack)
     if mechanic.one_target and fact.stack and fact.stack > 1:
         return _done(
             fact, mechanic, happened, "fail",
             f"Only one tank takes {mechanic.name}. {fact.name} ate the extra hit ({_comma(hit)}).",
-            "personal",
+            "personal", pack,
         )
     if mechanic.any_hit_is_fail:
-        return _done(fact, mechanic, happened, "fail", _personal(fact, mechanic), "personal")
+        return _done(fact, mechanic, happened, "fail", _personal(fact, mechanic), "personal", pack)
     if mechanic.fail_above is not None and hit > mechanic.fail_above:
         return _done(
             fact, mechanic, happened, "fail", _oversized(fact, mechanic, hit),
-            _oversized_cause(fact, mechanic),
+            _oversized_cause(fact, mechanic), pack,
         )
     cap = mechanic.cap_for(fact.role)
     if cap is None:
         return _done(
             fact, mechanic, happened, "unknown",
             "No fault assigned. This role is not covered yet.",
-            "none",
+            "none", pack,
         )
     if hit <= cap:
         if fact.hp is not None and fact.hp < pack.low_hp:
             return _done(
                 fact, mechanic, happened, "low",
                 f"{fact.name} was already at {_comma(fact.hp)}. The hit itself is the normal one.",
-                "low",
+                "low", pack,
             )
         if mechanic.requires_personal_mit and fact.role == "tank" and not _personal_mit(fact, pack):
             return _done(
                 fact, mechanic, happened, "fail",
                 f"{fact.name} died to the real {mechanic.name}. Personal mitigation was not enough.",
-                "personal",
+                "personal", pack,
             )
         if mechanic.id == "skyward-leap":
             return _done(
-                fact, mechanic, happened, "fail", _skyward_marker(fact), _skyward_cause(fact),
+                fact, mechanic, happened, "fail", _skyward_marker(fact), _skyward_cause(fact), pack,
             )
-        return _done(fact, mechanic, happened, "raw", _raw_fault(fact, mechanic), _raw_cause(fact, mechanic))
+        return _done(
+            fact, mechanic, happened, "raw", _raw_fault(fact, mechanic), _raw_cause(fact, mechanic), pack,
+        )
     if mechanic.id == "skyward-leap":
-        return _done(fact, mechanic, happened, "fail", _skyward_clip(fact, hit), "clip")
+        return _done(fact, mechanic, happened, "fail", _skyward_clip(fact, hit), "clip", pack)
     return _done(
         fact, mechanic, happened, "fail", _oversized(fact, mechanic, hit),
-        _oversized_cause(fact, mechanic),
+        _oversized_cause(fact, mechanic), pack,
     )
 
 
@@ -318,8 +320,26 @@ def _raw_fault(fact: DeathFact, mechanic: Mechanic) -> str:
     )
 
 
+def _should(fact: DeathFact, mechanic: Mechanic, pack: FightPack) -> str:
+    """The correct play for this cast, not a later one of the same ability."""
+    hit = _hit(fact)
+    for moment in mechanic.moments:
+        if moment.matches(fact.t, hit):
+            return moment.should_have_been
+    part = pack.part_for(mechanic.id, fact.t, fact.phase)
+    if part and part.should_have_been:
+        return part.should_have_been
+    return mechanic.should_have_been
+
+
 def _done(
-    fact: DeathFact, mechanic: Mechanic, happened: str, outcome: str, wrong: str, cause: str,
+    fact: DeathFact,
+    mechanic: Mechanic,
+    happened: str,
+    outcome: str,
+    wrong: str,
+    cause: str,
+    pack: FightPack,
 ) -> Judgment:
     return Judgment(
         fact=fact,
@@ -327,7 +347,7 @@ def _done(
         mechanic=mechanic.name,
         outcome=outcome,
         happened=happened,
-        should_have_been=mechanic.should_have_been,
+        should_have_been=_should(fact, mechanic, pack),
         went_wrong=wrong,
         cause=cause,
     )
