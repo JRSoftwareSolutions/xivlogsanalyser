@@ -6,9 +6,11 @@
 <title>Dragonsong's Reprise · Mon 5 Oct 2026 · 21:31–00:14</title>
 <style>
   :root {
-    --bg: #f4f1ea; --paper: #fffcf7; --ink: #1c1915; --muted: #5e584f;
-    --line: #e2dbd0; --raw: #9a3412; --raw-bg: #fff1e8; --fail: #7c4a12;
-    --fail-bg: #fbf3e4; --ok: #1f5c45; --ok-bg: #e7f4ee; --env: #3f4a57; --env-bg: #eef2f5;
+    color-scheme: dark;
+    --bg: #1c1916; --paper: #26231e; --ink: #e3dcd1; --muted: #a79e92;
+    --line: #3c372f; --raw: #d7a898; --raw-bg: #3c2e28; --fail: #d2c0a0;
+    --fail-bg: #353026; --ok: #a3c4b4; --ok-bg: #26332d; --env: #b7c0c8; --env-bg: #2c333a;
+    --hover: #312d27; --accent: #c9d2e4; --field: #1f1c18; --rule: #8d8478;
   }
   * { box-sizing: border-box; }
   html, body { height: 100%; }
@@ -34,18 +36,18 @@
     background: transparent; border: 0; border-radius: 8px; cursor: pointer;
     margin: 0 0 10px; padding: 4px 8px;
   }
-  button.fight-head:hover, button.fight-head.on { background: #f7f4ee; }
+  button.fight-head:hover, button.fight-head.on { background: var(--hover); }
   .meta { color: var(--muted); margin: 0; }
-  a { color: #243056; }
+  a { color: var(--accent); }
   button.nav, button.link {
     font: inherit; color: inherit; cursor: pointer; text-align: left;
   }
-  button.link { background: none; border: 0; padding: 0; color: #243056; }
+  button.link { background: none; border: 0; padding: 0; color: var(--accent); }
   button.nav {
     width: 100%; display: flex; justify-content: space-between; gap: 8px; align-items: baseline;
     border: 0; border-radius: 8px; background: transparent; padding: 7px 8px;
   }
-  button.nav:hover { background: #f7f4ee; }
+  button.nav:hover { background: var(--hover); }
   button.nav[hidden] { display: none; }
   button.nav.on { background: var(--raw-bg); }
   button.nav .countline { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -64,7 +66,7 @@
     border-color: transparent transparent transparent currentColor;
   }
   .fold[open] > summary::before { transform: rotate(90deg); }
-  .fold summary:hover { background: #f7f4ee; color: var(--ink); }
+  .fold summary:hover { background: var(--hover); color: var(--ink); }
   .fold-title { flex: 1; }
   .fold .countline { color: var(--muted); font-size: 12px; letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
   details.session > summary {
@@ -79,8 +81,9 @@
   }
   input.filter {
     width: 100%; margin: 4px 0 8px; padding: 7px 8px; border-radius: 8px;
-    border: 1px solid var(--line); font: inherit; background: #fff;
+    border: 1px solid var(--line); font: inherit; color: var(--ink); background: var(--field);
   }
+  input.filter::placeholder { color: var(--muted); }
   header { display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; margin-bottom: 16px; }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 16px; }
   .stat { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
@@ -119,10 +122,10 @@
   .seat {
     display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
     border-radius: 999px; padding: 3px 8px 3px 4px; border: 1px solid var(--line);
-    background: #f7f4ee;
+    background: var(--hover);
   }
-  .seat.ok { background: var(--ok-bg); border-color: #cfe3d8; color: var(--ok); }
-  .seat.fail { background: var(--fail-bg); border-color: #e6d3b0; color: var(--fail); }
+  .seat.ok { background: var(--ok-bg); border-color: #4d6b5e; color: var(--ok); }
+  .seat.fail { background: var(--fail-bg); border-color: #6d5e46; color: var(--fail); }
   .seat .job-icon { width: 24px; height: 24px; }
   .seat-name { color: var(--ink); font-weight: 650; }
   .mark { width: 16px; height: 16px; display: block; flex: 0 0 auto; }
@@ -135,7 +138,7 @@
     background: transparent; border: 0; border-top: 1px solid var(--line);
     padding: 12px 0 4px; cursor: pointer;
   }
-  button.session-card:hover { background: #f7f4ee; }
+  button.session-card:hover { background: var(--hover); }
   .reach {
     display: grid; grid-template-columns: 12.5rem minmax(0, 1fr); height: 480px; margin-top: 4px;
   }
@@ -151,10 +154,10 @@
   .strip { height: 52px; width: 100%; margin: 8px 0 4px; }
   .hline {
     position: absolute; left: 0; right: 0; height: 0;
-    border-top: 2px dotted #5c554c;
+    border-top: 2px dotted var(--rule);
     pointer-events: none; z-index: 2;
   }
-  .strip .hline { border-top-width: 1px; border-top-color: rgba(94, 88, 79, 0.7); }
+  .strip .hline { border-top-width: 1px; border-top-color: rgba(167, 158, 146, 0.55); }
   .chart .bar {
     position: relative; z-index: 1;
     width: 9px; flex: 0 0 9px; min-height: 4px; border: 0; padding: 0; cursor: pointer;
@@ -168,7 +171,7 @@
   .swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
   .pip {
     width: 10px; height: 10px; border-radius: 2px; flex: 0 0 auto;
-    box-shadow: inset 0 0 0 1px rgba(28, 25, 21, 0.18);
+    box-shadow: inset 0 0 0 1px rgba(227, 220, 209, 0.22);
   }
   .pct {
     display: inline-block; font-size: 12px; font-weight: 700; line-height: 1.45;
@@ -191,7 +194,7 @@
     font-size: 12px; font-weight: 650; margin-right: 2px;
   }
   .route {
-    --stop: #8a5a2b;
+    --stop: #9a7d5b;
     list-style: none; margin: 14px 0 2px; padding: 2px 0;
   }
   .route li {
@@ -216,10 +219,10 @@
   }
   .route button.station {
     font: inherit; font-size: 18px; font-weight: 600; line-height: 1.3;
-    color: #243056; background: transparent; border: 0; border-radius: 8px;
+    color: var(--accent); background: transparent; border: 0; border-radius: 8px;
     text-align: left; cursor: pointer; padding: 10px 10px 10px 4px; width: 100%;
   }
-  .route li:hover button.station { background: #f7f4ee; }
+  .route li:hover button.station { background: var(--hover); }
   .route li:hover .dot { background: var(--stop); }
   .route button.station:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   @media (max-width: 860px) {
@@ -414,21 +417,21 @@ function contrast(a, b) {
 function inkFor(h, s, l) {
   const [r, g, b] = hslToRgb(h, s, l);
   const lum = relLum(r, g, b);
-  const dark = relLum(28, 25, 21);
-  const light = relLum(255, 252, 247);
-  return contrast(lum, dark) >= contrast(lum, light) ? "#1c1915" : "#fffcf7";
+  const dark = relLum(28, 25, 22);
+  const light = relLum(227, 220, 209);
+  return contrast(lum, dark) >= contrast(lum, light) ? "#1c1916" : "#e3dcd1";
 }
 function progressTint(phaseId, t) {
   const id = Number(phaseId);
-  if (!id) return { bg: "#eef2f5", fg: "#3f4a57", border: "#c5ced6" };
-  const [h, s] = hexToHsl(phaseColor(id));
+  if (!id) return { bg: "#2c333a", fg: "#b7c0c8", border: "#46505a" };
+  const [h] = hexToHsl(phaseColor(id));
   const clamped = Math.min(1, Math.max(0, t));
-  const L = 86 + (24 - 86) * clamped;
-  const sat = Math.min(94, 46 + clamped * Math.max(28, s - 8));
+  const L = 32 - clamped * 8;
+  const sat = 24 + clamped * 12;
   return {
     bg: `hsl(${Math.round(h)} ${Math.round(sat)}% ${Math.round(L)}%)`,
     fg: inkFor(h, sat, L),
-    border: `hsl(${Math.round(h)} ${Math.round(Math.min(94, sat + 6))}% ${Math.round(Math.max(24, L - 16))}%)`,
+    border: `hsl(${Math.round(h)} ${Math.round(Math.min(42, sat + 6))}% ${Math.round(Math.max(16, L - 8))}%)`,
   };
 }
 function mechanicTint(phaseId, index, count) {
@@ -570,8 +573,8 @@ function phaseRoute(mechs, color) {
   return `<ol class="route" style="--stop:${color}">${stops}</ol>`;
 }
 function phaseColor(id) {
-  const colors = ["#3d6b8a", "#b45309", "#9f1239", "#6d28d9", "#0f766e", "#a16207", "#1d4ed8", "#854d0e"];
-  return colors[(Number(id) - 1) % colors.length] || "#5e584f";
+  const colors = ["#61879e", "#a87557", "#9e6173", "#7f6f9b", "#5b8f85", "#a38b5c", "#6a81a0", "#9a7d5b"];
+  return colors[(Number(id) - 1) % colors.length] || "#a79e92";
 }
 function overviewOf(session) {
   return (session && session.overview) || { pulls: [], phases: [], best: null };
@@ -721,9 +724,9 @@ function renderFight(id) {
 }
 function markIcon(passed) {
   if (passed) {
-    return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M4.2 8.2 6.7 10.6 11.8 5.2" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M4.2 8.2 6.7 10.6 11.8 5.2" fill="none" stroke="#1c1916" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   }
-  return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M5 5l6 6M11 5 5 11" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+  return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M5 5l6 6M11 5 5 11" fill="none" stroke="#1c1916" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 }
 function seatMark(seat, partName) {
   const passed = Boolean(seat.passed);
