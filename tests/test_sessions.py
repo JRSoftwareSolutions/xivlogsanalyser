@@ -107,8 +107,8 @@ class NidhoggChartTest(unittest.TestCase):
 class ClusterTimelineTest(unittest.TestCase):
     def test_stops_follow_starts_and_each_names_a_skill(self):
         pack = load_pack(ROOT / "fights" / "dsr")
-        starts = [cluster.starts for cluster in pack.clusters]
-        self.assertEqual(starts, sorted(starts))
+        order = [(cluster.phase, cluster.starts) for cluster in pack.clusters]
+        self.assertEqual(order, sorted(order))
         self.assertEqual(
             [cluster.name for cluster in pack.clusters],
             [
@@ -118,6 +118,7 @@ class ClusterTimelineTest(unittest.TestCase):
                 "Heavenly Heel",
                 "Sanctity of the Ward",
                 "Meteors",
+                "Dive from Grace",
             ],
         )
         known = {mechanic.id for mechanic in pack.mechanics}
