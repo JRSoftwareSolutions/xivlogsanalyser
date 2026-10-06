@@ -9,6 +9,14 @@
       "category": "raidwide",
       "scales_with_stack": false,
       "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
+      "moments": [
+        {
+          "after": 100,
+          "fail": true,
+          "cause": "tower",
+          "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58–66k of that explosion. Everyone else takes about 90–105k. The players who missed the tower own it."
+        }
+      ],
       "roles": {
         "tank": {"unmitigated_max": 75000, "lived": "61–67k"},
         "healer": {"unmitigated_max": 115000, "lived": "about 86–103k"},
@@ -23,11 +31,11 @@
       "category": "stack",
       "scales_with_stack": true,
       "typical_targets": 4,
-      "should_have_been": "A full share of 4 that people live is about 35–63k. A stack of 1 or 2 is larger, and still this mechanic if it stays under the role cap. Cleaves are a different hit.",
+      "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24–48k, healers about 43–67k, and DPS about 40–64k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
       "roles": {
-        "tank": {"unmitigated_max": 120000, "lived": "about 27k on a full share"},
-        "healer": {"unmitigated_max": 90000, "lived": "about 45k on a full share"},
-        "dps": {"unmitigated_max": 85000, "lived": "about 43k on a full share"}
+        "tank": {"unmitigated_max": 120000, "lived": "about 24–48k on a share of 4"},
+        "healer": {"unmitigated_max": 90000, "lived": "about 43–67k on a share of 4"},
+        "dps": {"unmitigated_max": 85000, "lived": "about 40–64k on a share of 4"}
       }
     },
     {
@@ -37,11 +45,11 @@
       "guids": [25575],
       "category": "puddle",
       "scales_with_stack": false,
-      "should_have_been": "A placed ice hit is about 25–40k. This does not split like a stack.",
+      "should_have_been": "Pairs share the placed ice. Tanks take about 14–25k. Healers take about 23–38k. DPS take about 26–40k. It does not split further. A puddle that covers a tower is a wrong drop.",
       "roles": {
-        "tank": {"unmitigated_max": 90000, "lived": "about 24k, up to 76k"},
-        "healer": {"unmitigated_max": 55000, "lived": "about 36k"},
-        "dps": {"unmitigated_max": 55000, "lived": "about 38k"}
+        "tank": {"unmitigated_max": 50000, "lived": "about 14–25k"},
+        "healer": {"unmitigated_max": 55000, "lived": "about 23–38k"},
+        "dps": {"unmitigated_max": 55000, "lived": "about 26–40k"}
       }
     },
     {
@@ -51,7 +59,8 @@
       "guids": [25578],
       "category": "raidwide",
       "scales_with_stack": false,
-      "should_have_been": "Same shape as Eternal Conviction. Tanks take about 63k. Everyone else takes about 95–103k, even in a full party of 8.",
+      "any_hit_is_fail": true,
+      "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57–66k of the explosion. Everyone else takes about 91–106k.",
       "roles": {
         "tank": {"unmitigated_max": 78000, "lived": "61–67k"},
         "healer": {"unmitigated_max": 115000, "lived": "about 90–98k"},
@@ -150,11 +159,12 @@
       "guids": [25295],
       "category": "orb",
       "scales_with_stack": false,
-      "should_have_been": "A single orb is about 64k. Overlaps sit above the role cap.",
+      "any_hit_is_fail": true,
+      "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61–67k on a tank and about 93–111k on a healer or DPS. Two players in the burst overlapped.",
       "roles": {
-        "tank": {"unmitigated_max": 85000, "lived": "about 64k"},
-        "healer": {"unmitigated_max": 85000, "lived": "about 64k"},
-        "dps": {"unmitigated_max": 85000, "lived": "about 64k"}
+        "tank": {"unmitigated_max": 85000, "lived": "about 61k, and the hit is still a mistake"},
+        "healer": {"unmitigated_max": 85000, "lived": "no lived hit"},
+        "dps": {"unmitigated_max": 85000, "lived": "no lived hit"}
       }
     },
     {
@@ -227,7 +237,7 @@
       "guids": [25570],
       "category": "dodge",
       "any_hit_is_fail": true,
-      "should_have_been": "Hits that kill are the failed cleave."
+      "should_have_been": "The hourglass dash is dodged. A hit is a mistake."
     },
     {
       "id": "heavens-stake",
@@ -236,7 +246,7 @@
       "guids": [28591],
       "category": "dodge",
       "any_hit_is_fail": true,
-      "should_have_been": "Hits that kill are standing in the fire."
+      "should_have_been": "Four fire circles sit on the intercards, and Thordan is at the north edge. A hit is standing in the fire."
     },
     {
       "id": "frostbite",
@@ -245,7 +255,7 @@
       "guids": [1002946],
       "category": "puddle",
       "any_hit_is_fail": true,
-      "should_have_been": "Frostbite is the failed ice soak."
+      "should_have_been": "Run out of the ice before it ticks. Frostbite is standing in the puddle."
     },
     {
       "id": "dimensional-collapse",
@@ -255,6 +265,48 @@
       "category": "puddle",
       "any_hit_is_fail": true,
       "should_have_been": "Puddles on the floor during the second wave. A hit applies Heavy and Damage Down. Any hit is a mistake. No lived band is stored."
+    },
+    {
+      "id": "conviction",
+      "name": "Conviction",
+      "phase": 2,
+      "guids": [29564, 28651],
+      "category": "tower",
+      "scales_with_stack": false,
+      "should_have_been": "One player soaks each tower. Tanks take about 3k. Everyone else takes about 4.6–5.4k. An empty tower is Eternal Conviction.",
+      "roles": {
+        "tank": {"unmitigated_max": 8000, "lived": "about 2.9–3.4k"},
+        "healer": {"unmitigated_max": 15000, "lived": "about 4.6–5.1k"},
+        "dps": {"unmitigated_max": 15000, "lived": "about 4.6–5.4k"}
+      }
+    },
+    {
+      "id": "holy-comet",
+      "name": "Holy Comet",
+      "phase": 2,
+      "guids": [25577],
+      "category": "raidwide",
+      "scales_with_stack": false,
+      "should_have_been": "Each meteor drop is a light raidwide. Tanks take about 1.0–1.1k. Everyone else takes about 1.5–1.8k. Seven drops. Too close is Holy Impact.",
+      "roles": {
+        "tank": {"unmitigated_max": 3000, "lived": "about 1.0–1.1k"},
+        "healer": {"unmitigated_max": 9000, "lived": "about 1.5–1.7k"},
+        "dps": {"unmitigated_max": 9000, "lived": "about 1.5–1.8k"}
+      }
+    },
+    {
+      "id": "faith-unmoving",
+      "name": "Faith Unmoving",
+      "phase": 2,
+      "guids": [25308],
+      "category": "raidwide",
+      "scales_with_stack": false,
+      "should_have_been": "The knockback hits everyone. Tanks take about 2.7–3.1k. Everyone else takes about 4.5–5.2k. Players in the middle are knocked into a tower. Players on the outside immune the knockback. A wall is a mistake.",
+      "roles": {
+        "tank": {"unmitigated_max": 8000, "lived": "about 2.7–3.1k"},
+        "healer": {"unmitigated_max": 8000, "lived": "about 4.7–5.2k"},
+        "dps": {"unmitigated_max": 8000, "lived": "about 4.5–5.1k"}
+      }
     }
   ],
   "clusters": [
@@ -333,7 +385,7 @@
       "phase": 2,
       "starts": 105,
       "skill": "dsr-sanctity-of-the-ward",
-      "summary": "About 112 seconds. Look away from Dragon's Gaze and Dragon's Glory. Sacred Sever is the shared jump between the sword markers while the knights dash. Shining Blade is a failed dash. Bright Flare is a failed orb.",
+      "summary": "About 112 seconds. The dark knight stands off center. Group 1 runs away from it and group 2 runs toward it. Those are the same two groups as the Lightning Storm triangles. The single sword always runs away. The double sword always runs toward it. A sword on the wrong group swaps with that role partner. Look away from both gazes. Two knights dash an hourglass and drop orbs. The dark knight jumps the single sword first, then the double sword, shared by 4, then repeats.",
       "parts": [
         {"id": "dragons-gaze"},
         {"id": "dragons-glory"},
@@ -348,12 +400,19 @@
       "phase": 2,
       "starts": 125,
       "skill": "dsr-sanctity-of-the-ward",
-      "summary": "The second half of Sanctity, about 130 seconds. Pairs drop Hiemal Storm. Frostbite is a failed ice. Heavens' Stake is the fire, not the meteor. Holy Comet is the meteor drop and has not killed anyone in this log. Eternal Conviction and Holy Impact are the heavy hits that follow.",
+      "summary": "About 130 seconds. Fire circles on the intercards, Thordan at the north edge. Melee with healers east and west, tanks with ranged north and south. Prey belongs on north and south. Ice drops, then towers. Two outside towers and both players in that quarter go out. One outside tower and the prey role goes out. The other player takes the center tower clockwise from them, unless someone closer has that same tower. Comets follow. Eight towers then spawn outside: the prey role takes cardinals, the other group takes intercardinals. The knockback puts the middle into a tower. Players already outside immune it.",
       "parts": [
         {"id": "heavens-stake"},
         {"id": "hiemal-storm"},
         {"id": "frostbite"},
-        {"id": "eternal-conviction", "after": 100},
+        {"id": "conviction"},
+        {
+          "id": "eternal-conviction",
+          "after": 100,
+          "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58–66k of that explosion. Everyone else takes about 90–105k. The players who missed the tower own it."
+        },
+        {"id": "holy-comet"},
+        {"id": "faith-unmoving"},
         {"id": "holy-impact"}
       ]
     }

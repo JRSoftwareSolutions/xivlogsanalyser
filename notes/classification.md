@@ -1,6 +1,6 @@
 # Thordan classification
 
-Report `XVz8bCqgPw1KRh9d`. Phase 2 only. This is the rule set behind the 183 raw deaths.
+Report `XVz8bCqgPw1KRh9d`. Phase 2 only. This is the rule set behind the 86 raw deaths. Sanctity parameters were checked against the successful resolves in `8DYNHQx4C7ytdLb9`.
 
 ## What counts
 
@@ -8,7 +8,7 @@ A death is **raw** when the killing blow's unmitigated damage is in the same ban
 
 A death is a **failed mechanic** when it is a cone, ring, gaze, empty tower, ice fail, or a hit several times larger than anything lived. Vulnerability Up or Damage Down on the packet is a fail. Overkill from a failed mechanic is not raw.
 
-**Low** means the hit was normal-sized and they were already under 15,000 HP. Those 11 are not in the 183.
+**Low** means the hit was normal-sized and they were already under 15,000 HP. Those 4 are not in the 86. An empty Sanctity tower or a comet overlap is a fail even when they were already that low.
 
 **Environment** means the deaths table has no damage packet. 88 rows had a timestamp and an empty ability. 39 more had an empty tooltip and no timestamp. The page reports 127. They are usually the body after a raise. Weakness (`1000043`) is the raise debuff. It does not increase damage taken.
 
@@ -37,12 +37,12 @@ Gigalad's 118,362 is the largest hit amount seen and is treated as full HP. A we
 
 | Kind | Deaths |
 |---|---|
-| Raw | 183 |
-| Failed mechanic | 137 |
+| Raw | 86 |
+| Failed mechanic | 241 |
 | No damage packet | 127 |
-| Already under 15k | 11 |
+| Already under 15k | 4 |
 
-Raw by killing blow: Eternal Conviction 121, Sacred Sever 36, Holy Impact 21, Dragon's Rage 5.
+Raw by killing blow: Eternal Conviction 45, all of them the Strength raidwide around 63 seconds. Sacred Sever 36. Dragon's Rage 5. Holy Impact is no longer raw. Sanctity Eternal Conviction, around 137 seconds, is the empty tower.
 
 Pull 68, wiped at 65.1%: no raw death. Kitana Kahn was at full HP with no mitigation on Skyward Leap, so that death is a mitigation fail. Loki and Spring ate Ascalon's Mercy Concealed, Kite ate Heavy Impact, Kiara ate an empty tower. Gigachad, Gigalad, Speed, and the second Loki death have no damage packet.
 
@@ -52,16 +52,16 @@ Unmitigated amounts. A hit at or under the cap for that role is raw. Far above i
 
 | Guid | Ability | Lived | Fatal that still counts | Fail |
 |---|---|---|---|---|
-| 25568 | Eternal Conviction | Tanks 61–67k (39 lived). No healer or DPS lived it. | Tanks ≤75k. Healers and DPS ≤115k (the 90–108k band). | Does not scale with stack size. A full party of 8 still does ~97k to a DPS. |
+| 25568 | Eternal Conviction | Strength, around 63s: tanks 61–67k (39 lived). No healer or DPS lived it. Sanctity stores none of this guid on a soaked tower. | Strength: tanks ≤75k, healers and DPS ≤115k (the 90–108k band). Sanctity, after 100s: any hit is the empty tower. | Strength does not scale with stack size. A full party of 8 still does ~97k to a DPS. The Sanctity explosion is the same size and is a mistake. |
 | 25571 | Sacred Sever | DPS share about 35–63k, median ~43k, usual stack 4. | DPS ≤85k, healer ≤90k, tank ≤120k. Short stacks of 1–2 around 85–104k. | Cleaves in the millions (21 deaths). |
-| 25578 | Holy Impact | Tanks 61–67k. | Same caps as Conviction. | Same shape. Pulls 66 and 67 are the whole party, shield 0, mit 1.00. |
+| 25578 | Holy Impact | No lived hit. Clean comet drops store none. | Any hit. The explosion is tanks about 57–66k and everyone else about 91–106k. | Comets too close. The two prey players own it. |
 | 25551 | Dragon's Rage | About 60–80k, usual stack 5: the three unmarked non-tanks plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. | ≤140k. Stack of 3 at 102–113k matches a 5-share with two missing. | Over 200k. |
 | 25565 | Skyward Leap | The blue marker. 59–70k on three non-tanks, usually 5–10% mit and a 13–39k shield. Opposite Thordan is as far as possible. East and west are slightly toward the north. The three towers on those markers are fixed. The other three are not. | Nothing. A death on the real leap is a fail. Not full HP is the healers. Full HP is missing mitigation. Pull 68 Kitana Kahn was full, multiplier 1.00, no shield. | A clip above the role cap and at or under 150k. Two people in one unfixed tower is a miscommunication. An empty tower is about 600–760k and applies Damage Down and Paralysis to everyone. |
 | 25543 | Heavenly Heel | The off tank lives it at 159–174k before mit. In this log that is the paladin, with Rampart, Holy Sheltron, and Knight's Resolve. | Nothing. The off tank takes it, properly mitigated. The main tank then takes the three-hit Ascalon's Might, also properly mitigated. Sanctity of the Ward is next. | A non-tank hit is theirs. The main tank taking it is his. Pull 60 Gigalad is the real 165,404 hit. He is the main tank, and he had only 10% mit and Desperate Measures. That is not raw. |
-| 25575 | Hiemal Storm | 25–40k. | Nothing in this log. The 114k vs 76k gap on pull 49 is not a short stack. | Every death, minimum about 104k. |
+| 25575 | Hiemal Storm | Tanks about 14–25k. Healers about 23–38k. DPS about 26–40k. Eight players. | Tank ≤50k. Healer and DPS ≤55k. The 76k tank hit on pull 49 is outside the placed band. | Every death, minimum about 104k. A puddle that covers a tower is a wrong drop. |
 | 25549 | Lightning Storm | One hit each. Tanks 26–29k, healers 38–42k, DPS 38–45k. Healer front, melee left, ranged right, tank back, one of each per triangle. | Inside the role cap (DPS 60k, healer 55k, tank 40k). None of the deaths were. | A clip. Pull 31 is Kite Noodle and Spring Nymphar, both bolts, about 431–468k. Both own it. A doubled non-tank role, a wrong spot, and a Spiral Thrust hit are also mistakes. This log has no positions, so those are not called from damage. |
 | 25299 | Holy Bladedance | About 20–22k on the tethered tank, with personal mitigation. | Tank ≤55k, and under 15k HP goes to **low**. A tank death on that hit without personal mitigation is a fail. | A non-tank in the cone. The hits at ~230k and ~370k. |
-| 25295 | Bright Flare | About 64k. | ≤85k. The one at 12k HP is **low**. | Overlaps above that. |
+| 25295 | Bright Flare | No clean hit. A tank lived about 61k on the new log and that hit is still a mistake. | Any hit. One orb is about 61–67k on a tank and about 93–111k on everyone else. | A hit, including the old 12k HP case. An overlap splits across the players in the burst. |
 | 25545 | Ascalon's Mercy Concealed | Clean pulls take 0. The opener is one in front and seven behind. During Strength the party is walking in through Heavy Impact, so that cast is a 4/4 split. | | Any hit, about 190–220k. The player who is hit owns it. The out-of-stack baiter rule is the opener only. |
 | 25560, 25559 | Heavy Impact | Clean pulls take 0. | | The knight's pulses. A hit stuns and applies Damage Down. About 51–57k. Both ids. |
 | 25554, 25553 | Dragon's Glory / Gaze | A successful gaze is 0. | | About 40–45k. |
@@ -74,18 +74,18 @@ Unmitigated amounts. A hit at or under the cap for that role is raw. Far above i
 
 Role caps used when the packet had an unmitigated amount:
 
-- Eternal Conviction `25568`: tank 75,000, healer and DPS 115,000
+- Eternal Conviction `25568`, the Strength hit only: tank 75,000, healer and DPS 115,000. After 100 seconds any hit is the empty tower.
 - Sacred Sever `25571`: tank 120,000, healer 90,000, DPS 85,000
-- Hiemal Storm `25575`: tank 90,000, healer and DPS 55,000
-- Holy Impact `25578`: tank 78,000, healer and DPS 115,000
+- Hiemal Storm `25575`: tank 50,000, healer and DPS 55,000
+- Holy Impact `25578`: any hit is the comet overlap
 - Dragon's Rage `25551`: 130,000 tank, 140,000 others, and anything over 200,000 is a fail
 - Skyward Leap `25565`: healer and DPS 78,000, over 150,000 is a fail
 - Holy Bladedance `25299`: 55,000
 - Heavenly Heel `25543`: tank 190,000
 - Lightning Storm `25549`: tank 40,000, healer 55,000, DPS 60,000
-- Bright Flare `25295`: 85,000
+- Bright Flare `25295`: any hit
 
-Dodge ids, always a fail: `25545`, `25560`, `25559`, `25554`, `25553`, `25570`, `28591`, `1002946`, `25564`, `25297`.
+Dodge ids, always a fail: `25545`, `25560`, `25559`, `25554`, `25553`, `25570`, `28591`, `1002946`, `25564`, `25297`, `25578`, `25295`. Sanctity Eternal Conviction `25568` after 100 seconds is a fail as well. The Strength hit of that same guid is not.
 
 ## Reading a packet
 
@@ -119,5 +119,6 @@ A Lightning Storm clip or a Bright Flare overlap splits across the players in th
 - Dragon's Rage: the person does not know whether the tanks belong in the stack. Lived hits are usually the three unmarked non-tanks plus both tanks, so a share of 5 stays full and a share of 3 stays short.
 - Skyward Leap at 59–70k is the blue marker. A death on it is a healer mistake or a missing mitigation. A clip would sit above the role cap and at or under 150k. This log has no hit there. The three towers off those markers are not fixed. Two people in one of them is a miscommunication. This log has no positions, so an explosion does not name that pair. An empty tower explodes for about 600–760k on the same guid. Damage Down and Paralysis are what the person described on that explosion. Those auras are not on the stored packets.
 - Party mit and shields are missing on many damage packets, so a vuln that never landed on the packet would be missed.
-- Eternal Conviction and Holy Impact have no lived healer or DPS sample in this log. The 90–108k and 95–103k bands are the death cluster, matched against the tank hit of the same cast (~64k). That is why they are raw.
+- Strength Eternal Conviction, around 63 seconds, still has no lived healer or DPS sample. The 90–108k band is the death cluster of that raidwide, matched against the tank hit (~64k). That window stays raw. Sanctity Eternal Conviction is the empty tower and is a fail. Holy Impact is the comet overlap and is a fail. The prey players own Holy Impact. Missed soak owns the empty tower.
+- Conviction `29564` (about 135s) and `28651` (about 148s) are the soaked towers, about 3k on a tank and 5k on everyone else. Holy Comet `25577` is the light meteor drop, about 1–2k. Faith Unmoving `25308` is the knockback, about 3–5k. None of those guids killed anyone in the reference log.
 - The next reviews (other phases, other reports) should reuse these bands only for Thordan. Other phases need their own lived samples.

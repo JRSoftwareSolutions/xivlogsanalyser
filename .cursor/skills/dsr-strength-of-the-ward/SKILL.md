@@ -52,7 +52,7 @@ Three non-tanks get a blue marker. A large area goes off on that marker. Those t
 
 Six towers spawn after the marker. Three are on the Skyward Leap markers and are fixed. The other three are not fixed. Each non-tank has to be inside a tower when it goes off. Two people in one of the unfixed towers is a miscommunication. A soaked tower does not deal Skyward Leap's damage. An empty tower explodes for about 600–760k, on the Skyward Leap guid in this log, and applies Damage Down and Paralysis to everyone. That explosion is a fail.
 
-Eternal Conviction `25568` also hits around 63 seconds, and again around 130 seconds during Sanctity. The person did not assign the 63-second hit. Do not fold it into Sanctity, and do not call the later one Strength.
+Eternal Conviction `25568` also hits around 63 seconds. The person did not assign that hit. Do not fold it into Sanctity. The hits around 137 and 150 seconds are the empty Sanctity towers, not this mechanic.
 
 ## Not this mechanic
 

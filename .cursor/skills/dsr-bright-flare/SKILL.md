@@ -10,21 +10,20 @@ description: >-
 
 Follow `review-mechanic` for the packet, the outcome order, and a correction. Entry `bright-flare` in `fights/dsr/mechanics.json`. Guid `25295`. Part of Sanctity of the Ward (`dsr-sanctity-of-the-ward`). These are the orbs dropped by the Shining Blade dashes.
 
-One orb is about 64k. The role cap is 85,000.
+`any_hit_is_fail` is true. A clean pull stores none.
 
 ## How to tell
 
-- At or under the cap: one orb. A death is raw, or low if they were already under 15,000 HP. The reference low case is about 12k HP on a normal orb.
-- Over the cap: orbs overlapped.
+Any damage from this guid is a fail. One orb is about 61–67k on a tank and about 93–111k on a healer or DPS. Two players in the same burst overlapped. A player already under 15,000 HP still got hit. Pull 22 Gigalad in the reference log was that case, at about 12k HP, and it is a fail.
+
+Anyone without Hysteria who is hit owns it. A player in Hysteria was carried there by the gaze. These packets do not show Hysteria, so the death stays this hit.
 
 ## Fault
 
-Fail: `{player}` overlapped Bright Flare.
+One player: `{player}` got hit by Bright Flare.
 
-Raw: one orb, and the resolve lost. Name the shield, the mit, and the HP.
-
-Low: one orb, and they were already under 15,000 HP.
+Overlap: each player in the burst. A second body who is not in the death list is "Another player".
 
 ## Parameters
 
-Follow `analyze-mechanic-parameters`. Not walked in cast order yet. Survey every cast. Record bodies per orb burst and the unmitigated band of single orbs people lived (currently about 64k, cap 85,000) versus overlaps over that cap. Who soaks which orb is not confirmed. A death on one orb under 15,000 HP is low.
+Follow `analyze-mechanic-parameters`. Walked on `8DYNHQx4C7ytdLb9` and the reference deaths. No clean pull stores this guid. One tank lived about 61k on pull 54 of the new log, and that hit is still a mistake. No personal mitigation is required because the orb is dodged.
