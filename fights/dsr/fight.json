@@ -28,12 +28,14 @@
   ],
   "clock": [
     {"phase": 1, "at": 0},
-    {"phase": 2, "at": 153}
+    {"phase": 2, "at": 153},
+    {"phase": 3, "at": 350}
   ],
   "markers": [
     {"name": "Empty Dimension", "phase": 1, "starts": 8},
     {"name": "Hyperdimensional Slash", "phase": 1, "starts": 40},
     {"name": "Faith Unmoving", "phase": 1, "starts": 75},
-    {"name": "Pure of Heart", "phase": 1, "starts": 125}
+    {"name": "Pure of Heart", "phase": 1, "starts": 125},
+    {"name": "Nidhogg", "phase": 3, "starts": 0}
   ]
 }

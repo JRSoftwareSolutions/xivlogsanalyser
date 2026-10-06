@@ -10,7 +10,10 @@ from xivloganalyzer.dashboard import (
     library_payload,
     session_clock,
     session_payload,
+    session_summary,
     wall_clock,
+    write_library,
+    write_session_page,
 )
 from xivloganalyzer.extract import read_facts
 from xivloganalyzer.judge import judge_report
@@ -236,6 +239,24 @@ class PullCardsTest(unittest.TestCase):
         self.assertTrue(all(seat["passed"] for seat in might["parts"][0]["seats"]))
 
 
+class NidhoggClockTest(unittest.TestCase):
+    def test_a_nidhogg_pull_sits_past_meteors(self):
+        """350s is Thordan's 153s mark plus the transition on the checkpoint pulls."""
+        report = ROOT / "data" / "8DYNHQx4C7ytdLb9"
+        meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
+        when = session_clock(report, meta)
+        overview = build_timeline(meta, when, judged=set())
+        marks = {mark["name"]: mark["at"] for mark in overview["markers"]}
+        self.assertEqual(marks["Nidhogg"], 350)
+        self.assertGreater(marks["Nidhogg"], marks["Meteors"])
+        pull = next(row for row in overview["pulls"] if row["id"] == 46)
+        self.assertEqual(pull["phaseName"], "Nidhogg")
+        self.assertEqual(pull["mechanic"], "Nidhogg")
+        self.assertGreater(pull["reached"], marks["Nidhogg"])
+        furthest = max(overview["pulls"], key=lambda row: row["reached"])
+        self.assertEqual(furthest["id"], 46)
+
+
 class UnscoredPullTest(unittest.TestCase):
     def test_a_pull_without_a_percentage_does_not_win(self):
         report = ROOT / "data" / "3wzL6x4VHTmvNkhq"
@@ -248,6 +269,105 @@ class UnscoredPullTest(unittest.TestCase):
         self.assertEqual(overview["best"]["id"], 66)
         self.assertEqual(overview["best"]["phaseName"], "Thordan")
         self.assertEqual(overview["best"]["bossPct"], 32.6)
+
+
+def _sample_payload():
+    return {
+        "code": "abc",
+        "fight": "Dragonsong's Reprise",
+        "title": "Ultimates (Legacy)",
+        "owner": "Kite21",
+        "started": "2026-10-03T19:17:00+00:00",
+        "day": "2026-10-03",
+        "dayLabel": "Sat 3 Oct 2026",
+        "timeLabel": "21:17–00:03",
+        "raw": 1,
+        "fail": 2,
+        "low": 0,
+        "unknown": {},
+        "totals": {"raw": 1},
+        "mechanics": [
+            {
+                "id": "meteors",
+                "name": "Meteors",
+                "phase": 2,
+                "starts": 100,
+                "should": "UNIQUE_SHOULD_TEXT",
+                "parts": [{"name": "Holy Comet"}],
+            }
+        ],
+        "pulls": [
+            {
+                "id": 4,
+                "bossPct": 30.0,
+                "when": "22:00",
+                "phase": "Thordan",
+                "clock": "4:00",
+                "deaths": [{"happened": "UNIQUE_HAPPENED_TEXT", "should": "stack"}],
+                "cards": [{"name": "Meteors"}],
+            }
+        ],
+        "overview": {
+            "pulls": [{"id": 4, "reached": 120, "phase": 2, "phaseName": "Thordan"}],
+            "markers": [{"name": "Meteors", "phase": 2, "at": 100}],
+            "best": {"id": 4},
+            "phases": [],
+        },
+    }
+
+
+class SessionDetailTest(unittest.TestCase):
+    def test_summary_keeps_the_chart_and_drops_the_death_review(self):
+        summary = session_summary(_sample_payload(), "detail.js?v=abc")
+        self.assertEqual(summary["detail"], "detail.js?v=abc")
+        self.assertEqual(summary["overview"]["pulls"][0]["reached"], 120)
+        self.assertEqual(summary["pulls"], [{
+            "id": 4,
+            "bossPct": 30.0,
+            "when": "22:00",
+            "phase": "Thordan",
+            "clock": "4:00",
+        }])
+        self.assertEqual(summary["mechanics"], [{
+            "id": "meteors",
+            "name": "Meteors",
+            "phase": 2,
+            "starts": 100,
+        }])
+        blob = json.dumps(summary)
+        self.assertNotIn("UNIQUE_HAPPENED_TEXT", blob)
+        self.assertNotIn("UNIQUE_SHOULD_TEXT", blob)
+
+    def test_library_page_loads_death_reviews_from_the_detail_script(self):
+        import tempfile
+
+        payload = _sample_payload()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            report = root / "data" / payload["code"]
+            report.mkdir(parents=True)
+            write_session_page(report, payload)
+            page = write_library(root, [payload])
+            dashboard = page.read_text(encoding="utf-8")
+            detail = (report / "detail.js").read_text(encoding="utf-8")
+            session_page = (report / "session.html").read_text(encoding="utf-8")
+        self.assertNotIn("UNIQUE_HAPPENED_TEXT", dashboard)
+        self.assertNotIn("UNIQUE_SHOULD_TEXT", dashboard)
+        self.assertNotIn("UNIQUE_HAPPENED_TEXT", session_page)
+        self.assertNotIn("UNIQUE_SHOULD_TEXT", session_page)
+        self.assertIn("General trend", dashboard)
+        self.assertIn("session-preview", dashboard)
+        self.assertIn("loadDetail", dashboard)
+        self.assertIn("data/abc/detail.js?v=", dashboard)
+        self.assertIn("detail.js?v=", session_page)
+        self.assertTrue(detail.startswith('registerDetail("abc",'))
+        self.assertIn("UNIQUE_HAPPENED_TEXT", detail)
+        self.assertIn("UNIQUE_SHOULD_TEXT", detail)
+        inner = detail[len("registerDetail("):-3]
+        code, body = json.loads("[" + inner + "]")
+        self.assertEqual(code, "abc")
+        self.assertEqual(body["pulls"][0]["deaths"][0]["happened"], "UNIQUE_HAPPENED_TEXT")
+        self.assertEqual(body["mechanics"][0]["should"], "UNIQUE_SHOULD_TEXT")
 
 
 class SessionLibraryTest(unittest.TestCase):

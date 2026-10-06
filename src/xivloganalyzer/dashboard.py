@@ -6,6 +6,7 @@ Each dropped log is one session. The library page lists them by day and time.
 from __future__ import annotations
 
 import base64
+import hashlib
 import json
 from collections import Counter
 from datetime import datetime, timedelta, timezone
@@ -447,6 +448,105 @@ def session_payload(
     }
 
 
+def _pull_index(pull: dict) -> dict:
+    """Pull list fields. Death reviews stay in the detail script."""
+    return {
+        "id": pull.get("id"),
+        "bossPct": pull.get("bossPct"),
+        "when": pull.get("when") or "",
+        "phase": pull.get("phase") or "",
+        "clock": pull.get("clock") or "",
+    }
+
+
+def _mechanic_index(mech: dict) -> dict:
+    return {
+        "id": mech.get("id"),
+        "name": mech.get("name") or "",
+        "phase": mech.get("phase"),
+        "starts": mech.get("starts") or 0,
+    }
+
+
+def _jsonable(value):
+    if isinstance(value, Counter):
+        return dict(value)
+    return value
+
+
+def session_summary(payload: dict, detail_href: str) -> dict:
+    """Chart and navigation for one session, without the death reviews.
+
+    The reviews live in ``detail.js`` and load when a pull or mechanic is opened.
+    """
+    overview = payload.get("overview") or {
+        "phases": [],
+        "pulls": [],
+        "best": None,
+        "markers": [],
+    }
+    return {
+        "code": payload["code"],
+        "fight": payload.get("fight") or "",
+        "title": payload.get("title") or "",
+        "owner": payload.get("owner") or "",
+        "started": payload.get("started") or "",
+        "day": payload.get("day") or "",
+        "dayLabel": payload.get("dayLabel") or "No date",
+        "timeLabel": payload.get("timeLabel") or "",
+        "raw": payload.get("raw", 0),
+        "fail": payload.get("fail", 0),
+        "low": payload.get("low", 0),
+        "detail": detail_href,
+        "overview": overview,
+        "pulls": [_pull_index(pull) for pull in payload.get("pulls") or []],
+        "mechanics": [_mechanic_index(mech) for mech in payload.get("mechanics") or []],
+    }
+
+
+def detail_body(payload: dict) -> dict:
+    """Death reviews and mechanic write-ups for one session."""
+    return {
+        "pulls": payload.get("pulls") or [],
+        "mechanics": payload.get("mechanics") or [],
+        "unknown": _jsonable(payload.get("unknown") or {}),
+        "totals": _jsonable(payload.get("totals") or {}),
+        "raw": payload.get("raw", 0),
+        "fail": payload.get("fail", 0),
+        "low": payload.get("low", 0),
+    }
+
+
+def _js_json(value) -> str:
+    text = json.dumps(value)
+    return text.replace("<", "\\u003c").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
+
+
+def write_detail(report: Path, payload: dict) -> Path:
+    """Write the death reviews as a script the page loads when it needs them."""
+    path = report / "detail.js"
+    code = json.dumps(payload["code"])
+    path.write_text(f"registerDetail({code},{_js_json(detail_body(payload))});\n", encoding="utf-8")
+    return path
+
+
+def _versioned(href: str, path: Path) -> str:
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()[:12]
+    return f"{href}?v={digest}"
+
+
+def library_detail_href(root: Path, code: str) -> str:
+    """Path from the library page to a session's detail script."""
+    for folder in ("reports", "data"):
+        path = root / folder / code / "detail.js"
+        if path.is_file():
+            return _versioned(f"{folder}/{code}/detail.js", path)
+    for folder in ("reports", "data"):
+        if (root / folder / code).is_dir():
+            return f"{folder}/{code}/detail.js"
+    return f"{code}/detail.js"
+
+
 def library_payload(payloads: list[dict]) -> dict:
     """Newest day first. Sessions on the same day stay in time order."""
     ordered = sorted(payloads, key=lambda item: (item.get("started") or "", item["code"]))
@@ -479,15 +579,21 @@ def library_payload(payloads: list[dict]) -> dict:
 
 def write_session_page(report: Path, payload: dict) -> Path:
     path = report / "session.html"
-    title = _session_title(payload)
-    path.write_text(_page([payload], title), encoding="utf-8")
+    detail = write_detail(report, payload)
+    summary = session_summary(payload, _versioned("detail.js", detail))
+    path.write_text(_page([summary], _session_title(payload)), encoding="utf-8")
     return path
 
 
 def write_library(root: Path, payloads: list[dict]) -> Path:
+    """Library page. Each payload's ``detail.js`` should already be written."""
+    summaries = [
+        session_summary(payload, library_detail_href(root, payload["code"]))
+        for payload in payloads
+    ]
     path = root / "dashboard.html"
     title = "Sessions" if len(payloads) != 1 else _session_title(payloads[0])
-    path.write_text(_page(payloads, title), encoding="utf-8")
+    path.write_text(_page(summaries, title), encoding="utf-8")
     return path
 
 
@@ -511,7 +617,7 @@ def _job_icons() -> dict[str, str]:
 
 
 def _page(payloads: list[dict], title: str) -> str:
-    data = json.dumps(library_payload(payloads)).replace("<", "\\u003c")
+    data = _js_json(library_payload(payloads))
     icons = json.dumps(_job_icons())
     template = (Path(__file__).parent / "session_template.html").read_text(encoding="utf-8")
     html = template.replace("__DATA__", data)
