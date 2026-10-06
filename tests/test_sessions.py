@@ -81,6 +81,27 @@ class SessionClockTest(unittest.TestCase):
         self.assertGreater(by_id[49]["reached"], marks["Sanctity of the Ward"])
         self.assertLess(by_id[49]["reached"], marks["Meteors"])
         self.assertGreater(by_id[66]["reached"], marks["Meteors"])
+        self.assertGreater(marks["Dive from Grace"], marks["Meteors"])
+
+
+class NidhoggChartTest(unittest.TestCase):
+    def test_phase_three_bars_sit_above_thordan(self):
+        report = ROOT / "data" / "8DYNHQx4C7ytdLb9"
+        meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
+        when = session_clock(report, meta)
+        overview = build_timeline(meta, when, judged=set())
+        by_phase = {}
+        for pull in overview["pulls"]:
+            by_phase.setdefault(pull["phase"], []).append(pull)
+        thordan = by_phase[2]
+        nidhogg = by_phase[3]
+        self.assertEqual(len(nidhogg), 8)
+        self.assertGreater(min(pull["reached"] for pull in nidhogg), max(pull["reached"] for pull in thordan))
+        self.assertTrue(all(pull["phaseName"] == "Nidhogg" for pull in nidhogg))
+        self.assertTrue(all(pull["mechanic"] == "Dive from Grace" for pull in nidhogg))
+        marks = {mark["name"]: mark["at"] for mark in overview["markers"]}
+        self.assertGreater(marks["Dive from Grace"], marks["Meteors"])
+        self.assertGreater(min(pull["reached"] for pull in nidhogg), marks["Dive from Grace"])
 
 
 class ClusterTimelineTest(unittest.TestCase):
