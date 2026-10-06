@@ -99,6 +99,10 @@
   .mech:first-of-type, .pull-block:first-of-type { border-top: 0; padding-top: 0; }
   .mech-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
   .death { padding: 10px 0 4px; }
+  .death-body { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 16px; align-items: start; }
+  .still { margin: 8px 0 0; }
+  .still svg { width: 300px; height: 312px; display: block; background: #f7f4ee; border: 1px solid var(--line); border-radius: 12px; }
+  .still figcaption { color: var(--muted); font-size: 13px; margin-top: 6px; }
   .who { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .time, .job { color: var(--muted); }
   .job-icon { width: 20px; height: 20px; display: block; }
@@ -228,7 +232,7 @@
   @media (max-width: 860px) {
     body { display: block; }
     aside { border-right: 0; border-bottom: 1px solid var(--line); max-height: 42vh; }
-    .stats, .cols, header, .mech-head { display: block; }
+    .stats, .cols, header, .mech-head, .death-body { display: block; }
     .reach { grid-template-columns: 9.5rem minmax(0, 1fr); height: 420px; }
     .reach-names span { font-size: 11px; }
   }
@@ -266,14 +270,129 @@ function blameChips(row) {
 }
 function deathCard(row) {
   const cast = row.cast ? `<span class="time">${row.cast}</span>` : "";
-  return `<div class="death">
-    <div class="who"><span class="time">${row.time}</span>${cast}<strong>${row.name}</strong>${jobMark(row.job)}</div>
-    <div class="cols">
+  const body = `<div class="cols">
       <div><b>What happened</b>${row.happened}</div>
       <div><b>What it should have been</b>${row.should}</div>
       <div><b>Whose fault</b>${blameChips(row)}${row.wrong}</div>
-    </div>
+    </div>`;
+  const framed = row.frame
+    ? `<div class="death-body">${stillFrame(row.frame)}${body}</div>`
+    : body;
+  return `<div class="death">
+    <div class="who"><span class="time">${row.time}</span>${cast}<strong>${row.name}</strong>${jobMark(row.job)}</div>
+    ${framed}
   </div>`;
+}
+function stillFrame(frame) {
+  const size = 300;
+  const head = 22;
+  const reach = 46;
+  const scale = ((size - head) / 2 - 14) / reach;
+  const cx = size / 2;
+  const cy = head + (size - head) / 2;
+  const pt = (x, y) => [cx + x * scale, cy + y * scale];
+  const parts = [];
+  parts.push(`<text x="${cx}" y="16" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1915">Killed by ${esc(frame.killedBy)}</text>`);
+  const [fx, fy] = pt(0, 0);
+  const floor = ARENA_PX(scale);
+  parts.push(`<circle cx="${fx}" cy="${fy}" r="${floor}" fill="#fffcf7" stroke="#e2dbd0" stroke-width="2"></circle>`);
+  const [nx, ny] = pt(0, -22);
+  parts.push(`<text x="${nx}" y="${ny}" text-anchor="middle" font-size="11" fill="#5e584f">N</text>`);
+  const marks = frame.marks || [];
+  const draw = (kinds) => {
+    for (const mark of marks) if (kinds.includes(mark.kind)) parts.push(stillMark(mark, pt, scale));
+  };
+  draw(["tower", "orb"]);
+  for (const player of frame.players || []) {
+    if (player.dead) continue;
+    parts.push(stillPlayer(player, pt, scale));
+  }
+  const dead = (frame.players || []).find(player => player.dead);
+  if (dead) parts.push(stillPlayer(dead, pt, scale));
+  draw(["comet", "gaze", "boss", "hit"]);
+  for (const player of frame.players || []) {
+    if (player.face) {
+      const [x, y] = pt(player.x, player.y);
+      parts.push(facingArrow(x, y, player.face, scale));
+    }
+  }
+  if (dead) {
+    const [x, y] = pt(dead.x, dead.y);
+    parts.push(`<text x="${x}" y="${y + 26}" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">${esc(dead.name)}</text>`);
+  }
+  return `<figure class="still"><svg viewBox="0 0 ${size} ${size + 12}" role="img" aria-label="${esc(frame.caption)}">${parts.join("")}</svg><figcaption>${esc(frame.caption)}</figcaption></figure>`;
+}
+function ARENA_PX(scale) { return 20 * scale; }
+function stillMark(mark, pt, scale) {
+  const [x, y] = pt(mark.x, mark.y);
+  if (mark.kind === "hit") {
+    const [x2, y2] = pt(mark.x2, mark.y2);
+    return `<line x1="${x}" y1="${y}" x2="${x2}" y2="${y2}" stroke="#9a3412" stroke-width="2"></line>`;
+  }
+  if (mark.kind === "gaze") {
+    const s = 11;
+    return `<polygon points="${x},${y - s} ${x + s},${y} ${x},${y + s} ${x - s},${y}" fill="#fff1e8" stroke="#9a3412" stroke-width="2"><title>Gaze</title></polygon>`;
+  }
+  if (mark.kind === "tower") {
+    const s = 11;
+    return `<rect x="${x - s}" y="${y - s}" width="${s * 2}" height="${s * 2}" fill="none" stroke="#7c4a12" stroke-width="2"><title>Tower</title></rect>`;
+  }
+  if (mark.kind === "comet") {
+    return `<circle cx="${x}" cy="${y}" r="14" fill="none" stroke="#9a3412" stroke-width="2"><title>Comet</title></circle>`;
+  }
+  if (mark.kind === "orb") {
+    return `<circle cx="${x}" cy="${y}" r="11" fill="#fbf3e4" stroke="#7c4a12" stroke-width="2"><title>Orb</title></circle>`;
+  }
+  if (mark.kind === "boss") {
+    const tick = bossTick(mark, x, y, scale);
+    return `${tick}<circle cx="${x}" cy="${y}" r="7" fill="#1c1915"><title>Thordan</title></circle>`;
+  }
+  return "";
+}
+function bossTick(mark, x, y, scale) {
+  if (!mark.face) return "";
+  const near = 8;
+  const far = 8 + 4 * scale;
+  const x1 = x + mark.face[0] * near;
+  const y1 = y + mark.face[1] * near;
+  const x2 = x + mark.face[0] * far;
+  const y2 = y + mark.face[1] * far;
+  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1c1915" stroke-width="2"></line>`;
+}
+function stillPlayer(player, pt, scale) {
+  const [x, y] = pt(player.x, player.y);
+  const fade = player.stale ? ` opacity="0.45"` : "";
+  const bits = [];
+  if (player.dead) {
+    bits.push(`<circle cx="${x}" cy="${y}" r="13" fill="none" stroke="#9a3412" stroke-width="2"></circle>`);
+  }
+  if (player.prey) {
+    bits.push(`<circle cx="${x}" cy="${y}" r="15" fill="none" stroke="#7c4a12" stroke-width="1.5" stroke-dasharray="3 2"></circle>`);
+  }
+  const src = JOB_ICONS[player.job];
+  const title = `${player.name}${player.dead ? ", killed" : ""}${player.prey ? ", prey" : ""}${player.hysteria ? ", hysteria" : ""}`;
+  if (src) {
+    bits.push(`<image href="${src}" x="${x - 10}" y="${y - 10}" width="20" height="20"${fade}><title>${esc(title)}</title></image>`);
+  } else {
+    bits.push(`<circle cx="${x}" cy="${y}" r="8" fill="#5e584f"${fade}><title>${esc(title)}</title></circle>`);
+  }
+  return bits.join("");
+}
+function facingArrow(x, y, face, scale) {
+  const start = 14;
+  const tip = start + 5 * scale;
+  const x1 = x + face[0] * start;
+  const y1 = y + face[1] * start;
+  const x2 = x + face[0] * tip;
+  const y2 = y + face[1] * tip;
+  const ang = Math.atan2(face[1], face[0]);
+  const wing = 6;
+  const spread = 0.45;
+  const lx = x2 - Math.cos(ang - spread) * wing;
+  const ly = y2 - Math.sin(ang - spread) * wing;
+  const rx = x2 - Math.cos(ang + spread) * wing;
+  const ry = y2 - Math.sin(ang + spread) * wing;
+  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#9a3412" stroke-width="2"></line><polygon points="${x2},${y2} ${lx},${ly} ${rx},${ry}" fill="#9a3412"></polygon>`;
 }
 function route() {
   const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
