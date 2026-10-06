@@ -1,0 +1,104 @@
+"""Dive from Grace baseline on the Nidhogg pulls in 8DYNHQx4C7ytdLb9."""
+
+import json
+import unittest
+from collections import Counter
+from pathlib import Path
+
+from xivloganalyzer.catalog import load_pack
+from xivloganalyzer.dashboard import session_clock, session_payload
+from xivloganalyzer.extract import extract_report
+from xivloganalyzer.judge import judge_report, roster_from_meta
+
+ROOT = Path(__file__).resolve().parents[1]
+REPORT = ROOT / "data" / "8DYNHQx4C7ytdLb9"
+
+
+class DiveFromGraceTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.pack = load_pack(ROOT / "fights" / "dsr")
+        cls.meta = json.loads((REPORT / "fights.json").read_text(encoding="utf-8"))
+        facts = extract_report(REPORT, cls.pack)
+        cls.judgments = judge_report(
+            facts, cls.pack, roster_from_meta(cls.meta, cls.pack)
+        )
+        cls.phase3 = [item for item in cls.judgments if item.fact.phase == 3]
+
+    def _one(self, fight, name, guid):
+        rows = [
+            item
+            for item in self.phase3
+            if item.fact.fight == fight
+            and item.fact.name == name
+            and item.fact.guid == guid
+        ]
+        self.assertEqual(len(rows), 1)
+        return rows[0]
+
+    def test_phase_three_counts(self):
+        counts = Counter(item.outcome for item in self.phase3)
+        self.assertEqual(counts["fail"], 34)
+        self.assertEqual(counts["raw"], 15)
+        self.assertEqual(counts["low"], 3)
+        self.assertEqual(counts["unknown"], 5)
+        self.assertEqual(counts["environment"], 8)
+        unknown = {item.mechanic for item in self.phase3 if item.outcome == "unknown"}
+        self.assertEqual(unknown, {"Final Chorus", "attack"})
+
+    def test_short_stack_and_full_stack(self):
+        short = self._one(16, "Kitana Kahn", 26388)
+        self.assertEqual(short.outcome, "fail")
+        self.assertEqual(short.blames[0].who, "Missing bodies")
+        self.assertEqual(short.blames[0].confidence, 50)
+        raw = self._one(26, "Loki Doki", 26388)
+        self.assertEqual(raw.outcome, "raw")
+        self.assertEqual(
+            [blame.who for blame in raw.blames],
+            ["Loki Doki", "Spring Nymphar", "Party mitigation"],
+        )
+
+    def test_landing_overlap_splits_the_players(self):
+        landing = [
+            item for item in self.phase3 if item.fact.fight == 27 and item.fact.guid == 26384
+        ]
+        self.assertEqual(len(landing), 2)
+        self.assertTrue(all(item.outcome == "fail" for item in landing))
+        self.assertTrue(all(item.cause == "overlap" for item in landing))
+        jumps = [
+            item for item in self.phase3 if item.fact.fight == 46 and item.fact.guid == 26382
+        ]
+        self.assertEqual(len(jumps), 4)
+        self.assertTrue(all(blame.confidence == 25 for item in jumps for blame in item.blames))
+
+    def test_towers_split_debuff_soak_from_empty_tower(self):
+        debuff = self._one(27, "Speed Panda", 26385)
+        self.assertEqual(debuff.outcome, "fail")
+        self.assertIn("dive debuff", debuff.went_wrong)
+        self.assertEqual(debuff.blames[0].confidence, 100)
+        low = self._one(27, "Kite Noodle", 26395)
+        self.assertEqual(low.outcome, "low")
+        tower = self._one(36, "Kitana Kahn", 26395)
+        self.assertEqual(tower.outcome, "fail")
+        self.assertEqual(tower.blames[0].who, "Missed soak")
+        soak = self._one(36, "Kite Noodle", 26395)
+        self.assertEqual(soak.outcome, "raw")
+
+    def test_wheel_and_line_are_the_player_who_stood_there(self):
+        wheel = self._one(30, "Loki Doki", 26390)
+        self.assertEqual(wheel.outcome, "fail")
+        self.assertIn("in-and-out", wheel.went_wrong)
+        line = self._one(46, "Kite Noodle", 26378)
+        self.assertEqual(line.outcome, "fail")
+        self.assertEqual(line.blames[0].who, "Kite Noodle")
+
+    def test_pull_card_shows_the_nidhogg_stop(self):
+        when = session_clock(REPORT, self.meta)
+        payload = session_payload(self.judgments, self.pack, REPORT.name, when, self.meta)
+        pull = next(row for row in payload["pulls"] if row["id"] == 16)
+        card = next(row for row in pull["cards"] if row["id"] == "dive-from-grace")
+        eye = next(part for part in card["parts"] if part["id"] == "eye-of-the-tyrant")
+        seats = {seat["name"]: seat for seat in eye["seats"]}
+        self.assertFalse(seats["Kitana Kahn"]["passed"])
+        self.assertFalse(seats["Absolute Gigalad"]["passed"])
+        self.assertTrue(seats["Loki Doki"]["passed"])

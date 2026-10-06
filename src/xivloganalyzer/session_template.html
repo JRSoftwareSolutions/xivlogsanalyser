@@ -799,7 +799,10 @@ function renderMechanic(id) {
   if (!mech) return `<p>That mechanic is not defined.</p>`;
   const blocks = [];
   let clean = 0;
-  for (const pull of SESSION.pulls) {
+  const scoped = SESSION.pulls.filter(pull =>
+    (pull.deaths || []).some(row => row.phaseId === mech.phase)
+  );
+  for (const pull of scoped) {
     const rows = judged(pull.deaths).filter(row => row.mechanicId === mech.id);
     if (!rows.length) { clean += 1; continue; }
     blocks.push(`<div class="pull-block">
