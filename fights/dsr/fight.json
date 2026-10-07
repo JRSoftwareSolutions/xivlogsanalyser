@@ -3,6 +3,7 @@
   "name": "Dragonsong's Reprise",
   "zone_id": 968,
   "low_hp": 15000,
+  "cascade_debuffs": ["Damage Down", "Hysteria"],
   "personal_mit": [
     "Rampart",
     "Vengeance",

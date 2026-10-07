@@ -460,8 +460,10 @@ def session_payload(
                 "wrong": item.went_wrong,
                 "blames": [blame.to_dict() for blame in item.blames],
                 "culprits": culprits,
+                "first": item.first,
             }
         )
+        pull["firstMistake"] = item.first_mistake
     roster = _party(meta or {}, pack)
     for pull in pulls.values():
         pull["deaths"].sort(key=lambda row: (row["phaseId"], row["t"], row["name"]))

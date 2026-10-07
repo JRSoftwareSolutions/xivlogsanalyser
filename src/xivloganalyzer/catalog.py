@@ -117,6 +117,8 @@ class FightPack:
     clusters: list[Cluster] = field(default_factory=list)
     clock: dict[int, float] = field(default_factory=dict)
     markers: list[Marker] = field(default_factory=list)
+    deathwall: Mechanic | None = None
+    cascade_debuffs: list[str] = field(default_factory=list)
 
     def role_of(self, job: str) -> str:
         for role, jobs in self.roles.items():
@@ -205,6 +207,20 @@ def _clusters(raw_clusters: list[dict]) -> list[Cluster]:
     return clusters
 
 
+def _deathwall(raw: dict | None) -> Mechanic | None:
+    """The arena edge. It has no phase and no packet, so it is not in `mechanics`."""
+    if not raw:
+        return None
+    return Mechanic(
+        id=raw.get("id", "deathwall"),
+        name=raw.get("name", "Deathwall"),
+        phase=0,
+        guids=[0],
+        category=raw.get("category", "wall"),
+        should_have_been=raw.get("should_have_been", ""),
+    )
+
+
 def load_pack(fight_dir: Path) -> FightPack:
     fight = json.loads((fight_dir / "fight.json").read_text(encoding="utf-8"))
     mechanics_doc = json.loads((fight_dir / "mechanics.json").read_text(encoding="utf-8"))
@@ -263,6 +279,8 @@ def load_pack(fight_dir: Path) -> FightPack:
             Marker(name=row["name"], phase=int(row["phase"]), starts=float(row["starts"]))
             for row in fight.get("markers") or []
         ],
+        deathwall=_deathwall(mechanics_doc.get("deathwall")),
+        cascade_debuffs=list(fight.get("cascade_debuffs") or []),
     )
 
 

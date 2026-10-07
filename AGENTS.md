@@ -12,6 +12,8 @@ When the user corrects a call ("X should be Y", "Z is not a mistake", "that one 
 
 The settled Thordan headline is 86 raw deaths on report `XVz8bCqgPw1KRh9d`. A tank who dies to the real Ascalon's Might or Heavenly Heel without personal mitigation owns that death. It is not raw. A Skyward Leap death on the real marker is not raw: short of full HP is the healers, and full HP is missing mitigation. Pull 68 has no raw death. Kitana Kahn's Skyward Leap was full HP with no mitigation. Strength Eternal Conviction, around 63 seconds, does not scale with stack size. Sanctity Eternal Conviction, after 100 seconds, is an empty tower and is a fail. Holy Impact is comets too close and is a fail. Hiemal Storm deaths are fails. Heavy Impact ids 25560 and 25559 are both fails. Bright Flare is a fail.
 
+A death with no damage packet is the deathwall. Walking into it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's alone. After one, it is still a fail, shared with "Earlier mistake". The first mistake of a pull matters most, and later deaths often cascade from it. Each judgment carries `first` and `first_mistake`. Which debuffs count is `cascade_debuffs` in `fights/dsr/fight.json`. The deathwall text is `deathwall` in `fights/dsr/mechanics.json`.
+
 A new log goes in `reports/<code>/` with `fights.json`, `deaths-html.json`, and ability files, then `python -m xivloganalyzer analyze <code>`.
 
 Run these from the repo root. When the package is not installed (`pip install -e .`), prefix them with `PYTHONPATH=src`. The tests are `python -m unittest discover -s tests`.
