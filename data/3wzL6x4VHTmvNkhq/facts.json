@@ -833,7 +833,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 46.7,
-        "until": 49.6
+        "until": 49.6,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -888,7 +889,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 46.7,
-        "until": 49.6
+        "until": 49.6,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -944,7 +946,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 46.7,
-        "until": 49.6
+        "until": 49.6,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -1009,7 +1012,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 46.7,
-        "until": 49.6
+        "until": 49.6,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -1064,7 +1068,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 46.7,
-        "until": 49.6
+        "until": 49.6,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -1369,7 +1374,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -1438,7 +1444,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -1502,7 +1509,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -1564,7 +1572,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -1675,7 +1684,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -1903,7 +1913,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -1971,7 +1982,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -2037,7 +2049,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -2102,7 +2115,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -2186,7 +2200,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -2250,7 +2265,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -2622,14 +2638,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 49.6,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Ascalon's Mercy Concealed"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -2716,14 +2734,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 49.6,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Ascalon's Mercy Concealed"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -2792,14 +2812,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 49.6,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Ascalon's Mercy Concealed"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -2875,14 +2897,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 49.6,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Ascalon's Mercy Concealed"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -2958,14 +2982,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 49.6,
-        "until": 63.2
+        "until": 63.2,
+        "via": "Ascalon's Mercy Concealed"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -3029,7 +3055,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 47.0,
-        "until": 49.8
+        "until": 49.8,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -3107,7 +3134,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 47.0,
-        "until": 49.8
+        "until": 49.8,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -3185,7 +3213,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 47.0,
-        "until": 49.8
+        "until": 49.8,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -3266,7 +3295,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 47.0,
-        "until": 49.8
+        "until": 49.8,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -3359,7 +3389,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 47.0,
-        "until": 49.8
+        "until": 49.8,
+        "via": "Heavy Impact"
       }
     ],
     "down": [
@@ -3437,7 +3468,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 47.0,
-        "until": 49.8
+        "until": 49.8,
+        "via": "Heavy Impact"
       }
     ],
     "down": [
@@ -3515,7 +3547,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 47.0,
-        "until": 49.8
+        "until": 49.8,
+        "via": "Heavy Impact"
       }
     ],
     "down": [
@@ -3593,7 +3626,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 47.0,
-        "until": 49.8
+        "until": 49.8,
+        "via": "Heavy Impact"
       }
     ],
     "down": [
@@ -4551,14 +4585,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 64.9
+        "until": 64.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -4634,14 +4670,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 64.9
+        "until": 64.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -4728,14 +4766,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 64.9
+        "until": 64.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -4825,14 +4865,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 64.9
+        "until": 64.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -4934,14 +4976,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 64.9
+        "until": 64.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -7019,7 +7063,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -7083,7 +7128,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -7160,7 +7206,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -7251,7 +7298,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -7412,7 +7460,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -7488,7 +7537,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -7602,7 +7652,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -7698,7 +7749,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -7787,7 +7839,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -7872,7 +7925,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -7952,7 +8006,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -8085,7 +8140,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.7,
-        "until": 60.0
+        "until": 60.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -8168,7 +8224,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.7,
-        "until": 60.0
+        "until": 60.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -8248,7 +8305,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.7,
-        "until": 60.0
+        "until": 60.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -8339,7 +8397,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.7,
-        "until": 60.0
+        "until": 60.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -8419,7 +8478,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.7,
-        "until": 60.0
+        "until": 60.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -8493,7 +8553,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.7,
-        "until": 60.0
+        "until": 60.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -8568,7 +8629,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.7,
-        "until": 60.0
+        "until": 60.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -8644,7 +8706,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.7,
-        "until": 60.0
+        "until": 60.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -8778,7 +8841,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -8838,7 +8902,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -8946,7 +9011,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -9034,7 +9100,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -9117,7 +9184,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -9173,7 +9241,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -9239,7 +9308,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.8
+        "until": 59.8,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -9500,7 +9570,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -9567,7 +9638,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -9643,7 +9715,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -9743,7 +9816,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -9821,7 +9895,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -9900,7 +9975,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -10283,14 +10359,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 68.2
+        "until": 68.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -10377,14 +10455,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 68.2
+        "until": 68.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -10472,14 +10552,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 68.2
+        "until": 68.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -10542,14 +10624,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 68.2
+        "until": 68.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -10612,14 +10696,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.1
+        "until": 65.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 68.2
+        "until": 68.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -10777,14 +10863,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 66.8
+        "until": 66.8,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 81.5
+        "until": 81.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -10858,14 +10946,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 66.8
+        "until": 66.8,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 81.5
+        "until": 81.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -10940,14 +11030,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 66.8
+        "until": 66.8,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 81.5
+        "until": 81.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -11046,14 +11138,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 66.8
+        "until": 66.8,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 81.5
+        "until": 81.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -11153,14 +11247,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 66.8
+        "until": 66.8,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 81.5
+        "until": 81.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -11247,14 +11343,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 66.8
+        "until": 66.8,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 81.5
+        "until": 81.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -11347,14 +11445,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 66.8
+        "until": 66.8,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 81.5
+        "until": 81.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -11428,7 +11528,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 45.4,
-        "until": 50.1
+        "until": 50.1,
+        "via": "Heavy Impact"
       }
     ],
     "down": [],
@@ -11510,14 +11611,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 45.4,
-        "until": 50.1
+        "until": 50.1,
+        "via": "Heavy Impact"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.8,
-        "until": 60.2
+        "until": 60.2,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -11636,14 +11739,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 45.4,
-        "until": 50.1
+        "until": 50.1,
+        "via": "Heavy Impact"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.8,
-        "until": 60.2
+        "until": 60.2,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -11717,14 +11822,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 45.4,
-        "until": 50.1
+        "until": 50.1,
+        "via": "Heavy Impact"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.8,
-        "until": 60.2
+        "until": 60.2,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -11792,21 +11899,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 45.4,
-        "until": 50.1
+        "until": 50.1,
+        "via": "Heavy Impact"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.8,
-        "until": 60.2
+        "until": 60.2,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 65.5
+        "until": 65.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -11882,21 +11992,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 45.4,
-        "until": 50.1
+        "until": 50.1,
+        "via": "Heavy Impact"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.8,
-        "until": 60.2
+        "until": 60.2,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 65.5
+        "until": 65.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -11959,21 +12072,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 45.4,
-        "until": 50.1
+        "until": 50.1,
+        "via": "Heavy Impact"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.8,
-        "until": 60.2
+        "until": 60.2,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 65.5
+        "until": 65.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -12074,21 +12190,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 45.4,
-        "until": 50.1
+        "until": 50.1,
+        "via": "Heavy Impact"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.8,
-        "until": 60.2
+        "until": 60.2,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 65.5
+        "until": 65.5,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -12178,14 +12297,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.4,
-        "until": 83.7
+        "until": 83.7,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.6,
-        "until": 93.8
+        "until": 93.8,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -12259,14 +12380,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.4,
-        "until": 83.7
+        "until": 83.7,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.6,
-        "until": 93.8
+        "until": 93.8,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -12353,14 +12476,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.4,
-        "until": 83.7
+        "until": 83.7,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.6,
-        "until": 93.8
+        "until": 93.8,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -12437,14 +12562,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.4,
-        "until": 83.7
+        "until": 83.7,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.6,
-        "until": 93.8
+        "until": 93.8,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -12533,14 +12660,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.4,
-        "until": 83.7
+        "until": 83.7,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.6,
-        "until": 93.8
+        "until": 93.8,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -12641,14 +12770,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.4,
-        "until": 83.7
+        "until": 83.7,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.6,
-        "until": 93.8
+        "until": 93.8,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -12728,14 +12859,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.4,
-        "until": 83.7
+        "until": 83.7,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.6,
-        "until": 93.8
+        "until": 93.8,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -12792,14 +12925,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.4,
-        "until": 83.7
+        "until": 83.7,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.6,
-        "until": 93.8
+        "until": 93.8,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -12954,7 +13089,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -13039,7 +13175,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -13118,7 +13255,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -13175,7 +13313,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -13257,7 +13396,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -13320,7 +13460,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -13397,7 +13538,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -14298,14 +14440,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 72.0
+        "until": 72.0,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -14364,14 +14508,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 72.0
+        "until": 72.0,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -14446,14 +14592,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 72.0
+        "until": 72.0,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -14551,14 +14699,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 72.0
+        "until": 72.0,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -14646,14 +14796,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 72.0
+        "until": 72.0,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -14742,14 +14894,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 72.0
+        "until": 72.0,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -14814,14 +14968,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 72.0
+        "until": 72.0,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -14876,14 +15032,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 72.0
+        "until": 72.0,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -14981,7 +15139,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.7
+        "until": 65.7,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -15060,7 +15219,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.7
+        "until": 65.7,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -15134,7 +15294,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.7
+        "until": 65.7,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -15196,7 +15357,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.7
+        "until": 65.7,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -15274,7 +15436,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.7
+        "until": 65.7,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -15339,7 +15502,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.7
+        "until": 65.7,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -15405,7 +15569,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.7
+        "until": 65.7,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -15484,7 +15649,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.7
+        "until": 65.7,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -16198,21 +16364,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 68.0
+        "until": 68.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -16310,21 +16479,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 68.0
+        "until": 68.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -16422,21 +16594,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 68.0
+        "until": 68.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -16525,21 +16700,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 68.0
+        "until": 68.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -16641,21 +16819,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 68.0
+        "until": 68.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -16720,21 +16901,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 68.0
+        "until": 68.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -17447,7 +17631,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 136.4,
-        "until": 136.4
+        "until": 136.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -17513,7 +17698,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 136.4,
-        "until": 136.4
+        "until": 136.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -18195,21 +18381,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.3
+        "until": 59.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.7
+        "until": 59.7,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -18348,21 +18537,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.3
+        "until": 59.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.7
+        "until": 59.7,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -18447,35 +18639,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.3
+        "until": 59.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.7
+        "until": 59.7,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -18563,35 +18760,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.3
+        "until": 59.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.7
+        "until": 59.7,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -18692,35 +18894,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.3
+        "until": 59.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.7
+        "until": 59.7,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -18809,35 +19016,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.3
+        "until": 59.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.7
+        "until": 59.7,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -18928,35 +19140,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.3
+        "until": 59.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.7
+        "until": 59.7,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -19022,35 +19239,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.3
+        "until": 59.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.3,
-        "until": 59.7
+        "until": 59.7,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.4,
-        "until": 59.6
+        "until": 59.6,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.7,
-        "until": 65.4
+        "until": 65.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.4,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -19148,7 +19370,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 71.2
+        "until": 71.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -19206,7 +19429,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 71.2
+        "until": 71.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -19280,7 +19504,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 71.2
+        "until": 71.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -19355,7 +19580,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 71.2
+        "until": 71.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -19417,7 +19643,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 71.2
+        "until": 71.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -19480,7 +19707,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 71.2
+        "until": 71.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -19544,7 +19772,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 71.2
+        "until": 71.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -19609,7 +19838,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 64.9,
-        "until": 71.2
+        "until": 71.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -19760,14 +19990,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.5,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -19841,14 +20073,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.5,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -19934,14 +20168,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.5,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -20003,14 +20239,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.5,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -20098,14 +20336,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.5,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -20169,14 +20409,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.5,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -20231,14 +20473,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.5,
-        "until": 70.2
+        "until": 70.2,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -20356,7 +20600,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -20443,7 +20688,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -20558,7 +20804,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -20655,7 +20902,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -20743,7 +20991,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -20833,7 +21082,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -20991,7 +21241,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -21065,7 +21316,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 59.5
+        "until": 59.5,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -21131,42 +21383,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Loki Doki",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Loki Doki",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -21232,42 +21490,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Loki Doki",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Loki Doki",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -21334,42 +21598,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Loki Doki",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Loki Doki",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -21425,42 +21695,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Loki Doki",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Loki Doki",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -21512,42 +21788,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Loki Doki",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Loki Doki",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -21606,42 +21888,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Loki Doki",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Loki Doki",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -21695,42 +21983,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Loki Doki",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Loki Doki",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -21801,42 +22095,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.1,
-        "until": 112.3
+        "until": 112.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Loki Doki",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Loki Doki",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.7,
-        "until": 113.2
+        "until": 113.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -22042,7 +22342,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -22110,7 +22411,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -22197,7 +22499,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -22275,7 +22578,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -22340,7 +22644,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -22419,7 +22724,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -22500,7 +22806,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [
@@ -22603,7 +22910,8 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.2,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       }
     ],
     "down": [],
@@ -22679,21 +22987,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.2,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 67.3
+        "until": 67.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 80.0
+        "until": 80.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -22778,21 +23089,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.2,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 67.3
+        "until": 67.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 80.0
+        "until": 80.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -22878,21 +23192,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.2,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 67.3
+        "until": 67.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 80.0
+        "until": 80.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -22954,21 +23271,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.2,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 67.3
+        "until": 67.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 80.0
+        "until": 80.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -23056,21 +23376,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.2,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 67.3
+        "until": 67.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 80.0
+        "until": 80.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -23134,21 +23457,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.2,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 67.3
+        "until": 67.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 80.0
+        "until": 80.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -23215,21 +23541,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.2,
-        "until": 65.0
+        "until": 65.0,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.0,
-        "until": 67.3
+        "until": 67.3,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 80.0
+        "until": 80.0,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -23350,21 +23679,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 70.4
+        "until": 70.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 67.4
+        "until": 67.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -23437,21 +23769,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 70.4
+        "until": 70.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 67.4
+        "until": 67.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -23526,21 +23861,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 70.4
+        "until": 70.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 67.4
+        "until": 67.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -23616,21 +23954,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 70.4
+        "until": 70.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 67.4
+        "until": 67.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -23707,21 +24048,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 70.4
+        "until": 70.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 67.4
+        "until": 67.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -23785,21 +24129,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 70.4
+        "until": 70.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 67.4
+        "until": 67.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -23864,21 +24211,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 70.4
+        "until": 70.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 67.4
+        "until": 67.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -23933,21 +24283,24 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 59.5,
-        "until": 65.3
+        "until": 65.3,
+        "via": "Dimensional Collapse"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.2,
-        "until": 70.4
+        "until": 70.4,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.6,
-        "until": 67.4
+        "until": 67.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -24029,14 +24382,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.7,
-        "until": 70.9
+        "until": 70.9,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -24121,14 +24476,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.7,
-        "until": 70.9
+        "until": 70.9,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -24203,14 +24560,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.7,
-        "until": 70.9
+        "until": 70.9,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -24298,14 +24657,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.7,
-        "until": 70.9
+        "until": 70.9,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -24382,14 +24743,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.7,
-        "until": 70.9
+        "until": 70.9,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -24467,14 +24830,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.7,
-        "until": 70.9
+        "until": 70.9,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -24562,14 +24927,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.7,
-        "until": 70.9
+        "until": 70.9,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -24624,14 +24991,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.3,
-        "until": 70.1
+        "until": 70.1,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.7,
-        "until": 70.9
+        "until": 70.9,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -24862,14 +25231,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 65.9
+        "until": 65.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.9,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -24931,14 +25302,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 65.9
+        "until": 65.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.9,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -25001,14 +25374,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 65.9
+        "until": 65.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.9,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -25086,14 +25461,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 65.9
+        "until": 65.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.9,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -25158,14 +25535,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 65.9
+        "until": 65.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.9,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -25230,14 +25609,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 65.9
+        "until": 65.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.9,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [
@@ -25304,14 +25685,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.1,
-        "until": 65.9
+        "until": 65.9,
+        "via": "Eternal Conviction"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 65.9,
-        "until": 66.4
+        "until": 66.4,
+        "via": "Eternal Conviction"
       }
     ],
     "down": [],
@@ -25367,70 +25750,80 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -25491,70 +25884,80 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -25604,70 +26007,80 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -25739,70 +26152,80 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -25854,70 +26277,80 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -25979,70 +26412,80 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -26105,70 +26548,80 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -26232,70 +26685,80 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 113.3
+        "until": 113.3,
+        "via": "the Dragon's Gaze"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.3
+        "until": 114.3,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.0,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Spring Nymphar",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -26440,28 +26903,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -26523,28 +26990,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -26596,35 +27067,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.5,
-        "until": 118.3
+        "until": 118.3,
+        "via": "Bright Flare"
       }
     ],
     "down": [],
@@ -26682,35 +27158,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.5,
-        "until": 118.3
+        "until": 118.3,
+        "via": "Bright Flare"
       }
     ],
     "down": [],
@@ -26774,35 +27255,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.5,
-        "until": 118.3
+        "until": 118.3,
+        "via": "Bright Flare"
       }
     ],
     "down": [],
@@ -26861,35 +27347,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.5,
-        "until": 118.3
+        "until": 118.3,
+        "via": "Bright Flare"
       }
     ],
     "down": [],
@@ -26961,35 +27452,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.5,
-        "until": 118.3
+        "until": 118.3,
+        "via": "Bright Flare"
       }
     ],
     "down": [
@@ -27053,35 +27549,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kite Noodle",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 116.4
+        "until": 116.4,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.5,
-        "until": 118.3
+        "until": 118.3,
+        "via": "Bright Flare"
       }
     ],
     "down": [],
@@ -27146,14 +27647,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -27216,14 +27719,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -27273,14 +27778,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -27343,14 +27850,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -27424,14 +27933,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -27491,14 +28002,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -27577,14 +28090,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -27642,14 +28157,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.1,
-        "until": 113.5
+        "until": 113.5,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28085,14 +28602,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28150,14 +28669,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28207,14 +28728,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28273,14 +28796,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28352,14 +28877,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28412,14 +28939,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28477,14 +29006,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28541,14 +29072,16 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 112.9
+        "until": 112.9,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28616,42 +29149,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28699,42 +29238,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28801,42 +29346,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28896,42 +29447,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -28999,42 +29556,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -29101,42 +29664,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -29206,42 +29775,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -29323,42 +29898,48 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.6,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.9,
-        "until": 114.8
+        "until": 114.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigachad",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.4,
-        "until": 113.8
+        "until": 113.8,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -30052,28 +30633,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -30158,28 +30743,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -30254,28 +30843,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -30351,28 +30944,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -30459,28 +31056,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [
@@ -30580,28 +31181,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -30685,28 +31290,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kitana Kahn",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.2,
-        "until": 114.1
+        "until": 114.1,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 113.3,
-        "until": 114.2
+        "until": 114.2,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -30807,28 +31416,32 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       }
     ],
     "down": [],
@@ -30913,35 +31526,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.2,
-        "until": 117.2
+        "until": 117.2,
+        "via": "Bright Flare"
       }
     ],
     "down": [
@@ -31033,35 +31651,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.2,
-        "until": 117.2
+        "until": 117.2,
+        "via": "Bright Flare"
       }
     ],
     "down": [
@@ -31154,35 +31777,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.2,
-        "until": 117.2
+        "until": 117.2,
+        "via": "Bright Flare"
       }
     ],
     "down": [
@@ -31277,35 +31905,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.2,
-        "until": 117.2
+        "until": 117.2,
+        "via": "Bright Flare"
       }
     ],
     "down": [
@@ -31387,35 +32020,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.2,
-        "until": 117.2
+        "until": 117.2,
+        "via": "Bright Flare"
       }
     ],
     "down": [],
@@ -31492,35 +32130,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.2,
-        "until": 117.2
+        "until": 117.2,
+        "via": "Bright Flare"
       }
     ],
     "down": [],
@@ -31592,35 +32235,40 @@
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Speed Panda",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.2,
-        "until": 115.8
+        "until": 115.8,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Kiara Blaiddyd",
         "debuff": "Hysteria",
         "phase": 2,
         "t": 112.4,
-        "until": 113.0
+        "until": 113.0,
+        "via": "the Dragon's Glory"
       },
       {
         "name": "Absolute Gigalad",
         "debuff": "Damage Down",
         "phase": 2,
         "t": 116.2,
-        "until": 117.2
+        "until": 117.2,
+        "via": "Bright Flare"
       }
     ],
     "down": [

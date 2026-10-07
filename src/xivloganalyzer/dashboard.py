@@ -15,6 +15,7 @@ from pathlib import Path
 from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone
 from xivloganalyzer.judge import Judgment, clip_mechanic, empty_owners, marker_owners, passes_on
 from xivloganalyzer.mitigations import load_mitigations
+from xivloganalyzer.night import night_tally
 
 JOB = {
     "Paladin": "PLD",
@@ -530,6 +531,7 @@ def session_payload(
             }
         )
         pull["firstMistake"] = item.first_mistake
+        pull["firstCauses"] = item.first_causes
     roster = _party(meta or {}, pack)
     for pull in pulls.values():
         pull["deaths"].sort(key=lambda row: (row["phaseId"], row["t"], row["name"]))
@@ -545,6 +547,11 @@ def session_payload(
         if item.outcome == "unknown"
     ]
     counts = Counter(item.outcome for item in judgments)
+    night = night_tally([
+        {"fight": item.fact.fight, "outcome": item.outcome, "first_causes": item.first_causes,
+         "blames": [blame.to_dict() for blame in item.blames]}
+        for item in judgments
+    ])
     return {
         "code": code,
         "fight": pack.name,
@@ -561,6 +568,7 @@ def session_payload(
         "raw": counts["raw"],
         "fail": counts["fail"],
         "low": counts["low"],
+        "night": night,
     }
 
 
@@ -625,6 +633,7 @@ def session_summary(payload: dict, detail_href: str) -> dict:
         "overview": overview,
         "pulls": [_pull_index(pull) for pull in payload.get("pulls") or []],
         "mechanics": [_mechanic_index(mech) for mech in payload.get("mechanics") or []],
+        "night": payload.get("night") or {},
     }
 
 

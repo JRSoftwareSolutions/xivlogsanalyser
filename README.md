@@ -76,6 +76,12 @@ Every saved log whose rules changed is judged again, and the run lists the calls
 
 ## Checking calls
 
+To see one pull's evidence in time order (every hit on a player, the markers and debuffs, each death's packet), then the judge's calls:
+
+```
+python -m xivloganalyzer evidence <code> --pull 14          # add --blind to leave the calls out
+```
+
 `calls.tsv` in each report folder is one line per death: outcome, cause, owners, what decided the owner (`basis`), and the inputs the call was made without. A rule change shows up as changed lines in that file.
 
 ```

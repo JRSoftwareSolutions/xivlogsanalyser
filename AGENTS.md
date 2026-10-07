@@ -22,4 +22,4 @@ A new log goes in `reports/<code>/` with `fights.json`, `deaths-html.json`, and 
 
 Run these from the repo root. When the package is not installed (`pip install -e .`), prefix them with `PYTHONPATH=src`. The tests are `python -m unittest discover -s tests`.
 
-To overview a session without loading full JSON, use `review-session` and `python -m xivloganalyzer brief <code>` (optional `--pull`, `--mechanic`, `--outcome`, `--write`).
+To overview a session without loading full JSON, use `review-session` and `python -m xivloganalyzer brief <code>` (optional `--pull`, `--mechanic`, `--outcome`, `--write`). The brief opens with what started each pull, who started pulls, and who owns the night's deaths; each judgment's `first_causes` holds its pull's first mistake per mechanic with its owners. To check one call against the log, `python -m xivloganalyzer evidence <code> --pull N` prints every hit, marker, debuff, and death of the pull in time order, then the judge's calls. `--blind` leaves the calls out, for a review that should not see them first.

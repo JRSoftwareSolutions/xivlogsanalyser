@@ -3,13 +3,15 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
 from xivloganalyzer.audit import FLAGS, audit_text
 from xivloganalyzer.brief import brief_text, write_brief
 from xivloganalyzer.calls import calls_at, change_line, change_summary, diff_calls, saved_calls
-from xivloganalyzer.catalog import repo_root
+from xivloganalyzer.catalog import load_catalog, pack_for_zone, repo_root
+from xivloganalyzer.evidence import evidence_text
 from xivloganalyzer.inputs import inputs_text, problems, read_inputs
 from xivloganalyzer.pipeline import analyze, reanalyze, report_dirs, status
 from xivloganalyzer.verified import check_report, failures, keys, record, verify_text
@@ -50,11 +52,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(prog="xivloganalyzer")
     parser.add_argument(
         "command",
-        choices=("analyze", "reanalyze", "status", "brief", "audit", "check", "changes", "verify", "confirm"),
+        choices=("analyze", "reanalyze", "status", "brief", "audit", "check", "evidence", "changes", "verify", "confirm"),
         help=(
             "analyze one log, rebuild every out-of-date log, list which logs are "
             "out of date, print a session digest, list calls on weak evidence, "
-            "list the inputs a log is missing, list calls that changed since a git "
+            "list the inputs a log is missing, print one pull's evidence, list calls that changed since a git "
             "revision, compare calls with the checked ones, or record a checked call"
         ),
     )
@@ -64,7 +66,8 @@ def main() -> None:
         action="store_true",
         help="reanalyze: judge every log again, even the ones that are up to date",
     )
-    parser.add_argument("--pull", type=int, help="brief: only this pull id")
+    parser.add_argument("--pull", type=int, help="brief, evidence, confirm: this pull id")
+    parser.add_argument("--blind", action="store_true", help="evidence: leave out the judge's calls")
     parser.add_argument("--flag", choices=tuple(FLAGS), help="audit: list every death with this flag")
     parser.add_argument(
         "--mechanic",
@@ -164,6 +167,20 @@ def main() -> None:
         )
         print(f"checked: pull {call['fight']} {call['time']} {call['name']} · {call['mechanic']} · "
               f"{call['outcome']}, {', '.join(call['owners']) or 'nobody'} (by {call['by']})")
+        return
+    if args.command == "evidence":
+        if args.pull is None:
+            raise SystemExit("evidence needs --pull.")
+        report = _resolve(args.report, root)
+        meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
+        catalog = load_catalog(root)
+        pack = next(
+            (found for zone in {fight.get("zoneID") for fight in meta["fights"]} if (found := pack_for_zone(zone, catalog))),
+            None,
+        )
+        if pack is None:
+            raise SystemExit(f"No fight knowledge matches {report.name}.")
+        print(evidence_text(report, pack, args.pull, blind=args.blind), end="")
         return
     if args.command == "check":
         report = _resolve(args.report, root)

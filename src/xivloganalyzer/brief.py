@@ -7,6 +7,7 @@ from collections import Counter
 from pathlib import Path
 
 from xivloganalyzer.dashboard import session_clock
+from xivloganalyzer.night import night_lines
 
 # Default detail lines: the ones that still need a judgment pass or own the headline.
 _DEFAULT_DETAIL = frozenset({"unknown", "raw"})
@@ -180,6 +181,10 @@ def format_brief(
         lines.append(f"showing {len(filtered)} of {len(judgments)} deaths")
 
     if not scoped:
+        night = night_lines(judgments)
+        if night:
+            lines.append("")
+            lines += night
         raw_rows = [row for row in judgments if row.get("outcome") == "raw"]
         if raw_rows:
             lines.append("")

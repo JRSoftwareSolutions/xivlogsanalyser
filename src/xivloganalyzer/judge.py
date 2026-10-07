@@ -49,6 +49,8 @@ class Judgment:
     owners: list[str] = field(default_factory=list)
     # What decided the owner. See BASES.
     basis: str = ""
+    # The pull's first mistake, per mechanic: [{"mechanic", "owners"}]. The same on every death of the pull.
+    first_causes: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         payload = asdict(self.fact)
@@ -65,6 +67,7 @@ class Judgment:
                 "basis": self.basis,
                 "first": self.first,
                 "first_mistake": self.first_mistake,
+                "first_causes": [dict(cause) for cause in self.first_causes],
             }
         )
         return payload
@@ -919,6 +922,46 @@ def _hit_by_others(item: Judgment) -> list[str]:
     return owners
 
 
+def _debuff_source(debuff: dict) -> str:
+    return str(debuff.get("via") or "").strip().removeprefix("the ")
+
+
+def _debuff_owner(debuff: dict, pack: FightPack) -> str:
+    """Who owns a Damage Down or Hysteria nobody died to: the player it landed on, unless it
+    came from a mechanic the party shares, where the debuff does not say who broke it."""
+    mechanic = pack.mechanic_named(_debuff_source(debuff), debuff.get("phase"))
+    if mechanic is None:
+        return debuff["name"]
+    if mechanic.needs_everyone:
+        return "Missed soak"
+    if mechanic.drops is not None:
+        return "Prey markers"
+    if mechanic.scales_with_stack:
+        return "Missing bodies"
+    return debuff["name"]
+
+
+def _moment_debuffs(deaths: list[Judgment], debuffs: list[dict]) -> list[dict]:
+    """The debuffs worth naming: not the ones the same cast gave while it killed someone."""
+    killed = {item.mechanic.casefold() for item in deaths}
+    return [debuff for debuff in debuffs if _debuff_source(debuff).casefold() not in killed]
+
+
+def _moment_causes(deaths: list[Judgment], debuffs: list[dict], pack: FightPack) -> list[dict]:
+    """What the first mistake was, per mechanic, and who owns it."""
+    causes: dict[str, list[str]] = {}
+    for item in deaths:
+        named = [blame.who for blame in item.blames if blame.who not in CONTEXT_SHARES]
+        owners = causes.setdefault(item.mechanic, [])
+        owners += [who for who in named or [item.fact.name] if who not in owners]
+    for debuff in _moment_debuffs(deaths, debuffs):
+        owners = causes.setdefault(_debuff_source(debuff) or debuff["debuff"], [])
+        who = _debuff_owner(debuff, pack)
+        if who not in owners:
+            owners.append(who)
+    return [{"mechanic": mechanic, "owners": owners} for mechanic, owners in causes.items()]
+
+
 def _moment_text(deaths: list[Judgment], debuffs: list[dict], wall_id: str) -> str:
     groups: dict[str, list[str]] = {}
     for item in deaths:
@@ -933,12 +976,17 @@ def _moment_text(deaths: list[Judgment], debuffs: list[dict], wall_id: str) -> s
         if item.fact.name not in names:
             names.append(item.fact.name)
     bits = [f"{_people(names)} {verb}" for verb, names in groups.items()]
-    by_debuff: dict[str, list[str]] = {}
-    for debuff in debuffs:
-        names = by_debuff.setdefault(debuff["debuff"], [])
-        if debuff["name"] not in names:
-            names.append(debuff["name"])
-    bits += [f"{name} on {_people(names)}" for name, names in by_debuff.items()]
+    # Each player's debuffs from one source, then players with the same ones together.
+    held: dict[tuple[str, str], list[str]] = {}
+    for debuff in _moment_debuffs(deaths, debuffs):
+        kinds = held.setdefault((_debuff_source(debuff), debuff["name"]), [])
+        if debuff["debuff"] not in kinds:
+            kinds.append(debuff["debuff"])
+    by_debuff: dict[tuple[str, str], list[str]] = {}
+    for (source, name), kinds in held.items():
+        by_debuff.setdefault((source, " and ".join(kinds)), []).append(name)
+    for (source, kinds), names in by_debuff.items():
+        bits.append(f"{kinds} on {_people(names)}" + (f" from {source}" if source else ""))
     if len(bits) == 1:
         return bits[0]
     return ", ".join(bits[:-1]) + f" and {bits[-1]}"
@@ -1043,10 +1091,12 @@ def _mark_first_mistakes(
         f"at {moment.start:.1f}s into {moment.phase_name}"
         for fight, moment in firsts.items()
     }
+    causes = {fight: _moment_causes(moment.deaths, moment.debuffs, pack) for fight, moment in firsts.items()}
     for item in judgments:
         moment = firsts[item.fact.fight]
         item.first = moment.holds(item.fact.phase, item.fact.t) and not _hit_by_others(item)
         item.first_mistake = texts[item.fact.fight]
+        item.first_causes = causes[item.fact.fight]
 
 
 def _was(names: list[str]) -> str:

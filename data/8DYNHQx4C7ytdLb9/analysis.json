@@ -1,12 +1,12 @@
 {
  "rules": "6784acd4603f0984",
- "engine": "cdcc1674584ef5d4",
+ "engine": "72ab9523f2348f02",
  "log": "f136dbe8abc107ba",
  "outputs": {
-  "facts.json": "bc332598dbba1490",
-  "judgments.json": "597d2d88ee98b6e3",
+  "facts.json": "157ec4b06d6dd635",
+  "judgments.json": "923ee1d6722e9334",
   "calls.tsv": "67ab2274cf65b36a",
-  "session.html": "7dd218c9b78e8037",
+  "session.html": "cdf64230551d0895",
   "inputs.json": "f3a858e502fbae22"
  },
  "counts": {
@@ -1248,6 +1248,417 @@
     "reached": 8,
     "mistakes": 8
    }
-  ]
+  ],
+  "night": {
+   "pulls": 47,
+   "labels": [
+    "Earlier deaths",
+    "Miscommunication",
+    "Missed soak",
+    "Missing bodies"
+   ],
+   "started": [
+    {
+     "mechanic": "Ascalon's Mercy Concealed",
+     "pulls": 11,
+     "owners": [
+      [
+       "Spring Nymphar",
+       5
+      ],
+      [
+       "Absolute Gigalad",
+       2
+      ],
+      [
+       "Kitana Kahn",
+       2
+      ],
+      [
+       "Kiara Blaiddyd",
+       2
+      ]
+     ]
+    },
+    {
+     "mechanic": "Deathwall",
+     "pulls": 8,
+     "owners": [
+      [
+       "Kitana Kahn",
+       4
+      ],
+      [
+       "Absolute Gigachad",
+       3
+      ],
+      [
+       "Loki Doki",
+       2
+      ],
+      [
+       "Absolute Gigalad",
+       1
+      ],
+      [
+       "Kite Noodle",
+       1
+      ],
+      [
+       "Kiara Blaiddyd",
+       1
+      ],
+      [
+       "Spring Nymphar",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Bright Flare",
+     "pulls": 7,
+     "owners": [
+      [
+       "Kiara Blaiddyd",
+       3
+      ],
+      [
+       "Spring Nymphar",
+       3
+      ],
+      [
+       "Speed Panda",
+       2
+      ],
+      [
+       "Kitana Kahn",
+       1
+      ],
+      [
+       "Absolute Gigalad",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Holy Shield Bash",
+     "pulls": 5,
+     "owners": [
+      [
+       "Kitana Kahn",
+       3
+      ],
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Loki Doki",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Holy Impact",
+     "pulls": 4,
+     "owners": [
+      [
+       "Kitana Kahn",
+       2
+      ],
+      [
+       "Absolute Gigalad",
+       1
+      ],
+      [
+       "Loki Doki",
+       1
+      ],
+      [
+       "Kite Noodle",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Dimensional Collapse",
+     "pulls": 2,
+     "owners": [
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Absolute Gigalad",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Dragon's Rage",
+     "pulls": 2,
+     "owners": [
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Missing bodies",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Hiemal Storm",
+     "pulls": 2,
+     "owners": [
+      [
+       "Loki Doki",
+       2
+      ],
+      [
+       "Spring Nymphar",
+       2
+      ],
+      [
+       "Kite Noodle",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Skyward Leap",
+     "pulls": 2,
+     "owners": [
+      [
+       "Loki Doki",
+       1
+      ],
+      [
+       "Kitana Kahn",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Sacred Sever",
+     "pulls": 2,
+     "owners": [
+      [
+       "Missing bodies",
+       1
+      ],
+      [
+       "Kite Noodle",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Frostbite",
+     "pulls": 2,
+     "owners": [
+      [
+       "Kiara Blaiddyd",
+       1
+      ],
+      [
+       "Absolute Gigachad",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Final Chorus",
+     "pulls": 1,
+     "owners": [
+      [
+       "Loki Doki",
+       1
+      ],
+      [
+       "Spring Nymphar",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Dragon's Gaze",
+     "pulls": 1,
+     "owners": [
+      [
+       "Kiara Blaiddyd",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Eternal Conviction",
+     "pulls": 1,
+     "owners": [
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Kiara Blaiddyd",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Broad Swing",
+     "pulls": 1,
+     "owners": [
+      [
+       "Kitana Kahn",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Dark Elusive Jump",
+     "pulls": 1,
+     "owners": [
+      [
+       "Loki Doki",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Ascalon's Might",
+     "pulls": 1,
+     "owners": [
+      [
+       "Absolute Gigalad",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Eye of the Tyrant",
+     "pulls": 1,
+     "owners": [
+      [
+       "Loki Doki",
+       1
+      ],
+      [
+       "Spring Nymphar",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Dragon's Glory",
+     "pulls": 1,
+     "owners": [
+      [
+       "Kitana Kahn",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Heavy Impact",
+     "pulls": 1,
+     "owners": [
+      [
+       "Kiara Blaiddyd",
+       1
+      ]
+     ]
+    }
+   ],
+   "starters": [
+    [
+     "Spring Nymphar",
+     15
+    ],
+    [
+     "Kitana Kahn",
+     14
+    ],
+    [
+     "Loki Doki",
+     10
+    ],
+    [
+     "Kiara Blaiddyd",
+     10
+    ],
+    [
+     "Absolute Gigalad",
+     6
+    ],
+    [
+     "Absolute Gigachad",
+     4
+    ],
+    [
+     "Kite Noodle",
+     4
+    ],
+    [
+     "Speed Panda",
+     2
+    ],
+    [
+     "Missing bodies",
+     2
+    ]
+   ],
+   "owned": [
+    [
+     "Loki Doki",
+     61.1
+    ],
+    [
+     "Spring Nymphar",
+     54.4
+    ],
+    [
+     "Kitana Kahn",
+     40.3
+    ],
+    [
+     "Kiara Blaiddyd",
+     37.6
+    ],
+    [
+     "Kite Noodle",
+     32.4
+    ],
+    [
+     "Speed Panda",
+     28.4
+    ],
+    [
+     "Absolute Gigachad",
+     25.0
+    ],
+    [
+     "Absolute Gigalad",
+     24.2
+    ],
+    [
+     "Missing bodies",
+     10.3
+    ],
+    [
+     "Missed soak",
+     7.8
+    ],
+    [
+     "Earlier deaths",
+     1.0
+    ],
+    [
+     "Miscommunication",
+     1.0
+    ]
+   ]
+  }
  }
 }

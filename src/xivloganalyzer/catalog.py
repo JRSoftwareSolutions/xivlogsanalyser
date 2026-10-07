@@ -233,6 +233,14 @@ class FightPack:
                 return mech
         return None
 
+    def mechanic_named(self, name: str, phase: int | None = None) -> Mechanic | None:
+        """The mechanic a status's source names, such as "the Dragon's Glory". Case and a leading "the " do not matter."""
+        wanted = name.strip().casefold().removeprefix("the ")
+        for mech in self.mechanics:
+            if mech.name.casefold() == wanted and (phase is None or mech.phase == phase):
+                return mech
+        return None
+
     def cluster_for(self, mechanic_id: str | None, t: float, phase: int) -> Cluster | None:
         if not mechanic_id:
             return None

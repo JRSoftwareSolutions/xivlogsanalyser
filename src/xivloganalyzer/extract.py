@@ -683,8 +683,9 @@ def _window_for(windows: list[tuple], timestamp: int) -> tuple | None:
 
 def _cascade_debuffs(
     table: dict | None, pack: FightPack, players: dict[int, str],
-) -> list[tuple[int, int | None, str, str]]:
-    """Damage Down and Hysteria landing on players, not pets: (applied, removed, player, debuff)."""
+) -> list[tuple[int, int | None, str, str, str]]:
+    """Damage Down and Hysteria landing on players, not pets: (applied, removed, player, debuff, via).
+    `via` is the ability that applied it, such as "Eternal Conviction", or empty."""
     if not table or not pack.cascade_debuffs:
         return []
     wanted = set(pack.cascade_debuffs)
@@ -698,7 +699,8 @@ def _cascade_debuffs(
             continue
         key = (name, aura[3])
         if aura[1] == "applydebuff":
-            row = [int(aura[0]), None, name, aura[3]]
+            via = str(aura[8] or "") if len(aura) > 8 else ""
+            row = [int(aura[0]), None, name, aura[3], via]
             rows.append(row)
             pending.setdefault(key, []).append(len(rows) - 1)
         elif aura[1] == "removedebuff" and pending.get(key):
@@ -710,7 +712,7 @@ def _prior_debuffs(debuffs: list[tuple], windows: list[tuple], timestamp: int | 
     if timestamp is None:
         return []
     found = []
-    for applied, removed, name, debuff in debuffs:
+    for applied, removed, name, debuff, via in debuffs:
         if applied > timestamp + DEBUFF_SLACK_MS:
             continue
         window = _window_for(windows, applied)
@@ -724,6 +726,7 @@ def _prior_debuffs(debuffs: list[tuple], windows: list[tuple], timestamp: int | 
                 "phase": phase.id,
                 "t": round((applied - start) / 1000, 1),
                 "until": round((removed - start) / 1000, 1) if removed is not None else None,
+                "via": via,
             }
         )
     return found
