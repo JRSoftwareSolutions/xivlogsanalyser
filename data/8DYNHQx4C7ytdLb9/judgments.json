@@ -829,11 +829,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 50
+        "confidence": 20
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 80,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd",
@@ -953,11 +953,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 50
+        "confidence": 20
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 80,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd",
@@ -2045,7 +2045,7 @@
     "hp": 3360,
     "max_hp": 68218,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.81,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -9658,7 +9658,7 @@
     "hp": 61737,
     "max_hp": 61737,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 1.0,
     "absorb": 15976,
     "stack": null,
     "buffs": [],
@@ -9712,18 +9712,18 @@
     "mechanic_id": "final-chorus",
     "mechanic": "Final Chorus",
     "outcome": "raw",
-    "happened": "Took 96,055 at full HP. A 15,976 shield were not enough.",
+    "happened": "Took 96,055 at full HP. No party mitigation.",
     "should_have_been": "Nidhogg's opening raidwide, about 2.5 seconds in. Everyone lives it with shields and party mitigation. Survivors took about 76\u201381k after mitigation.",
     "went_wrong": "Kitana Kahn died to the real hit.",
     "cause": "resolve",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 16
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Loki Doki"
         ]
@@ -9761,7 +9761,7 @@
     "hp": 62101,
     "max_hp": 62101,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.85,
     "absorb": 16620,
     "stack": null,
     "buffs": [],
@@ -9831,15 +9831,11 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "role",
@@ -9870,7 +9866,7 @@
     "hp": 68218,
     "max_hp": 68218,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.85,
     "absorb": 16452,
     "stack": null,
     "buffs": [],
@@ -9943,18 +9939,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 75,
         "via": [
           "Loki Doki"
         ]
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
       }
     ],
     "basis": "role",
@@ -9985,7 +9977,7 @@
     "hp": 16420,
     "max_hp": 61615,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 1.0,
     "absorb": 3616,
     "stack": null,
     "buffs": [],
@@ -10068,7 +10060,7 @@
     "hp": 26959,
     "max_hp": 68662,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 1.0,
     "absorb": 8533,
     "stack": null,
     "buffs": [],
@@ -10198,14 +10190,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33,
+        "confidence": 25,
         "via": [
           "Kite Noodle"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 41,
         "via": [
           "Kite Noodle",
           "Loki Doki"
@@ -10289,14 +10281,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33,
+        "confidence": 25,
         "via": [
           "Kite Noodle"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 41,
         "via": [
           "Kite Noodle",
           "Loki Doki"
@@ -10382,7 +10374,7 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33,
+        "confidence": 16,
         "via": [
           "Kitana Kahn",
           "Absolute Gigalad"
@@ -10390,7 +10382,7 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 27,
         "via": [
           "Kitana Kahn",
           "Absolute Gigalad"
@@ -10398,7 +10390,7 @@
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 33,
+        "confidence": 55,
         "via": [
           "Kitana Kahn",
           "Absolute Gigalad"
@@ -10481,7 +10473,7 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33,
+        "confidence": 16,
         "via": [
           "Kitana Kahn",
           "Absolute Gigalad"
@@ -10489,7 +10481,7 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 27,
         "via": [
           "Kitana Kahn",
           "Absolute Gigalad"
@@ -10497,7 +10489,7 @@
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 33,
+        "confidence": 55,
         "via": [
           "Kitana Kahn",
           "Absolute Gigalad"
@@ -10904,14 +10896,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -11025,14 +11017,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -11148,14 +11140,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -11272,14 +11264,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -11396,14 +11388,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -11522,14 +11514,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -17873,11 +17865,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 50
+        "confidence": 33
       },
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -17997,11 +17989,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 50
+        "confidence": 33
       },
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -18123,11 +18115,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 50
+        "confidence": 33
       },
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -18252,11 +18244,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 50
+        "confidence": 33
       },
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -18334,15 +18326,11 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "role",
@@ -18419,18 +18407,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 75,
         "via": [
           "Loki Doki"
         ]
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
       }
     ],
     "basis": "role",
@@ -18508,18 +18492,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 75,
         "via": [
           "Loki Doki"
         ]
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
       }
     ],
     "basis": "role",
@@ -18549,7 +18529,7 @@
     "hp": 46318,
     "max_hp": 99223,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -18629,21 +18609,17 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33,
+        "confidence": 37,
         "via": [
           "Spring Nymphar"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 62,
         "via": [
           "Loki Doki"
         ]
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
       }
     ],
     "basis": "role",
@@ -18673,7 +18649,7 @@
     "hp": 52256,
     "max_hp": 61737,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -18753,14 +18729,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 37,
         "via": [
           "Speed Panda"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 62,
         "via": [
           "Loki Doki",
           "Speed Panda"
@@ -18794,7 +18770,7 @@
     "hp": 66931,
     "max_hp": 68662,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -18877,14 +18853,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 37,
         "via": [
           "Speed Panda"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 62,
         "via": [
           "Loki Doki",
           "Speed Panda"
@@ -18918,7 +18894,7 @@
     "hp": 61708,
     "max_hp": 68218,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -19000,14 +18976,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 37,
         "via": [
           "Speed Panda"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 62,
         "via": [
           "Loki Doki",
           "Speed Panda"
@@ -19041,7 +19017,7 @@
     "hp": 29637,
     "max_hp": 99211,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -19125,21 +19101,17 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33,
+        "confidence": 37,
         "via": [
           "Spring Nymphar"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 62,
         "via": [
           "Loki Doki"
         ]
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
       }
     ],
     "basis": "role",
@@ -19365,7 +19337,7 @@
     "hp": 2276,
     "max_hp": 68662,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -19534,7 +19506,7 @@
     "hp": 4269,
     "max_hp": 68218,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -19614,14 +19586,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Spring Nymphar"
         ]
       },
       {
         "who": "Earlier damage",
-        "confidence": 50
+        "confidence": 33
       }
     ],
     "basis": "role",
@@ -19651,7 +19623,7 @@
     "hp": 22132,
     "max_hp": 99211,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -19732,14 +19704,10 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 100,
         "via": [
           "Spring Nymphar"
         ]
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 50
       }
     ],
     "basis": "role",
@@ -19769,7 +19737,7 @@
     "hp": 2652,
     "max_hp": 99223,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -19851,14 +19819,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Spring Nymphar"
         ]
       },
       {
         "who": "Earlier damage",
-        "confidence": 50
+        "confidence": 33
       }
     ],
     "basis": "role",
@@ -19888,7 +19856,7 @@
     "hp": 5282,
     "max_hp": 61737,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -19971,14 +19939,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Spring Nymphar"
         ]
       },
       {
         "who": "Earlier damage",
-        "confidence": 50
+        "confidence": 33
       }
     ],
     "basis": "role",
@@ -21584,7 +21552,7 @@
     "hp": 61737,
     "max_hp": 61737,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -21632,15 +21600,11 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "role",
@@ -21671,7 +21635,7 @@
     "hp": 68218,
     "max_hp": 68218,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -21721,15 +21685,11 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "role",
@@ -21760,7 +21720,7 @@
     "hp": 6470,
     "max_hp": 62101,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -21851,7 +21811,7 @@
     "hp": 27678,
     "max_hp": 99211,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 9921,
     "stack": null,
     "buffs": [],
@@ -21942,15 +21902,11 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "role",
@@ -21981,7 +21937,7 @@
     "hp": 55630,
     "max_hp": 61615,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -22061,14 +22017,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Kitana Kahn"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Kitana Kahn"
         ]
@@ -22102,7 +22058,7 @@
     "hp": 68662,
     "max_hp": 68662,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 9921,
     "stack": null,
     "buffs": [],
@@ -22195,14 +22151,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Kitana Kahn"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Kitana Kahn"
         ]
@@ -22236,7 +22192,7 @@
     "hp": 64044,
     "max_hp": 68259,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -22318,14 +22274,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Kitana Kahn"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Kitana Kahn"
         ]
@@ -22359,7 +22315,7 @@
     "hp": 39402,
     "max_hp": 99223,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -22443,18 +22399,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33,
+        "confidence": 87,
         "via": [
           "Spring Nymphar"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 12
       }
     ],
     "basis": "role",
@@ -23468,7 +23420,7 @@
     "hp": 68218,
     "max_hp": 68218,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 1.0,
     "absorb": 11859,
     "stack": null,
     "buffs": [],
@@ -23645,7 +23597,7 @@
     "hp": 74699,
     "max_hp": 99223,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -24237,7 +24189,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kite Noodle",
           "Spring Nymphar"
@@ -24245,11 +24197,11 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Speed Panda",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -24342,7 +24294,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kite Noodle",
           "Spring Nymphar"
@@ -24350,11 +24302,11 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Speed Panda",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -25346,7 +25298,7 @@
     "hp": 61359,
     "max_hp": 68218,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.86,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -25430,15 +25382,11 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "role",
@@ -25468,7 +25416,7 @@
     "hp": 61615,
     "max_hp": 61615,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.86,
     "absorb": 9921,
     "stack": null,
     "buffs": [],
@@ -25556,22 +25504,18 @@
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
-    "happened": "Took 72,652 at full HP. A 9,921 shield and 15% mitigation were not enough.",
+    "happened": "Took 72,652 at full HP. A 9,921 shield and 14% mitigation were not enough.",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
     "went_wrong": "Spring Nymphar died to the real hit.",
     "cause": "resolve",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "role",
@@ -25601,7 +25545,7 @@
     "hp": 99223,
     "max_hp": 99223,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.86,
     "absorb": 9921,
     "stack": null,
     "buffs": [],
@@ -25730,7 +25674,7 @@
     "hp": 61737,
     "max_hp": 61737,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.86,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -25850,7 +25794,7 @@
     "hp": 33275,
     "max_hp": 62101,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.95,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -25926,18 +25870,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33,
+        "confidence": 75,
         "via": [
           "Spring Nymphar"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "role",
@@ -25967,7 +25907,7 @@
     "hp": 68259,
     "max_hp": 68259,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.86,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -26085,7 +26025,7 @@
     "hp": 68662,
     "max_hp": 68662,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.86,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -26206,7 +26146,7 @@
     "hp": 12516,
     "max_hp": 99211,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.9,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -32652,7 +32592,7 @@
     "hp": 61737,
     "max_hp": 61737,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.81,
     "absorb": 8342,
     "stack": null,
     "buffs": [],
@@ -32972,7 +32912,7 @@
     "hp": 99211,
     "max_hp": 99211,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.72,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -33105,7 +33045,7 @@
     "hp": 54770,
     "max_hp": 68259,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 1.0,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -33239,7 +33179,7 @@
     "hp": 61615,
     "max_hp": 61615,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 2.84,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -33326,7 +33266,7 @@
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
-    "happened": "Took 661,323 at full HP. A healer takes about 9\u201323k.",
+    "happened": "Took 661,323 at full HP. The hit was amplified 184%. A one-shot.",
     "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9\u201323k. Arrows face east: an up arrow resolves west and a down arrow east, and a 2 goes northwest or northeast. An arrow holder on the wrong side owns the landing. With only circles diving, the overlap is a miscommunication.",
     "went_wrong": "Spring Nymphar stood in the dive, a miscommunication.",
     "cause": "miscommunication",
@@ -34915,11 +34855,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd"
@@ -34927,7 +34867,7 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -35043,11 +34983,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd"
@@ -35055,7 +34995,7 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -35148,11 +35088,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd"
@@ -35160,7 +35100,7 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -35250,11 +35190,11 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd"
@@ -35262,7 +35202,7 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -35358,7 +35298,7 @@
     "hp": 68218,
     "max_hp": 68218,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.81,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -35467,7 +35407,7 @@
     "hp": 45322,
     "max_hp": 68259,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.81,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -35575,7 +35515,7 @@
     "hp": 50595,
     "max_hp": 61615,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.81,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -35651,15 +35591,11 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "role",
@@ -35689,7 +35625,7 @@
     "hp": 68662,
     "max_hp": 68662,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.81,
     "absorb": 13305,
     "stack": null,
     "buffs": [],
@@ -35810,7 +35746,7 @@
     "hp": 62101,
     "max_hp": 62101,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.81,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -35921,7 +35857,7 @@
     "hp": 46921,
     "max_hp": 61737,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.81,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -36003,7 +35939,7 @@
     "blames": [
       {
         "who": "Missed soak",
-        "confidence": 25,
+        "confidence": 50,
         "via": [
           "Loki Doki"
         ]
@@ -36017,10 +35953,6 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 25
-      },
-      {
-        "who": "Party mitigation",
         "confidence": 25
       }
     ],
@@ -36051,7 +35983,7 @@
     "hp": 97212,
     "max_hp": 99223,
     "unmitigated": null,
-    "multiplier": null,
+    "multiplier": 0.81,
     "absorb": 0,
     "stack": null,
     "buffs": [],

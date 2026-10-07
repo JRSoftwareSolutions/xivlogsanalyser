@@ -92,6 +92,10 @@ Each flag is an open question, not a verdict:
 - `mass-self`: three or more players died to one cast, each blamed on themselves. Did one earlier action cause all of them?
 - `raw-after-death`: a raw death after someone already died. Was the party short?
 - `thin-split`: three or more players share it. Is one of them the real cause?
+- `degraded`: the call was made without an input it reads. Fetch it (`check`) and reanalyze.
+- `mass-wall`: the pull's first mistake is three or more players dying with no packet at once. Was it the deathwall, or a hit the log did not record (8DYNHQx4C7ytdLb9 pull 33, right after Eye of the Tyrant)?
+
+`python -m xivloganalyzer evidence <code> --pull N` prints the pull's hits, markers, and deaths in time order, then each call with its `basis`: what decided the owner (their own hit, a debuff, positions, who the cast hit, a role rule, no packet, or a label). A `role` or `label` basis, or a call with `missing` inputs, is the weakest. Record each call you checked with `confirm` (`review-new-log`).
 
 Work one flag and one mechanic at a time. For each, follow the steps above on two or three pulls, including a clean pull for contrast.
 
@@ -100,6 +104,6 @@ Work one flag and one mechanic at a time. For each, follow the steps above on tw
 1. Show the rule holds on every pull it touches, not just the reported one. Look for counterexamples: a clean pull, a pull with the same shape and a different cause.
 2. Put mechanic facts in `fights/dsr/mechanics.json` (for example `needs_everyone`, a list of rows with the soak, `roles`, `until` or `after`, and `holders`) and the mechanic's skill. Put shared logic in `src/xivloganalyzer/judge.py` and `extract.py`.
 3. Add a test that names the pull and the owner, in `tests/test_audit_rules.py`, or `tests/test_reference.py` for the reference log.
-4. Run the tests, then `python -m xivloganalyzer reanalyze`. Compare `audit` before and after.
+4. Run the tests, then `python -m xivloganalyzer reanalyze`. Read `python -m xivloganalyzer changes --since HEAD`: every call the rule moved, on every log. A moved call you did not expect is a counterexample. Run `verify`, and compare `audit` before and after.
 5. Update `notes/classification.md` with the reason, and `review-mechanic` when the blame list changes.
 6. Ask the person when the data cannot decide. Do not guess a mechanic's plan.

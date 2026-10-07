@@ -114,10 +114,11 @@ class JumpGroupTest(unittest.TestCase):
 class PassedOnTest(unittest.TestCase):
     def test_an_empty_tower_left_by_a_killed_player_belongs_to_the_killer(self):
         # Kitana and Spring died to the same jump. Their deaths were the healers', so their towers are too.
+        # Each dead player is one share: Speed's and Loki's own, and Kitana's and Spring's split between the healers.
         item = _one("XVz8bCqgPw1KRh9d", 26, "Kite Noodle", "Eternal Conviction")
         self.assertEqual(item.fact.down, ["Speed Panda", "Spring Nymphar", "Kitana Kahn", "Loki Doki"])
         self.assertEqual(
-            _owners(item), [("Speed Panda", 33), ("Loki Doki", 33), ("Spring Nymphar", 33)],
+            _owners(item), [("Speed Panda", 25), ("Loki Doki", 50), ("Spring Nymphar", 25)],
         )
 
     def test_dead_threes_leave_the_first_dive_towers_empty(self):
@@ -127,7 +128,8 @@ class PassedOnTest(unittest.TestCase):
                 continue
             self.assertEqual(item.fact.down, ["Loki Doki", "Speed Panda"])
             self.assertEqual(item.went_wrong, "Loki Doki and Speed Panda were already dead, so a tower was empty.")
-            self.assertEqual(_owners(item), [("Loki Doki", 50), ("Spring Nymphar", 50)])
+            # Loki died first, so Speed's missed heal was more Spring's: 37 and 62.
+            self.assertEqual(_owners(item), [("Loki Doki", 37), ("Spring Nymphar", 62)])
 
     def test_first_dive_towers_with_every_three_alive_stay_unnamed(self):
         towers = [item for item in _deaths("8DYNHQx4C7ytdLb9", 36, "Darkdragon Dive") if item.cause == "tower"]

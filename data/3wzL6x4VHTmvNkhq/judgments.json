@@ -3217,7 +3217,7 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 16,
+        "confidence": 20,
         "via": [
           "Kite Noodle",
           "Kitana Kahn"
@@ -3225,7 +3225,7 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 16,
+        "confidence": 20,
         "via": [
           "Kite Noodle",
           "Kitana Kahn"
@@ -3233,25 +3233,25 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 16,
+        "confidence": 20,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Speed Panda",
-        "confidence": 16
+        "confidence": 10
       },
       {
         "who": "Absolute Gigalad",
-        "confidence": 16,
+        "confidence": 10,
         "via": [
           "Speed Panda"
         ]
       },
       {
         "who": "Missing bodies",
-        "confidence": 16,
+        "confidence": 20,
         "via": [
           "Spring Nymphar"
         ]
@@ -4790,7 +4790,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
@@ -4798,11 +4798,11 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -4905,7 +4905,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
@@ -4913,11 +4913,11 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -5020,7 +5020,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
@@ -5028,11 +5028,11 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -5135,7 +5135,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
@@ -5143,11 +5143,11 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -7727,7 +7727,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 25,
+        "confidence": 40,
         "via": [
           "Kite Noodle",
           "Speed Panda"
@@ -7735,15 +7735,15 @@
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 25
+        "confidence": 20
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 20
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 25
+        "confidence": 20
       }
     ],
     "basis": "hit-list",
@@ -7824,7 +7824,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 25,
+        "confidence": 40,
         "via": [
           "Kite Noodle",
           "Speed Panda"
@@ -7832,15 +7832,15 @@
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 25
+        "confidence": 20
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 20
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 25
+        "confidence": 20
       }
     ],
     "basis": "hit-list",
@@ -9419,7 +9419,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Speed Panda",
           "Loki Doki"
@@ -9427,11 +9427,11 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -9511,7 +9511,7 @@
     "blames": [
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Speed Panda",
           "Loki Doki"
@@ -9519,11 +9519,11 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -9937,14 +9937,14 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Loki Doki"
         ]
       },
       {
         "who": "Party mitigation",
-        "confidence": 50
+        "confidence": 33
       }
     ],
     "basis": "role",
@@ -10033,14 +10033,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 12,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 87,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda",
@@ -10133,14 +10133,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 12,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 87,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda",
@@ -10249,14 +10249,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 12,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 87,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda",
@@ -10378,14 +10378,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 12,
         "via": [
           "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 87,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda",
@@ -11189,7 +11189,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 33,
+        "confidence": 66,
         "via": [
           "Kite Noodle",
           "Speed Panda",
@@ -11198,11 +11198,11 @@
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 33
+        "confidence": 16
       },
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 16
       }
     ],
     "basis": "hit-list",
@@ -11307,7 +11307,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 33,
+        "confidence": 66,
         "via": [
           "Kite Noodle",
           "Speed Panda",
@@ -11316,11 +11316,11 @@
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 33
+        "confidence": 16
       },
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 16
       }
     ],
     "basis": "hit-list",
@@ -12990,25 +12990,25 @@
     "blames": [
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 25,
+        "confidence": 40,
         "via": [
           "Kite Noodle"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 25
+        "confidence": 20
       },
       {
         "who": "Missing bodies",
-        "confidence": 25,
+        "confidence": 20,
         "via": [
           "Loki Doki"
         ]
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 25
+        "confidence": 20
       }
     ],
     "basis": "hit-list",
@@ -13100,25 +13100,25 @@
     "blames": [
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 25,
+        "confidence": 40,
         "via": [
           "Kite Noodle"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 25
+        "confidence": 20
       },
       {
         "who": "Missing bodies",
-        "confidence": 25,
+        "confidence": 20,
         "via": [
           "Loki Doki"
         ]
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 25
+        "confidence": 20
       }
     ],
     "basis": "hit-list",
@@ -18528,18 +18528,18 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Speed Panda"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 25,
         "via": [
           "Loki Doki"
         ]
@@ -18630,18 +18630,18 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Speed Panda"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 25,
         "via": [
           "Loki Doki"
         ]
@@ -18755,18 +18755,18 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Speed Panda"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Missing bodies",
-        "confidence": 33,
+        "confidence": 25,
         "via": [
           "Loki Doki"
         ]
@@ -19479,15 +19479,15 @@
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 33
+        "confidence": 25
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Speed Panda"
         ]
@@ -24679,7 +24679,7 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 66,
         "via": [
           "Kite Noodle",
           "Kitana Kahn",
@@ -24688,11 +24688,11 @@
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 33
+        "confidence": 16
       },
       {
         "who": "Absolute Gigalad",
-        "confidence": 33
+        "confidence": 16
       }
     ],
     "basis": "hit-list",
@@ -24782,7 +24782,7 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 66,
         "via": [
           "Kite Noodle",
           "Kitana Kahn",
@@ -24791,11 +24791,11 @@
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 33
+        "confidence": 16
       },
       {
         "who": "Absolute Gigalad",
-        "confidence": 33
+        "confidence": 16
       }
     ],
     "basis": "hit-list",
@@ -25114,7 +25114,7 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 33,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25122,7 +25122,7 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25205,7 +25205,7 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 33,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25213,7 +25213,7 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25296,7 +25296,7 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 33,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25304,7 +25304,7 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25390,7 +25390,7 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 33,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25398,7 +25398,7 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25499,7 +25499,7 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 33,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25507,7 +25507,7 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25620,7 +25620,7 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50,
+        "confidence": 33,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25628,7 +25628,7 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 66,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda"
@@ -25830,17 +25830,17 @@
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
-    "happened": "Took 62,668 at 66% HP (40,736 of 61,615). Dimensional Collapse had taken 37,953 0.3s before.",
+    "happened": "Took 62,668 at 66% HP. Shared by 4 of 5.",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Spring Nymphar was still low from Dimensional Collapse.",
-    "cause": "self",
+    "went_wrong": "The stack was 4 of 5.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Spring Nymphar",
+        "who": "Missing bodies",
         "confidence": 100
       }
     ],
-    "basis": "hit",
+    "basis": "label",
     "first": false,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
@@ -26164,8 +26164,11 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Missing bodies",
+        "confidence": 50,
+        "via": [
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Kitana Kahn",
@@ -26314,8 +26317,11 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Missing bodies",
+        "confidence": 50,
+        "via": [
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Kitana Kahn",
@@ -26476,8 +26482,11 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Missing bodies",
+        "confidence": 50,
+        "via": [
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Kitana Kahn",
@@ -26628,8 +26637,11 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Missing bodies",
+        "confidence": 50,
+        "via": [
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Kitana Kahn",
@@ -26781,8 +26793,11 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Missing bodies",
+        "confidence": 50,
+        "via": [
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Kitana Kahn",
@@ -29613,7 +29628,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 50,
+        "confidence": 83,
         "via": [
           "Kiara Blaiddyd",
           "Speed Panda",
@@ -29623,7 +29638,7 @@
       },
       {
         "who": "Kite Noodle",
-        "confidence": 50
+        "confidence": 16
       }
     ],
     "basis": "hit-list",
@@ -38495,14 +38510,14 @@
     "blames": [
       {
         "who": "Absolute Gigalad",
-        "confidence": 50,
+        "confidence": 75,
         "via": [
           "Loki Doki"
         ]
       },
       {
         "who": "Speed Panda",
-        "confidence": 50,
+        "confidence": 25,
         "via": [
           "Loki Doki"
         ]
@@ -45507,7 +45522,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 33,
+        "confidence": 60,
         "via": [
           "Speed Panda",
           "Loki Doki"
@@ -45515,11 +45530,11 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 20
       },
       {
         "who": "Kite Noodle",
-        "confidence": 33
+        "confidence": 20
       }
     ],
     "basis": "hit-list",
@@ -46180,7 +46195,7 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Kite Noodle",
           "Kiara Blaiddyd",
@@ -46191,7 +46206,7 @@
       },
       {
         "who": "Absolute Gigachad",
-        "confidence": 33,
+        "confidence": 28,
         "via": [
           "Kite Noodle",
           "Kiara Blaiddyd"
@@ -46199,7 +46214,7 @@
       },
       {
         "who": "Loki Doki",
-        "confidence": 33,
+        "confidence": 21,
         "via": [
           "Speed Panda",
           "Kitana Kahn"

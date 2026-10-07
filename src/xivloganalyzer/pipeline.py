@@ -52,6 +52,8 @@ class Outcome:
     judged: bool
     reason: str = ""
     changes: list[Change] = field(default_factory=list)
+    # Why the folder could not be read, such as a missing file or no fight pack for its zone.
+    error: str = ""
 
 
 def _meta(report: Path) -> dict:
@@ -97,8 +99,16 @@ def _run(reports: list[Path], root: Path, force: set[str]) -> list[Outcome]:
     summaries = []
     for report in reports:
         report = report.resolve()
-        meta = _meta(report)
-        pack = _pack(report, meta, catalog)
+        try:
+            meta = _meta(report)
+            pack = _pack(report, meta, catalog)
+        except (SystemExit, OSError, ValueError, KeyError) as problem:
+            # One bad folder does not stop the others. Its last dashboard entry stays.
+            outcomes.append(Outcome(report.name, Counter(), False, error=str(problem) or type(problem).__name__))
+            stamp = read_stamp(report)
+            if stamp and isinstance(stamp.get("summary"), dict):
+                summaries.append(stamp["summary"])
+            continue
         if report.name in force:
             reason = "requested"
         else:
@@ -123,6 +133,8 @@ def analyze(report: Path, root: Path | None = None) -> Outcome:
     report = report.resolve()
     others = [folder for folder in report_dirs(root) if folder.resolve() != report]
     outcomes = _run([report, *others], root, force={report.name})
+    if outcomes[0].error:
+        raise SystemExit(f"{report.name}: {outcomes[0].error}")
     return outcomes[0]
 
 
@@ -141,6 +153,10 @@ def status(root: Path | None = None) -> list[tuple[str, str]]:
     engine = engine_version()
     rows = []
     for report in report_dirs(root):
-        pack = _pack(report, _meta(report), catalog)
+        try:
+            pack = _pack(report, _meta(report), catalog)
+        except (SystemExit, OSError, ValueError, KeyError) as problem:
+            rows.append((report.name, f"cannot be read: {problem}"))
+            continue
         rows.append((report.name, check(report, pack.folder, engine).reason))
     return rows

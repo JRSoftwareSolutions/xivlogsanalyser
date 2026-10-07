@@ -48,8 +48,9 @@ class CallsFileTest(unittest.TestCase):
         after[0]["owners"] = "Somebody Else 100"
         after[1]["outcome"] = "raw"
         after[2]["happened"] = "different words"
+        after[3]["owners"] = owners_text([dict(blame, confidence=1) for blame in parse_owners(before[3]["owners"])])
         changes = diff_calls(before, after)
-        self.assertEqual([change.kind for change in changes], ["owners", "outcome"])
+        self.assertEqual([change.kind for change in changes], ["owners", "outcome", "shares"])
         self.assertEqual(diff_calls(before, before), [])
 
 

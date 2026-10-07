@@ -15,7 +15,7 @@ from html import unescape
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, MarkerSpots
-from xivloganalyzer.mitigations import load_mitigations, mitigations_for
+from xivloganalyzer.mitigations import load_mitigations, mitigations_for, replay_multiplier
 from xivloganalyzer.roster import actor_for, players, pull_players
 
 ROW_RE = re.compile(r'<tr style="cursor:pointer".*?</script>', re.S)
@@ -951,6 +951,9 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                     stack = _stack_size(by_guid[guid], fight["id"], timestamp)
             if mult is not None:
                 mult = float(mult)
+            elif event is None:
+                # No ability file for this hit: the replay may still have seen its multiplier.
+                mult = replay_multiplier(mitigation_tables, fight["id"], target, guid, timestamp)
             source = (event or {}).get("sourceID")
             mits = mitigations_for(
                 mitigation_tables, fight["id"], target, source, guid, timestamp,

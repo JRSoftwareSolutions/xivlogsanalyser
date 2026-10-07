@@ -641,10 +641,14 @@ def _self_mits(fact: DeathFact) -> list[dict]:
 
 def _personal_mit(fact: DeathFact, pack: FightPack) -> bool:
     """They used their own mitigation on this hit. The replay says so for any job.
-    Without it, a known name on the packet or a heavily cut hit counts."""
+    Without it, a known name on the packet or a heavily cut hit counts. With no
+    multiplier, no buffs, and no replay rows, nothing says they had none, so it
+    counts as had."""
     if _self_mits(fact) or any(name in fact.buffs for name in pack.personal_mit):
         return True
-    return fact.multiplier is not None and fact.multiplier <= 0.75
+    if fact.multiplier is None:
+        return not fact.buffs and not fact.mitigations
+    return fact.multiplier <= 0.75
 
 
 def _personal(fact: DeathFact, mechanic: Mechanic) -> str:
@@ -760,7 +764,7 @@ def _landing(fact: DeathFact) -> tuple[str, str]:
 
 
 def _skyward_marker(fact: DeathFact) -> str:
-    if fact.max_hp and fact.hp is not None and fact.hp < fact.max_hp:
+    if _skyward_cause(fact) == "healers":
         return f"{fact.name} wasn't full for Skyward Leap."
     return f"{fact.name} died to Skyward Leap without mitigation."
 
@@ -770,7 +774,8 @@ def _skyward_clip(fact: DeathFact) -> str:
 
 
 def _skyward_cause(fact: DeathFact) -> str:
-    if fact.max_hp and fact.hp is not None and fact.hp < fact.max_hp:
+    """Short of full HP is the healers', when full HP would have lived. Otherwise it needed mitigation."""
+    if _known_hp(fact) and not _full(fact) and _landed(fact) < fact.max_hp:
         return "healers"
     return "mitigation"
 
@@ -830,7 +835,8 @@ def _own_damage(fact: DeathFact) -> dict | None:
     if not fact.self_hits or not _known_hp(fact):
         return None
     taken = sum(hit["amount"] for hit in fact.self_hits)
-    if fact.hp + taken < _landed(fact):
+    # They could not have had more than full HP back.
+    if min(fact.hp + taken, fact.max_hp) < _landed(fact):
         return None
     return max(fact.self_hits, key=lambda hit: hit["amount"])
 
@@ -873,9 +879,10 @@ def _group(who: str, people: int) -> list[Blame]:
 
 def _no_party_mit(fact: DeathFact) -> bool:
     """No party mitigation on the hit. Their own cooldowns are taken out first, so a
-    tank who used Rampart is not counted as covered by the party."""
+    tank who used Rampart is not counted as covered by the party. An unknown
+    multiplier says nothing, so it adds no share."""
     if fact.multiplier is None:
-        return True
+        return False
     own = 1.0
     for mit in _self_mits(fact):
         if mit.get("pct") is not None and mit["pct"] < 100:
@@ -1262,53 +1269,81 @@ def _healers(roster: list[tuple[str, str]]) -> list[str]:
 
 def _death_owners(item: Judgment) -> list[str]:
     """Who owns this death, without the shares that only sit beside an owner."""
-    owners = [blame.who for blame in item.blames if blame.who not in CONTEXT_SHARES]
-    return owners or [item.fact.name]
+    return list(_death_shares(item))
+
+
+def _death_shares(item: Judgment) -> dict[str, float]:
+    """Who owns this death and how much of it, without the shares that only sit beside an owner."""
+    named = [(blame.who, blame.confidence) for blame in item.blames if blame.who not in CONTEXT_SHARES]
+    if not named:
+        return {item.fact.name: 1.0}
+    total = sum(share for _who, share in named) or len(named)
+    return {who: (share or 1) / total for who, share in named}
+
+
+Weights = dict[str, float]
+
+
+def _add(weights: Weights, who: str, part: float) -> None:
+    weights[who] = weights.get(who, 0.0) + part
 
 
 def _passed_on(
     item: Judgment, names: list[str], latest: dict[tuple[int, str], Judgment],
     via: dict[str, list[str]] | None = None,
-) -> list[str]:
+) -> Weights:
     """Players who were missing because they were dead, each replaced by whoever owned that death.
 
-    A player who died to their own mistake keeps it. A player killed by someone
-    else's mistake, a healer's missed heal included, passes it on to that owner.
+    Each missing player is one share. A player who died to their own mistake keeps
+    it. A player killed by someone else's mistake, a healer's missed heal included,
+    passes it on to that death's owners, split the way that death was.
     `via` collects, for each owner, the dead players it came through.
     """
-    owners: list[str] = []
+    weights: Weights = {}
     for name in names:
         earlier = latest.get((item.fact.fight, name))
-        passed = _death_owners(earlier) if earlier is not None else [name]
-        for who in passed:
+        passed = _death_shares(earlier) if earlier is not None else {name: 1.0}
+        for who, part in passed.items():
+            _add(weights, who, part)
             if via is not None and who != name:
                 came = via.setdefault(who, [])
                 if name not in came:
                     came.append(name)
-        owners += [who for who in passed if who not in owners]
-    return owners
+    return weights
 
 
 def _missing_owners(
     item: Judgment, latest: dict[tuple[int, str], Judgment], via: dict[str, list[str]] | None = None,
-) -> list[str]:
+) -> Weights:
     """Who left a mechanic short: the dead, passed on to their owners, then the living who were elsewhere."""
-    owners = _passed_on(item, item.fact.down, latest, via)
-    owners += [name for name in [*item.fact.unsoaked, *item.fact.doubled] if name not in owners]
-    return owners
+    weights = _passed_on(item, item.fact.down, latest, via)
+    for name in [*item.fact.unsoaked, *item.fact.doubled]:
+        _add(weights, name, 1.0)
+    return weights
 
 
 def _healers_at(
     item: Judgment, healers: list[str], latest: dict[tuple[int, str], Judgment],
     via: dict[str, list[str]] | None = None,
-) -> list[str]:
+) -> Weights:
     """The healers who could heal this hit. A healer already dead passes their share
     on to whoever owned that healer's death."""
-    owners: list[str] = []
+    weights: Weights = {}
     for healer in healers:
-        passed = _passed_on(item, [healer], latest, via) if healer in item.fact.dead else [healer]
-        owners += [who for who in passed if who not in owners]
-    return owners
+        if healer in item.fact.dead:
+            for who, part in _passed_on(item, [healer], latest, via).items():
+                _add(weights, who, part)
+        else:
+            _add(weights, healer, 1.0)
+    return weights
+
+
+def _weighted(weights: Weights) -> list[Blame]:
+    """Shares of 100 in proportion to each owner's weight, rounded down."""
+    total = sum(weights.values())
+    if not total:
+        return []
+    return [Blame(who, max(1, int(100 * part / total + 1e-9))) for who, part in weights.items()]
 
 
 # Shares that sit beside an owner rather than owning a death.
@@ -1367,13 +1402,14 @@ def _owners_for(
     elif item.cause in {"empty", "redirected"}:
         # A redirected jump follows the marker, so the living players of that group did nothing wrong.
         if item.cause == "redirected":
-            item.owners = _passed_on(item, item.fact.down, latest, via)
+            weights = _passed_on(item, item.fact.down, latest, via)
         else:
-            item.owners = _missing_owners(item, latest, via)
+            weights = _missing_owners(item, latest, via)
+        item.owners = list(weights)
         if len(item.owners) == 1 and item.owners[0] in GROUP_LABELS:
             item.blames = _group(item.owners[0], 2)
         else:
-            item.blames = _shares(item.owners)
+            item.blames = _weighted(weights)
     elif item.cause == "orphan":
         item.blames = _group("Earlier deaths", 1)
     elif item.cause == "overlap":
@@ -1385,7 +1421,7 @@ def _owners_for(
         cohort = [other for other in judgments if _same_cast(item, other)]
         item.blames = _group("Miscommunication", len(_overlap_names(item, cohort)))
     elif item.cause == "healers":
-        item.blames = _shares(_healers_at(item, healers, latest, via) or ["Healers"])
+        item.blames = _weighted(_healers_at(item, healers, latest, via) or {"Healers": 1.0})
     elif item.cause == "mitigation":
         item.blames = _group("Assigned mitigation", 2)
     elif item.cause == "tower":
@@ -1395,8 +1431,9 @@ def _owners_for(
     elif item.cause == "clip":
         item.blames = _group("Out of position", 3)
     elif item.cause == "missing" and (item.fact.down or item.fact.unsoaked or item.fact.doubled):
-        item.owners = _missing_owners(item, latest, via)
-        item.blames = _shares(item.owners)
+        weights = _missing_owners(item, latest, via)
+        item.owners = list(weights)
+        item.blames = _weighted(weights)
     elif item.cause == "missing":
         if not item.fact.stack:
             item.blames = _group("Missing bodies", 2)
@@ -1406,14 +1443,14 @@ def _owners_for(
             missing = max(typical - (item.fact.stack or 0), 1)
             item.blames = _group("Missing bodies", missing)
     elif item.cause == "resolve":
-        owners = _healers_at(item, healers, latest, via) or ["Healers"]
+        weights = _healers_at(item, healers, latest, via) or {"Healers": 1.0}
         if _no_party_mit(item.fact):
-            owners.append("Party mitigation")
-        item.blames = _shares(owners)
+            _add(weights, "Party mitigation", 1.0)
+        item.blames = _weighted(weights)
     elif item.cause == "low":
-        owners = _healers_at(item, healers, latest, via) or ["Healers"]
-        owners.append("Earlier damage")
-        item.blames = _shares(owners)
+        weights = _healers_at(item, healers, latest, via) or {"Healers": 1.0}
+        _add(weights, "Earlier damage", 1.0)
+        item.blames = _weighted(weights)
     else:
         item.blames = []
 

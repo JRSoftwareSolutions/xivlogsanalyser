@@ -54,24 +54,26 @@ class DiveFromGraceTest(unittest.TestCase):
     def test_short_stack_and_full_stack(self):
         # The 2s and 3s stack. Kite, Loki, and Kiara were already dead, and each gap
         # belongs to whoever owned that death: the healers for Final Chorus, Kiara for the auto.
+        # Each dead player is one share, split the way their death was.
         short = self._one(16, "Kitana Kahn", 26388)
         self.assertEqual(short.outcome, "fail")
         self.assertEqual(short.fact.down, ["Kite Noodle", "Loki Doki", "Kiara Blaiddyd"])
         self.assertEqual(
             [blame.to_dict() for blame in short.blames],
             [
-                {"who": "Loki Doki", "confidence": 33, "via": ["Kite Noodle"]},
-                {"who": "Spring Nymphar", "confidence": 33, "via": ["Kite Noodle", "Loki Doki"]},
+                {"who": "Loki Doki", "confidence": 25, "via": ["Kite Noodle"]},
+                {"who": "Spring Nymphar", "confidence": 41, "via": ["Kite Noodle", "Loki Doki"]},
                 {"who": "Kiara Blaiddyd", "confidence": 33},
             ],
         )
         self.assertEqual(short.basis, "hit-list")
         raw = self._one(26, "Loki Doki", 26388)
         self.assertEqual(raw.outcome, "raw")
-        self.assertEqual(
-            [blame.who for blame in raw.blames],
-            ["Loki Doki", "Spring Nymphar", "Party mitigation"],
-        )
+        # The log has no Eye of the Tyrant file and the replay did not list the hit, so
+        # nothing says whether the party mitigated it: no Party mitigation share.
+        self.assertIsNone(raw.fact.multiplier)
+        self.assertIn("ability 26388", raw.fact.missing)
+        self.assertEqual([blame.who for blame in raw.blames], ["Loki Doki", "Spring Nymphar"])
 
     def test_arrow_on_the_wrong_side_owns_the_landing(self):
         loki = self._one(27, "Loki Doki", 26384)

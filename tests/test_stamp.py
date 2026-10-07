@@ -100,3 +100,23 @@ class ReanalyzeSkipsCurrentReportsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BadFolderTest(unittest.TestCase):
+    def test_one_unreadable_log_does_not_stop_the_others(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            shutil.copytree(ROOT / "fights", root / "fights")
+            shutil.copytree(ROOT / "data" / "XVz8bCqgPw1KRh9d", root / "data" / "XVz8bCqgPw1KRh9d")
+            bad = root / "reports" / "OTHERZONE"
+            bad.mkdir(parents=True)
+            (bad / "fights.json").write_text('{"fights": [{"id": 1, "zoneID": 1}]}', encoding="utf-8")
+            (bad / "deaths-html.json").write_text("[]", encoding="utf-8")
+
+            outcomes = {item.name: item for item in reanalyze(root, everything=True)}
+            self.assertIn("No fight knowledge", outcomes["OTHERZONE"].error)
+            self.assertTrue(outcomes["XVz8bCqgPw1KRh9d"].judged)
+            self.assertEqual(outcomes["XVz8bCqgPw1KRh9d"].counts["raw"], 40)
+            rows = dict(status(root))
+            self.assertTrue(rows["OTHERZONE"].startswith("cannot be read"))
+            self.assertEqual(rows["XVz8bCqgPw1KRh9d"], "")

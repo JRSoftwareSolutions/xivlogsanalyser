@@ -21,6 +21,7 @@ FLAGS = {
     "raw-after-death": "A raw death after someone already died in the pull. Was the party short, or still healthy?",
     "thin-split": "Three or more players split it. Is one of them the real cause?",
     "degraded": "The call was made without an input it reads (see `check`). Fetch it and reanalyze.",
+    "mass-wall": "The pull's first mistake is three or more players dying with no damage packet at once. Was it the deathwall, or a hit the log did not record?",
 }
 
 
@@ -61,6 +62,14 @@ def flag_rows(rows: list[dict]) -> dict[str, list[dict]]:
                 ]
                 if len(cast) >= 3 and row.get("mechanic_id") != "deathwall":
                     found["mass-self"].append(row)
+            if row.get("mechanic_id") == "deathwall":
+                together = [
+                    other for other in pull
+                    if other.get("mechanic_id") == "deathwall" and other.get("phase") == row.get("phase")
+                    and abs((other.get("t") or 0) - (row.get("t") or 0)) <= _CAST_S
+                ]
+                if len(together) >= 3 and any(other.get("first") for other in together):
+                    found["mass-wall"].append(row)
             earlier = [
                 other for other in pull[:index]
                 if (other.get("phase"), other.get("t")) < (row.get("phase"), row.get("t"))

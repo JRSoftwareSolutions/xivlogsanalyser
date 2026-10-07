@@ -7,6 +7,7 @@ from collections import Counter
 from pathlib import Path
 
 from xivloganalyzer.dashboard import session_clock
+from xivloganalyzer.inputs import problems, read_inputs
 from xivloganalyzer.night import night_lines
 
 # Default detail lines: the ones that still need a judgment pass or own the headline.
@@ -169,6 +170,15 @@ def format_brief(
         header += f" · {clock}"
     lines.append(header)
     lines.append(_count_line(all_counts if not scoped else counts))
+    inputs = read_inputs(report) or {}
+    skipped = (inputs.get("deaths") or {}).get("not_judged_by_reason") or {}
+    if skipped and not scoped:
+        total = sum(skipped.values())
+        why = "; ".join(f"{count} {reason}" for reason, count in skipped.items())
+        lines.append(f"not judged: {total} deaths ({why})")
+    gaps = problems(inputs) if inputs else []
+    if gaps and not scoped:
+        lines.append(f"inputs missing: {len(gaps)} kinds, calls on them are weaker. Run: python -m xivloganalyzer check {report.name}")
     if scoped:
         scope_bits = []
         if pull is not None:

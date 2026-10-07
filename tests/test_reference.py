@@ -182,24 +182,26 @@ class ReferenceReportTest(unittest.TestCase):
         # Six players were dead before the towers. Each gap belongs to whoever owned that death:
         # Kite and Spring died to the short stack Kitana left, so theirs are Kitana's. Loki's ice
         # had no partner because Kite and Kitana were dead, so Loki's gap is Kitana's too.
+        # Four of the six gaps are Kitana's.
         self.assertEqual(
             owners(one(14, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Speed Panda", 33), ("Absolute Gigachad", 33), ("Kitana Kahn", 33)],
+            [("Speed Panda", 16), ("Absolute Gigachad", 16), ("Kitana Kahn", 66)],
         )
         # Kitana and Spring died to a jump the healers did not heal them for, so their gaps are the healers'.
+        # Speed's and Loki's gaps are their own; Kitana's and Spring's are split between the two healers.
         self.assertEqual(
             owners(one(26, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Speed Panda", 33), ("Loki Doki", 33), ("Spring Nymphar", 33)],
+            [("Speed Panda", 25), ("Loki Doki", 50), ("Spring Nymphar", 25)],
         )
         # Kitana's ice had no partner because Gigalad and Loki doubled up in another one,
-        # so the tower Kitana should have stood in is theirs.
+        # so the tower Kitana should have stood in is theirs. Gigachad's own gap is the other half.
         self.assertEqual(
             owners(one(15, "Kitana Kahn", "Hiemal Storm")),
             [("Absolute Gigalad", 50), ("Loki Doki", 50)],
         )
         self.assertEqual(
             owners(one(15, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Absolute Gigachad", 33), ("Absolute Gigalad", 33), ("Loki Doki", 33)],
+            [("Absolute Gigachad", 50), ("Absolute Gigalad", 25), ("Loki Doki", 25)],
         )
         # Everyone was alive, and the one the towers missed owns it.
         self.assertEqual(
@@ -234,8 +236,13 @@ class ReferenceReportTest(unittest.TestCase):
                 self.assertGreaterEqual(blame.confidence, 1)
                 self.assertLessEqual(blame.confidence, 100)
             if len(item.blames) > 1:
-                self.assertEqual(len({blame.confidence for blame in item.blames}), 1)
-                self.assertEqual(item.blames[0].confidence, 100 // len(item.blames))
+                # A share passed on through a dead player is split the way that death was,
+                # so shares can differ. Rounded down, they add up to 100 less under one per owner.
+                total = sum(blame.confidence for blame in item.blames)
+                self.assertLessEqual(total, 100)
+                self.assertGreater(total, 100 - len(item.blames))
+                if item.cause not in {"empty", "redirected", "missing", "healers", "resolve", "low"}:
+                    self.assertEqual(len({blame.confidence for blame in item.blames}), 1)
             elif item.blames[0].who == item.fact.name:
                 self.assertEqual(item.blames[0].confidence, 100)
 

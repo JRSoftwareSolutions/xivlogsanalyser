@@ -146,8 +146,11 @@ class Change:
             return "gone"
         if self.before["outcome"] != self.after["outcome"]:
             return "outcome"
-        if _owners(self.before) != _owners(self.after):
+        named = lambda row: set(named_owners(parse_owners(row["owners"])))  # noqa: E731
+        if named(self.before) != named(self.after):
             return "owners"
+        if _owners(self.before) != _owners(self.after):
+            return "shares"
         return "reason"
 
 
@@ -190,6 +193,6 @@ def change_summary(changes: list[Change]) -> str:
     counts: dict[str, int] = {}
     for change in changes:
         counts[change.kind] = counts.get(change.kind, 0) + 1
-    order = ("outcome", "owners", "reason", "new", "gone")
+    order = ("outcome", "owners", "shares", "reason", "new", "gone")
     parts = [f"{counts[kind]} {kind}" for kind in order if counts.get(kind)]
     return f"{len(changes)} calls changed ({', '.join(parts)})"

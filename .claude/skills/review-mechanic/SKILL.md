@@ -98,11 +98,21 @@ An ability that is not understood yet has no blame.
 
 ## When a call is wrong
 
-A correction ("X should be Y", "that is not a mistake", "that one is a fail") updates `fights/dsr/mechanics.json`, then:
+A correction ("X should be Y", "that is not a mistake", "that one is a fail") is first recorded as the person's call, so no later rule change can undo it:
+
+```
+python -m xivloganalyzer confirm <code> --pull N --name "<player>" --outcome <outcome> --owners "A,B" --by user --why "<their words>"
+```
+
+Then update `fights/dsr/mechanics.json` and run:
 
 ```
 python -m xivloganalyzer reanalyze
+python -m xivloganalyzer changes --since HEAD
+python -m xivloganalyzer verify
 ```
+
+Read the `changes` list: each moved call should be one the correction meant to move. `verify` must pass.
 
 Update `tests/test_reference.py` only when the settled headline is meant to change. That headline is 40 raw deaths on report `XVz8bCqgPw1KRh9d`. Update `notes/classification.md` when the reason changes. Update the mechanic skill when the way you tell the cases apart changes. Leave `dashboard.html`, `session.html`, `analysis.json`, and `inputs.json` alone; reanalyze rewrites them.
 

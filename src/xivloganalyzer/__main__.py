@@ -102,12 +102,17 @@ def main() -> None:
         if not outcomes:
             raise SystemExit("No logs in reports/ or data/.")
         for item in outcomes:
+            if item.error:
+                print(f"{item.name}: not judged, {item.error}")
+                continue
             why = f"judged again, {item.reason}" if item.judged else "up to date"
             print(f"{item.name}: {_counts(item.counts)} ({why})")
             if item.changes:
                 print(f"  {change_summary(item.changes)} since the last saved run")
                 _print_changes(item.name, item.changes, root)
         print(f"dashboard: {root / 'dashboard.html'}")
+        if any(item.error for item in outcomes):
+            raise SystemExit(1)
         return
     if args.command in {"changes", "verify"}:
         reports = [_resolve(args.report, root)] if args.report else report_dirs(root)
@@ -133,7 +138,11 @@ def main() -> None:
         if not rows:
             raise SystemExit("No logs in reports/ or data/.")
         for name, reason in rows:
-            print(f"{name}: {reason or 'up to date'}")
+            gaps = ""
+            if not reason:
+                found = problems(read_inputs(next(r for r in report_dirs(root) if r.name == name)) or {})
+                gaps = f" · inputs missing, run check {name}" if found else ""
+            print(f"{name}: {reason or 'up to date'}{gaps}")
         if any(reason for _name, reason in rows):
             print("Run python -m xivloganalyzer reanalyze to judge those again.")
             raise SystemExit(1)

@@ -1,12 +1,12 @@
 {
  "rules": "6784acd4603f0984",
- "engine": "72ab9523f2348f02",
+ "engine": "371e5244968cf08f",
  "log": "fc1e894e4c5b8e98",
  "outputs": {
   "facts.json": "0a8c6bd89a553e82",
-  "judgments.json": "98832dd97b355e0d",
-  "calls.tsv": "351bb93f70bb15f3",
-  "session.html": "b6544e88e151f127",
+  "judgments.json": "db615e3ed042dc9e",
+  "calls.tsv": "77ea4fad9f998771",
+  "session.html": "1af2eb0baa1b6566",
   "inputs.json": "10ec06e3083cfeef"
  },
  "counts": {
@@ -1819,39 +1819,39 @@
    "owned": [
     [
      "Spring Nymphar",
-     83.4
+     82.7
     ],
     [
      "Kitana Kahn",
-     76.9
+     78.3
     ],
     [
      "Kiara Blaiddyd",
-     63.9
+     63.3
     ],
     [
      "Loki Doki",
-     54.0
+     50.6
     ],
     [
      "Absolute Gigalad",
-     29.2
-    ],
-    [
-     "Absolute Gigachad",
-     25.4
+     29.1
     ],
     [
      "Missing bodies",
-     24.5
+     29.0
+    ],
+    [
+     "Absolute Gigachad",
+     25.3
     ],
     [
      "Speed Panda",
-     23.6
+     23.3
     ],
     [
      "Kite Noodle",
-     18.9
+     18.4
     ]
    ]
   }
