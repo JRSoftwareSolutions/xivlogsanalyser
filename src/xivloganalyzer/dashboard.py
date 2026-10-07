@@ -563,7 +563,7 @@ def detail_body(payload: dict) -> dict:
 
 
 def _js_json(value) -> str:
-    text = json.dumps(value)
+    text = json.dumps(value, separators=(",", ":"))
     return text.replace("<", "\\u003c").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 
@@ -662,7 +662,7 @@ def _detail_block(payload: dict | None) -> str:
 
 def _page(payloads: list[dict], title: str, detail: dict | None = None) -> str:
     data = _js_json(library_payload(payloads))
-    icons = json.dumps(_job_icons())
+    icons = json.dumps(_job_icons(), separators=(",", ":"))
     template = (Path(__file__).parent / "session_template.html").read_text(encoding="utf-8")
     html = template.replace("__DATA__", data)
     html = html.replace("__JOB_ICONS__", icons)
