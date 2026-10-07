@@ -783,33 +783,51 @@ function pullX(sessionIndex, pullIndex, count, sessionCount) {
 }
 function trendLine(sessions, scale) {
   const n = Math.max(sessions.length, 1);
-  const pts = [];
+  const yOf = reached => (1 - reached / scale) * 100;
+  const vertices = [];
+  let carry = null;
   sessions.forEach((session, index) => {
     const pulls = overviewOf(session).pulls;
-    pulls.forEach((pull, pullIndex) => {
-      pts.push({ x: pullX(index, pullIndex, pulls.length, n), reached: pull.reached || 0 });
-    });
+    if (pulls.length < 2) return;
+    const xs = pulls.map((pull, pullIndex) => pullX(index, pullIndex, pulls.length, n));
+    const ys = pulls.map(pull => pull.reached || 0);
+    const x0 = xs[0];
+    const x1 = xs[xs.length - 1];
+    let y0;
+    let slope;
+    if (carry == null) {
+      let sx = 0;
+      let sy = 0;
+      let sxx = 0;
+      let sxy = 0;
+      xs.forEach((x, i) => {
+        sx += x;
+        sy += ys[i];
+        sxx += x * x;
+        sxy += x * ys[i];
+      });
+      const denom = xs.length * sxx - sx * sx;
+      if (!denom) return;
+      slope = (xs.length * sxy - sx * sy) / denom;
+      y0 = (sy - slope * sx) / xs.length + slope * x0;
+    } else {
+      y0 = carry;
+      let num = 0;
+      let den = 0;
+      xs.forEach((x, i) => {
+        const dx = x - x0;
+        num += dx * (ys[i] - y0);
+        den += dx * dx;
+      });
+      slope = den ? num / den : 0;
+    }
+    const y1 = y0 + slope * (x1 - x0);
+    if (!vertices.length) vertices.push(`${x0},${yOf(y0)}`);
+    vertices.push(`${x1},${yOf(y1)}`);
+    carry = y1;
   });
-  if (pts.length < 2) return "";
-  let sx = 0;
-  let sy = 0;
-  let sxx = 0;
-  let sxy = 0;
-  for (const point of pts) {
-    sx += point.x;
-    sy += point.reached;
-    sxx += point.x * point.x;
-    sxy += point.x * point.reached;
-  }
-  const denom = pts.length * sxx - sx * sx;
-  if (!denom) return "";
-  const slope = (pts.length * sxy - sx * sy) / denom;
-  const intercept = (sy - slope * sx) / pts.length;
-  const yOf = reached => (1 - reached / scale) * 100;
-  const start = pts[0];
-  const end = pts[pts.length - 1];
-  const points = `${start.x},${yOf(intercept + slope * start.x)} ${end.x},${yOf(intercept + slope * end.x)}`;
-  return `<svg class="trend-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${points}" fill="none" stroke="#243056" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></polyline></svg>`;
+  if (vertices.length < 2) return "";
+  return `<svg class="trend-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${vertices.join(" ")}" fill="none" stroke="#243056" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"></polyline></svg>`;
 }
 function trendChart(sessions) {
   const { marks, scale } = trendFrame(sessions);
@@ -881,7 +899,7 @@ function trendSection() {
     return `<section>
       <h2>General trend</h2>
       ${heading}
-      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. The straight line is the trend through every pull, from the first to the last.</p>
+      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. Each night has its own trend, starting where the previous night ended.</p>
       ${trendChart(group.sessions)}
     </section>`;
   }).join("");
