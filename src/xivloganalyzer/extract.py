@@ -380,7 +380,7 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                 marker_casts, fight["id"], target, timestamp, mits, names_by_id,
             )
             facts.append(fact)
-    facts.sort(key=lambda fact: (fact.fight, fact.t, fact.name))
+    facts.sort(key=lambda fact: (fact.fight, fact.phase, fact.t, fact.name))
     return facts
 
 

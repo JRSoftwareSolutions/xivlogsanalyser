@@ -8458,6 +8458,56 @@
   },
   {
     "fight": 36,
+    "phase": 2,
+    "phase_name": "Thordan",
+    "t": 119.0,
+    "time": "2:01",
+    "name": "Kite Noodle",
+    "job": "Ninja",
+    "role": "dps",
+    "guid": 25571,
+    "ability": "Sacred Sever",
+    "total": 163034,
+    "hp": 68218,
+    "max_hp": 68218,
+    "unmitigated": 181150,
+    "multiplier": 0.9,
+    "absorb": 19974,
+    "stack": 1,
+    "buffs": [
+      "Shield Samba"
+    ],
+    "boss_pct": 72.9,
+    "pull_ms": 246599,
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": 19974,
+        "via": null
+      }
+    ],
+    "clipped_by": [],
+    "clip_guid": null
+  },
+  {
+    "fight": 36,
     "phase": 3,
     "phase_name": "Nidhogg",
     "t": 39.1,
@@ -8834,56 +8884,6 @@
         "on_id": 21,
         "pct": 90,
         "amount": null,
-        "via": null
-      }
-    ],
-    "clipped_by": [],
-    "clip_guid": null
-  },
-  {
-    "fight": 36,
-    "phase": 2,
-    "phase_name": "Thordan",
-    "t": 119.0,
-    "time": "2:01",
-    "name": "Kite Noodle",
-    "job": "Ninja",
-    "role": "dps",
-    "guid": 25571,
-    "ability": "Sacred Sever",
-    "total": 163034,
-    "hp": 68218,
-    "max_hp": 68218,
-    "unmitigated": 181150,
-    "multiplier": 0.9,
-    "absorb": 19974,
-    "stack": 1,
-    "buffs": [
-      "Shield Samba"
-    ],
-    "boss_pct": 72.9,
-    "pull_ms": 246599,
-    "mitigations": [
-      {
-        "name": "Shield Samba",
-        "guid": 1001826,
-        "by": "Kiara Blaiddyd",
-        "by_id": 25,
-        "on": "Kite Noodle",
-        "on_id": 18,
-        "pct": 90,
-        "amount": null,
-        "via": null
-      },
-      {
-        "name": "Galvanize",
-        "guid": 1000297,
-        "by": "Spring Nymphar",
-        "by_id": 22,
-        "on": "Kite Noodle",
-        "on_id": 18,
-        "pct": null,
-        "amount": 19974,
         "via": null
       }
     ],
@@ -11061,6 +11061,94 @@
   },
   {
     "fight": 46,
+    "phase": 2,
+    "phase_name": "Thordan",
+    "t": 59.6,
+    "time": "1:01",
+    "name": "Absolute Gigalad",
+    "job": "Warrior",
+    "role": "tank",
+    "guid": 25297,
+    "ability": "Holy Shield Bash",
+    "total": 305822,
+    "hp": 119067,
+    "max_hp": 99223,
+    "unmitigated": 471948,
+    "multiplier": 2.15,
+    "absorb": 0,
+    "stack": 2,
+    "buffs": [
+      "Rampart",
+      "Stem the Flow",
+      "Bloodwhetting",
+      "Physical Vulnerability Up"
+    ],
+    "boss_pct": 64.7,
+    "pull_ms": 258988,
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Paulecrain",
+        "by_id": 47,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Stem the Flow",
+        "guid": 1002679,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": "Bloodwhetting"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Paulecrain",
+        "by_id": 47,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 332,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ],
+    "clipped_by": [
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565
+  },
+  {
+    "fight": 46,
     "phase": 3,
     "phase_name": "Nidhogg",
     "t": 37.5,
@@ -11350,94 +11438,6 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null
-  },
-  {
-    "fight": 46,
-    "phase": 2,
-    "phase_name": "Thordan",
-    "t": 59.6,
-    "time": "1:01",
-    "name": "Absolute Gigalad",
-    "job": "Warrior",
-    "role": "tank",
-    "guid": 25297,
-    "ability": "Holy Shield Bash",
-    "total": 305822,
-    "hp": 119067,
-    "max_hp": 99223,
-    "unmitigated": 471948,
-    "multiplier": 2.15,
-    "absorb": 0,
-    "stack": 2,
-    "buffs": [
-      "Rampart",
-      "Stem the Flow",
-      "Bloodwhetting",
-      "Physical Vulnerability Up"
-    ],
-    "boss_pct": 64.7,
-    "pull_ms": 258988,
-    "mitigations": [
-      {
-        "name": "Bloodwhetting",
-        "guid": 1002678,
-        "by": "Absolute Gigalad",
-        "by_id": 19,
-        "on": "Absolute Gigalad",
-        "on_id": 19,
-        "pct": 90,
-        "amount": null,
-        "via": null
-      },
-      {
-        "name": "Magic Vulnerability Up",
-        "guid": 1002941,
-        "by": "Ser Paulecrain",
-        "by_id": 47,
-        "on": "Absolute Gigalad",
-        "on_id": 19,
-        "pct": null,
-        "amount": null,
-        "via": "Skyward Leap"
-      },
-      {
-        "name": "Rampart",
-        "guid": 1001191,
-        "by": "Absolute Gigalad",
-        "by_id": 19,
-        "on": "Absolute Gigalad",
-        "on_id": 19,
-        "pct": 80,
-        "amount": null,
-        "via": null
-      },
-      {
-        "name": "Stem the Flow",
-        "guid": 1002679,
-        "by": "Absolute Gigalad",
-        "by_id": 19,
-        "on": "Absolute Gigalad",
-        "on_id": 19,
-        "pct": 90,
-        "amount": null,
-        "via": "Bloodwhetting"
-      },
-      {
-        "name": "Physical Vulnerability Up",
-        "guid": 1002940,
-        "by": "Ser Paulecrain",
-        "by_id": 47,
-        "on": "Absolute Gigalad",
-        "on_id": 19,
-        "pct": 332,
-        "amount": null,
-        "via": "Skyward Leap"
-      }
-    ],
-    "clipped_by": [
-      "Kitana Kahn"
-    ],
-    "clip_guid": 25565
   },
   {
     "fight": 48,
