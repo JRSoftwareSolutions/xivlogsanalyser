@@ -463,9 +463,10 @@ class FrameBook:
         return marks
 
     def _collapse_marks(self, replay: FightReplay, when: float) -> list[dict]:
+        """The puddles go off with the leaps, so a later still does not draw them."""
         marks = []
         for sample in self._burst(
-            replay, _is_collapse, when, back=4.0, forward=1.0, min_count=5, keep=_collapse_group,
+            replay, _is_collapse, when, back=1.5, forward=1.0, min_count=5, keep=_collapse_group,
         ):
             x, y = _rel(sample.x, sample.y)
             marks.append({"kind": "collapse", "x": x, "y": y, "name": "Dimensional Collapse"})
