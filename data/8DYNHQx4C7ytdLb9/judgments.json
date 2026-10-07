@@ -26,7 +26,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -58,7 +58,7 @@
     "outcome": "fail",
     "happened": "53,511 unmitigated \u00b7 HP 14,782 \u00b7 10% mit \u00b7 shield 25,340",
     "should_have_been": "Puddles on the floor during the second wave. A hit applies Heavy and Damage Down. Any hit is a mistake. No lived band is stored.",
-    "went_wrong": "Spring Nymphar failed the Dimensional Collapse soak.",
+    "went_wrong": "Spring Nymphar stood in the puddle.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -96,7 +96,7 @@
     "outcome": "fail",
     "happened": "944,888 unmitigated \u00b7 HP 37,051 \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Speed Panda took the failed cleave of Dragon's Rage (944,888), not the share.",
+    "went_wrong": "Speed Panda took a failed Dragon's Rage.",
     "blames": [
       {
         "who": "Speed Panda",
@@ -137,7 +137,7 @@
     "outcome": "fail",
     "happened": "481,176 unmitigated \u00b7 HP 99,211 \u00b7 51% amp \u00b7 no shield",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigachad failed Holy Shield Bash.",
+    "went_wrong": "Absolute Gigachad shorted the tether.",
     "blames": [
       {
         "who": "Absolute Gigachad",
@@ -175,7 +175,7 @@
     "outcome": "fail",
     "happened": "950,400 unmitigated \u00b7 HP 34,482 \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kiara Blaiddyd took the failed cleave of Dragon's Rage (950,400), not the share.",
+    "went_wrong": "Kiara Blaiddyd took a failed Dragon's Rage.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -213,7 +213,7 @@
     "outcome": "fail",
     "happened": "824,990 unmitigated \u00b7 HP 52,362 \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kitana Kahn took the failed cleave of Dragon's Rage (824,990), not the share.",
+    "went_wrong": "Kitana Kahn took a failed Dragon's Rage.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -251,7 +251,7 @@
     "outcome": "raw",
     "happened": "58,131 unmitigated \u00b7 HP 34,782 \u00b7 28% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Absolute Gigalad died to the real Eternal Conviction with no shield and 28% mit.",
+    "went_wrong": "Absolute Gigalad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -290,7 +290,7 @@
     "outcome": "raw",
     "happened": "91,096 unmitigated \u00b7 HP 59,240 \u00b7 no party mit \u00b7 shield 14,777",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Eternal Conviction with a 14,777 shield and no party mit.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -333,7 +333,7 @@
     "outcome": "fail",
     "happened": "96,882 unmitigated \u00b7 HP 37,447 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Speed Panda got the failed version of Bright Flare.",
+    "went_wrong": "Speed Panda got hit by a Bright Flare.",
     "blames": [
       {
         "who": "Speed Panda",
@@ -368,7 +368,7 @@
     "outcome": "fail",
     "happened": "322,796 unmitigated \u00b7 HP 0 \u00b7 no party mit \u00b7 shield 12,115",
     "should_have_been": "Four fire circles sit on the intercards, and Thordan is at the north edge. A hit is standing in the fire.",
-    "went_wrong": "Speed Panda failed Heavens' Stake.",
+    "went_wrong": "Speed Panda stood in the fire.",
     "blames": [
       {
         "who": "Speed Panda",
@@ -403,7 +403,7 @@
     "outcome": "fail",
     "happened": "104,572 unmitigated \u00b7 HP 62,101 \u00b7 no party mit \u00b7 shield 11,870",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Loki Doki failed Hiemal Storm. 104,572 is well above a placed hit.",
+    "went_wrong": "Loki Doki failed the ice soak.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -438,7 +438,7 @@
     "outcome": "fail",
     "happened": "97,693 unmitigated \u00b7 HP 46,263 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion, not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -473,7 +473,7 @@
     "outcome": "fail",
     "happened": "105,236 unmitigated \u00b7 HP 14,852 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion, not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -508,7 +508,7 @@
     "outcome": "fail",
     "happened": "97,984 unmitigated \u00b7 HP 66,202 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion, not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -543,7 +543,7 @@
     "outcome": "fail",
     "happened": "94,539 unmitigated \u00b7 HP 52,095 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion, not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -578,7 +578,7 @@
     "outcome": "fail",
     "happened": "66,912 unmitigated \u00b7 HP 42,053 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Absolute Gigachad died to the explosion, not a real soak.",
+    "went_wrong": "Absolute Gigachad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -613,7 +613,7 @@
     "outcome": "fail",
     "happened": "58,229 unmitigated \u00b7 HP 38,162 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Absolute Gigalad died to the explosion, not a real soak.",
+    "went_wrong": "Absolute Gigalad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -650,7 +650,7 @@
     "outcome": "fail",
     "happened": "220,079 unmitigated \u00b7 HP 46,245 \u00b7 10% mit \u00b7 shield 12,876",
     "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
-    "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Spring Nymphar got hit by the cone.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -688,7 +688,7 @@
     "outcome": "raw",
     "happened": "107,525 unmitigated \u00b7 HP 62,840 \u00b7 19% mit \u00b7 shield 17,777 \u00b7 stack 3 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The Dragon's Rage share was 3 of 5. Missing bodies raised the hit.",
+    "went_wrong": "The stack was 3 of 5.",
     "blames": [
       {
         "who": "Missing bodies",
@@ -723,7 +723,7 @@
     "outcome": "unknown",
     "happened": "19,215 unmitigated \u00b7 HP 3,360 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "This ability is not understood yet.",
-    "went_wrong": "No fault assigned. Say what this hit should mean and it can be judged.",
+    "went_wrong": "Kite Noodle died to Holy Shield Bash.",
     "blames": []
   },
   {
@@ -756,7 +756,7 @@
     "outcome": "fail",
     "happened": "400,070 unmitigated \u00b7 HP 46,658 \u00b7 199% amp \u00b7 no shield",
     "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
-    "went_wrong": "Kitana Kahn got Holy Bladedance. Only a tank takes this.",
+    "went_wrong": "Kitana Kahn stood in the cone.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -796,7 +796,7 @@
     "outcome": "raw",
     "happened": "63,418 unmitigated \u00b7 HP 23,805 \u00b7 52% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Absolute Gigachad died to the real Eternal Conviction with no shield and 52% mit.",
+    "went_wrong": "Absolute Gigachad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -837,7 +837,7 @@
     "outcome": "raw",
     "happened": "94,910 unmitigated \u00b7 HP 37,050 \u00b7 10% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Eternal Conviction with no shield and 10% mit.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -879,7 +879,7 @@
     "outcome": "raw",
     "happened": "104,371 unmitigated \u00b7 HP 26,462 \u00b7 19% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Speed Panda died to the real Eternal Conviction with no shield and 19% mit.",
+    "went_wrong": "Speed Panda died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -922,7 +922,7 @@
     "outcome": "low",
     "happened": "58,431 unmitigated \u00b7 HP 6,255 \u00b7 35% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad was already at 6,255. The hit itself is the normal one.",
+    "went_wrong": "Absolute Gigalad was already low.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -965,7 +965,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -995,7 +995,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1025,7 +1025,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1055,7 +1055,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1085,7 +1085,7 @@
     "outcome": "fail",
     "happened": "117,894 unmitigated \u00b7 HP 85,700 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
-    "went_wrong": "Absolute Gigalad got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Absolute Gigalad got hit by the cone.",
     "blames": [
       {
         "who": "Absolute Gigalad",
@@ -1120,7 +1120,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1150,7 +1150,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1180,7 +1180,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1210,7 +1210,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1240,7 +1240,7 @@
     "outcome": "fail",
     "happened": "104,450 unmitigated \u00b7 HP 61,737 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Kitana Kahn failed Hiemal Storm. 104,450 is well above a placed hit.",
+    "went_wrong": "Kitana Kahn failed the ice soak.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -1275,7 +1275,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1305,7 +1305,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1335,7 +1335,7 @@
     "outcome": "fail",
     "happened": "104,659 unmitigated \u00b7 HP 50,807 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion, not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -1370,7 +1370,7 @@
     "outcome": "fail",
     "happened": "96,736 unmitigated \u00b7 HP 43,041 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion, not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -1405,7 +1405,7 @@
     "outcome": "fail",
     "happened": "91,018 unmitigated \u00b7 HP 46,005 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Loki Doki died to the explosion, not a real soak.",
+    "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -1440,7 +1440,7 @@
     "outcome": "fail",
     "happened": "61,384 unmitigated \u00b7 HP 27,134 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Absolute Gigachad died to the explosion, not a real soak.",
+    "went_wrong": "Absolute Gigachad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -1475,7 +1475,7 @@
     "outcome": "fail",
     "happened": "58,796 unmitigated \u00b7 HP 29,023 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Absolute Gigalad died to the explosion, not a real soak.",
+    "went_wrong": "Absolute Gigalad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -1510,7 +1510,7 @@
     "outcome": "fail",
     "happened": "204,958 unmitigated \u00b7 HP 61,737 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Kitana Kahn got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Kitana Kahn got hit by the cone.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -1545,7 +1545,7 @@
     "outcome": "fail",
     "happened": "213,851 unmitigated \u00b7 HP 61,737 \u00b7 no party mit \u00b7 shield 29,991",
     "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
-    "went_wrong": "Kitana Kahn got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Kitana Kahn got hit by the cone.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -1580,7 +1580,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1610,7 +1610,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1640,7 +1640,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1670,7 +1670,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1700,7 +1700,7 @@
     "outcome": "fail",
     "happened": "735,427 unmitigated \u00b7 HP 35,903 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion (735,427), not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -1735,7 +1735,7 @@
     "outcome": "fail",
     "happened": "333,516 unmitigated \u00b7 HP 61,652 \u00b7 no party mit \u00b7 no shield \u00b7 stack 1 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kiara Blaiddyd took the failed cleave of Dragon's Rage (333,516), not the share.",
+    "went_wrong": "Kiara Blaiddyd took a failed Dragon's Rage.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -1770,7 +1770,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1800,7 +1800,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -1830,7 +1830,7 @@
     "outcome": "fail",
     "happened": "105,084 unmitigated \u00b7 HP 48,240 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -1865,7 +1865,7 @@
     "outcome": "fail",
     "happened": "92,786 unmitigated \u00b7 HP 54,273 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -1900,7 +1900,7 @@
     "outcome": "fail",
     "happened": "102,690 unmitigated \u00b7 HP 53,238 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -1935,7 +1935,7 @@
     "outcome": "fail",
     "happened": "91,542 unmitigated \u00b7 HP 56,135 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -1970,7 +1970,7 @@
     "outcome": "fail",
     "happened": "62,096 unmitigated \u00b7 HP 47,576 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -2005,7 +2005,7 @@
     "outcome": "fail",
     "happened": "97,410 unmitigated \u00b7 HP 55,363 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -2040,7 +2040,7 @@
     "outcome": "fail",
     "happened": "103,421 unmitigated \u00b7 HP 64,301 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -2075,7 +2075,7 @@
     "outcome": "fail",
     "happened": "126,357 unmitigated \u00b7 HP 61,737 \u00b7 no party mit \u00b7 shield 30,956",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Kitana Kahn got Holy Shield Bash. Only a tank takes this.",
+    "went_wrong": "Kitana Kahn took the tether.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -2110,7 +2110,7 @@
     "outcome": "fail",
     "happened": "34,742 unmitigated \u00b7 HP 22,959 \u00b7 no party mit \u00b7 shield 3,800",
     "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
-    "went_wrong": "Kiara Blaiddyd got Holy Bladedance. Only a tank takes this.",
+    "went_wrong": "Kiara Blaiddyd stood in the cone.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -2145,7 +2145,7 @@
     "outcome": "fail",
     "happened": "34,943 unmitigated \u00b7 HP 27,075 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
-    "went_wrong": "Spring Nymphar got Holy Bladedance. Only a tank takes this.",
+    "went_wrong": "Spring Nymphar stood in the cone.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -2180,7 +2180,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -2210,7 +2210,7 @@
     "outcome": "raw",
     "happened": "101,877 unmitigated \u00b7 HP 60,291 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kite Noodle died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Kite Noodle died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2253,7 +2253,7 @@
     "outcome": "raw",
     "happened": "101,238 unmitigated \u00b7 HP 63,295 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Speed Panda died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Speed Panda died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2299,7 +2299,7 @@
     "outcome": "raw",
     "happened": "66,520 unmitigated \u00b7 HP 18,048 \u00b7 40% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Absolute Gigachad died to the real Eternal Conviction with no shield and 40% mit.",
+    "went_wrong": "Absolute Gigachad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2338,7 +2338,7 @@
     "outcome": "raw",
     "happened": "97,292 unmitigated \u00b7 HP 50,647 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2381,7 +2381,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -2411,7 +2411,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -2441,7 +2441,7 @@
     "outcome": "fail",
     "happened": "104,622 unmitigated \u00b7 HP 52,172 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion, not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -2476,7 +2476,7 @@
     "outcome": "fail",
     "happened": "92,590 unmitigated \u00b7 HP 61,338 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Loki Doki died to the explosion, not a real soak.",
+    "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -2511,7 +2511,7 @@
     "outcome": "fail",
     "happened": "97,376 unmitigated \u00b7 HP 63,515 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion, not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -2546,7 +2546,7 @@
     "outcome": "fail",
     "happened": "60,624 unmitigated \u00b7 HP 36,888 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Absolute Gigalad died to the explosion, not a real soak.",
+    "went_wrong": "Absolute Gigalad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -2581,7 +2581,7 @@
     "outcome": "fail",
     "happened": "102,135 unmitigated \u00b7 HP 67,928 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion, not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -2616,7 +2616,7 @@
     "outcome": "fail",
     "happened": "94,187 unmitigated \u00b7 HP 59,769 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion, not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -2651,7 +2651,7 @@
     "outcome": "fail",
     "happened": "203,946 unmitigated \u00b7 HP 61,737 \u00b7 no party mit \u00b7 shield 13,813",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Kitana Kahn got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Kitana Kahn got hit by the cone.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -2688,7 +2688,7 @@
     "outcome": "raw",
     "happened": "99,292 unmitigated \u00b7 HP 47,802 \u00b7 5% mit \u00b7 shield 13,016",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Eternal Conviction with a 13,016 shield and 5% mit.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2727,7 +2727,7 @@
     "outcome": "raw",
     "happened": "102,965 unmitigated \u00b7 HP 61,737 \u00b7 no party mit \u00b7 shield 12,967",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kitana Kahn died to the real Eternal Conviction with a 12,967 shield and no party mit.",
+    "went_wrong": "Kitana Kahn died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2772,7 +2772,7 @@
     "outcome": "raw",
     "happened": "99,627 unmitigated \u00b7 HP 53,845 \u00b7 5% mit \u00b7 shield 13,208",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Spring Nymphar died to the real Eternal Conviction with a 13,208 shield and 5% mit.",
+    "went_wrong": "Spring Nymphar died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2811,7 +2811,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -2841,7 +2841,7 @@
     "outcome": "raw",
     "happened": "100,019 unmitigated \u00b7 HP 65,540 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kite Noodle died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Kite Noodle died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2886,7 +2886,7 @@
     "outcome": "raw",
     "happened": "102,186 unmitigated \u00b7 HP 67,454 \u00b7 5% mit \u00b7 shield 12,117",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Speed Panda died to the real Eternal Conviction with a 12,117 shield and 5% mit.",
+    "went_wrong": "Speed Panda died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2927,7 +2927,7 @@
     "outcome": "raw",
     "happened": "104,355 unmitigated \u00b7 HP 54,309 \u00b7 5% mit \u00b7 shield 13,086",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kiara Blaiddyd died to the real Eternal Conviction with a 13,086 shield and 5% mit.",
+    "went_wrong": "Kiara Blaiddyd died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -2966,7 +2966,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -2996,7 +2996,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -3026,7 +3026,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -3056,7 +3056,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -3086,7 +3086,7 @@
     "outcome": "fail",
     "happened": "223,308 unmitigated \u00b7 HP 50,062 \u00b7 no party mit \u00b7 shield 21,088",
     "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
-    "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Spring Nymphar got hit by the cone.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -3121,7 +3121,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -3151,7 +3151,7 @@
     "outcome": "fail",
     "happened": "49,450 unmitigated \u00b7 HP 1,905 \u00b7 no party mit \u00b7 shield 26,081",
     "should_have_been": "Puddles on the floor during the second wave. A hit applies Heavy and Damage Down. Any hit is a mistake. No lived band is stored.",
-    "went_wrong": "Loki Doki failed the Dimensional Collapse soak.",
+    "went_wrong": "Loki Doki stood in the puddle.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -3191,7 +3191,7 @@
     "outcome": "fail",
     "happened": "797,639 unmitigated \u00b7 HP 109,989 \u00b7 115% amp \u00b7 no shield",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigalad failed Holy Shield Bash.",
+    "went_wrong": "Absolute Gigalad shorted the tether.",
     "blames": [
       {
         "who": "Absolute Gigalad",
@@ -3226,7 +3226,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -3256,7 +3256,7 @@
     "outcome": "unknown",
     "happened": "96,055 unmitigated \u00b7 HP 61,737 \u00b7 mit unknown \u00b7 shield 15,976",
     "should_have_been": "This ability is not understood yet.",
-    "went_wrong": "No fault assigned. Say what this hit should mean and it can be judged.",
+    "went_wrong": "Kitana Kahn died to Final Chorus.",
     "blames": []
   },
   {
@@ -3286,7 +3286,7 @@
     "outcome": "unknown",
     "happened": "79,898 unmitigated \u00b7 HP 62,101 \u00b7 mit unknown \u00b7 shield 16,620",
     "should_have_been": "This ability is not understood yet.",
-    "went_wrong": "No fault assigned. Say what this hit should mean and it can be judged.",
+    "went_wrong": "Loki Doki died to Final Chorus.",
     "blames": []
   },
   {
@@ -3316,7 +3316,7 @@
     "outcome": "unknown",
     "happened": "87,292 unmitigated \u00b7 HP 68,218 \u00b7 mit unknown \u00b7 shield 16,452",
     "should_have_been": "This ability is not understood yet.",
-    "went_wrong": "No fault assigned. Say what this hit should mean and it can be judged.",
+    "went_wrong": "Kite Noodle died to Final Chorus.",
     "blames": []
   },
   {
@@ -3346,7 +3346,7 @@
     "outcome": "unknown",
     "happened": "45,694 unmitigated \u00b7 HP 16,420 \u00b7 mit unknown \u00b7 shield 3,616",
     "should_have_been": "This ability is not understood yet.",
-    "went_wrong": "No fault assigned. Say what this hit should mean and it can be judged.",
+    "went_wrong": "Spring Nymphar died to attack.",
     "blames": []
   },
   {
@@ -3376,7 +3376,7 @@
     "outcome": "unknown",
     "happened": "47,692 unmitigated \u00b7 HP 26,959 \u00b7 mit unknown \u00b7 shield 8,533",
     "should_have_been": "This ability is not understood yet.",
-    "went_wrong": "No fault assigned. Say what this hit should mean and it can be judged.",
+    "went_wrong": "Kiara Blaiddyd died to attack.",
     "blames": []
   },
   {
@@ -3406,7 +3406,7 @@
     "outcome": "fail",
     "happened": "115,900 unmitigated \u00b7 HP 56,719 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37\u201348k. Everyone else lives about 50\u201370k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
-    "went_wrong": "The Eye of the Tyrant share was short. Absolute Gigalad took 115,900. The players who were not in the stack own it.",
+    "went_wrong": "The stack was short.",
     "blames": [
       {
         "who": "Missing bodies",
@@ -3441,7 +3441,7 @@
     "outcome": "fail",
     "happened": "182,155 unmitigated \u00b7 HP 15,432 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37\u201348k. Everyone else lives about 50\u201370k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
-    "went_wrong": "The Eye of the Tyrant share was short. Kitana Kahn took 182,155. The players who were not in the stack own it.",
+    "went_wrong": "The stack was short.",
     "blames": [
       {
         "who": "Missing bodies",
@@ -3476,7 +3476,7 @@
     "outcome": "fail",
     "happened": "1,917,912 unmitigated \u00b7 HP 99,211 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Absolute Gigachad died to the explosion (1,917,912), not a real soak.",
+    "went_wrong": "Absolute Gigachad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -3511,7 +3511,7 @@
     "outcome": "fail",
     "happened": "3,044,147 unmitigated \u00b7 HP 29,476 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion (3,044,147), not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -3549,7 +3549,7 @@
     "outcome": "fail",
     "happened": "3,709,586 unmitigated \u00b7 HP 26,093 \u00b7 199% amp \u00b7 no shield",
     "should_have_been": "The hourglass dash is dodged. A hit is a mistake.",
-    "went_wrong": "Kiara Blaiddyd failed Shining Blade.",
+    "went_wrong": "Kiara Blaiddyd got cleaved.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -3584,7 +3584,7 @@
     "outcome": "raw",
     "happened": "38,664 unmitigated \u00b7 HP 28,707 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "The resolve was fine. Kiara Blaiddyd died to the real Hiemal Storm with no shield and no party mit.",
+    "went_wrong": "Kiara Blaiddyd died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -3627,7 +3627,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -3657,7 +3657,7 @@
     "outcome": "fail",
     "happened": "97,920 unmitigated \u00b7 HP 35,566 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion, not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -3692,7 +3692,7 @@
     "outcome": "fail",
     "happened": "94,922 unmitigated \u00b7 HP 42,289 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion, not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -3727,7 +3727,7 @@
     "outcome": "fail",
     "happened": "99,692 unmitigated \u00b7 HP 32,291 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion, not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -3762,7 +3762,7 @@
     "outcome": "fail",
     "happened": "61,448 unmitigated \u00b7 HP 20,368 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Absolute Gigalad died to the explosion, not a real soak.",
+    "went_wrong": "Absolute Gigalad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -3797,7 +3797,7 @@
     "outcome": "fail",
     "happened": "91,819 unmitigated \u00b7 HP 19,834 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Loki Doki died to the explosion, not a real soak.",
+    "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -3832,7 +3832,7 @@
     "outcome": "fail",
     "happened": "65,943 unmitigated \u00b7 HP 23,863 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Absolute Gigachad died to the explosion, not a real soak.",
+    "went_wrong": "Absolute Gigachad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -3867,7 +3867,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -3897,7 +3897,7 @@
     "outcome": "fail",
     "happened": "96,713 unmitigated \u00b7 HP 62,753 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -3932,7 +3932,7 @@
     "outcome": "fail",
     "happened": "67,073 unmitigated \u00b7 HP 36,249 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -3967,7 +3967,7 @@
     "outcome": "fail",
     "happened": "93,553 unmitigated \u00b7 HP 55,484 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -4002,7 +4002,7 @@
     "outcome": "fail",
     "happened": "99,642 unmitigated \u00b7 HP 64,054 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -4037,7 +4037,7 @@
     "outcome": "fail",
     "happened": "92,502 unmitigated \u00b7 HP 61,737 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -4072,7 +4072,7 @@
     "outcome": "fail",
     "happened": "96,971 unmitigated \u00b7 HP 57,372 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -4107,7 +4107,7 @@
     "outcome": "fail",
     "happened": "58,708 unmitigated \u00b7 HP 32,414 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -4142,7 +4142,7 @@
     "outcome": "fail",
     "happened": "101,072 unmitigated \u00b7 HP 54,937 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -4177,7 +4177,7 @@
     "outcome": "fail",
     "happened": "98,621 unmitigated \u00b7 HP 48,902 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion, not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4212,7 +4212,7 @@
     "outcome": "fail",
     "happened": "91,216 unmitigated \u00b7 HP 50,835 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion, not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4247,7 +4247,7 @@
     "outcome": "fail",
     "happened": "104,198 unmitigated \u00b7 HP 50,006 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion, not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4282,7 +4282,7 @@
     "outcome": "fail",
     "happened": "95,749 unmitigated \u00b7 HP 57,773 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Loki Doki died to the explosion, not a real soak.",
+    "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4317,7 +4317,7 @@
     "outcome": "fail",
     "happened": "92,253 unmitigated \u00b7 HP 60,801 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion, not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4352,7 +4352,7 @@
     "outcome": "fail",
     "happened": "104,023 unmitigated \u00b7 HP 57,033 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion, not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4387,7 +4387,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4417,7 +4417,7 @@
     "outcome": "fail",
     "happened": "57,234 unmitigated \u00b7 HP 38,709 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -4452,7 +4452,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4482,7 +4482,7 @@
     "outcome": "fail",
     "happened": "98,349 unmitigated \u00b7 HP 46,480 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion, not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4517,7 +4517,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4547,7 +4547,7 @@
     "outcome": "fail",
     "happened": "103,162 unmitigated \u00b7 HP 48,683 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion, not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4582,7 +4582,7 @@
     "outcome": "fail",
     "happened": "95,830 unmitigated \u00b7 HP 61,368 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion, not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4617,7 +4617,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4647,7 +4647,7 @@
     "outcome": "fail",
     "happened": "96,088 unmitigated \u00b7 HP 58,896 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Loki Doki died to the explosion, not a real soak.",
+    "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4682,7 +4682,7 @@
     "outcome": "fail",
     "happened": "104,077 unmitigated \u00b7 HP 63,890 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion, not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -4717,7 +4717,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4747,7 +4747,7 @@
     "outcome": "fail",
     "happened": "223,189 unmitigated \u00b7 HP 61,615 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Spring Nymphar got hit by the cone.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -4782,7 +4782,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4812,7 +4812,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4842,7 +4842,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4872,7 +4872,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4902,7 +4902,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4932,7 +4932,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -4962,7 +4962,7 @@
     "outcome": "fail",
     "happened": "128,200 unmitigated \u00b7 HP 2,755 \u00b7 no party mit \u00b7 shield 32,441",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Kitana Kahn got Holy Shield Bash. Only a tank takes this.",
+    "went_wrong": "Kitana Kahn took the tether.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -4999,7 +4999,7 @@
     "outcome": "raw",
     "happened": "104,691 unmitigated \u00b7 HP 68,218 \u00b7 10% mit \u00b7 shield 8,367",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kite Noodle died to the real Eternal Conviction with a 8,367 shield and 10% mit.",
+    "went_wrong": "Kite Noodle died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -5040,7 +5040,7 @@
     "outcome": "raw",
     "happened": "108,105 unmitigated \u00b7 HP 63,880 \u00b7 10% mit \u00b7 shield 8,316",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kiara Blaiddyd died to the real Eternal Conviction with a 8,316 shield and 10% mit.",
+    "went_wrong": "Kiara Blaiddyd died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -5079,7 +5079,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -5111,7 +5111,7 @@
     "outcome": "raw",
     "happened": "101,389 unmitigated \u00b7 HP 57,146 \u00b7 10% mit \u00b7 shield 8,513",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Speed Panda died to the real Eternal Conviction with a 8,513 shield and 10% mit.",
+    "went_wrong": "Speed Panda died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -5150,7 +5150,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -5182,7 +5182,7 @@
     "outcome": "raw",
     "happened": "97,952 unmitigated \u00b7 HP 61,615 \u00b7 10% mit \u00b7 shield 8,165",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Spring Nymphar died to the real Eternal Conviction with a 8,165 shield and 10% mit.",
+    "went_wrong": "Spring Nymphar died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -5223,7 +5223,7 @@
     "outcome": "raw",
     "happened": "95,013 unmitigated \u00b7 HP 62,101 \u00b7 10% mit \u00b7 shield 8,156",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Eternal Conviction with a 8,156 shield and 10% mit.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -5262,7 +5262,7 @@
     "outcome": "fail",
     "happened": "193,279 unmitigated \u00b7 HP 68,662 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Kiara Blaiddyd got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Kiara Blaiddyd got hit by the cone.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -5297,7 +5297,7 @@
     "outcome": "fail",
     "happened": "96,316 unmitigated \u00b7 HP 24,080 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5332,7 +5332,7 @@
     "outcome": "fail",
     "happened": "100,129 unmitigated \u00b7 HP 42,169 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5367,7 +5367,7 @@
     "outcome": "fail",
     "happened": "94,106 unmitigated \u00b7 HP 43,916 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5402,7 +5402,7 @@
     "outcome": "fail",
     "happened": "64,500 unmitigated \u00b7 HP 28,598 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5437,7 +5437,7 @@
     "outcome": "fail",
     "happened": "101,382 unmitigated \u00b7 HP 41,806 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5472,7 +5472,7 @@
     "outcome": "fail",
     "happened": "59,639 unmitigated \u00b7 HP 27,335 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5507,7 +5507,7 @@
     "outcome": "fail",
     "happened": "94,321 unmitigated \u00b7 HP 32,671 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5542,7 +5542,7 @@
     "outcome": "fail",
     "happened": "99,120 unmitigated \u00b7 HP 38,064 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5577,7 +5577,7 @@
     "outcome": "fail",
     "happened": "94,906 unmitigated \u00b7 HP 45,788 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5612,7 +5612,7 @@
     "outcome": "fail",
     "happened": "101,562 unmitigated \u00b7 HP 59,687 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5647,7 +5647,7 @@
     "outcome": "fail",
     "happened": "105,481 unmitigated \u00b7 HP 52,674 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5682,7 +5682,7 @@
     "outcome": "fail",
     "happened": "94,748 unmitigated \u00b7 HP 54,469 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5717,7 +5717,7 @@
     "outcome": "fail",
     "happened": "90,837 unmitigated \u00b7 HP 50,590 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5752,7 +5752,7 @@
     "outcome": "fail",
     "happened": "104,748 unmitigated \u00b7 HP 58,757 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5787,7 +5787,7 @@
     "outcome": "fail",
     "happened": "66,051 unmitigated \u00b7 HP 44,190 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5822,7 +5822,7 @@
     "outcome": "fail",
     "happened": "57,055 unmitigated \u00b7 HP 36,156 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -5857,7 +5857,7 @@
     "outcome": "fail",
     "happened": "60,084 unmitigated \u00b7 HP 56,124 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
-    "went_wrong": "Loki Doki was fully healed. Skyward Leap had no party mit and no shield. The players who were supposed to mitigate it own that death.",
+    "went_wrong": "Loki Doki died to Skyward Leap without mitigation.",
     "blames": [
       {
         "who": "Assigned mitigation",
@@ -5894,7 +5894,7 @@
     "outcome": "fail",
     "happened": "724,185 unmitigated \u00b7 HP 31,811 \u00b7 232% amp \u00b7 no shield",
     "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion (724,185), not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -5929,7 +5929,7 @@
     "outcome": "fail",
     "happened": "32,022 unmitigated \u00b7 HP 30,578 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
-    "went_wrong": "Kite Noodle got Holy Bladedance. Only a tank takes this.",
+    "went_wrong": "Kite Noodle stood in the cone.",
     "blames": [
       {
         "who": "Kite Noodle",
@@ -5964,7 +5964,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -5997,7 +5997,7 @@
     "outcome": "low",
     "happened": "61,846 unmitigated \u00b7 HP 9,708 \u00b7 40% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigachad was already at 9,708. The hit itself is the normal one.",
+    "went_wrong": "Absolute Gigachad was already low.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6040,7 +6040,7 @@
     "outcome": "raw",
     "happened": "91,409 unmitigated \u00b7 HP 43,432 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Spring Nymphar died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Spring Nymphar died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6083,7 +6083,7 @@
     "outcome": "raw",
     "happened": "96,575 unmitigated \u00b7 HP 33,065 \u00b7 no party mit \u00b7 shield 3,723",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kitana Kahn died to the real Eternal Conviction with a 3,723 shield and no party mit.",
+    "went_wrong": "Kitana Kahn died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6128,7 +6128,7 @@
     "outcome": "low",
     "happened": "61,689 unmitigated \u00b7 HP 10,711 \u00b7 20% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad was already at 10,711. The hit itself is the normal one.",
+    "went_wrong": "Absolute Gigalad was already low.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6171,7 +6171,7 @@
     "outcome": "raw",
     "happened": "71,025 unmitigated \u00b7 HP 62,101 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37\u201348k. Everyone else lives about 50\u201370k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Eye of the Tyrant with no shield and mit unknown.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6214,7 +6214,7 @@
     "outcome": "raw",
     "happened": "71,859 unmitigated \u00b7 HP 68,259 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37\u201348k. Everyone else lives about 50\u201370k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
-    "went_wrong": "The resolve was fine. Speed Panda died to the real Eye of the Tyrant with no shield and mit unknown.",
+    "went_wrong": "Speed Panda died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6257,7 +6257,7 @@
     "outcome": "raw",
     "happened": "72,330 unmitigated \u00b7 HP 61,615 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37\u201348k. Everyone else lives about 50\u201370k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
-    "went_wrong": "The resolve was fine. Spring Nymphar died to the real Eye of the Tyrant with no shield and mit unknown.",
+    "went_wrong": "Spring Nymphar died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6300,7 +6300,7 @@
     "outcome": "raw",
     "happened": "48,940 unmitigated \u00b7 HP 46,318 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Absolute Gigalad died to the real Darkdragon Dive with no shield and mit unknown.",
+    "went_wrong": "Absolute Gigalad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6343,7 +6343,7 @@
     "outcome": "fail",
     "happened": "2,831,665 unmitigated \u00b7 HP 52,256 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion (2,831,665), not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -6378,7 +6378,7 @@
     "outcome": "fail",
     "happened": "2,906,690 unmitigated \u00b7 HP 66,931 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion (2,906,690), not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -6413,7 +6413,7 @@
     "outcome": "fail",
     "happened": "2,914,177 unmitigated \u00b7 HP 61,708 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion (2,914,177), not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -6448,7 +6448,7 @@
     "outcome": "raw",
     "happened": "52,654 unmitigated \u00b7 HP 29,637 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Absolute Gigachad died to the real Darkdragon Dive with no shield and mit unknown.",
+    "went_wrong": "Absolute Gigachad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6491,7 +6491,7 @@
     "outcome": "fail",
     "happened": "687,208 unmitigated \u00b7 HP 62,101 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The down arrow. East, facing east, so the tower drops behind them on the east side of the hitbox. Anyone else in that landing is a mistake. This log has no small hit stored.",
-    "went_wrong": "Loki Doki stood in the dive (687,208). Each player in that landing owns it.",
+    "went_wrong": "Loki Doki stood in the dive.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6530,7 +6530,7 @@
     "outcome": "fail",
     "happened": "713,186 unmitigated \u00b7 HP 42,454 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The down arrow. East, facing east, so the tower drops behind them on the east side of the hitbox. Anyone else in that landing is a mistake. This log has no small hit stored.",
-    "went_wrong": "Spring Nymphar stood in the dive (713,186). Each player in that landing owns it.",
+    "went_wrong": "Spring Nymphar stood in the dive.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -6569,7 +6569,7 @@
     "outcome": "fail",
     "happened": "21,625 unmitigated \u00b7 HP 2,276 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "Outside the hitbox. In is safe. Lash and Gnash means in, then out. The hit is about 12\u201323k and applies Damage Down. Any hit is a fail.",
-    "went_wrong": "Kiara Blaiddyd was on the wrong side of the in-and-out.",
+    "went_wrong": "Kiara Blaiddyd was on the wrong side.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -6604,7 +6604,7 @@
     "outcome": "fail",
     "happened": "570,085 unmitigated \u00b7 HP 52,262 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The player who soaks does not still have Fire Resistance Down II or Physical Vulnerability Up. A soak with those debuffs is about 445\u2013570k. That player owns it.",
-    "went_wrong": "Speed Panda soaked a tower while they still had the dive debuff.",
+    "went_wrong": "Speed Panda soaked with the dive debuff.",
     "blames": [
       {
         "who": "Speed Panda",
@@ -6639,7 +6639,7 @@
     "outcome": "low",
     "happened": "80,425 unmitigated \u00b7 HP 4,269 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "Kite Noodle was already at 4,269. The hit itself is the normal one.",
+    "went_wrong": "Kite Noodle was already low.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6682,7 +6682,7 @@
     "outcome": "raw",
     "happened": "49,889 unmitigated \u00b7 HP 22,132 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Absolute Gigachad died to the real Darkdragon Dive with no shield and mit unknown.",
+    "went_wrong": "Absolute Gigachad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6725,7 +6725,7 @@
     "outcome": "low",
     "happened": "47,950 unmitigated \u00b7 HP 2,652 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "Absolute Gigalad was already at 2,652. The hit itself is the normal one.",
+    "went_wrong": "Absolute Gigalad was already low.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6768,7 +6768,7 @@
     "outcome": "low",
     "happened": "80,418 unmitigated \u00b7 HP 5,282 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "Kitana Kahn was already at 5,282. The hit itself is the normal one.",
+    "went_wrong": "Kitana Kahn was already low.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -6811,7 +6811,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -6841,7 +6841,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -6871,7 +6871,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -6901,7 +6901,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -6931,7 +6931,7 @@
     "outcome": "fail",
     "happened": "99,753 unmitigated \u00b7 HP 36,302 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Kiara Blaiddyd got the failed version of Bright Flare.",
+    "went_wrong": "Kiara Blaiddyd got hit by a Bright Flare.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -6966,7 +6966,7 @@
     "outcome": "raw",
     "happened": "61,104 unmitigated \u00b7 HP 43,591 \u00b7 no party mit \u00b7 no shield \u00b7 stack 3 of 4",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "The Sacred Sever share was 3 of 4. Missing bodies raised the hit.",
+    "went_wrong": "The stack was 3 of 4.",
     "blames": [
       {
         "who": "Missing bodies",
@@ -7001,7 +7001,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7031,7 +7031,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7065,7 +7065,7 @@
     "outcome": "fail",
     "happened": "154,516 unmitigated \u00b7 HP 50,037 \u00b7 43% mit \u00b7 shield 7,576",
     "should_have_been": "The main tank takes the three hits with personal mitigation, about 59\u201386k. The off tank who took Heavenly Heel does not take these. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
-    "went_wrong": "Absolute Gigalad took 154,516, which is not the real Ascalon's Might.",
+    "went_wrong": "Absolute Gigalad took too much from Ascalon's Might.",
     "blames": [
       {
         "who": "Absolute Gigalad",
@@ -7100,7 +7100,7 @@
     "outcome": "fail",
     "happened": "97,882 unmitigated \u00b7 HP 60,774 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion, not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -7135,7 +7135,7 @@
     "outcome": "fail",
     "happened": "92,970 unmitigated \u00b7 HP 48,931 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Loki Doki died to the explosion, not a real soak.",
+    "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -7170,7 +7170,7 @@
     "outcome": "fail",
     "happened": "103,626 unmitigated \u00b7 HP 64,222 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion, not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -7205,7 +7205,7 @@
     "outcome": "fail",
     "happened": "93,672 unmitigated \u00b7 HP 58,718 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion, not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -7240,7 +7240,7 @@
     "outcome": "fail",
     "happened": "99,515 unmitigated \u00b7 HP 63,110 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion, not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -7275,7 +7275,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7305,7 +7305,7 @@
     "outcome": "fail",
     "happened": "97,891 unmitigated \u00b7 HP 54,852 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion, not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -7340,7 +7340,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7370,7 +7370,7 @@
     "outcome": "raw",
     "happened": "62,699 unmitigated \u00b7 HP 61,737 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37\u201348k. Everyone else lives about 50\u201370k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
-    "went_wrong": "The resolve was fine. Kitana Kahn died to the real Eye of the Tyrant with no shield and mit unknown.",
+    "went_wrong": "Kitana Kahn died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -7413,7 +7413,7 @@
     "outcome": "raw",
     "happened": "68,290 unmitigated \u00b7 HP 68,218 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37\u201348k. Everyone else lives about 50\u201370k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
-    "went_wrong": "The resolve was fine. Kite Noodle died to the real Eye of the Tyrant with no shield and mit unknown.",
+    "went_wrong": "Kite Noodle died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -7456,7 +7456,7 @@
     "outcome": "fail",
     "happened": "19,075 unmitigated \u00b7 HP 6,470 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "Outside the hitbox. In is safe. Lash and Gnash means in, then out. The hit is about 12\u201323k and applies Damage Down. Any hit is a fail.",
-    "went_wrong": "Loki Doki was on the wrong side of the in-and-out.",
+    "went_wrong": "Loki Doki was on the wrong side.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -7491,7 +7491,7 @@
     "outcome": "raw",
     "happened": "42,597 unmitigated \u00b7 HP 27,678 \u00b7 mit unknown \u00b7 shield 9,921",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Absolute Gigachad died to the real Darkdragon Dive with a 9,921 shield and mit unknown.",
+    "went_wrong": "Absolute Gigachad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -7534,7 +7534,7 @@
     "outcome": "fail",
     "happened": "2,775,747 unmitigated \u00b7 HP 55,630 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion (2,775,747), not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -7569,7 +7569,7 @@
     "outcome": "fail",
     "happened": "2,824,447 unmitigated \u00b7 HP 68,662 \u00b7 mit unknown \u00b7 shield 9,921",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion (2,824,447), not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -7604,7 +7604,7 @@
     "outcome": "fail",
     "happened": "2,946,049 unmitigated \u00b7 HP 64,044 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion (2,946,049), not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -7639,7 +7639,7 @@
     "outcome": "raw",
     "happened": "49,293 unmitigated \u00b7 HP 39,402 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Absolute Gigalad died to the real Darkdragon Dive with no shield and mit unknown.",
+    "went_wrong": "Absolute Gigalad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -7682,7 +7682,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7712,7 +7712,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7742,7 +7742,7 @@
     "outcome": "fail",
     "happened": "269,410 unmitigated \u00b7 HP 77,240 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430\u2013470k, and both players own it.",
-    "went_wrong": "Absolute Gigalad took 269,410, which is not the real Lightning Storm.",
+    "went_wrong": "Absolute Gigalad got clipped by Lightning Storm.",
     "blames": [
       {
         "who": "Absolute Gigalad",
@@ -7777,7 +7777,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7807,7 +7807,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7837,7 +7837,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7867,7 +7867,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7897,7 +7897,7 @@
     "outcome": "fail",
     "happened": "50,475 unmitigated \u00b7 HP 33,607 \u00b7 no party mit \u00b7 shield 3,741",
     "should_have_been": "The knight's pulses, outward. A hit stuns and applies Damage Down. Clean pulls take 0. Both ability ids are this ring.",
-    "went_wrong": "Spring Nymphar failed Heavy Impact.",
+    "went_wrong": "Spring Nymphar stood in the ring.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -7932,7 +7932,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7962,7 +7962,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -7992,7 +7992,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -8022,7 +8022,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -8052,7 +8052,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -8082,7 +8082,7 @@
     "outcome": "fail",
     "happened": "545,098 unmitigated \u00b7 HP 68,218 \u00b7 mit unknown \u00b7 shield 11,859",
     "should_have_been": "The player who soaks does not still have Fire Resistance Down II or Physical Vulnerability Up. A soak with those debuffs is about 445\u2013570k. That player owns it.",
-    "went_wrong": "Kite Noodle soaked a tower while they still had the dive debuff.",
+    "went_wrong": "Kite Noodle soaked with the dive debuff.",
     "blames": [
       {
         "who": "Kite Noodle",
@@ -8117,7 +8117,7 @@
     "outcome": "fail",
     "happened": "568,280 unmitigated \u00b7 HP 68,259 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The player who soaks does not still have Fire Resistance Down II or Physical Vulnerability Up. A soak with those debuffs is about 445\u2013570k. That player owns it.",
-    "went_wrong": "Speed Panda soaked a tower while they still had the dive debuff.",
+    "went_wrong": "Speed Panda soaked with the dive debuff.",
     "blames": [
       {
         "who": "Speed Panda",
@@ -8152,7 +8152,7 @@
     "outcome": "fail",
     "happened": "1,790,546 unmitigated \u00b7 HP 74,699 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Absolute Gigalad died to the explosion (1,790,546), not a real soak.",
+    "went_wrong": "Absolute Gigalad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -8187,7 +8187,7 @@
     "outcome": "fail",
     "happened": "714,307 unmitigated \u00b7 HP 803 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion (714,307), not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -8222,7 +8222,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -8252,7 +8252,7 @@
     "outcome": "raw",
     "happened": "109,905 unmitigated \u00b7 HP 68,218 \u00b7 no party mit \u00b7 no shield \u00b7 stack 2 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The Dragon's Rage share was 2 of 5. Missing bodies raised the hit.",
+    "went_wrong": "The stack was 2 of 5.",
     "blames": [
       {
         "who": "Missing bodies",
@@ -8287,7 +8287,7 @@
     "outcome": "raw",
     "happened": "106,579 unmitigated \u00b7 HP 61,615 \u00b7 no party mit \u00b7 no shield \u00b7 stack 2 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The Dragon's Rage share was 2 of 5. Missing bodies raised the hit.",
+    "went_wrong": "The stack was 2 of 5.",
     "blames": [
       {
         "who": "Missing bodies",
@@ -8322,7 +8322,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -8352,7 +8352,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -8382,7 +8382,7 @@
     "outcome": "raw",
     "happened": "104,966 unmitigated \u00b7 HP 50,052 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kiara Blaiddyd died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Kiara Blaiddyd died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -8425,7 +8425,7 @@
     "outcome": "raw",
     "happened": "92,421 unmitigated \u00b7 HP 44,387 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -8470,7 +8470,7 @@
     "outcome": "fail",
     "happened": "102,513 unmitigated \u00b7 HP 44,241 \u00b7 10% mit \u00b7 no shield",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Kiara Blaiddyd got the failed version of Bright Flare.",
+    "went_wrong": "Kiara Blaiddyd got hit by a Bright Flare.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -8505,7 +8505,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -8535,7 +8535,7 @@
     "outcome": "fail",
     "happened": "99,037 unmitigated \u00b7 HP 29,353 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion, not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -8570,7 +8570,7 @@
     "outcome": "fail",
     "happened": "96,977 unmitigated \u00b7 HP 42,280 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion, not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -8605,7 +8605,7 @@
     "outcome": "fail",
     "happened": "105,420 unmitigated \u00b7 HP 46,703 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion, not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -8640,7 +8640,7 @@
     "outcome": "fail",
     "happened": "90,089 unmitigated \u00b7 HP 50,584 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Loki Doki died to the explosion, not a real soak.",
+    "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -8675,7 +8675,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -8705,7 +8705,7 @@
     "outcome": "fail",
     "happened": "98,354 unmitigated \u00b7 HP 60,534 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion, not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -8740,7 +8740,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -8770,7 +8770,7 @@
     "outcome": "raw",
     "happened": "74,560 unmitigated \u00b7 HP 61,359 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Kite Noodle died to the real Darkdragon Dive with no shield and mit unknown.",
+    "went_wrong": "Kite Noodle died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -8813,7 +8813,7 @@
     "outcome": "raw",
     "happened": "72,652 unmitigated \u00b7 HP 61,615 \u00b7 mit unknown \u00b7 shield 9,921",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Spring Nymphar died to the real Darkdragon Dive with a 9,921 shield and mit unknown.",
+    "went_wrong": "Spring Nymphar died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -8856,7 +8856,7 @@
     "outcome": "fail",
     "happened": "1,659,996 unmitigated \u00b7 HP 99,223 \u00b7 mit unknown \u00b7 shield 9,921",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Absolute Gigalad died to the explosion (1,659,996), not a real soak.",
+    "went_wrong": "Absolute Gigalad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -8891,7 +8891,7 @@
     "outcome": "fail",
     "happened": "2,555,415 unmitigated \u00b7 HP 61,737 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion (2,555,415), not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -8926,7 +8926,7 @@
     "outcome": "raw",
     "happened": "79,911 unmitigated \u00b7 HP 33,275 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Darkdragon Dive with no shield and mit unknown.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -8969,7 +8969,7 @@
     "outcome": "fail",
     "happened": "2,535,838 unmitigated \u00b7 HP 68,259 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion (2,535,838), not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9004,7 +9004,7 @@
     "outcome": "fail",
     "happened": "2,535,594 unmitigated \u00b7 HP 68,662 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion (2,535,594), not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9039,7 +9039,7 @@
     "outcome": "fail",
     "happened": "68,354 unmitigated \u00b7 HP 12,516 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The soaker baits the clone's line out of the arena and steps through when the clone glows. Any hit is a fail. One player in the line owns it. Several players in one line means the baiter aimed it through them.",
-    "went_wrong": "Absolute Gigachad stood in the Geirskogul line.",
+    "went_wrong": "Absolute Gigachad stood in the line.",
     "blames": [
       {
         "who": "Absolute Gigachad",
@@ -9076,7 +9076,7 @@
     "outcome": "fail",
     "happened": "181,150 unmitigated \u00b7 HP 68,218 \u00b7 10% mit \u00b7 shield 19,974 \u00b7 stack 1 of 4",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kite Noodle took the failed cleave of Sacred Sever (181,150), not the share.",
+    "went_wrong": "Kite Noodle got cleaved.",
     "blames": [
       {
         "who": "Kite Noodle",
@@ -9111,7 +9111,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -9141,7 +9141,7 @@
     "outcome": "fail",
     "happened": "99,612 unmitigated \u00b7 HP 60,175 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion, not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9176,7 +9176,7 @@
     "outcome": "fail",
     "happened": "94,764 unmitigated \u00b7 HP 48,387 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Loki Doki died to the explosion, not a real soak.",
+    "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9211,7 +9211,7 @@
     "outcome": "fail",
     "happened": "98,533 unmitigated \u00b7 HP 52,705 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion, not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9246,7 +9246,7 @@
     "outcome": "fail",
     "happened": "102,241 unmitigated \u00b7 HP 43,247 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion, not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9281,7 +9281,7 @@
     "outcome": "fail",
     "happened": "94,488 unmitigated \u00b7 HP 51,656 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion, not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9316,7 +9316,7 @@
     "outcome": "fail",
     "happened": "59,925 unmitigated \u00b7 HP 46,588 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9351,7 +9351,7 @@
     "outcome": "fail",
     "happened": "63,455 unmitigated \u00b7 HP 44,217 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9386,7 +9386,7 @@
     "outcome": "fail",
     "happened": "820,800 unmitigated \u00b7 HP 54,392 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Kite Noodle failed Hiemal Storm. 820,800 is well above a placed hit.",
+    "went_wrong": "Kite Noodle failed the ice soak.",
     "blames": [
       {
         "who": "Kite Noodle",
@@ -9423,7 +9423,7 @@
     "outcome": "fail",
     "happened": "744,405 unmitigated \u00b7 HP 62,101 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Loki Doki failed Hiemal Storm. 744,405 is well above a placed hit.",
+    "went_wrong": "Loki Doki failed the ice soak.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -9458,7 +9458,7 @@
     "outcome": "fail",
     "happened": "752,665 unmitigated \u00b7 HP 44,858 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Spring Nymphar failed Hiemal Storm. 752,665 is well above a placed hit.",
+    "went_wrong": "Spring Nymphar failed the ice soak.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -9493,7 +9493,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -9523,7 +9523,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -9553,7 +9553,7 @@
     "outcome": "fail",
     "happened": "103,258 unmitigated \u00b7 HP 68,662 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion, not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9588,7 +9588,7 @@
     "outcome": "fail",
     "happened": "91,898 unmitigated \u00b7 HP 43,673 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion, not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9623,7 +9623,7 @@
     "outcome": "fail",
     "happened": "57,247 unmitigated \u00b7 HP 41,446 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Absolute Gigalad died to the explosion, not a real soak.",
+    "went_wrong": "Absolute Gigalad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -9658,7 +9658,7 @@
     "outcome": "fail",
     "happened": "98,447 unmitigated \u00b7 HP 61,551 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9693,7 +9693,7 @@
     "outcome": "fail",
     "happened": "62,156 unmitigated \u00b7 HP 33,938 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9728,7 +9728,7 @@
     "outcome": "fail",
     "happened": "102,696 unmitigated \u00b7 HP 57,775 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9763,7 +9763,7 @@
     "outcome": "fail",
     "happened": "95,946 unmitigated \u00b7 HP 63,637 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9798,7 +9798,7 @@
     "outcome": "fail",
     "happened": "92,711 unmitigated \u00b7 HP 60,597 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9833,7 +9833,7 @@
     "outcome": "fail",
     "happened": "95,417 unmitigated \u00b7 HP 62,101 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9868,7 +9868,7 @@
     "outcome": "fail",
     "happened": "95,524 unmitigated \u00b7 HP 55,327 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9903,7 +9903,7 @@
     "outcome": "fail",
     "happened": "59,646 unmitigated \u00b7 HP 35,169 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -9938,7 +9938,7 @@
     "outcome": "fail",
     "happened": "208,753 unmitigated \u00b7 HP 61,615 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Spring Nymphar got hit by the cone.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -9973,7 +9973,7 @@
     "outcome": "raw",
     "happened": "79,837 unmitigated \u00b7 HP 68,662 \u00b7 no party mit \u00b7 no shield \u00b7 stack 4 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The Dragon's Rage share was 4 of 5. Missing bodies raised the hit.",
+    "went_wrong": "The stack was 4 of 5.",
     "blames": [
       {
         "who": "Missing bodies",
@@ -10008,7 +10008,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -10038,7 +10038,7 @@
     "outcome": "raw",
     "happened": "95,450 unmitigated \u00b7 HP 31,515 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kitana Kahn died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Kitana Kahn died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -10081,7 +10081,7 @@
     "outcome": "raw",
     "happened": "98,016 unmitigated \u00b7 HP 44,032 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kite Noodle died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Kite Noodle died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -10127,7 +10127,7 @@
     "outcome": "raw",
     "happened": "58,745 unmitigated \u00b7 HP 32,644 \u00b7 28% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Absolute Gigalad died to the real Eternal Conviction with no shield and 28% mit.",
+    "went_wrong": "Absolute Gigalad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -10166,7 +10166,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -10196,7 +10196,7 @@
     "outcome": "raw",
     "happened": "98,995 unmitigated \u00b7 HP 44,880 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Spring Nymphar died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Spring Nymphar died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -10241,7 +10241,7 @@
     "outcome": "raw",
     "happened": "90,064 unmitigated \u00b7 HP 53,218 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -10284,7 +10284,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -10314,7 +10314,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -10344,7 +10344,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -10376,7 +10376,7 @@
     "outcome": "fail",
     "happened": "95,465 unmitigated \u00b7 HP 59,131 \u00b7 10% mit \u00b7 no shield",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Kitana Kahn overlapped Bright Flare.",
+    "went_wrong": "Kitana Kahn got clipped by a Bright Flare.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -10415,7 +10415,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -10447,7 +10447,7 @@
     "outcome": "fail",
     "happened": "98,396 unmitigated \u00b7 HP 33,988 \u00b7 10% mit \u00b7 no shield",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Kiara Blaiddyd overlapped Bright Flare.",
+    "went_wrong": "Kiara Blaiddyd got clipped by a Bright Flare.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -10486,7 +10486,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -10516,7 +10516,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -10546,7 +10546,7 @@
     "outcome": "fail",
     "happened": "91,034 unmitigated \u00b7 HP 45,977 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -10581,7 +10581,7 @@
     "outcome": "fail",
     "happened": "98,233 unmitigated \u00b7 HP 61,066 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -10616,7 +10616,7 @@
     "outcome": "fail",
     "happened": "63,775 unmitigated \u00b7 HP 40,303 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -10651,7 +10651,7 @@
     "outcome": "fail",
     "happened": "97,353 unmitigated \u00b7 HP 58,182 \u00b7 no party mit \u00b7 shield 5,923",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -10686,7 +10686,7 @@
     "outcome": "fail",
     "happened": "93,135 unmitigated \u00b7 HP 61,388 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -10721,7 +10721,7 @@
     "outcome": "fail",
     "happened": "101,522 unmitigated \u00b7 HP 65,167 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -10756,7 +10756,7 @@
     "outcome": "fail",
     "happened": "96,056 unmitigated \u00b7 HP 57,272 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -10791,7 +10791,7 @@
     "outcome": "fail",
     "happened": "59,280 unmitigated \u00b7 HP 41,011 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -10826,7 +10826,7 @@
     "outcome": "fail",
     "happened": "119,436 unmitigated \u00b7 HP 5,786 \u00b7 no party mit \u00b7 shield 33,225",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Loki Doki got Holy Shield Bash. Only a tank takes this.",
+    "went_wrong": "Loki Doki took the tether.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -10863,7 +10863,7 @@
     "outcome": "raw",
     "happened": "110,522 unmitigated \u00b7 HP 54,949 \u00b7 5% mit \u00b7 shield 5,121",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kite Noodle died to the real Eternal Conviction with a 5,121 shield and 5% mit.",
+    "went_wrong": "Kite Noodle died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -10904,7 +10904,7 @@
     "outcome": "raw",
     "happened": "101,354 unmitigated \u00b7 HP 57,795 \u00b7 5% mit \u00b7 shield 5,247",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kiara Blaiddyd died to the real Eternal Conviction with a 5,247 shield and 5% mit.",
+    "went_wrong": "Kiara Blaiddyd died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -10947,7 +10947,7 @@
     "outcome": "raw",
     "happened": "62,285 unmitigated \u00b7 HP 30,476 \u00b7 27% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Absolute Gigachad died to the real Eternal Conviction with no shield and 27% mit.",
+    "went_wrong": "Absolute Gigachad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -10988,7 +10988,7 @@
     "outcome": "raw",
     "happened": "96,548 unmitigated \u00b7 HP 49,956 \u00b7 5% mit \u00b7 shield 8,310",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Kitana Kahn died to the real Eternal Conviction with a 8,310 shield and 5% mit.",
+    "went_wrong": "Kitana Kahn died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -11029,7 +11029,7 @@
     "outcome": "raw",
     "happened": "104,418 unmitigated \u00b7 HP 54,055 \u00b7 5% mit \u00b7 shield 5,029",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Spring Nymphar died to the real Eternal Conviction with a 5,029 shield and 5% mit.",
+    "went_wrong": "Spring Nymphar died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -11071,7 +11071,7 @@
     "outcome": "low",
     "happened": "60,256 unmitigated \u00b7 HP 6,108 \u00b7 24% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad was already at 6,108. The hit itself is the normal one.",
+    "went_wrong": "Absolute Gigalad was already low.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -11116,7 +11116,7 @@
     "outcome": "raw",
     "happened": "104,971 unmitigated \u00b7 HP 43,509 \u00b7 5% mit \u00b7 shield 8,529",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Speed Panda died to the real Eternal Conviction with a 8,529 shield and 5% mit.",
+    "went_wrong": "Speed Panda died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -11157,7 +11157,7 @@
     "outcome": "fail",
     "happened": "97,309 unmitigated \u00b7 HP 38,478 \u00b7 10% mit \u00b7 no shield",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Spring Nymphar got the failed version of Bright Flare.",
+    "went_wrong": "Spring Nymphar got hit by a Bright Flare.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -11192,7 +11192,7 @@
     "outcome": "raw",
     "happened": "36,086 unmitigated \u00b7 HP 32,977 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Hiemal Storm with no shield and no party mit.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -11235,7 +11235,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -11265,7 +11265,7 @@
     "outcome": "fail",
     "happened": "98,015 unmitigated \u00b7 HP 23,314 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion, not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -11300,7 +11300,7 @@
     "outcome": "fail",
     "happened": "102,793 unmitigated \u00b7 HP 29,467 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion, not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -11335,7 +11335,7 @@
     "outcome": "fail",
     "happened": "91,849 unmitigated \u00b7 HP 26,351 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kitana Kahn died to the explosion, not a real soak.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -11370,7 +11370,7 @@
     "outcome": "fail",
     "happened": "99,829 unmitigated \u00b7 HP 29,584 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion, not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -11407,7 +11407,7 @@
     "outcome": "fail",
     "happened": "93,320 unmitigated \u00b7 HP 20,379 \u00b7 10% mit \u00b7 no shield",
     "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion, not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -11442,7 +11442,7 @@
     "outcome": "fail",
     "happened": "57,240 unmitigated \u00b7 HP 23,535 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -11477,7 +11477,7 @@
     "outcome": "fail",
     "happened": "445,247 unmitigated \u00b7 HP 61,737 \u00b7 mit unknown \u00b7 shield 8,342",
     "should_have_been": "The player who soaks does not still have Fire Resistance Down II or Physical Vulnerability Up. A soak with those debuffs is about 445\u2013570k. That player owns it.",
-    "went_wrong": "Kitana Kahn soaked a tower while they still had the dive debuff.",
+    "went_wrong": "Kitana Kahn soaked with the dive debuff.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -11512,7 +11512,7 @@
     "outcome": "fail",
     "happened": "364,126 unmitigated \u00b7 HP 99,223 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9\u201323k. Anyone else in that landing is a mistake.",
-    "went_wrong": "Absolute Gigalad stood in the dive (364,126). Each player in that landing owns it.",
+    "went_wrong": "Absolute Gigalad stood in the dive.",
     "blames": [
       {
         "who": "Absolute Gigalad",
@@ -11559,7 +11559,7 @@
     "outcome": "fail",
     "happened": "286,711 unmitigated \u00b7 HP 99,211 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9\u201323k. Anyone else in that landing is a mistake.",
-    "went_wrong": "Absolute Gigachad stood in the dive (286,711). Each player in that landing owns it.",
+    "went_wrong": "Absolute Gigachad stood in the dive.",
     "blames": [
       {
         "who": "Absolute Gigachad",
@@ -11606,7 +11606,7 @@
     "outcome": "fail",
     "happened": "637,329 unmitigated \u00b7 HP 54,770 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9\u201323k. Anyone else in that landing is a mistake.",
-    "went_wrong": "Speed Panda stood in the dive (637,329). Each player in that landing owns it.",
+    "went_wrong": "Speed Panda stood in the dive.",
     "blames": [
       {
         "who": "Speed Panda",
@@ -11653,7 +11653,7 @@
     "outcome": "fail",
     "happened": "661,323 unmitigated \u00b7 HP 61,615 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9\u201323k. Anyone else in that landing is a mistake.",
-    "went_wrong": "Spring Nymphar stood in the dive (661,323). Each player in that landing owns it.",
+    "went_wrong": "Spring Nymphar stood in the dive.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -11700,7 +11700,7 @@
     "outcome": "fail",
     "happened": "109,450 unmitigated \u00b7 HP 64,733 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "The soaker baits the clone's line out of the arena and steps through when the clone glows. Any hit is a fail. One player in the line owns it. Several players in one line means the baiter aimed it through them.",
-    "went_wrong": "Kite Noodle stood in the Geirskogul line.",
+    "went_wrong": "Kite Noodle stood in the line.",
     "blames": [
       {
         "who": "Kite Noodle",
@@ -11735,7 +11735,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -11770,7 +11770,7 @@
     "outcome": "fail",
     "happened": "471,948 unmitigated \u00b7 HP 119,067 \u00b7 115% amp \u00b7 no shield",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigalad failed Holy Shield Bash.",
+    "went_wrong": "Absolute Gigalad shorted the tether.",
     "blames": [
       {
         "who": "Absolute Gigalad",
@@ -11805,7 +11805,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -11835,7 +11835,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -11865,7 +11865,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -11895,7 +11895,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -11925,7 +11925,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -11957,7 +11957,7 @@
     "outcome": "fail",
     "happened": "92,810 unmitigated \u00b7 HP 61,615 \u00b7 10% mit \u00b7 no shield",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Spring Nymphar got the failed version of Bright Flare.",
+    "went_wrong": "Spring Nymphar got hit by a Bright Flare.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -11992,7 +11992,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12022,7 +12022,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12052,7 +12052,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12082,7 +12082,7 @@
     "outcome": "fail",
     "happened": "210,142 unmitigated \u00b7 HP 58,138 \u00b7 no party mit \u00b7 shield 22,456",
     "should_have_been": "The party is walking toward the middle while dodging the Heavy Impact pulses. Thordan is in the middle. This cast is a 4/4 split. Nobody is hit.",
-    "went_wrong": "Spring Nymphar got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Spring Nymphar got hit by the cone.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -12117,7 +12117,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12147,7 +12147,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12177,7 +12177,7 @@
     "outcome": "raw",
     "happened": "111,922 unmitigated \u00b7 HP 68,662 \u00b7 no party mit \u00b7 shield 37,181 \u00b7 stack 3 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The Dragon's Rage share was 3 of 5. Missing bodies raised the hit.",
+    "went_wrong": "The stack was 3 of 5.",
     "blames": [
       {
         "who": "Missing bodies",
@@ -12212,7 +12212,7 @@
     "outcome": "raw",
     "happened": "108,501 unmitigated \u00b7 HP 61,737 \u00b7 no party mit \u00b7 shield 30,865 \u00b7 stack 3 of 5",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The Dragon's Rage share was 3 of 5. Missing bodies raised the hit.",
+    "went_wrong": "The stack was 3 of 5.",
     "blames": [
       {
         "who": "Missing bodies",
@@ -12250,7 +12250,7 @@
     "outcome": "raw",
     "happened": "62,120 unmitigated \u00b7 HP 21,919 \u00b7 40% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Absolute Gigachad died to the real Eternal Conviction with no shield and 40% mit.",
+    "went_wrong": "Absolute Gigachad died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -12292,7 +12292,7 @@
     "outcome": "low",
     "happened": "57,673 unmitigated \u00b7 HP 9,119 \u00b7 28% mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad was already at 9,119. The hit itself is the normal one.",
+    "went_wrong": "Absolute Gigalad was already low.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -12335,7 +12335,7 @@
     "outcome": "raw",
     "happened": "90,690 unmitigated \u00b7 HP 43,095 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "The resolve was fine. Loki Doki died to the real Eternal Conviction with no shield and no party mit.",
+    "went_wrong": "Loki Doki died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -12378,7 +12378,7 @@
     "outcome": "low",
     "happened": "91,446 unmitigated \u00b7 HP 12,939 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Spring Nymphar was already at 12,939. The hit itself is the normal one.",
+    "went_wrong": "Spring Nymphar was already low.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -12421,7 +12421,7 @@
     "outcome": "fail",
     "happened": "194,807 unmitigated \u00b7 HP 68,662 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Kiara Blaiddyd got hit by Ascalon's Mercy Concealed. Nobody should be hit.",
+    "went_wrong": "Kiara Blaiddyd got hit by the cone.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -12456,7 +12456,7 @@
     "outcome": "fail",
     "happened": "2,277,243 unmitigated \u00b7 HP 68,218 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Kite Noodle died to the explosion (2,277,243), not a real soak.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -12491,7 +12491,7 @@
     "outcome": "fail",
     "happened": "2,341,377 unmitigated \u00b7 HP 45,322 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Speed Panda died to the explosion (2,341,377), not a real soak.",
+    "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -12526,7 +12526,7 @@
     "outcome": "raw",
     "happened": "59,402 unmitigated \u00b7 HP 50,595 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Spring Nymphar died to the real Darkdragon Dive with no shield and mit unknown.",
+    "went_wrong": "Spring Nymphar died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -12569,7 +12569,7 @@
     "outcome": "fail",
     "happened": "2,311,932 unmitigated \u00b7 HP 68,662 \u00b7 mit unknown \u00b7 shield 13,305",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Kiara Blaiddyd died to the explosion (2,311,932), not a real soak.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -12604,7 +12604,7 @@
     "outcome": "fail",
     "happened": "2,256,759 unmitigated \u00b7 HP 62,101 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Loki Doki died to the explosion (2,256,759), not a real soak.",
+    "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -12639,7 +12639,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12669,7 +12669,7 @@
     "outcome": "raw",
     "happened": "60,388 unmitigated \u00b7 HP 46,921 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. Tanks take about 32\u201354k. A non-tank soak that killed from a high bar was about 59\u201380k. A shield keeps them alive. Dying to that hit is the healers.",
-    "went_wrong": "The resolve was fine. Kitana Kahn died to the real Darkdragon Dive with no shield and mit unknown.",
+    "went_wrong": "Kitana Kahn died to the real hit.",
     "blames": [
       {
         "who": "Loki Doki",
@@ -12712,7 +12712,7 @@
     "outcome": "fail",
     "happened": "1,388,648 unmitigated \u00b7 HP 97,212 \u00b7 mit unknown \u00b7 no shield",
     "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4\u20133.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak.",
-    "went_wrong": "A tower was empty. Absolute Gigalad died to the explosion (1,388,648), not a real soak.",
+    "went_wrong": "Absolute Gigalad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -12747,7 +12747,7 @@
     "outcome": "fail",
     "happened": "52,393 unmitigated \u00b7 HP 38,914 \u00b7 no party mit \u00b7 shield 5,090",
     "should_have_been": "The knight's pulses, outward. A hit stuns and applies Damage Down. Clean pulls take 0. Both ability ids are this ring.",
-    "went_wrong": "Kiara Blaiddyd failed Heavy Impact.",
+    "went_wrong": "Kiara Blaiddyd stood in the ring.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -12782,7 +12782,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12812,7 +12812,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12842,7 +12842,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12872,7 +12872,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -12902,7 +12902,7 @@
     "outcome": "fail",
     "happened": "510,783 unmitigated \u00b7 HP 99,211 \u00b7 no party mit \u00b7 shield 49,589",
     "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "A tower was empty. Absolute Gigachad died to the explosion (510,783), not a real soak.",
+    "went_wrong": "Absolute Gigachad died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -12937,7 +12937,7 @@
     "outcome": "fail",
     "happened": "702,966 unmitigated \u00b7 HP 33,938 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "A tower was empty. Spring Nymphar died to the explosion (702,966), not a real soak.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
         "who": "Missed soak",
@@ -12972,7 +12972,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13002,7 +13002,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13032,7 +13032,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13062,7 +13062,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13092,7 +13092,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13122,7 +13122,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13152,7 +13152,7 @@
     "outcome": "fail",
     "happened": "98,719 unmitigated \u00b7 HP 61,615 \u00b7 no party mit \u00b7 shield 7,161",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Spring Nymphar got the failed version of Bright Flare.",
+    "went_wrong": "Spring Nymphar got hit by a Bright Flare.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -13187,7 +13187,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13217,7 +13217,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13247,7 +13247,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13277,7 +13277,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13307,7 +13307,7 @@
     "outcome": "fail",
     "happened": "105,841 unmitigated \u00b7 HP 61,305 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -13342,7 +13342,7 @@
     "outcome": "fail",
     "happened": "97,320 unmitigated \u00b7 HP 23,879 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -13377,7 +13377,7 @@
     "outcome": "fail",
     "happened": "104,428 unmitigated \u00b7 HP 41,805 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -13412,7 +13412,7 @@
     "outcome": "fail",
     "happened": "93,743 unmitigated \u00b7 HP 47,471 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -13447,7 +13447,7 @@
     "outcome": "fail",
     "happened": "57,660 unmitigated \u00b7 HP 37,786 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -13482,7 +13482,7 @@
     "outcome": "fail",
     "happened": "93,755 unmitigated \u00b7 HP 57,170 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -13517,7 +13517,7 @@
     "outcome": "fail",
     "happened": "96,851 unmitigated \u00b7 HP 55,883 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "The two prey players dropped comets too close. The explosion hit the party.",
+    "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
         "who": "Prey markers",
@@ -13552,7 +13552,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13582,7 +13582,7 @@
     "outcome": "fail",
     "happened": "96,113 unmitigated \u00b7 HP 42,006 \u00b7 no party mit \u00b7 no shield",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Spring Nymphar overlapped Bright Flare.",
+    "went_wrong": "Spring Nymphar got clipped by a Bright Flare.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -13625,7 +13625,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13655,7 +13655,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13685,7 +13685,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13717,7 +13717,7 @@
     "outcome": "fail",
     "happened": "111,278 unmitigated \u00b7 HP 32,229 \u00b7 10% mit \u00b7 no shield",
     "should_have_been": "The hourglass orbs are dodged. A hit is a mistake. One orb is about 61\u201367k on a tank and about 93\u2013111k on a healer or DPS. Two players in the burst overlapped.",
-    "went_wrong": "Speed Panda overlapped Bright Flare.",
+    "went_wrong": "Speed Panda got clipped by a Bright Flare.",
     "blames": [
       {
         "who": "Speed Panda",
@@ -13760,7 +13760,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   },
   {
@@ -13790,7 +13790,7 @@
     "outcome": "environment",
     "happened": "No damage packet.",
     "should_have_been": "A death with no hit is the body after a raise, or a wipe tick.",
-    "went_wrong": "No fault on a mechanic. There is no hit to assign.",
+    "went_wrong": "No hit.",
     "blames": []
   }
 ]
