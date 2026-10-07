@@ -12,7 +12,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -20,7 +20,30 @@
     "buffs": [],
     "boss_pct": 63.2,
     "pull_ms": 69381,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Paulecrain",
+        "by_id": 47,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Paulecrain",
+        "by_id": 47,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 4,
@@ -35,17 +58,62 @@
     "ability": "Dimensional Collapse",
     "total": 48158,
     "hp": 14782,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 53511,
     "multiplier": 0.9,
     "absorb": 25340,
     "stack": 1,
     "buffs": [
-      "1002711"
+      "Desperate Measures"
     ],
     "boss_pct": 63.2,
     "pull_ms": 69381,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 7320,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 8778,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 9242,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 4,
@@ -60,18 +128,41 @@
     "ability": "the Dragon's Rage",
     "total": 850399,
     "hp": 37051,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 944888,
     "multiplier": 2.99,
     "absorb": 0,
     "stack": 3,
     "buffs": [
-      "1002711",
-      "1002941"
+      "Desperate Measures",
+      "Magic Vulnerability Up"
     ],
     "boss_pct": 63.2,
     "pull_ms": 69381,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 4,
@@ -86,21 +177,77 @@
     "ability": "Holy Shield Bash",
     "total": 219019,
     "hp": 99211,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 481176,
     "multiplier": 1.51,
     "absorb": 0,
     "stack": 2,
     "buffs": [
-      "1000074",
-      "1002711",
-      "1002674",
-      "1002675",
-      "1002940"
+      "Sentinel",
+      "Desperate Measures",
+      "Holy Sheltron",
+      "Knight's Resolve",
+      "Physical Vulnerability Up"
     ],
     "boss_pct": 63.2,
     "pull_ms": 69381,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Knight's Resolve",
+        "guid": 1002675,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 4,
@@ -115,18 +262,41 @@
     "ability": "the Dragon's Rage",
     "total": 855360,
     "hp": 34482,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 950400,
     "multiplier": 2.99,
     "absorb": 0,
     "stack": 3,
     "buffs": [
-      "1002711",
-      "1002941"
+      "Desperate Measures",
+      "Magic Vulnerability Up"
     ],
     "boss_pct": 63.2,
     "pull_ms": 69381,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 4,
@@ -141,18 +311,41 @@
     "ability": "the Dragon's Rage",
     "total": 742491,
     "hp": 52362,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 824990,
     "multiplier": 2.99,
     "absorb": 0,
     "stack": 3,
     "buffs": [
-      "1002711",
-      "1002941"
+      "Desperate Measures",
+      "Magic Vulnerability Up"
     ],
     "boss_pct": 63.2,
     "pull_ms": 69381,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 4,
@@ -167,18 +360,41 @@
     "ability": "Eternal Conviction",
     "total": 41854,
     "hp": 34782,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 58131,
     "multiplier": 0.72,
     "absorb": 0,
     "stack": 2,
     "buffs": [
-      "1001191",
-      "1002711"
+      "Rampart",
+      "Desperate Measures"
     ],
     "boss_pct": 63.2,
     "pull_ms": 69381,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 4,
@@ -193,7 +409,7 @@
     "ability": "Eternal Conviction",
     "total": 91096,
     "hp": 59240,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 91096,
     "multiplier": 1.0,
     "absorb": 14777,
@@ -201,7 +417,19 @@
     "buffs": [],
     "boss_pct": 63.2,
     "pull_ms": 69381,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 14777,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 5,
@@ -216,7 +444,7 @@
     "ability": "Bright Flare",
     "total": 96882,
     "hp": 37447,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 96882,
     "multiplier": 1.0,
     "absorb": 0,
@@ -239,7 +467,7 @@
     "ability": "Heavens' Stake",
     "total": 322796,
     "hp": 0,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 322796,
     "multiplier": 1.0,
     "absorb": 12115,
@@ -247,7 +475,19 @@
     "buffs": [],
     "boss_pct": 32.8,
     "pull_ms": 142282,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 12115,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 5,
@@ -262,7 +502,7 @@
     "ability": "Hiemal Storm",
     "total": 104572,
     "hp": 62101,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 104572,
     "multiplier": 1.0,
     "absorb": 11870,
@@ -270,7 +510,19 @@
     "buffs": [],
     "boss_pct": 32.8,
     "pull_ms": 142282,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 11870,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 5,
@@ -285,7 +537,7 @@
     "ability": "Eternal Conviction",
     "total": 97693,
     "hp": 46263,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 97693,
     "multiplier": 1.0,
     "absorb": 0,
@@ -308,7 +560,7 @@
     "ability": "Eternal Conviction",
     "total": 105236,
     "hp": 14852,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 105236,
     "multiplier": 1.0,
     "absorb": 0,
@@ -331,7 +583,7 @@
     "ability": "Eternal Conviction",
     "total": 97984,
     "hp": 66202,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 97984,
     "multiplier": 1.0,
     "absorb": 0,
@@ -354,7 +606,7 @@
     "ability": "Eternal Conviction",
     "total": 94539,
     "hp": 52095,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 94539,
     "multiplier": 1.0,
     "absorb": 0,
@@ -377,7 +629,7 @@
     "ability": "Eternal Conviction",
     "total": 66912,
     "hp": 42053,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 66912,
     "multiplier": 1.0,
     "absorb": 0,
@@ -400,7 +652,7 @@
     "ability": "Eternal Conviction",
     "total": 58229,
     "hp": 38162,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 58229,
     "multiplier": 1.0,
     "absorb": 0,
@@ -423,17 +675,40 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 198070,
     "hp": 46245,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 220079,
     "multiplier": 0.9,
     "absorb": 12876,
     "stack": 1,
     "buffs": [
-      "1002711"
+      "Desperate Measures"
     ],
     "boss_pct": 63.2,
     "pull_ms": 72410,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 12876,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 6,
@@ -448,18 +723,63 @@
     "ability": "the Dragon's Rage",
     "total": 87094,
     "hp": 62840,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 107525,
     "multiplier": 0.81,
     "absorb": 17777,
     "stack": 3,
     "buffs": [
-      "1002711",
-      "1001826"
+      "Desperate Measures",
+      "Shield Samba"
     ],
     "boss_pct": 63.2,
     "pull_ms": 72410,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 8100,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 9677,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 6,
@@ -474,7 +794,7 @@
     "ability": "Holy Shield Bash",
     "total": 19215,
     "hp": 3360,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -482,7 +802,30 @@
     "buffs": [],
     "boss_pct": 63.2,
     "pull_ms": 72410,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 6,
@@ -497,18 +840,41 @@
     "ability": "Holy Bladedance",
     "total": 360063,
     "hp": 46658,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 400070,
     "multiplier": 2.99,
     "absorb": 0,
     "stack": 3,
     "buffs": [
-      "1002711",
-      "1002940"
+      "Desperate Measures",
+      "Physical Vulnerability Up"
     ],
     "boss_pct": 63.2,
     "pull_ms": 72410,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 6,
@@ -523,20 +889,65 @@
     "ability": "Eternal Conviction",
     "total": 30564,
     "hp": 23805,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 63418,
     "multiplier": 0.48,
     "absorb": 0,
     "stack": 5,
     "buffs": [
-      "1002711",
-      "1000074",
-      "1001826",
-      "1002674"
+      "Desperate Measures",
+      "Sentinel",
+      "Shield Samba",
+      "Holy Sheltron"
     ],
     "boss_pct": 63.2,
     "pull_ms": 72410,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 6,
@@ -551,17 +962,29 @@
     "ability": "Eternal Conviction",
     "total": 85419,
     "hp": 37050,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 94910,
     "multiplier": 0.9,
     "absorb": 0,
     "stack": 5,
     "buffs": [
-      "1002711"
+      "Desperate Measures"
     ],
     "boss_pct": 63.2,
     "pull_ms": 72410,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 6,
@@ -576,18 +999,41 @@
     "ability": "Eternal Conviction",
     "total": 84540,
     "hp": 26462,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 104371,
     "multiplier": 0.81,
     "absorb": 0,
     "stack": 5,
     "buffs": [
-      "1002711",
-      "1001826"
+      "Desperate Measures",
+      "Shield Samba"
     ],
     "boss_pct": 63.2,
     "pull_ms": 72410,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 6,
@@ -602,19 +1048,53 @@
     "ability": "Eternal Conviction",
     "total": 37863,
     "hp": 6255,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 58431,
     "multiplier": 0.65,
     "absorb": 0,
     "stack": 5,
     "buffs": [
-      "1002711",
-      "1001191",
-      "1001826"
+      "Desperate Measures",
+      "Rampart",
+      "Shield Samba"
     ],
     "boss_pct": 63.2,
     "pull_ms": 72410,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 6,
@@ -629,7 +1109,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -652,7 +1132,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -660,7 +1140,19 @@
     "buffs": [],
     "boss_pct": 63.8,
     "pull_ms": 62958,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Succor"
+      }
+    ]
   },
   {
     "fight": 7,
@@ -675,7 +1167,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -683,7 +1175,19 @@
     "buffs": [],
     "boss_pct": 63.8,
     "pull_ms": 62958,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Succor"
+      }
+    ]
   },
   {
     "fight": 7,
@@ -698,7 +1202,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -721,7 +1225,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 117894,
     "hp": 85700,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 117894,
     "multiplier": 1.0,
     "absorb": 0,
@@ -744,7 +1248,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -767,7 +1271,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -790,7 +1294,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -813,7 +1317,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -836,7 +1340,7 @@
     "ability": "Hiemal Storm",
     "total": 104450,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 104450,
     "multiplier": 1.0,
     "absorb": 0,
@@ -859,7 +1363,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -882,7 +1386,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -905,7 +1409,7 @@
     "ability": "Eternal Conviction",
     "total": 104659,
     "hp": 50807,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 104659,
     "multiplier": 1.0,
     "absorb": 0,
@@ -928,7 +1432,7 @@
     "ability": "Eternal Conviction",
     "total": 96736,
     "hp": 43041,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 96736,
     "multiplier": 1.0,
     "absorb": 0,
@@ -951,7 +1455,7 @@
     "ability": "Eternal Conviction",
     "total": 91018,
     "hp": 46005,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 91018,
     "multiplier": 1.0,
     "absorb": 0,
@@ -974,7 +1478,7 @@
     "ability": "Eternal Conviction",
     "total": 61384,
     "hp": 27134,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 61384,
     "multiplier": 1.0,
     "absorb": 0,
@@ -997,7 +1501,7 @@
     "ability": "Eternal Conviction",
     "total": 58796,
     "hp": 29023,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 58796,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1020,7 +1524,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 204958,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 204958,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1043,7 +1547,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 213851,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 213851,
     "multiplier": 1.0,
     "absorb": 29991,
@@ -1051,7 +1555,41 @@
     "buffs": [],
     "boss_pct": 67.9,
     "pull_ms": 63969,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 11636,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 9095,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 9260,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 10,
@@ -1066,7 +1604,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1089,7 +1627,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1112,7 +1650,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1135,7 +1673,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1158,7 +1696,7 @@
     "ability": "Skyward Leap",
     "total": 735427,
     "hp": 35903,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 735427,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1166,7 +1704,52 @@
     "buffs": [],
     "boss_pct": 67.9,
     "pull_ms": 63969,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 7308,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 14341,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 5247,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 10238,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 10,
@@ -1181,7 +1764,7 @@
     "ability": "the Dragon's Rage",
     "total": 333516,
     "hp": 61652,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 333516,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1204,7 +1787,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1227,7 +1810,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1250,7 +1833,7 @@
     "ability": "Holy Impact",
     "total": 105084,
     "hp": 48240,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 105084,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1273,7 +1856,7 @@
     "ability": "Holy Impact",
     "total": 92786,
     "hp": 54273,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 92786,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1296,7 +1879,7 @@
     "ability": "Holy Impact",
     "total": 102690,
     "hp": 53238,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 102690,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1319,7 +1902,7 @@
     "ability": "Holy Impact",
     "total": 91542,
     "hp": 56135,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 91542,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1342,7 +1925,7 @@
     "ability": "Holy Impact",
     "total": 62096,
     "hp": 47576,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 62096,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1365,7 +1948,7 @@
     "ability": "Holy Impact",
     "total": 97410,
     "hp": 55363,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 97410,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1388,7 +1971,7 @@
     "ability": "Holy Impact",
     "total": 103421,
     "hp": 64301,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 103421,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1411,7 +1994,7 @@
     "ability": "Holy Shield Bash",
     "total": 126357,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 126357,
     "multiplier": 1.0,
     "absorb": 30956,
@@ -1419,7 +2002,52 @@
     "buffs": [],
     "boss_pct": 62.6,
     "pull_ms": 69316,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 7206,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 9228,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 5262,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 9260,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 12,
@@ -1434,7 +2062,7 @@
     "ability": "Holy Bladedance",
     "total": 34742,
     "hp": 22959,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 34742,
     "multiplier": 1.0,
     "absorb": 3800,
@@ -1442,7 +2070,19 @@
     "buffs": [],
     "boss_pct": 62.6,
     "pull_ms": 69316,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 3800,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 12,
@@ -1457,7 +2097,7 @@
     "ability": "Holy Bladedance",
     "total": 34943,
     "hp": 27075,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 34943,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1480,7 +2120,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1488,7 +2128,30 @@
     "buffs": [],
     "boss_pct": 62.6,
     "pull_ms": 69316,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 12,
@@ -1503,7 +2166,7 @@
     "ability": "Eternal Conviction",
     "total": 101877,
     "hp": 60291,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 101877,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1526,7 +2189,7 @@
     "ability": "Eternal Conviction",
     "total": 101238,
     "hp": 63295,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 101238,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1549,18 +2212,41 @@
     "ability": "Eternal Conviction",
     "total": 39579,
     "hp": 18048,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 66520,
     "multiplier": 0.6,
     "absorb": 0,
     "stack": 4,
     "buffs": [
-      "1000074",
-      "1002674"
+      "Sentinel",
+      "Holy Sheltron"
     ],
     "boss_pct": 62.6,
     "pull_ms": 69316,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 12,
@@ -1575,7 +2261,7 @@
     "ability": "Eternal Conviction",
     "total": 97292,
     "hp": 50647,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 97292,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1598,7 +2284,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1621,7 +2307,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1644,7 +2330,7 @@
     "ability": "Eternal Conviction",
     "total": 104622,
     "hp": 52172,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 104622,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1667,7 +2353,7 @@
     "ability": "Eternal Conviction",
     "total": 92590,
     "hp": 61338,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 92590,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1690,7 +2376,7 @@
     "ability": "Eternal Conviction",
     "total": 97376,
     "hp": 63515,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 97376,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1713,7 +2399,7 @@
     "ability": "Eternal Conviction",
     "total": 60624,
     "hp": 36888,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 60624,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1736,7 +2422,7 @@
     "ability": "Eternal Conviction",
     "total": 102135,
     "hp": 67928,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 102135,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1759,7 +2445,7 @@
     "ability": "Eternal Conviction",
     "total": 94187,
     "hp": 59769,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 94187,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1782,7 +2468,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 203946,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 203946,
     "multiplier": 1.0,
     "absorb": 13813,
@@ -1790,7 +2476,19 @@
     "buffs": [],
     "boss_pct": 69.2,
     "pull_ms": 74809,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 13813,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -1805,17 +2503,51 @@
     "ability": "Eternal Conviction",
     "total": 94326,
     "hp": 47802,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 99292,
     "multiplier": 0.95,
     "absorb": 13016,
     "stack": 8,
     "buffs": [
-      "1001875"
+      "Seraphic Illumination"
     ],
     "boss_pct": 69.2,
     "pull_ms": 74809,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 7884,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 5132,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -1830,7 +2562,7 @@
     "ability": "Eternal Conviction",
     "total": 102965,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 102965,
     "multiplier": 1.0,
     "absorb": 12967,
@@ -1838,7 +2570,30 @@
     "buffs": [],
     "boss_pct": 69.2,
     "pull_ms": 74809,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 7902,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 5065,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -1853,17 +2608,51 @@
     "ability": "Eternal Conviction",
     "total": 94644,
     "hp": 53845,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 99627,
     "multiplier": 0.95,
     "absorb": 13208,
     "stack": 8,
     "buffs": [
-      "1001875"
+      "Seraphic Illumination"
     ],
     "boss_pct": 69.2,
     "pull_ms": 74809,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 8139,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 5069,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -1878,7 +2667,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1886,7 +2675,30 @@
     "buffs": [],
     "boss_pct": 69.2,
     "pull_ms": 74809,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -1901,7 +2713,7 @@
     "ability": "Eternal Conviction",
     "total": 100019,
     "hp": 65540,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 100019,
     "multiplier": 1.0,
     "absorb": 0,
@@ -1924,17 +2736,51 @@
     "ability": "Eternal Conviction",
     "total": 97075,
     "hp": 67454,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 102186,
     "multiplier": 0.95,
     "absorb": 12117,
     "stack": 8,
     "buffs": [
-      "1001875"
+      "Seraphic Illumination"
     ],
     "boss_pct": 69.2,
     "pull_ms": 74809,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 8304,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 3813,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -1949,17 +2795,51 @@
     "ability": "Eternal Conviction",
     "total": 99136,
     "hp": 54309,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 104355,
     "multiplier": 0.95,
     "absorb": 13086,
     "stack": 8,
     "buffs": [
-      "1001875"
+      "Seraphic Illumination"
     ],
     "boss_pct": 69.2,
     "pull_ms": 74809,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 7928,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 5158,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 14,
@@ -1974,7 +2854,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -1982,7 +2862,30 @@
     "buffs": [],
     "boss_pct": 69.2,
     "pull_ms": 74809,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -1997,7 +2900,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2020,7 +2923,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2043,7 +2946,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2066,7 +2969,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 223308,
     "hp": 50062,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 223308,
     "multiplier": 1.0,
     "absorb": 21088,
@@ -2074,7 +2977,30 @@
     "buffs": [],
     "boss_pct": 64.0,
     "pull_ms": 63609,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 11846,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 9242,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -2089,7 +3015,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2097,7 +3023,85 @@
     "buffs": [],
     "boss_pct": 64.0,
     "pull_ms": 63609,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Succor"
+      },
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Knight's Resolve",
+        "guid": 1002675,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Holy Sheltron"
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Aspected Helios"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -2112,7 +3116,7 @@
     "ability": "Dimensional Collapse",
     "total": 49450,
     "hp": 1905,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 49450,
     "multiplier": 1.0,
     "absorb": 26081,
@@ -2120,7 +3124,41 @@
     "buffs": [],
     "boss_pct": 64.0,
     "pull_ms": 63609,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 7529,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 9237,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 9315,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -2135,20 +3173,65 @@
     "ability": "Holy Shield Bash",
     "total": 516870,
     "hp": 109989,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 797639,
     "multiplier": 2.15,
     "absorb": 0,
     "stack": 1,
     "buffs": [
-      "1001191",
-      "1002679",
-      "1002678",
-      "1002940"
+      "Rampart",
+      "Stem the Flow",
+      "Bloodwhetting",
+      "Physical Vulnerability Up"
     ],
     "boss_pct": 64.0,
     "pull_ms": 63609,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Stem the Flow",
+        "guid": 1002679,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 15,
@@ -2163,7 +3246,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2186,7 +3269,7 @@
     "ability": "Final Chorus",
     "total": 96055,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 15976,
@@ -2194,7 +3277,30 @@
     "buffs": [],
     "boss_pct": 87.7,
     "pull_ms": 43408,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 7156,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 8820,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -2209,7 +3315,7 @@
     "ability": "Final Chorus",
     "total": 79898,
     "hp": 62101,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 16620,
@@ -2217,7 +3323,41 @@
     "buffs": [],
     "boss_pct": 87.7,
     "pull_ms": 43408,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Arms Up",
+        "guid": 1001176,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 7448,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 9172,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -2232,7 +3372,7 @@
     "ability": "Final Chorus",
     "total": 87292,
     "hp": 68218,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 16452,
@@ -2240,7 +3380,41 @@
     "buffs": [],
     "boss_pct": 87.7,
     "pull_ms": 43408,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Arms Up",
+        "guid": 1001176,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": 7152,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": 9300,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -2255,7 +3429,7 @@
     "ability": "attack",
     "total": 45694,
     "hp": 16420,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 3616,
@@ -2263,7 +3437,19 @@
     "buffs": [],
     "boss_pct": 87.7,
     "pull_ms": 43408,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 3616,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -2278,7 +3464,7 @@
     "ability": "attack",
     "total": 47692,
     "hp": 26959,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 8533,
@@ -2286,7 +3472,19 @@
     "buffs": [],
     "boss_pct": 87.7,
     "pull_ms": 43408,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 8533,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 16,
@@ -2301,7 +3499,7 @@
     "ability": "Eye of the Tyrant",
     "total": 115900,
     "hp": 56719,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2324,7 +3522,7 @@
     "ability": "Eye of the Tyrant",
     "total": 182155,
     "hp": 15432,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2347,7 +3545,7 @@
     "ability": "Darkdragon Dive",
     "total": 1917912,
     "hp": 99211,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2370,7 +3568,7 @@
     "ability": "Darkdragon Dive",
     "total": 3044147,
     "hp": 29476,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2393,18 +3591,41 @@
     "ability": "Shining Blade",
     "total": 3338627,
     "hp": 26093,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 3709586,
     "multiplier": 2.99,
     "absorb": 0,
     "stack": 1,
     "buffs": [
-      "1001826",
-      "1002940"
+      "Shield Samba",
+      "Physical Vulnerability Up"
     ],
     "boss_pct": 33.9,
     "pull_ms": 142675,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 17,
@@ -2419,7 +3640,7 @@
     "ability": "Hiemal Storm",
     "total": 38664,
     "hp": 28707,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 38664,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2442,7 +3663,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2465,7 +3686,7 @@
     "ability": "Eternal Conviction",
     "total": 97920,
     "hp": 35566,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 97920,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2488,7 +3709,7 @@
     "ability": "Eternal Conviction",
     "total": 94922,
     "hp": 42289,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 94922,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2511,7 +3732,7 @@
     "ability": "Eternal Conviction",
     "total": 99692,
     "hp": 32291,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 99692,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2534,7 +3755,7 @@
     "ability": "Eternal Conviction",
     "total": 61448,
     "hp": 20368,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 61448,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2557,7 +3778,7 @@
     "ability": "Eternal Conviction",
     "total": 91819,
     "hp": 19834,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 91819,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2580,7 +3801,7 @@
     "ability": "Eternal Conviction",
     "total": 52754,
     "hp": 23863,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 65943,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2603,7 +3824,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2611,7 +3832,19 @@
     "buffs": [],
     "boss_pct": 37.7,
     "pull_ms": 152802,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Holmgang",
+        "guid": 1000409,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 18,
@@ -2626,7 +3859,7 @@
     "ability": "Holy Impact",
     "total": 96713,
     "hp": 62753,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 96713,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2649,7 +3882,7 @@
     "ability": "Holy Impact",
     "total": 67073,
     "hp": 36249,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 67073,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2672,7 +3905,7 @@
     "ability": "Holy Impact",
     "total": 93553,
     "hp": 55484,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 93553,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2695,7 +3928,7 @@
     "ability": "Holy Impact",
     "total": 99642,
     "hp": 64054,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 99642,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2718,7 +3951,7 @@
     "ability": "Holy Impact",
     "total": 92502,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 92502,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2741,7 +3974,7 @@
     "ability": "Holy Impact",
     "total": 96971,
     "hp": 57372,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 96971,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2764,7 +3997,7 @@
     "ability": "Holy Impact",
     "total": 58708,
     "hp": 32414,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 58708,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2787,7 +4020,7 @@
     "ability": "Holy Impact",
     "total": 101072,
     "hp": 54937,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 101072,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2810,7 +4043,7 @@
     "ability": "Eternal Conviction",
     "total": 98621,
     "hp": 48902,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 98621,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2833,7 +4066,7 @@
     "ability": "Eternal Conviction",
     "total": 91216,
     "hp": 50835,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 91216,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2856,7 +4089,7 @@
     "ability": "Eternal Conviction",
     "total": 104198,
     "hp": 50006,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 104198,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2879,7 +4112,7 @@
     "ability": "Eternal Conviction",
     "total": 95749,
     "hp": 57773,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 95749,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2902,7 +4135,7 @@
     "ability": "Eternal Conviction",
     "total": 92253,
     "hp": 60801,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 92253,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2925,7 +4158,7 @@
     "ability": "Eternal Conviction",
     "total": 104023,
     "hp": 57033,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 104023,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2948,7 +4181,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -2971,7 +4204,7 @@
     "ability": "Holy Impact",
     "total": 57234,
     "hp": 38709,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 57234,
     "multiplier": 1.0,
     "absorb": 0,
@@ -2994,7 +4227,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3017,7 +4250,7 @@
     "ability": "Eternal Conviction",
     "total": 98349,
     "hp": 46480,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 98349,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3040,7 +4273,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3063,7 +4296,7 @@
     "ability": "Eternal Conviction",
     "total": 103162,
     "hp": 48683,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 103162,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3086,7 +4319,7 @@
     "ability": "Eternal Conviction",
     "total": 95830,
     "hp": 61368,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 95830,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3109,7 +4342,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3132,7 +4365,7 @@
     "ability": "Eternal Conviction",
     "total": 96088,
     "hp": 58896,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 96088,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3155,7 +4388,7 @@
     "ability": "Eternal Conviction",
     "total": 104077,
     "hp": 63890,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 104077,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3178,7 +4411,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3201,7 +4434,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 223189,
     "hp": 61615,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 223189,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3224,7 +4457,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3232,7 +4465,19 @@
     "buffs": [],
     "boss_pct": 78.0,
     "pull_ms": 27258,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Holmgang",
+        "guid": 1000409,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 21,
@@ -3247,7 +4492,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3270,7 +4515,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3293,7 +4538,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3316,7 +4561,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3339,7 +4584,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3362,7 +4607,7 @@
     "ability": "Holy Shield Bash",
     "total": 128200,
     "hp": 2755,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 128200,
     "multiplier": 1.0,
     "absorb": 32441,
@@ -3370,7 +4615,52 @@
     "buffs": [],
     "boss_pct": 64.3,
     "pull_ms": 71706,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 8291,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 9800,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 5090,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 9260,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -3385,17 +4675,40 @@
     "ability": "Eternal Conviction",
     "total": 94221,
     "hp": 68218,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 104691,
     "multiplier": 0.9,
     "absorb": 8367,
     "stack": 7,
     "buffs": [
-      "1002711"
+      "Desperate Measures"
     ],
     "boss_pct": 64.3,
     "pull_ms": 71706,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": 8367,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -3410,17 +4723,40 @@
     "ability": "Eternal Conviction",
     "total": 97293,
     "hp": 63880,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 108105,
     "multiplier": 0.9,
     "absorb": 8316,
     "stack": 7,
     "buffs": [
-      "1002711"
+      "Desperate Measures"
     ],
     "boss_pct": 64.3,
     "pull_ms": 71706,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 8316,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -3435,7 +4771,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3443,7 +4779,41 @@
     "buffs": [],
     "boss_pct": 64.3,
     "pull_ms": 71706,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Expedient"
+      },
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -3458,17 +4828,40 @@
     "ability": "Eternal Conviction",
     "total": 91250,
     "hp": 57146,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 101389,
     "multiplier": 0.9,
     "absorb": 8513,
     "stack": 7,
     "buffs": [
-      "1002711"
+      "Desperate Measures"
     ],
     "boss_pct": 64.3,
     "pull_ms": 71706,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 8513,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -3483,7 +4876,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3491,7 +4884,41 @@
     "buffs": [],
     "boss_pct": 64.3,
     "pull_ms": 71706,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": "Expedient"
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -3506,17 +4933,40 @@
     "ability": "Eternal Conviction",
     "total": 88156,
     "hp": 61615,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 97952,
     "multiplier": 0.9,
     "absorb": 8165,
     "stack": 7,
     "buffs": [
-      "1002711"
+      "Desperate Measures"
     ],
     "boss_pct": 64.3,
     "pull_ms": 71706,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 8165,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 22,
@@ -3531,17 +4981,40 @@
     "ability": "Eternal Conviction",
     "total": 85511,
     "hp": 62101,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 95013,
     "multiplier": 0.9,
     "absorb": 8156,
     "stack": 7,
     "buffs": [
-      "1002711"
+      "Desperate Measures"
     ],
     "boss_pct": 64.3,
     "pull_ms": 71706,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 8156,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 23,
@@ -3556,7 +5029,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 193279,
     "hp": 68662,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 193279,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3579,7 +5052,7 @@
     "ability": "Holy Impact",
     "total": 96316,
     "hp": 24080,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 96316,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3602,7 +5075,7 @@
     "ability": "Holy Impact",
     "total": 100129,
     "hp": 42169,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 100129,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3625,7 +5098,7 @@
     "ability": "Holy Impact",
     "total": 94106,
     "hp": 43916,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 94106,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3648,7 +5121,7 @@
     "ability": "Holy Impact",
     "total": 64500,
     "hp": 28598,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 64500,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3671,7 +5144,7 @@
     "ability": "Holy Impact",
     "total": 101382,
     "hp": 41806,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 101382,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3694,7 +5167,7 @@
     "ability": "Holy Impact",
     "total": 59639,
     "hp": 27335,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 59639,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3717,7 +5190,7 @@
     "ability": "Holy Impact",
     "total": 94321,
     "hp": 32671,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 94321,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3740,7 +5213,7 @@
     "ability": "Holy Impact",
     "total": 99120,
     "hp": 38064,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 99120,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3763,7 +5236,7 @@
     "ability": "Holy Impact",
     "total": 94906,
     "hp": 45788,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 94906,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3786,7 +5259,7 @@
     "ability": "Holy Impact",
     "total": 101562,
     "hp": 59687,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 101562,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3809,7 +5282,7 @@
     "ability": "Holy Impact",
     "total": 105481,
     "hp": 52674,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 105481,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3832,7 +5305,7 @@
     "ability": "Holy Impact",
     "total": 94748,
     "hp": 54469,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 94748,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3855,7 +5328,7 @@
     "ability": "Holy Impact",
     "total": 90837,
     "hp": 50590,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 90837,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3878,7 +5351,7 @@
     "ability": "Holy Impact",
     "total": 104748,
     "hp": 58757,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 104748,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3901,7 +5374,7 @@
     "ability": "Holy Impact",
     "total": 52841,
     "hp": 44190,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 66051,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3924,7 +5397,7 @@
     "ability": "Holy Impact",
     "total": 57055,
     "hp": 36156,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 57055,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3947,7 +5420,7 @@
     "ability": "Skyward Leap",
     "total": 60084,
     "hp": 56124,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 60084,
     "multiplier": 1.0,
     "absorb": 0,
@@ -3970,17 +5443,29 @@
     "ability": "Skyward Leap",
     "total": 724185,
     "hp": 31811,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 724185,
     "multiplier": 3.32,
     "absorb": 0,
     "stack": 3,
     "buffs": [
-      "1002941"
+      "Magic Vulnerability Up"
     ],
     "boss_pct": 63.2,
     "pull_ms": 69792,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 332,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 25,
@@ -3995,7 +5480,7 @@
     "ability": "Holy Bladedance",
     "total": 32022,
     "hp": 30578,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 32022,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4018,7 +5503,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4041,18 +5526,41 @@
     "ability": "Eternal Conviction",
     "total": 36798,
     "hp": 9708,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 61846,
     "multiplier": 0.6,
     "absorb": 0,
     "stack": 4,
     "buffs": [
-      "1000074",
-      "1002674"
+      "Sentinel",
+      "Holy Sheltron"
     ],
     "boss_pct": 63.2,
     "pull_ms": 69792,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 25,
@@ -4067,7 +5575,7 @@
     "ability": "Eternal Conviction",
     "total": 91409,
     "hp": 43432,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 91409,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4075,7 +5583,19 @@
     "buffs": [],
     "boss_pct": 63.2,
     "pull_ms": 69792,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Vellguine",
+        "by_id": 48,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 25,
@@ -4090,7 +5610,7 @@
     "ability": "Eternal Conviction",
     "total": 96575,
     "hp": 33065,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 96575,
     "multiplier": 1.0,
     "absorb": 3723,
@@ -4098,7 +5618,19 @@
     "buffs": [],
     "boss_pct": 63.2,
     "pull_ms": 69792,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 3723,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 25,
@@ -4113,17 +5645,29 @@
     "ability": "Eternal Conviction",
     "total": 49351,
     "hp": 10711,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 61689,
     "multiplier": 0.8,
     "absorb": 0,
     "stack": 4,
     "buffs": [
-      "1001191"
+      "Rampart"
     ],
     "boss_pct": 63.2,
     "pull_ms": 69792,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 26,
@@ -4138,7 +5682,7 @@
     "ability": "Eye of the Tyrant",
     "total": 71025,
     "hp": 62101,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4161,7 +5705,7 @@
     "ability": "Eye of the Tyrant",
     "total": 71859,
     "hp": 68259,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4184,7 +5728,7 @@
     "ability": "Eye of the Tyrant",
     "total": 72330,
     "hp": 61615,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4207,7 +5751,7 @@
     "ability": "Darkdragon Dive",
     "total": 48940,
     "hp": 46318,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4215,7 +5759,19 @@
     "buffs": [],
     "boss_pct": 75.3,
     "pull_ms": 43541,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 26,
@@ -4230,7 +5786,7 @@
     "ability": "Darkdragon Dive",
     "total": 2831665,
     "hp": 52256,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4238,7 +5794,19 @@
     "buffs": [],
     "boss_pct": 75.3,
     "pull_ms": 43541,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 26,
@@ -4253,7 +5821,7 @@
     "ability": "Darkdragon Dive",
     "total": 2906690,
     "hp": 66931,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4261,7 +5829,19 @@
     "buffs": [],
     "boss_pct": 75.3,
     "pull_ms": 43541,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 26,
@@ -4276,7 +5856,7 @@
     "ability": "Darkdragon Dive",
     "total": 2914177,
     "hp": 61708,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4284,7 +5864,19 @@
     "buffs": [],
     "boss_pct": 75.3,
     "pull_ms": 43541,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 26,
@@ -4299,7 +5891,7 @@
     "ability": "Darkdragon Dive",
     "total": 52654,
     "hp": 29637,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4307,7 +5899,19 @@
     "buffs": [],
     "boss_pct": 75.3,
     "pull_ms": 43541,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -4322,7 +5926,7 @@
     "ability": "Dark Elusive Jump",
     "total": 687208,
     "hp": 62101,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4345,7 +5949,7 @@
     "ability": "Dark Elusive Jump",
     "total": 713186,
     "hp": 42454,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4368,7 +5972,7 @@
     "ability": "Lashing Wheel",
     "total": 21625,
     "hp": 2276,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4376,7 +5980,19 @@
     "buffs": [],
     "boss_pct": 71.5,
     "pull_ms": 43490,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -4391,7 +6007,7 @@
     "ability": "Darkdragon Dive",
     "total": 570085,
     "hp": 52262,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4414,7 +6030,7 @@
     "ability": "Darkdragon Dive",
     "total": 80425,
     "hp": 4269,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4422,7 +6038,19 @@
     "buffs": [],
     "boss_pct": 71.5,
     "pull_ms": 43490,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -4437,7 +6065,7 @@
     "ability": "Darkdragon Dive",
     "total": 49889,
     "hp": 22132,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4445,7 +6073,19 @@
     "buffs": [],
     "boss_pct": 71.5,
     "pull_ms": 43490,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -4460,7 +6100,7 @@
     "ability": "Darkdragon Dive",
     "total": 47950,
     "hp": 2652,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4468,7 +6108,19 @@
     "buffs": [],
     "boss_pct": 71.5,
     "pull_ms": 43490,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 27,
@@ -4483,7 +6135,7 @@
     "ability": "Darkdragon Dive",
     "total": 80418,
     "hp": 5282,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4491,7 +6143,19 @@
     "buffs": [],
     "boss_pct": 71.5,
     "pull_ms": 43490,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 28,
@@ -4506,7 +6170,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4514,7 +6178,19 @@
     "buffs": [],
     "boss_pct": 34.0,
     "pull_ms": 133534,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 28,
@@ -4529,7 +6205,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4537,7 +6213,19 @@
     "buffs": [],
     "boss_pct": 34.0,
     "pull_ms": 133534,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 28,
@@ -4552,7 +6240,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4560,7 +6248,19 @@
     "buffs": [],
     "boss_pct": 34.0,
     "pull_ms": 133534,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 28,
@@ -4575,7 +6275,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4583,7 +6283,19 @@
     "buffs": [],
     "boss_pct": 34.0,
     "pull_ms": 133534,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 28,
@@ -4598,7 +6310,7 @@
     "ability": "Bright Flare",
     "total": 99753,
     "hp": 36302,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 99753,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4621,7 +6333,7 @@
     "ability": "Sacred Sever",
     "total": 51938,
     "hp": 43591,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 61104,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4629,7 +6341,41 @@
     "buffs": [],
     "boss_pct": 34.0,
     "pull_ms": 133534,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 19468,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 28,
@@ -4644,7 +6390,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4652,7 +6398,19 @@
     "buffs": [],
     "boss_pct": 34.0,
     "pull_ms": 133534,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 28,
@@ -4667,7 +6425,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4690,19 +6448,64 @@
     "ability": "Ascalon's Might",
     "total": 87610,
     "hp": 50037,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 154516,
     "multiplier": 0.57,
     "absorb": 7576,
     "stack": 1,
     "buffs": [
-      "1000089",
-      "1002679",
-      "1002678"
+      "Vengeance",
+      "Stem the Flow",
+      "Bloodwhetting"
     ],
     "boss_pct": 37.4,
     "pull_ms": 162029,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Stem the Flow",
+        "guid": 1002679,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Vengeance",
+        "guid": 1000089,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Stem the Tide",
+        "guid": 1002680,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": 7576,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 29,
@@ -4717,7 +6520,7 @@
     "ability": "Eternal Conviction",
     "total": 97882,
     "hp": 60774,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 97882,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4740,7 +6543,7 @@
     "ability": "Eternal Conviction",
     "total": 92970,
     "hp": 48931,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 92970,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4763,7 +6566,7 @@
     "ability": "Eternal Conviction",
     "total": 103626,
     "hp": 64222,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 103626,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4786,7 +6589,7 @@
     "ability": "Eternal Conviction",
     "total": 93672,
     "hp": 58718,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 93672,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4809,7 +6612,7 @@
     "ability": "Eternal Conviction",
     "total": 99515,
     "hp": 63110,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 99515,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4832,7 +6635,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4855,7 +6658,7 @@
     "ability": "Eternal Conviction",
     "total": 97891,
     "hp": 54852,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 97891,
     "multiplier": 1.0,
     "absorb": 0,
@@ -4878,7 +6681,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4901,7 +6704,7 @@
     "ability": "Eye of the Tyrant",
     "total": 62699,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4909,7 +6712,19 @@
     "buffs": [],
     "boss_pct": 71.3,
     "pull_ms": 43613,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -4924,7 +6739,7 @@
     "ability": "Eye of the Tyrant",
     "total": 68290,
     "hp": 68218,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4932,7 +6747,19 @@
     "buffs": [],
     "boss_pct": 71.3,
     "pull_ms": 43613,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -4947,7 +6774,7 @@
     "ability": "Lashing Wheel",
     "total": 19075,
     "hp": 6470,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4955,7 +6782,19 @@
     "buffs": [],
     "boss_pct": 71.3,
     "pull_ms": 43613,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -4970,7 +6809,7 @@
     "ability": "Darkdragon Dive",
     "total": 42597,
     "hp": 27678,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 9921,
@@ -4978,7 +6817,30 @@
     "buffs": [],
     "boss_pct": 71.3,
     "pull_ms": 43613,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -4993,7 +6855,7 @@
     "ability": "Darkdragon Dive",
     "total": 2775747,
     "hp": 55630,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5001,7 +6863,19 @@
     "buffs": [],
     "boss_pct": 71.3,
     "pull_ms": 43613,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -5016,7 +6890,7 @@
     "ability": "Darkdragon Dive",
     "total": 2824447,
     "hp": 68662,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 9921,
@@ -5024,7 +6898,30 @@
     "buffs": [],
     "boss_pct": 71.3,
     "pull_ms": 43613,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -5039,7 +6936,7 @@
     "ability": "Darkdragon Dive",
     "total": 2946049,
     "hp": 64044,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5047,7 +6944,19 @@
     "buffs": [],
     "boss_pct": 71.3,
     "pull_ms": 43613,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 30,
@@ -5062,7 +6971,7 @@
     "ability": "Darkdragon Dive",
     "total": 49293,
     "hp": 39402,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5070,7 +6979,19 @@
     "buffs": [],
     "boss_pct": 71.3,
     "pull_ms": 43613,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 31,
@@ -5085,7 +7006,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5108,7 +7029,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5131,7 +7052,7 @@
     "ability": "Lightning Storm",
     "total": 269410,
     "hp": 77240,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 269410,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5139,7 +7060,19 @@
     "buffs": [],
     "boss_pct": 64.9,
     "pull_ms": 57542,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": 14344,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 31,
@@ -5154,7 +7087,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5177,7 +7110,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5200,7 +7133,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5223,7 +7156,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5246,7 +7179,7 @@
     "ability": "Heavy Impact",
     "total": 50475,
     "hp": 33607,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 50475,
     "multiplier": 1.0,
     "absorb": 3741,
@@ -5254,7 +7187,19 @@
     "buffs": [],
     "boss_pct": 64.9,
     "pull_ms": 57542,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 3741,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 33,
@@ -5269,7 +7214,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5277,7 +7222,19 @@
     "buffs": [],
     "boss_pct": 72.6,
     "pull_ms": 43427,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Nidhogg",
+        "by_id": 61,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": null,
+        "via": "Dark High Jump"
+      }
+    ]
   },
   {
     "fight": 33,
@@ -5292,7 +7249,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5300,7 +7257,19 @@
     "buffs": [],
     "boss_pct": 72.6,
     "pull_ms": 43427,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Nidhogg",
+        "by_id": 61,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": null,
+        "via": "Dark High Jump"
+      }
+    ]
   },
   {
     "fight": 33,
@@ -5315,7 +7284,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5323,7 +7292,19 @@
     "buffs": [],
     "boss_pct": 72.6,
     "pull_ms": 43427,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Nidhogg",
+        "by_id": 61,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": null,
+        "via": "Dark High Jump"
+      }
+    ]
   },
   {
     "fight": 33,
@@ -5338,7 +7319,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5346,7 +7327,19 @@
     "buffs": [],
     "boss_pct": 72.6,
     "pull_ms": 43427,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Nidhogg",
+        "by_id": 61,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Dark High Jump"
+      }
+    ]
   },
   {
     "fight": 33,
@@ -5361,7 +7354,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5369,7 +7362,19 @@
     "buffs": [],
     "boss_pct": 72.6,
     "pull_ms": 43427,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Nidhogg",
+        "by_id": 61,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": null,
+        "via": "Dark High Jump"
+      }
+    ]
   },
   {
     "fight": 33,
@@ -5384,7 +7389,7 @@
     "ability": "Darkdragon Dive",
     "total": 545098,
     "hp": 68218,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 11859,
@@ -5392,7 +7397,19 @@
     "buffs": [],
     "boss_pct": 72.6,
     "pull_ms": 43427,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": 11859,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 33,
@@ -5407,7 +7424,7 @@
     "ability": "Darkdragon Dive",
     "total": 568280,
     "hp": 68259,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5415,7 +7432,19 @@
     "buffs": [],
     "boss_pct": 72.6,
     "pull_ms": 43427,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Nidhogg",
+        "by_id": 61,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Darkdragon Dive"
+      }
+    ]
   },
   {
     "fight": 33,
@@ -5430,7 +7459,7 @@
     "ability": "Darkdragon Dive",
     "total": 1790546,
     "hp": 74699,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5438,7 +7467,19 @@
     "buffs": [],
     "boss_pct": 72.6,
     "pull_ms": 43427,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Reprisal",
+        "guid": 1001193,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 34,
@@ -5453,7 +7494,7 @@
     "ability": "Skyward Leap",
     "total": 714307,
     "hp": 803,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 714307,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5476,7 +7517,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5484,7 +7525,30 @@
     "buffs": [],
     "boss_pct": 63.4,
     "pull_ms": 69581,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Vellguine",
+        "by_id": 48,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Vellguine",
+        "by_id": 48,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 34,
@@ -5499,7 +7563,7 @@
     "ability": "the Dragon's Rage",
     "total": 109905,
     "hp": 68218,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 109905,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5522,7 +7586,7 @@
     "ability": "the Dragon's Rage",
     "total": 106579,
     "hp": 61615,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 106579,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5545,7 +7609,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5568,7 +7632,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5576,7 +7640,41 @@
     "buffs": [],
     "boss_pct": 63.4,
     "pull_ms": 69581,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": "Succor"
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 34,
@@ -5591,7 +7689,7 @@
     "ability": "Eternal Conviction",
     "total": 104966,
     "hp": 50052,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 104966,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5614,7 +7712,7 @@
     "ability": "Eternal Conviction",
     "total": 92421,
     "hp": 44387,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 92421,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5637,17 +7735,29 @@
     "ability": "Bright Flare",
     "total": 92261,
     "hp": 44241,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 102513,
     "multiplier": 0.9,
     "absorb": 0,
     "stack": 1,
     "buffs": [
-      "1001826"
+      "Shield Samba"
     ],
     "boss_pct": 34.4,
     "pull_ms": 159779,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 35,
@@ -5662,7 +7772,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5685,7 +7795,7 @@
     "ability": "Eternal Conviction",
     "total": 99037,
     "hp": 29353,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 99037,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5708,7 +7818,7 @@
     "ability": "Eternal Conviction",
     "total": 96977,
     "hp": 42280,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 96977,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5731,7 +7841,7 @@
     "ability": "Eternal Conviction",
     "total": 105420,
     "hp": 46703,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 105420,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5754,7 +7864,7 @@
     "ability": "Eternal Conviction",
     "total": 90089,
     "hp": 50584,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 90089,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5777,7 +7887,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5800,7 +7910,7 @@
     "ability": "Eternal Conviction",
     "total": 98354,
     "hp": 60534,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 98354,
     "multiplier": 1.0,
     "absorb": 0,
@@ -5823,7 +7933,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5846,7 +7956,7 @@
     "ability": "Darkdragon Dive",
     "total": 74560,
     "hp": 61359,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5854,7 +7964,30 @@
     "buffs": [],
     "boss_pct": 72.9,
     "pull_ms": 49068,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Feint",
+        "guid": 1001195,
+        "by": "Kite Noodle",
+        "by_id": 18,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5869,7 +8002,7 @@
     "ability": "Darkdragon Dive",
     "total": 72652,
     "hp": 61615,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 9921,
@@ -5877,7 +8010,41 @@
     "buffs": [],
     "boss_pct": 72.9,
     "pull_ms": 49068,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Feint",
+        "guid": 1001195,
+        "by": "Kite Noodle",
+        "by_id": 18,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5892,7 +8059,7 @@
     "ability": "Darkdragon Dive",
     "total": 1659996,
     "hp": 99223,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 9921,
@@ -5900,7 +8067,41 @@
     "buffs": [],
     "boss_pct": 72.9,
     "pull_ms": 49068,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Feint",
+        "guid": 1001195,
+        "by": "Kite Noodle",
+        "by_id": 18,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Divine Veil",
+        "guid": 1001362,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": 9921,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5915,7 +8116,7 @@
     "ability": "Darkdragon Dive",
     "total": 2555415,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5923,7 +8124,30 @@
     "buffs": [],
     "boss_pct": 72.9,
     "pull_ms": 49068,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Feint",
+        "guid": 1001195,
+        "by": "Kite Noodle",
+        "by_id": 18,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5938,7 +8162,7 @@
     "ability": "Darkdragon Dive",
     "total": 79911,
     "hp": 33275,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5946,7 +8170,19 @@
     "buffs": [],
     "boss_pct": 72.9,
     "pull_ms": 49068,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Feint",
+        "guid": 1001195,
+        "by": "Kite Noodle",
+        "by_id": 18,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5961,7 +8197,7 @@
     "ability": "Darkdragon Dive",
     "total": 2535838,
     "hp": 68259,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5969,7 +8205,30 @@
     "buffs": [],
     "boss_pct": 72.9,
     "pull_ms": 49068,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Feint",
+        "guid": 1001195,
+        "by": "Kite Noodle",
+        "by_id": 18,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -5984,7 +8243,7 @@
     "ability": "Darkdragon Dive",
     "total": 2535594,
     "hp": 68662,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5992,7 +8251,30 @@
     "buffs": [],
     "boss_pct": 72.9,
     "pull_ms": 49068,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Feint",
+        "guid": 1001195,
+        "by": "Kite Noodle",
+        "by_id": 18,
+        "on": "Nidhogg",
+        "on_id": 59,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -6007,7 +8289,7 @@
     "ability": "Geirskogul",
     "total": 68354,
     "hp": 12516,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6015,7 +8297,19 @@
     "buffs": [],
     "boss_pct": 72.9,
     "pull_ms": 49068,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 36,
@@ -6030,17 +8324,40 @@
     "ability": "Sacred Sever",
     "total": 163034,
     "hp": 68218,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 181150,
     "multiplier": 0.9,
     "absorb": 19974,
     "stack": 1,
     "buffs": [
-      "1001826"
+      "Shield Samba"
     ],
     "boss_pct": 72.9,
     "pull_ms": 246599,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": 19974,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 37,
@@ -6055,7 +8372,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6078,7 +8395,7 @@
     "ability": "Eternal Conviction",
     "total": 99612,
     "hp": 60175,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 99612,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6101,7 +8418,7 @@
     "ability": "Eternal Conviction",
     "total": 94764,
     "hp": 48387,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 94764,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6124,7 +8441,7 @@
     "ability": "Eternal Conviction",
     "total": 98533,
     "hp": 52705,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 98533,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6147,7 +8464,7 @@
     "ability": "Eternal Conviction",
     "total": 102241,
     "hp": 43247,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 102241,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6170,7 +8487,7 @@
     "ability": "Eternal Conviction",
     "total": 94488,
     "hp": 51656,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 94488,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6193,7 +8510,7 @@
     "ability": "Holy Impact",
     "total": 59925,
     "hp": 46588,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 59925,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6216,7 +8533,7 @@
     "ability": "Holy Impact",
     "total": 63455,
     "hp": 44217,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 63455,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6239,7 +8556,7 @@
     "ability": "Hiemal Storm",
     "total": 820800,
     "hp": 54392,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 820800,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6247,7 +8564,19 @@
     "buffs": [],
     "boss_pct": 34.4,
     "pull_ms": 141801,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": 11908,
+        "via": "Succor"
+      }
+    ]
   },
   {
     "fight": 39,
@@ -6262,13 +8591,13 @@
     "ability": "Hiemal Storm",
     "total": 744405,
     "hp": 62101,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 744405,
     "multiplier": 1.0,
     "absorb": 0,
     "stack": 7,
     "buffs": [
-      "1000297"
+      "Galvanize"
     ],
     "boss_pct": 34.4,
     "pull_ms": 141801,
@@ -6287,7 +8616,7 @@
     "ability": "Hiemal Storm",
     "total": 752665,
     "hp": 44858,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 752665,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6295,7 +8624,19 @@
     "buffs": [],
     "boss_pct": 34.4,
     "pull_ms": 141801,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 7313,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 39,
@@ -6310,7 +8651,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6333,7 +8674,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6356,7 +8697,7 @@
     "ability": "Eternal Conviction",
     "total": 103258,
     "hp": 68662,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 103258,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6364,7 +8705,19 @@
     "buffs": [],
     "boss_pct": 34.4,
     "pull_ms": 141801,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": null,
+        "via": "Succor"
+      }
+    ]
   },
   {
     "fight": 39,
@@ -6379,7 +8732,7 @@
     "ability": "Eternal Conviction",
     "total": 91898,
     "hp": 43673,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 91898,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6402,7 +8755,7 @@
     "ability": "Eternal Conviction",
     "total": 57247,
     "hp": 41446,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 57247,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6425,7 +8778,7 @@
     "ability": "Holy Impact",
     "total": 98447,
     "hp": 61551,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 98447,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6448,7 +8801,7 @@
     "ability": "Holy Impact",
     "total": 62156,
     "hp": 33938,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 62156,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6471,7 +8824,7 @@
     "ability": "Holy Impact",
     "total": 102696,
     "hp": 57775,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 102696,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6494,7 +8847,7 @@
     "ability": "Holy Impact",
     "total": 95946,
     "hp": 63637,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 95946,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6517,7 +8870,7 @@
     "ability": "Holy Impact",
     "total": 92711,
     "hp": 60597,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 92711,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6540,7 +8893,7 @@
     "ability": "Holy Impact",
     "total": 95417,
     "hp": 62101,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 95417,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6563,7 +8916,7 @@
     "ability": "Holy Impact",
     "total": 95524,
     "hp": 55327,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 95524,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6586,7 +8939,7 @@
     "ability": "Holy Impact",
     "total": 59646,
     "hp": 35169,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 59646,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6609,7 +8962,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 208753,
     "hp": 61615,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 208753,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6632,7 +8985,7 @@
     "ability": "the Dragon's Rage",
     "total": 79837,
     "hp": 68662,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 79837,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6655,7 +9008,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6663,7 +9016,19 @@
     "buffs": [],
     "boss_pct": 64.8,
     "pull_ms": 70023,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Paulecrain",
+        "by_id": 47,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 41,
@@ -6678,7 +9043,7 @@
     "ability": "Eternal Conviction",
     "total": 95450,
     "hp": 31515,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 95450,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6701,7 +9066,7 @@
     "ability": "Eternal Conviction",
     "total": 98016,
     "hp": 44032,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 98016,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6724,18 +9089,41 @@
     "ability": "Eternal Conviction",
     "total": 42296,
     "hp": 32644,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 58745,
     "multiplier": 0.72,
     "absorb": 0,
     "stack": 6,
     "buffs": [
-      "1001191",
-      "1002678"
+      "Rampart",
+      "Bloodwhetting"
     ],
     "boss_pct": 64.8,
     "pull_ms": 70023,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 41,
@@ -6750,7 +9138,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6758,7 +9146,30 @@
     "buffs": [],
     "boss_pct": 64.8,
     "pull_ms": 70023,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 41,
@@ -6773,7 +9184,7 @@
     "ability": "Eternal Conviction",
     "total": 98995,
     "hp": 44880,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 98995,
     "multiplier": 1.0,
     "absorb": 0,
@@ -6796,13 +9207,13 @@
     "ability": "Eternal Conviction",
     "total": 90064,
     "hp": 53218,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 90064,
     "multiplier": 1.0,
     "absorb": 0,
     "stack": 6,
     "buffs": [
-      "1001892"
+      "Neutral Sect"
     ],
     "boss_pct": 64.8,
     "pull_ms": 70023,
@@ -6821,7 +9232,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6829,7 +9240,30 @@
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 131422,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6844,7 +9278,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6852,7 +9286,30 @@
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 131422,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6867,7 +9324,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6875,7 +9332,30 @@
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 131422,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6890,17 +9370,29 @@
     "ability": "Bright Flare",
     "total": 85918,
     "hp": 59131,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 95465,
     "multiplier": 0.9,
     "absorb": 0,
     "stack": 2,
     "buffs": [
-      "1001826"
+      "Shield Samba"
     ],
     "boss_pct": 34.2,
     "pull_ms": 131422,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6915,7 +9407,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6923,7 +9415,30 @@
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 131422,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6938,17 +9453,29 @@
     "ability": "Bright Flare",
     "total": 88556,
     "hp": 33988,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 98396,
     "multiplier": 0.9,
     "absorb": 0,
     "stack": 2,
     "buffs": [
-      "1001826"
+      "Shield Samba"
     ],
     "boss_pct": 34.2,
     "pull_ms": 131422,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 42,
@@ -6963,7 +9490,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -6986,7 +9513,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7009,7 +9536,7 @@
     "ability": "Holy Impact",
     "total": 91034,
     "hp": 45977,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 91034,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7032,7 +9559,7 @@
     "ability": "Holy Impact",
     "total": 98233,
     "hp": 61066,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 98233,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7055,7 +9582,7 @@
     "ability": "Holy Impact",
     "total": 63775,
     "hp": 40303,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 63775,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7063,7 +9590,19 @@
     "buffs": [],
     "boss_pct": 33.4,
     "pull_ms": 145803,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": 5044,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 43,
@@ -7078,7 +9617,7 @@
     "ability": "Holy Impact",
     "total": 97353,
     "hp": 58182,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 97353,
     "multiplier": 1.0,
     "absorb": 5923,
@@ -7086,7 +9625,19 @@
     "buffs": [],
     "boss_pct": 33.4,
     "pull_ms": 145803,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 5923,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 43,
@@ -7101,7 +9652,7 @@
     "ability": "Holy Impact",
     "total": 93135,
     "hp": 61388,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 93135,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7124,7 +9675,7 @@
     "ability": "Holy Impact",
     "total": 101522,
     "hp": 65167,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 101522,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7147,7 +9698,7 @@
     "ability": "Holy Impact",
     "total": 96056,
     "hp": 57272,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 96056,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7170,7 +9721,7 @@
     "ability": "Holy Impact",
     "total": 59280,
     "hp": 41011,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 59280,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7178,7 +9729,19 @@
     "buffs": [],
     "boss_pct": 33.4,
     "pull_ms": 145803,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": 2105,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 44,
@@ -7193,7 +9756,7 @@
     "ability": "Holy Shield Bash",
     "total": 119436,
     "hp": 5786,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 119436,
     "multiplier": 1.0,
     "absorb": 33225,
@@ -7201,7 +9764,52 @@
     "buffs": [],
     "boss_pct": 63.3,
     "pull_ms": 70114,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Intersection",
+        "guid": 1001889,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 9806,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 8977,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 5127,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": 9315,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 44,
@@ -7216,17 +9824,40 @@
     "ability": "Eternal Conviction",
     "total": 104995,
     "hp": 54949,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 110522,
     "multiplier": 0.95,
     "absorb": 5121,
     "stack": 7,
     "buffs": [
-      "1001875"
+      "Seraphic Illumination"
     ],
     "boss_pct": 63.3,
     "pull_ms": 70114,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": 5121,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 44,
@@ -7241,17 +9872,40 @@
     "ability": "Eternal Conviction",
     "total": 96285,
     "hp": 57795,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 101354,
     "multiplier": 0.95,
     "absorb": 5247,
     "stack": 7,
     "buffs": [
-      "1001875"
+      "Seraphic Illumination"
     ],
     "boss_pct": 63.3,
     "pull_ms": 70114,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 5247,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 44,
@@ -7266,19 +9920,53 @@
     "ability": "Eternal Conviction",
     "total": 45265,
     "hp": 30476,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 62285,
     "multiplier": 0.73,
     "absorb": 0,
     "stack": 7,
     "buffs": [
-      "1002674",
-      "1001875",
-      "1001858"
+      "Holy Sheltron",
+      "Seraphic Illumination",
+      "Nascent Glint"
     ],
     "boss_pct": 63.3,
     "pull_ms": 70114,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Nascent Glint",
+        "guid": 1001858,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 44,
@@ -7293,17 +9981,40 @@
     "ability": "Eternal Conviction",
     "total": 91720,
     "hp": 49956,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 96548,
     "multiplier": 0.95,
     "absorb": 8310,
     "stack": 7,
     "buffs": [
-      "1001875"
+      "Seraphic Illumination"
     ],
     "boss_pct": 63.3,
     "pull_ms": 70114,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 8310,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 44,
@@ -7318,17 +10029,40 @@
     "ability": "Eternal Conviction",
     "total": 99196,
     "hp": 54055,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 104418,
     "multiplier": 0.95,
     "absorb": 5029,
     "stack": 7,
     "buffs": [
-      "1001875"
+      "Seraphic Illumination"
     ],
     "boss_pct": 63.3,
     "pull_ms": 70114,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 5029,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 44,
@@ -7343,18 +10077,41 @@
     "ability": "Eternal Conviction",
     "total": 45794,
     "hp": 6108,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 60256,
     "multiplier": 0.76,
     "absorb": 0,
     "stack": 7,
     "buffs": [
-      "1001191",
-      "1001875"
+      "Rampart",
+      "Seraphic Illumination"
     ],
     "boss_pct": 63.3,
     "pull_ms": 70114,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 44,
@@ -7369,17 +10126,40 @@
     "ability": "Eternal Conviction",
     "total": 99722,
     "hp": 43509,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 104971,
     "multiplier": 0.95,
     "absorb": 8529,
     "stack": 7,
     "buffs": [
-      "1001875"
+      "Seraphic Illumination"
     ],
     "boss_pct": 63.3,
     "pull_ms": 70114,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Illumination",
+        "guid": 1001875,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 95,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 8529,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 45,
@@ -7394,17 +10174,29 @@
     "ability": "Bright Flare",
     "total": 87578,
     "hp": 38478,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 97309,
     "multiplier": 0.9,
     "absorb": 0,
     "stack": 1,
     "buffs": [
-      "1001826"
+      "Shield Samba"
     ],
     "boss_pct": 34.1,
     "pull_ms": 146330,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 45,
@@ -7419,7 +10211,7 @@
     "ability": "Hiemal Storm",
     "total": 36086,
     "hp": 32977,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 36086,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7442,7 +10234,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7465,7 +10257,7 @@
     "ability": "Eternal Conviction",
     "total": 98015,
     "hp": 23314,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 98015,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7488,7 +10280,7 @@
     "ability": "Eternal Conviction",
     "total": 102793,
     "hp": 29467,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 102793,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7511,7 +10303,7 @@
     "ability": "Eternal Conviction",
     "total": 91849,
     "hp": 26351,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 91849,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7534,7 +10326,7 @@
     "ability": "Eternal Conviction",
     "total": 99829,
     "hp": 29584,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 99829,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7557,17 +10349,29 @@
     "ability": "Eternal Conviction",
     "total": 83988,
     "hp": 20379,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 93320,
     "multiplier": 0.9,
     "absorb": 0,
     "stack": 6,
     "buffs": [
-      "1001174"
+      "Intervention"
     ],
     "boss_pct": 34.1,
     "pull_ms": 146330,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Intervention",
+        "guid": 1001174,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 45,
@@ -7582,7 +10386,7 @@
     "ability": "Holy Impact",
     "total": 57240,
     "hp": 23535,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 57240,
     "multiplier": 1.0,
     "absorb": 0,
@@ -7605,7 +10409,7 @@
     "ability": "Darkdragon Dive",
     "total": 445247,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 8342,
@@ -7613,7 +10417,41 @@
     "buffs": [],
     "boss_pct": 64.7,
     "pull_ms": 62255,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Collective Unconscious",
+        "guid": 1000849,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sacred Soil",
+        "guid": 1000299,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 8342,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 46,
@@ -7628,7 +10466,7 @@
     "ability": "Dark High Jump",
     "total": 364126,
     "hp": 99223,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7651,7 +10489,7 @@
     "ability": "Dark High Jump",
     "total": 286711,
     "hp": 99211,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7659,7 +10497,30 @@
     "buffs": [],
     "boss_pct": 64.7,
     "pull_ms": 62255,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Knight's Resolve",
+        "guid": 1002675,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 46,
@@ -7674,7 +10535,7 @@
     "ability": "Dark High Jump",
     "total": 637329,
     "hp": 54770,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7682,7 +10543,30 @@
     "buffs": [],
     "boss_pct": 64.7,
     "pull_ms": 62255,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Nidhogg",
+        "by_id": 61,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Dark High Jump"
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": 7204,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 46,
@@ -7697,7 +10581,7 @@
     "ability": "Dark High Jump",
     "total": 661323,
     "hp": 61615,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7705,7 +10589,19 @@
     "buffs": [],
     "boss_pct": 64.7,
     "pull_ms": 62255,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Nidhogg",
+        "by_id": 61,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 284,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 46,
@@ -7720,7 +10616,7 @@
     "ability": "Geirskogul",
     "total": 109450,
     "hp": 64733,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7743,7 +10639,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7766,20 +10662,76 @@
     "ability": "Holy Shield Bash",
     "total": 305822,
     "hp": 119067,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 471948,
     "multiplier": 2.15,
     "absorb": 0,
     "stack": 2,
     "buffs": [
-      "1001191",
-      "1002679",
-      "1002678",
-      "1002940"
+      "Rampart",
+      "Stem the Flow",
+      "Bloodwhetting",
+      "Physical Vulnerability Up"
     ],
     "boss_pct": 64.7,
     "pull_ms": 258988,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Paulecrain",
+        "by_id": 47,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Stem the Flow",
+        "guid": 1002679,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": "Bloodwhetting"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Paulecrain",
+        "by_id": 47,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 332,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 46,
@@ -7794,7 +10746,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7817,7 +10769,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7825,7 +10777,19 @@
     "buffs": [],
     "boss_pct": 32.6,
     "pull_ms": 131987,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 48,
@@ -7840,7 +10804,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7848,7 +10812,30 @@
     "buffs": [],
     "boss_pct": 32.6,
     "pull_ms": 131987,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 48,
@@ -7863,7 +10850,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7871,7 +10858,30 @@
     "buffs": [],
     "boss_pct": 32.6,
     "pull_ms": 131987,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 48,
@@ -7886,7 +10896,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7894,7 +10904,30 @@
     "buffs": [],
     "boss_pct": 32.6,
     "pull_ms": 131987,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 48,
@@ -7909,17 +10942,29 @@
     "ability": "Bright Flare",
     "total": 83529,
     "hp": 61615,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 92810,
     "multiplier": 0.9,
     "absorb": 0,
     "stack": 1,
     "buffs": [
-      "1001826"
+      "Shield Samba"
     ],
     "boss_pct": 32.6,
     "pull_ms": 131987,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 48,
@@ -7934,7 +10979,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7942,7 +10987,30 @@
     "buffs": [],
     "boss_pct": 32.6,
     "pull_ms": 131987,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 48,
@@ -7957,7 +11025,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -7965,7 +11033,30 @@
     "buffs": [],
     "boss_pct": 32.6,
     "pull_ms": 131987,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      },
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 48,
@@ -7980,7 +11071,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8003,7 +11094,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 210142,
     "hp": 58138,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 210142,
     "multiplier": 1.0,
     "absorb": 22456,
@@ -8011,7 +11102,41 @@
     "buffs": [],
     "boss_pct": 64.0,
     "pull_ms": 68897,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 7377,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 5837,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 9242,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -8026,7 +11151,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8034,7 +11159,30 @@
     "buffs": [],
     "boss_pct": 64.0,
     "pull_ms": 68897,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Vellguine",
+        "by_id": 48,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Vellguine",
+        "by_id": 48,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 49,
@@ -8049,7 +11197,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8057,7 +11205,30 @@
     "buffs": [],
     "boss_pct": 64.0,
     "pull_ms": 68897,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Magic Vulnerability Up",
+        "guid": 1002941,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      },
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Ignasse",
+        "by_id": 45,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Skyward Leap"
+      }
+    ]
   },
   {
     "fight": 49,
@@ -8072,7 +11243,7 @@
     "ability": "the Dragon's Rage",
     "total": 111922,
     "hp": 68662,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 111922,
     "multiplier": 1.0,
     "absorb": 37181,
@@ -8080,7 +11251,52 @@
     "buffs": [],
     "boss_pct": 64.0,
     "pull_ms": 68897,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 7251,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 14342,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 5289,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 10299,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -8095,7 +11311,7 @@
     "ability": "the Dragon's Rage",
     "total": 108501,
     "hp": 61737,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 108501,
     "multiplier": 1.0,
     "absorb": 30865,
@@ -8103,7 +11319,52 @@
     "buffs": [],
     "boss_pct": 64.0,
     "pull_ms": 68897,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 7297,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 9271,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 5037,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": 9260,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -8118,18 +11379,41 @@
     "ability": "Eternal Conviction",
     "total": 36961,
     "hp": 21919,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 62120,
     "multiplier": 0.6,
     "absorb": 0,
     "stack": 4,
     "buffs": [
-      "1000074",
-      "1002674"
+      "Sentinel",
+      "Holy Sheltron"
     ],
     "boss_pct": 64.0,
     "pull_ms": 68897,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Holy Sheltron",
+        "guid": 1002674,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 85,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Sentinel",
+        "guid": 1000074,
+        "by": "Absolute Gigachad",
+        "by_id": 21,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": 70,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -8144,18 +11428,41 @@
     "ability": "Eternal Conviction",
     "total": 41524,
     "hp": 9119,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 57673,
     "multiplier": 0.72,
     "absorb": 0,
     "stack": 4,
     "buffs": [
-      "1001191",
-      "1002678"
+      "Rampart",
+      "Bloodwhetting"
     ],
     "boss_pct": 64.0,
     "pull_ms": 68897,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Bloodwhetting",
+        "guid": 1002678,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Rampart",
+        "guid": 1001191,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 80,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 49,
@@ -8170,7 +11477,7 @@
     "ability": "Eternal Conviction",
     "total": 90690,
     "hp": 43095,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 90690,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8193,7 +11500,7 @@
     "ability": "Eternal Conviction",
     "total": 91446,
     "hp": 12939,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 91446,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8216,7 +11523,7 @@
     "ability": "Ascalon's Mercy Concealed",
     "total": 194807,
     "hp": 68662,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 194807,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8239,7 +11546,7 @@
     "ability": "Darkdragon Dive",
     "total": 2277243,
     "hp": 68218,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8247,7 +11554,30 @@
     "buffs": [],
     "boss_pct": 69.6,
     "pull_ms": 47576,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Collective Unconscious",
+        "guid": 1000849,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -8262,7 +11592,7 @@
     "ability": "Darkdragon Dive",
     "total": 2341377,
     "hp": 45322,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8270,7 +11600,30 @@
     "buffs": [],
     "boss_pct": 69.6,
     "pull_ms": 47576,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Collective Unconscious",
+        "guid": 1000849,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -8285,7 +11638,7 @@
     "ability": "Darkdragon Dive",
     "total": 59402,
     "hp": 50595,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8293,7 +11646,30 @@
     "buffs": [],
     "boss_pct": 69.6,
     "pull_ms": 47576,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Collective Unconscious",
+        "guid": 1000849,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -8308,7 +11684,7 @@
     "ability": "Darkdragon Dive",
     "total": 2311932,
     "hp": 68662,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 13305,
@@ -8316,7 +11692,41 @@
     "buffs": [],
     "boss_pct": 69.6,
     "pull_ms": 47576,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Collective Unconscious",
+        "guid": 1000849,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 13305,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -8331,7 +11741,7 @@
     "ability": "Darkdragon Dive",
     "total": 2256759,
     "hp": 62101,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8339,7 +11749,30 @@
     "buffs": [],
     "boss_pct": 69.6,
     "pull_ms": 47576,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Collective Unconscious",
+        "guid": 1000849,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -8354,7 +11787,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8362,7 +11795,30 @@
     "buffs": [],
     "boss_pct": 69.6,
     "pull_ms": 47576,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Collective Unconscious",
+        "guid": 1000849,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Expedient"
+      }
+    ]
   },
   {
     "fight": 50,
@@ -8377,7 +11833,7 @@
     "ability": "Darkdragon Dive",
     "total": 60388,
     "hp": 46921,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8385,7 +11841,30 @@
     "buffs": [],
     "boss_pct": 69.6,
     "pull_ms": 47576,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Collective Unconscious",
+        "guid": 1000849,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 50,
@@ -8400,7 +11879,7 @@
     "ability": "Darkdragon Dive",
     "total": 1388648,
     "hp": 97212,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8408,7 +11887,30 @@
     "buffs": [],
     "boss_pct": 69.6,
     "pull_ms": 47576,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Collective Unconscious",
+        "guid": 1000849,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      },
+      {
+        "name": "Desperate Measures",
+        "guid": 1002711,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -8423,7 +11925,7 @@
     "ability": "Heavy Impact",
     "total": 52393,
     "hp": 38914,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 52393,
     "multiplier": 1.0,
     "absorb": 5090,
@@ -8431,7 +11933,19 @@
     "buffs": [],
     "boss_pct": 65.8,
     "pull_ms": 65345,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": 5090,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -8446,7 +11960,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8469,7 +11983,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8492,7 +12006,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8515,7 +12029,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8538,7 +12052,7 @@
     "ability": "Skyward Leap",
     "total": 510783,
     "hp": 99211,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": 510783,
     "multiplier": 1.0,
     "absorb": 49589,
@@ -8546,7 +12060,52 @@
     "buffs": [],
     "boss_pct": 65.8,
     "pull_ms": 65345,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": 11836,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": 14591,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": 8281,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": 14881,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -8561,7 +12120,7 @@
     "ability": "Skyward Leap",
     "total": 702966,
     "hp": 33938,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 702966,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8569,7 +12128,52 @@
     "buffs": [],
     "boss_pct": 65.8,
     "pull_ms": 65345,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 7219,
+        "via": null
+      },
+      {
+        "name": "Neutral Sect",
+        "guid": 1001921,
+        "by": "Loki Doki",
+        "by_id": 26,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 8842,
+        "via": null
+      },
+      {
+        "name": "Seraphic Veil",
+        "guid": 1001917,
+        "by": "Spring Nymphar",
+        "by_id": 38,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 8104,
+        "via": null
+      },
+      {
+        "name": "Shake It Off",
+        "guid": 1001457,
+        "by": "Absolute Gigalad",
+        "by_id": 19,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 9242,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 51,
@@ -8584,7 +12188,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8607,7 +12211,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8630,7 +12234,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8638,7 +12242,19 @@
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 132298,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Absolute Gigachad",
+        "on_id": 21,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8653,7 +12269,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8661,7 +12277,19 @@
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 132298,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8676,7 +12304,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8684,7 +12312,19 @@
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 132298,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8699,7 +12339,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8707,7 +12347,19 @@
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 132298,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8722,7 +12374,7 @@
     "ability": "Bright Flare",
     "total": 98719,
     "hp": 61615,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 98719,
     "multiplier": 1.0,
     "absorb": 7161,
@@ -8730,7 +12382,19 @@
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 132298,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Galvanize",
+        "guid": 1000297,
+        "by": "Spring Nymphar",
+        "by_id": 22,
+        "on": "Spring Nymphar",
+        "on_id": 22,
+        "pct": null,
+        "amount": 7161,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8745,7 +12409,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8753,7 +12417,19 @@
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 132298,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8768,7 +12444,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8776,7 +12452,19 @@
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 132298,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 52,
@@ -8791,7 +12479,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8799,7 +12487,19 @@
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 132298,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 53,
@@ -8814,7 +12514,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -8837,7 +12537,7 @@
     "ability": "Holy Impact",
     "total": 105841,
     "hp": 61305,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": 105841,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8860,7 +12560,7 @@
     "ability": "Holy Impact",
     "total": 97320,
     "hp": 23879,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 97320,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8883,7 +12583,7 @@
     "ability": "Holy Impact",
     "total": 104428,
     "hp": 41805,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": 104428,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8906,7 +12606,7 @@
     "ability": "Holy Impact",
     "total": 93743,
     "hp": 47471,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": 93743,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8929,7 +12629,7 @@
     "ability": "Holy Impact",
     "total": 57660,
     "hp": 37786,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": 57660,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8952,7 +12652,7 @@
     "ability": "Holy Impact",
     "total": 93755,
     "hp": 57170,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": 93755,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8975,7 +12675,7 @@
     "ability": "Holy Impact",
     "total": 96851,
     "hp": 55883,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 96851,
     "multiplier": 1.0,
     "absorb": 0,
@@ -8998,7 +12698,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68662,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -9006,7 +12706,19 @@
     "buffs": [],
     "boss_pct": 31.6,
     "pull_ms": 133980,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kiara Blaiddyd",
+        "on_id": 25,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 54,
@@ -9021,7 +12733,7 @@
     "ability": "Bright Flare",
     "total": 96113,
     "hp": 42006,
-    "max_hp": null,
+    "max_hp": 61615,
     "unmitigated": 96113,
     "multiplier": 1.0,
     "absorb": 0,
@@ -9044,7 +12756,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99223,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -9052,7 +12764,19 @@
     "buffs": [],
     "boss_pct": 31.6,
     "pull_ms": 133980,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Absolute Gigalad",
+        "on_id": 19,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 54,
@@ -9067,7 +12791,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 68218,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -9075,7 +12799,19 @@
     "buffs": [],
     "boss_pct": 31.6,
     "pull_ms": 133980,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kite Noodle",
+        "on_id": 18,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 54,
@@ -9090,7 +12826,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 62101,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -9098,7 +12834,19 @@
     "buffs": [],
     "boss_pct": 31.6,
     "pull_ms": 133980,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Loki Doki",
+        "on_id": 26,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 54,
@@ -9113,17 +12861,29 @@
     "ability": "Bright Flare",
     "total": 100150,
     "hp": 32229,
-    "max_hp": null,
+    "max_hp": 68259,
     "unmitigated": 111278,
     "multiplier": 0.9,
     "absorb": 0,
     "stack": 3,
     "buffs": [
-      "1001826"
+      "Shield Samba"
     ],
     "boss_pct": 31.6,
     "pull_ms": 133980,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Shield Samba",
+        "guid": 1001826,
+        "by": "Kiara Blaiddyd",
+        "by_id": 25,
+        "on": "Speed Panda",
+        "on_id": 23,
+        "pct": 90,
+        "amount": null,
+        "via": null
+      }
+    ]
   },
   {
     "fight": 54,
@@ -9138,7 +12898,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 61737,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -9146,7 +12906,19 @@
     "buffs": [],
     "boss_pct": 31.6,
     "pull_ms": 133980,
-    "mitigations": []
+    "mitigations": [
+      {
+        "name": "Physical Vulnerability Up",
+        "guid": 1002940,
+        "by": "Ser Zephirin",
+        "by_id": 39,
+        "on": "Kitana Kahn",
+        "on_id": 24,
+        "pct": null,
+        "amount": null,
+        "via": "Sacred Sever"
+      }
+    ]
   },
   {
     "fight": 54,
@@ -9161,7 +12933,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": null,
+    "max_hp": 99211,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
