@@ -550,7 +550,7 @@ function stillView(frame) {
       }
     }
     for (const mark of frame.marks || []) {
-      const bulge = mark.kind === "comet" ? 16 : mark.kind === "gaze" || mark.kind === "tower" || mark.kind === "orb" || mark.kind === "collapse" ? 12 : 0;
+      const bulge = mark.kind === "impact" ? 30 : mark.kind === "comet" ? 16 : mark.kind === "gaze" || mark.kind === "tower" || mark.kind === "orb" || mark.kind === "collapse" ? 12 : 0;
       const extra = bulge / scale;
       if (mark.x != null) {
         grow(Number(mark.x) - extra, Number(mark.y) - extra);
@@ -579,7 +579,7 @@ function stillSvg(frame) {
   const draw = (kinds) => {
     for (const mark of marks) if (kinds.includes(mark.kind)) parts.push(stillMark(mark, pt, scale));
   };
-  draw(["collapse", "tower", "orb"]);
+  draw(["impact", "collapse", "tower", "orb"]);
   const marked = (player) => player.dead || player.failed;
   for (const player of frame.players || []) {
     if (marked(player)) continue;
@@ -634,6 +634,11 @@ function stillMark(mark, pt, scale) {
   }
   if (mark.kind === "orb") {
     return `<circle cx="${x}" cy="${y}" r="11" fill="#fbf3e4" stroke="#7c4a12" stroke-width="2"><title>Orb</title></circle>`;
+  }
+  if (mark.kind === "impact") {
+    const s = 13;
+    const title = `<title>Heavy Impact starts here (${esc(mark.name || "Ser Guerrique")})</title>`;
+    return `<g>${title}<circle cx="${x}" cy="${y}" r="30" fill="none" stroke="#c2410c" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.45"></circle><circle cx="${x}" cy="${y}" r="18" fill="none" stroke="#c2410c" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.7"></circle><line x1="${x - s}" y1="${y - s}" x2="${x + s}" y2="${y + s}" stroke="#c2410c" stroke-width="3"></line><line x1="${x - s}" y1="${y + s}" x2="${x + s}" y2="${y - s}" stroke="#c2410c" stroke-width="3"></line></g>`;
   }
   if (mark.kind === "boss") {
     return `<circle cx="${x}" cy="${y}" r="7" fill="#1c1915"><title>${esc(mark.name || "Boss")}</title></circle>`;
