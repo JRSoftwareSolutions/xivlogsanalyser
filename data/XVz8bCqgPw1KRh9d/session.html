@@ -777,6 +777,10 @@ function paceText(sessions) {
   }
   return `Furthest so far is ${name(peak)} on ${when(peak)}. ${when(last)} reached ${name(last)}.`;
 }
+function pullX(sessionIndex, pullIndex, count, sessionCount) {
+  const t = count <= 1 ? 0.5 : pullIndex / (count - 1);
+  return ((sessionIndex + t) / sessionCount) * 100;
+}
 function trendChart(sessions) {
   const { marks, scale } = trendFrame(sessions);
   const labels = markLabels(marks, scale, TREND_H);
@@ -790,15 +794,17 @@ function trendChart(sessions) {
     return `<i class="${cls}"${title} style="bottom:${(mark.at / scale) * 100}%"></i>`;
   }).join("");
   const n = Math.max(sessions.length, 1);
+  let bestSoFar = 0;
   const points = [];
   const cols = sessions.map((session, index) => {
     const pulls = overviewOf(session).pulls;
-    const far = furthestPull(pulls);
-    if (far) {
-      const x = ((index + 0.5) / n) * 100;
-      const y = (1 - (far.reached || 0) / scale) * 100;
+    pulls.forEach((pull, pullIndex) => {
+      bestSoFar = Math.max(bestSoFar, pull.reached || 0);
+      const x = pullX(index, pullIndex, pulls.length, n);
+      const y = (1 - bestSoFar / scale) * 100;
       points.push(`${x},${y}`);
-    }
+    });
+    const far = furthestPull(pulls);
     const bars = pulls.map(pull => {
       const height = ((pull.reached || 0) / scale) * 100;
       return `<i style="height:${height}%;background:${phaseColor(pull.phase)}"></i>`;
@@ -810,9 +816,10 @@ function trendChart(sessions) {
     return `<button type="button" class="trend-col" data-go="s/${session.code}" title="${esc(title)}" aria-label="${esc(title)}"><span class="trend-bars">${bars}</span></button>`;
   }).join("");
   const dots = sessions.map((session, index) => {
-    const far = furthestPull(overviewOf(session).pulls);
+    const pulls = overviewOf(session).pulls;
+    const far = furthestPull(pulls);
     if (!far) return "";
-    const left = ((index + 0.5) / n) * 100;
+    const left = pullX(index, Math.max(0, pulls.indexOf(far)), pulls.length, n);
     const bottom = ((far.reached || 0) / scale) * 100;
     return `<i class="trend-dot" style="left:${left}%;bottom:${bottom}%"></i>`;
   }).join("");
@@ -854,7 +861,7 @@ function trendSection() {
     return `<section>
       <h2>General trend</h2>
       ${heading}
-      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. The line is each night's furthest pull, on one scale.</p>
+      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. The line is the best reached so far, from the first pull to the last.</p>
       ${trendChart(group.sessions)}
     </section>`;
   }).join("");
