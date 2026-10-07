@@ -124,6 +124,11 @@ class StillFrameTest(unittest.TestCase):
         self.assertEqual(sum(mark["kind"] == "tower" for mark in leap["marks"]), 0)
         self.assertEqual(sum(mark["kind"] == "collapse" for mark in leap["marks"]), 8)
 
+    def test_a_still_after_the_puddles_went_off_does_not_draw_them(self):
+        bladedance = self._frame(25, "Kiara Blaiddyd", "holy-bladedance", 62.4)
+        self.assertEqual(sum(mark["kind"] == "collapse" for mark in bladedance["marks"]), 0)
+        self.assertNotIn("Dimensional Collapse", bladedance["caption"])
+
     def test_strength_towers_are_the_ring_after_the_leap(self):
         frame = self.book.mechanic_frame(
             21, 2, 63.0, "skyward-leap", "Skyward Leap", ["Loki Doki"], PACK,

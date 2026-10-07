@@ -90,7 +90,7 @@ A correction ("X should be Y", "that is not a mistake", "that one is a fail") up
 python -m xivloganalyzer reanalyze
 ```
 
-Update `tests/test_reference.py` only when the settled headline is meant to change. That headline is 183 raw deaths on report `XVz8bCqgPw1KRh9d`. Update `notes/classification.md` when the reason changes. Update the mechanic skill when the way you tell the cases apart changes. Leave `dashboard.html` and `session.html` alone; reanalyze rewrites them.
+Update `tests/test_reference.py` only when the settled headline is meant to change. That headline is 86 raw deaths on report `XVz8bCqgPw1KRh9d`. Update `notes/classification.md` when the reason changes. Update the mechanic skill when the way you tell the cases apart changes. Leave `dashboard.html` and `session.html` alone; reanalyze rewrites them.
 
 ## Mechanic index
 

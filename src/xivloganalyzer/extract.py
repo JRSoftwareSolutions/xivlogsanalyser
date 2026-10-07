@@ -343,8 +343,6 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             event = None
             if timestamp is not None:
                 event = _closest_event(by_guid.get(guid, []), fight["id"], target, timestamp)
-                if event is not None and abs(event["timestamp"] - timestamp) > 4000:
-                    event = None
             amount = (event or {}).get("amount")
             overkill = (event or {}).get("overkill") or 0
             absorb = (event or {}).get("absorbed") or 0
@@ -391,7 +389,7 @@ def _fact(
     total, hp, unmit, mult, absorb, stack, buffs, boss_pct, party, mitigations,
 ) -> DeathFact:
     if timestamp is None:
-        t = _clock_seconds(when)
+        t = round(_clock_seconds(when) - (start - fight["start_time"]) / 1000, 1)
     else:
         t = round((timestamp - start) / 1000, 1)
     return DeathFact(

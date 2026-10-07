@@ -102,9 +102,9 @@ def _pack_for(meta: dict) -> FightPack | None:
 
 
 def _percent_left(raw) -> float:
-    """Boss HP remaining, in percent. A pull FFLogs did not score stays at 0."""
+    """Boss HP remaining, in percent. A pull FFLogs did not score left the boss untouched."""
     if raw is None:
-        return 0.0
+        return 100.0
     return round(raw / 100, 1)
 
 
@@ -116,8 +116,11 @@ def _progress(raw) -> float:
 
 
 def _into_phase(fight: dict) -> tuple[int, float]:
-    """Seconds into the phase the pull ended in. Cast time is from the pull start."""
-    phase_id = int(fight.get("lastPhaseForPercentageDisplay") or 0)
+    """Seconds into the phase the pull ended in. Cast time is from the pull start.
+
+    A pull reset before FFLogs placed it in a phase ended in the first one.
+    """
+    phase_id = int(fight.get("lastPhaseForPercentageDisplay") or 1)
     start = int(fight["start_time"])
     phase_start = start
     for phase in fight.get("phases") or []:
@@ -160,7 +163,7 @@ def _reached_name(marks: list[dict], phase_id: int, into: float, offset: float) 
     return name
 
 
-def build_timeline(meta: dict, when: dict, judged: set[int]) -> dict:
+def build_timeline(meta: dict, when: dict, judged: set[int], pack: FightPack | None = None) -> dict:
     """Every pull in the log, with how far it got. This is the session chart.
 
     Bar height is seconds along the fight script, so a mechanic line sits where
@@ -175,7 +178,7 @@ def build_timeline(meta: dict, when: dict, judged: set[int]) -> dict:
         started = _parse_started(started)
     phases = _phase_table(meta)
     by_id = {phase["id"]: phase for phase in phases}
-    pack = _pack_for(meta)
+    pack = pack or _pack_for(meta)
     marks = _chart_marks(pack)
     clock = pack.clock if pack else {}
     rows = []
@@ -453,6 +456,10 @@ def session_payload(
         pull["deaths"].sort(key=lambda row: (row["t"], row["name"]))
         pull["counts"] = Counter(row["outcome"] for row in pull["deaths"])
         pull["cards"] = _pull_cards(pull, mechanics, roster, phase_durations.get(pull["id"]))
+    for mech in mechanics:
+        cards = [card for pull in pulls.values() for card in pull["cards"] if card["id"] == mech["id"]]
+        mech["reached"] = len(cards)
+        mech["mistakes"] = sum(1 for card in cards if _card_failed(card))
     unknown = [
         item.mechanic
         for item in judgments
@@ -489,12 +496,19 @@ def _pull_index(pull: dict) -> dict:
     }
 
 
+def _card_failed(card: dict) -> bool:
+    return any(not seat["passed"] for part in card["parts"] for seat in part["seats"])
+
+
 def _mechanic_index(mech: dict) -> dict:
+    """Navigation for one mechanic, and how many pulls reached it and had a mistake there."""
     return {
         "id": mech.get("id"),
         "name": mech.get("name") or "",
         "phase": mech.get("phase"),
         "starts": mech.get("starts") or 0,
+        "reached": mech.get("reached", 0),
+        "mistakes": mech.get("mistakes", 0),
     }
 
 
