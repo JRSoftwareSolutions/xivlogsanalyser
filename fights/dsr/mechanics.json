@@ -324,7 +324,12 @@
       "category": "spread",
       "scales_with_stack": false,
       "fail_above": 150000,
-      "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9–23k. Anyone else in that landing is a mistake.",
+      "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9–23k. Arrows face east: an up arrow resolves west and a down arrow east, and a 2 goes northwest or northeast. An arrow holder on the wrong side owns the landing. With only circles diving, the overlap is a miscommunication.",
+      "dive_markers": {
+        "1002755": {"name": "circle"},
+        "1002756": {"name": "up arrow", "side": "west", "facing": "east"},
+        "1002757": {"name": "down arrow", "side": "east", "facing": "east"}
+      },
       "roles": {
         "tank": {"unmitigated_max": 150000, "lived": "about 9–23k"},
         "healer": {"unmitigated_max": 150000, "lived": "about 9–23k"},
@@ -339,7 +344,12 @@
       "category": "spread",
       "scales_with_stack": false,
       "fail_above": 150000,
-      "should_have_been": "The down arrow. East, facing east, so the tower drops behind them on the east side of the hitbox. Anyone else in that landing is a mistake. This log has no small hit stored.",
+      "should_have_been": "The down arrow. East, facing east, so the tower drops behind them on the east side of the hitbox. A 2 with the down arrow goes northeast, and the up arrow goes west or northwest. An arrow holder on the wrong side owns the landing. This log has no small hit stored.",
+      "dive_markers": {
+        "1002755": {"name": "circle"},
+        "1002756": {"name": "up arrow", "side": "west", "facing": "east"},
+        "1002757": {"name": "down arrow", "side": "east", "facing": "east"}
+      },
       "roles": {
         "tank": {"unmitigated_max": 150000, "lived": "no small hit stored"},
         "healer": {"unmitigated_max": 150000, "lived": "no small hit stored"},

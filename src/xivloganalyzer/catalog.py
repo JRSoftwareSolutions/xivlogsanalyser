@@ -38,6 +38,19 @@ class Moment:
 
 
 @dataclass
+class DiveMarker:
+    """A debuff that marks who dives.
+
+    `side` is the half of the arena it resolves on. `facing` is where the diver
+    looks at the snapshot, which decides where the tower drops.
+    """
+
+    name: str
+    side: str = ""
+    facing: str = ""
+
+
+@dataclass
 class MarkerSpots:
     """Where marker holders stand, as seen from the arena center with the boss at 0 degrees.
 
@@ -74,6 +87,7 @@ class Mechanic:
     marker_owns_clip: bool = False
     spots: MarkerSpots | None = None
     moments: list[Moment] = field(default_factory=list)
+    dive_markers: dict[int, DiveMarker] = field(default_factory=dict)
 
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
@@ -290,6 +304,12 @@ def load_pack(fight_dir: Path) -> FightPack:
                     )
                     for row in raw.get("moments") or []
                 ],
+                dive_markers={
+                    int(guid): DiveMarker(
+                        name=row["name"], side=row.get("side") or "", facing=row.get("facing") or "",
+                    )
+                    for guid, row in (raw.get("dive_markers") or {}).items()
+                },
             )
         )
     return FightPack(

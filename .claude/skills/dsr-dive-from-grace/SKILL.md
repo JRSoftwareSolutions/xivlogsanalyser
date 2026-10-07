@@ -25,11 +25,13 @@ When the numbers appear, claim a spot. That spot stays if the number has no arro
 - 1s and 3s: west, south, and east, on the hitbox.
 - 2s: northwest and northeast, out at max melee.
 
-Arrows replace that number's spots. Face east.
+Arrows replace that number's spots. Face east at the snapshot. The facing decides where the tower drops, so a diver on the right side facing the wrong way still misplaces it.
 
 - Up arrow: west. A 2 stands northwest. The tower drops in front, on the west side.
 - Circle: south, or the spot already claimed. The tower drops there.
 - Down arrow: east. A 2 stands northeast. The tower drops behind, on the east side.
+
+The mitigations replay stores the number debuffs (First, Second, Third in Line) and the dive markers: High Jump Target `1002755` is the circle, Spineshatter Dive Target `1002756` the up arrow, Elusive Jump Target `1002757` the down arrow. A marker comes off just before its landing. The positions replay gives where each diver stood and faced at that moment. `dive_markers` on the landing mechanics in `mechanics.json` carries the side and facing each arrow should have. The fact keeps them as `divers`.
 
 Soak order:
 
@@ -43,7 +45,7 @@ A dive and a soak each leave Fire Resistance Down II and Physical Vulnerability 
 
 Apply these to the killing blow.
 
-- Dark High Jump `26382` or Dark Elusive Jump `26384`, over 150,000: someone stood in the landing. Each player in that burst owns it. Pull 27, both healers, is the down arrow. Pull 46, four players, is the circle.
+- Dark High Jump `26382` or Dark Elusive Jump `26384`, over 150,000: someone stood in the landing. Read the divers whose markers resolved there. An arrow diver within 6 yalms of the player who died, standing on the wrong half (more than 2 yalms off the north–south line), owns every death in that landing. Pull 27: Loki Doki had the down arrow and stood west, facing west, on Spring Nymphar's correct up arrow. Loki owns both deaths. When no arrow is out of place, only circles collided, and the overlap is a miscommunication. Pull 46, four players, the 3s' circles. Without the replays, each player in the burst owns an equal share.
 - Those guids at about 9–23k: the landing connected. A death there is raw, or low if they were already under 15,000 HP. This log has no such death. The circle has lived hits in that band. The down arrow has no small hit stored.
 - A death with no killing blow, at the same moment, last hit the dive: the knock into the wall. The row has no packet, so it is a Deathwall fail. Pull 33 is that case.
 - Eye of the Tyrant `26388` at or under the role cap: the stack of five. Tanks about 37–48k. Everyone else about 50–70k. Dying there from a healthy bar is the healers. Pull 26, three players from full HP at about 71k with no shield.
@@ -51,14 +53,16 @@ Apply these to the killing blow.
 - Gnashing Wheel `26389` or Lashing Wheel `26390`: any hit is a fail, including under 15,000 HP. About 12–23k and Damage Down. Gnash is inside the hitbox, so out is safe. Lash is outside, so in is safe. Gnash and Lash means out, then in. Lash and Gnash means in, then out.
 - Darkdragon Dive `26385`: any hit is a fail. About 445–570k. They soaked while they still had the dive debuff. Pull 33, Kite Noodle and Speed Panda. Pull 27, Speed Panda. Pull 46, Kitana Kahn.
 - Darkdragon Dive `26395` at or under the role cap: the soak. Tanks about 32–54k. A non-tank hit that killed from a high bar was about 59–80k. No survived non-tank soak is stored. Dying to it from a healthy bar is the healers. Already under 15,000 HP is low. Pull 27, Kite, Kitana, and Gigalad were low.
-- Darkdragon Dive `26395` over 150,000: an empty tower. About 1.4–3.0 million. The assigned soaker owns the miss. On the first towers, about 37–39 seconds, those are the 3s. The log does not store the number debuff, so the call is Missed soak. A wrong facing would move the fault to the diver. Damage cannot show the tile.
+- Darkdragon Dive `26395` over 150,000: an empty tower. About 1.4–3.0 million. The assigned soaker owns the miss. On the first towers, about 37–39 seconds, those are the 3s. The judge does not read the number debuff for towers yet, so the call is Missed soak. A wrong facing would move the fault to the diver. Damage cannot show the tile.
 - Geirskogul `26378`: any hit is a fail. One player in the line owns it. Pull 36 Gigachad was at 12,516 HP. Pull 46 Kite Noodle took about 109k. Several players in one line would be the baiter. This log never has more than one.
 
 Standing on the wrong clock spot, while the tower still lands on a soakable tile and nobody extra is in the dive, does not show in the damage.
 
 ## Fault
 
-Dive landing over 150,000: `{player}` stood in the dive. Each player in that landing owns an equal share.
+Dive landing over 150,000, arrow on the wrong side: `{holder}` took the arrow to the wrong side, facing where they faced. Everyone else that landing killed got hit by `{holder}`'s dive. The holder owns it at 100, and only the holder fails it on the pull card.
+
+Dive landing over 150,000, no arrow out of place: `{player}` stood in the dive, a miscommunication. "Miscommunication" at the landing's share.
 
 Eye of the Tyrant inside the cap: the resolve. Name the shield and the mit. Party mitigation joins the healers when the mit is unknown.
 
@@ -70,7 +74,7 @@ Debuffed soak: `{player}` soaked a tower while they still had the dive debuff.
 
 Soak inside the cap: the resolve, or low when they were already under 15,000 HP.
 
-Empty tower: `{player}` died to the explosion. Missed soak. The first towers belong to the 3s. This log cannot name which 3.
+Empty tower: `{player}` died to the explosion. Missed soak. The first towers belong to the 3s. The judge does not name which 3 yet.
 
 Geirskogul: `{player}` stood in the line.
 

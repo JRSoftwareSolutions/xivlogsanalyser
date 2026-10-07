@@ -48,6 +48,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -114,6 +115,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -180,6 +182,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
@@ -246,6 +249,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
@@ -312,6 +316,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
@@ -378,6 +383,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
@@ -433,6 +439,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
@@ -482,6 +489,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -539,6 +547,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
@@ -592,6 +601,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -645,6 +655,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -686,6 +697,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
@@ -731,6 +743,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
@@ -776,6 +789,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -825,6 +839,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -874,6 +889,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -923,6 +939,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -976,6 +993,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -1041,6 +1059,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -1107,6 +1126,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
@@ -1157,6 +1177,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
@@ -1212,6 +1233,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -1257,6 +1279,7 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": true,
       "Speed Panda": true,
@@ -1319,6 +1342,7 @@
       "Speed Panda"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kite Noodle": false,
       "Spring Nymphar": true,
@@ -1375,6 +1399,7 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Speed Panda": true,
       "Kite Noodle": false
@@ -1430,6 +1455,7 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": true,
       "Kite Noodle": false
@@ -1534,6 +1560,7 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kite Noodle": false,
       "Absolute Gigachad": false
@@ -1590,6 +1617,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -1645,6 +1673,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
@@ -1704,6 +1733,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
@@ -1751,6 +1781,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Kiara Blaiddyd": true
@@ -1815,6 +1846,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -1880,6 +1912,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -1945,6 +1978,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -2020,6 +2054,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -2077,6 +2112,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -2134,6 +2170,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -2175,6 +2212,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -2216,6 +2254,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -2282,6 +2321,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
@@ -2348,6 +2388,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
@@ -2422,6 +2463,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -2504,6 +2546,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -2582,6 +2625,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -2656,6 +2700,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -2730,6 +2775,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -2790,6 +2836,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -2856,6 +2903,7 @@
       "Loki Doki"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kite Noodle": true,
       "Loki Doki": true,
@@ -2934,6 +2982,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -3008,6 +3057,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -3095,6 +3145,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -3166,6 +3217,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -3233,6 +3285,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -3300,6 +3353,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -3353,6 +3407,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -3408,6 +3463,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
@@ -3444,6 +3500,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -3511,6 +3568,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -3566,6 +3624,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -3607,6 +3666,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -3727,6 +3787,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Absolute Gigachad": false,
       "Kitana Kahn": true
@@ -3799,6 +3860,7 @@
       "Absolute Gigachad"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": true,
       "Absolute Gigachad": false
@@ -3857,6 +3919,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
@@ -3902,6 +3965,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -3972,6 +4036,7 @@
       "Loki Doki"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Loki Doki": false
@@ -4049,6 +4114,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Loki Doki": false,
       "Kitana Kahn": false
@@ -4133,6 +4199,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
@@ -4199,6 +4266,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -4273,6 +4341,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -4358,6 +4427,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -4444,6 +4514,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -4541,6 +4612,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -4627,6 +4699,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -4709,6 +4782,7 @@
       "Loki Doki"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": true,
       "Loki Doki": false,
@@ -4781,6 +4855,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dimensional-collapse",
@@ -4874,6 +4949,7 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": true,
       "Absolute Gigalad": true
@@ -4941,6 +5017,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
@@ -5005,6 +5082,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
@@ -5046,6 +5124,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -5095,6 +5174,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -5147,6 +5227,7 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Speed Panda": true,
       "Spring Nymphar": false
@@ -5219,6 +5300,7 @@
       "Speed Panda"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": false,
       "Speed Panda": true
@@ -5315,6 +5397,7 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": false,
       "Absolute Gigachad": true
@@ -5398,6 +5481,7 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": false,
       "Loki Doki": true
@@ -5442,6 +5526,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -5491,6 +5576,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -5566,6 +5652,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -5611,6 +5698,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -5660,6 +5748,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -5715,6 +5804,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
@@ -5785,6 +5875,7 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": true,
       "Kite Noodle": true,
@@ -5853,6 +5944,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
@@ -5934,6 +6026,7 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": true,
       "Absolute Gigachad": true
@@ -5990,6 +6083,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
@@ -6043,6 +6137,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -6088,6 +6183,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -6137,6 +6233,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -6186,6 +6283,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -6250,6 +6348,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
@@ -6321,6 +6420,7 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Loki Doki": true,
       "Spring Nymphar": false
@@ -6368,6 +6468,7 @@
       "Loki Doki"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": false,
       "Loki Doki": true
@@ -6424,6 +6525,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
@@ -6473,6 +6575,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -6530,6 +6633,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -6601,6 +6705,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -6680,6 +6785,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -6737,6 +6843,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -6828,6 +6935,7 @@
       "Speed Panda"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Speed Panda": true
@@ -6897,6 +7005,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Speed Panda": true,
       "Kitana Kahn": false
@@ -7002,6 +7111,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Speed Panda": true,
       "Kitana Kahn": false,
@@ -7087,6 +7197,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Kite Noodle": true
@@ -7167,6 +7278,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Spring Nymphar": true
@@ -7245,6 +7357,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -7316,6 +7429,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -7437,6 +7551,7 @@
       "Kiara Blaiddyd"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kiara Blaiddyd": true,
       "Absolute Gigalad": false
@@ -7515,6 +7630,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -7590,6 +7706,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -7672,6 +7789,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -7755,6 +7873,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -7822,6 +7941,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -7889,6 +8009,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -7956,6 +8077,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -8032,6 +8154,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -8076,6 +8199,7 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kiara Blaiddyd": false,
       "Kite Noodle": true
@@ -8131,6 +8255,7 @@
       "Kiara Blaiddyd"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kite Noodle": true,
       "Kiara Blaiddyd": false
@@ -8235,6 +8360,7 @@
       "Kiara Blaiddyd"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kiara Blaiddyd": false,
       "Absolute Gigachad": true
@@ -8310,6 +8436,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -8385,6 +8512,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -8442,6 +8570,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -8499,6 +8628,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -8556,6 +8686,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -8620,6 +8751,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -8675,6 +8807,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
@@ -8742,6 +8875,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -8813,6 +8947,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -8880,6 +9015,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -8971,6 +9107,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -9042,6 +9179,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -9109,6 +9247,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -9238,6 +9377,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Absolute Gigalad": true
@@ -9322,6 +9462,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Kiara Blaiddyd": true
@@ -9406,6 +9547,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Spring Nymphar": true
@@ -9464,6 +9606,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -9550,6 +9693,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -9636,6 +9780,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -9696,6 +9841,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -9760,6 +9906,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -9843,6 +9990,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -9921,6 +10069,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -9995,6 +10144,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10069,6 +10219,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10166,6 +10317,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10263,6 +10415,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10346,6 +10499,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10444,6 +10598,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10514,6 +10669,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10588,6 +10744,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10708,6 +10865,7 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kite Noodle": true,
       "Absolute Gigachad": false
@@ -10781,6 +10939,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10851,6 +11010,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10932,6 +11092,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -10999,6 +11160,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11108,6 +11270,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11200,6 +11363,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11274,6 +11438,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11359,6 +11524,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11433,6 +11599,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11518,6 +11685,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11614,6 +11782,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11688,6 +11857,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11744,6 +11914,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -11829,6 +12000,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -11899,6 +12071,7 @@
       "Speed Panda"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Speed Panda": true
@@ -11980,6 +12153,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Speed Panda": true,
       "Kitana Kahn": false
@@ -12057,6 +12231,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -12106,6 +12281,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -12181,6 +12357,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -12238,6 +12415,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -12309,6 +12487,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -12392,6 +12571,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -12447,6 +12627,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -12488,6 +12669,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -12543,6 +12725,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -12584,6 +12767,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -12625,6 +12809,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -12666,6 +12851,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -12707,6 +12893,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
@@ -12748,6 +12935,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -12789,6 +12977,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -12830,6 +13019,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -12871,6 +13061,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -12916,6 +13107,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -12961,6 +13153,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -13006,6 +13199,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -13051,6 +13245,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -13096,6 +13291,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13160,6 +13356,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13238,6 +13435,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13334,6 +13532,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13419,6 +13618,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13504,6 +13704,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13564,6 +13765,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13624,6 +13826,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13684,6 +13887,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
@@ -13725,6 +13929,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13800,6 +14005,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13865,6 +14071,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13922,6 +14129,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -13993,6 +14201,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -14046,6 +14255,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -14103,6 +14313,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -14172,6 +14383,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -14241,6 +14453,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "bright-flare",
@@ -14282,6 +14495,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -14337,6 +14551,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -14378,6 +14593,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -14433,6 +14649,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -14474,6 +14691,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -14515,6 +14733,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -14556,6 +14775,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -14630,6 +14850,7 @@
       "Speed Panda"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Speed Panda": true
@@ -14747,6 +14968,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Speed Panda": true,
       "Kitana Kahn": false
@@ -14817,6 +15039,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -14921,6 +15144,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -15025,6 +15249,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -15118,6 +15343,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -15223,6 +15449,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -15290,6 +15517,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -15357,6 +15585,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
@@ -15398,6 +15627,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
@@ -15439,6 +15669,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
@@ -15480,6 +15711,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -15525,6 +15757,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -15570,6 +15803,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -15615,6 +15849,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -15660,6 +15895,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -15705,6 +15941,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
@@ -15746,6 +15983,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -15787,6 +16025,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -15828,6 +16067,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
@@ -15869,6 +16109,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
@@ -15910,6 +16151,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
@@ -15951,6 +16193,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -16000,6 +16243,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -16049,6 +16293,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -16102,6 +16347,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
@@ -16159,6 +16405,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
@@ -16208,6 +16455,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -16257,6 +16505,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -16306,6 +16555,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -16355,6 +16605,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -16418,6 +16669,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -16493,6 +16745,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -16538,6 +16791,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -16617,6 +16871,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -16756,6 +17011,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Absolute Gigachad": false
@@ -16852,6 +17108,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -16959,6 +17216,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17078,6 +17336,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17185,6 +17444,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17292,6 +17552,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17373,6 +17634,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17454,6 +17716,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
@@ -17495,6 +17758,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17552,6 +17816,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17623,6 +17888,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17694,6 +17960,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17747,6 +18014,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17804,6 +18072,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17861,6 +18130,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17918,6 +18188,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -17985,6 +18256,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
@@ -18062,6 +18334,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -18136,6 +18409,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -18221,6 +18495,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -18281,6 +18556,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -18370,6 +18646,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -18430,6 +18707,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -18490,6 +18768,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -18550,6 +18829,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -18608,6 +18888,7 @@
       "Loki Doki"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Loki Doki": true
@@ -18688,6 +18969,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Loki Doki": true,
       "Kitana Kahn": false
@@ -18793,6 +19075,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kite Noodle": true,
       "Kitana Kahn": false,
@@ -18878,6 +19161,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Kiara Blaiddyd": true
@@ -18958,6 +19242,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Speed Panda": true
@@ -19038,6 +19323,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Spring Nymphar": true
@@ -19187,6 +19473,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Absolute Gigalad": true
@@ -19253,6 +19540,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -19306,6 +19594,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -19398,6 +19687,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -19494,6 +19784,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -19578,6 +19869,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -19662,6 +19954,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -19746,6 +20039,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -19830,6 +20124,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -19928,6 +20223,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20012,6 +20308,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
@@ -20076,6 +20373,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -20142,6 +20440,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20205,6 +20504,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20288,6 +20588,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20367,6 +20668,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20420,6 +20722,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20491,6 +20794,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20562,6 +20866,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20655,6 +20960,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20729,6 +21035,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20821,6 +21128,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20913,6 +21221,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -20980,6 +21289,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21076,6 +21386,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21143,6 +21454,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21222,6 +21534,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21312,6 +21625,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -21353,6 +21667,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21438,6 +21753,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21519,6 +21835,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21600,6 +21917,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21681,6 +21999,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21748,6 +22067,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21819,6 +22139,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21886,6 +22207,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -21979,6 +22301,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22065,6 +22388,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22139,6 +22463,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22225,6 +22550,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22299,6 +22625,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22373,6 +22700,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22456,6 +22784,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22516,6 +22845,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22612,6 +22942,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -22704,6 +23035,7 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Spring Nymphar": true,
       "Absolute Gigalad": true
@@ -22748,6 +23080,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22812,6 +23145,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22876,6 +23210,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -22954,6 +23289,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23014,6 +23350,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23078,6 +23415,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23142,6 +23480,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23202,6 +23541,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23314,6 +23654,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23426,6 +23767,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23538,6 +23880,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23650,6 +23993,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23762,6 +24106,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23874,6 +24219,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -23986,6 +24332,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24136,6 +24483,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
@@ -24181,6 +24529,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24265,6 +24614,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24335,6 +24685,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24428,6 +24779,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24521,6 +24873,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24614,6 +24967,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24719,6 +25073,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24796,6 +25151,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24873,6 +25229,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24941,6 +25298,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -24997,6 +25355,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25053,6 +25412,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25121,6 +25481,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25177,6 +25538,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25256,6 +25618,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25312,6 +25675,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25372,6 +25736,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -25413,6 +25778,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -25454,6 +25820,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -25499,6 +25866,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -25544,6 +25912,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -25589,6 +25958,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -25634,6 +26004,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -25679,6 +26050,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -25747,6 +26119,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25803,6 +26176,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25859,6 +26233,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25915,6 +26290,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -25983,6 +26359,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26043,6 +26420,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26099,6 +26477,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26155,6 +26534,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26227,6 +26607,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26311,6 +26692,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26403,6 +26785,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26491,6 +26874,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26593,6 +26977,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26677,6 +27062,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26761,6 +27147,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26859,6 +27246,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26943,6 +27331,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -26984,6 +27373,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
@@ -27025,6 +27415,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
@@ -27066,6 +27457,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
@@ -27107,6 +27499,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
@@ -27162,6 +27555,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -27217,6 +27611,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -27272,6 +27667,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -27327,6 +27723,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -27404,6 +27801,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
@@ -27459,6 +27857,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -27554,6 +27953,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -27638,6 +28038,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -27722,6 +28123,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -27810,6 +28212,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -27910,6 +28313,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28006,6 +28410,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28076,6 +28481,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
@@ -28117,6 +28523,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28224,6 +28631,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28327,6 +28735,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28430,6 +28839,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28533,6 +28943,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28624,6 +29035,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28723,6 +29135,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28822,6 +29235,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -28899,6 +29313,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -28966,6 +29381,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
@@ -29035,6 +29451,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Loki Doki": true
@@ -29187,6 +29604,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Absolute Gigachad": true
@@ -29350,6 +29768,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Absolute Gigalad": true
@@ -29422,6 +29841,7 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "divers": [],
     "in_spot": {
       "Kitana Kahn": false,
       "Speed Panda": true
@@ -29478,6 +29898,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -29523,6 +29944,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -29582,6 +30004,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
@@ -29627,6 +30050,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -29668,6 +30092,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -29709,6 +30134,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -29758,6 +30184,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -29807,6 +30234,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -29856,6 +30284,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
@@ -29897,6 +30326,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
@@ -29942,6 +30372,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",

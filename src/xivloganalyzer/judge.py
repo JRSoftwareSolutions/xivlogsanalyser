@@ -57,6 +57,12 @@ class Judgment:
         return payload
 
 
+# Yalms off the north-south line before a diver counts as west or east.
+SIDE_MARGIN = 2.0
+# A diver this close to the player who died was in the same landing.
+LANDING_REACH = 6.0
+
+
 def _comma(value: int | None) -> str:
     if value is None:
         return "—"
@@ -210,6 +216,9 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             "orphan", pack,
         )
     if mechanic.fail_above is not None and hit > mechanic.fail_above:
+        if mechanic.dive_markers:
+            wrong, cause = _landing(fact)
+            return _done(fact, mechanic, happened, "fail", wrong, cause, pack)
         return _done(
             fact, mechanic, happened, "fail", _oversized(fact, mechanic),
             _oversized_cause(fact, mechanic), pack,
@@ -421,8 +430,6 @@ def _short_stack(fact: DeathFact, mechanic: Mechanic) -> str:
 
 def _oversized(fact: DeathFact, mechanic: Mechanic) -> str:
     name = fact.name
-    if mechanic.id in {"dark-high-jump", "dark-elusive-jump"}:
-        return f"{name} stood in the dive."
     if mechanic.id == "eye-of-the-tyrant":
         return _short_stack(fact, mechanic)
     if mechanic.id == "lightning-storm":
@@ -438,6 +445,58 @@ def _oversized(fact: DeathFact, mechanic: Mechanic) -> str:
     if mechanic.category == "puddle":
         return f"{name} stood in the puddle."
     return f"{name} took too much from {mechanic.name}."
+
+
+def _side(diver: dict) -> str:
+    """The half of the arena a diver stood on. Facing east, west is in front of an up arrow."""
+    if diver["x"] <= -SIDE_MARGIN:
+        return "west"
+    if diver["x"] >= SIDE_MARGIN:
+        return "east"
+    return "north" if diver["y"] < 0 else "south"
+
+
+def _wrong_arrows(fact: DeathFact) -> list[dict]:
+    """Arrow divers in this landing who stood on the other side from their arrow."""
+    wrong = []
+    for diver in fact.divers:
+        if not diver.get("side") or diver.get("x") is None:
+            continue
+        if diver.get("apart") is None or diver["apart"] > LANDING_REACH:
+            continue
+        if _side(diver) != diver["side"]:
+            wrong.append(diver)
+    return wrong
+
+
+def _sides_known(fact: DeathFact) -> bool:
+    if not fact.divers:
+        return False
+    return all(diver.get("apart") is not None for diver in fact.divers if diver.get("side"))
+
+
+def _landing(fact: DeathFact) -> tuple[str, str]:
+    """Whose dive landing this was.
+
+    Easthogg resolves arrows facing east: an up arrow goes west, a down arrow
+    east, and a 2 goes northwest or northeast. An arrow on the wrong side owns
+    the landing, and its facing says where that tower went. With no arrow out
+    of place, the overlap is a miscommunication.
+    """
+    name = fact.name
+    wrong = _wrong_arrows(fact)
+    if wrong:
+        mine = next((diver for diver in wrong if diver["name"] == name), None)
+        if mine:
+            facing = mine.get("facing")
+            if facing:
+                return f"{name} took the {mine['marker']} {_side(mine)}, facing {facing}.", "arrow"
+            return f"{name} took the {mine['marker']} to the {_side(mine)} side.", "arrow"
+        owners = " and ".join(diver["name"] for diver in wrong)
+        return f"{name} got hit by {owners}'s dive.", "arrow"
+    if _sides_known(fact):
+        return f"{name} stood in the dive, a miscommunication.", "miscommunication"
+    return f"{name} stood in the dive.", "overlap"
 
 
 def _skyward_marker(fact: DeathFact) -> str:
@@ -468,8 +527,6 @@ def _raw_cause(fact: DeathFact, mechanic: Mechanic) -> str:
 
 
 def _oversized_cause(fact: DeathFact, mechanic: Mechanic) -> str:
-    if mechanic.id in {"dark-high-jump", "dark-elusive-jump"}:
-        return "overlap"
     if mechanic.id == "eye-of-the-tyrant":
         return "missing"
     if mechanic.category == "tower":
@@ -684,6 +741,11 @@ def _assign_blame(
         elif item.cause == "overlap":
             cohort = [other for other in judgments if _same_cast(item, other)]
             item.blames = _shares(_overlap_names(item, cohort))
+        elif item.cause == "arrow":
+            item.blames = _shares([diver["name"] for diver in _wrong_arrows(item.fact)])
+        elif item.cause == "miscommunication":
+            cohort = [other for other in judgments if _same_cast(item, other)]
+            item.blames = _group("Miscommunication", len(_overlap_names(item, cohort)))
         elif item.cause == "healers":
             item.blames = _shares(healers or ["Healers"])
         elif item.cause == "mitigation":
