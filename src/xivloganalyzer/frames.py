@@ -27,6 +27,8 @@ CENTER = 100.0
 ARENA = 20.0
 SKIP_TYPES = {"Pet", "NPC", "Boss", "LimitBreak"}
 TOWER_NAMES = {"King Thordan", "Holy Comet", "Brightsphere", "Haurchefant", "Spear of the Fury"}
+TOWER_SOURCE = "Ser Hermenost"
+COLLAPSE_SOURCE = "Ser Grinnaux"
 
 
 @dataclass
@@ -200,11 +202,8 @@ class FrameBook:
             mechanic_id == "eternal-conviction" and when >= 100
         ) or "tower was empty" in (death.get("wrong") or "").lower()
         if show_towers:
-            for sample in self._burst(
-                replay, _is_tower, when, back=4.0, forward=1.0, min_count=5,
-            ):
-                x, y = _rel(sample.x, sample.y)
-                marks.append({"kind": "tower", "x": x, "y": y, "name": "Tower"})
+            marks.extend(self._tower_marks(replay, when))
+        marks.extend(self._collapse_marks(replay, when))
 
         if mechanic_id == "holy-impact":
             for sample in self._burst(
@@ -298,11 +297,8 @@ class FrameBook:
             mechanic_id == "eternal-conviction" and float(when) >= 100
         )
         if show_towers:
-            for sample in self._burst(
-                replay, _is_tower, replay_when, back=4.0, forward=1.0, min_count=5,
-            ):
-                x, y = _rel(sample.x, sample.y)
-                marks.append({"kind": "tower", "x": x, "y": y, "name": "Tower"})
+            marks.extend(self._tower_marks(replay, replay_when))
+        marks.extend(self._collapse_marks(replay, replay_when))
 
         if mechanic_id == "holy-impact":
             for sample in self._burst(
@@ -449,7 +445,25 @@ class FrameBook:
             return None
         return best
 
-    def _burst(self, replay, predicate, center, back, forward, min_count, prefer_pair=False):
+    def _tower_marks(self, replay: FightReplay, when: float) -> list[dict]:
+        marks = []
+        for sample in self._burst(
+            replay, _is_tower, when, back=4.0, forward=1.0, min_count=5, keep=_tower_group,
+        ):
+            x, y = _rel(sample.x, sample.y)
+            marks.append({"kind": "tower", "x": x, "y": y, "name": "Tower"})
+        return marks
+
+    def _collapse_marks(self, replay: FightReplay, when: float) -> list[dict]:
+        marks = []
+        for sample in self._burst(
+            replay, _is_collapse, when, back=4.0, forward=1.0, min_count=5, keep=_collapse_group,
+        ):
+            x, y = _rel(sample.x, sample.y)
+            marks.append({"kind": "collapse", "x": x, "y": y, "name": "Dimensional Collapse"})
+        return marks
+
+    def _burst(self, replay, predicate, center, back, forward, min_count, prefer_pair=False, keep=None):
         buckets: dict[tuple, list[Sample]] = {}
         for sample in replay.samples:
             if sample.t < center - back or sample.t > center + forward:
@@ -462,6 +476,8 @@ class FrameBook:
         for (_actor, ts), group in buckets.items():
             uniq = _dedupe(group)
             if len(uniq) < min_count:
+                continue
+            if keep is not None and not keep(uniq):
                 continue
             when = (ts - replay.p2) / 1000
             pair = 0 if len(uniq) >= 2 else 1
@@ -508,11 +524,36 @@ def _is_gaze(sample: Sample) -> bool:
     return sample.name == "King Thordan" and _radius(sample.x, sample.y) >= 18
 
 
-def _is_tower(sample: Sample) -> bool:
+def _on_floor(sample: Sample) -> bool:
     if sample.friendly or sample.kind == "Pet" or sample.name in TOWER_NAMES:
         return False
     radius = _radius(sample.x, sample.y)
     return 5 <= radius <= 19
+
+
+def _is_tower(sample: Sample) -> bool:
+    return _on_floor(sample) and sample.name in {TOWER_SOURCE, ""}
+
+
+def _is_collapse(sample: Sample) -> bool:
+    return _on_floor(sample) and sample.name in {COLLAPSE_SOURCE, ""}
+
+
+def _collapse_layout(spots: list[Sample]) -> bool:
+    """Dimensional Collapse is eight spots at 9 and 18 yalms. The Strength towers are a ring at 12.
+
+    Some pulls store either one with no actor, so the layout tells them apart.
+    """
+    radii = [_radius(spot.x, spot.y) for spot in spots]
+    return any(radius < 10.5 for radius in radii) and any(radius > 16 for radius in radii)
+
+
+def _tower_group(spots: list[Sample]) -> bool:
+    return spots[0].name == TOWER_SOURCE or not _collapse_layout(spots)
+
+
+def _collapse_group(spots: list[Sample]) -> bool:
+    return spots[0].name == COLLAPSE_SOURCE or _collapse_layout(spots)
 
 
 def _is_comet(sample: Sample) -> bool:
@@ -543,6 +584,8 @@ def _mark_sentences(marks: list[dict], players: list[dict], carried: bool, arrow
         sentences.append("One gaze enemy was in the replay.")
     if "tower" in kinds:
         sentences.append("The squares are the towers.")
+    if "collapse" in kinds:
+        sentences.append("The shaded circles are the Dimensional Collapse puddles.")
     if "comet" in kinds:
         sentences.append("The rings are the comets.")
     if any(row.get("prey") for row in players):
