@@ -562,10 +562,6 @@ function stillView(frame) {
         grow(Number(mark.x) + extra, Number(mark.y) + extra);
       }
       grow(mark.x2, mark.y2);
-      if (mark.face) {
-        const len = 8 / scale + 4;
-        grow(mark.x + mark.face[0] * len, mark.y + mark.face[1] * len);
-      }
     }
     originX = (minX + maxX) / 2;
     originY = (minY + maxY) / 2;
@@ -647,20 +643,9 @@ function stillMark(mark, pt, scale) {
     return `<circle cx="${x}" cy="${y}" r="11" fill="#fbf3e4" stroke="#7c4a12" stroke-width="2"><title>Orb</title></circle>`;
   }
   if (mark.kind === "boss") {
-    const tick = bossTick(mark, x, y, scale);
-    return `${tick}<circle cx="${x}" cy="${y}" r="7" fill="#1c1915"><title>${esc(mark.name || "Boss")}</title></circle>`;
+    return `<circle cx="${x}" cy="${y}" r="7" fill="#1c1915"><title>${esc(mark.name || "Boss")}</title></circle>`;
   }
   return "";
-}
-function bossTick(mark, x, y, scale) {
-  if (!mark.face) return "";
-  const near = 8;
-  const far = 8 + 4 * scale;
-  const x1 = x + mark.face[0] * near;
-  const y1 = y + mark.face[1] * near;
-  const x2 = x + mark.face[0] * far;
-  const y2 = y + mark.face[1] * far;
-  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1c1915" stroke-width="2"></line>`;
 }
 function stillPlayer(player, pt, scale) {
   const [x, y] = pt(player.x, player.y);
