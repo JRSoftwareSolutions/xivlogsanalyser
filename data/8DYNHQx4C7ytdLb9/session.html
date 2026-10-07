@@ -403,21 +403,21 @@ function loadDetail(code) {
   if (session._loaded) return Promise.resolve(session);
   if (!session.detail) return Promise.reject(new Error("no detail"));
   if (detailLoads[code]) return detailLoads[code];
-  detailLoads[code] = new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = session.detail;
-    script.onload = () => {
-      if (session._loaded) resolve(session);
-      else {
-        delete detailLoads[code];
-        reject(new Error("empty detail"));
-      }
-    };
-    script.onerror = () => {
-      delete detailLoads[code];
-      reject(new Error("detail failed"));
-    };
-    document.head.appendChild(script);
+  // Fetched as text. A script tag is refused when this file is served as plain text.
+  detailLoads[code] = fetch(session.detail).then(response => {
+    if (!response.ok) throw new Error("detail failed");
+    return response.text();
+  }).then(text => {
+    const open = text.indexOf("(");
+    const close = text.lastIndexOf(")");
+    if (open < 0 || close <= open) throw new Error("empty detail");
+    const parsed = JSON.parse("[" + text.slice(open + 1, close) + "]");
+    registerDetail(parsed[0], parsed[1]);
+    if (!session._loaded) throw new Error("empty detail");
+    return session;
+  }).catch(error => {
+    delete detailLoads[code];
+    throw error;
   });
   return detailLoads[code];
 }

@@ -362,6 +362,8 @@ class SessionDetailTest(unittest.TestCase):
         self.assertIn("General trend", dashboard)
         self.assertIn("session-preview", dashboard)
         self.assertIn("loadDetail", dashboard)
+        self.assertIn("fetch(session.detail)", dashboard)
+        self.assertNotIn("script.src = session.detail", dashboard)
         self.assertIn("data/abc/detail.js?v=", dashboard)
         self.assertIn("detail.js?v=", session_page)
         self.assertTrue(detail.startswith('registerDetail("abc",'))
