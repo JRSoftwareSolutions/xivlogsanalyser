@@ -11,7 +11,9 @@ from xivloganalyzer.catalog import load_pack
 from xivloganalyzer.frames import (
     CastClock,
     FrameBook,
+    Sample,
     _bursts,
+    _nearest,
     _waves,
     attach_frames,
     facing_vector,
@@ -46,6 +48,16 @@ def _death(row: dict) -> dict:
 def _load():
     rows = json.loads((REPORT / "judgments.json").read_text(encoding="utf-8"))
     return {(row["fight"], row["name"], row["mechanic_id"], round(row["t"], 1)): row for row in rows}
+
+
+class NearestTest(unittest.TestCase):
+    def test_bisect_matches_a_scan_with_ties_to_the_earlier_sample(self):
+        times = [0.0, 0.5, 0.5, 1.0, 2.0, 2.0, 3.0]
+        samples = [Sample(t, index, 1, 0.0, 0.0, None, "", "", True) for index, t in enumerate(times)]
+        for step in range(-4, 16):
+            when = step / 4
+            self.assertIs(_nearest(samples, when, times), _nearest(samples, when), when)
+        self.assertIsNone(_nearest([], 1.0, []))
 
 
 class FacingTest(unittest.TestCase):

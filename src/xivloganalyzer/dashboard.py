@@ -45,6 +45,11 @@ def _pull_clock(ms: int) -> str:
     return f"{seconds // 60}:{seconds % 60:02d}"
 
 
+def _fight_ms(fight: dict) -> int:
+    """How long the pull lasted, from its first phase."""
+    return int(fight.get("combatTime") or (fight["end_time"] - fight["start_time"]))
+
+
 def _parse_started(value) -> datetime | None:
     if value is None or value == "":
         return None
@@ -190,7 +195,7 @@ def build_timeline(meta: dict, when: dict, judged: set[int], pack: FightPack | N
             "short": f"P{phase_id}",
         }
         offset = clock.get(phase_id, 0)
-        duration = int(fight.get("combatTime") or (fight["end_time"] - fight["start_time"]))
+        duration = _fight_ms(fight)
         rows.append(
             {
                 "id": int(fight["id"]),
@@ -406,9 +411,11 @@ def session_payload(
     if isinstance(started, str):
         started = _parse_started(started)
     starts = when.get("starts") or {}
+    fights = {int(fight["id"]): fight for fight in (meta or {}).get("fights") or []}
     pulls: dict[int, dict] = {}
     phase_durations: dict[int, dict[int, float]] = {}
     for item in judgments:
+        fight = fights.get(item.fact.fight)
         pull = pulls.setdefault(
             item.fact.fight,
             {
@@ -416,12 +423,16 @@ def session_payload(
                 "bossPct": item.fact.boss_pct,
                 "phase": item.fact.phase_name,
                 "phaseId": item.fact.phase,
-                "clock": _pull_clock(item.fact.pull_ms),
+                "clock": _pull_clock(_fight_ms(fight) if fight else item.fact.pull_ms),
                 "duration": item.fact.pull_ms / 1000,
                 "when": wall_clock(started, starts.get(item.fact.fight, 0)),
                 "deaths": [],
             },
         )
+        if item.fact.phase > pull["phaseId"]:
+            pull["phase"] = item.fact.phase_name
+            pull["phaseId"] = item.fact.phase
+            pull["duration"] = item.fact.pull_ms / 1000
         phase_durations.setdefault(item.fact.fight, {})[item.fact.phase] = (
             item.fact.pull_ms / 1000
         )
@@ -453,7 +464,7 @@ def session_payload(
         )
     roster = _party(meta or {}, pack)
     for pull in pulls.values():
-        pull["deaths"].sort(key=lambda row: (row["t"], row["name"]))
+        pull["deaths"].sort(key=lambda row: (row["phaseId"], row["t"], row["name"]))
         pull["counts"] = Counter(row["outcome"] for row in pull["deaths"])
         pull["cards"] = _pull_cards(pull, mechanics, roster, phase_durations.get(pull["id"]))
     for mech in mechanics:
@@ -563,7 +574,7 @@ def detail_body(payload: dict) -> dict:
 
 
 def _js_json(value) -> str:
-    text = json.dumps(value)
+    text = json.dumps(value, separators=(",", ":"))
     return text.replace("<", "\\u003c").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 
@@ -662,7 +673,7 @@ def _detail_block(payload: dict | None) -> str:
 
 def _page(payloads: list[dict], title: str, detail: dict | None = None) -> str:
     data = _js_json(library_payload(payloads))
-    icons = json.dumps(_job_icons())
+    icons = json.dumps(_job_icons(), separators=(",", ":"))
     template = (Path(__file__).parent / "session_template.html").read_text(encoding="utf-8")
     html = template.replace("__DATA__", data)
     html = html.replace("__JOB_ICONS__", icons)

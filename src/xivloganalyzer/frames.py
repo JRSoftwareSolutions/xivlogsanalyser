@@ -17,6 +17,7 @@ from __future__ import annotations
 import json
 import math
 import statistics
+from bisect import bisect_left, bisect_right
 from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -37,21 +38,27 @@ TOWER_RADIUS = 3.0
 OUTSIDE_TOWER = 3.5
 
 
-@dataclass
+@dataclass(slots=True)
 class Sample:
     t: float
     ts: int
     actor: int | None
     x: float
     y: float
-    face: tuple[float, float] | None
+    facing: int | None
     name: str
     kind: str
     friendly: bool
 
+    @property
+    def face(self) -> tuple[float, float] | None:
+        return facing_vector(self.facing)
+
 
 @dataclass
 class FightReplay:
+    """Samples are in time order. `times` and `actor_times` are their `t`, for bisecting."""
+
     p2: int
     phase_starts: dict[int, int] = field(default_factory=dict)
     samples: list[Sample] = field(default_factory=list)
@@ -59,6 +66,17 @@ class FightReplay:
     players: dict[str, int] = field(default_factory=dict)
     hysteria: list[tuple[str, float, float]] = field(default_factory=list)
     prey: list[tuple[str, float, float]] = field(default_factory=list)
+    times: list[float] = field(default_factory=list)
+    actor_times: dict[int, list[float]] = field(default_factory=dict)
+
+    def between(self, start: float, end: float) -> list[Sample]:
+        """Samples with `start <= t <= end`, in time order."""
+        return self.samples[bisect_left(self.times, start):bisect_right(self.times, end)]
+
+    def nearest(self, actor: int | None, when: float) -> Sample | None:
+        if actor is None:
+            return None
+        return _nearest(self.by_actor.get(actor) or [], when, self.actor_times.get(actor))
 
 
 @dataclass
@@ -424,19 +442,20 @@ class FrameBook:
             phase_starts[int(phase["id"])] = int(phase["startTime"])
         replay = FightReplay(p2=int(p2), phase_starts=phase_starts)
         counted: dict[tuple[str, int], int] = {}
-        for row in payload.get("samples") or []:
+        who: dict[int | None, tuple[str, str, bool]] = {}
+        for row in sorted(payload.get("samples") or [], key=lambda row: row[0]):
             ts, actor, x, y, facing, _friendly = row
-            info = actors.get(str(actor), {}) if actor is not None else {}
-            name = info.get("name") or ""
-            kind = info.get("type") or ""
-            friendly = bool(info.get("friendly"))
+            if actor not in who:
+                info = actors.get(str(actor), {}) if actor is not None else {}
+                who[actor] = (info.get("name") or "", info.get("type") or "", bool(info.get("friendly")))
+            name, kind, friendly = who[actor]
             sample = Sample(
                 t=(ts - p2) / 1000,
                 ts=int(ts),
                 actor=actor,
                 x=x / 100,
                 y=y / 100,
-                face=facing_vector(facing),
+                facing=facing,
                 name=name,
                 kind=kind,
                 friendly=friendly,
@@ -452,6 +471,10 @@ class FrameBook:
             if name not in best or count > best[name][0]:
                 best[name] = (count, actor)
         replay.players = {name: actor for name, (_count, actor) in best.items()}
+        replay.times = [sample.t for sample in replay.samples]
+        replay.actor_times = {
+            actor: [sample.t for sample in samples] for actor, samples in replay.by_actor.items()
+        }
         mit_path = self.report / "mitigations" / f"fight-{fight_id:02d}.json"
         if mit_path.is_file():
             mit = json.loads(mit_path.read_text(encoding="utf-8"))
@@ -466,7 +489,7 @@ class FrameBook:
         rows = []
         for name, actor in sorted(replay.players.items()):
             samples = replay.by_actor.get(actor) or []
-            sample = _nearest(samples, when)
+            sample = replay.nearest(actor, when)
             if sample is None:
                 continue
             x, y = _rel(sample.x, sample.y)
@@ -481,8 +504,9 @@ class FrameBook:
                 "prey": tag_prey and _active(prey, name, when),
                 "stale": _mid_move(samples, when, sample),
             }
-            if (looked or (faces and name in faces)) and sample.face:
-                row["face"] = [round(sample.face[0], 3), round(sample.face[1], 3)]
+            face = sample.face if looked or (faces and name in faces) else None
+            if face:
+                row["face"] = [round(face[0], 3), round(face[1], 3)]
             rows.append(row)
         rows.sort(key=lambda row: (not row["dead"], row["name"]))
         return rows
@@ -515,10 +539,10 @@ class FrameBook:
     def _boss(self, replay: FightReplay, when: float, name: str = "King Thordan") -> Sample | None:
         best = None
         best_age = None
-        for samples in replay.by_actor.values():
+        for actor, samples in replay.by_actor.items():
             if not samples or samples[0].name != name or samples[0].kind != "Boss":
                 continue
-            sample = _nearest(samples, when)
+            sample = replay.nearest(actor, when)
             if sample is None:
                 continue
             age = abs(sample.t - when)
@@ -569,9 +593,7 @@ class FrameBook:
 
     def _burst(self, replay, predicate, center, back, forward, min_count, prefer_pair=False, keep=None):
         buckets: dict[tuple, list[Sample]] = {}
-        for sample in replay.samples:
-            if sample.t < center - back or sample.t > center + forward:
-                continue
+        for sample in replay.between(center - back, center + forward):
             if not predicate(sample):
                 continue
             buckets.setdefault((sample.actor, sample.ts), []).append(sample)
@@ -613,7 +635,21 @@ def _mid_move(samples: list[Sample], when: float, nearest: Sample) -> bool:
     return math.hypot(after.x - before.x, after.y - before.y) > 4
 
 
-def _nearest(samples: list[Sample], when: float) -> Sample | None:
+def _nearest(samples: list[Sample], when: float, times: list[float] | None = None) -> Sample | None:
+    """The sample closest to `when`. A tie goes to the earlier one.
+
+    `times` is the `t` of each sample when they are in time order, so this can bisect.
+    """
+    if times is not None:
+        if not samples:
+            return None
+        after = bisect_left(times, when)
+        best = after if after < len(times) else None
+        if after > 0:
+            before = bisect_left(times, times[after - 1])
+            if best is None or when - times[before] <= times[best] - when:
+                best = before
+        return samples[best]
     best = None
     best_age = None
     for sample in samples:
@@ -667,13 +703,9 @@ def _sanctity_towers(replay: FightReplay, center: float) -> TowerResolve | None:
     sometimes split across timestamps a few milliseconds apart. About two
     seconds later the Eternal Conviction explosion comes only from the empty towers.
     """
-    samples = sorted(
-        (
-            sample for sample in replay.samples
-            if sample.name == TOWER_SOURCE and center - 4.0 <= sample.t <= center + 4.0
-        ),
-        key=lambda sample: sample.t,
-    )
+    samples = [
+        sample for sample in replay.between(center - 4.0, center + 4.0) if sample.name == TOWER_SOURCE
+    ]
     groups: list[list[Sample]] = []
     for sample in samples:
         if groups and sample.t - groups[-1][-1].t <= 0.5:
@@ -725,8 +757,7 @@ def _tag_outside(replay: FightReplay, players: list[dict], resolve: TowerResolve
     """Mark players outside every tower, and players sharing one, when the towers resolved."""
     inside: dict[int, list[dict]] = defaultdict(list)
     for row in players:
-        actor = replay.players.get(row["name"])
-        sample = _nearest(replay.by_actor.get(actor) or [], resolve.t) if actor is not None else None
+        sample = replay.nearest(replay.players.get(row["name"]), resolve.t)
         if sample is None or abs(sample.t - resolve.t) > 1.5:
             continue
         reach, spot = min(

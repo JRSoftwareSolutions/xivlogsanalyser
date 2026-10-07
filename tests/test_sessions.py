@@ -107,6 +107,40 @@ class NidhoggChartTest(unittest.TestCase):
         self.assertGreater(min(pull["reached"] for pull in nidhogg), marks["Dive from Grace"])
 
 
+class NidhoggPullPageTest(unittest.TestCase):
+    """Pulls 36, 46 and 50 on 5 Oct had a death in Thordan and then wiped in Nidhogg."""
+
+    @classmethod
+    def setUpClass(cls):
+        report = ROOT / "data" / "8DYNHQx4C7ytdLb9"
+        pack = load_pack(ROOT / "fights" / "dsr")
+        meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
+        when = session_clock(report, meta)
+        cls.facts = read_facts(report)
+        payload = session_payload(judge_report(cls.facts, pack), pack, report.name, when, meta)
+        cls.pulls = {pull["id"]: pull for pull in payload["pulls"]}
+        cls.overview = build_timeline(meta, when, judged=set(), pack=pack)
+
+    def test_deaths_are_in_fight_order_across_phases(self):
+        for pull_id in (36, 46, 50):
+            phases = [row["phaseId"] for row in self.pulls[pull_id]["deaths"]]
+            self.assertEqual(phases, sorted(phases), pull_id)
+            saved = [fact.phase for fact in self.facts if fact.fight == pull_id]
+            self.assertEqual(saved, sorted(saved), pull_id)
+        first = self.pulls[36]["deaths"][0]
+        self.assertEqual((first["phaseId"], first["time"]), (2, "2:01"))
+
+    def test_a_pull_is_in_the_last_phase_it_reached(self):
+        self.assertEqual((self.pulls[50]["phaseId"], self.pulls[50]["phase"]), (3, "Nidhogg"))
+
+    def test_pull_page_clock_is_the_whole_pull_like_the_chart(self):
+        charted = {pull["id"]: pull["clock"] for pull in self.overview["pulls"]}
+        for pull_id, pull in self.pulls.items():
+            self.assertEqual(pull["clock"], charted[pull_id], pull_id)
+        self.assertEqual(self.pulls[36]["clock"], "4:05")
+        self.assertEqual(self.pulls[46]["clock"], "4:18")
+
+
 class ClusterTimelineTest(unittest.TestCase):
     def test_stops_follow_starts_and_each_names_a_skill(self):
         pack = load_pack(ROOT / "fights" / "dsr")
