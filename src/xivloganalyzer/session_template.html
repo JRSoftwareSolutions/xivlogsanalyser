@@ -376,6 +376,7 @@ try {
 <aside id="nav"></aside>
 <div id="nav-split" role="separator" aria-orientation="vertical" aria-label="Resize sidebar" aria-description="Drag to resize the sidebar. Double-click to reset." aria-valuemin="200" aria-valuenow="300" tabindex="0"></div>
 <main id="app"></main>
+__DETAIL__
 <script>
 const DATA = __DATA__;
 const JOB_ICONS = __JOB_ICONS__;
@@ -397,22 +398,39 @@ function registerDetail(code, detail) {
   if (detail.low != null) session.low = detail.low;
   session._loaded = true;
 }
+function embeddedDetail() {
+  const node = document.getElementById("session-detail");
+  if (!node || !node.textContent.trim()) return null;
+  return JSON.parse(node.textContent);
+}
+function detailFromPage(text) {
+  const marker = 'id="session-detail">';
+  const start = text.indexOf(marker);
+  if (start < 0) throw new Error("empty detail");
+  const from = start + marker.length;
+  const end = text.indexOf("<" + "/script>", from);
+  if (end < 0) throw new Error("empty detail");
+  return JSON.parse(text.slice(from, end));
+}
 function loadDetail(code) {
   const session = byCode[code];
   if (!session) return Promise.reject(new Error("missing session"));
   if (session._loaded) return Promise.resolve(session);
+  const only = DATA.sessions.length === 1 ? DATA.sessions[0].code : "";
+  if (only === code) {
+    const embedded = embeddedDetail();
+    if (embedded) {
+      registerDetail(code, embedded);
+      if (session._loaded) return Promise.resolve(session);
+    }
+  }
   if (!session.detail) return Promise.reject(new Error("no detail"));
   if (detailLoads[code]) return detailLoads[code];
-  // Fetched as text. A script tag is refused when this file is served as plain text.
   detailLoads[code] = fetch(session.detail).then(response => {
     if (!response.ok) throw new Error("detail failed");
     return response.text();
   }).then(text => {
-    const open = text.indexOf("(");
-    const close = text.lastIndexOf(")");
-    if (open < 0 || close <= open) throw new Error("empty detail");
-    const parsed = JSON.parse("[" + text.slice(open + 1, close) + "]");
-    registerDetail(parsed[0], parsed[1]);
+    registerDetail(code, detailFromPage(text));
     if (!session._loaded) throw new Error("empty detail");
     return session;
   }).catch(error => {
