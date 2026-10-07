@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dragonsong's Reprise · Sat 3 Oct 2026 · 21:17–00:03</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23152033'/%3E%3Cpath d='M3.5 13V8M6.5 13V4M9.5 13V6M12.5 13V9.5' stroke='%239eb6e8' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
   :root {
     color-scheme: dark;
@@ -413,6 +414,48 @@ function detailFromPage(text) {
   if (end < 0) throw new Error("empty detail");
   return JSON.parse(text.slice(from, end));
 }
+const DETAIL_HASH = "#detail";
+function postDetailToParent() {
+  if (window.parent === window || location.hash !== DETAIL_HASH) return false;
+  const code = DATA.sessions.length === 1 ? DATA.sessions[0].code : "";
+  window.parent.postMessage({ kind: "session-detail", code, detail: embeddedDetail() }, "*");
+  return true;
+}
+// A page opened from disk cannot fetch another file, but it can frame one and receive a message from it.
+function detailFromFrame(code, href) {
+  return new Promise((resolve, reject) => {
+    const frame = document.createElement("iframe");
+    frame.hidden = true;
+    let timer = null;
+    const finish = (settle, value) => {
+      clearTimeout(timer);
+      window.removeEventListener("message", onMessage);
+      frame.remove();
+      settle(value);
+    };
+    const onMessage = event => {
+      if (event.source !== frame.contentWindow) return;
+      const data = event.data || {};
+      if (data.kind !== "session-detail" || data.code !== code || !data.detail) {
+        finish(reject, new Error("empty detail"));
+        return;
+      }
+      finish(resolve, data.detail);
+    };
+    window.addEventListener("message", onMessage);
+    frame.addEventListener("load", () => {
+      timer = setTimeout(() => finish(reject, new Error("detail failed")), 1500);
+    });
+    frame.src = href.split("#")[0] + DETAIL_HASH;
+    document.body.appendChild(frame);
+  });
+}
+function detailFromServer(href) {
+  return fetch(href).then(response => {
+    if (!response.ok) throw new Error("detail failed");
+    return response.text();
+  }).then(detailFromPage);
+}
 function loadDetail(code) {
   const session = byCode[code];
   if (!session) return Promise.reject(new Error("missing session"));
@@ -427,11 +470,11 @@ function loadDetail(code) {
   }
   if (!session.detail) return Promise.reject(new Error("no detail"));
   if (detailLoads[code]) return detailLoads[code];
-  detailLoads[code] = fetch(session.detail).then(response => {
-    if (!response.ok) throw new Error("detail failed");
-    return response.text();
-  }).then(text => {
-    registerDetail(code, detailFromPage(text));
+  const pending = location.protocol === "file:"
+    ? detailFromFrame(code, session.detail)
+    : detailFromServer(session.detail);
+  detailLoads[code] = pending.then(detail => {
+    registerDetail(code, detail);
     if (!session._loaded) throw new Error("empty detail");
     return session;
   }).catch(error => {
@@ -1625,8 +1668,10 @@ document.body.addEventListener("toggle", event => {
   if (!node.classList || !node.classList.contains("session-preview")) return;
   previewOpen[node.dataset.code] = node.open;
 }, true);
-window.addEventListener("hashchange", render);
-render();
+if (!postDetailToParent()) {
+  window.addEventListener("hashchange", render);
+  render();
+}
 
 function navMax() {
   return Math.max(NAV.min, window.innerWidth - NAV.gutter);

@@ -367,6 +367,9 @@ class SessionDetailTest(unittest.TestCase):
         self.assertNotIn("detail.js", dashboard)
         self.assertNotIn("detail.js", session_page)
         self.assertFalse((report / "detail.js").exists())
+        self.assertIn('location.protocol === "file:"', dashboard)
+        self.assertIn("detailFromFrame", dashboard)
+        self.assertIn("postDetailToParent()", session_page)
         marker = 'id="session-detail">'
         start = session_page.index(marker) + len(marker)
         end = session_page.index("</script>", start)
