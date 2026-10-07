@@ -115,6 +115,8 @@ def _active(auras: list, timestamp: int, mit_guids: set[int]) -> list[dict]:
     for aura in auras:
         if aura[0] > timestamp:
             break
+        if aura[2] not in mit_guids:
+            continue
         action = aura[1]
         key = (aura[5], aura[2])
         if action.startswith("remove") and not action.endswith("stack"):
@@ -133,8 +135,6 @@ def _active(auras: list, timestamp: int, mit_guids: set[int]) -> list[dict]:
         }
     live = []
     for aura in state.values():
-        if aura["guid"] not in mit_guids:
-            continue
         if aura["until"] is not None and aura["until"] <= timestamp:
             continue
         live.append(aura)
