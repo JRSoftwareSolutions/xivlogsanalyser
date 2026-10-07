@@ -102,9 +102,9 @@ def _pack_for(meta: dict) -> FightPack | None:
 
 
 def _percent_left(raw) -> float:
-    """Boss HP remaining, in percent. A pull FFLogs did not score stays at 0."""
+    """Boss HP remaining, in percent. A pull FFLogs did not score left the boss untouched."""
     if raw is None:
-        return 0.0
+        return 100.0
     return round(raw / 100, 1)
 
 
@@ -116,8 +116,11 @@ def _progress(raw) -> float:
 
 
 def _into_phase(fight: dict) -> tuple[int, float]:
-    """Seconds into the phase the pull ended in. Cast time is from the pull start."""
-    phase_id = int(fight.get("lastPhaseForPercentageDisplay") or 0)
+    """Seconds into the phase the pull ended in. Cast time is from the pull start.
+
+    A pull reset before FFLogs placed it in a phase ended in the first one.
+    """
+    phase_id = int(fight.get("lastPhaseForPercentageDisplay") or 1)
     start = int(fight["start_time"])
     phase_start = start
     for phase in fight.get("phases") or []:
