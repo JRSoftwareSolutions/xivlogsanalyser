@@ -236,6 +236,13 @@
   .component:first-of-type { border-top: 0; padding-top: 4px; }
   .component-name { font-weight: 650; margin: 0 0 8px; }
   .seats { display: flex; flex-wrap: wrap; gap: 6px; }
+  .debuffs { border-collapse: collapse; margin: 4px 0 8px; font-size: 14px; }
+  .debuffs th, .debuffs td { text-align: left; padding: 3px 14px 3px 0; border-bottom: 1px solid var(--line); }
+  .debuffs thead th { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .debuffs tbody th { font-weight: 400; }
+  .debuffs td { white-space: nowrap; }
+  .debuffs .player { display: inline-flex; gap: 6px; align-items: center; white-space: nowrap; }
+  .debuffs tr.failed .player { color: var(--fail); font-weight: 650; }
   .seat {
     display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
     border-radius: 999px; padding: 3px 8px 3px 4px; border: 1px solid var(--line);
@@ -1526,6 +1533,20 @@ function partMatters(pull, card, part) {
 function shownParts(pull, card) {
   return card.parts.filter(part => partMatters(pull, card, part));
 }
+function debuffTable(card) {
+  const list = card.debuffs;
+  if (!list || !(list.players || []).length) return "";
+  const failed = failedNames(card);
+  const cell = value => value ? esc(value) : `<span class="quiet">—</span>`;
+  return `<table class="debuffs">
+    <caption class="sr">Who had which debuff</caption>
+    <thead><tr><th scope="col">Player</th>${list.columns.map(column => `<th scope="col">${esc(column)}</th>`).join("")}</tr></thead>
+    <tbody>${list.players.map(player => `<tr${failed.has(player.name) ? ` class="failed" title="${esc(player.name)} failed ${esc(card.name)}"` : ""}>
+      <th scope="row"><span class="player">${jobMark(player.job)}${esc(player.name)}</span></th>
+      ${player.values.map(value => `<td>${cell(value)}</td>`).join("")}
+    </tr>`).join("")}</tbody>
+  </table>`;
+}
 function componentBlock(pull, card, part) {
   const rows = componentDeaths(pull, card, part);
   const solo = card.parts.length === 1 && part.name === card.name;
@@ -1555,6 +1576,7 @@ function renderPull(id) {
         <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${card.id}">${esc(card.name)}</button></h3>
         ${failStamp(failedNames(card))}
       </div>
+      ${debuffTable(card)}
       ${parts}
     </section>`;
   }).join("");
@@ -1654,6 +1676,7 @@ function reviewWho(card) {
 function reviewBody(pull, card) {
   const shown = shownParts(pull, card);
   return `<p class="meta review-open"><button class="link" data-go="s/${SESSION.code}/pull/${pull.id}">Open pull ${pull.id}</button></p>
+    ${debuffTable(card)}
     ${shown.length ? shown.map(part => componentBlock(pull, card, part)).join("") : `<p class="quiet">Everyone passed.</p>`}`;
 }
 function pullReview(pull, mech) {

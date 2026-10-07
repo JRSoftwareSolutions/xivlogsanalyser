@@ -568,6 +568,10 @@
       "starts": 17,
       "skill": "dsr-dive-from-grace",
       "summary": "About 17 seconds. Easthogg, true north, Nidhogg facing north. When the numbers appear, the 1s and 3s claim west, south, and east, and the 2s claim northwest and northeast. An up arrow takes west and faces east. A circle takes south. A down arrow takes east and faces east. A number with no arrows keeps the spots it claimed. The 3s soak the towers the 1s drop. The east and west 1s soak the towers the 2s drop. The 2s and the south 1 soak the towers the 3s drop. Five players who are not diving stack north for Eye of the Tyrant. Gnash and Lash is out, then in. Lash and Gnash is in, then out. After a soak, bait Geirskogul out and step through when the clone glows.",
+      "debuffs": [
+        {"column": "Number", "labels": {"1003004": "1", "1003005": "2", "1003006": "3"}},
+        {"column": "Dive", "labels": {"1002756": "up arrow", "1002755": "circle", "1002757": "down arrow"}}
+      ],
       "parts": [
         {"id": "dark-high-jump"},
         {"id": "dark-elusive-jump"},

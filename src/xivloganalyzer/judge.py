@@ -607,11 +607,27 @@ def _people(names: list[str]) -> str:
     return " and ".join(names)
 
 
+def _hit_by_others(item: Judgment) -> list[str]:
+    """Other players who own this death, when the player who died made no mistake.
+
+    A player in the landing of an arrow taken to the wrong side was hit by that diver.
+    """
+    if item.cause != "arrow":
+        return []
+    owners = [diver["name"] for diver in _wrong_arrows(item.fact)]
+    if item.fact.name in owners:
+        return []
+    return owners
+
+
 def _moment_text(deaths: list[Judgment], debuffs: list[dict], wall_id: str) -> str:
     groups: dict[str, list[str]] = {}
     for item in deaths:
+        others = _hit_by_others(item)
         if item.mechanic_id == wall_id:
             verb = "walking into the deathwall"
+        elif others:
+            verb = f"dying to {' and '.join(others)}'s {item.mechanic}"
         else:
             verb = f"dying to {item.mechanic}"
         names = groups.setdefault(verb, [])
@@ -633,6 +649,7 @@ def _mark_first_mistakes(judgments: list[Judgment], pack: FightPack) -> None:
     """The first death, Damage Down, or Hysteria of a pull. Later deaths often cascade from it.
 
     A deathwall walk after the first mistake is still a mistake, shared with that earlier one.
+    A player killed by someone else's mistake is not marked first. The text names whose it was.
     """
     wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
     pulls: dict[int, list[Judgment]] = {}
@@ -670,9 +687,10 @@ def _mark_first_mistakes(judgments: list[Judgment], pack: FightPack) -> None:
         text = _moment_text(first_deaths, first_debuffs, wall_id)
         text = f"{text} at {start:.1f}s into {phase_name}"
         for item in rows:
-            item.first = at_first(item.fact.phase, item.fact.t)
+            at_start = at_first(item.fact.phase, item.fact.t)
+            item.first = at_start and not _hit_by_others(item)
             item.first_mistake = text
-            if item.first or item.mechanic_id != wall_id or _own_hysteria(item.fact):
+            if at_start or item.mechanic_id != wall_id or _own_hysteria(item.fact):
                 continue
             item.went_wrong = f"{item.fact.name} walked into the deathwall after the first mistake."
             item.cause = "after"
