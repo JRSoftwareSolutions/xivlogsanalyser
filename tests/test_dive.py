@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 from xivloganalyzer.catalog import load_pack
-from xivloganalyzer.dashboard import session_clock, session_payload
+from xivloganalyzer.dashboard import attach_debuffs, session_clock, session_payload
 from xivloganalyzer.extract import extract_report
 from xivloganalyzer.judge import judge_report, roster_from_meta
 
@@ -82,6 +82,36 @@ class DiveFromGraceTest(unittest.TestCase):
         seats = {seat["name"]: seat for seat in part["seats"]}
         self.assertFalse(seats["Loki Doki"]["passed"])
         self.assertTrue(seats["Spring Nymphar"]["passed"])
+
+    def test_first_mistake_is_the_arrow_holder_not_the_player_hit(self):
+        loki = self._one(27, "Loki Doki", 26384)
+        spring = self._one(27, "Spring Nymphar", 26384)
+        self.assertTrue(loki.first)
+        self.assertFalse(spring.first)
+        self.assertEqual(
+            spring.first_mistake,
+            "Loki Doki dying to Dark Elusive Jump and Spring Nymphar dying to "
+            "Loki Doki's Dark Elusive Jump at 30.9s into Nidhogg",
+        )
+
+    def test_card_lists_each_players_number_and_dive(self):
+        when = session_clock(REPORT, self.meta)
+        payload = session_payload(self.judgments, self.pack, REPORT.name, when, self.meta)
+        attach_debuffs(REPORT, payload, self.pack, self.meta)
+        pull = next(row for row in payload["pulls"] if row["id"] == 27)
+        card = next(row for row in pull["cards"] if row["id"] == "dive-from-grace")
+        self.assertEqual(card["debuffs"]["columns"], ["Number", "Dive"])
+        rows = [(row["name"], *row["values"]) for row in card["debuffs"]["players"]]
+        self.assertEqual(rows, [
+            ("Spring Nymphar", "1", "up arrow"),
+            ("Speed Panda", "1", "circle"),
+            ("Loki Doki", "1", "down arrow"),
+            ("Absolute Gigachad", "2", "up arrow"),
+            ("Kite Noodle", "2", "down arrow"),
+            ("Absolute Gigalad", "3", "circle"),
+            ("Kiara Blaiddyd", "3", "circle"),
+            ("Kitana Kahn", "3", "circle"),
+        ])
 
     def test_circles_in_one_landing_are_a_miscommunication(self):
         jumps = [

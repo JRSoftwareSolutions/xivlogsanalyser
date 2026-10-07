@@ -8,6 +8,7 @@ from pathlib import Path
 
 from xivloganalyzer.catalog import load_catalog, pack_for_zone, repo_root
 from xivloganalyzer.dashboard import (
+    attach_debuffs,
     build_timeline,
     session_clock,
     session_payload,
@@ -50,6 +51,7 @@ def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
     write_judgments(report, judgments)
     when = session_clock(report, meta)
     payload = session_payload(judgments, pack, report.name, when, meta)
+    attach_debuffs(report, payload, pack, meta)
     attach_frames(report, payload, pack)
     judged = {pull["id"] for pull in payload["pulls"]}
     payload["overview"] = build_timeline(meta, when, judged, pack)
