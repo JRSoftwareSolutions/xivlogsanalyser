@@ -322,8 +322,8 @@ def _sample_payload():
 
 class SessionDetailTest(unittest.TestCase):
     def test_summary_keeps_the_chart_and_drops_the_death_review(self):
-        summary = session_summary(_sample_payload(), "detail.js?v=abc")
-        self.assertEqual(summary["detail"], "detail.js?v=abc")
+        summary = session_summary(_sample_payload(), "session.html?v=abc")
+        self.assertEqual(summary["detail"], "session.html?v=abc")
         self.assertEqual(summary["overview"]["pulls"][0]["reached"], 120)
         self.assertEqual(summary["pulls"], [{
             "id": 4,
@@ -342,7 +342,7 @@ class SessionDetailTest(unittest.TestCase):
         self.assertNotIn("UNIQUE_HAPPENED_TEXT", blob)
         self.assertNotIn("UNIQUE_SHOULD_TEXT", blob)
 
-    def test_library_page_loads_death_reviews_from_the_detail_script(self):
+    def test_library_page_loads_death_reviews_from_the_session_page(self):
         import tempfile
 
         payload = _sample_payload()
@@ -353,25 +353,24 @@ class SessionDetailTest(unittest.TestCase):
             write_session_page(report, payload)
             page = write_library(root, [payload])
             dashboard = page.read_text(encoding="utf-8")
-            detail = (report / "detail.js").read_text(encoding="utf-8")
             session_page = (report / "session.html").read_text(encoding="utf-8")
         self.assertNotIn("UNIQUE_HAPPENED_TEXT", dashboard)
         self.assertNotIn("UNIQUE_SHOULD_TEXT", dashboard)
-        self.assertNotIn("UNIQUE_HAPPENED_TEXT", session_page)
-        self.assertNotIn("UNIQUE_SHOULD_TEXT", session_page)
+        self.assertIn("UNIQUE_HAPPENED_TEXT", session_page)
+        self.assertIn("UNIQUE_SHOULD_TEXT", session_page)
         self.assertIn("General trend", dashboard)
         self.assertIn("session-preview", dashboard)
         self.assertIn("loadDetail", dashboard)
-        self.assertIn("fetch(session.detail)", dashboard)
-        self.assertNotIn("script.src = session.detail", dashboard)
-        self.assertIn("data/abc/detail.js?v=", dashboard)
-        self.assertIn("detail.js?v=", session_page)
-        self.assertTrue(detail.startswith('registerDetail("abc",'))
-        self.assertIn("UNIQUE_HAPPENED_TEXT", detail)
-        self.assertIn("UNIQUE_SHOULD_TEXT", detail)
-        inner = detail[len("registerDetail("):-3]
-        code, body = json.loads("[" + inner + "]")
-        self.assertEqual(code, "abc")
+        self.assertIn('<script type="application/json" id="session-detail">', session_page)
+        self.assertNotIn('<script type="application/json" id="session-detail">', dashboard)
+        self.assertIn("data/abc/session.html?v=", dashboard)
+        self.assertNotIn("detail.js", dashboard)
+        self.assertNotIn("detail.js", session_page)
+        self.assertFalse((report / "detail.js").exists())
+        marker = 'id="session-detail">'
+        start = session_page.index(marker) + len(marker)
+        end = session_page.index("</script>", start)
+        body = json.loads(session_page[start:end])
         self.assertEqual(body["pulls"][0]["deaths"][0]["happened"], "UNIQUE_HAPPENED_TEXT")
         self.assertEqual(body["mechanics"][0]["should"], "UNIQUE_SHOULD_TEXT")
 

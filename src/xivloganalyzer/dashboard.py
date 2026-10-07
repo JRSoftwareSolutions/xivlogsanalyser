@@ -493,8 +493,8 @@ def _jsonable(value):
 def session_summary(payload: dict, detail_href: str) -> dict:
     """Chart and navigation for one session, without the death reviews.
 
-    The reviews live in ``detail.js`` and load when a pull or mechanic is opened.
-    The page fetches that file. A script tag is refused when it is served as plain text.
+    The reviews are embedded in that session's ``session.html`` and load when a
+    pull or mechanic is opened. The library page fetches that HTML file.
     """
     overview = payload.get("overview") or {
         "phases": [],
@@ -539,29 +539,18 @@ def _js_json(value) -> str:
     return text.replace("<", "\\u003c").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 
-def write_detail(report: Path, payload: dict) -> Path:
-    """Write the death reviews for the page to fetch when it needs them."""
-    path = report / "detail.js"
-    code = json.dumps(payload["code"])
-    path.write_text(f"registerDetail({code},{_js_json(detail_body(payload))});\n", encoding="utf-8")
-    return path
-
-
 def _versioned(href: str, path: Path) -> str:
     digest = hashlib.sha256(path.read_bytes()).hexdigest()[:12]
     return f"{href}?v={digest}"
 
 
 def library_detail_href(root: Path, code: str) -> str:
-    """Path from the library page to a session's detail script."""
+    """Path from the library page to the session page that holds the reviews."""
     for folder in ("reports", "data"):
-        path = root / folder / code / "detail.js"
+        path = root / folder / code / "session.html"
         if path.is_file():
-            return _versioned(f"{folder}/{code}/detail.js", path)
-    for folder in ("reports", "data"):
-        if (root / folder / code).is_dir():
-            return f"{folder}/{code}/detail.js"
-    return f"{code}/detail.js"
+            return _versioned(f"{folder}/{code}/session.html", path)
+    return f"{code}/session.html"
 
 
 def library_payload(payloads: list[dict]) -> dict:
@@ -595,15 +584,18 @@ def library_payload(payloads: list[dict]) -> dict:
 
 
 def write_session_page(report: Path, payload: dict) -> Path:
+    """One session. The death reviews are in the page, so a pull does not fetch another file."""
     path = report / "session.html"
-    detail = write_detail(report, payload)
-    summary = session_summary(payload, _versioned("detail.js", detail))
-    path.write_text(_page([summary], _session_title(payload)), encoding="utf-8")
+    summary = session_summary(payload, "")
+    path.write_text(_page([summary], _session_title(payload), detail=payload), encoding="utf-8")
+    stale = report / "detail.js"
+    if stale.is_file():
+        stale.unlink()
     return path
 
 
 def write_library(root: Path, payloads: list[dict]) -> Path:
-    """Library page. Each payload's ``detail.js`` should already be written."""
+    """Library page. Each session page should already be written."""
     summaries = [
         session_summary(payload, library_detail_href(root, payload["code"]))
         for payload in payloads
@@ -633,10 +625,18 @@ def _job_icons() -> dict[str, str]:
     return icons
 
 
-def _page(payloads: list[dict], title: str) -> str:
+def _detail_block(payload: dict | None) -> str:
+    if not payload:
+        return ""
+    body = _js_json(detail_body(payload))
+    return f'<script type="application/json" id="session-detail">{body}</script>\n'
+
+
+def _page(payloads: list[dict], title: str, detail: dict | None = None) -> str:
     data = _js_json(library_payload(payloads))
     icons = json.dumps(_job_icons())
     template = (Path(__file__).parent / "session_template.html").read_text(encoding="utf-8")
     html = template.replace("__DATA__", data)
     html = html.replace("__JOB_ICONS__", icons)
-    return html.replace("__TITLE__", title)
+    html = html.replace("__TITLE__", title)
+    return html.replace("__DETAIL__", _detail_block(detail))
