@@ -38,11 +38,13 @@ class DiveFromGraceTest(unittest.TestCase):
 
     def test_phase_three_counts(self):
         counts = Counter(item.outcome for item in self.phase3)
-        self.assertEqual(counts["fail"], 34)
+        self.assertEqual(counts["fail"], 42)
         self.assertEqual(counts["raw"], 15)
         self.assertEqual(counts["low"], 3)
         self.assertEqual(counts["unknown"], 5)
-        self.assertEqual(counts["environment"], 8)
+        self.assertEqual(counts["environment"], 0)
+        walls = [item for item in self.phase3 if item.mechanic_id == "deathwall"]
+        self.assertEqual(len(walls), 8)
         unknown = {item.mechanic for item in self.phase3 if item.outcome == "unknown"}
         self.assertEqual(unknown, {"Final Chorus", "attack"})
 

@@ -11,7 +11,7 @@ description: >-
 
 Thordan (phase 2) is the fight these skills know. Caps and `should_have_been` live in `fights/dsr/mechanics.json`. How to tell the cases apart lives in the mechanic skill. `notes/classification.md` is why the settled calls look like this.
 
-The death line is only this cast. A later cast of the same ability stays out of it. `should_have_been` on the mechanic is the default. A cluster part's own `should_have_been` is the line for deaths inside that part's `after` / `until` window. A `moments` row, with `above` set to an unmitigated hit, replaces the line when the hit is larger than that. Use it when one guid covers two resolutions at the same time, such as a Skyward Leap marker and an empty tower.
+The death line is only this cast. A later cast of the same ability stays out of it. `should_have_been` on the mechanic is the default. A cluster part's own `should_have_been` is the line for deaths inside that part's `after` / `until` window. A `moments` row, with `above` set to an unmitigated hit, replaces the line when the hit is larger than that. Use it when one guid covers two resolutions at the same time, such as a Skyward Leap marker and a second leap on the same player.
 
 Read the mechanic skill for the killing blow before you assign fault. Setting or checking parameters uses `analyze-mechanic-parameters`, then that mechanic's Parameters section. Which casts belong together, and what each one does, is `mechanic-components`. The session line lists those clusters by `starts`. That file names the skill for the stop. The killing-blow index is below.
 
@@ -19,7 +19,7 @@ Read the mechanic skill for the killing blow before you assign fault. Setting or
 
 The killing blow is the first ability in the deaths-table row before `last-three-events`. The last tooltip event is often reverse-chronological and is the wrong blow.
 
-No ability on that row means there is no damage packet.
+No ability on that row means there is no damage packet. That is the deathwall. The only timestamp on that row is the last hit they lived, so the death is timed by the row's clock instead, moved back 1.5 seconds to match the hit timestamps.
 
 ## Packet
 
@@ -33,7 +33,7 @@ Role comes from the job. Tanks: Paladin, Warrior, Gunbreaker, Dark Knight. Heale
 
 Apply these in order:
 
-1. No damage packet → **environment**. No mechanic fault. Usually the body after a raise, or a wipe tick. Weakness `1000043` is the raise debuff and does not increase damage taken.
+1. No damage packet → **fail**, Deathwall. They walked into the deathwall, and that is always a mistake. Before any other death, Damage Down, or Hysteria in the pull, it is their own mistake. With their own Hysteria still on, they looked at the gaze and it walked them in. Weakness `1000043` is the raise debuff and does not increase damage taken.
 2. Guid is not in `mechanics.json` for this phase → **unknown**. No fault. Ask what the hit should mean.
 3. Magic Vulnerability Up `1002941`, Physical Vulnerability Up `1002940`, or Damage Down on the packet → **fail**. The amp is a failed mechanic. `buffs` is often empty on the damage packet even when a calculated-damage sibling had the aura. Check that sibling before calling a borderline hit raw.
 4. `any_hit_is_fail` → **fail**. Use the mechanic skill for whose fault. A Bright Flare overlap still splits across the players in the burst. Holy Impact is the two prey players.
@@ -47,7 +47,7 @@ Apply these in order:
 One block per death. The sentence is what went wrong. Do not say what the mechanic should have been.
 
 ```
-**Pull {id} · {player} · {mechanic}** — {raw|fail|low|environment|unknown}
+**Pull {id} · {player} · {mechanic}** — {raw|fail|low|unknown}
 {one short sentence}
 Fault: {who} {confidence}%
 ```
@@ -59,7 +59,11 @@ Name the player and the mistake. Leave out the damage, the shield, and who owns 
 - Kiara Blaiddyd wasn't full for Skyward Leap.
 - The stack was 2 of 4.
 
-For a whole pull, add one line: how many raw, fail, low, and no-packet deaths.
+For a whole pull, add one line: how many raw, fail, and low deaths, and the first mistake.
+
+## First mistake
+
+The first mistake of a pull matters most. It is the earliest death, Damage Down, or Hysteria in the pull, with anything else in the same second. Later deaths are often that mistake cascading: fewer bodies for a stack, a raise that leaves someone low, a group that gives up and walks into the wall. Name the first mistake before the rest. `first` and `first_mistake` on each judgment carry it.
 
 ## Blame confidence
 
@@ -74,14 +78,16 @@ These are the shared calls:
 - Skyward Leap at full HP: "Assigned mitigation" at 50. The plan is more than one player, and the log does not name them.
 - Empty tower: "Missed soak" at 50. The player who died is the one the explosion hit. Sanctity Eternal Conviction after 100 seconds is this call.
 - Holy Impact: "Prey markers" at 50. The two prey players dropped the comets too close.
-- Skyward Leap clip: "Out of position" at 33. Three players have the marker.
-- Vulnerability from someone else's Skyward Leap: the marker holder, named, at 100. Two marker holders that hit each other are 50 each. The death sits under Skyward Leap on the pull card, and only the marker holder fails it.
+- Someone else's Skyward Leap, by its vulnerability or by the leap itself: whoever was out of position, named. A holder off their spot owns it at 100. A player who stood in a holder's leap on its spot owns it at 100. Both off is 50 each. With no positions, the holder owns it. The death sits under Skyward Leap on the pull card, and only the owners fail it.
+- A second Skyward Leap with nobody else's leap on the player: "Earlier deaths" at 100. That leap's holder was already dead.
 - Dive from Grace landing: an arrow holder on the wrong side, named, at 100 on every death in that landing. Only that holder fails it on the pull card. With no arrow out of place, "Miscommunication" at the landing's share.
 - Short stack: "Missing bodies" at 100 divided by the number missing. One missing body is 100. Three missing bodies is 33.
 - Raw hit on a full share: the healers, 50 each. "Party mitigation" takes a third share, 33, when the packet has no party mit or the mit is unknown.
 - Already under 15,000 HP: the healers and "Earlier damage", 33 each.
+- Deathwall before anything else went wrong: that player at 100. With their own Hysteria from the gaze, still that player at 100.
+- Deathwall after the first mistake: that player and "Earlier mistake", 50 each. It is still a mistake, but the first one usually caused it.
 
-No damage packet, and an ability that is not understood yet, have no blame.
+An ability that is not understood yet has no blame.
 
 ## When a call is wrong
 

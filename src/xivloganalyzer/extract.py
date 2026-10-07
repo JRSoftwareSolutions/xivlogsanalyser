@@ -14,7 +14,7 @@ from dataclasses import asdict, dataclass, field
 from html import unescape
 from pathlib import Path
 
-from xivloganalyzer.catalog import FightPack
+from xivloganalyzer.catalog import FightPack, MarkerSpots
 from xivloganalyzer.mitigations import load_mitigations, mitigations_for
 
 ROW_RE = re.compile(r'<tr style="cursor:pointer".*?</script>', re.S)
@@ -54,6 +54,8 @@ class DeathFact:
     clipped_by: list[str] = field(default_factory=list)
     clip_guid: int | None = None
     divers: list[dict] = field(default_factory=list)
+    in_spot: dict[str, bool] = field(default_factory=dict)
+    prior_debuffs: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -65,6 +67,11 @@ CLIP_WINDOW_MS = 7000
 DIVE_BEFORE_MS = 2500
 DIVE_AFTER_MS = 1000
 ARENA_CENTER = 10000
+# The deaths table clock reads one to two seconds after the killing hit's timestamp.
+# A death with no killing blow only has that clock, so it is moved back by the middle.
+CLOCK_LAG_MS = 1500
+# A cascade debuff counts for a death when it landed before the death, or in the same instant.
+DEBUFF_SLACK_MS = 1000
 
 
 def _grab(tail: str, key: str) -> int | None:
@@ -194,6 +201,14 @@ def _marker_packets(report: Path, pack: FightPack) -> dict[tuple, list[tuple]]:
     return casts
 
 
+@dataclass
+class _Clip:
+    holders: list[int]
+    guid: int
+    landed: int
+    holds_marker: bool
+
+
 def _clipped_by(
     casts: dict[tuple, list[tuple]],
     fight: int,
@@ -201,38 +216,126 @@ def _clipped_by(
     timestamp: int | None,
     mitigations: list[dict],
     names: dict[int, str],
-) -> tuple[list[str], int | None]:
+    direct: bool = False,
+) -> _Clip | None:
     """Marker holders whose cast left the vulnerability this player died with.
 
     When this player held a marker too and their own cast hit one of those
     holders, the two markers overlapped, and this player is listed first.
+    A death to the marker cast itself (`direct`) needs no vulnerability: the
+    packets show whose leap it was.
     """
     if target is None or timestamp is None:
-        return [], None
+        return None
     recent = [
-        (source, guid, targets)
+        (first, source, guid, targets)
         for (cast_fight, source), rows in casts.items()
         if cast_fight == fight
         for first, guid, targets in rows
         if -500 <= timestamp - first <= CLIP_WINDOW_MS
     ]
-    casters = {source for source, _guid, _targets in recent}
-    if not any(
+    casters = {source for _first, source, _guid, _targets in recent}
+    if not direct and not any(
         mit.get("guid") in VULN_GUIDS and mit.get("on_id") == target and mit.get("by_id") in casters
         for mit in mitigations
     ):
-        return [], None
+        return None
     holders: list[int] = []
     clip_guid = None
-    for _source, guid, targets in recent:
+    landed = None
+    for first, _source, guid, targets in recent:
         if target in targets[1:] and targets[0] in names and targets[0] not in holders:
             holders.append(targets[0])
             clip_guid = guid
-    if not holders:
-        return [], None
-    if any(targets[0] == target and set(holders) & set(targets) for _s, _g, targets in recent):
+            landed = first if landed is None else min(landed, first)
+    if not holders or clip_guid is None or landed is None:
+        return None
+    holds_marker = any(targets[0] == target for _f, _s, _g, targets in recent)
+    if any(targets[0] == target and set(holders) & set(targets) for _f, _s, _g, targets in recent):
         holders.insert(0, target)
-    return [names[holder] for holder in holders], clip_guid
+    return _Clip(holders, clip_guid, landed, holds_marker)
+
+
+class _Positions:
+    """Replay positions from `positions/fight-NN.json`, in yalms from the arena center."""
+
+    def __init__(self, report: Path):
+        self.report = report
+        self._loaded: dict[int, tuple[dict, dict[int, list[tuple[int, float, float]]]] | None] = {}
+
+    def _pull(self, fight: int):
+        if fight not in self._loaded:
+            path = self.report / "positions" / f"fight-{fight:02d}.json"
+            if not path.is_file():
+                self._loaded[fight] = None
+            else:
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                by_actor: dict[int, list[tuple[int, float, float]]] = defaultdict(list)
+                for ts, actor, x, y, *_rest in payload.get("samples") or []:
+                    if actor is not None and ts is not None:
+                        by_actor[int(actor)].append((int(ts), (x - 10000) / 100, (y - 10000) / 100))
+                for rows in by_actor.values():
+                    rows.sort()
+                self._loaded[fight] = (payload.get("actors") or {}, by_actor)
+        return self._loaded[fight]
+
+    def at(self, fight: int, actor: int, timestamp: int, slack_ms: int) -> tuple[float, float] | None:
+        pull = self._pull(fight)
+        if pull is None:
+            return None
+        rows = pull[1].get(int(actor)) or []
+        best = min(rows, key=lambda row: abs(row[0] - timestamp), default=None)
+        if best is None or abs(best[0] - timestamp) > slack_ms:
+            return None
+        return best[1], best[2]
+
+    def boss(self, fight: int, name: str, timestamp: int) -> tuple[float, float] | None:
+        pull = self._pull(fight)
+        if pull is None:
+            return None
+        actors, _rows = pull
+        found = None
+        for actor, info in actors.items():
+            if info.get("name") != name or info.get("type") != "Boss":
+                continue
+            spot = self.at(fight, int(actor), timestamp, 2000)
+            if spot and math.hypot(*spot) <= 30:
+                found = spot
+        return found
+
+
+def _in_spot(
+    positions: _Positions,
+    spots: MarkerSpots,
+    fight: int,
+    landed: int,
+    people: dict[int, bool],
+    names: dict[int, str],
+) -> dict[str, bool]:
+    """Who stood where they should when the markers landed.
+
+    `people` maps each player to whether they held a marker. A holder should be
+    on a spot. Anyone else should be out of reach of every spot.
+    """
+    boss = positions.boss(fight, spots.boss, landed)
+    if boss is None:
+        return {}
+    heading = math.atan2(boss[1], boss[0])
+    marks = []
+    for angle in spots.angles:
+        for side in (1, -1):
+            turn = heading + side * math.radians(angle)
+            mark = (spots.edge * math.cos(turn), spots.edge * math.sin(turn))
+            if all(math.dist(mark, other) > 0.5 for other in marks):
+                marks.append(mark)
+    verdict = {}
+    for actor, holds in people.items():
+        spot = positions.at(fight, actor, landed, 1000)
+        if spot is None or actor not in names:
+            continue
+        nearest = min(math.dist(spot, mark) for mark in marks)
+        verdict[names[actor]] = nearest <= spots.tolerance if holds else nearest > spots.radius
+    return verdict
 
 
 def _positions(report: Path, fight: int, cache: dict[int, dict]) -> dict[int, list]:
@@ -334,6 +437,61 @@ def _phase_window(fight: dict, phase_id: int) -> tuple[int, int]:
     return start, end
 
 
+def _window_for(windows: list[tuple], timestamp: int) -> tuple | None:
+    for phase, start, end in windows:
+        if start - 500 <= timestamp < end:
+            return (phase, start, end)
+    return None
+
+
+def _cascade_debuffs(
+    table: dict | None, pack: FightPack, players: dict[int, str],
+) -> list[tuple[int, int | None, str, str]]:
+    """Damage Down and Hysteria landing on players, not pets: (applied, removed, player, debuff)."""
+    if not table or not pack.cascade_debuffs:
+        return []
+    wanted = set(pack.cascade_debuffs)
+    pending: dict[tuple[str, str], list[int]] = {}
+    rows: list[list] = []
+    for aura in table.get("auras") or []:
+        if aura[3] not in wanted:
+            continue
+        name = players.get(aura[5])
+        if not name:
+            continue
+        key = (name, aura[3])
+        if aura[1] == "applydebuff":
+            row = [int(aura[0]), None, name, aura[3]]
+            rows.append(row)
+            pending.setdefault(key, []).append(len(rows) - 1)
+        elif aura[1] == "removedebuff" and pending.get(key):
+            rows[pending[key].pop(0)][1] = int(aura[0])
+    return [tuple(row) for row in rows]
+
+
+def _prior_debuffs(debuffs: list[tuple], windows: list[tuple], timestamp: int | None) -> list[dict]:
+    if timestamp is None:
+        return []
+    found = []
+    for applied, removed, name, debuff in debuffs:
+        if applied > timestamp + DEBUFF_SLACK_MS:
+            continue
+        window = _window_for(windows, applied)
+        if window is None:
+            continue
+        phase, start, _end = window
+        found.append(
+            {
+                "name": name,
+                "debuff": debuff,
+                "phase": phase.id,
+                "t": round((applied - start) / 1000, 1),
+                "until": round((removed - start) / 1000, 1) if removed is not None else None,
+            }
+        )
+    return found
+
+
 def _clock_seconds(when: str) -> float:
     parts = when.strip().split(":")
     if len(parts) == 2:
@@ -374,6 +532,9 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
     names_by_id = {actor["id"]: actor["name"] for actor in meta.get("friendlies") or []}
     by_guid = _load_events(report)
     marker_casts = _marker_packets(report, pack)
+    marker_guids = {guid for mech in pack.mechanics if mech.marker_owns_clip for guid in mech.guids}
+    marker_spots = {guid: mech.spots for mech in pack.mechanics if mech.spots for guid in mech.guids}
+    positions = _Positions(report)
     mitigation_tables = load_mitigations(report)
     places: dict[int, dict] = {}
 
@@ -385,6 +546,7 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
         if not windows:
             continue
         html = deaths.get(fight["id"], "")
+        debuffs = _cascade_debuffs(mitigation_tables.get(fight["id"]), pack, names_by_id)
         boss_pct = round(fight.get("bossPercentage", 0) / 100, 1)
         for row in ROW_RE.findall(html):
             name_match = NAME_RE.search(row)
@@ -394,30 +556,31 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             name = unescape(name_match.group(2)).strip()
             job = actors.get(name, {}).get("type") or name_match.group(1)
             when = time_match.group(1).strip()
-            ts_match = TS_RE.search(row)
-            timestamp = int(ts_match.group(1)) if ts_match else None
+            head = row.split("last-three-events")[0]
+            kb_match = KB_RE.search(head)
+            if kb_match:
+                ts_match = TS_RE.search(row)
+                timestamp = int(ts_match.group(1)) if ts_match else None
+            else:
+                # The only timestamp in this row is the last hit they lived, not the death.
+                timestamp = fight["start_time"] + round(_clock_seconds(when) * 1000) - CLOCK_LAG_MS
             window = None
             if timestamp is not None:
-                for phase, start, end in windows:
-                    if start - 500 <= timestamp < end:
-                        window = (phase, start, end)
-                        break
+                window = _window_for(windows, timestamp)
                 if window is None:
                     continue
             else:
                 window = windows[-1]
             phase, start, _end = window
-            head = row.split("last-three-events")[0]
-            kb_match = KB_RE.search(head)
             target = actors.get(name, {}).get("id")
             if not kb_match:
-                facts.append(
-                    _fact(
-                        fight, phase, start, timestamp, when, name, job, pack, 0, "Environment",
-                        0, None, None, None, 0, None, [], boss_pct, party,
-                        mitigations_for(mitigation_tables, fight["id"], target, None, 0, timestamp),
-                    )
+                fact = _fact(
+                    fight, phase, start, timestamp, when, name, job, pack, 0, "Environment",
+                    0, None, None, None, 0, None, [], boss_pct, party,
+                    mitigations_for(mitigation_tables, fight["id"], target, None, 0, timestamp),
                 )
+                fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
+                facts.append(fact)
                 continue
             guid = int(kb_match.group(1))
             ability = unescape(kb_match.group(2)).strip()
@@ -458,8 +621,9 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                 fight, phase, start, timestamp, when, name, job, pack, guid, ability,
                 total, hp, unmit, mult, int(absorb), stack, buffs, boss_pct, party, mits,
             )
-            fact.clipped_by, fact.clip_guid = _clipped_by(
+            clip = _clipped_by(
                 marker_casts, fight["id"], target, timestamp, mits, names_by_id,
+                direct=guid in marker_guids,
             )
             mechanic = pack.mechanic_for(guid, phase.id)
             if mechanic and mechanic.dive_markers:
@@ -467,6 +631,17 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                     mitigation_tables, _positions(report, fight["id"], places), fight["id"],
                     target, timestamp, mechanic.dive_markers, names_by_id,
                 )
+            if clip is not None:
+                fact.clipped_by = [names_by_id[holder] for holder in clip.holders]
+                fact.clip_guid = clip.guid
+                spots = marker_spots.get(clip.guid)
+                if spots is not None and target is not None:
+                    people = {holder: True for holder in clip.holders}
+                    people[target] = clip.holds_marker
+                    fact.in_spot = _in_spot(
+                        positions, spots, fight["id"], clip.landed, people, names_by_id,
+                    )
+            fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
             facts.append(fact)
     facts.sort(key=lambda fact: (fact.fight, fact.phase, fact.t, fact.name))
     return facts

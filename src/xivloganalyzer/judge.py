@@ -36,6 +36,8 @@ class Judgment:
     went_wrong: str
     cause: str = "none"
     blames: list[Blame] = field(default_factory=list)
+    first: bool = False
+    first_mistake: str = ""
 
     def to_dict(self) -> dict:
         payload = asdict(self.fact)
@@ -48,6 +50,8 @@ class Judgment:
                 "should_have_been": self.should_have_been,
                 "went_wrong": self.went_wrong,
                 "blames": [blame.to_dict() for blame in self.blames],
+                "first": self.first,
+                "first_mistake": self.first_mistake,
             }
         )
         return payload
@@ -139,6 +143,8 @@ def _hit(fact: DeathFact) -> int:
 
 def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
     happened = ""
+    if fact.guid == 0 and pack.deathwall is not None:
+        return _deathwall(fact, pack.deathwall)
     if fact.guid == 0:
         return Judgment(
             fact=fact,
@@ -163,9 +169,9 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             went_wrong=f"{fact.name} died to {fact.ability}.",
             cause="none",
         )
+    if fact.clipped_by and (_vuln(fact) or mechanic.marker_owns_clip):
+        return _done(fact, mechanic, happened, "fail", _marker_clip(fact, pack), "marker", pack)
     if _vuln(fact):
-        if fact.clipped_by:
-            return _done(fact, mechanic, happened, "fail", _marker_clip(fact, pack), "marker", pack)
         return _done(fact, mechanic, happened, "fail", _amp(fact, mechanic), "personal", pack)
     hit = _hit(fact)
     if mechanic.tanks_only and fact.role != "tank":
@@ -202,6 +208,12 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             fact, mechanic, happened, "fail",
             _moment_fault(fact, failed),
             failed.cause or "personal", pack,
+        )
+    if mechanic.id == "skyward-leap" and mechanic.fail_above is not None and hit > mechanic.fail_above:
+        return _done(
+            fact, mechanic, happened, "fail",
+            f"{fact.name} took a second Skyward Leap whose marker holder was already dead.",
+            "orphan", pack,
         )
     if mechanic.fail_above is not None and hit > mechanic.fail_above:
         if mechanic.dive_markers:
@@ -246,6 +258,43 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
     )
 
 
+# A deathwall time is only good to about a second, so Hysteria is matched with this much slack.
+_MOMENT_S = 1.5
+# Deaths and debuffs this close to the first one are the same first mistake.
+_FIRST_S = 1.0
+
+
+def _own_hysteria(fact: DeathFact) -> bool:
+    """They still had Hysteria from the gaze, so they were walked into the wall."""
+    for debuff in fact.prior_debuffs:
+        if debuff["name"] != fact.name or debuff["debuff"] != "Hysteria":
+            continue
+        if debuff["phase"] != fact.phase or debuff["t"] > fact.t + _MOMENT_S:
+            continue
+        until = debuff.get("until")
+        if until is None or until >= fact.t - _MOMENT_S:
+            return True
+    return False
+
+
+def _deathwall(fact: DeathFact, mechanic: Mechanic) -> Judgment:
+    """No killing blow is the arena edge. It is always a mistake."""
+    if _own_hysteria(fact):
+        wrong = f"{fact.name} looked at the gaze and walked into the deathwall with Hysteria."
+    else:
+        wrong = f"{fact.name} walked into the deathwall."
+    return Judgment(
+        fact=fact,
+        mechanic_id=mechanic.id,
+        mechanic=mechanic.name,
+        outcome="fail",
+        happened="No damage packet.",
+        should_have_been=mechanic.should_have_been,
+        went_wrong=wrong,
+        cause="personal",
+    )
+
+
 def _failed_moment(mechanic: Mechanic, fact: DeathFact, hit: int):
     for moment in mechanic.moments:
         if moment.fail and moment.matches(fact.t, hit):
@@ -272,17 +321,58 @@ def clip_mechanic(fact: DeathFact, pack: FightPack) -> Mechanic | None:
     return pack.mechanic_for(fact.clip_guid, fact.phase)
 
 
+def marker_owners(fact: DeathFact) -> list[str]:
+    """Who owns a marker clip: whoever was out of position.
+
+    A holder belongs on their spot. Anyone else belongs out of reach of every
+    spot. With no positions, or when nobody looks out of place, the holders own it.
+    """
+    holders = list(fact.clipped_by)
+    people = holders if fact.name in holders else [*holders, fact.name]
+    if all(name in fact.in_spot for name in people):
+        out = [name for name in people if not fact.in_spot[name]]
+        if out:
+            return out
+    return holders
+
+
+def _joined(names: list[str]) -> str:
+    if len(names) == 1:
+        return names[0]
+    return ", ".join(names[:-1]) + f" and {names[-1]}"
+
+
 def _marker_clip(fact: DeathFact, pack: FightPack) -> str:
     source = clip_mechanic(fact, pack)
     cast = source.name if source else "marker"
-    holders = fact.clipped_by
-    if fact.name in holders:
-        others = [holder for holder in holders if holder != fact.name]
+    holders = list(fact.clipped_by)
+    overlap = fact.name in holders
+    others = [holder for holder in holders if holder != fact.name]
+    people = holders if overlap else [*holders, fact.name]
+    out = [name for name in people if fact.in_spot.get(name) is False]
+    if out and all(name in fact.in_spot for name in people):
+        return _out_of_position(fact.name, others, out, overlap, cast)
+    if overlap:
         return f"{fact.name}'s {cast} overlapped {' and '.join(others)}'s."
-    if len(holders) == 1:
-        return f"{fact.name} was clipped by {holders[0]}'s {cast}."
-    joined = ", ".join(holders[:-1]) + f" and {holders[-1]}"
-    return f"{fact.name} was clipped by {joined}'s {cast}s."
+    plural = "s" if len(holders) > 1 else ""
+    return f"{fact.name} was clipped by {_joined(holders)}'s {cast}{plural}."
+
+
+def _out_of_position(victim: str, others: list[str], out: list[str], overlap: bool, cast: str) -> str:
+    """One sentence naming who was out of position, from the victim's side."""
+    verb = "overlapped" if overlap else "clipped"
+    blamed = [name for name in out if name != victim]
+    if victim not in out:
+        be = "were" if len(blamed) > 1 else "was"
+        return f"{_joined(blamed)} {be} out of position and {verb} {victim}."
+    if not blamed:
+        if overlap:
+            return f"{victim} was out of position and overlapped {_joined(others)}."
+        plural = "s" if len(others) > 1 else ""
+        return f"{victim} stood in {_joined(others)}'s {cast}{plural}."
+    both = " both" if len(blamed) == 1 else ""
+    tail = " and overlapped" if overlap else ""
+    return f"{victim} and {_joined(blamed)} were{both} out of position{tail}."
 
 
 def _not_a_tank(fact: DeathFact, mechanic: Mechanic) -> str:
@@ -439,7 +529,7 @@ def _raw_cause(fact: DeathFact, mechanic: Mechanic) -> str:
 def _oversized_cause(fact: DeathFact, mechanic: Mechanic) -> str:
     if mechanic.id == "eye-of-the-tyrant":
         return "missing"
-    if mechanic.category == "tower" or mechanic.id == "skyward-leap":
+    if mechanic.category == "tower":
         return "tower"
     if mechanic.id == "lightning-storm":
         return "overlap"
@@ -511,6 +601,83 @@ def _no_party_mit(fact: DeathFact) -> bool:
     return fact.multiplier is None or fact.multiplier >= 0.995
 
 
+def _people(names: list[str]) -> str:
+    if len(names) > 2:
+        return f"{len(names)} players"
+    return " and ".join(names)
+
+
+def _moment_text(deaths: list[Judgment], debuffs: list[dict], wall_id: str) -> str:
+    groups: dict[str, list[str]] = {}
+    for item in deaths:
+        if item.mechanic_id == wall_id:
+            verb = "walking into the deathwall"
+        else:
+            verb = f"dying to {item.mechanic}"
+        names = groups.setdefault(verb, [])
+        if item.fact.name not in names:
+            names.append(item.fact.name)
+    bits = [f"{_people(names)} {verb}" for verb, names in groups.items()]
+    by_debuff: dict[str, list[str]] = {}
+    for debuff in debuffs:
+        names = by_debuff.setdefault(debuff["debuff"], [])
+        if debuff["name"] not in names:
+            names.append(debuff["name"])
+    bits += [f"{name} on {_people(names)}" for name, names in by_debuff.items()]
+    if len(bits) == 1:
+        return bits[0]
+    return ", ".join(bits[:-1]) + f" and {bits[-1]}"
+
+
+def _mark_first_mistakes(judgments: list[Judgment], pack: FightPack) -> None:
+    """The first death, Damage Down, or Hysteria of a pull. Later deaths often cascade from it.
+
+    A deathwall walk after the first mistake is still a mistake, shared with that earlier one.
+    """
+    wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
+    pulls: dict[int, list[Judgment]] = {}
+    for item in judgments:
+        pulls.setdefault(item.fact.fight, []).append(item)
+    for rows in pulls.values():
+        seen: set[tuple] = set()
+        debuffs: list[dict] = []
+        for item in rows:
+            for debuff in item.fact.prior_debuffs:
+                key = (debuff["name"], debuff["debuff"], debuff["phase"], debuff["t"])
+                if key not in seen:
+                    seen.add(key)
+                    debuffs.append(debuff)
+        moments = [(item.fact.phase, item.fact.t) for item in rows]
+        moments += [(debuff["phase"], debuff["t"]) for debuff in debuffs]
+        phase, start = min(moments)
+
+        def at_first(where: int, t: float) -> bool:
+            return where == phase and t <= start + _FIRST_S
+
+        first_deaths = sorted(
+            (item for item in rows if at_first(item.fact.phase, item.fact.t)),
+            key=lambda item: (item.fact.t, item.fact.name),
+        )
+        first_debuffs = sorted(
+            (debuff for debuff in debuffs if at_first(debuff["phase"], debuff["t"])),
+            key=lambda debuff: (debuff["t"], debuff["name"]),
+        )
+        phase_name = rows[0].fact.phase_name
+        for item in rows:
+            if item.fact.phase == phase:
+                phase_name = item.fact.phase_name
+                break
+        text = _moment_text(first_deaths, first_debuffs, wall_id)
+        text = f"{text} at {start:.1f}s into {phase_name}"
+        for item in rows:
+            item.first = at_first(item.fact.phase, item.fact.t)
+            item.first_mistake = text
+            if item.first or item.mechanic_id != wall_id or _own_hysteria(item.fact):
+                continue
+            item.went_wrong = f"{item.fact.name} walked into the deathwall after the first mistake."
+            item.cause = "after"
+
+
 def _same_cast(left: Judgment, right: Judgment) -> bool:
     return (
         left.cause == right.cause
@@ -565,8 +732,12 @@ def _assign_blame(
             item.blames = []
         elif item.cause == "personal":
             item.blames = _shares([item.fact.name])
+        elif item.cause == "after":
+            item.blames = _shares([item.fact.name, "Earlier mistake"])
         elif item.cause == "marker":
-            item.blames = _shares(list(item.fact.clipped_by))
+            item.blames = _shares(marker_owners(item.fact))
+        elif item.cause == "orphan":
+            item.blames = _group("Earlier deaths", 1)
         elif item.cause == "overlap":
             cohort = [other for other in judgments if _same_cast(item, other)]
             item.blames = _shares(_overlap_names(item, cohort))
@@ -612,6 +783,7 @@ def judge_report(
     roster: list[tuple[str, str]] | None = None,
 ) -> list[Judgment]:
     judgments = [judge_fact(fact, pack) for fact in facts]
+    _mark_first_mistakes(judgments, pack)
     people = list(roster) if roster else _roster_from_facts(facts)
     _assign_blame(judgments, pack, people)
     return judgments

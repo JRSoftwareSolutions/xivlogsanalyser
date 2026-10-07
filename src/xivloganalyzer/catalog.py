@@ -51,6 +51,23 @@ class DiveMarker:
 
 
 @dataclass
+class MarkerSpots:
+    """Where marker holders stand, as seen from the arena center with the boss at 0 degrees.
+
+    `angles` are the spots, mirrored left and right. `edge` is their distance
+    from the center. A holder within `tolerance` yalms of a spot is in it. A
+    player who is not a holder is in position when no leap from those spots
+    reaches them, so farther than `radius` from every spot.
+    """
+
+    angles: list[float]
+    edge: float
+    tolerance: float
+    radius: float
+    boss: str
+
+
+@dataclass
 class Mechanic:
     id: str
     name: str
@@ -68,6 +85,7 @@ class Mechanic:
     requires_personal_mit: bool = False
     off_tank: str = ""
     marker_owns_clip: bool = False
+    spots: MarkerSpots | None = None
     moments: list[Moment] = field(default_factory=list)
     dive_markers: dict[int, DiveMarker] = field(default_factory=dict)
 
@@ -131,6 +149,8 @@ class FightPack:
     clusters: list[Cluster] = field(default_factory=list)
     clock: dict[int, float] = field(default_factory=dict)
     markers: list[Marker] = field(default_factory=list)
+    deathwall: Mechanic | None = None
+    cascade_debuffs: list[str] = field(default_factory=list)
 
     def role_of(self, job: str) -> str:
         for role, jobs in self.roles.items():
@@ -219,6 +239,32 @@ def _clusters(raw_clusters: list[dict]) -> list[Cluster]:
     return clusters
 
 
+def _spots(raw: dict | None) -> MarkerSpots | None:
+    if not raw:
+        return None
+    return MarkerSpots(
+        angles=[float(angle) for angle in raw["angles"]],
+        edge=float(raw["edge"]),
+        tolerance=float(raw["tolerance"]),
+        radius=float(raw["radius"]),
+        boss=raw.get("boss") or "",
+    )
+
+
+def _deathwall(raw: dict | None) -> Mechanic | None:
+    """The arena edge. It has no phase and no packet, so it is not in `mechanics`."""
+    if not raw:
+        return None
+    return Mechanic(
+        id=raw.get("id", "deathwall"),
+        name=raw.get("name", "Deathwall"),
+        phase=0,
+        guids=[0],
+        category=raw.get("category", "wall"),
+        should_have_been=raw.get("should_have_been", ""),
+    )
+
+
 def load_pack(fight_dir: Path) -> FightPack:
     fight = json.loads((fight_dir / "fight.json").read_text(encoding="utf-8"))
     mechanics_doc = json.loads((fight_dir / "mechanics.json").read_text(encoding="utf-8"))
@@ -246,6 +292,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 requires_personal_mit=bool(raw.get("requires_personal_mit", False)),
                 off_tank=raw.get("off_tank") or "",
                 marker_owns_clip=bool(raw.get("marker_owns_clip", False)),
+                spots=_spots(raw.get("spots")),
                 moments=[
                     Moment(
                         should_have_been=row.get("should_have_been") or "",
@@ -283,6 +330,8 @@ def load_pack(fight_dir: Path) -> FightPack:
             Marker(name=row["name"], phase=int(row["phase"]), starts=float(row["starts"]))
             for row in fight.get("markers") or []
         ],
+        deathwall=_deathwall(mechanics_doc.get("deathwall")),
+        cascade_debuffs=list(fight.get("cascade_debuffs") or []),
     )
 
 

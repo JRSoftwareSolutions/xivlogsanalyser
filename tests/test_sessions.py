@@ -280,7 +280,7 @@ class PullCardsTest(unittest.TestCase):
                     continue
                 hit = int(head)
                 if hit > 150000:
-                    self.assertIn("explodes", text)
+                    self.assertIn("second Skyward Leap", text)
                     self.assertNotIn("East and west", text)
                     self.assertNotIn("59", text)
                 else:

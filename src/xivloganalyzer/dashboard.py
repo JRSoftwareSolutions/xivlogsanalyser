@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone
-from xivloganalyzer.judge import Judgment, clip_mechanic
+from xivloganalyzer.judge import Judgment, clip_mechanic, marker_owners
 
 JOB = {
     "Paladin": "PLD",
@@ -442,7 +442,7 @@ def session_payload(
         clip = clip_mechanic(item.fact, pack) if item.cause == "marker" else None
         if clip is not None:
             component = clip.id
-            culprits = list(item.fact.clipped_by)
+            culprits = marker_owners(item.fact)
         if item.cause == "arrow":
             culprits = [blame.who for blame in item.blames]
         cluster = pack.cluster_for(component, item.fact.t, item.fact.phase) or _cluster_of(item, pack)
@@ -463,8 +463,10 @@ def session_payload(
                 "wrong": item.went_wrong,
                 "blames": [blame.to_dict() for blame in item.blames],
                 "culprits": culprits,
+                "first": item.first,
             }
         )
+        pull["firstMistake"] = item.first_mistake
     roster = _party(meta or {}, pack)
     for pull in pulls.values():
         pull["deaths"].sort(key=lambda row: (row["phaseId"], row["t"], row["name"]))
