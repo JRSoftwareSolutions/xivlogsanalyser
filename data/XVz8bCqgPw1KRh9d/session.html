@@ -141,6 +141,10 @@
   .stat { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
   .stat b { display: block; font-size: 28px; letter-spacing: -0.03em; }
   .stat span { color: var(--muted); font-size: 13px; }
+  .stat b.stat-name { font-size: 22px; line-height: 1.27; }
+  button.stat { font: inherit; color: inherit; text-align: left; cursor: pointer; }
+  button.stat:hover { background: var(--hover); }
+  button.stat:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   section { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 16px; }
   .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; margin-right: 4px; }
   .tag.raw { background: var(--raw-bg); color: var(--raw); }
@@ -511,8 +515,8 @@ function judged(deaths) {
 }
 function jobMark(job) {
   const src = JOB_ICONS[job];
-  if (!src) return `<span class="job">${job}</span>`;
-  return `<img class="job-icon" alt="${job}" title="${job}" src="${src}">`;
+  if (!src) return `<span class="job">${esc(job)}</span>`;
+  return `<img class="job-icon" alt="${esc(job)}" title="${esc(job)}" src="${src}">`;
 }
 function blameChips(row) {
   const blames = row.blames || [];
@@ -523,16 +527,16 @@ function blameChips(row) {
   }).join("")}</div>`;
 }
 function deathCard(row, alreadyDrawn) {
-  const cast = row.cast ? `<span class="time">${row.cast}</span>` : "";
+  const cast = row.cast ? `<span class="time">${esc(row.cast)}</span>` : "";
   const body = `<div class="cols">
-      <div><b>What happened</b>${row.happened}</div>
+      <div><b>What happened</b>${esc(row.happened)}</div>
       <div><b>What went wrong</b>${esc(row.wrong)}${blameChips(row)}</div>
     </div>`;
   const framed = row.frame && !alreadyDrawn
     ? `<div class="death-body">${stillFrame(row.frame)}${body}</div>`
     : body;
   return `<div class="death">
-    <div class="who"><span class="time">${row.time}</span>${cast}<strong>${row.name}</strong>${jobMark(row.job)}</div>
+    <div class="who"><span class="time">${esc(row.time)}</span>${cast}<strong>${esc(row.name)}</strong>${jobMark(row.job)}</div>
     ${framed}
   </div>`;
 }
@@ -877,12 +881,11 @@ function pullNav(session) {
   const overview = overviewMap(session);
   return session.pulls.map(pull => {
     const reach = pullReach(session, pull, overview.get(pull.id));
-    const when = pull.when ? `${pull.when} · ` : "";
     const where = reach.mechanic ? `${reach.mechanic} · ` : "";
     const label = `pull ${pull.id} ${pull.when || ""} ${reach.phaseName} ${reach.mechanic} ${reach.bossPct}`.toLowerCase();
     const title = `Pull ${pull.id} · ${reach.phaseName}${reach.mechanic ? " · " + reach.mechanic : ""} · ${reach.bossPct}%`;
     return `<button class="nav pull" data-go="s/${session.code}/pull/${pull.id}" data-label="${esc(label)}" data-phase="${reach.phaseId}" data-mechanic="${esc(reach.mechanic)}" title="${esc(title)}" style="--phase:${reach.phase}">
-      <span class="pull-name"><i class="pip" style="background:${reach.phase}" title="${esc(reach.phaseName)}" aria-hidden="true"></i>Pull ${pull.id} <span class="quiet">${when}</span><span class="sr">${esc(reach.phaseName)}${reach.mechanic ? ", " + esc(reach.mechanic) : ""}</span></span>
+      <span class="pull-name"><i class="pip" style="background:${reach.phase}" title="${esc(reach.phaseName)}" aria-hidden="true"></i>Pull ${pull.id} <span class="quiet">${esc(pull.when || "")}</span><span class="sr">, ${esc(reach.phaseName)}${reach.mechanic ? ", " + esc(reach.mechanic) : ""}</span></span>
       <span class="pct" style="${tintStyle(reach.tint)}" title="${esc(where)}${reach.bossPct}%">${reach.bossPct}%</span>
     </button>`;
   }).join("");
@@ -891,7 +894,7 @@ function mechNav(session) {
   return session.mechanics.slice().sort(byTimeline).map(mech => {
     const label = mech.name.toLowerCase();
     return `<button class="nav" data-go="s/${session.code}/mechanic/${mech.id}" data-label="${esc(label)}">
-      <span>${mech.name}</span>
+      <span>${esc(mech.name)}</span>
     </button>`;
   }).join("");
 }
@@ -956,7 +959,7 @@ function phaseRoute(mechs, color) {
   if (!mechs.length) return `<p class="quiet">No mechanic review for this phase.</p>`;
   const stops = mechs.map(mech => `<li>
       <span class="rail" aria-hidden="true"><span class="dot"></span></span>
-      <button class="station" data-go="s/${SESSION.code}/mechanic/${mech.id}">${mech.name}</button>
+      <button class="station" data-go="s/${SESSION.code}/mechanic/${mech.id}">${esc(mech.name)}</button>
     </li>`).join("");
   return `<ol class="route" style="--stop:${color}">${stops}</ol>`;
 }
@@ -1255,19 +1258,17 @@ function chart(pulls, markers) {
   const marks = visibleMarks(markers, scale);
   const bestId = (overviewOf(SESSION).best || {}).id;
   const names = marks.map(mark => {
-    return `<span style="bottom:${(mark.at / scale) * 100}%">${mark.name}</span>`;
+    return `<span style="bottom:${(mark.at / scale) * 100}%">${esc(mark.name)}</span>`;
   }).join("");
   const lines = marks.map(mark => {
-    return `<i class="hline" title="${mark.name}" style="bottom:${(mark.at / scale) * 100}%"></i>`;
+    return `<i class="hline" title="${esc(mark.name)}" style="bottom:${(mark.at / scale) * 100}%"></i>`;
   }).join("");
   const bars = pulls.map(pull => {
     const height = Math.max(6, ((pull.reached || 0) / scale) * 100);
-    const go = pull.judged
-      ? `s/${SESSION.code}/pull/${pull.id}`
-      : `s/${SESSION.code}/fight/${pull.id}`;
     const mark = pull.id === bestId ? " best" : "";
     const where = pull.mechanic ? `${pull.mechanic} · ` : "";
-    return `<button class="bar${mark}" data-go="${go}" title="Pull ${pull.id} · ${where}${pull.phaseName} ${pull.bossPct}% · ${pull.clock}" style="height:${height}%;background:${phaseColor(pull.phase)}"></button>`;
+    const title = `Pull ${pull.id} · ${where}${pull.phaseName} ${pull.bossPct}% · ${pull.clock}`;
+    return `<button class="bar${mark}" data-go="${pullGo(pull)}" title="${esc(title)}" style="height:${height}%;background:${phaseColor(pull.phase)}"></button>`;
   }).join("");
   return `<div class="reach"><div class="reach-names">${names}</div><div class="chart"><div class="plot">${lines}${bars}</div></div></div>`;
 }
@@ -1276,7 +1277,20 @@ function legend(pulls) {
   for (const pull of pulls) {
     if (!seen.some(row => row.phase === pull.phase)) seen.push(pull);
   }
-  return `<p class="legend">${seen.map(pull => `<span><i class="swatch" style="background:${phaseColor(pull.phase)}"></i>${pull.phaseName}</span>`).join("")}</p>`;
+  seen.sort((a, b) => a.phase - b.phase);
+  return `<p class="legend">${seen.map(pull => `<span><i class="swatch" style="background:${phaseColor(pull.phase)}"></i>${esc(pull.phaseName)}</span>`).join("")}</p>`;
+}
+function pullGo(pull) {
+  return pull.judged ? `s/${SESSION.code}/pull/${pull.id}` : `s/${SESSION.code}/fight/${pull.id}`;
+}
+function reachLine(far, best) {
+  if (far && best && far.id === best.id) {
+    return `Furthest and best: pull ${far.id}, ${furthestName(far)}, ${best.phaseName} ${best.bossPct}%.`;
+  }
+  const bits = [];
+  if (far) bits.push(`Furthest: pull ${far.id}, ${furthestName(far)}.`);
+  if (best) bits.push(`Best: pull ${best.id}, ${best.phaseName} ${best.bossPct}%.`);
+  return bits.join(" ");
 }
 function renderHome() {
   const blocks = DATA.days.map(day => `<section>
@@ -1313,22 +1327,20 @@ function renderAll() {
       : "";
     return `<section>
       <div class="mech-head">
-        <h3>${sample.phaseName}</h3>
+        <h3>${esc(sample.phaseName)}</h3>
         <span class="meta">${pulls.length} pull${pulls.length === 1 ? "" : "s"} ended here</span>
       </div>
-      <p class="meta">${sample.phaseFull}</p>
+      <p class="meta">${esc(sample.phaseFull)}</p>
       ${note}
       ${rows}
     </section>`;
   }).join("");
-  const bestLine = best
-    ? `Best pull ${best.id}, ${best.phaseName} ${best.bossPct}%.`
-    : "";
+  const far = furthestPull(overview.pulls);
   return `
     <header>
       <div>
-        <h1>${SESSION.fight}</h1>
-        <p class="meta">${stamp}. ${overview.pulls.length} pulls. ${bestLine}</p>
+        <h1>${esc(SESSION.fight)}</h1>
+        <p class="meta">${esc(stamp)}. ${overview.pulls.length} pulls. ${esc(reachLine(far, best))}</p>
       </div>
       <p class="meta"><a href="${logHref()}">Open the log</a></p>
     </header>
@@ -1340,22 +1352,23 @@ function renderAll() {
     </section>
     <div class="stats">
       <div class="stat"><b>${overview.pulls.length}</b><span>pulls</span></div>
-      <div class="stat"><b>${best ? best.bossPct + "%" : "–"}</b><span>${best ? "best · " + best.phaseName : "best"}</span></div>
+      ${far ? `<button type="button" class="stat" data-go="${pullGo(far)}" title="Open pull ${far.id}"><b class="stat-name">${esc(furthestName(far))}</b><span>furthest · pull ${far.id}</span></button>` : ""}
+      ${best ? `<button type="button" class="stat" data-go="${pullGo(best)}" title="Open pull ${best.id}"><b>${best.bossPct}%</b><span>best · ${esc(best.phaseName)} · pull ${best.id}</span></button>` : ""}
     </div>
     ${phases}`;
 }
 function renderFight(id) {
   const pull = overviewOf(SESSION).pulls.find(row => String(row.id) === String(id));
-  if (!pull) return `<p>Pull ${id} is not in this session.</p>`;
+  if (!pull) return `<p>Pull ${esc(id)} is not in this session.</p>`;
   return `
     <header>
       <div>
         <h1>Pull ${pull.id}</h1>
-        <p class="meta">${pull.when ? pull.when + " · " : ""}${pull.phaseFull} · ${pull.bossPct}% · ${pull.clock}</p>
+        <p class="meta">${pull.when ? esc(pull.when) + " · " : ""}${esc(pull.phaseFull)} · ${pull.bossPct}% · ${esc(pull.clock)}</p>
       </div>
     </header>
     <section>
-      <p>This pull ended in ${pull.phaseName} at ${pull.bossPct}%.</p>
+      <p>This pull ended in ${esc(pull.phaseName)} at ${pull.bossPct}%.</p>
       <p class="quiet">There is no death review for this pull.</p>
     </section>`;
 }
@@ -1368,12 +1381,13 @@ function markIcon(passed) {
 function seatMark(seat, partName) {
   const passed = Boolean(seat.passed);
   const word = passed ? "passed" : "failed";
-  const name = passed ? "" : `<span class="seat-name">${seat.name}</span>`;
-  return `<span class="seat ${passed ? "ok" : "fail"}" title="${seat.name} ${word} ${partName}">
+  const name = passed ? "" : `<span class="seat-name">${esc(seat.name)}</span>`;
+  const said = esc(`${seat.name} ${word} ${partName}`);
+  return `<span class="seat ${passed ? "ok" : "fail"}" title="${said}">
     ${jobMark(seat.job)}
     ${markIcon(passed)}
     ${name}
-    <span class="sr">${seat.name} ${word} ${partName}</span>
+    <span class="sr">${said}</span>
   </span>`;
 }
 function componentDeaths(pull, card, part) {
