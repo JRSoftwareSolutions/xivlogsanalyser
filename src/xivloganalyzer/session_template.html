@@ -11,7 +11,7 @@
     --bg: #0d1526; --paper: #152033; --ink: #e4ecf7; --muted: #93a4bd;
     --line: #2a3b56; --raw: #e0b0a4; --raw-bg: #3a2a32; --fail: #d9c4a4;
     --fail-bg: #332e28; --ok: #a8cfc0; --ok-bg: #1d3330; --env: #b7c4d4; --env-bg: #243244;
-    --hover: #1c2b44; --accent: #9eb6e8; --field: #10192c; --rule: #7f93ad;
+    --hover: #1c2b44; --accent: #9eb6e8; --field: #10192c;
     --scroll-track: #0b1322; --scroll-thumb: #7ea4d4; --scroll-thumb-hover: #a9c4e8;
     --nav-width: 300px;
   }
@@ -75,15 +75,6 @@
   }
   #nav-split:focus-visible { outline: none; }
   main { grid-column: 2; grid-row: 1; overflow: auto; padding: 24px 28px 64px; min-width: 0; min-height: 0; }
-  main.home {
-    display: flex; flex-direction: column; gap: 12px; padding-bottom: 0;
-  }
-  main.home > header { flex: none; margin-bottom: 0; }
-  main.home > section { margin-bottom: 0; }
-  main.home > section.trend {
-    flex: 1 1 auto; min-height: min-content;
-    display: flex; flex-direction: column;
-  }
   h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.03em; }
   h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
   h3 { margin: 0; font-size: 18px; }
@@ -156,7 +147,7 @@
   button.stat:hover { background: var(--hover); }
   button.stat:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   section { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 16px; }
-  .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; margin-right: 4px; }
+  .tag { display: inline-block; white-space: nowrap; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; margin-right: 4px; }
   .tag.raw { background: var(--raw-bg); color: var(--raw); }
   .tag.fail { background: var(--fail-bg); color: var(--fail); }
   .tag.low, .tag.env, .tag.unknown { background: var(--env-bg); color: var(--env); }
@@ -169,6 +160,21 @@
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .review-body { padding: 0 4px 12px 18px; }
+  details.pull-review.clear > summary .review-title,
+  details.pull-review.clear > summary .review-title .meta { color: var(--muted); font-weight: 500; }
+  details.pull-review.clear > summary .tag.ok { background: transparent; }
+  .seg {
+    display: inline-flex; gap: 2px; padding: 2px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--field);
+  }
+  .seg button {
+    font: inherit; font-size: 13px; color: var(--muted); background: transparent;
+    border: 0; border-radius: 999px; padding: 3px 10px; cursor: pointer; white-space: nowrap;
+  }
+  .seg button b { font-weight: 650; font-variant-numeric: tabular-nums; }
+  .seg button:hover { color: var(--ink); }
+  .seg button[aria-pressed="true"] { background: var(--hover); color: var(--ink); }
+  .seg button:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
   .review-open { margin: 0 0 4px; }
   .tally { list-style: none; margin: 0; padding: 0; }
   .tally li { border-top: 1px solid var(--line); padding: 10px 0; }
@@ -232,8 +238,12 @@
   .blame.sure b { color: var(--ok); }
   .quiet { color: var(--muted); }
   .clean { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .component { border-top: 1px solid var(--line); padding: 12px 0; }
-  .component:first-of-type { border-top: 0; padding-top: 4px; }
+  .component { padding: 12px 0; }
+  .component + .component { border-top: 1px solid var(--line); }
+  .component-body { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 20px; align-items: start; }
+  .component-body .still { margin-top: 0; }
+  .component-detail > .seats { margin-bottom: 4px; }
+  .component-detail > .death:first-child { padding-top: 0; }
   .component-name { font-weight: 650; margin: 0 0 8px; }
   .seats { display: flex; flex-wrap: wrap; gap: 6px; }
   .debuffs { border-collapse: collapse; margin: 4px 0 8px; font-size: 14px; }
@@ -279,8 +289,16 @@
   details.session-preview > summary:hover, details.pull-review > summary:hover { background: var(--hover); }
   details.session-preview > summary:focus-visible,
   details.pull-review > summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  details.session-preview > summary {
+    display: grid; grid-template-columns: auto minmax(0, 1fr) 5rem minmax(0, 15rem);
+    column-gap: 12px; row-gap: 4px;
+  }
   .preview-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .preview-title { font-size: 16px; font-weight: 650; }
+  .preview-time { margin-left: 6px; color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+  .night-stat { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .night-stat b { font-size: 16px; font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .night-stat span { color: var(--muted); font-size: 12px; }
   .preview-body { padding: 2px 8px 12px 18px; }
   button.open-session {
     font: inherit; font-size: 13px; color: var(--accent); background: var(--field);
@@ -289,8 +307,9 @@
   }
   button.open-session:hover { background: var(--hover); }
   .reach {
-    display: grid; grid-template-columns: 12.5rem minmax(0, 1fr); height: 480px; margin-top: 4px;
+    display: grid; grid-template-columns: 12.5rem minmax(0, 1fr); height: 420px; margin-top: 4px;
   }
+  .reach.session .reach-names, .reach.session .plot { height: calc(100% - 22px); }
   .reach.mini { margin-top: 0; grid-template-columns: 11rem minmax(0, 1fr); }
   .reach-names { position: relative; }
   .reach-names span {
@@ -300,32 +319,44 @@
   .chart, .mini-plot, .trend-plot { position: relative; }
   .chart { height: 100%; overflow-x: auto; overflow-y: hidden; }
   .plot, .mini-plot { display: flex; align-items: flex-end; gap: 2px; }
-  .plot { position: relative; height: 100%; min-width: 100%; width: max-content; }
+  .plot { position: relative; height: 100%; min-width: 100%; width: max-content; padding: 0 1px; }
   .mini-plot { height: 100%; width: 100%; }
   .hline {
     position: absolute; left: 0; right: 0; height: 0;
-    border-top: 2px dotted var(--rule);
+    border-top: 1px solid rgba(176, 192, 214, 0.42);
     pointer-events: none; z-index: 2;
   }
-  .mini-plot .hline, .trend-plot .hline { border-top-width: 1px; border-top-color: rgba(147, 164, 189, 0.55); }
   .hline.goal { border-top-style: dashed; border-top-color: rgba(147, 164, 189, 0.85); }
   .reach-names span.goal { color: var(--muted); }
   .chart .bar {
     position: relative; z-index: 1;
-    width: 9px; flex: 0 0 9px; min-height: 4px; border: 0; padding: 0; cursor: pointer;
-    border-radius: 2px 2px 0 0;
+    flex: 1 1 0; min-width: 6px; max-width: 24px; min-height: 4px; border: 0; padding: 0; cursor: pointer;
+    border-radius: 3px 3px 0 0;
   }
-  .chart .bar:hover, .chart .bar.on { outline: 2px solid var(--ink); outline-offset: 1px; }
-  .chart .bar.best { box-shadow: inset 0 -3px 0 var(--ink); }
+  .chart .bar::before {
+    content: ""; position: absolute; left: -1px; right: -1px; bottom: 0; height: max(100%, 28px);
+  }
+  .chart .bar:hover, .chart .bar:focus-visible, .chart .bar.on { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .bar-tick, .bar-flag {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    font-size: 11px; line-height: 1.2; white-space: nowrap; pointer-events: none;
+  }
+  .bar-tick { top: calc(100% + 5px); color: var(--muted); font-variant-numeric: tabular-nums; }
+  .bar-flag {
+    bottom: calc(100% + 4px); color: var(--ink); font-weight: 650;
+    background: var(--paper); border-radius: 4px; padding: 0 4px;
+  }
+  .bar-tick.start, .bar-flag.start { left: 0; transform: none; }
+  .bar-tick.end, .bar-flag.end { left: auto; right: 0; transform: none; }
   .mini-plot i.tick { flex: 1 1 0; min-width: 1px; min-height: 2px; border-radius: 2px 2px 0 0; display: block; }
   .trend-reach {
     display: grid; grid-template-columns: 12.5rem minmax(0, 1fr);
-    grid-template-rows: 300px auto;
+    grid-template-rows: clamp(220px, 34vh, 340px) auto;
   }
   .trend-reach .reach-names { grid-row: 1; align-self: stretch; min-height: 0; }
   .trend-scroll {
     grid-column: 2; grid-row: 1 / span 2;
-    display: grid; grid-template-rows: subgrid;
+    display: grid; grid-template-rows: subgrid; grid-template-columns: 100%;
     overflow-x: auto; overflow-y: hidden; min-width: 0; min-height: 0;
   }
   .trend-sheet {
@@ -340,23 +371,42 @@
     pointer-events: none;
   }
   button.trend-col {
-    font: inherit; color: inherit; background: transparent; border: 0; border-radius: 8px;
-    cursor: pointer; padding: 0; height: 100%; flex: 0 0 auto;
+    font: inherit; color: inherit; background: transparent; border: 0; border-radius: 4px;
+    cursor: pointer; padding: 0; height: 100%; flex: 1 1 0; min-width: 0;
     display: flex; align-items: flex-end;
   }
   button.trend-col:hover, button.trend-col:focus-visible { background: rgba(228, 236, 247, 0.06); }
-  .trend-bars { display: flex; align-items: flex-end; width: 100%; height: 100%; gap: 2px; }
-  .trend-bars i { flex: 0 0 9px; width: 9px; min-height: 2px; border-radius: 2px 2px 0 0; display: block; }
-  .trend-axis { grid-row: 2; display: flex; align-items: start; margin-top: 6px; }
-  main.home .trend-reach {
-    flex: 1 1 0; min-height: 160px;
-    grid-template-rows: minmax(0, 1fr) auto;
+  button.trend-col:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+  .trend-bars { display: flex; align-items: flex-end; width: 100%; height: 100%; }
+  .trend-bars i {
+    flex: 1 1 0; min-width: 0; height: 100%; display: flex; align-items: flex-end; justify-content: center;
   }
+  .trend-bars i b {
+    display: block; width: calc(100% - var(--trend-gap, 2px)); max-width: 16px; min-width: 1px;
+    min-height: 2px; border-radius: 2px 2px 0 0;
+  }
+  .trend-bars i:hover b { filter: brightness(1.25); }
+  .trend-split {
+    position: absolute; top: 0; bottom: 0; width: 0; z-index: 2; pointer-events: none;
+    border-left: 1px solid rgba(147, 164, 189, 0.4);
+  }
+  .trend-axis { grid-row: 2; display: flex; align-items: start; margin-top: 6px; }
   .trend-axis > span {
-    flex: 0 0 auto; text-align: center; font-size: 12px; line-height: 1.25; color: var(--muted); padding: 0 4px;
+    flex: 1 1 0; min-width: 0; text-align: center; font-size: 12px; line-height: 1.25; color: var(--muted); padding: 0 4px;
   }
   .trend-axis > span b { display: block; color: var(--ink); font-size: 13px; font-weight: 650; }
-  .trend-axis > span span { display: block; }
+  .trend-axis > span b, .trend-axis > span span {
+    display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .trend-hint { margin-top: 6px; font-size: 13px; }
+  .tip {
+    position: fixed; z-index: 20; pointer-events: none; max-width: 280px;
+    background: #0a1120; color: var(--ink); border: 1px solid var(--line); border-radius: 8px;
+    padding: 6px 10px; font-size: 13px; line-height: 1.35; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  }
+  .tip[hidden] { display: none; }
+  .tip b { display: block; font-size: 14px; }
+  .tip span { display: block; color: var(--muted); }
   .legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0 0; }
   .legend span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; }
   .swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
@@ -427,7 +477,24 @@
     color: var(--accent); background: transparent; border: 0; border-radius: 8px;
     text-align: left; cursor: pointer; padding: 10px 10px 10px 4px; width: 100%;
   }
+  .route button.station {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; align-items: center;
+  }
+  .route .station-name, .route .station-tally { grid-column: 1; }
   .route .station-tally { display: block; font-size: 13px; font-weight: 400; color: var(--muted); }
+  .route .station-rate {
+    grid-column: 2; grid-row: 1 / span 2;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .route .meter {
+    display: block; width: clamp(72px, 16vw, 200px); height: 8px; border-radius: 4px;
+    background: var(--line); overflow: hidden;
+  }
+  .route .meter i { display: block; height: 100%; background: var(--fail); border-radius: 4px; }
+  .route .station-rate b {
+    min-width: 4ch; text-align: right; font-size: 14px; font-weight: 650; color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
   .route li:hover button.station { background: var(--hover); }
   .route li:hover .dot { background: var(--stop); }
   .route button.station:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
@@ -440,10 +507,14 @@
     body { display: block; }
     aside { border-right: 0; border-bottom: 1px solid var(--line); max-height: 42vh; }
     #nav-split { display: none; }
-    main.home { display: block; padding-bottom: 28px; }
-    main.home > section.trend { display: block; }
-    main.home .trend-reach { flex: none; min-height: 0; grid-template-rows: 300px auto; }
-    .stats, .cols, header, .mech-head, .death-body { display: block; }
+    .cols, header, .mech-head, .death-body, .component-body { display: block; }
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    details.session-preview > summary { grid-template-columns: auto minmax(0, 1fr) auto; }
+    .night-far { grid-column: 2 / -1; }
+    .preview-time { display: block; margin-left: 0; }
+    .route .station-rate { grid-column: 1; grid-row: auto; margin-top: 6px; }
+    .route .meter { width: 140px; }
+    .review-title { white-space: normal; flex: 0 1 auto; min-width: 0; }
     .reach { grid-template-columns: 9.5rem minmax(0, 1fr); height: 420px; }
     .reach.mini { grid-template-columns: 8.5rem minmax(0, 1fr); }
     .trend-reach { grid-template-columns: 8.5rem minmax(0, 1fr); grid-template-rows: 300px auto; }
@@ -1088,15 +1159,20 @@ function phaseRoute(mechs, color) {
     const tally = reached
       ? `${mech.mistakes || 0} of ${plural(reached, "pull")} had a mistake`
       : "No pull reached it";
+    const rate = reached ? Math.round(((mech.mistakes || 0) / reached) * 100) : null;
+    const meter = rate == null
+      ? ""
+      : `<span class="station-rate" aria-hidden="true"><span class="meter"><i style="width:${rate}%"></i></span><b>${rate}%</b></span>`;
     return `<li>
       <span class="rail" aria-hidden="true"><span class="dot"></span></span>
-      <button class="station" data-go="s/${SESSION.code}/mechanic/${mech.id}">${esc(mech.name)}<span class="station-tally">${tally}</span></button>
+      <button class="station" data-go="s/${SESSION.code}/mechanic/${mech.id}"><span class="station-name">${esc(mech.name)}</span><span class="station-tally">${tally}</span>${meter}</button>
     </li>`;
   }).join("");
   return `<ol class="route" style="--stop:${color}">${stops}</ol>`;
 }
 function phaseColor(id) {
-  const colors = ["#61879e", "#a87557", "#9e6173", "#7f6f9b", "#5b8f85", "#a38b5c", "#6a81a0", "#9a7d5b"];
+  // The old hues, stepped until neighbors are easy to tell apart, also with color blindness.
+  const colors = ["#368bb7", "#b3803d", "#9b557d", "#5579d4", "#1a9787", "#b4893f", "#5481bd", "#aa7734"];
   return colors[(Number(id) - 1) % colors.length] || "#93a4bd";
 }
 function overviewOf(session) {
@@ -1211,27 +1287,32 @@ function paceText(sessions) {
   }
   return `Furthest so far is ${name(peak)} on ${when(peak)}. ${when(last)} reached ${name(last)}.`;
 }
-const TREND_BAR = 9;
-const TREND_GAP = 2;
-function barsWidth(count) {
-  if (count <= 0) return TREND_BAR;
-  return count * TREND_BAR + Math.max(0, count - 1) * TREND_GAP;
-}
+// Every pull gets an equal slot, so the whole history fits the card. Below this
+// many pixels a slot stops shrinking and the trend scrolls sideways instead.
+const TREND_MIN_SLOT = 4;
 function trendSpans(sessions) {
-  const widths = sessions.map(session => barsWidth(overviewOf(session).pulls.length));
-  const total = Math.max(1, widths.reduce((sum, width) => sum + width, 0));
+  const slots = sessions.map(session => Math.max(1, overviewOf(session).pulls.length));
+  const total = slots.reduce((sum, count) => sum + count, 0);
   let used = 0;
-  const spans = widths.map(width => {
+  const spans = slots.map(count => {
     const start = used / total * 100;
-    used += width;
-    return { width, start, end: used / total * 100 };
+    used += count;
+    return { slots: count, start, end: used / total * 100 };
   });
   return { total, spans };
 }
 function barX(span, pullIndex, count) {
   if (count <= 1) return (span.start + span.end) / 2;
-  const center = pullIndex * (TREND_BAR + TREND_GAP) + TREND_BAR / 2;
-  return span.start + (center / barsWidth(count)) * (span.end - span.start);
+  return span.start + ((pullIndex + 0.5) / count) * (span.end - span.start);
+}
+function pullTip(pull, extra) {
+  const where = pull.mechanic && pull.mechanic !== pull.phaseName ? pull.mechanic : "";
+  const lines = [`Pull ${pull.id}`];
+  if (where) lines.push(where);
+  lines.push(`Ended in ${pull.phaseName} at ${pull.bossPct}%`);
+  const when = [extra, pull.when, pull.clock ? `lasted ${pull.clock}` : ""].filter(Boolean).join(" · ");
+  if (when) lines.push(when);
+  return lines.join("\n");
 }
 function trendLine(sessions, scale, spans) {
   const yOf = reached => (1 - reached / scale) * 100;
@@ -1297,17 +1378,17 @@ function trendChart(sessions) {
   const cols = sessions.map((session, index) => {
     const pulls = overviewOf(session).pulls;
     const far = furthestPull(pulls);
+    const when = shortWhen(session, sessions);
     const bars = pulls.map(pull => {
       const height = ((pull.reached || 0) / scale) * 100;
-      return `<i style="height:${height}%;background:${phaseColor(pull.phase)}"></i>`;
+      return `<i data-tip="${esc(pullTip(pull, when))}"><b style="height:${height}%;background:${phaseColor(pull.phase)}"></b></i>`;
     }).join("");
-    const when = shortWhen(session, sessions);
     const mech = far ? furthestName(far) : "No pulls";
     const where = far ? `${mech} · ${far.phaseName} ${far.bossPct}%` : mech;
-    const title = `${when} · ${where}`;
-    const width = spans[index].width;
-    return `<button type="button" class="trend-col" data-go="s/${session.code}" title="${esc(title)}" aria-label="${esc(title)}" style="width:${width}px"><span class="trend-bars">${bars}</span></button>`;
+    const label = `Open ${when}. Furthest: ${where}`;
+    return `<button type="button" class="trend-col" data-go="s/${session.code}" aria-label="${esc(label)}" style="flex-grow:${spans[index].slots}"><span class="trend-bars">${bars}</span></button>`;
   }).join("");
+  const splits = spans.slice(1).map(span => `<i class="trend-split" style="left:${span.start}%"></i>`).join("");
   const dots = sessions.map((session, index) => {
     const pulls = overviewOf(session).pulls;
     const far = furthestPull(pulls);
@@ -1319,8 +1400,10 @@ function trendChart(sessions) {
   const line = trendLine(sessions, scale, spans);
   const axis = sessions.map((session, index) => {
     const far = furthestPull(overviewOf(session).pulls);
-    const mech = far ? `<span>${esc(furthestName(far))}</span>` : "";
-    return `<span style="width:${spans[index].width}px"><b>${esc(shortWhen(session, sessions))}</b>${mech}</span>`;
+    const when = shortWhen(session, sessions);
+    const name = far ? furthestName(far) : "";
+    const mech = name ? `<span>${esc(name)}</span>` : "";
+    return `<span style="flex-grow:${spans[index].slots}" title="${esc([when, name].filter(Boolean).join(" · "))}"><b>${esc(when)}</b>${mech}</span>`;
   }).join("");
   const seen = [];
   for (const session of sessions) {
@@ -1328,7 +1411,8 @@ function trendChart(sessions) {
       if (!seen.some(row => row.phase === pull.phase)) seen.push(pull);
     }
   }
-  return `<div class="trend-reach"><div class="reach-names">${names}</div><div class="trend-scroll" data-trend="${esc(sessions.map(session => session.code).join("-"))}"><div class="trend-sheet" style="width:${total}px"><div class="trend-plot">${lines}${line}${dots}<div class="trend-cols">${cols}</div></div><div class="trend-axis">${axis}</div></div></div></div>
+  return `<div class="trend-reach"><div class="reach-names">${names}</div><div class="trend-scroll" data-trend="${esc(sessions.map(session => session.code).join("-"))}"><div class="trend-sheet" data-slots="${total}" style="width:max(100%, ${total * TREND_MIN_SLOT}px)"><div class="trend-plot">${lines}${splits}${line}${dots}<div class="trend-cols">${cols}</div></div><div class="trend-axis">${axis}</div></div></div></div>
+    <p class="meta trend-hint" hidden>Older pulls are to the left. Scroll sideways to see them.</p>
     ${legend(seen)}`;
 }
 function trendSection() {
@@ -1350,31 +1434,34 @@ function trendSection() {
     return `<section class="trend">
       <h2>General trend</h2>
       ${heading}
-      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. Each night has its own trend, starting where the previous night ended. Scroll sideways to move through the pulls.</p>
+      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. Each night has its own trend, starting where the previous night ended.</p>
       ${trendChart(group.sessions)}
     </section>`;
   }).join("");
 }
 const previewOpen = {};
-function sessionPreview(item) {
+function sessionPreview(item, day, manyFights) {
   const session = byCode[item.code];
   const overview = overviewOf(session);
   const far = furthestPull(overview.pulls);
   const detail = [
+    manyFights ? item.fight : "",
     item.title,
     item.owner,
-    overview.pulls.length ? `${overview.pulls.length} pulls` : "",
-    far ? `furthest ${furthestName(far)}` : "",
   ].filter(Boolean).join(" · ");
   const opened = previewOpen[item.code] ? " open" : "";
-  const when = item.timeLabel || item.code;
+  const date = day && day !== "No date" ? day : "";
+  const when = [date, item.timeLabel].filter(Boolean).join(" · ") || item.code;
+  const pulls = overview.pulls.length;
   return `<div class="session-row">
       <details class="session-preview" data-code="${esc(item.code)}"${opened}>
         <summary>
           <span class="preview-copy">
-            <span class="preview-title">${esc(when)} <span class="meta">${esc(item.fight)}</span></span>
+            <span class="preview-title">${esc(date || item.code)}${item.timeLabel ? ` <span class="preview-time">${esc(item.timeLabel)}</span>` : ""}</span>
             <span class="meta">${esc(detail)}</span>
           </span>
+          <span class="night-stat"><b>${pulls}</b><span>${pulls === 1 ? "pull" : "pulls"}</span></span>
+          <span class="night-stat night-far"><b>${esc(far ? furthestName(far) : "—")}</b><span>furthest</span></span>
         </summary>
         <div class="preview-body">
           ${miniChart(overview.pulls, overview.markers)}
@@ -1386,23 +1473,30 @@ function sessionPreview(item) {
     </div>`;
 }
 function chart(pulls, markers) {
-  const scale = reachScale(pulls);
-  const marks = visibleMarks(markers, scale);
+  const top = reachScale(pulls);
+  // Headroom above the tallest bar so its label fits inside the chart.
+  const scale = top * 1.08;
+  const marks = visibleMarks(markers, top);
   const bestId = (overviewOf(SESSION).best || {}).id;
+  const farId = (furthestPull(pulls) || {}).id;
   const names = marks.map(mark => {
     return `<span style="bottom:${(mark.at / scale) * 100}%">${esc(mark.name)}</span>`;
   }).join("");
   const lines = marks.map(mark => {
-    return `<i class="hline" title="${esc(mark.name)}" style="bottom:${(mark.at / scale) * 100}%"></i>`;
+    return `<i class="hline" style="bottom:${(mark.at / scale) * 100}%"></i>`;
   }).join("");
-  const bars = pulls.map(pull => {
-    const height = Math.max(6, ((pull.reached || 0) / scale) * 100);
-    const mark = pull.id === bestId ? " best" : "";
-    const where = pull.mechanic ? `${pull.mechanic} · ` : "";
-    const title = `Pull ${pull.id} · ${where}${pull.phaseName} ${pull.bossPct}% · ${pull.clock}`;
-    return `<button class="bar${mark}" data-go="${pullGo(pull)}" title="${esc(title)}" style="height:${height}%;background:${phaseColor(pull.phase)}"></button>`;
+  const near = Math.max(6, pulls.length * 0.08);
+  const edge = index => index < near ? " start" : index >= pulls.length - near ? " end" : "";
+  const bars = pulls.map((pull, index) => {
+    const height = Math.max(1.5, ((pull.reached || 0) / scale) * 100);
+    const flag = [pull.id === farId ? "Furthest" : "", pull.id === bestId ? "Best" : ""].filter(Boolean).join(" · ");
+    const tick = index === 0 || (pull.id % 10 === 0 && index >= 4) ? `<span class="bar-tick${edge(index)}">${pull.id}</span>` : "";
+    const flagHtml = flag ? `<span class="bar-flag${edge(index)}">${flag}</span>` : "";
+    const tipText = pullTip(pull) + (pull.judged ? "" : "\nNo death review");
+    const label = tipText.split("\n").join(", ");
+    return `<button class="bar" data-go="${pullGo(pull)}" data-tip="${esc(tipText)}" aria-label="${esc(label)}" style="height:${height}%;background:${phaseColor(pull.phase)}">${flagHtml}${tick}</button>`;
   }).join("");
-  return `<div class="reach"><div class="reach-names">${names}</div><div class="chart"><div class="plot">${lines}${bars}</div></div></div>`;
+  return `<div class="reach session"><div class="reach-names">${names}</div><div class="chart"><div class="plot">${lines}${bars}</div></div></div>`;
 }
 function legend(pulls) {
   const seen = [];
@@ -1415,20 +1509,13 @@ function legend(pulls) {
 function pullGo(pull) {
   return pull.judged ? `s/${SESSION.code}/pull/${pull.id}` : `s/${SESSION.code}/fight/${pull.id}`;
 }
-function reachLine(far, best) {
-  if (far && best && far.id === best.id) {
-    return `Furthest and best: pull ${far.id}, ${furthestName(far)}, ${best.phaseName} ${best.bossPct}%.`;
-  }
-  const bits = [];
-  if (far) bits.push(`Furthest: pull ${far.id}, ${furthestName(far)}.`);
-  if (best) bits.push(`Best: pull ${best.id}, ${best.phaseName} ${best.bossPct}%.`);
-  return bits.join(" ");
-}
 function renderHome() {
-  const blocks = DATA.days.map(day => `<section>
-      <h2>${esc(day.label)}</h2>
-      ${day.sessions.map(item => sessionPreview(item)).join("")}
-    </section>`).join("");
+  const manyFights = new Set(DATA.sessions.map(item => item.fight)).size > 1;
+  const rows = DATA.days.map(day => day.sessions.map(item => sessionPreview(item, day.label, manyFights)).join("")).join("");
+  const blocks = rows ? `<section class="nights">
+      <h2>Nights</h2>
+      ${rows}
+    </section>` : "";
   const count = DATA.sessions.length === 1 ? "1 log" : `${DATA.sessions.length} logs`;
   return `
     <header>
@@ -1472,21 +1559,21 @@ function renderAll() {
     <header>
       <div>
         <h1>${esc(SESSION.fight)}</h1>
-        <p class="meta">${esc(stamp)}. ${overview.pulls.length} pulls. ${esc(reachLine(far, best))}</p>
+        <p class="meta">${esc(stamp)}</p>
       </div>
       <p class="meta"><a href="${logHref()}">Open the log</a></p>
     </header>
+    <div class="stats">
+      <div class="stat"><b>${overview.pulls.length}</b><span>pulls</span></div>
+      ${far ? `<button type="button" class="stat" data-go="${pullGo(far)}" title="Open pull ${far.id}"><b class="stat-name">${esc(furthestName(far))}</b><span>furthest · pull ${far.id}</span></button>` : ""}
+      ${best ? `<button type="button" class="stat" data-go="${pullGo(best)}" title="Open pull ${best.id}"><b>${best.bossPct}%</b><span>best · ${esc(best.phaseName)} HP left · pull ${best.id}</span></button>` : ""}
+    </div>
     <section>
       <h2>How far each pull got</h2>
       ${chart(overview.pulls, overview.markers)}
       ${legend(overview.pulls)}
-      <p class="meta">Taller is further through the fight. A bar that crosses a line reached that mechanic.</p>
+      <p class="meta">Each bar is a pull, numbered along the bottom. Taller is further through the fight. A bar that crosses a line reached that mechanic.</p>
     </section>
-    <div class="stats">
-      <div class="stat"><b>${overview.pulls.length}</b><span>pulls</span></div>
-      ${far ? `<button type="button" class="stat" data-go="${pullGo(far)}" title="Open pull ${far.id}"><b class="stat-name">${esc(furthestName(far))}</b><span>furthest · pull ${far.id}</span></button>` : ""}
-      ${best ? `<button type="button" class="stat" data-go="${pullGo(best)}" title="Open pull ${best.id}"><b>${best.bossPct}%</b><span>best · ${esc(best.phaseName)} · pull ${best.id}</span></button>` : ""}
-    </div>
     ${phases}`;
 }
 function renderFight(id) {
@@ -1557,13 +1644,13 @@ function componentBlock(pull, card, part) {
   const solo = card.parts.length === 1 && part.name === card.name;
   const failed = failedSeats(part);
   const shots = failed.length ? (part.frames || []).map(stillFrame).join("") : "";
+  const detail = `${failed.length ? `<div class="seats">${failed.map(seat => seatMark(seat, part.name)).join("")}</div>` : ""}
+      ${rows.map(row => deathCard(row, { skipFrame: Boolean(shots), skipCast: true })).join("")}`;
   return `<div class="component">
     ${solo ? "" : `<div class="component-name">${esc(part.name)}</div>`}
-    <div>
-      ${shots ? `<div class="stills">${shots}</div>` : ""}
-      ${failed.length ? `<div class="seats">${failed.map(seat => seatMark(seat, part.name)).join("")}</div>` : ""}
-      ${rows.map(row => deathCard(row, { skipFrame: Boolean(shots), skipCast: true })).join("")}
-    </div>
+    ${shots
+      ? `<div class="component-body"><div class="stills">${shots}</div><div class="component-detail">${detail}</div></div>`
+      : `<div>${detail}</div>`}
   </div>`;
 }
 function renderPull(id) {
@@ -1689,7 +1776,8 @@ function pullReview(pull, mech) {
   const key = `${SESSION.code}/${mech.id}/${pull.id}`;
   const open = Boolean(reviewOpen[key]);
   const who = reviewWho(card);
-  return `<details class="pull-review" data-review="${esc(key)}" data-pull="${pull.id}" data-mech="${esc(mech.id)}"${open ? " open" : ""}>
+  const clear = failedNames(card).size ? "" : " clear";
+  return `<details class="pull-review${clear}" data-review="${esc(key)}" data-pull="${pull.id}" data-mech="${esc(mech.id)}"${open ? " open" : ""}>
     <summary>
       <span class="review-title">Pull ${pull.id} <span class="meta">${pull.when ? esc(pull.when) + " · " : ""}${pull.bossPct}%</span></span>
       <span class="review-who" title="${esc(who)}">${esc(who)}</span>
@@ -1726,10 +1814,41 @@ function renderMechanic(id) {
     </section>
     ${tallySection(mechanicTally(mech, reached))}
     ${reached.length ? `<section>
-      <h2>Pulls that reached it</h2>
+      <div class="mech-head">
+        <h2>Pulls that reached it</h2>
+        ${reviewFilterButtons(mech, reached.length, failedPulls)}
+      </div>
       <p class="meta">Open a pull for where everyone stood.</p>
-      ${reached.map(pull => pullReview(pull, mech)).join("")}
+      <div class="review-list" data-mech="${esc(mech.id)}">${reviewRows(mech, reached)}</div>
     </section>` : ""}`;
+}
+// Which pulls a mechanic page lists: every pull that reached it, or only the ones with a mistake.
+const reviewFilter = {};
+function reviewFilterKey(mech) {
+  return `${SESSION.code}/${mech.id}`;
+}
+function reviewRows(mech, reached) {
+  const only = reviewFilter[reviewFilterKey(mech)] === "failed";
+  const rows = only ? reached.filter(pull => failedNames(cardOf(pull, mech.id)).size) : reached;
+  return rows.map(pull => pullReview(pull, mech)).join("");
+}
+function reviewFilterButtons(mech, all, failed) {
+  const only = reviewFilter[reviewFilterKey(mech)] === "failed";
+  return `<div class="seg" role="group" aria-label="Which pulls to list">
+      <button type="button" data-review-filter="all" data-mech="${esc(mech.id)}" aria-pressed="${!only}">All <b>${all}</b></button>
+      <button type="button" data-review-filter="failed" data-mech="${esc(mech.id)}" aria-pressed="${only}">With a mistake <b>${failed}</b></button>
+    </div>`;
+}
+function setReviewFilter(button) {
+  const mech = findMech(button.dataset.mech);
+  if (!mech) return;
+  reviewFilter[reviewFilterKey(mech)] = button.dataset.reviewFilter;
+  const reached = SESSION.pulls.filter(pull => cardOf(pull, mech.id));
+  const list = document.querySelector(`.review-list[data-mech="${CSS.escape(mech.id)}"]`);
+  if (list) list.innerHTML = reviewRows(mech, reached);
+  for (const other of document.querySelectorAll(`[data-review-filter][data-mech="${CSS.escape(mech.id)}"]`)) {
+    other.setAttribute("aria-pressed", String(other === button));
+  }
 }
 function paintActive() {
   const where = route();
@@ -1799,6 +1918,7 @@ async function render() {
     }
   }
   closeStill();
+  hideTip();
   stillFrames = [];
   if (!SESSION) app.innerHTML = renderHome();
   else if (where.view === "pull") app.innerHTML = renderPull(where.id);
@@ -1904,6 +2024,11 @@ document.body.addEventListener("click", event => {
     openStill(opener.dataset.still);
     return;
   }
+  const scope = event.target.closest("[data-review-filter]");
+  if (scope) {
+    setReviewFilter(scope);
+    return;
+  }
   const chip = event.target.closest("#nav button[data-pull-phase]");
   if (chip) {
     const key = chip.closest(".pull-key");
@@ -1961,7 +2086,18 @@ function fitTrendLabels() {
     }
   });
 }
+function fitTrendSlots() {
+  for (const node of document.querySelectorAll(".trend-scroll")) {
+    const sheet = node.querySelector(".trend-sheet");
+    const slots = Number(sheet && sheet.dataset.slots) || 1;
+    const slot = sheet ? sheet.clientWidth / slots : 0;
+    if (sheet) sheet.style.setProperty("--trend-gap", slot < 6 ? "1px" : "2px");
+    const hint = node.closest("section") && node.closest("section").querySelector(".trend-hint");
+    if (hint) hint.hidden = node.scrollWidth <= node.clientWidth + 1;
+  }
+}
 function placeTrendScroll() {
+  fitTrendSlots();
   for (const node of document.querySelectorAll(".trend-scroll")) {
     const key = node.dataset.trend || "";
     const saved = trendScrollLeft[key];
@@ -1969,6 +2105,50 @@ function placeTrendScroll() {
   }
   fitTrendLabels();
 }
+// One tooltip for every chart mark. `data-tip` holds plain lines; the first leads.
+const tip = document.createElement("div");
+tip.className = "tip";
+tip.setAttribute("role", "tooltip");
+tip.hidden = true;
+document.body.appendChild(tip);
+let tipFor = null;
+function showTip(node) {
+  if (tipFor === node) return;
+  tipFor = node;
+  tip.replaceChildren();
+  (node.dataset.tip || "").split("\n").forEach((line, index) => {
+    const row = document.createElement(index ? "span" : "b");
+    row.textContent = line;
+    tip.appendChild(row);
+  });
+  tip.hidden = false;
+  const mark = node.querySelector("b") || node;
+  const box = mark.getBoundingClientRect();
+  const width = tip.offsetWidth;
+  const height = tip.offsetHeight;
+  let left = box.left + box.width / 2 - width / 2;
+  left = Math.max(8, Math.min(window.innerWidth - width - 8, left));
+  let top = box.top - height - 8;
+  if (top < 8) top = Math.min(window.innerHeight - height - 8, box.bottom + 8);
+  tip.style.left = `${Math.round(left)}px`;
+  tip.style.top = `${Math.round(Math.max(8, top))}px`;
+}
+function hideTip() {
+  tipFor = null;
+  tip.hidden = true;
+}
+document.addEventListener("pointerover", event => {
+  const node = event.target.closest && event.target.closest("[data-tip]");
+  if (node) showTip(node);
+  else hideTip();
+});
+document.addEventListener("focusin", event => {
+  const node = event.target.closest && event.target.closest("[data-tip]");
+  if (node) showTip(node);
+  else hideTip();
+});
+document.addEventListener("focusout", hideTip);
+document.addEventListener("scroll", hideTip, true);
 document.body.addEventListener("scroll", event => {
   const node = event.target;
   if (!node.classList || !node.classList.contains("trend-scroll")) return;
@@ -2071,6 +2251,7 @@ if (navSplit) {
 }
 window.addEventListener("resize", () => {
   applyNavWidth(false);
+  fitTrendSlots();
   fitTrendLabels();
 });
 </script>
