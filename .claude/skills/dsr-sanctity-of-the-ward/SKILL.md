@@ -3,7 +3,7 @@ name: dsr-sanctity-of-the-ward
 description: >-
   Components of Sanctity of the Ward in Dragonsong's Reprise Thordan, including
   the Meteors stop: the gazes, Sacred Sever, Shining Blade, Bright Flare, then
-  Hiemal Storm, Frostbite, Heavens' Stake, Conviction, Holy Comet, Faith
+  Hiemal Storm, Frostbite, Burns, Heavens' Stake, Conviction, Holy Comet, Faith
   Unmoving, and Holy Impact. Use when those casts land from about 112 seconds
   onward in phase 2, or when the session stop is Sanctity of the Ward or Meteors.
 ---
@@ -51,10 +51,11 @@ Players preposition in support and DPS pairs. Melees with healers stand east and
 | Heavens' Stake | 28591, about 130–131s | The fire circles and the fire on the edge. A clean pull stores none. A hit is standing in the fire. This is not the meteor. |
 | Hiemal Storm | 25575, about 130–131s | Ice drops on either the supports or the DPS. A correct drop still hits all 8, the pairs sharing it. Tanks take about 14–25k. Healers take about 23–38k. DPS take about 26–40k. It does not split further. Everyone then runs out. A puddle that completely covers a tower is a wrong drop. |
 | Frostbite | 1002946, about 134–137s | The tick from standing in that ice. Any tick is a failed soak. |
+| Burns | 1002945, about 131–146s | The fire's damage over time. It lands about 131 seconds, as Heavens' Stake resolves, and ticks until it kills. Any tick is standing in the fire. |
 | Conviction | 29564 about 135s, and 28651 about 148s | The towers. `29564` is the first set, some inside the arena and some outside. `28651` is the eight towers on the outside after the comets. A soaked tower is tanks about 3k and everyone else about 4.6–5.4k. Eight of those hits, one player each, is everyone in a tower. An empty tower is Eternal Conviction, not this hit. |
 | Eternal Conviction | 25568, about 137s and again about 150s | The empty-tower explosion. It does not land on a clean resolve. About two seconds after the tower soak, it hits the party: tanks about 58–66k, everyone else about 90–105k. The hits around 63s are Strength of the Ward and are not this explosion. The players who missed the tower own the Sanctity hit. Eight small Conviction hits can still be followed by this explosion when two people took one tower and another tower was empty. |
 | Holy Comet | 25577, about 136–146s | The prey players run and drop the comets. Each drop is a light raidwide, tanks about 1.0–1.1k and everyone else about 1.5–1.8k, seven drops. This guid has not killed anyone. Comets that land too close become Holy Impact. |
-| Holy Impact | 25578, about 141–149s | The explosion when those comets are too close. It puts Damage Down on the party. A clean resolve stores none. The two prey players own it. Tanks take about 57–66k. Everyone else takes about 91–106k. |
+| Holy Impact | 25578, about 141–149s | The explosion when those comets are too close. It puts Damage Down on the party. A clean resolve stores none. Whoever dropped the two comets that landed too close owns it (`dsr-holy-impact`). Tanks take about 57–66k. Everyone else takes about 91–106k. |
 | Faith Unmoving | 25308, about 145–146s | The knockback just before the outer towers resolve. It still hits on a clean resolve: tanks about 2.7–3.1k, everyone else about 4.5–5.2k. Players in the middle get knocked into their tower. Players already outside use knockback immunity. Being knocked into the wall is a mistake. This log does not store a separate wall hit. |
 
 ### Towers

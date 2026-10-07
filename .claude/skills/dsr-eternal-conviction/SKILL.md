@@ -28,7 +28,13 @@ Around 63 seconds, over the cap: `{player}` took a hit that is not this raidwide
 
 Around 63 seconds, already under 15,000 HP, and the hit is the normal raidwide: low.
 
-Around 137 or 150 seconds: a tower was empty. `{player}` died to the explosion. The players who missed the tower own it. The log does not name them from this packet, so the blame is Missed soak.
+Around 137 or 150 seconds: a tower was empty. `{player}` died to the explosion. The players who missed the tower own it. `needs_everyone` in `mechanics.json` names them from the tower soak, Conviction `29564` or `28651`, in the four seconds before the first death:
+
+- A player already dead, and not raised (Weakness `1000043`), left their tower empty. They own it.
+- A player alive and not hit by the soak was not in a tower. They own it.
+- Two players on one tower's soak (the same `sourceInstance`) shared a tower. They own it. Pull 19 of `8DYNHQx4C7ytdLb9` is Spring Nymphar and Kiara Blaiddyd, and pull 29 is Loki Doki and Speed Panda.
+- Several owners split it evenly. A player who died to an earlier empty tower passes it on to whoever left that one empty.
+- Missed soak at 50 only when none of these shows in the log.
 
 ## Parameters
 

@@ -214,12 +214,14 @@ class PullCardsTest(unittest.TestCase):
             [
                 "Lightning Storm",
                 "Heavy Impact",
+                "Spiral Thrust",
                 "Ascalon's Mercy Concealed",
                 "Dimensional Collapse",
                 "Skyward Leap",
                 "Dragon's Rage",
                 "Holy Shield Bash",
                 "Holy Bladedance",
+                "Conviction",
                 "Eternal Conviction",
             ],
         )

@@ -16,6 +16,12 @@ Frostbite is the tick from a failed ice soak. Hiemal Storm `25575` is the placed
 
 Any Frostbite damage is a fail. Do not read it as a large Hiemal share or a short stack.
 
+The deaths table links Frostbite as a status (`#status/2946`), not an action. It is still the killing blow. It is not the deathwall.
+
+A Frostbite death before the towers leaves a tower empty. That player owns the Eternal Conviction that follows.
+
+Frostbite and Burns ticking at the same instant are one combined tick, split evenly between them. The combined tick (`500000`) is the real hit.
+
 ## Fault
 
 `{player}` failed the ice soak and died to Frostbite.

@@ -16,13 +16,13 @@ This is the first knights sequence, about 42–65 seconds after phase 2 starts. 
 
 ## Dashes and the spread
 
-The knights dash in straight lines across the arena. That leaves two triangles of safe space on opposing sides. Spiral Thrust is that dash. This log has no guid for it. Do not invent one. A hit is that player's mistake.
+The knights dash in straight lines across the arena. That leaves two triangles of safe space on opposing sides. Spiral Thrust is that dash, guid `25556` in report `3wzL6x4VHTmvNkhq`. A hit is that player's mistake.
 
 Lightning Storm resolves in those triangles.
 
 | Component | Guid | What it does |
 |---|---|---|
-| Spiral Thrust | not stored | Three knights dash straight across. Two triangles of safe space are left on opposing sides. A hit is that player's mistake. |
+| Spiral Thrust | 25556, about 44s | Three knights dash straight across. A hit is about 330–370k and kills. Two triangles of safe space are left on opposing sides. A hit is that player's mistake. |
 | Lightning Storm | 25549, about 43s | The spread inside each triangle. Healer in front, melee to the left, ranged to the right, tank at the back. One of each. Two melees, two healers, or two ranged on the same side is a mistake. Clipping another player is a mistake. Standing anywhere else is a mistake. |
 
 ## Pulses and the cones
@@ -44,13 +44,13 @@ Three non-tanks get a blue marker. A large area goes off on that marker. Those t
 |---|---|---|
 | Skyward Leap | 25565, about 59–60s | The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. A death on it is a healer mistake, a missing mitigation, or a clip. A clip belongs to whoever was out of position (`dsr-skyward-leap`). |
 | the Dragon's Rage | 25551, about 59–60s | The stack under Thordan for the three non-tanks without the marker. The person does not know whether the tanks share it. Lived hits in this log are usually those three plus both tanks. |
-| Holy Shield Bash | 25297, about 60s | The two tethers. One tank each. The hit stuns. A non-tank who takes that stun dies. Stretch the tether. A short tether is the failed bash. |
+| Holy Shield Bash | 25297, and 25579 0.3–0.9s later, about 60s | The two tethers. One tank each. The hit stuns. A non-tank who takes that stun dies. Stretch the tether. A short tether is the failed bash. |
 | Holy Bladedance | 25299, about 62–64s | The cone after each tether. Several hits on that tank. The tank uses personal mitigation. Anyone else in the cone owns that hit. |
 | Dimensional Collapse | 25564, about 59s | The puddles on the floor. The person named them with this wave. A hit applies Heavy and Damage Down and is a mistake. No lived band is stored. |
 
 ## Towers
 
-Six towers spawn after the marker. Three are on the Skyward Leap markers and are fixed. The other three are not fixed. Each non-tank has to be inside a tower when it goes off. Two people in one of the unfixed towers is a miscommunication. An empty tower applies Damage Down and Paralysis to everyone. That explosion is a fail. It is not on the Skyward Leap guid: the 600–760k Skyward Leap hits land with the markers, about 59.5 seconds, and are a second leap on one player (`dsr-skyward-leap`).
+Six towers spawn after the marker. Ser Hermenost's tower soak is Conviction `25567`, about 62.8 seconds, stored in report `3wzL6x4VHTmvNkhq`. It hits non-tanks only, up to about 5.6k each. Three are on the Skyward Leap markers and are fixed. The other three are not fixed. Each non-tank has to be inside a tower when it goes off. Two people in one of the unfixed towers is a miscommunication. An empty tower applies Damage Down and Paralysis to everyone. That explosion is a fail. It is not on the Skyward Leap guid: the 600–760k Skyward Leap hits land with the markers, about 59.5 seconds, and are a second leap on one player (`dsr-skyward-leap`).
 
 Eternal Conviction `25568` also hits around 63 seconds. The person did not assign that hit. Do not fold it into Sanctity. The hits around 137 and 150 seconds are the empty Sanctity towers, not this mechanic.
 

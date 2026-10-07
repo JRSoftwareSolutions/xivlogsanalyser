@@ -14,7 +14,7 @@ Follow `review-mechanic` for the packet, the outcome order, and a correction. En
 
 ## How to tell
 
-Any damage from this guid is a fail. One orb is about 61–67k on a tank and about 93–111k on a healer or DPS. Two players in the same burst overlapped. A player already under 15,000 HP still got hit. Pull 22 Gigalad in the reference log was that case, at about 12k HP, and it is a fail.
+Any damage from this guid is a fail. One orb is about 61–67k on a tank and about 93–111k on a healer or DPS, which kills a healer or DPS on its own. Each orb is one packet (`packetID`). Two players on one packet overlapped. Two players hit at the same moment by two packets were each hit by their own orb: reference pull 39. A player already under 15,000 HP still got hit. Pull 22 Gigalad in the reference log was that case, at about 12k HP, and it is a fail.
 
 Anyone without Hysteria who is hit owns it. A player in Hysteria was carried there by the gaze. These packets do not show Hysteria, so the death stays this hit.
 
@@ -22,7 +22,7 @@ Anyone without Hysteria who is hit owns it. A player in Hysteria was carried the
 
 One player: `{player}` got hit by Bright Flare.
 
-Overlap: each player in the burst. A second body who is not in the death list is "Another player".
+Overlap: each player on that orb's packet, survivors included, named from the packet. Reference pull 34: Kite Noodle and Absolute Gigalad, who lived.
 
 ## Parameters
 

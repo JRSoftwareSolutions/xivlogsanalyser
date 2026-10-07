@@ -25,7 +25,7 @@ class ReferenceReportTest(unittest.TestCase):
         self.assertEqual(counts["unknown"], 0)
         self.assertEqual(counts["environment"], 0)
         walls = [item for item in judgments if item.mechanic_id == "deathwall"]
-        self.assertEqual(len(walls), 127)
+        self.assertEqual(len(walls), 110)
         self.assertTrue(all(item.outcome == "fail" for item in walls))
         raw = Counter(item.mechanic for item in judgments if item.outcome == "raw")
         self.assertEqual(raw["Eternal Conviction"], 45)
@@ -127,14 +127,17 @@ class ReferenceReportTest(unittest.TestCase):
                 sorted(owners(item)),
                 [("Kite Noodle", 50), ("Spring Nymphar", 50)],
             )
+        # Two orbs at once, one packet each: each player was hit by their own orb.
         orbs = [item for item in judgments if item.fact.fight == 39 and item.mechanic == "Bright Flare"]
         self.assertEqual({item.fact.name for item in orbs}, {"Kitana Kahn", "Speed Panda"})
         for item in orbs:
-            self.assertEqual(item.went_wrong, f"{item.fact.name} got clipped by a Bright Flare.")
-            self.assertEqual(
-                sorted(owners(item)),
-                [("Kitana Kahn", 50), ("Speed Panda", 50)],
-            )
+            self.assertEqual(item.went_wrong, f"{item.fact.name} got hit by a Bright Flare.")
+            self.assertEqual(owners(item), [(item.fact.name, 100)])
+        # One orb's packet hit Kite and Gigalad, who lived. He is named, not "Another player".
+        self.assertEqual(
+            owners(one(34, "Kite Noodle", "Bright Flare")),
+            [("Kite Noodle", 50), ("Absolute Gigalad", 50)],
+        )
         self.assertEqual(
             one(10, "Kitana Kahn", "Bright Flare").went_wrong,
             "Kitana Kahn got hit by a Bright Flare.",
@@ -143,10 +146,7 @@ class ReferenceReportTest(unittest.TestCase):
             one(11, "Kite Noodle", "Dragon's Gaze").went_wrong,
             "Kite Noodle looked at the gaze.",
         )
-        self.assertEqual(
-            sorted(owners(one(22, "Kitana Kahn", "Bright Flare"))),
-            [("Absolute Gigalad", 50), ("Kitana Kahn", 50)],
-        )
+        self.assertEqual(owners(one(22, "Kitana Kahn", "Bright Flare")), [("Kitana Kahn", 100)])
         self.assertEqual(one(22, "Absolute Gigalad", "Bright Flare").outcome, "fail")
         self.assertEqual(owners(one(10, "Kitana Kahn", "Bright Flare")), [("Kitana Kahn", 100)])
 
@@ -172,22 +172,36 @@ class ReferenceReportTest(unittest.TestCase):
         )
         self.assertEqual(one(16, "Kiara Blaiddyd", "Eternal Conviction").outcome, "raw")
         self.assertEqual(one(14, "Kiara Blaiddyd", "Eternal Conviction").outcome, "fail")
+        # Six players were dead before the towers, so each one left a tower empty.
         self.assertEqual(
             owners(one(14, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Missed soak", 50)],
+            [
+                ("Speed Panda", 16), ("Absolute Gigachad", 16), ("Spring Nymphar", 16),
+                ("Kite Noodle", 16), ("Kitana Kahn", 16), ("Loki Doki", 16),
+            ],
         )
         self.assertEqual(
             owners(one(15, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Missed soak", 50)],
+            [("Absolute Gigachad", 50), ("Kitana Kahn", 50)],
         )
-        self.assertEqual(one(41, "Absolute Gigachad", "Holy Impact").outcome, "fail")
+        # Everyone was alive, and the one the towers missed owns it.
         self.assertEqual(
-            owners(one(41, "Absolute Gigachad", "Holy Impact")),
-            [("Prey markers", 50)],
+            owners(one(57, "Kiara Blaiddyd", "Eternal Conviction")),
+            [("Kitana Kahn", 100)],
         )
+        # The comets that exploded were both Gigachad's, though six players were already dead.
+        self.assertEqual(one(41, "Absolute Gigachad", "Holy Impact").outcome, "fail")
+        self.assertEqual(owners(one(41, "Absolute Gigachad", "Holy Impact")), [("Absolute Gigachad", 100)])
+        # Kiara's first two comets landed 4.5 yalms apart.
+        self.assertEqual(owners(one(67, "Absolute Gigachad", "Holy Impact")), [("Kiara Blaiddyd", 100)])
+        self.assertEqual(
+            one(67, "Absolute Gigachad", "Holy Impact").went_wrong,
+            "Kiara Blaiddyd dropped two comets too close.",
+        )
+        # Loki Doki was already dead to a short Dragon's Rage, so his share passes on.
         self.assertEqual(
             owners(one(12, "Absolute Gigalad", "Holy Bladedance")),
-            [("Loki Doki", 33), ("Spring Nymphar", 33), ("Earlier damage", 33)],
+            [("Missing bodies", 33), ("Spring Nymphar", 33), ("Earlier damage", 33)],
         )
 
         for item in judgments:

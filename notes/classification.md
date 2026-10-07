@@ -10,7 +10,7 @@ A death is a **failed mechanic** when it is a cone, ring, gaze, empty tower, ice
 
 **Low** means the hit was normal-sized and they were already under 15,000 HP. Those 4 are not in the 86. An empty Sanctity tower or a comet overlap is a fail even when they were already that low.
 
-**Deathwall** means the deaths table has no damage packet. The player walked into the deathwall, and that is always a mistake. The page reports 127. The only timestamp in those rows is the last hit they lived, often several seconds earlier. The death is timed by the row's clock instead. That clock reads 1–2 seconds after the killing hit on rows that have one, so a deathwall death is moved back 1.5 seconds. Weakness (`1000043`) is the raise debuff. It does not increase damage taken.
+**Deathwall** means the deaths table has no damage packet. The player walked into the deathwall, and that is always a mistake. The page reports 110. A damage-over-time kill, such as Frostbite `1002946` or Burns `1002945`, links its status (`#status/2946`) instead of an action. That is a real killing blow, not the deathwall. Reading only action links had 17 of those as deathwall. The only timestamp in those rows is the last hit they lived, often several seconds earlier. The death is timed by the row's clock instead. That clock reads 1–2 seconds after the killing hit on rows that have one, so a deathwall death is moved back 1.5 seconds. Weakness (`1000043`) is the raise debuff. It does not increase damage taken.
 
 **First mistake** is the earliest death, Damage Down, or Hysteria in the pull, plus anything within the next second. It matters most. Later deaths often cascade from it. A deathwall walk before it, or as part of it, is that player's own mistake at 100. With their own Hysteria from the gaze still on, it is still theirs: they looked. A deathwall walk after it is still a mistake, shared 50 with "Earlier mistake". Pull 28 is Loki Doki walking into the wall at 0:59, before anyone died. Pull 23 is two cone deaths at 14.9 seconds, then the rest of the party in the wall over the next six seconds.
 
@@ -40,8 +40,8 @@ Gigalad's 118,362 is the largest hit amount seen and is treated as full HP. A we
 | Kind | Deaths |
 |---|---|
 | Raw | 86 |
-| Failed mechanic | 241 |
-| Deathwall, also a fail | 127 |
+| Failed mechanic | 258 |
+| Deathwall, also a fail | 110 |
 | Already under 15k | 4 |
 
 Raw by killing blow: Eternal Conviction 45, all of them the Strength raidwide around 63 seconds. Sacred Sever 36. Dragon's Rage 5. Holy Impact is no longer raw. Sanctity Eternal Conviction, around 137 seconds, is the empty tower.
@@ -73,6 +73,7 @@ Unmitigated amounts. A hit at or under the cap for that role is raw. Far above i
 | 25541 | Ascalon's Might | One tank. The opener is about 71–86k, on the main tank. After Heavenly Heel the main tank's three hits are about 59–86k. Both takes are properly mitigated. On the later three-hit the warrior uses Vengeance, Bloodwhetting, and Stem the Flow. | | A second body, a non-tank, the off tank who already took the heel, or a tank who dies on the real hit without personal mitigation. Pull 14 Gigachad ate the 153k cleave after taking the heel. |
 | 25564 | Dimensional Collapse | No lived sample in the fetched events. | | The floor puddles in the second wave. A hit applies Heavy and Damage Down. One death, pull 29. |
 | 1002946 | Frostbite | | | Failed ice soak. |
+| 1002945 | Burns | | | The fire's damage over time. Standing in the fire. |
 
 Role caps used when the packet had an unmitigated amount:
 
@@ -87,7 +88,7 @@ Role caps used when the packet had an unmitigated amount:
 - Lightning Storm `25549`: tank 40,000, healer 55,000, DPS 60,000
 - Bright Flare `25295`: any hit
 
-Dodge ids, always a fail: `25545`, `25560`, `25559`, `25554`, `25553`, `25570`, `28591`, `1002946`, `25564`, `25297`, `25578`, `25295`. Sanctity Eternal Conviction `25568` after 100 seconds is a fail as well. The Strength hit of that same guid is not.
+Dodge ids, always a fail: `25545`, `25560`, `25559`, `25554`, `25553`, `25570`, `28591`, `1002946`, `1002945`, `25564`, `25297`, `25578`, `25295`. Sanctity Eternal Conviction `25568` after 100 seconds is a fail as well. The Strength hit of that same guid is not.
 
 ## Reading a packet
 
@@ -113,7 +114,7 @@ Each blame names an owner and a percent. 100 is one person. When several people 
 
 A personal miss stays at 100 even when someone else died to a different miss on the same cast: a gaze, a ring, a cone, a puddle, a cleave, vulnerability, a non-tank tankbuster, or a tank's own missing personal mitigation.
 
-A Lightning Storm clip or a Bright Flare overlap splits across the players in that overlap, 50 each. Skyward Leap under full HP splits across the two healers, 50 each. Full HP with the mit missing is "Assigned mitigation" at 50. An empty tower is "Missed soak" at 50. A clip is "Out of position" at 33. A death from another player's Skyward Leap, by its vulnerability or the leap itself, belongs to whoever was out of position: the marker holder off their spot, or the player who stood in a leap on its spot, at 100. Both off splits it, 50 each. With no positions, the holder owns it. The marker holder is the first target in that leap's packet. A second leap whose holder was already dead is "Earlier deaths" at 100. A short stack is "Missing bodies" at 100 divided by the missing count. A raw full share blames the healers at 50, and "Party mitigation" joins them at 33 when the packet shows no party mit. A low hit blames the healers and "Earlier damage" at 33.
+A Lightning Storm clip or a Bright Flare overlap splits across the players in that overlap, 50 each. Skyward Leap under full HP splits across the two healers, 50 each. Full HP with the mit missing is "Assigned mitigation" at 50. An empty tower is "Missed soak" at 50, unless someone was missing from it. A player already dead, or alive and not hit by the tower soak (Conviction `29564` or `28651`), owns it, split evenly. A player who died to an earlier empty tower passes it on to whoever left that one empty. Two players on one tower's soak instance shared a tower and own it too. Holy Impact is not a missing body: it lands before the outer towers. It belongs to whoever dropped the two comets that landed under about 5 yalms apart, read from the Holy Comet positions. Pull 53 of `8DYNHQx4C7ytdLb9` was first read as the dead paladin's empty tower. The comets show Kite Noodle's last comet on Speed Panda's first, so they own it at 50 each. A Bright Flare overlap is the players on one orb's packet. Two orbs at the same moment are two personal hits. A healer already dead passes their share on to whoever owned that healer's death. A clip is "Out of position" at 33. A death from another player's Skyward Leap, by its vulnerability or the leap itself, belongs to whoever was out of position: the marker holder off their spot, or the player who stood in a leap on its spot, at 100. Both off splits it, 50 each. With no positions, the holder owns it. The marker holder is the first target in that leap's packet. A second leap whose holder was already dead is "Earlier deaths" at 100. A short stack is "Missing bodies" at 100 divided by the missing count. A raw full share blames the healers at 50, and "Party mitigation" joins them at 33 when the packet shows no party mit. A low hit blames the healers and "Earlier damage" at 33.
 
 ## Still open
 
@@ -121,7 +122,7 @@ A Lightning Storm clip or a Bright Flare overlap splits across the players in th
 - Dragon's Rage: the person does not know whether the tanks belong in the stack. Lived hits are usually the three unmarked non-tanks plus both tanks, so a share of 5 stays full and a share of 3 stays short.
 - Skyward Leap at 59–70k is the blue marker. A death on it is a healer mistake or a missing mitigation. The 600–760k hits are not towers. Each is a second leap on a player in the same instant as the markers. The positions say who was off their spot.
 - Party mit and shields are missing on many damage packets, so a vuln that never landed on the packet would be missed.
-- Strength Eternal Conviction, around 63 seconds, still has no lived healer or DPS sample. The 90–108k band is the death cluster of that raidwide, matched against the tank hit (~64k). That window stays raw. Sanctity Eternal Conviction is the empty tower and is a fail. Holy Impact is the comet overlap and is a fail. The prey players own Holy Impact. Missed soak owns the empty tower.
+- Strength Eternal Conviction, around 63 seconds, still has no lived healer or DPS sample. The 90–108k band is the death cluster of that raidwide, matched against the tank hit (~64k). That window stays raw. Sanctity Eternal Conviction is the empty tower and is a fail. Holy Impact is the comet overlap and is a fail. Whoever dropped the two comets owns Holy Impact. Missed soak owns the empty tower only when the log names nobody.
 - Conviction `29564` (about 135s) and `28651` (about 148s) are the soaked towers, about 3k on a tank and 5k on everyone else. Holy Comet `25577` is the light meteor drop, about 1–2k. Faith Unmoving `25308` is the knockback, about 3–5k. None of those guids killed anyone in the reference log.
 - The next reviews (other phases, other reports) should reuse these bands only for Thordan. Other phases need their own lived samples.
 
