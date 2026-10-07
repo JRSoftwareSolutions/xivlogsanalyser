@@ -20,9 +20,13 @@ class ReferenceReportTest(unittest.TestCase):
         judgments = judge_report(facts, pack)
         counts = Counter(item.outcome for item in judgments)
         self.assertEqual(counts["raw"], 86)
-        self.assertEqual(counts["fail"], 241)
+        self.assertEqual(counts["fail"], 368)
         self.assertEqual(counts["low"], 4)
         self.assertEqual(counts["unknown"], 0)
+        self.assertEqual(counts["environment"], 0)
+        walls = [item for item in judgments if item.mechanic_id == "deathwall"]
+        self.assertEqual(len(walls), 127)
+        self.assertTrue(all(item.outcome == "fail" for item in walls))
         raw = Counter(item.mechanic for item in judgments if item.outcome == "raw")
         self.assertEqual(raw["Eternal Conviction"], 45)
         self.assertEqual(raw["Sacred Sever"], 36)
@@ -203,6 +207,61 @@ class ReferenceReportTest(unittest.TestCase):
                 self.assertEqual(item.blames[0].confidence, 100 // len(item.blames))
             elif item.blames[0].who == item.fact.name:
                 self.assertEqual(item.blames[0].confidence, 100)
+
+
+    def test_deathwall_and_first_mistake(self):
+        pack = pack_for_zone(968, load_catalog(ROOT))
+        meta = json.loads((REPORT / "fights.json").read_text(encoding="utf-8"))
+        judgments = judge_report(extract_report(REPORT, pack), pack, roster_from_meta(meta, pack))
+
+        def owners(item):
+            return [(blame.who, blame.confidence) for blame in item.blames]
+
+        # Pull 28: Loki Doki walks into the wall before anyone dies. That is the first mistake.
+        pull_28 = sorted(
+            (item for item in judgments if item.fact.fight == 28),
+            key=lambda item: item.fact.t,
+        )
+        loki = pull_28[0]
+        self.assertEqual((loki.fact.name, loki.mechanic), ("Loki Doki", "Deathwall"))
+        self.assertEqual(loki.outcome, "fail")
+        self.assertTrue(loki.first)
+        self.assertEqual(loki.went_wrong, "Loki Doki walked into the deathwall.")
+        self.assertEqual(owners(loki), [("Loki Doki", 100)])
+        self.assertFalse(any(item.first for item in pull_28[1:]))
+        self.assertTrue(all(item.first_mistake == loki.first_mistake for item in pull_28))
+        self.assertTrue(loki.first_mistake.startswith("Loki Doki walking into the deathwall at "))
+
+        # Pull 23: two cone deaths first, then the party walks into the wall.
+        pull_23 = [item for item in judgments if item.fact.fight == 23]
+        cones = [item for item in pull_23 if item.mechanic == "Ascalon's Mercy Concealed"]
+        self.assertEqual(len(cones), 2)
+        self.assertTrue(all(item.first for item in cones))
+        walls = [item for item in pull_23 if item.mechanic_id == "deathwall"]
+        self.assertTrue(walls)
+        for item in walls:
+            self.assertFalse(item.first)
+            self.assertEqual(item.outcome, "fail")
+            self.assertEqual(
+                item.went_wrong, f"{item.fact.name} walked into the deathwall after the first mistake.",
+            )
+            self.assertEqual(owners(item), [(item.fact.name, 50), ("Earlier mistake", 50)])
+            self.assertGreater(item.fact.t, cones[0].fact.t)
+
+        # A deathwall death is timed by the clock, not by the last hit they lived.
+        pull_25 = [item for item in judgments if item.fact.fight == 25 and item.mechanic_id == "deathwall"]
+        self.assertTrue(pull_25)
+        self.assertTrue(all(item.fact.t > 50 for item in pull_25))
+
+        # Pull 10: the walls came with their own Hysteria from the gaze.
+        hysteria = [
+            item for item in judgments
+            if item.fact.fight == 10 and item.mechanic_id == "deathwall"
+        ]
+        self.assertTrue(hysteria)
+        for item in hysteria:
+            self.assertIn("Hysteria", item.went_wrong)
+            self.assertEqual(owners(item), [(item.fact.name, 100)])
 
 
 if __name__ == "__main__":

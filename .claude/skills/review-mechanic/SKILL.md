@@ -19,7 +19,7 @@ Read the mechanic skill for the killing blow before you assign fault. Setting or
 
 The killing blow is the first ability in the deaths-table row before `last-three-events`. The last tooltip event is often reverse-chronological and is the wrong blow.
 
-No ability on that row means there is no damage packet.
+No ability on that row means there is no damage packet. That is the deathwall. The only timestamp on that row is the last hit they lived, so the death is timed by the row's clock instead, moved back 1.5 seconds to match the hit timestamps.
 
 ## Packet
 
@@ -33,7 +33,7 @@ Role comes from the job. Tanks: Paladin, Warrior, Gunbreaker, Dark Knight. Heale
 
 Apply these in order:
 
-1. No damage packet → **environment**. No mechanic fault. Usually the body after a raise, or a wipe tick. Weakness `1000043` is the raise debuff and does not increase damage taken.
+1. No damage packet → **fail**, Deathwall. They walked into the deathwall, and that is always a mistake. Before any other death, Damage Down, or Hysteria in the pull, it is their own mistake. With their own Hysteria still on, they looked at the gaze and it walked them in. Weakness `1000043` is the raise debuff and does not increase damage taken.
 2. Guid is not in `mechanics.json` for this phase → **unknown**. No fault. Ask what the hit should mean.
 3. Magic Vulnerability Up `1002941`, Physical Vulnerability Up `1002940`, or Damage Down on the packet → **fail**. The amp is a failed mechanic. `buffs` is often empty on the damage packet even when a calculated-damage sibling had the aura. Check that sibling before calling a borderline hit raw.
 4. `any_hit_is_fail` → **fail**. Use the mechanic skill for whose fault. A Bright Flare overlap still splits across the players in the burst. Holy Impact is the two prey players.
@@ -47,7 +47,7 @@ Apply these in order:
 One block per death. The sentence is what went wrong. Do not say what the mechanic should have been.
 
 ```
-**Pull {id} · {player} · {mechanic}** — {raw|fail|low|environment|unknown}
+**Pull {id} · {player} · {mechanic}** — {raw|fail|low|unknown}
 {one short sentence}
 Fault: {who} {confidence}%
 ```
@@ -59,7 +59,11 @@ Name the player and the mistake. Leave out the damage, the shield, and who owns 
 - Kiara Blaiddyd wasn't full for Skyward Leap.
 - The stack was 2 of 4.
 
-For a whole pull, add one line: how many raw, fail, low, and no-packet deaths.
+For a whole pull, add one line: how many raw, fail, and low deaths, and the first mistake.
+
+## First mistake
+
+The first mistake of a pull matters most. It is the earliest death, Damage Down, or Hysteria in the pull, with anything else in the same second. Later deaths are often that mistake cascading: fewer bodies for a stack, a raise that leaves someone low, a group that gives up and walks into the wall. Name the first mistake before the rest. `first` and `first_mistake` on each judgment carry it.
 
 ## Blame confidence
 
@@ -79,8 +83,10 @@ These are the shared calls:
 - Short stack: "Missing bodies" at 100 divided by the number missing. One missing body is 100. Three missing bodies is 33.
 - Raw hit on a full share: the healers, 50 each. "Party mitigation" takes a third share, 33, when the packet has no party mit or the mit is unknown.
 - Already under 15,000 HP: the healers and "Earlier damage", 33 each.
+- Deathwall before anything else went wrong: that player at 100. With their own Hysteria from the gaze, still that player at 100.
+- Deathwall after the first mistake: that player and "Earlier mistake", 50 each. It is still a mistake, but the first one usually caused it.
 
-No damage packet, and an ability that is not understood yet, have no blame.
+An ability that is not understood yet has no blame.
 
 ## When a call is wrong
 

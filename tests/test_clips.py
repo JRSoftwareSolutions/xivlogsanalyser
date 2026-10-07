@@ -107,7 +107,7 @@ class MarkerClipTest(unittest.TestCase):
         others = [
             item for item in judgments
             if item.fact.fight == 28 and item.fact.name != "Kitana Kahn" and item.fact.t < 61
-            and item.outcome == "fail"
+            and item.outcome == "fail" and item.mechanic_id != "deathwall"
         ]
         self.assertTrue(others)
         for item in others:

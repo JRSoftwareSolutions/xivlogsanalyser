@@ -94,6 +94,8 @@ def format_death(row: dict) -> str:
     blame = _blame_line(row)
     if blame:
         lines.append(blame)
+    if row.get("first"):
+        lines.append("First mistake of the pull.")
     return "\n".join(lines)
 
 
@@ -105,13 +107,16 @@ def _count_line(counts: Counter) -> str:
     return ", ".join(bits) if bits else "0 deaths"
 
 
-def _pull_line(pull: int, counts: Counter) -> str:
+def _pull_line(pull: int, counts: Counter, first: str = "") -> str:
     bits = []
     for key in _OUTCOME_ORDER:
         n = counts.get(key) or 0
         if n:
             bits.append(f"{_OUTCOME_SHORT[key]}{n}")
-    return f"{pull} {' '.join(bits)}"
+    line = f"{pull} {' '.join(bits)}"
+    if first:
+        line += f" · first: {first}"
+    return line
 
 
 def _tally(rows: list[dict], key: str) -> list[tuple[str, int]]:
@@ -188,14 +193,17 @@ def format_brief(
                 lines.append(f"  … {extra} more")
 
     by_pull: dict[int, Counter] = {}
+    firsts: dict[int, str] = {}
     for row in filtered if scoped else judgments:
         fight = int(row.get("fight") or 0)
         by_pull.setdefault(fight, Counter())[row.get("outcome") or "?"] += 1
+        if row.get("first_mistake"):
+            firsts.setdefault(fight, str(row["first_mistake"]))
     if by_pull:
         lines.append("")
         lines.append(f"Pulls ({len(by_pull)})")
         for fight in sorted(by_pull):
-            lines.append(_pull_line(fight, by_pull[fight]))
+            lines.append(_pull_line(fight, by_pull[fight], firsts.get(fight, "")))
 
     if detail == "none":
         return "\n".join(lines).rstrip() + "\n"

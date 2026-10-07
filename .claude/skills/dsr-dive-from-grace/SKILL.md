@@ -45,7 +45,7 @@ Apply these to the killing blow.
 
 - Dark High Jump `26382` or Dark Elusive Jump `26384`, over 150,000: someone stood in the landing. Each player in that burst owns it. Pull 27, both healers, is the down arrow. Pull 46, four players, is the circle.
 - Those guids at about 9–23k: the landing connected. A death there is raw, or low if they were already under 15,000 HP. This log has no such death. The circle has lived hits in that band. The down arrow has no small hit stored.
-- A death with no killing blow, at the same moment, last hit the dive: the knock into the wall. The row has no packet, so it stays environment. Pull 33 is that case.
+- A death with no killing blow, at the same moment, last hit the dive: the knock into the wall. The row has no packet, so it is a Deathwall fail. Pull 33 is that case.
 - Eye of the Tyrant `26388` at or under the role cap: the stack of five. Tanks about 37–48k. Everyone else about 50–70k. Dying there from a healthy bar is the healers. Pull 26, three players from full HP at about 71k with no shield.
 - Eye of the Tyrant over 100,000: the stack was short. Pull 16 is 116k on Gigalad and 182k on Kitana Kahn. The log has no stack count, so the missing bodies stay unnamed.
 - Gnashing Wheel `26389` or Lashing Wheel `26390`: any hit is a fail, including under 15,000 HP. About 12–23k and Damage Down. Gnash is inside the hitbox, so out is safe. Lash is outside, so in is safe. Gnash and Lash means out, then in. Lash and Gnash means in, then out.
