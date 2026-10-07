@@ -78,17 +78,19 @@ These are the shared calls:
 - Lightning Storm clip, and a Bright Flare overlap: each player in the overlap. A second body who lived is "Another player".
 - Skyward Leap under full HP: the healers, named, split evenly.
 - Skyward Leap at full HP: "Assigned mitigation" at 50. The plan is more than one player, and the log does not name them.
-- Empty tower: whoever was missing from it. A player already dead, alive and not hit by the tower soak, or one of two players who shared a tower, owns it, split evenly. A player who died to an earlier empty tower passes it on. "Missed soak" at 50 only when the log shows none of these. Sanctity Eternal Conviction after 100 seconds is this call.
+- Empty tower: whoever was missing from it. A player already dead, alive and not hit by the tower soak, or one of two players who shared a tower, owns it, split evenly. A player who was missing because they were dead passes it on to whoever owned that death: their own mistake stays theirs, a raw death goes to the healers, a clip to the clipper, an earlier empty tower to whoever left that one empty. "Missed soak" at 50 only when the log shows none of these. Sanctity Eternal Conviction after 100 seconds is this call.
 - Holy Impact: whoever dropped the two comets that landed too close. One player's two comets is that player. One player's comet on the other's is both at 50. A dead prey player passes it on (`dsr-holy-impact`).
 - Someone else's Skyward Leap, by its vulnerability or by the leap itself: whoever was out of position, named. A holder off their spot owns it at 100. A player who stood in a holder's leap on its spot owns it at 100. Both off is 50 each. With no positions, the holder owns it. The death sits under Skyward Leap on the pull card, and only the owners fail it.
 - A second Skyward Leap with nobody else's leap on the player: "Earlier deaths" at 100. That leap's holder was already dead.
 - Dive from Grace landing: an arrow holder on the wrong side, named, at 100 on every death in that landing. Only that holder fails it on the pull card. With no arrow out of place, "Miscommunication" at the landing's share.
-- Short stack: "Missing bodies" at 100 divided by the number missing. One missing body is 100. Three missing bodies is 33.
+- Short stack: the players of that stack's group who were dead, passed on, or alive and not in it. Sacred Sever's group is whoever took the jump two before. Eye of the Tyrant's is the 2s and 3s. When the log names nobody, "Missing bodies" at 100 divided by the number missing.
+- Sacred Sever with the last jump's vulnerability, on a player who is not in this jump's group: the jump landed on the wrong group because that group's players were dead. Those dead players own it, passed on. The living ones of that group do not.
+- A raw or low death right after the player lived their own gaze, dodge, puddle, or orb hit, when that hit was at least what they were short: that player at 100. The outcome stays raw or low.
 - Raw hit on a full share: the healers, 50 each. "Party mitigation" takes a third share, 33, when the packet has no party mit or the mit is unknown.
 - Already under 15,000 HP: the healers and "Earlier damage", 33 each.
 - A healer already dead and not raised cannot heal. Their share passes on to whoever owned that healer's death.
 - Deathwall before anything else went wrong: that player at 100. With their own Hysteria from the gaze, still that player at 100.
-- Deathwall after the first mistake: that player and "Earlier mistake", 50 each. It is still a mistake, but the first one usually caused it.
+- Deathwall after the first mistake: that player and "Earlier mistake", 50 each. It is still a mistake, but the first one usually caused it. When every earlier death and debuff in the pull was the walker's own, it is theirs at 100.
 
 An ability that is not understood yet has no blame.
 

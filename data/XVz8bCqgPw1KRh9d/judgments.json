@@ -76,6 +76,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -169,6 +171,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -269,8 +273,14 @@
         "until": 113.6
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -285,17 +295,28 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,781,730 at 37% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Loki Doki still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "Spring Nymphar and Kite Noodle were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 100
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -385,8 +406,14 @@
         "until": 113.6
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -400,17 +427,28 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,686,910 at 44% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Speed Panda still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "Spring Nymphar and Kite Noodle were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Speed Panda",
-        "confidence": 100
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -500,8 +538,14 @@
         "until": 113.6
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -518,17 +562,28 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 2,597,586 at 78% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Absolute Gigalad still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "Spring Nymphar and Kite Noodle were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Absolute Gigalad",
-        "confidence": 100
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -618,8 +673,14 @@
         "until": 113.6
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -635,17 +696,28 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,393,111 at 44% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kiara Blaiddyd still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "Spring Nymphar and Kite Noodle were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Kiara Blaiddyd",
-        "confidence": 100
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -737,6 +809,15 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 2.3,
+        "amount": 42718
+      }
+    ],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -823,7 +904,12 @@
         "until": 113.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -840,17 +926,28 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 102,145 at full HP. Shared by 1 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "The stack was 1 of 4.",
+    "went_wrong": "The stack was 1 of 4 because 4 players were already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 33
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -921,6 +1018,8 @@
       "Kite Noodle"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-gaze",
     "mechanic": "Dragon's Gaze",
     "outcome": "fail",
@@ -1008,25 +1107,32 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 1.3,
+        "amount": 40197
+      }
+    ],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
-    "happened": "Took 35,368 at 41% HP (25,358 of 61,737). Full HP would have lived. No shield. No party mitigation.",
+    "happened": "Took 35,368 at 41% HP (25,358 of 61,737). Dragon's Glory had taken 40,197 1.3s before.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kitana Kahn died to the real hit.",
-    "cause": "resolve",
+    "went_wrong": "Kitana Kahn was still low from Dragon's Glory.",
+    "cause": "self",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1104,25 +1210,32 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 1.1,
+        "amount": 42474
+      }
+    ],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
-    "happened": "Took 32,799 at 39% HP (26,467 of 68,259). Full HP would have lived. No shield. No party mitigation.",
+    "happened": "Took 32,799 at 39% HP (26,467 of 68,259). Dragon's Glory had taken 42,474 1.1s before.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Speed Panda died to the real hit.",
-    "cause": "resolve",
+    "went_wrong": "Speed Panda was still low from Dragon's Glory.",
+    "cause": "self",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "who": "Speed Panda",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1198,8 +1311,13 @@
         "until": 114.5
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -1213,16 +1331,22 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 5,558,927 at 49% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Spring Nymphar still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "Kite Noodle was dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Spring Nymphar",
+        "who": "Kite Noodle",
         "confidence": 100
       }
     ],
@@ -1299,8 +1423,13 @@
         "until": 114.5
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -1315,16 +1444,22 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 2,947,560 at 90% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Absolute Gigachad still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "Kite Noodle was dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Absolute Gigachad",
+        "who": "Kite Noodle",
         "confidence": 100
       }
     ],
@@ -1401,8 +1536,13 @@
         "until": 114.5
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -1418,16 +1558,22 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 5,859,399 at 64% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kiara Blaiddyd still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "Kite Noodle was dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Kiara Blaiddyd",
+        "who": "Kite Noodle",
         "confidence": 100
       }
     ],
@@ -1490,7 +1636,13 @@
         "until": 114.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -1507,17 +1659,33 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Speed Panda"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 87,600 at 37% HP. Shared by 2 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "The stack was 2 of 4.",
+    "went_wrong": "The stack was 2 of 4 because 5 players were already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 33
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 33
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -1604,6 +1772,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1614,31 +1784,15 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 14
-      },
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 14
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 14
+        "confidence": 33
       },
       {
         "who": "Kite Noodle",
-        "confidence": 14
+        "confidence": 33
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 14
-      },
-      {
-        "who": "Kiara Blaiddyd",
-        "confidence": 14
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 14
+        "confidence": 33
       }
     ],
     "first": false,
@@ -1678,6 +1832,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -1728,6 +1884,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -1778,6 +1936,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -1830,6 +1990,8 @@
     "dead": [
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -1903,6 +2065,8 @@
       "Spring Nymphar",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -1957,6 +2121,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2044,6 +2210,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "low",
@@ -2138,6 +2306,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "low",
@@ -2202,6 +2372,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2262,6 +2434,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2316,6 +2490,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -2374,6 +2550,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -2434,6 +2612,8 @@
     "dead": [
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -2495,6 +2675,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2573,6 +2755,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2639,6 +2823,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2728,6 +2914,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2806,6 +2994,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2892,6 +3082,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -2975,6 +3167,8 @@
       "Absolute Gigachad"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
     "outcome": "fail",
@@ -3042,7 +3236,9 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -3052,16 +3248,23 @@
       "Spring Nymphar"
     ],
     "dead": [],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 55,664 at 66% HP. Shared by 3 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "The stack was 3 of 4.",
+    "went_wrong": "The stack was 3 of 4 because Kitana Kahn was not in it.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Kitana Kahn",
         "confidence": 100
       }
     ],
@@ -3119,7 +3322,9 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -3131,16 +3336,23 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 58,737 at 73% HP. Shared by 3 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "The stack was 3 of 4.",
+    "went_wrong": "The stack was 3 of 4 because Kitana Kahn was not in it.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Kitana Kahn",
         "confidence": 100
       }
     ],
@@ -3186,6 +3398,8 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -3243,6 +3457,8 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -3299,6 +3515,8 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -3358,6 +3576,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -3433,6 +3653,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3443,27 +3665,19 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 16
+        "confidence": 25
       },
       {
         "who": "Absolute Gigachad",
-        "confidence": 16
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 16
-      },
-      {
-        "who": "Kite Noodle",
-        "confidence": 16
+        "confidence": 25
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 16
+        "confidence": 25
       },
       {
         "who": "Loki Doki",
-        "confidence": 16
+        "confidence": 25
       }
     ],
     "first": false,
@@ -3528,6 +3742,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3538,27 +3754,19 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 16
+        "confidence": 25
       },
       {
         "who": "Absolute Gigachad",
-        "confidence": 16
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 16
-      },
-      {
-        "who": "Kite Noodle",
-        "confidence": 16
+        "confidence": 25
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 16
+        "confidence": 25
       },
       {
         "who": "Loki Doki",
-        "confidence": 16
+        "confidence": 25
       }
     ],
     "first": false,
@@ -3625,6 +3833,8 @@
       "Absolute Gigachad"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavens-stake",
     "mechanic": "Heavens' Stake",
     "outcome": "fail",
@@ -3704,6 +3914,8 @@
     "dead": [
       "Absolute Gigachad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -3757,6 +3969,8 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -3842,6 +4056,15 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Frostbite",
+        "guid": 1002946,
+        "ago": 1.2,
+        "amount": 48932
+      }
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3917,6 +4140,8 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -4008,6 +4233,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -4099,6 +4326,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -4192,6 +4421,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -4291,6 +4522,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -4373,6 +4606,8 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4471,6 +4706,8 @@
       "Spring Nymphar",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4559,6 +4796,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4660,6 +4899,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4750,6 +4991,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4841,6 +5084,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4911,6 +5156,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4970,6 +5217,13 @@
       "Speed Panda"
     ],
     "dead": [],
+    "group": [
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -5058,6 +5312,13 @@
     "dead": [
       "Kitana Kahn"
     ],
+    "group": [
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -5124,6 +5385,13 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -5191,6 +5459,13 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -5259,6 +5534,13 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -5328,6 +5610,13 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -5393,6 +5682,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -5455,6 +5746,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -5509,6 +5802,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -5586,6 +5881,8 @@
       "Kiara Blaiddyd"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -5679,6 +5976,8 @@
     "dead": [
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -5773,6 +6072,8 @@
       "Speed Panda",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -5868,6 +6169,8 @@
       "Spring Nymphar",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -5950,6 +6253,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -6037,6 +6342,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -6140,6 +6447,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -6228,6 +6537,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -6307,6 +6618,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavenly-heel",
     "mechanic": "Heavenly Heel",
     "outcome": "fail",
@@ -6369,6 +6682,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -6461,6 +6776,8 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -6543,6 +6860,8 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -6650,6 +6969,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -6774,6 +7095,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -6875,6 +7198,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -6980,6 +7305,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -7083,6 +7410,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -7167,6 +7496,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7228,6 +7559,13 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -7291,6 +7629,13 @@
       "Kiara Blaiddyd"
     ],
     "dead": [],
+    "group": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -7369,6 +7714,13 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -7437,6 +7789,13 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -7504,6 +7863,13 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -7573,6 +7939,13 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -7638,6 +8011,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7700,6 +8075,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7777,6 +8154,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -7829,6 +8208,8 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7886,6 +8267,8 @@
       "Speed Panda",
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7988,6 +8371,8 @@
       "Speed Panda",
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -8073,6 +8458,8 @@
       "Spring Nymphar",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -8195,6 +8582,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -8276,6 +8665,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -8370,6 +8761,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -8448,6 +8841,15 @@
       "Absolute Gigalad"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Bright Flare",
+        "guid": 25295,
+        "ago": 0.4,
+        "amount": 64001
+      }
+    ],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -8534,6 +8936,8 @@
       "Kitana Kahn"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -8598,6 +9002,8 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -8673,6 +9079,8 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -8751,6 +9159,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -8824,6 +9234,15 @@
       "Absolute Gigalad",
       "Kitana Kahn",
       "Loki Doki"
+    ],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Frostbite",
+        "guid": 1002946,
+        "ago": 2.1,
+        "amount": 51181
+      }
     ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -8916,6 +9335,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9007,6 +9428,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9073,6 +9496,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -9123,6 +9548,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -9176,6 +9603,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9233,6 +9662,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9292,6 +9723,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9351,6 +9784,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9412,6 +9847,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9473,6 +9910,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9595,6 +10034,8 @@
       "Kite Noodle"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -9719,6 +10160,8 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -9821,6 +10264,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -9947,6 +10392,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -10063,6 +10510,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -10154,6 +10603,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -10241,6 +10692,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -10325,6 +10778,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -10387,6 +10842,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -10447,6 +10904,8 @@
     "dead": [
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -10546,6 +11005,8 @@
       "Absolute Gigachad",
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -10612,6 +11073,8 @@
       "Spring Nymphar",
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -10702,6 +11165,8 @@
       "Absolute Gigalad",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -10788,6 +11253,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -10857,6 +11324,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -10955,6 +11424,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -11041,6 +11512,13 @@
       "Spring Nymphar"
     ],
     "dead": [],
+    "group": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -11137,6 +11615,13 @@
     "dead": [
       "Kitana Kahn"
     ],
+    "group": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -11209,6 +11694,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -11274,6 +11761,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -11361,6 +11850,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11371,19 +11862,15 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 25
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 25
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "confidence": 33
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 33
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -11460,6 +11947,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11470,19 +11959,15 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 25
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 25
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "confidence": 33
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 33
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -11561,6 +12046,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11571,19 +12058,15 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 25
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 25
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "confidence": 33
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 33
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -11662,6 +12145,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11672,19 +12157,15 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 25
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 25
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "confidence": 33
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 33
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -11756,7 +12237,12 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -11767,6 +12253,13 @@
       "Absolute Gigalad"
     ],
     "dead": [],
+    "group": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
@@ -11849,7 +12342,12 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -11861,6 +12359,20 @@
     ],
     "dead": [
       "Kitana Kahn"
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 0.0,
+        "amount": 41165
+      }
     ],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -11944,7 +12456,12 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -11959,6 +12476,13 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
@@ -12041,7 +12565,12 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -12055,6 +12584,13 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
@@ -12127,7 +12663,12 @@
         "until": 113.1
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12144,17 +12685,36 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 2,224,464 at full HP. Had Physical Vulnerability Up (232% amp). A one-shot.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Absolute Gigachad still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Absolute Gigachad",
-        "confidence": 100
+        "who": "Kitana Kahn",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 25
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -12216,7 +12776,12 @@
         "until": 113.1
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12234,17 +12799,36 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 5,012,914 at full HP. Had Physical Vulnerability Up (232% amp). A one-shot.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Loki Doki still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 100
+        "who": "Kitana Kahn",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 25
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -12306,7 +12890,12 @@
         "until": 113.1
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12325,17 +12914,36 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,338,031 at 95% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Speed Panda still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Speed Panda",
-        "confidence": 100
+        "who": "Kitana Kahn",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 25
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -12397,7 +13005,12 @@
         "until": 113.1
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12417,17 +13030,36 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,792,474 at 89% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kiara Blaiddyd still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Kiara Blaiddyd",
-        "confidence": 100
+        "who": "Kitana Kahn",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 25
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -12467,6 +13099,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -12561,6 +13195,8 @@
     "dead": [
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -12650,6 +13286,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -12773,6 +13411,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -12896,6 +13536,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -12998,6 +13640,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -13089,6 +13733,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13179,6 +13825,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -13233,6 +13881,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -13330,6 +13980,8 @@
     "dead": [
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13386,6 +14038,8 @@
     "dead": [
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13478,6 +14132,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dimensional-collapse",
     "mechanic": "Dimensional Collapse",
     "outcome": "fail",
@@ -13578,6 +14234,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -13704,6 +14362,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -13793,6 +14453,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -13853,6 +14515,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -13942,6 +14606,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -14047,6 +14713,8 @@
     "dead": [
       "Absolute Gigachad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14157,6 +14825,8 @@
       "Absolute Gigachad",
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14257,6 +14927,8 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14369,6 +15041,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -14462,6 +15136,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -14560,6 +15236,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -14679,6 +15357,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -14732,6 +15412,8 @@
       "Spring Nymphar"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
@@ -14803,6 +15485,8 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
@@ -14860,6 +15544,8 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14918,6 +15604,8 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14977,6 +15665,8 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15036,6 +15726,8 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15097,6 +15789,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15159,6 +15853,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15260,6 +15956,13 @@
       "Absolute Gigalad"
     ],
     "dead": [],
+    "group": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Absolute Gigalad",
+      "Speed Panda"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -15356,6 +16059,13 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Absolute Gigalad",
+      "Speed Panda"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -15429,6 +16139,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -15493,6 +16205,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -15580,6 +16294,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -15589,20 +16305,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 25
+        "who": "Loki Doki",
+        "confidence": 33
       },
       {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "who": "Spring Nymphar",
+        "confidence": 33
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 25
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 33
       }
     ],
     "first": false,
@@ -15679,6 +16391,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -15688,20 +16402,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 25
+        "who": "Loki Doki",
+        "confidence": 33
       },
       {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "who": "Spring Nymphar",
+        "confidence": 33
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 25
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 33
       }
     ],
     "first": false,
@@ -15780,6 +16490,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -15789,20 +16501,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 25
+        "who": "Loki Doki",
+        "confidence": 33
       },
       {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "who": "Spring Nymphar",
+        "confidence": 33
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 25
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 33
       }
     ],
     "first": false,
@@ -15882,6 +16590,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -15891,20 +16601,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 25
+        "who": "Loki Doki",
+        "confidence": 33
       },
       {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "who": "Spring Nymphar",
+        "confidence": 33
       },
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 25
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 25
+        "confidence": 33
       }
     ],
     "first": false,
@@ -15956,6 +16662,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -16008,6 +16716,8 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -16073,6 +16783,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -16127,6 +16839,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -16209,6 +16923,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -16292,6 +17008,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -16352,6 +17070,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -16413,6 +17133,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -16498,6 +17220,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -16581,6 +17305,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -16662,6 +17388,8 @@
     "dead": [
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -16754,6 +17482,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -16860,7 +17590,10 @@
         "until": 118.0
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -16873,16 +17606,37 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "self_hits": [
+      {
+        "ability": "Bright Flare",
+        "guid": 25295,
+        "ago": 1.2,
+        "amount": 62136
+      }
+    ],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 104,442 at 14% HP. Shared by 1 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "The stack was 1 of 4.",
+    "went_wrong": "The stack was 1 of 4 because Kite Noodle and Spring Nymphar were already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Kite Noodle",
+        "confidence": 33
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 33
+      },
+      {
+        "who": "Spring Nymphar",
         "confidence": 33
       }
     ],
@@ -16967,6 +17721,8 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -17060,6 +17816,8 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -17156,6 +17914,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -17250,6 +18010,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -17310,7 +18072,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -17321,6 +18088,13 @@
       "Kiara Blaiddyd"
     ],
     "dead": [],
+    "group": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -17396,7 +18170,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -17409,6 +18188,13 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
@@ -17465,7 +18251,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -17479,6 +18270,13 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
@@ -17549,6 +18347,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
     "outcome": "fail",
@@ -17618,7 +18418,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -17635,17 +18440,36 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,594,567 at 24% HP. Had Physical Vulnerability Up (199% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kitana Kahn still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 100
+        "who": "Loki Doki",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25
+      },
+      {
+        "who": "Kiara Blaiddyd",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -17704,7 +18528,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -17722,17 +18551,36 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 2,566,565 at 77% HP. Had Physical Vulnerability Up (199% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Absolute Gigachad still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Absolute Gigachad",
-        "confidence": 100
+        "who": "Loki Doki",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25
+      },
+      {
+        "who": "Kiara Blaiddyd",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -17791,7 +18639,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -17810,17 +18663,36 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,318,271 at 38% HP. Had Physical Vulnerability Up (199% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Speed Panda still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Speed Panda",
-        "confidence": 100
+        "who": "Loki Doki",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25
+      },
+      {
+        "who": "Kiara Blaiddyd",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -17879,7 +18751,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -17899,17 +18776,36 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,335,356 at 26% HP. Had Physical Vulnerability Up (199% amp). It would have killed them from full HP.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Spring Nymphar still had a damage amp.",
-    "cause": "personal",
+    "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
+    "cause": "redirected",
     "blames": [
       {
+        "who": "Loki Doki",
+        "confidence": 25
+      },
+      {
         "who": "Spring Nymphar",
-        "confidence": 100
+        "confidence": 25
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25
+      },
+      {
+        "who": "Kiara Blaiddyd",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -17969,6 +18865,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -18052,6 +18950,8 @@
     "dead": [
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18129,6 +19029,8 @@
       "Absolute Gigachad",
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18195,6 +19097,8 @@
       "Absolute Gigachad",
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18262,6 +19166,8 @@
       "Absolute Gigalad",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18376,6 +19282,8 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -18467,6 +19375,8 @@
       "Absolute Gigalad",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -18564,6 +19474,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -18630,6 +19542,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18684,6 +19598,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -18736,6 +19652,8 @@
     "dead": [
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -18789,6 +19707,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "burns",
     "mechanic": "Burns",
     "outcome": "fail",
@@ -18843,6 +19763,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -18898,6 +19820,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -18979,6 +19903,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -19076,6 +20002,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -19175,6 +20103,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -19272,6 +20202,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -19355,6 +20287,8 @@
     "dead": [
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19431,6 +20365,8 @@
     "dead": [
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19495,6 +20431,8 @@
     "dead": [
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19596,6 +20534,8 @@
       "Spring Nymphar",
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19663,6 +20603,8 @@
       "Spring Nymphar",
       "Absolute Gigalad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19766,6 +20708,8 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19874,6 +20818,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -19926,6 +20872,8 @@
       "Kitana Kahn"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -19978,6 +20926,8 @@
       "Speed Panda"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -20028,6 +20978,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -20100,6 +21052,8 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -20172,6 +21126,8 @@
       "Speed Panda",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20248,6 +21204,8 @@
       "Speed Panda",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20326,6 +21284,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20405,6 +21365,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20485,6 +21447,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20566,6 +21530,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20636,6 +21602,8 @@
       "Speed Panda"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -20700,6 +21668,8 @@
       "Loki Doki"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -20790,6 +21760,15 @@
     "dead": [
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Frostbite",
+        "guid": 1002946,
+        "ago": 3.0,
+        "amount": 51303
+      }
+    ],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -20870,6 +21849,8 @@
       "Speed Panda",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20955,6 +21936,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21041,6 +22024,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21128,6 +22113,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21216,6 +22203,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21305,6 +22294,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21398,6 +22389,13 @@
       "Spring Nymphar"
     ],
     "dead": [],
+    "group": [
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -21458,6 +22456,8 @@
       "Kite Noodle"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -21510,6 +22510,8 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -21587,6 +22589,8 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21665,6 +22669,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21744,6 +22750,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21824,6 +22832,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21911,6 +22921,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -21999,6 +23011,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -22049,6 +23063,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -22138,6 +23154,8 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -22232,6 +23250,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -22327,6 +23347,8 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -22423,6 +23445,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -22531,6 +23555,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -22630,6 +23656,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -22706,6 +23734,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -22788,6 +23818,13 @@
       "Kitana Kahn"
     ],
     "dead": [],
+    "group": [
+      "Loki Doki",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -22848,6 +23885,8 @@
       "Loki Doki"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavens-stake",
     "mechanic": "Heavens' Stake",
     "outcome": "fail",
@@ -22900,6 +23939,8 @@
     "dead": [
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -22953,6 +23994,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -23032,6 +24075,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -23119,6 +24164,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -23208,6 +24255,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -23298,6 +24347,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -23389,6 +24440,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -23467,25 +24520,31 @@
       "Spring Nymphar"
     ],
     "dead": [],
+    "group": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 1.6,
+        "amount": 41543
+      }
+    ],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
-    "happened": "Took 67,071 at 66% HP (40,738 of 61,615). Full HP would not have been enough. No shield. No party mitigation.",
+    "happened": "Took 67,071 at 66% HP (40,738 of 61,615). Dragon's Glory had taken 41,543 1.6s before.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Spring Nymphar died to the real hit.",
-    "cause": "resolve",
+    "went_wrong": "Spring Nymphar was still low from Dragon's Glory.",
+    "cause": "self",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 100
       }
     ],
     "first": false,
@@ -23578,7 +24637,9 @@
         "until": 114.6
       }
     ],
-    "down": [],
+    "down": [
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -23591,16 +24652,23 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 59,646 at 95% HP. Shared by 3 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "The stack was 3 of 4.",
+    "went_wrong": "The stack was 3 of 4 because Spring Nymphar was already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
         "confidence": 100
       }
     ],
@@ -23659,6 +24727,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23732,6 +24802,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23807,6 +24879,8 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavens-stake",
     "mechanic": "Heavens' Stake",
     "outcome": "fail",
@@ -23879,6 +24953,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -23951,6 +25027,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -24040,6 +25118,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -24050,27 +25130,23 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 16
+        "confidence": 20
       },
       {
         "who": "Absolute Gigachad",
-        "confidence": 16
+        "confidence": 20
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 16
+        "confidence": 20
       },
       {
         "who": "Kite Noodle",
-        "confidence": 16
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 16
+        "confidence": 20
       },
       {
         "who": "Loki Doki",
-        "confidence": 16
+        "confidence": 20
       }
     ],
     "first": false,
@@ -24149,6 +25225,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -24159,27 +25237,23 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 16
+        "confidence": 20
       },
       {
         "who": "Absolute Gigachad",
-        "confidence": 16
+        "confidence": 20
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 16
+        "confidence": 20
       },
       {
         "who": "Kite Noodle",
-        "confidence": 16
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 16
+        "confidence": 20
       },
       {
         "who": "Loki Doki",
-        "confidence": 16
+        "confidence": 20
       }
     ],
     "first": false,
@@ -24219,6 +25293,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -24271,6 +25347,8 @@
     "dead": [
       "Absolute Gigachad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -24324,6 +25402,8 @@
       "Absolute Gigachad",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24381,6 +25461,8 @@
       "Absolute Gigachad",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24440,6 +25522,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24499,6 +25583,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24560,6 +25646,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24622,6 +25710,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24676,6 +25766,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -24740,6 +25832,8 @@
     "dead": [
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -24827,6 +25921,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24919,6 +26015,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25012,6 +26110,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25106,6 +26206,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25200,6 +26302,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25296,6 +26400,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25411,6 +26517,8 @@
       "Loki Doki"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -25528,6 +26636,8 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -25646,6 +26756,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -25765,6 +26877,8 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -25874,6 +26988,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -25984,6 +27100,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -26094,6 +27212,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -26171,6 +27291,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -26268,6 +27390,15 @@
       "Spring Nymphar"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 2.7,
+        "amount": 30358
+      }
+    ],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
     "outcome": "fail",
@@ -26337,6 +27468,8 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -26405,6 +27538,8 @@
       "Spring Nymphar",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -26498,6 +27633,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -26599,6 +27736,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -26702,6 +27841,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -26805,6 +27946,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -26910,6 +28053,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -26991,6 +28136,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -27061,6 +28208,12 @@
     "dead": [
       "Loki Doki"
     ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -27143,6 +28296,12 @@
       "Speed Panda",
       "Loki Doki"
     ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -27197,6 +28356,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -27256,6 +28417,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -27330,6 +28493,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -27388,6 +28553,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -27446,6 +28613,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -27515,6 +28684,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -27621,6 +28792,13 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -27735,6 +28913,12 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -27842,6 +29026,12 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -27912,6 +29102,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -28012,6 +29204,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -28086,6 +29280,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -28174,6 +29370,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -28287,6 +29485,8 @@
       "Speed Panda"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -28410,6 +29610,8 @@
     "dead": [
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -28504,6 +29706,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -28621,6 +29825,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -28751,6 +29957,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -28870,6 +30078,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -28980,6 +30190,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -29057,6 +30269,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -29145,6 +30359,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -29221,6 +30437,8 @@
     "dead": [
       "Spring Nymphar"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -29301,6 +30519,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -29389,6 +30609,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -29448,6 +30670,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -29520,6 +30744,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -29610,6 +30836,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -29679,6 +30907,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -29763,6 +30993,8 @@
       "Spring Nymphar"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -29841,6 +31073,8 @@
     "dead": [
       "Speed Panda"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -29920,6 +31154,8 @@
       "Speed Panda",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -30000,6 +31236,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -30081,6 +31319,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -30163,6 +31403,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -30243,6 +31485,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -30324,6 +31568,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -30388,6 +31634,8 @@
       "Speed Panda"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -30454,6 +31702,8 @@
     "dead": [
       "Speed Panda"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -30548,6 +31798,8 @@
       "Speed Panda",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -30662,6 +31914,8 @@
       "Speed Panda",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -30778,6 +32032,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -30895,6 +32151,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -31000,6 +32258,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -31107,6 +32367,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -31240,6 +32502,8 @@
     "dead": [
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -31307,6 +32571,8 @@
       "Kiara Blaiddyd"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -31437,6 +32703,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -31511,6 +32779,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31601,6 +32871,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31687,6 +32959,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -31759,6 +33033,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -31863,6 +33139,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -31955,6 +33233,8 @@
       "Absolute Gigalad"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavenly-heel",
     "mechanic": "Heavenly Heel",
     "outcome": "fail",
@@ -32033,6 +33313,13 @@
       "Kitana Kahn"
     ],
     "dead": [],
+    "group": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -32121,6 +33408,13 @@
     "dead": [
       "Loki Doki"
     ],
+    "group": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -32187,7 +33481,9 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kite Noodle"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -32200,16 +33496,23 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "self_hits": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 54,409 at 65% HP. Shared by 3 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "The stack was 3 of 4.",
+    "went_wrong": "The stack was 3 of 4 because Kite Noodle was not in it.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Kite Noodle",
         "confidence": 100
       }
     ],
@@ -32256,6 +33559,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -32311,6 +33616,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -32371,6 +33678,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -32431,6 +33740,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -32503,6 +33814,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -32585,6 +33898,8 @@
       "Kitana Kahn"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -32640,6 +33955,8 @@
     "dead": [
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -32696,6 +34013,8 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -32750,6 +34069,8 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -32818,6 +34139,8 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -32890,6 +34213,8 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -32964,6 +34289,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -33038,6 +34365,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -33104,6 +34433,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "burns",
     "mechanic": "Burns",
     "outcome": "fail",
@@ -33181,6 +34512,8 @@
     "dead": [
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -33259,6 +34592,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -33338,6 +34673,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -33418,6 +34755,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -33499,6 +34838,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -33580,6 +34921,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -33661,6 +35004,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -33822,6 +35167,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -33908,6 +35255,8 @@
     "dead": [
       "Absolute Gigachad"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -34001,6 +35350,8 @@
       "Absolute Gigachad",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -34092,6 +35443,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -34196,6 +35549,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -34365,6 +35720,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -34470,6 +35827,8 @@
       "Kite Noodle",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -34530,6 +35889,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -34588,6 +35949,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -34665,6 +36028,8 @@
     "dead": [
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -34743,6 +36108,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -34822,6 +36189,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -34902,6 +36271,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -34983,6 +36354,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -35064,6 +36437,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -35146,6 +36521,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -35199,6 +36576,8 @@
       "Kitana Kahn"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -35258,6 +36637,8 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -35330,6 +36711,8 @@
     "dead": [
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -35383,6 +36766,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -35458,6 +36843,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -35468,11 +36855,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -35533,6 +36924,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -35543,11 +36936,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -35610,6 +37007,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -35620,11 +37019,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -35688,6 +37091,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -35698,11 +37103,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -35767,6 +37176,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -35777,11 +37188,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -35821,6 +37236,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "burns",
     "mechanic": "Burns",
     "outcome": "fail",
@@ -35896,6 +37313,8 @@
     "dead": [
       "Speed Panda"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "burns",
     "mechanic": "Burns",
     "outcome": "fail",
@@ -35976,6 +37395,8 @@
       "Speed Panda",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36057,6 +37478,8 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36139,6 +37562,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36222,6 +37647,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36306,6 +37733,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36391,6 +37820,8 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36470,6 +37901,8 @@
       "Kitana Kahn"
     ],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36551,6 +37984,8 @@
     "dead": [
       "Speed Panda"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36633,6 +38068,8 @@
       "Speed Panda",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36716,6 +38153,8 @@
       "Absolute Gigalad",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36799,6 +38238,8 @@
       "Absolute Gigalad",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36884,6 +38325,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -36970,6 +38413,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -37069,6 +38514,8 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -37119,6 +38566,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -37169,6 +38618,8 @@
     "dropped_by": [],
     "cohort": [],
     "dead": [],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -37244,6 +38695,8 @@
     "dead": [
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -37331,6 +38784,8 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -37423,6 +38878,8 @@
       "Spring Nymphar",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -37516,6 +38973,8 @@
       "Absolute Gigalad",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -37575,6 +39034,8 @@
       "Absolute Gigalad",
       "Kite Noodle"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -37638,6 +39099,8 @@
       "Kite Noodle",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -37721,6 +39184,8 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
+    "group": [],
+    "self_hits": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",

@@ -69,6 +69,8 @@ class DeathFact:
     dropped_by: list[str] = field(default_factory=list)
     cohort: list[str] = field(default_factory=list)
     dead: list[str] = field(default_factory=list)
+    group: list[str] = field(default_factory=list)
+    self_hits: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -89,6 +91,10 @@ DEBUFF_SLACK_MS = 1000
 RAISE_GUID = 1000043
 # Deaths to one cast land within this much of each other.
 CAST_MS = 3000
+# A hit they lived this long before dying can still be why they were low.
+SELF_HIT_MS = 10000
+# Mechanics where any hit is the player's own mistake.
+SELF_CATEGORIES = {"gaze", "dodge", "puddle", "orb"}
 
 
 def _grab(tail: str, key: str) -> int | None:
@@ -484,6 +490,47 @@ def _divers(
     return sorted(divers, key=lambda row: row["name"])
 
 
+def _self_hits(
+    by_guid: dict[int, list[dict]],
+    pack: FightPack,
+    fight: int,
+    target: int | None,
+    timestamp: int | None,
+    role: str,
+    killing: dict | None,
+) -> list[dict]:
+    """Hits of the player's own mistakes that they lived in the seconds before this death.
+
+    A gaze they looked at, a puddle, a ring, or an orb. A tank's own tether is
+    their job, so a tank-only hit on a tank is not one.
+    """
+    if target is None or timestamp is None:
+        return []
+    found = []
+    for mechanic in pack.mechanics:
+        if not mechanic.any_hit_is_fail or mechanic.category not in SELF_CATEGORIES:
+            continue
+        if mechanic.tanks_only and role == "tank":
+            continue
+        for guid in mechanic.guids:
+            for event in by_guid.get(guid, []):
+                if event is killing or event.get("fight") != fight or event.get("targetID") != target:
+                    continue
+                # A shield it used up is a shield the next hit did not meet.
+                taken = int(event.get("amount") or 0) + int(event.get("absorbed") or 0)
+                if event.get("overkill") or taken <= 0:
+                    continue
+                ago = timestamp - event["timestamp"]
+                if 0 < ago <= SELF_HIT_MS:
+                    found.append({
+                        "ability": mechanic.name,
+                        "guid": guid,
+                        "ago": round(ago / 1000, 1),
+                        "amount": taken,
+                    })
+    return sorted(found, key=lambda hit: hit["ago"], reverse=True)
+
+
 def _buff_names(event: dict, auras: dict[str, str]) -> list[str]:
     raw = event.get("buffs") or ""
     names = []
@@ -707,6 +754,7 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             fact.cohort = _cohort(
                 snapshots.get(guid, []) + by_guid.get(guid, []), fight["id"], event, names_by_id,
             )
+            fact.self_hits = _self_hits(by_guid, pack, fight["id"], target, timestamp, fact.role, event)
             clip = _clipped_by(
                 marker_casts, fight["id"], target, timestamp, mits, names_by_id,
                 direct=guid in marker_guids,
@@ -740,9 +788,13 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                 ]
         _missing_bodies(
             timed, pack, by_guid, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
+            mitigation_tables.get(fight["id"]),
         )
         _drop_owners(
             timed, pack, fight["id"], positions, mitigation_tables.get(fight["id"]), raises, names_by_id,
+        )
+        _alternating_groups(
+            timed, pack, snapshots, by_guid, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
         )
     facts.sort(key=lambda fact: (fact.fight, fact.phase, fact.t, fact.name))
     return facts
@@ -776,8 +828,9 @@ def _missing_bodies(
     roster: list[str],
     raises: dict[str, list[int]],
     names_by_id: dict[int, str],
+    table: dict | None = None,
 ) -> None:
-    """Who was missing from a mechanic that needs every player.
+    """Who was missing from a mechanic that needs every player, or every holder of a debuff.
 
     `down` is dead and not raised when the cast landed. With a soak, the cast landed
     at its first soak hit, `unsoaked` is everyone alive who that soak missed, and
@@ -789,6 +842,8 @@ def _missing_bodies(
         mechanic = pack.mechanic_for(fact.guid, fact.phase)
         needs = mechanic.needs_everyone if mechanic else None
         if needs is None:
+            continue
+        if needs.until is not None and fact.t >= needs.until:
             continue
         cast = [
             (ts, other) for ts, other in timed
@@ -822,13 +877,104 @@ def _missing_bodies(
         for ts, other in timed:
             if ts is not None and ts < at:
                 died[other.name] = max(died.get(other.name, ts), ts)
+        needed = roster
+        if needs.holders:
+            needed = [name for name in roster if name in _holders(table, needs.holders, at, names_by_id)]
         fact.down = [
-            name for name in roster
+            name for name in needed
             if name in died and name not in victims
             and not any(died[name] < raised <= at for raised in raises.get(name, []))
         ]
         if needs.soak:
-            fact.unsoaked = [name for name in roster if name not in soaked and name not in fact.down]
+            fact.unsoaked = [name for name in needed if name not in soaked and name not in fact.down]
+
+
+def _holders(table: dict | None, guids: list[int], at: int, names_by_id: dict[int, str]) -> set[str]:
+    """Players who held one of these debuffs at this moment."""
+    held: dict[str, bool] = {}
+    for aura in sorted((table or {}).get("auras") or [], key=lambda row: row[0]):
+        if aura[2] not in guids or aura[0] > at:
+            continue
+        name = names_by_id.get(aura[5])
+        if not name:
+            continue
+        if aura[1] == "applydebuff":
+            held[name] = True
+        elif aura[1] == "removedebuff":
+            held[name] = False
+    return {name for name, holding in held.items() if holding}
+
+
+def _casts(events: list[dict], fight_id: int, names_by_id: dict[int, str]) -> list[tuple[int, list[str]]]:
+    """Each cast of one ability in a pull, as its first hit and its targets, in order.
+
+    A cast is one packet. The snapshot rows keep a target who died before the hit landed.
+    """
+    packets: dict[int, list[dict]] = defaultdict(list)
+    for event in events:
+        if event.get("fight") == fight_id and event.get("packetID") is not None:
+            packets[event["packetID"]].append(event)
+    casts = []
+    for rows in packets.values():
+        rows.sort(key=lambda row: row["timestamp"])
+        targets: list[str] = []
+        for row in rows:
+            name = names_by_id.get(row.get("targetID"))
+            if name and name not in targets:
+                targets.append(name)
+        if targets:
+            casts.append((rows[0]["timestamp"], targets))
+    return sorted(casts)
+
+
+def _alternating_groups(
+    timed: list[tuple[int | None, DeathFact]],
+    pack: FightPack,
+    snapshots: dict[int, list[dict]],
+    by_guid: dict[int, list[dict]],
+    fight_id: int,
+    roster: list[str],
+    raises: dict[str, list[int]],
+    names_by_id: dict[int, str],
+) -> None:
+    """Who should have taken a cast that alternates between two groups, and who was missing.
+
+    The same players take every other cast, so the group for a cast is whoever took
+    the one two casts earlier. The first two casts have nothing that early: their
+    group is everyone the other group's cast did not hit. `group` is that group.
+    `down` are its players already dead, and `unsoaked` are the ones alive and not
+    in this cast.
+    """
+    for timestamp, fact in timed:
+        mechanic = pack.mechanic_for(fact.guid, fact.phase)
+        if timestamp is None or mechanic is None or not mechanic.alternating:
+            continue
+        events = [event for guid in mechanic.guids for event in snapshots.get(guid, [])]
+        events = events or [event for guid in mechanic.guids for event in by_guid.get(guid, [])]
+        casts = _casts(events, fight_id, names_by_id)
+        landed = [index for index, (first, _targets) in enumerate(casts) if 0 <= timestamp - first <= 2500]
+        if not landed:
+            continue
+        index = landed[-1]
+        targets = casts[index][1]
+        if index >= 2:
+            group = list(casts[index - 2][1])
+        elif index + 2 < len(casts) and index == 0:
+            group = list(casts[index + 2][1])
+        else:
+            other = casts[index - 1][1] if index else (casts[index + 1][1] if index + 1 < len(casts) else None)
+            if other is None:
+                continue
+            group = [name for name in roster if name not in other]
+        fact.group = group
+        fact.down = [
+            name for name in group
+            if name not in targets and _still_dead(name, timed, timestamp, raises)
+        ]
+        fact.unsoaked = [
+            name for name in group
+            if name not in targets and name not in fact.down
+        ]
 
 
 def _still_dead(

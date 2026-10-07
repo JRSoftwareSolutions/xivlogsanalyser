@@ -38,6 +38,7 @@
       "category": "stack",
       "scales_with_stack": true,
       "typical_targets": 4,
+      "alternating": true,
       "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24–48k, healers about 43–67k, and DPS about 40–64k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
       "roles": {
         "tank": {"unmitigated_max": 120000, "lived": "about 24–48k on a share of 4"},
@@ -422,6 +423,7 @@
       "scales_with_stack": false,
       "typical_targets": 5,
       "fail_above": 100000,
+      "needs_everyone": {"holders": [1003005, 1003006], "lead": 1},
       "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37–48k. Everyone else lives about 50–70k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
       "roles": {
         "tank": {"unmitigated_max": 80000, "lived": "about 37–48k"},
@@ -482,11 +484,12 @@
       "category": "tower",
       "scales_with_stack": false,
       "fail_above": 150000,
+      "needs_everyone": {"holders": [1003006], "lead": 1, "until": 42},
       "should_have_been": "One player soaks the tower. Tanks take about 32–54k. A non-tank soak that killed from a high bar was about 59–80k. A shield keeps them alive. Dying to that hit is the healers.",
       "moments": [
         {
           "above": 150000,
-          "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4–3.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak."
+          "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4–3.0 million. On the first towers the 3s are the soakers. A 3 already dead left their tower empty, and that death owns it. With every 3 alive, the soak hits are not stored, so the miss stays Missed soak."
         }
       ],
       "roles": {

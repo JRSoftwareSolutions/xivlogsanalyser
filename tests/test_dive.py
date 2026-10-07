@@ -52,10 +52,19 @@ class DiveFromGraceTest(unittest.TestCase):
         self.assertEqual({item.fact.name for item in autos}, {"Spring Nymphar", "Kiara Blaiddyd"})
 
     def test_short_stack_and_full_stack(self):
+        # The 2s and 3s stack. Kite, Loki, and Kiara were already dead, and each gap
+        # belongs to whoever owned that death: the healers for Final Chorus, Kiara for the auto.
         short = self._one(16, "Kitana Kahn", 26388)
         self.assertEqual(short.outcome, "fail")
-        self.assertEqual(short.blames[0].who, "Missing bodies")
-        self.assertEqual(short.blames[0].confidence, 50)
+        self.assertEqual(short.fact.down, ["Kite Noodle", "Loki Doki", "Kiara Blaiddyd"])
+        self.assertEqual(
+            [blame.to_dict() for blame in short.blames],
+            [
+                {"who": "Loki Doki", "confidence": 33},
+                {"who": "Spring Nymphar", "confidence": 33},
+                {"who": "Kiara Blaiddyd", "confidence": 33},
+            ],
+        )
         raw = self._one(26, "Loki Doki", 26388)
         self.assertEqual(raw.outcome, "raw")
         self.assertEqual(
@@ -174,6 +183,8 @@ class DiveFromGraceTest(unittest.TestCase):
         card = next(row for row in pull["cards"] if row["id"] == "dive-from-grace")
         eye = next(part for part in card["parts"] if part["id"] == "eye-of-the-tyrant")
         seats = {seat["name"]: seat for seat in eye["seats"]}
-        self.assertFalse(seats["Kitana Kahn"]["passed"])
-        self.assertFalse(seats["Absolute Gigalad"]["passed"])
-        self.assertTrue(seats["Loki Doki"]["passed"])
+        # The two who died in the short stack were in place. The missing players' owners failed it.
+        self.assertTrue(seats["Kitana Kahn"]["passed"])
+        self.assertTrue(seats["Absolute Gigalad"]["passed"])
+        self.assertFalse(seats["Loki Doki"]["passed"])
+        self.assertFalse(seats["Kiara Blaiddyd"]["passed"])

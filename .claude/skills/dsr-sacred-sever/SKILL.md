@@ -22,7 +22,11 @@ This is a stack and it scales. The usual share is 4. A lived share of 4 is tanks
 
 Raw, full share: the resolve. Name the shield, the mit, and the HP.
 
-Raw, short share: the missing bodies. Say the share was `{stack} of 4`. The player who died took a legal share.
+Raw, short share: the missing bodies. Say the share was `{stack} of 4`. The player who died took a legal share. The jumps alternate (`alternating` in `mechanics.json`), so the group for a jump is whoever took the jump two before it, and for the first two jumps everyone the other group's jump missed. Its players who were dead own the gap, passed on to whoever owned those deaths, and its players alive and not in the stack own it themselves. When the group is all there, it stays "Missing bodies".
+
+Fail with the last jump's Physical Vulnerability Up: each jump leaves that vuln on its stack. A player who is not in this jump's group took a jump that landed on the wrong group, because that group's players were already dead. The dead players own it, passed on. The right group's living players are not named: the knight follows the sword. `3wzL6x4VHTmvNkhq` pull 49: the four who looked at Dragon's Glory own the third jump that killed the other four. A player who is in the group and still had the vuln took both jumps, and owns it (`3wzL6x4VHTmvNkhq` pull 24, Kitana Kahn).
+
+A raw share right after looking at a gaze, when full HP would have lived it, is the player's own (`review-mechanic`, own hit).
 
 Fail: `{player}` took the cleave. They were not in the stack.
 

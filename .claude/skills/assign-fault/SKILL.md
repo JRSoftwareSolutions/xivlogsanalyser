@@ -64,12 +64,13 @@ Most mechanics are one of these shapes. The question to ask is the same for each
 |---|---|---|
 | Soak or tower | One player in each tower | Whoever was not hit by the soak: dead, or alive and elsewhere. Everyone in place is not at fault. |
 | Stack | N bodies in each share | The players who should have been in the share: dead, or alive and in another share or none. |
+| Alternating stack | Two groups take turns, such as Sacred Sever | The group is whoever took the cast two before. A cast that landed on the other group, still carrying the last cast's vulnerability, belongs to the right group's dead players. |
 | Spread or overlap | Nobody shares a circle | Every player in the overlap. A survivor in the burst is named from the hit list. |
 | Marker | The marked player in their spot | The marked player off their spot, or the player who stood in the marked player's spot. |
 | Drops | Each marked player's drops land apart | Whoever dropped the two that landed too close: one player's own pair, or both players at 50. A dead holder passes it on. |
 | Tankbuster | The right tank, with personal mitigation | A non-tank who took it, the wrong tank, or a tank without mitigation. |
 | Dodge, gaze, cone, puddle | Nobody hit | The player who was hit. |
-| Raidwide | Everyone lives with mitigation and HP | The healers and the party's mitigation, unless the party was short or already low. Then pass it on to whoever made it short or low. |
+| Raidwide | Everyone lives with mitigation and HP | The healers and the party's mitigation, unless the party was short or already low. Then pass it on to whoever made it short or low. Low from their own gaze, dodge, puddle, or orb a few seconds before is that player's own. |
 | No packet | Nobody touches the wall | The player, alone before the first mistake, shared with "Earlier mistake" after it. |
 
 ## Checking a session

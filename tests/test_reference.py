@@ -162,8 +162,13 @@ class ReferenceReportTest(unittest.TestCase):
         )
         self.assertEqual(owners(one(25, "Loki Doki", "Skyward Leap")), [("Loki Doki", 100)])
 
-        self.assertEqual(owners(one(14, "Kite Noodle", "Sacred Sever")), [("Missing bodies", 100)])
-        self.assertEqual(owners(one(10, "Absolute Gigachad", "Sacred Sever")), [("Missing bodies", 33)])
+        # Kitana took the double sword's second jump with them and was not in the fourth.
+        self.assertEqual(owners(one(14, "Kite Noodle", "Sacred Sever")), [("Kitana Kahn", 100)])
+        # His group died to the second jump, which landed on them because Spring and Kite were in the wall.
+        self.assertEqual(
+            owners(one(10, "Absolute Gigachad", "Sacred Sever")),
+            [("Spring Nymphar", 50), ("Kite Noodle", 50)],
+        )
         self.assertEqual(owners(one(12, "Loki Doki", "Dragon's Rage")), [("Missing bodies", 50)])
 
         self.assertEqual(
@@ -172,13 +177,16 @@ class ReferenceReportTest(unittest.TestCase):
         )
         self.assertEqual(one(16, "Kiara Blaiddyd", "Eternal Conviction").outcome, "raw")
         self.assertEqual(one(14, "Kiara Blaiddyd", "Eternal Conviction").outcome, "fail")
-        # Six players were dead before the towers, so each one left a tower empty.
+        # Six players were dead before the towers. Each gap belongs to whoever owned that death:
+        # Kite and Spring died to the short stack Kitana left, so theirs are Kitana's.
         self.assertEqual(
             owners(one(14, "Kiara Blaiddyd", "Eternal Conviction")),
-            [
-                ("Speed Panda", 16), ("Absolute Gigachad", 16), ("Spring Nymphar", 16),
-                ("Kite Noodle", 16), ("Kitana Kahn", 16), ("Loki Doki", 16),
-            ],
+            [("Speed Panda", 25), ("Absolute Gigachad", 25), ("Kitana Kahn", 25), ("Loki Doki", 25)],
+        )
+        # Kitana and Spring died to a jump the healers did not heal them for, so their gaps are the healers'.
+        self.assertEqual(
+            owners(one(26, "Kiara Blaiddyd", "Eternal Conviction")),
+            [("Speed Panda", 33), ("Loki Doki", 33), ("Spring Nymphar", 33)],
         )
         self.assertEqual(
             owners(one(15, "Kiara Blaiddyd", "Eternal Conviction")),

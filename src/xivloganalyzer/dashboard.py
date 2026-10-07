@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone
-from xivloganalyzer.judge import Judgment, clip_mechanic, empty_owners, marker_owners
+from xivloganalyzer.judge import Judgment, clip_mechanic, empty_owners, marker_owners, passes_on
 from xivloganalyzer.mitigations import load_mitigations
 
 JOB = {
@@ -505,7 +505,7 @@ def session_payload(
             culprits = marker_owners(item.fact)
         if item.cause == "arrow":
             culprits = [blame.who for blame in item.blames]
-        if item.cause in {"empty", "dropped", "marked"}:
+        if passes_on(item):
             culprits = empty_owners(item)
         cluster = pack.cluster_for(component, item.fact.t, item.fact.phase) or _cluster_of(item, pack)
         pull["deaths"].append(

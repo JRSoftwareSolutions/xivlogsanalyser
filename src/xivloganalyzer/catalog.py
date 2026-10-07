@@ -74,10 +74,16 @@ class NeedsEveryone:
     `soak` are the guids that hit everyone in place, such as towers. They land up to
     `lead` seconds before the first death. Without a soak, the cast lands `lead`
     seconds before the first death.
+
+    `holders` narrows it to the players who held one of those debuffs when it
+    landed, such as the Dive from Grace 3s for the first towers. `until` is the
+    phase time after which a cast of this ability is a different set.
     """
 
     lead: float
     soak: list[int] = field(default_factory=list)
+    holders: list[int] = field(default_factory=list)
+    until: float | None = None
 
 
 @dataclass
@@ -117,6 +123,8 @@ class Mechanic:
     dive_markers: dict[int, DiveMarker] = field(default_factory=dict)
     needs_everyone: NeedsEveryone | None = None
     drops: Drops | None = None
+    # Casts alternate between two groups, so the same players take every other one.
+    alternating: bool = False
 
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
@@ -309,6 +317,8 @@ def _needs_everyone(raw: dict | None) -> NeedsEveryone | None:
     return NeedsEveryone(
         lead=float(raw["lead"]),
         soak=[int(guid) for guid in raw.get("soak") or []],
+        holders=[int(guid) for guid in raw.get("holders") or []],
+        until=float(raw["until"]) if raw.get("until") is not None else None,
     )
 
 
@@ -384,6 +394,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 },
                 needs_everyone=_needs_everyone(raw.get("needs_everyone")),
                 drops=_drops(raw.get("drops")),
+                alternating=bool(raw.get("alternating", False)),
             )
         )
     return FightPack(

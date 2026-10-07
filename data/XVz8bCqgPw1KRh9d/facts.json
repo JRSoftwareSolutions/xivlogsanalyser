@@ -75,7 +75,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 10,
@@ -153,7 +155,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 10,
@@ -239,8 +243,14 @@
         "until": 113.6
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -254,7 +264,14 @@
       "Speed Panda",
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": []
   },
   {
     "fight": 10,
@@ -340,8 +357,14 @@
         "until": 113.6
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -354,7 +377,14 @@
     "dead": [
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": []
   },
   {
     "fight": 10,
@@ -440,8 +470,14 @@
         "until": 113.6
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -457,7 +493,14 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": []
   },
   {
     "fight": 10,
@@ -543,8 +586,14 @@
         "until": 113.6
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -559,7 +608,14 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": []
   },
   {
     "fight": 10,
@@ -646,6 +702,15 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
+    ],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 2.3,
+        "amount": 42718
+      }
     ]
   },
   {
@@ -718,7 +783,12 @@
         "until": 113.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -734,7 +804,14 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 11,
@@ -800,7 +877,9 @@
     "cohort": [
       "Kite Noodle"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 11,
@@ -872,6 +951,21 @@
     ],
     "dead": [
       "Kite Noodle"
+    ],
+    "group": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 1.3,
+        "amount": 40197
+      }
     ]
   },
   {
@@ -945,6 +1039,21 @@
     "dead": [
       "Kite Noodle",
       "Kitana Kahn"
+    ],
+    "group": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 1.1,
+        "amount": 42474
+      }
     ]
   },
   {
@@ -1017,8 +1126,13 @@
         "until": 114.5
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -1031,7 +1145,13 @@
       "Speed Panda",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 11,
@@ -1103,8 +1223,13 @@
         "until": 114.5
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -1118,7 +1243,13 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 11,
@@ -1190,8 +1321,13 @@
         "until": 114.5
       }
     ],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -1206,7 +1342,13 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 11,
@@ -1264,7 +1406,13 @@
         "until": 114.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -1280,7 +1428,15 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Speed Panda"
+    ],
+    "self_hits": []
   },
   {
     "fight": 11,
@@ -1362,7 +1518,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1397,7 +1555,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1432,7 +1592,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1467,7 +1629,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1504,7 +1668,9 @@
     "cohort": [],
     "dead": [
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1558,7 +1724,9 @@
     "dead": [
       "Spring Nymphar",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1597,7 +1765,9 @@
       "Spring Nymphar",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1665,7 +1835,9 @@
       "Spring Nymphar",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1736,7 +1908,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1777,7 +1951,9 @@
       "Absolute Gigalad",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 12,
@@ -1818,7 +1994,9 @@
       "Absolute Gigalad",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 13,
@@ -1853,7 +2031,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 13,
@@ -1896,7 +2076,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 13,
@@ -1941,7 +2123,9 @@
     "cohort": [],
     "dead": [
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 13,
@@ -1987,7 +2171,9 @@
     "dead": [
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 13,
@@ -2046,7 +2232,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 13,
@@ -2093,7 +2281,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 13,
@@ -2163,7 +2353,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 13,
@@ -2222,7 +2414,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 13,
@@ -2289,7 +2483,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 14,
@@ -2353,7 +2549,9 @@
       "Absolute Gigalad",
       "Absolute Gigachad"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 14,
@@ -2406,7 +2604,9 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -2415,7 +2615,14 @@
       "Kite Noodle",
       "Spring Nymphar"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": []
   },
   {
     "fight": 14,
@@ -2468,7 +2675,9 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -2479,7 +2688,14 @@
     ],
     "dead": [
       "Kite Noodle"
-    ]
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "self_hits": []
   },
   {
     "fight": 14,
@@ -2519,7 +2735,9 @@
     "dead": [
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 14,
@@ -2561,7 +2779,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 14,
@@ -2602,7 +2822,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 14,
@@ -2646,7 +2868,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 14,
@@ -2706,7 +2930,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 14,
@@ -2766,7 +2992,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 15,
@@ -2828,7 +3056,9 @@
     "cohort": [
       "Absolute Gigachad"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 15,
@@ -2892,7 +3122,9 @@
     ],
     "dead": [
       "Absolute Gigachad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 15,
@@ -2930,7 +3162,9 @@
     "dead": [
       "Absolute Gigachad",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 15,
@@ -3000,6 +3234,15 @@
       "Speed Panda",
       "Absolute Gigachad",
       "Kitana Kahn"
+    ],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Frostbite",
+        "guid": 1002946,
+        "ago": 1.2,
+        "amount": 48932
+      }
     ]
   },
   {
@@ -3056,7 +3299,9 @@
       "Speed Panda",
       "Absolute Gigachad",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 15,
@@ -3128,7 +3373,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 15,
@@ -3200,7 +3447,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 15,
@@ -3274,7 +3523,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 16,
@@ -3354,7 +3605,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 16,
@@ -3421,7 +3674,9 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 16,
@@ -3500,7 +3755,9 @@
     "dead": [
       "Spring Nymphar",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 16,
@@ -3569,7 +3826,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 16,
@@ -3651,7 +3910,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 16,
@@ -3722,7 +3983,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 16,
@@ -3794,7 +4057,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 16,
@@ -3845,7 +4110,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 17,
@@ -3885,7 +4152,14 @@
       "Loki Doki",
       "Speed Panda"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 17,
@@ -3950,7 +4224,14 @@
     ],
     "dead": [
       "Kitana Kahn"
-    ]
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 17,
@@ -3993,7 +4274,14 @@
     "dead": [
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 17,
@@ -4037,7 +4325,14 @@
       "Speed Panda",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "self_hits": []
   },
   {
     "fight": 17,
@@ -4082,7 +4377,14 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "self_hits": []
   },
   {
     "fight": 17,
@@ -4128,7 +4430,14 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "self_hits": []
   },
   {
     "fight": 17,
@@ -4170,7 +4479,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 17,
@@ -4213,7 +4524,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4248,7 +4561,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4310,7 +4625,9 @@
     "cohort": [
       "Kiara Blaiddyd"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4384,7 +4701,9 @@
     ],
     "dead": [
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4459,7 +4778,9 @@
     "dead": [
       "Speed Panda",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4535,7 +4856,9 @@
       "Speed Panda",
       "Spring Nymphar",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4598,7 +4921,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4662,7 +4987,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4742,7 +5069,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4811,7 +5140,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 18,
@@ -4871,7 +5202,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 19,
@@ -4918,7 +5251,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 19,
@@ -4995,7 +5330,9 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 19,
@@ -5062,7 +5399,9 @@
     "dead": [
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 19,
@@ -5154,7 +5493,9 @@
     "dead": [
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 19,
@@ -5259,7 +5600,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 19,
@@ -5341,7 +5684,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 19,
@@ -5423,7 +5768,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 19,
@@ -5507,7 +5854,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 19,
@@ -5572,7 +5921,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 20,
@@ -5614,7 +5965,14 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 20,
@@ -5654,7 +6012,14 @@
       "Absolute Gigalad",
       "Kiara Blaiddyd"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 20,
@@ -5709,7 +6074,14 @@
     "dead": [
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 20,
@@ -5754,7 +6126,14 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 20,
@@ -5798,7 +6177,14 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 20,
@@ -5844,7 +6230,14 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "self_hits": []
   },
   {
     "fight": 20,
@@ -5886,7 +6279,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 20,
@@ -5929,7 +6324,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 21,
@@ -5987,7 +6384,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 21,
@@ -6024,7 +6423,9 @@
     "cohort": [],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 21,
@@ -6062,7 +6463,9 @@
     "dead": [
       "Speed Panda",
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 21,
@@ -6145,7 +6548,9 @@
     "dead": [
       "Speed Panda",
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 21,
@@ -6211,7 +6616,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 21,
@@ -6318,7 +6725,9 @@
       "Spring Nymphar",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 21,
@@ -6384,7 +6793,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 21,
@@ -6463,7 +6874,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 22,
@@ -6522,7 +6935,16 @@
     "cohort": [
       "Absolute Gigalad"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Bright Flare",
+        "guid": 25295,
+        "ago": 0.4,
+        "amount": 64001
+      }
+    ]
   },
   {
     "fight": 22,
@@ -6593,7 +7015,9 @@
     "cohort": [
       "Kitana Kahn"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 22,
@@ -6642,7 +7066,9 @@
     "dead": [
       "Absolute Gigalad",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 22,
@@ -6702,7 +7128,9 @@
     "dead": [
       "Absolute Gigalad",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 22,
@@ -6765,7 +7193,9 @@
       "Absolute Gigalad",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 22,
@@ -6824,6 +7254,15 @@
       "Absolute Gigalad",
       "Kitana Kahn",
       "Loki Doki"
+    ],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Frostbite",
+        "guid": 1002946,
+        "ago": 2.1,
+        "amount": 51181
+      }
     ]
   },
   {
@@ -6884,7 +7323,9 @@
       "Absolute Gigalad",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 22,
@@ -6944,7 +7385,9 @@
       "Absolute Gigalad",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 23,
@@ -6979,7 +7422,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 23,
@@ -7014,7 +7459,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 23,
@@ -7052,7 +7499,9 @@
     "dead": [
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 23,
@@ -7090,7 +7539,9 @@
     "dead": [
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 23,
@@ -7130,7 +7581,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 23,
@@ -7170,7 +7623,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 23,
@@ -7212,7 +7667,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 23,
@@ -7254,7 +7711,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 24,
@@ -7357,7 +7816,9 @@
       "Absolute Gigalad",
       "Kite Noodle"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 24,
@@ -7462,7 +7923,9 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 24,
@@ -7545,7 +8008,9 @@
     "dead": [
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 24,
@@ -7652,7 +8117,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 24,
@@ -7749,7 +8216,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 24,
@@ -7821,7 +8290,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 24,
@@ -7885,7 +8356,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 24,
@@ -7950,7 +8423,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 25,
@@ -7993,7 +8468,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 25,
@@ -8038,7 +8515,9 @@
     "cohort": [],
     "dead": [
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 25,
@@ -8118,7 +8597,9 @@
     "dead": [
       "Absolute Gigachad",
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 25,
@@ -8165,7 +8646,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 25,
@@ -8236,7 +8719,9 @@
       "Spring Nymphar",
       "Absolute Gigalad",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 25,
@@ -8307,7 +8792,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 25,
@@ -8357,7 +8844,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 25,
@@ -8436,7 +8925,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 26,
@@ -8507,7 +8998,14 @@
       "Kitana Kahn",
       "Spring Nymphar"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ],
+    "self_hits": []
   },
   {
     "fight": 26,
@@ -8580,7 +9078,14 @@
     ],
     "dead": [
       "Kitana Kahn"
-    ]
+    ],
+    "group": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ],
+    "self_hits": []
   },
   {
     "fight": 26,
@@ -8629,7 +9134,9 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 26,
@@ -8679,7 +9186,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 26,
@@ -8751,7 +9260,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 26,
@@ -8823,7 +9334,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 26,
@@ -8897,7 +9410,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 26,
@@ -8971,7 +9486,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 27,
@@ -9039,7 +9556,12 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -9049,7 +9571,14 @@
       "Kite Noodle",
       "Absolute Gigalad"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": []
   },
   {
     "fight": 27,
@@ -9117,7 +9646,12 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -9129,6 +9663,20 @@
     ],
     "dead": [
       "Kitana Kahn"
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 0.0,
+        "amount": 41165
+      }
     ]
   },
   {
@@ -9197,7 +9745,12 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -9211,7 +9764,14 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": []
   },
   {
     "fight": 27,
@@ -9279,7 +9839,12 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -9292,7 +9857,14 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": []
   },
   {
     "fight": 27,
@@ -9350,7 +9922,12 @@
         "until": 113.1
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -9366,7 +9943,14 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 27,
@@ -9424,7 +10008,12 @@
         "until": 113.1
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -9441,7 +10030,14 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 27,
@@ -9499,7 +10095,12 @@
         "until": 113.1
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -9517,7 +10118,14 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 27,
@@ -9575,7 +10183,12 @@
         "until": 113.1
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -9594,7 +10207,14 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 28,
@@ -9629,7 +10249,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 28,
@@ -9708,7 +10330,9 @@
     ],
     "dead": [
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 28,
@@ -9782,7 +10406,9 @@
     "dead": [
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 28,
@@ -9890,7 +10516,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 28,
@@ -9998,7 +10626,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 28,
@@ -10085,7 +10715,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 28,
@@ -10161,7 +10793,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 28,
@@ -10232,7 +10866,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 29,
@@ -10267,7 +10903,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 29,
@@ -10349,7 +10987,9 @@
     "cohort": [],
     "dead": [
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 29,
@@ -10386,7 +11026,9 @@
     "cohort": [],
     "dead": [
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 29,
@@ -10459,7 +11101,9 @@
       "Absolute Gigachad",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 29,
@@ -10544,7 +11188,9 @@
       "Absolute Gigachad",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 29,
@@ -10655,7 +11301,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 29,
@@ -10729,7 +11377,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 29,
@@ -10774,7 +11424,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 30,
@@ -10840,7 +11492,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 30,
@@ -10930,7 +11584,9 @@
     "cohort": [],
     "dead": [
       "Absolute Gigachad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 30,
@@ -11021,7 +11677,9 @@
     "dead": [
       "Absolute Gigachad",
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 30,
@@ -11102,7 +11760,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 30,
@@ -11195,7 +11855,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 30,
@@ -11273,7 +11935,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 30,
@@ -11356,7 +12020,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 30,
@@ -11460,7 +12126,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 31,
@@ -11498,7 +12166,9 @@
       "Kite Noodle",
       "Spring Nymphar"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 31,
@@ -11550,7 +12220,9 @@
     ],
     "dead": [
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 31,
@@ -11588,7 +12260,9 @@
     "dead": [
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 31,
@@ -11627,7 +12301,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 31,
@@ -11667,7 +12343,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 31,
@@ -11707,7 +12385,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 31,
@@ -11749,7 +12429,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 31,
@@ -11792,7 +12474,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 32,
@@ -11874,7 +12558,14 @@
       "Speed Panda",
       "Absolute Gigalad"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Absolute Gigalad",
+      "Speed Panda"
+    ],
+    "self_hits": []
   },
   {
     "fight": 32,
@@ -11947,7 +12638,14 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Absolute Gigalad",
+      "Speed Panda"
+    ],
+    "self_hits": []
   },
   {
     "fight": 32,
@@ -11997,7 +12695,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 32,
@@ -12046,7 +12746,9 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 32,
@@ -12118,7 +12820,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 32,
@@ -12190,7 +12894,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 32,
@@ -12264,7 +12970,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 32,
@@ -12339,7 +13047,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 33,
@@ -12386,7 +13096,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 33,
@@ -12423,7 +13135,9 @@
     "cohort": [],
     "dead": [
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 33,
@@ -12473,7 +13187,9 @@
     "dead": [
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 33,
@@ -12512,7 +13228,9 @@
       "Absolute Gigachad",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 33,
@@ -12575,7 +13293,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 33,
@@ -12639,7 +13359,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 33,
@@ -12680,7 +13402,9 @@
       "Absolute Gigalad",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 33,
@@ -12722,7 +13446,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 33,
@@ -12788,7 +13514,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 34,
@@ -12852,7 +13580,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 34,
@@ -12918,7 +13648,9 @@
     "cohort": [],
     "dead": [
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 34,
@@ -12995,7 +13727,9 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 34,
@@ -13083,7 +13817,10 @@
         "until": 118.0
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -13095,6 +13832,19 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn"
+    ],
+    "group": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "self_hits": [
+      {
+        "ability": "Bright Flare",
+        "guid": 25295,
+        "ago": 1.2,
+        "amount": 62136
+      }
     ]
   },
   {
@@ -13174,7 +13924,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 34,
@@ -13252,7 +14004,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 34,
@@ -13333,7 +14087,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 34,
@@ -13412,7 +14168,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 35,
@@ -13454,7 +14212,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -13464,7 +14227,14 @@
       "Loki Doki",
       "Kiara Blaiddyd"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "self_hits": []
   },
   {
     "fight": 35,
@@ -13517,7 +14287,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -13529,7 +14304,14 @@
     ],
     "dead": [
       "Kite Noodle"
-    ]
+    ],
+    "group": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "self_hits": []
   },
   {
     "fight": 35,
@@ -13571,7 +14353,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -13584,7 +14371,14 @@
     "dead": [
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "self_hits": []
   },
   {
     "fight": 35,
@@ -13639,7 +14433,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 35,
@@ -13694,7 +14490,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -13710,7 +14511,14 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": []
   },
   {
     "fight": 35,
@@ -13765,7 +14573,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -13782,7 +14595,14 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": []
   },
   {
     "fight": 35,
@@ -13837,7 +14657,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -13855,7 +14680,14 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": []
   },
   {
     "fight": 35,
@@ -13910,7 +14742,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -13929,7 +14766,14 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "self_hits": []
   },
   {
     "fight": 36,
@@ -13984,7 +14828,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 36,
@@ -14052,7 +14898,9 @@
     "cohort": [],
     "dead": [
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 36,
@@ -14110,7 +14958,9 @@
     "dead": [
       "Absolute Gigachad",
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 36,
@@ -14157,7 +15007,9 @@
       "Speed Panda",
       "Absolute Gigachad",
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 36,
@@ -14205,7 +15057,9 @@
       "Absolute Gigachad",
       "Absolute Gigalad",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 36,
@@ -14300,7 +15154,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 36,
@@ -14372,7 +15228,9 @@
       "Spring Nymphar",
       "Absolute Gigalad",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 36,
@@ -14450,7 +15308,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 36,
@@ -14501,7 +15361,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 37,
@@ -14536,7 +15398,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 37,
@@ -14573,7 +15437,9 @@
     "cohort": [],
     "dead": [
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 37,
@@ -14611,7 +15477,9 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 37,
@@ -14650,7 +15518,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 37,
@@ -14690,7 +15560,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 37,
@@ -14756,7 +15628,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 37,
@@ -14822,7 +15696,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 37,
@@ -14890,7 +15766,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 38,
@@ -14956,7 +15834,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 38,
@@ -15024,7 +15904,9 @@
     "cohort": [],
     "dead": [
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 38,
@@ -15081,7 +15963,9 @@
     "cohort": [],
     "dead": [
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 38,
@@ -15126,7 +16010,9 @@
     "cohort": [],
     "dead": [
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 38,
@@ -15208,7 +16094,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 38,
@@ -15256,7 +16144,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Absolute Gigalad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 38,
@@ -15340,7 +16230,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 38,
@@ -15429,7 +16321,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15466,7 +16360,9 @@
     "cohort": [
       "Kitana Kahn"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15503,7 +16399,9 @@
     "cohort": [
       "Speed Panda"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15538,7 +16436,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15595,7 +16495,9 @@
     "cohort": [],
     "dead": [
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15652,7 +16554,9 @@
     "dead": [
       "Speed Panda",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15709,7 +16613,9 @@
     "dead": [
       "Speed Panda",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15768,7 +16674,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15828,7 +16736,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15889,7 +16799,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 39,
@@ -15951,7 +16863,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 40,
@@ -16002,7 +16916,9 @@
     "cohort": [
       "Speed Panda"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 40,
@@ -16051,7 +16967,9 @@
     "cohort": [
       "Loki Doki"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 40,
@@ -16126,6 +17044,15 @@
     "cohort": [],
     "dead": [
       "Loki Doki"
+    ],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Frostbite",
+        "guid": 1002946,
+        "ago": 3.0,
+        "amount": 51303
+      }
     ]
   },
   {
@@ -16191,7 +17118,9 @@
     "dead": [
       "Speed Panda",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 40,
@@ -16257,7 +17186,9 @@
       "Speed Panda",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 40,
@@ -16324,7 +17255,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 40,
@@ -16392,7 +17325,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 40,
@@ -16461,7 +17396,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 40,
@@ -16531,7 +17468,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 41,
@@ -16605,7 +17544,14 @@
       "Kitana Kahn",
       "Spring Nymphar"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "self_hits": []
   },
   {
     "fight": 41,
@@ -16642,7 +17588,9 @@
     "cohort": [
       "Kite Noodle"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 41,
@@ -16679,7 +17627,9 @@
     "cohort": [],
     "dead": [
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 41,
@@ -16741,7 +17691,9 @@
     "dead": [
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 41,
@@ -16804,7 +17756,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 41,
@@ -16868,7 +17822,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 41,
@@ -16933,7 +17889,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 41,
@@ -17005,7 +17963,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 41,
@@ -17078,7 +18038,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 42,
@@ -17113,7 +18075,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 42,
@@ -17187,7 +18151,9 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 42,
@@ -17262,7 +18228,9 @@
     "dead": [
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 42,
@@ -17338,7 +18306,9 @@
       "Speed Panda",
       "Spring Nymphar",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 42,
@@ -17415,7 +18385,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 42,
@@ -17504,7 +18476,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 42,
@@ -17584,7 +18558,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 42,
@@ -17641,7 +18617,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 43,
@@ -17704,7 +18682,14 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Loki Doki",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "self_hits": []
   },
   {
     "fight": 43,
@@ -17741,7 +18726,9 @@
     "cohort": [
       "Loki Doki"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 43,
@@ -17778,7 +18765,9 @@
     "cohort": [],
     "dead": [
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 43,
@@ -17816,7 +18805,9 @@
     "dead": [
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 43,
@@ -17880,7 +18871,9 @@
       "Speed Panda",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 43,
@@ -17944,7 +18937,9 @@
       "Speed Panda",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 43,
@@ -18010,7 +19005,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 43,
@@ -18077,7 +19074,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 43,
@@ -18145,7 +19144,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 44,
@@ -18200,7 +19201,21 @@
       "Kitana Kahn",
       "Spring Nymphar"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 1.6,
+        "amount": 41543
+      }
+    ]
   },
   {
     "fight": 44,
@@ -18289,7 +19304,9 @@
         "until": 114.6
       }
     ],
-    "down": [],
+    "down": [
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -18301,7 +19318,14 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
+    "self_hits": []
   },
   {
     "fight": 44,
@@ -18354,7 +19378,9 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 44,
@@ -18408,7 +19434,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 44,
@@ -18464,7 +19492,9 @@
       "Speed Panda",
       "Absolute Gigachad",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 44,
@@ -18521,7 +19551,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 44,
@@ -18578,7 +19610,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 44,
@@ -18652,7 +19686,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 44,
@@ -18726,7 +19762,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 45,
@@ -18761,7 +19799,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 45,
@@ -18798,7 +19838,9 @@
     "cohort": [],
     "dead": [
       "Absolute Gigachad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 45,
@@ -18836,7 +19878,9 @@
     "dead": [
       "Absolute Gigachad",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 45,
@@ -18874,7 +19918,9 @@
     "dead": [
       "Absolute Gigachad",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 45,
@@ -18914,7 +19960,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 45,
@@ -18954,7 +20002,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 45,
@@ -18996,7 +20046,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 45,
@@ -19039,7 +20091,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 46,
@@ -19074,7 +20128,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 46,
@@ -19123,7 +20179,9 @@
     "cohort": [],
     "dead": [
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 46,
@@ -19195,7 +20253,9 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 46,
@@ -19268,7 +20328,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 46,
@@ -19342,7 +20404,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 46,
@@ -19417,7 +20481,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 46,
@@ -19492,7 +20558,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 46,
@@ -19569,7 +20637,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 47,
@@ -19665,7 +20735,9 @@
       "Absolute Gigalad",
       "Loki Doki"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 47,
@@ -19763,7 +20835,9 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 47,
@@ -19862,7 +20936,9 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 47,
@@ -19962,7 +21038,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 47,
@@ -20052,7 +21130,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 47,
@@ -20143,7 +21223,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 47,
@@ -20234,7 +21316,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 47,
@@ -20292,7 +21376,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 48,
@@ -20370,7 +21456,16 @@
     "cohort": [
       "Spring Nymphar"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": [
+      {
+        "ability": "Dragon's Glory",
+        "guid": 25554,
+        "ago": 2.7,
+        "amount": 30358
+      }
+    ]
   },
   {
     "fight": 48,
@@ -20424,7 +21519,9 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 48,
@@ -20477,7 +21574,9 @@
     "dead": [
       "Spring Nymphar",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 48,
@@ -20555,7 +21654,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 48,
@@ -20633,7 +21734,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 48,
@@ -20713,7 +21816,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 48,
@@ -20793,7 +21898,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 48,
@@ -20875,7 +21982,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 49,
@@ -20933,7 +22042,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 49,
@@ -20988,7 +22099,13 @@
     ],
     "dead": [
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 49,
@@ -21055,7 +22172,13 @@
     "dead": [
       "Speed Panda",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 49,
@@ -21094,7 +22217,9 @@
       "Speed Panda",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 49,
@@ -21134,7 +22259,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 49,
@@ -21189,7 +22316,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 49,
@@ -21232,7 +22361,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 49,
@@ -21275,7 +22406,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 50,
@@ -21325,7 +22458,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 50,
@@ -21416,7 +22551,14 @@
     ],
     "dead": [
       "Kite Noodle"
-    ]
+    ],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 50,
@@ -21507,7 +22649,13 @@
     "dead": [
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 50,
@@ -21599,7 +22747,13 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 50,
@@ -21654,7 +22808,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 50,
@@ -21735,7 +22891,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 50,
@@ -21794,7 +22952,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 50,
@@ -21867,7 +23027,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 51,
@@ -21965,7 +23127,9 @@
       "Loki Doki",
       "Speed Panda"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 51,
@@ -22073,7 +23237,9 @@
     ],
     "dead": [
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 51,
@@ -22148,7 +23314,9 @@
     "dead": [
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 51,
@@ -22246,7 +23414,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 51,
@@ -22357,7 +23527,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 51,
@@ -22457,7 +23629,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 51,
@@ -22548,7 +23722,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 51,
@@ -22606,7 +23782,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 52,
@@ -22675,7 +23853,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 52,
@@ -22736,7 +23916,9 @@
     ],
     "dead": [
       "Spring Nymphar"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 52,
@@ -22801,7 +23983,9 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 52,
@@ -22874,7 +24058,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 52,
@@ -22914,7 +24100,9 @@
       "Absolute Gigalad",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 52,
@@ -22967,7 +24155,9 @@
       "Absolute Gigalad",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 52,
@@ -23038,7 +24228,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 52,
@@ -23084,7 +24276,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 57,
@@ -23145,7 +24339,9 @@
       "Absolute Gigachad",
       "Spring Nymphar"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 57,
@@ -23208,7 +24404,9 @@
     ],
     "dead": [
       "Speed Panda"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 57,
@@ -23272,7 +24470,9 @@
     "dead": [
       "Speed Panda",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 57,
@@ -23337,7 +24537,9 @@
       "Speed Panda",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 57,
@@ -23403,7 +24605,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 57,
@@ -23470,7 +24674,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 57,
@@ -23535,7 +24741,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 57,
@@ -23601,7 +24809,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 58,
@@ -23650,7 +24860,9 @@
     "cohort": [
       "Speed Panda"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 58,
@@ -23701,7 +24913,9 @@
     ],
     "dead": [
       "Speed Panda"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 58,
@@ -23780,7 +24994,9 @@
     "dead": [
       "Speed Panda",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 58,
@@ -23871,7 +25087,9 @@
     "dead": [
       "Speed Panda",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 58,
@@ -23964,7 +25182,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 58,
@@ -24058,7 +25278,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 58,
@@ -24140,7 +25362,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 58,
@@ -24224,7 +25448,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 59,
@@ -24334,7 +25560,9 @@
     ],
     "dead": [
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 59,
@@ -24386,7 +25614,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 59,
@@ -24501,7 +25731,9 @@
     "dead": [
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 59,
@@ -24560,7 +25792,9 @@
       "Absolute Gigachad",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 59,
@@ -24631,7 +25865,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 59,
@@ -24698,7 +25934,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 59,
@@ -24751,7 +25989,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 59,
@@ -24832,7 +26072,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 60,
@@ -24905,7 +26147,9 @@
     "cohort": [
       "Absolute Gigalad"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 60,
@@ -24968,7 +26212,14 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
-    "dead": []
+    "dead": [],
+    "group": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 60,
@@ -25033,7 +26284,14 @@
     ],
     "dead": [
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "self_hits": []
   },
   {
     "fight": 60,
@@ -25077,7 +26335,9 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kite Noodle"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -25089,7 +26349,14 @@
     "dead": [
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "self_hits": []
   },
   {
     "fight": 60,
@@ -25130,7 +26397,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 60,
@@ -25170,7 +26439,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 60,
@@ -25211,7 +26482,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 60,
@@ -25252,7 +26525,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 60,
@@ -25305,7 +26580,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 61,
@@ -25368,7 +26645,9 @@
     "cohort": [
       "Kitana Kahn"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 61,
@@ -25408,7 +26687,9 @@
     ],
     "dead": [
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 61,
@@ -25449,7 +26730,9 @@
     "dead": [
       "Absolute Gigalad",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 61,
@@ -25488,7 +26771,9 @@
       "Speed Panda",
       "Absolute Gigalad",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 61,
@@ -25537,7 +26822,9 @@
       "Absolute Gigachad",
       "Absolute Gigalad",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 61,
@@ -25586,7 +26873,9 @@
       "Absolute Gigachad",
       "Absolute Gigalad",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 61,
@@ -25637,7 +26926,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 61,
@@ -25688,7 +26979,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 62,
@@ -25731,7 +27024,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 62,
@@ -25793,7 +27088,9 @@
     ],
     "dead": [
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 62,
@@ -25856,7 +27153,9 @@
     "dead": [
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 62,
@@ -25920,7 +27219,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 62,
@@ -25985,7 +27286,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 62,
@@ -26051,7 +27354,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 62,
@@ -26117,7 +27422,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 62,
@@ -26183,7 +27490,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 63,
@@ -26329,7 +27638,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 63,
@@ -26400,7 +27711,9 @@
     "cohort": [],
     "dead": [
       "Absolute Gigachad"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 63,
@@ -26478,7 +27791,9 @@
     "dead": [
       "Absolute Gigachad",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 63,
@@ -26554,7 +27869,9 @@
       "Absolute Gigachad",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 63,
@@ -26643,7 +27960,9 @@
       "Absolute Gigachad",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 63,
@@ -26797,7 +28116,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 63,
@@ -26887,7 +28208,9 @@
       "Spring Nymphar",
       "Kite Noodle",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 63,
@@ -26932,7 +28255,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 64,
@@ -26967,7 +28292,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 64,
@@ -27029,7 +28356,9 @@
     ],
     "dead": [
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 64,
@@ -27092,7 +28421,9 @@
     "dead": [
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 64,
@@ -27156,7 +28487,9 @@
       "Speed Panda",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 64,
@@ -27221,7 +28554,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 64,
@@ -27287,7 +28622,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 64,
@@ -27353,7 +28690,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 64,
@@ -27420,7 +28759,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 65,
@@ -27458,7 +28799,9 @@
       "Kite Noodle",
       "Kitana Kahn"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 65,
@@ -27498,7 +28841,9 @@
     ],
     "dead": [
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 65,
@@ -27551,7 +28896,9 @@
     ],
     "dead": [
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 65,
@@ -27589,7 +28936,9 @@
     "dead": [
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 65,
@@ -27645,7 +28994,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 65,
@@ -27701,7 +29052,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 65,
@@ -27759,7 +29112,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 65,
@@ -27818,7 +29173,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 65,
@@ -27878,7 +29235,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 66,
@@ -27913,7 +29272,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 66,
@@ -27973,7 +29334,9 @@
     "cohort": [],
     "dead": [
       "Speed Panda"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 66,
@@ -28038,7 +29401,9 @@
     "dead": [
       "Speed Panda",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 66,
@@ -28104,7 +29469,9 @@
       "Speed Panda",
       "Spring Nymphar",
       "Kitana Kahn"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 66,
@@ -28171,7 +29538,9 @@
       "Spring Nymphar",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 66,
@@ -28239,7 +29608,9 @@
       "Absolute Gigalad",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 66,
@@ -28308,7 +29679,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 66,
@@ -28378,7 +29751,9 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 67,
@@ -28442,7 +29817,9 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 67,
@@ -28508,7 +29885,9 @@
     ],
     "dead": [
       "Speed Panda"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 67,
@@ -28575,7 +29954,9 @@
     "dead": [
       "Speed Panda",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 67,
@@ -28643,7 +30024,9 @@
       "Speed Panda",
       "Absolute Gigalad",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 67,
@@ -28711,7 +30094,9 @@
       "Speed Panda",
       "Absolute Gigalad",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 67,
@@ -28781,7 +30166,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 67,
@@ -28852,7 +30239,9 @@
       "Kite Noodle",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 67,
@@ -28936,7 +30325,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 68,
@@ -28971,7 +30362,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 68,
@@ -29006,7 +30399,9 @@
     "marked": [],
     "dropped_by": [],
     "cohort": [],
-    "dead": []
+    "dead": [],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 68,
@@ -29066,7 +30461,9 @@
     "cohort": [],
     "dead": [
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 68,
@@ -29138,7 +30535,9 @@
     "dead": [
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 68,
@@ -29211,7 +30610,9 @@
       "Absolute Gigachad",
       "Spring Nymphar",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 68,
@@ -29285,7 +30686,9 @@
       "Spring Nymphar",
       "Absolute Gigalad",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 68,
@@ -29325,7 +30728,9 @@
       "Spring Nymphar",
       "Absolute Gigalad",
       "Kite Noodle"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 68,
@@ -29369,7 +30774,9 @@
       "Absolute Gigalad",
       "Kite Noodle",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   },
   {
     "fight": 68,
@@ -29437,6 +30844,8 @@
       "Kite Noodle",
       "Kitana Kahn",
       "Loki Doki"
-    ]
+    ],
+    "group": [],
+    "self_hits": []
   }
 ]

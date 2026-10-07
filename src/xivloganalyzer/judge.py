@@ -241,6 +241,12 @@ def _happened(
     """
     if outcome == "unknown":
         return _everything(fact, mechanic)
+    if cause == "self":
+        own = _own_damage(fact)
+        took = _took(fact, exact=True)
+        if own is None:
+            return took
+        return f"{took} {own['ability']} had taken {_comma(own['amount'])} {own['ago']:g}s before."
     if outcome == "low":
         return _took(fact, exact=True)
     if outcome == "raw":
@@ -335,6 +341,8 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
         )
     if fact.clipped_by and (_vuln(fact) or mechanic.marker_owns_clip):
         return _done(fact, mechanic, "fail", _marker_clip(fact, pack), "marker", pack)
+    if _vuln(fact) and _redirected(fact, mechanic):
+        return _done(fact, mechanic, "fail", f"{fact.name} took the other group's jump.", "redirected", pack)
     if _vuln(fact):
         return _done(fact, mechanic, "fail", _amp(fact, mechanic), "personal", pack)
     hit = _hit(fact)
@@ -391,6 +399,14 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             "none", pack,
         )
     if hit <= cap:
+        own = _own_damage(fact)
+        if own and mechanic.id == "skyward-leap" and _skyward_cause(fact) == "healers":
+            return _done(fact, mechanic, "fail", f"{fact.name} was still low from {own['ability']}.", "self", pack)
+        if own and mechanic.id != "skyward-leap":
+            return _done(
+                fact, mechanic, "low" if fact.hp is not None and fact.hp < pack.low_hp else "raw",
+                f"{fact.name} was still low from {own['ability']}.", "self", pack,
+            )
         if fact.hp is not None and fact.hp < pack.low_hp:
             return _done(
                 fact, mechanic, "low",
@@ -468,6 +484,15 @@ def _moment_fault(fact: DeathFact, moment) -> str:
     if moment.cause == "tower":
         return f"{fact.name} died to an empty tower."
     return f"{fact.name} got hit."
+
+
+def _redirected(fact: DeathFact, mechanic: Mechanic) -> bool:
+    """A cast that alternates groups landed on the group that took the last one.
+
+    They still had the vulnerability from that cast, and they belong to the other
+    group, so it was not their cast. Players of the right group were already dead.
+    """
+    return mechanic.alternating and bool(fact.group) and fact.name not in fact.group and bool(fact.down)
 
 
 def _amp(fact: DeathFact, mechanic: Mechanic) -> str:
@@ -725,6 +750,20 @@ def _should(fact: DeathFact, mechanic: Mechanic, pack: FightPack) -> str:
     return mechanic.should_have_been
 
 
+def _own_damage(fact: DeathFact) -> dict | None:
+    """The player's own mistake that left them too low for this hit.
+
+    They lived a hit that is always a mistake, such as looking at a gaze or standing
+    in a puddle, and without it they would have had the HP to live this one.
+    """
+    if not fact.self_hits or not _known_hp(fact):
+        return None
+    taken = sum(hit["amount"] for hit in fact.self_hits)
+    if fact.hp + taken < _landed(fact):
+        return None
+    return max(fact.self_hits, key=lambda hit: hit["amount"])
+
+
 def _done(
     fact: DeathFact,
     mechanic: Mechanic,
@@ -770,15 +809,20 @@ def _people(names: list[str]) -> str:
     return " and ".join(names)
 
 
+def passes_on(item: Judgment) -> bool:
+    """The death belongs to other players: the ones missing from the mechanic, or whose drops it was."""
+    return item.cause in {"dropped", "marked", *_PASSED_ON}
+
+
 def empty_owners(item: Judgment) -> list[str]:
     """The players named for a mechanic someone else broke, without an unnamed group."""
     if item.cause == "dropped":
         return list(item.fact.dropped_by)
     if item.cause == "marked":
         return list(item.fact.marked)
-    if item.cause != "empty":
+    if item.cause not in _PASSED_ON:
         return []
-    return [who for who in item.owners if who not in _EMPTY_GROUPS.values()]
+    return [who for who in item.owners if who not in GROUP_LABELS]
 
 
 def _hit_by_others(item: Judgment) -> list[str]:
@@ -787,7 +831,7 @@ def _hit_by_others(item: Judgment) -> list[str]:
     A player in the landing of an arrow taken to the wrong side was hit by that diver.
     A player in place for an empty tower was hit by whoever was missing from it.
     """
-    if item.cause in {"empty", "dropped", "marked"}:
+    if item.cause in {"dropped", "marked", *_PASSED_ON}:
         owners = empty_owners(item)
     elif item.cause == "arrow":
         owners = [diver["name"] for diver in _wrong_arrows(item.fact)]
@@ -823,17 +867,29 @@ def _moment_text(deaths: list[Judgment], debuffs: list[dict], wall_id: str) -> s
     return ", ".join(bits[:-1]) + f" and {bits[-1]}"
 
 
-def _mark_first_mistakes(judgments: list[Judgment], pack: FightPack) -> None:
-    """The first death, Damage Down, or Hysteria of a pull. Later deaths often cascade from it.
+@dataclass
+class _FirstMoment:
+    """The first death, Damage Down, or Hysteria of one pull, plus anything within a second."""
 
-    A deathwall walk after the first mistake is still a mistake, shared with that earlier one.
-    A player killed by someone else's mistake is not marked first. The text names whose it was.
-    """
-    wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
+    phase: int
+    start: float
+    phase_name: str
+    deaths: list[Judgment]
+    debuffs: list[dict]
+
+    def holds(self, phase: int, t: float) -> bool:
+        return phase == self.phase and t <= self.start + _FIRST_S
+
+    def people(self) -> set[str]:
+        return {item.fact.name for item in self.deaths} | {debuff["name"] for debuff in self.debuffs}
+
+
+def _first_moments(judgments: list[Judgment], pack: FightPack) -> dict[int, _FirstMoment]:
     pulls: dict[int, list[Judgment]] = {}
     for item in judgments:
         pulls.setdefault(item.fact.fight, []).append(item)
-    for rows in pulls.values():
+    found = {}
+    for fight, rows in pulls.items():
         seen: set[tuple] = set()
         debuffs: list[dict] = []
         for item in rows:
@@ -845,34 +901,75 @@ def _mark_first_mistakes(judgments: list[Judgment], pack: FightPack) -> None:
         moments = [(item.fact.phase, item.fact.t) for item in rows]
         moments += [(debuff["phase"], debuff["t"]) for debuff in debuffs]
         phase, start = min(moments)
-
-        def at_first(where: int, t: float) -> bool:
-            return where == phase and t <= start + _FIRST_S
-
-        first_deaths = sorted(
-            (item for item in rows if at_first(item.fact.phase, item.fact.t)),
-            key=lambda item: (item.fact.t, item.fact.name),
-        )
-        first_debuffs = sorted(
-            (debuff for debuff in debuffs if at_first(debuff["phase"], debuff["t"])),
-            key=lambda debuff: (debuff["t"], debuff["name"]),
-        )
         known = pack.phase(phase)
         phase_name = known.name if known else rows[0].fact.phase_name
         for item in rows:
             if item.fact.phase == phase:
                 phase_name = item.fact.phase_name
                 break
-        text = _moment_text(first_deaths, first_debuffs, wall_id)
-        text = f"{text} at {start:.1f}s into {phase_name}"
-        for item in rows:
-            at_start = at_first(item.fact.phase, item.fact.t)
-            item.first = at_start and not _hit_by_others(item)
-            item.first_mistake = text
-            if at_start or item.mechanic_id != wall_id or _own_hysteria(item.fact):
-                continue
-            item.went_wrong = f"{item.fact.name} walked into the deathwall after the first mistake."
-            item.cause = "after"
+        moment = _FirstMoment(phase, start, phase_name, [], [])
+        moment.deaths = sorted(
+            (item for item in rows if moment.holds(item.fact.phase, item.fact.t)),
+            key=lambda item: (item.fact.t, item.fact.name),
+        )
+        moment.debuffs = sorted(
+            (debuff for debuff in debuffs if moment.holds(debuff["phase"], debuff["t"])),
+            key=lambda debuff: (debuff["t"], debuff["name"]),
+        )
+        found[fight] = moment
+    return found
+
+
+def _mark_after_walls(
+    judgments: list[Judgment], firsts: dict[int, _FirstMoment], pack: FightPack,
+) -> None:
+    """A deathwall walk after the first mistake is still a mistake, shared with that earlier one.
+
+    When the first mistake was the walker's own, such as their own Hysteria or Damage
+    Down, nobody else shares it.
+    """
+    wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
+    for item in judgments:
+        moment = firsts[item.fact.fight]
+        if item.mechanic_id != wall_id or moment.holds(item.fact.phase, item.fact.t):
+            continue
+        if _own_hysteria(item.fact) or _only_own_before(item, judgments):
+            continue
+        item.went_wrong = f"{item.fact.name} walked into the deathwall after the first mistake."
+        item.cause = "after"
+
+
+def _only_own_before(item: Judgment, judgments: list[Judgment]) -> bool:
+    """Every death and cascade debuff earlier in the pull was this player's own."""
+    when = (item.fact.phase, item.fact.t)
+    names = {
+        other.fact.name for other in judgments
+        if other.fact.fight == item.fact.fight and (other.fact.phase, other.fact.t) < when
+    }
+    names |= {
+        debuff["name"] for debuff in item.fact.prior_debuffs
+        if (debuff["phase"], debuff["t"]) < when
+    }
+    return names == {item.fact.name}
+
+
+def _mark_first_mistakes(
+    judgments: list[Judgment], firsts: dict[int, _FirstMoment], pack: FightPack,
+) -> None:
+    """The first death, Damage Down, or Hysteria of a pull. Later deaths often cascade from it.
+
+    A player killed by someone else's mistake is not marked first. The text names whose it was.
+    """
+    wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
+    texts = {
+        fight: f"{_moment_text(moment.deaths, moment.debuffs, wall_id)} "
+        f"at {moment.start:.1f}s into {moment.phase_name}"
+        for fight, moment in firsts.items()
+    }
+    for item in judgments:
+        moment = firsts[item.fact.fight]
+        item.first = moment.holds(item.fact.phase, item.fact.t) and not _hit_by_others(item)
+        item.first_mistake = texts[item.fact.fight]
 
 
 def _was(names: list[str]) -> str:
@@ -881,32 +978,49 @@ def _was(names: list[str]) -> str:
 
 # The unnamed owners of an explosion that needs every player.
 _EMPTY_GROUPS = {"tower": "Missed soak", "prey": "Prey markers"}
+# Labels that stand in for players the log did not name.
+GROUP_LABELS = frozenset({
+    *_EMPTY_GROUPS.values(),
+    "Missing bodies",
+    "Miscommunication",
+    "Out of position",
+    "Another player",
+    "Assigned mitigation",
+    "Earlier deaths",
+    "Healers",
+})
+# Causes whose owners are the players who were missing, or whoever owned their deaths.
+_PASSED_ON = frozenset({"empty", "redirected", "missing"})
 
 
 def _mark_empty_soaks(judgments: list[Judgment]) -> None:
-    """An explosion that needs every player, where someone was missing.
+    """A mechanic that needs certain players, where someone was missing.
 
     A player already dead, or alive and outside every tower, left the soak empty.
-    They own the explosion, not the players who were in place. A player who died
-    to an earlier empty tower passes it on to whoever left that one empty.
+    They own the explosion, not the players who were in place. Who owns each dead
+    player's gap is settled with the blame, in time order (`_missing_owners`).
     """
-    latest: dict[tuple[int, str], Judgment] = {}
-    for item in sorted(judgments, key=lambda row: (row.fact.fight, row.fact.phase, row.fact.t)):
+    for item in judgments:
         down, out, doubled = item.fact.down, item.fact.unsoaked, item.fact.doubled
         if item.cause in {"tower", "prey"} and (down or out or doubled):
-            owners: list[str] = []
-            for name in down:
-                earlier = latest.get((item.fact.fight, name))
-                passed = [name]
-                if earlier and earlier.cause == "empty":
-                    passed = earlier.owners
-                elif earlier and earlier.cause in _EMPTY_GROUPS:
-                    passed = [_EMPTY_GROUPS[earlier.cause]]
-                owners += [who for who in passed if who not in owners]
-            owners += [name for name in [*out, *doubled] if name not in owners]
-            item.owners = owners
             _empty_text(item, down, out, doubled)
-        latest[(item.fact.fight, item.fact.name)] = item
+        elif item.cause == "missing" and (down or out):
+            item.went_wrong = _missing_text(item, down, out)
+        elif item.cause == "redirected":
+            item.went_wrong = f"{_was(down)} dead, so {item.mechanic} hit the other group."
+
+
+def _missing_text(item: Judgment, down: list[str], out: list[str]) -> str:
+    """One sentence: how short the stack was, and who was missing from it."""
+    stack = item.went_wrong if item.went_wrong.startswith("The stack") else "The stack was short."
+    stack = stack.rstrip(".")
+    if down and out:
+        why = f"{_people(down + out)} were missing"
+    elif down:
+        why = f"{_was(down)} already dead"
+    else:
+        why = f"{_was(out)} not in it"
+    return f"{stack} because {why}."
 
 
 def _empty_text(item: Judgment, down: list[str], out: list[str], doubled: list[str]) -> None:
@@ -996,16 +1110,41 @@ def _healers(roster: list[tuple[str, str]]) -> list[str]:
     return sorted(name for name, role in roster if role == "healer")
 
 
+def _death_owners(item: Judgment) -> list[str]:
+    """Who owns this death, without the shares that only sit beside an owner."""
+    owners = [blame.who for blame in item.blames if blame.who not in _CONTEXT_SHARES]
+    return owners or [item.fact.name]
+
+
+def _passed_on(
+    item: Judgment, names: list[str], latest: dict[tuple[int, str], Judgment],
+) -> list[str]:
+    """Players who were missing because they were dead, each replaced by whoever owned that death.
+
+    A player who died to their own mistake keeps it. A player killed by someone
+    else's mistake, a healer's missed heal included, passes it on to that owner.
+    """
+    owners: list[str] = []
+    for name in names:
+        earlier = latest.get((item.fact.fight, name))
+        passed = _death_owners(earlier) if earlier is not None else [name]
+        owners += [who for who in passed if who not in owners]
+    return owners
+
+
+def _missing_owners(item: Judgment, latest: dict[tuple[int, str], Judgment]) -> list[str]:
+    """Who left a mechanic short: the dead, passed on to their owners, then the living who were elsewhere."""
+    owners = _passed_on(item, item.fact.down, latest)
+    owners += [name for name in [*item.fact.unsoaked, *item.fact.doubled] if name not in owners]
+    return owners
+
+
 def _healers_at(item: Judgment, healers: list[str], latest: dict[tuple[int, str], Judgment]) -> list[str]:
     """The healers who could heal this hit. A healer already dead passes their share
     on to whoever owned that healer's death."""
     owners: list[str] = []
     for healer in healers:
-        passed = [healer]
-        if healer in item.fact.dead:
-            earlier = latest.get((item.fact.fight, healer))
-            if earlier is not None and earlier.blames:
-                passed = [blame.who for blame in earlier.blames if blame.who not in _CONTEXT_SHARES]
+        passed = _passed_on(item, [healer], latest) if healer in item.fact.dead else [healer]
         owners += [who for who in passed if who not in owners]
     return owners
 
@@ -1034,7 +1173,7 @@ def _blame(
     """Who owns this death, from the rule that judged it."""
     if item.cause == "none":
         item.blames = []
-    elif item.cause == "personal":
+    elif item.cause in {"personal", "self"}:
         item.blames = _shares([item.fact.name])
     elif item.cause == "after":
         item.blames = _shares([item.fact.name, "Earlier mistake"])
@@ -1042,8 +1181,13 @@ def _blame(
         item.blames = _shares(marker_owners(item.fact))
     elif item.cause in {"dropped", "marked"}:
         item.blames = _shares(empty_owners(item))
-    elif item.cause == "empty":
-        if len(item.owners) == 1 and item.owners[0] in _EMPTY_GROUPS.values():
+    elif item.cause in {"empty", "redirected"}:
+        # A redirected jump follows the marker, so the living players of that group did nothing wrong.
+        if item.cause == "redirected":
+            item.owners = _passed_on(item, item.fact.down, latest)
+        else:
+            item.owners = _missing_owners(item, latest)
+        if len(item.owners) == 1 and item.owners[0] in GROUP_LABELS:
             item.blames = _group(item.owners[0], 2)
         else:
             item.blames = _shares(item.owners)
@@ -1067,6 +1211,9 @@ def _blame(
         item.blames = _group("Prey markers", 2)
     elif item.cause == "clip":
         item.blames = _group("Out of position", 3)
+    elif item.cause == "missing" and (item.fact.down or item.fact.unsoaked):
+        item.owners = _missing_owners(item, latest)
+        item.blames = _shares(item.owners)
     elif item.cause == "missing":
         if not item.fact.stack:
             item.blames = _group("Missing bodies", 2)
@@ -1094,10 +1241,14 @@ def judge_report(
     roster: list[tuple[str, str]] | None = None,
 ) -> list[Judgment]:
     judgments = [judge_fact(fact, pack) for fact in facts]
+    if not judgments:
+        return judgments
     _mark_empty_soaks(judgments)
-    _mark_first_mistakes(judgments, pack)
+    firsts = _first_moments(judgments, pack)
+    _mark_after_walls(judgments, firsts, pack)
     people = list(roster) if roster else _roster_from_facts(facts)
     _assign_blame(judgments, pack, people)
+    _mark_first_mistakes(judgments, firsts, pack)
     return judgments
 
 

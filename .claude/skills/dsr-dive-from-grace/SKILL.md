@@ -49,11 +49,11 @@ Apply these to the killing blow.
 - Those guids at about 9–23k: the landing connected. A death there is raw, or low if they were already under 15,000 HP. This log has no such death. The circle has lived hits in that band. The down arrow has no small hit stored.
 - A death with no killing blow, at the same moment, last hit the dive: the knock into the wall. The row has no packet, so it is a Deathwall fail. Pull 33 is that case.
 - Eye of the Tyrant `26388` at or under the role cap: the stack of five. Tanks about 37–48k. Everyone else about 50–70k. Dying there from a healthy bar is the healers. Pull 26, three players from full HP at about 71k with no shield.
-- Eye of the Tyrant over 100,000: the stack was short. Pull 16 is 116k on Gigalad and 182k on Kitana Kahn. The log has no stack count, so the missing bodies stay unnamed.
+- Eye of the Tyrant over 100,000: the stack was short. Pull 16 is 116k on Gigalad and 182k on Kitana Kahn. The stack is the 2s and 3s, read from the number debuffs, so a 2 or 3 already dead is a missing body. Kite Noodle, Loki Doki, and Kiara Blaiddyd were dead on pull 16. Each gap passes on to whoever owned that death.
 - Gnashing Wheel `26389` or Lashing Wheel `26390`: any hit is a fail, including under 15,000 HP. About 12–23k and Damage Down. Gnash is inside the hitbox, so out is safe. Lash is outside, so in is safe. Gnash and Lash means out, then in. Lash and Gnash means in, then out.
 - Darkdragon Dive `26385`: any hit is a fail. About 445–570k. They soaked while they still had the dive debuff. Pull 33, Kite Noodle and Speed Panda. Pull 27, Speed Panda. Pull 46, Kitana Kahn.
 - Darkdragon Dive `26395` at or under the role cap: the soak. Tanks about 32–54k. A non-tank hit that killed from a high bar was about 59–80k. No survived non-tank soak is stored. Dying to it from a healthy bar is the healers. Already under 15,000 HP is low. Pull 27, Kite, Kitana, and Gigalad were low.
-- Darkdragon Dive `26395` over 150,000: an empty tower. About 1.4–3.0 million. The assigned soaker owns the miss. On the first towers, about 37–39 seconds, those are the 3s. The judge does not read the number debuff for towers yet, so the call is Missed soak. A wrong facing would move the fault to the diver. Damage cannot show the tile.
+- Darkdragon Dive `26395` over 150,000: an empty tower. About 1.4–3.0 million. The assigned soaker owns the miss. On the first towers, about 37–39 seconds, those are the 3s, read from the number debuff (`needs_everyone` with `holders` and `until` on `darkdragon-dive`). A 3 already dead owns the empty tower, passed on to whoever owned that death: pulls 16, 26, 30, and 33. With every 3 alive the call stays Missed soak, because the soak hits are not stored: pulls 36 and 50. The later towers are not read yet. A wrong facing would move the fault to the diver. Damage cannot show the tile.
 - Geirskogul `26378`: any hit is a fail. One player in the line owns it. Pull 36 Gigachad was at 12,516 HP. Pull 46 Kite Noodle took about 109k. Several players in one line would be the baiter. This log never has more than one.
 
 Standing on the wrong clock spot, while the tower still lands on a soakable tile and nobody extra is in the dive, does not show in the damage.
@@ -66,7 +66,7 @@ Dive landing over 150,000, no arrow out of place: `{player}` stood in the dive, 
 
 Eye of the Tyrant inside the cap: the resolve. Name the shield and the mit. Party mitigation joins the healers when the mit is unknown.
 
-Eye of the Tyrant over 100,000: the players who were not in the north stack. The log cannot name them or count them. Missing bodies.
+Eye of the Tyrant over 100,000: the players who were not in the north stack. A 2 or 3 already dead is named and passes it on to whoever owned that death. With none dead, Missing bodies.
 
 In-and-out: `{player}` was on the wrong side.
 
@@ -74,7 +74,7 @@ Debuffed soak: `{player}` soaked a tower while they still had the dive debuff.
 
 Soak inside the cap: the resolve, or low when they were already under 15,000 HP.
 
-Empty tower: `{player}` died to the explosion. Missed soak. The first towers belong to the 3s. The judge does not name which 3 yet.
+Empty tower: `{player}` died to the explosion. The first towers belong to the 3s, and a dead 3 owns it, passed on to whoever owned that death. Missed soak only when every 3 was alive.
 
 Geirskogul: `{player}` stood in the line.
 
