@@ -602,7 +602,7 @@ function deathCard(row, opts) {
     ? `<div class="death-body">${stillFrame(row.frame)}${body}</div>`
     : body;
   return `<div class="death">
-    <div class="who"><span class="time">${esc(row.time)}</span>${cast}<strong>${esc(row.name)}</strong>${jobMark(row.job)}</div>
+    <div class="who"><span class="time">${esc(row.time)}</span>${cast}<strong>${esc(row.name)}</strong>${jobMark(row.job)}${row.first ? `<span class="tag raw" title="The first mistake of this pull. Later deaths often cascade from it.">First mistake</span>` : ""}</div>
     ${framed}
   </div>`;
 }
@@ -1556,6 +1556,9 @@ function renderPull(id) {
   const packets = c.environment
     ? `<p class="meta">${c.environment} deaths had no damage packet.</p>`
     : "";
+  const first = pull.firstMistake
+    ? `<section><h2>First mistake</h2><p>${esc(pull.firstMistake)}.</p><p class="meta">Later deaths in this pull often cascade from it.</p></section>`
+    : "";
   return `
     <header>
       <div>
@@ -1564,6 +1567,7 @@ function renderPull(id) {
       </div>
       <p class="meta"><a href="${logHref(pull.id)}">Open this pull</a></p>
     </header>
+    ${first}
     ${blocks || `<section><p class="quiet">No mechanic review for this pull.</p></section>`}
     ${rest}
     ${packets}`;

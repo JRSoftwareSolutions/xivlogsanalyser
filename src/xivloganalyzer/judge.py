@@ -36,6 +36,8 @@ class Judgment:
     went_wrong: str
     cause: str = "none"
     blames: list[Blame] = field(default_factory=list)
+    first: bool = False
+    first_mistake: str = ""
 
     def to_dict(self) -> dict:
         payload = asdict(self.fact)
@@ -48,6 +50,8 @@ class Judgment:
                 "should_have_been": self.should_have_been,
                 "went_wrong": self.went_wrong,
                 "blames": [blame.to_dict() for blame in self.blames],
+                "first": self.first,
+                "first_mistake": self.first_mistake,
             }
         )
         return payload
@@ -133,6 +137,8 @@ def _hit(fact: DeathFact) -> int:
 
 def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
     happened = ""
+    if fact.guid == 0 and pack.deathwall is not None:
+        return _deathwall(fact, pack.deathwall)
     if fact.guid == 0:
         return Judgment(
             fact=fact,
@@ -234,6 +240,43 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
     return _done(
         fact, mechanic, happened, "fail", _oversized(fact, mechanic),
         _oversized_cause(fact, mechanic), pack,
+    )
+
+
+# A deathwall time is only good to about a second, so Hysteria is matched with this much slack.
+_MOMENT_S = 1.5
+# Deaths and debuffs this close to the first one are the same first mistake.
+_FIRST_S = 1.0
+
+
+def _own_hysteria(fact: DeathFact) -> bool:
+    """They still had Hysteria from the gaze, so they were walked into the wall."""
+    for debuff in fact.prior_debuffs:
+        if debuff["name"] != fact.name or debuff["debuff"] != "Hysteria":
+            continue
+        if debuff["phase"] != fact.phase or debuff["t"] > fact.t + _MOMENT_S:
+            continue
+        until = debuff.get("until")
+        if until is None or until >= fact.t - _MOMENT_S:
+            return True
+    return False
+
+
+def _deathwall(fact: DeathFact, mechanic: Mechanic) -> Judgment:
+    """No killing blow is the arena edge. It is always a mistake."""
+    if _own_hysteria(fact):
+        wrong = f"{fact.name} looked at the gaze and walked into the deathwall with Hysteria."
+    else:
+        wrong = f"{fact.name} walked into the deathwall."
+    return Judgment(
+        fact=fact,
+        mechanic_id=mechanic.id,
+        mechanic=mechanic.name,
+        outcome="fail",
+        happened="No damage packet.",
+        should_have_been=mechanic.should_have_been,
+        went_wrong=wrong,
+        cause="personal",
     )
 
 
@@ -454,6 +497,83 @@ def _no_party_mit(fact: DeathFact) -> bool:
     return fact.multiplier is None or fact.multiplier >= 0.995
 
 
+def _people(names: list[str]) -> str:
+    if len(names) > 2:
+        return f"{len(names)} players"
+    return " and ".join(names)
+
+
+def _moment_text(deaths: list[Judgment], debuffs: list[dict], wall_id: str) -> str:
+    groups: dict[str, list[str]] = {}
+    for item in deaths:
+        if item.mechanic_id == wall_id:
+            verb = "walking into the deathwall"
+        else:
+            verb = f"dying to {item.mechanic}"
+        names = groups.setdefault(verb, [])
+        if item.fact.name not in names:
+            names.append(item.fact.name)
+    bits = [f"{_people(names)} {verb}" for verb, names in groups.items()]
+    by_debuff: dict[str, list[str]] = {}
+    for debuff in debuffs:
+        names = by_debuff.setdefault(debuff["debuff"], [])
+        if debuff["name"] not in names:
+            names.append(debuff["name"])
+    bits += [f"{name} on {_people(names)}" for name, names in by_debuff.items()]
+    if len(bits) == 1:
+        return bits[0]
+    return ", ".join(bits[:-1]) + f" and {bits[-1]}"
+
+
+def _mark_first_mistakes(judgments: list[Judgment], pack: FightPack) -> None:
+    """The first death, Damage Down, or Hysteria of a pull. Later deaths often cascade from it.
+
+    A deathwall walk after the first mistake is still a mistake, shared with that earlier one.
+    """
+    wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
+    pulls: dict[int, list[Judgment]] = {}
+    for item in judgments:
+        pulls.setdefault(item.fact.fight, []).append(item)
+    for rows in pulls.values():
+        seen: set[tuple] = set()
+        debuffs: list[dict] = []
+        for item in rows:
+            for debuff in item.fact.prior_debuffs:
+                key = (debuff["name"], debuff["debuff"], debuff["phase"], debuff["t"])
+                if key not in seen:
+                    seen.add(key)
+                    debuffs.append(debuff)
+        moments = [(item.fact.phase, item.fact.t) for item in rows]
+        moments += [(debuff["phase"], debuff["t"]) for debuff in debuffs]
+        phase, start = min(moments)
+
+        def at_first(where: int, t: float) -> bool:
+            return where == phase and t <= start + _FIRST_S
+
+        first_deaths = sorted(
+            (item for item in rows if at_first(item.fact.phase, item.fact.t)),
+            key=lambda item: (item.fact.t, item.fact.name),
+        )
+        first_debuffs = sorted(
+            (debuff for debuff in debuffs if at_first(debuff["phase"], debuff["t"])),
+            key=lambda debuff: (debuff["t"], debuff["name"]),
+        )
+        phase_name = rows[0].fact.phase_name
+        for item in rows:
+            if item.fact.phase == phase:
+                phase_name = item.fact.phase_name
+                break
+        text = _moment_text(first_deaths, first_debuffs, wall_id)
+        text = f"{text} at {start:.1f}s into {phase_name}"
+        for item in rows:
+            item.first = at_first(item.fact.phase, item.fact.t)
+            item.first_mistake = text
+            if item.first or item.mechanic_id != wall_id or _own_hysteria(item.fact):
+                continue
+            item.went_wrong = f"{item.fact.name} walked into the deathwall after the first mistake."
+            item.cause = "after"
+
+
 def _same_cast(left: Judgment, right: Judgment) -> bool:
     return (
         left.cause == right.cause
@@ -508,6 +628,8 @@ def _assign_blame(
             item.blames = []
         elif item.cause == "personal":
             item.blames = _shares([item.fact.name])
+        elif item.cause == "after":
+            item.blames = _shares([item.fact.name, "Earlier mistake"])
         elif item.cause == "marker":
             item.blames = _shares(list(item.fact.clipped_by))
         elif item.cause == "overlap":
@@ -550,6 +672,7 @@ def judge_report(
     roster: list[tuple[str, str]] | None = None,
 ) -> list[Judgment]:
     judgments = [judge_fact(fact, pack) for fact in facts]
+    _mark_first_mistakes(judgments, pack)
     people = list(roster) if roster else _roster_from_facts(facts)
     _assign_blame(judgments, pack, people)
     return judgments

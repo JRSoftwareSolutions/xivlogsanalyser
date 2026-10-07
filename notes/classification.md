@@ -10,7 +10,9 @@ A death is a **failed mechanic** when it is a cone, ring, gaze, empty tower, ice
 
 **Low** means the hit was normal-sized and they were already under 15,000 HP. Those 4 are not in the 86. An empty Sanctity tower or a comet overlap is a fail even when they were already that low.
 
-**Environment** means the deaths table has no damage packet. 88 rows had a timestamp and an empty ability. 39 more had an empty tooltip and no timestamp. The page reports 127. They are usually the body after a raise. Weakness (`1000043`) is the raise debuff. It does not increase damage taken.
+**Deathwall** means the deaths table has no damage packet. The player walked into the deathwall, and that is always a mistake. The page reports 127. The only timestamp in those rows is the last hit they lived, often several seconds earlier. The death is timed by the row's clock instead. That clock reads 1–2 seconds after the killing hit on rows that have one, so a deathwall death is moved back 1.5 seconds. Weakness (`1000043`) is the raise debuff. It does not increase damage taken.
+
+**First mistake** is the earliest death, Damage Down, or Hysteria in the pull, plus anything within the next second. It matters most. Later deaths often cascade from it. A deathwall walk before it, or as part of it, is that player's own mistake at 100. With their own Hysteria from the gaze still on, it is still theirs: they looked. A deathwall walk after it is still a mistake, shared 50 with "Earlier mistake". Pull 28 is Loki Doki walking into the wall at 0:59, before anyone died. Pull 23 is two cone deaths at 14.9 seconds, then the rest of the party in the wall over the next six seconds.
 
 ## Which pulls
 
@@ -39,12 +41,12 @@ Gigalad's 118,362 is the largest hit amount seen and is treated as full HP. A we
 |---|---|
 | Raw | 86 |
 | Failed mechanic | 241 |
-| No damage packet | 127 |
+| Deathwall, also a fail | 127 |
 | Already under 15k | 4 |
 
 Raw by killing blow: Eternal Conviction 45, all of them the Strength raidwide around 63 seconds. Sacred Sever 36. Dragon's Rage 5. Holy Impact is no longer raw. Sanctity Eternal Conviction, around 137 seconds, is the empty tower.
 
-Pull 68, wiped at 65.1%: no raw death. Kitana Kahn was at full HP with no mitigation on Skyward Leap, so that death is a mitigation fail. Loki and Spring ate Ascalon's Mercy Concealed, Kite ate Heavy Impact, Kiara ate an empty tower. Gigachad, Gigalad, Speed, and the second Loki death have no damage packet.
+Pull 68, wiped at 65.1%: no raw death. Kitana Kahn was at full HP with no mitigation on Skyward Leap, so that death is a mitigation fail. Loki and Spring ate Ascalon's Mercy Concealed, Kite ate Heavy Impact, Kiara ate an empty tower. Gigachad, Gigalad, Speed, and the second Loki death walked into the deathwall after those.
 
 ## Ability bands
 
@@ -127,7 +129,7 @@ A Lightning Storm clip or a Bright Flare overlap splits across the players in th
 
 Report `8DYNHQx4C7ytdLb9`. Eight pulls reached Nidhogg. The strat is LPDU Easthogg. Ability files for these guids are not stored, and the packets have no unmitigated amount, so the number is the total hit. This is the baseline, not a cast survey.
 
-Final Chorus and the auto cleave are not this stop. A blank killing blow at the dive, with the dive in the last hits, is the knock into the wall. Pull 33. It stays a no-packet death.
+Final Chorus and the auto cleave are not this stop. A blank killing blow at the dive, with the dive in the last hits, is the knock into the wall. Pull 33. It is a Deathwall fail.
 
 | Guid | What the hit is | Call |
 |---|---|---|
