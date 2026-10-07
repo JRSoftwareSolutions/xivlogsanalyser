@@ -44,6 +44,8 @@
         "via": "Skyward Leap"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -121,6 +123,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dimensional-collapse",
     "mechanic": "Dimensional Collapse",
     "outcome": "fail",
@@ -182,15 +186,19 @@
         "via": null
       }
     ],
+    "clipped_by": [
+      "Spring Nymphar"
+    ],
+    "clip_guid": 25565,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "944,888 unmitigated \u00b7 HP 37,051 (54%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Magic Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Speed Panda still had a damage amp.",
+    "went_wrong": "Speed Panda was clipped by Spring Nymphar's Skyward Leap.",
     "blames": [
       {
-        "who": "Speed Panda",
+        "who": "Spring Nymphar",
         "confidence": 100
       }
     ]
@@ -279,15 +287,19 @@
         "via": null
       }
     ],
+    "clipped_by": [
+      "Spring Nymphar"
+    ],
+    "clip_guid": 25565,
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "481,176 unmitigated \u00b7 HP 99,211 (100%) \u00b7 51% amp \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%; Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad, 15%; Sentinel from Absolute Gigachad, 30%; Physical Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigachad shorted the tether.",
+    "went_wrong": "Absolute Gigachad was clipped by Spring Nymphar's Skyward Leap.",
     "blames": [
       {
-        "who": "Absolute Gigachad",
+        "who": "Spring Nymphar",
         "confidence": 100
       }
     ]
@@ -340,15 +352,19 @@
         "via": null
       }
     ],
+    "clipped_by": [
+      "Spring Nymphar"
+    ],
+    "clip_guid": 25565,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "950,400 unmitigated \u00b7 HP 34,482 (50%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Magic Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kiara Blaiddyd still had a damage amp.",
+    "went_wrong": "Kiara Blaiddyd was clipped by Spring Nymphar's Skyward Leap.",
     "blames": [
       {
-        "who": "Kiara Blaiddyd",
+        "who": "Spring Nymphar",
         "confidence": 100
       }
     ]
@@ -401,15 +417,19 @@
         "via": null
       }
     ],
+    "clipped_by": [
+      "Spring Nymphar"
+    ],
+    "clip_guid": 25565,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "824,990 unmitigated \u00b7 HP 52,362 (85%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Magic Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kitana Kahn still had a damage amp.",
+    "went_wrong": "Kitana Kahn was clipped by Spring Nymphar's Skyward Leap.",
     "blames": [
       {
-        "who": "Kitana Kahn",
+        "who": "Spring Nymphar",
         "confidence": 100
       }
     ]
@@ -462,6 +482,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -513,6 +535,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -556,6 +580,8 @@
     "boss_pct": 32.8,
     "pull_ms": 142282,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -603,6 +629,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "heavens-stake",
     "mechanic": "Heavens' Stake",
     "outcome": "fail",
@@ -650,6 +678,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -685,6 +715,8 @@
     "boss_pct": 32.8,
     "pull_ms": 142282,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -720,6 +752,8 @@
     "boss_pct": 32.8,
     "pull_ms": 142282,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -755,6 +789,8 @@
     "boss_pct": 32.8,
     "pull_ms": 142282,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -790,6 +826,8 @@
     "boss_pct": 32.8,
     "pull_ms": 142282,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -825,6 +863,8 @@
     "boss_pct": 32.8,
     "pull_ms": 142282,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -860,6 +900,8 @@
     "boss_pct": 32.8,
     "pull_ms": 142282,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -920,6 +962,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -1003,6 +1047,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -1061,6 +1107,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "Holy Shield Bash",
     "outcome": "unknown",
@@ -1117,6 +1165,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -1202,6 +1252,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -1255,6 +1307,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -1320,6 +1374,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -1397,6 +1453,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -1440,6 +1498,8 @@
     "boss_pct": 63.2,
     "pull_ms": 72410,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1482,6 +1542,8 @@
         "via": "Succor"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1524,6 +1586,8 @@
         "via": "Succor"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1554,6 +1618,8 @@
     "boss_pct": 63.8,
     "pull_ms": 62958,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1584,6 +1650,8 @@
     "boss_pct": 63.8,
     "pull_ms": 62958,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -1619,6 +1687,8 @@
     "boss_pct": 63.8,
     "pull_ms": 62958,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1649,6 +1719,8 @@
     "boss_pct": 63.8,
     "pull_ms": 62958,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1679,6 +1751,8 @@
     "boss_pct": 63.8,
     "pull_ms": 62958,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1709,6 +1783,8 @@
     "boss_pct": 63.8,
     "pull_ms": 62958,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1739,6 +1815,8 @@
     "boss_pct": 33.8,
     "pull_ms": 141931,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -1774,6 +1852,8 @@
     "boss_pct": 33.8,
     "pull_ms": 141931,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1804,6 +1884,8 @@
     "boss_pct": 33.8,
     "pull_ms": 141931,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -1834,6 +1916,8 @@
     "boss_pct": 33.8,
     "pull_ms": 141931,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1869,6 +1953,8 @@
     "boss_pct": 33.8,
     "pull_ms": 141931,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1904,6 +1990,8 @@
     "boss_pct": 33.8,
     "pull_ms": 141931,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1939,6 +2027,8 @@
     "boss_pct": 33.8,
     "pull_ms": 141931,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1974,6 +2064,8 @@
     "boss_pct": 33.8,
     "pull_ms": 141931,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -2009,6 +2101,8 @@
     "boss_pct": 67.9,
     "pull_ms": 63969,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -2078,6 +2172,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -2113,6 +2209,8 @@
     "boss_pct": 67.9,
     "pull_ms": 63969,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -2143,6 +2241,8 @@
     "boss_pct": 67.9,
     "pull_ms": 63969,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -2173,6 +2273,8 @@
     "boss_pct": 67.9,
     "pull_ms": 63969,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -2203,6 +2305,8 @@
     "boss_pct": 67.9,
     "pull_ms": 63969,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -2278,6 +2382,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -2313,6 +2419,8 @@
     "boss_pct": 67.9,
     "pull_ms": 63969,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -2348,6 +2456,8 @@
     "boss_pct": 67.9,
     "pull_ms": 63969,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -2378,6 +2488,8 @@
     "boss_pct": 32.4,
     "pull_ms": 151203,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -2408,6 +2520,8 @@
     "boss_pct": 32.4,
     "pull_ms": 151203,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -2443,6 +2557,8 @@
     "boss_pct": 32.4,
     "pull_ms": 151203,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -2478,6 +2594,8 @@
     "boss_pct": 32.4,
     "pull_ms": 151203,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -2513,6 +2631,8 @@
     "boss_pct": 32.4,
     "pull_ms": 151203,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -2548,6 +2668,8 @@
     "boss_pct": 32.4,
     "pull_ms": 151203,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -2583,6 +2705,8 @@
     "boss_pct": 32.4,
     "pull_ms": 151203,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -2618,6 +2742,8 @@
     "boss_pct": 32.4,
     "pull_ms": 151203,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -2698,6 +2824,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -2745,6 +2873,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -2780,6 +2910,8 @@
     "boss_pct": 62.6,
     "pull_ms": 69316,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -2838,6 +2970,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -2868,6 +3002,8 @@
     "boss_pct": 62.6,
     "pull_ms": 69316,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -2911,6 +3047,8 @@
     "boss_pct": 62.6,
     "pull_ms": 69316,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -2980,6 +3118,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -3019,6 +3159,8 @@
     "boss_pct": 62.6,
     "pull_ms": 69316,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -3062,6 +3204,8 @@
     "boss_pct": 33.1,
     "pull_ms": 155492,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -3092,6 +3236,8 @@
     "boss_pct": 33.1,
     "pull_ms": 155492,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -3122,6 +3268,8 @@
     "boss_pct": 33.1,
     "pull_ms": 155492,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3157,6 +3305,8 @@
     "boss_pct": 33.1,
     "pull_ms": 155492,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3192,6 +3342,8 @@
     "boss_pct": 33.1,
     "pull_ms": 155492,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3227,6 +3379,8 @@
     "boss_pct": 33.1,
     "pull_ms": 155492,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3262,6 +3416,8 @@
     "boss_pct": 33.1,
     "pull_ms": 155492,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3297,6 +3453,8 @@
     "boss_pct": 33.1,
     "pull_ms": 155492,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3344,6 +3502,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -3415,6 +3575,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -3477,6 +3639,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -3556,6 +3720,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -3618,6 +3784,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -3648,6 +3816,8 @@
     "boss_pct": 69.2,
     "pull_ms": 74809,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -3727,6 +3897,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -3802,6 +3974,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -3864,6 +4038,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -3894,6 +4070,8 @@
     "boss_pct": 64.0,
     "pull_ms": 63609,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -3924,6 +4102,8 @@
     "boss_pct": 64.0,
     "pull_ms": 63609,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -3954,6 +4134,8 @@
     "boss_pct": 64.0,
     "pull_ms": 63609,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -4007,6 +4189,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -4120,6 +4304,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -4184,6 +4370,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dimensional-collapse",
     "mechanic": "Dimensional Collapse",
     "outcome": "fail",
@@ -4269,15 +4457,19 @@
         "via": null
       }
     ],
+    "clipped_by": [
+      "Absolute Gigachad"
+    ],
+    "clip_guid": 25565,
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "797,639 unmitigated \u00b7 HP 109,989 (111%) \u00b7 115% amp \u00b7 no shield \u00b7 Bloodwhetting from Absolute Gigalad, 10%; Rampart from Absolute Gigalad, 20%; Stem the Flow from Absolute Gigalad, 10%; Physical Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigalad shorted the tether.",
+    "went_wrong": "Absolute Gigalad was clipped by Absolute Gigachad's Skyward Leap.",
     "blames": [
       {
-        "who": "Absolute Gigalad",
+        "who": "Absolute Gigachad",
         "confidence": 100
       }
     ]
@@ -4304,6 +4496,8 @@
     "boss_pct": 64.0,
     "pull_ms": 63609,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -4357,6 +4551,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "Final Chorus",
     "outcome": "unknown",
@@ -4421,6 +4617,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "Final Chorus",
     "outcome": "unknown",
@@ -4485,6 +4683,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "Final Chorus",
     "outcome": "unknown",
@@ -4527,6 +4727,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "attack",
     "outcome": "unknown",
@@ -4569,6 +4771,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "attack",
     "outcome": "unknown",
@@ -4599,6 +4803,8 @@
     "boss_pct": 87.7,
     "pull_ms": 43408,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "fail",
@@ -4634,6 +4840,8 @@
     "boss_pct": 87.7,
     "pull_ms": 43408,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "fail",
@@ -4669,6 +4877,8 @@
     "boss_pct": 87.7,
     "pull_ms": 43408,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -4704,6 +4914,8 @@
     "boss_pct": 87.7,
     "pull_ms": 43408,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -4765,6 +4977,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
     "outcome": "fail",
@@ -4800,6 +5014,8 @@
     "boss_pct": 33.9,
     "pull_ms": 142675,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "raw",
@@ -4843,6 +5059,8 @@
     "boss_pct": 33.9,
     "pull_ms": 142675,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -4873,6 +5091,8 @@
     "boss_pct": 33.9,
     "pull_ms": 142675,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -4908,6 +5128,8 @@
     "boss_pct": 33.9,
     "pull_ms": 142675,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -4943,6 +5165,8 @@
     "boss_pct": 33.9,
     "pull_ms": 142675,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -4978,6 +5202,8 @@
     "boss_pct": 33.9,
     "pull_ms": 142675,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5013,6 +5239,8 @@
     "boss_pct": 33.9,
     "pull_ms": 142675,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5048,6 +5276,8 @@
     "boss_pct": 33.9,
     "pull_ms": 142675,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5095,6 +5325,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -5125,6 +5357,8 @@
     "boss_pct": 37.7,
     "pull_ms": 152802,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5160,6 +5394,8 @@
     "boss_pct": 37.7,
     "pull_ms": 152802,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5195,6 +5431,8 @@
     "boss_pct": 37.7,
     "pull_ms": 152802,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5230,6 +5468,8 @@
     "boss_pct": 37.7,
     "pull_ms": 152802,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5265,6 +5505,8 @@
     "boss_pct": 37.7,
     "pull_ms": 152802,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5300,6 +5542,8 @@
     "boss_pct": 37.7,
     "pull_ms": 152802,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5335,6 +5579,8 @@
     "boss_pct": 37.7,
     "pull_ms": 152802,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5370,6 +5616,8 @@
     "boss_pct": 37.7,
     "pull_ms": 152802,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5405,6 +5653,8 @@
     "boss_pct": 35.3,
     "pull_ms": 146381,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5440,6 +5690,8 @@
     "boss_pct": 35.3,
     "pull_ms": 146381,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5475,6 +5727,8 @@
     "boss_pct": 35.3,
     "pull_ms": 146381,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5510,6 +5764,8 @@
     "boss_pct": 35.3,
     "pull_ms": 146381,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5545,6 +5801,8 @@
     "boss_pct": 35.3,
     "pull_ms": 146381,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5580,6 +5838,8 @@
     "boss_pct": 35.3,
     "pull_ms": 146381,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5615,6 +5875,8 @@
     "boss_pct": 35.3,
     "pull_ms": 146381,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -5645,6 +5907,8 @@
     "boss_pct": 35.3,
     "pull_ms": 146381,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5680,6 +5944,8 @@
     "boss_pct": 32.2,
     "pull_ms": 163114,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -5710,6 +5976,8 @@
     "boss_pct": 32.2,
     "pull_ms": 163114,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5745,6 +6013,8 @@
     "boss_pct": 32.2,
     "pull_ms": 163114,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -5775,6 +6045,8 @@
     "boss_pct": 32.2,
     "pull_ms": 163114,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5810,6 +6082,8 @@
     "boss_pct": 32.2,
     "pull_ms": 163114,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5845,6 +6119,8 @@
     "boss_pct": 32.2,
     "pull_ms": 163114,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -5875,6 +6151,8 @@
     "boss_pct": 32.2,
     "pull_ms": 163114,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5910,6 +6188,8 @@
     "boss_pct": 32.2,
     "pull_ms": 163114,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -5945,6 +6225,8 @@
     "boss_pct": 78.0,
     "pull_ms": 27258,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -5975,6 +6257,8 @@
     "boss_pct": 78.0,
     "pull_ms": 27258,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -6022,6 +6306,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -6052,6 +6338,8 @@
     "boss_pct": 78.0,
     "pull_ms": 27258,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -6082,6 +6370,8 @@
     "boss_pct": 78.0,
     "pull_ms": 27258,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -6112,6 +6402,8 @@
     "boss_pct": 78.0,
     "pull_ms": 27258,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -6142,6 +6434,8 @@
     "boss_pct": 78.0,
     "pull_ms": 27258,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -6172,6 +6466,8 @@
     "boss_pct": 78.0,
     "pull_ms": 27258,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -6247,6 +6543,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -6307,6 +6605,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -6371,6 +6671,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -6444,6 +6746,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -6499,6 +6803,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -6572,6 +6878,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -6627,6 +6935,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -6691,6 +7001,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -6730,6 +7042,8 @@
     "boss_pct": 35.7,
     "pull_ms": 151762,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -6765,6 +7079,8 @@
     "boss_pct": 35.7,
     "pull_ms": 151762,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -6800,6 +7116,8 @@
     "boss_pct": 35.7,
     "pull_ms": 151762,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -6835,6 +7153,8 @@
     "boss_pct": 35.7,
     "pull_ms": 151762,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -6870,6 +7190,8 @@
     "boss_pct": 35.7,
     "pull_ms": 151762,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -6905,6 +7227,8 @@
     "boss_pct": 35.7,
     "pull_ms": 151762,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -6940,6 +7264,8 @@
     "boss_pct": 35.7,
     "pull_ms": 151762,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -6975,6 +7301,8 @@
     "boss_pct": 35.7,
     "pull_ms": 151762,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7010,6 +7338,8 @@
     "boss_pct": 35.7,
     "pull_ms": 151762,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7045,6 +7375,8 @@
     "boss_pct": 33.0,
     "pull_ms": 150190,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7080,6 +7412,8 @@
     "boss_pct": 33.0,
     "pull_ms": 150190,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7115,6 +7449,8 @@
     "boss_pct": 33.0,
     "pull_ms": 150190,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7150,6 +7486,8 @@
     "boss_pct": 33.0,
     "pull_ms": 150190,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7185,6 +7523,8 @@
     "boss_pct": 33.0,
     "pull_ms": 150190,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7220,6 +7560,8 @@
     "boss_pct": 33.0,
     "pull_ms": 150190,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7255,6 +7597,8 @@
     "boss_pct": 33.0,
     "pull_ms": 150190,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7290,6 +7634,8 @@
     "boss_pct": 33.0,
     "pull_ms": 150190,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -7325,6 +7671,8 @@
     "boss_pct": 63.2,
     "pull_ms": 69792,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -7378,16 +7726,25 @@
         "via": null
       }
     ],
+    "clipped_by": [
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "724,185 unmitigated \u00b7 HP 31,811 (46%) \u00b7 232% amp \u00b7 no shield \u00b7 Magic Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kiara Blaiddyd still had a damage amp.",
+    "went_wrong": "Kiara Blaiddyd's Skyward Leap overlapped Loki Doki's.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 100
+        "confidence": 50
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 50
       }
     ]
   },
@@ -7413,6 +7770,8 @@
     "boss_pct": 63.2,
     "pull_ms": 69792,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -7448,6 +7807,8 @@
     "boss_pct": 63.2,
     "pull_ms": 69792,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -7504,6 +7865,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -7559,6 +7922,8 @@
         "via": "Skyward Leap"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -7614,6 +7979,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -7671,6 +8038,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -7714,6 +8083,8 @@
     "boss_pct": 75.3,
     "pull_ms": 43541,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -7757,6 +8128,8 @@
     "boss_pct": 75.3,
     "pull_ms": 43541,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -7800,6 +8173,8 @@
     "boss_pct": 75.3,
     "pull_ms": 43541,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -7855,6 +8230,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -7910,6 +8287,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -7957,6 +8336,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -8004,6 +8385,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -8051,6 +8434,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -8094,6 +8479,8 @@
     "boss_pct": 71.5,
     "pull_ms": 43490,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dark-elusive-jump",
     "mechanic": "Dark Elusive Jump",
     "outcome": "fail",
@@ -8133,6 +8520,8 @@
     "boss_pct": 71.5,
     "pull_ms": 43490,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dark-elusive-jump",
     "mechanic": "Dark Elusive Jump",
     "outcome": "fail",
@@ -8184,6 +8573,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "lashing-wheel",
     "mechanic": "Lashing Wheel",
     "outcome": "fail",
@@ -8219,6 +8610,8 @@
     "boss_pct": 71.5,
     "pull_ms": 43490,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -8266,6 +8659,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "low",
@@ -8321,6 +8716,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -8376,6 +8773,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "low",
@@ -8431,6 +8830,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "low",
@@ -8486,6 +8887,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -8528,6 +8931,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -8570,6 +8975,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -8612,6 +9019,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -8642,6 +9051,8 @@
     "boss_pct": 34.0,
     "pull_ms": 133534,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -8711,6 +9122,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -8758,6 +9171,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -8788,6 +9203,8 @@
     "boss_pct": 34.0,
     "pull_ms": 133534,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -8867,6 +9284,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
     "outcome": "fail",
@@ -8902,6 +9321,8 @@
     "boss_pct": 37.4,
     "pull_ms": 162029,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -8937,6 +9358,8 @@
     "boss_pct": 37.4,
     "pull_ms": 162029,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -8972,6 +9395,8 @@
     "boss_pct": 37.4,
     "pull_ms": 162029,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9007,6 +9432,8 @@
     "boss_pct": 37.4,
     "pull_ms": 162029,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9042,6 +9469,8 @@
     "boss_pct": 37.4,
     "pull_ms": 162029,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9077,6 +9506,8 @@
     "boss_pct": 37.4,
     "pull_ms": 162029,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9107,6 +9538,8 @@
     "boss_pct": 37.4,
     "pull_ms": 162029,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9142,6 +9575,8 @@
     "boss_pct": 37.4,
     "pull_ms": 162029,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9184,6 +9619,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -9239,6 +9676,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -9294,6 +9733,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "lashing-wheel",
     "mechanic": "Lashing Wheel",
     "outcome": "fail",
@@ -9352,6 +9793,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -9407,6 +9850,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -9465,6 +9910,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -9512,6 +9959,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -9559,6 +10008,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -9602,6 +10053,8 @@
     "boss_pct": 64.9,
     "pull_ms": 57542,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9632,6 +10085,8 @@
     "boss_pct": 64.9,
     "pull_ms": 57542,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9674,6 +10129,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
@@ -9709,6 +10166,8 @@
     "boss_pct": 64.9,
     "pull_ms": 57542,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9739,6 +10198,8 @@
     "boss_pct": 64.9,
     "pull_ms": 57542,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9769,6 +10230,8 @@
     "boss_pct": 64.9,
     "pull_ms": 57542,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9799,6 +10262,8 @@
     "boss_pct": 64.9,
     "pull_ms": 57542,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9841,6 +10306,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -9888,6 +10355,8 @@
         "via": "Dark High Jump"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9930,6 +10399,8 @@
         "via": "Dark High Jump"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -9972,6 +10443,8 @@
         "via": "Dark High Jump"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -10014,6 +10487,8 @@
         "via": "Dark High Jump"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -10056,6 +10531,8 @@
         "via": "Dark High Jump"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -10098,6 +10575,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -10145,6 +10624,8 @@
         "via": "Darkdragon Dive"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -10192,6 +10673,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -10227,6 +10710,8 @@
     "boss_pct": 63.4,
     "pull_ms": 69581,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -10285,6 +10770,8 @@
         "via": "Skyward Leap"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -10315,6 +10802,8 @@
     "boss_pct": 63.4,
     "pull_ms": 69581,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -10350,6 +10839,8 @@
     "boss_pct": 63.4,
     "pull_ms": 69581,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -10385,6 +10876,8 @@
     "boss_pct": 63.4,
     "pull_ms": 69581,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -10449,6 +10942,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -10479,6 +10974,8 @@
     "boss_pct": 63.4,
     "pull_ms": 69581,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -10522,6 +11019,8 @@
     "boss_pct": 63.4,
     "pull_ms": 69581,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -10579,6 +11078,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -10614,6 +11115,8 @@
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -10644,6 +11147,8 @@
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -10679,6 +11184,8 @@
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -10714,6 +11221,8 @@
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -10749,6 +11258,8 @@
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -10784,6 +11295,8 @@
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -10814,6 +11327,8 @@
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -10849,6 +11364,8 @@
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -10902,6 +11419,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -10979,6 +11498,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -11056,6 +11577,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -11114,6 +11637,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -11161,6 +11686,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -11227,6 +11754,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -11285,6 +11814,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -11332,6 +11863,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "geirskogul",
     "mechanic": "Geirskogul",
     "outcome": "fail",
@@ -11392,6 +11925,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
@@ -11427,6 +11962,8 @@
     "boss_pct": 34.6,
     "pull_ms": 146362,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -11457,6 +11994,8 @@
     "boss_pct": 34.6,
     "pull_ms": 146362,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11492,6 +12031,8 @@
     "boss_pct": 34.6,
     "pull_ms": 146362,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11527,6 +12068,8 @@
     "boss_pct": 34.6,
     "pull_ms": 146362,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11562,6 +12105,8 @@
     "boss_pct": 34.6,
     "pull_ms": 146362,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11597,6 +12142,8 @@
     "boss_pct": 34.6,
     "pull_ms": 146362,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11632,6 +12179,8 @@
     "boss_pct": 34.6,
     "pull_ms": 146362,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -11667,6 +12216,8 @@
     "boss_pct": 34.6,
     "pull_ms": 146362,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -11714,6 +12265,8 @@
         "via": "Succor"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -11751,6 +12304,8 @@
     "boss_pct": 34.4,
     "pull_ms": 141801,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -11798,6 +12353,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -11833,6 +12390,8 @@
     "boss_pct": 34.4,
     "pull_ms": 141801,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -11863,6 +12422,8 @@
     "boss_pct": 34.4,
     "pull_ms": 141801,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -11905,6 +12466,8 @@
         "via": "Succor"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11940,6 +12503,8 @@
     "boss_pct": 34.4,
     "pull_ms": 141801,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11975,6 +12540,8 @@
     "boss_pct": 34.4,
     "pull_ms": 141801,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -12010,6 +12577,8 @@
     "boss_pct": 31.8,
     "pull_ms": 152540,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -12045,6 +12614,8 @@
     "boss_pct": 31.8,
     "pull_ms": 152540,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -12080,6 +12651,8 @@
     "boss_pct": 31.8,
     "pull_ms": 152540,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -12115,6 +12688,8 @@
     "boss_pct": 31.8,
     "pull_ms": 152540,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -12150,6 +12725,8 @@
     "boss_pct": 31.8,
     "pull_ms": 152540,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -12185,6 +12762,8 @@
     "boss_pct": 31.8,
     "pull_ms": 152540,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -12220,6 +12799,8 @@
     "boss_pct": 31.8,
     "pull_ms": 152540,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -12255,6 +12836,8 @@
     "boss_pct": 31.8,
     "pull_ms": 152540,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -12290,6 +12873,8 @@
     "boss_pct": 64.8,
     "pull_ms": 70023,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -12325,6 +12910,8 @@
     "boss_pct": 64.8,
     "pull_ms": 70023,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -12372,6 +12959,8 @@
         "via": "Skyward Leap"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -12402,6 +12991,8 @@
     "boss_pct": 64.8,
     "pull_ms": 70023,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -12445,6 +13036,8 @@
     "boss_pct": 64.8,
     "pull_ms": 70023,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -12514,6 +13107,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -12576,6 +13171,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -12606,6 +13203,8 @@
     "boss_pct": 64.8,
     "pull_ms": 70023,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -12651,6 +13250,8 @@
     "boss_pct": 64.8,
     "pull_ms": 70023,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -12717,6 +13318,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -12770,6 +13373,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -12823,6 +13428,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -12867,6 +13474,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -12929,6 +13538,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -12973,6 +13584,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -13012,6 +13625,8 @@
     "boss_pct": 34.2,
     "pull_ms": 131422,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -13042,6 +13657,8 @@
     "boss_pct": 34.2,
     "pull_ms": 131422,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -13072,6 +13689,8 @@
     "boss_pct": 33.4,
     "pull_ms": 145803,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13107,6 +13726,8 @@
     "boss_pct": 33.4,
     "pull_ms": 145803,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13154,6 +13775,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13201,6 +13824,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13236,6 +13861,8 @@
     "boss_pct": 33.4,
     "pull_ms": 145803,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13271,6 +13898,8 @@
     "boss_pct": 33.4,
     "pull_ms": 145803,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13306,6 +13935,8 @@
     "boss_pct": 33.4,
     "pull_ms": 145803,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13353,6 +13984,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13433,6 +14066,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -13493,6 +14128,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -13557,6 +14194,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -13634,6 +14273,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -13698,6 +14339,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -13762,6 +14405,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -13827,6 +14472,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -13895,6 +14542,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -13948,6 +14597,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -13983,6 +14634,8 @@
     "boss_pct": 34.1,
     "pull_ms": 146330,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "raw",
@@ -14026,6 +14679,8 @@
     "boss_pct": 34.1,
     "pull_ms": 146330,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -14056,6 +14711,8 @@
     "boss_pct": 34.1,
     "pull_ms": 146330,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -14091,6 +14748,8 @@
     "boss_pct": 34.1,
     "pull_ms": 146330,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -14126,6 +14785,8 @@
     "boss_pct": 34.1,
     "pull_ms": 146330,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -14161,6 +14822,8 @@
     "boss_pct": 34.1,
     "pull_ms": 146330,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -14210,6 +14873,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -14245,6 +14910,8 @@
     "boss_pct": 34.1,
     "pull_ms": 146330,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14314,6 +14981,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -14349,6 +15018,8 @@
     "boss_pct": 64.7,
     "pull_ms": 62255,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -14419,6 +15090,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -14489,6 +15162,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -14548,6 +15223,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -14595,6 +15272,8 @@
     "boss_pct": 64.7,
     "pull_ms": 62255,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -14625,6 +15304,8 @@
     "boss_pct": 64.7,
     "pull_ms": 62255,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "geirskogul",
     "mechanic": "Geirskogul",
     "outcome": "fail",
@@ -14660,6 +15341,8 @@
     "boss_pct": 64.7,
     "pull_ms": 62255,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -14751,15 +15434,19 @@
         "via": "Skyward Leap"
       }
     ],
+    "clipped_by": [
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "471,948 unmitigated \u00b7 HP 119,067 (120%) \u00b7 115% amp \u00b7 no shield \u00b7 Bloodwhetting from Absolute Gigalad, 10%; Magic Vulnerability Up from Ser Paulecrain (Skyward Leap); Rampart from Absolute Gigalad, 20%; Stem the Flow from Absolute Gigalad (Bloodwhetting), 10%; Physical Vulnerability Up from Ser Paulecrain (Skyward Leap), 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigalad shorted the tether.",
+    "went_wrong": "Absolute Gigalad was clipped by Kitana Kahn's Skyward Leap.",
     "blames": [
       {
-        "who": "Absolute Gigalad",
+        "who": "Kitana Kahn",
         "confidence": 100
       }
     ]
@@ -14798,6 +15485,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -14851,6 +15540,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -14904,6 +15595,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -14957,6 +15650,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -15001,6 +15696,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -15059,6 +15756,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -15112,6 +15811,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -15142,6 +15843,8 @@
     "boss_pct": 32.6,
     "pull_ms": 131987,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -15206,6 +15909,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -15264,6 +15969,8 @@
         "via": "Skyward Leap"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -15317,6 +16024,8 @@
         "via": "Skyward Leap"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -15392,6 +16101,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -15472,6 +16183,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -15533,6 +16246,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -15598,6 +16313,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -15641,6 +16358,8 @@
     "boss_pct": 64.0,
     "pull_ms": 68897,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -15684,6 +16403,8 @@
     "boss_pct": 64.0,
     "pull_ms": 68897,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -15727,6 +16448,8 @@
     "boss_pct": 69.6,
     "pull_ms": 243492,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -15785,6 +16508,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -15843,6 +16568,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -15901,6 +16628,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -15978,6 +16707,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16036,6 +16767,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16094,6 +16827,8 @@
         "via": "Expedient"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16147,6 +16882,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -16213,6 +16950,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16260,6 +16999,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -16295,6 +17036,8 @@
     "boss_pct": 65.8,
     "pull_ms": 65345,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16325,6 +17068,8 @@
     "boss_pct": 65.8,
     "pull_ms": 65345,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16355,6 +17100,8 @@
     "boss_pct": 65.8,
     "pull_ms": 65345,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16385,6 +17132,8 @@
     "boss_pct": 65.8,
     "pull_ms": 65345,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16460,6 +17209,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -16540,6 +17291,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -16575,6 +17328,8 @@
     "boss_pct": 65.8,
     "pull_ms": 65345,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16605,6 +17360,8 @@
     "boss_pct": 65.8,
     "pull_ms": 65345,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16647,6 +17404,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16689,6 +17448,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16731,6 +17492,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16773,6 +17536,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16815,6 +17580,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -16862,6 +17629,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16904,6 +17673,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16946,6 +17717,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -16976,6 +17749,8 @@
     "boss_pct": 31.9,
     "pull_ms": 152726,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -17006,6 +17781,8 @@
     "boss_pct": 31.9,
     "pull_ms": 152726,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -17041,6 +17818,8 @@
     "boss_pct": 31.9,
     "pull_ms": 152726,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -17076,6 +17855,8 @@
     "boss_pct": 31.9,
     "pull_ms": 152726,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -17111,6 +17892,8 @@
     "boss_pct": 31.9,
     "pull_ms": 152726,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -17146,6 +17929,8 @@
     "boss_pct": 31.9,
     "pull_ms": 152726,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -17181,6 +17966,8 @@
     "boss_pct": 31.9,
     "pull_ms": 152726,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -17216,6 +18003,8 @@
     "boss_pct": 31.9,
     "pull_ms": 152726,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -17263,6 +18052,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -17293,6 +18084,8 @@
     "boss_pct": 31.6,
     "pull_ms": 133980,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -17348,6 +18141,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -17390,6 +18185,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -17432,6 +18229,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -17476,6 +18275,8 @@
         "via": null
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -17531,6 +18332,8 @@
         "via": "Sacred Sever"
       }
     ],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",
@@ -17561,6 +18364,8 @@
     "boss_pct": 31.6,
     "pull_ms": 133980,
     "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
     "mechanic_id": null,
     "mechanic": "No damage packet",
     "outcome": "environment",

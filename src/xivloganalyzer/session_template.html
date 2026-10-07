@@ -613,24 +613,15 @@ function stillView(frame) {
         const len = 14 / scale + 5;
         grow(player.x + player.face[0] * len, player.y + player.face[1] * len);
       }
-      if (player.dead || player.failed) {
-        const wide = String(player.name || "").length * 3.2 / scale;
-        grow(Number(player.x) - wide, Number(player.y) + 24 / scale);
-        grow(Number(player.x) + wide, player.y);
-      }
     }
     for (const mark of frame.marks || []) {
-      const bulge = mark.kind === "comet" ? 16 : mark.kind === "gaze" || mark.kind === "tower" || mark.kind === "orb" ? 12 : 0;
+      const bulge = mark.kind === "comet" ? 16 : mark.kind === "gaze" || mark.kind === "tower" || mark.kind === "orb" || mark.kind === "collapse" ? 12 : 0;
       const extra = bulge / scale;
       if (mark.x != null) {
         grow(Number(mark.x) - extra, Number(mark.y) - extra);
         grow(Number(mark.x) + extra, Number(mark.y) + extra);
       }
       grow(mark.x2, mark.y2);
-      if (mark.face) {
-        const len = 8 / scale + 4;
-        grow(mark.x + mark.face[0] * len, mark.y + mark.face[1] * len);
-      }
     }
     originX = (minX + maxX) / 2;
     originY = (minY + maxY) / 2;
@@ -653,7 +644,7 @@ function stillSvg(frame) {
   const draw = (kinds) => {
     for (const mark of marks) if (kinds.includes(mark.kind)) parts.push(stillMark(mark, pt, scale));
   };
-  draw(["tower", "orb"]);
+  draw(["collapse", "tower", "orb"]);
   const marked = (player) => player.dead || player.failed;
   for (const player of frame.players || []) {
     if (marked(player)) continue;
@@ -669,11 +660,6 @@ function stillSvg(frame) {
       const [x, y] = pt(player.x, player.y);
       parts.push(facingArrow(x, y, player.face, scale));
     }
-  }
-  for (const player of frame.players || []) {
-    if (!marked(player)) continue;
-    const [x, y] = pt(player.x, player.y);
-    parts.push(`<text x="${x}" y="${y + 24}" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412" stroke="#fffcf7" stroke-width="3" paint-order="stroke">${esc(player.name)}</text>`);
   }
   return `<svg viewBox="0 0 ${size} ${size}" role="img" aria-label="${esc(frame.caption)}">${parts.join("")}</svg>`;
 }
@@ -705,6 +691,9 @@ function stillMark(mark, pt, scale) {
     const s = 11;
     return `<rect x="${x - s}" y="${y - s}" width="${s * 2}" height="${s * 2}" fill="none" stroke="#7c4a12" stroke-width="2"><title>Tower</title></rect>`;
   }
+  if (mark.kind === "collapse") {
+    return `<circle cx="${x}" cy="${y}" r="12" fill="#e6dfee" fill-opacity="0.8" stroke="#5b4a72" stroke-width="1.5" stroke-dasharray="4 3"><title>Dimensional Collapse</title></circle>`;
+  }
   if (mark.kind === "comet") {
     return `<circle cx="${x}" cy="${y}" r="14" fill="none" stroke="#9a3412" stroke-width="2"><title>Comet</title></circle>`;
   }
@@ -712,20 +701,9 @@ function stillMark(mark, pt, scale) {
     return `<circle cx="${x}" cy="${y}" r="11" fill="#fbf3e4" stroke="#7c4a12" stroke-width="2"><title>Orb</title></circle>`;
   }
   if (mark.kind === "boss") {
-    const tick = bossTick(mark, x, y, scale);
-    return `${tick}<circle cx="${x}" cy="${y}" r="7" fill="#1c1915"><title>${esc(mark.name || "Boss")}</title></circle>`;
+    return `<circle cx="${x}" cy="${y}" r="7" fill="#1c1915"><title>${esc(mark.name || "Boss")}</title></circle>`;
   }
   return "";
-}
-function bossTick(mark, x, y, scale) {
-  if (!mark.face) return "";
-  const near = 8;
-  const far = 8 + 4 * scale;
-  const x1 = x + mark.face[0] * near;
-  const y1 = y + mark.face[1] * near;
-  const x2 = x + mark.face[0] * far;
-  const y2 = y + mark.face[1] * far;
-  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1c1915" stroke-width="2"></line>`;
 }
 function stillPlayer(player, pt, scale) {
   const [x, y] = pt(player.x, player.y);
