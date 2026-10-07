@@ -8,7 +8,7 @@ Session reviews for FFLogs. Dragonsong's Reprise is the first fight. The dashboa
 
 The other two nights are [8DYNHQx4C7ytdLb9](https://www.fflogs.com/reports/8DYNHQx4C7ytdLb9) (Mon 5 Oct 2026, 21:31–00:14) and [3wzL6x4VHTmvNkhq](https://www.fflogs.com/reports/3wzL6x4VHTmvNkhq) (Wed 30 Sep 2026, 21:44–00:03).
 
-Open [dashboard.html](dashboard.html) after an analysis run. The side panel is the fight, then the sessions newest first. Open a session for its overview, pulls, and mechanics. The main area is that session: a pull chart (taller means further into the fight), then the pull count and the mechanics for each phase. Those mechanics are the `clusters` in `fights/dsr/mechanics.json`, in `starts` order, drawn as a line. `markers` in `fight.json` are chart labels only.
+Open [dashboard.html](dashboard.html) after an analysis run. The side panel is the fight, then the sessions newest first. The main area starts as the sessions list: a general trend of how far each night got, then each night on its own row. A row starts collapsed. Open it for that night's pulls. Open a session for its overview, pulls, and mechanics. Death reviews load when a pull or a mechanic is opened. Inside a session, the main area is a pull chart (taller means further into the fight), then the pull count and the mechanics for each phase. Those mechanics are the `clusters` in `fights/dsr/mechanics.json`, in `starts` order, drawn as a line. `markers` in `fight.json` are chart labels only.
 
 ## How a log gets in
 
@@ -29,7 +29,7 @@ Then:
 python -m xivloganalyzer analyze <code>
 ```
 
-That writes `facts.json`, `judgments.json`, and `session.html` in the report folder, and rebuilds `dashboard.html` for every saved log. The same run draws an arena still for each mechanic a pull reached, from `positions/`. The cast time comes from the damage events. A pull that dodged uses the usual time from the pulls that were hit. Faith Unmoving has no stored cast, so its part `at` in `mechanics.json` is the time, and only while that pull was still going. A log with no positions keeps the text.
+That writes `facts.json`, `judgments.json`, `detail.js`, and `session.html` in the report folder, and rebuilds `dashboard.html` for every saved log. The dashboard keeps every night's pull chart and loads `detail.js` when a review is opened. The same run draws an arena still for each mechanic a pull reached, from `positions/`. The cast time comes from the damage events. A pull that dodged uses the usual time from the pulls that were hit. Faith Unmoving has no stored cast, so its part `at` in `mechanics.json` is the time, and only while that pull was still going. A log with no positions keeps the text.
 
 ## When a call is wrong
 

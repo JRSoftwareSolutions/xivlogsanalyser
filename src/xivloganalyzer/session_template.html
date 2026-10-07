@@ -189,31 +189,55 @@
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;
   }
-  button.session-card {
-    width: 100%; display: block; text-align: left; font: inherit; color: inherit;
-    background: transparent; border: 0; border-top: 1px solid var(--line);
-    padding: 12px 0 4px; cursor: pointer;
+  .session-row {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start;
+    border-top: 1px solid var(--line);
   }
-  button.session-card:hover { background: var(--hover); }
+  details.session-preview > summary {
+    display: flex; align-items: center; gap: 8px; cursor: pointer; list-style: none;
+    padding: 10px 4px; border-radius: 8px;
+  }
+  details.session-preview > summary::-webkit-details-marker { display: none; }
+  details.session-preview > summary::marker { content: ""; }
+  details.session-preview > summary::before {
+    content: ""; flex: 0 0 auto; width: 0; height: 0;
+    border-style: solid; border-width: 4px 0 4px 5px;
+    border-color: transparent transparent transparent var(--muted);
+  }
+  details.session-preview[open] > summary::before { transform: rotate(90deg); }
+  details.session-preview > summary:hover { background: var(--hover); }
+  details.session-preview > summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .preview-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .preview-title { font-size: 16px; font-weight: 650; }
+  .preview-body { padding: 2px 8px 12px 18px; }
+  button.open-session {
+    font: inherit; font-size: 13px; color: var(--accent); background: var(--field);
+    border: 1px solid var(--line); border-radius: 999px;
+    padding: 4px 10px; margin: 10px 4px 0 8px; cursor: pointer;
+  }
+  button.open-session:hover { background: var(--hover); }
   .reach {
     display: grid; grid-template-columns: 12.5rem minmax(0, 1fr); height: 480px; margin-top: 4px;
   }
+  .reach.mini { margin-top: 0; grid-template-columns: 11rem minmax(0, 1fr); }
   .reach-names { position: relative; }
   .reach-names span {
     position: absolute; right: 8px; transform: translateY(50%);
     font-size: 12px; line-height: 1.15; color: var(--muted); text-align: right; white-space: nowrap;
   }
-  .chart, .strip { position: relative; }
+  .chart, .mini-plot, .trend-plot { position: relative; }
   .chart { height: 100%; overflow-x: auto; }
-  .plot, .strip { display: flex; align-items: flex-end; gap: 2px; }
+  .plot, .mini-plot { display: flex; align-items: flex-end; gap: 2px; }
   .plot { position: relative; height: 100%; min-width: 100%; width: max-content; }
-  .strip { height: 52px; width: 100%; margin: 8px 0 4px; }
+  .mini-plot { height: 100%; width: 100%; }
   .hline {
     position: absolute; left: 0; right: 0; height: 0;
     border-top: 2px dotted var(--rule);
     pointer-events: none; z-index: 2;
   }
-  .strip .hline { border-top-width: 1px; border-top-color: rgba(147, 164, 189, 0.55); }
+  .mini-plot .hline, .trend-plot .hline { border-top-width: 1px; border-top-color: rgba(147, 164, 189, 0.55); }
+  .hline.goal { border-top-style: dashed; border-top-color: rgba(147, 164, 189, 0.85); }
+  .reach-names span.goal { color: var(--muted); }
   .chart .bar {
     position: relative; z-index: 1;
     width: 9px; flex: 0 0 9px; min-height: 4px; border: 0; padding: 0; cursor: pointer;
@@ -221,7 +245,34 @@
   }
   .chart .bar:hover, .chart .bar.on { outline: 2px solid var(--ink); outline-offset: 1px; }
   .chart .bar.best { box-shadow: inset 0 -3px 0 var(--ink); }
-  .strip i.tick { flex: 1 1 2px; min-width: 2px; min-height: 3px; border-radius: 2px 2px 0 0; display: block; }
+  .mini-plot i.tick { flex: 1 1 0; min-width: 1px; min-height: 2px; border-radius: 2px 2px 0 0; display: block; }
+  .trend-reach {
+    display: grid; grid-template-columns: 12.5rem minmax(0, 1fr);
+  }
+  .trend-reach .reach-names { align-self: start; }
+  .trend-scroll { overflow-x: auto; min-width: 0; }
+  .trend-plot { height: 100%; }
+  .trend-cols { position: relative; z-index: 1; display: flex; height: 100%; }
+  .trend-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 3; overflow: visible; }
+  .trend-dot {
+    position: absolute; z-index: 4; width: 10px; height: 10px; border-radius: 50%;
+    background: var(--paper); border: 2px solid var(--accent); transform: translate(-50%, 50%);
+    pointer-events: none;
+  }
+  button.trend-col {
+    font: inherit; color: inherit; background: transparent; border: 0; border-radius: 8px;
+    cursor: pointer; padding: 0; height: 100%; flex: 0 0 auto;
+    display: flex; align-items: flex-end;
+  }
+  button.trend-col:hover, button.trend-col:focus-visible { background: rgba(228, 236, 247, 0.06); }
+  .trend-bars { display: flex; align-items: flex-end; width: 100%; height: 100%; gap: 2px; }
+  .trend-bars i { flex: 0 0 9px; width: 9px; min-height: 2px; border-radius: 2px 2px 0 0; display: block; }
+  .trend-axis { display: flex; margin-top: 6px; }
+  .trend-axis > span {
+    flex: 0 0 auto; text-align: center; font-size: 12px; line-height: 1.25; color: var(--muted); padding: 0 4px;
+  }
+  .trend-axis > span b { display: block; color: var(--ink); font-size: 13px; font-weight: 650; }
+  .trend-axis > span span { display: block; }
   .legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0 0; }
   .legend span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; }
   .swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
@@ -305,6 +356,8 @@
     #nav-split { display: none; }
     .stats, .cols, header, .mech-head, .death-body { display: block; }
     .reach { grid-template-columns: 9.5rem minmax(0, 1fr); height: 420px; }
+    .reach.mini { grid-template-columns: 8.5rem minmax(0, 1fr); }
+    .trend-reach { grid-template-columns: 8.5rem minmax(0, 1fr); }
     .reach-names span { font-size: 11px; }
   }
 </style>
@@ -327,7 +380,47 @@ try {
 const DATA = __DATA__;
 const JOB_ICONS = __JOB_ICONS__;
 const byCode = Object.fromEntries(DATA.sessions.map(item => [item.code, item]));
+const detailLoads = {};
+const MINI_H = 148;
+const TREND_H = 300;
 let SESSION = null;
+
+function registerDetail(code, detail) {
+  const session = byCode[code];
+  if (!session) return;
+  session.pulls = detail.pulls || [];
+  session.mechanics = detail.mechanics || [];
+  session.unknown = detail.unknown || {};
+  session.totals = detail.totals || {};
+  if (detail.raw != null) session.raw = detail.raw;
+  if (detail.fail != null) session.fail = detail.fail;
+  if (detail.low != null) session.low = detail.low;
+  session._loaded = true;
+}
+function loadDetail(code) {
+  const session = byCode[code];
+  if (!session) return Promise.reject(new Error("missing session"));
+  if (session._loaded) return Promise.resolve(session);
+  if (!session.detail) return Promise.reject(new Error("no detail"));
+  if (detailLoads[code]) return detailLoads[code];
+  detailLoads[code] = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = session.detail;
+    script.onload = () => {
+      if (session._loaded) resolve(session);
+      else {
+        delete detailLoads[code];
+        reject(new Error("empty detail"));
+      }
+    };
+    script.onerror = () => {
+      delete detailLoads[code];
+      reject(new Error("detail failed"));
+    };
+    document.head.appendChild(script);
+  });
+  return detailLoads[code];
+}
 
 function counts(deaths) {
   const c = { raw: 0, fail: 0, low: 0, environment: 0, unknown: 0 };
@@ -790,18 +883,284 @@ function reachScale(pulls) {
   return Math.max(1, ...pulls.map(pull => pull.reached || 0));
 }
 function visibleMarks(markers, scale) {
-  return (markers || []).filter(mark => mark.at > 0 && mark.at < scale);
+  return (markers || []).filter(mark => mark.at > 0 && mark.at <= scale);
 }
-function strip(pulls, markers) {
+function furthestPull(pulls) {
+  let best = null;
+  for (const pull of pulls || []) {
+    if (!best || (pull.reached || 0) > (best.reached || 0)) best = pull;
+  }
+  return best;
+}
+function furthestName(pull) {
+  if (!pull) return "";
+  return pull.mechanic || pull.phaseName || "";
+}
+function markLabels(marks, scale, height) {
+  const gap = 12;
+  const chosen = [];
+  const sorted = marks.slice().sort((a, b) => b.at - a.at || a.name.localeCompare(b.name));
+  for (const mark of sorted) {
+    const y = (mark.at / scale) * height;
+    if (chosen.some(other => Math.abs((other.at / scale) * height - y) < gap)) continue;
+    chosen.push(mark);
+  }
+  return chosen;
+}
+function miniChart(pulls, markers) {
   const scale = reachScale(pulls);
-  const lines = visibleMarks(markers, scale).map(mark => {
+  const marks = visibleMarks(markers, scale);
+  const labels = markLabels(marks, scale, MINI_H);
+  const names = labels.map(mark => {
+    return `<span style="bottom:${(mark.at / scale) * 100}%">${esc(mark.name)}</span>`;
+  }).join("");
+  const lines = marks.map(mark => {
     return `<i class="hline" style="bottom:${(mark.at / scale) * 100}%"></i>`;
   }).join("");
   const bars = pulls.map(pull => {
-    const height = Math.max(8, ((pull.reached || 0) / scale) * 100);
+    const height = ((pull.reached || 0) / scale) * 100;
     return `<i class="tick" style="height:${height}%;background:${phaseColor(pull.phase)}"></i>`;
   }).join("");
-  return `<span class="strip">${lines}${bars}</span>`;
+  return `<div class="reach mini" style="height:${MINI_H}px"><div class="reach-names">${names}</div><div class="mini-plot">${lines}${bars}</div></div>`;
+}
+function sessionsChronological(sessions) {
+  return sessions.slice().sort((a, b) => {
+    const as = a.started || "";
+    const bs = b.started || "";
+    if (as !== bs) return as < bs ? -1 : 1;
+    return a.code.localeCompare(b.code);
+  });
+}
+function sharedMarks(sessions) {
+  const seen = new Map();
+  for (const session of sessions) {
+    for (const mark of overviewOf(session).markers || []) {
+      const key = `${mark.phase}:${mark.at}:${mark.name}`;
+      if (!seen.has(key)) seen.set(key, mark);
+    }
+  }
+  return [...seen.values()].sort((a, b) => a.at - b.at || a.name.localeCompare(b.name));
+}
+function trendFrame(sessions) {
+  const markers = sharedMarks(sessions);
+  const pulls = sessions.flatMap(session => overviewOf(session).pulls);
+  const peak = Math.max(0, ...pulls.map(pull => pull.reached || 0));
+  const upcoming = markers.filter(mark => mark.at > peak + 0.5).sort((a, b) => a.at - b.at)[0];
+  const marks = markers.filter(mark => mark.at > 0 && mark.at <= peak + 0.5);
+  if (upcoming) marks.push({ ...upcoming, goal: true });
+  marks.sort((a, b) => a.at - b.at || a.name.localeCompare(b.name));
+  const scale = Math.max(1, peak, ...marks.map(mark => mark.at || 0)) * 1.06;
+  return { marks, scale };
+}
+function shortWhen(session, sessions) {
+  const parts = (session.dayLabel || "").split(" ").filter(Boolean);
+  const day = parts.length >= 3 ? `${parts[1]} ${parts[2]}` : "";
+  const clock = (session.timeLabel || "").split(/[–-]/)[0].trim();
+  let label = day || clock || session.code;
+  if (!day || !sessions) return label;
+  const twins = sessions.filter(other => {
+    const bits = (other.dayLabel || "").split(" ").filter(Boolean);
+    return bits.length >= 3 && `${bits[1]} ${bits[2]}` === day;
+  });
+  if (twins.length > 1 && clock) return `${day} ${clock}`;
+  return label;
+}
+function paceText(sessions) {
+  const rows = sessions.map(session => ({
+    session,
+    pull: furthestPull(overviewOf(session).pulls),
+  })).filter(row => row.pull && furthestName(row.pull));
+  if (!rows.length) return "No pulls yet.";
+  const name = row => furthestName(row.pull);
+  const when = row => shortWhen(row.session, sessions);
+  const peak = rows.reduce((best, row) => (row.pull.reached > best.pull.reached ? row : best));
+  if (rows.length === 1) return `${when(rows[0])} reached ${name(rows[0])}.`;
+  const first = rows[0];
+  const last = rows[rows.length - 1];
+  if (name(first) === name(last)) {
+    if (last.pull.reached > first.pull.reached) {
+      return `${when(first)} and ${when(last)} both reached ${name(last)}. ${when(last)} went further.`;
+    }
+    return `${when(first)} and ${when(last)} both reached ${name(last)}.`;
+  }
+  if (last.pull.reached >= peak.pull.reached && last.pull.reached > first.pull.reached) {
+    return `From ${name(first)} on ${when(first)} to ${name(last)} on ${when(last)}.`;
+  }
+  return `Furthest so far is ${name(peak)} on ${when(peak)}. ${when(last)} reached ${name(last)}.`;
+}
+const TREND_BAR = 9;
+const TREND_GAP = 2;
+function barsWidth(count) {
+  if (count <= 0) return TREND_BAR;
+  return count * TREND_BAR + Math.max(0, count - 1) * TREND_GAP;
+}
+function trendSpans(sessions) {
+  const widths = sessions.map(session => barsWidth(overviewOf(session).pulls.length));
+  const total = Math.max(1, widths.reduce((sum, width) => sum + width, 0));
+  let used = 0;
+  const spans = widths.map(width => {
+    const start = used / total * 100;
+    used += width;
+    return { width, start, end: used / total * 100 };
+  });
+  return { total, spans };
+}
+function barX(span, pullIndex, count) {
+  if (count <= 1) return (span.start + span.end) / 2;
+  const center = pullIndex * (TREND_BAR + TREND_GAP) + TREND_BAR / 2;
+  return span.start + (center / barsWidth(count)) * (span.end - span.start);
+}
+function trendLine(sessions, scale, spans) {
+  const yOf = reached => (1 - reached / scale) * 100;
+  const vertices = [];
+  let carry = null;
+  sessions.forEach((session, index) => {
+    const pulls = overviewOf(session).pulls;
+    const span = spans[index];
+    if (pulls.length < 2 || !span) return;
+    const xs = pulls.map((pull, pullIndex) => barX(span, pullIndex, pulls.length));
+    const ys = pulls.map(pull => pull.reached || 0);
+    const x0 = span.start;
+    const x1 = span.end;
+    let y0;
+    let slope;
+    if (carry == null) {
+      let sx = 0;
+      let sy = 0;
+      let sxx = 0;
+      let sxy = 0;
+      xs.forEach((x, i) => {
+        sx += x;
+        sy += ys[i];
+        sxx += x * x;
+        sxy += x * ys[i];
+      });
+      const denom = xs.length * sxx - sx * sx;
+      if (!denom) return;
+      slope = (xs.length * sxy - sx * sy) / denom;
+      y0 = (sy - slope * sx) / xs.length + slope * x0;
+    } else {
+      y0 = carry;
+      let num = 0;
+      let den = 0;
+      xs.forEach((x, i) => {
+        const dx = x - x0;
+        num += dx * (ys[i] - y0);
+        den += dx * dx;
+      });
+      slope = den ? num / den : 0;
+    }
+    const y1 = y0 + slope * (x1 - x0);
+    if (!vertices.length) vertices.push(`${x0},${yOf(y0)}`);
+    vertices.push(`${x1},${yOf(y1)}`);
+    carry = y1;
+  });
+  if (vertices.length < 2) return "";
+  return `<svg class="trend-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${vertices.join(" ")}" fill="none" stroke="#9eb6e8" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"></polyline></svg>`;
+}
+function trendChart(sessions) {
+  const { marks, scale } = trendFrame(sessions);
+  const labels = markLabels(marks, scale, TREND_H);
+  const names = labels.map(mark => {
+    const cls = mark.goal ? ` class="goal"` : "";
+    return `<span${cls} style="bottom:${(mark.at / scale) * 100}%">${esc(mark.name)}</span>`;
+  }).join("");
+  const lines = marks.map(mark => {
+    const cls = mark.goal ? "hline goal" : "hline";
+    const title = mark.goal ? ` title="Next mechanic"` : "";
+    return `<i class="${cls}"${title} style="bottom:${(mark.at / scale) * 100}%"></i>`;
+  }).join("");
+  const { total, spans } = trendSpans(sessions);
+  const cols = sessions.map((session, index) => {
+    const pulls = overviewOf(session).pulls;
+    const far = furthestPull(pulls);
+    const bars = pulls.map(pull => {
+      const height = ((pull.reached || 0) / scale) * 100;
+      return `<i style="height:${height}%;background:${phaseColor(pull.phase)}"></i>`;
+    }).join("");
+    const when = shortWhen(session, sessions);
+    const mech = far ? furthestName(far) : "No pulls";
+    const where = far ? `${mech} · ${far.phaseName} ${far.bossPct}%` : mech;
+    const title = `${when} · ${where}`;
+    const width = spans[index].width;
+    return `<button type="button" class="trend-col" data-go="s/${session.code}" title="${esc(title)}" aria-label="${esc(title)}" style="width:${width}px"><span class="trend-bars">${bars}</span></button>`;
+  }).join("");
+  const dots = sessions.map((session, index) => {
+    const pulls = overviewOf(session).pulls;
+    const far = furthestPull(pulls);
+    if (!far) return "";
+    const left = barX(spans[index], Math.max(0, pulls.indexOf(far)), pulls.length);
+    const bottom = ((far.reached || 0) / scale) * 100;
+    return `<i class="trend-dot" style="left:${left}%;bottom:${bottom}%"></i>`;
+  }).join("");
+  const line = trendLine(sessions, scale, spans);
+  const axis = sessions.map((session, index) => {
+    const far = furthestPull(overviewOf(session).pulls);
+    const mech = far ? `<span>${esc(furthestName(far))}</span>` : "";
+    return `<span style="width:${spans[index].width}px"><b>${esc(shortWhen(session, sessions))}</b>${mech}</span>`;
+  }).join("");
+  const seen = [];
+  for (const session of sessions) {
+    for (const pull of overviewOf(session).pulls) {
+      if (!seen.some(row => row.phase === pull.phase)) seen.push(pull);
+    }
+  }
+  return `<div class="trend-reach"><div class="reach-names" style="height:${TREND_H}px">${names}</div><div class="trend-scroll" data-trend="${esc(sessions.map(session => session.code).join("-"))}"><div class="trend-sheet" style="width:${total}px"><div class="trend-plot" style="height:${TREND_H}px">${lines}${line}${dots}<div class="trend-cols">${cols}</div></div><div class="trend-axis">${axis}</div></div></div></div>
+    ${legend(seen)}`;
+}
+function trendSection() {
+  const groups = [];
+  const index = new Map();
+  for (const session of sessionsChronological(DATA.sessions)) {
+    const name = session.fight || "Sessions";
+    let group = index.get(name);
+    if (!group) {
+      group = { name, sessions: [] };
+      index.set(name, group);
+      groups.push(group);
+    }
+    group.sessions.push(session);
+  }
+  if (!groups.length) return "";
+  return groups.map(group => {
+    const heading = groups.length > 1 ? `<h3>${esc(group.name)}</h3>` : "";
+    return `<section>
+      <h2>General trend</h2>
+      ${heading}
+      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. Each night has its own trend, starting where the previous night ended. Scroll sideways to move through the pulls.</p>
+      ${trendChart(group.sessions)}
+    </section>`;
+  }).join("");
+}
+const previewOpen = {};
+function sessionPreview(item) {
+  const session = byCode[item.code];
+  const overview = overviewOf(session);
+  const far = furthestPull(overview.pulls);
+  const detail = [
+    item.title,
+    item.owner,
+    overview.pulls.length ? `${overview.pulls.length} pulls` : "",
+    far ? `furthest ${furthestName(far)}` : "",
+  ].filter(Boolean).join(" · ");
+  const opened = previewOpen[item.code] ? " open" : "";
+  const when = item.timeLabel || item.code;
+  return `<div class="session-row">
+      <details class="session-preview" data-code="${esc(item.code)}"${opened}>
+        <summary>
+          <span class="preview-copy">
+            <span class="preview-title">${esc(when)} <span class="meta">${esc(item.fight)}</span></span>
+            <span class="meta">${esc(detail)}</span>
+          </span>
+        </summary>
+        <div class="preview-body">
+          ${miniChart(overview.pulls, overview.markers)}
+          ${legend(overview.pulls)}
+          <p class="meta">Scaled to this night. A bar that crosses a line reached that mechanic.</p>
+        </div>
+      </details>
+      <button type="button" class="open-session" data-go="s/${item.code}" aria-label="Open ${esc(when)}">Open</button>
+    </div>`;
 }
 function chart(pulls, markers) {
   const scale = reachScale(pulls);
@@ -833,35 +1192,18 @@ function legend(pulls) {
 }
 function renderHome() {
   const blocks = DATA.days.map(day => `<section>
-      <h2>${day.label}</h2>
-      ${day.sessions.map(item => {
-        const session = byCode[item.code];
-        const overview = overviewOf(session);
-        const best = overview.best;
-        const detail = [
-          item.title,
-          item.owner,
-          overview.pulls.length ? `${overview.pulls.length} pulls` : "",
-          best ? `best ${best.phaseName} ${best.bossPct}%` : "",
-        ].filter(Boolean).join(" · ");
-        return `<button class="session-card" data-go="s/${item.code}">
-          <div class="mech-head">
-            <div>
-              <h3>${item.timeLabel || item.code} <span class="meta">${item.fight}</span></h3>
-              <p class="meta">${detail}</p>
-            </div>
-          </div>
-          ${strip(overview.pulls, overview.markers)}
-        </button>`;
-      }).join("")}
+      <h2>${esc(day.label)}</h2>
+      ${day.sessions.map(item => sessionPreview(item)).join("")}
     </section>`).join("");
+  const count = DATA.sessions.length === 1 ? "1 log" : `${DATA.sessions.length} logs`;
   return `
     <header>
       <div>
         <h1>Sessions</h1>
-        <p class="meta">${DATA.sessions.length === 1 ? "1 log" : DATA.sessions.length + " logs"}. Each bar is a pull. Taller means further into the fight.</p>
+        <p class="meta">${count}. Each row is a night. Open a row for its pulls. The general trend compares how far each night got.</p>
       </div>
     </header>
+    ${trendSection()}
     ${blocks || `<p class="quiet">No sessions yet. Drop a log and analyze it.</p>`}`;
 }
 function renderAll() {
@@ -1079,7 +1421,12 @@ function paintActive() {
   }
   active.scrollIntoView({ block: "nearest" });
 }
-function render() {
+let renderToken = 0;
+function needsDetail(where) {
+  return where.view === "pull" || where.view === "mechanic";
+}
+async function render() {
+  const token = ++renderToken;
   const where = route();
   SESSION = where.code ? byCode[where.code] : null;
   if (render.navCode !== (where.code || "")) {
@@ -1091,11 +1438,29 @@ function render() {
     applyNavFilters();
   }
   const app = document.getElementById("app");
+  if (SESSION && !SESSION._loaded) {
+    const pending = loadDetail(where.code);
+    if (needsDetail(where)) {
+      app.innerHTML = `<section><p class="quiet">Loading this review…</p></section>`;
+      paintActive();
+      try {
+        await pending;
+      } catch (error) {
+        if (token !== renderToken) return;
+        app.innerHTML = `<section><p>The review for this session did not load.</p></section>`;
+        return;
+      }
+      if (token !== renderToken) return;
+    } else {
+      pending.catch(() => {});
+    }
+  }
   if (!SESSION) app.innerHTML = renderHome();
   else if (where.view === "pull") app.innerHTML = renderPull(where.id);
   else if (where.view === "fight") app.innerHTML = renderFight(where.id);
   else if (where.view === "mechanic") app.innerHTML = renderMechanic(where.id);
   else app.innerHTML = renderAll();
+  placeTrendScroll();
   paintActive();
   const stamp = SESSION ? [SESSION.dayLabel, SESSION.timeLabel].filter(Boolean).join(" ") : "Sessions";
   document.title = !SESSION
@@ -1224,6 +1589,24 @@ document.body.addEventListener("input", event => {
   if (event.target.id !== "filter") return;
   applyNavFilters();
 });
+const trendScrollLeft = {};
+function placeTrendScroll() {
+  for (const node of document.querySelectorAll(".trend-scroll")) {
+    const key = node.dataset.trend || "";
+    const saved = trendScrollLeft[key];
+    node.scrollLeft = saved == null ? node.scrollWidth : saved;
+  }
+}
+document.body.addEventListener("scroll", event => {
+  const node = event.target;
+  if (!node.classList || !node.classList.contains("trend-scroll")) return;
+  trendScrollLeft[node.dataset.trend || ""] = node.scrollLeft;
+}, true);
+document.body.addEventListener("toggle", event => {
+  const node = event.target;
+  if (!node.classList || !node.classList.contains("session-preview")) return;
+  previewOpen[node.dataset.code] = node.open;
+}, true);
 window.addEventListener("hashchange", render);
 render();
 
