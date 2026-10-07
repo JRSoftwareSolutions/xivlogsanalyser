@@ -18,3 +18,5 @@ When the user corrects a call ("X should be Y", "Z is not a mistake", "that one 
 The settled Thordan headline is 86 raw deaths on report `XVz8bCqgPw1KRh9d`. A tank who dies to the real Ascalon's Might or Heavenly Heel without personal mitigation owns that death. It is not raw. A Skyward Leap death on the real marker is not raw: short of full HP is the healers, and full HP is missing mitigation. Pull 68 has no raw death. Kitana Kahn's Skyward Leap was full HP with no mitigation. Strength Eternal Conviction, around 63 seconds, does not scale with stack size. Sanctity Eternal Conviction, after 100 seconds, is an empty tower and is a fail. Holy Impact is comets too close and is a fail. Hiemal Storm deaths are fails. Heavy Impact ids 25560 and 25559 are both fails. Bright Flare is a fail.
 
 A new log goes in `reports/<code>/` with `fights.json`, `deaths-html.json`, and ability files, then `python -m xivloganalyzer analyze <code>`.
+
+To overview a session without loading full JSON, use `review-session` and `python -m xivloganalyzer brief <code>` (optional `--pull`, `--mechanic`, `--outcome`, `--write`).
