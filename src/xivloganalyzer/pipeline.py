@@ -1,22 +1,29 @@
-"""Extract a dropped log, judge it, and rebuild every saved session."""
+"""Extract a dropped log, judge it, and rebuild every saved session.
+
+A report is judged again only when its stamp (`stamp.py`) says the rules, the
+analyzer code, or its log changed since the last run.
+"""
 
 from __future__ import annotations
 
 import json
 from collections import Counter
+from dataclasses import dataclass
 from pathlib import Path
 
-from xivloganalyzer.catalog import load_catalog, pack_for_zone, repo_root
+from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone, repo_root
 from xivloganalyzer.dashboard import (
     build_timeline,
     session_clock,
     session_payload,
-    write_library,
+    session_summary,
+    write_dashboard,
     write_session_page,
 )
 from xivloganalyzer.extract import extract_report, write_facts
 from xivloganalyzer.frames import attach_frames
 from xivloganalyzer.judge import judge_report, roster_from_meta, write_judgments
+from xivloganalyzer.stamp import check, engine_version, read_stamp, write_stamp
 
 
 def report_dirs(root: Path | None = None) -> list[Path]:
@@ -32,18 +39,30 @@ def report_dirs(root: Path | None = None) -> list[Path]:
     return found
 
 
-def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
-    report = report.resolve()
-    catalog = load_catalog(root)
-    meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
+@dataclass
+class Outcome:
+    """One report after a run. `reason` is why it was judged again, empty when it was skipped."""
+
+    name: str
+    counts: Counter
+    judged: bool
+    reason: str = ""
+
+
+def _meta(report: Path) -> dict:
+    return json.loads((report / "fights.json").read_text(encoding="utf-8"))
+
+
+def _pack(report: Path, meta: dict, catalog: list[FightPack]) -> FightPack:
     zone_ids = {fight.get("zoneID") for fight in meta["fights"]}
-    pack = None
     for zone_id in zone_ids:
         pack = pack_for_zone(zone_id, catalog)
         if pack is not None:
-            break
-    if pack is None:
-        raise SystemExit(f"No fight knowledge matches zone {sorted(zone_ids)} in {report.name}")
+            return pack
+    raise SystemExit(f"No fight knowledge matches zone {sorted(zone_ids)} in {report.name}")
+
+
+def _analyze(report: Path, pack: FightPack, meta: dict, engine: str) -> tuple[Counter, dict]:
     facts = extract_report(report, pack)
     judgments = judge_report(facts, pack, roster_from_meta(meta, pack))
     write_facts(report, facts)
@@ -54,31 +73,62 @@ def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
     judged = {pull["id"] for pull in payload["pulls"]}
     payload["overview"] = build_timeline(meta, when, judged, pack)
     write_session_page(report, payload)
-    return Counter(item.outcome for item in judgments), payload
+    counts = Counter(item.outcome for item in judgments)
+    summary = session_summary(payload, "")
+    write_stamp(report, pack.folder, counts, summary, engine)
+    return counts, summary
+
+
+def _run(reports: list[Path], root: Path, force: set[str]) -> list[Outcome]:
+    catalog = load_catalog(root)
+    engine = engine_version()
+    outcomes = []
+    summaries = []
+    for report in reports:
+        report = report.resolve()
+        meta = _meta(report)
+        pack = _pack(report, meta, catalog)
+        if report.name in force:
+            reason = "requested"
+        else:
+            fresh = check(report, pack.folder, engine)
+            reason = "" if fresh.current else fresh.reason
+        if reason:
+            counts, summary = _analyze(report, pack, meta, engine)
+        else:
+            stamp = read_stamp(report)
+            counts, summary = Counter(stamp["counts"]), stamp["summary"]
+        outcomes.append(Outcome(report.name, counts, bool(reason), reason))
+        summaries.append(summary)
+    if summaries:
+        write_dashboard(root, summaries)
+    return outcomes
 
 
 def analyze(report: Path, root: Path | None = None) -> Counter:
+    """Judge this report, judge any other saved report that is out of date, rebuild the dashboard."""
     root = root or repo_root()
-    counts, payload = _analyze(report, root)
-    others = []
-    for folder in report_dirs(root):
-        if folder.name == report.name:
-            continue
-        if (folder / "judgments.json").is_file():
-            _counts, other = _analyze(folder, root)
-            others.append(other)
-    write_library(root, [payload, *others])
-    return counts
+    report = report.resolve()
+    others = [folder for folder in report_dirs(root) if folder.resolve() != report]
+    outcomes = _run([report, *others], root, force={report.name})
+    return outcomes[0].counts
 
 
-def reanalyze(root: Path | None = None) -> dict[str, Counter]:
+def reanalyze(root: Path | None = None, everything: bool = False) -> list[Outcome]:
+    """Judge every saved report whose rules, code, or log changed. `everything` judges them all."""
     root = root or repo_root()
-    summaries = {}
-    payloads = []
+    reports = report_dirs(root)
+    force = {report.name for report in reports} if everything else set()
+    return _run(reports, root, force)
+
+
+def status(root: Path | None = None) -> list[tuple[str, str]]:
+    """Each saved report and why it is out of date, empty when it is current. Writes nothing."""
+    root = root or repo_root()
+    catalog = load_catalog(root)
+    engine = engine_version()
+    rows = []
     for report in report_dirs(root):
-        counts, payload = _analyze(report, root)
-        summaries[report.name] = counts
-        payloads.append(payload)
-    if payloads:
-        write_library(root, payloads)
-    return summaries
+        pack = _pack(report, _meta(report), catalog)
+        rows.append((report.name, check(report, pack.folder, engine).reason))
+    return rows

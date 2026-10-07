@@ -640,12 +640,17 @@ def write_session_page(report: Path, payload: dict) -> Path:
 
 def write_library(root: Path, payloads: list[dict]) -> Path:
     """Library page. Each session page should already be written."""
+    return write_dashboard(root, [session_summary(payload, "") for payload in payloads])
+
+
+def write_dashboard(root: Path, summaries: list[dict]) -> Path:
+    """Library page from each session's `session_summary`, as saved in its stamp."""
     summaries = [
-        session_summary(payload, library_detail_href(root, payload["code"]))
-        for payload in payloads
+        {**summary, "detail": library_detail_href(root, summary["code"])}
+        for summary in summaries
     ]
     path = root / "dashboard.html"
-    title = "Sessions" if len(payloads) != 1 else _session_title(payloads[0])
+    title = "Sessions" if len(summaries) != 1 else _session_title(summaries[0])
     path.write_text(_page(summaries, title), encoding="utf-8")
     return path
 

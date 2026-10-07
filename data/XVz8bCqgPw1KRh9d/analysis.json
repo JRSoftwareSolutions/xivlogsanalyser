@@ -1,0 +1,1545 @@
+{
+ "rules": "bd6f204c56650200",
+ "engine": "3b29838b6dd8b099",
+ "log": "35838672fc2dde34",
+ "outputs": {
+  "facts.json": "d5f33abfffd00211",
+  "judgments.json": "820b6532b1cfecd3",
+  "session.html": "8b417225b1318189"
+ },
+ "counts": {
+  "raw": 86,
+  "fail": 368,
+  "low": 4,
+  "environment": 0,
+  "unknown": 0
+ },
+ "summary": {
+  "code": "XVz8bCqgPw1KRh9d",
+  "fight": "Dragonsong's Reprise",
+  "title": "Ultimates (Legacy)",
+  "owner": "Kite21",
+  "started": "2026-10-03T20:51:40.227000+02:00",
+  "day": "2026-10-03",
+  "dayLabel": "Sat 3 Oct 2026",
+  "timeLabel": "21:17\u201300:03",
+  "raw": 86,
+  "fail": 368,
+  "low": 4,
+  "detail": "",
+  "overview": {
+   "phases": [
+    {
+     "id": 1,
+     "name": "P1: Adelphel, Grinnaux and Charibert",
+     "short": "P1"
+    },
+    {
+     "id": 2,
+     "name": "P2: King Thordan",
+     "short": "Thordan"
+    },
+    {
+     "id": 3,
+     "name": "P3: Nidhogg",
+     "short": "Nidhogg"
+    },
+    {
+     "id": 4,
+     "name": "P4: The Eyes",
+     "short": "The Eyes"
+    },
+    {
+     "id": 5,
+     "name": "Intermission: Rewind!",
+     "short": "Rewind"
+    },
+    {
+     "id": 6,
+     "name": "P5: King Thordan II",
+     "short": "Thordan II"
+    },
+    {
+     "id": 7,
+     "name": "P6: Nidhogg and Hraesvelgr",
+     "short": "Nidhogg and Hraesvelgr"
+    },
+    {
+     "id": 8,
+     "name": "P7: The Dragon King",
+     "short": "The Dragon King"
+    }
+   ],
+   "pulls": [
+    {
+     "id": 1,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 28.9,
+     "progress": 5.3,
+     "reached": 117.4,
+     "mechanic": "Faith Unmoving",
+     "clock": "1:58",
+     "when": "21:17",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 2,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 45.3,
+     "progress": 4.1,
+     "reached": 89.2,
+     "mechanic": "Faith Unmoving",
+     "clock": "1:31",
+     "when": "21:19",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 3,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 45.3,
+     "progress": 4.1,
+     "reached": 56.0,
+     "mechanic": "Hyperdimensional Slash",
+     "clock": "0:58",
+     "when": "21:21",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 4,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 60.8,
+     "progress": 2.9,
+     "reached": 27.3,
+     "mechanic": "Empty Dimension",
+     "clock": "0:35",
+     "when": "21:22",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 5,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 39.0,
+     "progress": 4.6,
+     "reached": 97.2,
+     "mechanic": "Faith Unmoving",
+     "clock": "1:38",
+     "when": "21:23",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 6,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 33.3,
+     "progress": 5.0,
+     "reached": 103.2,
+     "mechanic": "Faith Unmoving",
+     "clock": "1:49",
+     "when": "21:25",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 7,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 33.1,
+     "progress": 9.2,
+     "reached": 146.1,
+     "mechanic": "Pure of Heart",
+     "clock": "2:31",
+     "when": "21:27",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 8,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 55.2,
+     "progress": 8.6,
+     "reached": 129.4,
+     "mechanic": "Pure of Heart",
+     "clock": "2:22",
+     "when": "21:30",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 9,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 98.2,
+     "progress": 10.5,
+     "reached": 163.4,
+     "mechanic": "Ascalon's Mercy Concealed",
+     "clock": "2:44",
+     "when": "21:33",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 10,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 35.1,
+     "progress": 26.2,
+     "reached": 266.8,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "1:59",
+     "when": "21:36",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 11,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 36.7,
+     "progress": 25.8,
+     "reached": 267.0,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "21:39",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 12,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 69.2,
+     "progress": 17.7,
+     "reached": 216.2,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:08",
+     "when": "21:41",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 13,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 66.3,
+     "progress": 18.4,
+     "reached": 213.3,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:03",
+     "when": "21:43",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 14,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 38.5,
+     "progress": 25.4,
+     "reached": 267.0,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "21:44",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 15,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 35.4,
+     "progress": 26.2,
+     "reached": 266.6,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "21:47",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 16,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 64.8,
+     "progress": 18.8,
+     "reached": 215.7,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:08",
+     "when": "21:51",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 17,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 35.0,
+     "progress": 26.2,
+     "reached": 267.0,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:09",
+     "when": "21:52",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 18,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 63.9,
+     "progress": 19.0,
+     "reached": 232.5,
+     "mechanic": "Heavenly Heel",
+     "clock": "1:25",
+     "when": "21:55",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 19,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 63.0,
+     "progress": 19.3,
+     "reached": 222.2,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:11",
+     "when": "21:57",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 20,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 34.5,
+     "progress": 26.4,
+     "reached": 266.7,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:07",
+     "when": "21:58",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 21,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 62.8,
+     "progress": 19.3,
+     "reached": 216.3,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:08",
+     "when": "22:01",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 22,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 35.8,
+     "progress": 26.0,
+     "reached": 267.2,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "22:03",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 23,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 78.7,
+     "progress": 15.3,
+     "reached": 175.1,
+     "mechanic": "Ascalon's Might",
+     "clock": "0:24",
+     "when": "22:06",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 24,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 63.6,
+     "progress": 19.1,
+     "reached": 228.3,
+     "mechanic": "Heavenly Heel",
+     "clock": "1:21",
+     "when": "22:06",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 25,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 63.3,
+     "progress": 19.2,
+     "reached": 216.4,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:06",
+     "when": "22:08",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 26,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 35.9,
+     "progress": 26.0,
+     "reached": 267.2,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "22:09",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 27,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 36.4,
+     "progress": 25.9,
+     "reached": 267.2,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:00",
+     "when": "22:12",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 28,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 64.1,
+     "progress": 19.0,
+     "reached": 216.3,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:08",
+     "when": "22:14",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 29,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 62.3,
+     "progress": 19.4,
+     "reached": 216.2,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:08",
+     "when": "22:16",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 30,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 63.7,
+     "progress": 19.1,
+     "reached": 216.5,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:08",
+     "when": "22:17",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 31,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 64.6,
+     "progress": 18.9,
+     "reached": 205.0,
+     "mechanic": "Strength of the Ward",
+     "clock": "0:54",
+     "when": "22:19",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 32,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 37.9,
+     "progress": 25.5,
+     "reached": 266.3,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:19",
+     "when": "22:20",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 33,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 63.8,
+     "progress": 19.0,
+     "reached": 209.6,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:02",
+     "when": "22:23",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 34,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 33.9,
+     "progress": 26.5,
+     "reached": 266.9,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:19",
+     "when": "22:24",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 35,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 32.7,
+     "progress": 26.8,
+     "reached": 267.0,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "1:59",
+     "when": "22:27",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 36,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 62.9,
+     "progress": 19.3,
+     "reached": 216.4,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:06",
+     "when": "22:29",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 37,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 35.9,
+     "progress": 26.0,
+     "reached": 267.2,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "22:30",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 38,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 64.8,
+     "progress": 18.8,
+     "reached": 213.3,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:03",
+     "when": "22:36",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 39,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 34.6,
+     "progress": 26.3,
+     "reached": 267.0,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "22:40",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 40,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 34.2,
+     "progress": 26.5,
+     "reached": 267.0,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:21",
+     "when": "22:43",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 41,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 35.2,
+     "progress": 26.2,
+     "reached": 266.9,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:26",
+     "when": "22:47",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 42,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 63.9,
+     "progress": 19.0,
+     "reached": 222.2,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:10",
+     "when": "22:50",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 43,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 33.6,
+     "progress": 26.6,
+     "reached": 267.0,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "22:51",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 44,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 34.3,
+     "progress": 26.4,
+     "reached": 267.0,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "22:54",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 45,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 77.7,
+     "progress": 15.6,
+     "reached": 177.9,
+     "mechanic": "Ascalon's Might",
+     "clock": "0:28",
+     "when": "22:57",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 46,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 62.8,
+     "progress": 19.3,
+     "reached": 209.7,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:02",
+     "when": "22:58",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 47,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 62.6,
+     "progress": 19.4,
+     "reached": 222.4,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:15",
+     "when": "22:59",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 48,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 32.4,
+     "progress": 26.9,
+     "reached": 267.1,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:20",
+     "when": "23:01",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 49,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 30.3,
+     "progress": 27.4,
+     "reached": 267.1,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:18",
+     "when": "23:03",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 50,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 32.3,
+     "progress": 26.9,
+     "reached": 266.9,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:13",
+     "when": "23:06",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 51,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 62.8,
+     "progress": 19.3,
+     "reached": 222.4,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:12",
+     "when": "23:08",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 52,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 62.7,
+     "progress": 19.3,
+     "reached": 216.2,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:08",
+     "when": "23:10",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 53,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 50.0,
+     "progress": 3.8,
+     "reached": 120.8,
+     "mechanic": "Faith Unmoving",
+     "clock": "2:02",
+     "when": "23:23",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 54,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 35.0,
+     "progress": 4.9,
+     "reached": 98.2,
+     "mechanic": "Faith Unmoving",
+     "clock": "1:39",
+     "when": "23:25",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 55,
+     "phase": 1,
+     "phaseName": "P1",
+     "phaseFull": "P1: Adelphel, Grinnaux and Charibert",
+     "bossPct": 81.3,
+     "progress": 8.0,
+     "reached": 127.7,
+     "mechanic": "Pure of Heart",
+     "clock": "2:15",
+     "when": "23:27",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 56,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 99.2,
+     "progress": 10.2,
+     "reached": 159.8,
+     "mechanic": "Ascalon's Mercy Concealed",
+     "clock": "2:44",
+     "when": "23:30",
+     "kill": false,
+     "judged": false
+    },
+    {
+     "id": 57,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 33.1,
+     "progress": 26.7,
+     "reached": 267.6,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:25",
+     "when": "23:33",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 58,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 32.8,
+     "progress": 26.8,
+     "reached": 267.8,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:21",
+     "when": "23:36",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 59,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 63.9,
+     "progress": 19.0,
+     "reached": 216.5,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:08",
+     "when": "23:39",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 60,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 35.9,
+     "progress": 26.0,
+     "reached": 267.0,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:05",
+     "when": "23:40",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 61,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 33.3,
+     "progress": 26.7,
+     "reached": 267.9,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:21",
+     "when": "23:43",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 62,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 33.5,
+     "progress": 26.6,
+     "reached": 267.5,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:27",
+     "when": "23:45",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 63,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 63.9,
+     "progress": 19.0,
+     "reached": 216.3,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:08",
+     "when": "23:48",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 64,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 33.3,
+     "progress": 26.7,
+     "reached": 267.6,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:27",
+     "when": "23:50",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 65,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 35.1,
+     "progress": 26.2,
+     "reached": 267.8,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:21",
+     "when": "23:52",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 66,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 33.3,
+     "progress": 26.7,
+     "reached": 297.3,
+     "mechanic": "Meteors",
+     "clock": "2:32",
+     "when": "23:55",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 67,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 34.2,
+     "progress": 26.4,
+     "reached": 267.7,
+     "mechanic": "Sanctity of the Ward",
+     "clock": "2:25",
+     "when": "23:58",
+     "kill": false,
+     "judged": true
+    },
+    {
+     "id": 68,
+     "phase": 2,
+     "phaseName": "Thordan",
+     "phaseFull": "P2: King Thordan",
+     "bossPct": 65.1,
+     "progress": 18.7,
+     "reached": 213.1,
+     "mechanic": "Strength of the Ward",
+     "clock": "1:02",
+     "when": "00:02",
+     "kill": false,
+     "judged": true
+    }
+   ],
+   "best": {
+    "id": 49,
+    "phase": 2,
+    "phaseName": "Thordan",
+    "phaseFull": "P2: King Thordan",
+    "bossPct": 30.3,
+    "progress": 27.4,
+    "reached": 267.1,
+    "mechanic": "Sanctity of the Ward",
+    "clock": "2:18",
+    "when": "23:03",
+    "kill": false,
+    "judged": true
+   },
+   "markers": [
+    {
+     "name": "Empty Dimension",
+     "phase": 1,
+     "at": 8.0
+    },
+    {
+     "name": "Hyperdimensional Slash",
+     "phase": 1,
+     "at": 40.0
+    },
+    {
+     "name": "Faith Unmoving",
+     "phase": 1,
+     "at": 75.0
+    },
+    {
+     "name": "Pure of Heart",
+     "phase": 1,
+     "at": 125.0
+    },
+    {
+     "name": "Ascalon's Mercy Concealed",
+     "phase": 2,
+     "at": 153.0
+    },
+    {
+     "name": "Ascalon's Might",
+     "phase": 2,
+     "at": 167.0
+    },
+    {
+     "name": "Strength of the Ward",
+     "phase": 2,
+     "at": 193.0
+    },
+    {
+     "name": "Heavenly Heel",
+     "phase": 2,
+     "at": 228.0
+    },
+    {
+     "name": "Sanctity of the Ward",
+     "phase": 2,
+     "at": 258.0
+    },
+    {
+     "name": "Meteors",
+     "phase": 2,
+     "at": 278.0
+    },
+    {
+     "name": "Dive from Grace",
+     "phase": 3,
+     "at": 367.0
+    }
+   ]
+  },
+  "pulls": [
+   {
+    "id": 10,
+    "bossPct": 35.1,
+    "when": "21:36",
+    "phase": "Thordan",
+    "clock": "1:59"
+   },
+   {
+    "id": 11,
+    "bossPct": 36.7,
+    "when": "21:39",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 12,
+    "bossPct": 69.2,
+    "when": "21:41",
+    "phase": "Thordan",
+    "clock": "1:08"
+   },
+   {
+    "id": 13,
+    "bossPct": 66.3,
+    "when": "21:43",
+    "phase": "Thordan",
+    "clock": "1:03"
+   },
+   {
+    "id": 14,
+    "bossPct": 38.5,
+    "when": "21:44",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 15,
+    "bossPct": 35.4,
+    "when": "21:47",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 16,
+    "bossPct": 64.8,
+    "when": "21:51",
+    "phase": "Thordan",
+    "clock": "1:08"
+   },
+   {
+    "id": 17,
+    "bossPct": 35.0,
+    "when": "21:52",
+    "phase": "Thordan",
+    "clock": "2:09"
+   },
+   {
+    "id": 18,
+    "bossPct": 63.9,
+    "when": "21:55",
+    "phase": "Thordan",
+    "clock": "1:25"
+   },
+   {
+    "id": 19,
+    "bossPct": 63.0,
+    "when": "21:57",
+    "phase": "Thordan",
+    "clock": "1:11"
+   },
+   {
+    "id": 20,
+    "bossPct": 34.5,
+    "when": "21:58",
+    "phase": "Thordan",
+    "clock": "2:07"
+   },
+   {
+    "id": 21,
+    "bossPct": 62.8,
+    "when": "22:01",
+    "phase": "Thordan",
+    "clock": "1:08"
+   },
+   {
+    "id": 22,
+    "bossPct": 35.8,
+    "when": "22:03",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 23,
+    "bossPct": 78.7,
+    "when": "22:06",
+    "phase": "Thordan",
+    "clock": "0:24"
+   },
+   {
+    "id": 24,
+    "bossPct": 63.6,
+    "when": "22:06",
+    "phase": "Thordan",
+    "clock": "1:21"
+   },
+   {
+    "id": 25,
+    "bossPct": 63.3,
+    "when": "22:08",
+    "phase": "Thordan",
+    "clock": "1:06"
+   },
+   {
+    "id": 26,
+    "bossPct": 35.9,
+    "when": "22:09",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 27,
+    "bossPct": 36.4,
+    "when": "22:12",
+    "phase": "Thordan",
+    "clock": "2:00"
+   },
+   {
+    "id": 28,
+    "bossPct": 64.1,
+    "when": "22:14",
+    "phase": "Thordan",
+    "clock": "1:08"
+   },
+   {
+    "id": 29,
+    "bossPct": 62.3,
+    "when": "22:16",
+    "phase": "Thordan",
+    "clock": "1:08"
+   },
+   {
+    "id": 30,
+    "bossPct": 63.7,
+    "when": "22:17",
+    "phase": "Thordan",
+    "clock": "1:08"
+   },
+   {
+    "id": 31,
+    "bossPct": 64.6,
+    "when": "22:19",
+    "phase": "Thordan",
+    "clock": "0:54"
+   },
+   {
+    "id": 32,
+    "bossPct": 37.9,
+    "when": "22:20",
+    "phase": "Thordan",
+    "clock": "2:19"
+   },
+   {
+    "id": 33,
+    "bossPct": 63.8,
+    "when": "22:23",
+    "phase": "Thordan",
+    "clock": "1:02"
+   },
+   {
+    "id": 34,
+    "bossPct": 33.9,
+    "when": "22:24",
+    "phase": "Thordan",
+    "clock": "2:19"
+   },
+   {
+    "id": 35,
+    "bossPct": 32.7,
+    "when": "22:27",
+    "phase": "Thordan",
+    "clock": "1:59"
+   },
+   {
+    "id": 36,
+    "bossPct": 62.9,
+    "when": "22:29",
+    "phase": "Thordan",
+    "clock": "1:06"
+   },
+   {
+    "id": 37,
+    "bossPct": 35.9,
+    "when": "22:30",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 38,
+    "bossPct": 64.8,
+    "when": "22:36",
+    "phase": "Thordan",
+    "clock": "1:03"
+   },
+   {
+    "id": 39,
+    "bossPct": 34.6,
+    "when": "22:40",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 40,
+    "bossPct": 34.2,
+    "when": "22:43",
+    "phase": "Thordan",
+    "clock": "2:21"
+   },
+   {
+    "id": 41,
+    "bossPct": 35.2,
+    "when": "22:47",
+    "phase": "Thordan",
+    "clock": "2:26"
+   },
+   {
+    "id": 42,
+    "bossPct": 63.9,
+    "when": "22:50",
+    "phase": "Thordan",
+    "clock": "1:10"
+   },
+   {
+    "id": 43,
+    "bossPct": 33.6,
+    "when": "22:51",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 44,
+    "bossPct": 34.3,
+    "when": "22:54",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 45,
+    "bossPct": 77.7,
+    "when": "22:57",
+    "phase": "Thordan",
+    "clock": "0:28"
+   },
+   {
+    "id": 46,
+    "bossPct": 62.8,
+    "when": "22:58",
+    "phase": "Thordan",
+    "clock": "1:02"
+   },
+   {
+    "id": 47,
+    "bossPct": 62.6,
+    "when": "22:59",
+    "phase": "Thordan",
+    "clock": "1:15"
+   },
+   {
+    "id": 48,
+    "bossPct": 32.4,
+    "when": "23:01",
+    "phase": "Thordan",
+    "clock": "2:20"
+   },
+   {
+    "id": 49,
+    "bossPct": 30.3,
+    "when": "23:03",
+    "phase": "Thordan",
+    "clock": "2:18"
+   },
+   {
+    "id": 50,
+    "bossPct": 32.3,
+    "when": "23:06",
+    "phase": "Thordan",
+    "clock": "2:13"
+   },
+   {
+    "id": 51,
+    "bossPct": 62.8,
+    "when": "23:08",
+    "phase": "Thordan",
+    "clock": "1:12"
+   },
+   {
+    "id": 52,
+    "bossPct": 62.7,
+    "when": "23:10",
+    "phase": "Thordan",
+    "clock": "1:08"
+   },
+   {
+    "id": 57,
+    "bossPct": 33.1,
+    "when": "23:33",
+    "phase": "Thordan",
+    "clock": "2:25"
+   },
+   {
+    "id": 58,
+    "bossPct": 32.8,
+    "when": "23:36",
+    "phase": "Thordan",
+    "clock": "2:21"
+   },
+   {
+    "id": 59,
+    "bossPct": 63.9,
+    "when": "23:39",
+    "phase": "Thordan",
+    "clock": "1:08"
+   },
+   {
+    "id": 60,
+    "bossPct": 35.9,
+    "when": "23:40",
+    "phase": "Thordan",
+    "clock": "2:05"
+   },
+   {
+    "id": 61,
+    "bossPct": 33.3,
+    "when": "23:43",
+    "phase": "Thordan",
+    "clock": "2:21"
+   },
+   {
+    "id": 62,
+    "bossPct": 33.5,
+    "when": "23:45",
+    "phase": "Thordan",
+    "clock": "2:27"
+   },
+   {
+    "id": 63,
+    "bossPct": 63.9,
+    "when": "23:48",
+    "phase": "Thordan",
+    "clock": "1:08"
+   },
+   {
+    "id": 64,
+    "bossPct": 33.3,
+    "when": "23:50",
+    "phase": "Thordan",
+    "clock": "2:27"
+   },
+   {
+    "id": 65,
+    "bossPct": 35.1,
+    "when": "23:52",
+    "phase": "Thordan",
+    "clock": "2:21"
+   },
+   {
+    "id": 66,
+    "bossPct": 33.3,
+    "when": "23:55",
+    "phase": "Thordan",
+    "clock": "2:32"
+   },
+   {
+    "id": 67,
+    "bossPct": 34.2,
+    "when": "23:58",
+    "phase": "Thordan",
+    "clock": "2:25"
+   },
+   {
+    "id": 68,
+    "bossPct": 65.1,
+    "when": "00:02",
+    "phase": "Thordan",
+    "clock": "1:02"
+   }
+  ],
+  "mechanics": [
+   {
+    "id": "ascalons-mercy-opener",
+    "name": "Ascalon's Mercy Concealed",
+    "phase": 2,
+    "starts": 0,
+    "reached": 55,
+    "mistakes": 6
+   },
+   {
+    "id": "ascalons-might-opener",
+    "name": "Ascalon's Might",
+    "phase": 2,
+    "starts": 14.0,
+    "reached": 55,
+    "mistakes": 0
+   },
+   {
+    "id": "strength-of-the-ward",
+    "name": "Strength of the Ward",
+    "phase": 2,
+    "starts": 40.0,
+    "reached": 53,
+    "mistakes": 20
+   },
+   {
+    "id": "heavenly-heel-swap",
+    "name": "Heavenly Heel",
+    "phase": 2,
+    "starts": 75.0,
+    "reached": 32,
+    "mistakes": 3
+   },
+   {
+    "id": "sanctity-of-the-ward",
+    "name": "Sanctity of the Ward",
+    "phase": 2,
+    "starts": 105.0,
+    "reached": 30,
+    "mistakes": 14
+   },
+   {
+    "id": "meteors",
+    "name": "Meteors",
+    "phase": 2,
+    "starts": 125.0,
+    "reached": 27,
+    "mistakes": 24
+   },
+   {
+    "id": "dive-from-grace",
+    "name": "Dive from Grace",
+    "phase": 3,
+    "starts": 17.0,
+    "reached": 0,
+    "mistakes": 0
+   }
+  ]
+ }
+}

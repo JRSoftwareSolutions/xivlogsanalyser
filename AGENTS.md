@@ -14,6 +14,8 @@ The settled Thordan headline is 86 raw deaths on report `XVz8bCqgPw1KRh9d`. A ta
 
 A death with no damage packet is the deathwall. Walking into it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's alone. After one, it is still a fail, shared with "Earlier mistake". The first mistake of a pull matters most, and later deaths often cascade from it. Each judgment carries `first` and `first_mistake`. Which debuffs count is `cascade_debuffs` in `fights/dsr/fight.json`. The deathwall text is `deathwall` in `fights/dsr/mechanics.json`.
 
+Each report folder has an `analysis.json` stamp: fingerprints of the fight pack (`fights/dsr/`), the analyzer code, and that log's files, from the run that wrote its pages. `reanalyze` judges again only the reports whose stamp no longer matches, and says why. `reanalyze --all` judges every report. `python -m xivloganalyzer status` lists what is out of date without writing anything. Commit the stamps with the pages. Do not hand-edit them.
+
 A new log goes in `reports/<code>/` with `fights.json`, `deaths-html.json`, and ability files, then `python -m xivloganalyzer analyze <code>`.
 
 Run these from the repo root. When the package is not installed (`pip install -e .`), prefix them with `PYTHONPATH=src`. The tests are `python -m unittest discover -s tests`.

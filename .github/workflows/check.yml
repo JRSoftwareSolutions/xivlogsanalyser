@@ -16,9 +16,11 @@ jobs:
       - run: pip install -e .
       - name: Tests
         run: python -m unittest discover -s tests
+      - name: Every saved log was judged with the current rules
+        run: python -m xivloganalyzer status
       - name: Generated pages match the code and mechanics
         run: |
-          python -m xivloganalyzer reanalyze
+          python -m xivloganalyzer reanalyze --all
           if ! git diff --quiet; then
             git diff --stat
             echo "::error::Run python -m xivloganalyzer reanalyze and commit the pages it rewrites."
