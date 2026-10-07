@@ -112,6 +112,18 @@ class DiveFromGraceTest(unittest.TestCase):
             ("Kiara Blaiddyd", "3", "circle"),
             ("Kitana Kahn", "3", "circle"),
         ])
+        spring = card["debuffs"]["players"][0]
+        self.assertEqual(spring["statuses"], [
+            {"id": 1003004, "name": "First in Line"},
+            {"id": 1002756, "name": "Spineshatter Dive Target"},
+        ])
+
+    def test_every_listed_debuff_has_its_game_icon(self):
+        icons = ROOT / "src" / "xivloganalyzer" / "status_icons"
+        for cluster in self.pack.clusters:
+            for column in cluster.debuffs:
+                for guid in column.labels:
+                    self.assertTrue((icons / f"{guid}.png").is_file(), f"{cluster.id} {guid}")
 
     def test_circles_in_one_landing_are_a_miscommunication(self):
         jumps = [
