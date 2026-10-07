@@ -342,7 +342,6 @@ class FrameBook:
 
         return {
             "title": f"{name} · {_clock_label(when)}",
-            "at": round(float(when), 1),
             "caption": _mechanic_caption(name, failed_names, marks, players, gaze),
             "players": players,
             "marks": marks,

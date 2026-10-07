@@ -1495,11 +1495,6 @@ function seatMark(seat, partName) {
 function componentDeaths(pull, card, part) {
   return judged(pull.deaths).filter(row => row.mechanicId === card.id && row.componentId === part.id);
 }
-// A death within this many seconds of the component's still is already in that picture.
-const SAME_PICTURE = 2;
-function pictured(part, t) {
-  return (part.frames || []).some(frame => frame.at != null && Math.abs(frame.at - t) <= SAME_PICTURE);
-}
 function componentBlock(pull, card, part) {
   const rows = componentDeaths(pull, card, part);
   const solo = card.parts.length === 1 && part.name === card.name;
