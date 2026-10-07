@@ -2,6 +2,8 @@
 
 import json
 import math
+import shutil
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -18,6 +20,14 @@ from xivloganalyzer.frames import (
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "data" / "XVz8bCqgPw1KRh9d"
 PACK = load_pack(ROOT / "fights" / "dsr")
+
+
+def _report_without_replay() -> Path:
+    """A saved log's fight list, with no replay files beside it."""
+    report = Path(tempfile.mkdtemp())
+    source = ROOT / "data" / "8DYNHQx4C7ytdLb9"
+    shutil.copy(source / "fights.json", report / "fights.json")
+    return report
 
 
 def _death(row: dict) -> dict:
@@ -124,9 +134,10 @@ class StillFrameTest(unittest.TestCase):
         self.assertEqual(payload["pulls"][0]["deaths"][0]["frame"]["killedBy"], "Dragon's Gaze")
 
     def test_a_log_without_a_replay_has_no_frame(self):
-        other = ROOT / "data" / "8DYNHQx4C7ytdLb9"
-        book = FrameBook(other)
-        rows = json.loads((other / "judgments.json").read_text(encoding="utf-8"))
+        report = _report_without_replay()
+        self.addCleanup(shutil.rmtree, report)
+        book = FrameBook(report)
+        rows = json.loads((ROOT / "data" / "8DYNHQx4C7ytdLb9" / "judgments.json").read_text(encoding="utf-8"))
         fail = next(row for row in rows if row["outcome"] == "fail" and row["phase"] == 2)
         self.assertIsNone(book.frame(_death(fail), PACK))
 
@@ -228,8 +239,9 @@ class MechanicStillTest(unittest.TestCase):
         self.assertGreaterEqual(len(frames[0]["players"]), 8)
 
     def test_a_log_without_a_replay_has_no_mechanic_still(self):
-        other = ROOT / "data" / "8DYNHQx4C7ytdLb9"
-        rows = json.loads((other / "judgments.json").read_text(encoding="utf-8"))
+        other = _report_without_replay()
+        self.addCleanup(shutil.rmtree, other)
+        rows = json.loads((ROOT / "data" / "8DYNHQx4C7ytdLb9" / "judgments.json").read_text(encoding="utf-8"))
         fail = next(row for row in rows if row["outcome"] == "fail" and row["phase"] == 2)
         payload = {
             "mechanics": [{"id": "ascalons-mercy-opener", "phase": 2, "parts": [{"id": fail["mechanic_id"]}]}],
