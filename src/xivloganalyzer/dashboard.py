@@ -319,7 +319,8 @@ def _pull_cards(
     A component is on the card once the pull lasted until that component resolves,
     or someone died to it. A player failed it when a death there was judged a fail.
     A death clipped by someone's marker sits under that marker, and the marker
-    holder failed it, not the player who died. Everyone else in the party passed.
+    holder failed it, not the player who died. A dive landing caused by an arrow on
+    the wrong side is failed by that arrow holder. Everyone else in the party passed.
     A pull that dies in a later phase still shows the earlier phase, and the later
     phase gets its own cards.
     """
@@ -442,6 +443,8 @@ def session_payload(
         if clip is not None:
             component = clip.id
             culprits = list(item.fact.clipped_by)
+        if item.cause == "arrow":
+            culprits = [blame.who for blame in item.blames]
         cluster = pack.cluster_for(component, item.fact.t, item.fact.phase) or _cluster_of(item, pack)
         pull["deaths"].append(
             {

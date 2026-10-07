@@ -58,18 +58,39 @@ class DiveFromGraceTest(unittest.TestCase):
             ["Loki Doki", "Spring Nymphar", "Party mitigation"],
         )
 
-    def test_landing_overlap_splits_the_players(self):
-        landing = [
-            item for item in self.phase3 if item.fact.fight == 27 and item.fact.guid == 26384
-        ]
-        self.assertEqual(len(landing), 2)
-        self.assertTrue(all(item.outcome == "fail" for item in landing))
-        self.assertTrue(all(item.cause == "overlap" for item in landing))
+    def test_arrow_on_the_wrong_side_owns_the_landing(self):
+        loki = self._one(27, "Loki Doki", 26384)
+        self.assertEqual(loki.outcome, "fail")
+        self.assertEqual(loki.cause, "arrow")
+        self.assertEqual(loki.went_wrong, "Loki Doki took the down arrow west, facing west.")
+        spring = self._one(27, "Spring Nymphar", 26384)
+        self.assertEqual(spring.went_wrong, "Spring Nymphar got hit by Loki Doki's dive.")
+        for item in (loki, spring):
+            self.assertEqual([blame.to_dict() for blame in item.blames], [{"who": "Loki Doki", "confidence": 100}])
+        divers = {diver["name"]: diver for diver in spring.fact.divers}
+        self.assertEqual(divers["Spring Nymphar"]["marker"], "up arrow")
+        self.assertEqual(divers["Spring Nymphar"]["facing"], "east")
+
+    def test_arrow_holder_fails_the_card_not_the_player_hit(self):
+        when = session_clock(REPORT, self.meta)
+        payload = session_payload(self.judgments, self.pack, REPORT.name, when, self.meta)
+        pull = next(row for row in payload["pulls"] if row["id"] == 27)
+        card = next(row for row in pull["cards"] if row["id"] == "dive-from-grace")
+        part = next(part for part in card["parts"] if part["id"] == "dark-elusive-jump")
+        seats = {seat["name"]: seat for seat in part["seats"]}
+        self.assertFalse(seats["Loki Doki"]["passed"])
+        self.assertTrue(seats["Spring Nymphar"]["passed"])
+
+    def test_circles_in_one_landing_are_a_miscommunication(self):
         jumps = [
             item for item in self.phase3 if item.fact.fight == 46 and item.fact.guid == 26382
         ]
         self.assertEqual(len(jumps), 4)
-        self.assertTrue(all(blame.confidence == 25 for item in jumps for blame in item.blames))
+        self.assertTrue(all(item.cause == "miscommunication" for item in jumps))
+        self.assertTrue(
+            all(blame.to_dict() == {"who": "Miscommunication", "confidence": 25}
+                for item in jumps for blame in item.blames)
+        )
 
     def test_towers_split_debuff_soak_from_empty_tower(self):
         debuff = self._one(27, "Speed Panda", 26385)

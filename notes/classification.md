@@ -127,11 +127,14 @@ A Lightning Storm clip or a Bright Flare overlap splits across the players in th
 
 Report `8DYNHQx4C7ytdLb9`. Eight pulls reached Nidhogg. The strat is LPDU Easthogg. Ability files for these guids are not stored, and the packets have no unmitigated amount, so the number is the total hit. This is the baseline, not a cast survey.
 
+Arrows resolve facing east. An up arrow goes west, a down arrow goes east, and a 2 goes northwest or northeast on the same rule. The mitigations replay stores the number and arrow debuffs, and the positions replay stores where each diver stood and faced at the snapshot. The facing decides where the tower drops. A circle has no side, so circles sharing a landing are a miscommunication.
+
 Final Chorus and the auto cleave are not this stop. A blank killing blow at the dive, with the dive in the last hits, is the knock into the wall. Pull 33. It stays a no-packet death.
 
 | Guid | What the hit is | Call |
 |---|---|---|
-| 26382, 26384 | Over 150k, several players | Fail. Each player in the landing. |
+| 26382, 26384 | Over 150k, an arrow on the wrong side | Fail. The arrow holder owns every death in that landing. Pull 27, Loki Doki took the down arrow west, facing west, onto Spring Nymphar's up arrow. |
+| 26382, 26384 | Over 150k, only circles out of place | Fail. Miscommunication, split across the landing. Pull 46. |
 | 26388 | About 37–70k | Raw when they were healthy. The healers, and party mitigation when the mit is unknown. |
 | 26388 | Over 100k | Fail. Short stack. Missing bodies. Pull 16. |
 | 26389, 26390 | About 12–23k | Fail. Wrong side of the in-and-out. Still a fail under 15k HP. |

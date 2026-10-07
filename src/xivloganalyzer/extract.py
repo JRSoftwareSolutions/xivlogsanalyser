@@ -7,6 +7,7 @@ does not require reading the log again.
 from __future__ import annotations
 
 import json
+import math
 import re
 from collections import defaultdict
 from dataclasses import asdict, dataclass, field
@@ -52,6 +53,7 @@ class DeathFact:
     mitigations: list[dict] = field(default_factory=list)
     clipped_by: list[str] = field(default_factory=list)
     clip_guid: int | None = None
+    divers: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -59,6 +61,10 @@ class DeathFact:
 
 VULN_GUIDS = {1002940, 1002941}
 CLIP_WINDOW_MS = 7000
+# A dive marker comes off a few hundred milliseconds before its landing hits.
+DIVE_BEFORE_MS = 2500
+DIVE_AFTER_MS = 1000
+ARENA_CENTER = 10000
 
 
 def _grab(tail: str, key: str) -> int | None:
@@ -229,6 +235,81 @@ def _clipped_by(
     return [names[holder] for holder in holders], clip_guid
 
 
+def _positions(report: Path, fight: int, cache: dict[int, dict]) -> dict[int, list]:
+    """Replay samples by actor, as (timestamp, x, y, facing). x and y are hundredths of a yalm."""
+    if fight not in cache:
+        by_actor: dict[int, list] = defaultdict(list)
+        path = report / "positions" / f"fight-{fight:02d}.json"
+        if path.is_file():
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            for ts, actor, x, y, facing, *_rest in payload.get("samples") or []:
+                by_actor[actor].append((ts, x, y, facing))
+        cache[fight] = by_actor
+    return cache[fight]
+
+
+def _place(places: dict[int, list], actor: int | None, timestamp: int) -> tuple | None:
+    """Yalms from the arena center, and the compass facing, at the sample nearest this moment."""
+    samples = [sample for sample in places.get(actor) or [] if abs(sample[0] - timestamp) <= 1500]
+    if not samples:
+        return None
+    _ts, x, y, facing = min(samples, key=lambda sample: abs(sample[0] - timestamp))
+    return round((x - ARENA_CENTER) / 100, 2), round((y - ARENA_CENTER) / 100, 2), _compass(facing)
+
+
+def _compass(facing: int | None) -> str | None:
+    """The replay facing is hundredths of a radian. +x is east and +y is south."""
+    if facing is None:
+        return None
+    theta = facing / 100.0
+    dx, dy = math.cos(theta), math.sin(theta)
+    if abs(dx) >= abs(dy):
+        return "east" if dx > 0 else "west"
+    return "south" if dy > 0 else "north"
+
+
+def _divers(
+    tables: dict[int, dict],
+    places: dict[int, list],
+    fight: int,
+    target: int | None,
+    timestamp: int | None,
+    markers: dict,
+    names: dict[int, str],
+) -> list[dict]:
+    """Players whose dive marker resolved on this landing, and where they stood.
+
+    `x` and `y` are yalms from the arena center. Positive x is east and positive y
+    is south. `facing` is where they looked at the snapshot, and `apart` is yalms
+    from the player who died.
+    """
+    payload = tables.get(fight)
+    if payload is None or timestamp is None or not markers:
+        return []
+    here = _place(places, target, timestamp)
+    divers = []
+    for aura in payload.get("auras") or []:
+        if aura[1] != "removedebuff" or aura[2] not in markers:
+            continue
+        if not -DIVE_BEFORE_MS <= aura[0] - timestamp <= DIVE_AFTER_MS:
+            continue
+        actor = aura[5]
+        if actor not in names:
+            continue
+        marker = markers[aura[2]]
+        row = {
+            "name": names[actor], "marker": marker.name, "side": marker.side,
+            "should_face": marker.facing, "x": None, "y": None, "facing": None, "apart": None,
+        }
+        spot = _place(places, actor, timestamp)
+        if spot:
+            row["x"], row["y"], row["facing"] = spot
+            if here:
+                row["apart"] = round(math.hypot(spot[0] - here[0], spot[1] - here[1]), 2)
+        divers.append(row)
+    return sorted(divers, key=lambda row: row["name"])
+
+
 def _buff_names(event: dict, auras: dict[str, str]) -> list[str]:
     raw = event.get("buffs") or ""
     names = []
@@ -294,6 +375,7 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
     by_guid = _load_events(report)
     marker_casts = _marker_packets(report, pack)
     mitigation_tables = load_mitigations(report)
+    places: dict[int, dict] = {}
 
     facts: list[DeathFact] = []
     for fight in meta["fights"]:
@@ -379,6 +461,12 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             fact.clipped_by, fact.clip_guid = _clipped_by(
                 marker_casts, fight["id"], target, timestamp, mits, names_by_id,
             )
+            mechanic = pack.mechanic_for(guid, phase.id)
+            if mechanic and mechanic.dive_markers:
+                fact.divers = _divers(
+                    mitigation_tables, _positions(report, fight["id"], places), fight["id"],
+                    target, timestamp, mechanic.dive_markers, names_by_id,
+                )
             facts.append(fact)
     facts.sort(key=lambda fact: (fact.fight, fact.phase, fact.t, fact.name))
     return facts
