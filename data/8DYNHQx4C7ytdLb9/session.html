@@ -781,6 +781,36 @@ function pullX(sessionIndex, pullIndex, count, sessionCount) {
   const t = count <= 1 ? 0.5 : pullIndex / (count - 1);
   return ((sessionIndex + t) / sessionCount) * 100;
 }
+function trendLine(sessions, scale) {
+  const n = Math.max(sessions.length, 1);
+  const pts = [];
+  sessions.forEach((session, index) => {
+    const pulls = overviewOf(session).pulls;
+    pulls.forEach((pull, pullIndex) => {
+      pts.push({ x: pullX(index, pullIndex, pulls.length, n), reached: pull.reached || 0 });
+    });
+  });
+  if (pts.length < 2) return "";
+  let sx = 0;
+  let sy = 0;
+  let sxx = 0;
+  let sxy = 0;
+  for (const point of pts) {
+    sx += point.x;
+    sy += point.reached;
+    sxx += point.x * point.x;
+    sxy += point.x * point.reached;
+  }
+  const denom = pts.length * sxx - sx * sx;
+  if (!denom) return "";
+  const slope = (pts.length * sxy - sx * sy) / denom;
+  const intercept = (sy - slope * sx) / pts.length;
+  const yOf = reached => (1 - reached / scale) * 100;
+  const start = pts[0];
+  const end = pts[pts.length - 1];
+  const points = `${start.x},${yOf(intercept + slope * start.x)} ${end.x},${yOf(intercept + slope * end.x)}`;
+  return `<svg class="trend-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${points}" fill="none" stroke="#243056" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></polyline></svg>`;
+}
 function trendChart(sessions) {
   const { marks, scale } = trendFrame(sessions);
   const labels = markLabels(marks, scale, TREND_H);
@@ -794,16 +824,8 @@ function trendChart(sessions) {
     return `<i class="${cls}"${title} style="bottom:${(mark.at / scale) * 100}%"></i>`;
   }).join("");
   const n = Math.max(sessions.length, 1);
-  let bestSoFar = 0;
-  const points = [];
   const cols = sessions.map((session, index) => {
     const pulls = overviewOf(session).pulls;
-    pulls.forEach((pull, pullIndex) => {
-      bestSoFar = Math.max(bestSoFar, pull.reached || 0);
-      const x = pullX(index, pullIndex, pulls.length, n);
-      const y = (1 - bestSoFar / scale) * 100;
-      points.push(`${x},${y}`);
-    });
     const far = furthestPull(pulls);
     const bars = pulls.map(pull => {
       const height = ((pull.reached || 0) / scale) * 100;
@@ -823,9 +845,7 @@ function trendChart(sessions) {
     const bottom = ((far.reached || 0) / scale) * 100;
     return `<i class="trend-dot" style="left:${left}%;bottom:${bottom}%"></i>`;
   }).join("");
-  const line = points.length > 1
-    ? `<svg class="trend-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${points.join(" ")}" fill="none" stroke="#243056" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"></polyline></svg>`
-    : "";
+  const line = trendLine(sessions, scale);
   const showMech = sessions.length <= 8;
   const axis = sessions.map(session => {
     const far = furthestPull(overviewOf(session).pulls);
@@ -861,7 +881,7 @@ function trendSection() {
     return `<section>
       <h2>General trend</h2>
       ${heading}
-      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. The line is the best reached so far, from the first pull to the last.</p>
+      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. The straight line is the trend through every pull, from the first to the last.</p>
       ${trendChart(group.sessions)}
     </section>`;
   }).join("");
