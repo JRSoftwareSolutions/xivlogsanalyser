@@ -592,7 +592,7 @@ function blameChips(row) {
   }).join("")}</div>`;
 }
 function deathCard(row, opts) {
-  const cast = row.cast ? `<span class="time">${esc(row.cast)}</span>` : "";
+  const cast = row.cast && !(opts && opts.skipCast) ? `<span class="time">${esc(row.cast)}</span>` : "";
   const body = `<div class="cols">
       <div><b>What happened</b>${esc(row.happened)}</div>
       <div><b>What went wrong</b>${esc(row.wrong)}${blameChips(row)}</div>
@@ -1516,17 +1516,26 @@ function seatMark(seat, partName) {
 function componentDeaths(pull, card, part) {
   return judged(pull.deaths).filter(row => row.mechanicId === card.id && row.componentId === part.id);
 }
+function failedSeats(part) {
+  return (part.seats || []).filter(seat => !seat.passed);
+}
+function partMatters(pull, card, part) {
+  return failedSeats(part).length > 0 || componentDeaths(pull, card, part).length > 0;
+}
+function shownParts(pull, card) {
+  return card.parts.filter(part => partMatters(pull, card, part));
+}
 function componentBlock(pull, card, part) {
   const rows = componentDeaths(pull, card, part);
   const solo = card.parts.length === 1 && part.name === card.name;
-  const failedPart = (part.seats || []).some(seat => !seat.passed);
-  const shots = failedPart ? (part.frames || []).map(stillFrame).join("") : "";
+  const failed = failedSeats(part);
+  const shots = failed.length ? (part.frames || []).map(stillFrame).join("") : "";
   return `<div class="component">
     ${solo ? "" : `<div class="component-name">${esc(part.name)}</div>`}
     <div>
       ${shots ? `<div class="stills">${shots}</div>` : ""}
-      <div class="seats">${part.seats.map(seat => seatMark(seat, part.name)).join("")}</div>
-      ${rows.map(row => deathCard(row, { skipFrame: Boolean(shots) })).join("")}
+      ${failed.length ? `<div class="seats">${failed.map(seat => seatMark(seat, part.name)).join("")}</div>` : ""}
+      ${rows.map(row => deathCard(row, { skipFrame: Boolean(shots), skipCast: true })).join("")}
     </div>
   </div>`;
 }
@@ -1537,7 +1546,9 @@ function renderPull(id) {
   const c = counts(pull.deaths);
   const cards = pull.cards || [];
   const blocks = cards.map(card => {
-    const parts = card.parts.map(part => componentBlock(pull, card, part)).join("");
+    const shown = shownParts(pull, card);
+    if (!shown.length) return "";
+    const parts = shown.map(part => componentBlock(pull, card, part)).join("");
     return `<section>
       <div class="mech-head">
         <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${card.id}">${esc(card.name)}</button></h3>
@@ -1568,7 +1579,7 @@ function renderPull(id) {
       <p class="meta"><a href="${logHref(pull.id)}">Open this pull</a></p>
     </header>
     ${first}
-    ${blocks || `<section><p class="quiet">No mechanic review for this pull.</p></section>`}
+    ${blocks || (rest ? "" : `<section><p class="quiet">${cards.length ? "Every mechanic this pull reached was clear." : "No mechanic review for this pull."}</p></section>`)}
     ${rest}
     ${packets}`;
 }
@@ -1640,8 +1651,9 @@ function reviewWho(card) {
   return bits.join(", ");
 }
 function reviewBody(pull, card) {
+  const shown = shownParts(pull, card);
   return `<p class="meta review-open"><button class="link" data-go="s/${SESSION.code}/pull/${pull.id}">Open pull ${pull.id}</button></p>
-    ${card.parts.map(part => componentBlock(pull, card, part)).join("")}`;
+    ${shown.length ? shown.map(part => componentBlock(pull, card, part)).join("") : `<p class="quiet">Everyone passed.</p>`}`;
 }
 function pullReview(pull, mech) {
   const card = cardOf(pull, mech.id);
