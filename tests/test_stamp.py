@@ -81,13 +81,13 @@ class ReanalyzeSkipsCurrentReportsTest(unittest.TestCase):
 
             first = reanalyze(root)
             self.assertTrue(first[0].judged)
-            self.assertEqual(first[0].counts["raw"], 86)
+            self.assertEqual(first[0].counts["raw"], 40)
             fresh_dashboard = (root / "dashboard.html").read_text(encoding="utf-8")
             self.assertEqual(status(root), [("XVz8bCqgPw1KRh9d", "")])
 
             second = reanalyze(root)
             self.assertFalse(second[0].judged)
-            self.assertEqual(second[0].counts["raw"], 86)
+            self.assertEqual(second[0].counts["raw"], 40)
             self.assertEqual((root / "dashboard.html").read_text(encoding="utf-8"), fresh_dashboard)
 
             mechanics = root / "fights" / "dsr" / "mechanics.json"

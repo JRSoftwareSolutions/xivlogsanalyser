@@ -9,13 +9,14 @@ from __future__ import annotations
 import json
 import math
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass, field
 from html import unescape
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, MarkerSpots
 from xivloganalyzer.mitigations import load_mitigations, mitigations_for
+from xivloganalyzer.roster import actor_for, players, pull_players
 
 ROW_RE = re.compile(r'<tr style="cursor:pointer".*?</script>', re.S)
 NAME_RE = re.compile(r'class="main-table-link ([^"]+)">([^<]+)')
@@ -71,6 +72,12 @@ class DeathFact:
     dead: list[str] = field(default_factory=list)
     group: list[str] = field(default_factory=list)
     self_hits: list[dict] = field(default_factory=list)
+    # The death's own log timestamp in milliseconds, for ordering deaths in one instant.
+    ts: int | None = None
+    # Inputs this call could not read, such as "positions" or "ability 25567".
+    missing: list[str] = field(default_factory=list)
+    # The report's off tank, on deaths to a hit only the off tank takes.
+    off_tank: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -131,6 +138,18 @@ def _damage_bar(row: str) -> int:
     return int(match.group(1).replace(",", ""))
 
 
+def fetched_guids(report: Path) -> set[int]:
+    """Abilities whose file was fetched, even when no hit landed in it."""
+    folder = report / "abilities"
+    found = set()
+    for path in folder.glob("ab_*.json") if folder.is_dir() else []:
+        try:
+            found.add(int(path.stem[3:]))
+        except ValueError:
+            continue
+    return found
+
+
 def _load_events(report: Path, kind: str = "damage") -> dict[int, list[dict]]:
     """Events of one type by guid. `calculateddamage` is the snapshot, which keeps
     a target who died before the damage landed."""
@@ -148,6 +167,106 @@ def _load_events(report: Path, kind: str = "damage") -> dict[int, list[dict]]:
                 continue
             by_guid[int(guid)].append(event)
     return by_guid
+
+
+def aura_names(report: Path, tables: dict[int, dict] | None = None) -> dict[str, str]:
+    """Buff and debuff names by id, as the packets write them ("1001191").
+
+    The ability files and the replay auras both name every buff they carry.
+    `aura_map.json`, when present, overrides them.
+    """
+    names: dict[str, str] = {}
+    folder = report / "abilities"
+    if folder.is_dir():
+        for path in sorted(folder.glob("ab_*.json")):
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            for aura in payload.get("auraAbilities") or []:
+                if aura.get("guid") is not None and aura.get("name"):
+                    names[str(aura["guid"])] = aura["name"]
+    for table in (tables if tables is not None else load_mitigations(report)).values():
+        for aura in table.get("auras") or []:
+            if aura[2] is not None and aura[3]:
+                names.setdefault(str(aura[2]), aura[3])
+    override = report / "aura_map.json"
+    if override.is_file():
+        names.update(json.loads(override.read_text(encoding="utf-8")))
+    return names
+
+
+def _replay_hits(tables: dict[int, dict], have: set[int]) -> dict[int, list[dict]]:
+    """Hits from the replay's hit list, for abilities with no ability file.
+
+    The replay lists only hits that met a mitigation or a shield, so these prove
+    who was hit and when, never who was not. They carry no amount and no tower
+    instance. Each is marked `replay`.
+    """
+    found: dict[int, list[dict]] = defaultdict(list)
+    for fight, table in tables.items():
+        for row in table.get("hits") or []:
+            ts, target, source, guid = row[:4]
+            if guid is None or int(guid) in have:
+                continue
+            found[int(guid)].append({
+                "timestamp": int(ts), "fight": fight, "targetID": target, "sourceID": source,
+                "ability": {"guid": int(guid)}, "type": "damage", "multiplier": row[4], "replay": True,
+            })
+    return found
+
+
+def _base_max_hp(
+    by_guid: dict[int, list[dict]], names: dict[int, str], tables: dict[int, dict], buffs: dict[str, float],
+) -> dict[str, int]:
+    """Each player's max HP from the hits that killed them.
+
+    A killing hit's amount is the HP they had, so the largest one is their max
+    whenever they ever died from full. A hit while a max-HP buff such as Thrill of
+    Battle was on is divided back down by that buff.
+    """
+    seen: dict[str, Counter] = defaultdict(Counter)
+    for events in by_guid.values():
+        for event in events:
+            name = names.get(event.get("targetID"))
+            if not name or not event.get("overkill") or not event.get("amount"):
+                continue
+            factor = _buff_factor(tables.get(event.get("fight")), event["targetID"], event["timestamp"], buffs)
+            seen[name][round(int(event["amount"]) / factor)] += 1
+    return {name: max(counts) for name, counts in seen.items()}
+
+
+def max_hp_bases(party: dict[str, int], seen: dict[str, int]) -> dict[str, int]:
+    """Base max HP: what the log shows, and `party.json` only to fill a small gap.
+
+    A player who never died from full shows a little less than their max, so a
+    `party.json` value up to 5% above it is taken. A larger one was written with a
+    max-HP buff on, and the log wins.
+    """
+    found = dict(party)
+    for name, value in seen.items():
+        listed = party.get(name)
+        found[name] = listed if listed is not None and value <= listed <= value * 1.05 else value
+    return found
+
+
+def _buff_factor(table: dict | None, target: int | None, timestamp: int | None, buffs: dict[str, float]) -> float:
+    """The max-HP multiplier from buffs on this player at this moment."""
+    if not table or not buffs or target is None or timestamp is None:
+        return 1.0
+    active: dict[str, bool] = {}
+    for aura in table.get("auras") or []:
+        # A buff that drops in the same instant as the hit dropped because they died.
+        if aura[0] >= timestamp:
+            break
+        if aura[5] != target or aura[3] not in buffs:
+            continue
+        if aura[1] in ("applybuff", "refreshbuff"):
+            active[aura[3]] = True
+        elif aura[1] == "removebuff":
+            active[aura[3]] = False
+    factor = 1.0
+    for name, on in active.items():
+        if on:
+            factor *= buffs[name]
+    return factor
 
 
 def _clusters(events: list[dict], window_ms: int = 1500) -> list[list[dict]]:
@@ -632,39 +751,120 @@ def _qualifying_phases(fight: dict, pack: FightPack) -> list[tuple]:
     return found
 
 
-def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
+def _gaps(
+    report: Path, fight: int, tables: dict[int, dict], fact: DeathFact, by_guid: dict[int, list[dict]] | None,
+) -> list[str]:
+    """Inputs that were not there for this death, so its call fell back to less."""
+    gaps = []
+    if by_guid is not None and fact.guid and fact.guid not in fetched_guids(report):
+        gaps.append(f"ability {fact.guid}")
+    if not (report / "positions" / f"fight-{fight:02d}.json").is_file():
+        gaps.append("positions")
+    if fight not in tables:
+        gaps.append("mitigations")
+    if fact.max_hp is None:
+        gaps.append("max HP")
+    return gaps
+
+
+def _skip_row(
+    skipped: list | None, meta: dict, fight: dict, name: str, when: str, timestamp: int | None, reason: str,
+) -> None:
+    if skipped is None:
+        return
+    phase, label = _phase_label(meta, fight, timestamp)
+    skipped.append({"fight": fight["id"], "name": name, "time": when, "phase": phase, "phase_name": label, "reason": reason})
+
+
+def _skip_rows(skipped: list | None, meta: dict, fight: dict, html: str, reason: str) -> None:
+    for row in ROW_RE.findall(html):
+        name_match = NAME_RE.search(row)
+        time_match = TIME_RE.search(row)
+        if not name_match or not time_match:
+            continue
+        when = time_match.group(1).strip()
+        ts_match = TS_RE.search(row)
+        timestamp = int(ts_match.group(1)) if ts_match else fight["start_time"] + round(_clock_seconds(when) * 1000)
+        _skip_row(skipped, meta, fight, unescape(name_match.group(2)).strip(), when, timestamp, reason)
+
+
+def off_tank(report: Path, meta: dict, pack: FightPack, by_guid: dict[int, list[dict]]) -> str:
+    """The report's off tank: `assignments.off_tank` in session.json, or else the
+    tank the off-tank hit (Heavenly Heel) landed on in the most pulls."""
+    sidecar = report / "session.json"
+    if sidecar.is_file():
+        named = (json.loads(sidecar.read_text(encoding="utf-8")).get("assignments") or {}).get("off_tank")
+        if named:
+            return named
+    tanks = {actor["id"]: actor["name"] for actor in players(meta) if pack.role_of(actor.get("type") or "") == "tank"}
+    pulls: dict[str, set[int]] = defaultdict(set)
+    for mechanic in pack.mechanics:
+        if not mechanic.off_tank:
+            continue
+        for guid in mechanic.guids:
+            for event in by_guid.get(guid, []):
+                name = tanks.get(event.get("targetID"))
+                if name:
+                    pulls[name].add(event.get("fight"))
+    if not pulls:
+        return ""
+    return max(sorted(pulls), key=lambda name: len(pulls[name]))
+
+
+def _phase_label(meta: dict, fight: dict, timestamp: int | None) -> tuple[int, str]:
+    """The log's own phase at this moment: its id and name, such as (1, "P1: Adelphel...")."""
+    names = []
+    for row in meta.get("phases") or []:
+        if row.get("boss") == fight.get("boss"):
+            names = row.get("phases") or []
+    current = 1
+    for phase in sorted(fight.get("phases") or [], key=lambda row: row["startTime"]):
+        if timestamp is not None and phase["startTime"] <= timestamp:
+            current = phase["id"]
+    name = names[current - 1] if 0 < current <= len(names) else f"Phase {current}"
+    return current, name
+
+
+def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -> list[DeathFact]:
+    """Every death in the judged phases, as facts. Death rows outside them go to `skipped`, with why."""
     meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
     deaths = {
         item["id"]: item.get("html") or ""
         for item in json.loads((report / "deaths-html.json").read_text(encoding="utf-8"))
     }
-    auras = {}
-    aura_path = report / "aura_map.json"
-    if aura_path.exists():
-        auras = json.loads(aura_path.read_text(encoding="utf-8"))
     party = {}
     party_path = report / "party.json"
     if party_path.exists():
         party = json.loads(party_path.read_text(encoding="utf-8"))
-    actors = {actor["name"]: actor for actor in meta.get("friendlies") or []}
     names_by_id = {actor["id"]: actor["name"] for actor in meta.get("friendlies") or []}
     by_guid = _load_events(report)
     snapshots = _load_events(report, "calculateddamage")
+    mitigation_tables = load_mitigations(report)
+    auras = aura_names(report, mitigation_tables)
+    fetched = fetched_guids(report)
+    assigned_off_tank = off_tank(report, meta, pack, by_guid)
+    hit_lists = {**_replay_hits(mitigation_tables, fetched), **by_guid}
+    base_hp = max_hp_bases(party, _base_max_hp(by_guid, names_by_id, mitigation_tables, pack.max_hp_buffs))
     marker_casts = _marker_packets(report, pack)
     marker_guids = {guid for mech in pack.mechanics if mech.marker_owns_clip for guid in mech.guids}
     marker_spots = {guid: mech.spots for mech in pack.mechanics if mech.spots for guid in mech.guids}
     positions = _Positions(report)
-    mitigation_tables = load_mitigations(report)
     places: dict[int, dict] = {}
 
     facts: list[DeathFact] = []
+    listed = {fight["id"] for fight in meta["fights"]}
+    for fight_id, html in sorted(deaths.items()):
+        if fight_id not in listed:
+            _skip_rows(skipped, meta, {"id": fight_id, "start_time": 0}, html, "the pull is not in fights.json")
     for fight in meta["fights"]:
         if pack.zone_id is not None and fight.get("zoneID") != pack.zone_id:
+            _skip_rows(skipped, meta, fight, deaths.get(fight["id"], ""), "another encounter")
             continue
         windows = _qualifying_phases(fight, pack)
-        if not windows:
-            continue
         html = deaths.get(fight["id"], "")
+        if not windows:
+            _skip_rows(skipped, meta, fight, html, "the pull never reached a judged phase")
+            continue
         debuffs = _cascade_debuffs(mitigation_tables.get(fight["id"]), pack, names_by_id)
         boss_pct = round(fight.get("bossPercentage", 0) / 100, 1)
         timed: list[tuple[int | None, DeathFact]] = []
@@ -674,7 +874,8 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             if not name_match or not time_match:
                 continue
             name = unescape(name_match.group(2)).strip()
-            job = actors.get(name, {}).get("type") or name_match.group(1)
+            actor = actor_for(meta, name, fight["id"], name_match.group(1)) or {}
+            job = actor.get("type") or name_match.group(1)
             when = time_match.group(1).strip()
             head = row.split("last-three-events")[0]
             kb_match = KB_RE.search(head)
@@ -691,18 +892,22 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             if timestamp is not None:
                 window = _window_for(windows, timestamp)
                 if window is None:
+                    _skip_row(skipped, meta, fight, name, when, timestamp, "outside the judged phases")
                     continue
             else:
                 window = windows[-1]
             phase, start, _end = window
-            target = actors.get(name, {}).get("id")
+            target = actor.get("id")
             if not kb_match:
                 fact = _fact(
                     fight, phase, start, timestamp, when, name, job, pack, 0, "Environment",
-                    0, None, None, None, 0, None, [], boss_pct, party,
+                    0, None, None, None, 0, None, [], boss_pct,
+                    _max_hp(base_hp, name, mitigation_tables.get(fight["id"]), target, timestamp, pack),
                     mitigations_for(mitigation_tables, fight["id"], target, None, 0, timestamp),
                 )
                 fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
+                fact.ts = timestamp
+                fact.missing = _gaps(report, fight["id"], mitigation_tables, fact, None)
                 facts.append(fact)
                 timed.append((timestamp, fact))
                 continue
@@ -749,7 +954,8 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             )
             fact = _fact(
                 fight, phase, start, timestamp, when, name, job, pack, guid, ability,
-                total, hp, unmit, mult, int(absorb), stack, buffs, boss_pct, party, mits,
+                total, hp, unmit, mult, int(absorb), stack, buffs, boss_pct,
+                _max_hp(base_hp, name, mitigation_tables.get(fight["id"]), target, timestamp, pack), mits,
             )
             fact.cohort = _cohort(
                 snapshots.get(guid, []) + by_guid.get(guid, []), fight["id"], event, names_by_id,
@@ -760,6 +966,8 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                 direct=guid in marker_guids,
             )
             mechanic = pack.mechanic_for(guid, phase.id)
+            if mechanic and mechanic.off_tank:
+                fact.off_tank = assigned_off_tank
             if mechanic and mechanic.dive_markers:
                 fact.divers = _divers(
                     mitigation_tables, _positions(report, fight["id"], places), fight["id"],
@@ -776,6 +984,8 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                         positions, spots, fight["id"], clip.landed, people, names_by_id,
                     )
             fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
+            fact.ts = timestamp
+            fact.missing = _gaps(report, fight["id"], mitigation_tables, fact, by_guid)
             facts.append(fact)
             timed.append((timestamp, fact))
         raises = _raises(mitigation_tables.get(fight["id"]), names_by_id)
@@ -787,8 +997,10 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                     if name != fact.name and _still_dead(name, timed, timestamp, raises)
                 ]
         _missing_bodies(
-            timed, pack, by_guid, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
+            timed, pack, hit_lists, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
             mitigation_tables.get(fight["id"]),
+            {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
+            fetched,
         )
         _drop_owners(
             timed, pack, fight["id"], positions, mitigation_tables.get(fight["id"]), raises, names_by_id,
@@ -796,17 +1008,21 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
         _alternating_groups(
             timed, pack, snapshots, by_guid, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
         )
+        _ice_pairs(
+            timed, pack, snapshots, fight["id"],
+            {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
+            raises, mitigation_tables.get(fight["id"]), names_by_id,
+        )
     facts.sort(key=lambda fact: (fact.fight, fact.phase, fact.t, fact.name))
     return facts
 
 
 def _fight_roster(meta: dict, fight_id: int) -> list[str]:
-    skip = {"LimitBreak", "NPC", "Pet"}
-    return [
-        actor["name"]
-        for actor in meta.get("friendlies") or []
-        if actor.get("type") not in skip and f".{fight_id}." in str(actor.get("fights") or "")
-    ]
+    names: list[str] = []
+    for actor in pull_players(meta, fight_id):
+        if actor["name"] not in names:
+            names.append(actor["name"])
+    return names
 
 
 def _raises(table: dict | None, players: dict[int, str]) -> dict[str, list[int]]:
@@ -829,6 +1045,8 @@ def _missing_bodies(
     raises: dict[str, list[int]],
     names_by_id: dict[int, str],
     table: dict | None = None,
+    roles: dict[str, str] | None = None,
+    fetched: set[int] = frozenset(),
 ) -> None:
     """Who was missing from a mechanic that needs every player, or every holder of a debuff.
 
@@ -840,10 +1058,8 @@ def _missing_bodies(
         if timestamp is None:
             continue
         mechanic = pack.mechanic_for(fact.guid, fact.phase)
-        needs = mechanic.needs_everyone if mechanic else None
+        needs = next((row for row in (mechanic.needs_everyone if mechanic else []) if row.covers(fact.t)), None)
         if needs is None:
-            continue
-        if needs.until is not None and fact.t >= needs.until:
             continue
         cast = [
             (ts, other) for ts, other in timed
@@ -853,21 +1069,28 @@ def _missing_bodies(
         victims = {other.name for _, other in cast}
         soaked: set[str] = set()
         at = first - round(needs.lead * 1000)
+        # The full hit list comes only from an ability file. The replay's proves who was hit, not who was not.
+        complete = False
         if needs.soak:
-            hits = [
+            window = [
                 event
                 for guid in needs.soak
                 for event in by_guid.get(guid, [])
-                if event.get("fight") == fight_id and at <= event["timestamp"] <= first
+                if event.get("fight") == fight_id
             ]
-            if not hits:
-                continue
-            at = min(event["timestamp"] for event in hits)
+            hits = [event for event in window if at <= event["timestamp"] <= first]
+            # This cast's towers came from a fetched file, or no tower file of this set is missing.
+            if hits:
+                complete = all(not event.get("replay") for event in hits)
+            else:
+                complete = all(guid in fetched for guid in needs.soak)
+            at = min(event["timestamp"] for event in hits) if hits else first - round(needs.lag * 1000)
             soaked = {names_by_id.get(event.get("targetID")) for event in hits}
             shared: dict[tuple, set[str]] = defaultdict(set)
             for event in hits:
                 name = names_by_id.get(event.get("targetID"))
-                if name:
+                # The replay's hit list has no tower instance, so it cannot show a shared tower.
+                if name and event.get("sourceInstance") is not None:
                     shared[(event.get("sourceID"), event.get("sourceInstance"))].add(name)
             fact.doubled = [
                 name for name in roster
@@ -878,19 +1101,25 @@ def _missing_bodies(
             if ts is not None and ts < at:
                 died[other.name] = max(died.get(other.name, ts), ts)
         needed = roster
+        if needs.roles:
+            needed = [name for name in needed if (roles or {}).get(name) in needs.roles]
         if needs.holders:
-            needed = [name for name in roster if name in _holders(table, needs.holders, at, names_by_id)]
+            needed = [name for name in needed if name in _holders(table, needs.holders, at, names_by_id)]
         fact.down = [
             name for name in needed
             if name in died and name not in victims
             and not any(died[name] < raised <= at for raised in raises.get(name, []))
         ]
-        if needs.soak:
+        if needs.soak and complete:
             fact.unsoaked = [name for name in needed if name not in soaked and name not in fact.down]
+        elif needs.soak:
+            gap = "ability " + "/".join(str(guid) for guid in needs.soak)
+            if gap not in fact.missing:
+                fact.missing.append(gap)
 
 
 def _holders(table: dict | None, guids: list[int], at: int, names_by_id: dict[int, str]) -> set[str]:
-    """Players who held one of these debuffs at this moment."""
+    """Players who held one of these debuffs or buffs at this moment."""
     held: dict[str, bool] = {}
     for aura in sorted((table or {}).get("auras") or [], key=lambda row: row[0]):
         if aura[2] not in guids or aura[0] > at:
@@ -898,9 +1127,9 @@ def _holders(table: dict | None, guids: list[int], at: int, names_by_id: dict[in
         name = names_by_id.get(aura[5])
         if not name:
             continue
-        if aura[1] == "applydebuff":
+        if aura[1] in ("applydebuff", "applybuff", "refreshbuff", "refreshdebuff"):
             held[name] = True
-        elif aura[1] == "removedebuff":
+        elif aura[1] in ("removedebuff", "removebuff"):
             held[name] = False
     return {name for name, holding in held.items() if holding}
 
@@ -974,6 +1203,63 @@ def _alternating_groups(
         fact.unsoaked = [
             name for name in group
             if name not in targets and name not in fact.down
+        ]
+
+
+TRANSCENDENT = 1000418
+SUPPORT = {"tank", "healer"}
+
+
+def _ice_pairs(
+    timed: list[tuple[int | None, DeathFact]],
+    pack: FightPack,
+    snapshots: dict[int, list[dict]],
+    fight_id: int,
+    roles: dict[str, str],
+    raises: dict[str, list[int]],
+    table: dict | None,
+    names_by_id: dict[int, str],
+) -> None:
+    """Who should have shared a pair circle with a player who was alone in it.
+
+    Each circle is one support and one DPS. A circle is one caster instance in the
+    snapshot. For a player alone in one circle, the partner was a player of the
+    other group who was dead (or raised and still Transcendent), alive and in no
+    circle, or the extra body in a circle of three. `group` is the circle,
+    `down`, `unsoaked`, and `doubled` are those partners.
+    """
+    for timestamp, fact in timed:
+        mechanic = pack.mechanic_for(fact.guid, fact.phase)
+        if timestamp is None or mechanic is None or not mechanic.pairs:
+            continue
+        rows = [
+            event for guid in mechanic.guids for event in snapshots.get(guid, [])
+            if event.get("fight") == fight_id and abs(event["timestamp"] - timestamp) <= 2500
+        ]
+        if not rows:
+            continue
+        snap = min(event["timestamp"] for event in rows)
+        circles: dict[tuple, list[str]] = defaultdict(list)
+        for event in rows:
+            name = names_by_id.get(event.get("targetID"))
+            if name and name not in circles[(event.get("sourceID"), event.get("sourceInstance"))]:
+                circles[(event.get("sourceID"), event.get("sourceInstance"))].append(name)
+        mine = [members for members in circles.values() if fact.name in members]
+        if len(mine) != 1 or len(mine[0]) != 1:
+            continue
+        fact.group = [fact.name]
+        side = roles.get(fact.name) in SUPPORT
+        partners = [name for name, role in roles.items() if (role in SUPPORT) != side]
+        anywhere = {name for members in circles.values() for name in members}
+        resting = _holders(table, [TRANSCENDENT], snap, names_by_id)
+        fact.down = [
+            name for name in partners
+            if name not in anywhere and (_still_dead(name, timed, snap, raises) or name in resting)
+        ]
+        fact.unsoaked = [name for name in partners if name not in anywhere and name not in fact.down]
+        fact.doubled = [
+            name for name in partners
+            if any(name in members and len(members) >= 3 for members in circles.values())
         ]
 
 
@@ -1092,7 +1378,7 @@ def _drop_owners(
 
 def _fact(
     fight, phase, start, timestamp, when, name, job, pack, guid, ability,
-    total, hp, unmit, mult, absorb, stack, buffs, boss_pct, party, mitigations,
+    total, hp, unmit, mult, absorb, stack, buffs, boss_pct, max_hp, mitigations,
 ) -> DeathFact:
     if timestamp is None:
         t = round(_clock_seconds(when) - (start - fight["start_time"]) / 1000, 1)
@@ -1111,7 +1397,7 @@ def _fact(
         ability=ability,
         total=int(total or 0),
         hp=hp,
-        max_hp=party.get(name),
+        max_hp=max_hp,
         unmitigated=int(unmit) if unmit is not None else None,
         multiplier=mult,
         absorb=absorb,
@@ -1121,6 +1407,15 @@ def _fact(
         pull_ms=fight["end_time"] - start,
         mitigations=mitigations,
     )
+
+
+def _max_hp(
+    base: dict[str, int], name: str, table: dict | None, target: int | None, timestamp: int | None, pack: FightPack,
+) -> int | None:
+    """Their max HP at this moment: the base, raised by any max-HP buff that was on."""
+    if name not in base:
+        return None
+    return round(base[name] * _buff_factor(table, target, timestamp, pack.max_hp_buffs))
 
 
 def write_facts(report: Path, facts: list[DeathFact]) -> Path:

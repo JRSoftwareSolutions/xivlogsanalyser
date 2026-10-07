@@ -305,12 +305,13 @@ class PullCardsTest(unittest.TestCase):
             if card["id"] == "strength-of-the-ward"
         ]
         self.assertEqual(strength["reached"], len(cards))
-        self.assertEqual((strength["reached"], strength["mistakes"]), (53, 20))
+        # The towers at 63s are part of Strength, and an empty tower is a mistake.
+        self.assertEqual((strength["reached"], strength["mistakes"]), (53, 23))
         self.assertEqual(by_id["dive-from-grace"]["reached"], 0)
         summary = session_summary(self.payload, "")
         self.assertEqual(
             next(row for row in summary["mechanics"] if row["id"] == "strength-of-the-ward")["mistakes"],
-            20,
+            23,
         )
 
 

@@ -1,0 +1,545 @@
+{
+ "phases": [
+  2,
+  3
+ ],
+ "abilities": [
+  {
+   "guid": 25556,
+   "name": "Spiral Thrust"
+  },
+  {
+   "guid": 25567,
+   "name": "Eternal Conviction soak"
+  },
+  {
+   "guid": 25579,
+   "name": "Holy Shield Bash"
+  },
+  {
+   "guid": 26377,
+   "name": "Final Chorus"
+  },
+  {
+   "guid": 26378,
+   "name": "Geirskogul"
+  },
+  {
+   "guid": 26382,
+   "name": "Dark High Jump"
+  },
+  {
+   "guid": 26384,
+   "name": "Dark Elusive Jump"
+  },
+  {
+   "guid": 26385,
+   "name": "Darkdragon Dive"
+  },
+  {
+   "guid": 26388,
+   "name": "Eye of the Tyrant"
+  },
+  {
+   "guid": 26389,
+   "name": "Gnashing Wheel"
+  },
+  {
+   "guid": 26390,
+   "name": "Lashing Wheel"
+  },
+  {
+   "guid": 26395,
+   "name": "Darkdragon Dive"
+  },
+  {
+   "guid": 26416,
+   "name": "Nidhogg's first auto-attack"
+  }
+ ],
+ "no_positions": [],
+ "no_mitigations": [],
+ "no_max_hp": [],
+ "unnamed_buffs": [],
+ "deaths": {
+  "judged": 393,
+  "with_gaps": 101,
+  "gaps": {
+   "ability 25567": 43,
+   "ability 25579": 1,
+   "ability 26377": 3,
+   "ability 26378": 2,
+   "ability 26382": 4,
+   "ability 26384": 2,
+   "ability 26385": 4,
+   "ability 26388": 7,
+   "ability 26390": 2,
+   "ability 26395": 31,
+   "ability 26416": 2
+  },
+  "not_judged": 57,
+  "not_judged_by_reason": {
+   "P1: Adelphel, Grinnaux and Charibert: the pull never reached a judged phase": 22,
+   "P2: King Thordan: the pull never reached a judged phase": 11,
+   "Phase 1: the pull is not in fights.json": 24
+  }
+ },
+ "skipped": [
+  {
+   "fight": 1,
+   "name": "Loki Doki",
+   "time": "1:08",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 1,
+   "name": "Spring Nymphar",
+   "time": "1:11",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 1,
+   "name": "Speed Panda",
+   "time": "1:21",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 1,
+   "name": "Absolute Gigalad",
+   "time": "1:23",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 1,
+   "name": "Kite Noodle",
+   "time": "1:23",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 1,
+   "name": "Absolute Gigachad",
+   "time": "1:25",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 1,
+   "name": "Kiara Blaiddyd",
+   "time": "1:25",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 1,
+   "name": "Kitana Kahn",
+   "time": "1:26",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 1,
+   "name": "Loki Doki",
+   "time": "1:26",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 2,
+   "name": "Absolute Gigachad",
+   "time": "2:32",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 2,
+   "name": "Kiara Blaiddyd",
+   "time": "2:32",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 2,
+   "name": "Kitana Kahn",
+   "time": "2:32",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 2,
+   "name": "Kite Noodle",
+   "time": "2:32",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 2,
+   "name": "Spring Nymphar",
+   "time": "2:32",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 2,
+   "name": "Absolute Gigalad",
+   "time": "2:33",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 2,
+   "name": "Loki Doki",
+   "time": "2:33",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 2,
+   "name": "Speed Panda",
+   "time": "2:39",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 3,
+   "name": "Kite Noodle",
+   "time": "2:36",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 3,
+   "name": "Absolute Gigachad",
+   "time": "2:37",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 3,
+   "name": "Kiara Blaiddyd",
+   "time": "2:38",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 3,
+   "name": "Kitana Kahn",
+   "time": "2:39",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 3,
+   "name": "Speed Panda",
+   "time": "2:39",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 3,
+   "name": "Absolute Gigalad",
+   "time": "2:40",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 3,
+   "name": "Spring Nymphar",
+   "time": "2:40",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 3,
+   "name": "Loki Doki",
+   "time": "2:42",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 8,
+   "name": "Absolute Gigachad",
+   "time": "0:02",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 8,
+   "name": "Absolute Gigalad",
+   "time": "0:03",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 8,
+   "name": "Kite Noodle",
+   "time": "0:03",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 8,
+   "name": "Loki Doki",
+   "time": "0:03",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 8,
+   "name": "Speed Panda",
+   "time": "0:03",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 8,
+   "name": "Spring Nymphar",
+   "time": "0:03",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 8,
+   "name": "Kiara Blaiddyd",
+   "time": "0:04",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 8,
+   "name": "Kitana Kahn",
+   "time": "0:04",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 32,
+   "name": "Absolute Gigachad",
+   "time": "0:00",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 32,
+   "name": "Kite Noodle",
+   "time": "0:00",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 32,
+   "name": "Speed Panda",
+   "time": "0:00",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 32,
+   "name": "Absolute Gigalad",
+   "time": "0:01",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 32,
+   "name": "Loki Doki",
+   "time": "0:01",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 32,
+   "name": "Spring Nymphar",
+   "time": "0:01",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 32,
+   "name": "Kitana Kahn",
+   "time": "0:02",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 32,
+   "name": "Kiara Blaiddyd",
+   "time": "0:04",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 38,
+   "name": "Absolute Gigachad",
+   "time": "2:40",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 38,
+   "name": "Kite Noodle",
+   "time": "2:40",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 38,
+   "name": "Spring Nymphar",
+   "time": "2:40",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 38,
+   "name": "Absolute Gigalad",
+   "time": "2:41",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 38,
+   "name": "Loki Doki",
+   "time": "2:41",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 38,
+   "name": "Speed Panda",
+   "time": "2:41",
+   "phase": 1,
+   "phase_name": "P1: Adelphel, Grinnaux and Charibert",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 38,
+   "name": "Kiara Blaiddyd",
+   "time": "2:42",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 38,
+   "name": "Kitana Kahn",
+   "time": "2:42",
+   "phase": 2,
+   "phase_name": "P2: King Thordan",
+   "reason": "the pull never reached a judged phase"
+  },
+  {
+   "fight": 47,
+   "name": "Absolute Gigachad",
+   "time": "0:03",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 47,
+   "name": "Kiara Blaiddyd",
+   "time": "0:03",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 47,
+   "name": "Absolute Gigalad",
+   "time": "0:04",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 47,
+   "name": "Kite Noodle",
+   "time": "0:04",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 47,
+   "name": "Speed Panda",
+   "time": "0:04",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 47,
+   "name": "Spring Nymphar",
+   "time": "0:04",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 47,
+   "name": "Loki Doki",
+   "time": "0:05",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  },
+  {
+   "fight": 47,
+   "name": "Kitana Kahn",
+   "time": "0:06",
+   "phase": 1,
+   "phase_name": "Phase 1",
+   "reason": "the pull is not in fights.json"
+  }
+ ]
+}

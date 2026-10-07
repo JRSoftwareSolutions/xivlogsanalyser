@@ -76,14 +76,25 @@ class NeedsEveryone:
     seconds before the first death.
 
     `holders` narrows it to the players who held one of those debuffs when it
-    landed, such as the Dive from Grace 3s for the first towers. `until` is the
-    phase time after which a cast of this ability is a different set.
+    landed, such as the Dive from Grace 3s for the first towers. `roles` narrows
+    it to those roles, such as the non-tanks for the Strength towers. `after` and
+    `until` are the phase times this set covers, when one ability explodes for
+    more than one set of towers.
     """
 
     lead: float
     soak: list[int] = field(default_factory=list)
+    # Seconds from the soak to the explosion, for a pull with no soak hit at all.
+    lag: float = 2.0
     holders: list[int] = field(default_factory=list)
+    roles: list[str] = field(default_factory=list)
+    after: float | None = None
     until: float | None = None
+
+    def covers(self, t: float) -> bool:
+        if self.after is not None and t < self.after:
+            return False
+        return self.until is None or t < self.until
 
 
 @dataclass
@@ -116,15 +127,18 @@ class Mechanic:
     tanks_only: bool = False
     one_target: bool = False
     requires_personal_mit: bool = False
-    off_tank: str = ""
+    # Only the report's off tank takes it. Who that is comes from the log (`extract.off_tank`).
+    off_tank: bool = False
     marker_owns_clip: bool = False
     spots: MarkerSpots | None = None
     moments: list[Moment] = field(default_factory=list)
     dive_markers: dict[int, DiveMarker] = field(default_factory=dict)
-    needs_everyone: NeedsEveryone | None = None
+    needs_everyone: list[NeedsEveryone] = field(default_factory=list)
     drops: Drops | None = None
     # Casts alternate between two groups, so the same players take every other one.
     alternating: bool = False
+    # Each circle is shared by one support and one DPS, such as Hiemal Storm's ice.
+    pairs: bool = False
 
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
@@ -203,6 +217,8 @@ class FightPack:
     markers: list[Marker] = field(default_factory=list)
     deathwall: Mechanic | None = None
     cascade_debuffs: list[str] = field(default_factory=list)
+    # Buffs that raise max HP while they are on, such as Thrill of Battle, by name.
+    max_hp_buffs: dict[str, float] = field(default_factory=dict)
     folder: Path | None = None
 
     def role_of(self, job: str) -> str:
@@ -311,15 +327,23 @@ def _spots(raw: dict | None) -> MarkerSpots | None:
     )
 
 
-def _needs_everyone(raw: dict | None) -> NeedsEveryone | None:
+def _needs_everyone(raw: dict | list | None) -> list[NeedsEveryone]:
+    """One set, or a list of sets told apart by `after` and `until`."""
     if not raw:
-        return None
-    return NeedsEveryone(
-        lead=float(raw["lead"]),
-        soak=[int(guid) for guid in raw.get("soak") or []],
-        holders=[int(guid) for guid in raw.get("holders") or []],
-        until=float(raw["until"]) if raw.get("until") is not None else None,
-    )
+        return []
+    rows = raw if isinstance(raw, list) else [raw]
+    return [
+        NeedsEveryone(
+            lead=float(row["lead"]),
+            soak=[int(guid) for guid in row.get("soak") or []],
+            lag=float(row.get("lag", 2.0)),
+            holders=[int(guid) for guid in row.get("holders") or []],
+            roles=list(row.get("roles") or []),
+            after=float(row["after"]) if row.get("after") is not None else None,
+            until=float(row["until"]) if row.get("until") is not None else None,
+        )
+        for row in rows
+    ]
 
 
 def _drops(raw: dict | None) -> Drops | None:
@@ -372,7 +396,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 tanks_only=bool(raw.get("tanks_only", False)),
                 one_target=bool(raw.get("one_target", False)),
                 requires_personal_mit=bool(raw.get("requires_personal_mit", False)),
-                off_tank=raw.get("off_tank") or "",
+                off_tank=bool(raw.get("off_tank")),
                 marker_owns_clip=bool(raw.get("marker_owns_clip", False)),
                 spots=_spots(raw.get("spots")),
                 moments=[
@@ -395,6 +419,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 needs_everyone=_needs_everyone(raw.get("needs_everyone")),
                 drops=_drops(raw.get("drops")),
                 alternating=bool(raw.get("alternating", False)),
+                pairs=bool(raw.get("pairs", False)),
             )
         )
     return FightPack(
@@ -417,6 +442,7 @@ def load_pack(fight_dir: Path) -> FightPack:
         ],
         deathwall=_deathwall(mechanics_doc.get("deathwall")),
         cascade_debuffs=list(fight.get("cascade_debuffs") or []),
+        max_hp_buffs={name: float(factor) for name, factor in (fight.get("max_hp_buffs") or {}).items()},
         folder=fight_dir,
     )
 

@@ -14,8 +14,14 @@
       "guids": [25568],
       "category": "raidwide",
       "scales_with_stack": false,
-      "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
+      "should_have_been": "The explosion of a tower nobody soaked. It does not land when every tower is soaked.",
       "moments": [
+        {
+          "until": 100,
+          "fail": true,
+          "cause": "tower",
+          "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61–67k, everyone else about 90–108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it."
+        },
         {
           "after": 100,
           "fail": true,
@@ -23,7 +29,10 @@
           "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58–66k of that explosion. Everyone else takes about 90–105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it."
         }
       ],
-      "needs_everyone": {"soak": [29564, 28651], "lead": 4},
+      "needs_everyone": [
+        {"soak": [25567], "lead": 4, "until": 100, "roles": ["healer", "dps"]},
+        {"soak": [29564, 28651], "lead": 4, "after": 100}
+      ],
       "roles": {
         "tank": {"unmitigated_max": 75000, "lived": "61–67k"},
         "healer": {"unmitigated_max": 115000, "lived": "about 86–103k"},
@@ -53,6 +62,7 @@
       "guids": [25575],
       "category": "puddle",
       "scales_with_stack": false,
+      "pairs": true,
       "should_have_been": "Pairs share the placed ice. Tanks take about 14–25k. Healers take about 23–38k. DPS take about 26–40k. It does not split further. A puddle that covers a tower is a wrong drop.",
       "roles": {
         "tank": {"unmitigated_max": 50000, "lived": "about 14–25k"},
@@ -125,8 +135,8 @@
       "tanks_only": true,
       "one_target": true,
       "requires_personal_mit": true,
-      "off_tank": "Absolute Gigachad",
-      "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. In this log that is the paladin, Absolute Gigachad. A lived heel is about 159–174k before mit. The main tank does not take the heel. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
+      "off_tank": true,
+      "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. The off tank is the tank who takes it on most pulls of the night. A lived heel is about 159–174k before mit. The main tank does not take the heel. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
       "roles": {
         "tank": {"unmitigated_max": 190000, "lived": "159–174k before mit"},
         "healer": {"unmitigated_max": 140000, "lived": "not a healer hit"},
@@ -576,7 +586,7 @@
       "phase": 2,
       "starts": 75,
       "skill": "dsr-heavenly-heel",
-      "summary": "About 81 seconds. The off tank takes Heavenly Heel, then the main tank takes the three Ascalon's Might hits. Both are properly mitigated. In this log the paladin is the off tank and the warrior is the main tank. Anyone else getting hit owns that mistake. The off tank who dies on the real hit without personal mitigation owns that death. Sanctity of the Ward is next.",
+      "summary": "About 81 seconds. The off tank takes Heavenly Heel, then the main tank takes the three Ascalon's Might hits. Both are properly mitigated. The off tank is the tank who takes the heel on most pulls of the night. Anyone else getting hit owns that mistake. The off tank who dies on the real hit without personal mitigation owns that death. Sanctity of the Ward is next.",
       "parts": [
         {"id": "heavenly-heel"},
         {

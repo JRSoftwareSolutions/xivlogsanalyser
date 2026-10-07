@@ -14,12 +14,13 @@ class BriefTest(unittest.TestCase):
     def test_default_brief_has_counts_pulls_and_raw_not_full_json(self):
         text = brief_text(REPORT)
         self.assertIn("XVz8bCqgPw1KRh9d", text)
-        self.assertIn("86 raw", text)
-        self.assertIn("368 fail", text)
+        self.assertIn("40 raw", text)
+        self.assertIn("416 fail", text)
         self.assertIn("110 Deathwall", text)
-        self.assertIn("28 r1 f7 · first: Loki Doki walking into the deathwall at ", text)
+        self.assertIn("28 f8 · first: Loki Doki walking into the deathwall at ", text)
         self.assertIn("Raw by mechanic", text)
-        self.assertIn("45 Eternal Conviction", text)
+        self.assertIn("35 Sacred Sever", text)
+        self.assertIn("128 Eternal Conviction", text)
         self.assertIn("Pulls (55)", text)
         self.assertIn("68 ", text)
         self.assertNotIn('"unmitigated"', text)
@@ -27,7 +28,7 @@ class BriefTest(unittest.TestCase):
 
     def test_default_detail_lists_raw_and_skips_environment(self):
         text = brief_text(REPORT)
-        self.assertIn("Raw (86)", text)
+        self.assertIn("Raw (40)", text)
         self.assertIn("Kitana Kahn", text)
         self.assertNotIn("No damage packet.", text)
 
@@ -55,9 +56,9 @@ class BriefTest(unittest.TestCase):
 
     def test_detail_none_is_counts_only(self):
         text = brief_text(REPORT, detail="none")
-        self.assertIn("86 raw", text)
+        self.assertIn("40 raw", text)
         self.assertIn("Pulls (55)", text)
-        self.assertNotIn("Raw (86)", text)
+        self.assertNotIn("Raw (40)", text)
         self.assertNotIn("Fault:", text)
 
     def test_format_death_matches_review_shape(self):

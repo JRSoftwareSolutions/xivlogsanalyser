@@ -1,16 +1,17 @@
 {
- "rules": "d440eb41ab0240f6",
- "engine": "146ab4dc35087346",
+ "rules": "8700daae8ed0f6a2",
+ "engine": "052ee9aa4bd97cb4",
  "log": "f136dbe8abc107ba",
  "outputs": {
-  "facts.json": "2af2ab46bd487f96",
-  "judgments.json": "65af463c8ca11161",
-  "session.html": "232fd8a4e4305eeb"
+  "facts.json": "bc332598dbba1490",
+  "judgments.json": "2e9b81b270795052",
+  "session.html": "4677e7057d6096d6",
+  "inputs.json": "f3a858e502fbae22"
  },
  "counts": {
-  "raw": 64,
-  "fail": 320,
-  "low": 9,
+  "raw": 27,
+  "fail": 363,
+  "low": 3,
   "environment": 0,
   "unknown": 0
  },
@@ -23,9 +24,9 @@
   "day": "2026-10-05",
   "dayLabel": "Mon 5 Oct 2026",
   "timeLabel": "21:31\u201300:14",
-  "raw": 64,
-  "fail": 320,
-  "low": 9,
+  "raw": 27,
+  "fail": 363,
+  "low": 3,
   "detail": "",
   "overview": {
    "phases": [
@@ -1212,7 +1213,7 @@
     "phase": 2,
     "starts": 40.0,
     "reached": 41,
-    "mistakes": 14
+    "mistakes": 16
    },
    {
     "id": "heavenly-heel-swap",

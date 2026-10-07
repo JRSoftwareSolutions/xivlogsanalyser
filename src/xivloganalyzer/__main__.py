@@ -9,6 +9,7 @@ from pathlib import Path
 from xivloganalyzer.audit import FLAGS, audit_text
 from xivloganalyzer.brief import brief_text, write_brief
 from xivloganalyzer.catalog import repo_root
+from xivloganalyzer.inputs import inputs_text, problems, read_inputs
 from xivloganalyzer.pipeline import analyze, reanalyze, report_dirs, status
 
 
@@ -34,10 +35,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(prog="xivloganalyzer")
     parser.add_argument(
         "command",
-        choices=("analyze", "reanalyze", "status", "brief", "audit"),
+        choices=("analyze", "reanalyze", "status", "brief", "audit", "check"),
         help=(
             "analyze one log, rebuild every out-of-date log, list which logs are "
-            "out of date, print a session digest, or list calls on weak evidence"
+            "out of date, print a session digest, list calls on weak evidence, "
+            "or list the inputs a log is missing"
         ),
     )
     parser.add_argument("report", nargs="?", help="report folder or code")
@@ -91,14 +93,27 @@ def main() -> None:
     if args.command == "analyze":
         if not args.report:
             raise SystemExit("analyze needs a report folder or its code.")
-        counts = analyze(_resolve(args.report, root), root)
+        report = _resolve(args.report, root)
+        counts = analyze(report, root)
         print(f"{args.report}: {_counts(counts)}")
+        gaps = problems(read_inputs(report) or {})
+        if gaps:
+            print(f"warning: {len(gaps)} kinds of missing input. Run: python -m xivloganalyzer check {report.name}")
         print(f"dashboard: {root / 'dashboard.html'}")
         return
     if not args.report:
         raise SystemExit(f"{args.command} needs a report folder or its code.")
     if args.command == "audit":
         print(audit_text(_resolve(args.report, root), flag=args.flag), end="")
+        return
+    if args.command == "check":
+        report = _resolve(args.report, root)
+        result = read_inputs(report)
+        if result is None:
+            raise SystemExit(f"{report.name} has not been analyzed. Run: python -m xivloganalyzer analyze {report.name}")
+        print(inputs_text(report.name, result), end="")
+        if problems(result):
+            raise SystemExit(1)
         return
     report = _resolve(args.report, root)
     text = brief_text(

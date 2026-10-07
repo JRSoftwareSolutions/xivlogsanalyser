@@ -23,6 +23,7 @@ from xivloganalyzer.dashboard import (
 )
 from xivloganalyzer.extract import extract_report, write_facts
 from xivloganalyzer.frames import attach_frames
+from xivloganalyzer.inputs import check_inputs, write_inputs
 from xivloganalyzer.judge import judge_report, roster_from_meta, write_judgments
 from xivloganalyzer.stamp import check, engine_version, read_stamp, write_stamp
 
@@ -64,10 +65,12 @@ def _pack(report: Path, meta: dict, catalog: list[FightPack]) -> FightPack:
 
 
 def _analyze(report: Path, pack: FightPack, meta: dict, engine: str) -> tuple[Counter, dict]:
-    facts = extract_report(report, pack)
+    skipped: list[dict] = []
+    facts = extract_report(report, pack, skipped)
     judgments = judge_report(facts, pack, roster_from_meta(meta, pack))
     write_facts(report, facts)
     write_judgments(report, judgments)
+    write_inputs(report, check_inputs(report, pack, meta, facts, skipped))
     when = session_clock(report, meta)
     payload = session_payload(judgments, pack, report.name, when, meta)
     attach_debuffs(report, payload, pack, meta)

@@ -267,6 +267,7 @@ def _party(meta: dict, pack: FightPack) -> list[dict]:
         rows.append(
             {
                 "name": actor["name"],
+                "id": actor.get("id"),
                 "job": JOB.get(job, job),
                 "role": pack.role_of(job),
                 "fights": _fight_ids(actor.get("fights") or ""),
@@ -377,7 +378,6 @@ def attach_debuffs(report: Path, payload: dict, pack: FightPack, meta: dict) -> 
     if not clusters:
         return
     tables = load_mitigations(report)
-    ids = {actor["name"]: actor["id"] for actor in meta.get("friendlies") or []}
     party = _party(meta, pack)
     for pull in payload.get("pulls") or []:
         auras = (tables.get(pull["id"]) or {}).get("auras") or []
@@ -398,7 +398,7 @@ def attach_debuffs(report: Path, payload: dict, pack: FightPack, meta: dict) -> 
                 continue
             players = []
             for player in roster:
-                actor = ids.get(player["name"])
+                actor = player.get("id")
                 statuses = [held.get((actor, column.column)) for column in cluster.debuffs]
                 values = [
                     column.labels[status["id"]] if status else ""

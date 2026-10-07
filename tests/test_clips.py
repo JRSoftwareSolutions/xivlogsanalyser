@@ -57,11 +57,15 @@ class MarkerClipTest(unittest.TestCase):
         self.assertEqual(failed["skyward-leap"], ["Spring Nymphar"])
         self.assertEqual(failed["dragons-rage"], [])
         self.assertEqual(failed["holy-shield-bash"], [])
-        clipped = [row for row in pull["deaths"] if row["culprits"]]
+        clipped = [row for row in pull["deaths"] if row["componentId"] == "skyward-leap"]
         self.assertEqual(len(clipped), 4)
         for row in clipped:
-            self.assertEqual(row["componentId"], "skyward-leap")
             self.assertEqual(row["culprits"], ["Spring Nymphar"])
+        # The towers at 65s were empty because Kite Noodle and Spring Nymphar were dead.
+        towers = [row for row in pull["deaths"] if row["componentId"] == "eternal-conviction"]
+        self.assertEqual(sorted(row["name"] for row in towers), ["Absolute Gigalad", "Loki Doki"])
+        for row in towers:
+            self.assertEqual(row["culprits"], ["Kite Noodle", "Spring Nymphar"])
         self.assertEqual(
             sorted(row["cast"] for row in clipped),
             ["Dragon's Rage", "Dragon's Rage", "Dragon's Rage", "Holy Shield Bash"],

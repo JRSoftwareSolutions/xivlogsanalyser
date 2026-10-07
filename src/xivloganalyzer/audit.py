@@ -6,21 +6,11 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from xivloganalyzer.brief import load_judgments
+from xivloganalyzer.judge import CONTEXT_SHARES, GROUP_LABELS
 
-# Labels that stand in for players the log did not name.
-UNNAMED = frozenset({
-    "Prey markers",
-    "Missed soak",
-    "Missing bodies",
-    "Miscommunication",
-    "Out of position",
-    "Another player",
-    "Assigned mitigation",
-    "Earlier deaths",
-    "Healers",
-})
-# Shares that sit beside the owners, not owners themselves.
-_CONTEXT = frozenset({"Party mitigation", "Earlier damage", "Earlier mistake"})
+# Labels that stand in for players the log did not name, and shares that sit beside the owners.
+UNNAMED = GROUP_LABELS
+_CONTEXT = CONTEXT_SHARES
 # Deaths to one cast land within this many seconds of each other.
 _CAST_S = 1.5
 
@@ -30,6 +20,7 @@ FLAGS = {
     "mass-self": "Three or more players died to one cast, each blamed on themselves. Did one earlier action cause all of them?",
     "raw-after-death": "A raw death after someone already died in the pull. Was the party short, or still healthy?",
     "thin-split": "Three or more players split it. Is one of them the real cause?",
+    "degraded": "The call was made without an input it reads (see `check`). Fetch it and reanalyze.",
 }
 
 
@@ -53,6 +44,8 @@ def flag_rows(rows: list[dict]) -> dict[str, list[dict]]:
                 found["unknown"].append(row)
                 continue
             blames = row.get("blames") or []
+            if row.get("missing"):
+                found["degraded"].append(row)
             if any(blame.get("who") in UNNAMED for blame in blames):
                 found["unnamed"].append(row)
             if len([blame for blame in blames if blame.get("who") not in _CONTEXT]) >= 3:

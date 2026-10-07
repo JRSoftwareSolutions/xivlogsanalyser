@@ -83,7 +83,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 659626,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 4,
@@ -158,7 +161,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 659938,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 4,
@@ -267,7 +273,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 659983,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 4,
@@ -343,7 +352,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 659983,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 4,
@@ -421,7 +433,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 660026,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 4,
@@ -487,7 +502,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 661410,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 4,
@@ -502,7 +520,7 @@
     "ability": "Eternal Conviction",
     "total": 41854,
     "hp": 34782,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 58131,
     "multiplier": 0.72,
     "absorb": 0,
@@ -550,7 +568,13 @@
         "until": 65.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -568,7 +592,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 665061,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 4,
@@ -617,7 +646,13 @@
         "until": 65.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -635,7 +670,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 665061,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 5,
@@ -674,7 +714,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 806622,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 5,
@@ -725,7 +768,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 818253,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 5,
@@ -766,7 +812,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -777,8 +825,13 @@
     "dead": [
       "Speed Panda"
     ],
-    "group": [],
-    "self_hits": []
+    "group": [
+      "Loki Doki"
+    ],
+    "self_hits": [],
+    "ts": 818432,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 5,
@@ -843,7 +896,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 824667,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 5,
@@ -916,7 +972,10 @@
         "ago": 2.7,
         "amount": 50792
       }
-    ]
+    ],
+    "ts": 824801,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 5,
@@ -983,7 +1042,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 824934,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 5,
@@ -1051,7 +1113,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 825068,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 5,
@@ -1120,7 +1185,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 825202,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 5,
@@ -1190,7 +1258,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 825335,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 6,
@@ -1254,7 +1325,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 898815,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 6,
@@ -1345,7 +1419,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 908842,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 6,
@@ -1408,7 +1485,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 909155,
+    "missing": [
+      "ability 25579"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 6,
@@ -1478,7 +1560,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 911918,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 6,
@@ -1607,7 +1692,11 @@
         "until": 68.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -1624,7 +1713,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 913923,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 6,
@@ -1717,7 +1811,11 @@
         "until": 68.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -1734,7 +1832,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 913923,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 6,
@@ -1839,7 +1942,11 @@
         "until": 68.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -1856,7 +1963,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 913923,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 6,
@@ -1871,7 +1983,7 @@
     "ability": "Eternal Conviction",
     "total": 37863,
     "hp": 6255,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 58431,
     "multiplier": 0.65,
     "absorb": 0,
@@ -1973,7 +2085,11 @@
         "until": 68.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -1993,7 +2109,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 914056,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 6,
@@ -2088,7 +2209,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 918077,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 7,
@@ -2127,7 +2251,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 987276,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 7,
@@ -2166,7 +2293,10 @@
       "Absolute Gigalad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 992129,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 7,
@@ -2239,7 +2369,10 @@
       "Absolute Gigalad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 992129,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 7,
@@ -2280,7 +2413,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 993129,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 7,
@@ -2366,7 +2502,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 993129,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 7,
@@ -2465,7 +2604,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 994129,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 7,
@@ -2508,7 +2650,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 994129,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 7,
@@ -2609,7 +2754,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 996129,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 9,
@@ -2640,15 +2788,23 @@
     "prior_debuffs": [],
     "down": [],
     "unsoaked": [],
-    "doubled": [],
+    "doubled": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "marked": [],
     "dropped_by": [],
     "cohort": [
       "Kitana Kahn"
     ],
     "dead": [],
-    "group": [],
-    "self_hits": []
+    "group": [
+      "Kitana Kahn"
+    ],
+    "self_hits": [],
+    "ts": 1168195,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 9,
@@ -2687,7 +2843,10 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1172520,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 9,
@@ -2727,7 +2886,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1173099,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 9,
@@ -2794,7 +2956,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1174481,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 9,
@@ -2861,7 +3026,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1174481,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 9,
@@ -2930,7 +3098,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1174748,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 9,
@@ -3000,7 +3171,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1174883,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 9,
@@ -3071,7 +3245,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1175016,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 10,
@@ -3110,7 +3287,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1524191,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 10,
@@ -3183,7 +3363,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1559372,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 10,
@@ -3267,7 +3450,10 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1566140,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 10,
@@ -3307,7 +3493,10 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1567140,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 10,
@@ -3392,7 +3581,10 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1567140,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 10,
@@ -3432,7 +3624,10 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1567140,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 10,
@@ -3447,7 +3642,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -3572,7 +3767,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1568140,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 10,
@@ -3671,7 +3869,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1568979,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 10,
@@ -3733,7 +3934,10 @@
         "ago": 0.3,
         "amount": 52396
       }
-    ]
+    ],
+    "ts": 1569379,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 11,
@@ -3778,7 +3982,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1735962,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 11,
@@ -3839,7 +4046,10 @@
       "Absolute Gigalad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1736275,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 11,
@@ -3900,7 +4110,10 @@
       "Absolute Gigalad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1736275,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 11,
@@ -3963,7 +4176,10 @@
       "Absolute Gigalad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1736542,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 11,
@@ -4027,7 +4243,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1736808,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 11,
@@ -4092,7 +4311,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1736943,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 11,
@@ -4158,7 +4380,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1737077,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 11,
@@ -4224,7 +4449,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1737077,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 12,
@@ -4308,7 +4536,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1953820,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 12,
@@ -4363,7 +4594,10 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1956402,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 12,
@@ -4407,7 +4641,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1956446,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 12,
@@ -4422,7 +4659,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4471,7 +4708,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1956848,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 12,
@@ -4508,7 +4748,11 @@
         "until": 64.9
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -4526,7 +4770,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1958904,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 12,
@@ -4563,7 +4812,11 @@
         "until": 64.9
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -4581,7 +4834,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1958904,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 12,
@@ -4644,7 +4902,11 @@
         "until": 64.9
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -4664,7 +4926,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1959037,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 12,
@@ -4701,7 +4968,11 @@
         "until": 64.9
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -4722,7 +4993,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 1959171,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 13,
@@ -4759,7 +5035,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2125001,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 13,
@@ -4796,7 +5075,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2125001,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 13,
@@ -4854,7 +5136,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2129347,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 13,
@@ -4912,7 +5197,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2129347,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 13,
@@ -4972,7 +5260,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2129481,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 13,
@@ -5033,7 +5324,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2129615,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 13,
@@ -5095,7 +5389,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2129749,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 13,
@@ -5157,7 +5454,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2129749,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 14,
@@ -5208,7 +5508,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2172463,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 14,
@@ -5305,7 +5608,12 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2222882,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 14,
@@ -5391,7 +5699,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2223016,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 14,
@@ -5491,7 +5804,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2223150,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 14,
@@ -5556,7 +5874,12 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2223417,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 14,
@@ -5658,7 +5981,12 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2223551,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 14,
@@ -5761,7 +6089,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2223686,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 14,
@@ -5820,7 +6153,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2224594,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 14,
@@ -5903,7 +6239,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2228594,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 15,
@@ -5965,7 +6304,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2297975,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 15,
@@ -6004,7 +6346,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2302206,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 15,
@@ -6078,7 +6423,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2303206,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 15,
@@ -6153,7 +6501,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2306206,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 15,
@@ -6203,7 +6554,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2307206,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 15,
@@ -6332,7 +6686,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2307584,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 15,
@@ -6421,7 +6778,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2307671,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 15,
@@ -6436,7 +6796,7 @@
     "ability": "Holy Shield Bash",
     "total": 516870,
     "hp": 109989,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 797639,
     "multiplier": 2.15,
     "absorb": 0,
@@ -6532,7 +6892,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2308072,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 16,
@@ -6594,7 +6957,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2519701,
+    "missing": [
+      "ability 26377"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 16,
@@ -6665,7 +7033,12 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2519656,
+    "missing": [
+      "ability 26377"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 16,
@@ -6739,7 +7112,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2519834,
+    "missing": [
+      "ability 26377"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 16,
@@ -6792,7 +7170,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2525059,
+    "missing": [
+      "ability 26416"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 16,
@@ -6846,7 +7229,12 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2525103,
+    "missing": [
+      "ability 26416"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 16,
@@ -6893,7 +7281,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2548466,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 16,
@@ -6939,7 +7332,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2548422,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 16,
@@ -6987,7 +7385,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2556280,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 16,
@@ -7036,7 +7439,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2556324,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 17,
@@ -7123,7 +7531,10 @@
         "ago": 1.5,
         "amount": 39303
       }
-    ]
+    ],
+    "ts": 2915386,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 17,
@@ -7178,7 +7589,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2931815,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 17,
@@ -7232,7 +7646,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2936688,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 17,
@@ -7312,7 +7729,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2938071,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 17,
@@ -7392,7 +7812,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2938071,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 17,
@@ -7474,7 +7897,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2938339,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 17,
@@ -7557,7 +7983,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2938473,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 17,
@@ -7640,7 +8069,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2938473,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 17,
@@ -7725,7 +8157,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2938608,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 18,
@@ -7770,7 +8205,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 2988458,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 18,
@@ -7844,7 +8282,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3110582,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 18,
@@ -7920,7 +8361,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3110725,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 18,
@@ -7997,7 +8441,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3110849,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 18,
@@ -8075,7 +8522,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3110984,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 18,
@@ -8154,7 +8604,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3111127,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 18,
@@ -8233,7 +8686,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3111127,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 18,
@@ -8314,7 +8770,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3111384,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 18,
@@ -8396,7 +8855,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3111527,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 19,
@@ -8460,7 +8922,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3282643,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 19,
@@ -8526,7 +8991,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3282787,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 19,
@@ -8593,7 +9061,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3282913,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 19,
@@ -8661,7 +9132,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3283046,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 19,
@@ -8730,7 +9204,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3283314,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 19,
@@ -8800,7 +9277,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3283591,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 19,
@@ -8859,7 +9339,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3283944,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 19,
@@ -8927,7 +9410,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3287513,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 20,
@@ -8964,7 +9450,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3454721,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 20,
@@ -9028,7 +9517,10 @@
       "Kite Noodle"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3458995,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 20,
@@ -9093,7 +9585,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3459270,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 20,
@@ -9159,7 +9654,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3459396,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 20,
@@ -9226,7 +9724,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3459673,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 20,
@@ -9294,7 +9795,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3459798,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 20,
@@ -9353,7 +9857,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3462721,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 20,
@@ -9413,7 +9920,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3466721,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 21,
@@ -9461,7 +9971,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3503584,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 21,
@@ -9508,7 +10021,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3507638,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 21,
@@ -9555,7 +10071,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3507638,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 21,
@@ -9604,7 +10123,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3509638,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 21,
@@ -9654,7 +10176,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3510638,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 21,
@@ -9717,7 +10242,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3511638,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 21,
@@ -9768,7 +10296,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3511638,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 21,
@@ -9821,7 +10352,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3512638,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 22,
@@ -9914,7 +10448,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3638424,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 22,
@@ -9990,7 +10527,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -10008,7 +10547,12 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3643458,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 22,
@@ -10084,7 +10628,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -10103,7 +10649,12 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3643587,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 22,
@@ -10179,7 +10730,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -10199,7 +10752,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3643857,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 22,
@@ -10275,7 +10833,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -10296,7 +10856,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3644116,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 22,
@@ -10361,7 +10926,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3644188,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 22,
@@ -10437,7 +11005,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -10460,7 +11030,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3644258,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 22,
@@ -10527,7 +11102,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3646188,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 23,
@@ -10566,7 +11144,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3681946,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 23,
@@ -10633,7 +11214,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3813778,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 23,
@@ -10702,7 +11286,10 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3813921,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 23,
@@ -10772,7 +11359,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3814045,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 23,
@@ -10843,7 +11433,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3814180,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 23,
@@ -10915,7 +11508,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3814323,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 23,
@@ -10988,7 +11584,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3814447,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 23,
@@ -11062,7 +11661,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3814580,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 23,
@@ -11137,7 +11739,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3814723,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 24,
@@ -11203,7 +11808,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3997923,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 24,
@@ -11271,7 +11879,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3998049,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 24,
@@ -11339,7 +11950,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3998049,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 24,
@@ -11409,7 +12023,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3998181,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 24,
@@ -11480,7 +12097,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3998448,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 24,
@@ -11552,7 +12172,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3998582,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 24,
@@ -11625,7 +12248,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3998725,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 24,
@@ -11699,7 +12325,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 3998849,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 25,
@@ -11745,7 +12374,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4082580,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 25,
@@ -11807,7 +12439,10 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4082674,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 25,
@@ -11850,7 +12485,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4085653,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 25,
@@ -11913,7 +12551,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4087441,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 25,
@@ -11990,7 +12631,11 @@
         "until": 65.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12008,7 +12653,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4088103,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 25,
@@ -12071,7 +12721,11 @@
         "until": 65.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12089,7 +12743,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4088103,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 25,
@@ -12152,7 +12811,11 @@
         "until": 65.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12172,7 +12835,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4088226,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 25,
@@ -12187,7 +12855,7 @@
     "ability": "Eternal Conviction",
     "total": 49351,
     "hp": 10711,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 61689,
     "multiplier": 0.8,
     "absorb": 0,
@@ -12237,7 +12905,11 @@
         "until": 65.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12258,7 +12930,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4088503,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 26,
@@ -12303,7 +12980,12 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4338526,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 26,
@@ -12350,7 +13032,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4338571,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 26,
@@ -12398,7 +13085,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4338615,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 26,
@@ -12476,7 +13168,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4346386,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 26,
@@ -12554,7 +13251,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4346386,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 26,
@@ -12635,7 +13337,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4346475,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 26,
@@ -12715,7 +13422,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4346431,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 26,
@@ -12797,7 +13509,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4346564,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 27,
@@ -12865,7 +13582,12 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4690444,
+    "missing": [
+      "ability 26384"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 27,
@@ -12935,7 +13657,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4690488,
+    "missing": [
+      "ability 26384"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 27,
@@ -12995,7 +13722,12 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4694371,
+    "missing": [
+      "ability 26390"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 27,
@@ -13044,7 +13776,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4696953,
+    "missing": [
+      "ability 26385"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 27,
@@ -13122,7 +13859,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4698694,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 27,
@@ -13201,7 +13943,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4698738,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 27,
@@ -13281,7 +14028,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4698783,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 27,
@@ -13362,7 +14114,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 4698827,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 28,
@@ -13401,7 +14158,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5012371,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 28,
@@ -13482,7 +14242,10 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5012416,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 28,
@@ -13522,7 +14285,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5013933,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 28,
@@ -13563,7 +14329,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5015933,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 28,
@@ -13617,7 +14386,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5016933,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 28,
@@ -13660,7 +14432,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5017933,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 28,
@@ -13703,7 +14478,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5017933,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 28,
@@ -13748,7 +14526,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5022933,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 29,
@@ -13836,7 +14617,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5127787,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 29,
@@ -13900,7 +14684,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5192949,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 29,
@@ -13966,7 +14753,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5193084,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 29,
@@ -14033,7 +14823,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5193217,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 29,
@@ -14101,7 +14894,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5193350,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 29,
@@ -14170,7 +14966,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5193484,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 29,
@@ -14229,7 +15028,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5193766,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 29,
@@ -14299,7 +15101,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5193751,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 29,
@@ -14359,7 +15164,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5200766,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 30,
@@ -14408,7 +15216,12 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5450638,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 30,
@@ -14459,7 +15272,12 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5450727,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 30,
@@ -14519,7 +15337,12 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5457175,
+    "missing": [
+      "ability 26390"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 30,
@@ -14608,7 +15431,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5458552,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 30,
@@ -14686,7 +15514,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5458552,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 30,
@@ -14777,7 +15610,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5458596,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 30,
@@ -14857,7 +15695,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5458596,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 30,
@@ -14939,7 +15782,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5458685,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 31,
@@ -14976,7 +15824,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5623113,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 31,
@@ -15029,7 +15880,10 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5625853,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 31,
@@ -15069,7 +15923,10 @@
       "Absolute Gigalad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5626113,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 31,
@@ -15110,7 +15967,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5628113,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 31,
@@ -15152,7 +16012,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5629113,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 31,
@@ -15209,7 +16072,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5629587,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 31,
@@ -15253,7 +16119,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5631113,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 31,
@@ -15298,7 +16167,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5636113,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 33,
@@ -15347,7 +16219,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 33,
@@ -15384,7 +16259,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 33,
@@ -15433,7 +16311,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 33,
@@ -15482,7 +16363,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 33,
@@ -15531,7 +16415,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 33,
@@ -15587,7 +16474,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5916494,
+    "missing": [
+      "ability 26385"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 33,
@@ -15642,7 +16534,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5916493,
+    "missing": [
+      "ability 26385"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 33,
@@ -15703,7 +16600,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 5918267,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 34,
@@ -15740,7 +16642,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6097592,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 34,
@@ -15789,7 +16694,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6097892,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 34,
@@ -15833,7 +16741,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6098337,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 34,
@@ -15878,7 +16789,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6098381,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 34,
@@ -15943,7 +16857,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6099592,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 34,
@@ -15972,7 +16889,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -15990,7 +16912,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6103448,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 34,
@@ -16019,7 +16946,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -16037,7 +16969,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6103448,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 34,
@@ -16082,7 +17019,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6103592,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 35,
@@ -16135,7 +17075,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6277193,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 35,
@@ -16186,7 +17129,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6294086,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 35,
@@ -16243,7 +17189,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6308714,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 35,
@@ -16291,7 +17240,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6308774,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 35,
@@ -16350,7 +17302,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6308849,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 35,
@@ -16410,7 +17365,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6308983,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 35,
@@ -16471,7 +17429,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6309118,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 35,
@@ -16533,7 +17494,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6309384,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 35,
@@ -16586,7 +17550,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6313774,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 36,
@@ -16659,7 +17626,10 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6452048,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 36,
@@ -16741,7 +17711,12 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6569695,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 36,
@@ -16834,7 +17809,12 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6569695,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 36,
@@ -16931,7 +17911,12 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6569784,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 36,
@@ -17019,7 +18004,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6569828,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 36,
@@ -17093,7 +18083,12 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6569740,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 36,
@@ -17179,7 +18174,12 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6569784,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 36,
@@ -17268,7 +18268,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6569917,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 36,
@@ -17347,7 +18352,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6575410,
+    "missing": [
+      "ability 26378"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 37,
@@ -17384,7 +18394,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6735100,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 37,
@@ -17448,7 +18461,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6736752,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 37,
@@ -17513,7 +18529,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6736886,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 37,
@@ -17579,7 +18598,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6737020,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 37,
@@ -17646,7 +18668,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6737288,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 37,
@@ -17714,7 +18739,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6737422,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 37,
@@ -17782,7 +18810,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6741454,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 37,
@@ -17851,7 +18882,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 6741588,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 39,
@@ -17907,7 +18941,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7537417,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 39,
@@ -17950,7 +18987,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7537329,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 39,
@@ -18005,7 +19045,10 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7537373,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 39,
@@ -18046,7 +19089,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7540091,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 39,
@@ -18088,7 +19134,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7541772,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 39,
@@ -18160,7 +19209,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7543567,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 39,
@@ -18220,7 +19272,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7543567,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 39,
@@ -18282,7 +19337,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7543835,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 40,
@@ -18349,7 +19407,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7711135,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 40,
@@ -18418,7 +19479,10 @@
       "Kite Noodle"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7711269,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 40,
@@ -18488,7 +19552,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7711403,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 40,
@@ -18559,7 +19626,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7711537,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 40,
@@ -18631,7 +19701,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7711671,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 40,
@@ -18704,7 +19777,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7711804,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 40,
@@ -18778,7 +19854,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7711939,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 40,
@@ -18853,7 +19932,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7712072,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 41,
@@ -18892,7 +19974,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7749413,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 41,
@@ -18934,7 +20019,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7794666,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 41,
@@ -18981,7 +20069,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7799203,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 41,
@@ -19018,7 +20109,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -19036,7 +20129,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7799748,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 41,
@@ -19073,7 +20171,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -19092,7 +20192,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7799881,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 41,
@@ -19107,7 +20212,7 @@
     "ability": "Eternal Conviction",
     "total": 42296,
     "hp": 32644,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 58745,
     "multiplier": 0.72,
     "absorb": 0,
@@ -19155,7 +20260,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -19175,7 +20282,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7800016,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 41,
@@ -19249,7 +20361,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7800203,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 41,
@@ -19286,7 +20401,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -19308,7 +20425,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7800283,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 41,
@@ -19347,7 +20469,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -19370,7 +20494,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7800416,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 42,
@@ -19423,7 +20552,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7948844,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 42,
@@ -19478,7 +20610,10 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7949157,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 42,
@@ -19518,7 +20653,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7952104,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 42,
@@ -19558,7 +20696,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7952104,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 42,
@@ -19600,7 +20741,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7955104,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 42,
@@ -19642,7 +20786,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7955104,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 42,
@@ -19686,7 +20833,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7957104,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 42,
@@ -19731,7 +20881,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 7958104,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 43,
@@ -19797,7 +20950,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8118420,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 43,
@@ -19863,7 +21019,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8118420,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 43,
@@ -19944,7 +21103,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8118553,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 43,
@@ -20026,7 +21188,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8118822,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 43,
@@ -20097,7 +21262,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8118955,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 43,
@@ -20169,7 +21337,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8119089,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 43,
@@ -20241,7 +21412,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8119089,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 43,
@@ -20327,7 +21501,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8119356,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 44,
@@ -20412,7 +21589,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8213252,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 44,
@@ -20466,7 +21646,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -20484,7 +21666,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8218293,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 44,
@@ -20538,7 +21725,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -20557,7 +21746,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8218427,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 44,
@@ -20624,7 +21818,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -20644,7 +21840,12 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8218560,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 44,
@@ -20698,7 +21899,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -20719,7 +21922,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8218694,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 44,
@@ -20773,7 +21981,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -20795,7 +22005,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8218828,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 44,
@@ -20810,7 +22025,7 @@
     "ability": "Eternal Conviction",
     "total": 45794,
     "hp": 6108,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 60256,
     "multiplier": 0.76,
     "absorb": 0,
@@ -20850,7 +22065,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -20873,7 +22090,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8218961,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 44,
@@ -20927,7 +22149,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -20951,7 +22175,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8219095,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 45,
@@ -21004,7 +22233,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8360572,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 45,
@@ -21044,7 +22276,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8373084,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 45,
@@ -21083,7 +22318,10 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8377568,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 45,
@@ -21140,7 +22378,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8379280,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 45,
@@ -21198,7 +22439,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8379548,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 45,
@@ -21257,7 +22501,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8379682,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 45,
@@ -21317,7 +22564,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8379816,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 45,
@@ -21392,7 +22642,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8379949,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 45,
@@ -21452,7 +22705,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8384125,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 46,
@@ -21467,7 +22723,7 @@
     "ability": "Holy Shield Bash",
     "total": 305822,
     "hp": 119067,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 471948,
     "multiplier": 2.15,
     "absorb": 0,
@@ -21557,7 +22813,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8463502,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 46,
@@ -21636,7 +22895,12 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8638064,
+    "missing": [
+      "ability 26385"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 46,
@@ -21706,7 +22970,10 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8652354,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 46,
@@ -21785,7 +23052,12 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8652510,
+    "missing": [
+      "ability 26382"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 46,
@@ -21888,7 +23160,12 @@
       "Absolute Gigalad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8652554,
+    "missing": [
+      "ability 26382"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 46,
@@ -21992,7 +23269,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8652598,
+    "missing": [
+      "ability 26382"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 46,
@@ -22086,7 +23368,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8652687,
+    "missing": [
+      "ability 26382"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 46,
@@ -22138,7 +23425,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8655535,
+    "missing": [
+      "ability 26378"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 46,
@@ -22198,7 +23490,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8658354,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 48,
@@ -22262,7 +23557,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8908951,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 48,
@@ -22332,7 +23630,10 @@
       "Kitana Kahn"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8913158,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 48,
@@ -22399,7 +23700,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8914951,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 48,
@@ -22455,7 +23759,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8917951,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 48,
@@ -22511,7 +23818,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8917951,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 48,
@@ -22569,7 +23879,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8918951,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 48,
@@ -22628,7 +23941,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8919951,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 48,
@@ -22688,7 +24004,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8921951,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 49,
@@ -22761,7 +24080,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 8991773,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 49,
@@ -22849,7 +24171,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9001783,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 49,
@@ -22938,7 +24263,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9001828,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 49,
@@ -23001,7 +24329,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9003777,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 49,
@@ -23042,7 +24373,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9004777,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 49,
@@ -23105,7 +24439,12 @@
         "until": 64.7
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -23123,7 +24462,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9006944,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 49,
@@ -23138,7 +24482,7 @@
     "ability": "Eternal Conviction",
     "total": 41524,
     "hp": 9119,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 57673,
     "multiplier": 0.72,
     "absorb": 0,
@@ -23186,7 +24530,12 @@
         "until": 64.7
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -23204,7 +24553,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9006944,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 49,
@@ -23241,7 +24595,12 @@
         "until": 64.7
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -23262,7 +24621,12 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9006945,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 49,
@@ -23299,7 +24663,12 @@
         "until": 64.7
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -23317,7 +24686,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9006944,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 50,
@@ -23356,7 +24730,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9042211,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 50,
@@ -23434,7 +24811,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9263279,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 50,
@@ -23511,7 +24893,12 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9263235,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 50,
@@ -23586,7 +24973,12 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9263190,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 50,
@@ -23676,7 +25068,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9263324,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 50,
@@ -23756,7 +25153,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9263368,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 50,
@@ -23837,7 +25239,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9263457,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 50,
@@ -23919,7 +25326,12 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9263501,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": ""
   },
   {
     "fight": 50,
@@ -23979,7 +25391,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9267613,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 51,
@@ -24030,7 +25445,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9391648,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 51,
@@ -24114,7 +25532,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9399395,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 51,
@@ -24199,7 +25620,10 @@
       "Kiara Blaiddyd"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9401395,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 51,
@@ -24284,7 +25708,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9402395,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 51,
@@ -24324,7 +25751,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9402395,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 51,
@@ -24381,7 +25811,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9403395,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 51,
@@ -24494,7 +25927,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9404204,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 51,
@@ -24606,7 +26042,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9404159,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 51,
@@ -24666,7 +26105,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9406395,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 52,
@@ -24715,7 +26157,10 @@
     "cohort": [],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9541722,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 52,
@@ -24768,7 +26213,10 @@
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9542004,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 52,
@@ -24808,7 +26256,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9545722,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 52,
@@ -24848,7 +26299,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9545722,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 52,
@@ -24890,7 +26344,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9546722,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 52,
@@ -24933,7 +26390,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9548722,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 52,
@@ -24976,7 +26436,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9548722,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 52,
@@ -25021,7 +26484,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9553722,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 53,
@@ -25068,7 +26534,10 @@
         "ago": 3.0,
         "amount": 51552
       }
-    ]
+    ],
+    "ts": 9714913,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 53,
@@ -25129,7 +26598,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9725116,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 53,
@@ -25190,7 +26662,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9725116,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 53,
@@ -25253,7 +26728,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9725382,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 53,
@@ -25316,7 +26794,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9725382,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 53,
@@ -25381,7 +26862,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9725650,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 53,
@@ -25447,7 +26931,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9725785,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 53,
@@ -25514,7 +27001,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9725919,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 54,
@@ -25563,7 +27053,10 @@
     ],
     "dead": [],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9863981,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 54,
@@ -25628,7 +27121,10 @@
       "Spring Nymphar"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9864070,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 54,
@@ -25676,7 +27172,10 @@
       "Speed Panda"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9866643,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 54,
@@ -25725,7 +27224,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9867643,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 54,
@@ -25775,7 +27277,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9870643,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 54,
@@ -25826,7 +27331,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9872643,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 54,
@@ -25878,7 +27386,10 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9874643,
+    "missing": [],
+    "off_tank": ""
   },
   {
     "fight": 54,
@@ -25931,6 +27442,9 @@
       "Absolute Gigachad"
     ],
     "group": [],
-    "self_hits": []
+    "self_hits": [],
+    "ts": 9875643,
+    "missing": [],
+    "off_tank": ""
   }
 ]

@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 import json
+from collections import defaultdict
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, Mechanic
 from xivloganalyzer.extract import DeathFact
+from xivloganalyzer.roster import players, pull_players
 
 
 @dataclass
@@ -118,7 +120,8 @@ def _known_hp(fact: DeathFact) -> bool:
 
 
 def _full(fact: DeathFact) -> bool:
-    return _known_hp(fact) and fact.hp >= fact.max_hp
+    """Full HP, allowing for rounding a max-HP buff."""
+    return _known_hp(fact) and fact.hp >= fact.max_hp - max(1, round(fact.max_hp * 0.001))
 
 
 def _took(fact: DeathFact, exact: bool) -> str:
@@ -164,14 +167,19 @@ def _band(lived: str) -> bool:
     return not any(word in lowered for word in ("no ", "not ", "killed"))
 
 
-def _beyond_role(fact: DeathFact, mechanic: Mechanic) -> str:
-    """A hit bigger than this role takes from the real cast, against the band people live."""
+def _beyond_role(fact: DeathFact, mechanic: Mechanic, cleave: bool = False) -> str:
+    """A hit bigger than this role takes from the real cast, against the band people live.
+
+    `cleave` is a cast judged a cleave as a whole, where this one hit can be under the cap.
+    """
     cap = mechanic.cap_for(fact.role)
     hit = _hit(fact)
     lived = mechanic.lived_for(fact.role)
-    if cap is None or hit <= cap or not _band(lived):
+    if cap is None or not _band(lived) or (hit <= cap and not cleave):
         return ""
     role = _ROLE.get(fact.role, fact.role)
+    if hit <= cap:
+        return f"The rest of the stack took more. A {role} takes {lived}."
     if fact.unmitigated is not None and fact.unmitigated != fact.total:
         return f"The hit was {_comma(hit)} before mitigation. A {role} takes {lived}."
     return f"A {role} takes {lived}."
@@ -233,6 +241,7 @@ def _heal_check(fact: DeathFact) -> list[str]:
 
 def _happened(
     fact: DeathFact, mechanic: Mechanic, outcome: str, cause: str, pack: FightPack,
+    cleave: bool = False,
 ) -> str:
     """The facts behind the call, not every number in the packet.
 
@@ -272,7 +281,7 @@ def _happened(
         bits.append(amped)
     if mechanic.requires_personal_mit and fact.role == "tank" and not _personal_mit(fact, pack):
         bits.append("No personal mitigation.")
-    beyond = "" if amped else _beyond_role(fact, mechanic)
+    beyond = "" if amped else _beyond_role(fact, mechanic, cleave)
     bits.append(beyond or _one_shot(fact))
     return " ".join(bit for bit in bits if bit)
 
@@ -313,7 +322,9 @@ def _hit(fact: DeathFact) -> int:
     return fact.total
 
 
-def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
+def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> Judgment:
+    """One death. `cleave` is the verdict for the whole cast when it hit several
+    players: True for a cleave, False for a real share, None to judge this hit alone."""
     if fact.guid == 0 and pack.deathwall is not None:
         return _deathwall(fact, pack.deathwall)
     if fact.guid == 0:
@@ -348,7 +359,11 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
     hit = _hit(fact)
     if mechanic.tanks_only and fact.role != "tank":
         return _done(fact, mechanic, "fail", _not_a_tank(fact, mechanic), "personal", pack)
-    if mechanic.off_tank and fact.name != mechanic.off_tank:
+    if mechanic.off_tank and fact.off_tank and fact.name != fact.off_tank:
+        if fact.role == "tank" and fact.off_tank in fact.dead:
+            # The off tank was dead, so the other tank had to take it.
+            fact.down = [fact.off_tank]
+            return _done(fact, mechanic, "fail", "", "redirected", pack)
         return _done(
             fact, mechanic, "fail",
             f"{fact.name} took {mechanic.name}.",
@@ -370,6 +385,8 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
         if mechanic.id == "holy-impact":
             return _done(fact, mechanic, "fail", *_comets(fact), pack)
         return _done(fact, mechanic, "fail", _personal(fact, mechanic), "personal", pack)
+    if mechanic.pairs and fact.group == [fact.name] and (fact.down or fact.unsoaked or fact.doubled):
+        return _done(fact, mechanic, "fail", "The ice had no partner.", "missing", pack)
     failed = _failed_moment(mechanic, fact, hit)
     if failed:
         return _done(
@@ -398,7 +415,8 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             f"{fact.name} died to {mechanic.name}.",
             "none", pack,
         )
-    if hit <= cap:
+    within = hit <= cap if cleave is None else not cleave
+    if within:
         own = _own_damage(fact)
         if own and mechanic.id == "skyward-leap" and _skyward_cause(fact) == "healers":
             return _done(fact, mechanic, "fail", f"{fact.name} was still low from {own['ability']}.", "self", pack)
@@ -430,7 +448,7 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
         return _done(fact, mechanic, "fail", _skyward_clip(fact), "clip", pack)
     return _done(
         fact, mechanic, "fail", _oversized(fact, mechanic),
-        _oversized_cause(fact, mechanic), pack,
+        _oversized_cause(fact, mechanic), pack, cleave=bool(cleave),
     )
 
 
@@ -484,6 +502,37 @@ def _moment_fault(fact: DeathFact, moment) -> str:
     if moment.cause == "tower":
         return f"{fact.name} died to an empty tower."
     return f"{fact.name} got hit."
+
+
+def _cast_verdicts(facts: list[DeathFact], pack: FightPack) -> dict[int, bool]:
+    """Share or cleave, once for every death in one stack packet.
+
+    Victims of one packet land on both sides of a role cap through damage
+    variance and different roles. The cast is a cleave when its middle victim is
+    over their role cap, and every victim gets that verdict. A vulnerability, a
+    marker clip, or a hit over `fail_above` is still judged on its own.
+    """
+    groups: dict[tuple, list[tuple[DeathFact, float]]] = defaultdict(list)
+    for fact in facts:
+        mechanic = pack.mechanic_for(fact.guid, fact.phase)
+        if mechanic is None or not mechanic.scales_with_stack or len(fact.cohort) < 2:
+            continue
+        if _vuln(fact) or fact.clipped_by:
+            continue
+        cap = mechanic.cap_for(fact.role)
+        if not cap or (mechanic.fail_above is not None and _hit(fact) > mechanic.fail_above):
+            continue
+        groups[(fact.fight, fact.guid, tuple(sorted(fact.cohort)))].append((fact, _hit(fact) / cap))
+    verdicts: dict[int, bool] = {}
+    for rows in groups.values():
+        if len(rows) < 2:
+            continue
+        ratios = sorted(ratio for _fact, ratio in rows)
+        middle = len(ratios) // 2
+        median = ratios[middle] if len(ratios) % 2 else (ratios[middle - 1] + ratios[middle]) / 2
+        for fact, _ratio in rows:
+            verdicts[id(fact)] = median > 1
+    return verdicts
 
 
 def _redirected(fact: DeathFact, mechanic: Mechanic) -> bool:
@@ -570,8 +619,19 @@ def _not_a_tank(fact: DeathFact, mechanic: Mechanic) -> str:
     return f"{fact.name} took {mechanic.name}."
 
 
+def _self_mits(fact: DeathFact) -> list[dict]:
+    """Mitigation the player put on themselves, whatever the job: a % cut or a shield."""
+    return [
+        mit for mit in fact.mitigations
+        if mit.get("by_id") is not None and mit.get("by_id") == mit.get("on_id") and mit.get("on") == fact.name
+        and (mit.get("amount") or (mit.get("pct") is not None and mit["pct"] < 100))
+    ]
+
+
 def _personal_mit(fact: DeathFact, pack: FightPack) -> bool:
-    if any(name in fact.buffs for name in pack.personal_mit):
+    """They used their own mitigation on this hit. The replay says so for any job.
+    Without it, a known name on the packet or a heavily cut hit counts."""
+    if _self_mits(fact) or any(name in fact.buffs for name in pack.personal_mit):
         return True
     return fact.multiplier is not None and fact.multiplier <= 0.75
 
@@ -771,13 +831,14 @@ def _done(
     wrong: str,
     cause: str,
     pack: FightPack,
+    cleave: bool = False,
 ) -> Judgment:
     return Judgment(
         fact=fact,
         mechanic_id=mechanic.id,
         mechanic=mechanic.name,
         outcome=outcome,
-        happened=_happened(fact, mechanic, outcome, cause, pack),
+        happened=_happened(fact, mechanic, outcome, cause, pack, cleave),
         should_have_been=_should(fact, mechanic, pack),
         went_wrong=wrong,
         cause=cause,
@@ -800,7 +861,15 @@ def _group(who: str, people: int) -> list[Blame]:
 
 
 def _no_party_mit(fact: DeathFact) -> bool:
-    return fact.multiplier is None or fact.multiplier >= 0.995
+    """No party mitigation on the hit. Their own cooldowns are taken out first, so a
+    tank who used Rampart is not counted as covered by the party."""
+    if fact.multiplier is None:
+        return True
+    own = 1.0
+    for mit in _self_mits(fact):
+        if mit.get("pct") is not None and mit["pct"] < 100:
+            own *= mit["pct"] / 100
+    return fact.multiplier / own >= 0.995
 
 
 def _people(names: list[str]) -> str:
@@ -1004,22 +1073,26 @@ def _mark_empty_soaks(judgments: list[Judgment]) -> None:
         down, out, doubled = item.fact.down, item.fact.unsoaked, item.fact.doubled
         if item.cause in {"tower", "prey"} and (down or out or doubled):
             _empty_text(item, down, out, doubled)
-        elif item.cause == "missing" and (down or out):
-            item.went_wrong = _missing_text(item, down, out)
+        elif item.cause == "missing" and (down or out or doubled):
+            item.went_wrong = _missing_text(item, down, out, doubled)
+        elif item.cause == "redirected" and item.fact.off_tank:
+            item.went_wrong = f"{_was(down)} dead, so {item.fact.name} had to take {item.mechanic}."
         elif item.cause == "redirected":
             item.went_wrong = f"{_was(down)} dead, so {item.mechanic} hit the other group."
 
 
-def _missing_text(item: Judgment, down: list[str], out: list[str]) -> str:
+def _missing_text(item: Judgment, down: list[str], out: list[str], doubled: list[str] = ()) -> str:
     """One sentence: how short the stack was, and who was missing from it."""
-    stack = item.went_wrong if item.went_wrong.startswith("The stack") else "The stack was short."
+    stack = item.went_wrong if item.went_wrong.startswith("The ") else "The stack was short."
     stack = stack.rstrip(".")
-    if down and out:
-        why = f"{_people(down + out)} were missing"
+    if sum(map(bool, (down, out, doubled))) > 1:
+        why = f"{_people([*down, *out, *doubled])} were missing"
     elif down:
         why = f"{_was(down)} already dead"
-    else:
+    elif out:
         why = f"{_was(out)} not in it"
+    else:
+        why = f"{_was(doubled)} in another one"
     return f"{stack} because {why}."
 
 
@@ -1086,33 +1159,52 @@ def _overlap_names(item: Judgment, cohort: list[Judgment]) -> list[str]:
     return names
 
 
-def roster_from_meta(meta: dict, pack: FightPack) -> list[tuple[str, str]]:
-    """Player name and role from the report's friendlies."""
-    skip = {"LimitBreak", "NPC"}
-    people = []
-    for actor in meta.get("friendlies") or []:
-        name = str(actor.get("name") or "").strip()
-        job = actor.get("type") or ""
-        if not name or job in skip:
-            continue
-        people.append((name, pack.role_of(job)))
-    return people
+class Roster(list):
+    """The report's players as (name, role) pairs, and who played each pull.
+
+    A substitute, or a player who swapped jobs, has a role only in the pulls
+    they played on that job, so a healer is only blamed for pulls they healed.
+    """
+
+    def __init__(self, rows: list[tuple[str, str]], pulls: dict[int, list[tuple[str, str]]] | None = None):
+        super().__init__(rows)
+        self.pulls = pulls or {}
+
+    def for_pull(self, fight: int) -> list[tuple[str, str]]:
+        return self.pulls.get(fight) or list(self)
 
 
-def _roster_from_facts(facts: list[DeathFact]) -> list[tuple[str, str]]:
+def roster_from_meta(meta: dict, pack: FightPack) -> Roster:
+    """Player name and role from the report's friendlies, per pull."""
+    rows: list[tuple[str, str]] = []
+    for actor in players(meta):
+        row = (actor["name"].strip(), pack.role_of(actor.get("type") or ""))
+        if row not in rows:
+            rows.append(row)
+    pulls: dict[int, list[tuple[str, str]]] = {}
+    for fight in meta.get("fights") or []:
+        fight_id = int(fight["id"])
+        pulls[fight_id] = [
+            (actor["name"].strip(), pack.role_of(actor.get("type") or ""))
+            for actor in pull_players(meta, fight_id)
+        ]
+    return Roster(rows, pulls)
+
+
+def _roster_from_facts(facts: list[DeathFact]) -> Roster:
     seen: dict[str, str] = {}
     for fact in facts:
         seen.setdefault(fact.name, fact.role)
-    return list(seen.items())
+    return Roster(list(seen.items()))
 
 
 def _healers(roster: list[tuple[str, str]]) -> list[str]:
-    return sorted(name for name, role in roster if role == "healer")
+    return sorted({name for name, role in roster if role == "healer"})
 
 
 def _death_owners(item: Judgment) -> list[str]:
     """Who owns this death, without the shares that only sit beside an owner."""
-    owners = [blame.who for blame in item.blames if blame.who not in _CONTEXT_SHARES]
+    owners = [blame.who for blame in item.blames if blame.who not in CONTEXT_SHARES]
     return owners or [item.fact.name]
 
 
@@ -1150,15 +1242,21 @@ def _healers_at(item: Judgment, healers: list[str], latest: dict[tuple[int, str]
 
 
 # Shares that sit beside an owner rather than owning a death.
-_CONTEXT_SHARES = frozenset({"Party mitigation", "Earlier damage", "Earlier mistake"})
+CONTEXT_SHARES = frozenset({"Party mitigation", "Earlier damage", "Earlier mistake"})
+
+
+def _order(item: Judgment) -> tuple:
+    """Time order inside a pull, to the millisecond when the log has it."""
+    fact = item.fact
+    return (fact.fight, fact.phase, fact.t if fact.ts is None else fact.ts / 1000, fact.t, fact.name)
 
 
 def _assign_blame(
-    judgments: list[Judgment], pack: FightPack, roster: list[tuple[str, str]],
+    judgments: list[Judgment], pack: FightPack, roster: Roster,
 ) -> None:
-    healers = _healers(roster)
     latest: dict[tuple[int, str], Judgment] = {}
-    for item in sorted(judgments, key=lambda row: (row.fact.fight, row.fact.phase, row.fact.t)):
+    for item in sorted(judgments, key=_order):
+        healers = _healers(roster.for_pull(item.fact.fight))
         _blame(item, judgments, pack, healers, latest)
         latest[(item.fact.fight, item.fact.name)] = item
 
@@ -1211,7 +1309,7 @@ def _blame(
         item.blames = _group("Prey markers", 2)
     elif item.cause == "clip":
         item.blames = _group("Out of position", 3)
-    elif item.cause == "missing" and (item.fact.down or item.fact.unsoaked):
+    elif item.cause == "missing" and (item.fact.down or item.fact.unsoaked or item.fact.doubled):
         item.owners = _missing_owners(item, latest)
         item.blames = _shares(item.owners)
     elif item.cause == "missing":
@@ -1240,13 +1338,19 @@ def judge_report(
     pack: FightPack,
     roster: list[tuple[str, str]] | None = None,
 ) -> list[Judgment]:
-    judgments = [judge_fact(fact, pack) for fact in facts]
+    verdicts = _cast_verdicts(facts, pack)
+    judgments = [judge_fact(fact, pack, verdicts.get(id(fact))) for fact in facts]
     if not judgments:
         return judgments
     _mark_empty_soaks(judgments)
     firsts = _first_moments(judgments, pack)
     _mark_after_walls(judgments, firsts, pack)
-    people = list(roster) if roster else _roster_from_facts(facts)
+    if roster is None or not len(roster):
+        people = _roster_from_facts(facts)
+    elif isinstance(roster, Roster):
+        people = roster
+    else:
+        people = Roster(list(roster))
     _assign_blame(judgments, pack, people)
     _mark_first_mistakes(judgments, firsts, pack)
     return judgments

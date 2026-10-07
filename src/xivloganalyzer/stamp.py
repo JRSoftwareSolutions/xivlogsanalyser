@@ -21,7 +21,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 STAMP = "analysis.json"
-OUTPUTS = ("facts.json", "judgments.json", "session.html")
+OUTPUTS = ("facts.json", "judgments.json", "session.html", "inputs.json")
 # Written in the report folder but not part of the log.
 NOT_LOG = {STAMP, "brief.txt", "detail.js", *OUTPUTS}
 OUTCOMES = ("raw", "fail", "low", "environment", "unknown")

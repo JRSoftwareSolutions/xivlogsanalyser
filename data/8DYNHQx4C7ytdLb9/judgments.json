@@ -84,6 +84,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 659626,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dimensional-collapse",
     "mechanic": "Dimensional Collapse",
     "outcome": "fail",
@@ -174,6 +177,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 659938,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -298,6 +304,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 659983,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -389,6 +398,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 659983,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -482,6 +494,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 660026,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -563,6 +578,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 661410,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -596,7 +614,7 @@
     "ability": "Eternal Conviction",
     "total": 41854,
     "hp": 34782,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 58131,
     "multiplier": 0.72,
     "absorb": 0,
@@ -644,7 +662,13 @@
         "until": 65.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -663,16 +687,21 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 665061,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 41,854 at 35% HP (34,782 of 99,223). Full HP would have lived. No shield.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 41,854 at 29% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "5 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
+        "who": "Kite Noodle",
         "confidence": 50
       },
       {
@@ -730,7 +759,13 @@
         "until": 65.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -749,25 +784,26 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 665061,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 91,096 at 95% HP (59,240 of 62,101). Full HP would not have been enough. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Loki Doki died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 91,096 at 95% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "5 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
+        "who": "Kite Noodle",
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
@@ -811,6 +847,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 806622,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -877,6 +916,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 818253,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "heavens-stake",
     "mechanic": "Heavens' Stake",
     "outcome": "fail",
@@ -932,7 +974,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -943,18 +987,23 @@
     "dead": [
       "Speed Panda"
     ],
-    "group": [],
+    "group": [
+      "Loki Doki"
+    ],
     "self_hits": [],
+    "ts": 818432,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
     "happened": "Took 104,572 at full HP. A healer takes about 23\u201338k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Loki Doki failed the ice soak.",
-    "cause": "personal",
+    "went_wrong": "The ice had no partner because Speed Panda was already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Loki Doki",
+        "who": "Speed Panda",
         "confidence": 100
       }
     ],
@@ -1025,6 +1074,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 824667,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1034,12 +1086,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
         "who": "Speed Panda",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1117,6 +1165,9 @@
         "amount": 50792
       }
     ],
+    "ts": 824801,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1126,12 +1177,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
         "who": "Speed Panda",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1203,6 +1250,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 824934,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1212,12 +1262,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
         "who": "Speed Panda",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1290,6 +1336,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 825068,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1299,12 +1348,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
         "who": "Speed Panda",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1378,6 +1423,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 825202,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1387,12 +1435,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
         "who": "Speed Panda",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1467,6 +1511,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 825335,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -1476,12 +1523,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
         "who": "Speed Panda",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1550,6 +1593,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 898815,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -1656,6 +1702,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 908842,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -1734,6 +1783,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 909155,
+    "missing": [
+      "ability 25579"
+    ],
+    "off_tank": "",
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -1819,6 +1873,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 911918,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -1962,7 +2019,11 @@
         "until": 68.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -1980,21 +2041,30 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 913923,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 30,564 at 24% HP (23,805 of 99,211). Full HP would have lived. No shield.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigachad died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 30,564 at 24% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 33
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Missing bodies",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -2091,7 +2161,11 @@
         "until": 68.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -2109,21 +2183,30 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 913923,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 85,419 at 60% HP (37,050 of 62,101). Full HP would not have been enough. No shield.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Loki Doki died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 85,419 at 60% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 33
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Missing bodies",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -2232,7 +2315,11 @@
         "until": 68.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -2250,21 +2337,30 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 913923,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 84,540 at 39% HP (26,462 of 68,259). Full HP would not have been enough. No shield.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Speed Panda died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 84,540 at 39% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 33
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Missing bodies",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -2283,7 +2379,7 @@
     "ability": "Eternal Conviction",
     "total": 37863,
     "hp": 6255,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 58431,
     "multiplier": 0.65,
     "absorb": 0,
@@ -2385,7 +2481,11 @@
         "until": 68.2
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -2406,16 +2506,21 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 914056,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "low",
-    "happened": "Took 37,863 at 6% HP (6,255 of 99,223).",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad was already low.",
-    "cause": "low",
+    "outcome": "fail",
+    "happened": "Took 37,863 at 5% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
+        "who": "Kite Noodle",
         "confidence": 33
       },
       {
@@ -2423,7 +2528,7 @@
         "confidence": 33
       },
       {
-        "who": "Earlier damage",
+        "who": "Missing bodies",
         "confidence": 33
       }
     ],
@@ -2524,6 +2629,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 918077,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2582,6 +2690,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 987276,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -2636,6 +2747,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 992129,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2728,6 +2842,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 992129,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2788,6 +2905,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 993129,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2893,6 +3013,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 993129,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3011,6 +3134,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 994129,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3073,6 +3199,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 994129,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3193,6 +3322,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 996129,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3242,30 +3374,42 @@
     "prior_debuffs": [],
     "down": [],
     "unsoaked": [],
-    "doubled": [],
+    "doubled": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "marked": [],
     "dropped_by": [],
     "cohort": [
       "Kitana Kahn"
     ],
     "dead": [],
-    "group": [],
+    "group": [
+      "Kitana Kahn"
+    ],
     "self_hits": [],
+    "ts": 1168195,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
     "happened": "Took 104,450 at full HP. A DPS takes about 26\u201340k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Kitana Kahn failed the ice soak.",
-    "cause": "personal",
+    "went_wrong": "The ice had no partner because Loki Doki and Spring Nymphar were in another one.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 100
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 50
       }
     ],
-    "first": true,
-    "first_mistake": "Kitana Kahn dying to Hiemal Storm at 130.9s into Thordan"
+    "first": false,
+    "first_mistake": "Kitana Kahn dying to Loki Doki and Spring Nymphar's Hiemal Storm at 130.9s into Thordan"
   },
   {
     "fight": 9,
@@ -3305,6 +3449,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1172520,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -3319,7 +3466,7 @@
       }
     ],
     "first": false,
-    "first_mistake": "Kitana Kahn dying to Hiemal Storm at 130.9s into Thordan"
+    "first_mistake": "Kitana Kahn dying to Loki Doki and Spring Nymphar's Hiemal Storm at 130.9s into Thordan"
   },
   {
     "fight": 9,
@@ -3360,6 +3507,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1173099,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -3374,7 +3524,7 @@
       }
     ],
     "first": false,
-    "first_mistake": "Kitana Kahn dying to Hiemal Storm at 130.9s into Thordan"
+    "first_mistake": "Kitana Kahn dying to Loki Doki and Spring Nymphar's Hiemal Storm at 130.9s into Thordan"
   },
   {
     "fight": 9,
@@ -3442,6 +3592,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1174481,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3451,20 +3604,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 33
-      },
-      {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
-    "first_mistake": "Kitana Kahn dying to Hiemal Storm at 130.9s into Thordan"
+    "first_mistake": "Kitana Kahn dying to Loki Doki and Spring Nymphar's Hiemal Storm at 130.9s into Thordan"
   },
   {
     "fight": 9,
@@ -3532,6 +3681,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1174481,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3541,20 +3693,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 33
-      },
-      {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
-    "first_mistake": "Kitana Kahn dying to Hiemal Storm at 130.9s into Thordan"
+    "first_mistake": "Kitana Kahn dying to Loki Doki and Spring Nymphar's Hiemal Storm at 130.9s into Thordan"
   },
   {
     "fight": 9,
@@ -3624,6 +3772,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1174748,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3633,20 +3784,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 33
-      },
-      {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
-    "first_mistake": "Kitana Kahn dying to Hiemal Storm at 130.9s into Thordan"
+    "first_mistake": "Kitana Kahn dying to Loki Doki and Spring Nymphar's Hiemal Storm at 130.9s into Thordan"
   },
   {
     "fight": 9,
@@ -3717,6 +3864,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1174883,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3726,20 +3876,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 33
-      },
-      {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
-    "first_mistake": "Kitana Kahn dying to Hiemal Storm at 130.9s into Thordan"
+    "first_mistake": "Kitana Kahn dying to Loki Doki and Spring Nymphar's Hiemal Storm at 130.9s into Thordan"
   },
   {
     "fight": 9,
@@ -3811,6 +3957,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1175016,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -3820,20 +3969,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 33
-      },
-      {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
-    "first_mistake": "Kitana Kahn dying to Hiemal Storm at 130.9s into Thordan"
+    "first_mistake": "Kitana Kahn dying to Loki Doki and Spring Nymphar's Hiemal Storm at 130.9s into Thordan"
   },
   {
     "fight": 10,
@@ -3873,6 +4018,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 1524191,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -3961,6 +4109,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 1559372,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -4060,6 +4211,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1566140,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4119,6 +4273,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1567140,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4223,6 +4380,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1567140,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4282,6 +4442,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1567140,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4315,7 +4478,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -4441,6 +4604,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1568140,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4559,6 +4725,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1568979,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -4636,6 +4805,9 @@
         "amount": 52396
       }
     ],
+    "ts": 1569379,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -4696,6 +4868,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 1735962,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4772,6 +4947,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1736275,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -4848,6 +5026,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1736275,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -4926,6 +5107,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1736542,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5005,6 +5189,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1736808,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5085,6 +5272,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1736943,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5166,6 +5356,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1737077,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5247,6 +5440,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1737077,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -5346,6 +5542,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 1953820,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -5416,6 +5615,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1956402,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -5475,6 +5677,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1956446,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -5504,7 +5709,7 @@
     "ability": "Environment",
     "total": 0,
     "hp": null,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": null,
     "multiplier": null,
     "absorb": 0,
@@ -5554,6 +5759,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1956848,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -5609,7 +5817,11 @@
         "until": 64.9
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -5628,16 +5840,21 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1958904,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 101,877 at 88% HP (60,291 of 68,218). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kite Noodle died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 101,877 at 88% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
+        "who": "Kitana Kahn",
         "confidence": 33
       },
       {
@@ -5645,7 +5862,7 @@
         "confidence": 33
       },
       {
-        "who": "Party mitigation",
+        "who": "Kiara Blaiddyd",
         "confidence": 33
       }
     ],
@@ -5687,7 +5904,11 @@
         "until": 64.9
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -5706,16 +5927,21 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1958904,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 101,238 at 93% HP (63,295 of 68,259). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Speed Panda died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 101,238 at 93% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
+        "who": "Kitana Kahn",
         "confidence": 33
       },
       {
@@ -5723,7 +5949,7 @@
         "confidence": 33
       },
       {
-        "who": "Party mitigation",
+        "who": "Kiara Blaiddyd",
         "confidence": 33
       }
     ],
@@ -5791,7 +6017,11 @@
         "until": 64.9
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -5812,21 +6042,30 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1959037,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 39,579 at 18% HP (18,048 of 99,211). Full HP would have lived. No shield.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigachad died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 39,579 at 18% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 33
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Kiara Blaiddyd",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -5867,7 +6106,11 @@
         "until": 64.9
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -5889,16 +6132,21 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 1959171,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 97,292 at 82% HP (50,647 of 62,101). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Loki Doki died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 97,292 at 82% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
+        "who": "Kitana Kahn",
         "confidence": 33
       },
       {
@@ -5906,7 +6154,7 @@
         "confidence": 33
       },
       {
-        "who": "Party mitigation",
+        "who": "Kiara Blaiddyd",
         "confidence": 33
       }
     ],
@@ -5949,6 +6197,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 2125001,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -6001,6 +6252,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 2125001,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -6074,6 +6328,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2129347,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -6151,6 +6408,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2129347,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -6230,6 +6490,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2129481,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -6310,6 +6573,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2129615,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -6391,6 +6657,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2129749,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -6472,6 +6741,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2129749,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -6542,6 +6814,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 2172463,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -6654,20 +6929,21 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 2222882,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 94,326 at 77% HP (47,802 of 62,101). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Loki Doki died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 94,326 at 77% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki died to an empty tower.",
+    "cause": "tower",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
+        "who": "Missed soak",
         "confidence": 50
       }
     ],
@@ -6759,25 +7035,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2223016,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 102,965 at full HP. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kitana Kahn died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 102,965 at full HP. A one-shot.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "cause": "tower",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "who": "Missed soak",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -6882,20 +7155,21 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2223150,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 94,644 at 87% HP (53,845 of 61,615). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Spring Nymphar died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 94,644 at 87% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "cause": "tower",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
+        "who": "Missed soak",
         "confidence": 50
       }
     ],
@@ -6966,25 +7240,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2223417,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 100,019 at 96% HP (65,540 of 68,218). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kite Noodle died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 100,019 at 96% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kite Noodle died to an empty tower.",
+    "cause": "tower",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "who": "Missed soak",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -7091,20 +7362,21 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2223551,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 97,075 at 99% HP (67,454 of 68,259). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Speed Panda died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 97,075 at 99% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Speed Panda died to an empty tower.",
+    "cause": "tower",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
+        "who": "Missed soak",
         "confidence": 50
       }
     ],
@@ -7213,20 +7485,21 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2223686,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 99,136 at 79% HP (54,309 of 68,662). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kiara Blaiddyd died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 99,136 at 79% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
+    "cause": "tower",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
+        "who": "Missed soak",
         "confidence": 50
       }
     ],
@@ -7291,6 +7564,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2224594,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7393,6 +7669,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2228594,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7474,6 +7753,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 2297975,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -7528,6 +7810,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2302206,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7621,6 +7906,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2303206,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7715,6 +8003,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2306206,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7784,6 +8075,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2307206,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7932,6 +8226,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2307584,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -8040,6 +8337,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2307671,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dimensional-collapse",
     "mechanic": "Dimensional Collapse",
     "outcome": "fail",
@@ -8069,7 +8369,7 @@
     "ability": "Holy Shield Bash",
     "total": 516870,
     "hp": 109989,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 797639,
     "multiplier": 2.15,
     "absorb": 0,
@@ -8166,10 +8466,13 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2308072,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
-    "happened": "Took 516,870 at full HP. Had Physical Vulnerability Up (115% amp). A one-shot.",
+    "happened": "Took 516,870 at 92% HP. Had Physical Vulnerability Up (115% amp). It would have killed them from full HP.",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
     "went_wrong": "Absolute Gigachad was out of position and clipped Absolute Gigalad.",
     "cause": "marker",
@@ -8243,6 +8546,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2519701,
+    "missing": [
+      "ability 26377"
+    ],
+    "off_tank": "",
     "mechanic_id": "final-chorus",
     "mechanic": "Final Chorus",
     "outcome": "raw",
@@ -8337,6 +8645,11 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 2519656,
+    "missing": [
+      "ability 26377"
+    ],
+    "off_tank": "",
     "mechanic_id": "final-chorus",
     "mechanic": "Final Chorus",
     "outcome": "raw",
@@ -8434,6 +8747,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2519834,
+    "missing": [
+      "ability 26377"
+    ],
+    "off_tank": "",
     "mechanic_id": "final-chorus",
     "mechanic": "Final Chorus",
     "outcome": "raw",
@@ -8510,6 +8828,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2525059,
+    "missing": [
+      "ability 26416"
+    ],
+    "off_tank": "",
     "mechanic_id": "nidhogg-auto",
     "mechanic": "Nidhogg's first auto-attack",
     "outcome": "fail",
@@ -8579,6 +8902,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2525103,
+    "missing": [
+      "ability 26416"
+    ],
+    "off_tank": "",
     "mechanic_id": "nidhogg-auto",
     "mechanic": "Nidhogg's first auto-attack",
     "outcome": "fail",
@@ -8641,6 +8969,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2548466,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": "",
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "fail",
@@ -8710,6 +9043,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2548422,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": "",
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "fail",
@@ -8781,6 +9119,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2556280,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -8853,6 +9196,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2556324,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -8963,6 +9311,9 @@
         "amount": 39303
       }
     ],
+    "ts": 2915386,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
     "outcome": "fail",
@@ -9033,6 +9384,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 2931815,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "raw",
@@ -9110,6 +9464,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2936688,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -9205,6 +9562,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2938071,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9304,6 +9664,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2938071,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9405,6 +9768,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2938339,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9507,6 +9873,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2938473,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9609,6 +9978,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2938473,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9713,6 +10085,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 2938608,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -9777,6 +10152,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 2988458,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9866,6 +10244,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 3110582,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -9961,6 +10342,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3110725,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -10057,6 +10441,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3110849,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -10154,6 +10541,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3110984,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -10252,6 +10642,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3111127,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -10350,6 +10743,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3111127,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -10450,6 +10846,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3111384,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -10551,6 +10950,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3111527,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -10634,6 +11036,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 3282643,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -10719,6 +11124,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3282787,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -10805,6 +11213,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3282913,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -10892,6 +11303,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3283046,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -10980,6 +11394,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3283314,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11069,6 +11486,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3283591,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11147,6 +11567,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3283944,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -11234,6 +11657,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3287513,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -11290,6 +11716,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 3454721,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -11369,6 +11798,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3458995,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11449,6 +11881,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3459270,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11530,6 +11965,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3459396,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11612,6 +12050,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3459673,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11695,6 +12136,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3459798,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -11769,6 +12213,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3462721,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -11848,6 +12295,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3466721,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -11915,6 +12365,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 3503584,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -11977,6 +12430,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3507638,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -12043,6 +12499,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3507638,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -12111,6 +12570,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3509638,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -12180,6 +12642,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3510638,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -12262,6 +12727,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3511638,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -12332,6 +12800,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3511638,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -12404,6 +12875,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3512638,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -12516,6 +12990,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 3638424,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -12606,7 +13083,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12625,21 +13104,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3643458,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 94,221 at full HP. A 8,367 shield and 10% mitigation were not enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kite Noodle died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 94,221 at full HP. A one-shot.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -12719,7 +13199,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12739,21 +13221,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3643587,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 97,293 at 93% HP (63,880 of 68,662). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kiara Blaiddyd died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 97,293 at 93% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -12833,7 +13316,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12854,21 +13339,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3643857,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 91,250 at 84% HP (57,146 of 68,259). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Speed Panda died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 91,250 at 84% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -12948,7 +13434,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -12970,21 +13458,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3644116,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 88,156 at full HP. A 8,165 shield and 10% mitigation were not enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Spring Nymphar died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 88,156 at full HP. A one-shot.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -13054,6 +13543,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3644188,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13148,7 +13640,9 @@
         "until": 67.5
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -13172,21 +13666,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3644258,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 85,511 at full HP. A 8,156 shield and 10% mitigation were not enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Loki Doki died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 85,511 at full HP. A one-shot.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -13258,6 +13753,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3646188,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13316,6 +13814,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 3681946,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -13398,6 +13899,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 3813778,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13486,6 +13990,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3813921,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13575,6 +14082,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3814045,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13665,6 +14175,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3814180,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13756,6 +14269,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3814323,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13848,6 +14364,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3814447,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -13941,6 +14460,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3814580,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14035,6 +14557,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3814723,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14120,6 +14645,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 3997923,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14203,6 +14731,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3998049,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14286,6 +14817,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3998049,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14371,6 +14905,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3998181,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14457,6 +14994,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3998448,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14544,6 +15084,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3998582,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14632,6 +15175,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3998725,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14721,6 +15267,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 3998849,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -14782,6 +15331,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 4082580,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -14859,6 +15411,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4082674,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -14917,6 +15472,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4085653,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -14995,6 +15553,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4087441,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15090,7 +15651,11 @@
         "until": 65.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -15109,25 +15674,26 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4088103,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "low",
-    "happened": "Took 36,798 at 10% HP (9,708 of 99,211).",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigachad was already low.",
-    "cause": "low",
+    "outcome": "fail",
+    "happened": "Took 36,798 at 10% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
+        "who": "Kite Noodle",
+        "confidence": 50
+      },
+      {
         "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Earlier damage",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
@@ -15194,7 +15760,11 @@
         "until": 65.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -15213,25 +15783,26 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4088103,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 91,409 at 70% HP (43,432 of 61,615). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Spring Nymphar died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 91,409 at 70% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
+        "who": "Kite Noodle",
+        "confidence": 50
+      },
+      {
         "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
@@ -15298,7 +15869,11 @@
         "until": 65.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -15319,25 +15894,26 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4088226,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 96,575 at 54% HP (33,065 of 61,737). Full HP would not have been enough. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kitana Kahn died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 96,575 at 54% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
+        "who": "Kite Noodle",
+        "confidence": 50
+      },
+      {
         "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
@@ -15356,7 +15932,7 @@
     "ability": "Eternal Conviction",
     "total": 49351,
     "hp": 10711,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 61689,
     "multiplier": 0.8,
     "absorb": 0,
@@ -15406,7 +15982,11 @@
         "until": 65.6
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -15428,25 +16008,26 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4088503,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "low",
-    "happened": "Took 49,351 at 11% HP (10,711 of 99,223).",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad was already low.",
-    "cause": "low",
+    "outcome": "fail",
+    "happened": "Took 49,351 at 9% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "3 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
+        "who": "Kite Noodle",
+        "confidence": 50
+      },
+      {
         "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Earlier damage",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "first": false,
@@ -15496,6 +16077,11 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 4338526,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": "",
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -15566,6 +16152,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4338571,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": "",
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -15637,6 +16228,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4338615,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": "",
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -15738,6 +16334,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4346386,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -15839,6 +16440,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4346386,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -15939,6 +16545,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4346475,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16038,6 +16649,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4346431,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16139,6 +16755,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4346564,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -16230,6 +16851,11 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 4690444,
+    "missing": [
+      "ability 26384"
+    ],
+    "off_tank": "",
     "mechanic_id": "dark-elusive-jump",
     "mechanic": "Dark Elusive Jump",
     "outcome": "fail",
@@ -16315,6 +16941,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4690488,
+    "missing": [
+      "ability 26384"
+    ],
+    "off_tank": "",
     "mechanic_id": "dark-elusive-jump",
     "mechanic": "Dark Elusive Jump",
     "outcome": "fail",
@@ -16390,6 +17021,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4694371,
+    "missing": [
+      "ability 26390"
+    ],
+    "off_tank": "",
     "mechanic_id": "lashing-wheel",
     "mechanic": "Lashing Wheel",
     "outcome": "fail",
@@ -16454,6 +17090,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4696953,
+    "missing": [
+      "ability 26385"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16547,6 +17188,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4698694,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "low",
@@ -16645,6 +17291,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4698738,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -16744,6 +17395,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4698783,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "low",
@@ -16844,6 +17500,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 4698827,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "low",
@@ -16902,6 +17563,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5012371,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -16998,6 +17662,9 @@
       "Kitana Kahn"
     ],
     "self_hits": [],
+    "ts": 5012416,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -17053,6 +17720,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5013933,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -17113,6 +17783,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5015933,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -17186,6 +17859,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5016933,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -17248,6 +17924,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5017933,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -17310,6 +17989,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5017933,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -17374,6 +18056,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5022933,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -17481,6 +18166,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5127787,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
     "outcome": "fail",
@@ -17560,6 +18248,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5192949,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -17645,6 +18336,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5193084,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -17731,6 +18425,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5193217,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -17818,6 +18515,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5193350,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -17906,6 +18606,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5193484,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -17984,6 +18687,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5193766,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18073,6 +18779,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5193751,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -18152,6 +18861,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5200766,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18220,6 +18932,11 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5450638,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": "",
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -18294,6 +19011,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5450727,
+    "missing": [
+      "ability 26388"
+    ],
+    "off_tank": "",
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -18377,6 +19099,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5457175,
+    "missing": [
+      "ability 26390"
+    ],
+    "off_tank": "",
     "mechanic_id": "lashing-wheel",
     "mechanic": "Lashing Wheel",
     "outcome": "fail",
@@ -18481,6 +19208,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5458552,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -18582,6 +19314,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5458552,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -18692,6 +19429,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5458596,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -18791,6 +19533,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5458596,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -18892,6 +19639,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5458685,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -18952,6 +19704,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5623113,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19020,6 +19775,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5625853,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
@@ -19075,6 +19833,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5626113,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19135,6 +19896,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5628113,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19196,6 +19960,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5629113,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19272,6 +20039,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5629587,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -19331,6 +20101,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5631113,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19395,6 +20168,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5636113,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19463,6 +20239,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19515,6 +20294,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19579,6 +20361,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19643,6 +20428,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19707,6 +20495,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 5910667,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19778,6 +20569,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5916494,
+    "missing": [
+      "ability 26385"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -19848,6 +20644,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5916493,
+    "missing": [
+      "ability 26385"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -19924,6 +20725,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 5918267,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -19984,6 +20790,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 6097592,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -20048,6 +20857,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6097892,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -20107,6 +20919,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6098337,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -20167,6 +20982,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6098381,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -20247,6 +21065,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6099592,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -20294,7 +21115,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -20313,24 +21139,29 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6103448,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 104,966 at 73% HP (50,052 of 68,662). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kiara Blaiddyd died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 104,966 at 73% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "4 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
-      {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
       {
         "who": "Missing bodies",
         "confidence": 33
       },
       {
-        "who": "Party mitigation",
+        "who": "Kitana Kahn",
+        "confidence": 33
+      },
+      {
+        "who": "Speed Panda",
         "confidence": 33
       }
     ],
@@ -20364,7 +21195,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -20383,24 +21219,29 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6103448,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 92,421 at 71% HP (44,387 of 62,101). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Loki Doki died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 92,421 at 71% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "4 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
-      {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
       {
         "who": "Missing bodies",
         "confidence": 33
       },
       {
-        "who": "Party mitigation",
+        "who": "Kitana Kahn",
+        "confidence": 33
+      },
+      {
+        "who": "Speed Panda",
         "confidence": 33
       }
     ],
@@ -20451,6 +21292,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6103592,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -20523,6 +21367,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 6277193,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -20589,6 +21436,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 6294086,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "burns",
     "mechanic": "Burns",
     "outcome": "fail",
@@ -20661,6 +21511,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6308714,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20724,6 +21577,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6308774,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -20802,6 +21658,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6308849,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20877,6 +21736,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6308983,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -20953,6 +21815,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6309118,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21030,6 +21895,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6309384,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -21098,6 +21966,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6313774,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -21190,6 +22061,9 @@
       "Kitana Kahn"
     ],
     "self_hits": [],
+    "ts": 6452048,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
@@ -21287,6 +22161,11 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 6569695,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -21403,6 +22282,11 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 6569695,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -21523,6 +22407,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6569784,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -21626,6 +22515,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6569828,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -21715,6 +22609,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6569740,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -21824,6 +22723,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6569784,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -21928,6 +22832,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6569917,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -22022,6 +22931,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6575410,
+    "missing": [
+      "ability 26378"
+    ],
+    "off_tank": "",
     "mechanic_id": "geirskogul",
     "mechanic": "Geirskogul",
     "outcome": "fail",
@@ -22074,6 +22988,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 6735100,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -22153,6 +23070,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6736752,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -22233,6 +23153,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6736886,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -22314,6 +23237,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6737020,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -22396,6 +23322,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6737288,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -22479,6 +23408,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6737422,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -22562,6 +23494,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6741454,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -22646,6 +23581,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 6741588,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -22717,6 +23655,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7537417,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -22775,6 +23716,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 7537329,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -22845,6 +23789,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7537373,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -22901,6 +23848,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7540091,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -22958,6 +23908,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7541772,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23049,6 +24002,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7543567,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -23136,6 +24092,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7543567,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -23225,6 +24184,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7543835,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -23319,6 +24281,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 7711135,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -23407,6 +24372,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7711269,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -23496,6 +24464,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7711403,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -23586,6 +24557,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7711537,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -23677,6 +24651,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7711671,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -23769,6 +24746,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7711804,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -23862,6 +24842,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7711939,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -23956,6 +24939,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7712072,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -24014,6 +25000,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 7749413,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -24071,6 +25060,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 7794666,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -24133,6 +25125,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7799203,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24188,7 +25183,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -24207,25 +25204,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7799748,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 95,450 at 51% HP (31,515 of 61,737). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kitana Kahn died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 95,450 at 51% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "who": "Missing bodies",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -24266,7 +25260,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -24286,25 +25282,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7799881,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 98,016 at 65% HP (44,032 of 68,218). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kite Noodle died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 98,016 at 65% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "who": "Missing bodies",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -24323,7 +25316,7 @@
     "ability": "Eternal Conviction",
     "total": 42296,
     "hp": 32644,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 58745,
     "multiplier": 0.72,
     "absorb": 0,
@@ -24371,7 +25364,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -24392,20 +25387,21 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7800016,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 42,296 at 33% HP (32,644 of 99,223). Full HP would have lived. No shield.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 42,296 at 27% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
+        "who": "Missing bodies",
         "confidence": 50
       }
     ],
@@ -24485,6 +25481,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7800203,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24540,7 +25539,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -24563,25 +25564,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7800283,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 98,995 at 73% HP (44,880 of 61,615). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Spring Nymphar died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 98,995 at 73% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "who": "Missing bodies",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -24624,7 +25622,9 @@
         "until": 65.8
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -24648,25 +25648,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7800416,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 90,064 at 86% HP (53,218 of 62,101). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Loki Doki died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 90,064 at 86% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Party mitigation",
-        "confidence": 33
+        "who": "Missing bodies",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -24724,6 +25721,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 7948844,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -24794,6 +25794,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7949157,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -24849,6 +25852,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7952104,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24908,6 +25914,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7952104,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24969,6 +25978,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7955104,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25030,6 +26042,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7955104,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25093,6 +26108,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7957104,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25157,6 +26175,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 7958104,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25242,6 +26263,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 8118420,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -25323,6 +26347,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 8118420,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -25419,6 +26446,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8118553,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -25516,6 +26546,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8118822,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -25602,6 +26635,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8118955,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -25689,6 +26725,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8119089,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -25776,6 +26815,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8119089,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -25877,6 +26919,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8119356,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -25977,6 +27022,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 8213252,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -26045,7 +27093,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -26064,21 +27114,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8218293,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 104,995 at 81% HP (54,949 of 68,218). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kite Noodle died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 104,995 at 81% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -26136,7 +27187,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -26156,21 +27209,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8218427,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 96,285 at 84% HP (57,795 of 68,662). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kiara Blaiddyd died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 96,285 at 84% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -26241,7 +27295,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -26262,21 +27318,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8218560,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 45,265 at 31% HP (30,476 of 99,211). Full HP would have lived. No shield.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigachad died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 45,265 at 31% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -26334,7 +27391,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -26356,21 +27415,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8218694,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 91,720 at 81% HP (49,956 of 61,737). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Kitana Kahn died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 91,720 at 81% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -26428,7 +27488,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -26451,21 +27513,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8218828,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 99,196 at 88% HP (54,055 of 61,615). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Spring Nymphar died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 99,196 at 88% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -26484,7 +27547,7 @@
     "ability": "Eternal Conviction",
     "total": 45794,
     "hp": 6108,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 60256,
     "multiplier": 0.76,
     "absorb": 0,
@@ -26524,7 +27587,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -26548,25 +27613,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8218961,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "low",
-    "happened": "Took 45,794 at 6% HP (6,108 of 99,223).",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad was already low.",
-    "cause": "low",
+    "outcome": "fail",
+    "happened": "Took 45,794 at 5% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Earlier damage",
-        "confidence": 33
+        "confidence": 100
       }
     ],
     "first": false,
@@ -26624,7 +27686,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -26649,21 +27713,22 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8219095,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 99,722 at 64% HP (43,509 of 68,259). Full HP would not have been enough.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Speed Panda died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 99,722 at 64% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -26721,6 +27786,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 8360572,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -26776,6 +27844,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 8373084,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "raw",
@@ -26838,6 +27909,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8377568,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -26914,6 +27988,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8379280,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -26991,6 +28068,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8379548,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -27069,6 +28149,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8379682,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -27148,6 +28231,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8379816,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -27242,6 +28328,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8379949,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
@@ -27321,6 +28410,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8384125,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -27350,7 +28442,7 @@
     "ability": "Holy Shield Bash",
     "total": 305822,
     "hp": 119067,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 471948,
     "multiplier": 2.15,
     "absorb": 0,
@@ -27441,6 +28533,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 8463502,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -27535,6 +28630,11 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 8638064,
+    "missing": [
+      "ability 26385"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -27620,6 +28720,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8652354,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -27718,6 +28821,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8652510,
+    "missing": [
+      "ability 26382"
+    ],
+    "off_tank": "",
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -27836,6 +28944,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8652554,
+    "missing": [
+      "ability 26382"
+    ],
+    "off_tank": "",
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -27955,6 +29068,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8652598,
+    "missing": [
+      "ability 26382"
+    ],
+    "off_tank": "",
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -28064,6 +29182,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8652687,
+    "missing": [
+      "ability 26382"
+    ],
+    "off_tank": "",
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -28131,6 +29254,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8655535,
+    "missing": [
+      "ability 26378"
+    ],
+    "off_tank": "",
     "mechanic_id": "geirskogul",
     "mechanic": "Geirskogul",
     "outcome": "fail",
@@ -28206,6 +29334,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8658354,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -28289,6 +29420,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 8908951,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -28374,6 +29508,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8913158,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -28456,6 +29593,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8914951,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -28531,6 +29671,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8917951,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -28606,6 +29749,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8917951,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -28683,6 +29829,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8918951,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -28761,6 +29910,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8919951,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -28840,6 +29992,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 8921951,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -28932,6 +30087,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 8991773,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -29035,6 +30193,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9001783,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -29139,6 +30300,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9001828,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -29217,6 +30381,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9003777,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -29277,6 +30444,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9004777,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -29358,7 +30528,12 @@
         "until": 64.7
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -29377,21 +30552,30 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9006944,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 36,961 at 22% HP (21,919 of 99,211). Full HP would have lived. No shield.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigachad died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 36,961 at 22% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "4 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 33
       },
       {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Missing bodies",
+        "confidence": 33
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 33
       }
     ],
     "first": false,
@@ -29410,7 +30594,7 @@
     "ability": "Eternal Conviction",
     "total": 41524,
     "hp": 9119,
-    "max_hp": 99223,
+    "max_hp": 119068,
     "unmitigated": 57673,
     "multiplier": 0.72,
     "absorb": 0,
@@ -29458,7 +30642,12 @@
         "until": 64.7
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -29477,24 +30666,29 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9006944,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "low",
-    "happened": "Took 41,524 at 9% HP (9,119 of 99,223).",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Absolute Gigalad was already low.",
-    "cause": "low",
+    "outcome": "fail",
+    "happened": "Took 41,524 at 8% HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "4 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
+        "who": "Kite Noodle",
         "confidence": 33
       },
       {
-        "who": "Spring Nymphar",
+        "who": "Missing bodies",
         "confidence": 33
       },
       {
-        "who": "Earlier damage",
+        "who": "Speed Panda",
         "confidence": 33
       }
     ],
@@ -29536,7 +30730,12 @@
         "until": 64.7
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -29558,24 +30757,29 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9006945,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "raw",
-    "happened": "Took 90,690 at 69% HP (43,095 of 62,101). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Loki Doki died to the real hit.",
-    "cause": "resolve",
+    "outcome": "fail",
+    "happened": "Took 90,690 at 69% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "4 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
+        "who": "Kite Noodle",
         "confidence": 33
       },
       {
-        "who": "Spring Nymphar",
+        "who": "Missing bodies",
         "confidence": 33
       },
       {
-        "who": "Party mitigation",
+        "who": "Speed Panda",
         "confidence": 33
       }
     ],
@@ -29617,7 +30821,12 @@
         "until": 64.7
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -29636,24 +30845,29 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9006944,
+    "missing": [
+      "ability 25567"
+    ],
+    "off_tank": "",
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
-    "outcome": "low",
-    "happened": "Took 91,446 at 21% HP (12,939 of 61,615).",
-    "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
-    "went_wrong": "Spring Nymphar was already low.",
-    "cause": "low",
+    "outcome": "fail",
+    "happened": "Took 91,446 at 21% HP. It would have killed them from full HP.",
+    "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "4 players were already dead, so a tower was empty.",
+    "cause": "empty",
     "blames": [
       {
-        "who": "Loki Doki",
+        "who": "Kite Noodle",
         "confidence": 33
       },
       {
-        "who": "Spring Nymphar",
+        "who": "Missing bodies",
         "confidence": 33
       },
       {
-        "who": "Earlier damage",
+        "who": "Speed Panda",
         "confidence": 33
       }
     ],
@@ -29698,6 +30912,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 9042211,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -29791,6 +31008,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9263279,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -29883,6 +31105,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9263235,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -29973,6 +31200,11 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 9263190,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -30086,6 +31318,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9263324,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -30181,6 +31418,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9263368,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -30277,6 +31519,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9263457,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -30386,6 +31633,11 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9263501,
+    "missing": [
+      "ability 26395"
+    ],
+    "off_tank": "",
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -30461,6 +31713,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9267613,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -30531,6 +31786,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 9391648,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -30630,6 +31888,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9399395,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -30734,6 +31995,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9401395,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -30838,6 +32102,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9402395,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -30897,6 +32164,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9402395,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -30973,6 +32243,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9403395,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31105,6 +32378,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9404204,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -31236,6 +32512,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9404159,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -31315,6 +32594,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9406395,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31383,6 +32665,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 9541722,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31451,6 +32736,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9542004,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -31506,6 +32794,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9545722,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31565,6 +32856,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9545722,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31626,6 +32920,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9546722,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31688,6 +32985,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9548722,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31750,6 +33050,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9548722,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31814,6 +33117,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9553722,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -31880,6 +33186,9 @@
         "amount": 51552
       }
     ],
+    "ts": 9714913,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "frostbite",
     "mechanic": "Frostbite",
     "outcome": "fail",
@@ -31956,6 +33265,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9725116,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -32036,6 +33348,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9725116,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -32118,6 +33433,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9725382,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -32200,6 +33518,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9725382,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -32284,6 +33605,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9725650,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -32369,6 +33693,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9725785,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -32455,6 +33782,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9725919,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
@@ -32523,6 +33853,9 @@
     "dead": [],
     "group": [],
     "self_hits": [],
+    "ts": 9863981,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -32611,6 +33944,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9864070,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -32682,6 +34018,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9866643,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -32750,6 +34089,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9867643,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -32819,6 +34161,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9870643,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -32889,6 +34234,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9872643,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -32960,6 +34308,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9874643,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -33032,6 +34383,9 @@
     ],
     "group": [],
     "self_hits": [],
+    "ts": 9875643,
+    "missing": [],
+    "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
