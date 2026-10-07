@@ -548,11 +548,6 @@ function stillView(frame) {
         const len = 14 / scale + 5;
         grow(player.x + player.face[0] * len, player.y + player.face[1] * len);
       }
-      if (player.dead || player.failed) {
-        const wide = String(player.name || "").length * 3.2 / scale;
-        grow(Number(player.x) - wide, Number(player.y) + 24 / scale);
-        grow(Number(player.x) + wide, player.y);
-      }
     }
     for (const mark of frame.marks || []) {
       const bulge = mark.kind === "comet" ? 16 : mark.kind === "gaze" || mark.kind === "tower" || mark.kind === "orb" ? 12 : 0;
@@ -604,11 +599,6 @@ function stillSvg(frame) {
       const [x, y] = pt(player.x, player.y);
       parts.push(facingArrow(x, y, player.face, scale));
     }
-  }
-  for (const player of frame.players || []) {
-    if (!marked(player)) continue;
-    const [x, y] = pt(player.x, player.y);
-    parts.push(`<text x="${x}" y="${y + 24}" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412" stroke="#fffcf7" stroke-width="3" paint-order="stroke">${esc(player.name)}</text>`);
   }
   return `<svg viewBox="0 0 ${size} ${size}" role="img" aria-label="${esc(frame.caption)}">${parts.join("")}</svg>`;
 }
