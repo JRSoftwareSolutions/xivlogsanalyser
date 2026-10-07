@@ -190,6 +190,8 @@
   .trend-reach {
     display: grid; grid-template-columns: 12.5rem minmax(0, 1fr);
   }
+  .trend-reach .reach-names { align-self: start; }
+  .trend-scroll { overflow-x: auto; min-width: 0; }
   .trend-plot { height: 100%; }
   .trend-cols { position: relative; z-index: 1; display: flex; height: 100%; }
   .trend-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 3; overflow: visible; }
@@ -200,16 +202,15 @@
   }
   button.trend-col {
     font: inherit; color: inherit; background: transparent; border: 0; border-radius: 8px;
-    cursor: pointer; padding: 0 4px; height: 100%; min-width: 0; flex: 1 1 0;
+    cursor: pointer; padding: 0; height: 100%; flex: 0 0 auto;
     display: flex; align-items: flex-end;
   }
   button.trend-col:hover, button.trend-col:focus-visible { background: rgba(28, 25, 21, 0.05); }
-  .trend-bars { display: flex; align-items: flex-end; width: 100%; height: 100%; gap: 1px; }
-  .trend-bars i { flex: 1 1 0; min-width: 0; min-height: 2px; border-radius: 2px 2px 0 0; display: block; }
-  .trend-footer { display: grid; grid-template-columns: 12.5rem minmax(0, 1fr); margin-top: 6px; }
-  .trend-axis { display: flex; }
+  .trend-bars { display: flex; align-items: flex-end; width: 100%; height: 100%; gap: 2px; }
+  .trend-bars i { flex: 0 0 9px; width: 9px; min-height: 2px; border-radius: 2px 2px 0 0; display: block; }
+  .trend-axis { display: flex; margin-top: 6px; }
   .trend-axis > span {
-    flex: 1; text-align: center; font-size: 12px; line-height: 1.25; color: var(--muted); padding: 0 4px;
+    flex: 0 0 auto; text-align: center; font-size: 12px; line-height: 1.25; color: var(--muted); padding: 0 4px;
   }
   .trend-axis > span b { display: block; color: var(--ink); font-size: 13px; font-weight: 650; }
   .trend-axis > span span { display: block; }
@@ -278,7 +279,7 @@
     .stats, .cols, header, .mech-head { display: block; }
     .reach { grid-template-columns: 9.5rem minmax(0, 1fr); height: 420px; }
     .reach.mini { grid-template-columns: 8.5rem minmax(0, 1fr); }
-    .trend-reach, .trend-footer { grid-template-columns: 8.5rem minmax(0, 1fr); }
+    .trend-reach { grid-template-columns: 8.5rem minmax(0, 1fr); }
     .reach-names span { font-size: 11px; }
   }
 </style>
@@ -777,22 +778,40 @@ function paceText(sessions) {
   }
   return `Furthest so far is ${name(peak)} on ${when(peak)}. ${when(last)} reached ${name(last)}.`;
 }
-function pullX(sessionIndex, pullIndex, count, sessionCount) {
-  const t = count <= 1 ? 0.5 : pullIndex / (count - 1);
-  return ((sessionIndex + t) / sessionCount) * 100;
+const TREND_BAR = 9;
+const TREND_GAP = 2;
+function barsWidth(count) {
+  if (count <= 0) return TREND_BAR;
+  return count * TREND_BAR + Math.max(0, count - 1) * TREND_GAP;
 }
-function trendLine(sessions, scale) {
-  const n = Math.max(sessions.length, 1);
+function trendSpans(sessions) {
+  const widths = sessions.map(session => barsWidth(overviewOf(session).pulls.length));
+  const total = Math.max(1, widths.reduce((sum, width) => sum + width, 0));
+  let used = 0;
+  const spans = widths.map(width => {
+    const start = used / total * 100;
+    used += width;
+    return { width, start, end: used / total * 100 };
+  });
+  return { total, spans };
+}
+function barX(span, pullIndex, count) {
+  if (count <= 1) return (span.start + span.end) / 2;
+  const center = pullIndex * (TREND_BAR + TREND_GAP) + TREND_BAR / 2;
+  return span.start + (center / barsWidth(count)) * (span.end - span.start);
+}
+function trendLine(sessions, scale, spans) {
   const yOf = reached => (1 - reached / scale) * 100;
   const vertices = [];
   let carry = null;
   sessions.forEach((session, index) => {
     const pulls = overviewOf(session).pulls;
-    if (pulls.length < 2) return;
-    const xs = pulls.map((pull, pullIndex) => pullX(index, pullIndex, pulls.length, n));
+    const span = spans[index];
+    if (pulls.length < 2 || !span) return;
+    const xs = pulls.map((pull, pullIndex) => barX(span, pullIndex, pulls.length));
     const ys = pulls.map(pull => pull.reached || 0);
-    const x0 = xs[0];
-    const x1 = xs[xs.length - 1];
+    const x0 = span.start;
+    const x1 = span.end;
     let y0;
     let slope;
     if (carry == null) {
@@ -841,7 +860,7 @@ function trendChart(sessions) {
     const title = mark.goal ? ` title="Next mechanic"` : "";
     return `<i class="${cls}"${title} style="bottom:${(mark.at / scale) * 100}%"></i>`;
   }).join("");
-  const n = Math.max(sessions.length, 1);
+  const { total, spans } = trendSpans(sessions);
   const cols = sessions.map((session, index) => {
     const pulls = overviewOf(session).pulls;
     const far = furthestPull(pulls);
@@ -853,22 +872,22 @@ function trendChart(sessions) {
     const mech = far ? furthestName(far) : "No pulls";
     const where = far ? `${mech} · ${far.phaseName} ${far.bossPct}%` : mech;
     const title = `${when} · ${where}`;
-    return `<button type="button" class="trend-col" data-go="s/${session.code}" title="${esc(title)}" aria-label="${esc(title)}"><span class="trend-bars">${bars}</span></button>`;
+    const width = spans[index].width;
+    return `<button type="button" class="trend-col" data-go="s/${session.code}" title="${esc(title)}" aria-label="${esc(title)}" style="width:${width}px"><span class="trend-bars">${bars}</span></button>`;
   }).join("");
   const dots = sessions.map((session, index) => {
     const pulls = overviewOf(session).pulls;
     const far = furthestPull(pulls);
     if (!far) return "";
-    const left = pullX(index, Math.max(0, pulls.indexOf(far)), pulls.length, n);
+    const left = barX(spans[index], Math.max(0, pulls.indexOf(far)), pulls.length);
     const bottom = ((far.reached || 0) / scale) * 100;
     return `<i class="trend-dot" style="left:${left}%;bottom:${bottom}%"></i>`;
   }).join("");
-  const line = trendLine(sessions, scale);
-  const showMech = sessions.length <= 8;
-  const axis = sessions.map(session => {
+  const line = trendLine(sessions, scale, spans);
+  const axis = sessions.map((session, index) => {
     const far = furthestPull(overviewOf(session).pulls);
-    const mech = showMech && far ? `<span>${esc(furthestName(far))}</span>` : "";
-    return `<span><b>${esc(shortWhen(session, sessions))}</b>${mech}</span>`;
+    const mech = far ? `<span>${esc(furthestName(far))}</span>` : "";
+    return `<span style="width:${spans[index].width}px"><b>${esc(shortWhen(session, sessions))}</b>${mech}</span>`;
   }).join("");
   const seen = [];
   for (const session of sessions) {
@@ -876,8 +895,7 @@ function trendChart(sessions) {
       if (!seen.some(row => row.phase === pull.phase)) seen.push(pull);
     }
   }
-  return `<div class="trend-reach" style="height:${TREND_H}px"><div class="reach-names">${names}</div><div class="trend-plot">${lines}${line}${dots}<div class="trend-cols">${cols}</div></div></div>
-    <div class="trend-footer"><span></span><div class="trend-axis">${axis}</div></div>
+  return `<div class="trend-reach"><div class="reach-names" style="height:${TREND_H}px">${names}</div><div class="trend-scroll" data-trend="${esc(sessions.map(session => session.code).join("-"))}"><div class="trend-sheet" style="width:${total}px"><div class="trend-plot" style="height:${TREND_H}px">${lines}${line}${dots}<div class="trend-cols">${cols}</div></div><div class="trend-axis">${axis}</div></div></div></div>
     ${legend(seen)}`;
 }
 function trendSection() {
@@ -899,7 +917,7 @@ function trendSection() {
     return `<section>
       <h2>General trend</h2>
       ${heading}
-      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. Each night has its own trend, starting where the previous night ended.</p>
+      <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. Each night has its own trend, starting where the previous night ended. Scroll sideways to move through the pulls.</p>
       ${trendChart(group.sessions)}
     </section>`;
   }).join("");
@@ -1214,6 +1232,7 @@ async function render() {
   else if (where.view === "fight") app.innerHTML = renderFight(where.id);
   else if (where.view === "mechanic") app.innerHTML = renderMechanic(where.id);
   else app.innerHTML = renderAll();
+  placeTrendScroll();
   paintActive();
   const stamp = SESSION ? [SESSION.dayLabel, SESSION.timeLabel].filter(Boolean).join(" ") : "Sessions";
   document.title = !SESSION
@@ -1273,6 +1292,19 @@ document.body.addEventListener("input", event => {
     fold.open = savedOpen(fold, active);
   }
 });
+const trendScrollLeft = {};
+function placeTrendScroll() {
+  for (const node of document.querySelectorAll(".trend-scroll")) {
+    const key = node.dataset.trend || "";
+    const saved = trendScrollLeft[key];
+    node.scrollLeft = saved == null ? node.scrollWidth : saved;
+  }
+}
+document.body.addEventListener("scroll", event => {
+  const node = event.target;
+  if (!node.classList || !node.classList.contains("trend-scroll")) return;
+  trendScrollLeft[node.dataset.trend || ""] = node.scrollLeft;
+}, true);
 document.body.addEventListener("toggle", event => {
   const node = event.target;
   if (!node.classList || !node.classList.contains("session-preview")) return;
