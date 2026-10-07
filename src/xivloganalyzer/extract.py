@@ -307,7 +307,7 @@ def _fact(
     total, hp, unmit, mult, absorb, stack, buffs, boss_pct, party, mitigations,
 ) -> DeathFact:
     if timestamp is None:
-        t = _clock_seconds(when)
+        t = round(_clock_seconds(when) - (start - fight["start_time"]) / 1000, 1)
     else:
         t = round((timestamp - start) / 1000, 1)
     return DeathFact(
