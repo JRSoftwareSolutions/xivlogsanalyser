@@ -147,8 +147,22 @@
   .tag.fail { background: var(--fail-bg); color: var(--fail); }
   .tag.low, .tag.env, .tag.unknown { background: var(--env-bg); color: var(--env); }
   .tag.ok { background: var(--ok-bg); color: var(--ok); }
-  .mech, .pull-block { border-top: 1px solid var(--line); padding: 12px 0; }
-  .mech:first-of-type, .pull-block:first-of-type { border-top: 0; padding-top: 0; }
+  details.pull-review { border-top: 1px solid var(--line); }
+  details.pull-review:first-of-type { border-top: 0; }
+  .review-title { font-weight: 650; white-space: nowrap; }
+  .review-who {
+    flex: 1; min-width: 0; color: var(--fail); font-size: 14px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .review-body { padding: 0 4px 12px 18px; }
+  .review-open { margin: 0 0 4px; }
+  .tally { list-style: none; margin: 0; padding: 0; }
+  .tally li { border-top: 1px solid var(--line); padding: 10px 0; }
+  .tally li:first-child { border-top: 0; padding-top: 2px; }
+  .tally-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+  .tally-head + .seats { margin-top: 6px; }
+  .tally-head .component-name { margin: 0; }
+  .tally-count { font-variant-numeric: tabular-nums; }
   .mech-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
   .death { padding: 10px 0 4px; }
   .death-body { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 16px; align-items: start; }
@@ -194,20 +208,23 @@
     display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start;
     border-top: 1px solid var(--line);
   }
-  details.session-preview > summary {
+  details.session-preview > summary, details.pull-review > summary {
     display: flex; align-items: center; gap: 8px; cursor: pointer; list-style: none;
     padding: 10px 4px; border-radius: 8px;
   }
-  details.session-preview > summary::-webkit-details-marker { display: none; }
-  details.session-preview > summary::marker { content: ""; }
-  details.session-preview > summary::before {
+  details.session-preview > summary::-webkit-details-marker,
+  details.pull-review > summary::-webkit-details-marker { display: none; }
+  details.session-preview > summary::marker, details.pull-review > summary::marker { content: ""; }
+  details.session-preview > summary::before, details.pull-review > summary::before {
     content: ""; flex: 0 0 auto; width: 0; height: 0;
     border-style: solid; border-width: 4px 0 4px 5px;
     border-color: transparent transparent transparent var(--muted);
   }
-  details.session-preview[open] > summary::before { transform: rotate(90deg); }
-  details.session-preview > summary:hover { background: var(--hover); }
-  details.session-preview > summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  details.session-preview[open] > summary::before,
+  details.pull-review[open] > summary::before { transform: rotate(90deg); }
+  details.session-preview > summary:hover, details.pull-review > summary:hover { background: var(--hover); }
+  details.session-preview > summary:focus-visible,
+  details.pull-review > summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   .preview-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .preview-title { font-size: 16px; font-weight: 650; }
   .preview-body { padding: 2px 8px 12px 18px; }
@@ -1382,18 +1399,11 @@ function renderPull(id) {
   const c = counts(pull.deaths);
   const cards = pull.cards || [];
   const blocks = cards.map(card => {
-    const failed = new Set();
-    for (const part of card.parts) {
-      for (const seat of part.seats) if (!seat.passed) failed.add(seat.name);
-    }
-    const stamp = failed.size
-      ? `<span class="tag fail">${failed.size === 1 ? "1 player failed" : failed.size + " players failed"}</span>`
-      : `<span class="tag ok">Clear</span>`;
     const parts = card.parts.map(part => componentBlock(pull, card, part)).join("");
     return `<section>
       <div class="mech-head">
-        <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${card.id}">${card.name}</button></h3>
-        ${stamp}
+        <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${card.id}">${esc(card.name)}</button></h3>
+        ${failStamp(failedNames(card))}
       </div>
       ${parts}
     </section>`;
@@ -1420,53 +1430,123 @@ function renderPull(id) {
     ${rest}
     ${packets}`;
 }
+function failedNames(card) {
+  const failed = new Set();
+  for (const part of card.parts) {
+    for (const seat of part.seats) if (!seat.passed) failed.add(seat.name);
+  }
+  return failed;
+}
+function failStamp(failed) {
+  return failed.size
+    ? `<span class="tag fail">${failed.size === 1 ? "1 player failed" : failed.size + " players failed"}</span>`
+    : `<span class="tag ok">Clear</span>`;
+}
+function plural(count, word) {
+  return `${count} ${word}${count === 1 ? "" : "s"}`;
+}
+function cardOf(pull, mechId) {
+  return (pull.cards || []).find(card => card.id === mechId);
+}
+function mechanicTally(mech, reached) {
+  return (mech.parts || []).map(part => {
+    let pulls = 0;
+    let failedPulls = 0;
+    const misses = new Map();
+    for (const pull of reached) {
+      const seen = cardOf(pull, mech.id).parts.find(item => item.id === part.id);
+      if (!seen) continue;
+      pulls += 1;
+      const failed = seen.seats.filter(seat => !seat.passed);
+      if (failed.length) failedPulls += 1;
+      for (const seat of failed) {
+        const miss = misses.get(seat.name) || { name: seat.name, job: seat.job, count: 0 };
+        miss.count += 1;
+        misses.set(seat.name, miss);
+      }
+    }
+    const ranked = [...misses.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+    return { part, pulls, failedPulls, misses: ranked };
+  }).filter(row => row.pulls);
+}
+function tallySection(rows) {
+  if (!rows.length) return "";
+  const lines = rows.map(row => {
+    const outcome = row.failedPulls
+      ? `failed on ${row.failedPulls} of ${plural(row.pulls, "pull")}`
+      : `clean on ${row.pulls === 1 ? "the 1 pull" : `all ${row.pulls} pulls`}`;
+    const chips = row.misses.map(miss => {
+      const title = `${miss.name} failed ${row.part.name} on ${plural(miss.count, "pull")}`;
+      return `<span class="seat fail" title="${esc(title)}">${jobMark(miss.job)}<span class="seat-name">${esc(miss.name)}</span><b class="tally-count">×${miss.count}</b><span class="sr">${esc(title)}</span></span>`;
+    }).join("");
+    return `<li>
+      <div class="tally-head"><span class="component-name">${esc(row.part.name)}</span><span class="meta">${outcome}</span></div>
+      ${chips ? `<div class="seats">${chips}</div>` : ""}
+    </li>`;
+  }).join("");
+  return `<section><h2>Who failed it</h2><ul class="tally">${lines}</ul></section>`;
+}
+const reviewOpen = {};
+function reviewWho(card) {
+  const solo = card.parts.length === 1;
+  const bits = [];
+  for (const part of card.parts) {
+    for (const seat of part.seats) {
+      if (!seat.passed) bits.push(solo ? seat.name : `${seat.name} (${part.name})`);
+    }
+  }
+  return bits.join(", ");
+}
+function reviewBody(pull, card) {
+  return `<p class="meta review-open"><button class="link" data-go="s/${SESSION.code}/pull/${pull.id}">Open pull ${pull.id}</button></p>
+    ${card.parts.map(part => componentBlock(pull, card, part)).join("")}`;
+}
+function pullReview(pull, mech) {
+  const card = cardOf(pull, mech.id);
+  const key = `${SESSION.code}/${mech.id}/${pull.id}`;
+  const open = Boolean(reviewOpen[key]);
+  const who = reviewWho(card);
+  return `<details class="pull-review" data-review="${esc(key)}" data-pull="${pull.id}" data-mech="${esc(mech.id)}"${open ? " open" : ""}>
+    <summary>
+      <span class="review-title">Pull ${pull.id} <span class="meta">${pull.when ? esc(pull.when) + " · " : ""}${pull.bossPct}%</span></span>
+      <span class="review-who" title="${esc(who)}">${esc(who)}</span>
+      ${failStamp(failedNames(card))}
+    </summary>
+    <div class="review-body">${open ? reviewBody(pull, card) : ""}</div>
+  </details>`;
+}
+function fillReview(node) {
+  const body = node.querySelector(".review-body");
+  if (!body || body.childElementCount || !SESSION) return;
+  const pull = findPull(node.dataset.pull);
+  const card = pull && cardOf(pull, node.dataset.mech);
+  if (card) body.innerHTML = reviewBody(pull, card);
+}
 function renderMechanic(id) {
   const mech = findMech(id);
   if (!mech) return `<p>That mechanic is not defined.</p>`;
-  const blocks = [];
-  let clean = 0;
-  const scoped = SESSION.pulls.filter(pull =>
-    (pull.deaths || []).some(row => row.phaseId === mech.phase)
-  );
-  for (const pull of scoped) {
-    const rows = judged(pull.deaths).filter(row => row.mechanicId === mech.id);
-    if (!rows.length) clean += 1;
-  }
-  const reached = SESSION.pulls.filter(pull =>
-    (pull.cards || []).some(card => card.id === mech.id)
-  );
-  for (const pull of reached) {
-    const card = pull.cards.find(item => item.id === mech.id);
-    const failed = new Set();
-    for (const part of card.parts) {
-      for (const seat of part.seats) if (!seat.passed) failed.add(seat.name);
-    }
-    const stamp = failed.size
-      ? `<span class="tag fail">${failed.size === 1 ? "1 player failed" : failed.size + " players failed"}</span>`
-      : `<span class="tag ok">Clear</span>`;
-    blocks.push(`<div class="pull-block">
-      <div class="mech-head">
-        <h3><button class="link" data-go="s/${SESSION.code}/pull/${pull.id}">Pull ${pull.id}</button> <span class="meta">${pull.when ? pull.when + " · " : ""}${pull.bossPct}%</span></h3>
-        ${stamp}
-      </div>
-      ${card.parts.map(part => componentBlock(pull, card, part)).join("")}
-    </div>`);
-  }
+  const reached = SESSION.pulls.filter(pull => cardOf(pull, mech.id));
+  const failedPulls = reached.filter(pull => failedNames(cardOf(pull, mech.id)).size).length;
+  const headline = reached.length
+    ? `${plural(reached.length, "pull")} reached it. ${failedPulls} had a mistake.`
+    : "No pull reached it.";
   return `
     <header>
       <div>
-        <h1>${mech.name}</h1>
-        <p class="meta">${clean} pulls had no deaths to this.</p>
+        <h1>${esc(mech.name)}</h1>
+        <p class="meta">${headline}</p>
       </div>
     </header>
     <section>
-      <p>${mech.should}</p>
-      ${(mech.parts || []).length ? `<p class="meta">${mech.parts.map(part => part.name).join(" · ")}</p>` : ""}
+      <p>${esc(mech.should)}</p>
+      ${(mech.parts || []).length ? `<p class="meta">${mech.parts.map(part => esc(part.name)).join(" · ")}</p>` : ""}
     </section>
-    <section>
+    ${tallySection(mechanicTally(mech, reached))}
+    ${reached.length ? `<section>
       <h2>Pulls that reached it</h2>
-      ${blocks.join("") || `<p class="quiet">Nobody died to this.</p>`}
-    </section>`;
+      <p class="meta">Open a pull for where everyone stood.</p>
+      ${reached.map(pull => pullReview(pull, mech)).join("")}
+    </section>` : ""}`;
 }
 function paintActive() {
   const where = route();
@@ -1675,8 +1755,12 @@ document.body.addEventListener("scroll", event => {
 }, true);
 document.body.addEventListener("toggle", event => {
   const node = event.target;
-  if (!node.classList || !node.classList.contains("session-preview")) return;
-  previewOpen[node.dataset.code] = node.open;
+  if (!node.classList) return;
+  if (node.classList.contains("session-preview")) previewOpen[node.dataset.code] = node.open;
+  if (node.classList.contains("pull-review")) {
+    reviewOpen[node.dataset.review] = node.open;
+    if (node.open) fillReview(node);
+  }
 }, true);
 if (!postDetailToParent()) {
   window.addEventListener("hashchange", render);
