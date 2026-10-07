@@ -27,6 +27,7 @@ CENTER = 100.0
 ARENA = 20.0
 SKIP_TYPES = {"Pet", "NPC", "Boss", "LimitBreak"}
 TOWER_NAMES = {"King Thordan", "Holy Comet", "Brightsphere", "Haurchefant", "Spear of the Fury"}
+IMPACT_CASTER = "Ser Guerrique"
 
 
 @dataclass
@@ -220,6 +221,9 @@ class FrameBook:
                 x, y = _rel(sample.x, sample.y)
                 marks.append({"kind": "orb", "x": x, "y": y, "name": "Orb"})
 
+        if mechanic_id == "heavy-impact":
+            marks.extend(self._impact(replay, when))
+
         boss = self._boss(replay, when)
         gaze_drawn = any(mark["kind"] == "gaze" for mark in marks)
         if boss is not None and not gaze_drawn:
@@ -317,6 +321,9 @@ class FrameBook:
             ):
                 x, y = _rel(sample.x, sample.y)
                 marks.append({"kind": "orb", "x": x, "y": y, "name": "Orb"})
+
+        if mechanic_id == "heavy-impact":
+            marks.extend(self._impact(replay, replay_when))
 
         boss = self._boss(replay, replay_when)
         if boss is None and phase_id != 2:
@@ -449,6 +456,25 @@ class FrameBook:
             return None
         return best
 
+    def _impact(self, replay: FightReplay, when: float) -> list[dict]:
+        """Ser Guerrique casts both Heavy Impact pulses, and they spread out from where he landed."""
+        best = None
+        best_age = None
+        for samples in replay.by_actor.values():
+            if not samples or samples[0].name != IMPACT_CASTER:
+                continue
+            for sample in samples:
+                age = abs(sample.t - when)
+                if _radius(sample.x, sample.y) > ARENA:
+                    continue
+                if best_age is None or age < best_age:
+                    best = sample
+                    best_age = age
+        if best is None or best_age is None or best_age > 3:
+            return []
+        x, y = _rel(best.x, best.y)
+        return [{"kind": "impact", "x": x, "y": y, "name": IMPACT_CASTER}]
+
     def _burst(self, replay, predicate, center, back, forward, min_count, prefer_pair=False):
         buckets: dict[tuple, list[Sample]] = {}
         for sample in replay.samples:
@@ -549,6 +575,8 @@ def _mark_sentences(marks: list[dict], players: list[dict], carried: bool, arrow
         sentences.append("Prey is tagged on the players who had it.")
     if "orb" in kinds:
         sentences.append("The circles are the orbs.")
+    if "impact" in kinds:
+        sentences.append("Heavy Impact starts at Ser Guerrique, the cross, and the rings show it pulsing outward.")
     hits = sum(mark["kind"] == "hit" for mark in marks)
     if hits == 1:
         sentences.append("The line runs from Thordan to the player the cone hit.")

@@ -120,6 +120,15 @@ class StillFrameTest(unittest.TestCase):
         self.assertEqual(hits[0]["x2"], victim["x"])
         self.assertEqual(hits[0]["y2"], victim["y"])
 
+    def test_heavy_impact_marks_where_the_pulses_start(self):
+        frame = self._frame(42, "Spring Nymphar", "heavy-impact", 45.2)
+        impacts = [mark for mark in frame["marks"] if mark["kind"] == "impact"]
+        self.assertEqual(len(impacts), 1)
+        self.assertEqual(impacts[0]["name"], "Ser Guerrique")
+        self.assertAlmostEqual(impacts[0]["x"], 0, delta=0.5)
+        self.assertAlmostEqual(impacts[0]["y"], -7, delta=0.5)
+        self.assertIn("Heavy Impact starts at Ser Guerrique", frame["caption"])
+
     def test_a_raw_death_has_no_frame(self):
         row = next(
             item for item in json.loads((REPORT / "judgments.json").read_text(encoding="utf-8"))
@@ -190,6 +199,14 @@ class MechanicStillTest(unittest.TestCase):
         self.assertEqual(len(hits), 1)
         self.assertEqual(hits[0]["x2"], victim["x"])
         self.assertIn("Loki Doki failed", frame["caption"])
+
+    def test_a_failed_heavy_impact_still_marks_ser_guerrique(self):
+        frame = self.book.mechanic_frame(
+            42, 2, 45.2, "heavy-impact", "Heavy Impact", ["Spring Nymphar"], PACK,
+        )
+        impacts = [mark for mark in frame["marks"] if mark["kind"] == "impact"]
+        self.assertEqual(len(impacts), 1)
+        self.assertAlmostEqual(impacts[0]["y"], -7, delta=0.5)
 
     def test_attach_frames_puts_a_still_on_the_mechanic(self):
         row = next(
