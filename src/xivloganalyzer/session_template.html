@@ -518,10 +518,21 @@ function deathCard(row) {
     ${framed}
   </div>`;
 }
+const ARENA_YALMS = 20;
+// Yalms from the center to the edge of the still. Enough for the arena, and for anyone or anything drawn outside it.
+function frameReach(frame) {
+  let far = ARENA_YALMS;
+  for (const player of frame.players || []) far = Math.max(far, Math.hypot(player.x, player.y));
+  for (const mark of frame.marks || []) {
+    far = Math.max(far, Math.hypot(mark.x, mark.y));
+    if (mark.kind === "hit") far = Math.max(far, Math.hypot(mark.x2, mark.y2));
+  }
+  return Math.min(46, far + 4);
+}
 function stillFrame(frame) {
   const size = 300;
   const head = 22;
-  const reach = 46;
+  const reach = frameReach(frame);
   const scale = ((size - head) / 2 - 14) / reach;
   const cx = size / 2;
   const cy = head + (size - head) / 2;
@@ -530,9 +541,9 @@ function stillFrame(frame) {
   const heading = frame.title || (frame.killedBy ? `Killed by ${frame.killedBy}` : "");
   if (heading) parts.push(`<text x="${cx}" y="16" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1915">${esc(heading)}</text>`);
   const [fx, fy] = pt(0, 0);
-  const floor = ARENA_PX(scale);
+  const floor = ARENA_YALMS * scale;
   parts.push(`<circle cx="${fx}" cy="${fy}" r="${floor}" fill="#fffcf7" stroke="#e2dbd0" stroke-width="2"></circle>`);
-  const [nx, ny] = pt(0, -22);
+  const [nx, ny] = pt(0, -(ARENA_YALMS + 2));
   parts.push(`<text x="${nx}" y="${ny}" text-anchor="middle" font-size="11" fill="#5e584f">N</text>`);
   const marks = frame.marks || [];
   const draw = (kinds) => {
@@ -562,7 +573,6 @@ function stillFrame(frame) {
   }
   return `<figure class="still"><svg viewBox="0 0 ${size} ${size + 12}" role="img" aria-label="${esc(frame.caption)}">${parts.join("")}</svg><figcaption>${esc(frame.caption)}</figcaption></figure>`;
 }
-function ARENA_PX(scale) { return 20 * scale; }
 function stillMark(mark, pt, scale) {
   const [x, y] = pt(mark.x, mark.y);
   if (mark.kind === "hit") {
