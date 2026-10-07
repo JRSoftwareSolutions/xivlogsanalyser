@@ -494,6 +494,7 @@ def session_summary(payload: dict, detail_href: str) -> dict:
     """Chart and navigation for one session, without the death reviews.
 
     The reviews live in ``detail.js`` and load when a pull or mechanic is opened.
+    The page fetches that file. A script tag is refused when it is served as plain text.
     """
     overview = payload.get("overview") or {
         "phases": [],
@@ -539,7 +540,7 @@ def _js_json(value) -> str:
 
 
 def write_detail(report: Path, payload: dict) -> Path:
-    """Write the death reviews as a script the page loads when it needs them."""
+    """Write the death reviews for the page to fetch when it needs them."""
     path = report / "detail.js"
     code = json.dumps(payload["code"])
     path.write_text(f"registerDetail({code},{_js_json(detail_body(payload))});\n", encoding="utf-8")
