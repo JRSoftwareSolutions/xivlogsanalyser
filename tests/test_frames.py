@@ -162,6 +162,7 @@ class MechanicStillTest(unittest.TestCase):
         )
         self.assertIsNotNone(frame)
         self.assertIn("Dragon's Gaze", frame["title"])
+        self.assertAlmostEqual(frame["at"], times[0], delta=0.05)
         self.assertGreaterEqual(sum(mark["kind"] == "gaze" for mark in frame["marks"]), 2)
         self.assertGreaterEqual(len(frame["players"]), 8)
         self.assertTrue(all(player.get("face") for player in frame["players"]))

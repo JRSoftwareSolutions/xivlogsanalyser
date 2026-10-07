@@ -521,13 +521,13 @@ function blameChips(row) {
     return `<span class="blame${sure}" title="How sure this blame is">${esc(blame.who)} <b>${blame.confidence}%</b></span>`;
   }).join("")}</div>`;
 }
-function deathCard(row) {
+function deathCard(row, alreadyDrawn) {
   const cast = row.cast ? `<span class="time">${row.cast}</span>` : "";
   const body = `<div class="cols">
       <div><b>What happened</b>${row.happened}</div>
       <div><b>What went wrong</b>${esc(row.wrong)}${blameChips(row)}</div>
     </div>`;
-  const framed = row.frame
+  const framed = row.frame && !alreadyDrawn
     ? `<div class="death-body">${stillFrame(row.frame)}${body}</div>`
     : body;
   return `<div class="death">
@@ -1378,6 +1378,11 @@ function seatMark(seat, partName) {
 function componentDeaths(pull, card, part) {
   return judged(pull.deaths).filter(row => row.mechanicId === card.id && row.componentId === part.id);
 }
+// A death within this many seconds of the component's still is already in that picture.
+const SAME_PICTURE = 2;
+function pictured(part, t) {
+  return (part.frames || []).some(frame => frame.at != null && Math.abs(frame.at - t) <= SAME_PICTURE);
+}
 function componentBlock(pull, card, part) {
   const rows = componentDeaths(pull, card, part);
   const solo = card.parts.length === 1 && part.name === card.name;
@@ -1387,7 +1392,7 @@ function componentBlock(pull, card, part) {
     <div>
       ${shots ? `<div class="stills">${shots}</div>` : ""}
       <div class="seats">${part.seats.map(seat => seatMark(seat, part.name)).join("")}</div>
-      ${rows.map(deathCard).join("")}
+      ${rows.map(row => deathCard(row, pictured(part, row.t))).join("")}
     </div>
   </div>`;
 }
@@ -1412,7 +1417,7 @@ function renderPull(id) {
   );
   const loose = judged(pull.deaths).filter(row => !covered(row));
   const rest = loose.length
-    ? `<section><h2>Other deaths</h2>${loose.map(deathCard).join("")}</section>`
+    ? `<section><h2>Other deaths</h2>${loose.map(row => deathCard(row, false)).join("")}</section>`
     : "";
   const packets = c.environment
     ? `<p class="meta">${c.environment} deaths had no damage packet.</p>`
