@@ -158,7 +158,7 @@
   .who { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .time, .job { color: var(--muted); }
   .job-icon { width: 20px; height: 20px; display: block; }
-  .cols { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 12px; margin-top: 6px; font-size: 14px; }
+  .cols { display: grid; grid-template-columns: 1.1fr 1fr; gap: 12px; margin-top: 6px; font-size: 14px; }
   .cols b { display: block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
   .blames { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 6px; }
   .blame {
@@ -447,8 +447,7 @@ function deathCard(row) {
   const cast = row.cast ? `<span class="time">${row.cast}</span>` : "";
   const body = `<div class="cols">
       <div><b>What happened</b>${row.happened}</div>
-      <div><b>What it should have been</b>${row.should}</div>
-      <div><b>Whose fault</b>${blameChips(row)}${row.wrong}</div>
+      <div><b>What went wrong</b>${esc(row.wrong)}${blameChips(row)}</div>
     </div>`;
   const framed = row.frame
     ? `<div class="death-body">${stillFrame(row.frame)}${body}</div>`

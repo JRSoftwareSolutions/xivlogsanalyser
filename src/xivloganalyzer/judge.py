@@ -141,7 +141,7 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             outcome="environment",
             happened="No damage packet.",
             should_have_been="A death with no hit is the body after a raise, or a wipe tick.",
-            went_wrong="No fault on a mechanic. There is no hit to assign.",
+            went_wrong="No hit.",
             cause="none",
         )
     mechanic = pack.mechanic_for(fact.guid, fact.phase)
@@ -154,44 +154,37 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             outcome="unknown",
             happened=happened,
             should_have_been="This ability is not understood yet.",
-            went_wrong="No fault assigned. Say what this hit should mean and it can be judged.",
+            went_wrong=f"{fact.name} died to {fact.ability}.",
             cause="none",
         )
     if _vuln(fact):
-        return _done(
-            fact, mechanic, happened, "fail",
-            f"{fact.name} had vulnerability or damage down. The amp is from a failed mechanic.",
-            "personal", pack,
-        )
+        return _done(fact, mechanic, happened, "fail", _amp(fact, mechanic), "personal", pack)
     hit = _hit(fact)
     if mechanic.tanks_only and fact.role != "tank":
+        return _done(fact, mechanic, happened, "fail", _not_a_tank(fact, mechanic), "personal", pack)
+    if mechanic.off_tank and fact.name != mechanic.off_tank:
         return _done(
             fact, mechanic, happened, "fail",
-            f"{fact.name} got {mechanic.name}. Only a tank takes this.",
+            f"{fact.name} took {mechanic.name}.",
             "personal", pack,
         )
-    if mechanic.off_tank and fact.name != mechanic.off_tank:
-        wrong = f"The off tank takes {mechanic.name}. {fact.name} took it."
-        if mechanic.requires_personal_mit and not _personal_mit(fact, pack):
-            wrong += " Personal mitigation was not enough."
-        return _done(fact, mechanic, happened, "fail", wrong, "personal", pack)
     if mechanic.one_target and fact.stack and fact.stack > 1:
         return _done(
             fact, mechanic, happened, "fail",
-            f"Only one tank takes {mechanic.name}. {fact.name} ate the extra hit ({_comma(hit)}).",
+            f"{fact.name} ate an extra {mechanic.name}.",
             "personal", pack,
         )
     if mechanic.any_hit_is_fail:
         if mechanic.id == "bright-flare" and (fact.stack or 0) > 1:
             return _done(
                 fact, mechanic, happened, "fail",
-                f"{fact.name} overlapped Bright Flare.",
+                f"{fact.name} got clipped by a Bright Flare.",
                 "overlap", pack,
             )
         if mechanic.id == "holy-impact":
             return _done(
                 fact, mechanic, happened, "fail",
-                "The two prey players dropped comets too close. The explosion hit the party.",
+                f"{fact.name} died to comets that were too close.",
                 "prey", pack,
             )
         return _done(fact, mechanic, happened, "fail", _personal(fact, mechanic), "personal", pack)
@@ -204,27 +197,27 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
         )
     if mechanic.fail_above is not None and hit > mechanic.fail_above:
         return _done(
-            fact, mechanic, happened, "fail", _oversized(fact, mechanic, hit),
+            fact, mechanic, happened, "fail", _oversized(fact, mechanic),
             _oversized_cause(fact, mechanic), pack,
         )
     cap = mechanic.cap_for(fact.role)
     if cap is None:
         return _done(
             fact, mechanic, happened, "unknown",
-            "No fault assigned. This role is not covered yet.",
+            f"{fact.name} died to {mechanic.name}.",
             "none", pack,
         )
     if hit <= cap:
         if fact.hp is not None and fact.hp < pack.low_hp:
             return _done(
                 fact, mechanic, happened, "low",
-                f"{fact.name} was already at {_comma(fact.hp)}. The hit itself is the normal one.",
+                f"{fact.name} was already low.",
                 "low", pack,
             )
         if mechanic.requires_personal_mit and fact.role == "tank" and not _personal_mit(fact, pack):
             return _done(
                 fact, mechanic, happened, "fail",
-                f"{fact.name} died to the real {mechanic.name}. Personal mitigation was not enough.",
+                f"{fact.name} died to {mechanic.name} without mitigation.",
                 "personal", pack,
             )
         if mechanic.id == "skyward-leap":
@@ -235,9 +228,9 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             fact, mechanic, happened, "raw", _raw_fault(fact, mechanic), _raw_cause(fact, mechanic), pack,
         )
     if mechanic.id == "skyward-leap":
-        return _done(fact, mechanic, happened, "fail", _skyward_clip(fact, hit), "clip", pack)
+        return _done(fact, mechanic, happened, "fail", _skyward_clip(fact), "clip", pack)
     return _done(
-        fact, mechanic, happened, "fail", _oversized(fact, mechanic, hit),
+        fact, mechanic, happened, "fail", _oversized(fact, mechanic),
         _oversized_cause(fact, mechanic), pack,
     )
 
@@ -251,8 +244,22 @@ def _failed_moment(mechanic: Mechanic, fact: DeathFact, hit: int):
 
 def _moment_fault(fact: DeathFact, moment) -> str:
     if moment.cause == "tower":
-        return f"A tower was empty. {fact.name} died to the explosion, not a real soak."
-    return f"{fact.name} got the failed version of this cast."
+        return f"{fact.name} died to an empty tower."
+    return f"{fact.name} got hit."
+
+
+def _amp(fact: DeathFact, mechanic: Mechanic) -> str:
+    if mechanic.id == "holy-shield-bash":
+        return f"{fact.name} shorted the tether."
+    return f"{fact.name} still had a damage amp."
+
+
+def _not_a_tank(fact: DeathFact, mechanic: Mechanic) -> str:
+    if mechanic.id == "holy-shield-bash":
+        return f"{fact.name} took the tether."
+    if mechanic.id == "holy-bladedance":
+        return f"{fact.name} stood in the cone."
+    return f"{fact.name} took {mechanic.name}."
 
 
 def _personal_mit(fact: DeathFact, pack: FightPack) -> bool:
@@ -262,64 +269,73 @@ def _personal_mit(fact: DeathFact, pack: FightPack) -> bool:
 
 
 def _personal(fact: DeathFact, mechanic: Mechanic) -> str:
+    name = fact.name
     if mechanic.id == "darkdragon-dive-debuff":
-        return f"{fact.name} soaked a tower while they still had the dive debuff."
+        return f"{name} soaked with the dive debuff."
     if mechanic.id in {"gnashing-wheel", "lashing-wheel"}:
-        return f"{fact.name} was on the wrong side of the in-and-out."
+        return f"{name} was on the wrong side."
     if mechanic.id == "geirskogul":
-        return f"{fact.name} stood in the Geirskogul line."
-    if mechanic.category == "tower":
-        return f"A {mechanic.name} was missed. {fact.name} died to the failed version, not a real soak."
+        return f"{name} stood in the line."
     if mechanic.id == "ascalons-mercy-concealed":
-        return (
-            f"{fact.name} got hit by Ascalon's Mercy Concealed. "
-            "Nobody should be hit."
-        )
-    if mechanic.category in {"dodge", "gaze", "spread"}:
-        return f"{fact.name} failed {mechanic.name}."
-    if mechanic.category == "puddle":
-        return f"{fact.name} failed the {mechanic.name} soak."
-    return f"{fact.name} got the failed version of {mechanic.name}."
-
-
-def _oversized(fact: DeathFact, mechanic: Mechanic, hit: int) -> str:
-    if mechanic.id in {"dark-high-jump", "dark-elusive-jump"}:
-        return (
-            f"{fact.name} stood in the dive ({_comma(hit)}). "
-            "Each player in that landing owns it."
-        )
-    if mechanic.id == "eye-of-the-tyrant":
-        return (
-            f"The Eye of the Tyrant share was short. {fact.name} took {_comma(hit)}. "
-            "The players who were not in the stack own it."
-        )
+        return f"{name} got hit by the cone."
+    if mechanic.id == "bright-flare":
+        return f"{name} got hit by a Bright Flare."
+    if mechanic.id == "heavy-impact":
+        return f"{name} stood in the ring."
+    if mechanic.id == "shining-blade":
+        return f"{name} got cleaved."
+    if mechanic.id == "heavens-stake":
+        return f"{name} stood in the fire."
+    if mechanic.id == "holy-shield-bash":
+        return f"{name} shorted the tether."
+    if mechanic.id == "frostbite":
+        return f"{name} stood in the ice."
+    if mechanic.id == "dimensional-collapse":
+        return f"{name} stood in the puddle."
+    if mechanic.category == "gaze":
+        return f"{name} looked at the gaze."
     if mechanic.category == "tower":
-        return f"A tower was empty. {fact.name} died to the explosion ({_comma(hit)}), not a real soak."
-    if mechanic.category == "stack":
-        return f"{fact.name} took the failed cleave of {mechanic.name} ({_comma(hit)}), not the share."
+        return f"{name} died to an empty tower."
     if mechanic.category == "puddle":
-        return f"{fact.name} failed {mechanic.name}. {_comma(hit)} is well above a placed hit."
-    return f"{fact.name} took {_comma(hit)}, which is not the real {mechanic.name}."
+        return f"{name} stood in the puddle."
+    return f"{name} got hit by {mechanic.name}."
+
+
+def _short_stack(fact: DeathFact, mechanic: Mechanic) -> str:
+    if fact.stack and mechanic.typical_targets:
+        return f"The stack was {fact.stack} of {mechanic.typical_targets}."
+    return "The stack was short."
+
+
+def _oversized(fact: DeathFact, mechanic: Mechanic) -> str:
+    name = fact.name
+    if mechanic.id in {"dark-high-jump", "dark-elusive-jump"}:
+        return f"{name} stood in the dive."
+    if mechanic.id == "eye-of-the-tyrant":
+        return _short_stack(fact, mechanic)
+    if mechanic.id == "lightning-storm":
+        return f"{name} got clipped by Lightning Storm."
+    if mechanic.category == "tower":
+        return f"{name} died to an empty tower."
+    if mechanic.id == "dragons-rage":
+        return f"{name} took a failed Dragon's Rage."
+    if mechanic.category == "stack":
+        return f"{name} got cleaved."
+    if mechanic.id == "hiemal-storm":
+        return f"{name} failed the ice soak."
+    if mechanic.category == "puddle":
+        return f"{name} stood in the puddle."
+    return f"{name} took too much from {mechanic.name}."
 
 
 def _skyward_marker(fact: DeathFact) -> str:
     if fact.max_hp and fact.hp is not None and fact.hp < fact.max_hp:
-        return (
-            f"{fact.name} was at {_comma(fact.hp)} of {_comma(fact.max_hp)}. "
-            "The healers did not fully heal them."
-        )
-    shield = "no shield" if fact.absorb < 1000 else f"a {_comma(fact.absorb)} shield"
-    return (
-        f"{fact.name} was fully healed. Skyward Leap had {_mit(fact.multiplier)} and {shield}. "
-        "The players who were supposed to mitigate it own that death."
-    )
+        return f"{fact.name} wasn't full for Skyward Leap."
+    return f"{fact.name} died to Skyward Leap without mitigation."
 
 
-def _skyward_clip(fact: DeathFact, hit: int) -> str:
-    return (
-        f"{fact.name} was clipped by another Skyward Leap ({_comma(hit)}). "
-        "The player who was out of the spot owns it."
-    )
+def _skyward_clip(fact: DeathFact) -> str:
+    return f"{fact.name} got clipped by a Skyward Leap."
 
 
 def _skyward_cause(fact: DeathFact) -> str:
@@ -360,16 +376,8 @@ def _raw_fault(fact: DeathFact, mechanic: Mechanic) -> str:
         and mechanic.typical_targets
         and fact.stack < mechanic.typical_targets
     ):
-        return (
-            f"The {mechanic.name} share was {fact.stack} of {mechanic.typical_targets}. "
-            "Missing bodies raised the hit."
-        )
-    shield = "no shield" if fact.absorb < 1000 else f"a {_comma(fact.absorb)} shield"
-    mit = _mit(fact.multiplier)
-    return (
-        f"The resolve was fine. {fact.name} died to the real {mechanic.name} "
-        f"with {shield} and {mit}."
-    )
+        return _short_stack(fact, mechanic)
+    return f"{fact.name} died to the real hit."
 
 
 def _should(fact: DeathFact, mechanic: Mechanic, pack: FightPack) -> str:

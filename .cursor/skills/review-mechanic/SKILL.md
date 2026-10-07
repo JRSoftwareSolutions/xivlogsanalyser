@@ -44,18 +44,22 @@ Apply these in order:
 
 ## Say this
 
-One block per death:
+One block per death. The sentence is what went wrong. Do not say what the mechanic should have been.
 
 ```
 **Pull {id} · {player} · {mechanic}** — {raw|fail|low|environment|unknown}
-Happened: {unmitigated, HP, mit, shield, stack if it scales}
-Should have been: {this cast only}
-Fault: {who} {confidence}% — {from the mechanic skill}
+{one short sentence}
+Fault: {who} {confidence}%
 ```
 
-For a whole pull, add one line: how many raw, fail, low, and no-packet deaths.
+Name the player and the mistake. Leave out the damage, the shield, and who owns it. The blame line owns that.
 
-Name the player. A raw hit on a full share is the resolve: shield, mit, and HP. A short stack that scales is the missing bodies. A failed shape is the player who took it, unless that mechanic's skill says the miss belongs to someone who was not in the tower.
+- Kitana Kahn got clipped by a Bright Flare.
+- Kite Noodle looked at the gaze.
+- Kiara Blaiddyd wasn't full for Skyward Leap.
+- The stack was 2 of 4.
+
+For a whole pull, add one line: how many raw, fail, low, and no-packet deaths.
 
 ## Blame confidence
 

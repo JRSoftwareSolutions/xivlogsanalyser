@@ -37,22 +37,21 @@ class ReferenceReportTest(unittest.TestCase):
         ]
         self.assertEqual(len(heel), 1)
         self.assertEqual(heel[0].outcome, "fail")
-        self.assertIn("off tank", heel[0].went_wrong)
-        self.assertIn("Personal mitigation", heel[0].went_wrong)
+        self.assertEqual(heel[0].went_wrong, "Absolute Gigalad took Heavenly Heel.")
         might = [
             item for item in judgments
             if item.fact.fight == 14 and item.mechanic == "Ascalon's Might"
         ]
         self.assertEqual(len(might), 1)
         self.assertEqual(might[0].outcome, "fail")
-        self.assertIn("extra hit", might[0].went_wrong)
+        self.assertEqual(might[0].went_wrong, "Absolute Gigachad ate an extra Ascalon's Might.")
         dancer = [
             item for item in judgments
             if item.fact.fight == 18 and item.mechanic == "Heavenly Heel"
         ]
         self.assertEqual(len(dancer), 1)
         self.assertEqual(dancer[0].outcome, "fail")
-        self.assertIn("Only a tank", dancer[0].went_wrong)
+        self.assertEqual(dancer[0].went_wrong, "Kiara Blaiddyd took Heavenly Heel.")
         pull_68 = [
             item for item in judgments
             if item.fact.fight == 68 and item.outcome == "raw"
@@ -65,15 +64,14 @@ class ReferenceReportTest(unittest.TestCase):
         ]
         self.assertEqual(len(kitana), 1)
         self.assertEqual(kitana[0].outcome, "fail")
-        self.assertIn("fully healed", kitana[0].went_wrong)
-        self.assertIn("mitigate", kitana[0].went_wrong)
+        self.assertEqual(kitana[0].went_wrong, "Kitana Kahn died to Skyward Leap without mitigation.")
         kiara = [
             item for item in judgments
             if item.fact.fight == 13 and item.mechanic == "Skyward Leap"
         ]
         self.assertEqual(len(kiara), 1)
         self.assertEqual(kiara[0].outcome, "fail")
-        self.assertIn("healers", kiara[0].went_wrong)
+        self.assertEqual(kiara[0].went_wrong, "Kiara Blaiddyd wasn't full for Skyward Leap.")
         strength = pack.cluster_for("skyward-leap", 59.5, 2)
         self.assertEqual(strength.name, "Strength of the Ward")
         opener = pack.cluster_for("ascalons-might", 16.7, 2)
@@ -128,10 +126,19 @@ class ReferenceReportTest(unittest.TestCase):
         orbs = [item for item in judgments if item.fact.fight == 39 and item.mechanic == "Bright Flare"]
         self.assertEqual({item.fact.name for item in orbs}, {"Kitana Kahn", "Speed Panda"})
         for item in orbs:
+            self.assertEqual(item.went_wrong, f"{item.fact.name} got clipped by a Bright Flare.")
             self.assertEqual(
                 sorted(owners(item)),
                 [("Kitana Kahn", 50), ("Speed Panda", 50)],
             )
+        self.assertEqual(
+            one(10, "Kitana Kahn", "Bright Flare").went_wrong,
+            "Kitana Kahn got hit by a Bright Flare.",
+        )
+        self.assertEqual(
+            one(11, "Kite Noodle", "Dragon's Gaze").went_wrong,
+            "Kite Noodle looked at the gaze.",
+        )
         self.assertEqual(
             sorted(owners(one(22, "Kitana Kahn", "Bright Flare"))),
             [("Absolute Gigalad", 50), ("Kitana Kahn", 50)],
@@ -180,6 +187,10 @@ class ReferenceReportTest(unittest.TestCase):
         )
 
         for item in judgments:
+            text = item.went_wrong
+            self.assertTrue(text.endswith("."), text)
+            self.assertEqual(text.count("."), 1, text)
+            self.assertLessEqual(len(text), 90, text)
             if item.outcome in {"environment", "unknown"}:
                 self.assertEqual(item.blames, [])
                 continue

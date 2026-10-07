@@ -74,7 +74,7 @@ class DiveFromGraceTest(unittest.TestCase):
     def test_towers_split_debuff_soak_from_empty_tower(self):
         debuff = self._one(27, "Speed Panda", 26385)
         self.assertEqual(debuff.outcome, "fail")
-        self.assertIn("dive debuff", debuff.went_wrong)
+        self.assertEqual(debuff.went_wrong, "Speed Panda soaked with the dive debuff.")
         self.assertEqual(debuff.blames[0].confidence, 100)
         low = self._one(27, "Kite Noodle", 26395)
         self.assertEqual(low.outcome, "low")
@@ -87,10 +87,17 @@ class DiveFromGraceTest(unittest.TestCase):
     def test_wheel_and_line_are_the_player_who_stood_there(self):
         wheel = self._one(30, "Loki Doki", 26390)
         self.assertEqual(wheel.outcome, "fail")
-        self.assertIn("in-and-out", wheel.went_wrong)
+        self.assertEqual(wheel.went_wrong, "Loki Doki was on the wrong side.")
         line = self._one(46, "Kite Noodle", 26378)
         self.assertEqual(line.outcome, "fail")
         self.assertEqual(line.blames[0].who, "Kite Noodle")
+
+    def test_went_wrong_is_one_short_sentence(self):
+        for item in self.judgments:
+            text = item.went_wrong
+            self.assertTrue(text.endswith("."), text)
+            self.assertEqual(text.count("."), 1, text)
+            self.assertLessEqual(len(text), 90, text)
 
     def test_pull_card_shows_the_nidhogg_stop(self):
         when = session_clock(REPORT, self.meta)

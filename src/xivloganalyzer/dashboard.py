@@ -1,4 +1,4 @@
-"""Session pages: what happened, what it should have been, what went wrong.
+"""Session pages: what happened, and a short line for what went wrong.
 
 Each dropped log is one session. The library page lists them by day and time.
 """
