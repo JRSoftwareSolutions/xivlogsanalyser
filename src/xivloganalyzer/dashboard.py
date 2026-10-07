@@ -370,7 +370,8 @@ def attach_debuffs(report: Path, payload: dict, pack: FightPack, meta: dict) -> 
 
     For Dive from Grace that is each player's number and dive marker. A player
     keeps the first of each column they got in the pull. The list sorts by the
-    columns, in the order their labels are written.
+    columns, in the order their labels are written. `statuses` holds the debuff
+    behind each value, so the page can draw its icon from `status_icons`.
     """
     clusters = {cluster.id: cluster for cluster in pack.clusters if cluster.debuffs}
     if not clusters:
@@ -385,27 +386,37 @@ def attach_debuffs(report: Path, payload: dict, pack: FightPack, meta: dict) -> 
             cluster = clusters.get(card["id"])
             if cluster is None:
                 continue
-            held: dict[tuple[int, str], int] = {}
+            held: dict[tuple[int, str], dict] = {}
             for aura in auras:
                 if aura[1] != "applydebuff":
                     continue
                 for column in cluster.debuffs:
                     if aura[2] in column.labels:
-                        held.setdefault((aura[5], column.column), aura[2])
+                        status = {"id": aura[2], "name": aura[3] or ""}
+                        held.setdefault((aura[5], column.column), status)
             if not held:
                 continue
             players = []
             for player in roster:
                 actor = ids.get(player["name"])
+                statuses = [held.get((actor, column.column)) for column in cluster.debuffs]
                 values = [
-                    column.labels.get(held.get((actor, column.column)), "")
-                    for column in cluster.debuffs
+                    column.labels[status["id"]] if status else ""
+                    for column, status in zip(cluster.debuffs, statuses)
                 ]
                 rank = [
                     list(column.labels.values()).index(value) if value else len(column.labels)
                     for column, value in zip(cluster.debuffs, values)
                 ]
-                players.append({"name": player["name"], "job": player["job"], "values": values, "_rank": rank})
+                players.append(
+                    {
+                        "name": player["name"],
+                        "job": player["job"],
+                        "values": values,
+                        "statuses": statuses,
+                        "_rank": rank,
+                    }
+                )
             players.sort(key=lambda row: (row.pop("_rank"), row["name"]))
             card["debuffs"] = {
                 "columns": [column.column for column in cluster.debuffs],
@@ -718,6 +729,19 @@ def _job_icons() -> dict[str, str]:
     return icons
 
 
+def _status_icons() -> dict[str, str]:
+    """Game status icons, keyed by the debuff guid FFLogs reports (1000000 plus the status id).
+
+    Taken from Materia Raiding's status icons, the ones its guides draw next to a debuff.
+    """
+    icons = {}
+    folder = Path(__file__).parent / "status_icons"
+    for path in sorted(folder.glob("*.png")):
+        encoded = base64.b64encode(path.read_bytes()).decode("ascii")
+        icons[path.stem] = f"data:image/png;base64,{encoded}"
+    return icons
+
+
 def _detail_block(payload: dict | None) -> str:
     if not payload:
         return ""
@@ -728,8 +752,10 @@ def _detail_block(payload: dict | None) -> str:
 def _page(payloads: list[dict], title: str, detail: dict | None = None) -> str:
     data = _js_json(library_payload(payloads))
     icons = json.dumps(_job_icons(), separators=(",", ":"))
+    statuses = json.dumps(_status_icons(), separators=(",", ":"))
     template = (Path(__file__).parent / "session_template.html").read_text(encoding="utf-8")
     html = template.replace("__DATA__", data)
     html = html.replace("__JOB_ICONS__", icons)
+    html = html.replace("__STATUS_ICONS__", statuses)
     html = html.replace("__TITLE__", title)
     return html.replace("__DETAIL__", _detail_block(detail))

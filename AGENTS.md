@@ -6,7 +6,7 @@ A session's day and clock come from `<report>/session.json` (`started`, `title`,
 
 Mechanic knowledge for Dragonsong's Reprise lives in `fights/dsr/mechanics.json`. Use it to say what happened, what the mechanic should have been, and whose fault the death was. `notes/classification.md` explains the Thordan calls.
 
-A phase's reviewed mechanics are the `clusters` in that file, drawn top to bottom by `starts`. `skill` on a cluster is the skill for that stop. `debuffs` on a cluster are the role debuffs, such as Dive from Grace's number and dive marker, listed for every player on that stop's pull card. Do not hardcode the order in the page. `markers` in `fights/dsr/fight.json` are pull-chart labels for moments with no death review. They are not stops on that line.
+A phase's reviewed mechanics are the `clusters` in that file, drawn top to bottom by `starts`. `skill` on a cluster is the skill for that stop. `debuffs` on a cluster are the role debuffs, such as Dive from Grace's number and dive marker, listed for every player on that stop's pull card. Each one is drawn as its game icon, `src/xivloganalyzer/status_icons/<guid>.png`, so a new debuff needs its icon there. Do not hardcode the order in the page. `markers` in `fights/dsr/fight.json` are pull-chart labels for moments with no death review. They are not stops on that line.
 
 When the user corrects a call ("X should be Y", "Z is not a mistake", "that one is actually a fail"), update `fights/dsr/mechanics.json` to match, then run `python -m xivloganalyzer reanalyze` so every saved report is judged again. Update `tests/test_reference.py` only when the correction is meant to change the settled Thordan counts.
 

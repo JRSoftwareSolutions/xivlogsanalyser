@@ -422,6 +422,9 @@ class SessionDetailTest(unittest.TestCase):
         self.assertIn('location.protocol === "file:"', dashboard)
         self.assertIn("detailFromFrame", dashboard)
         self.assertIn("postDetailToParent()", session_page)
+        for html in (dashboard, session_page):
+            self.assertNotIn("__STATUS_ICONS__", html)
+            self.assertIn('"1003004":"data:image/png;base64,', html)
         marker = 'id="session-detail">'
         start = session_page.index(marker) + len(marker)
         end = session_page.index("</script>", start)
