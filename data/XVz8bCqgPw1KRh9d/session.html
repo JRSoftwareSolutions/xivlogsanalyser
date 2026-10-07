@@ -37,10 +37,11 @@
   html, body { height: 100%; }
   body {
     margin: 0; display: grid; grid-template-columns: var(--nav-width) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr); overflow: hidden;
     background: var(--bg); color: var(--ink); font: 16px/1.45 "Segoe UI", system-ui, sans-serif;
   }
   aside {
-    grid-column: 1; grid-row: 1; min-width: 0;
+    grid-column: 1; grid-row: 1; min-width: 0; min-height: 0;
     background: var(--paper); border-right: 1px solid var(--line);
     overflow: auto; padding: 16px 12px 28px;
   }
@@ -72,7 +73,16 @@
     box-shadow: 0 -7px 0 var(--accent), 0 7px 0 var(--accent);
   }
   #nav-split:focus-visible { outline: none; }
-  main { grid-column: 2; grid-row: 1; overflow: auto; padding: 24px 28px 64px; min-width: 0; }
+  main { grid-column: 2; grid-row: 1; overflow: auto; padding: 24px 28px 64px; min-width: 0; min-height: 0; }
+  main.home {
+    display: flex; flex-direction: column; gap: 12px; padding-bottom: 0;
+  }
+  main.home > header { flex: none; margin-bottom: 0; }
+  main.home > section { margin-bottom: 0; }
+  main.home > section.trend {
+    flex: 1 1 auto; min-height: min-content;
+    display: flex; flex-direction: column;
+  }
   h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.03em; }
   h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
   h3 { margin: 0; font-size: 18px; }
@@ -258,7 +268,7 @@
     font-size: 12px; line-height: 1.15; color: var(--muted); text-align: right; white-space: nowrap;
   }
   .chart, .mini-plot, .trend-plot { position: relative; }
-  .chart { height: 100%; overflow-x: auto; }
+  .chart { height: 100%; overflow-x: auto; overflow-y: hidden; }
   .plot, .mini-plot { display: flex; align-items: flex-end; gap: 2px; }
   .plot { position: relative; height: 100%; min-width: 100%; width: max-content; }
   .mini-plot { height: 100%; width: 100%; }
@@ -280,10 +290,18 @@
   .mini-plot i.tick { flex: 1 1 0; min-width: 1px; min-height: 2px; border-radius: 2px 2px 0 0; display: block; }
   .trend-reach {
     display: grid; grid-template-columns: 12.5rem minmax(0, 1fr);
+    grid-template-rows: 300px auto;
   }
-  .trend-reach .reach-names { align-self: start; }
-  .trend-scroll { overflow-x: auto; min-width: 0; }
-  .trend-plot { height: 100%; }
+  .trend-reach .reach-names { grid-row: 1; align-self: stretch; min-height: 0; }
+  .trend-scroll {
+    grid-column: 2; grid-row: 1 / span 2;
+    display: grid; grid-template-rows: subgrid;
+    overflow-x: auto; overflow-y: hidden; min-width: 0; min-height: 0;
+  }
+  .trend-sheet {
+    grid-row: 1 / span 2; display: grid; grid-template-rows: subgrid; min-height: 0;
+  }
+  .trend-plot { grid-row: 1; position: relative; min-height: 0; height: auto; }
   .trend-cols { position: relative; z-index: 1; display: flex; height: 100%; }
   .trend-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 3; overflow: visible; }
   .trend-dot {
@@ -299,7 +317,11 @@
   button.trend-col:hover, button.trend-col:focus-visible { background: rgba(228, 236, 247, 0.06); }
   .trend-bars { display: flex; align-items: flex-end; width: 100%; height: 100%; gap: 2px; }
   .trend-bars i { flex: 0 0 9px; width: 9px; min-height: 2px; border-radius: 2px 2px 0 0; display: block; }
-  .trend-axis { display: flex; margin-top: 6px; }
+  .trend-axis { grid-row: 2; display: flex; align-items: start; margin-top: 6px; }
+  main.home .trend-reach {
+    flex: 1 1 0; min-height: 160px;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
   .trend-axis > span {
     flex: 0 0 auto; text-align: center; font-size: 12px; line-height: 1.25; color: var(--muted); padding: 0 4px;
   }
@@ -383,13 +405,17 @@
   body.nav-resizing aside,
   body.nav-resizing main { pointer-events: none; }
   @media (max-width: 860px) {
+    html, body { height: auto; min-height: 100%; overflow: auto; }
     body { display: block; }
     aside { border-right: 0; border-bottom: 1px solid var(--line); max-height: 42vh; }
     #nav-split { display: none; }
+    main.home { display: block; padding-bottom: 28px; }
+    main.home > section.trend { display: block; }
+    main.home .trend-reach { flex: none; min-height: 0; grid-template-rows: 300px auto; }
     .stats, .cols, header, .mech-head, .death-body { display: block; }
     .reach { grid-template-columns: 9.5rem minmax(0, 1fr); height: 420px; }
     .reach.mini { grid-template-columns: 8.5rem minmax(0, 1fr); }
-    .trend-reach { grid-template-columns: 8.5rem minmax(0, 1fr); }
+    .trend-reach { grid-template-columns: 8.5rem minmax(0, 1fr); grid-template-rows: 300px auto; }
     .reach-names span { font-size: 11px; }
   }
 </style>
@@ -1162,7 +1188,7 @@ function trendLine(sessions, scale, spans) {
 }
 function trendChart(sessions) {
   const { marks, scale } = trendFrame(sessions);
-  const labels = markLabels(marks, scale, TREND_H);
+  const labels = markLabels(marks, scale, Math.max(TREND_H, 4000));
   const names = labels.map(mark => {
     const cls = mark.goal ? ` class="goal"` : "";
     return `<span${cls} style="bottom:${(mark.at / scale) * 100}%">${esc(mark.name)}</span>`;
@@ -1207,7 +1233,7 @@ function trendChart(sessions) {
       if (!seen.some(row => row.phase === pull.phase)) seen.push(pull);
     }
   }
-  return `<div class="trend-reach"><div class="reach-names" style="height:${TREND_H}px">${names}</div><div class="trend-scroll" data-trend="${esc(sessions.map(session => session.code).join("-"))}"><div class="trend-sheet" style="width:${total}px"><div class="trend-plot" style="height:${TREND_H}px">${lines}${line}${dots}<div class="trend-cols">${cols}</div></div><div class="trend-axis">${axis}</div></div></div></div>
+  return `<div class="trend-reach"><div class="reach-names">${names}</div><div class="trend-scroll" data-trend="${esc(sessions.map(session => session.code).join("-"))}"><div class="trend-sheet" style="width:${total}px"><div class="trend-plot">${lines}${line}${dots}<div class="trend-cols">${cols}</div></div><div class="trend-axis">${axis}</div></div></div></div>
     ${legend(seen)}`;
 }
 function trendSection() {
@@ -1226,7 +1252,7 @@ function trendSection() {
   if (!groups.length) return "";
   return groups.map(group => {
     const heading = groups.length > 1 ? `<h3>${esc(group.name)}</h3>` : "";
-    return `<section>
+    return `<section class="trend">
       <h2>General trend</h2>
       ${heading}
       <p class="meta">${esc(paceText(group.sessions))} Oldest night on the left. Each night has its own trend, starting where the previous night ended. Scroll sideways to move through the pulls.</p>
@@ -1541,6 +1567,7 @@ async function render() {
     applyNavFilters();
   }
   const app = document.getElementById("app");
+  app.classList.toggle("home", !SESSION);
   if (SESSION && !SESSION._loaded) {
     const pending = loadDetail(where.code);
     if (needsDetail(where)) {
@@ -1700,12 +1727,31 @@ document.body.addEventListener("input", event => {
   applyNavFilters();
 });
 const trendScrollLeft = {};
+function fitTrendLabels() {
+  document.querySelectorAll("main.home .reach-names").forEach(names => {
+    const plot = names.parentElement.querySelector(".trend-plot");
+    const height = plot ? plot.clientHeight : 0;
+    if (height < 40) return;
+    const gap = 14;
+    const placed = [];
+    const rows = [...names.querySelectorAll("span")].map(span => ({
+      span,
+      y: (parseFloat(span.style.bottom) / 100) * height,
+    })).sort((a, b) => b.y - a.y);
+    for (const row of rows) {
+      const hide = placed.some(y => Math.abs(y - row.y) < gap);
+      row.span.hidden = hide;
+      if (!hide) placed.push(row.y);
+    }
+  });
+}
 function placeTrendScroll() {
   for (const node of document.querySelectorAll(".trend-scroll")) {
     const key = node.dataset.trend || "";
     const saved = trendScrollLeft[key];
     node.scrollLeft = saved == null ? node.scrollWidth : saved;
   }
+  fitTrendLabels();
 }
 document.body.addEventListener("scroll", event => {
   const node = event.target;
@@ -1801,7 +1847,10 @@ if (navSplit) {
     applyNavWidth(true);
   });
 }
-window.addEventListener("resize", () => applyNavWidth(false));
+window.addEventListener("resize", () => {
+  applyNavWidth(false);
+  fitTrendLabels();
+});
 </script>
 </body>
 </html>
