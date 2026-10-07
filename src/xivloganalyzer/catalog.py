@@ -38,6 +38,23 @@ class Moment:
 
 
 @dataclass
+class MarkerSpots:
+    """Where marker holders stand, as seen from the arena center with the boss at 0 degrees.
+
+    `angles` are the spots, mirrored left and right. `edge` is their distance
+    from the center. A holder within `tolerance` yalms of a spot is in it. A
+    player who is not a holder is in position when no leap from those spots
+    reaches them, so farther than `radius` from every spot.
+    """
+
+    angles: list[float]
+    edge: float
+    tolerance: float
+    radius: float
+    boss: str
+
+
+@dataclass
 class Mechanic:
     id: str
     name: str
@@ -55,6 +72,7 @@ class Mechanic:
     requires_personal_mit: bool = False
     off_tank: str = ""
     marker_owns_clip: bool = False
+    spots: MarkerSpots | None = None
     moments: list[Moment] = field(default_factory=list)
 
     def cap_for(self, role: str) -> int | None:
@@ -205,6 +223,18 @@ def _clusters(raw_clusters: list[dict]) -> list[Cluster]:
     return clusters
 
 
+def _spots(raw: dict | None) -> MarkerSpots | None:
+    if not raw:
+        return None
+    return MarkerSpots(
+        angles=[float(angle) for angle in raw["angles"]],
+        edge=float(raw["edge"]),
+        tolerance=float(raw["tolerance"]),
+        radius=float(raw["radius"]),
+        boss=raw.get("boss") or "",
+    )
+
+
 def load_pack(fight_dir: Path) -> FightPack:
     fight = json.loads((fight_dir / "fight.json").read_text(encoding="utf-8"))
     mechanics_doc = json.loads((fight_dir / "mechanics.json").read_text(encoding="utf-8"))
@@ -232,6 +262,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 requires_personal_mit=bool(raw.get("requires_personal_mit", False)),
                 off_tank=raw.get("off_tank") or "",
                 marker_owns_clip=bool(raw.get("marker_owns_clip", False)),
+                spots=_spots(raw.get("spots")),
                 moments=[
                     Moment(
                         should_have_been=row.get("should_have_been") or "",

@@ -151,12 +151,12 @@ class ReferenceReportTest(unittest.TestCase):
             [("Loki Doki", 50), ("Spring Nymphar", 50)],
         )
         self.assertEqual(owners(one(68, "Kitana Kahn", "Skyward Leap")), [("Assigned mitigation", 50)])
-        self.assertEqual(owners(one(21, "Loki Doki", "Skyward Leap")), [("Missed soak", 50)])
+        self.assertEqual(owners(one(21, "Loki Doki", "Skyward Leap")), [("Loki Doki", 100)])
         self.assertEqual(
             owners(one(25, "Speed Panda", "Skyward Leap")),
-            [("Loki Doki", 50), ("Spring Nymphar", 50)],
+            [("Kiara Blaiddyd", 50), ("Speed Panda", 50)],
         )
-        self.assertEqual(owners(one(25, "Loki Doki", "Skyward Leap")), [("Missed soak", 50)])
+        self.assertEqual(owners(one(25, "Loki Doki", "Skyward Leap")), [("Loki Doki", 100)])
 
         self.assertEqual(owners(one(14, "Kite Noodle", "Sacred Sever")), [("Missing bodies", 100)])
         self.assertEqual(owners(one(10, "Absolute Gigachad", "Sacred Sever")), [("Missing bodies", 33)])

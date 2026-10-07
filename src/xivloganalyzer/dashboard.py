@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone
-from xivloganalyzer.judge import Judgment, clip_mechanic
+from xivloganalyzer.judge import Judgment, clip_mechanic, marker_owners
 
 JOB = {
     "Paladin": "PLD",
@@ -441,7 +441,7 @@ def session_payload(
         clip = clip_mechanic(item.fact, pack) if item.cause == "marker" else None
         if clip is not None:
             component = clip.id
-            culprits = list(item.fact.clipped_by)
+            culprits = marker_owners(item.fact)
         cluster = pack.cluster_for(component, item.fact.t, item.fact.phase) or _cluster_of(item, pack)
         pull["deaths"].append(
             {

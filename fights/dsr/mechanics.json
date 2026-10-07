@@ -92,11 +92,12 @@
       "scales_with_stack": false,
       "fail_above": 150000,
       "marker_owns_clip": true,
-      "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
+      "spots": {"boss": "King Thordan", "angles": [97, 180], "edge": 20, "tolerance": 3, "radius": 24},
+      "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59–70k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
       "moments": [
         {
           "above": 150000,
-          "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600–760k and applies Damage Down and Paralysis to everyone."
+          "should_have_been": "A second Skyward Leap on the same player hits for about 600–760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already."
         }
       ],
       "roles": {
