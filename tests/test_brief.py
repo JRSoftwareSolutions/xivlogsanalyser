@@ -3,7 +3,7 @@
 import unittest
 from pathlib import Path
 
-from xivloganalyzer.brief import brief_text, filter_judgments, format_death, load_judgments
+from xivloganalyzer.brief import brief_text, filter_judgments, format_brief, format_death, load_judgments
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "data" / "XVz8bCqgPw1KRh9d"
@@ -46,7 +46,9 @@ class BriefTest(unittest.TestCase):
         self.assertTrue(all("raw" not in line.lower() or "Skyward" in line for line in text.splitlines() if line.startswith("Pull ")))
 
     def test_unknowns_include_guid(self):
-        text = brief_text(OTHER, outcome="unknown")
+        rows = [dict(row) for row in load_judgments(OTHER)[:1]]
+        rows[0].update(outcome="unknown", guid=25579, ability="Holy Shield Bash", mechanic="Holy Shield Bash")
+        text = format_brief(OTHER, rows, outcomes=frozenset({"unknown"}))
         self.assertIn("Unknown (", text)
         self.assertIn("(25579)", text)
         self.assertIn("Holy Shield Bash", text)
