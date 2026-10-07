@@ -31,7 +31,7 @@ Arrows replace that number's spots. Face east at the snapshot. The facing decide
 - Circle: south, or the spot already claimed. The tower drops there.
 - Down arrow: east. A 2 stands northeast. The tower drops behind, on the east side.
 
-The mitigations replay stores the number debuffs (First, Second, Third in Line) and the dive markers: High Jump Target `1002755` is the circle, Spineshatter Dive Target `1002756` the up arrow, Elusive Jump Target `1002757` the down arrow. A marker comes off just before its landing. The positions replay gives where each diver stood and faced at that moment. `dive_markers` on the landing mechanics in `mechanics.json` carries the side and facing each arrow should have. The fact keeps them as `divers`.
+The mitigations replay stores the number debuffs (First, Second, Third in Line) and the dive markers: High Jump Target `1002755` is the circle, Spineshatter Dive Target `1002756` the up arrow, Elusive Jump Target `1002757` the down arrow. A marker comes off just before its landing. The positions replay gives where each diver stood and faced at that moment. `dive_markers` on the landing mechanics in `mechanics.json` carries the side and facing each arrow should have. The fact keeps them as `divers`. `debuffs` on the cluster lists every player's number and dive marker on the pull card, so a review can check who had which arrow.
 
 Soak order:
 
@@ -45,7 +45,7 @@ A dive and a soak each leave Fire Resistance Down II and Physical Vulnerability 
 
 Apply these to the killing blow.
 
-- Dark High Jump `26382` or Dark Elusive Jump `26384`, over 150,000: someone stood in the landing. Read the divers whose markers resolved there. An arrow diver within 6 yalms of the player who died, standing on the wrong half (more than 2 yalms off the north–south line), owns every death in that landing. Pull 27: Loki Doki had the down arrow and stood west, facing west, on Spring Nymphar's correct up arrow. Loki owns both deaths. When no arrow is out of place, only circles collided, and the overlap is a miscommunication. Pull 46, four players, the 3s' circles. Without the replays, each player in the burst owns an equal share.
+- Dark High Jump `26382` or Dark Elusive Jump `26384`, over 150,000: someone stood in the landing. Read the divers whose markers resolved there. An arrow diver within 6 yalms of the player who died, standing on the wrong half (more than 2 yalms off the north–south line), owns every death in that landing. Pull 27: Loki Doki had the down arrow and stood west, facing west, on Spring Nymphar's correct up arrow. Loki owns both deaths. Spring is not the pull's first mistake. The first-mistake line says Spring died to Loki's dive. When no arrow is out of place, only circles collided, and the overlap is a miscommunication. Pull 46, four players, the 3s' circles. Without the replays, each player in the burst owns an equal share.
 - Those guids at about 9–23k: the landing connected. A death there is raw, or low if they were already under 15,000 HP. This log has no such death. The circle has lived hits in that band. The down arrow has no small hit stored.
 - A death with no killing blow, at the same moment, last hit the dive: the knock into the wall. The row has no packet, so it is a Deathwall fail. Pull 33 is that case.
 - Eye of the Tyrant `26388` at or under the role cap: the stack of five. Tanks about 37–48k. Everyone else about 50–70k. Dying there from a healthy bar is the healers. Pull 26, three players from full HP at about 71k with no shield.

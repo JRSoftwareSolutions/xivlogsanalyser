@@ -14,6 +14,7 @@ from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone
 from xivloganalyzer.judge import Judgment, clip_mechanic, marker_owners
+from xivloganalyzer.mitigations import load_mitigations
 
 JOB = {
     "Paladin": "PLD",
@@ -362,6 +363,54 @@ def _pull_cards(
         if parts_out:
             cards.append({"id": mech["id"], "name": mech["name"], "parts": parts_out})
     return cards
+
+
+def attach_debuffs(report: Path, payload: dict, pack: FightPack, meta: dict) -> None:
+    """List every player's role debuffs on the card of a stop that hands them out.
+
+    For Dive from Grace that is each player's number and dive marker. A player
+    keeps the first of each column they got in the pull. The list sorts by the
+    columns, in the order their labels are written.
+    """
+    clusters = {cluster.id: cluster for cluster in pack.clusters if cluster.debuffs}
+    if not clusters:
+        return
+    tables = load_mitigations(report)
+    ids = {actor["name"]: actor["id"] for actor in meta.get("friendlies") or []}
+    party = _party(meta, pack)
+    for pull in payload.get("pulls") or []:
+        auras = (tables.get(pull["id"]) or {}).get("auras") or []
+        roster = [player for player in party if pull["id"] in player["fights"]]
+        for card in pull.get("cards") or []:
+            cluster = clusters.get(card["id"])
+            if cluster is None:
+                continue
+            held: dict[tuple[int, str], int] = {}
+            for aura in auras:
+                if aura[1] != "applydebuff":
+                    continue
+                for column in cluster.debuffs:
+                    if aura[2] in column.labels:
+                        held.setdefault((aura[5], column.column), aura[2])
+            if not held:
+                continue
+            players = []
+            for player in roster:
+                actor = ids.get(player["name"])
+                values = [
+                    column.labels.get(held.get((actor, column.column)), "")
+                    for column in cluster.debuffs
+                ]
+                rank = [
+                    list(column.labels.values()).index(value) if value else len(column.labels)
+                    for column, value in zip(cluster.debuffs, values)
+                ]
+                players.append({"name": player["name"], "job": player["job"], "values": values, "_rank": rank})
+            players.sort(key=lambda row: (row.pop("_rank"), row["name"]))
+            card["debuffs"] = {
+                "columns": [column.column for column in cluster.debuffs],
+                "players": players,
+            }
 
 
 def session_payload(

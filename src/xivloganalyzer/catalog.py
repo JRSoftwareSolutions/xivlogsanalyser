@@ -108,8 +108,22 @@ class ClusterPart:
 
 
 @dataclass
+class DebuffColumn:
+    """Debuffs that hand out a role for a stop, such as a number or a dive marker.
+
+    `labels` maps each debuff guid to what it means, in the order the list sorts by.
+    """
+
+    column: str
+    labels: dict[int, str]
+
+
+@dataclass
 class Cluster:
-    """One stop on the session line. `starts` is seconds into `phase`. `skill` explains the stop."""
+    """One stop on the session line. `starts` is seconds into `phase`. `skill` explains the stop.
+
+    `debuffs` are the role debuffs listed for every player on the pull's card.
+    """
 
     id: str
     name: str
@@ -118,6 +132,7 @@ class Cluster:
     summary: str
     parts: list[ClusterPart]
     skill: str = ""
+    debuffs: list[DebuffColumn] = field(default_factory=list)
 
 
 @dataclass
@@ -234,6 +249,13 @@ def _clusters(raw_clusters: list[dict]) -> list[Cluster]:
                 summary=raw.get("summary", ""),
                 parts=parts,
                 skill=raw.get("skill", ""),
+                debuffs=[
+                    DebuffColumn(
+                        column=row["column"],
+                        labels={int(guid): label for guid, label in row["labels"].items()},
+                    )
+                    for row in raw.get("debuffs") or []
+                ],
             )
         )
     return clusters
