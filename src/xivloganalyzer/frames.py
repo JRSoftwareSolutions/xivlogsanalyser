@@ -5,9 +5,9 @@ positive y is south, matching the replay. Facing is a unit vector in that
 same space: the stored value is hundredths of a radian, and at the start of
 a pull the party stands south of Thordan with facing -158, which points north.
 
-A failed death keeps a picture of that hit. Every mechanic a pull reached also
-gets a picture at the cast. The cast time comes from the damage events, and
-from deaths when a pull has no event of its own.
+A failed death keeps a picture of that hit. A mechanic the party failed also
+gets a picture at the cast. A clear mechanic does not. The cast time comes
+from the damage events, and from deaths when a pull has no event of its own.
 """
 
 from __future__ import annotations
@@ -660,7 +660,7 @@ def _place(fight: dict, pack: FightPack, timestamp: int) -> tuple[int, float] | 
 
 
 def attach_frames(report: Path, payload: dict, pack: FightPack) -> None:
-    """Add a still to each failed death, and to each mechanic a pull reached."""
+    """Add a still to each failed death, and to each mechanic the party failed."""
     book = FrameBook(report)
     clock = CastClock(report, pack, payload.get("pulls") or [])
     mechanics = {item["id"]: item for item in payload.get("mechanics") or []}
@@ -680,6 +680,8 @@ def attach_frames(report: Path, payload: dict, pack: FightPack) -> None:
                     for seat in part.get("seats") or []
                     if not seat.get("passed")
                 ]
+                if not failed:
+                    continue
                 frames = []
                 moments = clock.times(pull["id"], card["id"], part["id"])
                 if not moments:
