@@ -19,6 +19,8 @@ Read the mechanic skill for the killing blow before you assign fault. Setting or
 
 The killing blow is the first ability in the deaths-table row before `last-three-events`. The last tooltip event is often reverse-chronological and is the wrong blow.
 
+A damage-over-time kill, such as Frostbite or Burns, links its status (`#status/2946`) instead of an action. Its guid is that number plus 1,000,000, and it is a real killing blow.
+
 No ability on that row means there is no damage packet. That is the deathwall. The only timestamp on that row is the last hit they lived, so the death is timed by the row's clock instead, moved back 1.5 seconds to match the hit timestamps.
 
 ## Packet
@@ -76,8 +78,8 @@ These are the shared calls:
 - Lightning Storm clip, and a Bright Flare overlap: each player in the overlap. A second body who lived is "Another player".
 - Skyward Leap under full HP: the healers, named, split evenly.
 - Skyward Leap at full HP: "Assigned mitigation" at 50. The plan is more than one player, and the log does not name them.
-- Empty tower: "Missed soak" at 50. The player who died is the one the explosion hit. Sanctity Eternal Conviction after 100 seconds is this call.
-- Holy Impact: "Prey markers" at 50. The two prey players dropped the comets too close.
+- Empty tower: whoever was missing from it. A player already dead, or alive and not hit by the tower soak, owns it, split evenly. A player who died to an earlier empty tower passes it on. With everyone alive and in a tower, "Missed soak" at 50. Sanctity Eternal Conviction after 100 seconds is this call.
+- Holy Impact: with a player already dead, that player, as an empty tower. With everyone alive, "Prey markers" at 50. The two prey players dropped the comets too close.
 - Someone else's Skyward Leap, by its vulnerability or by the leap itself: whoever was out of position, named. A holder off their spot owns it at 100. A player who stood in a holder's leap on its spot owns it at 100. Both off is 50 each. With no positions, the holder owns it. The death sits under Skyward Leap on the pull card, and only the owners fail it.
 - A second Skyward Leap with nobody else's leap on the player: "Earlier deaths" at 100. That leap's holder was already dead.
 - Dive from Grace landing: an arrow holder on the wrong side, named, at 100 on every death in that landing. Only that holder fails it on the pull card. With no arrow out of place, "Miscommunication" at the landing's share.
@@ -122,6 +124,7 @@ Update `tests/test_reference.py` only when the settled headline is meant to chan
 | Shining Blade | 25570 | `dsr-shining-blade` |
 | Heavens' Stake | 28591 | `dsr-heavens-stake` |
 | Frostbite | 1002946 | `dsr-frostbite` |
+| Burns | 1002945 | `dsr-burns` |
 | Dimensional Collapse | 25564 | `dsr-dimensional-collapse` |
 | Conviction | 29564, 28651 | `dsr-conviction` |
 | Holy Comet | 25577 | `dsr-holy-comet` |

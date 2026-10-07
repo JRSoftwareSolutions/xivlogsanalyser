@@ -20,9 +20,10 @@
           "after": 100,
           "fail": true,
           "cause": "tower",
-          "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58–66k of that explosion. Everyone else takes about 90–105k. The players who missed the tower own it."
+          "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58–66k of that explosion. Everyone else takes about 90–105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it."
         }
       ],
+      "needs_everyone": {"soak": [29564, 28651], "lead": 4},
       "roles": {
         "tank": {"unmitigated_max": 75000, "lived": "61–67k"},
         "healer": {"unmitigated_max": 115000, "lived": "about 86–103k"},
@@ -66,7 +67,8 @@
       "category": "raidwide",
       "scales_with_stack": false,
       "any_hit_is_fail": true,
-      "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57–66k of the explosion. Everyone else takes about 91–106k.",
+      "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57–66k of the explosion. Everyone else takes about 91–106k.",
+      "needs_everyone": {"lead": 1},
       "roles": {
         "tank": {"unmitigated_max": 78000, "lived": "61–67k"},
         "healer": {"unmitigated_max": 115000, "lived": "about 90–98k"},
@@ -264,6 +266,15 @@
       "category": "puddle",
       "any_hit_is_fail": true,
       "should_have_been": "Run out of the ice before it ticks. Frostbite is standing in the puddle."
+    },
+    {
+      "id": "burns",
+      "name": "Burns",
+      "phase": 2,
+      "guids": [1002945],
+      "category": "puddle",
+      "any_hit_is_fail": true,
+      "should_have_been": "Stay out of the fire. Burns is the fire's damage over time, so a tick means they stood in it."
     },
     {
       "id": "dimensional-collapse",
@@ -550,6 +561,7 @@
         {"id": "heavens-stake"},
         {"id": "hiemal-storm"},
         {"id": "frostbite"},
+        {"id": "burns"},
         {"id": "conviction"},
         {
           "id": "eternal-conviction",

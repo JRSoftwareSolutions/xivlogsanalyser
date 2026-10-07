@@ -72,7 +72,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 4,
@@ -131,7 +133,9 @@
       "Spring Nymphar": false,
       "Speed Panda": true
     },
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 4,
@@ -226,7 +230,9 @@
       "Spring Nymphar": false,
       "Absolute Gigachad": true
     },
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 4,
@@ -285,7 +291,9 @@
       "Spring Nymphar": false,
       "Kiara Blaiddyd": true
     },
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 4,
@@ -344,7 +352,9 @@
       "Spring Nymphar": false,
       "Kitana Kahn": true
     },
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 4,
@@ -395,7 +405,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 4,
@@ -457,7 +469,9 @@
         "t": 65.2,
         "until": 65.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 4,
@@ -505,7 +519,9 @@
         "t": 65.2,
         "until": 65.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 5,
@@ -533,7 +549,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 5,
@@ -573,7 +591,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 5,
@@ -613,7 +633,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 5,
@@ -656,7 +678,12 @@
         "t": 138.1,
         "until": 138.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 5,
@@ -699,7 +726,12 @@
         "t": 138.1,
         "until": 138.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 5,
@@ -742,7 +774,12 @@
         "t": 138.1,
         "until": 138.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 5,
@@ -785,7 +822,12 @@
         "t": 138.1,
         "until": 138.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 5,
@@ -828,7 +870,12 @@
         "t": 138.1,
         "until": 138.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 5,
@@ -871,7 +918,12 @@
         "t": 138.1,
         "until": 138.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 6,
@@ -924,7 +976,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 6,
@@ -1000,7 +1054,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 6,
@@ -1051,7 +1107,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 6,
@@ -1105,7 +1163,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 6,
@@ -1233,7 +1293,9 @@
         "t": 64.9,
         "until": 68.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 6,
@@ -1325,7 +1387,9 @@
         "t": 64.9,
         "until": 68.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 6,
@@ -1429,7 +1493,9 @@
         "t": 64.9,
         "until": 68.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 6,
@@ -1545,7 +1611,9 @@
         "t": 64.9,
         "until": 68.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 6,
@@ -1623,7 +1691,9 @@
         "t": 64.9,
         "until": 68.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 7,
@@ -1651,7 +1721,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 7,
@@ -1679,7 +1751,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 7,
@@ -1741,7 +1815,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 7,
@@ -1769,7 +1845,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 7,
@@ -1842,7 +1920,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 7,
@@ -1926,7 +2006,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 7,
@@ -1954,7 +2036,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 7,
@@ -2038,7 +2122,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 9,
@@ -2066,54 +2152,28 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 9,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 135.5,
-    "time": "2:17",
-    "name": "Kiara Blaiddyd",
-    "job": "Dancer",
-    "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
-    "max_hp": 68662,
-    "unmitigated": null,
-    "multiplier": null,
-    "absorb": 0,
-    "stack": null,
-    "buffs": [],
-    "boss_pct": 33.8,
-    "pull_ms": 141931,
-    "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
-    "divers": [],
-    "in_spot": {},
-    "prior_debuffs": []
-  },
-  {
-    "fight": 9,
-    "phase": 2,
-    "phase_name": "Thordan",
-    "t": 135.5,
+    "t": 135.2,
     "time": "2:17",
     "name": "Spring Nymphar",
     "job": "Scholar",
     "role": "healer",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 48567,
+    "hp": 40785,
     "max_hp": 61615,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 48567,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 141931,
@@ -2122,7 +2182,39 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
+  },
+  {
+    "fight": 9,
+    "phase": 2,
+    "phase_name": "Thordan",
+    "t": 135.8,
+    "time": "2:17",
+    "name": "Kiara Blaiddyd",
+    "job": "Dancer",
+    "role": "dps",
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 49906,
+    "hp": 45218,
+    "max_hp": 68662,
+    "unmitigated": 49906,
+    "multiplier": 1.0,
+    "absorb": 0,
+    "stack": 2,
+    "buffs": [],
+    "boss_pct": 33.8,
+    "pull_ms": 141931,
+    "mitigations": [],
+    "clipped_by": [],
+    "clip_guid": null,
+    "divers": [],
+    "in_spot": {},
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 9,
@@ -2165,7 +2257,11 @@
         "t": 137.6,
         "until": 137.7
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 9,
@@ -2208,7 +2304,11 @@
         "t": 137.6,
         "until": 137.7
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 9,
@@ -2251,7 +2351,11 @@
         "t": 137.6,
         "until": 137.7
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 9,
@@ -2294,7 +2398,11 @@
         "t": 137.6,
         "until": 137.7
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 9,
@@ -2337,7 +2445,11 @@
         "t": 137.6,
         "until": 137.7
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 10,
@@ -2365,7 +2477,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 10,
@@ -2427,7 +2541,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 10,
@@ -2500,7 +2616,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 10,
@@ -2528,7 +2646,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 10,
@@ -2601,7 +2721,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 10,
@@ -2629,7 +2751,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 10,
@@ -2754,7 +2878,9 @@
         "t": 59.4,
         "until": 59.7
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 10,
@@ -2835,7 +2961,9 @@
         "t": 59.4,
         "until": 59.7
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 10,
@@ -2871,7 +2999,9 @@
         "t": 59.4,
         "until": 59.7
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 11,
@@ -2899,7 +3029,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 11,
@@ -2935,7 +3067,9 @@
         "t": 146.8,
         "until": 146.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 11,
@@ -2971,7 +3105,9 @@
         "t": 146.8,
         "until": 146.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 11,
@@ -3007,7 +3143,9 @@
         "t": 146.8,
         "until": 146.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 11,
@@ -3043,7 +3181,9 @@
         "t": 146.8,
         "until": 146.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 11,
@@ -3079,7 +3219,9 @@
         "t": 146.8,
         "until": 146.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 11,
@@ -3115,7 +3257,9 @@
         "t": 146.8,
         "until": 146.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 11,
@@ -3151,7 +3295,9 @@
         "t": 146.8,
         "until": 146.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 12,
@@ -3224,7 +3370,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 12,
@@ -3264,7 +3412,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 12,
@@ -3292,7 +3442,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 12,
@@ -3354,7 +3506,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 12,
@@ -3390,7 +3544,9 @@
         "t": 64.8,
         "until": 64.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 12,
@@ -3426,7 +3582,9 @@
         "t": 64.8,
         "until": 64.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 12,
@@ -3488,7 +3646,9 @@
         "t": 64.8,
         "until": 64.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 12,
@@ -3524,7 +3684,9 @@
         "t": 64.8,
         "until": 64.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 13,
@@ -3552,7 +3714,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 13,
@@ -3580,7 +3744,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 13,
@@ -3616,7 +3782,12 @@
         "t": 151.0,
         "until": 151.1
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 13,
@@ -3652,7 +3823,12 @@
         "t": 151.0,
         "until": 151.1
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 13,
@@ -3688,7 +3864,12 @@
         "t": 151.0,
         "until": 151.1
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 13,
@@ -3724,7 +3905,12 @@
         "t": 151.0,
         "until": 151.1
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 13,
@@ -3760,7 +3946,12 @@
         "t": 151.0,
         "until": 151.1
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 13,
@@ -3796,7 +3987,12 @@
         "t": 151.0,
         "until": 151.1
       }
-    ]
+    ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 14,
@@ -3836,7 +4032,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 14,
@@ -3915,7 +4113,9 @@
         "t": 65.7,
         "until": 70.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 14,
@@ -3981,7 +4181,9 @@
         "t": 65.7,
         "until": 70.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 14,
@@ -4060,7 +4262,9 @@
         "t": 65.7,
         "until": 70.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 14,
@@ -4103,7 +4307,9 @@
         "t": 65.7,
         "until": 70.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 14,
@@ -4182,7 +4388,9 @@
         "t": 65.7,
         "until": 70.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 14,
@@ -4261,7 +4469,9 @@
         "t": 65.7,
         "until": 70.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 14,
@@ -4304,7 +4514,9 @@
         "t": 65.7,
         "until": 70.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 14,
@@ -4370,7 +4582,9 @@
         "t": 65.7,
         "until": 70.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 15,
@@ -4421,7 +4635,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 15,
@@ -4449,7 +4665,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 15,
@@ -4511,7 +4729,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 15,
@@ -4573,7 +4793,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 15,
@@ -4698,7 +4920,9 @@
         "t": 59.0,
         "until": 59.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 15,
@@ -4734,7 +4958,9 @@
         "t": 59.0,
         "until": 59.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 15,
@@ -4804,7 +5030,9 @@
         "t": 59.0,
         "until": 59.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 15,
@@ -4895,7 +5123,9 @@
         "t": 59.0,
         "until": 59.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 16,
@@ -4946,7 +5176,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 16,
@@ -5008,7 +5240,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 16,
@@ -5070,7 +5304,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 16,
@@ -5110,7 +5346,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 16,
@@ -5150,7 +5388,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 16,
@@ -5178,7 +5418,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 16,
@@ -5206,7 +5448,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 16,
@@ -5234,7 +5478,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 16,
@@ -5262,7 +5508,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 17,
@@ -5331,7 +5579,9 @@
         "t": 113.7,
         "until": 115.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 17,
@@ -5374,7 +5624,9 @@
         "t": 113.7,
         "until": 115.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 17,
@@ -5385,15 +5637,15 @@
     "name": "Kitana Kahn",
     "job": "BlackMage",
     "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 50617,
+    "hp": 36317,
     "max_hp": 61737,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 50617,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 33.9,
     "pull_ms": 142675,
@@ -5417,7 +5669,9 @@
         "t": 113.7,
         "until": 115.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 17,
@@ -5474,6 +5728,12 @@
         "t": 138.0,
         "until": 138.4
       }
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
     ]
   },
   {
@@ -5531,6 +5791,12 @@
         "t": 138.0,
         "until": 138.4
       }
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
     ]
   },
   {
@@ -5588,6 +5854,12 @@
         "t": 138.0,
         "until": 138.4
       }
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
     ]
   },
   {
@@ -5645,6 +5917,12 @@
         "t": 138.0,
         "until": 138.4
       }
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
     ]
   },
   {
@@ -5702,6 +5980,12 @@
         "t": 138.0,
         "until": 138.4
       }
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
     ]
   },
   {
@@ -5759,6 +6043,12 @@
         "t": 138.0,
         "until": 138.4
       }
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
     ]
   },
   {
@@ -5795,7 +6085,9 @@
         "t": 14.2,
         "until": 25.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 18,
@@ -5845,7 +6137,9 @@
         "t": 148.4,
         "until": 148.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 18,
@@ -5895,7 +6189,9 @@
         "t": 148.4,
         "until": 148.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 18,
@@ -5945,7 +6241,9 @@
         "t": 148.4,
         "until": 148.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 18,
@@ -5995,7 +6293,9 @@
         "t": 148.4,
         "until": 148.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 18,
@@ -6045,7 +6345,9 @@
         "t": 148.4,
         "until": 148.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 18,
@@ -6095,7 +6397,9 @@
         "t": 148.4,
         "until": 148.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 18,
@@ -6145,7 +6449,9 @@
         "t": 148.4,
         "until": 148.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 18,
@@ -6195,7 +6501,9 @@
         "t": 148.4,
         "until": 148.4
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 19,
@@ -6238,7 +6546,9 @@
         "t": 138.0,
         "until": 139.0
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 19,
@@ -6281,7 +6591,9 @@
         "t": 138.0,
         "until": 139.0
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 19,
@@ -6324,7 +6636,9 @@
         "t": 138.0,
         "until": 139.0
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 19,
@@ -6367,7 +6681,9 @@
         "t": 138.0,
         "until": 139.0
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 19,
@@ -6410,7 +6726,9 @@
         "t": 138.0,
         "until": 139.0
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 19,
@@ -6453,7 +6771,9 @@
         "t": 138.0,
         "until": 139.0
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 19,
@@ -6496,7 +6816,9 @@
         "t": 138.0,
         "until": 139.0
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 19,
@@ -6539,7 +6861,17 @@
         "t": 138.0,
         "until": 139.0
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 20,
@@ -6567,7 +6899,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 20,
@@ -6610,7 +6944,11 @@
         "t": 151.3,
         "until": 154.8
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 20,
@@ -6653,7 +6991,11 @@
         "t": 151.3,
         "until": 154.8
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 20,
@@ -6696,7 +7038,11 @@
         "t": 151.3,
         "until": 154.8
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 20,
@@ -6739,7 +7085,11 @@
         "t": 151.3,
         "until": 154.8
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 20,
@@ -6782,7 +7132,11 @@
         "t": 151.3,
         "until": 154.8
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 20,
@@ -6825,7 +7179,9 @@
         "t": 151.3,
         "until": 154.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 20,
@@ -6868,7 +7224,9 @@
         "t": 151.3,
         "until": 154.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 21,
@@ -6904,7 +7262,9 @@
         "t": 14.4,
         "until": 18.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 21,
@@ -6940,7 +7300,9 @@
         "t": 14.4,
         "until": 18.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 21,
@@ -6976,7 +7338,9 @@
         "t": 14.4,
         "until": 18.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 21,
@@ -7012,7 +7376,9 @@
         "t": 14.4,
         "until": 18.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 21,
@@ -7048,7 +7414,9 @@
         "t": 14.4,
         "until": 18.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 21,
@@ -7096,7 +7464,9 @@
         "t": 14.4,
         "until": 18.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 21,
@@ -7132,7 +7502,9 @@
         "t": 14.4,
         "until": 18.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 21,
@@ -7168,7 +7540,9 @@
         "t": 14.4,
         "until": 18.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 22,
@@ -7249,7 +7623,9 @@
         "t": 59.3,
         "until": 65.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 22,
@@ -7324,7 +7700,9 @@
         "t": 65.3,
         "until": 67.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 22,
@@ -7399,7 +7777,9 @@
         "t": 65.3,
         "until": 67.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 22,
@@ -7474,7 +7854,9 @@
         "t": 65.3,
         "until": 67.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 22,
@@ -7549,7 +7931,9 @@
         "t": 65.3,
         "until": 67.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 22,
@@ -7599,7 +7983,9 @@
         "t": 65.3,
         "until": 67.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 22,
@@ -7674,7 +8060,9 @@
         "t": 65.3,
         "until": 67.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 22,
@@ -7724,7 +8112,9 @@
         "t": 65.3,
         "until": 67.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 23,
@@ -7752,7 +8142,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 23,
@@ -7795,7 +8187,9 @@
         "t": 147.2,
         "until": 147.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 23,
@@ -7838,7 +8232,9 @@
         "t": 147.2,
         "until": 147.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 23,
@@ -7881,7 +8277,9 @@
         "t": 147.2,
         "until": 147.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 23,
@@ -7924,7 +8322,9 @@
         "t": 147.2,
         "until": 147.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 23,
@@ -7967,7 +8367,9 @@
         "t": 147.2,
         "until": 147.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 23,
@@ -8010,7 +8412,9 @@
         "t": 147.2,
         "until": 147.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 23,
@@ -8053,7 +8457,9 @@
         "t": 147.2,
         "until": 147.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 23,
@@ -8096,7 +8502,9 @@
         "t": 147.2,
         "until": 147.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 24,
@@ -8139,7 +8547,9 @@
         "t": 145.9,
         "until": 145.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 24,
@@ -8182,7 +8592,9 @@
         "t": 145.9,
         "until": 145.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 24,
@@ -8225,7 +8637,9 @@
         "t": 145.9,
         "until": 145.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 24,
@@ -8268,7 +8682,9 @@
         "t": 145.9,
         "until": 145.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 24,
@@ -8311,7 +8727,9 @@
         "t": 145.9,
         "until": 145.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 24,
@@ -8354,7 +8772,9 @@
         "t": 145.9,
         "until": 145.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 24,
@@ -8397,7 +8817,9 @@
         "t": 145.9,
         "until": 145.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 24,
@@ -8440,7 +8862,9 @@
         "t": 145.9,
         "until": 145.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 25,
@@ -8474,7 +8898,9 @@
       "Loki Doki": false,
       "Kiara Blaiddyd": true
     },
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 25,
@@ -8522,7 +8948,9 @@
       "Kiara Blaiddyd": true,
       "Loki Doki": false
     },
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 25,
@@ -8550,7 +8978,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 25,
@@ -8600,7 +9030,9 @@
         "t": 65.4,
         "until": 65.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 25,
@@ -8676,7 +9108,9 @@
         "t": 65.4,
         "until": 65.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 25,
@@ -8738,7 +9172,9 @@
         "t": 65.4,
         "until": 65.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 25,
@@ -8800,7 +9236,9 @@
         "t": 65.4,
         "until": 65.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 25,
@@ -8864,7 +9302,9 @@
         "t": 65.4,
         "until": 65.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 26,
@@ -8900,7 +9340,9 @@
         "t": 187.6,
         "until": 236.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 26,
@@ -8936,7 +9378,9 @@
         "t": 187.6,
         "until": 236.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 26,
@@ -8972,7 +9416,9 @@
         "t": 187.6,
         "until": 236.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 26,
@@ -9034,7 +9480,9 @@
         "t": 39.2,
         "until": 39.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 26,
@@ -9096,7 +9544,9 @@
         "t": 39.2,
         "until": 39.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 26,
@@ -9158,7 +9608,9 @@
         "t": 39.2,
         "until": 39.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 26,
@@ -9220,7 +9672,9 @@
         "t": 39.2,
         "until": 39.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 26,
@@ -9282,7 +9736,9 @@
         "t": 39.2,
         "until": 39.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 27,
@@ -9341,7 +9797,9 @@
       }
     ],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 27,
@@ -9400,7 +9858,9 @@
       }
     ],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 27,
@@ -9448,7 +9908,9 @@
         "t": 34.8,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 27,
@@ -9484,7 +9946,9 @@
         "t": 34.8,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 27,
@@ -9546,7 +10010,9 @@
         "t": 39.2,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 27,
@@ -9608,7 +10074,9 @@
         "t": 39.2,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 27,
@@ -9670,7 +10138,9 @@
         "t": 39.2,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 27,
@@ -9732,7 +10202,9 @@
         "t": 39.2,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 28,
@@ -9760,7 +10232,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 28,
@@ -9822,7 +10296,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 28,
@@ -9850,7 +10326,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 28,
@@ -9878,7 +10356,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 28,
@@ -9918,7 +10398,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 28,
@@ -9946,7 +10428,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 28,
@@ -9974,7 +10458,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 28,
@@ -10002,7 +10488,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 29,
@@ -10079,7 +10567,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 29,
@@ -10122,7 +10612,9 @@
         "t": 150.6,
         "until": 157.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 29,
@@ -10165,7 +10657,9 @@
         "t": 150.6,
         "until": 157.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 29,
@@ -10208,7 +10702,9 @@
         "t": 150.6,
         "until": 157.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 29,
@@ -10251,7 +10747,9 @@
         "t": 150.6,
         "until": 157.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 29,
@@ -10294,7 +10792,9 @@
         "t": 150.6,
         "until": 157.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 29,
@@ -10337,7 +10837,9 @@
         "t": 150.6,
         "until": 157.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 29,
@@ -10380,7 +10882,9 @@
         "t": 150.6,
         "until": 157.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 29,
@@ -10423,7 +10927,9 @@
         "t": 150.6,
         "until": 157.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 30,
@@ -10463,7 +10969,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 30,
@@ -10503,7 +11011,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 30,
@@ -10551,7 +11061,9 @@
         "t": 34.7,
         "until": 37.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 30,
@@ -10624,7 +11136,9 @@
         "t": 39.2,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 30,
@@ -10686,7 +11200,9 @@
         "t": 39.2,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 30,
@@ -10759,7 +11275,9 @@
         "t": 39.2,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 30,
@@ -10821,7 +11339,9 @@
         "t": 39.2,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 30,
@@ -10883,7 +11403,9 @@
         "t": 39.2,
         "until": 39.2
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 31,
@@ -10911,7 +11433,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 31,
@@ -10951,7 +11475,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 31,
@@ -10979,7 +11505,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 31,
@@ -11007,7 +11535,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 31,
@@ -11035,7 +11565,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 31,
@@ -11075,7 +11607,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 31,
@@ -11103,7 +11637,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 31,
@@ -11131,7 +11667,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 33,
@@ -11171,7 +11709,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 33,
@@ -11199,7 +11739,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 33,
@@ -11239,7 +11781,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 33,
@@ -11279,7 +11823,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 33,
@@ -11319,7 +11865,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 33,
@@ -11359,7 +11907,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 33,
@@ -11399,7 +11949,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 33,
@@ -11439,7 +11991,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 34,
@@ -11467,7 +12021,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 34,
@@ -11502,7 +12058,9 @@
       "Speed Panda": true,
       "Kitana Kahn": false
     },
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 34,
@@ -11530,7 +12088,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 34,
@@ -11558,7 +12118,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 34,
@@ -11609,7 +12171,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 34,
@@ -11637,7 +12201,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 34,
@@ -11665,7 +12231,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 34,
@@ -11693,7 +12261,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 35,
@@ -11735,27 +12305,31 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 35,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 135.5,
+    "t": 135.8,
     "time": "2:17",
     "name": "Kiara Blaiddyd",
     "job": "Dancer",
     "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002945,
+    "ability": "Burns",
+    "total": 77016,
+    "hp": 36402,
     "max_hp": 68662,
-    "unmitigated": null,
-    "multiplier": null,
-    "absorb": 0,
-    "stack": null,
-    "buffs": [],
+    "unmitigated": 77016,
+    "multiplier": 1.0,
+    "absorb": 7576,
+    "stack": 1,
+    "buffs": [
+      "Galvanize"
+    ],
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [
@@ -11767,15 +12341,17 @@
         "on": "Kiara Blaiddyd",
         "on_id": 25,
         "pct": null,
-        "amount": null,
-        "via": "Succor"
+        "amount": 7576,
+        "via": null
       }
     ],
     "clipped_by": [],
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 35,
@@ -11811,7 +12387,11 @@
         "t": 151.0,
         "until": 155.5
       }
-    ]
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 35,
@@ -11847,7 +12427,9 @@
         "t": 151.0,
         "until": 155.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 35,
@@ -11883,7 +12465,11 @@
         "t": 151.0,
         "until": 155.5
       }
-    ]
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 35,
@@ -11919,7 +12505,11 @@
         "t": 151.0,
         "until": 155.5
       }
-    ]
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 35,
@@ -11955,7 +12545,11 @@
         "t": 151.0,
         "until": 155.5
       }
-    ]
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 35,
@@ -11991,7 +12585,11 @@
         "t": 151.0,
         "until": 155.5
       }
-    ]
+    ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 35,
@@ -12027,7 +12625,9 @@
         "t": 151.0,
         "until": 155.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 36,
@@ -12080,7 +12680,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 36,
@@ -12153,7 +12755,9 @@
         "t": 39.4,
         "until": 44.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 36,
@@ -12237,7 +12841,9 @@
         "t": 39.4,
         "until": 44.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 36,
@@ -12321,7 +12927,9 @@
         "t": 39.4,
         "until": 44.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 36,
@@ -12394,7 +13002,9 @@
         "t": 39.4,
         "until": 44.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 36,
@@ -12456,7 +13066,9 @@
         "t": 39.4,
         "until": 44.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 36,
@@ -12529,7 +13141,9 @@
         "t": 39.4,
         "until": 44.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 36,
@@ -12602,7 +13216,9 @@
         "t": 39.4,
         "until": 44.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 36,
@@ -12664,26 +13280,28 @@
         "t": 39.4,
         "until": 44.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 37,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 135.5,
+    "t": 135.6,
     "time": "2:17",
     "name": "Kiara Blaiddyd",
     "job": "Dancer",
     "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 63000,
+    "hp": 26917,
     "max_hp": 68662,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 63000,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 34.6,
     "pull_ms": 146362,
@@ -12692,7 +13310,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 37,
@@ -12735,6 +13355,10 @@
         "t": 137.6,
         "until": 142.1
       }
+    ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -12778,6 +13402,10 @@
         "t": 137.6,
         "until": 142.1
       }
+    ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -12821,6 +13449,10 @@
         "t": 137.6,
         "until": 142.1
       }
+    ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -12864,6 +13496,10 @@
         "t": 137.6,
         "until": 142.1
       }
+    ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -12907,6 +13543,10 @@
         "t": 137.6,
         "until": 142.1
       }
+    ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -12950,7 +13590,16 @@
         "t": 137.6,
         "until": 142.1
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 37,
@@ -12993,7 +13642,16 @@
         "t": 137.6,
         "until": 142.1
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 39,
@@ -13033,7 +13691,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 39,
@@ -13063,7 +13723,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 39,
@@ -13103,26 +13765,28 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 39,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 133.5,
+    "t": 133.8,
     "time": "2:15",
     "name": "Speed Panda",
     "job": "Viper",
     "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 51597,
+    "hp": 32112,
     "max_hp": 68259,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 51597,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 34.4,
     "pull_ms": 141801,
@@ -13131,7 +13795,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 39,
@@ -13159,7 +13825,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 39,
@@ -13207,7 +13875,14 @@
         "t": 137.6,
         "until": 137.6
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 39,
@@ -13243,7 +13918,14 @@
         "t": 137.6,
         "until": 137.6
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 39,
@@ -13279,7 +13961,14 @@
         "t": 137.6,
         "until": 137.6
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 40,
@@ -13322,7 +14011,9 @@
         "t": 148.3,
         "until": 148.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 40,
@@ -13365,7 +14056,9 @@
         "t": 148.3,
         "until": 148.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 40,
@@ -13408,7 +14101,9 @@
         "t": 148.3,
         "until": 148.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 40,
@@ -13451,7 +14146,9 @@
         "t": 148.3,
         "until": 148.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 40,
@@ -13494,7 +14191,9 @@
         "t": 148.3,
         "until": 148.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 40,
@@ -13537,7 +14236,9 @@
         "t": 148.3,
         "until": 148.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 40,
@@ -13580,7 +14281,9 @@
         "t": 148.3,
         "until": 148.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 40,
@@ -13623,7 +14326,9 @@
         "t": 148.3,
         "until": 148.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 41,
@@ -13651,7 +14356,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 41,
@@ -13679,7 +14386,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 41,
@@ -13715,7 +14424,9 @@
         "t": 65.4,
         "until": 65.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 41,
@@ -13751,7 +14462,9 @@
         "t": 65.4,
         "until": 65.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 41,
@@ -13787,7 +14500,9 @@
         "t": 65.4,
         "until": 65.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 41,
@@ -13849,7 +14564,9 @@
         "t": 65.4,
         "until": 65.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 41,
@@ -13908,7 +14625,9 @@
         "t": 65.4,
         "until": 65.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 41,
@@ -13944,7 +14663,9 @@
         "t": 65.4,
         "until": 65.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 41,
@@ -13982,7 +14703,9 @@
         "t": 65.4,
         "until": 65.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 42,
@@ -14024,7 +14747,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 42,
@@ -14066,7 +14791,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 42,
@@ -14094,7 +14821,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 42,
@@ -14122,7 +14851,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 42,
@@ -14150,7 +14881,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 42,
@@ -14178,7 +14911,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 42,
@@ -14206,7 +14941,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 42,
@@ -14234,7 +14971,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 43,
@@ -14277,7 +15016,9 @@
         "t": 141.6,
         "until": 141.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 43,
@@ -14320,7 +15061,9 @@
         "t": 141.6,
         "until": 141.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 43,
@@ -14375,7 +15118,9 @@
         "t": 141.6,
         "until": 141.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 43,
@@ -14430,7 +15175,9 @@
         "t": 141.6,
         "until": 141.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 43,
@@ -14473,7 +15220,9 @@
         "t": 141.6,
         "until": 141.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 43,
@@ -14516,7 +15265,9 @@
         "t": 141.6,
         "until": 141.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 43,
@@ -14559,7 +15310,9 @@
         "t": 141.6,
         "until": 141.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 43,
@@ -14614,7 +15367,9 @@
         "t": 141.6,
         "until": 141.6
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 44,
@@ -14687,7 +15442,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 44,
@@ -14740,7 +15497,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 44,
@@ -14793,7 +15552,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 44,
@@ -14859,7 +15620,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 44,
@@ -14912,7 +15675,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 44,
@@ -14965,7 +15730,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 44,
@@ -15019,7 +15786,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 44,
@@ -15072,7 +15841,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 45,
@@ -15114,7 +15885,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 45,
@@ -15142,7 +15915,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 45,
@@ -15170,7 +15945,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 45,
@@ -15206,7 +15983,11 @@
         "t": 137.3,
         "until": 142.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 45,
@@ -15242,7 +16023,11 @@
         "t": 137.3,
         "until": 142.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 45,
@@ -15278,7 +16063,11 @@
         "t": 137.3,
         "until": 142.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 45,
@@ -15314,7 +16103,11 @@
         "t": 137.3,
         "until": 142.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 45,
@@ -15364,7 +16157,11 @@
         "t": 137.3,
         "until": 142.1
       }
-    ]
+    ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 45,
@@ -15400,7 +16197,17 @@
         "t": 137.3,
         "until": 142.1
       }
-    ]
+    ],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 46,
@@ -15494,7 +16301,9 @@
       "Kitana Kahn": true,
       "Absolute Gigalad": true
     },
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 46,
@@ -15564,7 +16373,9 @@
         "t": 37.9,
         "until": 51.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 46,
@@ -15623,7 +16434,9 @@
         "t": 37.9,
         "until": 51.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 46,
@@ -15690,7 +16503,9 @@
         "t": 37.9,
         "until": 51.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 46,
@@ -15780,7 +16595,9 @@
         "t": 37.9,
         "until": 51.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 46,
@@ -15870,7 +16687,9 @@
         "t": 37.9,
         "until": 51.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 46,
@@ -15949,7 +16768,9 @@
         "t": 37.9,
         "until": 51.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 46,
@@ -15985,7 +16806,9 @@
         "t": 37.9,
         "until": 51.9
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 46,
@@ -16028,7 +16851,9 @@
         "t": 56.2,
         "until": 58.0
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 48,
@@ -16083,7 +16908,9 @@
         "t": 113.5,
         "until": 114.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 48,
@@ -16140,7 +16967,9 @@
         "t": 113.5,
         "until": 114.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 48,
@@ -16195,7 +17024,9 @@
         "t": 113.5,
         "until": 114.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 48,
@@ -16238,7 +17069,9 @@
         "t": 113.5,
         "until": 114.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 48,
@@ -16281,7 +17114,9 @@
         "t": 113.5,
         "until": 114.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 48,
@@ -16324,7 +17159,9 @@
         "t": 113.5,
         "until": 114.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 48,
@@ -16367,7 +17204,9 @@
         "t": 113.5,
         "until": 114.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 48,
@@ -16410,7 +17249,9 @@
         "t": 113.5,
         "until": 114.8
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 49,
@@ -16472,7 +17313,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 49,
@@ -16545,7 +17388,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 49,
@@ -16618,7 +17463,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 49,
@@ -16669,7 +17516,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 49,
@@ -16697,7 +17546,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 49,
@@ -16759,7 +17610,9 @@
         "t": 64.7,
         "until": 64.7
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 49,
@@ -16821,7 +17674,9 @@
         "t": 64.7,
         "until": 64.7
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 49,
@@ -16857,7 +17712,9 @@
         "t": 64.7,
         "until": 64.7
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 49,
@@ -16893,7 +17750,9 @@
         "t": 64.7,
         "until": 64.7
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 50,
@@ -16921,7 +17780,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 50,
@@ -16987,7 +17848,9 @@
         "t": 39.4,
         "until": 43.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 50,
@@ -17053,7 +17916,9 @@
         "t": 39.4,
         "until": 43.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 50,
@@ -17119,7 +17984,9 @@
         "t": 39.4,
         "until": 43.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 50,
@@ -17196,7 +18063,9 @@
         "t": 39.4,
         "until": 43.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 50,
@@ -17262,7 +18131,9 @@
         "t": 39.4,
         "until": 43.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 50,
@@ -17328,7 +18199,9 @@
         "t": 39.4,
         "until": 43.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 50,
@@ -17394,7 +18267,9 @@
         "t": 39.4,
         "until": 43.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 50,
@@ -17437,7 +18312,9 @@
         "t": 39.4,
         "until": 43.3
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 51,
@@ -17477,7 +18354,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 51,
@@ -17550,7 +18429,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 51,
@@ -17623,7 +18504,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 51,
@@ -17696,7 +18579,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 51,
@@ -17724,7 +18609,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 51,
@@ -17767,7 +18654,9 @@
         "t": 59.3,
         "until": 61.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 51,
@@ -17861,7 +18750,9 @@
         "t": 59.3,
         "until": 61.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 51,
@@ -17955,7 +18846,9 @@
         "t": 59.3,
         "until": 61.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 51,
@@ -17998,7 +18891,9 @@
         "t": 59.3,
         "until": 61.1
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 52,
@@ -18038,7 +18933,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 52,
@@ -18078,7 +18975,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 52,
@@ -18106,7 +19005,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 52,
@@ -18134,7 +19035,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 52,
@@ -18162,7 +19065,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 52,
@@ -18190,7 +19095,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 52,
@@ -18218,7 +19125,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 52,
@@ -18246,7 +19155,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 53,
@@ -18257,15 +19168,15 @@
     "name": "Absolute Gigachad",
     "job": "Paladin",
     "role": "tank",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 50433,
+    "hp": 46683,
     "max_hp": 99211,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 50433,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 31.9,
     "pull_ms": 152726,
@@ -18274,7 +19185,9 @@
     "clip_guid": null,
     "divers": [],
     "in_spot": {},
-    "prior_debuffs": []
+    "prior_debuffs": [],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 53,
@@ -18310,7 +19223,11 @@
         "t": 148.2,
         "until": 148.2
       }
-    ]
+    ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 53,
@@ -18346,7 +19263,11 @@
         "t": 148.2,
         "until": 148.2
       }
-    ]
+    ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 53,
@@ -18382,7 +19303,11 @@
         "t": 148.2,
         "until": 148.2
       }
-    ]
+    ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 53,
@@ -18418,7 +19343,11 @@
         "t": 148.2,
         "until": 148.2
       }
-    ]
+    ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 53,
@@ -18454,7 +19383,11 @@
         "t": 148.2,
         "until": 148.2
       }
-    ]
+    ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 53,
@@ -18490,7 +19423,11 @@
         "t": 148.2,
         "until": 148.2
       }
-    ]
+    ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 53,
@@ -18526,7 +19463,11 @@
         "t": 148.2,
         "until": 148.2
       }
-    ]
+    ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": []
   },
   {
     "fight": 54,
@@ -18562,7 +19503,9 @@
         "t": 117.9,
         "until": 121.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 54,
@@ -18612,7 +19555,9 @@
         "t": 117.9,
         "until": 121.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 54,
@@ -18648,7 +19593,9 @@
         "t": 117.9,
         "until": 121.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 54,
@@ -18684,7 +19631,9 @@
         "t": 117.9,
         "until": 121.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 54,
@@ -18720,7 +19669,9 @@
         "t": 117.9,
         "until": 121.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 54,
@@ -18756,7 +19707,9 @@
         "t": 117.9,
         "until": 121.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 54,
@@ -18792,7 +19745,9 @@
         "t": 117.9,
         "until": 121.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   },
   {
     "fight": 54,
@@ -18828,6 +19783,8 @@
         "t": 117.9,
         "until": 121.5
       }
-    ]
+    ],
+    "down": [],
+    "unsoaked": []
   }
 ]

@@ -16,7 +16,7 @@ class BriefTest(unittest.TestCase):
         self.assertIn("XVz8bCqgPw1KRh9d", text)
         self.assertIn("86 raw", text)
         self.assertIn("368 fail", text)
-        self.assertIn("127 Deathwall", text)
+        self.assertIn("110 Deathwall", text)
         self.assertIn("28 r1 f7 · first: Loki Doki walking into the deathwall at ", text)
         self.assertIn("Raw by mechanic", text)
         self.assertIn("45 Eternal Conviction", text)

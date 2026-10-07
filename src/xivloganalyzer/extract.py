@@ -20,7 +20,10 @@ from xivloganalyzer.mitigations import load_mitigations, mitigations_for
 ROW_RE = re.compile(r'<tr style="cursor:pointer".*?</script>', re.S)
 NAME_RE = re.compile(r'class="main-table-link ([^"]+)">([^<]+)')
 TIME_RE = re.compile(r'class="main-table-number">([^<]+)')
-KB_RE = re.compile(r'action/(-?\d+)"[\s\S]*?<span class="school-\d+" style="">([^<]+)')
+# A damage-over-time kill, such as Frostbite, links its status instead of an action.
+KB_RE = re.compile(r'#(action|status)/(-?\d+)"[\s\S]*?<span class="school-\d+" style="">([^<]+)')
+# Logs number a status as this plus its game id.
+STATUS_GUID = 1_000_000
 TS_RE = re.compile(r"timestamp: (\d+)")
 EVENT_RE = re.compile(
     r"guid: (-?\d+), type: '\d+' \}, type: '(\w+)'\s*, amount: (-?\d+)([\s\S]*?)\n\}"
@@ -56,6 +59,8 @@ class DeathFact:
     divers: list[dict] = field(default_factory=list)
     in_spot: dict[str, bool] = field(default_factory=dict)
     prior_debuffs: list[dict] = field(default_factory=list)
+    down: list[str] = field(default_factory=list)
+    unsoaked: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -72,6 +77,10 @@ ARENA_CENTER = 10000
 CLOCK_LAG_MS = 1500
 # A cascade debuff counts for a death when it landed before the death, or in the same instant.
 DEBUFF_SLACK_MS = 1000
+# Weakness. A raised player carries it, so they are back in the fight.
+RAISE_GUID = 1000043
+# Deaths to one cast land within this much of each other.
+CAST_MS = 3000
 
 
 def _grab(tail: str, key: str) -> int | None:
@@ -548,6 +557,7 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
         html = deaths.get(fight["id"], "")
         debuffs = _cascade_debuffs(mitigation_tables.get(fight["id"]), pack, names_by_id)
         boss_pct = round(fight.get("bossPercentage", 0) / 100, 1)
+        timed: list[tuple[int | None, DeathFact]] = []
         for row in ROW_RE.findall(html):
             name_match = NAME_RE.search(row)
             time_match = TIME_RE.search(row)
@@ -581,9 +591,12 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                 )
                 fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
                 facts.append(fact)
+                timed.append((timestamp, fact))
                 continue
-            guid = int(kb_match.group(1))
-            ability = unescape(kb_match.group(2)).strip()
+            guid = int(kb_match.group(2))
+            if kb_match.group(1) == "status":
+                guid += STATUS_GUID
+            ability = unescape(kb_match.group(3)).strip()
             tip = _tooltip(row, guid)
             event = None
             if timestamp is not None:
@@ -643,8 +656,86 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                     )
             fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
             facts.append(fact)
+            timed.append((timestamp, fact))
+        _missing_bodies(
+            timed, pack, by_guid, fight["id"], _fight_roster(meta, fight["id"]),
+            _raises(mitigation_tables.get(fight["id"]), names_by_id), names_by_id,
+        )
     facts.sort(key=lambda fact: (fact.fight, fact.phase, fact.t, fact.name))
     return facts
+
+
+def _fight_roster(meta: dict, fight_id: int) -> list[str]:
+    skip = {"LimitBreak", "NPC", "Pet"}
+    return [
+        actor["name"]
+        for actor in meta.get("friendlies") or []
+        if actor.get("type") not in skip and f".{fight_id}." in str(actor.get("fights") or "")
+    ]
+
+
+def _raises(table: dict | None, players: dict[int, str]) -> dict[str, list[int]]:
+    found: dict[str, list[int]] = {}
+    for aura in (table or {}).get("auras") or []:
+        if aura[1] != "applydebuff" or aura[2] != RAISE_GUID:
+            continue
+        name = players.get(aura[5])
+        if name:
+            found.setdefault(name, []).append(int(aura[0]))
+    return found
+
+
+def _missing_bodies(
+    timed: list[tuple[int | None, DeathFact]],
+    pack: FightPack,
+    by_guid: dict[int, list[dict]],
+    fight_id: int,
+    roster: list[str],
+    raises: dict[str, list[int]],
+    names_by_id: dict[int, str],
+) -> None:
+    """Who was missing from a mechanic that needs every player.
+
+    `down` is dead and not raised when the cast landed. With a soak, the cast landed
+    at its first soak hit, and `unsoaked` is everyone alive who that soak missed.
+    """
+    for timestamp, fact in timed:
+        if timestamp is None:
+            continue
+        mechanic = pack.mechanic_for(fact.guid, fact.phase)
+        needs = mechanic.needs_everyone if mechanic else None
+        if needs is None:
+            continue
+        cast = [
+            (ts, other) for ts, other in timed
+            if ts is not None and other.guid in mechanic.guids and abs(ts - timestamp) <= CAST_MS
+        ]
+        first = min(ts for ts, _ in cast)
+        victims = {other.name for _, other in cast}
+        soaked: set[str] = set()
+        at = first - round(needs.lead * 1000)
+        if needs.soak:
+            hits = [
+                event
+                for guid in needs.soak
+                for event in by_guid.get(guid, [])
+                if event.get("fight") == fight_id and at <= event["timestamp"] <= first
+            ]
+            if not hits:
+                continue
+            at = min(event["timestamp"] for event in hits)
+            soaked = {names_by_id.get(event.get("targetID")) for event in hits}
+        died: dict[str, int] = {}
+        for ts, other in timed:
+            if ts is not None and ts < at:
+                died[other.name] = max(died.get(other.name, ts), ts)
+        fact.down = [
+            name for name in roster
+            if name in died and name not in victims
+            and not any(died[name] < raised <= at for raised in raises.get(name, []))
+        ]
+        if needs.soak:
+            fact.unsoaked = [name for name in roster if name not in soaked and name not in fact.down]
 
 
 def _fact(

@@ -25,7 +25,7 @@ class ReferenceReportTest(unittest.TestCase):
         self.assertEqual(counts["unknown"], 0)
         self.assertEqual(counts["environment"], 0)
         walls = [item for item in judgments if item.mechanic_id == "deathwall"]
-        self.assertEqual(len(walls), 127)
+        self.assertEqual(len(walls), 110)
         self.assertTrue(all(item.outcome == "fail" for item in walls))
         raw = Counter(item.mechanic for item in judgments if item.outcome == "raw")
         self.assertEqual(raw["Eternal Conviction"], 45)
@@ -172,19 +172,30 @@ class ReferenceReportTest(unittest.TestCase):
         )
         self.assertEqual(one(16, "Kiara Blaiddyd", "Eternal Conviction").outcome, "raw")
         self.assertEqual(one(14, "Kiara Blaiddyd", "Eternal Conviction").outcome, "fail")
+        # Six players were dead before the towers, so each one left a tower empty.
         self.assertEqual(
             owners(one(14, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Missed soak", 50)],
+            [
+                ("Speed Panda", 16), ("Absolute Gigachad", 16), ("Spring Nymphar", 16),
+                ("Kite Noodle", 16), ("Kitana Kahn", 16), ("Loki Doki", 16),
+            ],
         )
         self.assertEqual(
             owners(one(15, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Missed soak", 50)],
+            [("Absolute Gigachad", 50), ("Kitana Kahn", 50)],
         )
+        # Everyone was alive, and the one the towers missed owns it.
+        self.assertEqual(
+            owners(one(57, "Kiara Blaiddyd", "Eternal Conviction")),
+            [("Kitana Kahn", 100)],
+        )
+        # The players who died to the empty tower pass it on to whoever left it empty.
         self.assertEqual(one(41, "Absolute Gigachad", "Holy Impact").outcome, "fail")
         self.assertEqual(
             owners(one(41, "Absolute Gigachad", "Holy Impact")),
-            [("Prey markers", 50)],
+            [("Kite Noodle", 50), ("Spring Nymphar", 50)],
         )
+        self.assertEqual(owners(one(67, "Absolute Gigachad", "Holy Impact")), [("Prey markers", 50)])
         self.assertEqual(
             owners(one(12, "Absolute Gigalad", "Holy Bladedance")),
             [("Loki Doki", 33), ("Spring Nymphar", 33), ("Earlier damage", 33)],

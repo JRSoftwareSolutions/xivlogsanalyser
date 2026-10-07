@@ -73,6 +73,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dimensional-collapse",
     "mechanic": "Dimensional Collapse",
     "outcome": "fail",
@@ -146,6 +148,8 @@
       "Speed Panda": true
     },
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -255,6 +259,8 @@
       "Absolute Gigachad": true
     },
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -328,6 +334,8 @@
       "Kiara Blaiddyd": true
     },
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -401,6 +409,8 @@
       "Kitana Kahn": true
     },
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -466,6 +476,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -546,6 +558,8 @@
         "until": 65.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -612,6 +626,8 @@
         "until": 65.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -662,6 +678,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -716,6 +734,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "heavens-stake",
     "mechanic": "Heavens' Stake",
     "outcome": "fail",
@@ -770,6 +790,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -827,15 +849,24 @@
         "until": 138.1
       }
     ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 97,693 at 75% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki and Speed Panda were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Speed Panda",
         "confidence": 50
       }
     ],
@@ -884,15 +915,24 @@
         "until": 138.1
       }
     ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 105,236 at 22% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki and Speed Panda were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Speed Panda",
         "confidence": 50
       }
     ],
@@ -941,15 +981,24 @@
         "until": 138.1
       }
     ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 97,984 at 97% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kite Noodle died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki and Speed Panda were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Speed Panda",
         "confidence": 50
       }
     ],
@@ -998,15 +1047,24 @@
         "until": 138.1
       }
     ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 94,539 at 85% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki and Speed Panda were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Speed Panda",
         "confidence": 50
       }
     ],
@@ -1055,15 +1113,24 @@
         "until": 138.1
       }
     ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 66,912 at 42% HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Absolute Gigachad died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki and Speed Panda were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Speed Panda",
         "confidence": 50
       }
     ],
@@ -1112,15 +1179,24 @@
         "until": 138.1
       }
     ],
+    "down": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 58,229 at 38% HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Absolute Gigalad died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki and Speed Panda were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Speed Panda",
         "confidence": 50
       }
     ],
@@ -1179,6 +1255,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -1269,6 +1347,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -1334,6 +1414,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": null,
     "mechanic": "Holy Shield Bash",
     "outcome": "unknown",
@@ -1397,6 +1479,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -1539,6 +1623,8 @@
         "until": 68.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -1649,6 +1735,8 @@
         "until": 68.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -1771,6 +1859,8 @@
         "until": 68.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -1905,6 +1995,8 @@
         "until": 68.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -2005,6 +2097,8 @@
         "until": 68.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2051,6 +2145,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -2093,6 +2189,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2173,6 +2271,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2219,6 +2319,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2310,6 +2412,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2412,6 +2516,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2458,6 +2564,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2560,6 +2668,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -2606,6 +2716,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -2625,20 +2737,20 @@
     "fight": 9,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 135.5,
+    "t": 135.2,
     "time": "2:17",
-    "name": "Kiara Blaiddyd",
-    "job": "Dancer",
-    "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
-    "max_hp": 68662,
-    "unmitigated": null,
-    "multiplier": null,
+    "name": "Spring Nymphar",
+    "job": "Scholar",
+    "role": "healer",
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 48567,
+    "hp": 40785,
+    "max_hp": 61615,
+    "unmitigated": 48567,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 141931,
@@ -2648,20 +2760,18 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "mechanic_id": "deathwall",
-    "mechanic": "Deathwall",
+    "down": [],
+    "unsoaked": [],
+    "mechanic_id": "frostbite",
+    "mechanic": "Frostbite",
     "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kiara Blaiddyd walked into the deathwall after the first mistake.",
+    "happened": "Took 48,567 at 66% HP.",
+    "should_have_been": "Run out of the ice before it ticks. Frostbite is standing in the puddle.",
+    "went_wrong": "Spring Nymphar stood in the ice.",
     "blames": [
       {
-        "who": "Kiara Blaiddyd",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
+        "who": "Spring Nymphar",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -2671,20 +2781,20 @@
     "fight": 9,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 135.5,
+    "t": 135.8,
     "time": "2:17",
-    "name": "Spring Nymphar",
-    "job": "Scholar",
-    "role": "healer",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
-    "max_hp": 61615,
-    "unmitigated": null,
-    "multiplier": null,
+    "name": "Kiara Blaiddyd",
+    "job": "Dancer",
+    "role": "dps",
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 49906,
+    "hp": 45218,
+    "max_hp": 68662,
+    "unmitigated": 49906,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 33.8,
     "pull_ms": 141931,
@@ -2694,20 +2804,18 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "mechanic_id": "deathwall",
-    "mechanic": "Deathwall",
+    "down": [],
+    "unsoaked": [],
+    "mechanic_id": "frostbite",
+    "mechanic": "Frostbite",
     "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Spring Nymphar walked into the deathwall after the first mistake.",
+    "happened": "Took 49,906 at 66% HP.",
+    "should_have_been": "Run out of the ice before it ticks. Frostbite is standing in the puddle.",
+    "went_wrong": "Kiara Blaiddyd stood in the ice.",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -2755,16 +2863,20 @@
         "until": 137.7
       }
     ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 104,659 at 74% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kite Noodle died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -2812,16 +2924,20 @@
         "until": 137.7
       }
     ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 96,736 at 63% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -2869,16 +2985,20 @@
         "until": 137.7
       }
     ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 91,018 at 74% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Loki Doki died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -2926,16 +3046,20 @@
         "until": 137.7
       }
     ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 61,384 at 27% HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Absolute Gigachad died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -2983,16 +3107,20 @@
         "until": 137.7
       }
     ],
+    "down": [
+      "Kitana Kahn"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 58,796 at 29% HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Absolute Gigalad died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -3025,6 +3153,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -3101,6 +3231,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -3188,6 +3320,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3234,6 +3368,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3325,6 +3461,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3371,6 +3509,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3514,6 +3654,8 @@
         "until": 59.7
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3613,6 +3755,8 @@
         "until": 59.7
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -3663,6 +3807,8 @@
         "until": 59.7
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
@@ -3705,6 +3851,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -3755,11 +3903,13 @@
         "until": 146.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 105,084 at 71% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
@@ -3805,11 +3955,13 @@
         "until": 146.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 92,786 at 88% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
@@ -3855,11 +4007,13 @@
         "until": 146.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 102,690 at 78% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
@@ -3905,11 +4059,13 @@
         "until": 146.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 91,542 at 91% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
@@ -3955,11 +4111,13 @@
         "until": 146.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 62,096 at 48% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
@@ -4005,11 +4163,13 @@
         "until": 146.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 97,410 at 89% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
@@ -4055,11 +4215,13 @@
         "until": 146.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 103,421 at 94% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
@@ -4142,6 +4304,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -4196,6 +4360,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -4238,6 +4404,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -4314,6 +4482,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4368,6 +4538,8 @@
         "until": 64.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4426,6 +4598,8 @@
         "until": 64.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4510,6 +4684,8 @@
         "until": 64.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4564,6 +4740,8 @@
         "until": 64.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -4614,6 +4792,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4656,6 +4836,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -4706,15 +4888,24 @@
         "until": 151.1
       }
     ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 104,622 at 76% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kite Noodle died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn and Absolute Gigachad were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -4756,15 +4947,24 @@
         "until": 151.1
       }
     ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 92,590 at 99% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Loki Doki died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn and Absolute Gigachad were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -4806,15 +5006,24 @@
         "until": 151.1
       }
     ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 97,376 at 93% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn and Absolute Gigachad were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -4856,15 +5065,24 @@
         "until": 151.1
       }
     ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 60,624 at 37% HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Absolute Gigalad died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn and Absolute Gigachad were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -4906,15 +5124,24 @@
         "until": 151.1
       }
     ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 102,135 at 100% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn and Absolute Gigachad were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -4956,15 +5183,24 @@
         "until": 151.1
       }
     ],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 94,187 at 97% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kitana Kahn and Absolute Gigachad were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -5010,6 +5246,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -5103,6 +5341,8 @@
         "until": 70.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -5187,6 +5427,8 @@
         "until": 70.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -5288,6 +5530,8 @@
         "until": 70.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -5349,6 +5593,8 @@
         "until": 70.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -5450,6 +5696,8 @@
         "until": 70.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -5547,6 +5795,8 @@
         "until": 70.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -5608,6 +5858,8 @@
         "until": 70.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -5692,6 +5944,8 @@
         "until": 70.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -5761,6 +6015,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -5803,6 +6059,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -5883,6 +6141,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -5963,6 +6223,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -6106,6 +6368,8 @@
         "until": 59.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -6160,6 +6424,8 @@
         "until": 59.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -6248,6 +6514,8 @@
         "until": 59.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dimensional-collapse",
     "mechanic": "Dimensional Collapse",
     "outcome": "fail",
@@ -6353,6 +6621,8 @@
         "until": 59.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -6418,6 +6688,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": null,
     "mechanic": "Final Chorus",
     "outcome": "unknown",
@@ -6489,6 +6761,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": null,
     "mechanic": "Final Chorus",
     "outcome": "unknown",
@@ -6560,6 +6834,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": null,
     "mechanic": "Final Chorus",
     "outcome": "unknown",
@@ -6609,6 +6885,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": null,
     "mechanic": "attack",
     "outcome": "unknown",
@@ -6658,6 +6936,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": null,
     "mechanic": "attack",
     "outcome": "unknown",
@@ -6695,6 +6975,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "fail",
@@ -6737,6 +7019,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "fail",
@@ -6779,6 +7063,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -6821,6 +7107,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -6904,6 +7192,8 @@
         "until": 115.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
     "outcome": "fail",
@@ -6961,6 +7251,8 @@
         "until": 115.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "raw",
@@ -6993,15 +7285,15 @@
     "name": "Kitana Kahn",
     "job": "BlackMage",
     "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 50617,
+    "hp": 36317,
     "max_hp": 61737,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 50617,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 33.9,
     "pull_ms": 142675,
@@ -7026,20 +7318,18 @@
         "until": 115.2
       }
     ],
-    "mechanic_id": "deathwall",
-    "mechanic": "Deathwall",
+    "down": [],
+    "unsoaked": [],
+    "mechanic_id": "frostbite",
+    "mechanic": "Frostbite",
     "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kitana Kahn walked into the deathwall after the first mistake.",
+    "happened": "Took 50,617 at 59% HP.",
+    "should_have_been": "Run out of the ice before it ticks. Frostbite is standing in the puddle.",
+    "went_wrong": "Kitana Kahn stood in the ice.",
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -7101,15 +7391,25 @@
         "until": 138.4
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 97,920 at 52% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kite Noodle died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was dead and Spring Nymphar was not in a tower.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kiara Blaiddyd",
+        "confidence": 50
+      },
+      {
+        "who": "Spring Nymphar",
         "confidence": 50
       }
     ],
@@ -7172,15 +7472,25 @@
         "until": 138.4
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 94,922 at 69% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was dead and Spring Nymphar was not in a tower.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kiara Blaiddyd",
+        "confidence": 50
+      },
+      {
+        "who": "Spring Nymphar",
         "confidence": 50
       }
     ],
@@ -7243,15 +7553,25 @@
         "until": 138.4
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 99,692 at 47% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was dead and Spring Nymphar was not in a tower.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kiara Blaiddyd",
+        "confidence": 50
+      },
+      {
+        "who": "Spring Nymphar",
         "confidence": 50
       }
     ],
@@ -7314,15 +7634,25 @@
         "until": 138.4
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 61,448 at 21% HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Absolute Gigalad died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was dead and Spring Nymphar was not in a tower.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kiara Blaiddyd",
+        "confidence": 50
+      },
+      {
+        "who": "Spring Nymphar",
         "confidence": 50
       }
     ],
@@ -7385,15 +7715,25 @@
         "until": 138.4
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 91,819 at 32% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Loki Doki died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was dead and Spring Nymphar was not in a tower.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kiara Blaiddyd",
+        "confidence": 50
+      },
+      {
+        "who": "Spring Nymphar",
         "confidence": 50
       }
     ],
@@ -7456,15 +7796,25 @@
         "until": 138.4
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 52,754 at 24% HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Absolute Gigachad died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was dead and Spring Nymphar was not in a tower.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kiara Blaiddyd",
+        "confidence": 50
+      },
+      {
+        "who": "Spring Nymphar",
         "confidence": 50
       }
     ],
@@ -7506,6 +7856,8 @@
         "until": 25.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -7574,11 +7926,13 @@
         "until": 148.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 96,713 at 92% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
@@ -7638,11 +7992,13 @@
         "until": 148.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 67,073 at 37% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
@@ -7702,11 +8058,13 @@
         "until": 148.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 93,553 at 89% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
@@ -7766,11 +8124,13 @@
         "until": 148.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 99,642 at 93% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
@@ -7830,11 +8190,13 @@
         "until": 148.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 92,502 at full HP. A one-shot.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
@@ -7894,11 +8256,13 @@
         "until": 148.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 96,971 at 93% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
@@ -7958,11 +8322,13 @@
         "until": 148.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 58,708 at 33% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
@@ -8022,11 +8388,13 @@
         "until": 148.4
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 101,072 at 81% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
@@ -8079,11 +8447,13 @@
         "until": 139.0
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 98,621 at 71% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
@@ -8136,11 +8506,13 @@
         "until": 139.0
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 91,216 at 83% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
@@ -8193,11 +8565,13 @@
         "until": 139.0
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 104,198 at 73% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
@@ -8250,11 +8624,13 @@
         "until": 139.0
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 95,749 at 93% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
@@ -8307,11 +8683,13 @@
         "until": 139.0
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 92,253 at 98% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
@@ -8364,11 +8742,13 @@
         "until": 139.0
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 104,023 at 84% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
@@ -8421,6 +8801,8 @@
         "until": 139.0
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -8482,15 +8864,29 @@
         "until": 139.0
       }
     ],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 57,234 at 39% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Absolute Gigalad died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "7 players were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
+        "who": "Missed soak",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -8524,6 +8920,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -8581,16 +8979,20 @@
         "until": 154.8
       }
     ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 98,349 at 75% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kite Noodle was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -8638,16 +9040,20 @@
         "until": 154.8
       }
     ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 103,162 at 71% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kite Noodle was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -8695,16 +9101,20 @@
         "until": 154.8
       }
     ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 95,830 at 99% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kite Noodle was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -8752,16 +9162,20 @@
         "until": 154.8
       }
     ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 96,088 at 95% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Loki Doki died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kite Noodle was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -8809,16 +9223,20 @@
         "until": 154.8
       }
     ],
+    "down": [
+      "Kite Noodle"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 104,077 at 94% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kite Noodle was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -8866,6 +9284,8 @@
         "until": 154.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -8927,6 +9347,8 @@
         "until": 154.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -8981,6 +9403,8 @@
         "until": 18.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -9031,6 +9455,8 @@
         "until": 18.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9085,6 +9511,8 @@
         "until": 18.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9139,6 +9567,8 @@
         "until": 18.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9193,6 +9623,8 @@
         "until": 18.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9259,6 +9691,8 @@
         "until": 18.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9313,6 +9747,8 @@
         "until": 18.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9367,6 +9803,8 @@
         "until": 18.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9466,6 +9904,8 @@
         "until": 65.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -9555,6 +9995,8 @@
         "until": 67.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -9648,6 +10090,8 @@
         "until": 67.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -9741,6 +10185,8 @@
         "until": 67.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -9834,6 +10280,8 @@
         "until": 67.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -9902,6 +10350,8 @@
         "until": 67.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -9995,6 +10445,8 @@
         "until": 67.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -10063,6 +10515,8 @@
         "until": 67.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -10109,6 +10563,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -10166,11 +10622,13 @@
         "until": 147.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 96,316 at 39% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
@@ -10223,11 +10681,13 @@
         "until": 147.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 100,129 at 62% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
@@ -10280,11 +10740,13 @@
         "until": 147.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 94,106 at 71% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
@@ -10337,11 +10799,13 @@
         "until": 147.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 64,500 at 29% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
@@ -10394,11 +10858,13 @@
         "until": 147.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 101,382 at 61% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
@@ -10451,11 +10917,13 @@
         "until": 147.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 59,639 at 28% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
@@ -10508,11 +10976,13 @@
         "until": 147.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 94,321 at 53% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
@@ -10565,11 +11035,13 @@
         "until": 147.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 99,120 at 56% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
@@ -10622,11 +11094,13 @@
         "until": 145.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 94,906 at 74% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
@@ -10679,11 +11153,13 @@
         "until": 145.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 101,562 at 87% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
@@ -10736,11 +11212,13 @@
         "until": 145.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 105,481 at 77% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
@@ -10793,11 +11271,13 @@
         "until": 145.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 94,748 at 88% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
@@ -10850,11 +11330,13 @@
         "until": 145.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 90,837 at 82% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
@@ -10907,11 +11389,13 @@
         "until": 145.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 104,748 at 86% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
@@ -10964,11 +11448,13 @@
         "until": 145.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 52,841 at 45% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
@@ -11021,11 +11507,13 @@
         "until": 145.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 57,055 at 36% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
@@ -11069,6 +11557,8 @@
       "Kiara Blaiddyd": true
     },
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -11131,6 +11621,8 @@
       "Loki Doki": false
     },
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -11173,6 +11665,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
@@ -11237,6 +11731,8 @@
         "until": 65.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -11331,6 +11827,8 @@
         "until": 65.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -11415,6 +11913,8 @@
         "until": 65.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -11499,6 +11999,8 @@
         "until": 65.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -11585,6 +12087,8 @@
         "until": 65.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -11643,6 +12147,8 @@
         "until": 236.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -11701,6 +12207,8 @@
         "until": 236.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -11759,6 +12267,8 @@
         "until": 236.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -11843,6 +12353,8 @@
         "until": 39.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -11927,6 +12439,8 @@
         "until": 39.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -12003,6 +12517,8 @@
         "until": 39.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -12079,6 +12595,8 @@
         "until": 39.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -12155,6 +12673,8 @@
         "until": 39.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -12236,6 +12756,8 @@
     ],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dark-elusive-jump",
     "mechanic": "Dark Elusive Jump",
     "outcome": "fail",
@@ -12309,6 +12831,8 @@
     ],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dark-elusive-jump",
     "mechanic": "Dark Elusive Jump",
     "outcome": "fail",
@@ -12371,6 +12895,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "lashing-wheel",
     "mechanic": "Lashing Wheel",
     "outcome": "fail",
@@ -12421,6 +12947,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -12497,6 +13025,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "low",
@@ -12581,6 +13111,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -12665,6 +13197,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "low",
@@ -12749,6 +13283,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "low",
@@ -12799,6 +13335,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -12875,6 +13413,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "raw",
@@ -12917,6 +13457,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -12963,6 +13505,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13021,6 +13565,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13067,6 +13613,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13113,6 +13661,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13159,6 +13709,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13254,6 +13806,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
     "outcome": "fail",
@@ -13311,11 +13865,13 @@
         "until": 157.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 97,882 at 89% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Speed Panda died to an empty tower.",
     "blames": [
       {
@@ -13368,11 +13924,13 @@
         "until": 157.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 92,970 at 79% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Loki Doki died to an empty tower.",
     "blames": [
       {
@@ -13425,11 +13983,13 @@
         "until": 157.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 103,626 at 94% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Kiara Blaiddyd died to an empty tower.",
     "blames": [
       {
@@ -13482,11 +14042,13 @@
         "until": 157.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 93,672 at 95% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Spring Nymphar died to an empty tower.",
     "blames": [
       {
@@ -13539,11 +14101,13 @@
         "until": 157.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 99,515 at 93% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Kite Noodle died to an empty tower.",
     "blames": [
       {
@@ -13596,6 +14160,8 @@
         "until": 157.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13657,11 +14223,13 @@
         "until": 157.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 97,891 at 89% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
     "went_wrong": "Kitana Kahn died to an empty tower.",
     "blames": [
       {
@@ -13714,6 +14282,8 @@
         "until": 157.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -13772,6 +14342,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -13834,6 +14406,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
     "outcome": "raw",
@@ -13904,6 +14478,8 @@
         "until": 37.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "lashing-wheel",
     "mechanic": "Lashing Wheel",
     "outcome": "fail",
@@ -13991,6 +14567,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -14075,6 +14653,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -14162,6 +14742,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -14238,6 +14820,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -14314,6 +14898,8 @@
         "until": 39.2
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -14364,6 +14950,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14418,6 +15006,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
@@ -14460,6 +15050,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14506,6 +15098,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14552,6 +15146,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14610,6 +15206,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -14652,6 +15250,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14698,6 +15298,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14756,6 +15358,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14798,6 +15402,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14852,6 +15458,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14906,6 +15514,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -14960,6 +15570,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15014,6 +15626,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -15068,6 +15682,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -15122,6 +15738,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -15164,6 +15782,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15213,6 +15833,8 @@
       "Kitana Kahn": false
     },
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -15255,6 +15877,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -15297,6 +15921,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -15362,6 +15988,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15408,6 +16036,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -15458,6 +16088,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -15508,6 +16140,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15568,6 +16202,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -15587,21 +16223,23 @@
     "fight": 35,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 135.5,
+    "t": 135.8,
     "time": "2:17",
     "name": "Kiara Blaiddyd",
     "job": "Dancer",
     "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002945,
+    "ability": "Burns",
+    "total": 77016,
+    "hp": 36402,
     "max_hp": 68662,
-    "unmitigated": null,
-    "multiplier": null,
-    "absorb": 0,
-    "stack": null,
-    "buffs": [],
+    "unmitigated": 77016,
+    "multiplier": 1.0,
+    "absorb": 7576,
+    "stack": 1,
+    "buffs": [
+      "Galvanize"
+    ],
     "boss_pct": 34.4,
     "pull_ms": 159779,
     "mitigations": [
@@ -15613,8 +16251,8 @@
         "on": "Kiara Blaiddyd",
         "on_id": 25,
         "pct": null,
-        "amount": null,
-        "via": "Succor"
+        "amount": 7576,
+        "via": null
       }
     ],
     "clipped_by": [],
@@ -15622,20 +16260,18 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "mechanic_id": "deathwall",
-    "mechanic": "Deathwall",
+    "down": [],
+    "unsoaked": [],
+    "mechanic_id": "burns",
+    "mechanic": "Burns",
     "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kiara Blaiddyd walked into the deathwall after the first mistake.",
+    "happened": "Took 77,016 at 53% HP. It would have killed them from full HP.",
+    "should_have_been": "Stay out of the fire. Burns is the fire's damage over time, so a tick means they stood in it.",
+    "went_wrong": "Kiara Blaiddyd stood in the fire.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -15676,16 +16312,20 @@
         "until": 155.5
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 99,037 at 48% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -15726,6 +16366,8 @@
         "until": 155.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -15780,16 +16422,20 @@
         "until": 155.5
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 96,977 at 62% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kite Noodle died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -15830,16 +16476,20 @@
         "until": 155.5
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 105,420 at 68% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -15880,16 +16530,20 @@
         "until": 155.5
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 90,089 at 81% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Loki Doki died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -15930,16 +16584,20 @@
         "until": 155.5
       }
     ],
+    "down": [
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 98,354 at 98% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -15980,6 +16638,8 @@
         "until": 155.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -16051,6 +16711,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
     "outcome": "fail",
@@ -16138,6 +16800,8 @@
         "until": 44.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -16244,6 +16908,8 @@
         "until": 44.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -16350,6 +17016,8 @@
         "until": 44.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16437,6 +17105,8 @@
         "until": 44.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16513,6 +17183,8 @@
         "until": 44.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -16608,6 +17280,8 @@
         "until": 44.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16695,6 +17369,8 @@
         "until": 44.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -16771,6 +17447,8 @@
         "until": 44.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "geirskogul",
     "mechanic": "Geirskogul",
     "outcome": "fail",
@@ -16790,20 +17468,20 @@
     "fight": 37,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 135.5,
+    "t": 135.6,
     "time": "2:17",
     "name": "Kiara Blaiddyd",
     "job": "Dancer",
     "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 63000,
+    "hp": 26917,
     "max_hp": 68662,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 63000,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 34.6,
     "pull_ms": 146362,
@@ -16813,12 +17491,14 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "mechanic_id": "deathwall",
-    "mechanic": "Deathwall",
+    "down": [],
+    "unsoaked": [],
+    "mechanic_id": "frostbite",
+    "mechanic": "Frostbite",
     "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kiara Blaiddyd walked into the deathwall.",
+    "happened": "Took 63,000 at 39% HP.",
+    "should_have_been": "Run out of the ice before it ticks. Frostbite is standing in the puddle.",
+    "went_wrong": "Kiara Blaiddyd stood in the ice.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -16826,7 +17506,7 @@
       }
     ],
     "first": true,
-    "first_mistake": "Kiara Blaiddyd walking into the deathwall at 135.5s into Thordan"
+    "first_mistake": "Kiara Blaiddyd dying to Frostbite at 135.6s into Thordan"
   },
   {
     "fight": 37,
@@ -16870,20 +17550,24 @@
         "until": 142.1
       }
     ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 99,612 at 88% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kite Noodle died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Kiara Blaiddyd walking into the deathwall at 135.5s into Thordan"
+    "first_mistake": "Kiara Blaiddyd dying to Frostbite at 135.6s into Thordan"
   },
   {
     "fight": 37,
@@ -16927,20 +17611,24 @@
         "until": 142.1
       }
     ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 94,764 at 78% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Loki Doki died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Kiara Blaiddyd walking into the deathwall at 135.5s into Thordan"
+    "first_mistake": "Kiara Blaiddyd dying to Frostbite at 135.6s into Thordan"
   },
   {
     "fight": 37,
@@ -16984,20 +17672,24 @@
         "until": 142.1
       }
     ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 98,533 at 86% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Kiara Blaiddyd walking into the deathwall at 135.5s into Thordan"
+    "first_mistake": "Kiara Blaiddyd dying to Frostbite at 135.6s into Thordan"
   },
   {
     "fight": 37,
@@ -17041,20 +17733,24 @@
         "until": 142.1
       }
     ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 102,241 at 63% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Kiara Blaiddyd walking into the deathwall at 135.5s into Thordan"
+    "first_mistake": "Kiara Blaiddyd dying to Frostbite at 135.6s into Thordan"
   },
   {
     "fight": 37,
@@ -17098,20 +17794,24 @@
         "until": 142.1
       }
     ],
+    "down": [],
+    "unsoaked": [
+      "Kiara Blaiddyd"
+    ],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 94,488 at 84% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Kiara Blaiddyd walking into the deathwall at 135.5s into Thordan"
+    "first_mistake": "Kiara Blaiddyd dying to Frostbite at 135.6s into Thordan"
   },
   {
     "fight": 37,
@@ -17155,20 +17855,29 @@
         "until": 142.1
       }
     ],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 59,925 at 47% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Absolute Gigalad died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "6 players were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Kiara Blaiddyd walking into the deathwall at 135.5s into Thordan"
+    "first_mistake": "Kiara Blaiddyd dying to Frostbite at 135.6s into Thordan"
   },
   {
     "fight": 37,
@@ -17212,20 +17921,29 @@
         "until": 142.1
       }
     ],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 63,455 at 45% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Absolute Gigachad died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "6 players were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Kiara Blaiddyd walking into the deathwall at 135.5s into Thordan"
+    "first_mistake": "Kiara Blaiddyd dying to Frostbite at 135.6s into Thordan"
   },
   {
     "fight": 39,
@@ -17266,6 +17984,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -17310,6 +18030,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -17364,6 +18086,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "fail",
@@ -17383,20 +18107,20 @@
     "fight": 39,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 133.5,
+    "t": 133.8,
     "time": "2:15",
     "name": "Speed Panda",
     "job": "Viper",
     "role": "dps",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 51597,
+    "hp": 32112,
     "max_hp": 68259,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 51597,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 34.4,
     "pull_ms": 141801,
@@ -17406,20 +18130,18 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "mechanic_id": "deathwall",
-    "mechanic": "Deathwall",
+    "down": [],
+    "unsoaked": [],
+    "mechanic_id": "frostbite",
+    "mechanic": "Frostbite",
     "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Speed Panda walked into the deathwall after the first mistake.",
+    "happened": "Took 51,597 at 47% HP.",
+    "should_have_been": "Run out of the ice before it ticks. Frostbite is standing in the puddle.",
+    "went_wrong": "Speed Panda stood in the ice.",
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -17452,6 +18174,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -17518,16 +18242,35 @@
         "until": 137.6
       }
     ],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 103,258 at full HP. A one-shot.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "4 players were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 25
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -17568,16 +18311,35 @@
         "until": 137.6
       }
     ],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 91,898 at 71% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "4 players were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 25
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -17618,16 +18380,35 @@
         "until": 137.6
       }
     ],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 57,247 at 42% HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Absolute Gigalad died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "4 players were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 25
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 25
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 25
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 25
       }
     ],
     "first": false,
@@ -17675,11 +18456,13 @@
         "until": 148.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 98,447 at 90% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
@@ -17732,11 +18515,13 @@
         "until": 148.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 62,156 at 34% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
@@ -17789,11 +18574,13 @@
         "until": 148.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 102,696 at 84% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
@@ -17846,11 +18633,13 @@
         "until": 148.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 95,946 at 93% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
@@ -17903,11 +18692,13 @@
         "until": 148.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 92,711 at 98% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
@@ -17960,11 +18751,13 @@
         "until": 148.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 95,417 at full HP. A one-shot.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
@@ -18017,11 +18810,13 @@
         "until": 148.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 95,524 at 90% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
@@ -18074,11 +18869,13 @@
         "until": 148.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 59,646 at 35% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
@@ -18116,6 +18913,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -18158,6 +18957,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -18208,6 +19009,8 @@
         "until": 65.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18262,6 +19065,8 @@
         "until": 65.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -18320,6 +19125,8 @@
         "until": 65.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -18404,6 +19211,8 @@
         "until": 65.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -18481,6 +19290,8 @@
         "until": 65.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18535,6 +19346,8 @@
         "until": 65.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -18595,6 +19408,8 @@
         "until": 65.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -18659,6 +19474,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -18719,6 +19536,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -18765,6 +19584,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18811,6 +19632,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18857,6 +19680,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18903,6 +19728,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18949,6 +19776,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -18995,6 +19824,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -19056,11 +19887,13 @@
         "until": 141.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 91,034 at 74% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kitana Kahn died to comets that were too close.",
     "blames": [
       {
@@ -19113,11 +19946,13 @@
         "until": 141.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 98,233 at 99% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Spring Nymphar died to comets that were too close.",
     "blames": [
       {
@@ -19182,11 +20017,13 @@
         "until": 141.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 63,775 at 41% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigachad died to comets that were too close.",
     "blames": [
       {
@@ -19251,11 +20088,13 @@
         "until": 141.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 97,353 at 94% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Loki Doki died to comets that were too close.",
     "blames": [
       {
@@ -19308,11 +20147,13 @@
         "until": 141.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 93,135 at 90% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kite Noodle died to comets that were too close.",
     "blames": [
       {
@@ -19365,11 +20206,13 @@
         "until": 141.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 101,522 at 95% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
     "blames": [
       {
@@ -19422,11 +20265,13 @@
         "until": 141.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 96,056 at 84% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Speed Panda died to comets that were too close.",
     "blames": [
       {
@@ -19491,11 +20336,13 @@
         "until": 141.6
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 59,280 at 41% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
     "went_wrong": "Absolute Gigalad died to comets that were too close.",
     "blames": [
       {
@@ -19578,6 +20425,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -19645,6 +20494,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -19716,6 +20567,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -19800,6 +20653,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -19871,6 +20726,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -19942,6 +20799,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -20014,6 +20873,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -20089,6 +20950,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -20149,6 +21012,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -20191,6 +21056,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
     "outcome": "raw",
@@ -20241,6 +21108,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -20295,16 +21164,20 @@
         "until": 142.1
       }
     ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 98,015 at 34% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kite Noodle died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Loki Doki",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -20345,16 +21218,20 @@
         "until": 142.1
       }
     ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 102,793 at 43% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Loki Doki",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -20395,16 +21272,20 @@
         "until": 142.1
       }
     ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 91,849 at 43% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Loki Doki",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -20445,16 +21326,20 @@
         "until": 142.1
       }
     ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 99,829 at 43% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Loki Doki",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -20509,16 +21394,20 @@
         "until": 142.1
       }
     ],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "fail",
     "happened": "Took 83,988 at 33% HP. It would have killed them from full HP.",
-    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58\u201366k of that explosion. Everyone else takes about 90\u2013105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it.",
+    "went_wrong": "Loki Doki was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Loki Doki",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -20559,15 +21448,29 @@
         "until": 142.1
       }
     ],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 57,240 at 24% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Absolute Gigalad died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "7 players were already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -20667,6 +21570,8 @@
       "Absolute Gigalad": true
     },
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
@@ -20751,6 +21656,8 @@
         "until": 51.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -20824,6 +21731,8 @@
         "until": 51.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -20909,6 +21818,8 @@
         "until": 51.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -21013,6 +21924,8 @@
         "until": 51.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -21117,6 +22030,8 @@
         "until": 51.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -21210,6 +22125,8 @@
         "until": 51.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dark-high-jump",
     "mechanic": "Dark High Jump",
     "outcome": "fail",
@@ -21260,6 +22177,8 @@
         "until": 51.9
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "geirskogul",
     "mechanic": "Geirskogul",
     "outcome": "fail",
@@ -21317,6 +22236,8 @@
         "until": 58.0
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -21390,6 +22311,8 @@
         "until": 114.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -21461,6 +22384,8 @@
         "until": 114.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -21530,6 +22455,8 @@
         "until": 114.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -21591,6 +22518,8 @@
         "until": 114.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -21652,6 +22581,8 @@
         "until": 114.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -21713,6 +22644,8 @@
         "until": 114.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -21774,6 +22707,8 @@
         "until": 114.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -21835,6 +22770,8 @@
         "until": 114.8
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -21915,6 +22852,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -22002,6 +22941,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -22089,6 +23030,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
@@ -22154,6 +23097,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -22200,6 +23145,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -22280,6 +23227,8 @@
         "until": 64.7
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -22360,6 +23309,8 @@
         "until": 64.7
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -22418,6 +23369,8 @@
         "until": 64.7
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "raw",
@@ -22476,6 +23429,8 @@
         "until": 64.7
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
     "outcome": "low",
@@ -22526,6 +23481,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
     "outcome": "fail",
@@ -22606,6 +23563,8 @@
         "until": 43.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -22686,6 +23645,8 @@
         "until": 43.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -22766,6 +23727,8 @@
         "until": 43.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -22865,6 +23828,8 @@
         "until": 43.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -22945,6 +23910,8 @@
         "until": 43.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -23025,6 +23992,8 @@
         "until": 43.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "raw",
@@ -23113,6 +24082,8 @@
         "until": 43.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
     "outcome": "fail",
@@ -23170,6 +24141,8 @@
         "until": 43.3
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23228,6 +24201,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
     "outcome": "fail",
@@ -23315,6 +24290,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23406,6 +24383,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23497,6 +24476,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23543,6 +24524,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23604,6 +24587,8 @@
         "until": 61.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23716,6 +24701,8 @@
         "until": 61.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -23828,6 +24815,8 @@
         "until": 61.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
@@ -23889,6 +24878,8 @@
         "until": 61.1
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -23947,6 +24938,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24001,6 +24994,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -24043,6 +25038,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24089,6 +25086,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24135,6 +25134,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24181,6 +25182,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24227,6 +25230,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24273,6 +25278,8 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24301,15 +25308,15 @@
     "name": "Absolute Gigachad",
     "job": "Paladin",
     "role": "tank",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
-    "hp": null,
+    "guid": 1002946,
+    "ability": "Frostbite",
+    "total": 50433,
+    "hp": 46683,
     "max_hp": 99211,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 50433,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 31.9,
     "pull_ms": 152726,
@@ -24319,12 +25326,14 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "mechanic_id": "deathwall",
-    "mechanic": "Deathwall",
+    "down": [],
+    "unsoaked": [],
+    "mechanic_id": "frostbite",
+    "mechanic": "Frostbite",
     "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall.",
+    "happened": "Took 50,433 at 47% HP.",
+    "should_have_been": "Run out of the ice before it ticks. Frostbite is standing in the puddle.",
+    "went_wrong": "Absolute Gigachad stood in the ice.",
     "blames": [
       {
         "who": "Absolute Gigachad",
@@ -24332,7 +25341,7 @@
       }
     ],
     "first": true,
-    "first_mistake": "Absolute Gigachad walking into the deathwall at 137.5s into Thordan"
+    "first_mistake": "Absolute Gigachad dying to Frostbite at 137.5s into Thordan"
   },
   {
     "fight": 53,
@@ -24369,20 +25378,24 @@
         "until": 148.2
       }
     ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 105,841 at 90% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Kite Noodle died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "Absolute Gigachad was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
-        "confidence": 50
+        "who": "Absolute Gigachad",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall at 137.5s into Thordan"
+    "first_mistake": "Absolute Gigachad dying to Frostbite at 137.5s into Thordan"
   },
   {
     "fight": 53,
@@ -24419,20 +25432,24 @@
         "until": 148.2
       }
     ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 97,320 at 39% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Spring Nymphar died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "Absolute Gigachad was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
-        "confidence": 50
+        "who": "Absolute Gigachad",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall at 137.5s into Thordan"
+    "first_mistake": "Absolute Gigachad dying to Frostbite at 137.5s into Thordan"
   },
   {
     "fight": 53,
@@ -24469,20 +25486,24 @@
         "until": 148.2
       }
     ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 104,428 at 61% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Kiara Blaiddyd died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "Absolute Gigachad was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
-        "confidence": 50
+        "who": "Absolute Gigachad",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall at 137.5s into Thordan"
+    "first_mistake": "Absolute Gigachad dying to Frostbite at 137.5s into Thordan"
   },
   {
     "fight": 53,
@@ -24519,20 +25540,24 @@
         "until": 148.2
       }
     ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 93,743 at 77% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Kitana Kahn died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "Absolute Gigachad was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
-        "confidence": 50
+        "who": "Absolute Gigachad",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall at 137.5s into Thordan"
+    "first_mistake": "Absolute Gigachad dying to Frostbite at 137.5s into Thordan"
   },
   {
     "fight": 53,
@@ -24569,20 +25594,24 @@
         "until": 148.2
       }
     ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 57,660 at 38% HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Absolute Gigalad died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "Absolute Gigachad was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
-        "confidence": 50
+        "who": "Absolute Gigachad",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall at 137.5s into Thordan"
+    "first_mistake": "Absolute Gigachad dying to Frostbite at 137.5s into Thordan"
   },
   {
     "fight": 53,
@@ -24619,20 +25648,24 @@
         "until": 148.2
       }
     ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 93,755 at 92% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Loki Doki died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "Absolute Gigachad was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
-        "confidence": 50
+        "who": "Absolute Gigachad",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall at 137.5s into Thordan"
+    "first_mistake": "Absolute Gigachad dying to Frostbite at 137.5s into Thordan"
   },
   {
     "fight": 53,
@@ -24669,20 +25702,24 @@
         "until": 148.2
       }
     ],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [],
     "mechanic_id": "holy-impact",
     "mechanic": "Holy Impact",
     "outcome": "fail",
     "happened": "Took 96,851 at 82% HP. It would have killed them from full HP.",
-    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
-    "went_wrong": "Speed Panda died to comets that were too close.",
+    "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57\u201366k of the explosion. Everyone else takes about 91\u2013106k.",
+    "went_wrong": "Absolute Gigachad was already dead, so a tower was empty.",
     "blames": [
       {
-        "who": "Prey markers",
-        "confidence": 50
+        "who": "Absolute Gigachad",
+        "confidence": 100
       }
     ],
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall at 137.5s into Thordan"
+    "first_mistake": "Absolute Gigachad dying to Frostbite at 137.5s into Thordan"
   },
   {
     "fight": 54,
@@ -24719,6 +25756,8 @@
         "until": 121.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -24791,6 +25830,8 @@
         "until": 121.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
     "outcome": "fail",
@@ -24849,6 +25890,8 @@
         "until": 121.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24903,6 +25946,8 @@
         "until": 121.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -24957,6 +26002,8 @@
         "until": 121.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25011,6 +26058,8 @@
         "until": 121.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25065,6 +26114,8 @@
         "until": 121.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",
@@ -25119,6 +26170,8 @@
         "until": 121.5
       }
     ],
+    "down": [],
+    "unsoaked": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
     "outcome": "fail",

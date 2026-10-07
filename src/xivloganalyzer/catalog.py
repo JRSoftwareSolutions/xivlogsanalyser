@@ -68,6 +68,19 @@ class MarkerSpots:
 
 
 @dataclass
+class NeedsEveryone:
+    """A mechanic that fails when a player is missing from it.
+
+    `soak` are the guids that hit everyone in place, such as towers. They land up to
+    `lead` seconds before the first death. Without a soak, the cast lands `lead`
+    seconds before the first death.
+    """
+
+    lead: float
+    soak: list[int] = field(default_factory=list)
+
+
+@dataclass
 class Mechanic:
     id: str
     name: str
@@ -88,6 +101,7 @@ class Mechanic:
     spots: MarkerSpots | None = None
     moments: list[Moment] = field(default_factory=list)
     dive_markers: dict[int, DiveMarker] = field(default_factory=dict)
+    needs_everyone: NeedsEveryone | None = None
 
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
@@ -274,6 +288,15 @@ def _spots(raw: dict | None) -> MarkerSpots | None:
     )
 
 
+def _needs_everyone(raw: dict | None) -> NeedsEveryone | None:
+    if not raw:
+        return None
+    return NeedsEveryone(
+        lead=float(raw["lead"]),
+        soak=[int(guid) for guid in raw.get("soak") or []],
+    )
+
+
 def _deathwall(raw: dict | None) -> Mechanic | None:
     """The arena edge. It has no phase and no packet, so it is not in `mechanics`."""
     if not raw:
@@ -333,6 +356,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                     )
                     for guid, row in (raw.get("dive_markers") or {}).items()
                 },
+                needs_everyone=_needs_everyone(raw.get("needs_everyone")),
             )
         )
     return FightPack(
