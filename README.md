@@ -2,13 +2,25 @@
 
 Session reviews for FFLogs. Dragonsong's Reprise is the first fight. The dashboard says what happened, and a short line for what went wrong. Each blame has a confidence: 100% when one person owns it, and a lower share when several people made a mistake.
 
-## Current session
+## Reference log
 
 [XVz8bCqgPw1KRh9d](https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d), Kite21, Ultimates (Legacy). Played Sat 3 Oct 2026, 21:17–00:03 (pull 68 is the 12:02 AM label from the log). Thordan: **86 raw deaths** across 55 pulls. Pull 68 has no raw death. Kitana Kahn's Skyward Leap was full HP with no mitigation.
 
 The other two nights are [8DYNHQx4C7ytdLb9](https://www.fflogs.com/reports/8DYNHQx4C7ytdLb9) (Mon 5 Oct 2026, 21:31–00:14) and [3wzL6x4VHTmvNkhq](https://www.fflogs.com/reports/3wzL6x4VHTmvNkhq) (Wed 30 Sep 2026, 21:44–00:03).
 
 Open [dashboard.html](dashboard.html) after an analysis run. The side panel is the fight, then the sessions newest first. The main area starts as the sessions list: a general trend of how far each night got, then each night on its own row. A row starts collapsed. Open it for that night's pulls. Open a session for its overview, pulls, and mechanics. Death reviews load when a pull or a mechanic is opened. Inside a session, the main area is a pull chart (taller means further into the fight), then the pull count and the mechanics for each phase. Those mechanics are the `clusters` in `fights/dsr/mechanics.json`, in `starts` order, drawn as a line. `markers` in `fight.json` are chart labels only.
+
+## Setup
+
+Python 3.10 or newer, and nothing else. Install the package once from the repo root:
+
+```
+python -m venv .venv
+.venv\Scripts\activate          # macOS or Linux: source .venv/bin/activate
+pip install -e .
+```
+
+Without installing, put `src` on the path instead, for example `PYTHONPATH=src python -m xivloganalyzer reanalyze`. The tests are `python -m unittest discover -s tests`.
 
 ## How a log gets in
 

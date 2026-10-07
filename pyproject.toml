@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xivloganalyzer"
+dynamic = ["version"]
+description = "Judge FFLogs deaths against per-mechanic parameters."
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+xivloganalyzer = "xivloganalyzer.__main__:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "xivloganalyzer.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+xivloganalyzer = ["session_template.html", "job_icons/*.png"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
