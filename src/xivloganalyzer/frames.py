@@ -31,6 +31,7 @@ SKIP_TYPES = {"Pet", "NPC", "Boss", "LimitBreak"}
 TOWER_NAMES = {"King Thordan", "Holy Comet", "Brightsphere", "Haurchefant", "Spear of the Fury"}
 TOWER_SOURCE = "Ser Hermenost"
 COLLAPSE_SOURCE = "Ser Grinnaux"
+IMPACT_CASTER = "Ser Guerrique"
 TOWER_RADIUS = 3.0
 # Soaked players stand up to about 2.9 yalms from the center. Clear misses are 3.9 and up.
 OUTSIDE_TOWER = 3.5
@@ -241,6 +242,9 @@ class FrameBook:
                 x, y = _rel(sample.x, sample.y)
                 marks.append({"kind": "orb", "x": x, "y": y, "name": "Orb"})
 
+        if mechanic_id == "heavy-impact":
+            marks.extend(self._impact(replay, when))
+
         boss = self._boss(replay, picture_at)
         gaze_drawn = any(mark["kind"] == "gaze" for mark in marks)
         if boss is not None and not gaze_drawn:
@@ -353,6 +357,9 @@ class FrameBook:
             ):
                 x, y = _rel(sample.x, sample.y)
                 marks.append({"kind": "orb", "x": x, "y": y, "name": "Orb"})
+
+        if mechanic_id == "heavy-impact":
+            marks.extend(self._impact(replay, replay_when))
 
         boss = self._boss(replay, picture_at)
         if boss is None and phase_id != 2:
@@ -529,6 +536,25 @@ class FrameBook:
             x, y = _rel(sample.x, sample.y)
             marks.append({"kind": "collapse", "x": x, "y": y, "name": "Dimensional Collapse"})
         return marks
+
+    def _impact(self, replay: FightReplay, when: float) -> list[dict]:
+        """Ser Guerrique casts both Heavy Impact pulses, and they spread out from where he landed."""
+        best = None
+        best_age = None
+        for samples in replay.by_actor.values():
+            if not samples or samples[0].name != IMPACT_CASTER:
+                continue
+            for sample in samples:
+                age = abs(sample.t - when)
+                if _radius(sample.x, sample.y) > ARENA:
+                    continue
+                if best_age is None or age < best_age:
+                    best = sample
+                    best_age = age
+        if best is None or best_age is None or best_age > 3:
+            return []
+        x, y = _rel(best.x, best.y)
+        return [{"kind": "impact", "x": x, "y": y, "name": IMPACT_CASTER}]
 
     def _burst(self, replay, predicate, center, back, forward, min_count, prefer_pair=False, keep=None):
         buckets: dict[tuple, list[Sample]] = {}
@@ -775,6 +801,8 @@ def _mark_sentences(marks: list[dict], players: list[dict], carried: bool, arrow
         sentences.append("Prey is tagged on the players who had it.")
     if "orb" in kinds:
         sentences.append("The circles are the orbs.")
+    if "impact" in kinds:
+        sentences.append("Heavy Impact starts at Ser Guerrique, the cross, and the rings show it pulsing outward.")
     hits = sum(mark["kind"] == "hit" for mark in marks)
     if hits == 1:
         sentences.append("The line runs from Thordan to the player the cone hit.")
