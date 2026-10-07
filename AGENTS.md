@@ -1,8 +1,3 @@
----
-description: How to analyze logs and apply corrections in xivloganalyzer
-alwaysApply: true
----
-
 # Log analysis
 
 The dashboard is `dashboard.html` at the repo root. It lists every saved log as a session, grouped by day and time. `<report>/session.html` is that one session. Both are generated. Do not hand-edit them.
