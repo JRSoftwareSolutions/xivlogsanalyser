@@ -20,7 +20,7 @@ Any Burns damage is a fail. The ticks that kill are about 50–77k. Pull 35 of `
 
 `{player}` stood in the fire and died to Burns.
 
-A Burns death before the towers leaves a tower empty. That player owns the Eternal Conviction or Holy Impact that follows.
+A Burns death before the towers leaves a tower empty. That player owns the Eternal Conviction that follows.
 
 ## Parameters
 

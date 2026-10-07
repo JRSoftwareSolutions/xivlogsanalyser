@@ -1,18 +1,18 @@
 {
- "rules": "d70ad9f94d7ddee0",
- "engine": "1c26ea8942ce6ec7",
+ "rules": "58f481f660113300",
+ "engine": "a802816ace9654da",
  "log": "fc1e894e4c5b8e98",
  "outputs": {
-  "facts.json": "cd4b388f85b5489b",
-  "judgments.json": "26ffc28ec42e91d8",
-  "session.html": "c4a360ad38e79f7a"
+  "facts.json": "995b334fdbce27a8",
+  "judgments.json": "1a79b75de2ad8286",
+  "session.html": "16b727d38721ba6c"
  },
  "counts": {
-  "raw": 154,
-  "fail": 250,
-  "low": 23,
+  "raw": 155,
+  "fail": 252,
+  "low": 24,
   "environment": 0,
-  "unknown": 4
+  "unknown": 0
  },
  "summary": {
   "code": "3wzL6x4VHTmvNkhq",
@@ -23,9 +23,9 @@
   "day": "2026-09-30",
   "dayLabel": "Wed 30 Sep 2026",
   "timeLabel": "21:44\u201300:03",
-  "raw": 154,
-  "fail": 250,
-  "low": 23,
+  "raw": 155,
+  "fail": 252,
+  "low": 24,
   "detail": "",
   "overview": {
    "phases": [
@@ -1458,7 +1458,7 @@
     "phase": 2,
     "starts": 75.0,
     "reached": 16,
-    "mistakes": 2
+    "mistakes": 1
    },
    {
     "id": "sanctity-of-the-ward",

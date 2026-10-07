@@ -14,7 +14,7 @@ Follow `review-mechanic` for the packet, the outcome order, and a correction. Fo
 
 The cast is about 17 seconds into Nidhogg. These packets have no `unmitigatedAmount`, so the number is amount plus overkill plus shield. Ability files for these guids are not stored. The bands are the death-table hits on `8DYNHQx4C7ytdLb9`, eight pulls. Deaths do not set a lived band except where a tooltip shows the same hit with overkill `-1`.
 
-Final Chorus and the auto cleave are not this stop. An up arrow is Dark Spineshatter Dive. This log stores no guid for it. Do not invent one.
+Final Chorus `26377`, about 2.5 seconds, is Nidhogg's opening raidwide: a death on it is the healers and party mitigation. Nidhogg's first auto-attack `26416`, about 8 seconds, is a frontal cleave: a non-tank it hits owns that. Both sit on this stop's card. They are not part of the dive. An up arrow is Dark Spineshatter Dive. This log stores no guid for it. Do not invent one.
 
 ## Easthogg
 

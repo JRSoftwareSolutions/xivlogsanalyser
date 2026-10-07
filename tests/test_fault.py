@@ -1,4 +1,4 @@
-"""A player missing from a mechanic that needs everyone owns the explosion."""
+"""Fault goes to the player who broke the mechanic, named from the log."""
 
 import json
 import unittest
@@ -16,7 +16,7 @@ def _owners(item):
     return [(blame.who, blame.confidence) for blame in item.blames]
 
 
-class EmptyTowerTest(unittest.TestCase):
+class FaultTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.report = ROOT / "data" / "8DYNHQx4C7ytdLb9"
@@ -26,9 +26,12 @@ class EmptyTowerTest(unittest.TestCase):
             extract_report(cls.report, cls.pack), cls.pack, roster_from_meta(cls.meta, cls.pack),
         )
 
-    def _pull(self, fight):
+    def _pull(self, fight, mechanic=None):
         return sorted(
-            (item for item in self.judgments if item.fact.fight == fight),
+            (
+                item for item in self.judgments
+                if item.fact.fight == fight and (mechanic is None or item.mechanic == mechanic)
+            ),
             key=lambda item: (item.fact.t, item.fact.name),
         )
 
@@ -39,20 +42,17 @@ class EmptyTowerTest(unittest.TestCase):
         self.assertEqual(paladin.outcome, "fail")
         self.assertEqual(paladin.went_wrong, "Absolute Gigachad stood in the ice.")
         self.assertTrue(paladin.first)
-        self.assertTrue(paladin.first_mistake.startswith("Absolute Gigachad dying to Frostbite at "))
 
-    def test_the_dead_player_owns_the_holy_impact(self):
-        impact = [item for item in self._pull(53) if item.mechanic == "Holy Impact"]
+    def test_crossed_comets_name_both_prey_players(self):
+        # Kite's last comet landed 3.6 yalms from Speed's first, before the outer towers.
+        impact = self._pull(53, "Holy Impact")
         self.assertEqual(len(impact), 7)
         for item in impact:
+            self.assertEqual(item.fact.marked, ["Kite Noodle", "Speed Panda"])
+            self.assertEqual(_owners(item), [("Speed Panda", 50), ("Kite Noodle", 50)])
             self.assertFalse(item.first)
-            self.assertEqual(item.fact.down, ["Absolute Gigachad"])
-            self.assertEqual(
-                item.went_wrong, "Absolute Gigachad was already dead, so a tower was empty.",
-            )
-            self.assertEqual(_owners(item), [("Absolute Gigachad", 100)])
 
-    def test_the_pull_card_fails_only_the_dead_player(self):
+    def test_the_pull_card_fails_only_the_prey_players(self):
         when = session_clock(self.report, self.meta)
         payload = session_payload(self.judgments, self.pack, self.report.name, when, self.meta)
         pull = next(row for row in payload["pulls"] if row["id"] == 53)
@@ -65,28 +65,32 @@ class EmptyTowerTest(unittest.TestCase):
         ]
         self.assertTrue(seats)
         failed = sorted(seat["name"] for seat in seats if not seat["passed"])
-        self.assertEqual(failed, ["Absolute Gigachad"])
+        self.assertEqual(failed, ["Kite Noodle", "Speed Panda"])
+
+    def test_one_players_comets_are_theirs(self):
+        # Loki's fourth and fifth comets landed 4.7 yalms apart.
+        for item in self._pull(24, "Holy Impact"):
+            self.assertEqual(_owners(item), [("Loki Doki", 100)])
+            self.assertEqual(item.went_wrong, "Loki Doki dropped two comets too close.")
+
+    def test_a_dead_prey_player_passes_it_on(self):
+        # Both prey players died to the empty tower, which Kiara left by standing in the ice.
+        for item in self._pull(37, "Holy Impact"):
+            self.assertEqual(_owners(item), [("Kiara Blaiddyd", 100)])
 
     def test_alive_outside_the_towers_is_named(self):
-        towers = [item for item in self._pull(37) if item.mechanic == "Eternal Conviction"]
+        towers = self._pull(37, "Eternal Conviction")
         self.assertTrue(towers)
         for item in towers:
             self.assertEqual(item.fact.unsoaked, ["Kiara Blaiddyd"])
             self.assertEqual(_owners(item), [("Kiara Blaiddyd", 100)])
 
-    def test_a_full_party_keeps_the_prey_markers(self):
-        impact = [item for item in self._pull(24) if item.mechanic == "Holy Impact"]
-        self.assertEqual(len(impact), 8)
-        for item in impact:
-            self.assertEqual(_owners(item), [("Prey markers", 50)])
-
-    def test_deaths_to_an_unnamed_tower_pass_on_the_group(self):
-        towers = [item for item in self._pull(19) if item.mechanic == "Eternal Conviction"]
-        self.assertTrue(all(_owners(item) == [("Missed soak", 50)] for item in towers))
-        impact = [item for item in self._pull(19) if item.mechanic == "Holy Impact"]
-        self.assertEqual(len(impact), 1)
-        # The tower victims pass on Missed soak. The paladin walked into the wall after it.
-        self.assertEqual(_owners(impact[0]), [("Missed soak", 50), ("Absolute Gigachad", 50)])
+    def test_two_in_one_tower_are_named(self):
+        for pull, pair in ((19, ["Spring Nymphar", "Kiara Blaiddyd"]), (29, ["Loki Doki", "Speed Panda"])):
+            towers = self._pull(pull, "Eternal Conviction")
+            self.assertTrue(towers)
+            for item in towers:
+                self.assertEqual(sorted(_owners(item)), sorted((name, 50) for name in pair))
 
 
 if __name__ == "__main__":

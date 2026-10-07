@@ -1,18 +1,18 @@
 {
- "rules": "d70ad9f94d7ddee0",
- "engine": "1c26ea8942ce6ec7",
+ "rules": "58f481f660113300",
+ "engine": "a802816ace9654da",
  "log": "f136dbe8abc107ba",
  "outputs": {
-  "facts.json": "f5aa4eed2ce9c482",
-  "judgments.json": "8d88f7001222b8b8",
-  "session.html": "32c3e1392f9e8374"
+  "facts.json": "ee38a912106e77e5",
+  "judgments.json": "976f3a54cf0be537",
+  "session.html": "ce82148cc98a8f72"
  },
  "counts": {
-  "raw": 61,
-  "fail": 317,
+  "raw": 64,
+  "fail": 320,
   "low": 9,
   "environment": 0,
-  "unknown": 6
+  "unknown": 0
  },
  "summary": {
   "code": "8DYNHQx4C7ytdLb9",
@@ -23,8 +23,8 @@
   "day": "2026-10-05",
   "dayLabel": "Mon 5 Oct 2026",
   "timeLabel": "21:31\u201300:14",
-  "raw": 61,
-  "fail": 317,
+  "raw": 64,
+  "fail": 320,
   "low": 9,
   "detail": "",
   "overview": {

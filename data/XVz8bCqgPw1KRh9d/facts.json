@@ -70,7 +70,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 10,
@@ -143,7 +148,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 10,
@@ -230,7 +240,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 10,
@@ -317,7 +341,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 10,
@@ -404,7 +441,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 10,
@@ -491,7 +544,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 10,
@@ -564,7 +632,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 10,
@@ -637,7 +719,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 11,
@@ -656,7 +753,7 @@
     "unmitigated": 45156,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": 8,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 36.7,
     "pull_ms": 140899,
@@ -696,7 +793,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle"
+    ],
+    "dead": []
   },
   {
     "fight": 11,
@@ -755,7 +859,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 11,
@@ -814,7 +931,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 11,
@@ -887,7 +1018,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 11,
@@ -960,7 +1104,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 11,
@@ -1033,7 +1191,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 11,
@@ -1092,7 +1265,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 11,
@@ -1159,7 +1347,22 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 12,
@@ -1189,7 +1392,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 12,
@@ -1219,7 +1427,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 12,
@@ -1249,7 +1462,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 12,
@@ -1279,7 +1497,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 12,
@@ -1321,7 +1546,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 12,
@@ -1351,7 +1588,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 12,
@@ -1407,7 +1653,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 12,
@@ -1463,7 +1721,22 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 12,
@@ -1493,7 +1766,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 12,
@@ -1523,7 +1807,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 13,
@@ -1553,7 +1848,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 13,
@@ -1591,7 +1891,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 13,
@@ -1629,7 +1934,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Loki Doki"
+    ]
   },
   {
     "fight": 13,
@@ -1667,7 +1979,15 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 13,
@@ -1717,7 +2037,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 13,
@@ -1755,7 +2084,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 13,
@@ -1816,7 +2154,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 13,
@@ -1866,7 +2213,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 13,
@@ -1918,7 +2274,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 14,
@@ -1974,7 +2345,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
+    "dead": []
   },
   {
     "fight": 14,
@@ -2027,7 +2406,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "dead": []
   },
   {
     "fight": 14,
@@ -2080,7 +2468,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 14,
@@ -2110,7 +2509,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 14,
@@ -2140,7 +2549,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 14,
@@ -2170,7 +2591,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 14,
@@ -2200,7 +2632,21 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 14,
@@ -2245,7 +2691,22 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 14,
@@ -2290,7 +2751,22 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 15,
@@ -2345,7 +2821,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad"
+    ],
+    "dead": []
   },
   {
     "fight": 15,
@@ -2364,7 +2847,7 @@
     "unmitigated": 112686,
     "multiplier": 0.9,
     "absorb": 7356,
-    "stack": 7,
+    "stack": 8,
     "buffs": [
       "Sacred Soil"
     ],
@@ -2400,7 +2883,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Absolute Gigachad"
+    ]
   },
   {
     "fight": 15,
@@ -2430,7 +2922,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 15,
@@ -2485,7 +2985,22 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 15,
@@ -2526,7 +3041,22 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 15,
@@ -2581,7 +3111,24 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 15,
@@ -2636,7 +3183,24 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 15,
@@ -2691,7 +3255,26 @@
       "Absolute Gigachad",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 16,
@@ -2766,7 +3349,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 16,
@@ -2818,7 +3406,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 16,
@@ -2881,7 +3484,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 16,
@@ -2933,7 +3552,24 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 16,
@@ -2997,7 +3633,25 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 16,
@@ -3049,7 +3703,26 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 16,
@@ -3101,7 +3774,27 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 16,
@@ -3139,7 +3832,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 17,
@@ -3169,7 +3875,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": []
   },
   {
     "fight": 17,
@@ -3222,7 +3938,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 17,
@@ -3252,7 +3980,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 17,
@@ -3282,7 +4023,21 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 17,
@@ -3312,7 +4067,22 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 17,
@@ -3342,7 +4112,23 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 17,
@@ -3372,7 +4158,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 17,
@@ -3402,7 +4200,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 18,
@@ -3432,7 +4243,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 18,
@@ -3487,7 +4303,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd"
+    ],
+    "dead": []
   },
   {
     "fight": 18,
@@ -3546,7 +4369,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 18,
@@ -3605,7 +4443,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 18,
@@ -3664,7 +4518,24 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 18,
@@ -3709,7 +4580,25 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 18,
@@ -3754,7 +4643,26 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 18,
@@ -3822,7 +4730,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 18,
@@ -3879,7 +4799,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 18,
@@ -3924,7 +4856,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 19,
@@ -3966,7 +4913,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 19,
@@ -4032,7 +4984,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 19,
@@ -4087,7 +5050,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Loki Doki",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 19,
@@ -4106,7 +5081,7 @@
     "unmitigated": 64327,
     "multiplier": 0.72,
     "absorb": 0,
-    "stack": 6,
+    "stack": 5,
     "buffs": [
       "Rampart",
       "Shield Samba"
@@ -4165,7 +5140,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 19,
@@ -4184,7 +5173,7 @@
     "unmitigated": 65261,
     "multiplier": 0.54,
     "absorb": 0,
-    "stack": 6,
+    "stack": 5,
     "buffs": [
       "Shield Samba",
       "Sentinel",
@@ -4255,7 +5244,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 19,
@@ -4274,7 +5278,7 @@
     "unmitigated": 99020,
     "multiplier": 0.9,
     "absorb": 0,
-    "stack": 6,
+    "stack": 5,
     "buffs": [
       "Shield Samba"
     ],
@@ -4321,7 +5325,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 19,
@@ -4340,7 +5360,7 @@
     "unmitigated": 96393,
     "multiplier": 0.9,
     "absorb": 0,
-    "stack": 6,
+    "stack": 5,
     "buffs": [
       "Shield Samba"
     ],
@@ -4387,7 +5407,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 19,
@@ -4406,7 +5442,7 @@
     "unmitigated": 103225,
     "multiplier": 0.9,
     "absorb": 0,
-    "stack": 6,
+    "stack": 5,
     "buffs": [
       "Shield Samba"
     ],
@@ -4453,7 +5489,25 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 19,
@@ -4505,7 +5559,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 20,
@@ -4535,7 +5602,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 20,
@@ -4565,7 +5644,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd"
+    ],
+    "dead": []
   },
   {
     "fight": 20,
@@ -4607,7 +5696,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 20,
@@ -4637,7 +5739,22 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 20,
@@ -4667,7 +5784,21 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 20,
@@ -4697,7 +5828,23 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 20,
@@ -4727,7 +5874,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 20,
@@ -4757,7 +5916,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 21,
@@ -4810,7 +5982,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 21,
@@ -4840,7 +6017,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 21,
@@ -4870,7 +6054,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 21,
@@ -4945,7 +6137,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 21,
@@ -4997,7 +6197,21 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 21,
@@ -5089,7 +6303,22 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 21,
@@ -5139,7 +6368,23 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 21,
@@ -5203,7 +6448,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 22,
@@ -5255,7 +6515,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": []
   },
   {
     "fight": 22,
@@ -5319,7 +6586,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": []
   },
   {
     "fight": 22,
@@ -5357,7 +6631,18 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 22,
@@ -5407,7 +6692,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": [
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 22,
@@ -5457,7 +6752,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 22,
@@ -5501,7 +6809,22 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 22,
@@ -5545,7 +6868,23 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 22,
@@ -5589,7 +6928,23 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 23,
@@ -5619,7 +6974,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 23,
@@ -5649,7 +7009,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 23,
@@ -5679,7 +7044,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 23,
@@ -5709,7 +7082,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 23,
@@ -5739,7 +7120,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 23,
@@ -5769,7 +7160,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 23,
@@ -5799,7 +7200,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 23,
@@ -5829,7 +7242,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 24,
@@ -5918,7 +7343,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ],
+    "dead": []
   },
   {
     "fight": 24,
@@ -6007,7 +7446,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 24,
@@ -6073,7 +7528,24 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 24,
@@ -6162,7 +7634,25 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 24,
@@ -6240,7 +7730,26 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 24,
@@ -6292,7 +7801,27 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 24,
@@ -6344,7 +7873,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 24,
@@ -6396,7 +7937,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 25,
@@ -6434,7 +7988,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 25,
@@ -6472,7 +8031,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 25,
@@ -6544,7 +8110,15 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 25,
@@ -6582,7 +8156,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 25,
@@ -6601,7 +8184,7 @@
     "unmitigated": 681187,
     "multiplier": 0.9,
     "absorb": 0,
-    "stack": 3,
+    "stack": 4,
     "buffs": [
       "Shield Samba"
     ],
@@ -6640,7 +8223,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 25,
@@ -6659,7 +8255,7 @@
     "unmitigated": 65954,
     "multiplier": 0.9,
     "absorb": 0,
-    "stack": 3,
+    "stack": 4,
     "buffs": [
       "Shield Samba"
     ],
@@ -6697,7 +8293,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 25,
@@ -6735,7 +8345,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 25,
@@ -6799,7 +8421,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 26,
@@ -6860,7 +8497,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
+    "dead": []
   },
   {
     "fight": 26,
@@ -6921,7 +8568,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 26,
@@ -6959,7 +8618,18 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 26,
@@ -6997,7 +8667,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 26,
@@ -7054,7 +8736,22 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 26,
@@ -7111,7 +8808,22 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 26,
@@ -7168,7 +8880,24 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 26,
@@ -7225,7 +8954,24 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 27,
@@ -7293,7 +9039,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "dead": []
   },
   {
     "fight": 27,
@@ -7361,7 +9117,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 27,
@@ -7429,7 +9197,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 27,
@@ -7497,7 +9279,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 27,
@@ -7556,7 +9351,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 27,
@@ -7615,7 +9425,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 27,
@@ -7674,7 +9500,24 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 27,
@@ -7733,7 +9576,25 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 28,
@@ -7763,7 +9624,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 28,
@@ -7782,7 +9648,7 @@
     "unmitigated": 859460,
     "multiplier": 2.99,
     "absorb": 0,
-    "stack": 3,
+    "stack": 4,
     "buffs": [
       "Shield Samba",
       "Magic Vulnerability Up"
@@ -7830,7 +9696,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Loki Doki"
+    ]
   },
   {
     "fight": 28,
@@ -7849,7 +9727,7 @@
     "unmitigated": 876973,
     "multiplier": 2.99,
     "absorb": 0,
-    "stack": 3,
+    "stack": 4,
     "buffs": [
       "Shield Samba",
       "Magic Vulnerability Up"
@@ -7891,7 +9769,20 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 28,
@@ -7988,7 +9879,18 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 28,
@@ -8085,7 +9987,18 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 28,
@@ -8104,7 +10017,7 @@
     "unmitigated": 913731,
     "multiplier": 2.84,
     "absorb": 0,
-    "stack": 3,
+    "stack": 4,
     "buffs": [
       "Shield Samba",
       "Fey Illumination",
@@ -8158,7 +10071,21 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 28,
@@ -8222,7 +10149,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 28,
@@ -8278,7 +10217,22 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 29,
@@ -8308,7 +10262,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 29,
@@ -8383,7 +10342,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 29,
@@ -8413,7 +10379,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 29,
@@ -8477,7 +10450,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 29,
@@ -8496,7 +10478,7 @@
     "unmitigated": 655281,
     "multiplier": 3.32,
     "absorb": 0,
-    "stack": 5,
+    "stack": 6,
     "buffs": [
       "Magic Vulnerability Up"
     ],
@@ -8549,7 +10531,20 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 29,
@@ -8568,7 +10563,7 @@
     "unmitigated": 617362,
     "multiplier": 1.94,
     "absorb": 0,
-    "stack": 1,
+    "stack": 2,
     "buffs": [
       "Rampart",
       "Stem the Flow",
@@ -8646,7 +10641,21 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 29,
@@ -8707,7 +10716,20 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 29,
@@ -8737,7 +10759,22 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 30,
@@ -8798,7 +10835,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 30,
@@ -8881,7 +10923,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad"
+    ]
   },
   {
     "fight": 30,
@@ -8964,7 +11013,15 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 30,
@@ -9036,7 +11093,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 30,
@@ -9116,7 +11182,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 30,
@@ -9135,7 +11214,7 @@
     "unmitigated": 4228180,
     "multiplier": 2.99,
     "absorb": 0,
-    "stack": 1,
+    "stack": 2,
     "buffs": [
       "Shield Samba",
       "Physical Vulnerability Up"
@@ -9180,7 +11259,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 30,
@@ -9249,7 +11342,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 30,
@@ -9338,7 +11445,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 31,
@@ -9368,7 +11490,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "dead": []
   },
   {
     "fight": 31,
@@ -9410,7 +11540,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 31,
@@ -9440,7 +11580,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 31,
@@ -9470,7 +11618,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 31,
@@ -9500,7 +11657,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 31,
@@ -9530,7 +11697,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 31,
@@ -9560,7 +11737,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 31,
@@ -9590,7 +11779,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 32,
@@ -9662,7 +11864,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": []
   },
   {
     "fight": 32,
@@ -9723,7 +11935,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 32,
@@ -9761,7 +11985,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 32,
@@ -9799,7 +12035,18 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 32,
@@ -9856,7 +12103,22 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Speed Panda",
+      "Kite Noodle",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 32,
@@ -9913,7 +12175,22 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 32,
@@ -9970,7 +12247,24 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 32,
@@ -10027,7 +12321,25 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 33,
@@ -10069,7 +12381,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 33,
@@ -10099,7 +12416,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 33,
@@ -10141,7 +12465,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 33,
@@ -10171,7 +12503,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 33,
@@ -10224,7 +12565,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 33,
@@ -10277,7 +12628,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 33,
@@ -10307,7 +12669,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 33,
@@ -10337,7 +12710,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 33,
@@ -10390,7 +12775,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 34,
@@ -10449,7 +12847,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 34,
@@ -10508,7 +12911,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 34,
@@ -10574,7 +12984,18 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 34,
@@ -10663,7 +13084,18 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 34,
@@ -10729,7 +13161,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 34,
@@ -10795,7 +13240,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 34,
@@ -10861,7 +13318,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 34,
@@ -10927,7 +13399,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 35,
@@ -10969,7 +13454,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "dead": []
   },
   {
     "fight": 35,
@@ -11022,7 +13517,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 35,
@@ -11064,7 +13571,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 35,
@@ -11108,7 +13628,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 35,
@@ -11164,7 +13695,22 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 35,
@@ -11220,7 +13766,23 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 35,
@@ -11276,7 +13838,24 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 35,
@@ -11332,7 +13911,25 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 36,
@@ -11382,7 +13979,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 36,
@@ -11443,7 +14045,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 36,
@@ -11493,7 +14102,15 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 36,
@@ -11531,7 +14148,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 36,
@@ -11569,7 +14195,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 36,
@@ -11649,7 +14285,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 36,
@@ -11707,7 +14358,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 36,
@@ -11726,7 +14391,7 @@
     "unmitigated": 4126915,
     "multiplier": 2.99,
     "absorb": 0,
-    "stack": 1,
+    "stack": 2,
     "buffs": [
       "Shield Samba",
       "Physical Vulnerability Up"
@@ -11771,7 +14436,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 36,
@@ -11809,7 +14488,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 37,
@@ -11839,7 +14531,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 37,
@@ -11869,7 +14566,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 37,
@@ -11899,7 +14603,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 37,
@@ -11929,7 +14641,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 37,
@@ -11959,7 +14680,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 37,
@@ -12010,7 +14741,22 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 37,
@@ -12061,7 +14807,22 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 37,
@@ -12112,7 +14873,24 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 38,
@@ -12173,7 +14951,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 38,
@@ -12234,7 +15017,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 38,
@@ -12284,7 +15074,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 38,
@@ -12322,7 +15119,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 38,
@@ -12394,7 +15198,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 38,
@@ -12432,7 +15246,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ]
   },
   {
     "fight": 38,
@@ -12504,7 +15328,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 38,
@@ -12578,7 +15414,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 39,
@@ -12608,7 +15459,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": []
   },
   {
     "fight": 39,
@@ -12638,7 +15496,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda"
+    ],
+    "dead": []
   },
   {
     "fight": 39,
@@ -12668,7 +15533,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 39,
@@ -12718,7 +15588,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 39,
@@ -12760,6 +15637,21 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle"
     ]
   },
   {
@@ -12802,6 +15694,21 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle"
     ]
   },
   {
@@ -12844,6 +15751,23 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Loki Doki"
     ]
   },
   {
@@ -12886,6 +15810,24 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
     ]
   },
   {
@@ -12928,6 +15870,25 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ]
   },
   {
@@ -12970,6 +15931,26 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ]
   },
   {
@@ -13014,7 +15995,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda"
+    ],
+    "dead": []
   },
   {
     "fight": 40,
@@ -13033,7 +16021,7 @@
     "unmitigated": 104375,
     "multiplier": 1.0,
     "absorb": 11704,
-    "stack": 8,
+    "stack": 7,
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 141710,
@@ -13056,7 +16044,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": []
   },
   {
     "fight": 40,
@@ -13124,7 +16119,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Loki Doki"
+    ]
   },
   {
     "fight": 40,
@@ -13143,7 +16145,7 @@
     "unmitigated": 101844,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": 6,
+    "stack": 7,
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 141710,
@@ -13173,6 +16175,22 @@
     ],
     "unsoaked": [
       "Kite Noodle"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Loki Doki"
     ]
   },
   {
@@ -13192,7 +16210,7 @@
     "unmitigated": 92284,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": 6,
+    "stack": 7,
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 141710,
@@ -13222,6 +16240,23 @@
     ],
     "unsoaked": [
       "Kite Noodle"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle",
+      "Loki Doki"
     ]
   },
   {
@@ -13241,7 +16276,7 @@
     "unmitigated": 102467,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": 6,
+    "stack": 7,
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 141710,
@@ -13271,6 +16306,24 @@
     ],
     "unsoaked": [
       "Kite Noodle"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
     ]
   },
   {
@@ -13290,7 +16343,7 @@
     "unmitigated": 62643,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": 6,
+    "stack": 7,
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 141710,
@@ -13320,6 +16373,25 @@
     ],
     "unsoaked": [
       "Kite Noodle"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ]
   },
   {
@@ -13339,7 +16411,7 @@
     "unmitigated": 93480,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": 6,
+    "stack": 7,
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 141710,
@@ -13369,6 +16441,26 @@
     ],
     "unsoaked": [
       "Kite Noodle"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ]
   },
   {
@@ -13388,7 +16480,7 @@
     "unmitigated": 63676,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": 6,
+    "stack": 7,
     "buffs": [],
     "boss_pct": 34.2,
     "pull_ms": 141710,
@@ -13418,6 +16510,27 @@
     ],
     "unsoaked": [
       "Kite Noodle"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ]
   },
   {
@@ -13482,7 +16595,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
+    "dead": []
   },
   {
     "fight": 41,
@@ -13512,7 +16635,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle"
+    ],
+    "dead": []
   },
   {
     "fight": 41,
@@ -13542,7 +16672,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 41,
@@ -13589,7 +16726,22 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 41,
@@ -13636,7 +16788,23 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 41,
@@ -13683,7 +16851,24 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 41,
@@ -13730,7 +16915,25 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 41,
@@ -13781,15 +16984,28 @@
         "until": 142.8
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dropped_by": [
+      "Absolute Gigachad"
+    ],
+    "cohort": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
       "Speed Panda",
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ],
-    "unsoaked": []
+    ]
   },
   {
     "fight": 41,
@@ -13840,15 +17056,29 @@
         "until": 142.8
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dropped_by": [
+      "Absolute Gigachad"
+    ],
+    "cohort": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
       "Speed Panda",
+      "Absolute Gigachad",
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ],
-    "unsoaked": []
+    ]
   },
   {
     "fight": 42,
@@ -13878,7 +17108,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 42,
@@ -13937,7 +17172,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 42,
@@ -13996,7 +17246,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 42,
@@ -14055,7 +17321,24 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 42,
@@ -14114,7 +17397,25 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 42,
@@ -14184,7 +17485,26 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 42,
@@ -14252,7 +17572,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 42,
@@ -14297,7 +17629,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 43,
@@ -14350,7 +17694,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "dead": []
   },
   {
     "fight": 43,
@@ -14380,7 +17734,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": []
   },
   {
     "fight": 43,
@@ -14410,7 +17771,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Loki Doki"
+    ]
   },
   {
     "fight": 43,
@@ -14440,7 +17808,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 43,
@@ -14489,7 +17865,22 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 43,
@@ -14538,7 +17929,22 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 43,
@@ -14587,7 +17993,24 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 43,
@@ -14636,7 +18059,25 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 43,
@@ -14685,7 +18126,26 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 44,
@@ -14730,7 +18190,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
+    "dead": []
   },
   {
     "fight": 44,
@@ -14820,7 +18290,18 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 44,
@@ -14865,7 +18346,15 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 44,
@@ -14910,7 +18399,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 44,
@@ -14955,7 +18453,18 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 44,
@@ -14974,7 +18483,7 @@
     "unmitigated": 1139091,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": 5,
+    "stack": 4,
     "buffs": [],
     "boss_pct": 34.3,
     "pull_ms": 140966,
@@ -15000,7 +18509,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 44,
@@ -15019,7 +18540,7 @@
     "unmitigated": 109585,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": 5,
+    "stack": 4,
     "buffs": [],
     "boss_pct": 34.3,
     "pull_ms": 140966,
@@ -15045,7 +18566,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 44,
@@ -15104,7 +18637,22 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 44,
@@ -15163,7 +18711,22 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 45,
@@ -15193,7 +18756,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 45,
@@ -15223,7 +18791,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad"
+    ]
   },
   {
     "fight": 45,
@@ -15253,7 +18828,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 45,
@@ -15283,7 +18866,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 45,
@@ -15313,7 +18904,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 45,
@@ -15343,7 +18944,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 45,
@@ -15373,7 +18984,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 45,
@@ -15403,7 +19026,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 46,
@@ -15433,7 +19069,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 46,
@@ -15475,7 +19116,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 46,
@@ -15539,7 +19187,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 46,
@@ -15603,7 +19259,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 46,
@@ -15667,7 +19332,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 46,
@@ -15731,7 +19406,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 46,
@@ -15795,7 +19481,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 46,
@@ -15859,7 +19556,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 47,
@@ -15941,7 +19651,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "dead": []
   },
   {
     "fight": 47,
@@ -16023,7 +19747,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 47,
@@ -16105,7 +19845,24 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 47,
@@ -16187,7 +19944,25 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 47,
@@ -16258,7 +20033,26 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 47,
@@ -16329,7 +20123,27 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 47,
@@ -16408,7 +20222,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 47,
@@ -16453,7 +20279,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 48,
@@ -16524,7 +20363,14 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
+    "dead": []
   },
   {
     "fight": 48,
@@ -16569,7 +20415,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 48,
@@ -16614,7 +20469,15 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 48,
@@ -16677,7 +20540,22 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 48,
@@ -16740,7 +20618,22 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 48,
@@ -16803,7 +20696,24 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 48,
@@ -16866,7 +20776,24 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Speed Panda",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 48,
@@ -16929,7 +20856,26 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 49,
@@ -16982,7 +20928,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 49,
@@ -17026,7 +20977,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Loki Doki"
+    ]
   },
   {
     "fight": 49,
@@ -17081,7 +21043,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 49,
@@ -17111,7 +21085,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 49,
@@ -17141,7 +21124,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 49,
@@ -17183,7 +21176,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 49,
@@ -17213,7 +21219,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 49,
@@ -17243,7 +21262,20 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 50,
@@ -17288,7 +21320,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 50,
@@ -17367,7 +21404,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 50,
@@ -17446,7 +21495,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 50,
@@ -17525,7 +21586,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 50,
@@ -17570,7 +21644,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 50,
@@ -17638,7 +21722,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 50,
@@ -17683,7 +21780,21 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 50,
@@ -17740,7 +21851,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 51,
@@ -17829,7 +21956,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "dead": []
   },
   {
     "fight": 51,
@@ -17922,7 +22058,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Loki Doki"
+    ]
   },
   {
     "fight": 51,
@@ -17981,7 +22132,23 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 51,
@@ -18062,7 +22229,24 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 51,
@@ -18155,7 +22339,25 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 51,
@@ -18236,7 +22438,26 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 51,
@@ -18315,7 +22536,19 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 51,
@@ -18360,7 +22593,20 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 52,
@@ -18424,7 +22670,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 52,
@@ -18475,7 +22726,17 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Spring Nymphar"
+    ]
   },
   {
     "fight": 52,
@@ -18528,7 +22789,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 52,
@@ -18592,7 +22865,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 52,
@@ -18622,7 +22904,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 52,
@@ -18664,7 +22956,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 52,
@@ -18720,7 +23023,22 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 52,
@@ -18750,7 +23068,23 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 57,
@@ -18797,7 +23131,21 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
-    ]
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Speed Panda",
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": []
   },
   {
     "fight": 57,
@@ -18844,6 +23192,22 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Speed Panda",
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda"
     ]
   },
   {
@@ -18891,6 +23255,23 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Speed Panda",
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -18938,6 +23319,24 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Speed Panda",
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -18985,6 +23384,25 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Speed Panda",
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -19032,6 +23450,26 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Speed Panda",
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Kite Noodle",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ]
   },
   {
@@ -19077,14 +23515,27 @@
       }
     ],
     "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
       "Speed Panda",
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ],
-    "unsoaked": []
+    ]
   },
   {
     "fight": 57,
@@ -19129,14 +23580,28 @@
       }
     ],
     "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
       "Speed Panda",
+      "Absolute Gigachad",
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ],
-    "unsoaked": []
+    ]
   },
   {
     "fight": 58,
@@ -19178,7 +23643,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda"
+    ],
+    "dead": []
   },
   {
     "fight": 58,
@@ -19220,7 +23692,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda"
+    ]
   },
   {
     "fight": 58,
@@ -19284,6 +23765,21 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Loki Doki"
     ]
   },
   {
@@ -19360,6 +23856,21 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Loki Doki"
     ]
   },
   {
@@ -19436,6 +23947,23 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Absolute Gigalad",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Loki Doki"
     ]
   },
   {
@@ -19512,6 +24040,24 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Loki Doki"
     ]
   },
   {
@@ -19576,6 +24122,24 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Loki Doki"
     ]
   },
   {
@@ -19640,6 +24204,26 @@
     ],
     "unsoaked": [
       "Spring Nymphar"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ]
   },
   {
@@ -19740,7 +24324,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 59,
@@ -19784,7 +24378,15 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "dead": []
   },
   {
     "fight": 59,
@@ -19889,7 +24491,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 59,
@@ -19939,7 +24551,16 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 59,
@@ -20000,7 +24621,17 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 59,
@@ -20052,7 +24683,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 59,
@@ -20090,7 +24736,22 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar",
+      "Loki Doki",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 59,
@@ -20154,7 +24815,24 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 60,
@@ -20220,7 +24898,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": []
   },
   {
     "fight": 60,
@@ -20273,7 +24958,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ],
+    "dead": []
   },
   {
     "fight": 60,
@@ -20326,7 +25021,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Loki Doki"
+    ]
   },
   {
     "fight": 60,
@@ -20370,7 +25077,19 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 60,
@@ -20400,7 +25119,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 60,
@@ -20430,7 +25160,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 60,
@@ -20460,7 +25200,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 60,
@@ -20490,7 +25241,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 60,
@@ -20532,7 +25294,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 61,
@@ -20588,7 +25361,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": []
   },
   {
     "fight": 61,
@@ -20618,7 +25398,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 61,
@@ -20648,7 +25438,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Speed Panda"
+    ],
+    "dead": [
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 61,
@@ -20678,7 +25479,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 61,
@@ -20712,7 +25522,22 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 61,
@@ -20746,7 +25571,22 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 61,
@@ -20780,7 +25620,24 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 61,
@@ -20814,7 +25671,24 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Kite Noodle"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 62,
@@ -20852,7 +25726,12 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 62,
@@ -20898,6 +25777,21 @@
     ],
     "down": [],
     "unsoaked": [
+      "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
       "Kitana Kahn"
     ]
   },
@@ -20946,6 +25840,22 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -20993,6 +25903,23 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -21040,6 +25967,24 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
     ]
   },
   {
@@ -21087,6 +26032,25 @@
     "down": [],
     "unsoaked": [
       "Kitana Kahn"
+    ],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ]
   },
   {
@@ -21132,14 +26096,28 @@
       }
     ],
     "down": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
       "Speed Panda",
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ],
-    "unsoaked": []
+    ]
   },
   {
     "fight": 62,
@@ -21184,14 +26162,28 @@
       }
     ],
     "down": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
+    "dead": [
       "Speed Panda",
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ],
-    "unsoaked": []
+    ]
   },
   {
     "fight": 63,
@@ -21332,13 +26324,18 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 63,
     "phase": 2,
     "phase_name": "Thordan",
-    "t": 59.5,
+    "t": 59.7,
     "time": "1:01",
     "name": "Kiara Blaiddyd",
     "job": "Dancer",
@@ -21357,17 +26354,6 @@
     "pull_ms": 69367,
     "mitigations": [
       {
-        "name": "Galvanize",
-        "guid": 1000297,
-        "by": "Spring Nymphar",
-        "by_id": 161,
-        "on": "Kiara Blaiddyd",
-        "on_id": 165,
-        "pct": null,
-        "amount": null,
-        "via": "Succor"
-      },
-      {
         "name": "Magic Vulnerability Up",
         "guid": 1002941,
         "by": "Ser Vellguine",
@@ -21377,17 +26363,6 @@
         "pct": null,
         "amount": null,
         "via": "Skyward Leap"
-      },
-      {
-        "name": "Neutral Sect",
-        "guid": 1001921,
-        "by": "Loki Doki",
-        "by_id": 167,
-        "on": "Kiara Blaiddyd",
-        "on_id": 165,
-        "pct": null,
-        "amount": null,
-        "via": "Aspected Helios"
       },
       {
         "name": "Physical Vulnerability Up",
@@ -21410,17 +26385,6 @@
         "pct": null,
         "amount": null,
         "via": null
-      },
-      {
-        "name": "Shake It Off",
-        "guid": 1001457,
-        "by": "Absolute Gigalad",
-        "by_id": 162,
-        "on": "Kiara Blaiddyd",
-        "on_id": 165,
-        "pct": null,
-        "amount": null,
-        "via": null
       }
     ],
     "clipped_by": [],
@@ -21429,7 +26393,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad"
+    ]
   },
   {
     "fight": 63,
@@ -21448,7 +26419,7 @@
     "unmitigated": 707389,
     "multiplier": 3.15,
     "absorb": 0,
-    "stack": 7,
+    "stack": 8,
     "buffs": [
       "Fey Illumination",
       "Magic Vulnerability Up"
@@ -21491,7 +26462,23 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 63,
@@ -21510,7 +26497,7 @@
     "unmitigated": 739656,
     "multiplier": 2.99,
     "absorb": 0,
-    "stack": 3,
+    "stack": 5,
     "buffs": [
       "Sacred Soil",
       "Magic Vulnerability Up"
@@ -21552,7 +26539,22 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 63,
@@ -21571,7 +26573,7 @@
     "unmitigated": 703844,
     "multiplier": 2.84,
     "absorb": 0,
-    "stack": 3,
+    "stack": 5,
     "buffs": [
       "Fey Illumination",
       "Sacred Soil",
@@ -21625,7 +26627,23 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 63,
@@ -21644,7 +26662,7 @@
     "unmitigated": 669153,
     "multiplier": 1.94,
     "absorb": 45394,
-    "stack": 1,
+    "stack": 2,
     "buffs": [
       "Rampart",
       "Stem the Flow",
@@ -21766,7 +26784,20 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 63,
@@ -21785,7 +26816,7 @@
     "unmitigated": 651590,
     "multiplier": 2.84,
     "absorb": 0,
-    "stack": 3,
+    "stack": 5,
     "buffs": [
       "Fey Illumination",
       "Sacred Soil",
@@ -21839,7 +26870,24 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 63,
@@ -21869,7 +26917,22 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 64,
@@ -21899,7 +26962,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 64,
@@ -21946,7 +27014,22 @@
     "down": [
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 64,
@@ -21993,7 +27076,23 @@
     "down": [
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 64,
@@ -22040,7 +27139,24 @@
     "down": [
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 64,
@@ -22087,7 +27203,25 @@
     "down": [
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 64,
@@ -22134,7 +27268,26 @@
     "down": [
       "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 64,
@@ -22179,14 +27332,28 @@
       }
     ],
     "down": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
+    "dead": [
       "Speed Panda",
       "Spring Nymphar",
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ],
-    "unsoaked": []
+    ]
   },
   {
     "fight": 64,
@@ -22231,14 +27398,29 @@
       }
     ],
     "down": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
+    "dead": [
       "Speed Panda",
       "Spring Nymphar",
+      "Absolute Gigalad",
       "Kite Noodle",
       "Kitana Kahn",
       "Kiara Blaiddyd",
       "Loki Doki"
-    ],
-    "unsoaked": []
+    ]
   },
   {
     "fight": 65,
@@ -22268,7 +27450,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "dead": []
   },
   {
     "fight": 65,
@@ -22298,7 +27488,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 65,
@@ -22342,7 +27542,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
+    "dead": [
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 65,
@@ -22372,7 +27581,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 65,
@@ -22413,7 +27630,22 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 65,
@@ -22454,7 +27686,22 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 65,
@@ -22495,7 +27742,24 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Loki Doki",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 65,
@@ -22536,7 +27800,25 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 65,
@@ -22577,7 +27859,26 @@
       "Spring Nymphar",
       "Kitana Kahn"
     ],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Loki Doki",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kite Noodle",
+      "Absolute Gigalad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 66,
@@ -22607,7 +27908,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 66,
@@ -22660,7 +27966,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Speed Panda"
+    ]
   },
   {
     "fight": 66,
@@ -22704,11 +28017,28 @@
         "until": 148.6
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
       "Speed Panda",
       "Kitana Kahn"
-    ],
-    "unsoaked": []
+    ]
   },
   {
     "fight": 66,
@@ -22752,11 +28082,29 @@
         "until": 148.6
       }
     ],
-    "down": [
-      "Speed Panda",
-      "Kitana Kahn"
+    "down": [],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ]
   },
   {
     "fight": 66,
@@ -22800,11 +28148,30 @@
         "until": 148.6
       }
     ],
-    "down": [
-      "Speed Panda",
-      "Kitana Kahn"
+    "down": [],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Absolute Gigalad",
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 66,
@@ -22848,11 +28215,31 @@
         "until": 148.6
       }
     ],
-    "down": [
-      "Speed Panda",
-      "Kitana Kahn"
+    "down": [],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 66,
@@ -22896,11 +28283,32 @@
         "until": 148.6
       }
     ],
-    "down": [
-      "Speed Panda",
-      "Kitana Kahn"
+    "down": [],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 66,
@@ -22944,11 +28352,33 @@
         "until": 148.6
       }
     ],
-    "down": [
-      "Speed Panda",
-      "Kitana Kahn"
+    "down": [],
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
     ],
-    "unsoaked": []
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Kite Noodle",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ]
   },
   {
     "fight": 67,
@@ -22993,7 +28423,26 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": []
   },
   {
     "fight": 67,
@@ -23038,7 +28487,28 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda"
+    ]
   },
   {
     "fight": 67,
@@ -23083,7 +28553,29 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 67,
@@ -23128,7 +28620,30 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 67,
@@ -23173,7 +28688,30 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 67,
@@ -23218,7 +28756,32 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 67,
@@ -23263,7 +28826,33 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 67,
@@ -23320,7 +28909,34 @@
       }
     ],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "dropped_by": [
+      "Kiara Blaiddyd"
+    ],
+    "cohort": [
+      "Speed Panda",
+      "Loki Doki",
+      "Absolute Gigalad",
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 68,
@@ -23350,7 +28966,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 68,
@@ -23380,7 +29001,12 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": []
   },
   {
     "fight": 68,
@@ -23433,7 +29059,14 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 68,
@@ -23497,7 +29130,15 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 68,
@@ -23561,7 +29202,16 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 68,
@@ -23625,7 +29275,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 68,
@@ -23655,7 +29315,17 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [],
+    "dead": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle"
+    ]
   },
   {
     "fight": 68,
@@ -23685,7 +29355,21 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Loki Doki"
+    ]
   },
   {
     "fight": 68,
@@ -23738,6 +29422,21 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": []
+    "unsoaked": [],
+    "doubled": [],
+    "marked": [],
+    "dropped_by": [],
+    "cohort": [
+      "Kiara Blaiddyd"
+    ],
+    "dead": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
+    ]
   }
 ]

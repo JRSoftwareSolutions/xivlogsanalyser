@@ -353,18 +353,14 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             "personal", pack,
         )
     if mechanic.any_hit_is_fail:
-        if mechanic.id == "bright-flare" and (fact.stack or 0) > 1:
+        if mechanic.id == "bright-flare" and _flare_overlap(fact):
             return _done(
                 fact, mechanic, "fail",
                 f"{fact.name} got clipped by a Bright Flare.",
                 "overlap", pack,
             )
         if mechanic.id == "holy-impact":
-            return _done(
-                fact, mechanic, "fail",
-                f"{fact.name} died to comets that were too close.",
-                "prey", pack,
-            )
+            return _done(fact, mechanic, "fail", *_comets(fact), pack)
         return _done(fact, mechanic, "fail", _personal(fact, mechanic), "personal", pack)
     failed = _failed_moment(mechanic, fact, hit)
     if failed:
@@ -701,7 +697,7 @@ def _oversized_cause(fact: DeathFact, mechanic: Mechanic) -> str:
         return "tower"
     if mechanic.id == "lightning-storm":
         return "overlap"
-    if mechanic.id == "bright-flare" and (fact.stack or 0) > 1:
+    if mechanic.id == "bright-flare" and _flare_overlap(fact):
         return "overlap"
     return "personal"
 
@@ -775,7 +771,11 @@ def _people(names: list[str]) -> str:
 
 
 def empty_owners(item: Judgment) -> list[str]:
-    """The players named for an empty tower, without an unnamed group."""
+    """The players named for a mechanic someone else broke, without an unnamed group."""
+    if item.cause == "dropped":
+        return list(item.fact.dropped_by)
+    if item.cause == "marked":
+        return list(item.fact.marked)
     if item.cause != "empty":
         return []
     return [who for who in item.owners if who not in _EMPTY_GROUPS.values()]
@@ -787,7 +787,7 @@ def _hit_by_others(item: Judgment) -> list[str]:
     A player in the landing of an arrow taken to the wrong side was hit by that diver.
     A player in place for an empty tower was hit by whoever was missing from it.
     """
-    if item.cause == "empty":
+    if item.cause in {"empty", "dropped", "marked"}:
         owners = empty_owners(item)
     elif item.cause == "arrow":
         owners = [diver["name"] for diver in _wrong_arrows(item.fact)]
@@ -857,7 +857,8 @@ def _mark_first_mistakes(judgments: list[Judgment], pack: FightPack) -> None:
             (debuff for debuff in debuffs if at_first(debuff["phase"], debuff["t"])),
             key=lambda debuff: (debuff["t"], debuff["name"]),
         )
-        phase_name = rows[0].fact.phase_name
+        known = pack.phase(phase)
+        phase_name = known.name if known else rows[0].fact.phase_name
         for item in rows:
             if item.fact.phase == phase:
                 phase_name = item.fact.phase_name
@@ -891,8 +892,8 @@ def _mark_empty_soaks(judgments: list[Judgment]) -> None:
     """
     latest: dict[tuple[int, str], Judgment] = {}
     for item in sorted(judgments, key=lambda row: (row.fact.fight, row.fact.phase, row.fact.t)):
-        down, out = item.fact.down, item.fact.unsoaked
-        if item.cause in {"tower", "prey"} and (down or out):
+        down, out, doubled = item.fact.down, item.fact.unsoaked, item.fact.doubled
+        if item.cause in {"tower", "prey"} and (down or out or doubled):
             owners: list[str] = []
             for name in down:
                 earlier = latest.get((item.fact.fight, name))
@@ -902,20 +903,43 @@ def _mark_empty_soaks(judgments: list[Judgment]) -> None:
                 elif earlier and earlier.cause in _EMPTY_GROUPS:
                     passed = [_EMPTY_GROUPS[earlier.cause]]
                 owners += [who for who in passed if who not in owners]
-            owners += [name for name in out if name not in owners]
+            owners += [name for name in [*out, *doubled] if name not in owners]
             item.owners = owners
-            _empty_text(item, down, out)
+            _empty_text(item, down, out, doubled)
         latest[(item.fact.fight, item.fact.name)] = item
 
 
-def _empty_text(item: Judgment, down: list[str], out: list[str]) -> None:
-    if down and out:
-        item.went_wrong = f"{_was(down)} dead and {_was(out)} not in a tower."
+def _empty_text(item: Judgment, down: list[str], out: list[str], doubled: list[str]) -> None:
+    if item.fact.marked:
+        item.went_wrong = f"{_was(down)} dead with Prey, so the comets piled up."
+    elif sum(map(bool, (down, out, doubled))) > 1:
+        bits = []
+        if down:
+            bits.append(f"{_was(down)} dead")
+        if out:
+            bits.append(f"{_was(out)} out of the towers")
+        if doubled:
+            bits.append(f"{_people(doubled)} shared one")
+        item.went_wrong = f"{_joined(bits)}."
     elif down:
         item.went_wrong = f"{_was(down)} already dead, so a tower was empty."
-    else:
+    elif out:
         item.went_wrong = f"{_was(out)} not in a tower, so it was empty."
+    else:
+        item.went_wrong = f"{_people(doubled)} took one tower, so another was empty."
     item.cause = "empty"
+
+
+def _comets(fact: DeathFact) -> tuple[str, str]:
+    """Whose comets exploded. A prey player already dead is passed on by `_mark_empty_soaks`."""
+    owners = fact.dropped_by
+    if len(owners) == 1:
+        return f"{owners[0]} dropped two comets too close.", "dropped"
+    if owners:
+        return f"{_joined(owners)} dropped their comets too close.", "dropped"
+    if fact.marked and not fact.down:
+        return f"{_joined(fact.marked)} had Prey, and the comets landed too close.", "marked"
+    return f"{fact.name} died to comets that were too close.", "prey"
 
 
 def _same_cast(left: Judgment, right: Judgment) -> bool:
@@ -927,7 +951,16 @@ def _same_cast(left: Judgment, right: Judgment) -> bool:
     )
 
 
+def _flare_overlap(fact: DeathFact) -> bool:
+    """One orb hit more than one player. Without the packet, several hits at once."""
+    if fact.cohort:
+        return len(fact.cohort) > 1
+    return (fact.stack or 0) > 1
+
+
 def _overlap_names(item: Judgment, cohort: list[Judgment]) -> list[str]:
+    if item.mechanic_id == "bright-flare" and item.fact.cohort:
+        return [item.fact.name] + [name for name in item.fact.cohort if name != item.fact.name]
     ordered = sorted(cohort, key=lambda other: (other.fact.name != item.fact.name, other.fact.name))
     names: list[str] = []
     for other in ordered:
@@ -963,63 +996,96 @@ def _healers(roster: list[tuple[str, str]]) -> list[str]:
     return sorted(name for name, role in roster if role == "healer")
 
 
+def _healers_at(item: Judgment, healers: list[str], latest: dict[tuple[int, str], Judgment]) -> list[str]:
+    """The healers who could heal this hit. A healer already dead passes their share
+    on to whoever owned that healer's death."""
+    owners: list[str] = []
+    for healer in healers:
+        passed = [healer]
+        if healer in item.fact.dead:
+            earlier = latest.get((item.fact.fight, healer))
+            if earlier is not None and earlier.blames:
+                passed = [blame.who for blame in earlier.blames if blame.who not in _CONTEXT_SHARES]
+        owners += [who for who in passed if who not in owners]
+    return owners
+
+
+# Shares that sit beside an owner rather than owning a death.
+_CONTEXT_SHARES = frozenset({"Party mitigation", "Earlier damage", "Earlier mistake"})
+
+
 def _assign_blame(
     judgments: list[Judgment], pack: FightPack, roster: list[tuple[str, str]],
 ) -> None:
     healers = _healers(roster)
-    for item in judgments:
-        if item.cause == "none":
-            item.blames = []
-        elif item.cause == "personal":
-            item.blames = _shares([item.fact.name])
-        elif item.cause == "after":
-            item.blames = _shares([item.fact.name, "Earlier mistake"])
-        elif item.cause == "marker":
-            item.blames = _shares(marker_owners(item.fact))
-        elif item.cause == "empty":
-            if len(item.owners) == 1 and item.owners[0] in _EMPTY_GROUPS.values():
-                item.blames = _group(item.owners[0], 2)
-            else:
-                item.blames = _shares(item.owners)
-        elif item.cause == "orphan":
-            item.blames = _group("Earlier deaths", 1)
-        elif item.cause == "overlap":
-            cohort = [other for other in judgments if _same_cast(item, other)]
-            item.blames = _shares(_overlap_names(item, cohort))
-        elif item.cause == "arrow":
-            item.blames = _shares([diver["name"] for diver in _wrong_arrows(item.fact)])
-        elif item.cause == "miscommunication":
-            cohort = [other for other in judgments if _same_cast(item, other)]
-            item.blames = _group("Miscommunication", len(_overlap_names(item, cohort)))
-        elif item.cause == "healers":
-            item.blames = _shares(healers or ["Healers"])
-        elif item.cause == "mitigation":
-            item.blames = _group("Assigned mitigation", 2)
-        elif item.cause == "tower":
-            item.blames = _group("Missed soak", 2)
-        elif item.cause == "prey":
-            item.blames = _group("Prey markers", 2)
-        elif item.cause == "clip":
-            item.blames = _group("Out of position", 3)
-        elif item.cause == "missing":
-            if not item.fact.stack:
-                item.blames = _group("Missing bodies", 2)
-            else:
-                mechanic = pack.mechanic_for(item.fact.guid, item.fact.phase)
-                typical = mechanic.typical_targets if mechanic and mechanic.typical_targets else 0
-                missing = max(typical - (item.fact.stack or 0), 1)
-                item.blames = _group("Missing bodies", missing)
-        elif item.cause == "resolve":
-            owners = list(healers) or ["Healers"]
-            if _no_party_mit(item.fact):
-                owners.append("Party mitigation")
-            item.blames = _shares(owners)
-        elif item.cause == "low":
-            owners = list(healers) or ["Healers"]
-            owners.append("Earlier damage")
-            item.blames = _shares(owners)
+    latest: dict[tuple[int, str], Judgment] = {}
+    for item in sorted(judgments, key=lambda row: (row.fact.fight, row.fact.phase, row.fact.t)):
+        _blame(item, judgments, pack, healers, latest)
+        latest[(item.fact.fight, item.fact.name)] = item
+
+
+def _blame(
+    item: Judgment,
+    judgments: list[Judgment],
+    pack: FightPack,
+    healers: list[str],
+    latest: dict[tuple[int, str], Judgment],
+) -> None:
+    """Who owns this death, from the rule that judged it."""
+    if item.cause == "none":
+        item.blames = []
+    elif item.cause == "personal":
+        item.blames = _shares([item.fact.name])
+    elif item.cause == "after":
+        item.blames = _shares([item.fact.name, "Earlier mistake"])
+    elif item.cause == "marker":
+        item.blames = _shares(marker_owners(item.fact))
+    elif item.cause in {"dropped", "marked"}:
+        item.blames = _shares(empty_owners(item))
+    elif item.cause == "empty":
+        if len(item.owners) == 1 and item.owners[0] in _EMPTY_GROUPS.values():
+            item.blames = _group(item.owners[0], 2)
         else:
-            item.blames = []
+            item.blames = _shares(item.owners)
+    elif item.cause == "orphan":
+        item.blames = _group("Earlier deaths", 1)
+    elif item.cause == "overlap":
+        cohort = [other for other in judgments if _same_cast(item, other)]
+        item.blames = _shares(_overlap_names(item, cohort))
+    elif item.cause == "arrow":
+        item.blames = _shares([diver["name"] for diver in _wrong_arrows(item.fact)])
+    elif item.cause == "miscommunication":
+        cohort = [other for other in judgments if _same_cast(item, other)]
+        item.blames = _group("Miscommunication", len(_overlap_names(item, cohort)))
+    elif item.cause == "healers":
+        item.blames = _shares(_healers_at(item, healers, latest) or ["Healers"])
+    elif item.cause == "mitigation":
+        item.blames = _group("Assigned mitigation", 2)
+    elif item.cause == "tower":
+        item.blames = _group("Missed soak", 2)
+    elif item.cause == "prey":
+        item.blames = _group("Prey markers", 2)
+    elif item.cause == "clip":
+        item.blames = _group("Out of position", 3)
+    elif item.cause == "missing":
+        if not item.fact.stack:
+            item.blames = _group("Missing bodies", 2)
+        else:
+            mechanic = pack.mechanic_for(item.fact.guid, item.fact.phase)
+            typical = mechanic.typical_targets if mechanic and mechanic.typical_targets else 0
+            missing = max(typical - (item.fact.stack or 0), 1)
+            item.blames = _group("Missing bodies", missing)
+    elif item.cause == "resolve":
+        owners = _healers_at(item, healers, latest) or ["Healers"]
+        if _no_party_mit(item.fact):
+            owners.append("Party mitigation")
+        item.blames = _shares(owners)
+    elif item.cause == "low":
+        owners = _healers_at(item, healers, latest) or ["Healers"]
+        owners.append("Earlier damage")
+        item.blames = _shares(owners)
+    else:
+        item.blames = []
 
 
 def judge_report(

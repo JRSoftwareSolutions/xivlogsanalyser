@@ -81,6 +81,20 @@ class NeedsEveryone:
 
 
 @dataclass
+class Drops:
+    """Markers that drop something, which explodes when two drops land too close.
+
+    `debuff` marks the holders, applied up to `within` seconds before the explosion.
+    `actor` is what they drop. An explosion sits within `reach` yalms of each drop it came from.
+    """
+
+    debuff: int
+    actor: str
+    within: float
+    reach: float
+
+
+@dataclass
 class Mechanic:
     id: str
     name: str
@@ -102,6 +116,7 @@ class Mechanic:
     moments: list[Moment] = field(default_factory=list)
     dive_markers: dict[int, DiveMarker] = field(default_factory=dict)
     needs_everyone: NeedsEveryone | None = None
+    drops: Drops | None = None
 
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
@@ -297,6 +312,17 @@ def _needs_everyone(raw: dict | None) -> NeedsEveryone | None:
     )
 
 
+def _drops(raw: dict | None) -> Drops | None:
+    if not raw:
+        return None
+    return Drops(
+        debuff=int(raw["debuff"]),
+        actor=raw["actor"],
+        within=float(raw["within"]),
+        reach=float(raw["reach"]),
+    )
+
+
 def _deathwall(raw: dict | None) -> Mechanic | None:
     """The arena edge. It has no phase and no packet, so it is not in `mechanics`."""
     if not raw:
@@ -357,6 +383,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                     for guid, row in (raw.get("dive_markers") or {}).items()
                 },
                 needs_everyone=_needs_everyone(raw.get("needs_everyone")),
+                drops=_drops(raw.get("drops")),
             )
         )
     return FightPack(

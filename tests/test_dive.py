@@ -38,15 +38,18 @@ class DiveFromGraceTest(unittest.TestCase):
 
     def test_phase_three_counts(self):
         counts = Counter(item.outcome for item in self.phase3)
-        self.assertEqual(counts["fail"], 42)
-        self.assertEqual(counts["raw"], 15)
+        self.assertEqual(counts["fail"], 44)
+        self.assertEqual(counts["raw"], 18)
         self.assertEqual(counts["low"], 3)
-        self.assertEqual(counts["unknown"], 5)
+        self.assertEqual(counts["unknown"], 0)
         self.assertEqual(counts["environment"], 0)
         walls = [item for item in self.phase3 if item.mechanic_id == "deathwall"]
         self.assertEqual(len(walls), 8)
-        unknown = {item.mechanic for item in self.phase3 if item.outcome == "unknown"}
-        self.assertEqual(unknown, {"Final Chorus", "attack"})
+        # Final Chorus is the opening raidwide. The first auto-attack is a frontal cleave.
+        chorus = [item for item in self.phase3 if item.mechanic == "Final Chorus"]
+        self.assertEqual({item.outcome for item in chorus}, {"raw"})
+        autos = [item for item in self.phase3 if item.mechanic_id == "nidhogg-auto"]
+        self.assertEqual({item.fact.name for item in autos}, {"Spring Nymphar", "Kiara Blaiddyd"})
 
     def test_short_stack_and_full_stack(self):
         short = self._one(16, "Kitana Kahn", 26388)

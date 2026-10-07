@@ -67,8 +67,8 @@
       "category": "raidwide",
       "scales_with_stack": false,
       "any_hit_is_fail": true,
-      "should_have_been": "The two prey players drop the comets apart. Too close explodes and puts Damage Down on the party. Those two own it. When a player is already dead, the party is a body short for the towers, and that death owns the explosion. Tanks take about 57–66k of the explosion. Everyone else takes about 91–106k.",
-      "needs_everyone": {"lead": 1},
+      "should_have_been": "The two prey players run their comets along the edge, apart from each other. Two comets that land under about 5 yalms apart explode and put Damage Down on the party. Whoever dropped those two comets owns it. Tanks take about 57–66k of the explosion. Everyone else takes about 91–106k.",
+      "drops": {"debuff": 1000562, "actor": "Holy Comet", "within": 40, "reach": 1.0},
       "roles": {
         "tank": {"unmitigated_max": 78000, "lived": "61–67k"},
         "healer": {"unmitigated_max": 115000, "lived": "about 90–98k"},
@@ -234,7 +234,7 @@
       "id": "holy-shield-bash",
       "name": "Holy Shield Bash",
       "phase": 2,
-      "guids": [25297],
+      "guids": [25297, 25579],
       "category": "dodge",
       "any_hit_is_fail": true,
       "tanks_only": true,
@@ -257,6 +257,52 @@
       "category": "dodge",
       "any_hit_is_fail": true,
       "should_have_been": "Four fire circles sit on the intercards, and Thordan is at the north edge. A hit is standing in the fire."
+    },
+    {
+      "id": "spiral-thrust",
+      "name": "Spiral Thrust",
+      "phase": 2,
+      "guids": [25556],
+      "category": "dodge",
+      "any_hit_is_fail": true,
+      "should_have_been": "Ser Paulecrain and Ser Ignasse dash across the arena in Strength of the Ward. Nobody stands in the line. A hit is about 330–370k and kills."
+    },
+    {
+      "id": "strength-conviction",
+      "name": "Conviction",
+      "phase": 2,
+      "guids": [25567],
+      "category": "soak",
+      "scales_with_stack": false,
+      "should_have_been": "Ser Hermenost's towers in Strength of the Ward. The six non-tanks soak one each. A soaked tower is a light hit, up to about 5.6k.",
+      "roles": {
+        "tank": {"unmitigated_max": 8000, "lived": "never hit"},
+        "healer": {"unmitigated_max": 15000, "lived": "0–5.6k"},
+        "dps": {"unmitigated_max": 15000, "lived": "0–5.6k"}
+      }
+    },
+    {
+      "id": "final-chorus",
+      "name": "Final Chorus",
+      "phase": 3,
+      "guids": [26377],
+      "category": "raidwide",
+      "scales_with_stack": false,
+      "should_have_been": "Nidhogg's opening raidwide, about 2.5 seconds in. Everyone lives it with shields and party mitigation. Survivors took about 76–81k after mitigation.",
+      "roles": {
+        "tank": {"unmitigated_max": 130000, "lived": "not fetched"},
+        "healer": {"unmitigated_max": 130000, "lived": "about 76–81k after mitigation"},
+        "dps": {"unmitigated_max": 130000, "lived": "about 76–81k after mitigation"}
+      }
+    },
+    {
+      "id": "nidhogg-auto",
+      "name": "Nidhogg's first auto-attack",
+      "phase": 3,
+      "guids": [26416],
+      "category": "tankbuster",
+      "tanks_only": true,
+      "should_have_been": "Nidhogg's first auto-attack, about 8 seconds in, is a frontal cleave. Only the tank is in front."
     },
     {
       "id": "frostbite",
@@ -506,6 +552,7 @@
       "parts": [
         {"id": "lightning-storm"},
         {"id": "heavy-impact"},
+        {"id": "spiral-thrust"},
         {
           "id": "ascalons-mercy-concealed",
           "after": 30,
@@ -516,6 +563,7 @@
         {"id": "dragons-rage"},
         {"id": "holy-shield-bash"},
         {"id": "holy-bladedance"},
+        {"id": "strength-conviction"},
         {"id": "eternal-conviction", "until": 100}
       ]
     },
@@ -585,6 +633,8 @@
         {"column": "Dive", "labels": {"1002756": "up arrow", "1002755": "circle", "1002757": "down arrow"}}
       ],
       "parts": [
+        {"id": "final-chorus"},
+        {"id": "nidhogg-auto"},
         {"id": "dark-high-jump"},
         {"id": "dark-elusive-jump"},
         {"id": "eye-of-the-tyrant"},

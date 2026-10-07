@@ -24,6 +24,9 @@ TIME_RE = re.compile(r'class="main-table-number">([^<]+)')
 KB_RE = re.compile(r'#(action|status)/(-?\d+)"[\s\S]*?<span class="school-\d+" style="">([^<]+)')
 # Logs number a status as this plus its game id.
 STATUS_GUID = 1_000_000
+# Every damage-over-time tick in one instant, summed. Logs split it evenly across
+# the statuses that ticked, so a single status's share is too small.
+COMBINED_DOTS = 500000
 TS_RE = re.compile(r"timestamp: (\d+)")
 EVENT_RE = re.compile(
     r"guid: (-?\d+), type: '\d+' \}, type: '(\w+)'\s*, amount: (-?\d+)([\s\S]*?)\n\}"
@@ -61,6 +64,11 @@ class DeathFact:
     prior_debuffs: list[dict] = field(default_factory=list)
     down: list[str] = field(default_factory=list)
     unsoaked: list[str] = field(default_factory=list)
+    doubled: list[str] = field(default_factory=list)
+    marked: list[str] = field(default_factory=list)
+    dropped_by: list[str] = field(default_factory=list)
+    cohort: list[str] = field(default_factory=list)
+    dead: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -117,7 +125,9 @@ def _damage_bar(row: str) -> int:
     return int(match.group(1).replace(",", ""))
 
 
-def _load_events(report: Path) -> dict[int, list[dict]]:
+def _load_events(report: Path, kind: str = "damage") -> dict[int, list[dict]]:
+    """Events of one type by guid. `calculateddamage` is the snapshot, which keeps
+    a target who died before the damage landed."""
     by_guid: dict[int, list[dict]] = defaultdict(list)
     folder = report / "abilities"
     if not folder.is_dir():
@@ -125,7 +135,7 @@ def _load_events(report: Path) -> dict[int, list[dict]]:
     for path in folder.glob("ab_*.json"):
         payload = json.loads(path.read_text(encoding="utf-8"))
         for event in payload.get("events") or []:
-            if event.get("type") != "damage":
+            if event.get("type") != kind:
                 continue
             guid = (event.get("ability") or {}).get("guid")
             if guid is None:
@@ -175,6 +185,46 @@ def _stack_size(events: list[dict], fight: int, timestamp: int) -> int | None:
     if best is None or best_dt > 2500:
         return None
     return len({event["targetID"] for event in best})
+
+
+def _combined_tick(combined: list[dict], tick: dict) -> dict | None:
+    """The summed tick from the same instant as this status's share, if there is one."""
+    for event in combined:
+        if (
+            event.get("fight") == tick.get("fight")
+            and event.get("targetID") == tick.get("targetID")
+            and event["timestamp"] == tick["timestamp"]
+        ):
+            return event
+    return None
+
+
+def _snapshot_size(events: list[dict], fight: int, timestamp: int) -> int | None:
+    """Targets of the last snapshot before the hit. It keeps a target who died before
+    the damage landed, which the damage rows drop."""
+    in_fight = [event for event in events if event.get("fight") == fight]
+    before = [
+        cluster for cluster in _clusters(in_fight)
+        if cluster[0]["timestamp"] <= timestamp and timestamp - cluster[0]["timestamp"] <= 2500
+    ]
+    if not before:
+        return None
+    return len({event["targetID"] for event in before[-1]})
+
+
+def _cohort(events: list[dict], fight: int, event: dict | None, names: dict[int, str]) -> list[str]:
+    """Everyone the killing packet hit, survivors included, in hit order."""
+    packet = (event or {}).get("packetID")
+    if packet is None:
+        return []
+    found: list[str] = []
+    for other in sorted(events, key=lambda row: row["timestamp"]):
+        if other.get("fight") != fight or other.get("packetID") != packet:
+            continue
+        name = names.get(other.get("targetID"))
+        if name and name not in found:
+            found.append(name)
+    return found
 
 
 def _marker_packets(report: Path, pack: FightPack) -> dict[tuple, list[tuple]]:
@@ -297,6 +347,18 @@ class _Positions:
         if best is None or abs(best[0] - timestamp) > slack_ms:
             return None
         return best[1], best[2]
+
+    def named(self, fight: int, name: str) -> list[tuple[int, float, float]]:
+        """Every sample of the actors with this name, once each, in time order."""
+        pull = self._pull(fight)
+        if pull is None:
+            return []
+        actors, rows = pull
+        found = set()
+        for actor, info in actors.items():
+            if info.get("name") == name:
+                found.update(rows.get(int(actor)) or [])
+        return sorted(found)
 
     def boss(self, fight: int, name: str, timestamp: int) -> tuple[float, float] | None:
         pull = self._pull(fight)
@@ -540,6 +602,7 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
     actors = {actor["name"]: actor for actor in meta.get("friendlies") or []}
     names_by_id = {actor["id"]: actor["name"] for actor in meta.get("friendlies") or []}
     by_guid = _load_events(report)
+    snapshots = _load_events(report, "calculateddamage")
     marker_casts = _marker_packets(report, pack)
     marker_guids = {guid for mech in pack.mechanics if mech.marker_owns_clip for guid in mech.guids}
     marker_spots = {guid: mech.spots for mech in pack.mechanics if mech.spots for guid in mech.guids}
@@ -572,8 +635,11 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                 ts_match = TS_RE.search(row)
                 timestamp = int(ts_match.group(1)) if ts_match else None
             else:
-                # The only timestamp in this row is the last hit they lived, not the death.
+                # The only timestamps in this row are hits they lived, not the death.
                 timestamp = fight["start_time"] + round(_clock_seconds(when) * 1000) - CLOCK_LAG_MS
+                lived = [int(ts) for ts in TS_RE.findall(row)]
+                if lived:
+                    timestamp = max(timestamp, max(lived) + 1)
             window = None
             if timestamp is not None:
                 window = _window_for(windows, timestamp)
@@ -601,6 +667,8 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             event = None
             if timestamp is not None:
                 event = _closest_event(by_guid.get(guid, []), fight["id"], target, timestamp)
+                if event is not None and guid >= STATUS_GUID:
+                    event = _combined_tick(by_guid.get(COMBINED_DOTS, []), event) or event
             amount = (event or {}).get("amount")
             overkill = (event or {}).get("overkill") or 0
             absorb = (event or {}).get("absorbed") or 0
@@ -623,7 +691,9 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
                 total = _damage_bar(row)
             stack = None
             if timestamp is not None and guid in by_guid:
-                stack = _stack_size(by_guid[guid], fight["id"], timestamp)
+                stack = _snapshot_size(snapshots.get(guid, []), fight["id"], timestamp)
+                if stack is None:
+                    stack = _stack_size(by_guid[guid], fight["id"], timestamp)
             if mult is not None:
                 mult = float(mult)
             source = (event or {}).get("sourceID")
@@ -633,6 +703,9 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             fact = _fact(
                 fight, phase, start, timestamp, when, name, job, pack, guid, ability,
                 total, hp, unmit, mult, int(absorb), stack, buffs, boss_pct, party, mits,
+            )
+            fact.cohort = _cohort(
+                snapshots.get(guid, []) + by_guid.get(guid, []), fight["id"], event, names_by_id,
             )
             clip = _clipped_by(
                 marker_casts, fight["id"], target, timestamp, mits, names_by_id,
@@ -657,9 +730,19 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
             facts.append(fact)
             timed.append((timestamp, fact))
+        raises = _raises(mitigation_tables.get(fight["id"]), names_by_id)
+        roster = _fight_roster(meta, fight["id"])
+        for timestamp, fact in timed:
+            if timestamp is not None:
+                fact.dead = [
+                    name for name in roster
+                    if name != fact.name and _still_dead(name, timed, timestamp, raises)
+                ]
         _missing_bodies(
-            timed, pack, by_guid, fight["id"], _fight_roster(meta, fight["id"]),
-            _raises(mitigation_tables.get(fight["id"]), names_by_id), names_by_id,
+            timed, pack, by_guid, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
+        )
+        _drop_owners(
+            timed, pack, fight["id"], positions, mitigation_tables.get(fight["id"]), raises, names_by_id,
         )
     facts.sort(key=lambda fact: (fact.fight, fact.phase, fact.t, fact.name))
     return facts
@@ -697,7 +780,8 @@ def _missing_bodies(
     """Who was missing from a mechanic that needs every player.
 
     `down` is dead and not raised when the cast landed. With a soak, the cast landed
-    at its first soak hit, and `unsoaked` is everyone alive who that soak missed.
+    at its first soak hit, `unsoaked` is everyone alive who that soak missed, and
+    `doubled` are the players who shared one soak, such as two in one tower.
     """
     for timestamp, fact in timed:
         if timestamp is None:
@@ -725,6 +809,15 @@ def _missing_bodies(
                 continue
             at = min(event["timestamp"] for event in hits)
             soaked = {names_by_id.get(event.get("targetID")) for event in hits}
+            shared: dict[tuple, set[str]] = defaultdict(set)
+            for event in hits:
+                name = names_by_id.get(event.get("targetID"))
+                if name:
+                    shared[(event.get("sourceID"), event.get("sourceInstance"))].add(name)
+            fact.doubled = [
+                name for name in roster
+                if any(name in group and len(group) > 1 for group in shared.values())
+            ]
         died: dict[str, int] = {}
         for ts, other in timed:
             if ts is not None and ts < at:
@@ -736,6 +829,119 @@ def _missing_bodies(
         ]
         if needs.soak:
             fact.unsoaked = [name for name in roster if name not in soaked and name not in fact.down]
+
+
+def _still_dead(
+    name: str, timed: list[tuple[int | None, DeathFact]], at: int, raises: dict[str, list[int]],
+) -> bool:
+    """Died before this moment, and was not raised since."""
+    deaths = [ts for ts, other in timed if ts is not None and ts < at and other.name == name]
+    if not deaths:
+        return False
+    return not any(max(deaths) < raised <= at for raised in raises.get(name, []))
+
+
+def _trails(landed: list[tuple[int, float, float]]) -> list[list[tuple[int, float, float]]]:
+    """Drops chained into one trail per holder. Each wave lands together, one drop per holder."""
+    trails: list[list[tuple[int, float, float]]] = []
+    for ts in sorted({row[0] for row in landed}):
+        wave = [row for row in landed if row[0] == ts]
+        if not trails:
+            trails = [[row] for row in wave]
+            continue
+        if len(wave) == 2 and len(trails) == 2:
+            straight = math.dist(trails[0][-1][1:], wave[0][1:]) + math.dist(trails[1][-1][1:], wave[1][1:])
+            crossed = math.dist(trails[0][-1][1:], wave[1][1:]) + math.dist(trails[1][-1][1:], wave[0][1:])
+            if crossed < straight:
+                wave = [wave[1], wave[0]]
+            trails[0].append(wave[0])
+            trails[1].append(wave[1])
+            continue
+        for row in wave:
+            min(trails, key=lambda trail: math.dist(trail[-1][1:], row[1:])).append(row)
+    return trails
+
+
+def _drop_owners(
+    timed: list[tuple[int | None, DeathFact]],
+    pack: FightPack,
+    fight_id: int,
+    positions: _Positions,
+    table: dict | None,
+    raises: dict[str, list[int]],
+    names_by_id: dict[int, str],
+) -> None:
+    """Whose drops exploded together.
+
+    `marked` are the holders of the marker debuff. Each wave of drops is a moment
+    with a sample of the dropped actor at a new spot. An explosion is a moment
+    whose samples all sit on earlier drops. A holder dead before the last drops ahead of it, and not raised, is
+    `down`: their drops pile up on one spot. Otherwise `dropped_by` are the
+    holders whose drops it sits on.
+    """
+    for timestamp, fact in timed:
+        mechanic = pack.mechanic_for(fact.guid, fact.phase)
+        drops = mechanic.drops if mechanic else None
+        if drops is None or timestamp is None:
+            continue
+        start = timestamp - round(drops.within * 1000)
+        holders: dict[str, int] = {}
+        for aura in (table or {}).get("auras") or []:
+            if aura[1] == "applydebuff" and aura[2] == drops.debuff and start <= aura[0] <= timestamp:
+                name = names_by_id.get(aura[5])
+                if name:
+                    holders.setdefault(name, int(aura[5]))
+        fact.marked = list(holders)
+        samples = [
+            row for row in positions.named(fight_id, drops.actor)
+            if start <= row[0] <= timestamp and (row[1], row[2]) != (0.0, 0.0)
+        ]
+        landed: list[tuple[int, float, float]] = []
+        blasts: dict[int, list[tuple[int, float, float]]] = {}
+        for at in sorted({row[0] for row in samples}):
+            wave = [row for row in samples if row[0] == at]
+            if all(any(math.dist(row[1:], drop[1:]) <= drops.reach for drop in landed) for row in wave):
+                blasts[at] = wave
+            else:
+                landed.extend(wave)
+        if not blasts:
+            continue
+        blast_at = max(blasts)
+        waves = [row[0] for row in landed if row[0] < blast_at]
+        if not waves:
+            continue
+        fact.down = [
+            name for name in holders
+            if name != fact.name and _still_dead(name, timed, max(waves), raises)
+        ]
+        if fact.down:
+            continue
+        trails = _trails([row for row in landed if row[0] < blast_at])
+        owners: dict[int, str] = {}
+        for index, trail in enumerate(trails):
+            first = trail[0]
+            near = []
+            for name, actor in holders.items():
+                if name in owners.values():
+                    continue
+                spot = positions.at(fight_id, actor, first[0], 1500)
+                if spot is not None:
+                    near.append((math.dist(spot, first[1:]), name))
+            if near:
+                owners[index] = min(near)[1]
+        dropped: list[str] = []
+        for row in blasts[blast_at]:
+            reach, index = min(
+                (math.dist(row[1:], drop[1:]), index)
+                for index, trail in enumerate(trails)
+                for drop in trail
+            )
+            if reach > drops.reach or index not in owners:
+                dropped = []
+                break
+            if owners[index] not in dropped:
+                dropped.append(owners[index])
+        fact.dropped_by = dropped
 
 
 def _fact(

@@ -25,7 +25,7 @@ Online text is a draft. The person decides what belongs and what a component doe
 
 Do not retune role caps or the 86 raw deaths while only regrouping components. Fault for a single killing blow stays in that ability's skill. If the guide and that skill disagree about what a hit means, say so and wait for the person.
 
-Do not invent a guid for a cast this log has not stored. Spiral Thrust, Ancient Quaga, Ultimate End, Broad Swing, and Aetheric Burst are in the phase write-up and are not studied components yet. Faith Unmoving is `25308` inside Sanctity.
+Do not invent a guid for a cast this log has not stored. Ancient Quaga, Ultimate End, Broad Swing, and Aetheric Burst are in the phase write-up and are not studied components yet. Spiral Thrust is `25556`. Faith Unmoving is `25308` inside Sanctity.
 
 ## Where a stop is drawn
 

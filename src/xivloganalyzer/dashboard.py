@@ -505,7 +505,7 @@ def session_payload(
             culprits = marker_owners(item.fact)
         if item.cause == "arrow":
             culprits = [blame.who for blame in item.blames]
-        if item.cause == "empty":
+        if item.cause in {"empty", "dropped", "marked"}:
             culprits = empty_owners(item)
         cluster = pack.cluster_for(component, item.fact.t, item.fact.phase) or _cluster_of(item, pack)
         pull["deaths"].append(
