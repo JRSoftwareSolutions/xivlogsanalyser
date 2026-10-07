@@ -8,7 +8,7 @@ from pathlib import Path
 
 from xivloganalyzer.brief import brief_text, write_brief
 from xivloganalyzer.catalog import repo_root
-from xivloganalyzer.pipeline import analyze, reanalyze, report_dirs
+from xivloganalyzer.pipeline import analyze, reanalyze, report_dirs, status
 
 
 def _resolve(arg: str, root: Path) -> Path:
@@ -21,14 +21,30 @@ def _resolve(arg: str, root: Path) -> Path:
     raise SystemExit(f"No dropped log named {arg}. Put it in reports/{arg}/")
 
 
+def _counts(counts) -> str:
+    return (
+        f"{counts['raw']} raw, {counts['fail']} failed, "
+        f"{counts['low']} already down, {counts['environment']} no packet, "
+        f"{counts['unknown']} not understood"
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="xivloganalyzer")
     parser.add_argument(
         "command",
-        choices=("analyze", "reanalyze", "brief"),
-        help="analyze one log, rebuild every log, or print a session digest",
+        choices=("analyze", "reanalyze", "status", "brief"),
+        help=(
+            "analyze one log, rebuild every out-of-date log, list which logs are "
+            "out of date, or print a session digest"
+        ),
     )
     parser.add_argument("report", nargs="?", help="report folder or code")
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="reanalyze: judge every log again, even the ones that are up to date",
+    )
     parser.add_argument("--pull", type=int, help="brief: only this pull id")
     parser.add_argument(
         "--mechanic",
@@ -52,26 +68,29 @@ def main() -> None:
     args = parser.parse_args()
     root = repo_root()
     if args.command == "reanalyze":
-        summaries = reanalyze(root)
-        if not summaries:
+        outcomes = reanalyze(root, everything=args.all)
+        if not outcomes:
             raise SystemExit("No logs in reports/ or data/.")
-        for name, counts in summaries.items():
-            print(
-                f"{name}: {counts['raw']} raw, {counts['fail']} failed, "
-                f"{counts['low']} already down, {counts['environment']} no packet, "
-                f"{counts['unknown']} not understood"
-            )
+        for item in outcomes:
+            why = f"judged again, {item.reason}" if item.judged else "up to date"
+            print(f"{item.name}: {_counts(item.counts)} ({why})")
         print(f"dashboard: {root / 'dashboard.html'}")
+        return
+    if args.command == "status":
+        rows = status(root)
+        if not rows:
+            raise SystemExit("No logs in reports/ or data/.")
+        for name, reason in rows:
+            print(f"{name}: {reason or 'up to date'}")
+        if any(reason for _name, reason in rows):
+            print("Run python -m xivloganalyzer reanalyze to judge those again.")
+            raise SystemExit(1)
         return
     if args.command == "analyze":
         if not args.report:
             raise SystemExit("analyze needs a report folder or its code.")
         counts = analyze(_resolve(args.report, root), root)
-        print(
-            f"{args.report}: {counts['raw']} raw, {counts['fail']} failed, "
-            f"{counts['low']} already down, {counts['environment']} no packet, "
-            f"{counts['unknown']} not understood"
-        )
+        print(f"{args.report}: {_counts(counts)}")
         print(f"dashboard: {root / 'dashboard.html'}")
         return
     if not args.report:

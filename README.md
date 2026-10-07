@@ -45,7 +45,7 @@ Then:
 python -m xivloganalyzer analyze <code>
 ```
 
-That writes `facts.json`, `judgments.json`, and `session.html` in the report folder, and rebuilds `dashboard.html` for every saved log. The death reviews are inside `session.html`. The dashboard keeps every night's pull chart and loads that page when a review is opened. The same run draws an arena still for each mechanic the party failed, from `positions/`. A clear mechanic has no still. The cast time comes from the damage events. Faith Unmoving has no stored cast, so its part `at` in `mechanics.json` is the time, and only while that pull was still going and someone failed it. A Sanctity of the Ward empty tower is drawn when the towers resolved, about two seconds before Eternal Conviction: every tower to size, the empty ones filled, players who were already dead left out, and anyone outside a tower or sharing one ringed and named in the caption. A log with no positions keeps the text.
+That writes `facts.json`, `judgments.json`, `session.html`, and the `analysis.json` stamp in the report folder, and rebuilds `dashboard.html` for every saved log. The death reviews are inside `session.html`. The dashboard keeps every night's pull chart and loads that page when a review is opened. The same run draws an arena still for each mechanic the party failed, from `positions/`. A clear mechanic has no still. The cast time comes from the damage events. Faith Unmoving has no stored cast, so its part `at` in `mechanics.json` is the time, and only while that pull was still going and someone failed it. A Sanctity of the Ward empty tower is drawn when the towers resolved, about two seconds before Eternal Conviction: every tower to size, the empty ones filled, players who were already dead left out, and anyone outside a tower or sharing one ringed and named in the caption. A log with no positions keeps the text.
 
 For a short text digest of one session (counts, pull index, unknown and raw death lines):
 
@@ -66,4 +66,16 @@ Mechanic knowledge lives in `fights/dsr/mechanics.json`. A correction such as "t
 python -m xivloganalyzer reanalyze
 ```
 
-Every saved log is judged again. `notes/classification.md` is the write-up of why Thordan is called the way it is. `tests/test_reference.py` keeps the current 86 raw deaths until we change a call on purpose.
+Every saved log whose rules changed is judged again. `notes/classification.md` is the write-up of why Thordan is called the way it is. `tests/test_reference.py` keeps the current 86 raw deaths until we change a call on purpose.
+
+## Which logs are up to date
+
+Each report folder gets an `analysis.json` stamp when it is judged. It holds a fingerprint of the fight pack (`fights/dsr/fight.json` and `mechanics.json`), of the analyzer code, and of that log's own files (`session.json` included), plus a fingerprint of each page it wrote and the session's dashboard entry. Line endings and hidden files do not count, so the stamp reads the same on Windows, macOS, and CI.
+
+```
+python -m xivloganalyzer status            # which logs are out of date, and why; writes nothing
+python -m xivloganalyzer reanalyze         # judge only those again, then rebuild the dashboard
+python -m xivloganalyzer reanalyze --all   # judge every log again
+```
+
+`status` exits with 1 when any log is out of date. A changed rule in `fights/dsr/` makes every Dragonsong log out of date. A corrected `session.json` makes only that log out of date. `analyze <code>` always judges that log, and also any other log that is out of date. The stamps are committed with the pages. CI checks `status`, then runs `reanalyze --all` and fails when a page or stamp changes.

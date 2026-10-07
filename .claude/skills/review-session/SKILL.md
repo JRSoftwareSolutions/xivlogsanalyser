@@ -68,7 +68,7 @@ PYTHONPATH=src python3 -m xivloganalyzer brief <code>
 ```
 
 Update `tests/test_reference.py` only when the settled headline is meant to
-change. Leave `dashboard.html` and `session.html` alone; reanalyze rewrites them.
+change. Leave `dashboard.html`, `session.html`, and `analysis.json` alone; reanalyze rewrites them.
 
 ## Do not
 

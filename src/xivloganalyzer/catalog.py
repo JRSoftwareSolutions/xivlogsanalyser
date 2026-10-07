@@ -166,6 +166,7 @@ class FightPack:
     markers: list[Marker] = field(default_factory=list)
     deathwall: Mechanic | None = None
     cascade_debuffs: list[str] = field(default_factory=list)
+    folder: Path | None = None
 
     def role_of(self, job: str) -> str:
         for role, jobs in self.roles.items():
@@ -354,6 +355,7 @@ def load_pack(fight_dir: Path) -> FightPack:
         ],
         deathwall=_deathwall(mechanics_doc.get("deathwall")),
         cascade_debuffs=list(fight.get("cascade_debuffs") or []),
+        folder=fight_dir,
     )
 
 
