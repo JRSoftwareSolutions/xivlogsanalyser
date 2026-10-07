@@ -88,11 +88,13 @@ def _hp(fact: DeathFact) -> str:
     return f"HP {_comma(fact.hp)}"
 
 
-def _happened(fact: DeathFact, mechanic: Mechanic | None) -> str:
-    if fact.guid == 0:
-        return "No damage packet."
-    hit = fact.unmitigated if fact.unmitigated is not None else fact.total
-    parts = [f"{_comma(hit)} unmitigated", _hp(fact), _mit(fact.multiplier)]
+def _everything(fact: DeathFact, mechanic: Mechanic | None) -> str:
+    """Every number in the packet, for a death nobody understands yet."""
+    if fact.unmitigated is not None:
+        parts = [f"{_comma(fact.unmitigated)} unmitigated"]
+    else:
+        parts = [f"took {_comma(fact.total)}"]
+    parts += [_hp(fact), _mit(fact.multiplier)]
     if fact.absorb >= 1000:
         parts.append(f"shield {_comma(fact.absorb)}")
     else:
@@ -103,6 +105,167 @@ def _happened(fact: DeathFact, mechanic: Mechanic | None) -> str:
     if owners:
         parts.append(owners)
     return " · ".join(parts)
+
+
+_ROLE = {"tank": "tank", "healer": "healer", "dps": "DPS"}
+
+
+def _known_hp(fact: DeathFact) -> bool:
+    return fact.hp is not None and fact.hp > 0 and bool(fact.max_hp)
+
+
+def _full(fact: DeathFact) -> bool:
+    return _known_hp(fact) and fact.hp >= fact.max_hp
+
+
+def _took(fact: DeathFact, exact: bool) -> str:
+    """The hit and the HP it landed on. `exact` adds the HP numbers, for a heal check."""
+    took = f"Took {_comma(fact.total)}"
+    if not _known_hp(fact):
+        return f"{took}."
+    if _full(fact):
+        return f"{took} at full HP."
+    pct = round(100 * fact.hp / fact.max_hp)
+    if exact:
+        return f"{took} at {pct}% HP ({_comma(fact.hp)} of {_comma(fact.max_hp)})."
+    return f"{took} at {pct}% HP."
+
+
+def _landed(fact: DeathFact) -> int:
+    """What reached their HP, after the shield."""
+    return max(fact.total - fact.absorb, 0)
+
+
+def _amped(fact: DeathFact) -> str:
+    names = [
+        name for name in fact.buffs
+        if "vulnerability" in name.lower() or "damage down" in name.lower()
+    ]
+    amp = ""
+    if fact.multiplier is not None and fact.multiplier > 1.01:
+        amp = f"{round((fact.multiplier - 1) * 100)}%"
+    if names and amp:
+        return f"Had {_joined(names)} ({amp} amp)."
+    if names:
+        return f"Had {_joined(names)}."
+    if amp:
+        return f"The hit was amplified {amp}."
+    return ""
+
+
+def _band(lived: str) -> bool:
+    """A lived band reads as a range of numbers, not a note that nobody lives it."""
+    lowered = lived.lower()
+    if not any(ch.isdigit() for ch in lowered):
+        return False
+    return not any(word in lowered for word in ("no ", "not ", "killed"))
+
+
+def _beyond_role(fact: DeathFact, mechanic: Mechanic) -> str:
+    """A hit bigger than this role takes from the real cast, against the band people live."""
+    cap = mechanic.cap_for(fact.role)
+    hit = _hit(fact)
+    lived = mechanic.lived_for(fact.role)
+    if cap is None or hit <= cap or not _band(lived):
+        return ""
+    role = _ROLE.get(fact.role, fact.role)
+    if fact.unmitigated is not None and fact.unmitigated != fact.total:
+        return f"The hit was {_comma(hit)} before mitigation. A {role} takes {lived}."
+    return f"A {role} takes {lived}."
+
+
+def _one_shot(fact: DeathFact) -> str:
+    if not fact.max_hp or _landed(fact) < fact.max_hp:
+        return ""
+    if _full(fact):
+        return "A one-shot."
+    return "It would have killed them from full HP."
+
+
+def _short(fact: DeathFact, mechanic: Mechanic) -> str:
+    if (
+        mechanic.scales_with_stack
+        and fact.stack
+        and mechanic.typical_targets
+        and fact.stack < mechanic.typical_targets
+    ):
+        return f"Shared by {fact.stack} of {mechanic.typical_targets}."
+    return ""
+
+
+def _mit_seen(fact: DeathFact) -> float | None:
+    """The damage multiplier from mitigation, from the packet or the buffs on the hit."""
+    if fact.multiplier is not None:
+        return fact.multiplier
+    found = None
+    for mit in fact.mitigations:
+        pct = mit.get("pct")
+        if pct is None or mit.get("amount") or pct > 100:
+            continue
+        found = (found if found is not None else 1.0) * pct / 100
+    return found
+
+
+def _heal_check(fact: DeathFact) -> list[str]:
+    """What would have kept them alive through a hit people live: HP, a shield, mitigation."""
+    missing = []
+    if _known_hp(fact) and not _full(fact):
+        if _landed(fact) < fact.max_hp:
+            missing.append("Full HP would have lived.")
+        else:
+            missing.append("Full HP would not have been enough.")
+    if fact.absorb < 1000:
+        missing.append("No shield.")
+    seen = _mit_seen(fact)
+    if seen is not None and seen >= 0.995:
+        missing.append("No party mitigation.")
+    if missing:
+        return missing
+    held = [f"a {_comma(fact.absorb)} shield"]
+    if seen is not None:
+        held.append(f"{round((1 - seen) * 100)}% mitigation")
+    text = " and ".join(held)
+    return [f"{text[0].upper()}{text[1:]} were not enough."]
+
+
+def _happened(
+    fact: DeathFact, mechanic: Mechanic, outcome: str, cause: str, pack: FightPack,
+) -> str:
+    """The facts behind the call, not every number in the packet.
+
+    A fail says how hard the hit was and what made it worse. A raw death says
+    what would have kept them alive: HP, a shield, mitigation, or a full stack.
+    """
+    if outcome == "unknown":
+        return _everything(fact, mechanic)
+    if outcome == "low":
+        return _took(fact, exact=True)
+    if outcome == "raw":
+        short = _short(fact, mechanic)
+        if short:
+            return f"{_took(fact, exact=False)} {short}"
+        return " ".join([_took(fact, exact=True), *_heal_check(fact)])
+    if cause == "healers":
+        return " ".join([_took(fact, exact=True), *_heal_check(fact)])
+    if cause == "mitigation":
+        seen = _mit_seen(fact)
+        if seen is None:
+            mit = ""
+        elif seen >= 0.995:
+            mit = "No mitigation."
+        else:
+            mit = f"Only {round((1 - seen) * 100)}% mitigation."
+        shield = "No shield." if fact.absorb < 1000 else ""
+        return " ".join(bit for bit in (_took(fact, exact=False), mit, shield) if bit)
+    bits = [_took(fact, exact=False)]
+    amped = _amped(fact)
+    if amped:
+        bits.append(amped)
+    if mechanic.requires_personal_mit and fact.role == "tank" and not _personal_mit(fact, pack):
+        bits.append("No personal mitigation.")
+    beyond = "" if amped else _beyond_role(fact, mechanic)
+    bits.append(beyond or _one_shot(fact))
+    return " ".join(bit for bit in bits if bit)
 
 
 def _mit_owners(fact: DeathFact) -> str:
@@ -142,7 +305,6 @@ def _hit(fact: DeathFact) -> int:
 
 
 def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
-    happened = ""
     if fact.guid == 0 and pack.deathwall is not None:
         return _deathwall(fact, pack.deathwall)
     if fact.guid == 0:
@@ -151,109 +313,108 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             mechanic_id=None,
             mechanic="No damage packet",
             outcome="environment",
-            happened="No damage packet.",
+            happened="Nothing hit them.",
             should_have_been="A death with no hit is the body after a raise, or a wipe tick.",
             went_wrong="No hit.",
             cause="none",
         )
     mechanic = pack.mechanic_for(fact.guid, fact.phase)
-    happened = _happened(fact, mechanic)
     if mechanic is None:
         return Judgment(
             fact=fact,
             mechanic_id=None,
             mechanic=fact.ability,
             outcome="unknown",
-            happened=happened,
+            happened=_everything(fact, None),
             should_have_been="This ability is not understood yet.",
             went_wrong=f"{fact.name} died to {fact.ability}.",
             cause="none",
         )
     if fact.clipped_by and (_vuln(fact) or mechanic.marker_owns_clip):
-        return _done(fact, mechanic, happened, "fail", _marker_clip(fact, pack), "marker", pack)
+        return _done(fact, mechanic, "fail", _marker_clip(fact, pack), "marker", pack)
     if _vuln(fact):
-        return _done(fact, mechanic, happened, "fail", _amp(fact, mechanic), "personal", pack)
+        return _done(fact, mechanic, "fail", _amp(fact, mechanic), "personal", pack)
     hit = _hit(fact)
     if mechanic.tanks_only and fact.role != "tank":
-        return _done(fact, mechanic, happened, "fail", _not_a_tank(fact, mechanic), "personal", pack)
+        return _done(fact, mechanic, "fail", _not_a_tank(fact, mechanic), "personal", pack)
     if mechanic.off_tank and fact.name != mechanic.off_tank:
         return _done(
-            fact, mechanic, happened, "fail",
+            fact, mechanic, "fail",
             f"{fact.name} took {mechanic.name}.",
             "personal", pack,
         )
     if mechanic.one_target and fact.stack and fact.stack > 1:
         return _done(
-            fact, mechanic, happened, "fail",
+            fact, mechanic, "fail",
             f"{fact.name} ate an extra {mechanic.name}.",
             "personal", pack,
         )
     if mechanic.any_hit_is_fail:
         if mechanic.id == "bright-flare" and (fact.stack or 0) > 1:
             return _done(
-                fact, mechanic, happened, "fail",
+                fact, mechanic, "fail",
                 f"{fact.name} got clipped by a Bright Flare.",
                 "overlap", pack,
             )
         if mechanic.id == "holy-impact":
             return _done(
-                fact, mechanic, happened, "fail",
+                fact, mechanic, "fail",
                 f"{fact.name} died to comets that were too close.",
                 "prey", pack,
             )
-        return _done(fact, mechanic, happened, "fail", _personal(fact, mechanic), "personal", pack)
+        return _done(fact, mechanic, "fail", _personal(fact, mechanic), "personal", pack)
     failed = _failed_moment(mechanic, fact, hit)
     if failed:
         return _done(
-            fact, mechanic, happened, "fail",
+            fact, mechanic, "fail",
             _moment_fault(fact, failed),
             failed.cause or "personal", pack,
         )
     if mechanic.id == "skyward-leap" and mechanic.fail_above is not None and hit > mechanic.fail_above:
         return _done(
-            fact, mechanic, happened, "fail",
+            fact, mechanic, "fail",
             f"{fact.name} took a second Skyward Leap whose marker holder was already dead.",
             "orphan", pack,
         )
     if mechanic.fail_above is not None and hit > mechanic.fail_above:
         if mechanic.dive_markers:
             wrong, cause = _landing(fact)
-            return _done(fact, mechanic, happened, "fail", wrong, cause, pack)
+            return _done(fact, mechanic, "fail", wrong, cause, pack)
         return _done(
-            fact, mechanic, happened, "fail", _oversized(fact, mechanic),
+            fact, mechanic, "fail", _oversized(fact, mechanic),
             _oversized_cause(fact, mechanic), pack,
         )
     cap = mechanic.cap_for(fact.role)
     if cap is None:
         return _done(
-            fact, mechanic, happened, "unknown",
+            fact, mechanic, "unknown",
             f"{fact.name} died to {mechanic.name}.",
             "none", pack,
         )
     if hit <= cap:
         if fact.hp is not None and fact.hp < pack.low_hp:
             return _done(
-                fact, mechanic, happened, "low",
+                fact, mechanic, "low",
                 f"{fact.name} was already low.",
                 "low", pack,
             )
         if mechanic.requires_personal_mit and fact.role == "tank" and not _personal_mit(fact, pack):
             return _done(
-                fact, mechanic, happened, "fail",
+                fact, mechanic, "fail",
                 f"{fact.name} died to {mechanic.name} without mitigation.",
                 "personal", pack,
             )
         if mechanic.id == "skyward-leap":
             return _done(
-                fact, mechanic, happened, "fail", _skyward_marker(fact), _skyward_cause(fact), pack,
+                fact, mechanic, "fail", _skyward_marker(fact), _skyward_cause(fact), pack,
             )
         return _done(
-            fact, mechanic, happened, "raw", _raw_fault(fact, mechanic), _raw_cause(fact, mechanic), pack,
+            fact, mechanic, "raw", _raw_fault(fact, mechanic), _raw_cause(fact, mechanic), pack,
         )
     if mechanic.id == "skyward-leap":
-        return _done(fact, mechanic, happened, "fail", _skyward_clip(fact), "clip", pack)
+        return _done(fact, mechanic, "fail", _skyward_clip(fact), "clip", pack)
     return _done(
-        fact, mechanic, happened, "fail", _oversized(fact, mechanic),
+        fact, mechanic, "fail", _oversized(fact, mechanic),
         _oversized_cause(fact, mechanic), pack,
     )
 
@@ -279,8 +440,10 @@ def _own_hysteria(fact: DeathFact) -> bool:
 
 def _deathwall(fact: DeathFact, mechanic: Mechanic) -> Judgment:
     """No killing blow is the arena edge. It is always a mistake."""
+    happened = "Nothing hit them."
     if _own_hysteria(fact):
         wrong = f"{fact.name} looked at the gaze and walked into the deathwall with Hysteria."
+        happened = "Nothing hit them. They still had Hysteria from the gaze."
     else:
         wrong = f"{fact.name} walked into the deathwall."
     return Judgment(
@@ -288,7 +451,7 @@ def _deathwall(fact: DeathFact, mechanic: Mechanic) -> Judgment:
         mechanic_id=mechanic.id,
         mechanic=mechanic.name,
         outcome="fail",
-        happened="No damage packet.",
+        happened=happened,
         should_have_been=mechanic.should_have_been,
         went_wrong=wrong,
         cause="personal",
@@ -564,7 +727,6 @@ def _should(fact: DeathFact, mechanic: Mechanic, pack: FightPack) -> str:
 def _done(
     fact: DeathFact,
     mechanic: Mechanic,
-    happened: str,
     outcome: str,
     wrong: str,
     cause: str,
@@ -575,7 +737,7 @@ def _done(
         mechanic_id=mechanic.id,
         mechanic=mechanic.name,
         outcome=outcome,
-        happened=happened,
+        happened=_happened(fact, mechanic, outcome, cause, pack),
         should_have_been=_should(fact, mechanic, pack),
         went_wrong=wrong,
         cause=cause,
