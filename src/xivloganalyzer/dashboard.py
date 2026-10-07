@@ -524,6 +524,7 @@ def session_payload(
                 "should": item.should_have_been,
                 "wrong": item.went_wrong,
                 "blames": [blame.to_dict() for blame in item.blames],
+                "basis": item.basis,
                 "culprits": culprits,
                 "first": item.first,
             }

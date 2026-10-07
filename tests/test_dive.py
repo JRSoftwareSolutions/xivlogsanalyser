@@ -60,11 +60,12 @@ class DiveFromGraceTest(unittest.TestCase):
         self.assertEqual(
             [blame.to_dict() for blame in short.blames],
             [
-                {"who": "Loki Doki", "confidence": 33},
-                {"who": "Spring Nymphar", "confidence": 33},
+                {"who": "Loki Doki", "confidence": 33, "via": ["Kite Noodle"]},
+                {"who": "Spring Nymphar", "confidence": 33, "via": ["Kite Noodle", "Loki Doki"]},
                 {"who": "Kiara Blaiddyd", "confidence": 33},
             ],
         )
+        self.assertEqual(short.basis, "hit-list")
         raw = self._one(26, "Loki Doki", 26388)
         self.assertEqual(raw.outcome, "raw")
         self.assertEqual(

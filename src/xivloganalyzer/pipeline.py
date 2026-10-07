@@ -8,9 +8,10 @@ from __future__ import annotations
 
 import json
 from collections import Counter
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
+from xivloganalyzer.calls import Change, diff_calls, saved_calls, write_calls
 from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone, repo_root
 from xivloganalyzer.dashboard import (
     attach_debuffs,
@@ -43,12 +44,14 @@ def report_dirs(root: Path | None = None) -> list[Path]:
 
 @dataclass
 class Outcome:
-    """One report after a run. `reason` is why it was judged again, empty when it was skipped."""
+    """One report after a run. `reason` is why it was judged again, empty when it was skipped.
+    `changes` are the calls that differ from the ones saved before this run."""
 
     name: str
     counts: Counter
     judged: bool
     reason: str = ""
+    changes: list[Change] = field(default_factory=list)
 
 
 def _meta(report: Path) -> dict:
@@ -64,13 +67,16 @@ def _pack(report: Path, meta: dict, catalog: list[FightPack]) -> FightPack:
     raise SystemExit(f"No fight knowledge matches zone {sorted(zone_ids)} in {report.name}")
 
 
-def _analyze(report: Path, pack: FightPack, meta: dict, engine: str) -> tuple[Counter, dict]:
+def _analyze(report: Path, pack: FightPack, meta: dict, engine: str) -> tuple[Counter, dict, list[Change]]:
+    before = saved_calls(report)
     skipped: list[dict] = []
     facts = extract_report(report, pack, skipped)
     judgments = judge_report(facts, pack, roster_from_meta(meta, pack))
     write_facts(report, facts)
     write_judgments(report, judgments)
+    write_calls(report, [item.to_dict() for item in judgments])
     write_inputs(report, check_inputs(report, pack, meta, facts, skipped))
+    changes = diff_calls(before, saved_calls(report) or []) if before is not None else []
     when = session_clock(report, meta)
     payload = session_payload(judgments, pack, report.name, when, meta)
     attach_debuffs(report, payload, pack, meta)
@@ -81,7 +87,7 @@ def _analyze(report: Path, pack: FightPack, meta: dict, engine: str) -> tuple[Co
     counts = Counter(item.outcome for item in judgments)
     summary = session_summary(payload, "")
     write_stamp(report, pack.folder, counts, summary, engine)
-    return counts, summary
+    return counts, summary, changes
 
 
 def _run(reports: list[Path], root: Path, force: set[str]) -> list[Outcome]:
@@ -98,25 +104,26 @@ def _run(reports: list[Path], root: Path, force: set[str]) -> list[Outcome]:
         else:
             fresh = check(report, pack.folder, engine)
             reason = "" if fresh.current else fresh.reason
+        changes: list[Change] = []
         if reason:
-            counts, summary = _analyze(report, pack, meta, engine)
+            counts, summary, changes = _analyze(report, pack, meta, engine)
         else:
             stamp = read_stamp(report)
             counts, summary = Counter(stamp["counts"]), stamp["summary"]
-        outcomes.append(Outcome(report.name, counts, bool(reason), reason))
+        outcomes.append(Outcome(report.name, counts, bool(reason), reason, changes))
         summaries.append(summary)
     if summaries:
         write_dashboard(root, summaries)
     return outcomes
 
 
-def analyze(report: Path, root: Path | None = None) -> Counter:
+def analyze(report: Path, root: Path | None = None) -> Outcome:
     """Judge this report, judge any other saved report that is out of date, rebuild the dashboard."""
     root = root or repo_root()
     report = report.resolve()
     others = [folder for folder in report_dirs(root) if folder.resolve() != report]
     outcomes = _run([report, *others], root, force={report.name})
-    return outcomes[0].counts
+    return outcomes[0]
 
 
 def reanalyze(root: Path | None = None, everything: bool = False) -> list[Outcome]:

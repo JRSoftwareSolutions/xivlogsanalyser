@@ -17,6 +17,7 @@ This is a stack and it scales. The usual share is 5. A lived share is about 60â€
 - At or under the role cap, including a share of 5: the real stack.
 - A share of 3 around 102â€“113k, still at or under the role cap and at or under 200,000: the 5-share with two bodies missing. It stays raw.
 - Over 200,000, or over the role cap: the failed hit, not a short share.
+- One packet gets one verdict. The middle victim's hit against their role cap decides share or failed hit for every death in it. A vulnerability or a hit over 200,000 is still judged on its own.
 
 ## Fault
 

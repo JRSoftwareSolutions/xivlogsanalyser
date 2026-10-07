@@ -25,6 +25,7 @@ Do these in order for every disputed death. Write down what each step found.
 1. **Killing blow.** Read it the way `review-mechanic` says. A status link, such as Frostbite `#status/2946`, is a real killing blow. Only a row with no ability at all is the deathwall.
 2. **What the mechanic needed.** From the mechanic skill: who takes it, how many bodies, where they stand, which debuff or marker gives the job, what mitigation and HP a lived hit needs.
 3. **Party state at the cast.** From the log, never from memory:
+   - Who played the pull. `src/xivloganalyzer/roster.py` reads it per pull, so a substitute or a job swap counts only where they played.
    - Who was alive. A death before the cast, with no Weakness `1000043` after it, is still dead.
    - Who held which job. Debuffs in `mitigations/fight-NN.json` auras, such as Prey `1000562`, the Dive from Grace numbers, and the resistance-down debuffs from an ice or lightning hit.
    - Who was hit, and by what. The cast's own hit list, and any soak that must hit everyone in place, from `abilities/ab_<guid>.json`. Survivors are in there too.
@@ -62,13 +63,14 @@ Most mechanics are one of these shapes. The question to ask is the same for each
 
 | Shape | Needed | Who owns a failure |
 |---|---|---|
-| Soak or tower | One player in each tower | Whoever was not hit by the soak: dead, or alive and elsewhere. Everyone in place is not at fault. |
-| Stack | N bodies in each share | The players who should have been in the share: dead, or alive and in another share or none. |
+| Soak or tower | One player in each tower | Whoever was not hit by the soak: dead, or alive and elsewhere. Everyone in place is not at fault. The Strength towers are healers and DPS only (`roles`). |
+| Stack | N bodies in each share | The players who should have been in the share: dead, or alive and in another share or none. A packet is a share or a cleave once, from its middle victim's hit against their role cap. |
 | Alternating stack | Two groups take turns, such as Sacred Sever | The group is whoever took the cast two before. A cast that landed on the other group, still carrying the last cast's vulnerability, belongs to the right group's dead players. |
+| Pairs | One support and one DPS in each circle, such as Hiemal Storm (`pairs`) | For a lone ice, the partners who were dead, in no circle, or doubled up in another circle. Transcendent `1000418` counts as dead. |
 | Spread or overlap | Nobody shares a circle | Every player in the overlap. A survivor in the burst is named from the hit list. |
 | Marker | The marked player in their spot | The marked player off their spot, or the player who stood in the marked player's spot. |
 | Drops | Each marked player's drops land apart | Whoever dropped the two that landed too close: one player's own pair, or both players at 50. A dead holder passes it on. |
-| Tankbuster | The right tank, with personal mitigation | A non-tank who took it, the wrong tank, or a tank without mitigation. |
+| Tankbuster | The right tank, with personal mitigation | A non-tank who took it, the wrong tank, or a tank without mitigation. When the right tank was dead, such as Heavenly Heel's off tank, that tank owns it, passed on. |
 | Dodge, gaze, cone, puddle | Nobody hit | The player who was hit. |
 | Raidwide | Everyone lives with mitigation and HP | The healers and the party's mitigation, unless the party was short or already low. Then pass it on to whoever made it short or low. Low from their own gaze, dodge, puddle, or orb a few seconds before is that player's own. |
 | No packet | Nobody touches the wall | The player, alone before the first mistake, shared with "Earlier mistake" after it. |
@@ -76,9 +78,12 @@ Most mechanics are one of these shapes. The question to ask is the same for each
 ## Checking a session
 
 ```
+PYTHONPATH=src python -m xivloganalyzer check <code>
 PYTHONPATH=src python -m xivloganalyzer audit <code>
 PYTHONPATH=src python -m xivloganalyzer audit <code> --flag unnamed
 ```
+
+`check` lists the inputs the log is missing. A call made without one names it in its `missing` list, such as `ability 25567`. Fetch those before trusting the call.
 
 Each flag is an open question, not a verdict:
 
@@ -93,8 +98,8 @@ Work one flag and one mechanic at a time. For each, follow the steps above on tw
 ## Changing a rule
 
 1. Show the rule holds on every pull it touches, not just the reported one. Look for counterexamples: a clean pull, a pull with the same shape and a different cause.
-2. Put mechanic facts in `fights/dsr/mechanics.json` (for example `needs_everyone`) and the mechanic's skill. Put shared logic in `src/xivloganalyzer/judge.py` and `extract.py`.
-3. Add a test that names the pull and the owner, such as `tests/test_empty_towers.py`.
+2. Put mechanic facts in `fights/dsr/mechanics.json` (for example `needs_everyone`, a list of rows with the soak, `roles`, `until` or `after`, and `holders`) and the mechanic's skill. Put shared logic in `src/xivloganalyzer/judge.py` and `extract.py`.
+3. Add a test that names the pull and the owner, in `tests/test_audit_rules.py`, or `tests/test_reference.py` for the reference log.
 4. Run the tests, then `python -m xivloganalyzer reanalyze`. Compare `audit` before and after.
 5. Update `notes/classification.md` with the reason, and `review-mechanic` when the blame list changes.
 6. Ask the person when the data cannot decide. Do not guess a mechanic's plan.

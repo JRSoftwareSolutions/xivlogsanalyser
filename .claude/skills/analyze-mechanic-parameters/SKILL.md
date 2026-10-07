@@ -26,7 +26,7 @@ Use damage events in `data/<report>/abilities/ab_<guid>.json`. Deaths are the fa
 
 ## Parameters to write down
 
-Fill these on the mechanic skill, then on `fights/dsr/mechanics.json` where a field exists. The death's `should_have_been` line is that cast only. When a later cast is a different assignment, put its line on that cluster part. Do not describe the other cast in this one. Update `notes/classification.md` when the reason changes. Run `python -m xivloganalyzer reanalyze`. Touch `tests/test_reference.py` only when the settled raw deaths on `XVz8bCqgPw1KRh9d` are meant to change. That count is 86.
+Fill these on the mechanic skill, then on `fights/dsr/mechanics.json` where a field exists. The death's `should_have_been` line is that cast only. When a later cast is a different assignment, put its line on that cluster part. Do not describe the other cast in this one. Update `notes/classification.md` when the reason changes. Run `python -m xivloganalyzer reanalyze`. Touch `tests/test_reference.py` only when the settled raw deaths on `XVz8bCqgPw1KRh9d` are meant to change. That count is 40.
 
 | Parameter | What to record |
 |---|---|

@@ -1,0 +1,16 @@
+{
+ "calls": [
+  {
+   "fight": 68,
+   "time": "1:01",
+   "name": "Kitana Kahn",
+   "mechanic": "Skyward Leap",
+   "outcome": "fail",
+   "owners": [
+    "Assigned mitigation"
+   ],
+   "by": "user",
+   "why": "Full HP with no mitigation on the real Skyward Leap marker (AGENTS.md)."
+  }
+ ]
+}

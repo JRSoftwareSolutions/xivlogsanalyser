@@ -29,7 +29,7 @@ Compare `unmitigatedAmount` to the role cap. `amount` is HP removed. `overkill` 
 
 Role comes from the job. Tanks: Paladin, Warrior, Gunbreaker, Dark Knight. Healers: Astrologian, Scholar, White Mage, Sage. Everyone else is DPS.
 
-`low_hp` in `fights/dsr/fight.json` is 15,000.
+`low_hp` in `fights/dsr/fight.json` is 15,000. Max HP is the largest killing hit, divided by any max-HP buff that was on (`max_hp_buffs`, Thrill of Battle 1.2). Personal mitigation is `personal_mit`, which includes the tank cooldowns such as Sheltron, Holmgang, Thrill of Battle, Living Dead, Superbolide, and The Blackest Night.
 
 ## Outcome
 
@@ -39,10 +39,10 @@ Apply these in order:
 2. Guid is not in `mechanics.json` for this phase → **unknown**. No fault. Ask what the hit should mean.
 3. Magic Vulnerability Up `1002941`, Physical Vulnerability Up `1002940`, or Damage Down on the packet → **fail**. The amp is a failed mechanic. `buffs` is often empty on the damage packet even when a calculated-damage sibling had the aura. Check that sibling before calling a borderline hit raw.
 4. `any_hit_is_fail` → **fail**. Use the mechanic skill for whose fault. A Bright Flare overlap still splits across the players in the burst. Holy Impact is the two prey players.
-5. A `moments` row with `fail` true, when the time matches → **fail**. Sanctity Eternal Conviction, after 100 seconds, is the empty tower. The Strength hit around 63 seconds stays the raidwide.
-6. Unmitigated above `fail_above`, or above the role cap → **fail**. Use the mechanic skill. Overkill on a failed hit is still a fail.
+5. A `moments` row with `fail` true, when the time matches → **fail**. Eternal Conviction is always an empty tower: the Strength towers before 100 seconds, the Sanctity towers after.
+6. Unmitigated above `fail_above`, or above the role cap → **fail**. Use the mechanic skill. Overkill on a failed hit is still a fail. A stack that scales is a share or a cleave once per cast: every death in one packet gets the verdict of the middle victim's hit against their role cap. A vulnerability, a marker clip, or a hit over `fail_above` is still judged on its own.
 7. Unmitigated at or under the role cap, and HP already under 15,000 → **low**. The hit is the normal one.
-8. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might, Heavenly Heel, or Holy Bladedance without the required personal mitigation is a fail. Heavenly Heel belongs to the off tank: the main tank taking it is a fail. A Skyward Leap death on the real marker is a fail: short of full HP belongs to the healers, and full HP is missing mitigation.
+8. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might, Heavenly Heel, or Holy Bladedance without the required personal mitigation is a fail. Heavenly Heel belongs to the off tank: the main tank taking it is a fail. When the off tank was dead, it is the dead off tank's. A Skyward Leap death on the real marker is a fail: short of full HP belongs to the healers, and full HP is missing mitigation.
 
 ## Say this
 
@@ -78,7 +78,9 @@ These are the shared calls:
 - Lightning Storm clip, and a Bright Flare overlap: each player in the overlap. A second body who lived is "Another player".
 - Skyward Leap under full HP: the healers, named, split evenly.
 - Skyward Leap at full HP: "Assigned mitigation" at 50. The plan is more than one player, and the log does not name them.
-- Empty tower: whoever was missing from it. A player already dead, alive and not hit by the tower soak, or one of two players who shared a tower, owns it, split evenly. A player who was missing because they were dead passes it on to whoever owned that death: their own mistake stays theirs, a raw death goes to the healers, a clip to the clipper, an earlier empty tower to whoever left that one empty. "Missed soak" at 50 only when the log shows none of these. Sanctity Eternal Conviction after 100 seconds is this call.
+- Empty tower: whoever was missing from it. A player already dead, alive and not hit by the tower soak, or one of two players who shared a tower, owns it, split evenly. A player who was missing because they were dead passes it on to whoever owned that death: their own mistake stays theirs, a raw death goes to the healers, a clip to the clipper, an earlier empty tower to whoever left that one empty. "Missed soak" at 50 only when the log shows none of these, and the judgment lists the missing soak file in `missing`. Eternal Conviction is this call: the Strength soak is Conviction `25567`, healers and DPS only, and the Sanctity soak is `29564` or `28651`.
+- Heavenly Heel on the main tank because the off tank was dead: the off tank at 100, passed on to whoever owned that death (`3wzL6x4VHTmvNkhq` pull 20).
+- Hiemal Storm ice with no partner: the partners who were dead, passed on, alive and in no circle, or doubled up in another circle. Each circle is one support and one DPS (`pairs`). Transcendent `1000418` counts as dead.
 - Holy Impact: whoever dropped the two comets that landed too close. One player's two comets is that player. One player's comet on the other's is both at 50. A dead prey player passes it on (`dsr-holy-impact`).
 - Someone else's Skyward Leap, by its vulnerability or by the leap itself: whoever was out of position, named. A holder off their spot owns it at 100. A player who stood in a holder's leap on its spot owns it at 100. Both off is 50 each. With no positions, the holder owns it. The death sits under Skyward Leap on the pull card, and only the owners fail it.
 - A second Skyward Leap with nobody else's leap on the player: "Earlier deaths" at 100. That leap's holder was already dead.
@@ -102,7 +104,7 @@ A correction ("X should be Y", "that is not a mistake", "that one is a fail") up
 python -m xivloganalyzer reanalyze
 ```
 
-Update `tests/test_reference.py` only when the settled headline is meant to change. That headline is 86 raw deaths on report `XVz8bCqgPw1KRh9d`. Update `notes/classification.md` when the reason changes. Update the mechanic skill when the way you tell the cases apart changes. Leave `dashboard.html`, `session.html`, and `analysis.json` alone; reanalyze rewrites them.
+Update `tests/test_reference.py` only when the settled headline is meant to change. That headline is 40 raw deaths on report `XVz8bCqgPw1KRh9d`. Update `notes/classification.md` when the reason changes. Update the mechanic skill when the way you tell the cases apart changes. Leave `dashboard.html`, `session.html`, `analysis.json`, and `inputs.json` alone; reanalyze rewrites them.
 
 ## Mechanic index
 

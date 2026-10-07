@@ -3,13 +3,13 @@ name: dsr-heavenly-heel
 description: >-
   Parameters and faults for Heavenly Heel (guid 25543) in Dragonsong's
   Reprise Thordan. The off tank always takes it. A non-tank hit, the main
-  tank taking it, or an off-tank death without personal mitigation is their
-  mistake. Use when refining or judging Heavenly Heel or 25543.
+  tank taking it while the off tank lives, or an off-tank death without
+  personal mitigation is their mistake. Use when refining or judging Heavenly Heel or 25543.
 ---
 
 # Heavenly Heel
 
-Follow `analyze-mechanic-parameters` when changing these parameters. Follow `review-mechanic` when judging a death. Follow `mechanic-components` for what else is in this swap. Entry `heavenly-heel` in `fights/dsr/mechanics.json`. Guid `25543`. `off_tank` is Absolute Gigachad.
+Follow `analyze-mechanic-parameters` when changing these parameters. Follow `review-mechanic` when judging a death. Follow `mechanic-components` for what else is in this swap. Entry `heavenly-heel` in `fights/dsr/mechanics.json`. Guid `25543`. `off_tank` is true. The off tank is `assignments.off_tank` in `<report>/session.json`, or else the tank Heavenly Heel landed on in the most pulls. That is Absolute Gigachad in all three logs.
 
 ## Components
 
@@ -20,13 +20,13 @@ The swap is about 81–88 seconds after phase 2 starts. The session stop is Heav
 | Heavenly Heel | 25543, about 81s | One tankbuster on the off tank, with personal mitigation. It applies Slashing Resistance Down, so that tank cannot take the cleaves that follow. The death line for a heel is only this hit. The three Ascalon's Might hits have their own line. |
 | Ascalon's Might | 25541, the cast about 85s | Three cleaves on the main tank, also with personal mitigation. The opener Might, about 16s, is `dsr-thordan-opener`, not this swap. |
 
-Anyone who is not a tank getting either hit owns that mistake. The main tank taking the heel owns that mistake. The off tank does not take the three hits. The off tank who dies on the real heel without personal mitigation owns that death.
+Anyone who is not a tank getting either hit owns that mistake. The main tank taking the heel owns that mistake, unless the off tank was dead. Then the dead off tank owns it, passed on to whoever owned that death. The off tank does not take the three hits. The off tank who dies on the real heel without personal mitigation owns that death.
 
 ## Parameters
 
 Heavenly Heel is the first hit of the swap. The three Ascalon's Might hits follow it, about three seconds later. It is not the opener. The opener three-hit is `dsr-ascalons-might`. Sanctity of the Ward starts about 112 seconds, after this swap.
 
-The off tank always takes Heavenly Heel. In this log the off tank is the paladin, Absolute Gigachad. He takes it on the lived pulls, with Rampart, Holy Sheltron, and Knight's Resolve. The main tank is the warrior, Absolute Gigalad. He takes the opener on every pull, and the three hits after the heel. `off_tank` on the mechanic is Absolute Gigachad.
+The off tank always takes Heavenly Heel. In this log the off tank is the paladin, Absolute Gigachad. He takes it on the lived pulls, with Rampart, Holy Sheltron, and Knight's Resolve. The main tank is the warrior, Absolute Gigalad. He takes the opener on every pull, and the three hits after the heel. No name is stored on the mechanic. Absolute Gigachad is the off tank because the heel landed on him in the most pulls.
 
 Correct cast:
 
@@ -44,6 +44,7 @@ Correct cast:
 
 - The off tank, unmitigated at or under the tank cap, with personal mitigation, and the main tank on the three hits: the heel was taken correctly.
 - The main tank on the heel: fail. The off tank takes Heavenly Heel. Pull 60 is Absolute Gigalad. Missing personal mitigation is part of that same death when it is also missing.
+- The main tank on the heel while the off tank was dead: fail, owned by the dead off tank, passed on. `3wzL6x4VHTmvNkhq` pull 20 is Absolute Gigalad taking it because Absolute Gigachad was dead.
 - The off tank, normal-sized heel, dead, and no personal mitigation: fail. Theirs.
 - A non-tank, including a hit around 250k: fail. Theirs.
 - A second tank also in the heel: fail. The off tank takes Heavenly Heel.
@@ -54,6 +55,8 @@ Correct cast:
 `{player}` is a non-tank: they got Heavenly Heel. Only a tank takes this.
 
 `{player}` is the main tank: the off tank takes Heavenly Heel. `{player}` took it. When personal mitigation is also missing, say that too.
+
+`{player}` is the main tank and the off tank was dead: `{off tank}` was dead, so `{player}` had to take Heavenly Heel. The off tank owns it.
 
 `{player}` is the off tank and the unmitigated hit is the real one, but personal mitigation is missing: they died to the real Heavenly Heel. Personal mitigation was not enough.
 

@@ -4,7 +4,7 @@ Session reviews for FFLogs. Dragonsong's Reprise is the first fight. The dashboa
 
 ## Reference log
 
-[XVz8bCqgPw1KRh9d](https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d), Kite21, Ultimates (Legacy). Played Sat 3 Oct 2026, 21:17–00:03 (pull 68 is the 12:02 AM label from the log). Thordan: **86 raw deaths** across 55 pulls. Pull 68 has no raw death. Kitana Kahn's Skyward Leap was full HP with no mitigation.
+[XVz8bCqgPw1KRh9d](https://www.fflogs.com/reports/XVz8bCqgPw1KRh9d), Kite21, Ultimates (Legacy). Played Sat 3 Oct 2026, 21:17–00:03 (pull 68 is the 12:02 AM label from the log). Thordan: **40 raw deaths** across 55 pulls. Pull 68 has no raw death. Kitana Kahn's Skyward Leap was full HP with no mitigation.
 
 The other two nights are [8DYNHQx4C7ytdLb9](https://www.fflogs.com/reports/8DYNHQx4C7ytdLb9) (Mon 5 Oct 2026, 21:31–00:14) and [3wzL6x4VHTmvNkhq](https://www.fflogs.com/reports/3wzL6x4VHTmvNkhq) (Wed 30 Sep 2026, 21:44–00:03).
 
@@ -35,7 +35,7 @@ Put a report folder in `reports/<code>/` (or `data/<code>/`) with:
 - `abilities/ab_<guid>.json` for damage-taken on the mechanics we already know
 - `positions/fight-<id>.json` from `/reports/replaysegment/<code>/<boss>/<start>/<end>`. Each sample is `[timestamp, actorId, x, y, facing, friendly]`. `x` and `y` are the in-game coordinates times 100, and `facing` is the actor's facing on that sample. `actors` maps those ids to names.
 - `mitigations/fight-<id>.json` from that same replay. `auras` is `[timestamp, action, guid, name, sourceId, targetId, duration, stacks, via]`. `sourceId` is who applied it. `hits` is `[timestamp, targetId, sourceId, abilityGuid, multiplier, absorbed, mits]`, and each mit is `[guid, name, sourceId, targetId, percent]` where 90 means the hit was multiplied by 0.90. `shields` is `[timestamp, targetId, sourceId, guid, name, amount, attackGuid, attackerId]`.
-- `party.json` optional, name to max HP
+- `party.json` optional, name to max HP. Max HP comes from the killing hits, divided by any max-HP buff that was on (`max_hp_buffs` in `fights/dsr/fight.json`). A `party.json` value is used only when it is at most 5% above that.
 - `aura_map.json` optional
 - `session.json` optional, with `started` (ISO-8601 time of report zero), `title`, and `owner`. That is what places the log on a day and a clock. A `start` unix time on `fights.json` is used when the sidecar is missing.
 
@@ -45,7 +45,13 @@ Then:
 python -m xivloganalyzer analyze <code>
 ```
 
-That writes `facts.json`, `judgments.json`, `session.html`, and the `analysis.json` stamp in the report folder, and rebuilds `dashboard.html` for every saved log. The death reviews are inside `session.html`. The dashboard keeps every night's pull chart and loads that page when a review is opened. The same run draws an arena still for each mechanic the party failed, from `positions/`. A clear mechanic has no still. The cast time comes from the damage events. Faith Unmoving has no stored cast, so its part `at` in `mechanics.json` is the time, and only while that pull was still going and someone failed it. A Sanctity of the Ward empty tower is drawn when the towers resolved, about two seconds before Eternal Conviction: every tower to size, the empty ones filled, players who were already dead left out, and anyone outside a tower or sharing one ringed and named in the caption. A log with no positions keeps the text.
+That writes `facts.json`, `judgments.json`, `calls.tsv`, `session.html`, `inputs.json`, and the `analysis.json` stamp in the report folder, and rebuilds `dashboard.html` for every saved log. The death reviews are inside `session.html`. The dashboard keeps every night's pull chart and loads that page when a review is opened. The same run draws an arena still for each mechanic the party failed, from `positions/`. A clear mechanic has no still. The cast time comes from the damage events. Faith Unmoving has no stored cast, so its part `at` in `mechanics.json` is the time, and only while that pull was still going and someone failed it. A Sanctity of the Ward empty tower is drawn when the towers resolved, about two seconds before Eternal Conviction: every tower to size, the empty ones filled, players who were already dead left out, and anyone outside a tower or sharing one ringed and named in the caption. A log with no positions keeps the text.
+
+`inputs.json` is what the log is missing: ability files the reached phases need, pulls with no positions or mitigation replay, players with no max HP, buff ids with no name, how many calls were made without some input, and every death row that was not judged, with why. `analyze` prints a one-line warning when something is missing. `check` prints the list. Fetch the ability files it names before trusting the calls.
+
+```
+python -m xivloganalyzer check <code>
+```
 
 For a short text digest of one session (counts, pull index, unknown and raw death lines):
 
@@ -66,7 +72,19 @@ Mechanic knowledge lives in `fights/dsr/mechanics.json`. A correction such as "t
 python -m xivloganalyzer reanalyze
 ```
 
-Every saved log whose rules changed is judged again. `notes/classification.md` is the write-up of why Thordan is called the way it is. `tests/test_reference.py` keeps the current 86 raw deaths until we change a call on purpose.
+Every saved log whose rules changed is judged again, and the run lists the calls it changed. `notes/classification.md` is the write-up of why Thordan is called the way it is. `tests/test_reference.py` keeps the current 40 raw deaths until we change a call on purpose.
+
+## Checking calls
+
+`calls.tsv` in each report folder is one line per death: outcome, cause, owners, what decided the owner (`basis`), and the inputs the call was made without. A rule change shows up as changed lines in that file.
+
+```
+python -m xivloganalyzer changes --since main      # every call that differs from main
+python -m xivloganalyzer confirm <code> --pull 68 --name "Kitana Kahn" --outcome fail --why "full HP, no mitigation"
+python -m xivloganalyzer verify                    # do the checked calls still hold?
+```
+
+`confirm` records a checked call in `reviews/<code>/verified.json`, with what the judge said before it was checked. `verify` reports how often the judge agrees with the checked calls now and agreed before they were checked, by mechanic. It fails when a call the user made no longer holds. CI runs it, and lists the calls a pull request moves.
 
 ## Which logs are up to date
 

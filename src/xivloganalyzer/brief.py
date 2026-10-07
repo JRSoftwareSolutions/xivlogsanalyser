@@ -72,11 +72,12 @@ def _blame_line(row: dict) -> str:
     for blame in blames:
         who = blame.get("who") or "?"
         confidence = blame.get("confidence")
-        if confidence is None:
-            parts.append(str(who))
-        else:
-            parts.append(f"{who} {int(confidence)}%")
-    return "Fault: " + "; ".join(parts)
+        text = str(who) if confidence is None else f"{who} {int(confidence)}%"
+        if blame.get("via"):
+            text += f" (via {', '.join(blame['via'])})"
+        parts.append(text)
+    basis = f" [{row['basis']}]" if row.get("basis") else ""
+    return "Fault: " + "; ".join(parts) + basis
 
 
 def format_death(row: dict) -> str:
@@ -87,13 +88,16 @@ def format_death(row: dict) -> str:
         label = f"{mechanic} ({guid})"
     else:
         label = mechanic
+    when = f" · {row['time']}" if row.get("time") else ""
     lines = [
-        f"Pull {row.get('fight')} · {row.get('name')} · {label} — {row.get('outcome')}",
+        f"Pull {row.get('fight')} · {row.get('name')} · {label} — {row.get('outcome')}{when}",
         str(row.get("went_wrong") or "").strip() or "(no line)",
     ]
     blame = _blame_line(row)
     if blame:
         lines.append(blame)
+    if row.get("missing"):
+        lines.append(f"Judged without: {', '.join(row['missing'])}")
     if row.get("first"):
         lines.append("First mistake of the pull.")
     return "\n".join(lines)

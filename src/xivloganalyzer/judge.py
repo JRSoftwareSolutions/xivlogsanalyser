@@ -22,9 +22,14 @@ class Blame:
 
     who: str
     confidence: int
+    # The dead players this share came through: they were missing, and their death was `who`'s.
+    via: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
-        return {"who": self.who, "confidence": int(self.confidence)}
+        payload = {"who": self.who, "confidence": int(self.confidence)}
+        if self.via:
+            payload["via"] = list(self.via)
+        return payload
 
 
 @dataclass
@@ -42,6 +47,8 @@ class Judgment:
     first_mistake: str = ""
     # Who left an empty tower. Blame for cause "empty".
     owners: list[str] = field(default_factory=list)
+    # What decided the owner. See BASES.
+    basis: str = ""
 
     def to_dict(self) -> dict:
         payload = asdict(self.fact)
@@ -55,6 +62,7 @@ class Judgment:
                 "went_wrong": self.went_wrong,
                 "cause": self.cause,
                 "blames": [blame.to_dict() for blame in self.blames],
+                "basis": self.basis,
                 "first": self.first,
                 "first_mistake": self.first_mistake,
             }
@@ -1210,33 +1218,45 @@ def _death_owners(item: Judgment) -> list[str]:
 
 def _passed_on(
     item: Judgment, names: list[str], latest: dict[tuple[int, str], Judgment],
+    via: dict[str, list[str]] | None = None,
 ) -> list[str]:
     """Players who were missing because they were dead, each replaced by whoever owned that death.
 
     A player who died to their own mistake keeps it. A player killed by someone
     else's mistake, a healer's missed heal included, passes it on to that owner.
+    `via` collects, for each owner, the dead players it came through.
     """
     owners: list[str] = []
     for name in names:
         earlier = latest.get((item.fact.fight, name))
         passed = _death_owners(earlier) if earlier is not None else [name]
+        for who in passed:
+            if via is not None and who != name:
+                came = via.setdefault(who, [])
+                if name not in came:
+                    came.append(name)
         owners += [who for who in passed if who not in owners]
     return owners
 
 
-def _missing_owners(item: Judgment, latest: dict[tuple[int, str], Judgment]) -> list[str]:
+def _missing_owners(
+    item: Judgment, latest: dict[tuple[int, str], Judgment], via: dict[str, list[str]] | None = None,
+) -> list[str]:
     """Who left a mechanic short: the dead, passed on to their owners, then the living who were elsewhere."""
-    owners = _passed_on(item, item.fact.down, latest)
+    owners = _passed_on(item, item.fact.down, latest, via)
     owners += [name for name in [*item.fact.unsoaked, *item.fact.doubled] if name not in owners]
     return owners
 
 
-def _healers_at(item: Judgment, healers: list[str], latest: dict[tuple[int, str], Judgment]) -> list[str]:
+def _healers_at(
+    item: Judgment, healers: list[str], latest: dict[tuple[int, str], Judgment],
+    via: dict[str, list[str]] | None = None,
+) -> list[str]:
     """The healers who could heal this hit. A healer already dead passes their share
     on to whoever owned that healer's death."""
     owners: list[str] = []
     for healer in healers:
-        passed = _passed_on(item, [healer], latest) if healer in item.fact.dead else [healer]
+        passed = _passed_on(item, [healer], latest, via) if healer in item.fact.dead else [healer]
         owners += [who for who in passed if who not in owners]
     return owners
 
@@ -1268,7 +1288,22 @@ def _blame(
     healers: list[str],
     latest: dict[tuple[int, str], Judgment],
 ) -> None:
-    """Who owns this death, from the rule that judged it."""
+    """Who owns this death, from the rule that judged it, and what decided it."""
+    via: dict[str, list[str]] = {}
+    _owners_for(item, judgments, pack, healers, latest, via)
+    for blame in item.blames:
+        blame.via = via.get(blame.who, [])
+    item.basis = _basis(item)
+
+
+def _owners_for(
+    item: Judgment,
+    judgments: list[Judgment],
+    pack: FightPack,
+    healers: list[str],
+    latest: dict[tuple[int, str], Judgment],
+    via: dict[str, list[str]],
+) -> None:
     if item.cause == "none":
         item.blames = []
     elif item.cause in {"personal", "self"}:
@@ -1282,9 +1317,9 @@ def _blame(
     elif item.cause in {"empty", "redirected"}:
         # A redirected jump follows the marker, so the living players of that group did nothing wrong.
         if item.cause == "redirected":
-            item.owners = _passed_on(item, item.fact.down, latest)
+            item.owners = _passed_on(item, item.fact.down, latest, via)
         else:
-            item.owners = _missing_owners(item, latest)
+            item.owners = _missing_owners(item, latest, via)
         if len(item.owners) == 1 and item.owners[0] in GROUP_LABELS:
             item.blames = _group(item.owners[0], 2)
         else:
@@ -1300,7 +1335,7 @@ def _blame(
         cohort = [other for other in judgments if _same_cast(item, other)]
         item.blames = _group("Miscommunication", len(_overlap_names(item, cohort)))
     elif item.cause == "healers":
-        item.blames = _shares(_healers_at(item, healers, latest) or ["Healers"])
+        item.blames = _shares(_healers_at(item, healers, latest, via) or ["Healers"])
     elif item.cause == "mitigation":
         item.blames = _group("Assigned mitigation", 2)
     elif item.cause == "tower":
@@ -1310,7 +1345,7 @@ def _blame(
     elif item.cause == "clip":
         item.blames = _group("Out of position", 3)
     elif item.cause == "missing" and (item.fact.down or item.fact.unsoaked or item.fact.doubled):
-        item.owners = _missing_owners(item, latest)
+        item.owners = _missing_owners(item, latest, via)
         item.blames = _shares(item.owners)
     elif item.cause == "missing":
         if not item.fact.stack:
@@ -1321,16 +1356,54 @@ def _blame(
             missing = max(typical - (item.fact.stack or 0), 1)
             item.blames = _group("Missing bodies", missing)
     elif item.cause == "resolve":
-        owners = _healers_at(item, healers, latest) or ["Healers"]
+        owners = _healers_at(item, healers, latest, via) or ["Healers"]
         if _no_party_mit(item.fact):
             owners.append("Party mitigation")
         item.blames = _shares(owners)
     elif item.cause == "low":
-        owners = _healers_at(item, healers, latest) or ["Healers"]
+        owners = _healers_at(item, healers, latest, via) or ["Healers"]
         owners.append("Earlier damage")
         item.blames = _shares(owners)
     else:
         item.blames = []
+
+
+# What decided who owns a death, from strongest to weakest evidence.
+BASES = {
+    "hit": "their own damage packet: its size, the HP and mitigation behind it",
+    "debuff": "a status: a marker, a number, or a damage amp",
+    "position": "where people stood when it resolved",
+    "hit-list": "who the cast hit, and who it should have hit",
+    "role": "a role rule: the healers or the party's mitigation, with nobody else to name",
+    "no-packet": "no damage packet: the deathwall",
+    "label": "nobody could be named, so a group label holds it",
+}
+
+
+def _basis(item: Judgment) -> str:
+    """What decided the owner. A call whose owners are all group labels is `label`."""
+    cause = item.cause
+    named = [blame.who for blame in item.blames if blame.who not in CONTEXT_SHARES | GROUP_LABELS]
+    if cause == "none" or not item.blames:
+        return ""
+    if not named:
+        return "label"
+    if item.fact.guid == 0 or cause == "after":
+        return "no-packet"
+    if cause in {"personal", "self"}:
+        return "debuff" if _vuln(item.fact) or item.went_wrong.endswith("damage amp.") else "hit"
+    if cause == "marker":
+        people = [*item.fact.clipped_by, item.fact.name]
+        return "position" if all(name in item.fact.in_spot for name in people) else "debuff"
+    if cause in {"dropped", "overlap", "arrow"}:
+        return "position"
+    if cause in {"marked"}:
+        return "debuff"
+    if cause in {"empty", "redirected", "missing"}:
+        return "hit-list"
+    if cause in {"healers", "resolve", "low"}:
+        return "role"
+    return "label"
 
 
 def judge_report(

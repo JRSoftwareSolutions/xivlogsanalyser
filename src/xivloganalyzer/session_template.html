@@ -236,6 +236,7 @@
   .blame b { display: inline; font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--fail); font-variant-numeric: tabular-nums; }
   .blame.sure { background: var(--ok-bg); }
   .blame.sure b { color: var(--ok); }
+  .blames .basis { color: var(--muted); font-size: 12px; align-self: center; }
   .quiet { color: var(--muted); }
   .clean { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
   .component { padding: 12px 0; }
@@ -663,13 +664,27 @@ function jobMark(job) {
   if (!src) return `<span class="job">${esc(job)}</span>`;
   return `<img class="job-icon" alt="${esc(job)}" title="${esc(job)}" src="${src}">`;
 }
+// What decided who owns a death, as `basis` on each death.
+const BASIS = {
+  "hit": "their own hit",
+  "debuff": "a marker, number, or damage amp",
+  "position": "where people stood",
+  "hit-list": "who the cast hit",
+  "role": "the role rule",
+  "no-packet": "no damage packet",
+  "label": "nobody to name",
+};
 function blameChips(row) {
   const blames = row.blames || [];
   if (!blames.length) return "";
-  return `<div class="blames">${blames.map(blame => {
-    const sure = blame.confidence >= 100 ? " sure" : "";
-    return `<span class="blame${sure}" title="How sure this blame is">${esc(blame.who)} <b>${blame.confidence}%</b></span>`;
-  }).join("")}</div>`;
+  const firm = !["label", "role"].includes(row.basis);
+  const chips = blames.map(blame => {
+    const sure = blame.confidence >= 100 && firm ? " sure" : "";
+    const via = blame.via && blame.via.length ? `, passed on from ${blame.via.join(" and ")}'s death` : "";
+    return `<span class="blame${sure}" title="Share of this death${esc(via)}">${esc(blame.who)} <b>${blame.confidence}%</b></span>`;
+  }).join("");
+  const basis = BASIS[row.basis] ? `<span class="basis">from ${BASIS[row.basis]}</span>` : "";
+  return `<div class="blames">${chips}${basis}</div>`;
 }
 function deathCard(row, opts) {
   const cast = row.cast && !(opts && opts.skipCast) ? `<span class="time">${esc(row.cast)}</span>` : "";
