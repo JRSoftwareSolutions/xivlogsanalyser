@@ -91,6 +91,7 @@
       "category": "tower",
       "scales_with_stack": false,
       "fail_above": 150000,
+      "marker_owns_clip": true,
       "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
       "moments": [
         {

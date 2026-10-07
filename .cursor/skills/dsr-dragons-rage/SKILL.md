@@ -34,4 +34,4 @@ The three non-tanks who do not have the blue marker stack under Thordan. The tan
 
 45 casts. Lived shares are usually 5 bodies: those three non-tanks plus both tanks, about 60–80k on a non-tank and about 26k on a tank. A share of 3 lands around 102–113k. Body counts in this log: 5 on 19 casts, 4 on 14, 3 on 9, and 1 or 2 on the failed cleaves.
 
-Because that assignment is unknown, the lived share of 5 stays the full share. A share of 3 under the role cap and under 200,000 is two bodies missing and stays raw. The five raw deaths are that short share. Anything over 200,000, or Magic Vulnerability Up, is the failed cleave. `typical_targets` stays 5.
+Because that assignment is unknown, the lived share of 5 stays the full share. A share of 3 under the role cap and under 200,000 is two bodies missing and stays raw. The five raw deaths are that short share. Anything over 200,000, or Magic Vulnerability Up, is the failed cleave. `typical_targets` stays 5. When that Magic Vulnerability Up came from a Skyward Leap that clipped the stack, the marker holder owns the death (`dsr-skyward-leap`, marker clip).

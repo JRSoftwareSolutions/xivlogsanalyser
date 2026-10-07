@@ -54,6 +54,7 @@ class Mechanic:
     one_target: bool = False
     requires_personal_mit: bool = False
     off_tank: str = ""
+    marker_owns_clip: bool = False
     moments: list[Moment] = field(default_factory=list)
 
     def cap_for(self, role: str) -> int | None:
@@ -230,6 +231,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 one_target=bool(raw.get("one_target", False)),
                 requires_personal_mit=bool(raw.get("requires_personal_mit", False)),
                 off_tank=raw.get("off_tank") or "",
+                marker_owns_clip=bool(raw.get("marker_owns_clip", False)),
                 moments=[
                     Moment(
                         should_have_been=row.get("should_have_been") or "",
