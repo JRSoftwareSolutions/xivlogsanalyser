@@ -6,21 +6,73 @@
 <title>__TITLE__</title>
 <style>
   :root {
-    --bg: #f4f1ea; --paper: #fffcf7; --ink: #1c1915; --muted: #5e584f;
-    --line: #e2dbd0; --raw: #9a3412; --raw-bg: #fff1e8; --fail: #7c4a12;
-    --fail-bg: #fbf3e4; --ok: #1f5c45; --ok-bg: #e7f4ee; --env: #3f4a57; --env-bg: #eef2f5;
+    color-scheme: dark;
+    --bg: #0d1526; --paper: #152033; --ink: #e4ecf7; --muted: #93a4bd;
+    --line: #2a3b56; --raw: #e0b0a4; --raw-bg: #3a2a32; --fail: #d9c4a4;
+    --fail-bg: #332e28; --ok: #a8cfc0; --ok-bg: #1d3330; --env: #b7c4d4; --env-bg: #243244;
+    --hover: #1c2b44; --accent: #9eb6e8; --field: #10192c; --rule: #7f93ad;
+    --scroll-track: #0b1322; --scroll-thumb: #7ea4d4; --scroll-thumb-hover: #a9c4e8;
+    --nav-width: 300px;
   }
   * { box-sizing: border-box; }
+  @supports not selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+    }
+  }
+  *::-webkit-scrollbar { width: 14px; height: 14px; }
+  *::-webkit-scrollbar-track {
+    background: var(--scroll-track);
+    border-radius: 999px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #a9c4e8, #6d94c6);
+    border: 3px solid var(--scroll-track);
+    border-radius: 999px;
+  }
+  *::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hover); }
+  *::-webkit-scrollbar-corner { background: transparent; }
+  ::selection { background: #2a4a78; color: var(--ink); }
   html, body { height: 100%; }
   body {
-    margin: 0; display: grid; grid-template-columns: 300px 1fr;
+    margin: 0; display: grid; grid-template-columns: var(--nav-width) minmax(0, 1fr);
     background: var(--bg); color: var(--ink); font: 16px/1.45 "Segoe UI", system-ui, sans-serif;
   }
   aside {
+    grid-column: 1; grid-row: 1; min-width: 0;
     background: var(--paper); border-right: 1px solid var(--line);
     overflow: auto; padding: 16px 12px 28px;
   }
-  main { overflow: auto; padding: 24px 28px 64px; }
+  #nav-split {
+    position: fixed; z-index: 5; top: 0; bottom: 0;
+    left: calc(var(--nav-width) - 3px); width: 12px;
+    border: 0; padding: 0; background: transparent;
+    cursor: col-resize; touch-action: none; user-select: none;
+  }
+  #nav-split::before {
+    content: ""; position: absolute; top: 0; bottom: 0; left: 3px; width: 1px;
+    background: transparent;
+  }
+  #nav-split::after {
+    content: ""; position: absolute; top: 50%; left: 1px; width: 4px; height: 4px;
+    margin-top: -2px; border-radius: 50%; background: var(--muted);
+    box-shadow: 0 -7px 0 var(--muted), 0 7px 0 var(--muted);
+    opacity: 0.45;
+  }
+  #nav-split:hover::before,
+  #nav-split:focus-visible::before,
+  body.nav-resizing #nav-split::before {
+    background: var(--accent); width: 2px; left: 2px;
+  }
+  #nav-split:hover::after,
+  #nav-split:focus-visible::after,
+  body.nav-resizing #nav-split::after {
+    opacity: 1; background: var(--accent);
+    box-shadow: 0 -7px 0 var(--accent), 0 7px 0 var(--accent);
+  }
+  #nav-split:focus-visible { outline: none; }
+  main { grid-column: 2; grid-row: 1; overflow: auto; padding: 24px 28px 64px; min-width: 0; }
   h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.03em; }
   h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
   h3 { margin: 0; font-size: 18px; }
@@ -34,18 +86,19 @@
     background: transparent; border: 0; border-radius: 8px; cursor: pointer;
     margin: 0 0 10px; padding: 4px 8px;
   }
-  button.fight-head:hover, button.fight-head.on { background: #f7f4ee; }
+  button.fight-head:hover, button.fight-head.on { background: var(--hover); }
   .meta { color: var(--muted); margin: 0; }
-  a { color: #243056; }
+  a { color: var(--accent); }
   button.nav, button.link {
     font: inherit; color: inherit; cursor: pointer; text-align: left;
   }
-  button.link { background: none; border: 0; padding: 0; color: #243056; }
+  button.link { background: none; border: 0; padding: 0; color: var(--accent); }
   button.nav {
     width: 100%; display: flex; justify-content: space-between; gap: 8px; align-items: baseline;
     border: 0; border-radius: 8px; background: transparent; padding: 7px 8px;
   }
-  button.nav:hover { background: #f7f4ee; }
+  button.nav > span:first-child { min-width: 0; }
+  button.nav:hover { background: var(--hover); }
   button.nav[hidden] { display: none; }
   button.nav.on { background: var(--raw-bg); }
   button.nav .countline { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -64,8 +117,8 @@
     border-color: transparent transparent transparent currentColor;
   }
   .fold[open] > summary::before { transform: rotate(90deg); }
-  .fold summary:hover { background: #f7f4ee; color: var(--ink); }
-  .fold-title { flex: 1; }
+  .fold summary:hover { background: var(--hover); color: var(--ink); }
+  .fold-title { flex: 1; min-width: 0; }
   .fold .countline { color: var(--muted); font-size: 12px; letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
   details.session > summary {
     text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 600; color: var(--ink);
@@ -79,8 +132,9 @@
   }
   input.filter {
     width: 100%; margin: 4px 0 8px; padding: 7px 8px; border-radius: 8px;
-    border: 1px solid var(--line); font: inherit; background: #fff;
+    border: 1px solid var(--line); font: inherit; color: var(--ink); background: var(--field);
   }
+  input.filter::placeholder { color: var(--muted); }
   header { display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; margin-bottom: 16px; }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 16px; }
   .stat { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
@@ -96,6 +150,11 @@
   .mech:first-of-type, .pull-block:first-of-type { border-top: 0; padding-top: 0; }
   .mech-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
   .death { padding: 10px 0 4px; }
+  .death-body { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 16px; align-items: start; }
+  .stills { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+  .still { margin: 8px 0 0; }
+  .still svg { width: 300px; height: 312px; display: block; background: #f7f4ee; border: 1px solid var(--line); border-radius: 12px; }
+  .still figcaption { color: var(--muted); font-size: 13px; margin-top: 6px; }
   .who { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .time, .job { color: var(--muted); }
   .job-icon { width: 20px; height: 20px; display: block; }
@@ -119,10 +178,10 @@
   .seat {
     display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
     border-radius: 999px; padding: 3px 8px 3px 4px; border: 1px solid var(--line);
-    background: #f7f4ee;
+    background: var(--hover);
   }
-  .seat.ok { background: var(--ok-bg); border-color: #cfe3d8; color: var(--ok); }
-  .seat.fail { background: var(--fail-bg); border-color: #e6d3b0; color: var(--fail); }
+  .seat.ok { background: var(--ok-bg); border-color: #3f6a5e; color: var(--ok); }
+  .seat.fail { background: var(--fail-bg); border-color: #6d624c; color: var(--fail); }
   .seat .job-icon { width: 24px; height: 24px; }
   .seat-name { color: var(--ink); font-weight: 650; }
   .mark { width: 16px; height: 16px; display: block; flex: 0 0 auto; }
@@ -146,17 +205,17 @@
     border-color: transparent transparent transparent var(--muted);
   }
   details.session-preview[open] > summary::before { transform: rotate(90deg); }
-  details.session-preview > summary:hover { background: #f7f4ee; }
+  details.session-preview > summary:hover { background: var(--hover); }
   details.session-preview > summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   .preview-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .preview-title { font-size: 16px; font-weight: 650; }
   .preview-body { padding: 2px 8px 12px 18px; }
   button.open-session {
-    font: inherit; font-size: 13px; color: #243056; background: #fff;
+    font: inherit; font-size: 13px; color: var(--accent); background: var(--field);
     border: 1px solid var(--line); border-radius: 999px;
     padding: 4px 10px; margin: 10px 4px 0 8px; cursor: pointer;
   }
-  button.open-session:hover { background: #f7f4ee; }
+  button.open-session:hover { background: var(--hover); }
   .reach {
     display: grid; grid-template-columns: 12.5rem minmax(0, 1fr); height: 480px; margin-top: 4px;
   }
@@ -173,12 +232,12 @@
   .mini-plot { height: 100%; width: 100%; }
   .hline {
     position: absolute; left: 0; right: 0; height: 0;
-    border-top: 2px dotted #5c554c;
+    border-top: 2px dotted var(--rule);
     pointer-events: none; z-index: 2;
   }
-  .mini-plot .hline, .trend-plot .hline { border-top-width: 1px; border-top-color: rgba(94, 88, 79, 0.7); }
-  .hline.goal { border-top-style: dashed; border-top-color: #b9b1a6; }
-  .reach-names span.goal { color: #8d867c; }
+  .mini-plot .hline, .trend-plot .hline { border-top-width: 1px; border-top-color: rgba(147, 164, 189, 0.55); }
+  .hline.goal { border-top-style: dashed; border-top-color: rgba(147, 164, 189, 0.85); }
+  .reach-names span.goal { color: var(--muted); }
   .chart .bar {
     position: relative; z-index: 1;
     width: 9px; flex: 0 0 9px; min-height: 4px; border: 0; padding: 0; cursor: pointer;
@@ -197,7 +256,7 @@
   .trend-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 3; overflow: visible; }
   .trend-dot {
     position: absolute; z-index: 4; width: 10px; height: 10px; border-radius: 50%;
-    background: var(--paper); border: 2px solid #243056; transform: translate(-50%, 50%);
+    background: var(--paper); border: 2px solid var(--accent); transform: translate(-50%, 50%);
     pointer-events: none;
   }
   button.trend-col {
@@ -205,7 +264,7 @@
     cursor: pointer; padding: 0; height: 100%; flex: 0 0 auto;
     display: flex; align-items: flex-end;
   }
-  button.trend-col:hover, button.trend-col:focus-visible { background: rgba(28, 25, 21, 0.05); }
+  button.trend-col:hover, button.trend-col:focus-visible { background: rgba(228, 236, 247, 0.06); }
   .trend-bars { display: flex; align-items: flex-end; width: 100%; height: 100%; gap: 2px; }
   .trend-bars i { flex: 0 0 9px; width: 9px; min-height: 2px; border-radius: 2px 2px 0 0; display: block; }
   .trend-axis { display: flex; margin-top: 6px; }
@@ -219,7 +278,7 @@
   .swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
   .pip {
     width: 10px; height: 10px; border-radius: 2px; flex: 0 0 auto;
-    box-shadow: inset 0 0 0 1px rgba(28, 25, 21, 0.18);
+    box-shadow: inset 0 0 0 1px rgba(228, 236, 247, 0.22);
   }
   .pct {
     display: inline-block; font-size: 12px; font-weight: 700; line-height: 1.45;
@@ -237,12 +296,26 @@
     background: var(--paper); border-bottom: 1px solid var(--line);
   }
   .key-phase { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
-  .key-phase-name {
+  button.key-phase-name {
     display: inline-flex; align-items: center; gap: 5px;
-    font-size: 12px; font-weight: 650; margin-right: 2px;
+    font: inherit; font-size: 12px; font-weight: 650; margin-right: 2px;
+    color: inherit; cursor: pointer; border: 0; background: transparent;
+    border-radius: 999px; padding: 1px 6px 1px 2px;
   }
+  button.key-phase-name:hover, button.key-phase-name.in { background: var(--hover); }
+  button.key-phase-name.on { background: var(--raw-bg); }
+  button.key-mech {
+    font: inherit; font-size: 12px; font-weight: 700; line-height: 1.45;
+    white-space: nowrap; cursor: pointer;
+    border-radius: 999px; padding: 0 6px; border: 1px solid transparent;
+  }
+  button.key-mech:hover, button.key-mech.on { outline: 2px solid var(--ink); outline-offset: 1px; }
+  button.key-phase-name:focus-visible, button.key-mech:focus-visible {
+    outline: 2px solid var(--ink); outline-offset: 2px;
+  }
+  .pull-empty { margin: 6px 8px; font-size: 13px; }
   .route {
-    --stop: #8a5a2b;
+    --stop: #6a81a0;
     list-style: none; margin: 14px 0 2px; padding: 2px 0;
   }
   .route li {
@@ -267,25 +340,41 @@
   }
   .route button.station {
     font: inherit; font-size: 18px; font-weight: 600; line-height: 1.3;
-    color: #243056; background: transparent; border: 0; border-radius: 8px;
+    color: var(--accent); background: transparent; border: 0; border-radius: 8px;
     text-align: left; cursor: pointer; padding: 10px 10px 10px 4px; width: 100%;
   }
-  .route li:hover button.station { background: #f7f4ee; }
+  .route li:hover button.station { background: var(--hover); }
   .route li:hover .dot { background: var(--stop); }
   .route button.station:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  body.nav-resizing { cursor: col-resize; user-select: none; }
+  body.nav-resizing * { cursor: col-resize; }
+  body.nav-resizing aside,
+  body.nav-resizing main { pointer-events: none; }
   @media (max-width: 860px) {
     body { display: block; }
     aside { border-right: 0; border-bottom: 1px solid var(--line); max-height: 42vh; }
-    .stats, .cols, header, .mech-head { display: block; }
+    #nav-split { display: none; }
+    .stats, .cols, header, .mech-head, .death-body { display: block; }
     .reach { grid-template-columns: 9.5rem minmax(0, 1fr); height: 420px; }
     .reach.mini { grid-template-columns: 8.5rem minmax(0, 1fr); }
     .trend-reach { grid-template-columns: 8.5rem minmax(0, 1fr); }
     .reach-names span { font-size: 11px; }
   }
 </style>
+<script>
+var NAV = { key: "nav-width", min: 200, gutter: 320, def: 300 };
+try {
+  var savedNav = Number(localStorage.getItem(NAV.key));
+  if (savedNav >= NAV.min) {
+    var navCap = Math.max(NAV.min, innerWidth - NAV.gutter);
+    document.documentElement.style.setProperty("--nav-width", Math.round(Math.min(navCap, savedNav)) + "px");
+  }
+} catch (e) {}
+</script>
 </head>
 <body>
 <aside id="nav"></aside>
+<div id="nav-split" role="separator" aria-orientation="vertical" aria-label="Resize sidebar" aria-description="Drag to resize the sidebar. Double-click to reset." aria-valuemin="200" aria-valuenow="300" tabindex="0"></div>
 <main id="app"></main>
 <script>
 const DATA = __DATA__;
@@ -356,14 +445,135 @@ function blameChips(row) {
 }
 function deathCard(row) {
   const cast = row.cast ? `<span class="time">${row.cast}</span>` : "";
-  return `<div class="death">
-    <div class="who"><span class="time">${row.time}</span>${cast}<strong>${row.name}</strong>${jobMark(row.job)}</div>
-    <div class="cols">
+  const body = `<div class="cols">
       <div><b>What happened</b>${row.happened}</div>
       <div><b>What it should have been</b>${row.should}</div>
       <div><b>Whose fault</b>${blameChips(row)}${row.wrong}</div>
-    </div>
+    </div>`;
+  const framed = row.frame
+    ? `<div class="death-body">${stillFrame(row.frame)}${body}</div>`
+    : body;
+  return `<div class="death">
+    <div class="who"><span class="time">${row.time}</span>${cast}<strong>${row.name}</strong>${jobMark(row.job)}</div>
+    ${framed}
   </div>`;
+}
+function stillFrame(frame) {
+  const size = 300;
+  const head = 22;
+  const reach = 46;
+  const scale = ((size - head) / 2 - 14) / reach;
+  const cx = size / 2;
+  const cy = head + (size - head) / 2;
+  const pt = (x, y) => [cx + x * scale, cy + y * scale];
+  const parts = [];
+  const heading = frame.title || (frame.killedBy ? `Killed by ${frame.killedBy}` : "");
+  if (heading) parts.push(`<text x="${cx}" y="16" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1915">${esc(heading)}</text>`);
+  const [fx, fy] = pt(0, 0);
+  const floor = ARENA_PX(scale);
+  parts.push(`<circle cx="${fx}" cy="${fy}" r="${floor}" fill="#fffcf7" stroke="#e2dbd0" stroke-width="2"></circle>`);
+  const [nx, ny] = pt(0, -22);
+  parts.push(`<text x="${nx}" y="${ny}" text-anchor="middle" font-size="11" fill="#5e584f">N</text>`);
+  const marks = frame.marks || [];
+  const draw = (kinds) => {
+    for (const mark of marks) if (kinds.includes(mark.kind)) parts.push(stillMark(mark, pt, scale));
+  };
+  draw(["tower", "orb"]);
+  const marked = (player) => player.dead || player.failed;
+  for (const player of frame.players || []) {
+    if (marked(player)) continue;
+    parts.push(stillPlayer(player, pt, scale));
+  }
+  for (const player of frame.players || []) {
+    if (!marked(player)) continue;
+    parts.push(stillPlayer(player, pt, scale));
+  }
+  draw(["comet", "gaze", "boss", "hit"]);
+  for (const player of frame.players || []) {
+    if (player.face) {
+      const [x, y] = pt(player.x, player.y);
+      parts.push(facingArrow(x, y, player.face, scale));
+    }
+  }
+  for (const player of frame.players || []) {
+    if (!marked(player)) continue;
+    const [x, y] = pt(player.x, player.y);
+    parts.push(`<text x="${x}" y="${y + 26}" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">${esc(player.name)}</text>`);
+  }
+  return `<figure class="still"><svg viewBox="0 0 ${size} ${size + 12}" role="img" aria-label="${esc(frame.caption)}">${parts.join("")}</svg><figcaption>${esc(frame.caption)}</figcaption></figure>`;
+}
+function ARENA_PX(scale) { return 20 * scale; }
+function stillMark(mark, pt, scale) {
+  const [x, y] = pt(mark.x, mark.y);
+  if (mark.kind === "hit") {
+    const [x2, y2] = pt(mark.x2, mark.y2);
+    return `<line x1="${x}" y1="${y}" x2="${x2}" y2="${y2}" stroke="#9a3412" stroke-width="2"></line>`;
+  }
+  if (mark.kind === "gaze") {
+    const s = 11;
+    return `<polygon points="${x},${y - s} ${x + s},${y} ${x},${y + s} ${x - s},${y}" fill="#fff1e8" stroke="#9a3412" stroke-width="2"><title>Gaze</title></polygon>`;
+  }
+  if (mark.kind === "tower") {
+    const s = 11;
+    return `<rect x="${x - s}" y="${y - s}" width="${s * 2}" height="${s * 2}" fill="none" stroke="#7c4a12" stroke-width="2"><title>Tower</title></rect>`;
+  }
+  if (mark.kind === "comet") {
+    return `<circle cx="${x}" cy="${y}" r="14" fill="none" stroke="#9a3412" stroke-width="2"><title>Comet</title></circle>`;
+  }
+  if (mark.kind === "orb") {
+    return `<circle cx="${x}" cy="${y}" r="11" fill="#fbf3e4" stroke="#7c4a12" stroke-width="2"><title>Orb</title></circle>`;
+  }
+  if (mark.kind === "boss") {
+    const tick = bossTick(mark, x, y, scale);
+    return `${tick}<circle cx="${x}" cy="${y}" r="7" fill="#1c1915"><title>${esc(mark.name || "Boss")}</title></circle>`;
+  }
+  return "";
+}
+function bossTick(mark, x, y, scale) {
+  if (!mark.face) return "";
+  const near = 8;
+  const far = 8 + 4 * scale;
+  const x1 = x + mark.face[0] * near;
+  const y1 = y + mark.face[1] * near;
+  const x2 = x + mark.face[0] * far;
+  const y2 = y + mark.face[1] * far;
+  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1c1915" stroke-width="2"></line>`;
+}
+function stillPlayer(player, pt, scale) {
+  const [x, y] = pt(player.x, player.y);
+  const fade = player.stale ? ` opacity="0.45"` : "";
+  const bits = [];
+  if (player.dead || player.failed) {
+    bits.push(`<circle cx="${x}" cy="${y}" r="13" fill="none" stroke="#9a3412" stroke-width="2"></circle>`);
+  }
+  if (player.prey) {
+    bits.push(`<circle cx="${x}" cy="${y}" r="15" fill="none" stroke="#7c4a12" stroke-width="1.5" stroke-dasharray="3 2"></circle>`);
+  }
+  const src = JOB_ICONS[player.job];
+  const state = player.dead ? ", killed" : (player.failed ? ", failed" : "");
+  const title = `${player.name}${state}${player.prey ? ", prey" : ""}${player.hysteria ? ", hysteria" : ""}`;
+  if (src) {
+    bits.push(`<image href="${src}" x="${x - 10}" y="${y - 10}" width="20" height="20"${fade}><title>${esc(title)}</title></image>`);
+  } else {
+    bits.push(`<circle cx="${x}" cy="${y}" r="8" fill="#5e584f"${fade}><title>${esc(title)}</title></circle>`);
+  }
+  return bits.join("");
+}
+function facingArrow(x, y, face, scale) {
+  const start = 14;
+  const tip = start + 5 * scale;
+  const x1 = x + face[0] * start;
+  const y1 = y + face[1] * start;
+  const x2 = x + face[0] * tip;
+  const y2 = y + face[1] * tip;
+  const ang = Math.atan2(face[1], face[0]);
+  const wing = 6;
+  const spread = 0.45;
+  const lx = x2 - Math.cos(ang - spread) * wing;
+  const ly = y2 - Math.sin(ang - spread) * wing;
+  const rx = x2 - Math.cos(ang + spread) * wing;
+  const ry = y2 - Math.sin(ang + spread) * wing;
+  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#9a3412" stroke-width="2"></line><polygon points="${x2},${y2} ${lx},${ly} ${rx},${ry}" fill="#9a3412"></polygon>`;
 }
 function route() {
   const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
@@ -507,21 +717,21 @@ function contrast(a, b) {
 function inkFor(h, s, l) {
   const [r, g, b] = hslToRgb(h, s, l);
   const lum = relLum(r, g, b);
-  const dark = relLum(28, 25, 21);
-  const light = relLum(255, 252, 247);
-  return contrast(lum, dark) >= contrast(lum, light) ? "#1c1915" : "#fffcf7";
+  const dark = relLum(13, 21, 38);
+  const light = relLum(228, 236, 247);
+  return contrast(lum, dark) >= contrast(lum, light) ? "#0d1526" : "#e4ecf7";
 }
 function progressTint(phaseId, t) {
   const id = Number(phaseId);
-  if (!id) return { bg: "#eef2f5", fg: "#3f4a57", border: "#c5ced6" };
-  const [h, s] = hexToHsl(phaseColor(id));
+  if (!id) return { bg: "#243244", fg: "#b7c4d4", border: "#3d5168" };
+  const [h] = hexToHsl(phaseColor(id));
   const clamped = Math.min(1, Math.max(0, t));
-  const L = 86 + (24 - 86) * clamped;
-  const sat = Math.min(94, 46 + clamped * Math.max(28, s - 8));
+  const L = 32 - clamped * 8;
+  const sat = 24 + clamped * 12;
   return {
     bg: `hsl(${Math.round(h)} ${Math.round(sat)}% ${Math.round(L)}%)`,
     fg: inkFor(h, sat, L),
-    border: `hsl(${Math.round(h)} ${Math.round(Math.min(94, sat + 6))}% ${Math.round(Math.max(24, L - 16))}%)`,
+    border: `hsl(${Math.round(h)} ${Math.round(Math.min(42, sat + 6))}% ${Math.round(Math.max(16, L - 8))}%)`,
   };
 }
 function mechanicTint(phaseId, index, count) {
@@ -568,12 +778,12 @@ function pullKey(session) {
     const marks = phaseMarks(session, row.id);
     const chips = marks.filter(mark => row.mechs.has(mark.name)).map(mark => {
       const tint = mechanicTint(row.id, marks.indexOf(mark), marks.length);
-      return `<span class="pct" style="${tintStyle(tint)}" title="${esc(mark.name)}">${esc(shortMech(mark.name))}</span>`;
+      return `<button type="button" class="key-mech" data-pull-phase="${row.id}" data-pull-mechanic="${esc(mark.name)}" aria-pressed="false" title="Show pulls that ended at ${esc(mark.name)}" style="${tintStyle(tint)}">${esc(shortMech(mark.name))}</button>`;
     }).join("");
     const hint = chips ? "" : ` title="The percent shade follows how much HP is left in ${esc(row.name)}"`;
-    return `<div class="key-phase"${hint}><span class="key-phase-name"><i class="pip" style="background:${phaseColor(row.id)}" aria-hidden="true"></i>${esc(row.name)}</span>${chips}</div>`;
+    return `<div class="key-phase"${hint}><button type="button" class="key-phase-name" data-pull-phase="${row.id}" data-pull-name="${esc(row.name)}" aria-pressed="false" title="Show pulls that ended in ${esc(row.name)}"><i class="pip" style="background:${phaseColor(row.id)}" aria-hidden="true"></i>${esc(row.name)}</button>${chips}</div>`;
   }).join("");
-  return `<div class="pull-key">${body}</div>`;
+  return `<div class="pull-key" data-session="${esc(session.code)}" role="group" aria-label="Filter pulls by phase or mechanic">${body}</div>`;
 }
 function pullNav(session) {
   const overview = overviewMap(session);
@@ -583,7 +793,7 @@ function pullNav(session) {
     const where = reach.mechanic ? `${reach.mechanic} · ` : "";
     const label = `pull ${pull.id} ${pull.when || ""} ${reach.phaseName} ${reach.mechanic} ${reach.bossPct}`.toLowerCase();
     const title = `Pull ${pull.id} · ${reach.phaseName}${reach.mechanic ? " · " + reach.mechanic : ""} · ${reach.bossPct}%`;
-    return `<button class="nav pull" data-go="s/${session.code}/pull/${pull.id}" data-label="${esc(label)}" title="${esc(title)}" style="--phase:${reach.phase}">
+    return `<button class="nav pull" data-go="s/${session.code}/pull/${pull.id}" data-label="${esc(label)}" data-phase="${reach.phaseId}" data-mechanic="${esc(reach.mechanic)}" title="${esc(title)}" style="--phase:${reach.phase}">
       <span class="pull-name"><i class="pip" style="background:${reach.phase}" title="${esc(reach.phaseName)}" aria-hidden="true"></i>Pull ${pull.id} <span class="quiet">${when}</span><span class="sr">${esc(reach.phaseName)}${reach.mechanic ? ", " + esc(reach.mechanic) : ""}</span></span>
       <span class="pct" style="${tintStyle(reach.tint)}" title="${esc(where)}${reach.bossPct}%">${reach.bossPct}%</span>
     </button>`;
@@ -610,7 +820,7 @@ function sessionEntry(item, where) {
     `pulls-${item.code}`,
     "Pulls",
     session.pulls.length,
-    pullKey(session) + pullNav(session),
+    pullKey(session) + `<p class="quiet pull-empty" hidden>No pulls ended here.</p>` + pullNav(session),
     open && (where.view === "pull" || where.view === "fight"),
   );
   const mechs = fold(
@@ -663,8 +873,8 @@ function phaseRoute(mechs, color) {
   return `<ol class="route" style="--stop:${color}">${stops}</ol>`;
 }
 function phaseColor(id) {
-  const colors = ["#3d6b8a", "#b45309", "#9f1239", "#6d28d9", "#0f766e", "#a16207", "#1d4ed8", "#854d0e"];
-  return colors[(Number(id) - 1) % colors.length] || "#5e584f";
+  const colors = ["#61879e", "#a87557", "#9e6173", "#7f6f9b", "#5b8f85", "#a38b5c", "#6a81a0", "#9a7d5b"];
+  return colors[(Number(id) - 1) % colors.length] || "#93a4bd";
 }
 function overviewOf(session) {
   return (session && session.overview) || { pulls: [], phases: [], best: null };
@@ -846,7 +1056,7 @@ function trendLine(sessions, scale, spans) {
     carry = y1;
   });
   if (vertices.length < 2) return "";
-  return `<svg class="trend-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${vertices.join(" ")}" fill="none" stroke="#243056" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"></polyline></svg>`;
+  return `<svg class="trend-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${vertices.join(" ")}" fill="none" stroke="#9eb6e8" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"></polyline></svg>`;
 }
 function trendChart(sessions) {
   const { marks, scale } = trendFrame(sessions);
@@ -1063,9 +1273,9 @@ function renderFight(id) {
 }
 function markIcon(passed) {
   if (passed) {
-    return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M4.2 8.2 6.7 10.6 11.8 5.2" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M4.2 8.2 6.7 10.6 11.8 5.2" fill="none" stroke="#0d1526" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   }
-  return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M5 5l6 6M11 5 5 11" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+  return `<svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M5 5l6 6M11 5 5 11" fill="none" stroke="#0d1526" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 }
 function seatMark(seat, partName) {
   const passed = Boolean(seat.passed);
@@ -1081,6 +1291,19 @@ function seatMark(seat, partName) {
 function componentDeaths(pull, card, part) {
   return judged(pull.deaths).filter(row => row.mechanicId === card.id && row.componentId === part.id);
 }
+function componentBlock(pull, card, part) {
+  const rows = componentDeaths(pull, card, part);
+  const solo = card.parts.length === 1 && part.name === card.name;
+  const shots = (part.frames || []).map(stillFrame).join("");
+  return `<div class="component">
+    ${solo ? "" : `<div class="component-name">${esc(part.name)}</div>`}
+    <div>
+      ${shots ? `<div class="stills">${shots}</div>` : ""}
+      <div class="seats">${part.seats.map(seat => seatMark(seat, part.name)).join("")}</div>
+      ${rows.map(deathCard).join("")}
+    </div>
+  </div>`;
+}
 function renderPull(id) {
   const pull = findPull(id);
   if (!pull) return `<p>Pull ${id} is not in this session.</p>`;
@@ -1095,17 +1318,7 @@ function renderPull(id) {
     const stamp = failed.size
       ? `<span class="tag fail">${failed.size === 1 ? "1 player failed" : failed.size + " players failed"}</span>`
       : `<span class="tag ok">Clear</span>`;
-    const parts = card.parts.map(part => {
-      const rows = componentDeaths(pull, card, part);
-      const solo = card.parts.length === 1 && part.name === card.name;
-      return `<div class="component">
-        ${solo ? "" : `<div class="component-name">${part.name}</div>`}
-        <div>
-          <div class="seats">${part.seats.map(seat => seatMark(seat, part.name)).join("")}</div>
-          ${rows.map(deathCard).join("")}
-        </div>
-      </div>`;
-    }).join("");
+    const parts = card.parts.map(part => componentBlock(pull, card, part)).join("");
     return `<section>
       <div class="mech-head">
         <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${card.id}">${card.name}</button></h3>
@@ -1141,14 +1354,31 @@ function renderMechanic(id) {
   if (!mech) return `<p>That mechanic is not defined.</p>`;
   const blocks = [];
   let clean = 0;
-  for (const pull of SESSION.pulls) {
+  const scoped = SESSION.pulls.filter(pull =>
+    (pull.deaths || []).some(row => row.phaseId === mech.phase)
+  );
+  for (const pull of scoped) {
     const rows = judged(pull.deaths).filter(row => row.mechanicId === mech.id);
-    if (!rows.length) { clean += 1; continue; }
+    if (!rows.length) clean += 1;
+  }
+  const reached = SESSION.pulls.filter(pull =>
+    (pull.cards || []).some(card => card.id === mech.id)
+  );
+  for (const pull of reached) {
+    const card = pull.cards.find(item => item.id === mech.id);
+    const failed = new Set();
+    for (const part of card.parts) {
+      for (const seat of part.seats) if (!seat.passed) failed.add(seat.name);
+    }
+    const stamp = failed.size
+      ? `<span class="tag fail">${failed.size === 1 ? "1 player failed" : failed.size + " players failed"}</span>`
+      : `<span class="tag ok">Clear</span>`;
     blocks.push(`<div class="pull-block">
       <div class="mech-head">
         <h3><button class="link" data-go="s/${SESSION.code}/pull/${pull.id}">Pull ${pull.id}</button> <span class="meta">${pull.when ? pull.when + " · " : ""}${pull.bossPct}%</span></h3>
+        ${stamp}
       </div>
-      ${rows.map(deathCard).join("")}
+      ${card.parts.map(part => componentBlock(pull, card, part)).join("")}
     </div>`);
   }
   return `
@@ -1163,7 +1393,7 @@ function renderMechanic(id) {
       ${(mech.parts || []).length ? `<p class="meta">${mech.parts.map(part => part.name).join(" · ")}</p>` : ""}
     </section>
     <section>
-      <h2>Pulls where someone died</h2>
+      <h2>Pulls that reached it</h2>
       ${blocks.join("") || `<p class="quiet">Nobody died to this.</p>`}
     </section>`;
 }
@@ -1204,10 +1434,8 @@ async function render() {
     renderNav();
     render.navCode = where.code || "";
     const input = document.getElementById("filter");
-    if (input && query) {
-      input.value = query;
-      input.dispatchEvent(new Event("input", { bubbles: true }));
-    }
+    if (input && query) input.value = query;
+    applyNavFilters();
   }
   const app = document.getElementById("app");
   if (SESSION && !SESSION._loaded) {
@@ -1243,7 +1471,105 @@ async function render() {
         ? `${(findMech(where.id) || {}).name || where.id} · ${stamp}`
         : stamp;
 }
+const pullFilters = {};
+function pullFilterOf(code) {
+  return pullFilters[code] || { phase: "", mechanic: "" };
+}
+function scopeHides(button) {
+  if (!button.classList.contains("pull")) return false;
+  const fold = button.closest('details[data-fold^="pulls-"]');
+  if (!fold) return false;
+  const filter = pullFilterOf(fold.dataset.fold.slice("pulls-".length));
+  if (filter.phase && button.dataset.phase !== filter.phase) return true;
+  if (filter.mechanic && (button.dataset.mechanic || "") !== filter.mechanic) return true;
+  return false;
+}
+function syncPullKey(key) {
+  const filter = pullFilterOf(key.dataset.session);
+  const active = Boolean(filter.phase || filter.mechanic);
+  for (const chip of key.querySelectorAll("button[data-pull-phase]")) {
+    const phase = chip.dataset.pullPhase;
+    const mechanic = chip.dataset.pullMechanic || "";
+    const phaseOn = !mechanic && filter.phase === phase && !filter.mechanic;
+    const mechOn = Boolean(mechanic) && filter.phase === phase && filter.mechanic === mechanic;
+    const narrowed = !mechanic && filter.phase === phase && Boolean(filter.mechanic);
+    chip.classList.toggle("on", mechanic ? mechOn : phaseOn);
+    chip.classList.toggle("in", narrowed);
+    chip.setAttribute("aria-pressed", mechanic ? String(mechOn) : String(phaseOn));
+    if (mechanic) {
+      chip.title = mechOn ? "Show every pull" : `Show pulls that ended at ${mechanic}`;
+    } else {
+      const name = chip.dataset.pullName || "";
+      if (phaseOn) chip.title = "Show every pull";
+      else if (narrowed) chip.title = `Show every pull that ended in ${name}`;
+      else chip.title = `Show pulls that ended in ${name}`;
+    }
+  }
+  const fold = key.closest("details.fold");
+  if (!fold) return;
+  const buttons = [...fold.querySelectorAll("button.nav.pull")];
+  const matched = buttons.filter(button => !scopeHides(button)).length;
+  const line = fold.querySelector("summary .countline");
+  if (line) line.textContent = active ? `${matched}/${buttons.length}` : String(buttons.length);
+  const note = fold.querySelector(".pull-empty");
+  if (note) note.hidden = !(active && matched === 0);
+}
+function applyNavFilters() {
+  const query = (document.getElementById("filter")?.value || "").trim().toLowerCase();
+  for (const session of document.querySelectorAll("#nav details.session")) {
+    const label = (session.dataset.label || "").toLowerCase();
+    session.dataset.hit = query && label.includes(query) ? "1" : "";
+  }
+  for (const button of document.querySelectorAll("#nav button.nav")) {
+    if (button.dataset.keep) {
+      button.hidden = false;
+      continue;
+    }
+    const session = button.closest("details.session");
+    const sessionHit = session && session.dataset.hit === "1";
+    const label = button.dataset.label || "";
+    const textHidden = query !== "" && !sessionHit && !label.includes(query);
+    button.hidden = textHidden || scopeHides(button);
+  }
+  for (const key of document.querySelectorAll("#nav .pull-key")) syncPullKey(key);
+  const active = document.querySelector("#nav button.nav.on");
+  for (const session of document.querySelectorAll("#nav details.session")) {
+    const buttons = [...session.querySelectorAll("button.nav")].filter(button => !button.dataset.keep);
+    const textMatch = buttons.some(button => (button.dataset.label || "").includes(query));
+    const matched = !query || session.dataset.hit === "1" || textMatch;
+    session.hidden = Boolean(query) && !matched;
+    session.open = query ? matched : savedOpen(session, active);
+  }
+  for (const fold of document.querySelectorAll("#nav details.fold:not(.session)")) {
+    const buttons = [...fold.querySelectorAll("button.nav")].filter(button => !button.dataset.keep);
+    const foldId = fold.dataset.fold || "";
+    const filtering = foldId.startsWith("pulls-") && Boolean(pullFilterOf(foldId.slice("pulls-".length)).phase);
+    if (query) {
+      fold.open = filtering || buttons.some(button => (button.dataset.label || "").includes(query));
+      continue;
+    }
+    fold.open = filtering || savedOpen(fold, active);
+  }
+}
 document.body.addEventListener("click", event => {
+  const chip = event.target.closest("#nav button[data-pull-phase]");
+  if (chip) {
+    const key = chip.closest(".pull-key");
+    const phase = chip.dataset.pullPhase;
+    const mechanic = chip.dataset.pullMechanic || "";
+    const code = key.dataset.session;
+    const current = pullFilterOf(code);
+    if (mechanic) {
+      if (current.phase === phase && current.mechanic === mechanic) delete pullFilters[code];
+      else pullFilters[code] = { phase, mechanic };
+    } else if (current.phase === phase && !current.mechanic) {
+      delete pullFilters[code];
+    } else {
+      pullFilters[code] = { phase, mechanic: "" };
+    }
+    applyNavFilters();
+    return;
+  }
   const summary = event.target.closest("#nav summary");
   if (summary) {
     const fold = summary.parentElement;
@@ -1261,36 +1587,7 @@ function savedOpen(fold, active) {
 }
 document.body.addEventListener("input", event => {
   if (event.target.id !== "filter") return;
-  const query = event.target.value.trim().toLowerCase();
-  for (const session of document.querySelectorAll("#nav details.session")) {
-    const label = (session.dataset.label || "").toLowerCase();
-    session.dataset.hit = query && label.includes(query) ? "1" : "";
-  }
-  for (const button of document.querySelectorAll("#nav button.nav")) {
-    if (button.dataset.keep) {
-      button.hidden = false;
-      continue;
-    }
-    const session = button.closest("details.session");
-    const sessionHit = session && session.dataset.hit === "1";
-    const label = button.dataset.label || "";
-    button.hidden = query !== "" && !sessionHit && !label.includes(query);
-  }
-  const active = document.querySelector("#nav button.nav.on");
-  for (const session of document.querySelectorAll("#nav details.session")) {
-    const buttons = [...session.querySelectorAll("button.nav")].filter(button => !button.dataset.keep);
-    const matched = !query || session.dataset.hit === "1" || buttons.some(button => !button.hidden);
-    session.hidden = Boolean(query) && !matched;
-    session.open = query ? matched : savedOpen(session, active);
-  }
-  for (const fold of document.querySelectorAll("#nav details.fold:not(.session)")) {
-    const buttons = [...fold.querySelectorAll("button.nav")].filter(button => !button.dataset.keep);
-    if (query) {
-      fold.open = buttons.some(button => (button.dataset.label || "").includes(query));
-      continue;
-    }
-    fold.open = savedOpen(fold, active);
-  }
+  applyNavFilters();
 });
 const trendScrollLeft = {};
 function placeTrendScroll() {
@@ -1312,6 +1609,86 @@ document.body.addEventListener("toggle", event => {
 }, true);
 window.addEventListener("hashchange", render);
 render();
+
+function navMax() {
+  return Math.max(NAV.min, window.innerWidth - NAV.gutter);
+}
+function clampNav(px) {
+  return Math.round(Math.min(navMax(), Math.max(NAV.min, px)));
+}
+function shownNav() {
+  const n = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--nav-width"));
+  return Number.isFinite(n) ? n : NAV.def;
+}
+let navPreferred = NAV.def;
+try {
+  const saved = Number(localStorage.getItem(NAV.key));
+  if (saved >= NAV.min) navPreferred = saved;
+} catch (e) {}
+function applyNavWidth(persist) {
+  const shown = clampNav(navPreferred);
+  document.documentElement.style.setProperty("--nav-width", shown + "px");
+  const handle = document.getElementById("nav-split");
+  if (handle) {
+    handle.setAttribute("aria-valuenow", String(shown));
+    handle.setAttribute("aria-valuemin", String(NAV.min));
+    handle.setAttribute("aria-valuemax", String(navMax()));
+  }
+  if (!persist) return;
+  try { localStorage.setItem(NAV.key, String(Math.round(navPreferred))); } catch (e) {}
+}
+applyNavWidth(false);
+const navSplit = document.getElementById("nav-split");
+if (navSplit) {
+  let drag = null;
+  navSplit.addEventListener("pointerdown", event => {
+    if (event.button !== 0) return;
+    event.preventDefault();
+    navSplit.setPointerCapture(event.pointerId);
+    drag = { id: event.pointerId, offset: shownNav() - event.clientX, moved: false };
+    document.body.classList.add("nav-resizing");
+  });
+  navSplit.addEventListener("pointermove", event => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const next = clampNav(event.clientX + drag.offset);
+    if (next === clampNav(navPreferred)) return;
+    drag.moved = true;
+    navPreferred = next;
+    applyNavWidth(false);
+  });
+  function endNavDrag(event) {
+    if (!drag || event.pointerId !== drag.id) return;
+    const moved = drag.moved;
+    drag = null;
+    document.body.classList.remove("nav-resizing");
+    if (moved) applyNavWidth(true);
+  }
+  navSplit.addEventListener("pointerup", endNavDrag);
+  navSplit.addEventListener("pointercancel", endNavDrag);
+  navSplit.addEventListener("click", event => {
+    event.preventDefault();
+    event.stopPropagation();
+  });
+  navSplit.addEventListener("dblclick", event => {
+    event.preventDefault();
+    navPreferred = NAV.def;
+    applyNavWidth(true);
+  });
+  navSplit.addEventListener("keydown", event => {
+    const step = event.shiftKey ? 48 : 16;
+    const shown = shownNav();
+    let next = null;
+    if (event.key === "ArrowLeft") next = shown - step;
+    else if (event.key === "ArrowRight") next = shown + step;
+    else if (event.key === "Home") next = NAV.min;
+    else if (event.key === "End") next = navMax();
+    else return;
+    event.preventDefault();
+    navPreferred = clampNav(next);
+    applyNavWidth(true);
+  });
+}
+window.addEventListener("resize", () => applyNavWidth(false));
 </script>
 </body>
 </html>

@@ -29,7 +29,7 @@ Then:
 python -m xivloganalyzer analyze <code>
 ```
 
-That writes `facts.json`, `judgments.json`, `detail.js`, and `session.html` in the report folder, and rebuilds `dashboard.html` for every saved log. The dashboard keeps every night's pull chart and loads `detail.js` when a review is opened.
+That writes `facts.json`, `judgments.json`, `detail.js`, and `session.html` in the report folder, and rebuilds `dashboard.html` for every saved log. The dashboard keeps every night's pull chart and loads `detail.js` when a review is opened. The same run draws an arena still for each mechanic a pull reached, from `positions/`. The cast time comes from the damage events. A pull that dodged uses the usual time from the pulls that were hit. Faith Unmoving has no stored cast, so its part `at` in `mechanics.json` is the time, and only while that pull was still going. A log with no positions keeps the text.
 
 ## When a call is wrong
 

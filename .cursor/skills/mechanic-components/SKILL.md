@@ -46,8 +46,12 @@ The session line for a phase is `clusters` in `fights/dsr/mechanics.json`, top t
 
 The opener is two stops. Sanctity is two stops: Meteors is the second wave, and `dsr-sanctity-of-the-ward` still explains it. Fault for a killing blow stays in that ability's skill.
 
-## Phase 3 chart
+## Phase 3 stop
 
-Nidhogg's clock is 350 seconds: Thordan's 153, plus about 197 seconds until the phase change. Dive from Grace is the first mechanic. Final Chorus is the raidwide as he lands, about 4 seconds in, and Dive from Grace is the cast after the autos, about 17 seconds in. It is a marker on the pull chart. Death review for this phase stays out until a stop is written.
+Nidhogg's clock is 350 seconds: Thordan's 153, plus about 197 seconds until the phase change. Final Chorus is the raidwide as he lands, about 4 seconds in. Dive from Grace is the cast after the autos, about 17 seconds in.
 
-Phase 4 and later stay out.
+| Stop | Cluster | About | Skill |
+|---|---|---|---|
+| Dive from Grace | `dive-from-grace` | Easthogg dives and towers, about 17s | `dsr-dive-from-grace` |
+
+The strat is LPDU Easthogg. Fault for a killing blow stays in that skill. Final Chorus and the auto cleave are not this stop. Phase 4 and later stay out.

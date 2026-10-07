@@ -300,19 +300,27 @@ def _part_gate(mech: dict, part: dict) -> float:
     return float(mech["starts"])
 
 
-def _pull_cards(pull: dict, mechanics: list[dict], party: list[dict]) -> list[dict]:
+def _pull_cards(
+    pull: dict,
+    mechanics: list[dict],
+    party: list[dict],
+    durations: dict[int, float] | None = None,
+) -> list[dict]:
     """Mechanic cards for one pull.
 
     A component is on the card once the pull lasted until that component resolves,
     or someone died to it. A player failed it when a death there was judged a fail.
-    Everyone else in the party passed.
+    Everyone else in the party passed. A pull that dies in a later phase still
+    shows the earlier phase, and the later phase gets its own cards.
     """
     roster = [player for player in party if pull["id"] in player["fights"]]
-    duration = float(pull["duration"] or 0)
+    durations = durations or {}
+    phases = set(durations) or {pull.get("phaseId")}
     cards = []
     for mech in mechanics:
-        if mech["phase"] != pull.get("phaseId"):
+        if mech["phase"] not in phases:
             continue
+        duration = float(durations.get(mech["phase"], pull.get("duration") or 0))
         parts_out = []
         for part in mech["parts"]:
             rows = [
@@ -389,6 +397,7 @@ def session_payload(
         started = _parse_started(started)
     starts = when.get("starts") or {}
     pulls: dict[int, dict] = {}
+    phase_durations: dict[int, dict[int, float]] = {}
     for item in judgments:
         pull = pulls.setdefault(
             item.fact.fight,
@@ -403,11 +412,15 @@ def session_payload(
                 "deaths": [],
             },
         )
+        phase_durations.setdefault(item.fact.fight, {})[item.fact.phase] = (
+            item.fact.pull_ms / 1000
+        )
         cluster = _cluster_of(item, pack)
         pull["deaths"].append(
             {
                 "time": item.fact.time,
                 "t": item.fact.t,
+                "phaseId": item.fact.phase,
                 "name": item.fact.name,
                 "job": JOB.get(item.fact.job, item.fact.job),
                 "mechanicId": cluster.id if cluster else item.mechanic_id,
@@ -425,7 +438,7 @@ def session_payload(
     for pull in pulls.values():
         pull["deaths"].sort(key=lambda row: (row["t"], row["name"]))
         pull["counts"] = Counter(row["outcome"] for row in pull["deaths"])
-        pull["cards"] = _pull_cards(pull, mechanics, roster)
+        pull["cards"] = _pull_cards(pull, mechanics, roster, phase_durations.get(pull["id"]))
     unknown = [
         item.mechanic
         for item in judgments

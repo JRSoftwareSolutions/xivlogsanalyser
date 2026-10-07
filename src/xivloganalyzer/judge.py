@@ -262,6 +262,12 @@ def _personal_mit(fact: DeathFact, pack: FightPack) -> bool:
 
 
 def _personal(fact: DeathFact, mechanic: Mechanic) -> str:
+    if mechanic.id == "darkdragon-dive-debuff":
+        return f"{fact.name} soaked a tower while they still had the dive debuff."
+    if mechanic.id in {"gnashing-wheel", "lashing-wheel"}:
+        return f"{fact.name} was on the wrong side of the in-and-out."
+    if mechanic.id == "geirskogul":
+        return f"{fact.name} stood in the Geirskogul line."
     if mechanic.category == "tower":
         return f"A {mechanic.name} was missed. {fact.name} died to the failed version, not a real soak."
     if mechanic.id == "ascalons-mercy-concealed":
@@ -277,6 +283,16 @@ def _personal(fact: DeathFact, mechanic: Mechanic) -> str:
 
 
 def _oversized(fact: DeathFact, mechanic: Mechanic, hit: int) -> str:
+    if mechanic.id in {"dark-high-jump", "dark-elusive-jump"}:
+        return (
+            f"{fact.name} stood in the dive ({_comma(hit)}). "
+            "Each player in that landing owns it."
+        )
+    if mechanic.id == "eye-of-the-tyrant":
+        return (
+            f"The Eye of the Tyrant share was short. {fact.name} took {_comma(hit)}. "
+            "The players who were not in the stack own it."
+        )
     if mechanic.category == "tower":
         return f"A tower was empty. {fact.name} died to the explosion ({_comma(hit)}), not a real soak."
     if mechanic.category == "stack":
@@ -324,6 +340,10 @@ def _raw_cause(fact: DeathFact, mechanic: Mechanic) -> str:
 
 
 def _oversized_cause(fact: DeathFact, mechanic: Mechanic) -> str:
+    if mechanic.id in {"dark-high-jump", "dark-elusive-jump"}:
+        return "overlap"
+    if mechanic.id == "eye-of-the-tyrant":
+        return "missing"
     if mechanic.category == "tower" or mechanic.id == "skyward-leap":
         return "tower"
     if mechanic.id == "lightning-storm":
@@ -472,10 +492,13 @@ def _assign_blame(
         elif item.cause == "clip":
             item.blames = _group("Out of position", 3)
         elif item.cause == "missing":
-            mechanic = pack.mechanic_for(item.fact.guid, item.fact.phase)
-            typical = mechanic.typical_targets if mechanic and mechanic.typical_targets else 0
-            missing = max(typical - (item.fact.stack or 0), 1)
-            item.blames = _group("Missing bodies", missing)
+            if not item.fact.stack:
+                item.blames = _group("Missing bodies", 2)
+            else:
+                mechanic = pack.mechanic_for(item.fact.guid, item.fact.phase)
+                typical = mechanic.typical_targets if mechanic and mechanic.typical_targets else 0
+                missing = max(typical - (item.fact.stack or 0), 1)
+                item.blames = _group("Missing bodies", missing)
         elif item.cause == "resolve":
             owners = list(healers) or ["Healers"]
             if _no_party_mit(item.fact):
