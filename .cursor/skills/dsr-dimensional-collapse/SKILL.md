@@ -14,7 +14,7 @@ Follow `review-mechanic` for the packet, the outcome order, and a correction. Fo
 
 The puddles on the floor during the second wave, with the tethers, the blue markers, and the stack. The person described them there. A hit applies Heavy and Damage Down. That is a mistake.
 
-No lived sample is stored. The reference log has one death, pull 29, Speed Panda, about 59 seconds, with no unmitigated amount. It stays out of the 183 raw deaths. Do not add a raw band from that death.
+No lived sample is stored. The reference log has one death, pull 29, Speed Panda, about 59 seconds, with no unmitigated amount. It stays out of the 86 raw deaths. Do not add a raw band from that death.
 
 ## How to tell
 
