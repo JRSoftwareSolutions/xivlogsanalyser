@@ -548,7 +548,7 @@ function stillView(frame) {
         const len = 14 / scale + 5;
         grow(player.x + player.face[0] * len, player.y + player.face[1] * len);
       }
-      if (player.dead || player.failed) {
+      if (stillLabeled(frame, player)) {
         const wide = String(player.name || "").length * 3.2 / scale;
         grow(Number(player.x) - wide, Number(player.y) + 24 / scale);
         grow(Number(player.x) + wide, player.y);
@@ -556,7 +556,7 @@ function stillView(frame) {
     }
     for (const mark of frame.marks || []) {
       const bulge = mark.kind === "comet" ? 16 : mark.kind === "gaze" || mark.kind === "tower" || mark.kind === "orb" ? 12 : 0;
-      const extra = bulge / scale;
+      const extra = mark.r ? Number(mark.r) + 2 / scale : bulge / scale;
       if (mark.x != null) {
         grow(Number(mark.x) - extra, Number(mark.y) - extra);
         grow(Number(mark.x) + extra, Number(mark.y) + extra);
@@ -589,13 +589,12 @@ function stillSvg(frame) {
     for (const mark of marks) if (kinds.includes(mark.kind)) parts.push(stillMark(mark, pt, scale));
   };
   draw(["tower", "orb"]);
-  const marked = (player) => player.dead || player.failed;
   for (const player of frame.players || []) {
-    if (marked(player)) continue;
+    if (stillRinged(player)) continue;
     parts.push(stillPlayer(player, pt, scale));
   }
   for (const player of frame.players || []) {
-    if (!marked(player)) continue;
+    if (!stillRinged(player)) continue;
     parts.push(stillPlayer(player, pt, scale));
   }
   draw(["comet", "gaze", "boss", "hit"]);
@@ -605,9 +604,13 @@ function stillSvg(frame) {
       parts.push(facingArrow(x, y, player.face, scale));
     }
   }
+  const placed = [];
   for (const player of frame.players || []) {
-    if (!marked(player)) continue;
-    const [x, y] = pt(player.x, player.y);
+    if (!stillLabeled(frame, player)) continue;
+    const [x, px] = pt(player.x, player.y);
+    let y = px;
+    while (placed.some(([lx, ly]) => Math.abs(lx - x) < 60 && Math.abs(ly - y) < 13)) y += 13;
+    placed.push([x, y]);
     parts.push(`<text x="${x}" y="${y + 24}" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412" stroke="#fffcf7" stroke-width="3" paint-order="stroke">${esc(player.name)}</text>`);
   }
   return `<svg viewBox="0 0 ${size} ${size}" role="img" aria-label="${esc(frame.caption)}">${parts.join("")}</svg>`;
@@ -626,6 +629,13 @@ function closeStill() {
   if (pop && pop.open) pop.close();
 }
 function ARENA_PX(scale) { return 20 * scale; }
+function stillRinged(player) {
+  return player.dead || player.failed || player.outside || player.shared;
+}
+function stillLabeled(frame, player) {
+  if (frame.labels) return frame.labels.includes(player.name);
+  return player.dead || player.failed;
+}
 function stillMark(mark, pt, scale) {
   const [x, y] = pt(mark.x, mark.y);
   if (mark.kind === "hit") {
@@ -635,6 +645,12 @@ function stillMark(mark, pt, scale) {
   if (mark.kind === "gaze") {
     const s = 11;
     return `<polygon points="${x},${y - s} ${x + s},${y} ${x},${y + s} ${x - s},${y}" fill="#fff1e8" stroke="#9a3412" stroke-width="2"><title>Gaze</title></polygon>`;
+  }
+  if (mark.kind === "tower" && mark.r) {
+    const r = Number(mark.r) * scale;
+    const fill = mark.empty ? "#f3cdb4" : "none";
+    const stroke = mark.empty ? "#9a3412" : "#7c4a12";
+    return `<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" stroke="${stroke}" stroke-width="2"><title>${esc(mark.name || "Tower")}</title></circle>`;
   }
   if (mark.kind === "tower") {
     const s = 11;
@@ -669,12 +685,16 @@ function stillPlayer(player, pt, scale) {
   if (player.dead || player.failed) {
     bits.push(`<circle cx="${x}" cy="${y}" r="13" fill="none" stroke="#9a3412" stroke-width="2"></circle>`);
   }
+  if (player.outside || player.shared) {
+    bits.push(`<circle cx="${x}" cy="${y}" r="17" fill="none" stroke="#9a3412" stroke-width="2" stroke-dasharray="4 3"></circle>`);
+  }
   if (player.prey) {
     bits.push(`<circle cx="${x}" cy="${y}" r="15" fill="none" stroke="#7c4a12" stroke-width="1.5" stroke-dasharray="3 2"></circle>`);
   }
   const src = JOB_ICONS[player.job];
   const state = player.dead ? ", killed" : (player.failed ? ", failed" : "");
-  const title = `${player.name}${state}${player.prey ? ", prey" : ""}${player.hysteria ? ", hysteria" : ""}`;
+  const tower = player.outside ? ", not in a tower" : (player.shared ? ", shared a tower" : "");
+  const title = `${player.name}${state}${tower}${player.prey ? ", prey" : ""}${player.hysteria ? ", hysteria" : ""}`;
   if (src) {
     bits.push(`<image href="${src}" x="${x - 10}" y="${y - 10}" width="20" height="20"${fade}><title>${esc(title)}</title></image>`);
   } else {
