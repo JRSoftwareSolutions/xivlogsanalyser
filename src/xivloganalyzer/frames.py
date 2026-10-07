@@ -8,6 +8,8 @@ a pull the party stands south of Thordan with facing -158, which points north.
 A failed death keeps a picture of that hit. A mechanic the party failed also
 gets a picture at the cast. A clear mechanic does not. The cast time comes
 from the damage events, and from deaths when a pull has no event of its own.
+A Sanctity of the Ward tower picture is taken when the towers resolved, before
+the explosion, so it shows who stood in which tower.
 """
 
 from __future__ import annotations
@@ -30,6 +32,9 @@ TOWER_NAMES = {"King Thordan", "Holy Comet", "Brightsphere", "Haurchefant", "Spe
 TOWER_SOURCE = "Ser Hermenost"
 COLLAPSE_SOURCE = "Ser Grinnaux"
 IMPACT_CASTER = "Ser Guerrique"
+TOWER_RADIUS = 3.0
+# Soaked players stand up to about 2.9 yalms from the center. Clear misses are 3.9 and up.
+OUTSIDE_TOWER = 3.5
 
 
 @dataclass
@@ -54,6 +59,13 @@ class FightReplay:
     players: dict[str, int] = field(default_factory=dict)
     hysteria: list[tuple[str, float, float]] = field(default_factory=list)
     prey: list[tuple[str, float, float]] = field(default_factory=list)
+
+
+@dataclass
+class TowerResolve:
+    t: float
+    towers: list[tuple[float, float]]
+    empty: set[int]
 
 
 def _replay_seconds(replay: FightReplay, phase_id: int, when: float) -> float:
@@ -153,7 +165,7 @@ class FrameBook:
         self.fights = {fight["id"]: fight for fight in meta["fights"]}
         self._loaded: dict[int, FightReplay | None] = {}
 
-    def frame(self, death: dict, pack: FightPack) -> dict | None:
+    def frame(self, death: dict, pack: FightPack, deaths: list[dict] | None = None) -> dict | None:
         if death.get("outcome") != "fail":
             return None
         replay = self._replay(int(death["fight"]))
@@ -175,9 +187,20 @@ class FrameBook:
             hysteria_names.add(victim)
         show_gaze = gaze_death or victim in hysteria_names
 
+        show_towers = category == "tower" or (
+            mechanic_id == "eternal-conviction" and when >= 100
+        ) or "tower was empty" in (death.get("wrong") or "").lower()
+        resolve = _sanctity_towers(replay, when) if show_towers and phase_id == 2 and when >= 100 else None
+        picture_at = resolve.t if resolve else when
+
         players = self._players(
-            replay, when, victim, hysteria_names, replay.prey, mechanic_id == "holy-impact",
+            replay, picture_at, victim, hysteria_names, replay.prey, mechanic_id == "holy-impact",
         )
+        gone: list[str] = []
+        shared: list[list[str]] = []
+        if resolve:
+            players, gone = self._drop_gone(replay, players, deaths, picture_at, keep=victim)
+            shared = _tag_outside(replay, players, resolve)
         if not players:
             return None
         victim_row = next((row for row in players if row["name"] == victim), None)
@@ -199,10 +222,9 @@ class FrameBook:
                 x, y = _rel(sample.x, sample.y)
                 marks.append({"kind": "gaze", "x": x, "y": y, "name": "Gaze"})
 
-        show_towers = category == "tower" or (
-            mechanic_id == "eternal-conviction" and when >= 100
-        ) or "tower was empty" in (death.get("wrong") or "").lower()
-        if show_towers:
+        if resolve:
+            marks.extend(_resolved_tower_marks(resolve))
+        elif show_towers:
             marks.extend(self._tower_marks(replay, when))
         marks.extend(self._collapse_marks(replay, when))
 
@@ -223,7 +245,7 @@ class FrameBook:
         if mechanic_id == "heavy-impact":
             marks.extend(self._impact(replay, when))
 
-        boss = self._boss(replay, when)
+        boss = self._boss(replay, picture_at)
         gaze_drawn = any(mark["kind"] == "gaze" for mark in marks)
         if boss is not None and not gaze_drawn:
             x, y = _rel(boss.x, boss.y)
@@ -240,9 +262,12 @@ class FrameBook:
 
         killed = death.get("cast") or (mechanic.name if mechanic else death.get("ability") or "the hit")
         carried = victim in hysteria_names and not gaze_death
+        caption = _caption(victim, killed, marks, players, carried)
+        if resolve:
+            caption = " ".join([caption, *_tower_sentences(resolve, players, shared, gone)])
         return {
             "killedBy": killed,
-            "caption": _caption(victim, killed, marks, players, carried),
+            "caption": caption,
             "players": players,
             "marks": marks,
         }
@@ -256,8 +281,12 @@ class FrameBook:
         name: str,
         failed: list[str],
         pack: FightPack,
+        deaths: list[dict] | None = None,
     ) -> dict | None:
-        """Where the party stood when this mechanic resolved. No death required."""
+        """Where the party stood when this mechanic resolved. No death required.
+
+        Sanctity towers are drawn at the Conviction resolve, not at the explosion.
+        """
         replay = self._replay(int(fight_id))
         if replay is None:
             return None
@@ -272,15 +301,28 @@ class FrameBook:
             owner for owner, start, end in replay.hysteria
             if start - 0.4 <= replay_when <= end + 0.4
         }
+        show_towers = category == "tower" or (
+            mechanic_id == "eternal-conviction" and float(when) >= 100
+        )
+        resolve = (
+            _sanctity_towers(replay, replay_when)
+            if show_towers and phase_id == 2 and float(when) >= 100 else None
+        )
+        picture_at = resolve.t if resolve else replay_when
         players = self._players(
             replay,
-            replay_when,
+            picture_at,
             None,
             hysteria_names,
             replay.prey,
             mechanic_id == "holy-impact",
             set(replay.players) if gaze else None,
         )
+        gone: list[str] = []
+        shared: list[list[str]] = []
+        if resolve:
+            players, gone = self._drop_gone(replay, players, deaths, picture_at)
+            shared = _tag_outside(replay, players, resolve)
         if not players:
             return None
         failed_names = [person for person in failed if any(row["name"] == person for row in players)]
@@ -296,10 +338,9 @@ class FrameBook:
                 x, y = _rel(sample.x, sample.y)
                 marks.append({"kind": "gaze", "x": x, "y": y, "name": "Gaze"})
 
-        show_towers = category == "tower" or (
-            mechanic_id == "eternal-conviction" and float(when) >= 100
-        )
-        if show_towers:
+        if resolve:
+            marks.extend(_resolved_tower_marks(resolve))
+        elif show_towers:
             marks.extend(self._tower_marks(replay, replay_when))
         marks.extend(self._collapse_marks(replay, replay_when))
 
@@ -320,9 +361,9 @@ class FrameBook:
         if mechanic_id == "heavy-impact":
             marks.extend(self._impact(replay, replay_when))
 
-        boss = self._boss(replay, replay_when)
+        boss = self._boss(replay, picture_at)
         if boss is None and phase_id != 2:
-            boss = self._boss(replay, replay_when, "Nidhogg")
+            boss = self._boss(replay, picture_at, "Nidhogg")
         gaze_drawn = any(mark["kind"] == "gaze" for mark in marks)
         if boss is not None and not gaze_drawn:
             x, y = _rel(boss.x, boss.y)
@@ -341,9 +382,12 @@ class FrameBook:
                         "name": name,
                     })
 
+        caption = _mechanic_caption(name, failed_names, marks, players, gaze)
+        if resolve:
+            caption = " ".join([caption, *_tower_sentences(resolve, players, shared, gone)])
         return {
             "title": f"{name} · {_clock_label(when)}",
-            "caption": _mechanic_caption(name, failed_names, marks, players, gaze),
+            "caption": caption,
             "players": players,
             "marks": marks,
         }
@@ -432,6 +476,31 @@ class FrameBook:
             rows.append(row)
         rows.sort(key=lambda row: (not row["dead"], row["name"]))
         return rows
+
+    def _drop_gone(self, replay, players, deaths, when, keep=None) -> tuple[list[dict], list[str]]:
+        """Leave out players who were dead at this moment. Their last spot is not where they stood.
+
+        A player raised after an earlier death shows up in the replay around this moment,
+        so they count as alive. A corpse can still get a stray sample from a raise cast on it.
+        """
+        last_death: dict[str, float] = {}
+        for death in deaths or []:
+            if death.get("t") is None or death.get("name") in (None, keep):
+                continue
+            phase_id = death.get("phaseId") if death.get("phaseId") is not None else death.get("phase")
+            if phase_id is None or (int(phase_id) != 2 and int(phase_id) not in replay.phase_starts):
+                continue
+            died = _replay_seconds(replay, int(phase_id), float(death["t"]))
+            if died < when - 0.3 and died > last_death.get(death["name"], -math.inf):
+                last_death[death["name"]] = died
+        gone = set()
+        for name, died in last_death.items():
+            actor = replay.players.get(name)
+            samples = replay.by_actor.get(actor) or [] if actor is not None else []
+            if not any(max(died + 1.0, when - 3.0) < sample.t <= when + 1.0 for sample in samples):
+                gone.add(name)
+        kept = [row for row in players if row["name"] not in gone]
+        return kept, sorted(name for name in gone if name in replay.players)
 
     def _boss(self, replay: FightReplay, when: float, name: str = "King Thordan") -> Sample | None:
         best = None
@@ -580,6 +649,122 @@ def _collapse_group(spots: list[Sample]) -> bool:
     return spots[0].name == COLLAPSE_SOURCE or _collapse_layout(spots)
 
 
+def _sanctity_towers(replay: FightReplay, center: float) -> TowerResolve | None:
+    """The Conviction towers where they resolved, and which ones were empty.
+
+    Ser Hermenost has a sample on every tower center when the towers resolve,
+    sometimes split across timestamps a few milliseconds apart. About two
+    seconds later the Eternal Conviction explosion comes only from the empty towers.
+    """
+    samples = sorted(
+        (
+            sample for sample in replay.samples
+            if sample.name == TOWER_SOURCE and center - 4.0 <= sample.t <= center + 4.0
+        ),
+        key=lambda sample: sample.t,
+    )
+    groups: list[list[Sample]] = []
+    for sample in samples:
+        if groups and sample.t - groups[-1][-1].t <= 0.5:
+            groups[-1].append(sample)
+        else:
+            groups.append([sample])
+    for index, group in enumerate(groups):
+        if group[0].t > center + 1.0:
+            break
+        towers = _dedupe(group)
+        if len(towers) < 5:
+            continue
+        resolved = group[0].t
+        empty: set[int] = set()
+        for later in groups[index + 1:]:
+            gap = later[0].t - resolved
+            if gap < 1.0:
+                continue
+            if gap > 3.5:
+                break
+            for sample in later:
+                for spot, tower in enumerate(towers):
+                    if math.hypot(sample.x - tower.x, sample.y - tower.y) < 1.5:
+                        empty.add(spot)
+        return TowerResolve(
+            t=resolved,
+            towers=[_rel(tower.x, tower.y) for tower in towers],
+            empty=empty,
+        )
+    return None
+
+
+def _resolved_tower_marks(resolve: TowerResolve) -> list[dict]:
+    marks = []
+    for spot, (x, y) in enumerate(resolve.towers):
+        empty = spot in resolve.empty
+        marks.append({
+            "kind": "tower",
+            "x": x,
+            "y": y,
+            "r": TOWER_RADIUS,
+            "empty": empty,
+            "name": "Empty tower" if empty else "Tower",
+        })
+    return marks
+
+
+def _tag_outside(replay: FightReplay, players: list[dict], resolve: TowerResolve) -> list[list[str]]:
+    """Mark players outside every tower, and players sharing one, when the towers resolved."""
+    inside: dict[int, list[dict]] = defaultdict(list)
+    for row in players:
+        actor = replay.players.get(row["name"])
+        sample = _nearest(replay.by_actor.get(actor) or [], resolve.t) if actor is not None else None
+        if sample is None or abs(sample.t - resolve.t) > 1.5:
+            continue
+        reach, spot = min(
+            (math.hypot(row["x"] - x, row["y"] - y), spot)
+            for spot, (x, y) in enumerate(resolve.towers)
+        )
+        if reach > OUTSIDE_TOWER:
+            row["outside"] = True
+        else:
+            inside[spot].append(row)
+    shared = []
+    for rows in inside.values():
+        if len(rows) < 2:
+            continue
+        for row in rows:
+            row["shared"] = True
+        shared.append(sorted(row["name"] for row in rows))
+    return sorted(shared)
+
+
+def _names(names: list[str]) -> str:
+    if len(names) <= 2:
+        return " and ".join(names)
+    return f"{', '.join(names[:-1])}, and {names[-1]}"
+
+
+def _tower_sentences(
+    resolve: TowerResolve, players: list[dict], shared: list[list[str]], gone: list[str],
+) -> list[str]:
+    sentences = [
+        f"Players and towers are where they were when the towers resolved at {_clock_label(resolve.t)}. "
+        "The circles are the towers, drawn to size."
+    ]
+    if len(resolve.empty) == 1:
+        sentences.append("The filled circle is the empty tower.")
+    elif resolve.empty:
+        sentences.append("The filled circles are the empty towers.")
+    outside = [row["name"] for row in players if row.get("outside")]
+    if outside:
+        verb = "was" if len(outside) == 1 else "were"
+        sentences.append(f"{_names(outside)} {verb} not in a tower.")
+    for names in shared:
+        sentences.append(f"{_names(names)} shared a tower.")
+    if gone:
+        verb = "was" if len(gone) == 1 else "were"
+        sentences.append(f"{_names(gone)} {verb} already dead.")
+    return sentences
+
+
 def _is_comet(sample: Sample) -> bool:
     return sample.name == "Holy Comet"
 
@@ -606,7 +791,7 @@ def _mark_sentences(marks: list[dict], players: list[dict], carried: bool, arrow
         sentences.append("The two marks outside the floor are the enemies casting the gazes.")
     elif gazes == 1:
         sentences.append("One gaze enemy was in the replay.")
-    if "tower" in kinds:
+    if any(mark["kind"] == "tower" and not mark.get("r") for mark in marks):
         sentences.append("The squares are the towers.")
     if "collapse" in kinds:
         sentences.append("The shaded circles are the Dimensional Collapse puddles.")
@@ -725,7 +910,7 @@ def attach_frames(report: Path, payload: dict, pack: FightPack) -> None:
     for pull in payload.get("pulls") or []:
         for death in pull.get("deaths") or []:
             death["fight"] = pull["id"]
-            frame = book.frame(death, pack)
+            frame = book.frame(death, pack, pull.get("deaths"))
             if frame:
                 death["frame"] = frame
         for card in pull.get("cards") or []:
@@ -752,6 +937,7 @@ def attach_frames(report: Path, payload: dict, pack: FightPack) -> None:
                         continue
                     shot = book.mechanic_frame(
                         pull["id"], mech["phase"], when, part["id"], part["name"], failed, pack,
+                        pull.get("deaths"),
                     )
                     if shot:
                         frames.append(shot)

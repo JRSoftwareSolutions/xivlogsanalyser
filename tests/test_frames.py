@@ -19,6 +19,7 @@ from xivloganalyzer.frames import (
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "data" / "XVz8bCqgPw1KRh9d"
+OTHER = ROOT / "data" / "8DYNHQx4C7ytdLb9"
 PACK = load_pack(ROOT / "fights" / "dsr")
 
 
@@ -302,6 +303,59 @@ class MechanicStillTest(unittest.TestCase):
         self.assertEqual(len(frames), 1)
         self.assertIn("2:26", frames[0]["title"])
         self.assertGreaterEqual(len(frames[0]["players"]), 8)
+
+    def test_an_empty_sanctity_tower_is_drawn_where_the_towers_resolved(self):
+        deaths = [
+            {"name": row["name"], "t": row["t"], "phaseId": row["phase"], "outcome": row["outcome"]}
+            for row in self.rows if row["fight"] == 41
+        ]
+        frame = self.book.mechanic_frame(
+            41, 2, 136.7, "eternal-conviction", "Eternal Conviction", ["Loki Doki"], PACK, deaths,
+        )
+        towers = [mark for mark in frame["marks"] if mark["kind"] == "tower"]
+        self.assertEqual(len(towers), 8)
+        self.assertTrue(all(mark["r"] == 3.0 for mark in towers))
+        empty = [(mark["x"], mark["y"]) for mark in towers if mark["empty"]]
+        self.assertEqual(empty, [(18.0, 0.0)])
+        names = {player["name"] for player in frame["players"]}
+        self.assertNotIn("Kite Noodle", names)
+        gigachad = next(player for player in frame["players"] if player["name"] == "Absolute Gigachad")
+        self.assertLess(math.hypot(gigachad["x"] + 9.0, gigachad["y"] - 15.6), 3.0)
+        self.assertFalse(any(player.get("outside") for player in frame["players"]))
+        self.assertIn("resolved at 2:14", frame["caption"])
+        self.assertIn("The filled circle is the empty tower.", frame["caption"])
+        self.assertIn("Kite Noodle was already dead.", frame["caption"])
+
+    def test_a_player_outside_every_tower_is_named(self):
+        book = FrameBook(OTHER)
+        frame = book.mechanic_frame(
+            37, 2, 136.9, "eternal-conviction", "Eternal Conviction", [], PACK, [],
+        )
+        outside = [player["name"] for player in frame["players"] if player.get("outside")]
+        self.assertEqual(outside, ["Kiara Blaiddyd"])
+        self.assertEqual(sum(mark["empty"] for mark in frame["marks"] if mark["kind"] == "tower"), 1)
+        self.assertIn("Kiara Blaiddyd was not in a tower.", frame["caption"])
+
+    def test_two_players_in_one_tower_are_named(self):
+        book = FrameBook(OTHER)
+        frame = book.mechanic_frame(
+            19, 2, 137.0, "eternal-conviction", "Eternal Conviction", [], PACK, [],
+        )
+        shared = sorted(player["name"] for player in frame["players"] if player.get("shared"))
+        self.assertEqual(shared, ["Kiara Blaiddyd", "Spring Nymphar"])
+        self.assertIn("Kiara Blaiddyd and Spring Nymphar shared a tower.", frame["caption"])
+
+    def test_a_raised_player_still_stands_in_the_tower_still(self):
+        deaths = [
+            {"name": row["name"], "t": row["t"], "phaseId": row["phase"], "outcome": row["outcome"]}
+            for row in self.rows if row["fight"] == 39
+        ]
+        frame = self.book.mechanic_frame(
+            39, 2, 136.6, "eternal-conviction", "Eternal Conviction", [], PACK, deaths,
+        )
+        names = {player["name"] for player in frame["players"]}
+        self.assertIn("Kitana Kahn", names)
+        self.assertNotIn("Kite Noodle", names)
 
     def test_a_log_without_a_replay_has_no_mechanic_still(self):
         other = _report_without_replay()
