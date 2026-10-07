@@ -348,6 +348,16 @@ class FrameBook:
             "marks": marks,
         }
 
+    def phase_length(self, fight_id: int, phase_id: int) -> float | None:
+        """Seconds from the start of that phase to the end of the pull."""
+        fight = self.fights.get(int(fight_id))
+        if not fight:
+            return None
+        for phase in fight.get("phases") or []:
+            if phase.get("id") == int(phase_id) and phase.get("startTime") is not None:
+                return (int(fight["end_time"]) - int(phase["startTime"])) / 1000
+        return None
+
     def _replay(self, fight_id: int) -> FightReplay | None:
         if fight_id in self._loaded:
             return self._loaded[fight_id]
@@ -677,6 +687,9 @@ def attach_frames(report: Path, payload: dict, pack: FightPack) -> None:
                     if scheduled is not None:
                         moments = [scheduled]
                 end = _phase_end(pull, mech["phase"])
+                length = book.phase_length(pull["id"], mech["phase"])
+                if length is not None:
+                    end = length if end is None else min(end, length)
                 for when in moments:
                     if end is not None and when > end:
                         continue
