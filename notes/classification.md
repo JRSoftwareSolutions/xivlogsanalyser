@@ -111,7 +111,7 @@ Each blame names an owner and a percent. 100 is one person. When several people 
 
 A personal miss stays at 100 even when someone else died to a different miss on the same cast: a gaze, a ring, a cone, a puddle, a cleave, vulnerability, a non-tank tankbuster, or a tank's own missing personal mitigation.
 
-A Lightning Storm clip or a Bright Flare overlap splits across the players in that overlap, 50 each. Skyward Leap under full HP splits across the two healers, 50 each. Full HP with the mit missing is "Assigned mitigation" at 50. An empty tower is "Missed soak" at 50. A clip is "Out of position" at 33. A short stack is "Missing bodies" at 100 divided by the missing count. A raw full share blames the healers at 50, and "Party mitigation" joins them at 33 when the packet shows no party mit. A low hit blames the healers and "Earlier damage" at 33.
+A Lightning Storm clip or a Bright Flare overlap splits across the players in that overlap, 50 each. Skyward Leap under full HP splits across the two healers, 50 each. Full HP with the mit missing is "Assigned mitigation" at 50. An empty tower is "Missed soak" at 50. A clip is "Out of position" at 33. A death with vulnerability from another player's Skyward Leap belongs to that marker holder at 100, not to the player who died. The marker holder is the first target in that leap's packet. Two marker holders who hit each other split it, 50 each. A short stack is "Missing bodies" at 100 divided by the missing count. A raw full share blames the healers at 50, and "Party mitigation" joins them at 33 when the packet shows no party mit. A low hit blames the healers and "Earlier damage" at 33.
 
 ## Still open
 
