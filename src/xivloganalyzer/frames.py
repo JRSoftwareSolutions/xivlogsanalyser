@@ -223,8 +223,7 @@ class FrameBook:
         gaze_drawn = any(mark["kind"] == "gaze" for mark in marks)
         if boss is not None and not gaze_drawn:
             x, y = _rel(boss.x, boss.y)
-            face = [round(boss.face[0], 3), round(boss.face[1], 3)] if boss.face else None
-            marks.append({"kind": "boss", "x": x, "y": y, "face": face, "name": "Thordan"})
+            marks.append({"kind": "boss", "x": x, "y": y, "name": "Thordan"})
             if mechanic_id == "ascalons-mercy-concealed":
                 marks.append({
                     "kind": "hit",
@@ -320,9 +319,8 @@ class FrameBook:
         gaze_drawn = any(mark["kind"] == "gaze" for mark in marks)
         if boss is not None and not gaze_drawn:
             x, y = _rel(boss.x, boss.y)
-            face = [round(boss.face[0], 3), round(boss.face[1], 3)] if boss.face else None
             label = "Thordan" if boss.name == "King Thordan" else boss.name
-            marks.append({"kind": "boss", "x": x, "y": y, "face": face, "name": label})
+            marks.append({"kind": "boss", "x": x, "y": y, "name": label})
             if mechanic_id == "ascalons-mercy-concealed":
                 for row in players:
                     if not row.get("failed"):
