@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from collections import Counter
 from pathlib import Path
 
@@ -34,8 +35,6 @@ def report_dirs(root: Path | None = None) -> list[Path]:
 def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
     report = report.resolve()
     catalog = load_catalog(root)
-    import json
-
     meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
     zone_ids = {fight.get("zoneID") for fight in meta["fights"]}
     pack = None
@@ -53,7 +52,7 @@ def _analyze(report: Path, root: Path) -> tuple[Counter, dict]:
     payload = session_payload(judgments, pack, report.name, when, meta)
     attach_frames(report, payload, pack)
     judged = {pull["id"] for pull in payload["pulls"]}
-    payload["overview"] = build_timeline(meta, when, judged)
+    payload["overview"] = build_timeline(meta, when, judged, pack)
     write_session_page(report, payload)
     return Counter(item.outcome for item in judgments), payload
 

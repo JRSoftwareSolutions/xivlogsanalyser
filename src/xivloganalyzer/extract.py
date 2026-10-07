@@ -261,8 +261,6 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             event = None
             if timestamp is not None:
                 event = _closest_event(by_guid.get(guid, []), fight["id"], target, timestamp)
-                if event is not None and abs(event["timestamp"] - timestamp) > 4000:
-                    event = None
             amount = (event or {}).get("amount")
             overkill = (event or {}).get("overkill") or 0
             absorb = (event or {}).get("absorbed") or 0

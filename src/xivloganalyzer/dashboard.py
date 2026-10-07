@@ -163,7 +163,7 @@ def _reached_name(marks: list[dict], phase_id: int, into: float, offset: float) 
     return name
 
 
-def build_timeline(meta: dict, when: dict, judged: set[int]) -> dict:
+def build_timeline(meta: dict, when: dict, judged: set[int], pack: FightPack | None = None) -> dict:
     """Every pull in the log, with how far it got. This is the session chart.
 
     Bar height is seconds along the fight script, so a mechanic line sits where
@@ -178,7 +178,7 @@ def build_timeline(meta: dict, when: dict, judged: set[int]) -> dict:
         started = _parse_started(started)
     phases = _phase_table(meta)
     by_id = {phase["id"]: phase for phase in phases}
-    pack = _pack_for(meta)
+    pack = pack or _pack_for(meta)
     marks = _chart_marks(pack)
     clock = pack.clock if pack else {}
     rows = []
