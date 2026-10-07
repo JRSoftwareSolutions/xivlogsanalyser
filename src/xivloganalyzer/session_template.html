@@ -365,6 +365,7 @@
     color: var(--accent); background: transparent; border: 0; border-radius: 8px;
     text-align: left; cursor: pointer; padding: 10px 10px 10px 4px; width: 100%;
   }
+  .route .station-tally { display: block; font-size: 13px; font-weight: 400; color: var(--muted); }
   .route li:hover button.station { background: var(--hover); }
   .route li:hover .dot { background: var(--stop); }
   .route button.station:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
@@ -956,10 +957,16 @@ function byTimeline(a, b) {
 }
 function phaseRoute(mechs, color) {
   if (!mechs.length) return `<p class="quiet">No mechanic review for this phase.</p>`;
-  const stops = mechs.map(mech => `<li>
+  const stops = mechs.map(mech => {
+    const reached = mech.reached || 0;
+    const tally = reached
+      ? `${mech.mistakes || 0} of ${plural(reached, "pull")} had a mistake`
+      : "No pull reached it";
+    return `<li>
       <span class="rail" aria-hidden="true"><span class="dot"></span></span>
-      <button class="station" data-go="s/${SESSION.code}/mechanic/${mech.id}">${esc(mech.name)}</button>
-    </li>`).join("");
+      <button class="station" data-go="s/${SESSION.code}/mechanic/${mech.id}">${esc(mech.name)}<span class="station-tally">${tally}</span></button>
+    </li>`;
+  }).join("");
   return `<ol class="route" style="--stop:${color}">${stops}</ol>`;
 }
 function phaseColor(id) {

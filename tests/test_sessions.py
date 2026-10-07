@@ -260,6 +260,22 @@ class PullCardsTest(unittest.TestCase):
         might = self._card(23, "ascalons-might-opener")
         self.assertTrue(all(seat["passed"] for seat in might["parts"][0]["seats"]))
 
+    def test_each_mechanic_counts_the_pulls_that_reached_it_and_had_a_mistake(self):
+        by_id = {mech["id"]: mech for mech in self.payload["mechanics"]}
+        strength = by_id["strength-of-the-ward"]
+        cards = [
+            card for pull in self.payload["pulls"] for card in pull["cards"]
+            if card["id"] == "strength-of-the-ward"
+        ]
+        self.assertEqual(strength["reached"], len(cards))
+        self.assertEqual((strength["reached"], strength["mistakes"]), (53, 20))
+        self.assertEqual(by_id["dive-from-grace"]["reached"], 0)
+        summary = session_summary(self.payload, "")
+        self.assertEqual(
+            next(row for row in summary["mechanics"] if row["id"] == "strength-of-the-ward")["mistakes"],
+            20,
+        )
+
 
 class UnscoredPullTest(unittest.TestCase):
     def test_a_pull_without_a_percentage_does_not_win(self):
@@ -337,6 +353,8 @@ class SessionDetailTest(unittest.TestCase):
             "name": "Meteors",
             "phase": 2,
             "starts": 100,
+            "reached": 0,
+            "mistakes": 0,
         }])
         blob = json.dumps(summary)
         self.assertNotIn("UNIQUE_HAPPENED_TEXT", blob)

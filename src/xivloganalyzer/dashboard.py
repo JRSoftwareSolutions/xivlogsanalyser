@@ -442,6 +442,10 @@ def session_payload(
         pull["deaths"].sort(key=lambda row: (row["t"], row["name"]))
         pull["counts"] = Counter(row["outcome"] for row in pull["deaths"])
         pull["cards"] = _pull_cards(pull, mechanics, roster, phase_durations.get(pull["id"]))
+    for mech in mechanics:
+        cards = [card for pull in pulls.values() for card in pull["cards"] if card["id"] == mech["id"]]
+        mech["reached"] = len(cards)
+        mech["mistakes"] = sum(1 for card in cards if _card_failed(card))
     unknown = [
         item.mechanic
         for item in judgments
@@ -478,12 +482,19 @@ def _pull_index(pull: dict) -> dict:
     }
 
 
+def _card_failed(card: dict) -> bool:
+    return any(not seat["passed"] for part in card["parts"] for seat in part["seats"])
+
+
 def _mechanic_index(mech: dict) -> dict:
+    """Navigation for one mechanic, and how many pulls reached it and had a mistake there."""
     return {
         "id": mech.get("id"),
         "name": mech.get("name") or "",
         "phase": mech.get("phase"),
         "starts": mech.get("starts") or 0,
+        "reached": mech.get("reached", 0),
+        "mistakes": mech.get("mistakes", 0),
     }
 
 
