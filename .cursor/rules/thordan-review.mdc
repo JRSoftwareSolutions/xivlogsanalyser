@@ -20,3 +20,5 @@ The settled Thordan headline is 86 raw deaths on report `XVz8bCqgPw1KRh9d`. A ta
 A new log goes in `reports/<code>/` with `fights.json`, `deaths-html.json`, and ability files, then `python -m xivloganalyzer analyze <code>`.
 
 Run these from the repo root. When the package is not installed (`pip install -e .`), prefix them with `PYTHONPATH=src`. The tests are `python -m unittest discover -s tests`.
+
+To overview a session without loading full JSON, use `review-session` and `python -m xivloganalyzer brief <code>` (optional `--pull`, `--mechanic`, `--outcome`, `--write`).

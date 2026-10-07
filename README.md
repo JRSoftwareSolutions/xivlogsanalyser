@@ -41,7 +41,18 @@ Then:
 python -m xivloganalyzer analyze <code>
 ```
 
-That writes `facts.json`, `judgments.json`, and `session.html` in the report folder, and rebuilds `dashboard.html` for every saved log. The death reviews are inside `session.html`. The dashboard keeps every night's pull chart and loads that page when a review is opened. The same run draws an arena still for each mechanic the party failed, from `positions/`. A clear mechanic has no still. The cast time comes from the damage events. Faith Unmoving has no stored cast, so its part `at` in `mechanics.json` is the time, and only while that pull was still going and someone failed it. A log with no positions keeps the text.
+That writes `facts.json`, `judgments.json`, and `session.html` in the report folder, and rebuilds `dashboard.html` for every saved log. The death reviews are inside `session.html`. The dashboard keeps every night's pull chart and loads that page when a review is opened. The same run draws an arena still for each mechanic the party failed, from `positions/`. A clear mechanic has no still. The cast time comes from the damage events. Faith Unmoving has no stored cast, so its part `at` in `mechanics.json` is the time, and only while that pull was still going and someone failed it. A Sanctity of the Ward empty tower is drawn when the towers resolved, about two seconds before Eternal Conviction: every tower to size, the empty ones filled, players who were already dead left out, and anyone outside a tower or sharing one ringed and named in the caption. A log with no positions keeps the text.
+
+For a short text digest of one session (counts, pull index, unknown and raw death lines):
+
+```
+python -m xivloganalyzer brief <code>
+python -m xivloganalyzer brief <code> --pull 68
+python -m xivloganalyzer brief <code> --mechanic "Skyward Leap"
+python -m xivloganalyzer brief <code> --write
+```
+
+`--write` also saves `brief.txt` in the report folder. The `review-session` skill uses this instead of loading full JSON.
 
 ## When a call is wrong
 
