@@ -6,6 +6,7 @@ import argparse
 import sys
 from pathlib import Path
 
+from xivloganalyzer.audit import FLAGS, audit_text
 from xivloganalyzer.brief import brief_text, write_brief
 from xivloganalyzer.catalog import repo_root
 from xivloganalyzer.pipeline import analyze, reanalyze, report_dirs, status
@@ -33,10 +34,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(prog="xivloganalyzer")
     parser.add_argument(
         "command",
-        choices=("analyze", "reanalyze", "status", "brief"),
+        choices=("analyze", "reanalyze", "status", "brief", "audit"),
         help=(
             "analyze one log, rebuild every out-of-date log, list which logs are "
-            "out of date, or print a session digest"
+            "out of date, print a session digest, or list calls on weak evidence"
         ),
     )
     parser.add_argument("report", nargs="?", help="report folder or code")
@@ -46,6 +47,7 @@ def main() -> None:
         help="reanalyze: judge every log again, even the ones that are up to date",
     )
     parser.add_argument("--pull", type=int, help="brief: only this pull id")
+    parser.add_argument("--flag", choices=tuple(FLAGS), help="audit: list every death with this flag")
     parser.add_argument(
         "--mechanic",
         help="brief: filter by mechanic name, ability, guid, or mechanic id",
@@ -94,7 +96,10 @@ def main() -> None:
         print(f"dashboard: {root / 'dashboard.html'}")
         return
     if not args.report:
-        raise SystemExit("brief needs a report folder or its code.")
+        raise SystemExit(f"{args.command} needs a report folder or its code.")
+    if args.command == "audit":
+        print(audit_text(_resolve(args.report, root), flag=args.flag), end="")
+        return
     report = _resolve(args.report, root)
     text = brief_text(
         report,

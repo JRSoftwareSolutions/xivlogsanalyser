@@ -51,6 +51,7 @@ class Judgment:
                 "happened": self.happened,
                 "should_have_been": self.should_have_been,
                 "went_wrong": self.went_wrong,
+                "cause": self.cause,
                 "blames": [blame.to_dict() for blame in self.blames],
                 "first": self.first,
                 "first_mistake": self.first_mistake,
