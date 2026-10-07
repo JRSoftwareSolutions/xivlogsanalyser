@@ -11,7 +11,7 @@ description: >-
 
 Thordan (phase 2) is the fight these skills know. Caps and `should_have_been` live in `fights/dsr/mechanics.json`. How to tell the cases apart lives in the mechanic skill. `notes/classification.md` is why the settled calls look like this.
 
-The death line is only this cast. A later cast of the same ability stays out of it. `should_have_been` on the mechanic is the default. A cluster part's own `should_have_been` is the line for deaths inside that part's `after` / `until` window. A `moments` row, with `above` set to an unmitigated hit, replaces the line when the hit is larger than that. Use it when one guid covers two resolutions at the same time, such as a Skyward Leap marker and an empty tower.
+The death line is only this cast. A later cast of the same ability stays out of it. `should_have_been` on the mechanic is the default. A cluster part's own `should_have_been` is the line for deaths inside that part's `after` / `until` window. A `moments` row, with `above` set to an unmitigated hit, replaces the line when the hit is larger than that. Use it when one guid covers two resolutions at the same time, such as a Skyward Leap marker and a second leap on the same player.
 
 Read the mechanic skill for the killing blow before you assign fault. Setting or checking parameters uses `analyze-mechanic-parameters`, then that mechanic's Parameters section. Which casts belong together, and what each one does, is `mechanic-components`. The session line lists those clusters by `starts`. That file names the skill for the stop. The killing-blow index is below.
 
@@ -78,8 +78,8 @@ These are the shared calls:
 - Skyward Leap at full HP: "Assigned mitigation" at 50. The plan is more than one player, and the log does not name them.
 - Empty tower: "Missed soak" at 50. The player who died is the one the explosion hit. Sanctity Eternal Conviction after 100 seconds is this call.
 - Holy Impact: "Prey markers" at 50. The two prey players dropped the comets too close.
-- Skyward Leap clip: "Out of position" at 33. Three players have the marker.
-- Vulnerability from someone else's Skyward Leap: the marker holder, named, at 100. Two marker holders that hit each other are 50 each. The death sits under Skyward Leap on the pull card, and only the marker holder fails it.
+- Someone else's Skyward Leap, by its vulnerability or by the leap itself: whoever was out of position, named. A holder off their spot owns it at 100. A player who stood in a holder's leap on its spot owns it at 100. Both off is 50 each. With no positions, the holder owns it. The death sits under Skyward Leap on the pull card, and only the owners fail it.
+- A second Skyward Leap with nobody else's leap on the player: "Earlier deaths" at 100. That leap's holder was already dead.
 - Short stack: "Missing bodies" at 100 divided by the number missing. One missing body is 100. Three missing bodies is 33.
 - Raw hit on a full share: the healers, 50 each. "Party mitigation" takes a third share, 33, when the packet has no party mit or the mit is unknown.
 - Already under 15,000 HP: the healers and "Earlier damage", 33 each.

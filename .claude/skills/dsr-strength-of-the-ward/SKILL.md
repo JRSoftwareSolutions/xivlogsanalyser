@@ -42,7 +42,7 @@ Three non-tanks get a blue marker. A large area goes off on that marker. Those t
 
 | Component | Guid | What it does |
 |---|---|---|
-| Skyward Leap | 25565, about 59–60s | The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. A death on it is a healer mistake, a missing mitigation, or a clip. |
+| Skyward Leap | 25565, about 59–60s | The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59–70k. A death on it is a healer mistake, a missing mitigation, or a clip. A clip belongs to whoever was out of position (`dsr-skyward-leap`). |
 | the Dragon's Rage | 25551, about 59–60s | The stack under Thordan for the three non-tanks without the marker. The person does not know whether the tanks share it. Lived hits in this log are usually those three plus both tanks. |
 | Holy Shield Bash | 25297, about 60s | The two tethers. One tank each. The hit stuns. A non-tank who takes that stun dies. Stretch the tether. A short tether is the failed bash. |
 | Holy Bladedance | 25299, about 62–64s | The cone after each tether. Several hits on that tank. The tank uses personal mitigation. Anyone else in the cone owns that hit. |
@@ -50,7 +50,7 @@ Three non-tanks get a blue marker. A large area goes off on that marker. Those t
 
 ## Towers
 
-Six towers spawn after the marker. Three are on the Skyward Leap markers and are fixed. The other three are not fixed. Each non-tank has to be inside a tower when it goes off. Two people in one of the unfixed towers is a miscommunication. A soaked tower does not deal Skyward Leap's damage. An empty tower explodes for about 600–760k, on the Skyward Leap guid in this log, and applies Damage Down and Paralysis to everyone. That explosion is a fail.
+Six towers spawn after the marker. Three are on the Skyward Leap markers and are fixed. The other three are not fixed. Each non-tank has to be inside a tower when it goes off. Two people in one of the unfixed towers is a miscommunication. An empty tower applies Damage Down and Paralysis to everyone. That explosion is a fail. It is not on the Skyward Leap guid: the 600–760k Skyward Leap hits land with the markers, about 59.5 seconds, and are a second leap on one player (`dsr-skyward-leap`).
 
 Eternal Conviction `25568` also hits around 63 seconds. The person did not assign that hit. Do not fold it into Sanctity. The hits around 137 and 150 seconds are the empty Sanctity towers, not this mechanic.
 

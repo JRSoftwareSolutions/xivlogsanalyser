@@ -163,9 +163,9 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             went_wrong=f"{fact.name} died to {fact.ability}.",
             cause="none",
         )
+    if fact.clipped_by and (_vuln(fact) or mechanic.marker_owns_clip):
+        return _done(fact, mechanic, happened, "fail", _marker_clip(fact, pack), "marker", pack)
     if _vuln(fact):
-        if fact.clipped_by:
-            return _done(fact, mechanic, happened, "fail", _marker_clip(fact, pack), "marker", pack)
         return _done(fact, mechanic, happened, "fail", _amp(fact, mechanic), "personal", pack)
     hit = _hit(fact)
     if mechanic.tanks_only and fact.role != "tank":
@@ -202,6 +202,12 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             fact, mechanic, happened, "fail",
             _moment_fault(fact, failed),
             failed.cause or "personal", pack,
+        )
+    if mechanic.id == "skyward-leap" and mechanic.fail_above is not None and hit > mechanic.fail_above:
+        return _done(
+            fact, mechanic, happened, "fail",
+            f"{fact.name} took a second Skyward Leap whose marker holder was already dead.",
+            "orphan", pack,
         )
     if mechanic.fail_above is not None and hit > mechanic.fail_above:
         return _done(
@@ -306,17 +312,58 @@ def clip_mechanic(fact: DeathFact, pack: FightPack) -> Mechanic | None:
     return pack.mechanic_for(fact.clip_guid, fact.phase)
 
 
+def marker_owners(fact: DeathFact) -> list[str]:
+    """Who owns a marker clip: whoever was out of position.
+
+    A holder belongs on their spot. Anyone else belongs out of reach of every
+    spot. With no positions, or when nobody looks out of place, the holders own it.
+    """
+    holders = list(fact.clipped_by)
+    people = holders if fact.name in holders else [*holders, fact.name]
+    if all(name in fact.in_spot for name in people):
+        out = [name for name in people if not fact.in_spot[name]]
+        if out:
+            return out
+    return holders
+
+
+def _joined(names: list[str]) -> str:
+    if len(names) == 1:
+        return names[0]
+    return ", ".join(names[:-1]) + f" and {names[-1]}"
+
+
 def _marker_clip(fact: DeathFact, pack: FightPack) -> str:
     source = clip_mechanic(fact, pack)
     cast = source.name if source else "marker"
-    holders = fact.clipped_by
-    if fact.name in holders:
-        others = [holder for holder in holders if holder != fact.name]
+    holders = list(fact.clipped_by)
+    overlap = fact.name in holders
+    others = [holder for holder in holders if holder != fact.name]
+    people = holders if overlap else [*holders, fact.name]
+    out = [name for name in people if fact.in_spot.get(name) is False]
+    if out and all(name in fact.in_spot for name in people):
+        return _out_of_position(fact.name, others, out, overlap, cast)
+    if overlap:
         return f"{fact.name}'s {cast} overlapped {' and '.join(others)}'s."
-    if len(holders) == 1:
-        return f"{fact.name} was clipped by {holders[0]}'s {cast}."
-    joined = ", ".join(holders[:-1]) + f" and {holders[-1]}"
-    return f"{fact.name} was clipped by {joined}'s {cast}s."
+    plural = "s" if len(holders) > 1 else ""
+    return f"{fact.name} was clipped by {_joined(holders)}'s {cast}{plural}."
+
+
+def _out_of_position(victim: str, others: list[str], out: list[str], overlap: bool, cast: str) -> str:
+    """One sentence naming who was out of position, from the victim's side."""
+    verb = "overlapped" if overlap else "clipped"
+    blamed = [name for name in out if name != victim]
+    if victim not in out:
+        be = "were" if len(blamed) > 1 else "was"
+        return f"{_joined(blamed)} {be} out of position and {verb} {victim}."
+    if not blamed:
+        if overlap:
+            return f"{victim} was out of position and overlapped {_joined(others)}."
+        plural = "s" if len(others) > 1 else ""
+        return f"{victim} stood in {_joined(others)}'s {cast}{plural}."
+    both = " both" if len(blamed) == 1 else ""
+    tail = " and overlapped" if overlap else ""
+    return f"{victim} and {_joined(blamed)} were{both} out of position{tail}."
 
 
 def _not_a_tank(fact: DeathFact, mechanic: Mechanic) -> str:
@@ -425,7 +472,7 @@ def _oversized_cause(fact: DeathFact, mechanic: Mechanic) -> str:
         return "overlap"
     if mechanic.id == "eye-of-the-tyrant":
         return "missing"
-    if mechanic.category == "tower" or mechanic.id == "skyward-leap":
+    if mechanic.category == "tower":
         return "tower"
     if mechanic.id == "lightning-storm":
         return "overlap"
@@ -631,7 +678,9 @@ def _assign_blame(
         elif item.cause == "after":
             item.blames = _shares([item.fact.name, "Earlier mistake"])
         elif item.cause == "marker":
-            item.blames = _shares(list(item.fact.clipped_by))
+            item.blames = _shares(marker_owners(item.fact))
+        elif item.cause == "orphan":
+            item.blames = _group("Earlier deaths", 1)
         elif item.cause == "overlap":
             cohort = [other for other in judgments if _same_cast(item, other)]
             item.blames = _shares(_overlap_names(item, cohort))

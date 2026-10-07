@@ -48,6 +48,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -113,6 +114,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -178,6 +180,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -243,6 +246,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -308,6 +312,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -373,6 +378,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -427,6 +433,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -475,6 +482,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -531,6 +539,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
@@ -583,6 +592,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -635,6 +645,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -675,6 +686,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
@@ -719,6 +731,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
@@ -763,6 +776,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -811,6 +825,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -859,6 +874,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -907,6 +923,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -959,6 +976,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -972,7 +990,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "65,972 unmitigated \u00b7 HP 52,082 (76%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
     "went_wrong": "Speed Panda wasn't full for Skyward Leap.",
     "blames": [
       {
@@ -1023,6 +1041,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -1088,6 +1107,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
     "mechanic": "Spiral Thrust",
@@ -1137,6 +1157,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
@@ -1191,6 +1212,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -1229,8 +1251,18 @@
     "boss_pct": 66.1,
     "pull_ms": 64082,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Speed Panda",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Speed Panda": true,
+      "Kite Noodle": false,
+      "Absolute Gigalad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1244,11 +1276,15 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "487,454 unmitigated \u00b7 HP 36,190 (37%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Absolute Gigalad died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Absolute Gigalad and Kite Noodle were both out of position.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kite Noodle",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50
       }
     ],
@@ -1277,8 +1313,17 @@
     "boss_pct": 66.1,
     "pull_ms": 64082,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": false,
+      "Spring Nymphar": true,
+      "Speed Panda": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1292,12 +1337,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "720,566 unmitigated \u00b7 HP 38,475 (56%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kite Noodle died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kite Noodle was out of position and overlapped Spring Nymphar and Speed Panda.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1325,8 +1370,15 @@
     "boss_pct": 66.1,
     "pull_ms": 64082,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Speed Panda",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kite Noodle": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1340,16 +1392,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "65,234 unmitigated \u00b7 HP 44,745 (66%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
-    "went_wrong": "Speed Panda wasn't full for Skyward Leap.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
+    "went_wrong": "Kite Noodle was out of position and overlapped Speed Panda.",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1377,8 +1425,15 @@
     "boss_pct": 66.1,
     "pull_ms": 64082,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Kite Noodle": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1392,16 +1447,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "60,074 unmitigated \u00b7 HP 47,911 (78%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
-    "went_wrong": "Spring Nymphar wasn't full for Skyward Leap.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
+    "went_wrong": "Kite Noodle was out of position and overlapped Spring Nymphar.",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Kite Noodle",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1483,6 +1534,10 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": false,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1497,11 +1552,15 @@
     "outcome": "fail",
     "happened": "2,319,057 unmitigated \u00b7 HP 22,112 (22%) \u00b7 68% amp \u00b7 no shield \u00b7 stack 1 of 5 \u00b7 Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad, 15%; Sentinel from Absolute Gigachad, 30%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Absolute Gigachad was clipped by Kite Noodle's Skyward Leap.",
+    "went_wrong": "Absolute Gigachad and Kite Noodle were both out of position.",
     "blames": [
       {
         "who": "Kite Noodle",
-        "confidence": 100
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -1531,6 +1590,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -1585,6 +1645,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
@@ -1643,6 +1704,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
@@ -1685,8 +1747,14 @@
     "boss_pct": 67.1,
     "pull_ms": 69001,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Kiara Blaiddyd": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1700,16 +1768,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "66,059 unmitigated \u00b7 HP 51,133 (75%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
-    "went_wrong": "Kiara Blaiddyd wasn't full for Skyward Leap.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Kiara Blaiddyd.",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -1751,6 +1815,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1764,7 +1829,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "61,096 unmitigated \u00b7 HP 50,656 (82%) \u00b7 no party mit \u00b7 shield 5,425 \u00b7 Galvanize from Spring Nymphar, shield 5,425",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
     "went_wrong": "Kitana Kahn wasn't full for Skyward Leap.",
     "blames": [
       {
@@ -1815,6 +1880,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1828,7 +1894,7 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "64,576 unmitigated \u00b7 HP 56,142 (82%) \u00b7 no party mit \u00b7 shield 5,281 \u00b7 Galvanize from Spring Nymphar, shield 5,281",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
     "went_wrong": "Kite Noodle wasn't full for Skyward Leap.",
     "blames": [
       {
@@ -1879,6 +1945,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1953,6 +2020,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2009,6 +2077,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2065,6 +2134,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -2105,6 +2175,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -2145,6 +2216,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -2210,6 +2282,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
@@ -2275,6 +2348,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
     "mechanic": "Spiral Thrust",
@@ -2348,6 +2422,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2429,6 +2504,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2506,6 +2582,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2579,6 +2656,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2652,6 +2730,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2711,6 +2790,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2771,8 +2851,16 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kite Noodle",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": true,
+      "Loki Doki": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2786,12 +2874,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "697,500 unmitigated \u00b7 HP 7,682 (12%) \u00b7 10% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn stood in Kite Noodle and Loki Doki's Skyward Leaps.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -2846,6 +2934,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2919,6 +3008,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3005,6 +3095,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3075,6 +3166,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3141,6 +3233,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3207,6 +3300,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3259,6 +3353,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -3313,6 +3408,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
     "mechanic": "Spiral Thrust",
@@ -3348,6 +3444,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -3414,6 +3511,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -3468,6 +3566,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -3508,6 +3607,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -3627,17 +3727,21 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Absolute Gigachad": false,
+      "Kitana Kahn": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "461,726 unmitigated \u00b7 HP 99,211 (100%) \u00b7 54% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar (Expedient), 10%; Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad (Holy Sheltron), 15%; Magic Vulnerability Up from Ser Ignasse (Skyward Leap); Physical Vulnerability Up from Ser Ignasse (Skyward Leap); Sentinel from Absolute Gigachad, 30%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Absolute Gigachad died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Absolute Gigachad was out of position and overlapped Kitana Kahn.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Absolute Gigachad",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -3690,19 +3794,26 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": true,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "682,355 unmitigated \u00b7 HP 15,487 (25%) \u00b7 10% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%; Manaward from Kitana Kahn, shield 18,521",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Absolute Gigachad was out of position and overlapped Kitana Kahn.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Absolute Gigachad",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -3746,12 +3857,13 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "68,577 unmitigated \u00b7 HP 55,255 (81%) \u00b7 10% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
     "went_wrong": "Kite Noodle wasn't full for Skyward Leap.",
     "blames": [
       {
@@ -3790,6 +3902,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -3854,18 +3967,29 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Loki Doki": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "713,119 unmitigated \u00b7 HP 61,737 (100%) \u00b7 14% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%; Fey Illumination from Spring Nymphar, 5%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn and Loki Doki were both out of position and overlapped.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
+        "who": "Loki Doki",
         "confidence": 50
       }
     ],
@@ -3920,18 +4044,29 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Loki Doki",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Loki Doki": false,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "690,935 unmitigated \u00b7 HP 16,358 (26%) \u00b7 14% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%; Fey Illumination from Spring Nymphar, 5%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Loki Doki died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Loki Doki and Kitana Kahn were both out of position and overlapped.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Kitana Kahn",
         "confidence": 50
       }
     ],
@@ -3998,6 +4133,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
@@ -4063,6 +4199,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4136,6 +4273,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4220,6 +4358,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4305,6 +4444,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4401,6 +4541,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4486,6 +4627,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -4562,18 +4704,30 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Loki Doki": false,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "468,362 unmitigated \u00b7 HP 81,404 (82%) \u00b7 49% mit \u00b7 no shield \u00b7 Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad, 15%; Sentinel from Absolute Gigachad, 30%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Absolute Gigachad died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Absolute Gigachad and Loki Doki were both out of position.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Loki Doki",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -4627,6 +4781,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dimensional-collapse",
     "mechanic": "Dimensional Collapse",
@@ -4719,6 +4874,10 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -4782,6 +4941,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -4845,6 +5005,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -4885,6 +5046,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -4933,6 +5095,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -4979,19 +5142,26 @@
     "boss_pct": 64.6,
     "pull_ms": 69354,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Spring Nymphar": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "711,326 unmitigated \u00b7 HP 68,259 (100%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Spring Nymphar was out of position and overlapped Speed Panda.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Spring Nymphar",
+        "confidence": 100
       }
     ],
     "first": true,
@@ -5044,19 +5214,26 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "668,800 unmitigated \u00b7 HP 13,681 (22%) \u00b7 5% mit \u00b7 no shield \u00b7 Fey Illumination from Spring Nymphar, 5%; Neutral Sect from Loki Doki, shield 10,151",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Spring Nymphar was out of position and overlapped Speed Panda.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Spring Nymphar",
+        "confidence": 100
       }
     ],
     "first": true,
@@ -5138,13 +5315,17 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Absolute Gigachad": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "542,877 unmitigated \u00b7 HP 89,203 (90%) \u00b7 68% amp \u00b7 no shield \u00b7 Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad, 15%; Sentinel from Absolute Gigachad, 30%; Physical Vulnerability Up from Ser Paulecrain, 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigachad was clipped by Spring Nymphar's Skyward Leap.",
+    "went_wrong": "Spring Nymphar was out of position and clipped Absolute Gigachad.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -5217,13 +5398,17 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Loki Doki": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "697,345 unmitigated \u00b7 HP 17,890 (29%) \u00b7 215% amp \u00b7 no shield \u00b7 stack 4 of 5 \u00b7 Fey Illumination from Spring Nymphar, 5%; Physical Vulnerability Up from Ser Paulecrain (Skyward Leap); Magic Vulnerability Up from Ser Paulecrain (Skyward Leap), 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Loki Doki was clipped by Spring Nymphar's Skyward Leap.",
+    "went_wrong": "Spring Nymphar was out of position and clipped Loki Doki.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -5257,6 +5442,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -5305,6 +5491,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -5379,6 +5566,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -5423,6 +5611,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -5471,6 +5660,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -5525,6 +5715,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
@@ -5589,19 +5780,27 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Kite Noodle": true,
+      "Absolute Gigalad": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "467,157 unmitigated \u00b7 HP 88,125 (89%) \u00b7 28% mit \u00b7 no shield \u00b7 Bloodwhetting from Absolute Gigalad, 10%; Rampart from Absolute Gigalad, 20%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Absolute Gigalad died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Absolute Gigalad stood in Spring Nymphar and Kite Noodle's Skyward Leaps.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Absolute Gigalad",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -5654,6 +5853,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -5734,6 +5934,10 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Absolute Gigachad": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -5786,6 +5990,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -5838,6 +6043,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -5882,6 +6088,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -5930,6 +6137,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -5978,6 +6186,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -6041,12 +6250,13 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "68,860 unmitigated \u00b7 HP 50,341 (74%) \u00b7 no party mit \u00b7 shield 13,891 \u00b7 Galvanize from Spring Nymphar, shield 7,475; Neutral Sect from Loki Doki, shield 6,416",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
     "went_wrong": "Kiara Blaiddyd wasn't full for Skyward Leap.",
     "blames": [
       {
@@ -6106,23 +6316,26 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Loki Doki": true,
+      "Spring Nymphar": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "61,235 unmitigated \u00b7 HP 44,575 (72%) \u00b7 no party mit \u00b7 shield 13,831 \u00b7 Galvanize from Spring Nymphar, shield 7,241; Neutral Sect from Loki Doki, shield 6,590",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
-    "went_wrong": "Loki Doki wasn't full for Skyward Leap.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
+    "went_wrong": "Spring Nymphar was out of position and overlapped Loki Doki.",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -6150,19 +6363,26 @@
     "boss_pct": 65.8,
     "pull_ms": 69568,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Loki Doki": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "682,825 unmitigated \u00b7 HP 52,317 (85%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Spring Nymphar was out of position and overlapped Loki Doki.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Spring Nymphar",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -6204,6 +6424,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -6252,6 +6473,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6308,6 +6530,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6378,6 +6601,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6456,6 +6680,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6512,6 +6737,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -6602,6 +6828,10 @@
       "Speed Panda"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6615,12 +6845,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "668,116 unmitigated \u00b7 HP 61,737 (100%) \u00b7 10% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar (Expedient), 10%; Galvanize from Spring Nymphar (Succor); Magic Vulnerability Up from Ser Paulecrain (Skyward Leap); Physical Vulnerability Up from Ser Paulecrain (Skyward Leap)",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn was out of position and overlapped Speed Panda.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -6662,8 +6892,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Speed Panda",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6677,12 +6914,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "748,514 unmitigated \u00b7 HP 11,352 (17%) \u00b7 10% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn was out of position and overlapped Speed Panda.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -6760,8 +6997,16 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Speed Panda",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kitana Kahn": false,
+      "Absolute Gigalad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6775,11 +7020,15 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "446,621 unmitigated \u00b7 HP 80,900 (82%) \u00b7 42% mit \u00b7 no shield \u00b7 Bloodwhetting from Absolute Gigalad, 10%; Desperate Measures from Spring Nymphar, 10%; Rampart from Absolute Gigalad, 20%; Stem the Flow from Absolute Gigalad, 10%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Absolute Gigalad died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Absolute Gigalad and Kitana Kahn were both out of position.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50
       }
     ],
@@ -6838,6 +7087,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Kite Noodle": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6852,7 +7105,7 @@
     "outcome": "fail",
     "happened": "951,930 unmitigated \u00b7 HP 29,262 (43%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kite Noodle was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Kite Noodle.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -6914,6 +7167,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Spring Nymphar": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6928,7 +7185,7 @@
     "outcome": "fail",
     "happened": "826,479 unmitigated \u00b7 HP 12,615 (20%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Spring Nymphar was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Spring Nymphar.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -6988,6 +7245,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7058,6 +7316,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7178,6 +7437,10 @@
       "Kiara Blaiddyd"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kiara Blaiddyd": true,
+      "Absolute Gigalad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7192,10 +7455,10 @@
     "outcome": "fail",
     "happened": "1,895,882 unmitigated \u00b7 HP 107,894 (109%) \u00b7 94% amp \u00b7 no shield \u00b7 Bloodwhetting from Absolute Gigalad, 10%; Desperate Measures from Spring Nymphar, 10%; Rampart from Absolute Gigalad, 20%; Sacred Soil from Spring Nymphar, 10%; Physical Vulnerability Up from Ser Paulecrain, 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigalad was clipped by Kiara Blaiddyd's Skyward Leap.",
+    "went_wrong": "Absolute Gigalad stood in Kiara Blaiddyd's Skyward Leap.",
     "blames": [
       {
-        "who": "Kiara Blaiddyd",
+        "who": "Absolute Gigalad",
         "confidence": 100
       }
     ],
@@ -7252,6 +7515,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7326,6 +7590,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7407,6 +7672,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7489,6 +7755,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7555,6 +7822,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7621,6 +7889,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7687,6 +7956,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7762,6 +8032,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -7800,8 +8071,15 @@
     "boss_pct": 64.7,
     "pull_ms": 69228,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kiara Blaiddyd",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kiara Blaiddyd": false,
+      "Kite Noodle": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7815,12 +8093,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "710,050 unmitigated \u00b7 HP 651 (1%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kiara Blaiddyd died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kiara Blaiddyd was out of position and overlapped Kite Noodle.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -7848,8 +8126,15 @@
     "boss_pct": 64.7,
     "pull_ms": 69228,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": true,
+      "Kiara Blaiddyd": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7863,12 +8148,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "724,251 unmitigated \u00b7 HP 68,218 (100%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kite Noodle died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kiara Blaiddyd was out of position and overlapped Kite Noodle.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kiara Blaiddyd",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -7950,6 +8235,10 @@
       "Kiara Blaiddyd"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kiara Blaiddyd": false,
+      "Absolute Gigachad": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7964,7 +8253,7 @@
     "outcome": "fail",
     "happened": "555,160 unmitigated \u00b7 HP 76,795 (77%) \u00b7 68% amp \u00b7 no shield \u00b7 stack 4 of 5 \u00b7 Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad, 15%; Sentinel from Absolute Gigachad, 30%; Magic Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Absolute Gigachad was clipped by Kiara Blaiddyd's Skyward Leap.",
+    "went_wrong": "Kiara Blaiddyd was out of position and clipped Absolute Gigachad.",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
@@ -8021,6 +8310,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8095,6 +8385,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8151,6 +8442,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8207,6 +8499,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8263,6 +8556,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -8326,6 +8620,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -8380,6 +8675,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -8446,6 +8742,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8516,6 +8813,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8582,6 +8880,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8672,6 +8971,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8742,6 +9042,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8808,6 +9109,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8936,13 +9238,17 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "585,344 unmitigated \u00b7 HP 117,308 (119%) \u00b7 74% amp \u00b7 no shield \u00b7 Bloodwhetting from Absolute Gigalad, 10%; Desperate Measures from Spring Nymphar, 10%; Rampart from Absolute Gigalad, 20%; Shield Samba from Kiara Blaiddyd, 10%; Stem the Flow from Absolute Gigalad, 10%; Physical Vulnerability Up from Ser Paulecrain, 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigalad was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Absolute Gigalad.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -9016,13 +9322,17 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Kiara Blaiddyd": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "752,510 unmitigated \u00b7 HP 22,865 (34%) \u00b7 169% amp \u00b7 no shield \u00b7 stack 4 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Shield Samba from Kiara Blaiddyd, 10%; Magic Vulnerability Up from Ser Paulecrain, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kiara Blaiddyd was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Kiara Blaiddyd.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -9096,13 +9406,17 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Spring Nymphar": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "650,814 unmitigated \u00b7 HP 33,155 (54%) \u00b7 169% amp \u00b7 no shield \u00b7 stack 4 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Shield Samba from Kiara Blaiddyd, 10%; Magic Vulnerability Up from Ser Paulecrain, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Spring Nymphar was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Spring Nymphar.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -9150,6 +9464,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9235,6 +9550,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9320,6 +9636,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9379,6 +9696,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9442,6 +9760,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9524,6 +9843,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -9601,6 +9921,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9674,6 +9995,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9747,6 +10069,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9843,6 +10166,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9939,6 +10263,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10021,6 +10346,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10118,6 +10444,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10187,6 +10514,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -10260,6 +10588,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -10379,6 +10708,10 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": true,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -10400,10 +10733,10 @@
     "outcome": "fail",
     "happened": "1,622,673 unmitigated \u00b7 HP 71,497 (72%) \u00b7 51% amp \u00b7 no shield \u00b7 Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad, 15%; Sentinel from Absolute Gigachad, 30%; Shield Samba from Kiara Blaiddyd, 10%; Physical Vulnerability Up from Ser Paulecrain, 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigachad was clipped by Kite Noodle's Skyward Leap.",
+    "went_wrong": "Absolute Gigachad stood in Kite Noodle's Skyward Leap.",
     "blames": [
       {
-        "who": "Kite Noodle",
+        "who": "Absolute Gigachad",
         "confidence": 100
       }
     ],
@@ -10448,6 +10781,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -10517,6 +10851,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -10597,6 +10932,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -10663,6 +10999,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -10771,6 +11108,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -10862,6 +11200,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -10935,6 +11274,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11019,6 +11359,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11092,6 +11433,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11176,6 +11518,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11271,6 +11614,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11344,6 +11688,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11399,6 +11744,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11483,6 +11829,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -11552,6 +11899,10 @@
       "Speed Panda"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11565,16 +11916,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "658,593 unmitigated \u00b7 HP 61,737 (100%) \u00b7 199% amp \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kitana Kahn's Skyward Leap overlapped Speed Panda's.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn was out of position and overlapped Speed Panda.",
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Speed Panda",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -11633,6 +11980,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11646,16 +11997,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "712,669 unmitigated \u00b7 HP 24,586 (36%) \u00b7 199% amp \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Speed Panda's Skyward Leap overlapped Kitana Kahn's.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn was out of position and overlapped Speed Panda.",
     "blames": [
       {
-        "who": "Speed Panda",
-        "confidence": 50
-      },
-      {
         "who": "Kitana Kahn",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": false,
@@ -11710,6 +12057,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11758,6 +12106,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11832,6 +12181,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11888,6 +12238,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11958,6 +12309,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12040,6 +12392,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -12094,6 +12447,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -12134,6 +12488,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -12188,6 +12543,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -12228,6 +12584,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -12268,6 +12625,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -12308,6 +12666,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -12348,6 +12707,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -12388,6 +12748,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -12428,6 +12789,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -12468,6 +12830,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -12508,6 +12871,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12552,6 +12916,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12596,6 +12961,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12640,6 +13006,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12684,6 +13051,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12728,6 +13096,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -12791,6 +13160,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -12868,6 +13238,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -12963,6 +13334,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -13047,6 +13419,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -13131,6 +13504,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -13190,6 +13564,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -13249,6 +13624,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -13308,6 +13684,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
@@ -13348,6 +13725,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -13422,6 +13800,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -13486,6 +13865,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -13542,6 +13922,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -13612,6 +13993,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -13664,6 +14046,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -13720,6 +14103,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -13788,6 +14172,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -13856,6 +14241,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
@@ -13896,6 +14282,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -13950,6 +14337,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -13990,6 +14378,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -14044,6 +14433,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -14084,6 +14474,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -14124,6 +14515,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -14164,6 +14556,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14232,19 +14625,26 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn",
+      "Speed Panda"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "676,782 unmitigated \u00b7 HP 61,737 (100%) \u00b7 19% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%; Shield Samba from Kiara Blaiddyd, 10%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn was out of position and overlapped Speed Panda.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": true,
@@ -14347,17 +14747,21 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "731,012 unmitigated \u00b7 HP 26,668 (39%) \u00b7 19% mit \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar (Expedient), 10%; Magic Vulnerability Up from Ser Ignasse (Skyward Leap); Physical Vulnerability Up from Ser Ignasse (Skyward Leap); Shield Samba from Kiara Blaiddyd, 10%; Galvanize from Spring Nymphar, shield 12,139; Neutral Sect from Loki Doki, shield 9,166",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn was out of position and overlapped Speed Panda.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": true,
@@ -14413,6 +14817,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -14516,6 +14921,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -14619,6 +15025,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -14711,6 +15118,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -14815,6 +15223,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -14881,6 +15290,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -14947,6 +15357,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -14987,6 +15398,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -15027,6 +15439,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -15067,6 +15480,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -15111,6 +15525,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -15155,6 +15570,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -15199,6 +15615,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -15243,6 +15660,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -15287,6 +15705,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
     "mechanic": "Dragon's Glory",
@@ -15327,6 +15746,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -15367,6 +15787,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -15407,6 +15828,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -15447,6 +15869,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -15487,6 +15910,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -15527,6 +15951,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -15575,6 +16000,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -15623,6 +16049,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -15675,12 +16102,13 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "66,870 unmitigated \u00b7 HP 53,253 (78%) \u00b7 no party mit \u00b7 shield 9,243 \u00b7 Neutral Sect from Loki Doki, shield 9,243",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
     "went_wrong": "Speed Panda wasn't full for Skyward Leap.",
     "blames": [
       {
@@ -15731,6 +16159,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -15779,6 +16208,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -15827,6 +16257,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -15875,6 +16306,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -15923,6 +16355,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -15985,6 +16418,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -16059,6 +16493,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -16103,6 +16538,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -16181,6 +16617,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -16319,6 +16756,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -16347,11 +16788,15 @@
     "outcome": "fail",
     "happened": "911,713 unmitigated \u00b7 HP 79,225 (80%) \u00b7 36% amp \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%; Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad, 15%; Sentinel from Absolute Gigachad, 30%; Shield Samba from Kiara Blaiddyd, 10%; Physical Vulnerability Up from Ser Paulecrain, 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigachad was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Absolute Gigachad and Kitana Kahn were both out of position.",
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 100
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 50
       }
     ],
     "first": false,
@@ -16407,6 +16852,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -16513,6 +16959,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -16631,6 +17078,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -16737,6 +17185,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -16843,6 +17292,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -16923,6 +17373,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17003,6 +17454,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
@@ -17043,6 +17495,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17099,6 +17552,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17169,6 +17623,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17239,6 +17694,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17291,6 +17747,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17347,6 +17804,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17403,6 +17861,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17459,6 +17918,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17525,6 +17985,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -17601,6 +18062,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17674,6 +18136,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17758,6 +18221,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17817,6 +18281,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17905,6 +18370,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17964,6 +18430,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18023,6 +18490,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18082,6 +18550,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -18134,8 +18603,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Loki Doki": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18149,12 +18625,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "686,973 unmitigated \u00b7 HP 61,737 (100%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn was out of position and overlapped Loki Doki.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -18207,8 +18683,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Loki Doki",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Loki Doki": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18222,12 +18705,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "713,989 unmitigated \u00b7 HP 14,228 (23%) \u00b7 10% mit \u00b7 no shield \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Neutral Sect from Loki Doki, shield 6,752",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Loki Doki died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn was out of position and overlapped Loki Doki.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -18305,8 +18788,16 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": true,
+      "Kitana Kahn": false,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18320,11 +18811,15 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "446,090 unmitigated \u00b7 HP 77,441 (78%) \u00b7 54% mit \u00b7 no shield \u00b7 Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad, 15%; Sentinel from Absolute Gigachad, 30%; Shield Samba from Kiara Blaiddyd, 10%",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Absolute Gigachad died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Absolute Gigachad and Kitana Kahn were both out of position.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -18383,6 +18878,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Kiara Blaiddyd": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18397,7 +18896,7 @@
     "outcome": "fail",
     "happened": "874,514 unmitigated \u00b7 HP 21,232 (31%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 4 of 5 \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kiara Blaiddyd was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Kiara Blaiddyd.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -18459,6 +18958,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18473,7 +18976,7 @@
     "outcome": "fail",
     "happened": "908,493 unmitigated \u00b7 HP 22,903 (34%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 4 of 5 \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Speed Panda was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Speed Panda.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -18535,6 +19038,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Spring Nymphar": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18549,7 +19056,7 @@
     "outcome": "fail",
     "happened": "860,704 unmitigated \u00b7 HP 21,638 (35%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 4 of 5 \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Spring Nymphar was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Spring Nymphar.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -18680,6 +19187,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18694,7 +19205,7 @@
     "outcome": "fail",
     "happened": "600,417 unmitigated \u00b7 HP 118,362 (120%) \u00b7 94% amp \u00b7 no shield \u00b7 stack 4 of 5 \u00b7 Bloodwhetting from Absolute Gigalad, 10%; Galvanize from Spring Nymphar; Neutral Sect from Loki Doki; Rampart from Absolute Gigalad, 20%; Shield Samba from Kiara Blaiddyd, 10%; Stem the Flow from Absolute Gigalad, 10%; Stem the Tide from Absolute Gigalad; Magic Vulnerability Up from Ser Vellguine, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Absolute Gigalad was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Absolute Gigalad.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -18742,6 +19253,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18794,6 +19306,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -18885,6 +19398,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -18980,6 +19494,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -19063,6 +19578,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -19146,6 +19662,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -19229,6 +19746,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -19312,6 +19830,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -19409,6 +19928,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -19492,6 +20012,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
@@ -19555,6 +20076,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -19620,6 +20142,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -19682,6 +20205,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -19764,6 +20288,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -19842,6 +20367,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -19894,6 +20420,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -19964,6 +20491,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -20034,6 +20562,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -20126,6 +20655,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20199,6 +20729,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20290,6 +20821,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20381,6 +20913,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20447,6 +20980,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20542,6 +21076,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20608,6 +21143,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20686,6 +21222,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20775,6 +21312,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -20815,6 +21353,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20899,6 +21438,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20979,6 +21519,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -21059,6 +21600,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -21139,6 +21681,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -21205,6 +21748,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -21275,6 +21819,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -21341,6 +21886,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -21433,6 +21979,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21518,6 +22065,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21591,6 +22139,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21676,6 +22225,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21749,6 +22299,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21822,6 +22373,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21904,6 +22456,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21963,6 +22516,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -22058,6 +22612,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -22149,6 +22704,10 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
@@ -22189,6 +22748,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22252,6 +22812,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22315,6 +22876,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22392,6 +22954,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22451,6 +23014,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22514,6 +23078,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22577,6 +23142,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22636,6 +23202,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -22747,6 +23314,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -22858,6 +23426,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -22969,6 +23538,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -23080,6 +23650,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -23191,6 +23762,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -23302,6 +23874,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -23413,6 +23986,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -23562,6 +24136,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -23606,6 +24181,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -23689,6 +24265,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -23758,6 +24335,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -23850,6 +24428,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -23942,6 +24521,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -24034,6 +24614,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -24138,6 +24719,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -24214,6 +24796,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -24290,6 +24873,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24357,6 +24941,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24412,6 +24997,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24467,6 +25053,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24534,6 +25121,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24589,6 +25177,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24667,6 +25256,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24722,6 +25312,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24781,6 +25372,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -24821,6 +25413,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -24861,6 +25454,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -24905,6 +25499,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -24949,6 +25544,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -24993,6 +25589,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -25037,6 +25634,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -25081,6 +25679,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -25148,6 +25747,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25203,6 +25803,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25258,6 +25859,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25313,6 +25915,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25380,6 +25983,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25439,6 +26043,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25494,6 +26099,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25549,6 +26155,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25620,6 +26227,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25703,6 +26311,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25794,6 +26403,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25881,6 +26491,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -25982,6 +26593,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -26065,6 +26677,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -26148,6 +26761,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -26245,6 +26859,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -26328,6 +26943,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -26368,6 +26984,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
     "mechanic": "Dragon's Glory",
@@ -26408,6 +27025,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
     "mechanic": "Dragon's Glory",
@@ -26448,6 +27066,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
     "mechanic": "Dragon's Glory",
@@ -26488,6 +27107,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-glory",
     "mechanic": "Dragon's Glory",
@@ -26542,6 +27162,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -26596,6 +27217,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -26650,6 +27272,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -26704,6 +27327,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -26780,6 +27404,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "shining-blade",
     "mechanic": "Shining Blade",
@@ -26834,6 +27459,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -26928,6 +27554,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -27011,6 +27638,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -27094,6 +27722,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -27181,6 +27810,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -27280,6 +27910,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -27375,6 +28006,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -27444,6 +28076,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -27484,6 +28117,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -27590,6 +28224,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -27692,6 +28327,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -27794,6 +28430,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -27896,6 +28533,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -27986,6 +28624,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -28084,6 +28723,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -28182,6 +28822,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -28258,6 +28899,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -28324,6 +28966,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -28392,13 +29035,17 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Loki Doki": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "684,070 unmitigated \u00b7 HP 29,427 (47%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Loki Doki was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Loki Doki.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -28540,13 +29187,17 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigachad": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "467,818 unmitigated \u00b7 HP 99,211 (100%) \u00b7 51% amp \u00b7 no shield \u00b7 Galvanize from Spring Nymphar; Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad (Holy Sheltron), 15%; Magic Vulnerability Up from Ser Vellguine (Skyward Leap); Neutral Sect from Loki Doki; Sentinel from Absolute Gigachad, 30%; Shake It Off from Absolute Gigalad; Shield Samba from Kiara Blaiddyd, 10%; Physical Vulnerability Up from Ser Vellguine (Skyward Leap), 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigachad was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Absolute Gigachad.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -28699,13 +29350,17 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "631,374 unmitigated \u00b7 HP 106,611 (108%) \u00b7 94% amp \u00b7 no shield \u00b7 Bloodwhetting from Absolute Gigalad, 10%; Galvanize from Spring Nymphar; Magic Vulnerability Up from Ser Vellguine (Skyward Leap); Neutral Sect from Loki Doki; Rampart from Absolute Gigalad, 20%; Shake It Off from Absolute Gigalad; Shield Samba from Kiara Blaiddyd, 10%; Stem the Flow from Absolute Gigalad (Bloodwhetting), 10%; Stem the Tide from Absolute Gigalad; Physical Vulnerability Up from Ser Vellguine (Skyward Leap), 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigalad was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Absolute Gigalad.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -28767,13 +29422,17 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "707,076 unmitigated \u00b7 HP 36,951 (54%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Shield Samba from Kiara Blaiddyd, 10%; Magic Vulnerability Up from Ser Vellguine, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Speed Panda was clipped by Kitana Kahn's Skyward Leap.",
+    "went_wrong": "Kitana Kahn was out of position and clipped Speed Panda.",
     "blames": [
       {
         "who": "Kitana Kahn",
@@ -28819,6 +29478,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -28863,6 +29523,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -28921,6 +29582,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -28965,6 +29627,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -29005,6 +29668,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -29045,6 +29709,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -29093,6 +29758,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -29141,6 +29807,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -29189,6 +29856,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -29229,6 +29897,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -29273,6 +29942,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",

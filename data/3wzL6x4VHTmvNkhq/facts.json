@@ -48,6 +48,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -99,6 +100,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -150,6 +152,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -201,6 +204,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -252,6 +256,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -303,6 +308,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -343,6 +349,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -369,6 +376,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -407,6 +415,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -445,6 +454,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -483,6 +493,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -509,6 +520,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -535,6 +547,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -561,6 +574,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -595,6 +609,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -629,6 +644,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -663,6 +679,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -697,6 +714,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -743,6 +761,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -794,6 +813,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -834,6 +854,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -874,6 +895,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -898,8 +920,18 @@
     "boss_pct": 66.1,
     "pull_ms": 64082,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Speed Panda",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Speed Panda": true,
+      "Kite Noodle": false,
+      "Absolute Gigalad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -932,8 +964,17 @@
     "boss_pct": 66.1,
     "pull_ms": 64082,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kite Noodle",
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": false,
+      "Spring Nymphar": true,
+      "Speed Panda": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -966,8 +1007,15 @@
     "boss_pct": 66.1,
     "pull_ms": 64082,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Speed Panda",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kite Noodle": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1000,8 +1048,15 @@
     "boss_pct": 66.1,
     "pull_ms": 64082,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Kite Noodle": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1088,6 +1143,10 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": false,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1122,6 +1181,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -1162,6 +1222,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -1202,6 +1263,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -1226,8 +1288,14 @@
     "boss_pct": 67.1,
     "pull_ms": 69001,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Kiara Blaiddyd": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1274,6 +1342,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1320,6 +1389,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1366,6 +1436,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1426,6 +1497,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1460,6 +1532,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1494,6 +1567,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -1520,6 +1594,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -1546,6 +1621,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -1597,6 +1673,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -1648,6 +1725,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -1712,6 +1790,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1779,6 +1858,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1834,6 +1914,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1889,6 +1970,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1944,6 +2026,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1985,6 +2068,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2031,8 +2115,16 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kite Noodle",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": true,
+      "Loki Doki": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2092,6 +2184,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2151,6 +2244,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2223,6 +2317,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2271,6 +2366,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2319,6 +2415,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2367,6 +2464,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2401,6 +2499,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -2441,6 +2540,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -2467,6 +2567,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -2519,6 +2620,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -2559,6 +2661,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -2585,6 +2688,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -2686,6 +2790,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Absolute Gigachad": false,
+      "Kitana Kahn": true
+    },
     "prior_debuffs": []
   },
   {
@@ -2735,8 +2843,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": true,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": []
   },
   {
@@ -2777,6 +2892,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -2803,6 +2919,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -2853,8 +2970,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Loki Doki": false
+    },
     "prior_debuffs": []
   },
   {
@@ -2905,8 +3029,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Loki Doki",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Loki Doki": false,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": []
   },
   {
@@ -2969,6 +3100,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -3020,6 +3152,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -3075,6 +3208,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -3141,6 +3275,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -3208,6 +3343,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -3286,6 +3422,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -3353,6 +3490,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -3415,8 +3553,16 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Loki Doki": false,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": []
   },
   {
@@ -3466,6 +3612,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -3544,6 +3691,10 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": []
   },
   {
@@ -3593,6 +3744,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -3642,6 +3794,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -3668,6 +3821,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -3694,6 +3848,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -3718,8 +3873,15 @@
     "boss_pct": 64.6,
     "pull_ms": 69354,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Spring Nymphar": false
+    },
     "prior_debuffs": []
   },
   {
@@ -3769,8 +3931,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Speed Panda"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": []
   },
   {
@@ -3849,6 +4018,10 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Absolute Gigachad": true
+    },
     "prior_debuffs": []
   },
   {
@@ -3914,6 +4087,10 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Loki Doki": true
+    },
     "prior_debuffs": []
   },
   {
@@ -3940,6 +4117,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -3966,6 +4144,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4018,6 +4197,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4044,6 +4224,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4070,6 +4251,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4110,6 +4292,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4160,8 +4343,16 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Kite Noodle": true,
+      "Absolute Gigalad": false
+    },
     "prior_debuffs": []
   },
   {
@@ -4211,6 +4402,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4277,6 +4469,10 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Absolute Gigachad": true
+    },
     "prior_debuffs": []
   },
   {
@@ -4315,6 +4511,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4353,6 +4550,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4379,6 +4577,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4405,6 +4604,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4431,6 +4631,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4480,6 +4681,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4527,8 +4729,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Loki Doki": true,
+      "Spring Nymphar": false
+    },
     "prior_debuffs": []
   },
   {
@@ -4553,8 +4762,15 @@
     "boss_pct": 65.8,
     "pull_ms": 69568,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Loki Doki": true
+    },
     "prior_debuffs": []
   },
   {
@@ -4593,6 +4809,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4619,6 +4836,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4653,6 +4871,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4701,6 +4920,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4761,6 +4981,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4795,6 +5016,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -4871,6 +5093,10 @@
       "Speed Panda"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4917,8 +5143,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Speed Panda",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5001,8 +5234,16 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Speed Panda",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kitana Kahn": false,
+      "Absolute Gigalad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5065,6 +5306,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Kite Noodle": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5127,6 +5372,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Spring Nymphar": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5187,6 +5436,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5235,6 +5485,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5333,6 +5584,10 @@
       "Kiara Blaiddyd"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kiara Blaiddyd": true,
+      "Absolute Gigalad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5393,6 +5648,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5453,6 +5709,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5525,6 +5782,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5585,6 +5843,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5633,6 +5892,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5681,6 +5941,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5729,6 +5990,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5786,6 +6048,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -5810,8 +6073,15 @@
     "boss_pct": 64.7,
     "pull_ms": 69228,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kiara Blaiddyd",
+      "Kite Noodle"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kiara Blaiddyd": false,
+      "Kite Noodle": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -5844,8 +6114,15 @@
     "boss_pct": 64.7,
     "pull_ms": 69228,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": true,
+      "Kiara Blaiddyd": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -5932,6 +6209,10 @@
       "Kiara Blaiddyd"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kiara Blaiddyd": false,
+      "Absolute Gigachad": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -5989,6 +6270,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6049,6 +6331,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6083,6 +6366,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6117,6 +6401,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6151,6 +6436,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -6200,6 +6486,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -6240,6 +6527,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -6292,6 +6580,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6340,6 +6629,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6388,6 +6678,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6460,6 +6751,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6508,6 +6800,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6556,6 +6849,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6666,6 +6960,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": []
   },
   {
@@ -6732,6 +7030,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Kiara Blaiddyd": true
+    },
     "prior_debuffs": []
   },
   {
@@ -6798,6 +7100,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Spring Nymphar": true
+    },
     "prior_debuffs": []
   },
   {
@@ -6838,6 +7144,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6905,6 +7212,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -6972,6 +7280,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7013,6 +7322,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7054,6 +7364,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7118,6 +7429,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -7181,6 +7493,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7236,6 +7549,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7291,6 +7605,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7369,6 +7684,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7447,6 +7763,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7511,6 +7828,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7590,6 +7908,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -7645,6 +7964,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -7704,6 +8024,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -7809,6 +8130,10 @@
       "Kite Noodle"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": true,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -7864,6 +8189,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -7919,6 +8245,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -7981,6 +8308,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -8029,6 +8357,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -8115,6 +8444,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Spring Nymphar",
@@ -8188,6 +8518,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8243,6 +8574,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8309,6 +8641,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8364,6 +8697,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8430,6 +8764,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8507,6 +8842,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8562,6 +8898,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8603,6 +8940,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8669,6 +9007,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -8724,6 +9063,10 @@
       "Speed Panda"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8787,6 +9130,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8846,6 +9193,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8880,6 +9228,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8940,6 +9289,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8974,6 +9324,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9022,6 +9373,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9082,6 +9434,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9122,6 +9475,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9148,6 +9502,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9188,6 +9543,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9214,6 +9570,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9240,6 +9597,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9266,6 +9624,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9292,6 +9651,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9318,6 +9678,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9344,6 +9705,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9370,6 +9732,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9396,6 +9759,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9422,6 +9786,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9448,6 +9813,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9474,6 +9840,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9500,6 +9867,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9526,6 +9894,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9567,6 +9936,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9622,6 +9992,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9699,6 +10070,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9765,6 +10137,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9831,6 +10204,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9872,6 +10246,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9913,6 +10288,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9954,6 +10330,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -9980,6 +10357,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -10040,6 +10418,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -10086,6 +10465,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -10120,6 +10500,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -10168,6 +10549,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -10202,6 +10584,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -10236,6 +10619,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -10282,6 +10666,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -10328,6 +10713,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -10354,6 +10740,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -10394,6 +10781,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -10420,6 +10808,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -10460,6 +10849,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -10486,6 +10876,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -10512,6 +10903,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -10538,6 +10930,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -10588,8 +10981,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn",
+      "Speed Panda"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": []
   },
   {
@@ -10689,6 +11089,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Speed Panda": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": []
   },
   {
@@ -10741,6 +11145,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -10826,6 +11231,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -10911,6 +11317,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -10985,6 +11392,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11071,6 +11479,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11119,6 +11528,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11167,6 +11577,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11193,6 +11604,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11219,6 +11631,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11245,6 +11658,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11271,6 +11685,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11297,6 +11712,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11323,6 +11739,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11349,6 +11766,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11375,6 +11793,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11401,6 +11820,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11427,6 +11847,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11453,6 +11874,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11479,6 +11901,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11505,6 +11928,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11531,6 +11955,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11565,6 +11990,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11599,6 +12025,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11637,6 +12064,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11675,6 +12103,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11701,6 +12130,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11727,6 +12157,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11753,6 +12184,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11779,6 +12211,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11819,6 +12252,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11871,6 +12305,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11897,6 +12332,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -11961,6 +12397,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12085,6 +12522,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12159,6 +12600,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12247,6 +12689,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12347,6 +12790,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12435,6 +12879,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12523,6 +12968,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12585,6 +13031,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12647,6 +13094,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -12673,6 +13121,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -12707,6 +13156,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -12755,6 +13205,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -12803,6 +13254,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -12837,6 +13289,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -12871,6 +13324,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -12905,6 +13359,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -12939,6 +13394,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -12987,6 +13443,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -13049,6 +13506,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13104,6 +13562,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13170,6 +13629,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13211,6 +13671,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13277,6 +13738,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13318,6 +13780,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13359,6 +13822,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13400,6 +13864,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -13438,8 +13903,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Loki Doki": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13497,8 +13969,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Loki Doki",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Loki Doki": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13581,8 +14060,16 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Kite Noodle",
+      "Kitana Kahn"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Kite Noodle": true,
+      "Kitana Kahn": false,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13645,6 +14132,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Kiara Blaiddyd": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13707,6 +14198,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13769,6 +14264,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Spring Nymphar": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13900,6 +14399,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13948,6 +14451,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13982,6 +14486,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -14051,6 +14556,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -14132,6 +14638,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -14201,6 +14708,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -14270,6 +14778,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -14339,6 +14848,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -14408,6 +14918,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -14491,6 +15002,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kite Noodle",
@@ -14560,6 +15072,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -14609,6 +15122,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -14660,6 +15174,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -14708,6 +15223,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -14776,6 +15292,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -14836,6 +15353,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -14870,6 +15388,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -14918,6 +15437,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -14966,6 +15486,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -15036,6 +15557,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15095,6 +15617,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15168,6 +15691,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15241,6 +15765,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15289,6 +15814,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15362,6 +15888,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15410,6 +15937,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15470,6 +15998,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15541,6 +16070,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -15567,6 +16097,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -15629,6 +16160,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -15691,6 +16223,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -15753,6 +16286,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -15815,6 +16349,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -15863,6 +16398,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -15911,6 +16447,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -15959,6 +16496,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -16033,6 +16571,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16100,6 +16639,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16155,6 +16695,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16222,6 +16763,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16277,6 +16819,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16332,6 +16875,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16396,6 +16940,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16437,6 +16982,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16514,6 +17060,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -16591,6 +17138,10 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": true,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": []
   },
   {
@@ -16617,6 +17168,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -16658,6 +17210,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -16699,6 +17252,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -16754,6 +17308,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -16795,6 +17350,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -16836,6 +17392,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -16877,6 +17434,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -16918,6 +17476,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -17015,6 +17574,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -17112,6 +17672,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -17209,6 +17770,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -17306,6 +17868,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -17403,6 +17966,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -17500,6 +18064,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -17597,6 +18162,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -17732,6 +18298,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -17758,6 +18325,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17827,6 +18395,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17882,6 +18451,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -17944,6 +18514,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -18006,6 +18577,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -18068,6 +18640,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -18142,6 +18715,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -18204,6 +18778,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -18266,6 +18841,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -18319,6 +18895,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -18360,6 +18937,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -18401,6 +18979,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -18454,6 +19033,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -18495,6 +19075,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -18559,6 +19140,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -18600,6 +19182,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -18641,6 +19224,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -18667,6 +19251,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -18693,6 +19278,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -18719,6 +19305,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -18745,6 +19332,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -18771,6 +19359,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -18797,6 +19386,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -18823,6 +19413,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -18872,6 +19463,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -18913,6 +19505,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -18954,6 +19547,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -18995,6 +19589,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19048,6 +19643,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19089,6 +19685,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19130,6 +19727,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19171,6 +19769,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19224,6 +19823,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19293,6 +19893,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19362,6 +19963,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19431,6 +20033,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19514,6 +20117,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19583,6 +20187,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19652,6 +20257,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19735,6 +20341,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -19804,6 +20411,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -19830,6 +20438,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -19856,6 +20465,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -19882,6 +20492,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -19908,6 +20519,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -19948,6 +20560,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -19988,6 +20601,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -20028,6 +20642,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -20068,6 +20683,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -20130,6 +20746,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -20170,6 +20787,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20250,6 +20868,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20319,6 +20938,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20388,6 +21008,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20457,6 +21078,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20538,6 +21160,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20619,6 +21242,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20674,6 +21298,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -20700,6 +21325,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -20792,6 +21418,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -20880,6 +21507,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -20968,6 +21596,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -21056,6 +21685,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -21132,6 +21762,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -21208,6 +21839,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -21284,6 +21916,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Speed Panda",
@@ -21346,6 +21979,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -21398,6 +22032,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -21452,6 +22087,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Loki Doki": true
+    },
     "prior_debuffs": []
   },
   {
@@ -21586,6 +22225,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigachad": true
+    },
     "prior_debuffs": []
   },
   {
@@ -21731,6 +22374,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": []
   },
   {
@@ -21785,6 +22432,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": []
   },
   {
@@ -21823,6 +22474,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -21849,6 +22501,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -21889,6 +22542,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -21915,6 +22569,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -21941,6 +22596,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -21967,6 +22623,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -21993,6 +22650,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -22019,6 +22677,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -22045,6 +22704,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -22071,6 +22731,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   },
   {
@@ -22097,6 +22758,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": []
   }
 ]

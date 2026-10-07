@@ -18,7 +18,7 @@ About 60 seconds into phase 2, as the second Heavy Impact pulse goes off. Two of
 
 A non-tank hit is theirs. The stun kills them. Pull 30, Kitana Kahn, 4,228,180. Pull 36, Loki Doki, 4,126,915. Both had Physical Vulnerability Up.
 
-A short tether is the failed bash: hundreds of thousands to about 1.1 million, with Physical Vulnerability Up. The tank deaths in this log are that shape, and they already had personal mitigation on the packet. The vuln is the failed tether, not a missing Rampart. When that vuln came from someone else's Skyward Leap that clipped the tank, the marker holder owns the death (`dsr-skyward-leap`, marker clip).
+A short tether is the failed bash: hundreds of thousands to about 1.1 million, with Physical Vulnerability Up. The tank deaths in this log are that shape, and they already had personal mitigation on the packet. The vuln is the failed tether, not a missing Rampart. When that vuln came from someone else's Skyward Leap that clipped the tank, whoever was out of position owns the death (`dsr-skyward-leap`, clip).
 
 ## How to tell
 

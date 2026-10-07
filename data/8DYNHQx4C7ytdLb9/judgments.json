@@ -70,6 +70,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dimensional-collapse",
     "mechanic": "Dimensional Collapse",
@@ -138,13 +139,17 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Speed Panda": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "944,888 unmitigated \u00b7 HP 37,051 (54%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Magic Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Speed Panda was clipped by Spring Nymphar's Skyward Leap.",
+    "went_wrong": "Spring Nymphar was out of position and clipped Speed Panda.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -242,13 +247,17 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Absolute Gigachad": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
     "outcome": "fail",
     "happened": "481,176 unmitigated \u00b7 HP 99,211 (100%) \u00b7 51% amp \u00b7 no shield \u00b7 Desperate Measures from Spring Nymphar, 10%; Holy Sheltron from Absolute Gigachad, 15%; Knight's Resolve from Absolute Gigachad, 15%; Sentinel from Absolute Gigachad, 30%; Physical Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigachad was clipped by Spring Nymphar's Skyward Leap.",
+    "went_wrong": "Spring Nymphar was out of position and clipped Absolute Gigachad.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -310,13 +319,17 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Kiara Blaiddyd": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "950,400 unmitigated \u00b7 HP 34,482 (50%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Magic Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kiara Blaiddyd was clipped by Spring Nymphar's Skyward Leap.",
+    "went_wrong": "Spring Nymphar was out of position and clipped Kiara Blaiddyd.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -378,13 +391,17 @@
       "Spring Nymphar"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Kitana Kahn": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "824,990 unmitigated \u00b7 HP 52,362 (85%) \u00b7 199% amp \u00b7 no shield \u00b7 stack 3 of 5 \u00b7 Desperate Measures from Spring Nymphar, 10%; Magic Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kitana Kahn was clipped by Spring Nymphar's Skyward Leap.",
+    "went_wrong": "Spring Nymphar was out of position and clipped Kitana Kahn.",
     "blames": [
       {
         "who": "Spring Nymphar",
@@ -441,6 +458,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -511,6 +529,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -575,6 +594,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -631,6 +651,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
@@ -683,6 +704,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavens-stake",
     "mechanic": "Heavens' Stake",
@@ -735,6 +757,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -775,6 +798,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -830,6 +854,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -885,6 +910,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -940,6 +966,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -995,6 +1022,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1050,6 +1078,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -1130,6 +1159,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -1218,6 +1248,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -1281,6 +1312,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
     "mechanic": "Holy Shield Bash",
@@ -1342,6 +1374,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
@@ -1432,6 +1465,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -1540,6 +1574,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -1660,6 +1695,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -1792,6 +1828,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -1890,6 +1927,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -1984,6 +2022,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -2024,6 +2063,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -2102,6 +2142,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -2146,6 +2187,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -2235,6 +2277,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -2335,6 +2378,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -2379,6 +2423,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -2479,6 +2524,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -2523,6 +2569,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -2563,6 +2610,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -2607,6 +2655,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -2651,6 +2700,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2706,6 +2756,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2761,6 +2812,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2816,6 +2868,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2871,6 +2924,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -2926,6 +2980,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -3000,6 +3055,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -3085,6 +3141,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -3129,6 +3186,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -3218,6 +3276,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -3262,6 +3321,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -3395,6 +3455,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -3492,6 +3553,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -3505,12 +3567,12 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "735,427 unmitigated \u00b7 HP 35,903 (53%) \u00b7 no party mit \u00b7 no shield \u00b7 Galvanize from Spring Nymphar, shield 7,308; Neutral Sect from Loki Doki, shield 14,341; Seraphic Veil from Spring Nymphar, shield 5,247; Shake It Off from Absolute Gigalad, shield 10,238",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Speed Panda died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Speed Panda took a second Skyward Leap whose marker holder was already dead.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Earlier deaths",
+        "confidence": 100
       }
     ],
     "first": false,
@@ -3540,6 +3602,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -3588,6 +3651,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -3628,6 +3692,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3676,6 +3741,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3724,6 +3790,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3772,6 +3839,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3820,6 +3888,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3868,6 +3937,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -3916,6 +3986,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -4009,6 +4080,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
@@ -4061,6 +4133,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
@@ -4101,6 +4174,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
@@ -4175,6 +4249,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -4219,6 +4294,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -4275,6 +4351,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -4357,6 +4434,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -4409,6 +4487,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -4465,6 +4544,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -4505,6 +4585,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -4545,6 +4626,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4593,6 +4675,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4641,6 +4724,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4689,6 +4773,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4737,6 +4822,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4785,6 +4871,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -4845,6 +4932,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -4921,6 +5009,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5003,6 +5092,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5102,6 +5192,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5161,6 +5252,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5260,6 +5352,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5355,6 +5448,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5414,6 +5508,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5496,6 +5591,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5578,6 +5674,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -5618,6 +5715,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -5696,6 +5794,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -5774,6 +5873,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -5907,6 +6007,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -5959,6 +6060,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6045,6 +6147,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6145,6 +6248,10 @@
       "Absolute Gigachad"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Absolute Gigachad": false,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -6159,7 +6266,7 @@
     "outcome": "fail",
     "happened": "797,639 unmitigated \u00b7 HP 109,989 (111%) \u00b7 115% amp \u00b7 no shield \u00b7 Bloodwhetting from Absolute Gigalad, 10%; Rampart from Absolute Gigalad, 20%; Stem the Flow from Absolute Gigalad, 10%; Physical Vulnerability Up from Ser Ignasse, 232% amp",
     "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions.",
-    "went_wrong": "Absolute Gigalad was clipped by Absolute Gigachad's Skyward Leap.",
+    "went_wrong": "Absolute Gigachad was out of position and clipped Absolute Gigalad.",
     "blames": [
       {
         "who": "Absolute Gigachad",
@@ -6216,6 +6323,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
     "mechanic": "Final Chorus",
@@ -6285,6 +6393,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
     "mechanic": "Final Chorus",
@@ -6354,6 +6463,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
     "mechanic": "Final Chorus",
@@ -6401,6 +6511,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
     "mechanic": "attack",
@@ -6448,6 +6559,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": null,
     "mechanic": "attack",
@@ -6483,6 +6595,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
@@ -6523,6 +6636,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
@@ -6563,6 +6677,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
@@ -6603,6 +6718,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
@@ -6669,6 +6785,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -6724,6 +6841,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -6787,6 +6905,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -6846,6 +6965,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -6915,6 +7035,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -6984,6 +7105,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -7053,6 +7175,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -7122,6 +7245,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -7191,6 +7315,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -7260,6 +7385,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7312,6 +7438,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7374,6 +7501,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7436,6 +7564,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7498,6 +7627,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7560,6 +7690,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7622,6 +7753,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7684,6 +7816,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7746,6 +7879,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7808,6 +7942,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7863,6 +7998,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7918,6 +8054,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -7973,6 +8110,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8028,6 +8166,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8083,6 +8222,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8138,6 +8278,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8197,6 +8338,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8252,6 +8394,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -8292,6 +8435,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8347,6 +8491,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8402,6 +8547,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8457,6 +8603,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8512,6 +8659,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8567,6 +8715,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8626,6 +8775,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -8685,6 +8835,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8733,6 +8884,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8785,6 +8937,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8837,6 +8990,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8889,6 +9043,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -8953,6 +9108,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9005,6 +9161,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9057,6 +9214,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9154,6 +9312,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9227,6 +9386,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9318,6 +9478,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9409,6 +9570,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9500,6 +9662,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9566,6 +9729,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9657,6 +9821,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9723,6 +9888,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -9789,6 +9955,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -9829,6 +9996,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9884,6 +10052,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9939,6 +10108,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -9994,6 +10164,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10049,6 +10220,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10104,6 +10276,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10159,6 +10332,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10214,6 +10388,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10269,6 +10444,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10324,6 +10500,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10379,6 +10556,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10434,6 +10612,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10489,6 +10668,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10544,6 +10724,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10599,6 +10780,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10654,6 +10836,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10707,23 +10890,26 @@
     "boss_pct": 63.2,
     "pull_ms": 69792,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Loki Doki",
+      "Kiara Blaiddyd"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Loki Doki": false,
+      "Kiara Blaiddyd": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "60,084 unmitigated \u00b7 HP 56,124 (90%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A clip is someone out of that spot.",
-    "went_wrong": "Loki Doki wasn't full for Skyward Leap.",
+    "should_have_been": "The blue marker on three non-tanks. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Everyone else stacks on Thordan's side. A real leap is 59\u201370k. Dying to it is a healer mistake when they were not full, and a mitigation mistake when they were full and the mit was missing. A leap that hits anyone else is the fault of whoever was out of position: the marker holder when they were off their spot, the other player when the holder was on it.",
+    "went_wrong": "Loki Doki was out of position and overlapped Kiara Blaiddyd.",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": true,
@@ -10770,21 +10956,21 @@
       "Loki Doki"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kiara Blaiddyd": true,
+      "Loki Doki": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "724,185 unmitigated \u00b7 HP 31,811 (46%) \u00b7 232% amp \u00b7 no shield \u00b7 Magic Vulnerability Up from Ser Ignasse, 232% amp",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kiara Blaiddyd's Skyward Leap overlapped Loki Doki's.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Loki Doki was out of position and overlapped Kiara Blaiddyd.",
     "blames": [
       {
-        "who": "Kiara Blaiddyd",
-        "confidence": 50
-      },
-      {
         "who": "Loki Doki",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "first": true,
@@ -10814,6 +11000,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
@@ -10854,6 +11041,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -10946,6 +11134,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11028,6 +11217,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11110,6 +11300,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11194,6 +11385,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -11264,6 +11456,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -11320,6 +11513,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -11376,6 +11570,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -11444,6 +11639,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -11526,6 +11722,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -11600,6 +11797,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -11674,6 +11872,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -11748,6 +11947,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -11818,6 +12018,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dark-elusive-jump",
     "mechanic": "Dark Elusive Jump",
@@ -11862,6 +12063,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dark-elusive-jump",
     "mechanic": "Dark Elusive Jump",
@@ -11918,6 +12120,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -11966,6 +12169,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -12026,6 +12230,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -12108,6 +12313,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -12190,6 +12396,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -12272,6 +12479,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -12342,6 +12550,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
@@ -12416,6 +12625,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -12456,6 +12666,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12500,6 +12711,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12556,6 +12768,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12600,6 +12813,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12644,6 +12858,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12688,6 +12903,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -12781,6 +12997,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
@@ -12821,6 +13038,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12876,6 +13094,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12931,6 +13150,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -12986,6 +13206,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13041,6 +13262,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13096,6 +13318,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13155,6 +13378,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13210,6 +13434,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -13281,6 +13506,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
@@ -13341,6 +13567,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eye-of-the-tyrant",
     "mechanic": "Eye of the Tyrant",
@@ -13401,6 +13628,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -13472,6 +13700,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -13554,6 +13783,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -13639,6 +13869,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -13713,6 +13944,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -13787,6 +14019,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -13857,6 +14090,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -13909,6 +14143,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
@@ -13949,6 +14184,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -13993,6 +14229,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14037,6 +14274,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14093,6 +14331,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
@@ -14133,6 +14372,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14177,6 +14417,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14233,6 +14474,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14273,6 +14515,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14325,6 +14568,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14377,6 +14621,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14429,6 +14674,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14481,6 +14727,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
@@ -14533,6 +14780,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "darkdragon-dive-debuff",
     "mechanic": "Darkdragon Dive",
@@ -14585,6 +14833,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "darkdragon-dive",
     "mechanic": "Darkdragon Dive",
@@ -14625,6 +14874,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14663,19 +14913,27 @@
     "boss_pct": 63.4,
     "pull_ms": 69581,
     "mitigations": [],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Loki Doki",
+      "Speed Panda"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Loki Doki": true,
+      "Speed Panda": true,
+      "Kitana Kahn": false
+    },
     "prior_debuffs": [],
     "mechanic_id": "skyward-leap",
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "714,307 unmitigated \u00b7 HP 803 (1%) \u00b7 no party mit \u00b7 no shield",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Kitana Kahn died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Kitana Kahn stood in Loki Doki and Speed Panda's Skyward Leaps.",
     "blames": [
       {
-        "who": "Missed soak",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 100
       }
     ],
     "first": true,
@@ -14705,6 +14963,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -14745,6 +15004,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -14808,6 +15068,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -14852,6 +15113,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -14900,6 +15162,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -14948,6 +15211,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -15006,6 +15270,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
@@ -15058,6 +15323,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -15102,6 +15368,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15150,6 +15417,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15202,6 +15470,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15250,6 +15519,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15298,6 +15568,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15346,6 +15617,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15394,6 +15666,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -15471,6 +15744,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
@@ -15534,6 +15808,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -15638,6 +15913,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -15742,6 +16018,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -15827,6 +16104,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -15901,6 +16179,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -15994,6 +16273,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -16079,6 +16359,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -16153,6 +16434,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Loki Doki",
@@ -16215,6 +16497,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -16255,6 +16538,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16310,6 +16594,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16365,6 +16650,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16420,6 +16706,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16475,6 +16762,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16530,6 +16818,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16585,6 +16874,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16652,6 +16942,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -16694,6 +16985,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -16746,6 +17038,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -16786,6 +17079,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -16830,6 +17124,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -16886,6 +17181,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16934,6 +17230,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -16982,6 +17279,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -17030,6 +17328,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17085,6 +17384,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17140,6 +17440,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17195,6 +17496,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17250,6 +17552,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17305,6 +17608,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17360,6 +17664,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17415,6 +17720,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17470,6 +17776,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -17510,6 +17817,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -17550,6 +17858,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17602,6 +17911,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17658,6 +17968,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17740,6 +18051,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17815,6 +18127,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17867,6 +18180,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17925,6 +18239,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -17995,6 +18310,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
@@ -18053,6 +18369,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
@@ -18097,6 +18414,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -18141,6 +18459,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -18185,6 +18504,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -18229,6 +18549,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -18273,6 +18594,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -18317,6 +18639,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -18361,6 +18684,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18416,6 +18740,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18483,6 +18808,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18550,6 +18876,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18605,6 +18932,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18660,6 +18988,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18715,6 +19044,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18782,6 +19112,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigachad",
@@ -18882,6 +19213,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
@@ -18947,6 +19279,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -19016,6 +19349,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -19098,6 +19432,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -19167,6 +19502,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -19236,6 +19572,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -19306,6 +19643,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -19379,6 +19717,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "eternal-conviction",
     "mechanic": "Eternal Conviction",
@@ -19437,6 +19776,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
@@ -19477,6 +19817,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "hiemal-storm",
     "mechanic": "Hiemal Storm",
@@ -19525,6 +19866,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -19569,6 +19911,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -19617,6 +19960,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -19665,6 +20009,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -19713,6 +20058,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -19775,6 +20121,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -19823,6 +20170,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -19934,6 +20282,10 @@
       "Kitana Kahn"
     ],
     "clip_guid": 25565,
+    "in_spot": {
+      "Kitana Kahn": true,
+      "Absolute Gigalad": true
+    },
     "prior_debuffs": [],
     "mechanic_id": "holy-shield-bash",
     "mechanic": "Holy Shield Bash",
@@ -20008,6 +20360,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20079,6 +20432,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20131,6 +20485,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20214,6 +20569,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20297,6 +20653,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20369,6 +20726,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20429,6 +20787,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20477,6 +20836,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -20548,6 +20908,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20617,6 +20978,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20684,6 +21046,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20743,6 +21106,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20802,6 +21166,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20861,6 +21226,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20920,6 +21286,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -20979,6 +21346,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kitana Kahn",
@@ -21072,6 +21440,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -21157,6 +21526,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -21242,6 +21612,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
@@ -21305,6 +21676,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -21349,6 +21721,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -21419,6 +21792,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21497,6 +21871,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21553,6 +21928,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21609,6 +21985,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -21665,6 +22042,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "ascalons-mercy-concealed",
     "mechanic": "Ascalon's Mercy Concealed",
@@ -21728,6 +22106,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -21806,6 +22185,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -21884,6 +22264,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -21981,6 +22362,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22059,6 +22441,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22137,6 +22520,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22223,6 +22607,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22278,6 +22663,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22349,6 +22735,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "heavy-impact",
     "mechanic": "Heavy Impact",
@@ -22434,6 +22821,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -22523,6 +22911,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -22612,6 +23001,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -22656,6 +23046,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -22700,6 +23091,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22802,8 +23194,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Absolute Gigachad",
+      "Spring Nymphar"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Absolute Gigachad": false,
+      "Spring Nymphar": false
+    },
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22824,11 +23223,15 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "510,783 unmitigated \u00b7 HP 99,211 (100%) \u00b7 no party mit \u00b7 shield 49,589 \u00b7 Galvanize from Spring Nymphar, shield 11,836; Neutral Sect from Loki Doki, shield 14,591; Seraphic Veil from Spring Nymphar, shield 8,281; Shake It Off from Absolute Gigalad, shield 14,881",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Absolute Gigachad died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Absolute Gigachad and Spring Nymphar were both out of position and overlapped.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Absolute Gigachad",
+        "confidence": 50
+      },
+      {
+        "who": "Spring Nymphar",
         "confidence": 50
       }
     ],
@@ -22902,8 +23305,15 @@
         "via": null
       }
     ],
-    "clipped_by": [],
-    "clip_guid": null,
+    "clipped_by": [
+      "Spring Nymphar",
+      "Absolute Gigachad"
+    ],
+    "clip_guid": 25565,
+    "in_spot": {
+      "Spring Nymphar": false,
+      "Absolute Gigachad": false
+    },
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -22924,11 +23334,15 @@
     "mechanic": "Skyward Leap",
     "outcome": "fail",
     "happened": "702,966 unmitigated \u00b7 HP 33,938 (55%) \u00b7 no party mit \u00b7 no shield \u00b7 Galvanize from Spring Nymphar, shield 7,219; Neutral Sect from Loki Doki, shield 8,842; Seraphic Veil from Spring Nymphar, shield 8,104; Shake It Off from Absolute Gigalad, shield 9,242",
-    "should_have_been": "Six towers follow the blue markers. The three on those markers are fixed. The other three are not fixed, so two people in one of them is a miscommunication. An empty tower explodes for about 600\u2013760k and applies Damage Down and Paralysis to everyone.",
-    "went_wrong": "Spring Nymphar died to an empty tower.",
+    "should_have_been": "A second Skyward Leap on the same player hits for about 600\u2013760k. Each leap should land on its own marker holder only. Whoever was out of position owns it: the marker holder off their spot, or the player who stood where a leap reaches. When a marker holder is already dead, their leap lands on someone who has one already.",
+    "went_wrong": "Spring Nymphar and Absolute Gigachad were both out of position and overlapped.",
     "blames": [
       {
-        "who": "Missed soak",
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
         "confidence": 50
       }
     ],
@@ -22959,6 +23373,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Kiara Blaiddyd",
@@ -23030,6 +23445,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -23082,6 +23498,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "bright-flare",
     "mechanic": "Bright Flare",
@@ -23122,6 +23539,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -23166,6 +23584,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -23210,6 +23629,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -23254,6 +23674,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -23298,6 +23719,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -23342,6 +23764,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -23386,6 +23809,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [],
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
@@ -23426,6 +23850,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23474,6 +23899,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23522,6 +23948,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23570,6 +23997,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23618,6 +24046,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23666,6 +24095,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23714,6 +24144,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23762,6 +24193,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23832,6 +24264,7 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23888,6 +24321,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23940,6 +24374,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -23992,6 +24427,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24044,6 +24480,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24096,6 +24533,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
@@ -24148,6 +24586,7 @@
     "mitigations": [],
     "clipped_by": [],
     "clip_guid": null,
+    "in_spot": {},
     "prior_debuffs": [
       {
         "name": "Absolute Gigalad",
