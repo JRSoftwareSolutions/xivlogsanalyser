@@ -22,6 +22,10 @@ pip install -e .
 
 Without installing, put `src` on the path instead, for example `PYTHONPATH=src python -m xivloganalyzer reanalyze`. The tests are `python -m unittest discover -s tests`.
 
+## Working with an AI agent
+
+The project instructions are in `AGENTS.md`. Cursor reads that file directly, and `CLAUDE.md` imports it for Claude Code. The skills (`review-session`, `review-mechanic`, one `dsr-*` skill per mechanic, and so on) are in `.claude/skills/`. Both Cursor and Claude Code load skills from there, so each skill exists only once.
+
 ## How a log gets in
 
 Put a report folder in `reports/<code>/` (or `data/<code>/`) with:

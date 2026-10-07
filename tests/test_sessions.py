@@ -127,7 +127,7 @@ class ClusterTimelineTest(unittest.TestCase):
         known = {mechanic.id for mechanic in pack.mechanics}
         covered = set()
         for cluster in pack.clusters:
-            skill = ROOT / ".cursor" / "skills" / cluster.skill / "SKILL.md"
+            skill = ROOT / ".claude" / "skills" / cluster.skill / "SKILL.md"
             self.assertTrue(skill.is_file(), cluster.skill)
             self.assertTrue(cluster.parts, cluster.id)
             for part in cluster.parts:
