@@ -1532,7 +1532,7 @@ function componentBlock(pull, card, part) {
 }
 function renderPull(id) {
   const pull = findPull(id);
-  if (!pull) return `<p>Pull ${id} is not in this session.</p>`;
+  if (!pull) return `<p>Pull ${esc(id)} is not in this session.</p>`;
   const reach = pullReach(SESSION, pull, overviewMap(SESSION).get(pull.id));
   const c = counts(pull.deaths);
   const cards = pull.cards || [];
@@ -1560,7 +1560,7 @@ function renderPull(id) {
     <header>
       <div>
         <h1>Pull ${pull.id}</h1>
-        <p class="meta">${pull.when ? pull.when + " · " : ""}${esc(reach.phaseName)} · ${reach.bossPct}% wipe · ${pull.clock}</p>
+        <p class="meta">${pull.when ? esc(pull.when) + " · " : ""}${esc(reach.phaseName)} · ${reach.bossPct}% wipe · ${esc(pull.clock)}</p>
       </div>
       <p class="meta"><a href="${logHref(pull.id)}">Open this pull</a></p>
     </header>
@@ -1711,11 +1711,19 @@ function paintActive() {
   active.scrollIntoView({ block: "nearest" });
 }
 let renderToken = 0;
+// Where the reader was on each page. A link opens the next page at its top; Back returns here.
+const pageScroll = {};
+let shownGo = null;
+let linkNav = false;
 function needsDetail(where) {
   return where.view === "pull" || where.view === "mechanic";
 }
 async function render() {
   const token = ++renderToken;
+  const fresh = linkNav;
+  linkNav = false;
+  if (shownGo !== null) pageScroll[shownGo] = document.getElementById("app").scrollTop;
+  shownGo = null;
   const where = route();
   SESSION = where.code ? byCode[where.code] : null;
   if (render.navCode !== (where.code || "")) {
@@ -1754,6 +1762,8 @@ async function render() {
   else app.innerHTML = renderAll();
   placeTrendScroll();
   paintActive();
+  shownGo = currentGo();
+  app.scrollTop = fresh ? 0 : pageScroll[shownGo] || 0;
   const stamp = SESSION ? [SESSION.dayLabel, SESSION.timeLabel].filter(Boolean).join(" ") : "Sessions";
   document.title = !SESSION
     ? "Sessions"
@@ -1876,6 +1886,7 @@ document.body.addEventListener("click", event => {
   if (!row) return;
   const next = row.dataset.go;
   if ((location.hash.replace(/^#/, "") || "") === next) render();
+  else linkNav = true;
   location.hash = next;
 });
 function savedOpen(fold, active) {
