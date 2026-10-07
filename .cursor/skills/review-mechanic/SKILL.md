@@ -75,6 +75,7 @@ These are the shared calls:
 - Empty tower: "Missed soak" at 50. The player who died is the one the explosion hit. Sanctity Eternal Conviction after 100 seconds is this call.
 - Holy Impact: "Prey markers" at 50. The two prey players dropped the comets too close.
 - Skyward Leap clip: "Out of position" at 33. Three players have the marker.
+- Vulnerability from someone else's Skyward Leap: the marker holder, named, at 100. Two marker holders that hit each other are 50 each. The death sits under Skyward Leap on the pull card, and only the marker holder fails it.
 - Short stack: "Missing bodies" at 100 divided by the number missing. One missing body is 100. Three missing bodies is 33.
 - Raw hit on a full share: the healers, 50 each. "Party mitigation" takes a third share, 33, when the packet has no party mit or the mit is unknown.
 - Already under 15,000 HP: the healers and "Earlier damage", 33 each.

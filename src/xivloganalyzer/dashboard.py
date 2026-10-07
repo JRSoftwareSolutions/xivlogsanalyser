@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone
-from xivloganalyzer.judge import Judgment
+from xivloganalyzer.judge import Judgment, clip_mechanic
 
 JOB = {
     "Paladin": "PLD",
@@ -310,8 +310,10 @@ def _pull_cards(
 
     A component is on the card once the pull lasted until that component resolves,
     or someone died to it. A player failed it when a death there was judged a fail.
-    Everyone else in the party passed. A pull that dies in a later phase still
-    shows the earlier phase, and the later phase gets its own cards.
+    A death clipped by someone's marker sits under that marker, and the marker
+    holder failed it, not the player who died. Everyone else in the party passed.
+    A pull that dies in a later phase still shows the earlier phase, and the later
+    phase gets its own cards.
     """
     roster = [player for player in party if pull["id"] in player["fights"]]
     durations = durations or {}
@@ -332,16 +334,21 @@ def _pull_cards(
             ]
             if not rows and duration + _REACH_SLACK < _part_gate(mech, part):
                 continue
-            failed = {row["name"] for row in rows if row["outcome"] == "fail"}
+            failed: dict[str, str] = {}
+            for row in rows:
+                if row["outcome"] != "fail":
+                    continue
+                for name in row.get("culprits") or [row["name"]]:
+                    failed.setdefault(name, row["job"] if name == row["name"] else "")
             seats = [
                 {"name": player["name"], "job": player["job"], "passed": player["name"] not in failed}
                 for player in roster
             ]
             known = {seat["name"] for seat in seats}
-            for row in rows:
-                if row["outcome"] == "fail" and row["name"] not in known:
-                    seats.append({"name": row["name"], "job": row["job"], "passed": False})
-                    known.add(row["name"])
+            for name, job in failed.items():
+                if name not in known:
+                    seats.append({"name": name, "job": job, "passed": False})
+                    known.add(name)
             parts_out.append({"id": part["id"], "name": part["name"], "seats": seats})
         if parts_out:
             cards.append({"id": mech["id"], "name": mech["name"], "parts": parts_out})
@@ -415,7 +422,13 @@ def session_payload(
         phase_durations.setdefault(item.fact.fight, {})[item.fact.phase] = (
             item.fact.pull_ms / 1000
         )
-        cluster = _cluster_of(item, pack)
+        component = item.mechanic_id
+        culprits: list[str] = []
+        clip = clip_mechanic(item.fact, pack) if item.cause == "marker" else None
+        if clip is not None:
+            component = clip.id
+            culprits = list(item.fact.clipped_by)
+        cluster = pack.cluster_for(component, item.fact.t, item.fact.phase) or _cluster_of(item, pack)
         pull["deaths"].append(
             {
                 "time": item.fact.time,
@@ -425,13 +438,14 @@ def session_payload(
                 "job": JOB.get(item.fact.job, item.fact.job),
                 "mechanicId": cluster.id if cluster else item.mechanic_id,
                 "mechanic": cluster.name if cluster else item.mechanic,
-                "componentId": item.mechanic_id,
+                "componentId": component,
                 "cast": item.mechanic,
                 "outcome": item.outcome,
                 "happened": item.happened,
                 "should": item.should_have_been,
                 "wrong": item.went_wrong,
                 "blames": [blame.to_dict() for blame in item.blames],
+                "culprits": culprits,
             }
         )
     roster = _party(meta or {}, pack)

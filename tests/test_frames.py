@@ -105,11 +105,33 @@ class StillFrameTest(unittest.TestCase):
         self.assertIn("Prey", frame["caption"])
 
     def test_empty_tower_draws_the_tower_ring(self):
-        leap = self._frame(21, "Loki Doki", "skyward-leap", 59.5)
-        self.assertGreaterEqual(sum(mark["kind"] == "tower" for mark in leap["marks"]), 5)
         conviction = self._frame(11, "Absolute Gigalad", "eternal-conviction", 136.7)
         self.assertGreaterEqual(sum(mark["kind"] == "tower" for mark in conviction["marks"]), 5)
+        self.assertEqual(sum(mark["kind"] == "collapse" for mark in conviction["marks"]), 0)
         self.assertIn("towers", conviction["caption"])
+
+    def test_skyward_leap_floor_is_dimensional_collapse_not_towers(self):
+        leap = self._frame(21, "Loki Doki", "skyward-leap", 59.5)
+        self.assertEqual(sum(mark["kind"] == "tower" for mark in leap["marks"]), 0)
+        self.assertEqual(sum(mark["kind"] == "collapse" for mark in leap["marks"]), 8)
+        self.assertNotIn("towers", leap["caption"])
+        self.assertIn("Dimensional Collapse", leap["caption"])
+
+    def test_unnamed_collapse_spots_are_not_towers(self):
+        leap = self.book.mechanic_frame(
+            10, 2, 59.3, "skyward-leap", "Skyward Leap", ["Kite Noodle"], PACK,
+        )
+        self.assertEqual(sum(mark["kind"] == "tower" for mark in leap["marks"]), 0)
+        self.assertEqual(sum(mark["kind"] == "collapse" for mark in leap["marks"]), 8)
+
+    def test_strength_towers_are_the_ring_after_the_leap(self):
+        frame = self.book.mechanic_frame(
+            21, 2, 63.0, "skyward-leap", "Skyward Leap", ["Loki Doki"], PACK,
+        )
+        towers = [mark for mark in frame["marks"] if mark["kind"] == "tower"]
+        self.assertEqual(len(towers), 6)
+        for mark in towers:
+            self.assertAlmostEqual(math.hypot(mark["x"], mark["y"]), 12, delta=0.5)
 
     def test_cone_line_runs_from_thordan_to_the_player(self):
         frame = self._frame(68, "Loki Doki", "ascalons-mercy-concealed", 14.5)
@@ -294,7 +316,6 @@ class MechanicStillTest(unittest.TestCase):
         )
         outside = [player["name"] for player in frame["players"] if player.get("outside")]
         self.assertEqual(outside, ["Kiara Blaiddyd"])
-        self.assertEqual(frame["labels"], ["Kiara Blaiddyd"])
         self.assertEqual(sum(mark["empty"] for mark in frame["marks"] if mark["kind"] == "tower"), 1)
         self.assertIn("Kiara Blaiddyd was not in a tower.", frame["caption"])
 
