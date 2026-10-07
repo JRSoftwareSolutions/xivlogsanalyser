@@ -253,6 +253,7 @@ class PullCardsTest(unittest.TestCase):
         self.assertNotIn("Heavenly Heel", opener.should_have_been)
         self.assertNotIn("opener", swap.should_have_been.lower())
         self.assertNotIn("71", swap.should_have_been)
+        hits = {(fact.fight, fact.name, fact.t): fact for fact in read_facts(REPORT)}
         for pull in self.payload["pulls"]:
             for row in pull["deaths"]:
                 text = row["should"]
@@ -275,10 +276,10 @@ class PullCardsTest(unittest.TestCase):
                     self.assertNotIn("three-hit", text)
                 if cast != "Skyward Leap":
                     continue
-                head = row["happened"].split(" unmitigated", 1)[0].replace(",", "")
-                if not head.isdigit():
+                fact = hits.get((pull["id"], row["name"], row["t"]))
+                if fact is None or not fact.guid:
                     continue
-                hit = int(head)
+                hit = fact.unmitigated if fact.unmitigated is not None else fact.total
                 if hit > 150000:
                     self.assertIn("second Skyward Leap", text)
                     self.assertNotIn("East and west", text)
