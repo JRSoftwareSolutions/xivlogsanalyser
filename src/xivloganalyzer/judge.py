@@ -158,6 +158,8 @@ def judge_fact(fact: DeathFact, pack: FightPack) -> Judgment:
             cause="none",
         )
     if _vuln(fact):
+        if fact.clipped_by:
+            return _done(fact, mechanic, happened, "fail", _marker_clip(fact, pack), "marker", pack)
         return _done(fact, mechanic, happened, "fail", _amp(fact, mechanic), "personal", pack)
     hit = _hit(fact)
     if mechanic.tanks_only and fact.role != "tank":
@@ -252,6 +254,26 @@ def _amp(fact: DeathFact, mechanic: Mechanic) -> str:
     if mechanic.id == "holy-shield-bash":
         return f"{fact.name} shorted the tether."
     return f"{fact.name} still had a damage amp."
+
+
+def clip_mechanic(fact: DeathFact, pack: FightPack) -> Mechanic | None:
+    """The marker cast that clipped this player, when the vulnerability came from one."""
+    if not fact.clipped_by or fact.clip_guid is None:
+        return None
+    return pack.mechanic_for(fact.clip_guid, fact.phase)
+
+
+def _marker_clip(fact: DeathFact, pack: FightPack) -> str:
+    source = clip_mechanic(fact, pack)
+    cast = source.name if source else "marker"
+    holders = fact.clipped_by
+    if fact.name in holders:
+        others = [holder for holder in holders if holder != fact.name]
+        return f"{fact.name}'s {cast} overlapped {' and '.join(others)}'s."
+    if len(holders) == 1:
+        return f"{fact.name} was clipped by {holders[0]}'s {cast}."
+    joined = ", ".join(holders[:-1]) + f" and {holders[-1]}"
+    return f"{fact.name} was clipped by {joined}'s {cast}s."
 
 
 def _not_a_tank(fact: DeathFact, mechanic: Mechanic) -> str:
@@ -486,6 +508,8 @@ def _assign_blame(
             item.blames = []
         elif item.cause == "personal":
             item.blames = _shares([item.fact.name])
+        elif item.cause == "marker":
+            item.blames = _shares(list(item.fact.clipped_by))
         elif item.cause == "overlap":
             cohort = [other for other in judgments if _same_cast(item, other)]
             item.blames = _shares(_overlap_names(item, cohort))

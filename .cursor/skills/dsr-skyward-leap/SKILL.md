@@ -32,7 +32,11 @@ Not fully healed: the healers. `{player}` was short of full HP. That is a healer
 
 Missing mitigation: `{player}` was fully healed and the leap still killed. Whoever was supposed to mitigate it, and did not, owns the death.
 
-Clip: `{player}` was clipped by another Skyward Leap. The player who was out of the spot owns it. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. This log has no positions, so a death names the overlap and does not pick which of the three was east, west, or opposite.
+Clip: `{player}` was clipped by another Skyward Leap. The player who was out of the spot owns it. Opposite Thordan is as far away as possible. East and west are slightly toward the north, not too far. Without a marker holder, a death names the overlap and does not pick which of the three was east, west, or opposite.
+
+Marker clip: a leap that reaches other players leaves Magic and Physical Vulnerability Up on them. They then die to the next hit: Dragon's Rage, Holy Shield Bash, or the leap itself. That death is not theirs. The marker holder was too close, and owns it at 100. Each leap is one packet per knight. It lands on its targets nearest the center first, so the first target in the packet, the `calculateddamage` row included, is the marker holder. When most of the non-tanks are already dead, a tank can hold a marker. `marker_owns_clip` on `skyward-leap` in `fights/dsr/mechanics.json` turns this on. Pull 4 of `8DYNHQx4C7ytdLb9`: Spring Nymphar's leap hit the stack. Speed Panda, Kiara Blaiddyd, and Kitana Kahn died to Dragon's Rage, and Absolute Gigachad died to Holy Shield Bash. All four are Spring's.
+
+Marker overlap: two marker holders hit each other. Each holder's death is split between the two, 50 each. A marker holder who dies with only the vulnerability from their own leap keeps it at 100.
 
 Empty tower: `{player}` died to the explosion. The explosion applies Damage Down and Paralysis to everyone. The mistake is the missed soak.
 
