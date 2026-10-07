@@ -227,11 +227,37 @@ class MechanicStillTest(unittest.TestCase):
         self.assertEqual(failed, ["Kite Noodle"])
         self.assertEqual(payload["pulls"][0]["deaths"][0]["frame"]["killedBy"], "Dragon's Gaze")
 
+    def test_a_clear_mechanic_is_left_without_a_still(self):
+        payload = {
+            "mechanics": [{
+                "id": "sanctity-of-the-ward",
+                "phase": 2,
+                "parts": [{"id": "dragons-gaze"}],
+            }],
+            "pulls": [{
+                "id": 14,
+                "deaths": [],
+                "cards": [{
+                    "id": "sanctity-of-the-ward",
+                    "parts": [{
+                        "id": "dragons-gaze",
+                        "name": "Dragon's Gaze",
+                        "seats": [{"name": "Kite Noodle", "passed": True}],
+                    }],
+                }],
+            }],
+        }
+        attach_frames(REPORT, payload, PACK)
+        self.assertNotIn("frames", payload["pulls"][0]["cards"][0]["parts"][0])
+
     def test_faith_uses_its_known_time_once_the_pull_is_still_going(self):
-        early = _faith_payload(11, 136.7)
+        early = _faith_payload(11, 136.7, passed=False)
         attach_frames(REPORT, early, PACK)
         self.assertNotIn("frames", early["pulls"][0]["cards"][0]["parts"][0])
-        late = _faith_payload(41, 147.0)
+        clear = _faith_payload(41, 147.0, passed=True)
+        attach_frames(REPORT, clear, PACK)
+        self.assertNotIn("frames", clear["pulls"][0]["cards"][0]["parts"][0])
+        late = _faith_payload(41, 147.0, passed=False)
         attach_frames(REPORT, late, PACK)
         frames = late["pulls"][0]["cards"][0]["parts"][0]["frames"]
         self.assertEqual(len(frames), 1)
@@ -263,7 +289,7 @@ class MechanicStillTest(unittest.TestCase):
         self.assertNotIn("frames", payload["pulls"][0]["cards"][0]["parts"][0])
 
 
-def _faith_payload(fight_id, died_at):
+def _faith_payload(fight_id, died_at, passed=True):
     return {
         "mechanics": [{"id": "meteors", "phase": 2, "parts": [{"id": "faith-unmoving"}]}],
         "pulls": [{
@@ -281,7 +307,7 @@ def _faith_payload(fight_id, died_at):
                 "parts": [{
                     "id": "faith-unmoving",
                     "name": "Faith Unmoving",
-                    "seats": [{"name": "Kite Noodle", "passed": True}],
+                    "seats": [{"name": "Kite Noodle", "passed": passed}],
                 }],
             }],
         }],

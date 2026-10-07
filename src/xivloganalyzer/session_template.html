@@ -152,9 +152,41 @@
   .death { padding: 10px 0 4px; }
   .death-body { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 16px; align-items: start; }
   .stills { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
-  .still { margin: 8px 0 0; }
-  .still svg { width: 300px; height: 312px; display: block; background: #f7f4ee; border: 1px solid var(--line); border-radius: 12px; }
+  .still { margin: 8px 0 0; width: 300px; max-width: 100%; }
+  .still-open {
+    display: block; width: 100%; margin: 0; padding: 0;
+    border: 0; background: transparent; color: inherit; font: inherit;
+    cursor: zoom-in; border-radius: 12px;
+  }
+  .still-open:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .still-open:hover svg { border-color: var(--accent); }
+  .still svg {
+    width: 100%; height: auto; aspect-ratio: 1; display: block;
+    background: #f7f4ee; border: 1px solid var(--line); border-radius: 12px;
+  }
   .still figcaption { color: var(--muted); font-size: 13px; margin-top: 6px; }
+  .still-title { display: block; color: var(--ink); font-weight: 650; margin-bottom: 2px; }
+  .still-pop {
+    width: min(880px, calc(100vw - 24px), calc(100vh - 80px));
+    max-height: calc(100vh - 24px);
+    overflow: auto;
+    border: 1px solid var(--line); border-radius: 16px;
+    background: var(--paper); color: var(--ink);
+    padding: 12px 12px 18px;
+  }
+  .still-pop::backdrop { background: rgba(6, 10, 18, 0.78); }
+  .still-pop-bar {
+    display: flex; justify-content: flex-end;
+    position: sticky; top: 0; z-index: 1;
+    background: var(--paper); padding-bottom: 8px;
+  }
+  .still-close {
+    font: inherit; font-size: 14px; color: var(--ink);
+    background: var(--hover); border: 1px solid var(--line);
+    border-radius: 8px; padding: 4px 12px; cursor: pointer;
+  }
+  .still-close:hover { background: var(--field); }
+  .still-pop .still { width: 100%; margin: 0; }
   .who { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .time, .job { color: var(--muted); }
   .job-icon { width: 20px; height: 20px; display: block; }
@@ -376,6 +408,12 @@ try {
 <aside id="nav"></aside>
 <div id="nav-split" role="separator" aria-orientation="vertical" aria-label="Resize sidebar" aria-description="Drag to resize the sidebar. Double-click to reset." aria-valuemin="200" aria-valuenow="300" tabindex="0"></div>
 <main id="app"></main>
+<dialog id="still-pop" class="still-pop" aria-label="Closer look">
+  <form method="dialog" class="still-pop-bar">
+    <button type="submit" class="still-close">Close</button>
+  </form>
+  <div id="still-pop-body"></div>
+</dialog>
 __DETAIL__
 <script>
 const DATA = __DATA__;
@@ -385,6 +423,7 @@ const detailLoads = {};
 const MINI_H = 148;
 const TREND_H = 300;
 let SESSION = null;
+let stillFrames = [];
 
 function registerDetail(code, detail) {
   const session = byCode[code];
@@ -461,13 +500,14 @@ function blameChips(row) {
     return `<span class="blame${sure}" title="How sure this blame is">${esc(blame.who)} <b>${blame.confidence}%</b></span>`;
   }).join("")}</div>`;
 }
-function deathCard(row) {
+function deathCard(row, opts) {
   const cast = row.cast ? `<span class="time">${row.cast}</span>` : "";
   const body = `<div class="cols">
       <div><b>What happened</b>${row.happened}</div>
       <div><b>What went wrong</b>${esc(row.wrong)}${blameChips(row)}</div>
     </div>`;
-  const framed = row.frame
+  const showFrame = row.frame && !(opts && opts.skipFrame);
+  const framed = showFrame
     ? `<div class="death-body">${stillFrame(row.frame)}${body}</div>`
     : body;
   return `<div class="death">
@@ -475,21 +515,74 @@ function deathCard(row) {
     ${framed}
   </div>`;
 }
+function stillCaption(frame) {
+  if (!frame.title) return esc(frame.caption);
+  return `<span class="still-title">${esc(frame.title)}</span>${esc(frame.caption)}`;
+}
 function stillFrame(frame) {
+  const id = stillFrames.length;
+  stillFrames.push(frame);
+  return `<figure class="still"><button type="button" class="still-open" data-still="${id}" aria-haspopup="dialog" aria-label="Closer look. ${esc(frame.caption)}">${stillSvg(frame)}</button><figcaption>${stillCaption(frame)}</figcaption></figure>`;
+}
+function stillView(frame) {
   const size = 300;
-  const head = 22;
-  const reach = 46;
-  const scale = ((size - head) / 2 - 14) / reach;
+  const pad = 12;
+  let scale = (size / 2 - pad) / 20;
+  let originX = 0;
+  let originY = 0;
+  for (let pass = 0; pass < 2; pass++) {
+    let minX = -20, maxX = 20, minY = -20, maxY = 20;
+    const grow = (x, y) => {
+      if (x == null || y == null) return;
+      x = Number(x);
+      y = Number(y);
+      if (Number.isNaN(x) || Number.isNaN(y)) return;
+      minX = Math.min(minX, x);
+      maxX = Math.max(maxX, x);
+      minY = Math.min(minY, y);
+      maxY = Math.max(maxY, y);
+    };
+    for (const player of frame.players || []) {
+      grow(player.x, player.y);
+      if (player.face) {
+        const len = 14 / scale + 5;
+        grow(player.x + player.face[0] * len, player.y + player.face[1] * len);
+      }
+      if (player.dead || player.failed) {
+        const wide = String(player.name || "").length * 3.2 / scale;
+        grow(Number(player.x) - wide, Number(player.y) + 24 / scale);
+        grow(Number(player.x) + wide, player.y);
+      }
+    }
+    for (const mark of frame.marks || []) {
+      const bulge = mark.kind === "comet" ? 16 : mark.kind === "gaze" || mark.kind === "tower" || mark.kind === "orb" ? 12 : 0;
+      const extra = bulge / scale;
+      if (mark.x != null) {
+        grow(Number(mark.x) - extra, Number(mark.y) - extra);
+        grow(Number(mark.x) + extra, Number(mark.y) + extra);
+      }
+      grow(mark.x2, mark.y2);
+      if (mark.face) {
+        const len = 8 / scale + 4;
+        grow(mark.x + mark.face[0] * len, mark.y + mark.face[1] * len);
+      }
+    }
+    originX = (minX + maxX) / 2;
+    originY = (minY + maxY) / 2;
+    scale = (size / 2 - pad) / (Math.max(maxX - minX, maxY - minY, 40) / 2);
+  }
+  return { size, scale, originX, originY };
+}
+function stillSvg(frame) {
+  const { size, scale, originX, originY } = stillView(frame);
   const cx = size / 2;
-  const cy = head + (size - head) / 2;
-  const pt = (x, y) => [cx + x * scale, cy + y * scale];
+  const cy = size / 2;
+  const pt = (x, y) => [cx + (x - originX) * scale, cy + (y - originY) * scale];
   const parts = [];
-  const heading = frame.title || (frame.killedBy ? `Killed by ${frame.killedBy}` : "");
-  if (heading) parts.push(`<text x="${cx}" y="16" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1915">${esc(heading)}</text>`);
   const [fx, fy] = pt(0, 0);
   const floor = ARENA_PX(scale);
   parts.push(`<circle cx="${fx}" cy="${fy}" r="${floor}" fill="#fffcf7" stroke="#e2dbd0" stroke-width="2"></circle>`);
-  const [nx, ny] = pt(0, -22);
+  const [nx, ny] = pt(0, -18.4);
   parts.push(`<text x="${nx}" y="${ny}" text-anchor="middle" font-size="11" fill="#5e584f">N</text>`);
   const marks = frame.marks || [];
   const draw = (kinds) => {
@@ -515,9 +608,22 @@ function stillFrame(frame) {
   for (const player of frame.players || []) {
     if (!marked(player)) continue;
     const [x, y] = pt(player.x, player.y);
-    parts.push(`<text x="${x}" y="${y + 26}" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">${esc(player.name)}</text>`);
+    parts.push(`<text x="${x}" y="${y + 24}" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412" stroke="#fffcf7" stroke-width="3" paint-order="stroke">${esc(player.name)}</text>`);
   }
-  return `<figure class="still"><svg viewBox="0 0 ${size} ${size + 12}" role="img" aria-label="${esc(frame.caption)}">${parts.join("")}</svg><figcaption>${esc(frame.caption)}</figcaption></figure>`;
+  return `<svg viewBox="0 0 ${size} ${size}" role="img" aria-label="${esc(frame.caption)}">${parts.join("")}</svg>`;
+}
+function openStill(id) {
+  const frame = stillFrames[Number(id)];
+  const pop = document.getElementById("still-pop");
+  const body = document.getElementById("still-pop-body");
+  if (!frame || !pop || !body) return;
+  body.innerHTML = `<figure class="still">${stillSvg(frame)}<figcaption>${stillCaption(frame)}</figcaption></figure>`;
+  pop.setAttribute("aria-label", frame.caption || "Closer look");
+  if (!pop.open) pop.showModal();
+}
+function closeStill() {
+  const pop = document.getElementById("still-pop");
+  if (pop && pop.open) pop.close();
 }
 function ARENA_PX(scale) { return 20 * scale; }
 function stillMark(mark, pt, scale) {
@@ -1311,13 +1417,14 @@ function componentDeaths(pull, card, part) {
 function componentBlock(pull, card, part) {
   const rows = componentDeaths(pull, card, part);
   const solo = card.parts.length === 1 && part.name === card.name;
-  const shots = (part.frames || []).map(stillFrame).join("");
+  const failedPart = (part.seats || []).some(seat => !seat.passed);
+  const shots = failedPart ? (part.frames || []).map(stillFrame).join("") : "";
   return `<div class="component">
     ${solo ? "" : `<div class="component-name">${esc(part.name)}</div>`}
     <div>
       ${shots ? `<div class="stills">${shots}</div>` : ""}
       <div class="seats">${part.seats.map(seat => seatMark(seat, part.name)).join("")}</div>
-      ${rows.map(deathCard).join("")}
+      ${rows.map(row => deathCard(row, { skipFrame: Boolean(shots) })).join("")}
     </div>
   </div>`;
 }
@@ -1472,6 +1579,8 @@ async function render() {
       pending.catch(() => {});
     }
   }
+  closeStill();
+  stillFrames = [];
   if (!SESSION) app.innerHTML = renderHome();
   else if (where.view === "pull") app.innerHTML = renderPull(where.id);
   else if (where.view === "fight") app.innerHTML = renderFight(where.id);
@@ -1569,6 +1678,11 @@ function applyNavFilters() {
   }
 }
 document.body.addEventListener("click", event => {
+  const opener = event.target.closest("[data-still]");
+  if (opener) {
+    openStill(opener.dataset.still);
+    return;
+  }
   const chip = event.target.closest("#nav button[data-pull-phase]");
   if (chip) {
     const key = chip.closest(".pull-key");
@@ -1625,6 +1739,9 @@ document.body.addEventListener("toggle", event => {
   previewOpen[node.dataset.code] = node.open;
 }, true);
 window.addEventListener("hashchange", render);
+document.getElementById("still-pop").addEventListener("click", event => {
+  if (event.target.id === "still-pop") event.target.close();
+});
 render();
 
 function navMax() {
