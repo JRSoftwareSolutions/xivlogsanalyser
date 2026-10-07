@@ -50,9 +50,15 @@ class DeathFact:
     boss_pct: float
     pull_ms: int
     mitigations: list[dict] = field(default_factory=list)
+    clipped_by: list[str] = field(default_factory=list)
+    clip_guid: int | None = None
 
     def to_dict(self) -> dict:
         return asdict(self)
+
+
+VULN_GUIDS = {1002940, 1002941}
+CLIP_WINDOW_MS = 7000
 
 
 def _grab(tail: str, key: str) -> int | None:
@@ -149,6 +155,80 @@ def _stack_size(events: list[dict], fight: int, timestamp: int) -> int | None:
     return len({event["targetID"] for event in best})
 
 
+def _marker_packets(report: Path, pack: FightPack) -> dict[tuple, list[tuple]]:
+    """Each marker cast as (first hit, guid, targets in hit order), keyed by fight and caster.
+
+    One packet lands on its targets nearest the center first, a few tens of
+    milliseconds apart, so the marker is first. The snapshot row keeps a target
+    who died before the hit landed. Damage rows with no packet id are not real hits.
+    """
+    guids = {guid for mech in pack.mechanics if mech.marker_owns_clip for guid in mech.guids}
+    grouped: dict[tuple, list[tuple[int, int, int]]] = defaultdict(list)
+    for guid in guids:
+        path = report / "abilities" / f"ab_{guid}.json"
+        if not path.is_file():
+            continue
+        events = json.loads(path.read_text(encoding="utf-8")).get("events") or []
+        for index, event in enumerate(events):
+            packet = event.get("packetID")
+            if event.get("type") not in {"damage", "calculateddamage"}:
+                continue
+            if packet is None or event.get("targetID") is None:
+                continue
+            key = (event.get("fight"), event.get("sourceID"), guid, packet)
+            grouped[key].append((event["timestamp"], index, event["targetID"]))
+    casts: dict[tuple, list[tuple]] = defaultdict(list)
+    for (fight, source, guid, _packet), hits in grouped.items():
+        hits.sort()
+        targets: list[int] = []
+        for _ts, _index, target in hits:
+            if target not in targets:
+                targets.append(target)
+        casts[(fight, source)].append((hits[0][0], guid, targets))
+    return casts
+
+
+def _clipped_by(
+    casts: dict[tuple, list[tuple]],
+    fight: int,
+    target: int | None,
+    timestamp: int | None,
+    mitigations: list[dict],
+    names: dict[int, str],
+) -> tuple[list[str], int | None]:
+    """Marker holders whose cast left the vulnerability this player died with.
+
+    When this player held a marker too and their own cast hit one of those
+    holders, the two markers overlapped, and this player is listed first.
+    """
+    if target is None or timestamp is None:
+        return [], None
+    recent = [
+        (source, guid, targets)
+        for (cast_fight, source), rows in casts.items()
+        if cast_fight == fight
+        for first, guid, targets in rows
+        if -500 <= timestamp - first <= CLIP_WINDOW_MS
+    ]
+    casters = {source for source, _guid, _targets in recent}
+    if not any(
+        mit.get("guid") in VULN_GUIDS and mit.get("on_id") == target and mit.get("by_id") in casters
+        for mit in mitigations
+    ):
+        return [], None
+    holders: list[int] = []
+    clip_guid = None
+    for _source, guid, targets in recent:
+        if target in targets[1:] and targets[0] in names and targets[0] not in holders:
+            holders.append(targets[0])
+            clip_guid = guid
+    if not holders:
+        return [], None
+    if any(targets[0] == target and set(holders) & set(targets) for _s, _g, targets in recent):
+        holders.insert(0, target)
+    return [names[holder] for holder in holders], clip_guid
+
+
 def _buff_names(event: dict, auras: dict[str, str]) -> list[str]:
     raw = event.get("buffs") or ""
     names = []
@@ -210,7 +290,9 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
     if party_path.exists():
         party = json.loads(party_path.read_text(encoding="utf-8"))
     actors = {actor["name"]: actor for actor in meta.get("friendlies") or []}
+    names_by_id = {actor["id"]: actor["name"] for actor in meta.get("friendlies") or []}
     by_guid = _load_events(report)
+    marker_casts = _marker_packets(report, pack)
     mitigation_tables = load_mitigations(report)
 
     facts: list[DeathFact] = []
@@ -292,12 +374,14 @@ def extract_report(report: Path, pack: FightPack) -> list[DeathFact]:
             mits = mitigations_for(
                 mitigation_tables, fight["id"], target, source, guid, timestamp,
             )
-            facts.append(
-                _fact(
-                    fight, phase, start, timestamp, when, name, job, pack, guid, ability,
-                    total, hp, unmit, mult, int(absorb), stack, buffs, boss_pct, party, mits,
-                )
+            fact = _fact(
+                fight, phase, start, timestamp, when, name, job, pack, guid, ability,
+                total, hp, unmit, mult, int(absorb), stack, buffs, boss_pct, party, mits,
             )
+            fact.clipped_by, fact.clip_guid = _clipped_by(
+                marker_casts, fight["id"], target, timestamp, mits, names_by_id,
+            )
+            facts.append(fact)
     facts.sort(key=lambda fact: (fact.fight, fact.t, fact.name))
     return facts
 
