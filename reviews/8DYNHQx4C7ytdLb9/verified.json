@@ -924,6 +924,47 @@
    "why": "Blind review agreed. No packet, so deathwall. He was at 20.5y (-105 degrees) at 58.8s and his auras dropped at 58.85s, after Kitana's deaths. It is his own walk into the wall even though he had just used Bloodwhetting and Thrill."
   },
   {
+   "fight": 10,
+   "time": "1:01",
+   "name": "Kiara Blaiddyd",
+   "mechanic": "Dragon's Rage",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Kiara Blaiddyd"
+    ]
+   },
+   "outcome": "raw",
+   "owners": [
+    "Kitana Kahn",
+    "Spring Nymphar",
+    "Absolute Gigachad",
+    "Absolute Gigalad"
+   ],
+   "why": "Adjudicated against the judge. ab_25551: the Dragon's Rage (src 44) snapshot only Kiara at 59.249 and landed at 59.739 for 333,516 unmitigated, x1.0, no shield, killing her. 333,516 is about 5 x 66.7k, so it is the full cast split one way. Under today's rule the DPS cap of 140k for a stack of 5 scales to abou…",
+   "rule_gap": "A stack that excuses marker holders (`needs_everyone.marked_out`, as Dragon's Rage does for Skyward Leap) must excuse every holder of that marker, including a holder who died before their leap landed, such as the dead holders `_orphan_leaps` places on the open spots. It must not take only the first target of each leap packet, and it must work out those holders before the stack's missing list is b…"
+  },
+  {
+   "fight": 10,
+   "time": "1:01",
+   "name": "Speed Panda",
+   "mechanic": "Skyward Leap",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Earlier deaths"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Kite Noodle",
+    "Loki Doki"
+   ],
+   "why": "Adjudicated for the judge. ab_25565 (fight 10): three leap packets, all with one target, Speed Panda. src 45 (Ser Ignasse) snapshot at 58.85 and landed at 59.339 for 69,490 unmitigated (37,134 absorbed). That one put Magic and Physical Vulnerability Up on her at 58.9. src 47 (Ser Paulecrain) did 735,427 a…"
+  },
+  {
    "fight": 11,
    "time": "2:27",
    "name": "Absolute Gigalad",
@@ -1662,6 +1703,25 @@
     "Loki Doki"
    ],
    "why": "Blind review agreed. Dimensional Collapse 25564 (instance 35/7) killed him at 58.97, and any hit is a fail. He walked onto the inner SE puddle at (6.4,6.4): (4.3,5.1) at 58.34, then (6.9,7.4). He was also in both Holy Shield Bash lines (calculated 3.16M and 3.08M, Down for the Count). Gigachad's lea…"
+  },
+  {
+   "fight": 15,
+   "time": "1:01",
+   "name": "Absolute Gigalad",
+   "mechanic": "Holy Shield Bash",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Absolute Gigachad"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Speed Panda",
+    "Kiara Blaiddyd"
+   ],
+   "why": "Adjudicated for the judge. The killing hit was Holy Shield Bash packet 12811 from Ser Adelphel, snapshotted at 58.699. It hit Loki first (3.16M) and Gigalad second: 797,639 unmitigated at x2.15, with Rampart, Stem the Flow, Bloodwhetting and Physical Vulnerability Up. He took 516,870 at 109,989/119,068 HP…"
   },
   {
    "fight": 16,
@@ -6124,6 +6184,25 @@
     "Kitana Kahn"
    ],
    "why": "Blind review agreed. Kitana was a 1 with the up arrow. She dove at 30.35 and got Fire Resistance Down II (11.95s) from it. At 36.94 she was hit by the first towers' Darkdragon Dive 26385 at (89.2, 99.9) while she still had that debuff: 445,247 (61,737 HP, 8,342 shield). Those towers belong to the 3s…"
+  },
+  {
+   "fight": 46,
+   "time": "4:10",
+   "name": "Loki Doki",
+   "mechanic": "Dark High Jump",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Loki Doki"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Miscommunication"
+   ],
+   "why": "Adjudicated against the judge. Loki was not knocked into the wall. He died to the damage of the 3s' overlapping circle landings, and his damage row is missing from the log. The ability file ab_26382 for fight 46 shows the snapshot at P3 51.343. Packet 25262 is Nidhogg 61 instance 3, and its first row is Absol…",
+   "rule_gap": "A deaths-table row with no killing blow is not the deathwall (and not a knockback) when the player is in a calculateddamage snapshot of at least their HP, from a packet whose damage rows resolve at their death. Time the death from the burst of aura removals, not the clock minus 1.5 s. The damage row is simply missing, so judge the death as that hit, with the same outcome and owners as the packet'…"
   },
   {
    "fight": 46,

@@ -45,7 +45,9 @@ class DiveFromGraceTest(unittest.TestCase):
         # Pull 33: Gigalad's circle landed in the north stack and knocked five players into the wall.
         self.assertEqual(counts["environment"], 0)
         walls = [item for item in self.phase3 if item.mechanic_id == "deathwall"]
-        self.assertEqual(len(walls), 8)
+        # Pull 46: Loki's row has no killing blow, but he died as the landing's damage hit
+        # the others, to a 716k snapshot of it. That death is the landing, not the wall.
+        self.assertEqual(len(walls), 7)
         # Final Chorus is the opening raidwide. The first auto-attack is a frontal cleave.
         chorus = [item for item in self.phase3 if item.mechanic == "Final Chorus"]
         self.assertEqual({item.outcome for item in chorus}, {"raw"})
@@ -144,10 +146,11 @@ class DiveFromGraceTest(unittest.TestCase):
         jumps = [
             item for item in self.phase3 if item.fact.fight == 46 and item.fact.guid == 26382
         ]
-        self.assertEqual(len(jumps), 4)
+        self.assertEqual(len(jumps), 5)
+        self.assertIn("Loki Doki", [item.fact.name for item in jumps])
         self.assertTrue(all(item.cause == "miscommunication" for item in jumps))
         self.assertTrue(
-            all(blame.to_dict() == {"who": "Miscommunication", "confidence": 25}
+            all(blame.to_dict() == {"who": "Miscommunication", "confidence": 20}
                 for item in jumps for blame in item.blames)
         )
 

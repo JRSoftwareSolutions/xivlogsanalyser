@@ -5936,9 +5936,7 @@
       }
     ],
     "down": [
-      "Kite Noodle",
       "Kitana Kahn",
-      "Loki Doki",
       "Spring Nymphar",
       "Absolute Gigalad",
       "Absolute Gigachad"
@@ -5986,32 +5984,24 @@
     "outcome": "raw",
     "happened": "Took 333,516 at 90% HP. Shared by 1 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 1 of 5 because 6 players were already dead.",
+    "went_wrong": "The stack was 1 of 5 because 4 players were already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Kite Noodle",
-        "confidence": 16
-      },
-      {
         "who": "Kitana Kahn",
-        "confidence": 16
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 16
+        "confidence": 25
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 16
+        "confidence": 25
       },
       {
         "who": "Absolute Gigalad",
-        "confidence": 16
+        "confidence": 25
       },
       {
         "who": "Absolute Gigachad",
-        "confidence": 16
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -35885,13 +35875,13 @@
     "name": "Loki Doki",
     "job": "Astrologian",
     "role": "healer",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
+    "guid": 26382,
+    "ability": "Dark High Jump",
+    "total": 716038,
     "hp": null,
     "max_hp": 62101,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 716038,
+    "multiplier": 1,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -35923,7 +35913,38 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
-    "divers": [],
+    "divers": [
+      {
+        "name": "Absolute Gigalad",
+        "marker": "circle",
+        "side": "",
+        "should_face": "",
+        "x": 0.02,
+        "y": -9.29,
+        "facing": "south",
+        "apart": 1.39
+      },
+      {
+        "name": "Kite Noodle",
+        "marker": "circle",
+        "side": "",
+        "should_face": "",
+        "x": 8.25,
+        "y": 0.02,
+        "facing": "west",
+        "apart": 13.35
+      },
+      {
+        "name": "Speed Panda",
+        "marker": "circle",
+        "side": "",
+        "should_face": "",
+        "x": -0.07,
+        "y": -6.4,
+        "facing": "south",
+        "apart": 4.27
+      }
+    ],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -35940,7 +35961,13 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "dead": [
       "Kitana Kahn"
     ],
@@ -35951,33 +35978,26 @@
     "off_tank": "",
     "main_tank": "",
     "stunned_by": [],
-    "knocked_by": [
-      "Speed Panda",
-      "Absolute Gigalad"
-    ],
+    "knocked_by": [],
     "baited_by": [],
     "orphan": [],
     "stacked_by": [],
     "amp_via": "",
     "amp_ms": null,
-    "mechanic_id": "deathwall",
-    "mechanic": "Deathwall",
+    "mechanic_id": "dark-high-jump",
+    "mechanic": "Dark High Jump",
     "outcome": "fail",
-    "happened": "A landing knocked them back just before they died at the edge.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Speed Panda and Absolute Gigalad's landing knocked Loki Doki into the deathwall.",
-    "cause": "knocked",
+    "happened": "Took 716,038. A healer takes about 9\u201323k.",
+    "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9\u201323k. Arrows face east: an up arrow resolves west and a down arrow east, and a 2 goes northwest or northeast. An arrow holder on the wrong side owns the landing. With only circles diving, the overlap is a miscommunication. The landing knocks back everyone it hits: a player knocked into the deathwall belongs to whoever it landed on.",
+    "went_wrong": "Loki Doki stood in the dive, a miscommunication.",
+    "cause": "miscommunication",
     "blames": [
       {
-        "who": "Speed Panda",
-        "confidence": 50
-      },
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
+        "who": "Miscommunication",
+        "confidence": 20
       }
     ],
-    "basis": "hit-list",
+    "basis": "label",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash at 59.6s into Thordan",
     "first_causes": [
@@ -36095,7 +36115,7 @@
     "blames": [
       {
         "who": "Miscommunication",
-        "confidence": 25
+        "confidence": 20
       }
     ],
     "basis": "label",
@@ -36243,7 +36263,7 @@
     "blames": [
       {
         "who": "Miscommunication",
-        "confidence": 25
+        "confidence": 20
       }
     ],
     "basis": "label",
@@ -36389,7 +36409,7 @@
     "blames": [
       {
         "who": "Miscommunication",
-        "confidence": 25
+        "confidence": 20
       }
     ],
     "basis": "label",
@@ -36527,7 +36547,7 @@
     "blames": [
       {
         "who": "Miscommunication",
-        "confidence": 25
+        "confidence": 20
       }
     ],
     "basis": "label",

@@ -4390,9 +4390,7 @@
       }
     ],
     "down": [
-      "Kite Noodle",
       "Kitana Kahn",
-      "Loki Doki",
       "Spring Nymphar",
       "Absolute Gigalad",
       "Absolute Gigachad"
@@ -26326,13 +26324,13 @@
     "name": "Loki Doki",
     "job": "Astrologian",
     "role": "healer",
-    "guid": 0,
-    "ability": "Environment",
-    "total": 0,
+    "guid": 26382,
+    "ability": "Dark High Jump",
+    "total": 716038,
     "hp": null,
     "max_hp": 62101,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 716038,
+    "multiplier": 1,
     "absorb": 0,
     "stack": null,
     "buffs": [],
@@ -26364,7 +26362,38 @@
     ],
     "clipped_by": [],
     "clip_guid": null,
-    "divers": [],
+    "divers": [
+      {
+        "name": "Absolute Gigalad",
+        "marker": "circle",
+        "side": "",
+        "should_face": "",
+        "x": 0.02,
+        "y": -9.29,
+        "facing": "south",
+        "apart": 1.39
+      },
+      {
+        "name": "Kite Noodle",
+        "marker": "circle",
+        "side": "",
+        "should_face": "",
+        "x": 8.25,
+        "y": 0.02,
+        "facing": "west",
+        "apart": 13.35
+      },
+      {
+        "name": "Speed Panda",
+        "marker": "circle",
+        "side": "",
+        "should_face": "",
+        "x": -0.07,
+        "y": -6.4,
+        "facing": "south",
+        "apart": 4.27
+      }
+    ],
     "in_spot": {},
     "prior_debuffs": [
       {
@@ -26381,7 +26410,13 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Absolute Gigalad",
+      "Absolute Gigachad",
+      "Speed Panda",
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "dead": [
       "Kitana Kahn"
     ],
@@ -26392,10 +26427,7 @@
     "off_tank": "",
     "main_tank": "",
     "stunned_by": [],
-    "knocked_by": [
-      "Speed Panda",
-      "Absolute Gigalad"
-    ],
+    "knocked_by": [],
     "baited_by": [],
     "orphan": [],
     "stacked_by": [],

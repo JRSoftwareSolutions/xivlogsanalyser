@@ -210,6 +210,63 @@
   },
   {
    "fight": 11,
+   "time": "1:57",
+   "name": "Absolute Gigachad",
+   "mechanic": "Sacred Sever",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Kite Noodle"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Kite Noodle",
+    "Kitana Kahn"
+   ],
+   "why": "Adjudicated for the judge. Same packet 25491 at 116.0: 3.68M unmitigated x3.32 with jump 2's Physical Vulnerability Up (applied 114.5), on a jump about 5 yalms long from Zephirin at (87.0,91.6) to (83.0,88.9). Gigachad was in jump 2's group (the off-tank seat, opposite Gigalad). Jump 3 belonged to jump 1'…"
+  },
+  {
+   "fight": 11,
+   "time": "1:57",
+   "name": "Spring Nymphar",
+   "mechanic": "Sacred Sever",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Kite Noodle"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Kite Noodle",
+    "Kitana Kahn"
+   ],
+   "why": "Adjudicated for the judge. Jump 3 (packet 25491, 115.9) hit Spring Nymphar 6.54M unmitigated x3.32, Absolute Gigachad and Kiara Blaiddyd. All three carried Physical Vulnerability Up from jump 2 (114.4-114.5). Ser Zephirin started from (87.0,91.6), where jump 2 had landed, and jumped about 5 yalms onto the…"
+  },
+  {
+   "fight": 11,
+   "time": "1:58",
+   "name": "Kiara Blaiddyd",
+   "mechanic": "Sacred Sever",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Kite Noodle"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Kite Noodle",
+    "Kitana Kahn"
+   ],
+   "why": "Adjudicated for the judge. Same packet 25491: 5.86M unmitigated x3.32, with Physical Vulnerability Up from jump 2 (114.4). Kiara was jump 2's own target (first target of packet 25482, and of jump 4's retargeted packet order in normal pulls), so she belongs to the jump 2/4 group and this jump was the wrong…"
+  },
+  {
+   "fight": 11,
    "time": "1:59",
    "name": "Loki Doki",
    "mechanic": "Sacred Sever",
@@ -726,6 +783,46 @@
     "Kitana Kahn"
    ],
    "why": "A skeptic upheld the judge. Speed Panda (68,259 max HP) could not have lived any way she placed her ice. Every lone non-tank ice in this report is 82 to 115k: Loki took 114k alone in this same pull, and Kitana Kahn, Kite Noodle and Kiara took 82 to 115k alone in other pulls. Spring Nymphar, her support par…"
+  },
+  {
+   "fight": 14,
+   "time": "2:18",
+   "name": "Absolute Gigalad",
+   "mechanic": "Eternal Conviction",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Absolute Gigachad",
+     "Kitana Kahn",
+     "Speed Panda"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Kitana Kahn"
+   ],
+   "why": "Adjudicated for the judge. Eternal Conviction 25568 at 136.56 has six instances (1,2,4,5,6,7) hitting the two survivors. The tower soak Conviction 29564 at 134.46 hit only Kiara Blaiddyd (instance 3, 5.0k) and Absolute Gigalad (instance 8, 3.3k). So six towers were empty, one for each of the six dead play…"
+  },
+  {
+   "fight": 14,
+   "time": "2:18",
+   "name": "Kiara Blaiddyd",
+   "mechanic": "Eternal Conviction",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Absolute Gigachad",
+     "Kitana Kahn",
+     "Speed Panda"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Kitana Kahn"
+   ],
+   "why": "Adjudicated for the judge. This is the same explosion as Gigalad's. Eternal Conviction 25568 at 136.56 hit Kiara from six instances, the largest being instance 2 at 105k. Conviction 29564 at 134.46 was soaked only by Kiara (instance 3) and Gigalad (instance 8), so six towers were left empty by six dead pl…"
   },
   {
    "fight": 15,
@@ -1904,6 +2001,25 @@
   {
    "fight": 22,
    "time": "2:12",
+   "name": "Absolute Gigachad",
+   "mechanic": "Hiemal Storm",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Absolute Gigachad"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad"
+   ],
+   "why": "Adjudicated against the judge. ab_25575, snapshot at 130.26 (ts 4434902). There were four circles, and the first row of each is the player the ice was placed on. 176/1 was placed on Speed Panda (30,249) and also hit Gigachad (6,989 after block; a calculateddamage row marked unpaired, so the evidence printout …",
+   "rule_gap": "For a pairs mechanic, a surplus circle that doubles onto a living pair belongs only to the dead players of the role that held the ices, passed on. That role is the one most circles were placed on (each circle's first-listed target), which is the role without Prey. Dead players of the other role held no ice and get no share. The code sets `down` to every dead player outside the circles, from both …"
+  },
+  {
+   "fight": 22,
+   "time": "2:12",
    "name": "Loki Doki",
    "mechanic": "Hiemal Storm",
    "by": "review",
@@ -1920,6 +2036,97 @@
     "Kite Noodle"
    ],
    "why": "Blind review agreed. Ice 176/2 hit only Loki, at west (90.7,100), for 111,394 unmitigated. That is a lone ice, over the 55k healer cap. Loki's partner had to come from the DPS side. Kitana was dead at 118.8 to her own Bright Flare, which passes back to her. Kite Noodle was alive and in no 25575 snap…"
+  },
+  {
+   "fight": 22,
+   "time": "2:12",
+   "name": "Speed Panda",
+   "mechanic": "Hiemal Storm",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Speed Panda"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad"
+   ],
+   "why": "Adjudicated against the judge. Same snapshot at 130.26. Speed Panda was the first row of 176/1 (30,249, with Gigachad 6,989), which put Ice Resistance Down II on both of them. 176/4 (first row Gigachad) then hit him for 1,219,410 unmitigated, killing him at 38,010/68,259. He stood at south (100.02,111.25), 0.…",
+   "rule_gap": "Same gap as Gigachad's death: the surplus ice on a doubled pair should go only to the dead holders of the ice role (each circle's first-listed role, the role without Prey), not to every dead player."
+  },
+  {
+   "fight": 22,
+   "time": "2:18",
+   "name": "Kiara Blaiddyd",
+   "mechanic": "Eternal Conviction",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Absolute Gigachad",
+     "Absolute Gigalad",
+     "Kitana Kahn",
+     "Kite Noodle",
+     "Speed Panda"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad",
+    "Kitana Kahn",
+    "Kite Noodle"
+   ],
+   "why": "Adjudicated for the judge. Kiara soaked tower 192/3 (29564, 5,002 at 134.49) at (117.4,92.4). Empty tower 192/2 (25568, packet at 136.57) hit her for 98,317 at 136.93, killing her at 54,174/68,662. That is lethal from full HP, so a fail. The five empty towers (192/1, 2, 5, 6, 7) match the five dead player…"
+  },
+  {
+   "fight": 22,
+   "time": "2:18",
+   "name": "Kite Noodle",
+   "mechanic": "Eternal Conviction",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Absolute Gigachad",
+     "Absolute Gigalad",
+     "Kitana Kahn",
+     "Kite Noodle",
+     "Speed Panda"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad",
+    "Kitana Kahn",
+    "Kite Noodle"
+   ],
+   "why": "Adjudicated for the judge. Kite was hit by tower 192/4 (29564, packet 31665 at 134.49, 0 damage, so he was in it) at (109.75,83.17), next to the tower at (109,84.41). Empty tower 192/7 hit him for 98,018 at 136.93, killing him at full HP (68,218/68,218): a fail. Five empty towers for five dead players. Ki…"
+  },
+  {
+   "fight": 22,
+   "time": "2:18",
+   "name": "Spring Nymphar",
+   "mechanic": "Eternal Conviction",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Absolute Gigachad",
+     "Absolute Gigalad",
+     "Kitana Kahn",
+     "Kite Noodle",
+     "Speed Panda"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad",
+    "Kitana Kahn",
+    "Kite Noodle"
+   ],
+   "why": "Adjudicated for the judge. ab_29564 at 134.49: the towers soaked were 192/3 (Kiara 5,002), 192/4 (Kite 0, a hit) and 192/8 (Spring 4,963). Those are all three living players, one per tower, with no sharing. ab_25568 at 136.57 exploded from 192/1, 2, 5, 6 and 7: five empty towers for five missing players. …"
   },
   {
    "fight": 23,
@@ -3725,6 +3932,27 @@
   },
   {
    "fight": 34,
+   "time": "2:12",
+   "name": "Speed Panda",
+   "mechanic": "Hiemal Storm",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Speed Panda"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad",
+    "Kitana Kahn",
+    "Kite Noodle",
+    "Spring Nymphar"
+   ],
+   "why": "Adjudicated for the judge. In ab_25575 (fight 34) all four ice circles snapshot at 130.16 in calculateddamage. 176/1 (packet 37555) hit Speed Panda for 38,518 and Kiara for 39,126, a normal pair share. 176/2 (packet 37556) then hit Kiara for 1,230,201 and Speed Panda for 1,196,407, after Ice Resistance Do…"
+  },
+  {
+   "fight": 34,
    "time": "2:17",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
@@ -4369,6 +4597,25 @@
     "Kiara Blaiddyd"
    ],
    "why": "Blind review agreed. No packet. Positions show r=21.0 at 56.74, and her buffs drop at 56.77. Deathwall walk after the first mistake, her fail."
+  },
+  {
+   "fight": 38,
+   "time": "1:01",
+   "name": "Loki Doki",
+   "mechanic": "Skyward Leap",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Earlier deaths"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Kitana Kahn",
+    "Kite Noodle"
+   ],
+   "why": "Adjudicated for the judge. In ab_25565, fight 38, all three leap packets snapshot on Loki Doki (167) at 58.8s. Ser Ignasse 186 dealt 62,246 unmitigated (x0.9, 16,251 absorbed by the shield). That is his own marker leap. Ser Paulecrain 188 calculated 666,040 and landed 20,192 with 579,244 overkill, which k…"
   },
   {
    "fight": 39,
@@ -8411,6 +8658,24 @@
     "Speed Panda"
    ],
    "why": "Blind review agreed. There is no damage packet on the row, so this is the deathwall at about 55.5. Positions show him moving out from radius 13.0 at 52.5 to radius 16.6 at 54.2. It comes after other players' mistakes, so it is his fail, shared with Earlier mistake."
+  },
+  {
+   "fight": 68,
+   "time": "1:01",
+   "name": "Kiara Blaiddyd",
+   "mechanic": "Skyward Leap",
+   "by": "review",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Earlier deaths"
+    ]
+   },
+   "outcome": "fail",
+   "owners": [
+    "Speed Panda"
+   ],
+   "why": "Adjudicated for the judge. The hits, from ab_25565 for pull 68. Kiara took her own leap at 59.357: Ser Ignasse (186) hit her for 68,816 unmitigated, 51,138 after a 17,678 shield. That left her at 11,755 HP. At the same instant Ser Vellguine (189) hit her with a one-target packet of 713,570 (701,815 overki…"
   },
   {
    "fight": 68,

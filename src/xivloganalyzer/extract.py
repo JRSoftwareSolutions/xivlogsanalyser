@@ -967,6 +967,25 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                 fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
                 fact.ts = timestamp
                 fact.knocked_by = _knocked_by(pack, snapshots, by_guid, fight["id"], target, timestamp, names_by_id)
+                lethal = _lethal_hit(
+                    pack, snapshots, by_guid, mitigation_tables.get(fight["id"]),
+                    fight["id"], target, timestamp, phase.id, fact.max_hp,
+                )
+                if lethal is not None:
+                    # A hit snapshotted them for more than their HP and its damage row is missing:
+                    # they died to that hit, not to the wall.
+                    row, hit_guid, hit_mechanic = lethal
+                    fact.guid, fact.ability = hit_guid, hit_mechanic.name
+                    fact.total = int(row.get("amount") or 0)
+                    fact.unmitigated = row.get("unmitigatedAmount")
+                    fact.multiplier = row.get("multiplier")
+                    fact.knocked_by = []
+                    fact.cohort = _cohort(snapshots.get(hit_guid, []), fight["id"], row, names_by_id)
+                    if hit_mechanic.dive_markers:
+                        fact.divers = _divers(
+                            mitigation_tables, _positions(report, fight["id"], places), fight["id"],
+                            target, timestamp, hit_mechanic.dive_markers, names_by_id,
+                        )
                 fact.missing = _gaps(report, fight["id"], mitigation_tables, fact, None)
                 facts.append(fact)
                 timed.append((timestamp, fact))
@@ -1072,11 +1091,16 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                     name for name in roster
                     if name != fact.name and _still_dead(name, timed, timestamp, raises)
                 ]
+        dead_holders = _orphan_leaps(
+            timed, pack, marker_casts, positions, fight["id"],
+            {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
+            raises, names_by_id,
+        )
         _missing_bodies(
             timed, pack, hit_lists, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
             mitigation_tables.get(fight["id"]),
             {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
-            fetched, marker_casts, snapshots,
+            fetched, marker_casts, snapshots, dead_holders,
         )
         _extra_hits(
             timed, pack, snapshots, fight["id"], _fight_roster(meta, fight["id"]), raises,
@@ -1086,11 +1110,6 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
             timed, pack,
             {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
             raises, mitigation_tables.get(fight["id"]), names_by_id,
-        )
-        _orphan_leaps(
-            timed, pack, marker_casts, positions, fight["id"],
-            {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
-            raises, names_by_id,
         )
         _drop_owners(
             timed, pack, fight["id"], positions, mitigation_tables.get(fight["id"]), raises, names_by_id,
@@ -1140,6 +1159,7 @@ def _missing_bodies(
     fetched: set[int] = frozenset(),
     marker_casts: dict[tuple, list[tuple]] | None = None,
     snapshots: dict[int, list[dict]] | None = None,
+    dead_holders: list[tuple[frozenset[int], int, list[str]]] = (),
 ) -> None:
     """Who was missing from a mechanic that needs every player, or every holder of a debuff.
 
@@ -1213,6 +1233,11 @@ def _missing_bodies(
             needed = [name for name in needed if name in _holders(table, needs.holders, at, names_by_id)]
         if needs.marked_out:
             excused = _marker_holders(marker_casts or {}, fight_id, needs.marked_out, at, names_by_id)
+            # A holder who died before their leap landed still held a marker.
+            excused |= {
+                name for guids, landed, holders in dead_holders
+                if guids & set(needs.marked_out) and abs(landed - at) <= MARKED_OUT_MS for name in holders
+            }
             needed = [name for name in needed if name not in excused]
         # Just raised and still invulnerable counts as dead, the same as for the ice pairs.
         risen = _holders(table, [TRANSCENDENT], at, names_by_id) if table else set()
@@ -1384,6 +1409,57 @@ AIM_TIE = 2.5
 
 # A deathwall death's time is only good to about a second, so a knockback is matched this far back.
 KNOCKED_MS = 2500
+
+
+def _lethal_hit(
+    pack: FightPack,
+    snapshots: dict[int, list[dict]],
+    by_guid: dict[int, list[dict]],
+    table: dict | None,
+    fight_id: int,
+    target: int | None,
+    timestamp: int | None,
+    phase: int,
+    max_hp: int | None,
+) -> tuple[dict, int, object] | None:
+    """A hit that killed a player the deaths table gave no killing blow.
+
+    It snapshotted them for at least their max HP, and they died (their buffs all
+    came off at once) while its damage landed on the others it hit: their own
+    damage row is simply missing. A player who died before that damage landed
+    walked into the wall first.
+    """
+    if target is None or timestamp is None or not max_hp or not table:
+        return None
+    removed = sorted(
+        aura[0] for aura in table.get("auras") or []
+        if aura[5] == target and aura[1] in ("removebuff", "removedebuff")
+    )
+    found = None
+    for mechanic in pack.mechanics:
+        if mechanic.phase != phase:
+            continue
+        for guid in mechanic.guids:
+            for row in snapshots.get(guid, []):
+                if row.get("fight") != fight_id or row.get("targetID") != target:
+                    continue
+                if not -KNOCKED_MS <= row["timestamp"] - timestamp <= 500:
+                    continue
+                if int(row.get("amount") or 0) < max_hp:
+                    continue
+                landed = [
+                    event["timestamp"] for event in by_guid.get(guid, [])
+                    if event.get("fight") == fight_id and event.get("packetID") == row.get("packetID")
+                ]
+                died = next(
+                    (ts for ts in removed if ts >= row["timestamp"] and sum(abs(other - ts) <= 50 for other in removed) >= 3),
+                    None,
+                )
+                if not landed or died is None or not min(landed) <= died <= max(landed) + 200:
+                    continue
+                if found is None or row["timestamp"] > found[0]["timestamp"]:
+                    found = (row, guid, mechanic)
+    return found
 
 
 def _knocked_by(
@@ -1878,7 +1954,7 @@ def _orphan_leaps(
     roles: dict[str, str],
     raises: dict[str, list[int]],
     names_by_id: dict[int, str],
-) -> None:
+) -> list[tuple[frozenset[int], int, list[str]]]:
     """Marker leaps whose holder died before they landed, and whose deaths they caused.
 
     A leap lands on its living holder. When the holder died first, it falls on
@@ -1886,9 +1962,11 @@ def _orphan_leaps(
     spot (or are a tank, who never holds one). The holder is the non-tank who died
     before it landed, at or on the way to the spot no living first target is on.
     `orphan` on each death that leap caused names those holders: everyone it hit,
-    the one it fell on included, whom it or its damage amp killed.
+    the one it fell on included, whom it or its damage amp killed. Returns each
+    wave's marker guids, landing time, and dead holders.
     """
     ids = {name: actor for actor, name in names_by_id.items()}
+    found: list[tuple[frozenset[int], int, list[str]]] = []
     for mechanic in pack.mechanics:
         if mechanic.spots is None or not mechanic.marker_owns_clip:
             continue
@@ -1947,6 +2025,7 @@ def _orphan_leaps(
                     holders.append(best[1])
             if not holders:
                 continue
+            found.append((frozenset(mechanic.guids), landed, list(holders)))
             # A leap that could be a holder's own counts as a dead holder's only when the dead
             # holders account for every such leap.
             stray = certain + unsure if len(holders) >= len(certain) + len(unsure) else certain
@@ -1969,6 +2048,7 @@ def _orphan_leaps(
                     for targets in stray
                 ):
                     fact.orphan = list(holders)
+    return found
 
 
 def _still_dead(
