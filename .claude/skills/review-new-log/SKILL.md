@@ -26,7 +26,14 @@ python -m xivloganalyzer analyze <code>
 python -m xivloganalyzer check <code>
 ```
 
-It lists the ability files the reached phases need and do not have, pulls with no positions or mitigation replay, players with no max HP, buff ids with no name, how many calls were made without some input, and every death row that was not judged, with why. Fetch what it names and run `analyze` again. Repeat until it is clean, or until the person agrees to the gaps that are left. A call made without an input lists it in `missing`; that call is weaker, whatever it says.
+It lists the ability files the reached phases need and do not have, pulls with no positions or mitigation replay, players with no max HP, buff ids with no name, how many calls were made without some input, and every death row that was not judged, with why. Fetch the ability files it names from the official FFLogs API, then run `analyze` again:
+
+```
+python -m xivloganalyzer fetch <code>
+python -m xivloganalyzer analyze <code>
+```
+
+`fetch` needs FFLOGS_CLIENT_ID and FFLOGS_CLIENT_SECRET (an API client from https://www.fflogs.com/api/clients/) in the environment. Positions and the mitigation replay come from the site, which sits behind a human check; fetch those in a browser session a person can click through. Repeat until it is clean, or until the person agrees to the gaps that are left. A call made without an input lists it in `missing`; that call is weaker, whatever it says.
 
 Then run the tests. `tests/test_invariants.py` checks every saved log, the new one included: every owner played the pull or is a label, every mistake has an owner and a basis, every death row is accounted for.
 

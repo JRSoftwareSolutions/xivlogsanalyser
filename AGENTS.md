@@ -18,7 +18,7 @@ A death with no damage packet is the deathwall. A damage-over-time kill such as 
 
 Each report folder has an `analysis.json` stamp: fingerprints of the fight pack (`fights/dsr/`), the analyzer code, and that log's files, from the run that wrote its pages. `reanalyze` judges again only the reports whose stamp no longer matches, and says why. `reanalyze --all` judges every report. `python -m xivloganalyzer status` lists what is out of date without writing anything. Commit the stamps, `calls.tsv`, and `inputs.json` with the pages. Do not hand-edit them.
 
-The intake for a new log, step by step, is the `review-new-log` skill. A new log goes in `reports/<code>/` with `fights.json`, `deaths-html.json`, and ability files, then `python -m xivloganalyzer analyze <code>`. `analyze` writes `inputs.json` and warns when an input is missing. Run `python -m xivloganalyzer check <code>` and fetch the ability files it lists before trusting the calls.
+The intake for a new log, step by step, is the `review-new-log` skill. A new log goes in `reports/<code>/` with `fights.json`, `deaths-html.json`, and ability files, then `python -m xivloganalyzer analyze <code>`. `analyze` writes `inputs.json` and warns when an input is missing. Run `python -m xivloganalyzer check <code>`, then `python -m xivloganalyzer fetch <code>` to get the ability files it lists from the FFLogs API (FFLOGS_CLIENT_ID and FFLOGS_CLIENT_SECRET), before trusting the calls. Do not script around the site's human check; the site's pages need a browser session a person clicks through.
 
 Run these from the repo root. When the package is not installed (`pip install -e .`), prefix them with `PYTHONPATH=src`. The tests are `python -m unittest discover -s tests`.
 

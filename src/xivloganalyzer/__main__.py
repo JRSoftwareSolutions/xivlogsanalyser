@@ -12,6 +12,7 @@ from xivloganalyzer.brief import brief_text, write_brief
 from xivloganalyzer.calls import calls_at, change_line, change_summary, diff_calls, saved_calls
 from xivloganalyzer.catalog import load_catalog, pack_for_zone, repo_root
 from xivloganalyzer.evidence import evidence_text
+from xivloganalyzer.fetch import api_from_env, fetch_missing
 from xivloganalyzer.inputs import inputs_text, problems, read_inputs
 from xivloganalyzer.pipeline import analyze, reanalyze, report_dirs, status
 from xivloganalyzer.verified import check_report, failures, keys, record, verify_text
@@ -52,11 +53,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(prog="xivloganalyzer")
     parser.add_argument(
         "command",
-        choices=("analyze", "reanalyze", "status", "brief", "audit", "check", "evidence", "changes", "verify", "confirm"),
+        choices=("analyze", "reanalyze", "status", "brief", "audit", "check", "fetch", "evidence", "changes", "verify", "confirm"),
         help=(
             "analyze one log, rebuild every out-of-date log, list which logs are "
             "out of date, print a session digest, list calls on weak evidence, "
-            "list the inputs a log is missing, print one pull's evidence, list calls that changed since a git "
+            "list the inputs a log is missing, fetch the missing ability files from the FFLogs API, "
+            "print one pull's evidence, list calls that changed since a git "
             "revision, compare calls with the checked ones, or record a checked call"
         ),
     )
@@ -68,6 +70,7 @@ def main() -> None:
     )
     parser.add_argument("--pull", type=int, help="brief, evidence, confirm: this pull id")
     parser.add_argument("--blind", action="store_true", help="evidence: leave out the judge's calls")
+    parser.add_argument("--guid", type=int, action="append", help="fetch: only this ability id (repeatable)")
     parser.add_argument("--flag", choices=tuple(FLAGS), help="audit: list every death with this flag")
     parser.add_argument(
         "--mechanic",
@@ -176,6 +179,22 @@ def main() -> None:
         )
         print(f"checked: pull {call['fight']} {call['time']} {call['name']} · {call['mechanic']} · "
               f"{call['outcome']}, {', '.join(call['owners']) or 'nobody'} (by {call['by']})")
+        return
+    if args.command == "fetch":
+        report = _resolve(args.report, root)
+        meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
+        catalog = load_catalog(root)
+        pack = next(
+            (found for zone in {fight.get("zoneID") for fight in meta["fights"]} if (found := pack_for_zone(zone, catalog))),
+            None,
+        )
+        written = fetch_missing(report, api_from_env(), pack.zone_id if pack else None, args.guid)
+        if not written:
+            print(f"{report.name}: nothing to fetch. Run: python -m xivloganalyzer check {report.name}")
+            return
+        for guid, count in written:
+            print(f"{report.name}: ab_{guid}.json, {count} events")
+        print(f"Now run: python -m xivloganalyzer analyze {report.name}")
         return
     if args.command == "evidence":
         if args.pull is None:
