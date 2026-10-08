@@ -5,8 +5,8 @@ import unittest
 from pathlib import Path
 
 from xivloganalyzer.catalog import load_pack
-from xivloganalyzer.extract import extract_report
-from xivloganalyzer.judge import judge_report, roster_from_meta
+from xivloganalyzer.extract import DeathFact, extract_report
+from xivloganalyzer.judge import Judgment, _recovered_until, judge_report, roster_from_meta
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK = load_pack(ROOT / "fights" / "dsr")
@@ -184,14 +184,37 @@ class RecoveryTest(unittest.TestCase):
         ]
         self.assertEqual([(item.cause, item.late) for item in late], [("reset", True)])
 
-    def test_a_stop_done_while_someone_is_dead_still_recovers(self):
-        # Pull 36: Kite died to Sacred Sever at 2:01 and was not raised, but Meteors went by
-        # with nobody dying. The pull was lost in Nidhogg, not to Kite's death.
+    def test_a_raise_and_then_a_whole_clean_stop_recovers(self):
+        # Pull 36: Kite died to Sacred Sever at 2:01 and was raised at 2:10, before Meteors'
+        # first mechanic. Meteors then went by with nobody dying, so the pull was lost in
+        # Nidhogg, not to Kite's death.
         kite = _one("8DYNHQx4C7ytdLb9", 36, "Kite Noodle", "Sacred Sever")
         self.assertFalse(kite.first)
         self.assertFalse(kite.late)
         self.assertNotIn("Sacred Sever", [cause["mechanic"] for cause in kite.first_causes])
         self.assertTrue(kite.first_mistake.endswith("into Nidhogg"))
+        self.assertEqual(round(kite.fact.raised_ms / 1000), 9)
+
+    def test_a_raise_during_a_stop_is_not_a_recovery_yet(self):
+        # A raise alone is no recovery. A stop counts only when its first mechanic landed
+        # after the raise; one raised mid-stop needs the next stop to succeed too.
+        pack = load_pack(ROOT / "fights" / "dsr")
+        meteors = next(cluster for cluster in pack.clusters if cluster.id == "meteors")
+
+        def death(t, raised_ms=None, phase=2):
+            fact = DeathFact(
+                fight=1, phase=phase, phase_name="", t=t, time="", name=f"P{t}", job="", role="dps",
+                guid=0, ability="", total=0, hp=None, max_hp=None, unmitigated=None,
+                multiplier=None, absorb=0, stack=None, buffs=[], boss_pct=0, pull_ms=0,
+                raised_ms=raised_ms,
+            )
+            return Judgment(fact, None, "", "fail", "", "", "")
+
+        wipe = death(40.0, phase=3)
+        before = death(118.0, raised_ms=int((meteors.lands - 1 - 118.0) * 1000))
+        self.assertEqual(_recovered_until([before, wipe], pack), (3, float("-inf")))
+        during = death(118.0, raised_ms=int((meteors.lands + 2 - 118.0) * 1000))
+        self.assertIsNone(_recovered_until([during, wipe], pack))
 
     def test_no_clean_stop_means_the_first_death_lost_the_pull(self):
         # Pull 12 of the reference log: the opener deaths, then Kiara's at 0:51 in Strength.

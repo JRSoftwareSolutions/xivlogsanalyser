@@ -533,6 +533,7 @@
       "name": "Ascalon's Mercy Concealed",
       "phase": 2,
       "starts": 0,
+      "lands": 14.1,
       "skill": "dsr-thordan-opener",
       "summary": "About 14 seconds. One tank stands in front of the boss. Everyone else stacks tight behind it, then dodges together. Nobody is hit.",
       "parts": [
@@ -548,6 +549,7 @@
       "name": "Ascalon's Might",
       "phase": 2,
       "starts": 14,
+      "lands": 15.2,
       "skill": "dsr-thordan-opener",
       "summary": "The opener tankbuster, about 17 seconds in. Three hits on the main tank. When the warrior takes it, he invulns it or heavy-mits it.",
       "parts": [
@@ -563,6 +565,7 @@
       "name": "Strength of the Ward",
       "phase": 2,
       "starts": 40,
+      "lands": 41.8,
       "skill": "dsr-strength-of-the-ward",
       "summary": "About 43 to 65 seconds. Three knights dash and leave two safe triangles. Each triangle spreads Lightning Storm: healer in front, melee left, ranged right, tank in back. Heavy Impact then pulses outward. The party walks toward the middle, and Thordan's Ascalon's Mercy Concealed is a 4/4 split. On the second pulse the knights drop. Tanks take the two tethers. The tether stuns, and a non-tank who takes it dies. Three non-tanks take Skyward Leap: opposite Thordan as far as possible, east and west slightly toward the north. The other three stack under him. A leap death is a healer, a missing mitigation, or a clip. Floor puddles go out with that. Six towers follow. The three that are not on the Skyward Leap markers are not fixed, and two people in one of them is a miscommunication. A soaked tower deals little. An empty one explodes. Eternal Conviction still hits as this ends.",
       "parts": [
@@ -588,6 +591,7 @@
       "name": "Heavenly Heel",
       "phase": 2,
       "starts": 75,
+      "lands": 79.7,
       "skill": "dsr-heavenly-heel",
       "summary": "About 81 seconds. The off tank takes Heavenly Heel, then the main tank takes the three Ascalon's Might hits. Both are properly mitigated. The off tank is the tank who takes the heel on most pulls of the night. Anyone else getting hit owns that mistake. The off tank who dies on the real hit without personal mitigation owns that death. Sanctity of the Ward is next.",
       "parts": [
@@ -604,6 +608,7 @@
       "name": "Sanctity of the Ward",
       "phase": 2,
       "starts": 105,
+      "lands": 111.6,
       "skill": "dsr-sanctity-of-the-ward",
       "summary": "About 112 seconds. The dark knight stands off center. Group 1 runs away from it and group 2 runs toward it. Those are the same two groups as the Lightning Storm triangles. The single sword always runs away. The double sword always runs toward it. A sword on the wrong group swaps with that role partner. Look away from both gazes. Two knights dash an hourglass and drop orbs. The dark knight jumps the single sword first, then the double sword, shared by 4, then repeats.",
       "parts": [
@@ -619,6 +624,7 @@
       "name": "Meteors",
       "phase": 2,
       "starts": 125,
+      "lands": 129.9,
       "skill": "dsr-sanctity-of-the-ward",
       "summary": "About 130 seconds. Fire circles on the intercards, Thordan at the north edge. Melee with healers east and west, tanks with ranged north and south. Prey belongs on north and south. Ice drops, then towers. Two outside towers and both players in that quarter go out. One outside tower and the prey role goes out. The other player takes the center tower clockwise from them, unless someone closer has that same tower. Comets follow. Eight towers then spawn outside: the prey role takes cardinals, the other group takes intercardinals. The knockback puts the middle into a tower. Players already outside immune it.",
       "parts": [
@@ -642,6 +648,7 @@
       "name": "Dive from Grace",
       "phase": 3,
       "starts": 17,
+      "lands": 30.8,
       "skill": "dsr-dive-from-grace",
       "summary": "About 17 seconds. Easthogg, true north, Nidhogg facing north. When the numbers appear, the 1s and 3s claim west, south, and east, and the 2s claim northwest and northeast. An up arrow takes west and faces east. A circle takes south. A down arrow takes east and faces east. A number with no arrows keeps the spots it claimed. The 3s soak the towers the 1s drop. The east and west 1s soak the towers the 2s drop. The 2s and the south 1 soak the towers the 3s drop. Five players who are not diving stack north for Eye of the Tyrant. Gnash and Lash is out, then in. Lash and Gnash is in, then out. After a soak, bait Geirskogul out and step through when the clone glows.",
       "debuffs": [

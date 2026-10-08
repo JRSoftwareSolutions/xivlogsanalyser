@@ -95,6 +95,8 @@ class DeathFact:
     orphan: list[str] = field(default_factory=list)
     # The ice holder who brought a second circle onto a pair with nobody dead.
     stacked_by: list[str] = field(default_factory=list)
+    # Milliseconds from this death to the player's raise, or None when they were not raised.
+    raised_ms: int | None = None
     # The ability that put the latest Vulnerability Up on them before the hit, such as "Darkdragon Dive",
     # and how many milliseconds before the death it landed.
     amp_via: str = ""
@@ -1104,6 +1106,8 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                     name for name in roster
                     if name != fact.name and _still_dead(name, timed, timestamp, raises)
                 ]
+                later = [raised for raised in raises.get(fact.name, []) if raised > timestamp]
+                fact.raised_ms = min(later) - timestamp if later else None
         for fact, event, timestamp in cleaves:
             fact.cleaved_by = _cleaved_by(
                 fact, event, _positions(report, fight["id"], places), fight["id"], timestamp,

@@ -65,7 +65,7 @@ For a whole pull, add one line: how many raw, fail, and low deaths, and the firs
 
 ## The mistake that lost the pull
 
-The mistake that lost the pull matters most. It is the earliest death, Damage Down, or Hysteria after the last stop the party did in full, with anything else in the same second. A death followed by a whole stop with nobody dying and no Damage Down or Hysteria was recovered from: it is still a mistake, but not what lost the pull. Later deaths are often that mistake cascading: fewer bodies for a stack, a raise that leaves someone low, a group that gives up and walks into the wall. Name the first mistake before the rest. `first` and `first_mistake` on each judgment carry it.
+The mistake that lost the pull matters most. It is the earliest death, Damage Down, or Hysteria after the last stop the party did in full, with anything else in the same second. A death followed by a whole stop with nobody dying and no Damage Down or Hysteria was recovered from: it is still a mistake, but not what lost the pull. A raise alone is no recovery; the stop has to start after the raise. Later deaths are often that mistake cascading: fewer bodies for a stack, a raise that leaves someone low, a group that gives up and walks into the wall. Name the first mistake before the rest. `first` and `first_mistake` on each judgment carry it.
 
 ## Blame confidence
 

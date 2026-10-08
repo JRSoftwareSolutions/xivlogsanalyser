@@ -248,6 +248,8 @@ class Cluster:
     """One stop on the session line. `starts` is seconds into `phase`. `skill` explains the stop.
 
     `debuffs` are the role debuffs listed for every player on the pull's card.
+    `lands` is when its first mechanic lands, the earliest seen in the logs: a
+    player raised before it played the whole stop.
     """
 
     id: str
@@ -258,6 +260,7 @@ class Cluster:
     parts: list[ClusterPart]
     skill: str = ""
     debuffs: list[DebuffColumn] = field(default_factory=list)
+    lands: float | None = None
 
 
 @dataclass
@@ -382,6 +385,7 @@ def _clusters(raw_clusters: list[dict]) -> list[Cluster]:
                 name=raw["name"],
                 phase=int(raw["phase"]),
                 starts=float(raw.get("starts", 0)),
+                lands=float(raw["lands"]) if raw.get("lands") is not None else None,
                 summary=raw.get("summary", ""),
                 parts=parts,
                 skill=raw.get("skill", ""),

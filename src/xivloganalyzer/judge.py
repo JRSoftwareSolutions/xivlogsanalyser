@@ -1155,9 +1155,9 @@ def _pull_debuffs(rows: list[Judgment]) -> list[dict]:
 Moment = tuple[float, float]
 
 
-def _stop_windows(pack: FightPack) -> list[tuple[Moment, Moment]]:
-    """Each stop on the session line, from its start to the next stop's in the same phase.
-    The last stop of a phase runs to the phase's end."""
+def _stop_windows(pack: FightPack) -> list[tuple[Moment, Moment, Moment]]:
+    """Each stop on the session line, from its start to the next stop's in the same phase,
+    and when its first mechanic lands. The last stop of a phase runs to the phase's end."""
     ordered = sorted(pack.clusters, key=lambda cluster: (cluster.phase, cluster.starts))
     windows = []
     for index, cluster in enumerate(ordered):
@@ -1166,7 +1166,8 @@ def _stop_windows(pack: FightPack) -> list[tuple[Moment, Moment]]:
             end: Moment = (cluster.phase, following.starts)
         else:
             end = (cluster.phase + 1, float("-inf"))
-        windows.append(((cluster.phase, cluster.starts), end))
+        lands = cluster.lands if cluster.lands is not None else cluster.starts
+        windows.append(((cluster.phase, cluster.starts), (cluster.phase, lands), end))
     return windows
 
 
@@ -1174,18 +1175,26 @@ def _recovered_until(rows: list[Judgment], pack: FightPack) -> Moment | None:
     """The end of the last stop the party did in full after a death, or None.
 
     A stop went in full when nobody died during it, nobody got a Damage Down or
-    Hysteria in it, and the pull went on past its end. A death before such a stop
-    was recovered from: it is still a mistake, but it is not what lost the pull. A
-    player still dead is not excused: a later stop they left short passes on to them.
+    Hysteria in it, nobody was raised after its first mechanic landed, and the pull
+    went on past its end. A raise alone is no recovery: the pull is often lost anyway,
+    so a whole stop has to succeed after it. A death before such a stop was recovered from: it is still a
+    mistake, but it is not what lost the pull. A player still dead is not excused: a
+    later stop they left short passes on to them.
     """
     deaths = [(item.fact.phase, item.fact.t) for item in rows]
     debuffs = [(debuff["phase"], debuff["t"]) for debuff in _pull_debuffs(rows)]
+    raises = [
+        (item.fact.phase, item.fact.t + item.fact.raised_ms / 1000)
+        for item in rows if item.fact.raised_ms is not None
+    ]
     last = max(deaths)
     found = None
-    for start, end in _stop_windows(pack):
+    for start, lands, end in _stop_windows(pack):
         if min(deaths) >= start or last < end:
             continue
-        if not any(start <= when < end for when in deaths + debuffs):
+        if any(start <= when < end for when in deaths + debuffs):
+            continue
+        if not any(lands <= when < end for when in raises):
             found = end
     return found
 
