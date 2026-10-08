@@ -13,8 +13,9 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone
-from xivloganalyzer.judge import Judgment, clip_mechanic, empty_owners, marker_owners
+from xivloganalyzer.judge import Judgment, clip_mechanic, empty_owners, marker_owners, passes_on
 from xivloganalyzer.mitigations import load_mitigations
+from xivloganalyzer.night import night_tally
 
 JOB = {
     "Paladin": "PLD",
@@ -267,6 +268,7 @@ def _party(meta: dict, pack: FightPack) -> list[dict]:
         rows.append(
             {
                 "name": actor["name"],
+                "id": actor.get("id"),
                 "job": JOB.get(job, job),
                 "role": pack.role_of(job),
                 "fights": _fight_ids(actor.get("fights") or ""),
@@ -377,7 +379,6 @@ def attach_debuffs(report: Path, payload: dict, pack: FightPack, meta: dict) -> 
     if not clusters:
         return
     tables = load_mitigations(report)
-    ids = {actor["name"]: actor["id"] for actor in meta.get("friendlies") or []}
     party = _party(meta, pack)
     for pull in payload.get("pulls") or []:
         auras = (tables.get(pull["id"]) or {}).get("auras") or []
@@ -398,7 +399,7 @@ def attach_debuffs(report: Path, payload: dict, pack: FightPack, meta: dict) -> 
                 continue
             players = []
             for player in roster:
-                actor = ids.get(player["name"])
+                actor = player.get("id")
                 statuses = [held.get((actor, column.column)) for column in cluster.debuffs]
                 values = [
                     column.labels[status["id"]] if status else ""
@@ -505,7 +506,7 @@ def session_payload(
             culprits = marker_owners(item.fact)
         if item.cause == "arrow":
             culprits = [blame.who for blame in item.blames]
-        if item.cause in {"empty", "dropped", "marked"}:
+        if passes_on(item):
             culprits = empty_owners(item)
         cluster = pack.cluster_for(component, item.fact.t, item.fact.phase) or _cluster_of(item, pack)
         pull["deaths"].append(
@@ -524,11 +525,13 @@ def session_payload(
                 "should": item.should_have_been,
                 "wrong": item.went_wrong,
                 "blames": [blame.to_dict() for blame in item.blames],
+                "basis": item.basis,
                 "culprits": culprits,
                 "first": item.first,
             }
         )
         pull["firstMistake"] = item.first_mistake
+        pull["firstCauses"] = item.first_causes
     roster = _party(meta or {}, pack)
     for pull in pulls.values():
         pull["deaths"].sort(key=lambda row: (row["phaseId"], row["t"], row["name"]))
@@ -544,6 +547,11 @@ def session_payload(
         if item.outcome == "unknown"
     ]
     counts = Counter(item.outcome for item in judgments)
+    night = night_tally([
+        {"fight": item.fact.fight, "outcome": item.outcome, "first_causes": item.first_causes,
+         "blames": [blame.to_dict() for blame in item.blames]}
+        for item in judgments
+    ])
     return {
         "code": code,
         "fight": pack.name,
@@ -560,6 +568,7 @@ def session_payload(
         "raw": counts["raw"],
         "fail": counts["fail"],
         "low": counts["low"],
+        "night": night,
     }
 
 
@@ -624,6 +633,7 @@ def session_summary(payload: dict, detail_href: str) -> dict:
         "overview": overview,
         "pulls": [_pull_index(pull) for pull in payload.get("pulls") or []],
         "mechanics": [_mechanic_index(mech) for mech in payload.get("mechanics") or []],
+        "night": payload.get("night") or {},
     }
 
 

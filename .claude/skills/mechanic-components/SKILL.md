@@ -23,7 +23,7 @@ Guides disagree with each other on movement. They are not this party's positions
 
 Online text is a draft. The person decides what belongs and what a component does. A correction ("X belongs to Y", "Z is not part of this", "that hit means this") updates the mechanic skill, then the `clusters` entry in `fights/dsr/mechanics.json` if the dashboard groups by that entry.
 
-Do not retune role caps or the 86 raw deaths while only regrouping components. Fault for a single killing blow stays in that ability's skill. If the guide and that skill disagree about what a hit means, say so and wait for the person.
+Do not retune role caps or the 40 raw deaths while only regrouping components. Fault for a single killing blow stays in that ability's skill. If the guide and that skill disagree about what a hit means, say so and wait for the person.
 
 Do not invent a guid for a cast this log has not stored. Ancient Quaga, Ultimate End, Broad Swing, and Aetheric Burst are in the phase write-up and are not studied components yet. Spiral Thrust is `25556`. Faith Unmoving is `25308` inside Sanctity.
 

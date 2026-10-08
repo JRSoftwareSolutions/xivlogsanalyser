@@ -15,17 +15,23 @@ This is a stack and it scales. The usual share is 4. A lived share of 4 is tanks
 ## How to tell
 
 - At or under the role cap on a share of 4: the real stack.
-- A share of 1 or 2 around 85–104k, still at or under the role cap: the same mechanic with missing bodies. It stays raw.
-- Cleaves in the millions, or any hit over the role cap: the failed cleave, not a short share.
+- A short share is the same cast split fewer ways: a non-tank takes about 43k in a 4, 57k in a 3, 81–91k in a 2, and 160–181k alone. The role cap scales with the stack (`cap_for_stack`: a share of 2 gets twice the cap of a 4), so those are missing bodies and stay raw.
+- The damage falls the farther Ser Zephirin jumps, so each group waits across the arena from him. In all three logs a full group 34–35 yalms from him takes about 43k each before mitigation. On reference pull 35 the first group stood about 31 yalms away and took 82–99k; on pull 27 about 6 yalms and took about 400k. A hit over the role cap on a full stack with no vulnerability is the group standing too close: `{player} stood too close to Ser Zephirin's landing.` Each player in it owns their own death.
+- Hits in the millions with Physical Vulnerability Up are a jump on the wrong group (`alternating`).
+- Share or too close is decided once per cast. Every death in one packet gets the verdict of the middle victim's hit against their role cap. A vulnerability, a marker clip, or a hit over `fail_above` is still judged on its own. Reference pull 35: Kite Noodle's 81,519 was under the DPS cap, but the cast was too close, so all three failed it.
 
 ## Fault
 
 Raw, full share: the resolve. Name the shield, the mit, and the HP.
 
-Raw, short share: the missing bodies. Say the share was `{stack} of 4`. The player who died took a legal share.
+Raw, short share: the missing bodies. A target who ran off alone along the wall while the rest of the group stood together waiting for the stack owns it: `8DYNHQx4C7ytdLb9` pull 36, Kite Noodle. When the target was not alone in the jump, or the group was not together, it stays with the missing bodies. Say the share was `{stack} of 4`. The player who died took a legal share. The jumps alternate (`alternating` in `mechanics.json`), so the group for a jump is whoever took the jump two before it, and for the first two jumps everyone the other group's jump missed. Its players who were dead own the gap, passed on to whoever owned those deaths, and its players alive and not in the stack own it themselves. When the group is all there, it stays "Missing bodies".
+
+Fail with the last jump's Physical Vulnerability Up: each jump leaves that vuln on its stack. A player who is not in this jump's group took a jump that landed on the wrong group, because that group's players were already dead. The dead players own it, passed on. The right group's living players are not named: the knight follows the sword. `3wzL6x4VHTmvNkhq` pull 49: the four who looked at Dragon's Glory own the third jump that killed the other four. A player who is in the group and still had the vuln took both jumps, and owns it (`3wzL6x4VHTmvNkhq` pull 24, Kitana Kahn).
+
+A raw share right after looking at a gaze, when full HP would have lived it, is the player's own (`review-mechanic`, own hit).
 
 Fail: `{player}` took the cleave. They were not in the stack.
 
 ## Parameters
 
-Follow `analyze-mechanic-parameters`. Walked on `8DYNHQx4C7ytdLb9`. Each jump is four players, about 1.8 seconds apart, from about 113 to 119 seconds. The same four take the first and third jumps. The other four take the second and fourth. Early jumps are often fully shielded, so unmitigated is missing on that damage packet and the later jumps carry the band above. A share of 1 or 2 under the role cap is still this mechanic. Cleaves, such as the 181k hit on pull 36, are the fail shape. The marked player who runs the wrong way owns that mistake. When they run correctly and the role partner does not swap, the partner owns it. Missing bodies own a short share. The player who took the cleave owns that hit.
+Follow `analyze-mechanic-parameters`. Walked on `8DYNHQx4C7ytdLb9`. Each jump is four players, about 1.8 seconds apart, from about 113 to 119 seconds. The same four take the first and third jumps. The other four take the second and fourth. Early jumps are often fully shielded, so unmitigated is missing on that damage packet and the later jumps carry the band above. A share of 1 or 2 is still this mechanic: the 181k on pull 36 is the normal cast taken alone, a short share. On pull 36 and on `3wzL6x4VHTmvNkhq` pull 28 the whole group drifted off its spot before the last jump, so the positions name nobody in particular, and the group's missing players own it. A hit bigger than the share for its stack is the group standing too close.

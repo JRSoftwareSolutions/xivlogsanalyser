@@ -233,7 +233,9 @@ class PullCardsTest(unittest.TestCase):
         self.assertTrue(concealed["Loki Doki"]["passed"])
         leap = _seats(by_name["Skyward Leap"])
         self.assertFalse(leap["Kitana Kahn"]["passed"])
-        self.assertFalse(leap["Kiara Blaiddyd"]["passed"])
+        # Kiara was on her spot. The second leap on her was Speed's, who died holding it.
+        self.assertTrue(leap["Kiara Blaiddyd"]["passed"])
+        self.assertFalse(leap["Speed Panda"]["passed"])
         self.assertTrue(leap["Spring Nymphar"]["passed"])
         names = {card["id"] for card in self._pull(68)["cards"]}
         self.assertNotIn("heavenly-heel-swap", names)
@@ -305,12 +307,13 @@ class PullCardsTest(unittest.TestCase):
             if card["id"] == "strength-of-the-ward"
         ]
         self.assertEqual(strength["reached"], len(cards))
-        self.assertEqual((strength["reached"], strength["mistakes"]), (53, 20))
+        # The towers at 63s are part of Strength, and an empty tower is a mistake.
+        self.assertEqual((strength["reached"], strength["mistakes"]), (53, 23))
         self.assertEqual(by_id["dive-from-grace"]["reached"], 0)
         summary = session_summary(self.payload, "")
         self.assertEqual(
             next(row for row in summary["mechanics"] if row["id"] == "strength-of-the-ward")["mistakes"],
-            20,
+            23,
         )
 
 

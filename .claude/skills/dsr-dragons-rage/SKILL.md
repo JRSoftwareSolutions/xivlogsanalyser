@@ -17,6 +17,7 @@ This is a stack and it scales. The usual share is 5. A lived share is about 60�
 - At or under the role cap, including a share of 5: the real stack.
 - A share of 3 around 102–113k, still at or under the role cap and at or under 200,000: the 5-share with two bodies missing. It stays raw.
 - Over 200,000, or over the role cap: the failed hit, not a short share.
+- One packet gets one verdict. The middle victim's hit against their role cap decides share or failed hit for every death in it. A vulnerability or a hit over 200,000 is still judged on its own.
 
 ## Fault
 
@@ -30,7 +31,7 @@ Fail: `{player}` took the failed Dragon's Rage hit. Missing bodies do not explai
 
 Follow `analyze-mechanic-parameters`. One cast, about 59–60 seconds, under Thordan, with the tethers and the blue markers.
 
-The three non-tanks who do not have the blue marker stack under Thordan. The tanks are stretching tethers at the same time. The person does not know whether the tanks are supposed to share this hit.
+Everyone without a blue marker stacks under Thordan: the three non-tanks and both tanks, 5 people. The tanks bring their Holy Shield Bash tethers into the stack. The person did not know, so this comes from the guides (Materia Raiding has the stack shared with both tanks; Gamerant counts five unmarked players) and the logs: every 5-stack in all three logs is both tanks plus the three unmarked non-tanks. A short stack names who was not in it (`needs_everyone` with `stack` and `marked_out` in `mechanics.json`): the Skyward Leap holders are the first player each leap hit and are excused, the dead pass it on to whoever owned their death, and the living who were not hit own it themselves.
 
 45 casts. Lived shares are usually 5 bodies: those three non-tanks plus both tanks, about 60–80k on a non-tank and about 26k on a tank. A share of 3 lands around 102–113k. Body counts in this log: 5 on 19 casts, 4 on 14, 3 on 9, and 1 or 2 on the failed cleaves.
 

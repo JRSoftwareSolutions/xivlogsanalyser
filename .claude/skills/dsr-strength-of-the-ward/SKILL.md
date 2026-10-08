@@ -52,7 +52,7 @@ Three non-tanks get a blue marker. A large area goes off on that marker. Those t
 
 Six towers spawn after the marker. Ser Hermenost's tower soak is Conviction `25567`, about 62.8 seconds, stored in report `3wzL6x4VHTmvNkhq`. It hits non-tanks only, up to about 5.6k each. Three are on the Skyward Leap markers and are fixed. The other three are not fixed. Each non-tank has to be inside a tower when it goes off. Two people in one of the unfixed towers is a miscommunication. An empty tower applies Damage Down and Paralysis to everyone. That explosion is a fail. It is not on the Skyward Leap guid: the 600–760k Skyward Leap hits land with the markers, about 59.5 seconds, and are a second leap on one player (`dsr-skyward-leap`).
 
-Eternal Conviction `25568` also hits around 63 seconds. The person did not assign that hit. Do not fold it into Sanctity. The hits around 137 and 150 seconds are the empty Sanctity towers, not this mechanic.
+That explosion is Eternal Conviction `25568`, about 2 seconds after the soak, around 63–66 seconds. Every death to it is a fail. Whoever left a tower empty owns it: a player already dead, passed on to whoever owned that death, a non-tank alive and outside a tower, or two players sharing one (`dsr-eternal-conviction`). The hits around 137 and 150 seconds are the empty Sanctity towers, not this mechanic.
 
 ## Not this mechanic
 

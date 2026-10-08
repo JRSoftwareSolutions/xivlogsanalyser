@@ -38,13 +38,16 @@ class DiveFromGraceTest(unittest.TestCase):
 
     def test_phase_three_counts(self):
         counts = Counter(item.outcome for item in self.phase3)
-        self.assertEqual(counts["fail"], 44)
-        self.assertEqual(counts["raw"], 18)
-        self.assertEqual(counts["low"], 3)
+        self.assertEqual(counts["fail"], 57)
+        self.assertEqual(counts["raw"], 8)
+        self.assertEqual(counts["low"], 0)
         self.assertEqual(counts["unknown"], 0)
+        # Pull 33: Gigalad's circle landed in the north stack and knocked five players into the wall.
         self.assertEqual(counts["environment"], 0)
         walls = [item for item in self.phase3 if item.mechanic_id == "deathwall"]
-        self.assertEqual(len(walls), 8)
+        # Pull 46: Loki's row has no killing blow, but he died as the landing's damage hit
+        # the others, to a 716k snapshot of it. That death is the landing, not the wall.
+        self.assertEqual(len(walls), 7)
         # Final Chorus is the opening raidwide. The first auto-attack is a frontal cleave.
         chorus = [item for item in self.phase3 if item.mechanic == "Final Chorus"]
         self.assertEqual({item.outcome for item in chorus}, {"raw"})
@@ -52,16 +55,27 @@ class DiveFromGraceTest(unittest.TestCase):
         self.assertEqual({item.fact.name for item in autos}, {"Spring Nymphar", "Kiara Blaiddyd"})
 
     def test_short_stack_and_full_stack(self):
+        # The 2s and 3s stack. Kite, Loki, and Kiara were already dead, and each gap
+        # belongs to whoever owned that death: the healers for Final Chorus, Kiara for the auto.
+        # Each dead player is one share, split the way their death was.
         short = self._one(16, "Kitana Kahn", 26388)
         self.assertEqual(short.outcome, "fail")
-        self.assertEqual(short.blames[0].who, "Missing bodies")
-        self.assertEqual(short.blames[0].confidence, 50)
+        self.assertEqual(short.fact.down, ["Kite Noodle", "Loki Doki", "Kiara Blaiddyd"])
+        self.assertEqual(
+            [blame.to_dict() for blame in short.blames],
+            [
+                {"who": "Loki Doki", "confidence": 25, "via": ["Kite Noodle"]},
+                {"who": "Spring Nymphar", "confidence": 41, "via": ["Kite Noodle", "Loki Doki"]},
+                {"who": "Kiara Blaiddyd", "confidence": 33},
+            ],
+        )
+        self.assertEqual(short.basis, "hit-list")
         raw = self._one(26, "Loki Doki", 26388)
         self.assertEqual(raw.outcome, "raw")
-        self.assertEqual(
-            [blame.who for blame in raw.blames],
-            ["Loki Doki", "Spring Nymphar", "Party mitigation"],
-        )
+        # The Eye of the Tyrant file says the hit had no party mitigation.
+        self.assertEqual(raw.fact.multiplier, 1.0)
+        self.assertEqual(raw.fact.missing, [])
+        self.assertEqual([blame.who for blame in raw.blames], ["Loki Doki", "Spring Nymphar", "Party mitigation"])
 
     def test_arrow_on_the_wrong_side_owns_the_landing(self):
         loki = self._one(27, "Loki Doki", 26384)
@@ -128,29 +142,29 @@ class DiveFromGraceTest(unittest.TestCase):
                 for guid in column.labels:
                     self.assertTrue((icons / f"{guid}.png").is_file(), f"{cluster.id} {guid}")
 
-    def test_circles_in_one_landing_are_a_miscommunication(self):
+    def test_circles_landing_in_the_stack_belong_to_their_divers(self):
+        # Speed's and Gigalad's circles came down in the north stack. Dive targets never
+        # belong in the stack, so it is theirs, not a miscommunication.
         jumps = [
             item for item in self.phase3 if item.fact.fight == 46 and item.fact.guid == 26382
         ]
-        self.assertEqual(len(jumps), 4)
-        self.assertTrue(all(item.cause == "miscommunication" for item in jumps))
-        self.assertTrue(
-            all(blame.to_dict() == {"who": "Miscommunication", "confidence": 25}
-                for item in jumps for blame in item.blames)
-        )
+        self.assertEqual(len(jumps), 5)
+        self.assertIn("Loki Doki", [item.fact.name for item in jumps])
+        self.assertTrue(all(item.cause == "dove" for item in jumps))
+        for item in jumps:
+            self.assertEqual(sorted(blame.who for blame in item.blames), ["Absolute Gigalad", "Speed Panda"])
 
     def test_towers_split_debuff_soak_from_empty_tower(self):
         debuff = self._one(27, "Speed Panda", 26385)
         self.assertEqual(debuff.outcome, "fail")
         self.assertEqual(debuff.went_wrong, "Speed Panda soaked with the dive debuff.")
         self.assertEqual(debuff.blames[0].confidence, 100)
-        low = self._one(27, "Kite Noodle", 26395)
-        self.assertEqual(low.outcome, "low")
+        # 26395 is only ever the explosion of an unsoaked tower, about 2s after the soak, so every hit is a fail.
+        for fight, name in ((27, "Kite Noodle"), (36, "Kitana Kahn"), (36, "Kite Noodle")):
+            self.assertEqual(self._one(fight, name, 26395).outcome, "fail")
+        # With the soak file, the 3s who were alive and not in a tower own it.
         tower = self._one(36, "Kitana Kahn", 26395)
-        self.assertEqual(tower.outcome, "fail")
-        self.assertEqual(tower.blames[0].who, "Missed soak")
-        soak = self._one(36, "Kite Noodle", 26395)
-        self.assertEqual(soak.outcome, "raw")
+        self.assertEqual(sorted(blame.who for blame in tower.blames), ["Absolute Gigachad", "Loki Doki", "Spring Nymphar"])
 
     def test_wheel_and_line_are_the_player_who_stood_there(self):
         wheel = self._one(30, "Loki Doki", 26390)
@@ -174,6 +188,8 @@ class DiveFromGraceTest(unittest.TestCase):
         card = next(row for row in pull["cards"] if row["id"] == "dive-from-grace")
         eye = next(part for part in card["parts"] if part["id"] == "eye-of-the-tyrant")
         seats = {seat["name"]: seat for seat in eye["seats"]}
-        self.assertFalse(seats["Kitana Kahn"]["passed"])
-        self.assertFalse(seats["Absolute Gigalad"]["passed"])
-        self.assertTrue(seats["Loki Doki"]["passed"])
+        # The two who died in the short stack were in place. The missing players' owners failed it.
+        self.assertTrue(seats["Kitana Kahn"]["passed"])
+        self.assertTrue(seats["Absolute Gigalad"]["passed"])
+        self.assertFalse(seats["Loki Doki"]["passed"])
+        self.assertFalse(seats["Kiara Blaiddyd"]["passed"])

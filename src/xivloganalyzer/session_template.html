@@ -236,6 +236,12 @@
   .blame b { display: inline; font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--fail); font-variant-numeric: tabular-nums; }
   .blame.sure { background: var(--ok-bg); }
   .blame.sure b { color: var(--ok); }
+  .blames .basis { color: var(--muted); font-size: 12px; align-self: center; }
+  .blame.label { background: var(--line); }
+  table.night { border-collapse: collapse; width: 100%; font-size: 14px; margin: 6px 0 12px; }
+  table.night th { text-align: left; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding: 4px 8px 4px 0; }
+  table.night td { padding: 4px 8px 4px 0; border-top: 1px solid var(--line); vertical-align: top; }
+  table.night td.num { font-variant-numeric: tabular-nums; width: 3em; }
   .quiet { color: var(--muted); }
   .clean { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
   .component { padding: 12px 0; }
@@ -663,13 +669,27 @@ function jobMark(job) {
   if (!src) return `<span class="job">${esc(job)}</span>`;
   return `<img class="job-icon" alt="${esc(job)}" title="${esc(job)}" src="${src}">`;
 }
+// What decided who owns a death, as `basis` on each death.
+const BASIS = {
+  "hit": "their own hit",
+  "debuff": "a marker, number, or damage amp",
+  "position": "where people stood",
+  "hit-list": "who the cast hit",
+  "role": "the role rule",
+  "no-packet": "no damage packet",
+  "label": "nobody to name",
+};
 function blameChips(row) {
   const blames = row.blames || [];
   if (!blames.length) return "";
-  return `<div class="blames">${blames.map(blame => {
-    const sure = blame.confidence >= 100 ? " sure" : "";
-    return `<span class="blame${sure}" title="How sure this blame is">${esc(blame.who)} <b>${blame.confidence}%</b></span>`;
-  }).join("")}</div>`;
+  const firm = !["label", "role"].includes(row.basis);
+  const chips = blames.map(blame => {
+    const sure = blame.confidence >= 100 && firm ? " sure" : "";
+    const via = blame.via && blame.via.length ? `, passed on from ${blame.via.join(" and ")}'s death` : "";
+    return `<span class="blame${sure}" title="Share of this death${esc(via)}">${esc(blame.who)} <b>${blame.confidence}%</b></span>`;
+  }).join("");
+  const basis = BASIS[row.basis] ? `<span class="basis">from ${BASIS[row.basis]}</span>` : "";
+  return `<div class="blames">${chips}${basis}</div>`;
 }
 function deathCard(row, opts) {
   const cast = row.cast && !(opts && opts.skipCast) ? `<span class="time">${esc(row.cast)}</span>` : "";
@@ -1527,6 +1547,28 @@ function renderHome() {
     ${trendSection()}
     ${blocks || `<p class="quiet">No sessions yet. Drop a log and analyze it.</p>`}`;
 }
+function peopleChips(pairs, fmt, labels) {
+  const chip = ([who, n]) => `<span class="blame${labels.has(who) ? " label" : ""}">${esc(who)} <b>${fmt(n)}</b></span>`;
+  return `<div class="blames">${pairs.map(chip).join("")}</div>`;
+}
+function nightSection(session) {
+  const night = session.night || {};
+  const started = night.started || [];
+  if (!started.length) return "";
+  const rows = started.map(row => `<tr><td class="num">${row.pulls}</td><td>${esc(row.mechanic)}</td><td>${row.owners.map(([who, n]) => `${esc(who)} ${n}`).join(", ")}</td></tr>`).join("");
+  const share = n => String(Math.round(n * 10) / 10);
+  const labels = new Set(night.labels || []);
+  return `<section>
+      <h2>What went wrong</h2>
+      <p class="meta">The first mistake of each pull, by mechanic, and who owned it. A pull can start with two.</p>
+      <table class="night"><thead><tr><th>Pulls</th><th>First mistake</th><th>Owned by</th></tr></thead><tbody>${rows}</tbody></table>
+      <h3>Who started pulls</h3>
+      ${peopleChips(night.starters || [], String, labels)}
+      <h3>Deaths owned</h3>
+      <p class="meta">Each death split between its owners. Party mitigation and earlier damage are left out.</p>
+      ${peopleChips(night.owned || [], share, labels)}
+    </section>`;
+}
 function renderAll() {
   const overview = overviewOf(SESSION);
   const best = overview.best;
@@ -1574,6 +1616,7 @@ function renderAll() {
       ${legend(overview.pulls)}
       <p class="meta">Each bar is a pull, numbered along the bottom. Taller is further through the fight. A bar that crosses a line reached that mechanic.</p>
     </section>
+    ${nightSection(SESSION)}
     ${phases}`;
 }
 function renderFight(id) {
@@ -1682,8 +1725,11 @@ function renderPull(id) {
   const packets = c.environment
     ? `<p class="meta">${c.environment} deaths had no damage packet.</p>`
     : "";
+  const owners = [];
+  for (const cause of pull.firstCauses || []) for (const who of cause.owners) if (!owners.includes(who)) owners.push(who);
+  const ownedBy = owners.length ? `<p>Owned by ${owners.map(esc).join(", ")}.</p>` : "";
   const first = pull.firstMistake
-    ? `<section><h2>First mistake</h2><p>${esc(pull.firstMistake)}.</p><p class="meta">Later deaths in this pull often cascade from it.</p></section>`
+    ? `<section><h2>First mistake</h2><p>${esc(pull.firstMistake)}.</p>${ownedBy}<p class="meta">Later deaths in this pull often cascade from it.</p></section>`
     : "";
   return `
     <header>

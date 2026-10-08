@@ -91,6 +91,23 @@ def mitigations_for(
     return ordered
 
 
+def replay_multiplier(
+    tables: dict[int, dict], fight: int, target: int | None, guid: int, timestamp: int | None,
+) -> float | None:
+    """The damage multiplier the replay saw on this hit, when it lists the hit.
+
+    The replay only lists hits that met a mitigation or a shield, so a hit it does
+    not list says nothing: the multiplier stays unknown.
+    """
+    payload = tables.get(fight)
+    if payload is None or timestamp is None or target is None:
+        return None
+    hit = _closest_hit(payload.get("hits") or [], target, guid, timestamp)
+    if hit is None or abs(hit[0] - timestamp) > 1500 or hit[4] is None:
+        return None
+    return float(hit[4])
+
+
 def _closest_hit(hits: list, target: int | None, guid: int, timestamp: int) -> list | None:
     near = [
         hit for hit in hits

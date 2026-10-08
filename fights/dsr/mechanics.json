@@ -14,8 +14,14 @@
       "guids": [25568],
       "category": "raidwide",
       "scales_with_stack": false,
-      "should_have_been": "Tanks take about 64k and usually live. Healers and DPS take about 97k of the same cast. The stack size does not change the hit.",
+      "should_have_been": "The explosion of a tower nobody soaked. It does not land when every tower is soaked.",
       "moments": [
+        {
+          "until": 100,
+          "fail": true,
+          "cause": "tower",
+          "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61–67k, everyone else about 90–108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it."
+        },
         {
           "after": 100,
           "fail": true,
@@ -23,7 +29,10 @@
           "should_have_been": "Everyone is inside a tower. An empty tower explodes for the raid. Tanks take about 58–66k of that explosion. Everyone else takes about 90–105k. The players who missed the tower own it. A player who was already dead left their tower empty, and that death owns it."
         }
       ],
-      "needs_everyone": {"soak": [29564, 28651], "lead": 4},
+      "needs_everyone": [
+        {"soak": [25567], "lead": 4, "until": 100, "roles": ["healer", "dps"]},
+        {"soak": [29564, 28651], "lead": 4, "after": 100}
+      ],
       "roles": {
         "tank": {"unmitigated_max": 75000, "lived": "61–67k"},
         "healer": {"unmitigated_max": 115000, "lived": "about 86–103k"},
@@ -38,7 +47,9 @@
       "category": "stack",
       "scales_with_stack": true,
       "typical_targets": 4,
-      "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24–48k, healers about 43–67k, and DPS about 40–64k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+      "alternating": true,
+      "too_much": "{name} stood too close to Ser Zephirin's landing.",
+      "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
       "roles": {
         "tank": {"unmitigated_max": 120000, "lived": "about 24–48k on a share of 4"},
         "healer": {"unmitigated_max": 90000, "lived": "about 43–67k on a share of 4"},
@@ -52,6 +63,7 @@
       "guids": [25575],
       "category": "puddle",
       "scales_with_stack": false,
+      "pairs": true,
       "should_have_been": "Pairs share the placed ice. Tanks take about 14–25k. Healers take about 23–38k. DPS take about 26–40k. It does not split further. A puddle that covers a tower is a wrong drop.",
       "roles": {
         "tank": {"unmitigated_max": 50000, "lived": "about 14–25k"},
@@ -84,7 +96,8 @@
       "scales_with_stack": true,
       "typical_targets": 5,
       "fail_above": 200000,
-      "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60–80k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102–113k is that share with two bodies missing.",
+      "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+   "needs_everyone": {"soak": [25551], "lead": 1, "stack": true, "marked_out": [25565]},
       "roles": {
         "tank": {"unmitigated_max": 130000, "lived": "about 26k"},
         "healer": {"unmitigated_max": 140000, "lived": "about 63k"},
@@ -124,8 +137,8 @@
       "tanks_only": true,
       "one_target": true,
       "requires_personal_mit": true,
-      "off_tank": "Absolute Gigachad",
-      "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. In this log that is the paladin, Absolute Gigachad. A lived heel is about 159–174k before mit. The main tank does not take the heel. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
+      "off_tank": true,
+      "should_have_been": "The off tank takes Heavenly Heel with personal mitigation. The off tank is the tank who takes it on most pulls of the night. A lived heel is about 159–174k before mit. The main tank does not take the heel. Anyone else getting hit is their mistake. The off tank who dies to the real heel without personal mitigation owns that death.",
       "roles": {
         "tank": {"unmitigated_max": 190000, "lived": "159–174k before mit"},
         "healer": {"unmitigated_max": 140000, "lived": "not a healer hit"},
@@ -141,7 +154,8 @@
       "scales_with_stack": false,
       "tanks_only": true,
       "requires_personal_mit": true,
-      "should_have_been": "The cone after each tether. That tank takes several hits around 20–22k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+      "should_have_been": "The cone after each tether. That tank takes several hits around 20–22k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
+      "stun": {"debuff": 1003165, "casts": [25297], "within": 3},
       "roles": {
         "tank": {"unmitigated_max": 55000, "lived": "about 21k"},
         "healer": {"unmitigated_max": 50000, "lived": "not a healer hit"},
@@ -155,7 +169,8 @@
       "guids": [25549],
       "category": "spread",
       "scales_with_stack": false,
-      "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26–29k, everyone else about 38–45k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430–470k, and both players own it.",
+      "one_each": true,
+      "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26–29k, everyone else about 38–45k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is one bolt on two players, about 430–470k, and both players own it. A dead player's bolt still falls on someone alive, who takes two: that belongs to the dead player.",
       "roles": {
         "tank": {"unmitigated_max": 40000, "lived": "about 27k"},
         "healer": {"unmitigated_max": 55000, "lived": "about 40k"},
@@ -187,7 +202,8 @@
       "tanks_only": true,
       "one_target": true,
       "requires_personal_mit": true,
-      "should_have_been": "One tank takes the three hits with personal mitigation. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
+      "main_tank": true,
+      "should_have_been": "The main tank takes the three hits with personal mitigation. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death. When the main tank is dead and the other tank has to take it, the dead main tank owns that.",
       "roles": {
         "tank": {"unmitigated_max": 110000, "lived": "about 71–86k"},
         "healer": {"unmitigated_max": 110000, "lived": "not a healer hit"},
@@ -201,6 +217,7 @@
       "guids": [25545],
       "category": "dodge",
       "any_hit_is_fail": true,
+      "baited": {"until": 30, "lock": 1.5, "aim": 10, "width": 20},
       "should_have_been": "Nobody is hit."
     },
     {
@@ -238,7 +255,8 @@
       "category": "dodge",
       "any_hit_is_fail": true,
       "tanks_only": true,
-      "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions."
+      "covers_dead_tanks": true,
+      "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions. When a tank is dead, their tether falls to someone else, and the dead tank owns that."
     },
     {
       "id": "shining-blade",
@@ -381,7 +399,8 @@
       "category": "spread",
       "scales_with_stack": false,
       "fail_above": 150000,
-      "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9–23k. Arrows face east: an up arrow resolves west and a down arrow east, and a 2 goes northwest or northeast. An arrow holder on the wrong side owns the landing. With only circles diving, the overlap is a miscommunication.",
+      "knockback": true,
+      "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9–23k. Arrows face east: an up arrow resolves west and a down arrow east, and a 2 goes northwest or northeast. An arrow holder on the wrong side owns the landing. With only circles diving, the overlap is a miscommunication. The landing knocks back everyone it hits: a player knocked into the deathwall belongs to whoever it landed on.",
       "dive_markers": {
         "1002755": {"name": "circle"},
         "1002756": {"name": "up arrow", "side": "west", "facing": "east"},
@@ -422,6 +441,7 @@
       "scales_with_stack": false,
       "typical_targets": 5,
       "fail_above": 100000,
+      "needs_everyone": {"holders": [1003005, 1003006], "lead": 1},
       "should_have_been": "Five players who are not diving stack north, in front of Nidhogg. Tanks live about 37–48k. Everyone else lives about 50–70k. A hit over 100k is a short stack. Dying inside the lived band is the healers.",
       "roles": {
         "tank": {"unmitigated_max": 80000, "lived": "about 37–48k"},
@@ -482,13 +502,9 @@
       "category": "tower",
       "scales_with_stack": false,
       "fail_above": 150000,
+      "needs_everyone": {"holders": [1003006], "lead": 4, "until": 42, "soak": [26385]},
       "should_have_been": "One player soaks the tower. Tanks take about 32–54k. A non-tank soak that killed from a high bar was about 59–80k. A shield keeps them alive. Dying to that hit is the healers.",
-      "moments": [
-        {
-          "above": 150000,
-          "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4–3.0 million. On the first towers the 3s are the soakers. The log does not store who had the number, so the miss stays Missed soak."
-        }
-      ],
+      "moments": [{"fail": true, "cause": "tower", "should_have_been": "One player soaks each tower (Darkdragon Dive 26385). An empty tower explodes about 2 seconds later as this hit, for the whole raid: about 50k on a tank and 1.4\u20133.0 million on anyone with the soak debuffs. It does not land when every tower is soaked. On the first towers the 3s are the soakers: a 3 who was alive and not in a tower owns it, and a 3 already dead passes it on to whoever owned that death."}],
       "roles": {
         "tank": {"unmitigated_max": 80000, "lived": "about 32–54k"},
         "healer": {"unmitigated_max": 100000, "lived": "about 59–80k killed; no survived non-tank soak is stored"},
@@ -573,7 +589,7 @@
       "phase": 2,
       "starts": 75,
       "skill": "dsr-heavenly-heel",
-      "summary": "About 81 seconds. The off tank takes Heavenly Heel, then the main tank takes the three Ascalon's Might hits. Both are properly mitigated. In this log the paladin is the off tank and the warrior is the main tank. Anyone else getting hit owns that mistake. The off tank who dies on the real hit without personal mitigation owns that death. Sanctity of the Ward is next.",
+      "summary": "About 81 seconds. The off tank takes Heavenly Heel, then the main tank takes the three Ascalon's Might hits. Both are properly mitigated. The off tank is the tank who takes the heel on most pulls of the night. Anyone else getting hit owns that mistake. The off tank who dies on the real hit without personal mitigation owns that death. Sanctity of the Ward is next.",
       "parts": [
         {"id": "heavenly-heel"},
         {

@@ -7,6 +7,8 @@ from collections import Counter
 from pathlib import Path
 
 from xivloganalyzer.dashboard import session_clock
+from xivloganalyzer.inputs import problems, read_inputs
+from xivloganalyzer.night import night_lines
 
 # Default detail lines: the ones that still need a judgment pass or own the headline.
 _DEFAULT_DETAIL = frozenset({"unknown", "raw"})
@@ -72,11 +74,12 @@ def _blame_line(row: dict) -> str:
     for blame in blames:
         who = blame.get("who") or "?"
         confidence = blame.get("confidence")
-        if confidence is None:
-            parts.append(str(who))
-        else:
-            parts.append(f"{who} {int(confidence)}%")
-    return "Fault: " + "; ".join(parts)
+        text = str(who) if confidence is None else f"{who} {int(confidence)}%"
+        if blame.get("via"):
+            text += f" (via {', '.join(blame['via'])})"
+        parts.append(text)
+    basis = f" [{row['basis']}]" if row.get("basis") else ""
+    return "Fault: " + "; ".join(parts) + basis
 
 
 def format_death(row: dict) -> str:
@@ -87,13 +90,16 @@ def format_death(row: dict) -> str:
         label = f"{mechanic} ({guid})"
     else:
         label = mechanic
+    when = f" · {row['time']}" if row.get("time") else ""
     lines = [
-        f"Pull {row.get('fight')} · {row.get('name')} · {label} — {row.get('outcome')}",
+        f"Pull {row.get('fight')} · {row.get('name')} · {label} — {row.get('outcome')}{when}",
         str(row.get("went_wrong") or "").strip() or "(no line)",
     ]
     blame = _blame_line(row)
     if blame:
         lines.append(blame)
+    if row.get("missing"):
+        lines.append(f"Judged without: {', '.join(row['missing'])}")
     if row.get("first"):
         lines.append("First mistake of the pull.")
     return "\n".join(lines)
@@ -164,6 +170,15 @@ def format_brief(
         header += f" · {clock}"
     lines.append(header)
     lines.append(_count_line(all_counts if not scoped else counts))
+    inputs = read_inputs(report) or {}
+    skipped = (inputs.get("deaths") or {}).get("not_judged_by_reason") or {}
+    if skipped and not scoped:
+        total = sum(skipped.values())
+        why = "; ".join(f"{count} {reason}" for reason, count in skipped.items())
+        lines.append(f"not judged: {total} deaths ({why})")
+    gaps = problems(inputs) if inputs else []
+    if gaps and not scoped:
+        lines.append(f"inputs missing: {len(gaps)} kinds, calls on them are weaker. Run: python -m xivloganalyzer check {report.name}")
     if scoped:
         scope_bits = []
         if pull is not None:
@@ -176,6 +191,10 @@ def format_brief(
         lines.append(f"showing {len(filtered)} of {len(judgments)} deaths")
 
     if not scoped:
+        night = night_lines(judgments)
+        if night:
+            lines.append("")
+            lines += night
         raw_rows = [row for row in judgments if row.get("outcome") == "raw"]
         if raw_rows:
             lines.append("")

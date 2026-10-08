@@ -29,7 +29,7 @@ Compare `unmitigatedAmount` to the role cap. `amount` is HP removed. `overkill` 
 
 Role comes from the job. Tanks: Paladin, Warrior, Gunbreaker, Dark Knight. Healers: Astrologian, Scholar, White Mage, Sage. Everyone else is DPS.
 
-`low_hp` in `fights/dsr/fight.json` is 15,000.
+`low_hp` in `fights/dsr/fight.json` is 15,000. Max HP is the largest killing hit, divided by any max-HP buff that was on (`max_hp_buffs`, Thrill of Battle 1.2). Personal mitigation is `personal_mit`, which includes the tank cooldowns such as Sheltron, Holmgang, Thrill of Battle, Living Dead, Superbolide, and The Blackest Night.
 
 ## Outcome
 
@@ -39,10 +39,10 @@ Apply these in order:
 2. Guid is not in `mechanics.json` for this phase → **unknown**. No fault. Ask what the hit should mean.
 3. Magic Vulnerability Up `1002941`, Physical Vulnerability Up `1002940`, or Damage Down on the packet → **fail**. The amp is a failed mechanic. `buffs` is often empty on the damage packet even when a calculated-damage sibling had the aura. Check that sibling before calling a borderline hit raw.
 4. `any_hit_is_fail` → **fail**. Use the mechanic skill for whose fault. A Bright Flare overlap still splits across the players in the burst. Holy Impact is the two prey players.
-5. A `moments` row with `fail` true, when the time matches → **fail**. Sanctity Eternal Conviction, after 100 seconds, is the empty tower. The Strength hit around 63 seconds stays the raidwide.
-6. Unmitigated above `fail_above`, or above the role cap → **fail**. Use the mechanic skill. Overkill on a failed hit is still a fail.
+5. A `moments` row with `fail` true, when the time matches → **fail**. Eternal Conviction is always an empty tower: the Strength towers before 100 seconds, the Sanctity towers after.
+6. Unmitigated above `fail_above`, or above the role cap → **fail**. Use the mechanic skill. Overkill on a failed hit is still a fail. A stack that scales is a share or a cleave once per cast: every death in one packet gets the verdict of the middle victim's hit against their role cap. A vulnerability, a marker clip, or a hit over `fail_above` is still judged on its own.
 7. Unmitigated at or under the role cap, and HP already under 15,000 → **low**. The hit is the normal one.
-8. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might, Heavenly Heel, or Holy Bladedance without the required personal mitigation is a fail. Heavenly Heel belongs to the off tank: the main tank taking it is a fail. A Skyward Leap death on the real marker is a fail: short of full HP belongs to the healers, and full HP is missing mitigation.
+8. Unmitigated at or under the role cap → **raw**, unless that mechanic's skill says the hit is still a mistake. A short stack that still fits the cap is raw when the mechanic scales with stack. A tank death on Ascalon's Might, Heavenly Heel, or Holy Bladedance without the required personal mitigation is a fail. Heavenly Heel belongs to the off tank: the main tank taking it is a fail. When the off tank was dead, it is the dead off tank's. A Skyward Leap death on the real marker is a fail: short of full HP belongs to the healers, and full HP is missing mitigation.
 
 ## Say this
 
@@ -78,29 +78,43 @@ These are the shared calls:
 - Lightning Storm clip, and a Bright Flare overlap: each player in the overlap. A second body who lived is "Another player".
 - Skyward Leap under full HP: the healers, named, split evenly.
 - Skyward Leap at full HP: "Assigned mitigation" at 50. The plan is more than one player, and the log does not name them.
-- Empty tower: whoever was missing from it. A player already dead, alive and not hit by the tower soak, or one of two players who shared a tower, owns it, split evenly. A player who died to an earlier empty tower passes it on. "Missed soak" at 50 only when the log shows none of these. Sanctity Eternal Conviction after 100 seconds is this call.
+- Empty tower: whoever was missing from it. A player already dead, alive and not hit by the tower soak, or one of two players who shared a tower, owns it, split evenly. A player who was missing because they were dead passes it on to whoever owned that death: their own mistake stays theirs, a raw death goes to the healers, a clip to the clipper, an earlier empty tower to whoever left that one empty. "Missed soak" at 50 only when the log shows none of these, and the judgment lists the missing soak file in `missing`. Eternal Conviction is this call: the Strength soak is Conviction `25567`, healers and DPS only, and the Sanctity soak is `29564` or `28651`.
+- Heavenly Heel on the main tank because the off tank was dead: the off tank at 100, passed on to whoever owned that death (`3wzL6x4VHTmvNkhq` pull 20).
+- Hiemal Storm ice with no partner: the partners who were dead, passed on, alive and in no circle, or doubled up in another circle. Each circle is one support and one DPS (`pairs`). Transcendent `1000418` counts as dead.
 - Holy Impact: whoever dropped the two comets that landed too close. One player's two comets is that player. One player's comet on the other's is both at 50. A dead prey player passes it on (`dsr-holy-impact`).
 - Someone else's Skyward Leap, by its vulnerability or by the leap itself: whoever was out of position, named. A holder off their spot owns it at 100. A player who stood in a holder's leap on its spot owns it at 100. Both off is 50 each. With no positions, the holder owns it. The death sits under Skyward Leap on the pull card, and only the owners fail it.
 - A second Skyward Leap with nobody else's leap on the player: "Earlier deaths" at 100. That leap's holder was already dead.
-- Dive from Grace landing: an arrow holder on the wrong side, named, at 100 on every death in that landing. Only that holder fails it on the pull card. With no arrow out of place, "Miscommunication" at the landing's share.
-- Short stack: "Missing bodies" at 100 divided by the number missing. One missing body is 100. Three missing bodies is 33.
+- Dive from Grace landing: an arrow holder on the wrong side, named, at 100 on every death in that landing. Only that holder fails it on the pull card. A landing in the Eye of the Tyrant stack belongs to the dive targets whose landing it was, split evenly: a dive target never stands in the stack. With no arrow out of place and no stack hit, "Miscommunication" at the landing's share.
+- Short stack: the players of that stack's group who were dead, passed on, or alive and not in it. Sacred Sever's group is whoever took the jump two before. Eye of the Tyrant's is the 2s and 3s. When the log names nobody, "Missing bodies" at 100 divided by the number missing.
+- Sacred Sever with the last jump's vulnerability, on a player who is not in this jump's group: the jump landed on the wrong group because that group's players were dead. Those dead players own it, passed on. The living ones of that group do not.
+- A raw or low death within 15 seconds after the player lived their own gaze, dodge, cone, puddle, or orb hit, when that hit was at least what they were short: that player at 100. The outcome stays raw or low.
 - Raw hit on a full share: the healers, 50 each. "Party mitigation" takes a third share, 33, when the packet has no party mit or the mit is unknown.
 - Already under 15,000 HP: the healers and "Earlier damage", 33 each.
 - A healer already dead and not raised cannot heal. Their share passes on to whoever owned that healer's death.
 - Deathwall before anything else went wrong: that player at 100. With their own Hysteria from the gaze, still that player at 100.
-- Deathwall after the first mistake: that player and "Earlier mistake", 50 each. It is still a mistake, but the first one usually caused it.
+- Deathwall after the first mistake: that player and "Earlier mistake", 50 each. It is still a mistake, but the first one usually caused it. When every earlier death and debuff in the pull was the walker's own, it is theirs at 100.
 
 An ability that is not understood yet has no blame.
 
 ## When a call is wrong
 
-A correction ("X should be Y", "that is not a mistake", "that one is a fail") updates `fights/dsr/mechanics.json`, then:
+A correction ("X should be Y", "that is not a mistake", "that one is a fail") is first recorded as the person's call, so no later rule change can undo it:
+
+```
+python -m xivloganalyzer confirm <code> --pull N --name "<player>" --outcome <outcome> --owners "A,B" --by user --why "<their words>"
+```
+
+Then update `fights/dsr/mechanics.json` and run:
 
 ```
 python -m xivloganalyzer reanalyze
+python -m xivloganalyzer changes --since HEAD
+python -m xivloganalyzer verify
 ```
 
-Update `tests/test_reference.py` only when the settled headline is meant to change. That headline is 86 raw deaths on report `XVz8bCqgPw1KRh9d`. Update `notes/classification.md` when the reason changes. Update the mechanic skill when the way you tell the cases apart changes. Leave `dashboard.html`, `session.html`, and `analysis.json` alone; reanalyze rewrites them.
+Read the `changes` list: each moved call should be one the correction meant to move. `verify` must pass.
+
+Update `tests/test_reference.py` only when the settled headline is meant to change. That headline is 40 raw deaths on report `XVz8bCqgPw1KRh9d`. Update `notes/classification.md` when the reason changes. Update the mechanic skill when the way you tell the cases apart changes. Leave `dashboard.html`, `session.html`, `analysis.json`, and `inputs.json` alone; reanalyze rewrites them.
 
 ## Mechanic index
 

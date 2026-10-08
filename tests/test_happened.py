@@ -24,12 +24,12 @@ class HappenedTest(unittest.TestCase):
     def test_a_raw_death_says_what_would_have_kept_them_alive(self):
         item = next(
             item for item in self.nidhogg
-            if item.fact.name == "Spring Nymphar" and item.fact.total == 59402
+            if item.fact.name == "Loki Doki" and item.fact.total == 36086
         )
         self.assertEqual(item.outcome, "raw")
         self.assertEqual(
             item.happened,
-            "Took 59,402 at 82% HP (50,595 of 61,615). Full HP would have lived. No shield.",
+            "Took 36,086 at 53% HP (32,977 of 62,101). Full HP would have lived. No shield. No party mitigation.",
         )
 
     def test_mitigation_that_was_there_is_not_listed(self):
@@ -49,7 +49,7 @@ class HappenedTest(unittest.TestCase):
     def test_a_cleave_compares_the_hit_to_what_the_role_takes(self):
         cleaves = [
             item for item in self.thordan
-            if item.mechanic_id == "sacred-sever" and item.went_wrong.endswith("got cleaved.")
+            if item.mechanic_id == "sacred-sever" and item.went_wrong.endswith("stood too close to Ser Zephirin's landing.")
         ]
         self.assertTrue(cleaves)
         for item in cleaves:

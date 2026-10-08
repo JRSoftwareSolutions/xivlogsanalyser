@@ -6,21 +6,11 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from xivloganalyzer.brief import load_judgments
+from xivloganalyzer.judge import CONTEXT_SHARES, GROUP_LABELS
 
-# Labels that stand in for players the log did not name.
-UNNAMED = frozenset({
-    "Prey markers",
-    "Missed soak",
-    "Missing bodies",
-    "Miscommunication",
-    "Out of position",
-    "Another player",
-    "Assigned mitigation",
-    "Earlier deaths",
-    "Healers",
-})
-# Shares that sit beside the owners, not owners themselves.
-_CONTEXT = frozenset({"Party mitigation", "Earlier damage", "Earlier mistake"})
+# Labels that stand in for players the log did not name, and shares that sit beside the owners.
+UNNAMED = GROUP_LABELS
+_CONTEXT = CONTEXT_SHARES
 # Deaths to one cast land within this many seconds of each other.
 _CAST_S = 1.5
 
@@ -30,6 +20,8 @@ FLAGS = {
     "mass-self": "Three or more players died to one cast, each blamed on themselves. Did one earlier action cause all of them?",
     "raw-after-death": "A raw death after someone already died in the pull. Was the party short, or still healthy?",
     "thin-split": "Three or more players split it. Is one of them the real cause?",
+    "degraded": "The call was made without an input it reads (see `check`). Fetch it and reanalyze.",
+    "mass-wall": "The pull's first mistake is three or more players dying with no damage packet at once. Was it the deathwall, or a hit the log did not record?",
 }
 
 
@@ -53,6 +45,8 @@ def flag_rows(rows: list[dict]) -> dict[str, list[dict]]:
                 found["unknown"].append(row)
                 continue
             blames = row.get("blames") or []
+            if row.get("missing"):
+                found["degraded"].append(row)
             if any(blame.get("who") in UNNAMED for blame in blames):
                 found["unnamed"].append(row)
             if len([blame for blame in blames if blame.get("who") not in _CONTEXT]) >= 3:
@@ -68,6 +62,14 @@ def flag_rows(rows: list[dict]) -> dict[str, list[dict]]:
                 ]
                 if len(cast) >= 3 and row.get("mechanic_id") != "deathwall":
                     found["mass-self"].append(row)
+            if row.get("mechanic_id") == "deathwall":
+                together = [
+                    other for other in pull
+                    if other.get("mechanic_id") == "deathwall" and other.get("phase") == row.get("phase")
+                    and abs((other.get("t") or 0) - (row.get("t") or 0)) <= _CAST_S
+                ]
+                if len(together) >= 3 and any(other.get("first") for other in together):
+                    found["mass-wall"].append(row)
             earlier = [
                 other for other in pull[:index]
                 if (other.get("phase"), other.get("t")) < (row.get("phase"), row.get("t"))

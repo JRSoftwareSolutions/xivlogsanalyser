@@ -19,6 +19,13 @@ Use scripts first. Do not load `judgments.json`, `facts.json`, `abilities/`, or
 PYTHONPATH=src python3 -m xivloganalyzer analyze <code>
 ```
 
+   Either way, check what the log is missing. Fetch the ability files it names before
+   trusting the calls. A call made without some input lists it in `missing`.
+
+```
+PYTHONPATH=src python3 -m xivloganalyzer check <code>
+```
+
 2. Print a digest. For an overview ("how was the night"), start with counts only:
 
 ```
@@ -68,7 +75,7 @@ PYTHONPATH=src python3 -m xivloganalyzer brief <code>
 ```
 
 Update `tests/test_reference.py` only when the settled headline is meant to
-change. Leave `dashboard.html`, `session.html`, and `analysis.json` alone; reanalyze rewrites them.
+change. Leave `dashboard.html`, `session.html`, `analysis.json`, and `inputs.json` alone; reanalyze rewrites them.
 
 ## Do not
 

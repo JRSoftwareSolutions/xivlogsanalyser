@@ -57,19 +57,27 @@ class MarkerClipTest(unittest.TestCase):
         self.assertEqual(failed["skyward-leap"], ["Spring Nymphar"])
         self.assertEqual(failed["dragons-rage"], [])
         self.assertEqual(failed["holy-shield-bash"], [])
-        clipped = [row for row in pull["deaths"] if row["culprits"]]
+        clipped = [row for row in pull["deaths"] if row["componentId"] == "skyward-leap"]
         self.assertEqual(len(clipped), 4)
         for row in clipped:
-            self.assertEqual(row["componentId"], "skyward-leap")
             self.assertEqual(row["culprits"], ["Spring Nymphar"])
+        # The towers at 65s were empty because Kite Noodle and Spring Nymphar were dead.
+        towers = [row for row in pull["deaths"] if row["componentId"] == "eternal-conviction"]
+        self.assertEqual(sorted(row["name"] for row in towers), ["Absolute Gigalad", "Loki Doki"])
+        for row in towers:
+            self.assertEqual(row["culprits"], ["Kite Noodle", "Spring Nymphar"])
         self.assertEqual(
             sorted(row["cast"] for row in clipped),
             ["Dragon's Rage", "Dragon's Rage", "Dragon's Rage", "Holy Shield Bash"],
         )
 
-    def test_a_marker_on_a_tank_after_deaths_still_names_that_tank(self):
+    def test_a_leap_on_a_tank_belongs_to_the_dead_holders(self):
+        # A tank never holds a marker. The leap fell on Gigachad because its holder walked
+        # into the wall first: Speed and Kiara were dead at the two empty spots.
         gigalad = next(item for item in self._deaths(15) if item.fact.name == "Absolute Gigalad")
-        self.assertEqual(_owners(gigalad), [("Absolute Gigachad", 100)])
+        self.assertEqual(gigalad.cause, "orphan")
+        self.assertEqual(gigalad.basis, "position")
+        self.assertEqual(_owners(gigalad), [("Speed Panda", 50), ("Kiara Blaiddyd", 50)])
 
     def test_the_holder_off_their_spot_owns_the_overlap(self):
         deaths = {item.fact.name: item for item in self._deaths(25)}
@@ -81,14 +89,17 @@ class MarkerClipTest(unittest.TestCase):
         self.assertEqual(loki.went_wrong, "Loki Doki was out of position and overlapped Kiara Blaiddyd.")
         self.assertEqual(_owners(loki), [("Loki Doki", 100)])
 
-    def test_two_markers_both_off_their_spots_share_the_blame(self):
+    def test_leaps_with_dead_holders_fall_on_the_survivors(self):
+        # Every leap fell on Spring or Gigachad in the stack: their holders, Kite and Speed,
+        # had walked into the wall on their spots before the leaps landed.
         deaths = {item.fact.name: item for item in self._deaths(51)}
-        spring = deaths["Spring Nymphar"]
-        self.assertEqual(
-            spring.went_wrong,
-            "Spring Nymphar and Absolute Gigachad were both out of position and overlapped.",
-        )
-        self.assertEqual(_owners(spring), [("Spring Nymphar", 50), ("Absolute Gigachad", 50)])
+        for name in ("Spring Nymphar", "Absolute Gigachad"):
+            item = deaths[name]
+            self.assertEqual(
+                item.went_wrong,
+                "Speed Panda and Kite Noodle died holding a marker, so its leap fell on someone else.",
+            )
+            self.assertEqual(_owners(item), [("Speed Panda", 50), ("Kite Noodle", 50)])
 
     def test_a_second_leap_is_not_an_empty_tower(self):
         for item in self.judgments:
@@ -96,22 +107,21 @@ class MarkerClipTest(unittest.TestCase):
                 self.assertNotIn("tower", item.went_wrong)
                 self.assertNotIn("Missed soak", [blame.who for blame in item.blames])
 
-    def test_a_marker_holder_with_their_own_vulnerability_keeps_it(self):
+    def test_a_leap_whose_holder_walked_into_the_wall_is_theirs(self):
+        # Loki ran for the far spot and walked into the wall before the leaps. His leap fell
+        # on Kitana in the stack, and everything it hit is his.
         _report, _pack, _meta, judgments = _judged("XVz8bCqgPw1KRh9d")
-        kitana = next(
+        hit = [
             item for item in judgments
-            if item.fact.fight == 28 and item.fact.name == "Kitana Kahn" and item.mechanic == "Dragon's Rage"
-        )
-        self.assertEqual(kitana.fact.clipped_by, [])
-        self.assertEqual(_owners(kitana), [("Kitana Kahn", 100)])
-        others = [
-            item for item in judgments
-            if item.fact.fight == 28 and item.fact.name != "Kitana Kahn" and item.fact.t < 61
+            if item.fact.fight == 28 and 58 < item.fact.t < 61
             and item.outcome == "fail" and item.mechanic_id != "deathwall"
         ]
-        self.assertTrue(others)
-        for item in others:
-            self.assertEqual(_owners(item), [("Kitana Kahn", 100)])
+        self.assertEqual(
+            sorted(item.fact.name for item in hit),
+            ["Absolute Gigachad", "Absolute Gigalad", "Kiara Blaiddyd", "Kitana Kahn", "Kite Noodle"],
+        )
+        for item in hit:
+            self.assertEqual((item.cause, _owners(item)), ("orphan", [("Loki Doki", 100)]))
 
 
 class PositionTest(unittest.TestCase):
@@ -143,14 +153,15 @@ class PositionTest(unittest.TestCase):
         self.assertEqual(gigachad.went_wrong, "Absolute Gigachad stood in Spring Nymphar's Skyward Leap.")
         self.assertEqual(_owners(gigachad), [("Absolute Gigachad", 100)])
 
-    def test_a_leap_with_no_living_holder_names_the_earlier_deaths(self):
+    def test_a_leap_with_no_living_holder_names_the_dead_holder(self):
+        # Speed walked into the wall near the empty spot, so the second leap on Kiara was his.
         kiara = self._one(68, "Kiara Blaiddyd", "Skyward Leap")
         self.assertEqual(kiara.outcome, "fail")
         self.assertEqual(
             kiara.went_wrong,
-            "Kiara Blaiddyd took a second Skyward Leap whose marker holder was already dead.",
+            "Speed Panda died holding a marker, so its leap fell on someone else.",
         )
-        self.assertEqual(_owners(kiara), [("Earlier deaths", 100)])
+        self.assertEqual(_owners(kiara), [("Speed Panda", 100)])
 
 
 if __name__ == "__main__":

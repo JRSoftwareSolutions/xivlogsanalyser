@@ -8,9 +8,10 @@ from __future__ import annotations
 
 import json
 from collections import Counter
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
+from xivloganalyzer.calls import Change, diff_calls, saved_calls, write_calls
 from xivloganalyzer.catalog import FightPack, load_catalog, pack_for_zone, repo_root
 from xivloganalyzer.dashboard import (
     attach_debuffs,
@@ -23,6 +24,7 @@ from xivloganalyzer.dashboard import (
 )
 from xivloganalyzer.extract import extract_report, write_facts
 from xivloganalyzer.frames import attach_frames
+from xivloganalyzer.inputs import check_inputs, write_inputs
 from xivloganalyzer.judge import judge_report, roster_from_meta, write_judgments
 from xivloganalyzer.stamp import check, engine_version, read_stamp, write_stamp
 
@@ -42,12 +44,16 @@ def report_dirs(root: Path | None = None) -> list[Path]:
 
 @dataclass
 class Outcome:
-    """One report after a run. `reason` is why it was judged again, empty when it was skipped."""
+    """One report after a run. `reason` is why it was judged again, empty when it was skipped.
+    `changes` are the calls that differ from the ones saved before this run."""
 
     name: str
     counts: Counter
     judged: bool
     reason: str = ""
+    changes: list[Change] = field(default_factory=list)
+    # Why the folder could not be read, such as a missing file or no fight pack for its zone.
+    error: str = ""
 
 
 def _meta(report: Path) -> dict:
@@ -63,11 +69,16 @@ def _pack(report: Path, meta: dict, catalog: list[FightPack]) -> FightPack:
     raise SystemExit(f"No fight knowledge matches zone {sorted(zone_ids)} in {report.name}")
 
 
-def _analyze(report: Path, pack: FightPack, meta: dict, engine: str) -> tuple[Counter, dict]:
-    facts = extract_report(report, pack)
+def _analyze(report: Path, pack: FightPack, meta: dict, engine: str) -> tuple[Counter, dict, list[Change]]:
+    before = saved_calls(report)
+    skipped: list[dict] = []
+    facts = extract_report(report, pack, skipped)
     judgments = judge_report(facts, pack, roster_from_meta(meta, pack))
     write_facts(report, facts)
     write_judgments(report, judgments)
+    write_calls(report, [item.to_dict() for item in judgments])
+    write_inputs(report, check_inputs(report, pack, meta, facts, skipped))
+    changes = diff_calls(before, saved_calls(report) or []) if before is not None else []
     when = session_clock(report, meta)
     payload = session_payload(judgments, pack, report.name, when, meta)
     attach_debuffs(report, payload, pack, meta)
@@ -78,7 +89,7 @@ def _analyze(report: Path, pack: FightPack, meta: dict, engine: str) -> tuple[Co
     counts = Counter(item.outcome for item in judgments)
     summary = session_summary(payload, "")
     write_stamp(report, pack.folder, counts, summary, engine)
-    return counts, summary
+    return counts, summary, changes
 
 
 def _run(reports: list[Path], root: Path, force: set[str]) -> list[Outcome]:
@@ -88,32 +99,43 @@ def _run(reports: list[Path], root: Path, force: set[str]) -> list[Outcome]:
     summaries = []
     for report in reports:
         report = report.resolve()
-        meta = _meta(report)
-        pack = _pack(report, meta, catalog)
+        try:
+            meta = _meta(report)
+            pack = _pack(report, meta, catalog)
+        except (SystemExit, OSError, ValueError, KeyError) as problem:
+            # One bad folder does not stop the others. Its last dashboard entry stays.
+            outcomes.append(Outcome(report.name, Counter(), False, error=str(problem) or type(problem).__name__))
+            stamp = read_stamp(report)
+            if stamp and isinstance(stamp.get("summary"), dict):
+                summaries.append(stamp["summary"])
+            continue
         if report.name in force:
             reason = "requested"
         else:
             fresh = check(report, pack.folder, engine)
             reason = "" if fresh.current else fresh.reason
+        changes: list[Change] = []
         if reason:
-            counts, summary = _analyze(report, pack, meta, engine)
+            counts, summary, changes = _analyze(report, pack, meta, engine)
         else:
             stamp = read_stamp(report)
             counts, summary = Counter(stamp["counts"]), stamp["summary"]
-        outcomes.append(Outcome(report.name, counts, bool(reason), reason))
+        outcomes.append(Outcome(report.name, counts, bool(reason), reason, changes))
         summaries.append(summary)
     if summaries:
         write_dashboard(root, summaries)
     return outcomes
 
 
-def analyze(report: Path, root: Path | None = None) -> Counter:
+def analyze(report: Path, root: Path | None = None) -> Outcome:
     """Judge this report, judge any other saved report that is out of date, rebuild the dashboard."""
     root = root or repo_root()
     report = report.resolve()
     others = [folder for folder in report_dirs(root) if folder.resolve() != report]
     outcomes = _run([report, *others], root, force={report.name})
-    return outcomes[0].counts
+    if outcomes[0].error:
+        raise SystemExit(f"{report.name}: {outcomes[0].error}")
+    return outcomes[0]
 
 
 def reanalyze(root: Path | None = None, everything: bool = False) -> list[Outcome]:
@@ -131,6 +153,10 @@ def status(root: Path | None = None) -> list[tuple[str, str]]:
     engine = engine_version()
     rows = []
     for report in report_dirs(root):
-        pack = _pack(report, _meta(report), catalog)
+        try:
+            pack = _pack(report, _meta(report), catalog)
+        except (SystemExit, OSError, ValueError, KeyError) as problem:
+            rows.append((report.name, f"cannot be read: {problem}"))
+            continue
         rows.append((report.name, check(report, pack.folder, engine).reason))
     return rows

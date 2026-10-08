@@ -1,16 +1,18 @@
 {
- "rules": "58f481f660113300",
- "engine": "a802816ace9654da",
- "log": "fc1e894e4c5b8e98",
+ "rules": "0ef58f8181144124",
+ "engine": "ab5d65860d38d526",
+ "log": "e8a8e43e5c52b904",
  "outputs": {
-  "facts.json": "995b334fdbce27a8",
-  "judgments.json": "1a79b75de2ad8286",
-  "session.html": "16b727d38721ba6c"
+  "facts.json": "df16516b7611c024",
+  "judgments.json": "47393b80f5c807e0",
+  "calls.tsv": "b82e59756fab9db6",
+  "session.html": "c831de2109310668",
+  "inputs.json": "e064c893006a2472"
  },
  "counts": {
-  "raw": 155,
-  "fail": 252,
-  "low": 24,
+  "raw": 49,
+  "fail": 376,
+  "low": 6,
   "environment": 0,
   "unknown": 0
  },
@@ -23,9 +25,9 @@
   "day": "2026-09-30",
   "dayLabel": "Wed 30 Sep 2026",
   "timeLabel": "21:44\u201300:03",
-  "raw": 155,
-  "fail": 252,
-  "low": 24,
+  "raw": 49,
+  "fail": 376,
+  "low": 6,
   "detail": "",
   "overview": {
    "phases": [
@@ -1450,7 +1452,7 @@
     "phase": 2,
     "starts": 40.0,
     "reached": 48,
-    "mistakes": 31
+    "mistakes": 35
    },
    {
     "id": "heavenly-heel-swap",
@@ -1466,7 +1468,7 @@
     "phase": 2,
     "starts": 105.0,
     "reached": 13,
-    "mistakes": 13
+    "mistakes": 12
    },
    {
     "id": "meteors",
@@ -1484,6 +1486,382 @@
     "reached": 0,
     "mistakes": 0
    }
-  ]
+  ],
+  "night": {
+   "pulls": 51,
+   "labels": [
+    "Out of position"
+   ],
+   "started": [
+    {
+     "mechanic": "Ascalon's Mercy Concealed",
+     "pulls": 24,
+     "owners": [
+      [
+       "Spring Nymphar",
+       10
+      ],
+      [
+       "Loki Doki",
+       9
+      ],
+      [
+       "Kiara Blaiddyd",
+       6
+      ],
+      [
+       "Kitana Kahn",
+       4
+      ],
+      [
+       "Speed Panda",
+       2
+      ],
+      [
+       "Absolute Gigachad",
+       1
+      ],
+      [
+       "Out of position",
+       1
+      ],
+      [
+       "Kite Noodle",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Dragon's Glory",
+     "pulls": 6,
+     "owners": [
+      [
+       "Speed Panda",
+       4
+      ],
+      [
+       "Spring Nymphar",
+       3
+      ],
+      [
+       "Absolute Gigalad",
+       2
+      ],
+      [
+       "Kitana Kahn",
+       1
+      ],
+      [
+       "Kiara Blaiddyd",
+       1
+      ],
+      [
+       "Absolute Gigachad",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Heavy Impact",
+     "pulls": 5,
+     "owners": [
+      [
+       "Kiara Blaiddyd",
+       2
+      ],
+      [
+       "Absolute Gigachad",
+       1
+      ],
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Loki Doki",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Sacred Sever",
+     "pulls": 5,
+     "owners": [
+      [
+       "Kite Noodle",
+       2
+      ],
+      [
+       "Absolute Gigachad",
+       2
+      ],
+      [
+       "Spring Nymphar",
+       2
+      ],
+      [
+       "Kitana Kahn",
+       1
+      ],
+      [
+       "Loki Doki",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Holy Shield Bash",
+     "pulls": 4,
+     "owners": [
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Absolute Gigalad",
+       1
+      ],
+      [
+       "Kitana Kahn",
+       1
+      ],
+      [
+       "Kiara Blaiddyd",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Deathwall",
+     "pulls": 4,
+     "owners": [
+      [
+       "Absolute Gigalad",
+       1
+      ],
+      [
+       "Speed Panda",
+       1
+      ],
+      [
+       "Absolute Gigachad",
+       1
+      ],
+      [
+       "Kite Noodle",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Dragon's Rage",
+     "pulls": 3,
+     "owners": [
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Kitana Kahn",
+       1
+      ],
+      [
+       "Absolute Gigalad",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Eternal Conviction",
+     "pulls": 3,
+     "owners": [
+      [
+       "Loki Doki",
+       2
+      ],
+      [
+       "Kiara Blaiddyd",
+       1
+      ],
+      [
+       "Spring Nymphar",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Shining Blade",
+     "pulls": 3,
+     "owners": [
+      [
+       "Absolute Gigalad",
+       3
+      ],
+      [
+       "Kite Noodle",
+       1
+      ],
+      [
+       "Kitana Kahn",
+       1
+      ],
+      [
+       "Loki Doki",
+       1
+      ],
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Kiara Blaiddyd",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Skyward Leap",
+     "pulls": 2,
+     "owners": [
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Kitana Kahn",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Dimensional Collapse",
+     "pulls": 2,
+     "owners": [
+      [
+       "Absolute Gigalad",
+       2
+      ]
+     ]
+    },
+    {
+     "mechanic": "Ascalon's Might",
+     "pulls": 2,
+     "owners": [
+      [
+       "Absolute Gigalad",
+       1
+      ],
+      [
+       "Loki Doki",
+       1
+      ],
+      [
+       "Spring Nymphar",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Dragon's Gaze",
+     "pulls": 2,
+     "owners": [
+      [
+       "Kite Noodle",
+       1
+      ],
+      [
+       "Speed Panda",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Bright Flare",
+     "pulls": 1,
+     "owners": [
+      [
+       "Speed Panda",
+       1
+      ]
+     ]
+    }
+   ],
+   "starters": [
+    [
+     "Spring Nymphar",
+     20
+    ],
+    [
+     "Loki Doki",
+     15
+    ],
+    [
+     "Kiara Blaiddyd",
+     12
+    ],
+    [
+     "Absolute Gigalad",
+     10
+    ],
+    [
+     "Kitana Kahn",
+     9
+    ],
+    [
+     "Speed Panda",
+     8
+    ],
+    [
+     "Absolute Gigachad",
+     5
+    ],
+    [
+     "Kite Noodle",
+     5
+    ],
+    [
+     "Out of position",
+     1
+    ]
+   ],
+   "owned": [
+    [
+     "Spring Nymphar",
+     92.0
+    ],
+    [
+     "Kitana Kahn",
+     77.4
+    ],
+    [
+     "Kiara Blaiddyd",
+     67.8
+    ],
+    [
+     "Loki Doki",
+     51.7
+    ],
+    [
+     "Absolute Gigachad",
+     37.9
+    ],
+    [
+     "Absolute Gigalad",
+     34.0
+    ],
+    [
+     "Speed Panda",
+     24.6
+    ],
+    [
+     "Kite Noodle",
+     19.7
+    ],
+    [
+     "Out of position",
+     0.5
+    ]
+   ]
+  }
  }
 }
