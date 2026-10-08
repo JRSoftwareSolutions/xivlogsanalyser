@@ -444,6 +444,12 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
         return _done(fact, mechanic, "fail", "The ice had no partner.", "missing", pack)
     if mechanic.pairs and len(fact.group) > 1 and fact.down:
         return _done(fact, mechanic, "fail", "The pair took a second ice.", "missing", pack)
+    if mechanic.pairs and fact.stacked_by:
+        return _done(
+            fact, mechanic, "fail",
+            f"{_joined(fact.stacked_by)} brought a second ice onto the pair.",
+            "stacked", pack,
+        )
     if mechanic.one_each and fact.down and len(fact.cohort) < 2:
         return _done(fact, mechanic, "fail", "They took two hits.", "missing", pack)
     failed = _failed_moment(mechanic, fact, hit)
@@ -966,7 +972,7 @@ def _people(names: list[str]) -> str:
 def passes_on(item: Judgment) -> bool:
     """The death belongs to other players: the ones missing from the mechanic, whose drops
     it was, or whose hit stunned them."""
-    return item.cause in {"dropped", "marked", "stunned", "knocked", "orphan", *_PASSED_ON}
+    return item.cause in {"dropped", "marked", "stunned", "knocked", "orphan", "stacked", *_PASSED_ON}
 
 
 def empty_owners(item: Judgment) -> list[str]:
@@ -979,6 +985,8 @@ def empty_owners(item: Judgment) -> list[str]:
         return list(item.fact.stunned_by)
     if item.cause == "knocked":
         return list(item.fact.knocked_by)
+    if item.cause == "stacked":
+        return list(item.fact.stacked_by)
     if item.cause == "orphan":
         return [who for who in item.owners if who not in GROUP_LABELS]
     if item.cause not in _PASSED_ON:
@@ -1545,6 +1553,8 @@ def _owners_for(
         item.blames = _shares(list(item.fact.stunned_by))
     elif item.cause == "knocked":
         item.blames = _shares(list(item.fact.knocked_by))
+    elif item.cause == "stacked":
+        item.blames = _shares(list(item.fact.stacked_by))
     elif item.cause == "baited":
         item.blames = _shares([item.fact.name, *item.fact.baited_by])
     elif item.cause == "overlap":
@@ -1619,7 +1629,7 @@ def _basis(item: Judgment) -> str:
     if cause == "marker":
         people = [*item.fact.clipped_by, item.fact.name]
         return "position" if all(name in item.fact.in_spot for name in people) else "debuff"
-    if cause in {"dropped", "overlap", "arrow", "baited"}:
+    if cause in {"dropped", "overlap", "arrow", "baited", "stacked"}:
         return "position"
     if cause == "stunned":
         return "debuff"

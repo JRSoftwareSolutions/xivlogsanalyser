@@ -1,12 +1,12 @@
 {
  "rules": "0ef58f8181144124",
- "engine": "de426fc90d597bcd",
+ "engine": "e4946022ea80eda5",
  "log": "16dcfb6841a6438b",
  "outputs": {
-  "facts.json": "39a7384f0f5d27da",
-  "judgments.json": "c00fb6070584afe0",
-  "calls.tsv": "55aa3cd1bb97eee6",
-  "session.html": "e12f24ef8ae23265",
+  "facts.json": "3b3e0ad4685c911a",
+  "judgments.json": "bb2ae89d77724138",
+  "calls.tsv": "37d009f331953605",
+  "session.html": "275cbefce6fde957",
   "inputs.json": "f48daa99d0ac1b58"
  },
  "counts": {
@@ -1411,10 +1411,6 @@
       ],
       [
        "Spring Nymphar",
-       2
-      ],
-      [
-       "Kite Noodle",
        1
       ]
      ]
@@ -1574,12 +1570,12 @@
    ],
    "starters": [
     [
-     "Spring Nymphar",
+     "Kitana Kahn",
      15
     ],
     [
-     "Kitana Kahn",
-     15
+     "Spring Nymphar",
+     14
     ],
     [
      "Absolute Gigalad",
@@ -1598,22 +1594,22 @@
      4
     ],
     [
-     "Kite Noodle",
-     3
+     "Speed Panda",
+     2
     ],
     [
-     "Speed Panda",
+     "Kite Noodle",
      2
     ]
    ],
    "owned": [
     [
      "Loki Doki",
-     61.5
+     65.0
     ],
     [
      "Spring Nymphar",
-     55.8
+     54.1
     ],
     [
      "Kitana Kahn",
@@ -1632,12 +1628,12 @@
      36.9
     ],
     [
-     "Kite Noodle",
-     30.6
-    ],
-    [
      "Speed Panda",
      30.3
+    ],
+    [
+     "Kite Noodle",
+     28.8
     ],
     [
      "Miscommunication",

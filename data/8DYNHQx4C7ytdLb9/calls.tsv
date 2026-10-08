@@ -266,14 +266,14 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 37	2:19	Kitana Kahn	137.9	Eternal Conviction	fail	empty	hit-list	Kiara Blaiddyd 100	
 37	2:23	Absolute Gigalad	141.9	Holy Impact	fail	empty	hit-list	Kiara Blaiddyd 100 (via Kite Noodle, Kitana Kahn)	
 37	2:24	Absolute Gigachad	142.1	Holy Impact	fail	empty	hit-list	Kiara Blaiddyd 100 (via Kite Noodle, Kitana Kahn)	
-39	2:13	Kite Noodle	131.1	Hiemal Storm	fail	personal	hit	Kite Noodle 100	
-39	2:13	Loki Doki	131.1	Hiemal Storm	fail	personal	hit	Loki Doki 100	
-39	2:13	Spring Nymphar	131.1	Hiemal Storm	fail	personal	hit	Spring Nymphar 100	
+39	2:13	Kite Noodle	131.1	Hiemal Storm	fail	stacked	position	Loki Doki 100	
+39	2:13	Loki Doki	131.1	Hiemal Storm	fail	stacked	position	Loki Doki 100	
+39	2:13	Spring Nymphar	131.1	Hiemal Storm	fail	stacked	position	Loki Doki 100	
 39	2:15	Speed Panda	133.8	Frostbite	fail	personal	hit	Speed Panda 100	
 39	2:17	Absolute Gigachad	135.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
-39	2:19	Kiara Blaiddyd	137.3	Eternal Conviction	fail	empty	hit-list	Kite Noodle 25; Loki Doki 25; Spring Nymphar 25; Speed Panda 25	
-39	2:19	Kitana Kahn	137.3	Eternal Conviction	fail	empty	hit-list	Kite Noodle 25; Loki Doki 25; Spring Nymphar 25; Speed Panda 25	
-39	2:19	Absolute Gigalad	137.6	Eternal Conviction	fail	empty	hit-list	Kite Noodle 25; Loki Doki 25; Spring Nymphar 25; Speed Panda 25	
+39	2:19	Kiara Blaiddyd	137.3	Eternal Conviction	fail	empty	hit-list	Loki Doki 75 (via Kite Noodle, Spring Nymphar); Speed Panda 25	
+39	2:19	Kitana Kahn	137.3	Eternal Conviction	fail	empty	hit-list	Loki Doki 75 (via Kite Noodle, Spring Nymphar); Speed Panda 25	
+39	2:19	Absolute Gigalad	137.6	Eternal Conviction	fail	empty	hit-list	Loki Doki 75 (via Kite Noodle, Spring Nymphar); Speed Panda 25	
 40	2:29	Kite Noodle	147.4	Holy Impact	fail	dropped	position	Kite Noodle 50; Kitana Kahn 50	
 40	2:29	Absolute Gigachad	147.5	Holy Impact	fail	dropped	position	Kite Noodle 50; Kitana Kahn 50	
 40	2:29	Kiara Blaiddyd	147.6	Holy Impact	fail	dropped	position	Kite Noodle 50; Kitana Kahn 50	

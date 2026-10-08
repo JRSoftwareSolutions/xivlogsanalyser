@@ -88,6 +88,8 @@ class DeathFact:
     baited_by: list[str] = field(default_factory=list)
     # The dead marker holders whose leap fell on someone else and hit them.
     orphan: list[str] = field(default_factory=list)
+    # The ice holder who brought a second circle onto a pair with nobody dead.
+    stacked_by: list[str] = field(default_factory=list)
     # The ability that put the latest Vulnerability Up on them before the hit, such as "Darkdragon Dive",
     # and how many milliseconds before the death it landed.
     amp_via: str = ""
@@ -1100,7 +1102,7 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
         _ice_pairs(
             timed, pack, snapshots, fight["id"],
             {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
-            raises, mitigation_tables.get(fight["id"]), names_by_id,
+            raises, mitigation_tables.get(fight["id"]), names_by_id, positions,
         )
     facts.sort(key=lambda fact: (fact.fight, fact.phase, fact.t, fact.name))
     return facts
@@ -1657,6 +1659,7 @@ def _ice_pairs(
     raises: dict[str, list[int]],
     table: dict | None,
     names_by_id: dict[int, str],
+    positions: _Positions | None = None,
 ) -> None:
     """Who should have shared a pair circle with a player who was alone in it, or
     who left a pair with two circles on it.
@@ -1670,6 +1673,8 @@ def _ice_pairs(
     A dead holder's ice goes to a living player, so with someone dead a pair can
     take two circles. That surplus ice belongs to everyone missing from the
     circles: `group` is both circles, `down` the dead, `unsoaked` the living in none.
+    With nobody dead, two holders brought their circles to one spot: `stacked_by`
+    is the one who got there last, or both when positions cannot tell.
     """
     for timestamp, fact in timed:
         mechanic = pack.mechanic_for(fact.guid, fact.phase)
@@ -1695,10 +1700,14 @@ def _ice_pairs(
                 name for name in roles
                 if name not in anywhere and (_still_dead(name, timed, snap, raises) or name in resting)
             ]
+            fact.group = sorted({name for members in mine for name in members})
             if down:
-                fact.group = sorted({name for members in mine for name in members})
                 fact.down = down
                 fact.unsoaked = [name for name in roles if name not in anywhere and name not in down]
+            else:
+                # Each circle's first row is the player it is placed on.
+                holders = list(dict.fromkeys(members[0] for members in mine))
+                fact.stacked_by = _last_to_arrive(holders, positions, fight_id, snap) if len(holders) > 1 else []
             continue
         if len(mine) != 1 or len(mine[0]) != 1:
             continue
@@ -1714,6 +1723,38 @@ def _ice_pairs(
             name for name in partners
             if any(name in members and len(members) >= 3 for members in circles.values())
         ]
+
+
+# A player within this many yalms of where they stood at a snapshot was already there.
+SETTLED_YALMS = 2.5
+# Arrivals this close together cannot say who came second.
+ARRIVED_MS = 700
+
+
+def _last_to_arrive(names: list[str], positions: _Positions | None, fight_id: int, at: int) -> list[str]:
+    """Of players standing together at this moment, the one who got there last.
+
+    Each player arrived when they last came within a couple of yalms of where they
+    stood at this moment. With no positions, or arrivals too close to tell, all of them.
+    """
+    if positions is None:
+        return list(names)
+    arrived = {}
+    for name in names:
+        samples = [row for row in positions.named(fight_id, name) if at - 8000 <= row[0] <= at + 300]
+        if not samples:
+            return list(names)
+        spot = samples[-1][1:]
+        since = samples[-1][0]
+        for row in reversed(samples):
+            if math.dist(row[1:], spot) > SETTLED_YALMS:
+                break
+            since = row[0]
+        arrived[name] = since
+    order = sorted(names, key=lambda name: arrived[name])
+    if arrived[order[-1]] - arrived[order[-2]] < ARRIVED_MS:
+        return list(names)
+    return [order[-1]]
 
 
 def _extra_hits(

@@ -277,3 +277,60 @@ class InputsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AdjudicatedTest(unittest.TestCase):
+    """Calls a blind review, an adjudicator, and a skeptic settled against the judge's first pass."""
+
+    def test_a_pair_hit_by_two_ices_while_someone_was_dead_passes_it_on(self):
+        # Spring was dead, so her ice went to Kiara, who was already with Gigalad.
+        for name in ("Absolute Gigalad", "Kiara Blaiddyd"):
+            item = _one("3wzL6x4VHTmvNkhq", 31, name, "Hiemal Storm")
+            self.assertEqual((item.cause, _owners(item)), ("missing", [("Spring Nymphar", 100)]))
+
+    def test_the_holder_who_came_last_owns_a_doubled_ice_with_nobody_dead(self):
+        for name in ("Loki Doki", "Spring Nymphar", "Kite Noodle"):
+            item = _one("8DYNHQx4C7ytdLb9", 39, name, "Hiemal Storm")
+            self.assertEqual((item.cause, _owners(item)), ("stacked", [("Loki Doki", 100)]))
+
+    def test_two_bolts_that_hit_nobody_else_are_a_dead_players_bolt(self):
+        gigalad = _one("8DYNHQx4C7ytdLb9", 31, "Absolute Gigalad", "Lightning Storm")
+        self.assertEqual(gigalad.fact.down, ["Kitana Kahn"])
+        self.assertEqual(_owners(gigalad), [("Kitana Kahn", 100)])
+
+    def test_the_other_tank_taking_might_for_a_dead_main_tank(self):
+        gigachad = _one("3wzL6x4VHTmvNkhq", 30, "Absolute Gigachad", "Ascalon's Might")
+        self.assertEqual((gigachad.cause, _owners(gigachad)), ("redirected", [("Absolute Gigalad", 100)]))
+        # A non-tank in the cone still owns it.
+        spring = _one("3wzL6x4VHTmvNkhq", 30, "Spring Nymphar", "Ascalon's Might")
+        self.assertEqual(_owners(spring), [("Spring Nymphar", 100)])
+
+    def test_a_cone_on_a_player_stunned_by_someone_elses_bash(self):
+        for name in ("Kiara Blaiddyd", "Spring Nymphar"):
+            item = _one("8DYNHQx4C7ytdLb9", 12, name, "Holy Bladedance")
+            self.assertEqual(item.fact.stunned_by, ["Kitana Kahn"])
+            self.assertEqual((item.cause, _owners(item)), ("stunned", [("Kitana Kahn", 100)]))
+
+    def test_an_opener_cone_baited_from_outside_the_stack_is_shared(self):
+        spring = _one("8DYNHQx4C7ytdLb9", 21, "Spring Nymphar", "Ascalon's Mercy Concealed")
+        self.assertEqual(_owners(spring), [("Spring Nymphar", 50), ("Kitana Kahn", 50)])
+        for name in ("Loki Doki", "Kitana Kahn"):
+            item = _one("3wzL6x4VHTmvNkhq", 3, name, "Ascalon's Mercy Concealed")
+            self.assertEqual(_owners(item), [(name, 50), ("Absolute Gigachad", 50)])
+
+    def test_a_tether_taken_for_a_dead_tank_is_that_tanks(self):
+        kitana = _one("XVz8bCqgPw1KRh9d", 30, "Kitana Kahn", "Holy Shield Bash")
+        self.assertEqual(_owners(kitana), [("Absolute Gigachad", 100)])
+
+    def test_a_sacred_sever_group_is_filled_from_the_empty_seat(self):
+        # Jump 3's group hit Kite and Loki. Gigalad was alive elsewhere, and the ranged seat
+        # was Kitana's: Kiara was the other group's.
+        for name in ("Kite Noodle", "Loki Doki"):
+            item = _one("3wzL6x4VHTmvNkhq", 43, name, "Sacred Sever")
+            self.assertEqual(sorted(item.fact.group), ["Absolute Gigalad", "Kitana Kahn", "Kite Noodle", "Loki Doki"])
+            self.assertEqual(sorted(_owners(item)), [("Absolute Gigalad", 50), ("Kitana Kahn", 50)])
+
+    def test_a_stack_snapshot_counts_a_player_who_died_before_the_damage(self):
+        kite = _one("8DYNHQx4C7ytdLb9", 34, "Kite Noodle", "Dragon's Rage")
+        self.assertNotIn("Kitana Kahn", kite.fact.down)
+        self.assertEqual(sorted(_owners(kite)), [("Absolute Gigachad", 50), ("Absolute Gigalad", 50)])
