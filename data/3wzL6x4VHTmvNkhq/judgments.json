@@ -43091,10 +43091,10 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
-    "unsoaked": [
-      "Spring Nymphar"
+    "down": [
+      "Loki Doki"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -43110,8 +43110,8 @@
     "group": [
       "Kite Noodle",
       "Kiara Blaiddyd",
-      "Spring Nymphar",
-      "Absolute Gigalad"
+      "Absolute Gigalad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5524413,
@@ -43130,11 +43130,11 @@
     "outcome": "raw",
     "happened": "Took 45,390 at 22% HP. Shared by 3 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 3 of 4 because Spring Nymphar was not in it.",
+    "went_wrong": "The stack was 3 of 4 because Loki Doki was already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Spring Nymphar",
+        "who": "Loki Doki",
         "confidence": 100
       }
     ],
@@ -43206,10 +43206,10 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
-    "unsoaked": [
-      "Spring Nymphar"
+    "down": [
+      "Loki Doki"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -43226,8 +43226,8 @@
     "group": [
       "Kite Noodle",
       "Kiara Blaiddyd",
-      "Spring Nymphar",
-      "Absolute Gigalad"
+      "Absolute Gigalad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5524502,
@@ -43246,11 +43246,11 @@
     "outcome": "raw",
     "happened": "Took 58,507 at 31% HP. Shared by 3 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 3 of 4 because Spring Nymphar was not in it.",
+    "went_wrong": "The stack was 3 of 4 because Loki Doki was already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Spring Nymphar",
+        "who": "Loki Doki",
         "confidence": 100
       }
     ],
@@ -46041,7 +46041,9 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Absolute Gigalad"
+    ],
     "unsoaked": [
       "Kiara Blaiddyd",
       "Loki Doki"
@@ -46060,7 +46062,7 @@
     "group": [
       "Kite Noodle",
       "Kiara Blaiddyd",
-      "Absolute Gigachad",
+      "Absolute Gigalad",
       "Loki Doki"
     ],
     "self_hits": [],
@@ -46193,7 +46195,9 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Absolute Gigalad"
+    ],
     "unsoaked": [
       "Kiara Blaiddyd",
       "Loki Doki"
@@ -46213,7 +46217,7 @@
     "group": [
       "Kite Noodle",
       "Kiara Blaiddyd",
-      "Absolute Gigachad",
+      "Absolute Gigalad",
       "Loki Doki"
     ],
     "self_hits": [],
@@ -46335,7 +46339,9 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Absolute Gigalad"
+    ],
     "unsoaked": [
       "Kiara Blaiddyd",
       "Loki Doki"
@@ -46356,7 +46362,7 @@
     "group": [
       "Kite Noodle",
       "Kiara Blaiddyd",
-      "Absolute Gigachad",
+      "Absolute Gigalad",
       "Loki Doki"
     ],
     "self_hits": [],

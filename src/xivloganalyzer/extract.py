@@ -1661,9 +1661,16 @@ def _alternating_groups(
         if group is None:
             continue
         if seats:
-            beside = index + 1 if index % 2 == 0 and index + 1 < len(casts) else index - 1
-            other = _cast_group(casts, beside, roster) if beside >= 0 else None
-            group = _seat_group(group, other or [], casts, index, seats, roster, mechanic.typical_targets or 0)
+            # The other group is whoever its casts hit together. A cast on one player alone
+            # is only its target, who may have stood anywhere.
+            other = [
+                name for at, (_first, hit) in enumerate(casts)
+                if at % 2 != index % 2 and len(hit) > 1 for name in hit
+            ]
+            if not other:
+                beside = index + 1 if index % 2 == 0 and index + 1 < len(casts) else index - 1
+                other = (_cast_group(casts, beside, roster) if beside >= 0 else None) or []
+            group = _seat_group(group, other, casts, index, seats, roster, mechanic.typical_targets or 0)
         fact.group = group
         fact.down = [
             name for name in group
