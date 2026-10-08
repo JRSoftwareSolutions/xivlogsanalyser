@@ -4,7 +4,7 @@
     "id": "deathwall",
     "name": "Deathwall",
     "category": "wall",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it."
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake."
   },
   "mechanics": [
     {

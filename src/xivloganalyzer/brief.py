@@ -102,6 +102,8 @@ def format_death(row: dict) -> str:
         lines.append(f"Judged without: {', '.join(row['missing'])}")
     if row.get("first"):
         lines.append("First mistake of the pull.")
+    elif row.get("late"):
+        lines.append("After the pull was lost.")
     return "\n".join(lines)
 
 

@@ -51,6 +51,9 @@ class Judgment:
     basis: str = ""
     # The pull's first mistake, per mechanic: [{"mechanic", "owners"}]. The same on every death of the pull.
     first_causes: list[dict] = field(default_factory=list)
+    # After the pull was lost: more than a second after its first death. The call
+    # stands, but the summaries leave it out, since the pull could no longer succeed.
+    late: bool = False
 
     def carried(self) -> list[str]:
         """Owners who are on this death only through an earlier death.
@@ -76,6 +79,7 @@ class Judgment:
                 "carried": self.carried(),
                 "basis": self.basis,
                 "first": self.first,
+                "late": self.late,
                 "first_mistake": self.first_mistake,
                 "first_causes": [dict(cause) for cause in self.first_causes],
             }
@@ -1206,20 +1210,44 @@ def _mark_resets(judgments: list[Judgment], firsts: dict[int, "_FirstMoment"], p
             item.blames = []
 
 
+def _mark_late(judgments: list[Judgment]) -> None:
+    """A pull is lost at its first death. Anything more than a second after it is late."""
+    first: dict[int, tuple[int, float]] = {}
+    for item in judgments:
+        when = (item.fact.phase, item.fact.t)
+        if item.fact.fight not in first or when < first[item.fact.fight]:
+            first[item.fact.fight] = when
+    for item in judgments:
+        phase, start = first[item.fact.fight]
+        item.late = (item.fact.phase, item.fact.t) > (phase, start + _FIRST_S)
+
+
 def _mark_after_walls(
     judgments: list[Judgment], firsts: dict[int, _FirstMoment], pack: FightPack,
 ) -> None:
-    """A deathwall walk after the first mistake is still a mistake, shared with that earlier one.
+    """A deathwall walk after the pull was lost is a reset. Before that, a walk after the
+    first mistake is still a mistake, shared with that earlier one.
 
-    When the first mistake was the walker's own, such as their own Hysteria or Damage
-    Down, nobody else shares it.
+    A walk after the pull's first death is nobody's mistake: the pull could no longer
+    succeed, and the player is resetting it. A walk with their own Hysteria from a gaze
+    is still theirs. Before any death, when the first mistake was the walker's own, such
+    as their own Damage Down, nobody else shares it.
     """
     wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
     for item in judgments:
         moment = firsts[item.fact.fight]
         if item.mechanic_id != wall_id or item.cause in {"reset", "knocked"} or moment.holds(item.fact.phase, item.fact.t):
             continue
-        if _own_hysteria(item.fact) or _only_own_before(item, judgments):
+        if _own_hysteria(item.fact):
+            continue
+        if item.late:
+            item.outcome = "environment"
+            item.cause = "reset"
+            item.happened = "Nothing hit them. The pull was already lost."
+            item.went_wrong = f"{item.fact.name} walked into the deathwall to reset after the pull was lost."
+            item.blames = []
+            continue
+        if _only_own_before(item, judgments):
             continue
         item.went_wrong = f"{item.fact.name} walked into the deathwall after the first mistake."
         item.cause = "after"
@@ -1688,6 +1716,7 @@ def judge_report(
     _mark_empty_soaks(judgments)
     firsts = _first_moments(judgments, pack)
     _mark_resets(judgments, firsts, pack)
+    _mark_late(judgments)
     _mark_after_walls(judgments, firsts, pack)
     if roster is None or not len(roster):
         people = _roster_from_facts(facts)

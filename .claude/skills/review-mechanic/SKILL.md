@@ -92,7 +92,8 @@ These are the shared calls:
 - Already under 15,000 HP: the healers and "Earlier damage", 33 each.
 - A healer already dead and not raised cannot heal. Their share passes on to whoever owned that healer's death.
 - Deathwall before anything else went wrong: that player at 100. With their own Hysteria from the gaze, still that player at 100.
-- Deathwall after the first mistake: that player and "Earlier mistake", 50 each. It is still a mistake, but the first one usually caused it. When every earlier death and debuff in the pull was the walker's own, it is theirs at 100.
+- Deathwall after the pull's first death (more than a second after it): a reset, nobody's mistake. The pull was already lost. With their own Hysteria from a gaze still on, it stays their own fail.
+- Deathwall after a Damage Down or Hysteria but before any death: that player and "Earlier mistake", 50 each. When every earlier debuff in the pull was the walker's own, it is theirs at 100.
 
 An ability that is not understood yet has no blame.
 

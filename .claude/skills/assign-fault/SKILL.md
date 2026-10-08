@@ -18,6 +18,8 @@ Fault belongs to the player whose action broke what the mechanic needed. A playe
 
 When a player was missing from their part because they were already dead, the gap is theirs. When that death was itself someone else's fault, the gap passes on to that owner. The first mistake of the pull is usually where the chain starts.
 
+A pull is lost at its first death. Calls after it still name an owner, but the summaries count only the mistakes made while the pull could still succeed, and never count a passed-on gap as failing the later mechanic.
+
 ## Steps
 
 Do these in order for every disputed death. Write down what each step found.
@@ -73,7 +75,7 @@ Most mechanics are one of these shapes. The question to ask is the same for each
 | Tankbuster | The right tank, with personal mitigation | A non-tank who took it, the wrong tank, or a tank without mitigation. When the right tank was dead, such as Heavenly Heel's off tank, that tank owns it, passed on. |
 | Dodge, gaze, cone, puddle | Nobody hit | The player who was hit. |
 | Raidwide | Everyone lives with mitigation and HP | The healers and the party's mitigation, unless the party was short or already low. Then pass it on to whoever made it short or low. Low from their own gaze, dodge, cone, puddle, or orb in the 15 seconds before is that player's own. |
-| No packet | Nobody touches the wall | The player, alone before the first mistake, shared with "Earlier mistake" after it. |
+| No packet | Nobody touches the wall | The player, alone before the first mistake, shared with "Earlier mistake" after a debuff. After the pull's first death it is a reset, nobody's. |
 
 ## Checking a session
 

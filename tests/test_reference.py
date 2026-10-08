@@ -20,13 +20,15 @@ class ReferenceReportTest(unittest.TestCase):
         judgments = judge_report(facts, pack)
         counts = Counter(item.outcome for item in judgments)
         self.assertEqual(counts["raw"], 40)
-        self.assertEqual(counts["fail"], 416)
+        self.assertEqual(counts["fail"], 315)
         self.assertEqual(counts["low"], 2)
         self.assertEqual(counts["unknown"], 0)
-        self.assertEqual(counts["environment"], 0)
+        # A wall after the pull's first death is a reset: the pull was already lost.
+        self.assertEqual(counts["environment"], 101)
         walls = [item for item in judgments if item.mechanic_id == "deathwall"]
         self.assertEqual(len(walls), 110)
-        self.assertTrue(all(item.outcome == "fail" for item in walls))
+        self.assertEqual(Counter(item.outcome for item in walls), {"environment": 101, "fail": 9})
+        self.assertTrue(all(item.late for item in walls if item.outcome == "environment"))
         raw = Counter(item.mechanic for item in judgments if item.outcome == "raw")
         # The towers at 63s exploded because a tower was empty. None of those deaths is raw.
         self.assertNotIn("Eternal Conviction", raw)
@@ -171,7 +173,8 @@ class ReferenceReportTest(unittest.TestCase):
             [("Spring Nymphar", 50), ("Kite Noodle", 50)],
         )
         # Everyone without a Skyward Leap marker stacks, tanks too. Spring and Kiara were dead.
-        self.assertEqual(owners(one(12, "Loki Doki", "Dragon's Rage")), [("Spring Nymphar", 50), ("Kiara Blaiddyd", 50)])
+        # Spring had walked into the wall to reset after Kiara's death, so her gap is the reset's.
+        self.assertEqual(owners(one(12, "Loki Doki", "Dragon's Rage")), [("Group reset", 50), ("Kiara Blaiddyd", 50)])
 
         # Spring died to the cone at 48s, so the tower Spring should have stood in was empty.
         self.assertEqual(
@@ -219,10 +222,11 @@ class ReferenceReportTest(unittest.TestCase):
             "Kiara Blaiddyd dropped two comets too close.",
         )
         # Loki Doki was already dead to a short Dragon's Rage, so his share passes on, to Spring
-        # and Kiara who were missing from that stack.
+        # and Kiara who were missing from that stack. Spring was missing because she walked in
+        # to reset, so her part is the reset's.
         self.assertEqual(
             owners(one(12, "Absolute Gigalad", "Holy Bladedance")),
-            [("Spring Nymphar", 50), ("Kiara Blaiddyd", 16), ("Earlier damage", 33)],
+            [("Group reset", 50), ("Kiara Blaiddyd", 16), ("Earlier damage", 33)],
         )
 
         for item in judgments:
@@ -272,20 +276,23 @@ class ReferenceReportTest(unittest.TestCase):
         self.assertTrue(all(item.first_mistake == loki.first_mistake for item in pull_28))
         self.assertTrue(loki.first_mistake.startswith("Loki Doki walking into the deathwall at "))
 
-        # Pull 23: two cone deaths first, then the party walks into the wall.
+        # Pull 23: two cone deaths first, then the party walks into the wall. The pull was
+        # lost at the first death, so those walls are a reset, nobody's mistake.
         pull_23 = [item for item in judgments if item.fact.fight == 23]
         cones = [item for item in pull_23 if item.mechanic == "Ascalon's Mercy Concealed"]
         self.assertEqual(len(cones), 2)
         self.assertTrue(all(item.first for item in cones))
+        self.assertFalse(any(item.late for item in cones))
         walls = [item for item in pull_23 if item.mechanic_id == "deathwall"]
         self.assertTrue(walls)
         for item in walls:
             self.assertFalse(item.first)
-            self.assertEqual(item.outcome, "fail")
+            self.assertTrue(item.late)
+            self.assertEqual((item.outcome, item.cause), ("environment", "reset"))
             self.assertEqual(
-                item.went_wrong, f"{item.fact.name} walked into the deathwall after the first mistake.",
+                item.went_wrong, f"{item.fact.name} walked into the deathwall to reset after the pull was lost.",
             )
-            self.assertEqual(owners(item), [(item.fact.name, 50), ("Earlier mistake", 50)])
+            self.assertEqual(owners(item), [])
             self.assertGreater(item.fact.t, cones[0].fact.t)
 
         # A deathwall death is timed by the clock, not by the last hit they lived.

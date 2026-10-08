@@ -57,8 +57,17 @@ class NightTest(unittest.TestCase):
         rows = [item.to_dict() for item in _judged(CODE)[4] if item.fact.fight == 61]
         tally = night_tally(rows)
         self.assertEqual(dict(tally["owned"])["Kitana Kahn"], 1)
+        self.assertEqual(tally["late"], 0)
         # Two Hiemal Storm deaths and four Eternal Conviction deaths.
         self.assertEqual(dict(tally["passed_on"])["Kitana Kahn"], 6)
+
+    def test_a_mistake_after_the_pull_was_lost_is_left_out(self):
+        # Pull 14 was lost at Gigachad's Ascalon's Might. Kitana's Bright Flare after it is
+        # hers, but it is left out of the deaths owned.
+        rows = [item.to_dict() for item in _judged(CODE)[4] if item.fact.fight == 14]
+        tally = night_tally(rows)
+        self.assertEqual(dict(tally["owned"]), {"Absolute Gigachad": 1})
+        self.assertGreaterEqual(tally["late"], 1)
 
     def test_the_brief_leads_with_the_night(self):
         text = brief_text(ROOT / "data" / CODE)

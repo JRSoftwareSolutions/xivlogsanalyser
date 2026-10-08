@@ -95,58 +95,56 @@
    "time": "1:03",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. The deaths-table row has no killing blow, so this is the deathwall. Only his own 68.8k leap (Ser Paulecrain, on his opposite spot) shows, and all his auras drop at 61.90. It came after Spring's 59.7 mistake, so it is shared with Earlier mistake (label not listed). His last posit…"
+   }
   },
   {
    "fight": 4,
    "time": "1:07",
    "name": "Absolute Gigalad",
    "mechanic": "Eternal Conviction",
+   "outcome": "fail",
+   "owners": [
+    "Group reset",
+    "Spring Nymphar"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle",
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle",
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. Strength Eternal Conviction at 65.15: five tower instances, 49/2 through 49/6, exploded on him for 58-62k each, so five towers were empty. Loki was the only non-tank alive to soak (Conviction 4,973 in his deaths-table damage). The other five non-tanks were dead: Spring's own pud…"
+   }
   },
   {
    "fight": 4,
    "time": "1:07",
    "name": "Loki Doki",
    "mechanic": "Eternal Conviction",
+   "outcome": "fail",
+   "owners": [
+    "Group reset",
+    "Spring Nymphar"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle",
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle",
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. Eternal Conviction at 65.15 for 91k unmitigated on a healer. Five empty Strength towers (instances 49/2 through 49/6 each hit him). He soaked his own tower. The missing soakers were dead: four deaths owned by Spring (her puddle and her leap clip) and Kite's deathwall. Ability 25…"
+   }
   },
   {
    "fight": 5,
@@ -484,18 +482,16 @@
    "time": "1:10",
    "name": "Spring Nymphar",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall. Loki raised her at 63.81; she sat at the north edge (r=20.3-20.7 at 64.12-66.26) and her auras dropped at 68.18 as the last player alive. Other players' mistakes came earlier, so it is shared with Earlier mistake (label not listed)."
+   }
   },
   {
    "fight": 7,
@@ -520,126 +516,112 @@
    "time": "0:56",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. The deaths-table row has no killing-blow ability and no packet, so it is the deathwall. It came after Gigalad's 49.6s cone death, which was not his. That makes it a fail on him, with the 'Earlier mistake' share not listable."
+   }
   },
   {
    "fight": 7,
    "time": "0:56",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. Positions show her running out to 17.2y at 54.4s. This is after the first mistake (Gigalad's cone), so it is still her own walk into the wall."
+   }
   },
   {
    "fight": 7,
    "time": "0:57",
    "name": "Kitana Kahn",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kitana Kahn"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kitana Kahn"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. She was at 20.5y (the edge) at 55.1s. This came after Gigalad's death, so the walker owns it and the Earlier mistake share is not listable."
+   }
   },
   {
    "fight": 7,
    "time": "0:57",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. He was moving outward (17.7y at 54.9s) after the MT died at 49.6s."
+   }
   },
   {
    "fight": 7,
    "time": "0:58",
    "name": "Kiara Blaiddyd",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. She was at 19.3y at 55.5s, moving out, after Gigalad's death."
+   }
   },
   {
    "fight": 7,
    "time": "0:58",
    "name": "Spring Nymphar",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. She was moving out (12.2y at 54.9s) after Gigalad's death."
+   }
   },
   {
    "fight": 7,
    "time": "1:00",
    "name": "Loki Doki",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Loki Doki"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. He was at 19.5y at 58.5s, last of the party to walk out after the MT died."
+   }
   },
   {
    "fight": 9,
@@ -838,131 +820,117 @@
    "time": "0:58",
    "name": "Loki Doki",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Loki Doki"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. He was at 20.4y (27 degrees) at 56.5s and his auras dropped at 56.67s. This came after Kitana's deaths, so it is his own walk (Earlier mistake share not listable)."
+   }
   },
   {
    "fight": 10,
    "time": "0:59",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. He was sprinting (Sprint at 54.18s) from 7.9y at 55.7s and died at 57.47s. This came after Kitana's deaths, which were not his."
+   }
   },
   {
    "fight": 10,
    "time": "0:59",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. He was at the edge (90 degrees, 20.2y) from 55.9s and his auras dropped at 57.7s. This came after the first mistake (Kitana's cone)."
+   }
   },
   {
    "fight": 10,
    "time": "0:59",
    "name": "Spring Nymphar",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. She was sprinting (55.25s) at about 110 degrees, 13.8 to 17.5y, and died at 57.3s, after Kitana's deaths."
+   }
   },
   {
    "fight": 10,
    "time": "1:00",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No packet, so deathwall. He was at 20.5y (-105 degrees) at 58.8s and his auras dropped at 58.85s, after Kitana's deaths. It is his own walk into the wall even though he had just used Bloodwhetting and Thrill."
+   }
   },
   {
    "fight": 10,
    "time": "1:01",
    "name": "Kiara Blaiddyd",
    "mechanic": "Dragon's Rage",
+   "outcome": "raw",
+   "owners": [
+    "Kitana Kahn",
+    "Group reset"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "raw",
-   "owners": [
-    "Kitana Kahn",
-    "Spring Nymphar",
-    "Absolute Gigachad",
-    "Absolute Gigalad"
-   ],
-   "why": "Adjudicated against the judge. ab_25551: the Dragon's Rage (src 44) snapshot only Kiara at 59.249 and landed at 59.739 for 333,516 unmitigated, x1.0, no shield, killing her. 333,516 is about 5 x 66.7k, so it is the full cast split one way. Under today's rule the DPS cap of 140k for a stack of 5 scales to abou…",
-   "rule_gap": "A stack that excuses marker holders (`needs_everyone.marked_out`, as Dragon's Rage does for Skyward Leap) must excuse every holder of that marker, including a holder who died before their leap landed, such as the dead holders `_orphan_leaps` places on the open spots. It must not take only the first target of each leap packet, and it must work out those holders before the stack's missing list is b…"
+   }
   },
   {
    "fight": 10,
    "time": "1:01",
    "name": "Speed Panda",
    "mechanic": "Skyward Leap",
+   "outcome": "fail",
+   "owners": [
+    "Group reset"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Earlier deaths"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle",
-    "Loki Doki"
-   ],
-   "why": "Adjudicated for the judge. ab_25565 (fight 10): three leap packets, all with one target, Speed Panda. src 45 (Ser Ignasse) snapshot at 58.85 and landed at 59.339 for 69,490 unmitigated (37,134 absorbed). That one put Magic and Physical Vulnerability Up on her at 58.9. src 47 (Ser Paulecrain) did 735,427 a…"
+   }
   },
   {
    "fight": 11,
@@ -1131,18 +1099,16 @@
    "time": "1:04",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. Deathwall. The death row has no killing blow, and the last hit is Bladedance at 62.75 (7.4k plus a 7.5k shield), which he lived. He was last seen at the west edge (80.9,106.4). Three deaths had already happened, so the rule shares this with Earlier mistake, which is not listed. …"
+   }
   },
   {
    "fight": 12,
@@ -1547,36 +1513,32 @@
    "time": "1:08",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. The death row has no killing blow; his last hit was Eternal Conviction at 65.2 (45k), and his buffs dropped at 66.08. That makes it the deathwall. It came after Kitana's death and Loki's empty tower, which also gave him Damage Down and Paralysis, so it is shared with the earlier…"
+   }
   },
   {
    "fight": 14,
    "time": "1:12",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No damage packet. Positions show him walking from r=5.5 at 65.9 to r=19.5 at 70.2 after the wipe was clear, so it is a deathwall walk. It is shared with the earlier mistakes, which were not his own."
+   }
   },
   {
    "fight": 15,
@@ -1601,90 +1563,80 @@
    "time": "0:55",
    "name": "Kitana Kahn",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kitana Kahn"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kitana Kahn"
-   ],
-   "why": "Blind review agreed. The death row has no killing blow; her last hit was Lightning Storm at 42.7, and her buffs dropped at 53.41. That is the deathwall. It came after Spring's death, so it is shared with the earlier mistake. Her last position sample was r=11.4 at 51.98."
+   }
   },
   {
    "fight": 15,
    "time": "0:56",
    "name": "Kiara Blaiddyd",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "Blind review agreed. No damage packet (her last hit was Lightning Storm at 42.7) and her buffs dropped at 54.96, so it is the deathwall. It came after Spring's death, so it is shared with the earlier mistake."
+   }
   },
   {
    "fight": 15,
    "time": "0:59",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No damage packet; his buffs dropped at 57.68 and his last sample was r=20.2 at the -128 degree leap spot. That is the deathwall after the first mistake."
+   }
   },
   {
    "fight": 15,
    "time": "1:00",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. He lived Ser Ignasse's leap at 58.88 (0 damage, 14.9k absorbed) and died at 58.92 with no killing blow, at r=19.5. That is the deathwall after the first mistake."
+   }
   },
   {
    "fight": 15,
    "time": "1:00",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. The death row shows no events at all, and his buffs dropped at 58.39. His last sample was r=20.4 at 57.85, at the 38 degree leap spot. That is the deathwall after the first mistake."
+   }
   },
   {
    "fight": 15,
@@ -1709,19 +1661,18 @@
    "time": "1:01",
    "name": "Absolute Gigalad",
    "mechanic": "Holy Shield Bash",
+   "outcome": "fail",
+   "owners": [
+    "Group reset"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda",
-    "Kiara Blaiddyd"
-   ],
-   "why": "Adjudicated for the judge. The killing hit was Holy Shield Bash packet 12811 from Ser Adelphel, snapshotted at 58.699. It hit Loki first (3.16M) and Gigalad second: 797,639 unmitigated at x2.15, with Rampart, Stem the Flow, Bloodwhetting and Physical Vulnerability Up. He took 516,870 at 109,989/119,068 HP…"
+   }
   },
   {
    "fight": 16,
@@ -2366,18 +2317,16 @@
    "time": "2:20",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. The deaths table has no killing blow. His last hits were Eternal Conviction 65k at 138.04 and a Holy Comet 854 at 138.54 with no overkill, 67k in total on a 99k tank, so this is the deathwall. Positions put him at the SW edge, about 20.1y out at (85.8,114.24). It came after the …"
+   }
   },
   {
    "fight": 19,
@@ -2532,36 +2481,32 @@
    "time": "2:36",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No damage packet at 154.5, about 3.5s after he lived the 61k Eternal Conviction. Six players were dead, so this is the deathwall after the first mistake. His Damage Down came from Kite Noodle's empty tower, not from him, so he shares it with Earlier mistake (label omitted)."
+   }
   },
   {
    "fight": 20,
    "time": "2:40",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No damage packet at 158.5, about 8s after he lived the 58k Eternal Conviction. He was the last one alive, so this is the deathwall after the first mistake. Earlier deaths and Damage Down were not his own, so he shares it with Earlier mistake (label omitted)."
+   }
   },
   {
    "fight": 21,
@@ -2587,126 +2532,112 @@
    "time": "0:20",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No damage packet; Damage Down came off at 18.14. He had 99k max HP and lived the 98.7k blocked cone, then ran east to (113,92.6) at 17.1s, so this is the deathwall. Spring Nymphar's earlier death was not his own, so he shares it with Earlier mistake (label omitted)."
+   }
   },
   {
    "fight": 21,
    "time": "0:20",
    "name": "Kitana Kahn",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kitana Kahn"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kitana Kahn"
-   ],
-   "why": "Blind review agreed. No damage packet; she was moving out to (112.7,108.4), r=15, at 17.1s. Deathwall after the first mistake. She only shares the earlier death and Damage Down as the baiter, so they are not wholly hers, and Earlier mistake shares it (label omitted)."
+   }
   },
   {
    "fight": 21,
    "time": "0:22",
    "name": "Kiara Blaiddyd",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "Blind review agreed. No damage packet; she walked south from (100,112) to (99.6,117.5), r=17.5, at 20.4s. Deathwall after Spring Nymphar's death, which was not hers, so shared with Earlier mistake (label omitted)."
+   }
   },
   {
    "fight": 21,
    "time": "0:23",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No damage packet. Deathwall during the reset after the healer died, and none of the earlier events were his, so he shares it with Earlier mistake (label omitted)."
+   }
   },
   {
    "fight": 21,
    "time": "0:24",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No damage packet. The killing-blow cell is empty and his last hit was Ascalon's Might at 19.66 under Holmgang. Deathwall after the first mistake, which was not his, so shared with Earlier mistake (label omitted)."
+   }
   },
   {
    "fight": 21,
    "time": "0:24",
    "name": "Loki Doki",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Loki Doki"
-   ],
-   "why": "Blind review agreed. No damage packet. Deathwall during the reset after Spring Nymphar's death, which was not hers, so shared with Earlier mistake (label omitted)."
+   }
   },
   {
    "fight": 21,
    "time": "0:25",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No damage packet; he was at (116.7,88.4), r=20.3, by 22.5s. Deathwall after the first mistake, which was not his, so shared with Earlier mistake (label omitted)."
+   }
   },
   {
    "fight": 22,
@@ -2767,18 +2698,16 @@
    "time": "1:07",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No damage packet; Damage Down and Paralysis came off at 65.47. He was at the arena edge, r=20.2. Deathwall after the first mistake, and none of the earlier events were his, so shared with Earlier mistake (label omitted). Medium because he died only 0.44s after Eternal Conviction…"
+   }
   },
   {
    "fight": 22,
@@ -2839,18 +2768,16 @@
    "time": "1:09",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No damage packet; debuffs came off at 67.47, 2.2s after he lived the 62.7k Eternal Conviction. He was at the edge, r=20.6, as the last one alive. Deathwall after the first mistake. Besides his own Dimensional Collapse Damage Down, Kitana's death and the tower deaths came before …"
+   }
   },
   {
    "fight": 23,
@@ -3233,18 +3160,16 @@
    "time": "1:06",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No damage packet: the deathwall. His death row's last event is his own Strength tower soak, Conviction 25567 instance 3 at 63.07 (5,159). Samples from 62.84 to 63.07 show him leaving the SW tower toward the edge. He is not in the Eternal Conviction snapshot at 64.94. This was af…"
+   }
   },
   {
    "fight": 25,
@@ -3688,108 +3613,96 @@
    "time": "2:02",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. There is no damage packet (the death row's killing blow is '-'), so this is the deathwall, at 120.5 after the first mistake (Kiara and Kitana at 118.9-119.0). Not every earlier death was his own, so it is shared with Earlier mistake, which is not listed."
+   }
   },
   {
    "fight": 28,
    "time": "2:04",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall, at 122.5 after the pull's first mistake. That makes it his own walk, shared with Earlier mistake."
+   }
   },
   {
    "fight": 28,
    "time": "2:05",
    "name": "Spring Nymphar",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall, at 123.5 after the first mistake. That makes it her own walk, shared with Earlier mistake."
+   }
   },
   {
    "fight": 28,
    "time": "2:06",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall, at 124.5 after the first mistake. He held a Holy Impact Prey from 123.31 and it came off at his death. That makes it his own walk, shared with Earlier mistake."
+   }
   },
   {
    "fight": 28,
    "time": "2:06",
    "name": "Loki Doki",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Loki Doki"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall, at 124.5 after the first mistake. That makes it his own walk, shared with Earlier mistake."
+   }
   },
   {
    "fight": 28,
    "time": "2:11",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall, at 129.5, the last of six walls. His Holy Impact Prey (from 123.31) came off at death. That makes it his own walk, shared with Earlier mistake."
+   }
   },
   {
    "fight": 29,
@@ -3874,18 +3787,16 @@
    "time": "2:32",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. The deaths row has no ability (deathwall). His last hit was a lived 62k Eternal Conviction, and he stood at radius about 19.3 at the outer tower. Earlier deaths and Damage Down in this pull were not his own, so the rule shares this with the earlier mistake (label not listed)."
+   }
   },
   {
    "fight": 29,
@@ -3952,18 +3863,16 @@
    "time": "2:39",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No ability on the row (deathwall). He walked outward from the center to radius 14 by 156.6. His own Might death was earlier, but so were the Eternal Conviction deaths and his Damage Down (150.6), which Speed Panda and Loki Doki own. Not every earlier mistake was his, so the rule…"
+   }
   },
   {
    "fight": 30,
@@ -4151,18 +4060,16 @@
    "time": "0:45",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No ability on the row (deathwall). His last hit was a lived 27k Lightning Storm, and he was at radius 20.3 at 43.24. It came after Kitana's deathwall and Gigalad's death, neither his own, so the rule shares it with the earlier mistake (label not listed)."
+   }
   },
   {
    "fight": 31,
@@ -4187,36 +4094,32 @@
    "time": "0:47",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No ability on the row (deathwall). His last hit was a lived 41k Lightning Storm, and he was at radius 20.3 at 43.24. Earlier deaths in the pull were not his, so the rule shares it with the earlier mistake (label not listed)."
+   }
   },
   {
    "fight": 31,
    "time": "0:48",
    "name": "Loki Doki",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Loki Doki"
-   ],
-   "why": "Blind review agreed. No ability on the row (deathwall). His last hit was a lived 39k Lightning Storm. It came after deaths that were not his own, so the rule shares it with the earlier mistake (label not listed)."
+   }
   },
   {
    "fight": 31,
@@ -4241,36 +4144,32 @@
    "time": "0:50",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No ability on the row (deathwall). His last hit was a lived 42k Lightning Storm, and he was moving outward from radius 8 at 47.6. It came after deaths that were not his own, so the rule shares it with the earlier mistake (label not listed)."
+   }
   },
   {
    "fight": 31,
    "time": "0:55",
    "name": "Kiara Blaiddyd",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "Blind review agreed. No ability on the row (deathwall). She was walking outward, at radius 17.3 at 52.7. It came after deaths that were not her own, so the rule shares it with the earlier mistake (label not listed)."
+   }
   },
   {
    "fight": 33,
@@ -4497,43 +4396,49 @@
    "time": "1:03",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No packet. His last row is his own Skyward Leap (69k with a 38.7k shield, lived). He stood at the west leap spot (80.06,102.83, r=20.1) and his buffs drop at 61.76, so he walked into the wall. Earlier deaths in the pull were not his, so this is his fail shared with Earlier mista…"
+   }
   },
   {
    "fight": 34,
    "time": "1:07",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No packet. His last row is Holy Bladedance at 63.76 (shield, lived). His buffs, Sprint included, drop at 65.22. That is after the Eternal Conviction snapshot (65.133) but before its damage (65.356), and there is no damage row for him. He stood at r=19.7–19.8 and sprinted into th…"
+   }
   },
   {
    "fight": 34,
    "time": "1:07",
    "name": "Kiara Blaiddyd",
    "mechanic": "Eternal Conviction",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigachad",
+    "Absolute Gigalad",
+    "Kitana Kahn",
+    "Group reset",
+    "Loki Doki",
+    "Kiara Blaiddyd"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
@@ -4541,24 +4446,24 @@
      "Missing bodies",
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad",
-    "Absolute Gigalad",
-    "Kiara Blaiddyd",
-    "Kitana Kahn",
-    "Loki Doki",
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. Strength Eternal Conviction (before 100s) is always an empty tower. ab_25568 shows instances 1–6 all exploding at 65.13, so all six towers were empty, and the replay has no Conviction soak. Four soakers were dead: Kitana (her own leap death), Kite and Spring (their short-stack d…"
+   }
   },
   {
    "fight": 34,
    "time": "1:07",
    "name": "Loki Doki",
    "mechanic": "Eternal Conviction",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigachad",
+    "Absolute Gigalad",
+    "Kitana Kahn",
+    "Group reset",
+    "Loki Doki",
+    "Kiara Blaiddyd"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
@@ -4566,17 +4471,7 @@
      "Missing bodies",
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad",
-    "Absolute Gigalad",
-    "Kiara Blaiddyd",
-    "Kitana Kahn",
-    "Loki Doki",
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. Same as Kiara: Eternal Conviction instance 4 killed him at 65.356 (92k), and every one of the six explosions alone was lethal. All six Strength towers were empty: four soakers dead (Kitana, then Kite and Spring passed to the two tanks, then Speed), and Loki and Kiara alive at th…"
+   }
   },
   {
    "fight": 35,
@@ -4619,18 +4514,16 @@
    "time": "2:32",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No packet. He soaked outer tower 49/7 at 148.2 at (100.11,82.02), then walked outward, r=18 to 19.5 by 150.08. His buffs drop at 150.26, after the explosion snapshot (63k on him, a survivable tank share) and before any damage row, and none exists for him. This is a deathwall wal…"
+   }
   },
   {
    "fight": 35,
@@ -4727,18 +4620,16 @@
    "time": "2:37",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No packet. He lived the explosion (58.6k, Damage Down at 151.0) as the last player alive. He was at (98.27,119.31), r=19.4, at 155.22, and his debuffs drop at 155.53, so he walked into the wall. The earlier deaths were not his, so this is his fail shared with Earlier mistake."
+   }
   },
   {
    "fight": 36,
@@ -5140,18 +5031,16 @@
    "time": "2:17",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. There is no damage packet: the row has no killing blow, and his last hits were Conviction 3,232 at 135.2 and Hiemal Storm. That is the deathwall. He held Prey and was at the south edge at (-7.0,16.6), radius 18, at 135.29, starting his comet run. It came after the 131.1 and 133.…"
+   }
   },
   {
    "fight": 39,
@@ -5420,36 +5309,32 @@
    "time": "1:06",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall. Her last hits were Conviction 5,148 (soaked at 62.95) and Skyward Leap. After the soak she ran outward (r 12.9 at 62.95 to 15.8 at 63.4), and all her buffs dropped at 64.24. She is not in the Eternal Conviction snapshot at 64.82. Sprin…"
+   }
   },
   {
    "fight": 41,
    "time": "1:07",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall (the deaths-table killing blow is '-'). He lived Eternal Conviction for 37.9k at 65.445 and got Damage Down and Paralysis. His buffs dropped at 65.8. His last sample is at r 20.2 on the tether spot. Earlier deaths that were not his own …"
+   }
   },
   {
    "fight": 41,
@@ -5582,108 +5467,96 @@
    "time": "2:03",
    "name": "Loki Doki",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Loki Doki"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall (killing blow '-'; last hit Sacred Sever at 116.5). His sample at 120.9 shows him moving outward (r 15.2 to 17.8). The Bright Flare deaths came earlier, so it is shared with Earlier mistake."
+   }
   },
   {
    "fight": 42,
    "time": "2:03",
    "name": "Spring Nymphar",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall (killing blow '-'; last hit Sacred Sever at 118.2). It came after the Bright Flare deaths, so it is shared with Earlier mistake."
+   }
   },
   {
    "fight": 42,
    "time": "2:06",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall. His Prey marker came off at 125.0, which matches the death. It came after earlier deaths, so it is shared with Earlier mistake."
+   }
   },
   {
    "fight": 42,
    "time": "2:06",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall. His last sample is at r 20.6 at 124.3, at the arena edge. It came after earlier deaths, so it is shared with Earlier mistake."
+   }
   },
   {
    "fight": 42,
    "time": "2:08",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall (no killing blow and no last hits). His Prey marker came off at 126.6. It came after earlier deaths, so it is shared with Earlier mistake."
+   }
   },
   {
    "fight": 42,
    "time": "2:09",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall (no killing blow and no last hits). It came after earlier deaths, so it is shared with Earlier mistake."
+   }
   },
   {
    "fight": 43,
@@ -6016,18 +5889,16 @@
    "time": "2:17",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. No damage packet, so this is the deathwall. The death-table row has no killing ability, and its last event is his Conviction soak at 135.1 (tower 49/3, S). He held Prey, which came off at 135.79, his death. This came after Spring's and Loki's earlier deaths, so per the rules it …"
+   }
   },
   {
    "fight": 45,
@@ -6134,18 +6005,18 @@
    "time": "2:24",
    "name": "Absolute Gigalad",
    "mechanic": "Holy Impact",
+   "outcome": "fail",
+   "owners": [
+    "Group reset"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. Holy Impact at 142.1 from comets 57/5 and 57/6. Both dropped at 139.17 on the exact same spot (11528,8739) where Gigalad stood. The other Prey holder, Gigachad, had been dead since 135.8. His comets wandered (57/2 on his body, 57/4 on Speed Panda's spot), and with everyone else …"
+   }
   },
   {
    "fight": 46,
@@ -6301,18 +6172,16 @@
    "time": "4:16",
    "name": "Kiara Blaiddyd",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "Blind review agreed. No packet; the last event was a Gnashing Wheel hit she lived (22,659, her own Damage Down at 56.24). Positions show her running from r=7.0 at 56.24 to r=24.3 at 57.93, into the wall, as the last player alive. Deathwall after the first mistake, so shared with Earlier mistake, whi…"
+   }
   },
   {
    "fight": 48,
@@ -6355,108 +6224,96 @@
    "time": "2:02",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. The row has no ability. His last hit was the fourth Sacred Sever jump at 118.75 (24,461 plus a 7,556 shield), which he lived, and he died at 120.58 when his buffs dropped. By the rule that is the deathwall, shared with Earlier mistake, which is not listed. His last position samp…"
+   }
   },
   {
    "fight": 48,
    "time": "2:05",
    "name": "Kiara Blaiddyd",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "Blind review agreed. No packet. Her last hit was a Sacred Sever share she lived (36,681). She died at 123.6, 0.5s after taking a Prey marker, at the same moment as Kite during the party's reset. Her last sample is r=11.7 at 121.99, so the wall walk is not confirmed. Deathwall after the first mistake…"
+   }
   },
   {
    "fight": 48,
    "time": "2:05",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No packet. Positions show him walking out east: r=16.4 at 122.58, 19.2 at 122.98, 21.3 at 123.38, and he died at 123.56. That is the deathwall after the first mistake, so shared with Earlier mistake, which is not listed."
+   }
   },
   {
    "fight": 48,
    "time": "2:06",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No packet; his last hit was the third Sacred Sever jump (12,443), which he lived. He died at 124.27 during the reset. His last sample, at 119.64, is r=19.1. Deathwall by rule, after the first mistake, so shared with Earlier mistake, which is not listed."
+   }
   },
   {
    "fight": 48,
    "time": "2:07",
    "name": "Loki Doki",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Loki Doki"
-   ],
-   "why": "Blind review agreed. No packet. He tried to raise Spring at 122.35. Then he ran east at about 5.6y/s, from r=7.2 at 123.38 to r=11.5 at 124.13, which reaches the wall around 125.5. Deathwall after the first mistake, so shared with Earlier mistake, which is not listed."
+   }
   },
   {
    "fight": 48,
    "time": "2:09",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No packet. He walked west from r=12.7 at 123.82 to r=20.0 at 126.81, at the wall, and his buffs dropped at 127.75. He was the last one alive. Deathwall after the first mistake, so shared with Earlier mistake, which is not listed."
+   }
   },
   {
    "fight": 49,
@@ -6519,43 +6376,46 @@
    "time": "1:03",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No packet; his last hit was his own Skyward Leap, which he lived (28,376 plus a 37,598 shield). He went from r=19.5 at 61.33 to r=22.4 at 61.73 on the west side and died at about 62.0. Deathwall after the first mistake, so shared with Earlier mistake, which is not listed."
+   }
   },
   {
    "fight": 49,
    "time": "1:04",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No packet; his last hit was his own Skyward Leap, which he lived (31,760 plus a 35,217 shield). He ran outward on the east side from r=16.3 at 61.37 to r=19.1 at 61.82 and died at about 62.2. Deathwall after the first mistake, so shared with Earlier mistake, which is not listed."
+   }
   },
   {
    "fight": 49,
    "time": "1:06",
    "name": "Absolute Gigachad",
    "mechanic": "Eternal Conviction",
+   "outcome": "fail",
+   "owners": [
+    "Group reset",
+    "Spring Nymphar",
+    "Absolute Gigalad"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
@@ -6563,22 +6423,21 @@
      "Missing bodies",
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad",
-    "Kite Noodle",
-    "Speed Panda",
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. Eternal Conviction at 64.7, before 100 seconds, means an empty Strength tower. Five explosion instances (1-5) snapped him, so 5 of the 6 towers were empty. Four non-tanks were dead before the soak at about 62.7. Kiara's and Kitana's gaps pass to their Dragon's Rage owners, Sprin…"
+   }
   },
   {
    "fight": 49,
    "time": "1:06",
    "name": "Absolute Gigalad",
    "mechanic": "Eternal Conviction",
+   "outcome": "fail",
+   "owners": [
+    "Group reset",
+    "Spring Nymphar",
+    "Absolute Gigalad"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
@@ -6586,22 +6445,21 @@
      "Missing bodies",
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad",
-    "Kite Noodle",
-    "Speed Panda",
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. Eternal Conviction instances 3 and 4: 58,020 then 57,673, at 9,119/119,068 after Bladedance. Same empty Strength towers as the other deaths here: 5 explosions, and 4 non-tanks already dead (Kiara, Kitana, Kite, Speed), passed on to Spring and Gigalad (the Dragon's Rage short sha…"
+   }
   },
   {
    "fight": 49,
    "time": "1:06",
    "name": "Loki Doki",
    "mechanic": "Eternal Conviction",
+   "outcome": "fail",
+   "owners": [
+    "Group reset",
+    "Spring Nymphar",
+    "Absolute Gigalad"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
@@ -6609,22 +6467,21 @@
      "Missing bodies",
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad",
-    "Kite Noodle",
-    "Speed Panda",
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. Eternal Conviction instance 5, 90,690 at 43,095/62,101. Same empty Strength towers: 4 dead non-tanks passed on to Spring and Gigalad (Kiara and Kitana), Kite, and Speed. Loki stood still at (100.0, 88.4), which is a north tower spot in the clean pulls, so he likely soaked the on…"
+   }
   },
   {
    "fight": 49,
    "time": "1:06",
    "name": "Spring Nymphar",
    "mechanic": "Eternal Conviction",
+   "outcome": "fail",
+   "owners": [
+    "Group reset",
+    "Spring Nymphar",
+    "Absolute Gigalad"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
@@ -6632,15 +6489,7 @@
      "Missing bodies",
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad",
-    "Kite Noodle",
-    "Speed Panda",
-    "Spring Nymphar"
-   ],
-   "why": "Blind review agreed. Eternal Conviction instance 1, 91,446 at 12,939 HP, just after her raise at 61.4. Same empty towers: 4 were left by dead non-tanks, passed on as above. The fifth was hers or Loki's. She was Transcendent until 62.8 and moving through the middle at 62.84, so probably hers, and she…"
+   }
   },
   {
    "fight": 50,
@@ -6794,18 +6643,16 @@
    "time": "4:01",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. There is no killing blow on his death row. His last event was the 39.38 Darkdragon Dive (32k, blocked), which he lived (overkill -1). He died at about P3 43.6 with no packet, so this is the deathwall. Kiara's P2 death came earlier and was not his, so the call is shared with Earl…"
+   }
   },
   {
    "fight": 51,
@@ -6830,148 +6677,134 @@
    "time": "0:56",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. His death row has no killing blow and no damage events, so this is the deathwall at about 54. His last sample, at 52.2, was (4.7,3.4), moving east. It came after Kiara's Heavy Impact death, so it is shared with Earlier mistake, which cannot be listed."
+   }
   },
   {
    "fight": 51,
    "time": "0:58",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. No packet and no events on his row: the deathwall at about 56. His last sample, at 55.2, was (19.4,2.6), r 19.6, on the +97° Skyward Leap spot at the arena edge; players top out at about r 20.7 across the log. It came after Kiara's death, so it is his alone among listable owners."
+   }
   },
   {
    "fight": 51,
    "time": "0:59",
    "name": "Kitana Kahn",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kitana Kahn"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kitana Kahn"
-   ],
-   "why": "Blind review agreed. No packet and no events on her row: the deathwall at about 57. Her last sample, at 55.4, was (-0.2,-18.4), r 18.4, next to Thordan at the north edge. It came after Kiara's death."
+   }
   },
   {
    "fight": 51,
    "time": "0:59",
    "name": "Loki Doki",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Loki Doki"
-   ],
-   "why": "Blind review agreed. No packet and no events on his row: the deathwall at about 57. His last sample, at 55.4, was (-10.4,8.5), heading southwest toward the edge. It came after Kiara's death."
+   }
   },
   {
    "fight": 51,
    "time": "1:00",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No packet: the deathwall at about 58. His sample at 58.1 was (-0.1,21.4), r 21.5, beyond the usual r 20.7 limit, on the 180° Skyward Leap spot opposite Thordan. It came after Kiara's death."
+   }
   },
   {
    "fight": 51,
    "time": "1:01",
    "name": "Absolute Gigachad",
    "mechanic": "Skyward Leap",
+   "outcome": "fail",
+   "owners": [
+    "Group reset"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad",
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle",
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. At 59.31 Paulecrain's leap hit him for 510,783 unmitigated: 99,211 + 49,589 shield + 361,983 overkill, at full 99,211. That is far over the 150k fail line. He was a tank standing in the north stack (0,-19.1), 1.4y from Spring, and was hit by leaps whose holders were dead. Positi…"
+   }
   },
   {
    "fight": 51,
    "time": "1:01",
    "name": "Spring Nymphar",
    "mechanic": "Skyward Leap",
+   "outcome": "fail",
+   "owners": [
+    "Group reset"
+   ],
    "by": "review",
+   "why": "Follows the user's ruling that a wall walk after the pull's first death is a reset: a mechanic it left short passes on to Group reset.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad",
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle",
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. All three leaps (packets 28442/43/44) snapped at 58.73 on the only survivors: Spring, Gigachad, and Kiara, who was Transcendent. Spring took Ignasse's normal 61k, then Paulecrain's second leap for 703k at 59.26. She was in the north stack on Thordan's side, more than 24y from ev…"
+   }
   },
   {
    "fight": 51,
    "time": "1:03",
    "name": "Kiara Blaiddyd",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "Blind review agreed. She was raised at 56.86 (Transcendent). She took the three leaps and Dimensional Collapse (Damage Down and Heavy at 59.31) for 0 under Transcendent. All her statuses dropped at 61.1 with no damage packet, so this is the deathwall. The earlier deaths include other players', so it…"
+   }
   },
   {
    "fight": 52,
@@ -7014,108 +6847,96 @@
    "time": "2:02",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. There is no killing blow. His last event was Sacred Sever at 116.25, which he lived. He died at about 120 with no packet: the deathwall. Loki's and Spring's deaths came earlier and were not his, so it is shared with Earlier mistake, which cannot be listed."
+   }
   },
   {
    "fight": 52,
    "time": "2:02",
    "name": "Kiara Blaiddyd",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "Blind review agreed. There is no killing blow. She lived Sacred Sever at 116.34, and her last sample, at 120.3, was (-19,-8), r 20.4, at the edge. She died at about 120 with no packet: the deathwall, after both healers had died to other mistakes."
+   }
   },
   {
    "fight": 52,
    "time": "2:03",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. There is no killing blow. He lived Sacred Sever jump 4 at 118.11 and died at about 121 with no packet: the deathwall. It came after Loki's and Spring's deaths, so it is shared with Earlier mistake, which cannot be listed."
+   }
   },
   {
    "fight": 52,
    "time": "2:05",
    "name": "Kitana Kahn",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kitana Kahn"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kitana Kahn"
-   ],
-   "why": "Blind review agreed. There is no killing blow. She lived Sacred Sever at 118.07, and her Prey (Holy Impact marker) dropped at 123.5, which is the death. There is no packet, so this is the deathwall, after the earlier deaths."
+   }
   },
   {
    "fight": 52,
    "time": "2:05",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. There is no killing blow. He lived Sacred Sever at 118.03 (58k with the group 3 of 4) and died at about 123 with no packet: the deathwall, after the earlier deaths."
+   }
   },
   {
    "fight": 52,
    "time": "2:10",
    "name": "Speed Panda",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "Blind review agreed. There is no killing blow. He lived Sacred Sever at 116.29, and his Prey dropped at 128.06, which is the death. His last sample, at 127.6, was (-18,1), r 17.7, heading out. There is no packet, so this is the deathwall, after the earlier deaths."
+   }
   },
   {
    "fight": 53,
@@ -7324,108 +7145,96 @@
    "time": "2:02",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigachad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad"
-   ],
-   "why": "Blind review agreed. The deaths row has no killing blow, and no hit lands on him after his Sacred Sever share at 117.84, so this is the deathwall. His last position is the north edge, r about 20.3, at 118.2. This came after the pull's first mistake (the Bright Flare overlap and Gigalad's Damage Down…"
+   }
   },
   {
    "fight": 54,
    "time": "2:03",
    "name": "Absolute Gigalad",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Absolute Gigalad"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigalad"
-   ],
-   "why": "Blind review agreed. No packet. He was at 8929,11794, r about 20.9, at the SW edge at 121.36, and died at 121.5, when his Damage Down came off. This is the deathwall. Earlier deaths were not all his own: the Bright Flare overlap was shared with Spring and Speed, and Gigachad's wall was Gigachad's. S…"
+   }
   },
   {
    "fight": 54,
    "time": "2:06",
    "name": "Kiara Blaiddyd",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "Blind review agreed. No packet in any ability file after 117.9. She was heading north from center (r 8.2 at 123.37). Her Prey (applied 122.21) came off at 124.7 on death. This is a deathwall walk after the earlier Bright Flare deaths."
+   }
   },
   {
    "fight": 54,
    "time": "2:08",
    "name": "Loki Doki",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Loki Doki"
-   ],
-   "why": "Blind review agreed. No packet. Loki was at the east edge, 12126,10497, r about 21.8, at 126.04, just before the 126.5 death. This is a deathwall walk after the pull's first mistake."
+   }
   },
   {
    "fight": 54,
    "time": "2:10",
    "name": "Kitana Kahn",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kitana Kahn"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kitana Kahn"
-   ],
-   "why": "Blind review agreed. No packet. Kitana was at the east edge, r about 19.5, at 128.35. Her Prey came off at 128.67 on death. This is a deathwall walk after the earlier deaths."
+   }
   },
   {
    "fight": 54,
    "time": "2:11",
    "name": "Kite Noodle",
    "mechanic": "Deathwall",
-   "by": "review",
+   "outcome": "environment",
+   "owners": [],
+   "by": "user",
+   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "Blind review agreed. No packet. Kite was at the east edge, 12045,9913, r about 20.5, at 129.02, just before the 129.5 death. This is a deathwall walk after the pull's first mistake."
+   }
   }
  ]
 }

@@ -8,6 +8,8 @@ A share that came through an earlier death, such as an empty tower left by a
 player who was already dead, is counted apart from the deaths a player owns by
 their own mistake. One mistake can leave several later mechanics short, and
 counting those as theirs too makes them look like they fail more mechanics.
+A player's own mistake after the pull was lost, more than a second after its
+first death, is left out: the pull could no longer succeed.
 """
 
 from __future__ import annotations
@@ -33,15 +35,23 @@ def night_tally(rows: list[dict]) -> dict:
         starters.update(in_pull)
     owned: Counter[str] = Counter()
     passed_on: Counter[str] = Counter()
+    late = 0
     for row in rows:
         if row.get("outcome") not in {"fail", "raw", "low"}:
             continue
         carried = set(row.get("carried") or [])
+        if row.get("late") and any(
+            blame["who"] not in CONTEXT_SHARES and blame["who"] not in carried
+            for blame in row.get("blames") or []
+        ):
+            late += 1
         for blame in row.get("blames") or []:
             if blame["who"] in CONTEXT_SHARES:
                 continue
-            tally = passed_on if blame["who"] in carried else owned
-            tally[blame["who"]] += (blame.get("confidence") or 0) / 100
+            if blame["who"] in carried:
+                passed_on[blame["who"]] += (blame.get("confidence") or 0) / 100
+            elif not row.get("late"):
+                owned[blame["who"]] += (blame.get("confidence") or 0) / 100
     named = (
         set(starters) | set(owned) | set(passed_on)
         | {who for counter in owners_of.values() for who in counter}
@@ -57,6 +67,8 @@ def night_tally(rows: list[dict]) -> dict:
         "starters": starters.most_common(),
         "owned": [(who, round(share, 1)) for who, share in owned.most_common()],
         "passed_on": [(who, round(share, 1)) for who, share in passed_on.most_common()],
+        # Deaths with an owner's own share after the pull was lost, left out of `owned`.
+        "late": late,
     }
 
 
@@ -87,8 +99,10 @@ def night_lines(rows: list[dict]) -> list[str]:
     lines.append("Who started pulls")
     lines += _people(tally["starters"], str)
     lines.append("")
-    lines.append("Deaths owned by their own mistake, by share")
+    lines.append("Deaths owned by their own mistake while the pull could succeed, by share")
     lines += _people(tally["owned"], _number)
+    if tally["late"]:
+        lines.append(f"  left out: {tally['late']} deaths after the pull was already lost")
     if tally["passed_on"]:
         lines.append("")
         lines.append("Passed on from an earlier death, by share")

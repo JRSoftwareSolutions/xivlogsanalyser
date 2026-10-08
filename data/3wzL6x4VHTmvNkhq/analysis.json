@@ -1,19 +1,19 @@
 {
- "rules": "0ef58f8181144124",
- "engine": "e2e5ab64e1f69e43",
+ "rules": "68430eea8b48cddd",
+ "engine": "968e8001ebc4eb62",
  "log": "e8a8e43e5c52b904",
  "outputs": {
   "facts.json": "df16516b7611c024",
-  "judgments.json": "9bc97d2cf6e3f6e9",
-  "calls.tsv": "b82e59756fab9db6",
-  "session.html": "61bcd6f8362165f2",
+  "judgments.json": "73f97e973feaa2fd",
+  "calls.tsv": "35739de9bbc25b3e",
+  "session.html": "22103c36330e70f3",
   "inputs.json": "e064c893006a2472"
  },
  "counts": {
   "raw": 49,
-  "fail": 376,
+  "fail": 333,
   "low": 6,
-  "environment": 0,
+  "environment": 43,
   "unknown": 0
  },
  "summary": {
@@ -26,7 +26,7 @@
   "dayLabel": "Wed 30 Sep 2026",
   "timeLabel": "21:44\u201300:03",
   "raw": 49,
-  "fail": 376,
+  "fail": 333,
   "low": 6,
   "detail": "",
   "overview": {
@@ -1444,7 +1444,7 @@
     "phase": 2,
     "starts": 14.0,
     "reached": 51,
-    "mistakes": 2
+    "mistakes": 1
    },
    {
     "id": "strength-of-the-ward",
@@ -1452,7 +1452,7 @@
     "phase": 2,
     "starts": 40.0,
     "reached": 48,
-    "mistakes": 32
+    "mistakes": 20
    },
    {
     "id": "heavenly-heel-swap",
@@ -1468,7 +1468,7 @@
     "phase": 2,
     "starts": 105.0,
     "reached": 13,
-    "mistakes": 12
+    "mistakes": 8
    },
    {
     "id": "meteors",
@@ -1476,7 +1476,7 @@
     "phase": 2,
     "starts": 125.0,
     "reached": 6,
-    "mistakes": 2
+    "mistakes": 0
    },
    {
     "id": "dive-from-grace",
@@ -1490,6 +1490,7 @@
   "night": {
    "pulls": 51,
    "labels": [
+    "Group reset",
     "Out of position"
    ],
    "started": [
@@ -1827,35 +1828,35 @@
    "owned": [
     [
      "Spring Nymphar",
-     38.7
+     20.5
     ],
     [
      "Loki Doki",
-     30.7
-    ],
-    [
-     "Absolute Gigachad",
-     28.5
+     13.0
     ],
     [
      "Kiara Blaiddyd",
-     27.8
+     12.0
     ],
     [
      "Kitana Kahn",
-     27.6
-    ],
-    [
-     "Absolute Gigalad",
-     22.0
+     9.5
     ],
     [
      "Speed Panda",
-     15.9
+     7.5
+    ],
+    [
+     "Absolute Gigalad",
+     7.0
+    ],
+    [
+     "Absolute Gigachad",
+     5.0
     ],
     [
      "Kite Noodle",
-     11.4
+     5.0
     ],
     [
      "Out of position",
@@ -1865,7 +1866,7 @@
    "passed_on": [
     [
      "Spring Nymphar",
-     53.2
+     52.5
     ],
     [
      "Kitana Kahn",
@@ -1881,21 +1882,26 @@
     ],
     [
      "Absolute Gigalad",
-     12.0
+     11.9
     ],
     [
      "Absolute Gigachad",
-     9.4
-    ],
-    [
-     "Speed Panda",
-     8.6
+     8.2
     ],
     [
      "Kite Noodle",
-     8.4
+     8.2
+    ],
+    [
+     "Speed Panda",
+     7.8
+    ],
+    [
+     "Group reset",
+     2.5
     ]
-   ]
+   ],
+   "late": 128
   }
  }
 }

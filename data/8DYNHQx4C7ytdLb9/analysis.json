@@ -1,19 +1,19 @@
 {
- "rules": "0ef58f8181144124",
- "engine": "e2e5ab64e1f69e43",
+ "rules": "68430eea8b48cddd",
+ "engine": "968e8001ebc4eb62",
  "log": "16dcfb6841a6438b",
  "outputs": {
   "facts.json": "b1dd0a2a52b2dcab",
-  "judgments.json": "4a092c37458f088c",
-  "calls.tsv": "fa2d73d297e99b93",
-  "session.html": "3bafed4b46b65fdd",
+  "judgments.json": "9fd9d965ac616c75",
+  "calls.tsv": "79209f9030fe8da6",
+  "session.html": "d7067c9902f324c9",
   "inputs.json": "f48daa99d0ac1b58"
  },
  "counts": {
   "raw": 19,
-  "fail": 374,
+  "fail": 284,
   "low": 0,
-  "environment": 0,
+  "environment": 90,
   "unknown": 0
  },
  "summary": {
@@ -26,7 +26,7 @@
   "dayLabel": "Mon 5 Oct 2026",
   "timeLabel": "21:31\u201300:14",
   "raw": 19,
-  "fail": 374,
+  "fail": 284,
   "low": 0,
   "detail": "",
   "overview": {
@@ -1214,7 +1214,7 @@
     "phase": 2,
     "starts": 40.0,
     "reached": 41,
-    "mistakes": 15
+    "mistakes": 12
    },
    {
     "id": "heavenly-heel-swap",
@@ -1230,7 +1230,7 @@
     "phase": 2,
     "starts": 105.0,
     "reached": 26,
-    "mistakes": 9
+    "mistakes": 8
    },
    {
     "id": "meteors",
@@ -1238,7 +1238,7 @@
     "phase": 2,
     "starts": 125.0,
     "reached": 26,
-    "mistakes": 14
+    "mistakes": 8
    },
    {
     "id": "dive-from-grace",
@@ -1246,12 +1246,14 @@
     "phase": 3,
     "starts": 17.0,
     "reached": 8,
-    "mistakes": 8
+    "mistakes": 1
    }
   ],
   "night": {
    "pulls": 47,
-   "labels": [],
+   "labels": [
+    "Group reset"
+   ],
    "started": [
     {
      "mechanic": "Ascalon's Mercy Concealed",
@@ -1594,46 +1596,46 @@
    ],
    "owned": [
     [
-     "Absolute Gigachad",
-     27.3
-    ],
-    [
-     "Absolute Gigalad",
-     25.8
-    ],
-    [
      "Kitana Kahn",
-     24.3
-    ],
-    [
-     "Spring Nymphar",
-     22.5
+     16.0
     ],
     [
      "Loki Doki",
-     22.3
+     11.3
     ],
     [
-     "Speed Panda",
-     18.8
+     "Spring Nymphar",
+     11.2
+    ],
+    [
+     "Absolute Gigalad",
+     10.7
     ],
     [
      "Kiara Blaiddyd",
-     17.3
+     8.5
+    ],
+    [
+     "Absolute Gigachad",
+     4.0
     ],
     [
      "Kite Noodle",
-     14.0
+     2.5
+    ],
+    [
+     "Speed Panda",
+     1.7
     ]
    ],
    "passed_on": [
     [
      "Loki Doki",
-     42.7
+     42.2
     ],
     [
      "Spring Nymphar",
-     31.5
+     31.3
     ],
     [
      "Kitana Kahn",
@@ -1641,25 +1643,30 @@
     ],
     [
      "Kiara Blaiddyd",
-     18.6
-    ],
-    [
-     "Kite Noodle",
-     15.8
+     18.1
     ],
     [
      "Absolute Gigachad",
-     15.1
+     13.8
     ],
     [
-     "Speed Panda",
-     13.6
+     "Kite Noodle",
+     13.1
     ],
     [
      "Absolute Gigalad",
-     13.1
+     12.8
+    ],
+    [
+     "Speed Panda",
+     10.9
+    ],
+    [
+     "Group reset",
+     7.6
     ]
-   ]
+   ],
+   "late": 84
   }
  }
 }

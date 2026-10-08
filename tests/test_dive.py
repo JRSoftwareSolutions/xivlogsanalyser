@@ -38,12 +38,14 @@ class DiveFromGraceTest(unittest.TestCase):
 
     def test_phase_three_counts(self):
         counts = Counter(item.outcome for item in self.phase3)
-        self.assertEqual(counts["fail"], 57)
+        # Two walls came after the pull was lost, so they are resets.
+        self.assertEqual(counts["fail"], 55)
         self.assertEqual(counts["raw"], 8)
         self.assertEqual(counts["low"], 0)
         self.assertEqual(counts["unknown"], 0)
         # Pull 33: Gigalad's circle landed in the north stack and knocked five players into the wall.
-        self.assertEqual(counts["environment"], 0)
+        # Those are fails. The two resets are walls after a pull's first death.
+        self.assertEqual(counts["environment"], 2)
         walls = [item for item in self.phase3 if item.mechanic_id == "deathwall"]
         # Pull 46: Loki's row has no killing blow, but he died as the landing's damage hit
         # the others, to a 716k snapshot of it. That death is the landing, not the wall.

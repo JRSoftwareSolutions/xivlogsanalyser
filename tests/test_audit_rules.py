@@ -203,13 +203,19 @@ class GroupResetTest(unittest.TestCase):
             self.assertEqual(_owners(item), [("Absolute Gigalad", 100)])
             self.assertEqual(item.went_wrong, f"Absolute Gigalad's landing knocked {item.fact.name} into the deathwall.")
 
-    def test_a_wall_after_a_mistake_is_still_a_fail(self):
+    def test_a_wall_after_the_first_death_is_a_reset(self):
+        # The pull was lost at its first death, so walking in after it is resetting the pull.
         walls = [
             item for item in _judged("8DYNHQx4C7ytdLb9")[4]
             if item.fact.fight == 7 and item.mechanic_id == "deathwall"
         ]
         self.assertTrue(walls)
-        self.assertTrue(all(item.outcome == "fail" for item in walls))
+        for item in walls:
+            self.assertTrue(item.late)
+            self.assertEqual((item.outcome, item.cause, item.blames), ("environment", "reset", []))
+            self.assertEqual(
+                item.went_wrong, f"{item.fact.name} walked into the deathwall to reset after the pull was lost.",
+            )
 
 
 class OffTankTest(unittest.TestCase):
@@ -223,7 +229,9 @@ class OffTankTest(unittest.TestCase):
         self.assertEqual(heel.outcome, "fail")
         self.assertEqual(heel.cause, "redirected")
         self.assertEqual(heel.went_wrong, "Absolute Gigachad was dead, so Absolute Gigalad had to take Heavenly Heel.")
-        self.assertEqual(_owners(heel), [("Absolute Gigachad", 100)])
+        # Gigachad walked into the wall at 1:08 to reset a lost pull, so his gap passes on to the reset.
+        self.assertEqual(_owners(heel), [("Group reset", 50)])
+        self.assertEqual(heel.blames[0].via, ["Absolute Gigachad"])
 
 
 class IcePairsTest(unittest.TestCase):

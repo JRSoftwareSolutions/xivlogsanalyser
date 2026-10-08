@@ -326,7 +326,9 @@ def _pull_cards(
     the wrong side is failed by that arrow holder. Everyone else in the party passed.
     A player named only because a death left the mechanic short, the dead player or
     whoever owned that death, is marked `earlier`: their mistake was an earlier
-    mechanic, so it does not count as failing this one.
+    mechanic, so it does not count as failing this one. A player who failed it only
+    after the pull was lost, more than a second after its first death, is marked
+    `late`: the pull could no longer succeed, so it does not count either.
     A pull that dies in a later phase still shows the earlier phase, and the later
     phase gets its own cards.
     """
@@ -351,19 +353,25 @@ def _pull_cards(
                 continue
             failed: dict[str, str] = {}
             own: set[str] = set()
+            earlier: set[str] = set()
             for row in rows:
                 if row["outcome"] != "fail":
                     continue
                 carried = set(row.get("carried") or [])
-                for name in row.get("culprits") or [row["name"]]:
+                # A death that belongs to others never fails the player who died, even
+                # when its only owner is a label such as Group reset or Missed soak.
+                names = row.get("culprits") or ([] if row.get("passedOn") else [row["name"]])
+                for name in names:
                     failed.setdefault(name, row["job"] if name == row["name"] else "")
-                    if name not in carried:
+                    if name in carried:
+                        earlier.add(name)
+                    elif not row.get("late"):
                         own.add(name)
-            seats = [_seat(player["name"], player["job"], failed, own) for player in roster]
+            seats = [_seat(player["name"], player["job"], failed, own, earlier) for player in roster]
             known = {seat["name"] for seat in seats}
             for name, job in failed.items():
                 if name not in known:
-                    seats.append(_seat(name, job, failed, own))
+                    seats.append(_seat(name, job, failed, own, earlier))
                     known.add(name)
             parts_out.append({"id": part["id"], "name": part["name"], "seats": seats})
         if parts_out:
@@ -371,10 +379,10 @@ def _pull_cards(
     return cards
 
 
-def _seat(name: str, job: str, failed: dict[str, str], own: set[str]) -> dict:
+def _seat(name: str, job: str, failed: dict[str, str], own: set[str], earlier: set[str]) -> dict:
     seat = {"name": name, "job": job, "passed": name not in failed}
     if name in failed and name not in own:
-        seat["earlier"] = True
+        seat["earlier" if name in earlier else "late"] = True
     return seat
 
 
@@ -539,7 +547,9 @@ def session_payload(
                 "basis": item.basis,
                 "culprits": culprits,
                 "carried": [name for name in culprits if name in item.carried()],
+                "passedOn": passes_on(item),
                 "first": item.first,
+                "late": item.late,
             }
         )
         pull["firstMistake"] = item.first_mistake
@@ -561,7 +571,8 @@ def session_payload(
     counts = Counter(item.outcome for item in judgments)
     night = night_tally([
         {"fight": item.fact.fight, "outcome": item.outcome, "first_causes": item.first_causes,
-         "blames": [blame.to_dict() for blame in item.blames], "carried": item.carried()}
+         "blames": [blame.to_dict() for blame in item.blames], "carried": item.carried(),
+         "late": item.late}
         for item in judgments
     ])
     return {
@@ -596,9 +607,10 @@ def _pull_index(pull: dict) -> dict:
 
 
 def _card_failed(card: dict) -> bool:
-    """A player failed a component of it themselves, not only through an earlier death."""
+    """A player failed a component of it themselves while the pull could still succeed."""
     return any(
-        not seat["passed"] and not seat.get("earlier") for part in card["parts"] for seat in part["seats"]
+        not seat["passed"] and not seat.get("earlier") and not seat.get("late")
+        for part in card["parts"] for seat in part["seats"]
     )
 
 

@@ -61,11 +61,12 @@ class MarkerClipTest(unittest.TestCase):
         self.assertEqual(len(clipped), 4)
         for row in clipped:
             self.assertEqual(row["culprits"], ["Spring Nymphar"])
-        # The towers at 65s were empty because Kite Noodle and Spring Nymphar were dead.
+        # The towers at 65s were empty because Kite Noodle and Spring Nymphar were dead. Kite
+        # walked into the wall to reset after the pull was lost, so that gap is the reset's.
         towers = [row for row in pull["deaths"] if row["componentId"] == "eternal-conviction"]
         self.assertEqual(sorted(row["name"] for row in towers), ["Absolute Gigalad", "Loki Doki"])
         for row in towers:
-            self.assertEqual(row["culprits"], ["Kite Noodle", "Spring Nymphar"])
+            self.assertEqual(row["culprits"], ["Spring Nymphar"])
         self.assertEqual(
             sorted(row["cast"] for row in clipped),
             ["Dragon's Rage", "Dragon's Rage", "Dragon's Rage", "Holy Shield Bash"],
@@ -73,11 +74,13 @@ class MarkerClipTest(unittest.TestCase):
 
     def test_a_leap_on_a_tank_belongs_to_the_dead_holders(self):
         # A tank never holds a marker. The leap fell on Gigachad because its holder walked
-        # into the wall first: Speed and Kiara were dead at the two empty spots.
+        # into the wall first: Speed and Kiara were dead at the two empty spots. Both walked
+        # in to reset after the pull was lost, so the leap passes on to the reset.
         gigalad = next(item for item in self._deaths(15) if item.fact.name == "Absolute Gigalad")
         self.assertEqual(gigalad.cause, "orphan")
-        self.assertEqual(gigalad.basis, "position")
-        self.assertEqual(_owners(gigalad), [("Speed Panda", 50), ("Kiara Blaiddyd", 50)])
+        self.assertEqual(gigalad.basis, "label")
+        self.assertEqual(_owners(gigalad), [("Group reset", 100)])
+        self.assertEqual(gigalad.blames[0].via, ["Speed Panda", "Kiara Blaiddyd"])
 
     def test_the_holder_off_their_spot_owns_the_overlap(self):
         deaths = {item.fact.name: item for item in self._deaths(25)}
@@ -91,7 +94,8 @@ class MarkerClipTest(unittest.TestCase):
 
     def test_leaps_with_dead_holders_fall_on_the_survivors(self):
         # Every leap fell on Spring or Gigachad in the stack: their holders, Kite and Speed,
-        # had walked into the wall on their spots before the leaps landed.
+        # had walked into the wall on their spots before the leaps landed, resetting the pull
+        # after Kiara died to Heavy Impact at 0:48.
         deaths = {item.fact.name: item for item in self._deaths(51)}
         for name in ("Spring Nymphar", "Absolute Gigachad"):
             item = deaths[name]
@@ -99,7 +103,8 @@ class MarkerClipTest(unittest.TestCase):
                 item.went_wrong,
                 "Speed Panda and Kite Noodle died holding a marker, so its leap fell on someone else.",
             )
-            self.assertEqual(_owners(item), [("Speed Panda", 50), ("Kite Noodle", 50)])
+            self.assertEqual(_owners(item), [("Group reset", 100)])
+            self.assertEqual(item.blames[0].via, ["Speed Panda", "Kite Noodle"])
 
     def test_a_second_leap_is_not_an_empty_tower(self):
         for item in self.judgments:
@@ -155,13 +160,15 @@ class PositionTest(unittest.TestCase):
 
     def test_a_leap_with_no_living_holder_names_the_dead_holder(self):
         # Speed walked into the wall near the empty spot, so the second leap on Kiara was his.
+        # He walked in with three others to reset after the pull was lost, so it is the reset's.
         kiara = self._one(68, "Kiara Blaiddyd", "Skyward Leap")
         self.assertEqual(kiara.outcome, "fail")
         self.assertEqual(
             kiara.went_wrong,
             "Speed Panda died holding a marker, so its leap fell on someone else.",
         )
-        self.assertEqual(_owners(kiara), [("Speed Panda", 100)])
+        self.assertEqual(_owners(kiara), [("Group reset", 100)])
+        self.assertEqual(kiara.blames[0].via, ["Speed Panda"])
 
 
 if __name__ == "__main__":

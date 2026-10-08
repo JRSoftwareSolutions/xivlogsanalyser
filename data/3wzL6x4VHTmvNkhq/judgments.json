@@ -100,6 +100,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -211,6 +212,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -323,6 +325,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -434,6 +437,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -547,6 +551,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -661,6 +666,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -761,6 +767,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -831,24 +838,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigalad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigalad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -964,17 +963,21 @@
         "confidence": 7
       },
       {
-        "who": "Absolute Gigalad",
-        "confidence": 14
+        "who": "Group reset",
+        "confidence": 14,
+        "via": [
+          "Absolute Gigalad"
+        ]
       }
     ],
     "carried": [
       "Absolute Gigachad",
       "Kitana Kahn",
-      "Absolute Gigalad"
+      "Group reset"
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -1066,6 +1069,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -1156,6 +1160,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -1247,6 +1252,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -1338,6 +1344,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -1430,6 +1437,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -1523,6 +1531,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -1627,6 +1636,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -1705,24 +1715,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Spring Nymphar walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Spring Nymphar walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -1815,16 +1817,20 @@
         "confidence": 50
       },
       {
-        "who": "Spring Nymphar",
-        "confidence": 50
+        "who": "Group reset",
+        "confidence": 50,
+        "via": [
+          "Spring Nymphar"
+        ]
       }
     ],
     "carried": [
       "Loki Doki",
-      "Spring Nymphar"
+      "Group reset"
     ],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -1921,6 +1927,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -2024,6 +2031,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -2118,6 +2126,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -2213,6 +2222,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -2326,6 +2336,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -2429,6 +2440,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -2528,6 +2540,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -2627,6 +2640,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -2798,6 +2812,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -2876,6 +2891,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -2972,6 +2988,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -3072,6 +3089,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -3171,6 +3189,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -3277,6 +3296,7 @@
     "carried": [],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -3382,6 +3402,7 @@
     "carried": [],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -3504,6 +3525,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -3632,6 +3654,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -3772,6 +3795,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -3859,6 +3883,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -3939,6 +3964,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -4026,6 +4052,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -4145,6 +4172,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -4253,6 +4281,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -4429,6 +4458,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -4566,6 +4596,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -4707,6 +4738,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -4848,6 +4880,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -4991,6 +5024,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -5089,6 +5123,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": false,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
     "first_causes": [
       {
@@ -5199,6 +5234,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
     "first_causes": [
       {
@@ -5327,6 +5363,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
     "first_causes": [
       {
@@ -5454,6 +5491,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
     "first_causes": [
       {
@@ -5611,6 +5649,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
     "first_causes": [
       {
@@ -5744,6 +5783,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
     "first_causes": [
       {
@@ -5877,6 +5917,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
     "first_causes": [
       {
@@ -6010,6 +6051,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
     "first_causes": [
       {
@@ -6087,6 +6129,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -6178,6 +6221,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -6260,6 +6304,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -6365,6 +6410,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -6462,6 +6508,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -6528,24 +6575,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Speed Panda walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Speed Panda",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Speed Panda walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -6708,6 +6747,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -6827,6 +6867,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -6932,6 +6973,7 @@
     ],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -7009,6 +7051,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -7123,6 +7166,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -7241,6 +7285,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -7357,6 +7402,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -7506,6 +7552,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -7644,6 +7691,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -7795,6 +7843,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -7948,6 +7997,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -8113,6 +8163,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
       {
@@ -8216,6 +8267,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
     "first_causes": [
       {
@@ -8345,6 +8397,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
     "first_causes": [
       {
@@ -8447,6 +8500,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
     "first_causes": [
       {
@@ -8591,6 +8645,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
     "first_causes": [
       {
@@ -8708,6 +8763,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
     "first_causes": [
       {
@@ -8826,6 +8882,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
     "first_causes": [
       {
@@ -8942,6 +8999,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
     "first_causes": [
       {
@@ -9058,6 +9116,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
     "first_causes": [
       {
@@ -9142,6 +9201,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
@@ -9265,6 +9325,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
@@ -9415,6 +9476,7 @@
     ],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
@@ -9555,6 +9617,7 @@
     ],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
@@ -9662,6 +9725,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
@@ -9770,6 +9834,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
@@ -9905,6 +9970,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
@@ -10014,6 +10080,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
@@ -10103,6 +10170,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -10194,6 +10262,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -10307,6 +10376,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -10417,6 +10487,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -10547,6 +10618,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -10647,6 +10719,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -10726,24 +10799,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Spring Nymphar walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Spring Nymphar walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -10846,6 +10911,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -10948,6 +11014,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
@@ -11025,6 +11092,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
     "first_causes": [
       {
@@ -11129,6 +11197,7 @@
     "carried": [],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
     "first_causes": [
       {
@@ -11236,6 +11305,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
     "first_causes": [
       {
@@ -11320,6 +11390,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
     "first_causes": [
       {
@@ -11426,6 +11497,7 @@
     ],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
     "first_causes": [
       {
@@ -11541,6 +11613,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
     "first_causes": [
       {
@@ -11655,6 +11728,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
     "first_causes": [
       {
@@ -11785,6 +11859,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
     "first_causes": [
       {
@@ -11928,6 +12003,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
     "first_causes": [
       {
@@ -12005,6 +12081,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -12150,6 +12227,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -12265,6 +12343,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -12431,6 +12510,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -12560,6 +12640,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -12690,6 +12771,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -12834,6 +12916,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -12966,6 +13049,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -13128,6 +13212,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
     "first_causes": [
       {
@@ -13250,6 +13335,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
     "first_causes": [
       {
@@ -13381,6 +13467,7 @@
     ],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
     "first_causes": [
       {
@@ -13525,6 +13612,7 @@
     ],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
     "first_causes": [
       {
@@ -13655,6 +13743,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
     "first_causes": [
       {
@@ -13774,6 +13863,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
     "first_causes": [
       {
@@ -13894,6 +13984,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
     "first_causes": [
       {
@@ -14015,6 +14106,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
     "first_causes": [
       {
@@ -14121,6 +14213,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -14217,6 +14310,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -14312,6 +14406,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -14474,6 +14569,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -14594,6 +14690,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -14721,6 +14818,7 @@
     ],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -14840,6 +14938,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -14961,6 +15060,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -15038,6 +15138,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -15138,6 +15239,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -15238,6 +15340,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -15363,6 +15466,7 @@
     ],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -15480,6 +15584,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -15597,6 +15702,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -15740,6 +15846,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -15860,6 +15967,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -15981,6 +16089,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -16139,6 +16248,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
     "first_causes": [
       {
@@ -16271,6 +16381,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
     "first_causes": [
       {
@@ -16401,6 +16512,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
     "first_causes": [
       {
@@ -16532,6 +16644,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
     "first_causes": [
       {
@@ -16676,6 +16789,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
     "first_causes": [
       {
@@ -16821,6 +16935,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
     "first_causes": [
       {
@@ -16940,6 +17055,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
     "first_causes": [
       {
@@ -17032,24 +17148,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
     "first_causes": [
       {
@@ -17156,6 +17264,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -17299,6 +17408,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -17420,6 +17530,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -17542,6 +17653,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -17688,6 +17800,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -17835,6 +17948,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -17943,24 +18057,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -18096,15 +18202,19 @@
     "cause": "redirected",
     "blames": [
       {
-        "who": "Absolute Gigachad",
-        "confidence": 100
+        "who": "Group reset",
+        "confidence": 50,
+        "via": [
+          "Absolute Gigachad"
+        ]
       }
     ],
     "carried": [
-      "Absolute Gigachad"
+      "Group reset"
     ],
-    "basis": "hit-list",
+    "basis": "label",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -18214,6 +18324,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": false,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
     "first_causes": [
       {
@@ -18335,6 +18446,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
     "first_causes": [
       {
@@ -18508,6 +18620,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
     "first_causes": [
       {
@@ -18620,6 +18733,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
     "first_causes": [
       {
@@ -18760,6 +18874,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
     "first_causes": [
       {
@@ -18901,6 +19016,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
     "first_causes": [
       {
@@ -19028,6 +19144,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
     "first_causes": [
       {
@@ -19195,6 +19312,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
     "first_causes": [
       {
@@ -19328,6 +19446,7 @@
     "carried": [],
     "basis": "hit-list",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
     "first_causes": [
       {
@@ -19455,6 +19574,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
     "first_causes": [
       {
@@ -19594,6 +19714,7 @@
     ],
     "basis": "hit-list",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
     "first_causes": [
       {
@@ -19724,6 +19845,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
     "first_causes": [
       {
@@ -19866,6 +19988,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
     "first_causes": [
       {
@@ -20020,6 +20143,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
     "first_causes": [
       {
@@ -20154,6 +20278,7 @@
     ],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
     "first_causes": [
       {
@@ -20241,24 +20366,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
     "first_causes": [
       {
@@ -20362,6 +20479,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -20483,6 +20601,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -20607,6 +20726,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -20729,6 +20849,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -20821,6 +20942,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -20959,6 +21081,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -21071,6 +21194,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -21208,6 +21332,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
       {
@@ -21319,6 +21444,7 @@
     "carried": [],
     "basis": "debuff",
     "first": true,
+    "late": false,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
     "first_causes": [
       {
@@ -21423,6 +21549,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
     "first_causes": [
       {
@@ -21512,6 +21639,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
     "first_causes": [
       {
@@ -21617,6 +21745,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
     "first_causes": [
       {
@@ -21709,6 +21838,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
     "first_causes": [
       {
@@ -21810,6 +21940,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
     "first_causes": [
       {
@@ -21912,6 +22043,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
     "first_causes": [
       {
@@ -22026,6 +22158,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
     "first_causes": [
       {
@@ -22112,6 +22245,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -22192,6 +22326,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -22275,6 +22410,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -22342,24 +22478,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Speed Panda walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Speed Panda",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Speed Panda walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -22428,24 +22556,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -22514,24 +22634,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kitana Kahn walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kitana Kahn walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -22600,24 +22712,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kite Noodle walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kite Noodle",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kite Noodle walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -22689,24 +22793,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigalad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigalad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -22812,6 +22908,7 @@
     "carried": [],
     "basis": "hit-list",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -22919,6 +23016,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -23041,6 +23139,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -23186,6 +23285,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -23321,6 +23421,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -23457,6 +23558,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -23542,24 +23644,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -23646,24 +23740,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigalad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigalad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -23741,6 +23827,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
     "first_causes": [
       {
@@ -23834,6 +23921,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
     "first_causes": [
       {
@@ -23963,6 +24051,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
     "first_causes": [
       {
@@ -24078,6 +24167,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
     "first_causes": [
       {
@@ -24183,6 +24273,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
     "first_causes": [
       {
@@ -24303,6 +24394,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
     "first_causes": [
       {
@@ -24410,6 +24502,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
     "first_causes": [
       {
@@ -24518,6 +24611,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
     "first_causes": [
       {
@@ -24638,6 +24732,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
     "first_causes": [
       {
@@ -24727,6 +24822,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
     "first_causes": [
       {
@@ -24818,6 +24914,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
     "first_causes": [
       {
@@ -24922,6 +25019,7 @@
     "carried": [],
     "basis": "debuff",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
     "first_causes": [
       {
@@ -25015,6 +25113,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
     "first_causes": [
       {
@@ -25121,6 +25220,7 @@
     "carried": [],
     "basis": "debuff",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
     "first_causes": [
       {
@@ -25216,6 +25316,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
     "first_causes": [
       {
@@ -25331,6 +25432,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
     "first_causes": [
       {
@@ -25410,24 +25512,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
     "first_causes": [
       {
@@ -25548,6 +25642,7 @@
     "carried": [],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
     "first_causes": [
       {
@@ -25706,6 +25801,7 @@
     ],
     "basis": "position",
     "first": true,
+    "late": false,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
     "first_causes": [
       {
@@ -25850,6 +25946,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
     "first_causes": [
       {
@@ -26005,6 +26102,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
     "first_causes": [
       {
@@ -26162,6 +26260,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
     "first_causes": [
       {
@@ -26309,6 +26408,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
     "first_causes": [
       {
@@ -26469,6 +26569,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
     "first_causes": [
       {
@@ -26563,24 +26664,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
     "first_causes": [
       {
@@ -26658,6 +26751,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
     "first_causes": [
       {
@@ -26738,6 +26832,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
     "first_causes": [
       {
@@ -26822,6 +26917,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
     "first_causes": [
       {
@@ -26887,24 +26983,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kiara Blaiddyd walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kiara Blaiddyd",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kiara Blaiddyd walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
     "first_causes": [
       {
@@ -26971,24 +27059,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Loki Doki walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Loki Doki",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Loki Doki walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
     "first_causes": [
       {
@@ -27056,24 +27136,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kitana Kahn walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kitana Kahn walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
     "first_causes": [
       {
@@ -27141,24 +27213,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Speed Panda walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Speed Panda",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Speed Panda walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
     "first_causes": [
       {
@@ -27228,24 +27292,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kite Noodle walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kite Noodle",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kite Noodle walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
     "first_causes": [
       {
@@ -27323,6 +27379,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
       {
@@ -27413,6 +27470,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
       {
@@ -27504,6 +27562,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
       {
@@ -27599,6 +27658,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
       {
@@ -27696,6 +27756,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
       {
@@ -27788,6 +27849,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
       {
@@ -27899,6 +27961,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
       {
@@ -28009,6 +28072,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
       {
@@ -28086,6 +28150,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -28179,6 +28244,7 @@
     "carried": [],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -28282,6 +28348,7 @@
     "carried": [],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -28387,6 +28454,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -28492,6 +28560,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -28597,6 +28666,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -28705,6 +28775,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -28828,6 +28899,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -28963,6 +29035,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
       {
@@ -29040,6 +29113,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -29194,6 +29268,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -29390,6 +29465,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -29552,6 +29628,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -29715,6 +29792,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -29890,6 +29968,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -30056,6 +30135,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -30223,6 +30303,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -30333,24 +30414,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigalad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigalad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -30428,6 +30501,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
     "first_causes": [
       {
@@ -30524,6 +30598,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
     "first_causes": [
       {
@@ -30622,6 +30697,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
     "first_causes": [
       {
@@ -30735,6 +30811,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
     "first_causes": [
       {
@@ -30849,6 +30926,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
     "first_causes": [
       {
@@ -30950,6 +31028,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
     "first_causes": [
       {
@@ -31052,6 +31131,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
     "first_causes": [
       {
@@ -31155,6 +31235,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
     "first_causes": [
       {
@@ -31233,24 +31314,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kiara Blaiddyd walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kiara Blaiddyd",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kiara Blaiddyd walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
     "first_causes": [
       {
@@ -31347,6 +31420,7 @@
     "carried": [],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
     "first_causes": [
       {
@@ -31492,6 +31566,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
     "first_causes": [
       {
@@ -31616,6 +31691,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
     "first_causes": [
       {
@@ -31752,6 +31828,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
     "first_causes": [
       {
@@ -31864,6 +31941,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
     "first_causes": [
       {
@@ -32002,6 +32080,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
     "first_causes": [
       {
@@ -32087,24 +32166,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
     "first_causes": [
       {
@@ -32191,24 +32262,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigalad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigalad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
     "first_causes": [
       {
@@ -32286,6 +32349,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -32398,6 +32462,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -32525,6 +32590,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -32692,6 +32758,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -32820,6 +32887,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -32950,6 +33018,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -33079,6 +33148,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -33279,6 +33349,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -33407,6 +33478,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -33554,6 +33626,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
       {
@@ -33698,6 +33771,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
       {
@@ -33855,6 +33929,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
       {
@@ -33984,7 +34059,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them. They still had Hysteria from the gaze.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Loki Doki looked at the gaze and walked into the deathwall with Hysteria.",
     "cause": "personal",
     "blames": [
@@ -33996,6 +34071,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
       {
@@ -34156,6 +34232,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
       {
@@ -34287,7 +34364,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them. They still had Hysteria from the gaze.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Absolute Gigalad looked at the gaze and walked into the deathwall with Hysteria.",
     "cause": "personal",
     "blames": [
@@ -34299,6 +34376,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
       {
@@ -34445,6 +34523,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
       {
@@ -34647,6 +34726,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
       {
@@ -34737,6 +34817,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
       {
@@ -34839,6 +34920,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
       {
@@ -34970,6 +35052,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
       {
@@ -35089,6 +35172,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
       {
@@ -35197,24 +35281,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Speed Panda walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Speed Panda",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Speed Panda walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
       {
@@ -35359,8 +35435,11 @@
         ]
       },
       {
-        "who": "Speed Panda",
-        "confidence": 20
+        "who": "Group reset",
+        "confidence": 20,
+        "via": [
+          "Speed Panda"
+        ]
       },
       {
         "who": "Kiara Blaiddyd",
@@ -35371,10 +35450,11 @@
       "Absolute Gigalad",
       "Loki Doki",
       "Absolute Gigachad",
-      "Speed Panda"
+      "Group reset"
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
       {
@@ -35493,8 +35573,11 @@
         ]
       },
       {
-        "who": "Speed Panda",
-        "confidence": 20
+        "who": "Group reset",
+        "confidence": 20,
+        "via": [
+          "Speed Panda"
+        ]
       },
       {
         "who": "Kiara Blaiddyd",
@@ -35505,10 +35588,11 @@
       "Absolute Gigalad",
       "Loki Doki",
       "Absolute Gigachad",
-      "Speed Panda"
+      "Group reset"
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
       {
@@ -35643,8 +35727,11 @@
         ]
       },
       {
-        "who": "Speed Panda",
-        "confidence": 20
+        "who": "Group reset",
+        "confidence": 20,
+        "via": [
+          "Speed Panda"
+        ]
       },
       {
         "who": "Kiara Blaiddyd",
@@ -35655,10 +35742,11 @@
       "Absolute Gigalad",
       "Loki Doki",
       "Absolute Gigachad",
-      "Speed Panda"
+      "Group reset"
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
       {
@@ -35793,8 +35881,11 @@
         ]
       },
       {
-        "who": "Speed Panda",
-        "confidence": 20
+        "who": "Group reset",
+        "confidence": 20,
+        "via": [
+          "Speed Panda"
+        ]
       },
       {
         "who": "Kiara Blaiddyd",
@@ -35805,10 +35896,11 @@
       "Absolute Gigalad",
       "Loki Doki",
       "Absolute Gigachad",
-      "Speed Panda"
+      "Group reset"
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
       {
@@ -35932,6 +36024,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
     "first_causes": [
       {
@@ -36077,6 +36170,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
     "first_causes": [
       {
@@ -36223,6 +36317,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
     "first_causes": [
       {
@@ -36370,6 +36465,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
     "first_causes": [
       {
@@ -36493,6 +36589,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
     "first_causes": [
       {
@@ -36642,6 +36739,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
     "first_causes": [
       {
@@ -36741,24 +36839,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigalad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigalad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
     "first_causes": [
       {
@@ -36871,24 +36961,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
     "first_causes": [
       {
@@ -36995,6 +37077,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -37106,6 +37189,7 @@
     "carried": [],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -37233,6 +37317,7 @@
     "carried": [],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -37361,6 +37446,7 @@
     "carried": [],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -37492,6 +37578,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -37624,6 +37711,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -37743,6 +37831,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -37836,24 +37925,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -37948,24 +38029,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigalad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigalad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
       {
@@ -38095,6 +38168,7 @@
     "carried": [],
     "basis": "hit-list",
     "first": true,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -38228,6 +38302,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -38350,6 +38425,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -38485,6 +38561,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -38609,6 +38686,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -38734,6 +38812,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -38842,24 +38921,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -38945,24 +39016,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigalad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigalad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
     "first_causes": [
       {
@@ -39076,6 +39139,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -39209,6 +39273,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -39325,6 +39390,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -39442,6 +39508,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -39560,6 +39627,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -39694,6 +39762,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -39814,6 +39883,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -39937,6 +40007,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -40023,24 +40094,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kiara Blaiddyd walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kiara Blaiddyd",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kiara Blaiddyd walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
     "first_causes": [
       {
@@ -40212,6 +40275,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
     "first_causes": [
       {
@@ -40367,7 +40431,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them. They still had Hysteria from the gaze.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Kiara Blaiddyd looked at the gaze and walked into the deathwall with Hysteria.",
     "cause": "personal",
     "blames": [
@@ -40379,6 +40443,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": false,
+    "late": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
     "first_causes": [
       {
@@ -40570,6 +40635,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
     "first_causes": [
       {
@@ -40727,7 +40793,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them. They still had Hysteria from the gaze.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Kitana Kahn looked at the gaze and walked into the deathwall with Hysteria.",
     "cause": "personal",
     "blames": [
@@ -40739,6 +40805,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
     "first_causes": [
       {
@@ -40927,6 +40994,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
     "first_causes": [
       {
@@ -41116,6 +41184,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
     "first_causes": [
       {
@@ -41299,6 +41368,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
     "first_causes": [
       {
@@ -41495,6 +41565,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
     "first_causes": [
       {
@@ -41623,6 +41694,7 @@
     "carried": [],
     "basis": "role",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
       {
@@ -41720,7 +41792,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them. They still had Hysteria from the gaze.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Kiara Blaiddyd looked at the gaze and walked into the deathwall with Hysteria.",
     "cause": "personal",
     "blames": [
@@ -41732,6 +41804,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
       {
@@ -41859,6 +41932,7 @@
     "carried": [],
     "basis": "debuff",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
       {
@@ -42004,6 +42078,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
       {
@@ -42155,6 +42230,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
       {
@@ -42302,6 +42378,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
       {
@@ -42451,6 +42528,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
       {
@@ -42642,6 +42720,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
       {
@@ -42778,6 +42857,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
       {
@@ -42874,6 +42954,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
       {
@@ -42974,7 +43055,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them. They still had Hysteria from the gaze.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Absolute Gigalad looked at the gaze and walked into the deathwall with Hysteria.",
     "cause": "personal",
     "blames": [
@@ -42986,6 +43067,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": true,
+    "late": false,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
       {
@@ -43106,6 +43188,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
       {
@@ -43225,6 +43308,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
       {
@@ -43360,6 +43444,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
       {
@@ -43489,6 +43574,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
       {
@@ -43643,6 +43729,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
       {
@@ -43749,6 +43836,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
       {
@@ -43833,6 +43921,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
     "first_causes": [
       {
@@ -43911,6 +44000,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
     "first_causes": [
       {
@@ -43976,24 +44066,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kiara Blaiddyd walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kiara Blaiddyd",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kiara Blaiddyd walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
     "first_causes": [
       {
@@ -44060,24 +44142,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
     "first_causes": [
       {
@@ -44145,24 +44219,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kitana Kahn walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kitana Kahn walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
     "first_causes": [
       {
@@ -44230,24 +44296,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kite Noodle walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kite Noodle",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kite Noodle walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
     "first_causes": [
       {
@@ -44317,24 +44375,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Speed Panda walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Speed Panda",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Speed Panda walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
     "first_causes": [
       {
@@ -44405,24 +44455,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigalad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigalad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
     "first_causes": [
       {
@@ -44551,6 +44593,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
       {
@@ -44645,7 +44688,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them. They still had Hysteria from the gaze.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Speed Panda looked at the gaze and walked into the deathwall with Hysteria.",
     "cause": "personal",
     "blames": [
@@ -44657,6 +44700,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": true,
+    "late": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
       {
@@ -44777,6 +44821,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
       {
@@ -44898,6 +44943,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
       {
@@ -45005,24 +45051,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kitana Kahn walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kitana Kahn walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
       {
@@ -45144,6 +45182,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
       {
@@ -45262,6 +45301,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
       {
@@ -45374,6 +45414,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
       {
@@ -45510,7 +45551,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them. They still had Hysteria from the gaze.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Absolute Gigachad looked at the gaze and walked into the deathwall with Hysteria.",
     "cause": "personal",
     "blames": [
@@ -45522,6 +45563,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
     "first_causes": [
       {
@@ -45675,6 +45717,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": false,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
     "first_causes": [
       {
@@ -45821,6 +45864,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
     "first_causes": [
       {
@@ -45959,6 +46003,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
     "first_causes": [
       {
@@ -46126,6 +46171,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
     "first_causes": [
       {
@@ -46300,6 +46346,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
     "first_causes": [
       {
@@ -46472,6 +46519,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
     "first_causes": [
       {
@@ -46659,6 +46707,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
     "first_causes": [
       {
@@ -46744,6 +46793,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -46824,6 +46874,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -46906,6 +46957,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -46989,6 +47041,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -47073,6 +47126,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -47199,6 +47253,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -47326,6 +47381,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -47454,6 +47510,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -47583,6 +47640,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [
       {
@@ -47696,6 +47754,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
     "first_causes": [
       {
@@ -47841,6 +47900,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
     "first_causes": [
       {
@@ -47998,6 +48058,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
     "first_causes": [
       {
@@ -48145,6 +48206,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
     "first_causes": [
       {
@@ -48302,6 +48364,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
     "first_causes": [
       {
@@ -48460,6 +48523,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
     "first_causes": [
       {
@@ -48612,6 +48676,7 @@
     "carried": [],
     "basis": "debuff",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
     "first_causes": [
       {
@@ -48765,6 +48830,7 @@
     "carried": [],
     "basis": "debuff",
     "first": false,
+    "late": true,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
     "first_causes": [
       {
@@ -48850,6 +48916,7 @@
     "carried": [],
     "basis": "hit",
     "first": true,
+    "late": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -48946,7 +49013,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them. They still had Hysteria from the gaze.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Kiara Blaiddyd looked at the gaze and walked into the deathwall with Hysteria.",
     "cause": "personal",
     "blames": [
@@ -48958,6 +49025,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -49131,6 +49199,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -49294,6 +49363,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -49459,6 +49529,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -49623,6 +49694,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -49770,6 +49842,7 @@
     "carried": [],
     "basis": "hit",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -49914,6 +49987,7 @@
     "carried": [],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -50081,6 +50155,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
       {
@@ -50144,7 +50219,7 @@
     "mechanic": "Deathwall",
     "outcome": "fail",
     "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
     "went_wrong": "Kite Noodle walked into the deathwall.",
     "cause": "personal",
     "blames": [
@@ -50156,6 +50231,7 @@
     "carried": [],
     "basis": "no-packet",
     "first": true,
+    "late": false,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
     "first_causes": [
       {
@@ -50270,6 +50346,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
     "first_causes": [
       {
@@ -50388,6 +50465,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
     "first_causes": [
       {
@@ -50584,6 +50662,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
     "first_causes": [
       {
@@ -50791,6 +50870,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
     "first_causes": [
       {
@@ -50913,6 +50993,7 @@
     ],
     "basis": "position",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
     "first_causes": [
       {
@@ -50992,24 +51073,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Spring Nymphar walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Spring Nymphar",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Spring Nymphar walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
     "first_causes": [
       {
@@ -51078,24 +51151,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kite Noodle walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Kite Noodle",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Kite Noodle walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
     "first_causes": [
       {
@@ -51194,25 +51259,30 @@
     "cause": "empty",
     "blames": [
       {
+        "who": "Group reset",
+        "confidence": 40,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
         "who": "Kite Noodle",
-        "confidence": 80,
+        "confidence": 60,
         "via": [
           "Speed Panda",
           "Kitana Kahn",
           "Loki Doki"
         ]
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 20
       }
     ],
     "carried": [
-      "Kite Noodle",
-      "Spring Nymphar"
+      "Group reset",
+      "Kite Noodle"
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
     "first_causes": [
       {
@@ -51303,6 +51373,7 @@
     "carried": [],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
     "first_causes": [
       {
@@ -51396,6 +51467,7 @@
     "carried": [],
     "basis": "hit-list",
     "first": false,
+    "late": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
     "first_causes": [
       {
@@ -51493,6 +51565,7 @@
     "carried": [],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
     "first_causes": [
       {
@@ -51592,6 +51665,7 @@
     "carried": [],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
     "first_causes": [
       {
@@ -51690,6 +51764,7 @@
     "carried": [],
     "basis": "role",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
     "first_causes": [
       {
@@ -51798,6 +51873,7 @@
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
     "first_causes": [
       {
@@ -51867,24 +51943,16 @@
     "amp_ms": null,
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
-    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall after the first mistake.",
-    "cause": "after",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
-      },
-      {
-        "who": "Earlier mistake",
-        "confidence": 50
-      }
-    ],
+    "outcome": "environment",
+    "happened": "Nothing hit them. The pull was already lost.",
+    "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After a Damage Down or Hysteria it is still a mistake, but the first mistake of the pull usually caused it. After the pull's first death the pull is lost, and walking in resets it: nobody's mistake.",
+    "went_wrong": "Absolute Gigachad walked into the deathwall to reset after the pull was lost.",
+    "cause": "reset",
+    "blames": [],
     "carried": [],
-    "basis": "no-packet",
+    "basis": "",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
     "first_causes": [
       {
@@ -51984,7 +52052,7 @@
       },
       {
         "who": "Absolute Gigachad",
-        "confidence": 35,
+        "confidence": 21,
         "via": [
           "Kite Noodle",
           "Kiara Blaiddyd",
@@ -51998,15 +52066,24 @@
           "Speed Panda",
           "Kitana Kahn"
         ]
+      },
+      {
+        "who": "Group reset",
+        "confidence": 14,
+        "via": [
+          "Absolute Gigachad"
+        ]
       }
     ],
     "carried": [
       "Spring Nymphar",
       "Absolute Gigachad",
-      "Loki Doki"
+      "Loki Doki",
+      "Group reset"
     ],
     "basis": "hit-list",
     "first": false,
+    "late": true,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
     "first_causes": [
       {

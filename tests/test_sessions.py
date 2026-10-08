@@ -233,9 +233,10 @@ class PullCardsTest(unittest.TestCase):
         self.assertTrue(concealed["Loki Doki"]["passed"])
         leap = _seats(by_name["Skyward Leap"])
         self.assertFalse(leap["Kitana Kahn"]["passed"])
-        # Kiara was on her spot. The second leap on her was Speed's, who died holding it.
+        # Kiara was on her spot. The second leap on her was Speed's, who died holding it while
+        # walking in to reset the lost pull, so nobody failed it.
         self.assertTrue(leap["Kiara Blaiddyd"]["passed"])
-        self.assertFalse(leap["Speed Panda"]["passed"])
+        self.assertTrue(leap["Speed Panda"]["passed"])
         self.assertTrue(leap["Spring Nymphar"]["passed"])
         names = {card["id"] for card in self._pull(68)["cards"]}
         self.assertNotIn("heavenly-heel-swap", names)
@@ -308,13 +309,14 @@ class PullCardsTest(unittest.TestCase):
         ]
         self.assertEqual(strength["reached"], len(cards))
         # The towers at 63s are part of Strength, and an empty tower is a mistake. A pull whose
-        # only empty tower was left by a player already dead is not a mistake on Strength.
-        self.assertEqual((strength["reached"], strength["mistakes"]), (53, 21))
+        # only empty tower was left by a player already dead is not a mistake on Strength, and
+        # neither is one whose only mistakes came after the pull was lost at its first death.
+        self.assertEqual((strength["reached"], strength["mistakes"]), (53, 16))
         self.assertEqual(by_id["dive-from-grace"]["reached"], 0)
         summary = session_summary(self.payload, "")
         self.assertEqual(
             next(row for row in summary["mechanics"] if row["id"] == "strength-of-the-ward")["mistakes"],
-            21,
+            16,
         )
 
     def test_a_player_already_dead_fails_only_the_mechanic_that_killed_them(self):
@@ -333,6 +335,17 @@ class PullCardsTest(unittest.TestCase):
         for row in deaths:
             self.assertEqual(row["carried"], ["Kitana Kahn"])
             self.assertEqual([blame["who"] for blame in row["blames"]], ["Kitana Kahn"])
+
+    def test_a_mistake_after_the_pull_was_lost_does_not_count(self):
+        # Pull 14 was lost when Gigachad died to Ascalon's Might at 85s. Kitana's Bright Flare
+        # at 2:00 is still her death, but it does not count as failing Bright Flare.
+        card = self._card(14, "sanctity-of-the-ward")
+        flare = _seats(next(part for part in card["parts"] if part["id"] == "bright-flare"))
+        self.assertFalse(flare["Kitana Kahn"]["passed"])
+        self.assertTrue(flare["Kitana Kahn"]["late"])
+        death = next(row for row in self._pull(14)["deaths"] if row["componentId"] == "bright-flare")
+        self.assertEqual((death["outcome"], death["late"]), ("fail", True))
+        self.assertEqual([blame["who"] for blame in death["blames"]], ["Kitana Kahn"])
 
     def test_a_player_alive_and_out_of_place_still_fails_it(self):
         # Pull 47: Spring Nymphar was alive and in no Strength tower.

@@ -151,10 +151,12 @@ class PassedOnTest(unittest.TestCase):
         self.assertEqual(item.cause, "personal")
         self.assertEqual(_owners(item), [("Absolute Gigalad", 100)])
 
-    def test_a_wall_after_other_deaths_still_shares_it(self):
+    def test_a_wall_after_other_deaths_is_a_reset(self):
         item = _one("XVz8bCqgPw1KRh9d", 24, "Absolute Gigachad", "Deathwall")
-        self.assertEqual(item.cause, "after")
-        self.assertEqual(_owners(item), [("Absolute Gigachad", 50), ("Earlier mistake", 50)])
+        self.assertTrue(item.late)
+        self.assertEqual((item.outcome, item.cause), ("environment", "reset"))
+        self.assertEqual(item.happened, "Nothing hit them. The pull was already lost.")
+        self.assertEqual(_owners(item), [])
 
 
 if __name__ == "__main__":
