@@ -3,80 +3,15 @@
   2,
   3
  ],
- "abilities": [
-  {
-   "guid": 25556,
-   "name": "Spiral Thrust"
-  },
-  {
-   "guid": 25567,
-   "name": "Eternal Conviction soak"
-  },
-  {
-   "guid": 25579,
-   "name": "Holy Shield Bash"
-  },
-  {
-   "guid": 26377,
-   "name": "Final Chorus"
-  },
-  {
-   "guid": 26378,
-   "name": "Geirskogul"
-  },
-  {
-   "guid": 26382,
-   "name": "Dark High Jump"
-  },
-  {
-   "guid": 26384,
-   "name": "Dark Elusive Jump"
-  },
-  {
-   "guid": 26385,
-   "name": "Darkdragon Dive"
-  },
-  {
-   "guid": 26388,
-   "name": "Eye of the Tyrant"
-  },
-  {
-   "guid": 26389,
-   "name": "Gnashing Wheel"
-  },
-  {
-   "guid": 26390,
-   "name": "Lashing Wheel"
-  },
-  {
-   "guid": 26395,
-   "name": "Darkdragon Dive"
-  },
-  {
-   "guid": 26416,
-   "name": "Nidhogg's first auto-attack"
-  }
- ],
+ "abilities": [],
  "no_positions": [],
  "no_mitigations": [],
  "no_max_hp": [],
  "unnamed_buffs": [],
  "deaths": {
   "judged": 393,
-  "with_gaps": 101,
-  "gaps": {
-   "ability 25567": 43,
-   "ability 25579": 1,
-   "ability 26377": 3,
-   "ability 26378": 2,
-   "ability 26382": 4,
-   "ability 26384": 2,
-   "ability 26385": 4,
-   "ability 26388": 7,
-   "ability 26390": 2,
-   "ability 26395": 31,
-   "ability 26416": 2
-  },
+  "with_gaps": 0,
+  "gaps": {},
   "not_judged": 57,
   "not_judged_by_reason": {
    "P1: Adelphel, Grinnaux and Charibert: the pull never reached a judged phase": 22,

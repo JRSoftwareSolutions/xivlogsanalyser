@@ -496,14 +496,9 @@
       "category": "tower",
       "scales_with_stack": false,
       "fail_above": 150000,
-      "needs_everyone": {"holders": [1003006], "lead": 1, "until": 42},
+      "needs_everyone": {"holders": [1003006], "lead": 4, "until": 42, "soak": [26385]},
       "should_have_been": "One player soaks the tower. Tanks take about 32–54k. A non-tank soak that killed from a high bar was about 59–80k. A shield keeps them alive. Dying to that hit is the healers.",
-      "moments": [
-        {
-          "above": 150000,
-          "should_have_been": "One player soaks the tower. An empty tower explodes for about 1.4–3.0 million. On the first towers the 3s are the soakers. A 3 already dead left their tower empty, and that death owns it. With every 3 alive, the soak hits are not stored, so the miss stays Missed soak."
-        }
-      ],
+      "moments": [{"fail": true, "cause": "tower", "should_have_been": "One player soaks each tower (Darkdragon Dive 26385). An empty tower explodes about 2 seconds later as this hit, for the whole raid: about 50k on a tank and 1.4\u20133.0 million on anyone with the soak debuffs. It does not land when every tower is soaked. On the first towers the 3s are the soakers: a 3 who was alive and not in a tower owns it, and a 3 already dead passes it on to whoever owned that death."}],
       "roles": {
         "tank": {"unmitigated_max": 80000, "lived": "about 32–54k"},
         "healer": {"unmitigated_max": 100000, "lived": "about 59–80k killed; no survived non-tank soak is stored"},

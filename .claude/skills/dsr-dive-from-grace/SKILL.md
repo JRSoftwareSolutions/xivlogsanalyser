@@ -81,3 +81,5 @@ Geirskogul: `{player}` stood in the line.
 ## Parameters
 
 Follow `analyze-mechanic-parameters`. Surveyed from the death table on `8DYNHQx4C7ytdLb9`, not from ability files. Time zero is the phase 3 start. The first landings are about 31 seconds. The wheels are about 35–38 seconds. `26385` is about 37 seconds. `26395` is about 39 seconds. A later circle landing on pull 46 is at 52 seconds. Geirskogul is about 45 and 55 seconds.
+
+Darkdragon Dive `26395` lands only when a tower went unsoaked, about 2 seconds after the soak `26385`, and hits the whole raid. Pull 46 on `8DYNHQx4C7ytdLb9`, with every tower soaked, has none. Every `26395` hit is a fail, even a 50k tank hit. On the first towers the 3s (`Third in Line`) soak: a 3 who was alive and not hit by `26385` owns the empty tower, and a 3 already dead passes it on to whoever owned that death. A soaker's Physical Vulnerability Up from `26385`, or from a Dark High Jump's own snapshot, is not their mistake.

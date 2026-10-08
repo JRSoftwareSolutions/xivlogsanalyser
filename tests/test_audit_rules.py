@@ -1,6 +1,8 @@
 """Rules the pull-by-pull blame audit settled, pinned on the saved logs."""
 
 import json
+import shutil
+import tempfile
 import unittest
 from collections import Counter
 from pathlib import Path
@@ -57,16 +59,31 @@ class StrengthTowersTest(unittest.TestCase):
                 self.assertIn(item.cause, {"empty", "tower"}, (code, item.fact.fight, item.fact.name))
                 self.assertTrue(item.blames, (code, item.fact.fight, item.fact.name))
 
+    def test_with_the_soak_file_every_strength_tower_names_its_owner(self):
+        # The Conviction 25567 file was fetched from the FFLogs API. Pull 24: Spring was alive and not in a tower.
+        for code in CODES:
+            for item in _judged(code)[4]:
+                if item.mechanic_id == "eternal-conviction":
+                    self.assertNotIn("Missed soak", [blame.who for blame in item.blames], (code, item.fact.fight))
+        tower = _one("XVz8bCqgPw1KRh9d", 24, "Kiara Blaiddyd", "Eternal Conviction")
+        self.assertEqual(_owners(tower), [("Spring Nymphar", 100)])
+
     def test_a_tower_with_no_hit_list_says_what_it_was_missing(self):
-        # XVz has no file for the tower soak, so a tower with nobody dead is a missed soak on missing evidence.
-        unnamed = [
-            item for item in _judged("XVz8bCqgPw1KRh9d")[4]
-            if item.mechanic_id == "eternal-conviction" and item.cause == "tower"
-        ]
-        self.assertTrue(unnamed)
-        for item in unnamed:
-            self.assertIn("ability 25567", item.fact.missing)
-            self.assertEqual(_owners(item), [("Missed soak", 50)])
+        with tempfile.TemporaryDirectory() as tmp:
+            report = Path(tmp) / "XVz8bCqgPw1KRh9d"
+            shutil.copytree(ROOT / "data" / "XVz8bCqgPw1KRh9d", report)
+            (report / "abilities" / "ab_25567.json").unlink()
+            meta = json.loads((report / "fights.json").read_text(encoding="utf-8"))
+            skipped: list[dict] = []
+            facts = extract_report(report, PACK, skipped)
+            judgments = judge_report(facts, PACK, roster_from_meta(meta, PACK))
+            unnamed = [item for item in judgments if item.mechanic_id == "eternal-conviction" and item.cause == "tower"]
+            self.assertTrue(unnamed)
+            for item in unnamed:
+                self.assertIn("ability 25567", item.fact.missing)
+                self.assertEqual(_owners(item), [("Missed soak", 50)])
+            guids = {row["guid"] for row in check_inputs(report, PACK, meta, facts, skipped)["abilities"]}
+            self.assertIn(25567, guids)
 
 
 class CastVerdictTest(unittest.TestCase):
@@ -229,10 +246,9 @@ class InputsTest(unittest.TestCase):
             report, meta, facts, skipped, _judgments = _judged(code)
             self.assertEqual(read_inputs(report), check_inputs(report, PACK, meta, facts, list(skipped)), code)
 
-    def test_a_missing_ability_file_is_named(self):
-        report = _judged("XVz8bCqgPw1KRh9d")[0]
-        guids = {row["guid"] for row in read_inputs(report)["abilities"]}
-        self.assertIn(25567, guids)
+    def test_every_saved_log_has_every_ability_file(self):
+        for code in CODES:
+            self.assertEqual(read_inputs(_judged(code)[0])["abilities"], [], code)
 
 
 if __name__ == "__main__":

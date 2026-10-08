@@ -188,7 +188,7 @@ def main() -> None:
             (found for zone in {fight.get("zoneID") for fight in meta["fights"]} if (found := pack_for_zone(zone, catalog))),
             None,
         )
-        written = fetch_missing(report, api_from_env(), pack.zone_id if pack else None, args.guid)
+        written = fetch_missing(report, api_from_env(root=root), pack.zone_id if pack else None, args.guid)
         if not written:
             print(f"{report.name}: nothing to fetch. Run: python -m xivloganalyzer check {report.name}")
             return

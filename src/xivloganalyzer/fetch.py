@@ -63,15 +63,44 @@ class Api:
         return reply["data"]
 
 
-def api_from_env(post: Post = _post) -> Api:
-    client_id = os.environ.get("FFLOGS_CLIENT_ID")
-    secret = os.environ.get("FFLOGS_CLIENT_SECRET")
-    if not client_id or not secret:
+# The local file with the API client, kept out of git (.gitignore). The repository is public.
+CLIENT_FILE = ".fflogs.json"
+
+
+def _env(*names: str) -> str:
+    """The first of these environment variables that is set, without surrounding spaces."""
+    for name in names:
+        value = (os.environ.get(name) or "").strip()
+        if value:
+            return value
+    return ""
+
+
+def client_credentials(root: Path | None = None) -> tuple[str, str] | None:
+    """FFLOGS_CLIENT_ID and FFLOGS_CLIENT_SECRET (or fflogs_client and fflogs_secret, as the
+    cloud environment's variables), or else `.fflogs.json` at the repo root
+    ({"client_id": ..., "client_secret": ...})."""
+    client_id = _env("FFLOGS_CLIENT_ID", "FFLOGS_CLIENT", "fflogs_client_id", "fflogs_client")
+    secret = _env("FFLOGS_CLIENT_SECRET", "FFLOGS_SECRET", "fflogs_client_secret", "fflogs_secret")
+    if client_id and secret:
+        return client_id, secret
+    path = (root or Path.cwd()) / CLIENT_FILE
+    if path.is_file():
+        saved = json.loads(path.read_text(encoding="utf-8"))
+        if saved.get("client_id") and saved.get("client_secret"):
+            return saved["client_id"], saved["client_secret"]
+    return None
+
+
+def api_from_env(post: Post = _post, root: Path | None = None) -> Api:
+    found = client_credentials(root)
+    if found is None:
         raise SystemExit(
-            "Set FFLOGS_CLIENT_ID and FFLOGS_CLIENT_SECRET to an FFLogs API client "
+            "No FFLogs API client. Set FFLOGS_CLIENT_ID and FFLOGS_CLIENT_SECRET, or put "
+            f'{{"client_id": ..., "client_secret": ...}} in {CLIENT_FILE} at the repo root '
             "(https://www.fflogs.com/api/clients/)."
         )
-    return Api(client_id, secret, post)
+    return Api(found[0], found[1], post)
 
 
 def ability_names(api: Api, code: str) -> dict[int, dict]:
@@ -108,13 +137,14 @@ def site_shape(events: list[dict], names: dict[int, dict]) -> dict:
         guid = row.pop("abilityGameID", None)
         if guid is not None and "ability" not in row:
             known = names.get(int(guid)) or {}
-            row["ability"] = {"name": known.get("name") or "", "guid": int(guid), "type": known.get("type") or 0}
+            kind = known.get("type") or 0
+            row["ability"] = {"name": known.get("name") or "", "guid": int(guid), "type": int(kind) if str(kind).isdigit() else kind}
         for buff in str(row.get("buffs") or "").split("."):
             if buff.strip().isdigit():
                 auras.add(int(buff))
         out.append(row)
     aura_rows = [
-        {"name": names[guid]["name"], "guid": guid, "type": names[guid].get("type") or 0}
+        {"name": names[guid]["name"], "guid": guid, "type": int(names[guid].get("type") or 0) if str(names[guid].get("type") or 0).isdigit() else names[guid]["type"]}
         for guid in sorted(auras) if guid in names and names[guid].get("name")
     ]
     return {"events": out, "count": len(out), "auraAbilities": aura_rows, "source": "fflogs api v2"}

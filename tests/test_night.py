@@ -29,8 +29,9 @@ class FirstCausesTest(unittest.TestCase):
         item = next(item for item in _judged(CODE)[4] if item.fact.fight == 57)
         self.assertNotIn("Damage Down", item.first_mistake)
 
-    def test_a_shared_tower_with_nobody_to_name_is_a_label(self):
-        self.assertEqual(_causes(47), [{"mechanic": "Eternal Conviction", "owners": ["Missed soak"]}])
+    def test_a_shared_tower_names_who_left_it(self):
+        # With the soak file, pull 47's Strength towers name Spring, who was alive and not in one.
+        self.assertEqual(_causes(47), [{"mechanic": "Eternal Conviction", "owners": ["Spring Nymphar"]}])
 
     def test_a_gaze_debuff_is_the_holder_s(self):
         owners = {cause["mechanic"]: cause["owners"] for cause in _causes(11)}
@@ -45,7 +46,7 @@ class NightTest(unittest.TestCase):
         self.assertEqual(tally["pulls"], 55)
         self.assertGreaterEqual(sum(row["pulls"] for row in tally["started"]), 55)
         self.assertEqual(tally["started"][0]["mechanic"], "Ascalon's Mercy Concealed")
-        self.assertIn("Missed soak", tally["labels"])
+        self.assertIn("Missing bodies", tally["labels"])
         owned = dict(tally["owned"])
         self.assertNotIn("Party mitigation", owned)
 

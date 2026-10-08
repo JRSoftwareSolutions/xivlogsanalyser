@@ -1,18 +1,18 @@
 {
- "rules": "31a0eba724499654",
- "engine": "4cba15fd9d7ed4f2",
- "log": "f136dbe8abc107ba",
+ "rules": "ab572d81a6eef524",
+ "engine": "f2910622144d6dc9",
+ "log": "16dcfb6841a6438b",
  "outputs": {
-  "facts.json": "dbea120c2b662a9e",
-  "judgments.json": "adf9d3d8d13d6c47",
-  "calls.tsv": "b25113e6231596da",
-  "session.html": "a6aa82995bb736d2",
-  "inputs.json": "f3a858e502fbae22"
+  "facts.json": "eafd63837897ec4c",
+  "judgments.json": "6d7bdc37cd43f21e",
+  "calls.tsv": "726fb26517d1293d",
+  "session.html": "420a729ac20c9d9e",
+  "inputs.json": "f48daa99d0ac1b58"
  },
  "counts": {
-  "raw": 28,
-  "fail": 357,
-  "low": 3,
+  "raw": 18,
+  "fail": 370,
+  "low": 0,
   "environment": 5,
   "unknown": 0
  },
@@ -25,9 +25,9 @@
   "day": "2026-10-05",
   "dayLabel": "Mon 5 Oct 2026",
   "timeLabel": "21:31\u201300:14",
-  "raw": 28,
-  "fail": 357,
-  "low": 3,
+  "raw": 18,
+  "fail": 370,
+  "low": 0,
   "detail": "",
   "overview": {
    "phases": [
@@ -1255,7 +1255,6 @@
     "Earlier deaths",
     "Group reset",
     "Miscommunication",
-    "Missed soak",
     "Missing bodies"
    ],
    "started": [
@@ -1635,39 +1634,35 @@
    "owned": [
     [
      "Loki Doki",
-     61.7
+     61.5
     ],
     [
      "Spring Nymphar",
-     61.4
-    ],
-    [
-     "Kitana Kahn",
-     40.1
-    ],
-    [
-     "Kiara Blaiddyd",
-     37.1
+     59.7
     ],
     [
      "Absolute Gigachad",
+     42.7
+    ],
+    [
+     "Kitana Kahn",
+     42.0
+    ],
+    [
+     "Kiara Blaiddyd",
+     38.7
+    ],
+    [
+     "Absolute Gigalad",
      31.0
     ],
     [
      "Kite Noodle",
-     29.8
-    ],
-    [
-     "Absolute Gigalad",
-     28.6
+     29.1
     ],
     [
      "Speed Panda",
-     27.9
-    ],
-    [
-     "Missed soak",
-     8.0
+     28.3
     ],
     [
      "Earlier deaths",

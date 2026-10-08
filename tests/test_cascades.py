@@ -127,16 +127,22 @@ class PassedOnTest(unittest.TestCase):
             if item.outcome != "fail":
                 continue
             self.assertEqual(item.fact.down, ["Loki Doki", "Speed Panda"])
-            self.assertEqual(item.went_wrong, "Loki Doki and Speed Panda were already dead, so a tower was empty.")
-            # Loki died first, so Speed's missed heal was more Spring's: 37 and 62.
-            self.assertEqual(_owners(item), [("Loki Doki", 37), ("Spring Nymphar", 62)])
+            # Gigalad, a 3, was alive and not in a tower. The soak file shows it.
+            self.assertEqual(item.fact.unsoaked, ["Absolute Gigalad"])
+            self.assertEqual(
+                item.went_wrong,
+                "Loki Doki and Speed Panda were dead and Absolute Gigalad was out of the towers.",
+            )
+            # Loki died first, so Speed's missed heal was more Spring's.
+            self.assertEqual(_owners(item), [("Loki Doki", 24), ("Spring Nymphar", 41), ("Absolute Gigalad", 33)])
 
-    def test_first_dive_towers_with_every_three_alive_stay_unnamed(self):
-        towers = [item for item in _deaths("8DYNHQx4C7ytdLb9", 36, "Darkdragon Dive") if item.cause == "tower"]
+    def test_first_dive_towers_with_every_three_alive_name_who_was_not_in_one(self):
+        towers = _deaths("8DYNHQx4C7ytdLb9", 36, "Darkdragon Dive")
         self.assertTrue(towers)
         for item in towers:
             self.assertEqual(item.fact.down, [])
-            self.assertEqual(_owners(item), [("Missed soak", 50)])
+            self.assertEqual(sorted(item.fact.unsoaked), ["Absolute Gigachad", "Loki Doki", "Spring Nymphar"])
+            self.assertNotIn("Missed soak", [blame.who for blame in item.blames])
 
     def test_a_wall_after_only_your_own_mistake_is_yours(self):
         item = _one("8DYNHQx4C7ytdLb9", 18, "Absolute Gigalad", "Deathwall")

@@ -78,6 +78,10 @@ class DeathFact:
     missing: list[str] = field(default_factory=list)
     # The report's off tank, on deaths to a hit only the off tank takes.
     off_tank: str = ""
+    # The ability that put the latest Vulnerability Up on them before the hit, such as "Darkdragon Dive",
+    # and how many milliseconds before the death it landed.
+    amp_via: str = ""
+    amp_ms: int | None = None
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -708,6 +712,21 @@ def _cascade_debuffs(
     return [tuple(row) for row in rows]
 
 
+def _amp_source(table: dict | None, target: int | None, timestamp: int | None) -> tuple[str, int | None]:
+    """The ability that put the latest Vulnerability Up on this player before this moment,
+    and how many milliseconds before it."""
+    if not table or target is None or timestamp is None:
+        return "", None
+    found, when = "", None
+    for aura in table.get("auras") or []:
+        if aura[0] > timestamp:
+            break
+        if aura[5] == target and aura[1] in ("applydebuff", "refreshdebuff") and "Vulnerability Up" in str(aura[3]):
+            found = str(aura[8] or "") if len(aura) > 8 else ""
+            when = timestamp - int(aura[0])
+    return found.strip().removeprefix("the "), when
+
+
 def _prior_debuffs(debuffs: list[tuple], windows: list[tuple], timestamp: int | None) -> list[dict]:
     if timestamp is None:
         return []
@@ -991,6 +1010,7 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                     )
             fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
             fact.ts = timestamp
+            fact.amp_via, fact.amp_ms = _amp_source(mitigation_tables.get(fight["id"]), target, timestamp)
             fact.missing = _gaps(report, fight["id"], mitigation_tables, fact, by_guid)
             facts.append(fact)
             timed.append((timestamp, fact))

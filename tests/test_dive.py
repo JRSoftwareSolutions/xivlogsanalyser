@@ -38,9 +38,9 @@ class DiveFromGraceTest(unittest.TestCase):
 
     def test_phase_three_counts(self):
         counts = Counter(item.outcome for item in self.phase3)
-        self.assertEqual(counts["fail"], 39)
-        self.assertEqual(counts["raw"], 18)
-        self.assertEqual(counts["low"], 3)
+        self.assertEqual(counts["fail"], 52)
+        self.assertEqual(counts["raw"], 8)
+        self.assertEqual(counts["low"], 0)
         self.assertEqual(counts["unknown"], 0)
         # Pull 33: five players walked into the wall together to reset, nobody's mistake.
         self.assertEqual(counts["environment"], 5)
@@ -70,11 +70,10 @@ class DiveFromGraceTest(unittest.TestCase):
         self.assertEqual(short.basis, "hit-list")
         raw = self._one(26, "Loki Doki", 26388)
         self.assertEqual(raw.outcome, "raw")
-        # The log has no Eye of the Tyrant file and the replay did not list the hit, so
-        # nothing says whether the party mitigated it: no Party mitigation share.
-        self.assertIsNone(raw.fact.multiplier)
-        self.assertIn("ability 26388", raw.fact.missing)
-        self.assertEqual([blame.who for blame in raw.blames], ["Loki Doki", "Spring Nymphar"])
+        # The Eye of the Tyrant file says the hit had no party mitigation.
+        self.assertEqual(raw.fact.multiplier, 1.0)
+        self.assertEqual(raw.fact.missing, [])
+        self.assertEqual([blame.who for blame in raw.blames], ["Loki Doki", "Spring Nymphar", "Party mitigation"])
 
     def test_arrow_on_the_wrong_side_owns_the_landing(self):
         loki = self._one(27, "Loki Doki", 26384)
@@ -157,13 +156,12 @@ class DiveFromGraceTest(unittest.TestCase):
         self.assertEqual(debuff.outcome, "fail")
         self.assertEqual(debuff.went_wrong, "Speed Panda soaked with the dive debuff.")
         self.assertEqual(debuff.blames[0].confidence, 100)
-        low = self._one(27, "Kite Noodle", 26395)
-        self.assertEqual(low.outcome, "low")
+        # 26395 is only ever the explosion of an unsoaked tower, about 2s after the soak, so every hit is a fail.
+        for fight, name in ((27, "Kite Noodle"), (36, "Kitana Kahn"), (36, "Kite Noodle")):
+            self.assertEqual(self._one(fight, name, 26395).outcome, "fail")
+        # With the soak file, the 3s who were alive and not in a tower own it.
         tower = self._one(36, "Kitana Kahn", 26395)
-        self.assertEqual(tower.outcome, "fail")
-        self.assertEqual(tower.blames[0].who, "Missed soak")
-        soak = self._one(36, "Kite Noodle", 26395)
-        self.assertEqual(soak.outcome, "raw")
+        self.assertEqual(sorted(blame.who for blame in tower.blames), ["Absolute Gigachad", "Loki Doki", "Spring Nymphar"])
 
     def test_wheel_and_line_are_the_player_who_stood_there(self):
         wheel = self._one(30, "Loki Doki", 26390)

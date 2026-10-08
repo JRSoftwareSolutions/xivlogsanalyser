@@ -327,6 +327,22 @@ def _vuln(fact: DeathFact) -> bool:
     return False
 
 
+# A vulnerability this close before the hit, from the same mechanic, came with the hit's own snapshot.
+_SAME_CAST_MS = 1500
+
+
+def _expected_amp(fact: DeathFact, pack: FightPack, mechanic: Mechanic) -> bool:
+    """The vulnerability is not a mistake of theirs: it came from a tower or soak they were
+    meant to take, or from the killing cast's own snapshot. The hit is then judged on what
+    actually went wrong."""
+    source = pack.mechanic_named(fact.amp_via, fact.phase) if fact.amp_via else None
+    if source is None:
+        return False
+    if source.category in {"soak", "tower"}:
+        return True
+    return source.name == mechanic.name and fact.amp_ms is not None and fact.amp_ms <= _SAME_CAST_MS
+
+
 def _hit(fact: DeathFact) -> int:
     if fact.unmitigated is not None:
         return fact.unmitigated
@@ -365,7 +381,7 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
         return _done(fact, mechanic, "fail", _marker_clip(fact, pack), "marker", pack)
     if _vuln(fact) and _redirected(fact, mechanic):
         return _done(fact, mechanic, "fail", f"{fact.name} took the other group's jump.", "redirected", pack)
-    if _vuln(fact):
+    if _vuln(fact) and not _expected_amp(fact, pack, mechanic):
         return _done(fact, mechanic, "fail", _amp(fact, mechanic), "personal", pack)
     hit = _hit(fact)
     if mechanic.tanks_only and fact.role != "tank":

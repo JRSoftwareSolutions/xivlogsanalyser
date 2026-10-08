@@ -86,7 +86,9 @@
     "self_hits": [],
     "ts": 2819165,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 10,
@@ -175,7 +177,9 @@
     "self_hits": [],
     "ts": 2819165,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 10,
@@ -298,7 +302,9 @@
     "self_hits": [],
     "ts": 2819799,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1470
   },
   {
     "fight": 10,
@@ -420,7 +426,9 @@
     "self_hits": [],
     "ts": 2819756,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1516
   },
   {
     "fight": 10,
@@ -545,7 +553,9 @@
     "self_hits": [],
     "ts": 2819890,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1604
   },
   {
     "fight": 10,
@@ -669,7 +679,9 @@
     "self_hits": [],
     "ts": 2819844,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1648
   },
   {
     "fight": 10,
@@ -774,7 +786,9 @@
     ],
     "ts": 2820691,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 10,
@@ -883,7 +897,9 @@
     "self_hits": [],
     "ts": 2821538,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 11,
@@ -958,7 +974,9 @@
     "self_hits": [],
     "ts": 2963545,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 0
   },
   {
     "fight": 11,
@@ -1052,7 +1070,9 @@
     ],
     "ts": 2965463,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 11,
@@ -1147,7 +1167,9 @@
     ],
     "ts": 2965508,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 55527
   },
   {
     "fight": 11,
@@ -1251,7 +1273,9 @@
     "self_hits": [],
     "ts": 2966893,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1519
   },
   {
     "fight": 11,
@@ -1356,7 +1380,9 @@
     "self_hits": [],
     "ts": 2966938,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1520
   },
   {
     "fight": 11,
@@ -1462,7 +1488,9 @@
     "self_hits": [],
     "ts": 2966982,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1654
   },
   {
     "fight": 11,
@@ -1557,7 +1585,9 @@
     "self_hits": [],
     "ts": 2968675,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 5041
   },
   {
     "fight": 11,
@@ -1648,7 +1678,9 @@
     "self_hits": [],
     "ts": 2987622,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18904
   },
   {
     "fight": 12,
@@ -1664,10 +1696,10 @@
     "total": 206205,
     "hp": 61737,
     "max_hp": 61737,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 206205,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 69.2,
     "pull_ms": 68773,
@@ -1682,15 +1714,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 3023190,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 12,
@@ -1706,10 +1740,10 @@
     "total": 212449,
     "hp": 61615,
     "max_hp": 61615,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 212449,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 69.2,
     "pull_ms": 68773,
@@ -1724,15 +1758,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 3023190,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 12,
@@ -1748,10 +1784,10 @@
     "total": 192670,
     "hp": 35839,
     "max_hp": 68662,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 192670,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 69.2,
     "pull_ms": 68773,
@@ -1766,15 +1802,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Kiara Blaiddyd"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 3058414,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 12,
@@ -1816,7 +1854,9 @@
     "self_hits": [],
     "ts": 3067292,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 12,
@@ -1878,7 +1918,9 @@
     "self_hits": [],
     "ts": 3068390,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 12,
@@ -1922,7 +1964,9 @@
     "self_hits": [],
     "ts": 3070292,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 12,
@@ -1995,7 +2039,9 @@
     "self_hits": [],
     "ts": 3072844,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 12,
@@ -2071,7 +2117,9 @@
     "self_hits": [],
     "ts": 3073331,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 12,
@@ -2117,7 +2165,9 @@
     "self_hits": [],
     "ts": 3073292,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 12,
@@ -2163,7 +2213,9 @@
     "self_hits": [],
     "ts": 3073292,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 13,
@@ -2179,10 +2231,10 @@
     "total": 183984,
     "hp": 61615,
     "max_hp": 61615,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 216452,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 66.3,
     "pull_ms": 63603,
@@ -2197,15 +2249,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 3108182,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 13,
@@ -2221,10 +2275,10 @@
     "total": 51913,
     "hp": 26616,
     "max_hp": 62101,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 51913,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 66.3,
     "pull_ms": 63603,
@@ -2248,15 +2302,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Loki Doki"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 3140505,
-    "missing": [
-      "ability 25560"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 13,
@@ -2272,10 +2328,10 @@
     "total": 221183,
     "hp": 10552,
     "max_hp": 61615,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 221183,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 66.3,
     "pull_ms": 63603,
@@ -2299,17 +2355,26 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [
       "Loki Doki"
     ],
     "group": [],
-    "self_hits": [],
-    "ts": 3143356,
-    "missing": [
-      "ability 25545"
+    "self_hits": [
+      {
+        "ability": "Heavy Impact",
+        "guid": 25559,
+        "ago": 4.7,
+        "amount": 50312
+      }
     ],
-    "off_tank": ""
+    "ts": 3143356,
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 13,
@@ -2361,7 +2426,9 @@
     "self_hits": [],
     "ts": 3150102,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 13,
@@ -2426,7 +2493,9 @@
     "self_hits": [],
     "ts": 3151102,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 13,
@@ -2479,7 +2548,9 @@
     "self_hits": [],
     "ts": 3151102,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 13,
@@ -2555,7 +2626,9 @@
     "self_hits": [],
     "ts": 3151102,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 13,
@@ -2620,7 +2693,9 @@
     "self_hits": [],
     "ts": 3151102,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 13,
@@ -2693,7 +2768,9 @@
     "self_hits": [],
     "ts": 3152971,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 488
   },
   {
     "fight": 14,
@@ -2762,7 +2839,9 @@
     "self_hits": [],
     "ts": 3258641,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 14,
@@ -2836,7 +2915,9 @@
     "self_hits": [],
     "ts": 3292000,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3526
   },
   {
     "fight": 14,
@@ -2912,7 +2993,9 @@
     "self_hits": [],
     "ts": 3292045,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3615
   },
   {
     "fight": 14,
@@ -2957,7 +3040,9 @@
     "self_hits": [],
     "ts": 3292623,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 4103
   },
   {
     "fight": 14,
@@ -3004,7 +3089,9 @@
     "self_hits": [],
     "ts": 3304397,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 12442
   },
   {
     "fight": 14,
@@ -3055,7 +3142,9 @@
     "self_hits": [],
     "ts": 3304397,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14140
   },
   {
     "fight": 14,
@@ -3104,7 +3193,9 @@
     "self_hits": [],
     "ts": 3304441,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14138
   },
   {
     "fight": 14,
@@ -3170,7 +3261,9 @@
     "self_hits": [],
     "ts": 3310687,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20474
   },
   {
     "fight": 14,
@@ -3236,7 +3329,9 @@
     "self_hits": [],
     "ts": 3310687,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20519
   },
   {
     "fight": 15,
@@ -3303,7 +3398,9 @@
     "self_hits": [],
     "ts": 3498681,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 12302
   },
   {
     "fight": 15,
@@ -3377,7 +3474,9 @@
     "self_hits": [],
     "ts": 3498860,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 12348
   },
   {
     "fight": 15,
@@ -3390,11 +3489,11 @@
     "role": "dps",
     "guid": 1002946,
     "ability": "Frostbite",
-    "total": 63693,
-    "hp": 21079,
+    "total": 127388,
+    "hp": 42159,
     "max_hp": 68259,
-    "unmitigated": 63693,
-    "multiplier": 1.0,
+    "unmitigated": 127388,
+    "multiplier": null,
     "absorb": 0,
     "stack": 2,
     "buffs": [],
@@ -3420,7 +3519,9 @@
     "self_hits": [],
     "ts": 3503496,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 17072
   },
   {
     "fight": 15,
@@ -3503,7 +3604,9 @@
     ],
     "ts": 3505100,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20372
   },
   {
     "fight": 15,
@@ -3565,7 +3668,9 @@
     "self_hits": [],
     "ts": 3505100,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18632
   },
   {
     "fight": 15,
@@ -3643,7 +3748,9 @@
     "self_hits": [],
     "ts": 3505234,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20594
   },
   {
     "fight": 15,
@@ -3721,7 +3828,9 @@
     "self_hits": [],
     "ts": 3505234,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20639
   },
   {
     "fight": 15,
@@ -3801,7 +3910,9 @@
     "self_hits": [],
     "ts": 3505500,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20816
   },
   {
     "fight": 16,
@@ -3817,10 +3928,10 @@
     "total": 215287,
     "hp": 45573,
     "max_hp": 61615,
-    "unmitigated": null,
+    "unmitigated": 215287,
     "multiplier": 1.0,
     "absorb": 29404,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 64.8,
     "pull_ms": 68552,
@@ -3880,15 +3991,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 3623917,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 16,
@@ -3962,10 +4075,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3639032,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 16,
@@ -4051,10 +4164,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3639166,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 5912
   },
   {
     "fight": 16,
@@ -4130,10 +4243,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3639432,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 16,
@@ -4222,10 +4335,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3639565,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 16,
@@ -4303,10 +4416,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3639700,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6669
   },
   {
     "fight": 16,
@@ -4385,10 +4498,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3639833,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6802
   },
   {
     "fight": 16,
@@ -4445,7 +4558,9 @@
     "self_hits": [],
     "ts": 3640026,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 17,
@@ -4495,7 +4610,9 @@
     "self_hits": [],
     "ts": 3777292,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3475
   },
   {
     "fight": 17,
@@ -4570,7 +4687,9 @@
     "self_hits": [],
     "ts": 3777336,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3474
   },
   {
     "fight": 17,
@@ -4623,7 +4742,9 @@
     "self_hits": [],
     "ts": 3777379,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3606
   },
   {
     "fight": 17,
@@ -4677,7 +4798,9 @@
     "self_hits": [],
     "ts": 3779067,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3601
   },
   {
     "fight": 17,
@@ -4732,7 +4855,9 @@
     "self_hits": [],
     "ts": 3779112,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3601
   },
   {
     "fight": 17,
@@ -4788,7 +4913,9 @@
     "self_hits": [],
     "ts": 3779201,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3601
   },
   {
     "fight": 17,
@@ -4835,7 +4962,9 @@
     "self_hits": [],
     "ts": 3785786,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 17,
@@ -4883,7 +5012,9 @@
     "self_hits": [],
     "ts": 3786786,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 18,
@@ -4899,10 +5030,10 @@
     "total": 211122,
     "hp": 61615,
     "max_hp": 61615,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 211122,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 63.9,
     "pull_ms": 85516,
@@ -4917,15 +5048,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 3830161,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 18,
@@ -4992,7 +5125,9 @@
     "self_hits": [],
     "ts": 3874932,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 490
   },
   {
     "fight": 18,
@@ -5074,10 +5209,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3880446,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6004
   },
   {
     "fight": 18,
@@ -5160,10 +5295,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3880580,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6138
   },
   {
     "fight": 18,
@@ -5247,10 +5382,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3880713,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 18,
@@ -5321,10 +5456,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3880847,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 18,
@@ -5396,10 +5531,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3880981,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 18,
@@ -5486,7 +5621,9 @@
     "self_hits": [],
     "ts": 3882168,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 18,
@@ -5562,7 +5699,9 @@
     "self_hits": [],
     "ts": 3886168,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 18,
@@ -5629,7 +5768,9 @@
     "self_hits": [],
     "ts": 3896964,
     "missing": [],
-    "off_tank": "Absolute Gigachad"
+    "off_tank": "Absolute Gigachad",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 22522
   },
   {
     "fight": 19,
@@ -5645,10 +5786,10 @@
     "total": 218139,
     "hp": 34420,
     "max_hp": 61615,
-    "unmitigated": null,
+    "unmitigated": 218139,
     "multiplier": 1.0,
     "absorb": 8853,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 63.0,
     "pull_ms": 72308,
@@ -5675,15 +5816,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 3969816,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 19,
@@ -5769,7 +5912,9 @@
     "self_hits": [],
     "ts": 3979833,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 19,
@@ -5845,7 +5990,9 @@
     "self_hits": [],
     "ts": 3979878,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 19,
@@ -5948,10 +6095,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3984988,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 19,
@@ -6067,10 +6214,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3985120,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 19,
@@ -6163,10 +6310,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3985255,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6315
   },
   {
     "fight": 19,
@@ -6259,10 +6406,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3985255,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6315
   },
   {
     "fight": 19,
@@ -6357,10 +6504,10 @@
     "group": [],
     "self_hits": [],
     "ts": 3985521,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6581
   },
   {
     "fight": 19,
@@ -6433,7 +6580,9 @@
     "self_hits": [],
     "ts": 3988657,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 20,
@@ -6485,7 +6634,9 @@
     "self_hits": [],
     "ts": 4127801,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3560
   },
   {
     "fight": 20,
@@ -6535,7 +6686,9 @@
     "self_hits": [],
     "ts": 4127757,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3606
   },
   {
     "fight": 20,
@@ -6600,7 +6753,9 @@
     "self_hits": [],
     "ts": 4127889,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3692
   },
   {
     "fight": 20,
@@ -6655,7 +6810,9 @@
     "self_hits": [],
     "ts": 4129577,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3467
   },
   {
     "fight": 20,
@@ -6709,7 +6866,9 @@
     "self_hits": [],
     "ts": 4129533,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3558
   },
   {
     "fight": 20,
@@ -6765,7 +6924,9 @@
     "self_hits": [],
     "ts": 4129667,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3647
   },
   {
     "fight": 20,
@@ -6812,7 +6973,9 @@
     "self_hits": [],
     "ts": 4135273,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 20,
@@ -6860,7 +7023,9 @@
     "self_hits": [],
     "ts": 4136273,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 21,
@@ -6876,10 +7041,10 @@
     "total": 209490,
     "hp": 34924,
     "max_hp": 61615,
-    "unmitigated": null,
+    "unmitigated": 209490,
     "multiplier": 1.0,
     "absorb": 14548,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 62.8,
     "pull_ms": 69249,
@@ -6917,15 +7082,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 4220916,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 21,
@@ -6967,7 +7134,9 @@
     "self_hits": [],
     "ts": 4229507,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 21,
@@ -7010,7 +7179,9 @@
     "self_hits": [],
     "ts": 4230507,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 21,
@@ -7098,7 +7269,9 @@
     "self_hits": [],
     "ts": 4230507,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 21,
@@ -7169,7 +7342,9 @@
     "self_hits": [],
     "ts": 4230520,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 491
   },
   {
     "fight": 21,
@@ -7281,7 +7456,9 @@
     "self_hits": [],
     "ts": 4230564,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 535
   },
   {
     "fight": 21,
@@ -7352,7 +7529,9 @@
     "self_hits": [],
     "ts": 4230608,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 579
   },
   {
     "fight": 21,
@@ -7443,10 +7622,10 @@
     "group": [],
     "self_hits": [],
     "ts": 4236030,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 22,
@@ -7518,7 +7697,9 @@
     ],
     "ts": 4423429,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 2405
   },
   {
     "fight": 22,
@@ -7595,7 +7776,9 @@
     "self_hits": [],
     "ts": 4423429,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 626
   },
   {
     "fight": 22,
@@ -7650,7 +7833,9 @@
     "self_hits": [],
     "ts": 4435215,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 12322
   },
   {
     "fight": 22,
@@ -7722,7 +7907,9 @@
     "self_hits": [],
     "ts": 4435215,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14236
   },
   {
     "fight": 22,
@@ -7791,7 +7978,9 @@
     "self_hits": [],
     "ts": 4435257,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 12408
   },
   {
     "fight": 22,
@@ -7863,7 +8052,9 @@
     ],
     "ts": 4441441,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18683
   },
   {
     "fight": 22,
@@ -7929,7 +8120,9 @@
     "self_hits": [],
     "ts": 4441575,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20506
   },
   {
     "fight": 22,
@@ -7995,7 +8188,9 @@
     "self_hits": [],
     "ts": 4441575,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20641
   },
   {
     "fight": 23,
@@ -8011,10 +8206,10 @@
     "total": 205826,
     "hp": 62101,
     "max_hp": 62101,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 205826,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 78.7,
     "pull_ms": 24725,
@@ -8029,15 +8224,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Loki Doki"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 4476553,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 23,
@@ -8053,10 +8250,10 @@
     "total": 206100,
     "hp": 61615,
     "max_hp": 61615,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 206100,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 78.7,
     "pull_ms": 24725,
@@ -8071,15 +8268,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 4476553,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 23,
@@ -8122,7 +8321,9 @@
     "self_hits": [],
     "ts": 4480202,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 23,
@@ -8165,7 +8366,9 @@
     "self_hits": [],
     "ts": 4480202,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 23,
@@ -8210,7 +8413,9 @@
     "self_hits": [],
     "ts": 4481202,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 23,
@@ -8255,7 +8460,9 @@
     "self_hits": [],
     "ts": 4481202,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 23,
@@ -8302,7 +8509,9 @@
     "self_hits": [],
     "ts": 4482202,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 23,
@@ -8349,7 +8558,9 @@
     "self_hits": [],
     "ts": 4482202,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 24,
@@ -8441,7 +8652,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -8459,10 +8672,10 @@
     "group": [],
     "self_hits": [],
     "ts": 4568912,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 24,
@@ -8554,7 +8767,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -8574,10 +8789,10 @@
     "group": [],
     "self_hits": [],
     "ts": 4569047,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 24,
@@ -8646,7 +8861,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -8667,10 +8884,10 @@
     "group": [],
     "self_hits": [],
     "ts": 4569312,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6416
   },
   {
     "fight": 24,
@@ -8762,7 +8979,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -8784,10 +9003,10 @@
     "group": [],
     "self_hits": [],
     "ts": 4569447,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 24,
@@ -8868,7 +9087,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -8891,10 +9112,10 @@
     "group": [],
     "self_hits": [],
     "ts": 4569581,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6685
   },
   {
     "fight": 24,
@@ -8949,7 +9170,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -8973,10 +9196,10 @@
     "group": [],
     "self_hits": [],
     "ts": 4569850,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6954
   },
   {
     "fight": 24,
@@ -9048,7 +9271,9 @@
     "self_hits": [],
     "ts": 4571555,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 24,
@@ -9121,7 +9346,9 @@
     "self_hits": [],
     "ts": 4581555,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 25,
@@ -9137,10 +9364,10 @@
     "total": 123110,
     "hp": 35151,
     "max_hp": 98635,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 123110,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 63.3,
     "pull_ms": 66668,
@@ -9164,15 +9391,24 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
     "dead": [],
     "group": [],
-    "self_hits": [],
-    "ts": 4654549,
-    "missing": [
-      "ability 25545"
+    "self_hits": [
+      {
+        "ability": "Heavy Impact",
+        "guid": 25560,
+        "ago": 2.8,
+        "amount": 36592
+      }
     ],
-    "off_tank": ""
+    "ts": 4654549,
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 25,
@@ -9223,7 +9459,9 @@
     "self_hits": [],
     "ts": 4658272,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 25,
@@ -9309,7 +9547,9 @@
     "self_hits": [],
     "ts": 4661272,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 25,
@@ -9362,7 +9602,9 @@
     "self_hits": [],
     "ts": 4662272,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 25,
@@ -9439,7 +9681,9 @@
     "self_hits": [],
     "ts": 4664161,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 490
   },
   {
     "fight": 25,
@@ -9516,7 +9760,9 @@
     "self_hits": [],
     "ts": 4664206,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 535
   },
   {
     "fight": 25,
@@ -9572,7 +9818,9 @@
     "self_hits": [],
     "ts": 4664272,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 25,
@@ -9657,7 +9905,9 @@
     "self_hits": [],
     "ts": 4667190,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 3519
   },
   {
     "fight": 26,
@@ -9739,7 +9989,9 @@
     "self_hits": [],
     "ts": 4808328,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3518
   },
   {
     "fight": 26,
@@ -9823,7 +10075,9 @@
     "self_hits": [],
     "ts": 4808374,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3654
   },
   {
     "fight": 26,
@@ -9878,7 +10132,9 @@
     "self_hits": [],
     "ts": 4820713,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14167
   },
   {
     "fight": 26,
@@ -9934,7 +10190,9 @@
     "self_hits": [],
     "ts": 4820757,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14121
   },
   {
     "fight": 26,
@@ -10014,7 +10272,9 @@
     "self_hits": [],
     "ts": 4826950,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18667
   },
   {
     "fight": 26,
@@ -10094,7 +10354,9 @@
     "self_hits": [],
     "ts": 4826950,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20359
   },
   {
     "fight": 26,
@@ -10176,7 +10438,9 @@
     "self_hits": [],
     "ts": 4827084,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20582
   },
   {
     "fight": 26,
@@ -10258,7 +10522,9 @@
     "self_hits": [],
     "ts": 4827084,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18845
   },
   {
     "fight": 27,
@@ -10353,7 +10619,9 @@
     "self_hits": [],
     "ts": 4960382,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 53806
   },
   {
     "fight": 27,
@@ -10457,7 +10725,9 @@
     ],
     "ts": 4960429,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 27,
@@ -10556,7 +10826,9 @@
     "self_hits": [],
     "ts": 4960516,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 27,
@@ -10654,7 +10926,9 @@
     "self_hits": [],
     "ts": 4960471,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 27,
@@ -10745,7 +11019,9 @@
     "self_hits": [],
     "ts": 4963720,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1556
   },
   {
     "fight": 27,
@@ -10837,7 +11113,9 @@
     "self_hits": [],
     "ts": 4963765,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1557
   },
   {
     "fight": 27,
@@ -10930,7 +11208,9 @@
     "self_hits": [],
     "ts": 4963810,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1557
   },
   {
     "fight": 27,
@@ -11024,7 +11304,9 @@
     "self_hits": [],
     "ts": 4963854,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1735
   },
   {
     "fight": 28,
@@ -11064,7 +11346,9 @@
     "self_hits": [],
     "ts": 5043079,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 28,
@@ -11153,7 +11437,9 @@
     "self_hits": [],
     "ts": 5045049,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 889
   },
   {
     "fight": 28,
@@ -11237,7 +11523,9 @@
     "self_hits": [],
     "ts": 5045094,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 934
   },
   {
     "fight": 28,
@@ -11350,7 +11638,9 @@
     "self_hits": [],
     "ts": 5045140,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 980
   },
   {
     "fight": 28,
@@ -11463,7 +11753,9 @@
     "self_hits": [],
     "ts": 5045140,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 980
   },
   {
     "fight": 28,
@@ -11560,7 +11852,9 @@
     "self_hits": [],
     "ts": 5045140,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 980
   },
   {
     "fight": 28,
@@ -11641,7 +11935,9 @@
     "self_hits": [],
     "ts": 5047079,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 28,
@@ -11703,7 +11999,9 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -11722,10 +12020,10 @@
     "group": [],
     "self_hits": [],
     "ts": 5050175,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6015
   },
   {
     "fight": 29,
@@ -11741,10 +12039,10 @@
     "total": 211626,
     "hp": 34308,
     "max_hp": 68662,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 211626,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 62.3,
     "pull_ms": 68876,
@@ -11759,15 +12057,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Kiara Blaiddyd"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 5120567,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 29,
@@ -11854,7 +12154,9 @@
     "self_hits": [],
     "ts": 5129528,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 29,
@@ -11896,7 +12198,9 @@
     "self_hits": [],
     "ts": 5129528,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 29,
@@ -11912,11 +12216,13 @@
     "total": 49941,
     "hp": 11610,
     "max_hp": 68259,
-    "unmitigated": null,
+    "unmitigated": 55491,
     "multiplier": 0.9,
     "absorb": 19279,
-    "stack": null,
-    "buffs": [],
+    "stack": 2,
+    "buffs": [
+      "Sacred Soil"
+    ],
     "boss_pct": 62.3,
     "pull_ms": 68876,
     "mitigations": [
@@ -11964,7 +12270,9 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Speed Panda"
+    ],
     "dead": [
       "Absolute Gigachad",
       "Kite Noodle",
@@ -11973,10 +12281,10 @@
     "group": [],
     "self_hits": [],
     "ts": 5130235,
-    "missing": [
-      "ability 25564"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 401
   },
   {
     "fight": 29,
@@ -12066,7 +12374,9 @@
     "self_hits": [],
     "ts": 5130324,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 490
   },
   {
     "fight": 29,
@@ -12182,7 +12492,9 @@
     "self_hits": [],
     "ts": 5130637,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 982
   },
   {
     "fight": 29,
@@ -12267,7 +12579,9 @@
     "self_hits": [],
     "ts": 5130591,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 936
   },
   {
     "fight": 29,
@@ -12303,7 +12617,9 @@
       "Kiara Blaiddyd",
       "Loki Doki"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -12322,10 +12638,10 @@
     "group": [],
     "self_hits": [],
     "ts": 5135673,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6018
   },
   {
     "fight": 30,
@@ -12341,10 +12657,10 @@
     "total": 104672,
     "hp": 23979,
     "max_hp": 99211,
-    "unmitigated": null,
+    "unmitigated": 130840,
     "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 63.7,
     "pull_ms": 68548,
@@ -12391,15 +12707,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Absolute Gigachad"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 5206853,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 30,
@@ -12495,7 +12813,9 @@
     "self_hits": [],
     "ts": 5214505,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 30,
@@ -12592,7 +12912,9 @@
     "self_hits": [],
     "ts": 5215505,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 30,
@@ -12679,7 +13001,9 @@
     "self_hits": [],
     "ts": 5216505,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 30,
@@ -12782,7 +13106,9 @@
     "self_hits": [],
     "ts": 5216827,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 757
   },
   {
     "fight": 30,
@@ -12866,7 +13192,9 @@
     "self_hits": [],
     "ts": 5216921,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 762
   },
   {
     "fight": 30,
@@ -12959,7 +13287,9 @@
     "self_hits": [],
     "ts": 5216873,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 803
   },
   {
     "fight": 30,
@@ -13069,7 +13399,9 @@
     "self_hits": [],
     "ts": 5221326,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 5256
   },
   {
     "fight": 31,
@@ -13112,7 +13444,9 @@
     "self_hits": [],
     "ts": 5285055,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 31,
@@ -13169,7 +13503,9 @@
     "self_hits": [],
     "ts": 5285187,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 31,
@@ -13212,7 +13548,9 @@
     "self_hits": [],
     "ts": 5286446,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 31,
@@ -13256,7 +13594,9 @@
     "self_hits": [],
     "ts": 5287446,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 31,
@@ -13301,7 +13641,9 @@
     "self_hits": [],
     "ts": 5288446,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 31,
@@ -13346,7 +13688,9 @@
     "self_hits": [],
     "ts": 5288446,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 31,
@@ -13393,7 +13737,9 @@
     "self_hits": [],
     "ts": 5289446,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 31,
@@ -13441,7 +13787,9 @@
     "self_hits": [],
     "ts": 5293446,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 32,
@@ -13534,7 +13882,9 @@
     "self_hits": [],
     "ts": 5429498,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3561
   },
   {
     "fight": 32,
@@ -13618,7 +13968,9 @@
     "self_hits": [],
     "ts": 5429544,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3563
   },
   {
     "fight": 32,
@@ -13674,7 +14026,9 @@
     "self_hits": [],
     "ts": 5443807,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 12486
   },
   {
     "fight": 32,
@@ -13729,7 +14083,9 @@
     "self_hits": [],
     "ts": 5443763,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 12352
   },
   {
     "fight": 32,
@@ -13809,7 +14165,9 @@
     "self_hits": [],
     "ts": 5450011,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20380
   },
   {
     "fight": 32,
@@ -13889,7 +14247,9 @@
     "self_hits": [],
     "ts": 5450011,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20425
   },
   {
     "fight": 32,
@@ -13971,7 +14331,9 @@
     "self_hits": [],
     "ts": 5450144,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18778
   },
   {
     "fight": 32,
@@ -14054,7 +14416,9 @@
     "self_hits": [],
     "ts": 5450278,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18822
   },
   {
     "fight": 33,
@@ -14070,10 +14434,10 @@
     "total": 57422,
     "hp": 41068,
     "max_hp": 68218,
-    "unmitigated": null,
+    "unmitigated": 57422,
     "multiplier": 1.0,
     "absorb": 7460,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 63.8,
     "pull_ms": 63212,
@@ -14100,15 +14464,18 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Kite Noodle",
+      "Loki Doki"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 5533787,
-    "missing": [
-      "ability 25560"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 33,
@@ -14124,10 +14491,10 @@
     "total": 51618,
     "hp": 30199,
     "max_hp": 62101,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 51618,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 63.8,
     "pull_ms": 63212,
@@ -14142,17 +14509,20 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Kite Noodle",
+      "Loki Doki"
+    ],
     "dead": [
       "Kite Noodle"
     ],
     "group": [],
     "self_hits": [],
     "ts": 5533832,
-    "missing": [
-      "ability 25560"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 33,
@@ -14168,10 +14538,10 @@
     "total": 126533,
     "hp": 87010,
     "max_hp": 99211,
-    "unmitigated": null,
+    "unmitigated": 126533,
     "multiplier": 1.0,
     "absorb": 7230,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 63.8,
     "pull_ms": 63212,
@@ -14198,7 +14568,9 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Absolute Gigachad"
+    ],
     "dead": [
       "Kite Noodle",
       "Loki Doki"
@@ -14206,10 +14578,10 @@
     "group": [],
     "self_hits": [],
     "ts": 5536637,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 33,
@@ -14253,7 +14625,9 @@
     "self_hits": [],
     "ts": 5539481,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 33,
@@ -14321,7 +14695,9 @@
     "self_hits": [],
     "ts": 5541481,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 33,
@@ -14390,7 +14766,9 @@
     "self_hits": [],
     "ts": 5542481,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 33,
@@ -14436,7 +14814,9 @@
     "self_hits": [],
     "ts": 5543481,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 33,
@@ -14483,7 +14863,9 @@
     "self_hits": [],
     "ts": 5544481,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 33,
@@ -14554,7 +14936,9 @@
     "self_hits": [],
     "ts": 5545481,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 34,
@@ -14627,7 +15011,9 @@
     "self_hits": [],
     "ts": 5680777,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 34,
@@ -14702,7 +15088,9 @@
     "self_hits": [],
     "ts": 5681777,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 34,
@@ -14789,7 +15177,9 @@
     "self_hits": [],
     "ts": 5684022,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 2274
   },
   {
     "fight": 34,
@@ -14913,7 +15303,9 @@
     ],
     "ts": 5685269,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3565
   },
   {
     "fight": 34,
@@ -15002,7 +15394,9 @@
     "self_hits": [],
     "ts": 5697749,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14218
   },
   {
     "fight": 34,
@@ -15095,7 +15489,9 @@
     "self_hits": [],
     "ts": 5697749,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14263
   },
   {
     "fight": 34,
@@ -15186,7 +15582,9 @@
     "self_hits": [],
     "ts": 5697793,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14218
   },
   {
     "fight": 34,
@@ -15275,7 +15673,9 @@
     "self_hits": [],
     "ts": 5702777,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 35,
@@ -15342,7 +15742,9 @@
     "self_hits": [],
     "ts": 5835958,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 53682
   },
   {
     "fight": 35,
@@ -15422,7 +15824,9 @@
     "self_hits": [],
     "ts": 5836047,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 53771
   },
   {
     "fight": 35,
@@ -15492,7 +15896,9 @@
     "self_hits": [],
     "ts": 5836091,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 53815
   },
   {
     "fight": 35,
@@ -15552,7 +15958,9 @@
     "self_hits": [],
     "ts": 5837296,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1293
   },
   {
     "fight": 35,
@@ -15638,7 +16046,9 @@
     "self_hits": [],
     "ts": 5839255,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1516
   },
   {
     "fight": 35,
@@ -15725,7 +16135,9 @@
     "self_hits": [],
     "ts": 5839300,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1606
   },
   {
     "fight": 35,
@@ -15813,7 +16225,9 @@
     "self_hits": [],
     "ts": 5839345,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1517
   },
   {
     "fight": 35,
@@ -15902,7 +16316,9 @@
     "self_hits": [],
     "ts": 5839389,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1605
   },
   {
     "fight": 36,
@@ -15918,10 +16334,10 @@
     "total": 124289,
     "hp": 54919,
     "max_hp": 98635,
-    "unmitigated": null,
+    "unmitigated": 124289,
     "multiplier": 1.0,
     "absorb": 7486,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 62.9,
     "pull_ms": 66764,
@@ -15957,15 +16373,24 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
     "dead": [],
     "group": [],
-    "self_hits": [],
-    "ts": 5909614,
-    "missing": [
-      "ability 25545"
+    "self_hits": [
+      {
+        "ability": "Heavy Impact",
+        "guid": 25560,
+        "ago": 2.9,
+        "amount": 35929
+      }
     ],
-    "off_tank": ""
+    "ts": 5909614,
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 36,
@@ -16039,7 +16464,9 @@
     "self_hits": [],
     "ts": 5914024,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 36,
@@ -16103,7 +16530,9 @@
     "self_hits": [],
     "ts": 5916024,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 36,
@@ -16156,7 +16585,9 @@
     "self_hits": [],
     "ts": 5917024,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 36,
@@ -16210,7 +16641,9 @@
     "self_hits": [],
     "ts": 5919024,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 36,
@@ -16311,7 +16744,9 @@
     "self_hits": [],
     "ts": 5919245,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 536
   },
   {
     "fight": 36,
@@ -16389,7 +16824,9 @@
     "self_hits": [],
     "ts": 5919201,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 492
   },
   {
     "fight": 36,
@@ -16473,7 +16910,9 @@
     "self_hits": [],
     "ts": 5919691,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 982
   },
   {
     "fight": 36,
@@ -16530,7 +16969,9 @@
     "self_hits": [],
     "ts": 5922024,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 37,
@@ -16547,7 +16988,7 @@
     "hp": 27635,
     "max_hp": 61737,
     "unmitigated": 51047,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 0,
     "stack": 4,
     "buffs": [],
@@ -16570,7 +17011,9 @@
     "self_hits": [],
     "ts": 6074263,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14655
   },
   {
     "fight": 37,
@@ -16587,7 +17030,7 @@
     "hp": 27733,
     "max_hp": 61615,
     "unmitigated": 51336,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 0,
     "stack": 4,
     "buffs": [],
@@ -16612,7 +17055,9 @@
     "self_hits": [],
     "ts": 6074307,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14611
   },
   {
     "fight": 37,
@@ -16628,10 +17073,10 @@
     "total": 71857,
     "hp": 32361,
     "max_hp": 68662,
-    "unmitigated": null,
+    "unmitigated": 71857,
     "multiplier": null,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 35.9,
     "pull_ms": 141351,
@@ -16654,10 +17099,10 @@
     "group": [],
     "self_hits": [],
     "ts": 6074352,
-    "missing": [
-      "ability 1002945"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 16441
   },
   {
     "fight": 37,
@@ -16674,7 +17119,7 @@
     "hp": 29097,
     "max_hp": 68259,
     "unmitigated": 51742,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 0,
     "stack": 4,
     "buffs": [],
@@ -16701,7 +17146,9 @@
     "self_hits": [],
     "ts": 6074485,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 16664
   },
   {
     "fight": 37,
@@ -16718,7 +17165,7 @@
     "hp": 25410,
     "max_hp": 62101,
     "unmitigated": 51899,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 0,
     "stack": 4,
     "buffs": [],
@@ -16746,7 +17193,9 @@
     "self_hits": [],
     "ts": 6074886,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 17109
   },
   {
     "fight": 37,
@@ -16819,7 +17268,9 @@
     "self_hits": [],
     "ts": 6078277,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20410
   },
   {
     "fight": 37,
@@ -16892,7 +17343,9 @@
     "self_hits": [],
     "ts": 6078277,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18714
   },
   {
     "fight": 37,
@@ -16967,7 +17420,9 @@
     "self_hits": [],
     "ts": 6078411,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18759
   },
   {
     "fight": 38,
@@ -16983,10 +17438,10 @@
     "total": 130356,
     "hp": 45715,
     "max_hp": 98635,
-    "unmitigated": null,
+    "unmitigated": 130356,
     "multiplier": 1.0,
     "absorb": 22157,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 64.8,
     "pull_ms": 63544,
@@ -17033,15 +17488,24 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Absolute Gigalad"
+    ],
     "dead": [],
     "group": [],
-    "self_hits": [],
-    "ts": 6352347,
-    "missing": [
-      "ability 25545"
+    "self_hits": [
+      {
+        "ability": "Heavy Impact",
+        "guid": 25560,
+        "ago": 2.8,
+        "amount": 35677
+      }
     ],
-    "off_tank": ""
+    "ts": 6352347,
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 38,
@@ -17115,7 +17579,9 @@
     "self_hits": [],
     "ts": 6357155,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 38,
@@ -17178,7 +17644,9 @@
     "self_hits": [],
     "ts": 6357155,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 38,
@@ -17229,7 +17697,9 @@
     "self_hits": [],
     "ts": 6357155,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 38,
@@ -17317,7 +17787,9 @@
     "self_hits": [],
     "ts": 6358155,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 38,
@@ -17371,7 +17843,9 @@
     "self_hits": [],
     "ts": 6358155,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 38,
@@ -17461,7 +17935,9 @@
     "self_hits": [],
     "ts": 6359155,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 38,
@@ -17556,7 +18032,9 @@
     "self_hits": [],
     "ts": 6361964,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 491
   },
   {
     "fight": 39,
@@ -17598,7 +18076,9 @@
     "self_hits": [],
     "ts": 6623402,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3571
   },
   {
     "fight": 39,
@@ -17640,7 +18120,9 @@
     "self_hits": [],
     "ts": 6623402,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1788
   },
   {
     "fight": 39,
@@ -17653,12 +18135,12 @@
     "role": "dps",
     "guid": 1002946,
     "ability": "Frostbite",
-    "total": 61121,
-    "hp": 18356,
+    "total": 122243,
+    "hp": 36712,
     "max_hp": 68218,
-    "unmitigated": 61121,
-    "multiplier": 1.0,
-    "absorb": 5976,
+    "unmitigated": 122243,
+    "multiplier": null,
+    "absorb": 11953,
     "stack": 1,
     "buffs": [],
     "boss_pct": 34.6,
@@ -17680,7 +18162,9 @@
     "self_hits": [],
     "ts": 6638902,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 15457
   },
   {
     "fight": 39,
@@ -17697,7 +18181,7 @@
     "hp": 27770,
     "max_hp": 68259,
     "unmitigated": 58215,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 7412,
     "stack": 1,
     "buffs": [],
@@ -17743,7 +18227,9 @@
     "self_hits": [],
     "ts": 6641483,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19869
   },
   {
     "fight": 39,
@@ -17806,7 +18292,9 @@
     "self_hits": [],
     "ts": 6642108,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20361
   },
   {
     "fight": 39,
@@ -17869,7 +18357,9 @@
     "self_hits": [],
     "ts": 6642108,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18618
   },
   {
     "fight": 39,
@@ -17934,7 +18424,9 @@
     "self_hits": [],
     "ts": 6642241,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 22410
   },
   {
     "fight": 39,
@@ -18000,7 +18492,9 @@
     "self_hits": [],
     "ts": 6642375,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20673
   },
   {
     "fight": 39,
@@ -18067,7 +18561,9 @@
     "self_hits": [],
     "ts": 6642508,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18973
   },
   {
     "fight": 39,
@@ -18135,7 +18631,9 @@
     "self_hits": [],
     "ts": 6642773,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 21114
   },
   {
     "fight": 40,
@@ -18191,7 +18689,9 @@
     "self_hits": [],
     "ts": 6823915,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1783
   },
   {
     "fight": 40,
@@ -18249,7 +18749,9 @@
     "self_hits": [],
     "ts": 6836412,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14146
   },
   {
     "fight": 40,
@@ -18266,7 +18768,7 @@
     "hp": 7761,
     "max_hp": 68259,
     "unmitigated": 52074,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 0,
     "stack": 1,
     "buffs": [],
@@ -18338,7 +18840,9 @@
     ],
     "ts": 6842494,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20362
   },
   {
     "fight": 40,
@@ -18410,7 +18914,9 @@
     "self_hits": [],
     "ts": 6842629,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18671
   },
   {
     "fight": 40,
@@ -18483,7 +18989,9 @@
     "self_hits": [],
     "ts": 6842761,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18846
   },
   {
     "fight": 40,
@@ -18557,7 +19065,9 @@
     "self_hits": [],
     "ts": 6843028,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20851
   },
   {
     "fight": 40,
@@ -18632,7 +19142,9 @@
     "self_hits": [],
     "ts": 6843162,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19293
   },
   {
     "fight": 40,
@@ -18708,7 +19220,9 @@
     "self_hits": [],
     "ts": 6843294,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19291
   },
   {
     "fight": 40,
@@ -18785,7 +19299,9 @@
     "self_hits": [],
     "ts": 6843428,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 21206
   },
   {
     "fight": 41,
@@ -18869,7 +19385,9 @@
     "self_hits": [],
     "ts": 7059884,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3558
   },
   {
     "fight": 41,
@@ -18915,7 +19433,9 @@
     "self_hits": [],
     "ts": 7072196,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 12402
   },
   {
     "fight": 41,
@@ -18932,7 +19452,7 @@
     "hp": 8625,
     "max_hp": 61615,
     "unmitigated": 47774,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 0,
     "stack": 1,
     "buffs": [],
@@ -18957,7 +19477,9 @@
     "self_hits": [],
     "ts": 7076328,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20002
   },
   {
     "fight": 41,
@@ -19026,7 +19548,9 @@
     "self_hits": [],
     "ts": 7078509,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20536
   },
   {
     "fight": 41,
@@ -19096,7 +19620,9 @@
     "self_hits": [],
     "ts": 7078643,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20581
   },
   {
     "fight": 41,
@@ -19167,7 +19693,9 @@
     "self_hits": [],
     "ts": 7078777,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18938
   },
   {
     "fight": 41,
@@ -19239,7 +19767,9 @@
     "self_hits": [],
     "ts": 7079043,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 21027
   },
   {
     "fight": 41,
@@ -19319,7 +19849,9 @@
     "self_hits": [],
     "ts": 7084659,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 24909
   },
   {
     "fight": 41,
@@ -19400,7 +19932,9 @@
     "self_hits": [],
     "ts": 7084793,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 26687
   },
   {
     "fight": 42,
@@ -19416,10 +19950,10 @@
     "total": 51692,
     "hp": 33245,
     "max_hp": 61615,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 51692,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 63.9,
     "pull_ms": 71118,
@@ -19434,15 +19968,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 7154823,
-    "missing": [
-      "ability 25559"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 42,
@@ -19524,10 +20060,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7174696,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 42,
@@ -19610,10 +20146,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7174829,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6186
   },
   {
     "fight": 42,
@@ -19697,10 +20233,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7175097,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 42,
@@ -19785,10 +20321,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7175364,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6721
   },
   {
     "fight": 42,
@@ -19885,10 +20421,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7175496,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6853
   },
   {
     "fight": 42,
@@ -19975,7 +20511,9 @@
     "self_hits": [],
     "ts": 7176169,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 42,
@@ -20039,7 +20577,9 @@
     "self_hits": [],
     "ts": 7176169,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 43,
@@ -20112,7 +20652,9 @@
     "self_hits": [],
     "ts": 7315314,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3514
   },
   {
     "fight": 43,
@@ -20154,7 +20696,9 @@
     "self_hits": [],
     "ts": 7327595,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 15795
   },
   {
     "fight": 43,
@@ -20171,7 +20715,7 @@
     "hp": 25648,
     "max_hp": 61737,
     "unmitigated": 51775,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 0,
     "stack": 2,
     "buffs": [],
@@ -20196,7 +20740,9 @@
     "self_hits": [],
     "ts": 7331289,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 15841
   },
   {
     "fight": 43,
@@ -20213,7 +20759,7 @@
     "hp": 36303,
     "max_hp": 68259,
     "unmitigated": 51126,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 0,
     "stack": 2,
     "buffs": [],
@@ -20239,7 +20785,9 @@
     "self_hits": [],
     "ts": 7331511,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 17933
   },
   {
     "fight": 43,
@@ -20310,7 +20858,9 @@
     "self_hits": [],
     "ts": 7334042,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18639
   },
   {
     "fight": 43,
@@ -20381,7 +20931,9 @@
     "self_hits": [],
     "ts": 7334042,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20331
   },
   {
     "fight": 43,
@@ -20454,7 +21006,9 @@
     "self_hits": [],
     "ts": 7334175,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20508
   },
   {
     "fight": 43,
@@ -20528,7 +21082,9 @@
     "self_hits": [],
     "ts": 7334442,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19083
   },
   {
     "fight": 43,
@@ -20603,7 +21159,9 @@
     "self_hits": [],
     "ts": 7334576,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20954
   },
   {
     "fight": 44,
@@ -20677,7 +21235,9 @@
     ],
     "ts": 7482606,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 55504
   },
   {
     "fight": 44,
@@ -20792,7 +21352,9 @@
     "self_hits": [],
     "ts": 7486158,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3597
   },
   {
     "fight": 44,
@@ -20852,7 +21414,9 @@
     "self_hits": [],
     "ts": 7492509,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 44,
@@ -20913,7 +21477,9 @@
     "self_hits": [],
     "ts": 7495509,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 44,
@@ -20976,7 +21542,9 @@
     "self_hits": [],
     "ts": 7498345,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 71243
   },
   {
     "fight": 44,
@@ -21040,7 +21608,9 @@
     "self_hits": [],
     "ts": 7498568,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14142
   },
   {
     "fight": 44,
@@ -21109,7 +21679,9 @@
     "self_hits": [],
     "ts": 7498568,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14274
   },
   {
     "fight": 44,
@@ -21191,7 +21763,9 @@
     "self_hits": [],
     "ts": 7504749,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20412
   },
   {
     "fight": 44,
@@ -21273,7 +21847,9 @@
     "self_hits": [],
     "ts": 7504749,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20367
   },
   {
     "fight": 45,
@@ -21289,10 +21865,10 @@
     "total": 106831,
     "hp": 99211,
     "max_hp": 99211,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 133539,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 77.7,
     "pull_ms": 29412,
@@ -21307,15 +21883,18 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Kiara Blaiddyd"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 7544279,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 45,
@@ -21331,10 +21910,10 @@
     "total": 209555,
     "hp": 68662,
     "max_hp": 68662,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 209555,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 2,
     "buffs": [],
     "boss_pct": 77.7,
     "pull_ms": 29412,
@@ -21349,17 +21928,20 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Absolute Gigachad",
+      "Kiara Blaiddyd"
+    ],
     "dead": [
       "Absolute Gigachad"
     ],
     "group": [],
     "self_hits": [],
     "ts": 7544324,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 45,
@@ -21402,7 +21984,9 @@
     "self_hits": [],
     "ts": 7548099,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 45,
@@ -21445,7 +22029,9 @@
     "self_hits": [],
     "ts": 7548099,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 45,
@@ -21490,7 +22076,9 @@
     "self_hits": [],
     "ts": 7549099,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 45,
@@ -21535,7 +22123,9 @@
     "self_hits": [],
     "ts": 7549099,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 45,
@@ -21582,7 +22172,9 @@
     "self_hits": [],
     "ts": 7552099,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 45,
@@ -21630,7 +22222,9 @@
     "self_hits": [],
     "ts": 7555099,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 46,
@@ -21646,10 +22240,10 @@
     "total": 53221,
     "hp": 46506,
     "max_hp": 61737,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 53221,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 62.8,
     "pull_ms": 63072,
@@ -21664,15 +22258,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Kitana Kahn"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 7637778,
-    "missing": [
-      "ability 25560"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 46,
@@ -21688,10 +22284,10 @@
     "total": 216393,
     "hp": 53504,
     "max_hp": 61615,
-    "unmitigated": null,
+    "unmitigated": 216393,
     "multiplier": 1.0,
     "absorb": 7536,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 62.8,
     "pull_ms": 63072,
@@ -21718,17 +22314,19 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [
       "Kitana Kahn"
     ],
     "group": [],
     "self_hits": [],
     "ts": 7640627,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 46,
@@ -21805,7 +22403,9 @@
     "self_hits": [],
     "ts": 7644486,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 46,
@@ -21883,7 +22483,9 @@
     "self_hits": [],
     "ts": 7645486,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 46,
@@ -21962,7 +22564,9 @@
     "self_hits": [],
     "ts": 7646486,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 46,
@@ -22042,7 +22646,9 @@
     "self_hits": [],
     "ts": 7647486,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 46,
@@ -22122,7 +22728,9 @@
     "self_hits": [],
     "ts": 7647486,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 46,
@@ -22204,7 +22812,9 @@
     "self_hits": [],
     "ts": 7649486,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 47,
@@ -22288,7 +22898,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -22306,10 +22918,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7735188,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 47,
@@ -22393,7 +23005,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -22413,10 +23027,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7735321,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 47,
@@ -22500,7 +23114,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -22521,10 +23137,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7735455,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6276
   },
   {
     "fight": 47,
@@ -22608,7 +23224,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -22630,10 +23248,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7735720,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 47,
@@ -22706,7 +23324,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -22729,10 +23349,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7735854,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6675
   },
   {
     "fight": 47,
@@ -22805,7 +23425,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -22829,10 +23451,10 @@
     "group": [],
     "self_hits": [],
     "ts": 7736121,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6942
   },
   {
     "fight": 47,
@@ -22930,7 +23552,9 @@
     "self_hits": [],
     "ts": 7737568,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 47,
@@ -22995,7 +23619,9 @@
     "self_hits": [],
     "ts": 7741568,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 48,
@@ -23087,7 +23713,9 @@
     ],
     "ts": 7876885,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1023
   },
   {
     "fight": 48,
@@ -23152,7 +23780,9 @@
     "self_hits": [],
     "ts": 7891854,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14393
   },
   {
     "fight": 48,
@@ -23165,11 +23795,11 @@
     "role": "dps",
     "guid": 1002946,
     "ability": "Frostbite",
-    "total": 60576,
-    "hp": 15155,
+    "total": 121152,
+    "hp": 30310,
     "max_hp": 61737,
-    "unmitigated": 60576,
-    "multiplier": 1.0,
+    "unmitigated": 121152,
+    "multiplier": null,
     "absorb": 0,
     "stack": 1,
     "buffs": [],
@@ -23212,7 +23842,9 @@
     "self_hits": [],
     "ts": 7895281,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 15955
   },
   {
     "fight": 48,
@@ -23299,7 +23931,9 @@
     "self_hits": [],
     "ts": 7898037,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18756
   },
   {
     "fight": 48,
@@ -23386,7 +24020,9 @@
     "self_hits": [],
     "ts": 7898037,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20485
   },
   {
     "fight": 48,
@@ -23475,7 +24111,9 @@
     "self_hits": [],
     "ts": 7898170,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18800
   },
   {
     "fight": 48,
@@ -23564,7 +24202,9 @@
     "self_hits": [],
     "ts": 7898170,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20574
   },
   {
     "fight": 48,
@@ -23655,7 +24295,9 @@
     "self_hits": [],
     "ts": 7898436,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20928
   },
   {
     "fight": 49,
@@ -23718,7 +24360,9 @@
     "self_hits": [],
     "ts": 8034816,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 49,
@@ -23782,7 +24426,9 @@
     "self_hits": [],
     "ts": 8036292,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3559
   },
   {
     "fight": 49,
@@ -23858,7 +24504,9 @@
     "self_hits": [],
     "ts": 8036382,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3604
   },
   {
     "fight": 49,
@@ -23902,7 +24550,9 @@
     "self_hits": [],
     "ts": 8040816,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 49,
@@ -23947,7 +24597,9 @@
     "self_hits": [],
     "ts": 8041816,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 49,
@@ -24012,7 +24664,9 @@
     "self_hits": [],
     "ts": 8048833,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14099
   },
   {
     "fight": 49,
@@ -24060,7 +24714,9 @@
     "self_hits": [],
     "ts": 8048833,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14277
   },
   {
     "fight": 49,
@@ -24108,7 +24764,9 @@
     "self_hits": [],
     "ts": 8053816,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 50,
@@ -24165,7 +24823,9 @@
     "self_hits": [],
     "ts": 8193488,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 50,
@@ -24268,7 +24928,9 @@
     "self_hits": [],
     "ts": 8197110,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3601
   },
   {
     "fight": 50,
@@ -24370,7 +25032,9 @@
     "self_hits": [],
     "ts": 8198800,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3603
   },
   {
     "fight": 50,
@@ -24473,7 +25137,9 @@
     "self_hits": [],
     "ts": 8198844,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3602
   },
   {
     "fight": 50,
@@ -24535,7 +25201,9 @@
     "self_hits": [],
     "ts": 8202488,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 50,
@@ -24629,7 +25297,9 @@
     "self_hits": [],
     "ts": 8211217,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14241
   },
   {
     "fight": 50,
@@ -24695,7 +25365,9 @@
     "self_hits": [],
     "ts": 8211217,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14197
   },
   {
     "fight": 50,
@@ -24775,7 +25447,9 @@
     "self_hits": [],
     "ts": 8211261,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14196
   },
   {
     "fight": 51,
@@ -24881,7 +25555,9 @@
     "self_hits": [],
     "ts": 8299530,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 51,
@@ -24997,10 +25673,10 @@
     "group": [],
     "self_hits": [],
     "ts": 8304645,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 51,
@@ -25083,10 +25759,10 @@
     "group": [],
     "self_hits": [],
     "ts": 8304779,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6228
   },
   {
     "fight": 51,
@@ -25192,10 +25868,10 @@
     "group": [],
     "self_hits": [],
     "ts": 8305047,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6496
   },
   {
     "fight": 51,
@@ -25314,10 +25990,10 @@
     "group": [],
     "self_hits": [],
     "ts": 8305181,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 51,
@@ -25425,10 +26101,10 @@
     "group": [],
     "self_hits": [],
     "ts": 8305448,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6897
   },
   {
     "fight": 51,
@@ -25526,7 +26202,9 @@
     "self_hits": [],
     "ts": 8305967,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 51,
@@ -25591,7 +26269,9 @@
     "self_hits": [],
     "ts": 8308967,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 52,
@@ -25607,10 +26287,10 @@
     "total": 221800,
     "hp": 48659,
     "max_hp": 61615,
-    "unmitigated": null,
+    "unmitigated": 221800,
     "multiplier": 1.0,
     "absorb": 17507,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 62.7,
     "pull_ms": 69333,
@@ -25659,15 +26339,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 8383277,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 52,
@@ -25733,7 +26415,9 @@
     "self_hits": [],
     "ts": 8392903,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 536
   },
   {
     "fight": 52,
@@ -25806,7 +26490,9 @@
     "self_hits": [],
     "ts": 8393260,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 52,
@@ -25884,7 +26570,9 @@
     "self_hits": [],
     "ts": 8393935,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 52,
@@ -25929,7 +26617,9 @@
     "self_hits": [],
     "ts": 8394935,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 52,
@@ -25987,7 +26677,9 @@
     "self_hits": [],
     "ts": 8396935,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 52,
@@ -26067,10 +26759,10 @@
     "group": [],
     "self_hits": [],
     "ts": 8398417,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 52,
@@ -26125,10 +26817,10 @@
     "group": [],
     "self_hits": [],
     "ts": 8398551,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6184
   },
   {
     "fight": 57,
@@ -26196,7 +26888,9 @@
     "self_hits": [],
     "ts": 9856886,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20605
   },
   {
     "fight": 57,
@@ -26266,7 +26960,9 @@
     "self_hits": [],
     "ts": 9857020,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20649
   },
   {
     "fight": 57,
@@ -26337,7 +27033,9 @@
     "self_hits": [],
     "ts": 9857152,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19050
   },
   {
     "fight": 57,
@@ -26409,7 +27107,9 @@
     "self_hits": [],
     "ts": 9857287,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19229
   },
   {
     "fight": 57,
@@ -26482,7 +27182,9 @@
     "self_hits": [],
     "ts": 9857420,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 21005
   },
   {
     "fight": 57,
@@ -26556,7 +27258,9 @@
     "self_hits": [],
     "ts": 9857688,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19541
   },
   {
     "fight": 57,
@@ -26628,7 +27332,9 @@
     "self_hits": [],
     "ts": 9861628,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 23615
   },
   {
     "fight": 57,
@@ -26701,7 +27407,9 @@
     "self_hits": [],
     "ts": 9861762,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 25437
   },
   {
     "fight": 58,
@@ -26755,7 +27463,9 @@
     "self_hits": [],
     "ts": 10024444,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 1736
   },
   {
     "fight": 58,
@@ -26815,7 +27525,9 @@
     "self_hits": [],
     "ts": 10036916,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14298
   },
   {
     "fight": 58,
@@ -26901,7 +27613,9 @@
     "self_hits": [],
     "ts": 10043219,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18730
   },
   {
     "fight": 58,
@@ -26999,7 +27713,9 @@
     "self_hits": [],
     "ts": 10043219,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18686
   },
   {
     "fight": 58,
@@ -27099,7 +27815,9 @@
     "self_hits": [],
     "ts": 10043352,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20688
   },
   {
     "fight": 58,
@@ -27200,7 +27918,9 @@
     "self_hits": [],
     "ts": 10043486,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19042
   },
   {
     "fight": 58,
@@ -27289,7 +28009,9 @@
     "self_hits": [],
     "ts": 10043486,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20733
   },
   {
     "fight": 58,
@@ -27380,7 +28102,9 @@
     "self_hits": [],
     "ts": 10043618,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19040
   },
   {
     "fight": 59,
@@ -27496,7 +28220,9 @@
     "self_hits": [],
     "ts": 10125632,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 534
   },
   {
     "fight": 59,
@@ -27554,7 +28280,9 @@
     "self_hits": [],
     "ts": 10125588,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 490
   },
   {
     "fight": 59,
@@ -27675,7 +28403,9 @@
     "self_hits": [],
     "ts": 10126033,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 935
   },
   {
     "fight": 59,
@@ -27740,7 +28470,9 @@
     "self_hits": [],
     "ts": 10128406,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 59,
@@ -27817,7 +28549,9 @@
     "self_hits": [],
     "ts": 10130406,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 59,
@@ -27874,7 +28608,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Loki Doki"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -27893,10 +28629,10 @@
     "group": [],
     "self_hits": [],
     "ts": 10131135,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 59,
@@ -27939,7 +28675,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Loki Doki"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -27958,10 +28696,10 @@
     "group": [],
     "self_hits": [],
     "ts": 10131135,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 6037
   },
   {
     "fight": 59,
@@ -28030,7 +28768,9 @@
       "Kitana Kahn",
       "Kiara Blaiddyd"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Loki Doki"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -28051,10 +28791,10 @@
     "group": [],
     "self_hits": [],
     "ts": 10131267,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 60,
@@ -28132,7 +28872,9 @@
     "self_hits": [],
     "ts": 10233210,
     "missing": [],
-    "off_tank": "Absolute Gigachad"
+    "off_tank": "Absolute Gigachad",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 60,
@@ -28205,7 +28947,9 @@
     "self_hits": [],
     "ts": 10267498,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3511
   },
   {
     "fight": 60,
@@ -28280,7 +29024,9 @@
     "self_hits": [],
     "ts": 10267632,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3600
   },
   {
     "fight": 60,
@@ -28348,7 +29094,9 @@
     "self_hits": [],
     "ts": 10269363,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 3510
   },
   {
     "fight": 60,
@@ -28394,7 +29142,9 @@
     "self_hits": [],
     "ts": 10269984,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 2442
   },
   {
     "fight": 60,
@@ -28439,7 +29189,9 @@
     "self_hits": [],
     "ts": 10272052,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 60,
@@ -28485,7 +29237,9 @@
     "self_hits": [],
     "ts": 10273052,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 60,
@@ -28531,7 +29285,9 @@
     "self_hits": [],
     "ts": 10273052,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 60,
@@ -28589,7 +29345,9 @@
     "self_hits": [],
     "ts": 10273052,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 61,
@@ -28657,7 +29415,9 @@
     "self_hits": [],
     "ts": 10414552,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 357
   },
   {
     "fight": 61,
@@ -28702,7 +29462,9 @@
     "self_hits": [],
     "ts": 10426763,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14308
   },
   {
     "fight": 61,
@@ -28748,7 +29510,9 @@
     "self_hits": [],
     "ts": 10426807,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 14264
   },
   {
     "fight": 61,
@@ -28792,7 +29556,9 @@
     "self_hits": [],
     "ts": 10431745,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 61,
@@ -28846,7 +29612,9 @@
     "self_hits": [],
     "ts": 10432951,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18667
   },
   {
     "fight": 61,
@@ -28900,7 +29668,9 @@
     "self_hits": [],
     "ts": 10432951,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20452
   },
   {
     "fight": 61,
@@ -28956,7 +29726,9 @@
     "self_hits": [],
     "ts": 10433085,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20498
   },
   {
     "fight": 61,
@@ -29012,7 +29784,9 @@
     "self_hits": [],
     "ts": 10433085,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18846
   },
   {
     "fight": 62,
@@ -29025,13 +29799,13 @@
     "role": "dps",
     "guid": 1002945,
     "ability": "Burns",
-    "total": 64021,
-    "hp": 26470,
+    "total": 128043,
+    "hp": 52940,
     "max_hp": 61737,
-    "unmitigated": null,
+    "unmitigated": 128043,
     "multiplier": null,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 33.5,
     "pull_ms": 147226,
@@ -29060,10 +29834,10 @@
     "group": [],
     "self_hits": [],
     "ts": 10592072,
-    "missing": [
-      "ability 1002945"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 17965
   },
   {
     "fight": 62,
@@ -29132,7 +29906,9 @@
     "self_hits": [],
     "ts": 10592694,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18632
   },
   {
     "fight": 62,
@@ -29202,7 +29978,9 @@
     "self_hits": [],
     "ts": 10592961,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18988
   },
   {
     "fight": 62,
@@ -29273,7 +30051,9 @@
     "self_hits": [],
     "ts": 10593095,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20912
   },
   {
     "fight": 62,
@@ -29345,7 +30125,9 @@
     "self_hits": [],
     "ts": 10593229,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19078
   },
   {
     "fight": 62,
@@ -29418,7 +30200,9 @@
     "self_hits": [],
     "ts": 10593362,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 21089
   },
   {
     "fight": 62,
@@ -29491,7 +30275,9 @@
     "self_hits": [],
     "ts": 10598970,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 24953
   },
   {
     "fight": 62,
@@ -29564,7 +30350,9 @@
     "self_hits": [],
     "ts": 10598970,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 26742
   },
   {
     "fight": 63,
@@ -29715,7 +30503,9 @@
     "self_hits": [],
     "ts": 10679784,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 63,
@@ -29791,7 +30581,9 @@
     "self_hits": [],
     "ts": 10679958,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 63,
@@ -29874,7 +30666,9 @@
     "self_hits": [],
     "ts": 10680135,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 534
   },
   {
     "fight": 63,
@@ -29959,7 +30753,9 @@
     "self_hits": [],
     "ts": 10680268,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 667
   },
   {
     "fight": 63,
@@ -30057,7 +30853,9 @@
     "self_hits": [],
     "ts": 10680313,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 712
   },
   {
     "fight": 63,
@@ -30216,7 +31014,9 @@
     "self_hits": [],
     "ts": 10680358,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 757
   },
   {
     "fight": 63,
@@ -30315,7 +31115,9 @@
     "self_hits": [],
     "ts": 10680358,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 757
   },
   {
     "fight": 63,
@@ -30370,10 +31172,10 @@
     "group": [],
     "self_hits": [],
     "ts": 10685416,
-    "missing": [
-      "ability 25567"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 5994
   },
   {
     "fight": 64,
@@ -30390,7 +31192,7 @@
     "hp": 39571,
     "max_hp": 68662,
     "unmitigated": 51317,
-    "multiplier": 1.0,
+    "multiplier": null,
     "absorb": 0,
     "stack": 1,
     "buffs": [],
@@ -30413,7 +31215,9 @@
     "self_hits": [],
     "ts": 10838059,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 16450
   },
   {
     "fight": 64,
@@ -30482,7 +31286,9 @@
     "self_hits": [],
     "ts": 10842119,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20599
   },
   {
     "fight": 64,
@@ -30552,7 +31358,9 @@
     "self_hits": [],
     "ts": 10842252,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20776
   },
   {
     "fight": 64,
@@ -30623,7 +31431,9 @@
     "self_hits": [],
     "ts": 10842522,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19227
   },
   {
     "fight": 64,
@@ -30695,7 +31505,9 @@
     "self_hits": [],
     "ts": 10842656,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19228
   },
   {
     "fight": 64,
@@ -30768,7 +31580,9 @@
     "self_hits": [],
     "ts": 10842790,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 19407
   },
   {
     "fight": 64,
@@ -30841,7 +31655,9 @@
     "self_hits": [],
     "ts": 10848289,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 26725
   },
   {
     "fight": 64,
@@ -30915,7 +31731,9 @@
     "self_hits": [],
     "ts": 10848423,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 25084
   },
   {
     "fight": 65,
@@ -30958,7 +31776,9 @@
     "self_hits": [],
     "ts": 10995311,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 2402
   },
   {
     "fight": 65,
@@ -31003,7 +31823,9 @@
     "self_hits": [],
     "ts": 10995355,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 2357
   },
   {
     "fight": 65,
@@ -31066,7 +31888,9 @@
     "self_hits": [],
     "ts": 11007089,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 12313
   },
   {
     "fight": 65,
@@ -31109,7 +31933,9 @@
     "self_hits": [],
     "ts": 11012467,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 65,
@@ -31171,7 +31997,9 @@
     "self_hits": [],
     "ts": 11013336,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18649
   },
   {
     "fight": 65,
@@ -31233,7 +32061,9 @@
     "self_hits": [],
     "ts": 11013336,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20293
   },
   {
     "fight": 65,
@@ -31297,7 +32127,9 @@
     "self_hits": [],
     "ts": 11013469,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20560
   },
   {
     "fight": 65,
@@ -31362,7 +32194,9 @@
     "self_hits": [],
     "ts": 11013603,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 18873
   },
   {
     "fight": 65,
@@ -31428,7 +32262,9 @@
     "self_hits": [],
     "ts": 11013871,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 20917
   },
   {
     "fight": 66,
@@ -31444,10 +32280,10 @@
     "total": 75452,
     "hp": 56609,
     "max_hp": 68259,
-    "unmitigated": null,
+    "unmitigated": 75452,
     "multiplier": null,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 33.3,
     "pull_ms": 152938,
@@ -31467,10 +32303,10 @@
     "group": [],
     "self_hits": [],
     "ts": 11176911,
-    "missing": [
-      "ability 1002945"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 25684
   },
   {
     "fight": 66,
@@ -31486,10 +32322,10 @@
     "total": 92851,
     "hp": 50434,
     "max_hp": 61737,
-    "unmitigated": null,
-    "multiplier": 1.0,
+    "unmitigated": 92851,
+    "multiplier": null,
     "absorb": 26058,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 33.3,
     "pull_ms": 152938,
@@ -31534,10 +32370,10 @@
     "group": [],
     "self_hits": [],
     "ts": 11180074,
-    "missing": [
-      "ability 1002945"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 26981
   },
   {
     "fight": 66,
@@ -31609,7 +32445,9 @@
     "self_hits": [],
     "ts": 11182263,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 30903
   },
   {
     "fight": 66,
@@ -31682,7 +32520,9 @@
     "self_hits": [],
     "ts": 11182396,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 31081
   },
   {
     "fight": 66,
@@ -31756,7 +32596,9 @@
     "self_hits": [],
     "ts": 11182529,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 31257
   },
   {
     "fight": 66,
@@ -31831,7 +32673,9 @@
     "self_hits": [],
     "ts": 11182662,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 29480
   },
   {
     "fight": 66,
@@ -31907,7 +32751,9 @@
     "self_hits": [],
     "ts": 11182796,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 29658
   },
   {
     "fight": 66,
@@ -31984,7 +32830,9 @@
     "self_hits": [],
     "ts": 11182931,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 29882
   },
   {
     "fight": 67,
@@ -32055,7 +32903,9 @@
     "self_hits": [],
     "ts": 11375946,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 23821
   },
   {
     "fight": 67,
@@ -32128,7 +32978,9 @@
     "self_hits": [],
     "ts": 11376081,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 23911
   },
   {
     "fight": 67,
@@ -32202,7 +33054,9 @@
     "self_hits": [],
     "ts": 11376215,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 22402
   },
   {
     "fight": 67,
@@ -32277,7 +33131,9 @@
     "self_hits": [],
     "ts": 11376349,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 22447
   },
   {
     "fight": 67,
@@ -32352,7 +33208,9 @@
     "self_hits": [],
     "ts": 11376349,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 22402
   },
   {
     "fight": 67,
@@ -32429,7 +33287,9 @@
     "self_hits": [],
     "ts": 11376482,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 22624
   },
   {
     "fight": 67,
@@ -32507,7 +33367,9 @@
     "self_hits": [],
     "ts": 11376748,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 24712
   },
   {
     "fight": 67,
@@ -32598,7 +33460,9 @@
     "self_hits": [],
     "ts": 11376881,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Sacred Sever",
+    "amp_ms": 24800
   },
   {
     "fight": 68,
@@ -32614,10 +33478,10 @@
     "total": 215729,
     "hp": 62101,
     "max_hp": 62101,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 215729,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 65.1,
     "pull_ms": 63588,
@@ -32632,15 +33496,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Loki Doki"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 11434279,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 68,
@@ -32656,10 +33522,10 @@
     "total": 52463,
     "hp": 31987,
     "max_hp": 68218,
-    "unmitigated": null,
-    "multiplier": null,
+    "unmitigated": 52463,
+    "multiplier": 1.0,
     "absorb": 0,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 65.1,
     "pull_ms": 63588,
@@ -32674,15 +33540,17 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Kite Noodle"
+    ],
     "dead": [],
     "group": [],
     "self_hits": [],
     "ts": 11466630,
-    "missing": [
-      "ability 25560"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 68,
@@ -32698,10 +33566,10 @@
     "total": 207324,
     "hp": 50337,
     "max_hp": 61615,
-    "unmitigated": null,
+    "unmitigated": 207324,
     "multiplier": 1.0,
     "absorb": 16614,
-    "stack": null,
+    "stack": 1,
     "buffs": [],
     "boss_pct": 65.1,
     "pull_ms": 63588,
@@ -32739,17 +33607,19 @@
     "doubled": [],
     "marked": [],
     "dropped_by": [],
-    "cohort": [],
+    "cohort": [
+      "Spring Nymphar"
+    ],
     "dead": [
       "Kite Noodle"
     ],
     "group": [],
     "self_hits": [],
     "ts": 11469477,
-    "missing": [
-      "ability 25545"
-    ],
-    "off_tank": ""
+    "missing": [],
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 68,
@@ -32826,7 +33696,9 @@
     "self_hits": [],
     "ts": 11473273,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 68,
@@ -32904,7 +33776,9 @@
     "self_hits": [],
     "ts": 11474273,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 68,
@@ -32983,7 +33857,9 @@
     "self_hits": [],
     "ts": 11475273,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 68,
@@ -33028,7 +33904,9 @@
     "self_hits": [],
     "ts": 11475273,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "",
+    "amp_ms": null
   },
   {
     "fight": 68,
@@ -33077,7 +33955,9 @@
     "self_hits": [],
     "ts": 11479085,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 491
   },
   {
     "fight": 68,
@@ -33150,6 +34030,8 @@
     "self_hits": [],
     "ts": 11479130,
     "missing": [],
-    "off_tank": ""
+    "off_tank": "",
+    "amp_via": "Skyward Leap",
+    "amp_ms": 491
   }
 ]

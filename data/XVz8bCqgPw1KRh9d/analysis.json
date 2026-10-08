@@ -1,13 +1,13 @@
 {
- "rules": "31a0eba724499654",
- "engine": "4cba15fd9d7ed4f2",
- "log": "35838672fc2dde34",
+ "rules": "ab572d81a6eef524",
+ "engine": "f2910622144d6dc9",
+ "log": "cbb000a0f2e1a39e",
  "outputs": {
-  "facts.json": "d38cfe96248b4588",
-  "judgments.json": "412d434521711cdd",
-  "calls.tsv": "417bb23abdfeeb9b",
-  "session.html": "e2b3802d5f0361c1",
-  "inputs.json": "91917c9833c14083"
+  "facts.json": "01abebea022a37b3",
+  "judgments.json": "2a0e4276a42596c1",
+  "calls.tsv": "44e6bb31e8ae652a",
+  "session.html": "a7d7b74c6fe36c8e",
+  "inputs.json": "2ad291906dbfe108"
  },
  "counts": {
   "raw": 40,
@@ -1548,7 +1548,6 @@
    "labels": [
     "Assigned mitigation",
     "Earlier deaths",
-    "Missed soak",
     "Missing bodies"
    ],
    "started": [
@@ -1749,7 +1748,7 @@
        2
       ],
       [
-       "Missed soak",
+       "Spring Nymphar",
        1
       ]
      ]
@@ -1908,7 +1907,7 @@
    "starters": [
     [
      "Spring Nymphar",
-     21
+     22
     ],
     [
      "Kitana Kahn",
@@ -1937,36 +1936,32 @@
     [
      "Speed Panda",
      6
-    ],
-    [
-     "Missed soak",
-     1
     ]
    ],
    "owned": [
     [
      "Spring Nymphar",
-     73.5
+     85.8
     ],
     [
      "Kitana Kahn",
-     64.6
+     64.0
     ],
     [
      "Kiara Blaiddyd",
-     47.8
+     47.7
     ],
     [
      "Speed Panda",
-     46.3
+     46.1
     ],
     [
      "Loki Doki",
-     42.9
+     43.6
     ],
     [
      "Kite Noodle",
-     40.1
+     39.8
     ],
     [
      "Absolute Gigalad",
@@ -1975,10 +1970,6 @@
     [
      "Absolute Gigachad",
      31.1
-    ],
-    [
-     "Missed soak",
-     6.0
     ],
     [
      "Missing bodies",

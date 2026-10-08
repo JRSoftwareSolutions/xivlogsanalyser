@@ -2,67 +2,15 @@
  "phases": [
   2
  ],
- "abilities": [
-  {
-   "guid": 25308,
-   "name": "Faith Unmoving"
-  },
-  {
-   "guid": 25545,
-   "name": "Ascalon's Mercy Concealed"
-  },
-  {
-   "guid": 25556,
-   "name": "Spiral Thrust"
-  },
-  {
-   "guid": 25559,
-   "name": "Heavy Impact"
-  },
-  {
-   "guid": 25560,
-   "name": "Heavy Impact"
-  },
-  {
-   "guid": 25564,
-   "name": "Dimensional Collapse"
-  },
-  {
-   "guid": 25567,
-   "name": "Eternal Conviction soak"
-  },
-  {
-   "guid": 25579,
-   "name": "Holy Shield Bash"
-  },
-  {
-   "guid": 28651,
-   "name": "Eternal Conviction soak"
-  },
-  {
-   "guid": 500000,
-   "name": "combined damage over time"
-  },
-  {
-   "guid": 1002945,
-   "name": "Burns"
-  }
- ],
+ "abilities": [],
  "no_positions": [],
  "no_mitigations": [],
  "no_max_hp": [],
  "unnamed_buffs": [],
  "deaths": {
   "judged": 458,
-  "with_gaps": 81,
-  "gaps": {
-   "ability 1002945": 4,
-   "ability 25545": 23,
-   "ability 25559": 1,
-   "ability 25560": 5,
-   "ability 25564": 1,
-   "ability 25567": 47
-  },
+  "with_gaps": 0,
+  "gaps": {},
   "not_judged": 113,
   "not_judged_by_reason": {
    "P1: Adelphel, Grinnaux and Charibert: the pull never reached a judged phase": 109,

@@ -5,3 +5,5 @@ __pycache__/
 build/
 .env
 .env.*
+# FFLogs API client (id and secret). Never commit it.
+.fflogs.json

@@ -15,9 +15,9 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 11	1:58	Kiara Blaiddyd	116.0	Sacred Sever	fail	redirected	hit-list	Kite Noodle 100	
 11	1:59	Loki Doki	117.7	Sacred Sever	raw	missing	hit-list	Kite Noodle 60 (via Kiara Blaiddyd, Spring Nymphar, Absolute Gigachad); Kitana Kahn 20; Speed Panda 20	
 11	2:18	Absolute Gigalad	136.7	Eternal Conviction	fail	empty	hit-list	Speed Panda 17 (via Loki Doki); Kite Noodle 65 (via Absolute Gigachad, Spring Nymphar, Kiara Blaiddyd, Loki Doki); Kitana Kahn 17 (via Loki Doki)	
-12	0:16	Kitana Kahn	14.4	Ascalon's Mercy Concealed	fail	personal	hit	Kitana Kahn 100	ability 25545
-12	0:16	Spring Nymphar	14.4	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
-12	0:51	Kiara Blaiddyd	49.6	Ascalon's Mercy Concealed	fail	personal	hit	Kiara Blaiddyd 100	ability 25545
+12	0:16	Kitana Kahn	14.4	Ascalon's Mercy Concealed	fail	personal	hit	Kitana Kahn 100	
+12	0:16	Spring Nymphar	14.4	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
+12	0:51	Kiara Blaiddyd	49.6	Ascalon's Mercy Concealed	fail	personal	hit	Kiara Blaiddyd 100	
 12	1:00	Spring Nymphar	58.5	Deathwall	fail	after	no-packet	Spring Nymphar 50; Earlier mistake 50	
 12	1:01	Loki Doki	59.6	Dragon's Rage	raw	missing	hit-list	Spring Nymphar 50; Kiara Blaiddyd 50	
 12	1:03	Speed Panda	61.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
@@ -25,9 +25,9 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 12	1:06	Absolute Gigachad	64.5	Holy Bladedance	low	low	role	Spring Nymphar 50 (via Loki Doki); Kiara Blaiddyd 16 (via Loki Doki); Earlier damage 33	
 12	1:06	Kitana Kahn	64.5	Deathwall	fail	after	no-packet	Kitana Kahn 50; Earlier mistake 50	
 12	1:06	Kite Noodle	64.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
-13	0:16	Spring Nymphar	14.6	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
-13	0:48	Loki Doki	46.9	Heavy Impact	fail	personal	hit	Loki Doki 100	ability 25560
-13	0:51	Spring Nymphar	49.8	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
+13	0:16	Spring Nymphar	14.6	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
+13	0:48	Loki Doki	46.9	Heavy Impact	fail	personal	hit	Loki Doki 100	
+13	0:51	Spring Nymphar	49.8	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
 13	0:58	Absolute Gigachad	56.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 13	0:59	Absolute Gigalad	57.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 13	0:59	Kitana Kahn	57.5	Deathwall	fail	after	no-packet	Kitana Kahn 50; Earlier mistake 50	
@@ -51,13 +51,13 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 15	2:18	Kiara Blaiddyd	136.6	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50; Absolute Gigalad 25 (via Kitana Kahn); Loki Doki 25 (via Kitana Kahn)	
 15	2:18	Kite Noodle	136.6	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50; Absolute Gigalad 25 (via Kitana Kahn); Loki Doki 25 (via Kitana Kahn)	
 15	2:18	Absolute Gigalad	136.8	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50; Absolute Gigalad 25 (via Kitana Kahn); Loki Doki 25 (via Kitana Kahn)	
-16	0:50	Spring Nymphar	48.4	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
-16	1:05	Kiara Blaiddyd	63.5	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
-16	1:05	Kitana Kahn	63.6	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
-16	1:05	Kite Noodle	63.9	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
-16	1:06	Absolute Gigalad	64.0	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
-16	1:06	Loki Doki	64.2	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
-16	1:06	Speed Panda	64.3	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
+16	0:50	Spring Nymphar	48.4	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
+16	1:05	Kiara Blaiddyd	63.5	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+16	1:05	Kitana Kahn	63.6	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+16	1:05	Kite Noodle	63.9	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+16	1:06	Absolute Gigalad	64.0	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+16	1:06	Loki Doki	64.2	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+16	1:06	Speed Panda	64.3	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
 16	1:06	Absolute Gigachad	64.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 17	1:58	Kitana Kahn	116.0	Sacred Sever	raw	resolve	role	Loki Doki 33; Spring Nymphar 33; Party mitigation 33	
 17	1:58	Loki Doki	116.0	Sacred Sever	raw	resolve	role	Loki Doki 33; Spring Nymphar 33; Party mitigation 33	
@@ -67,24 +67,24 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 17	1:59	Spring Nymphar	117.9	Sacred Sever	raw	resolve	role	Loki Doki 16; Spring Nymphar 50 (via Loki Doki); Party mitigation 33	
 17	2:06	Absolute Gigachad	124.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 17	2:07	Absolute Gigalad	125.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
-18	0:16	Spring Nymphar	14.5	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
+18	0:16	Spring Nymphar	14.5	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
 18	1:01	Kiara Blaiddyd	59.3	Skyward Leap	fail	healers	role	Loki Doki 50; Spring Nymphar 50	
-18	1:06	Speed Panda	64.8	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	ability 25567
-18	1:06	Spring Nymphar	64.9	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	ability 25567
-18	1:07	Kite Noodle	65.0	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	ability 25567
-18	1:07	Kitana Kahn	65.2	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	ability 25567
-18	1:07	Loki Doki	65.3	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	ability 25567
+18	1:06	Speed Panda	64.8	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	
+18	1:06	Spring Nymphar	64.9	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	
+18	1:07	Kite Noodle	65.0	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	
+18	1:07	Kitana Kahn	65.2	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	
+18	1:07	Loki Doki	65.3	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kiara Blaiddyd); Spring Nymphar 50 (via Kiara Blaiddyd)	
 18	1:08	Absolute Gigalad	66.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 18	1:12	Absolute Gigachad	70.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 18	1:23	Kiara Blaiddyd	81.3	Heavenly Heel	fail	personal	hit	Kiara Blaiddyd 100	
-19	0:51	Spring Nymphar	49.7	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
+19	0:51	Spring Nymphar	49.7	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
 19	1:01	Kite Noodle	59.7	Dragon's Rage	raw	missing	hit-list	Spring Nymphar 50; Absolute Gigalad 50	
 19	1:01	Loki Doki	59.7	Dragon's Rage	raw	missing	hit-list	Spring Nymphar 50; Absolute Gigalad 50	
-19	1:06	Absolute Gigalad	64.8	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	ability 25567
-19	1:06	Absolute Gigachad	65.0	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	ability 25567
-19	1:07	Kitana Kahn	65.1	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	ability 25567
-19	1:07	Speed Panda	65.1	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	ability 25567
-19	1:07	Kiara Blaiddyd	65.4	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	ability 25567
+19	1:06	Absolute Gigalad	64.8	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	
+19	1:06	Absolute Gigachad	65.0	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	
+19	1:07	Kitana Kahn	65.1	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	
+19	1:07	Speed Panda	65.1	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	
+19	1:07	Kiara Blaiddyd	65.4	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 66 (via Kite Noodle, Loki Doki); Absolute Gigalad 33 (via Kite Noodle, Loki Doki)	
 19	1:10	Spring Nymphar	68.5	Deathwall	fail	after	no-packet	Spring Nymphar 50; Earlier mistake 50	
 20	1:58	Kite Noodle	116.0	Sacred Sever	raw	resolve	role	Loki Doki 50 (via Spring Nymphar); Spring Nymphar 16; Party mitigation 33	
 20	1:58	Spring Nymphar	116.0	Sacred Sever	raw	resolve	role	Loki Doki 33; Spring Nymphar 33; Party mitigation 33	
@@ -94,14 +94,14 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 20	1:59	Kitana Kahn	117.9	Sacred Sever	raw	resolve	role	Loki Doki 41 (via Spring Nymphar); Spring Nymphar 24 (via Loki Doki); Party mitigation 33	
 20	2:05	Absolute Gigalad	123.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 20	2:06	Absolute Gigachad	124.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
-21	0:51	Spring Nymphar	49.9	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
+21	0:51	Spring Nymphar	49.9	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
 21	1:00	Speed Panda	58.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
 21	1:01	Absolute Gigachad	59.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 21	1:01	Kiara Blaiddyd	59.5	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
 21	1:01	Loki Doki	59.5	Skyward Leap	fail	marker	position	Loki Doki 100	
 21	1:01	Kitana Kahn	59.6	Skyward Leap	fail	marker	position	Loki Doki 100	
 21	1:01	Kite Noodle	59.6	Skyward Leap	fail	marker	position	Loki Doki 100	
-21	1:07	Absolute Gigalad	65.0	Eternal Conviction	fail	empty	hit-list	Speed Panda 16; Spring Nymphar 16; Loki Doki 50 (via Kite Noodle, Kitana Kahn); Kiara Blaiddyd 16	ability 25567
+21	1:07	Absolute Gigalad	65.0	Eternal Conviction	fail	empty	hit-list	Speed Panda 16; Spring Nymphar 16; Loki Doki 50 (via Kite Noodle, Kitana Kahn); Kiara Blaiddyd 16	
 22	2:00	Absolute Gigalad	118.8	Bright Flare	fail	personal	hit	Absolute Gigalad 100	
 22	2:00	Kitana Kahn	118.8	Bright Flare	fail	personal	hit	Kitana Kahn 100	
 22	2:12	Absolute Gigachad	130.6	Hiemal Storm	fail	personal	hit	Absolute Gigachad 100	
@@ -110,23 +110,23 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 22	2:18	Spring Nymphar	136.8	Eternal Conviction	fail	empty	hit-list	Speed Panda 20; Absolute Gigachad 20; Absolute Gigalad 20; Kitana Kahn 30 (via Loki Doki); Kite Noodle 10 (via Loki Doki)	
 22	2:18	Kiara Blaiddyd	136.9	Eternal Conviction	fail	empty	hit-list	Speed Panda 20; Absolute Gigachad 20; Absolute Gigalad 20; Kitana Kahn 30 (via Loki Doki); Kite Noodle 10 (via Loki Doki)	
 22	2:18	Kite Noodle	136.9	Eternal Conviction	fail	empty	hit-list	Speed Panda 20; Absolute Gigachad 20; Absolute Gigalad 20; Kitana Kahn 30 (via Loki Doki); Kite Noodle 10 (via Loki Doki)	
-23	0:16	Loki Doki	14.9	Ascalon's Mercy Concealed	fail	personal	hit	Loki Doki 100	ability 25545
-23	0:16	Spring Nymphar	14.9	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
+23	0:16	Loki Doki	14.9	Ascalon's Mercy Concealed	fail	personal	hit	Loki Doki 100	
+23	0:16	Spring Nymphar	14.9	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
 23	0:20	Kiara Blaiddyd	18.5	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
 23	0:20	Kitana Kahn	18.5	Deathwall	fail	after	no-packet	Kitana Kahn 50; Earlier mistake 50	
 23	0:21	Absolute Gigachad	19.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 23	0:21	Kite Noodle	19.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
 23	0:22	Absolute Gigalad	20.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 23	0:22	Speed Panda	20.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
-24	1:06	Spring Nymphar	64.9	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-24	1:06	Loki Doki	65.0	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-24	1:07	Kitana Kahn	65.3	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-24	1:07	Kiara Blaiddyd	65.4	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-24	1:07	Speed Panda	65.5	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-24	1:07	Kite Noodle	65.8	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
+24	1:06	Spring Nymphar	64.9	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+24	1:06	Loki Doki	65.0	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+24	1:07	Kitana Kahn	65.3	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+24	1:07	Kiara Blaiddyd	65.4	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+24	1:07	Speed Panda	65.5	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+24	1:07	Kite Noodle	65.8	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
 24	1:09	Absolute Gigalad	67.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 24	1:19	Absolute Gigachad	77.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
-25	0:51	Absolute Gigalad	49.8	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigalad 100	ability 25545
+25	0:51	Absolute Gigalad	49.8	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigalad 100	
 25	0:55	Absolute Gigachad	53.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 25	0:58	Spring Nymphar	56.5	Deathwall	fail	after	no-packet	Spring Nymphar 50; Earlier mistake 50	
 25	0:59	Kite Noodle	57.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
@@ -157,16 +157,16 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 28	1:01	Absolute Gigalad	59.6	Holy Shield Bash	fail	marker	position	Kitana Kahn 100	
 28	1:01	Kiara Blaiddyd	59.6	Dragon's Rage	fail	marker	position	Kitana Kahn 100	
 28	1:03	Speed Panda	61.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
-28	1:06	Spring Nymphar	64.6	Eternal Conviction	fail	empty	hit-list	Speed Panda 20; Kitana Kahn 60 (via Kite Noodle, Kiara Blaiddyd); Loki Doki 20	ability 25567
-29	0:51	Kiara Blaiddyd	49.5	Ascalon's Mercy Concealed	fail	personal	hit	Kiara Blaiddyd 100	ability 25545
+28	1:06	Spring Nymphar	64.6	Eternal Conviction	fail	empty	hit-list	Speed Panda 16; Kitana Kahn 50 (via Kite Noodle, Kiara Blaiddyd); Loki Doki 16; Spring Nymphar 16	
+29	0:51	Kiara Blaiddyd	49.5	Ascalon's Mercy Concealed	fail	personal	hit	Kiara Blaiddyd 100	
 29	1:00	Absolute Gigachad	58.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 29	1:00	Kite Noodle	58.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
-29	1:01	Speed Panda	59.2	Dimensional Collapse	fail	personal	hit	Speed Panda 100	ability 25564
+29	1:01	Speed Panda	59.2	Dimensional Collapse	fail	personal	hit	Speed Panda 100	
 29	1:01	Loki Doki	59.3	Skyward Leap	fail	marker	position	Speed Panda 100	
 29	1:01	Absolute Gigalad	59.6	Holy Shield Bash	fail	marker	position	Speed Panda 100	
 29	1:01	Kitana Kahn	59.6	Dragon's Rage	fail	marker	position	Speed Panda 100	
-29	1:06	Spring Nymphar	64.6	Eternal Conviction	fail	empty	hit-list	Speed Panda 60 (via Kitana Kahn, Loki Doki); Kite Noodle 20; Kiara Blaiddyd 20	ability 25567
-30	0:51	Absolute Gigachad	49.8	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigachad 100	ability 25545
+29	1:06	Spring Nymphar	64.6	Eternal Conviction	fail	empty	hit-list	Speed Panda 50 (via Kitana Kahn, Loki Doki); Kite Noodle 16; Kiara Blaiddyd 16; Spring Nymphar 16	
+30	0:51	Absolute Gigachad	49.8	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigachad 100	
 30	0:59	Spring Nymphar	57.5	Deathwall	fail	after	no-packet	Spring Nymphar 50; Earlier mistake 50	
 30	1:00	Kite Noodle	58.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
 30	1:01	Kiara Blaiddyd	59.5	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
@@ -190,9 +190,9 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 32	2:18	Speed Panda	136.1	Eternal Conviction	fail	empty	hit-list	Loki Doki 56 (via Spring Nymphar, Kitana Kahn); Spring Nymphar 18 (via Kitana Kahn); Kiara Blaiddyd 25	
 32	2:18	Kite Noodle	136.3	Eternal Conviction	fail	empty	hit-list	Loki Doki 56 (via Spring Nymphar, Kitana Kahn); Spring Nymphar 18 (via Kitana Kahn); Kiara Blaiddyd 25	
 32	2:18	Absolute Gigachad	136.4	Eternal Conviction	fail	empty	hit-list	Loki Doki 56 (via Spring Nymphar, Kitana Kahn); Spring Nymphar 18 (via Kitana Kahn); Kiara Blaiddyd 25	
-33	0:48	Kite Noodle	46.8	Heavy Impact	fail	personal	hit	Kite Noodle 100	ability 25560
-33	0:48	Loki Doki	46.9	Heavy Impact	fail	personal	hit	Loki Doki 100	ability 25560
-33	0:51	Absolute Gigachad	49.7	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigachad 100	ability 25545
+33	0:48	Kite Noodle	46.8	Heavy Impact	fail	personal	hit	Kite Noodle 100	
+33	0:48	Loki Doki	46.9	Heavy Impact	fail	personal	hit	Loki Doki 100	
+33	0:51	Absolute Gigachad	49.7	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigachad 100	
 33	0:54	Spring Nymphar	52.5	Deathwall	fail	after	no-packet	Spring Nymphar 50; Earlier mistake 50	
 33	0:56	Kitana Kahn	54.5	Deathwall	fail	after	no-packet	Kitana Kahn 50; Earlier mistake 50	
 33	0:57	Absolute Gigalad	55.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
@@ -215,7 +215,7 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 35	1:57	Absolute Gigachad	116.0	Sacred Sever	fail	redirected	hit-list	Kite Noodle 25; Absolute Gigalad 25; Loki Doki 25; Kiara Blaiddyd 25	
 35	1:58	Speed Panda	116.0	Sacred Sever	fail	redirected	hit-list	Kite Noodle 25; Absolute Gigalad 25; Loki Doki 25; Kiara Blaiddyd 25	
 35	1:58	Spring Nymphar	116.1	Sacred Sever	fail	redirected	hit-list	Kite Noodle 25; Absolute Gigalad 25; Loki Doki 25; Kiara Blaiddyd 25	
-36	0:52	Absolute Gigalad	50.1	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigalad 100	ability 25545
+36	0:52	Absolute Gigalad	50.1	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigalad 100	
 36	0:56	Absolute Gigachad	54.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 36	0:58	Speed Panda	56.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
 36	0:59	Kite Noodle	57.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
@@ -226,13 +226,13 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 36	1:04	Absolute Gigalad	62.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 37	2:15	Kitana Kahn	133.0	Frostbite	fail	personal	hit	Kitana Kahn 100	
 37	2:15	Spring Nymphar	133.0	Frostbite	fail	personal	hit	Spring Nymphar 100	
-37	2:15	Kiara Blaiddyd	133.1	Burns	fail	personal	hit	Kiara Blaiddyd 100	ability 1002945
+37	2:15	Kiara Blaiddyd	133.1	Burns	fail	personal	hit	Kiara Blaiddyd 100	
 37	2:15	Speed Panda	133.2	Frostbite	fail	personal	hit	Speed Panda 100	
 37	2:15	Loki Doki	133.6	Frostbite	fail	personal	hit	Loki Doki 100	
 37	2:18	Absolute Gigalad	137.0	Eternal Conviction	fail	empty	hit-list	Speed Panda 20; Spring Nymphar 20; Kitana Kahn 20; Kiara Blaiddyd 20; Loki Doki 20	
 37	2:18	Kite Noodle	137.0	Eternal Conviction	fail	empty	hit-list	Speed Panda 20; Spring Nymphar 20; Kitana Kahn 20; Kiara Blaiddyd 20; Loki Doki 20	
 37	2:19	Absolute Gigachad	137.1	Eternal Conviction	fail	empty	hit-list	Speed Panda 20; Spring Nymphar 20; Kitana Kahn 20; Kiara Blaiddyd 20; Loki Doki 20	
-38	0:51	Absolute Gigalad	49.7	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigalad 100	ability 25545
+38	0:51	Absolute Gigalad	49.7	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigalad 100	
 38	0:56	Absolute Gigachad	54.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 38	0:56	Speed Panda	54.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
 38	0:56	Spring Nymphar	54.5	Deathwall	fail	after	no-packet	Spring Nymphar 50; Earlier mistake 50	
@@ -268,12 +268,12 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 41	2:19	Loki Doki	137.2	Eternal Conviction	fail	empty	hit-list	Loki Doki 50 (via Kite Noodle); Spring Nymphar 50 (via Kite Noodle)	
 41	2:24	Absolute Gigachad	142.8	Holy Impact	fail	dropped	position	Absolute Gigachad 100	
 41	2:24	Absolute Gigalad	142.9	Holy Impact	fail	dropped	position	Absolute Gigachad 100	
-42	0:47	Spring Nymphar	45.2	Heavy Impact	fail	personal	hit	Spring Nymphar 100	ability 25559
-42	1:07	Loki Doki	65.0	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
-42	1:07	Speed Panda	65.2	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
-42	1:07	Kite Noodle	65.4	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
-42	1:07	Kiara Blaiddyd	65.7	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
-42	1:07	Kitana Kahn	65.8	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	ability 25567
+42	0:47	Spring Nymphar	45.2	Heavy Impact	fail	personal	hit	Spring Nymphar 100	
+42	1:07	Loki Doki	65.0	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+42	1:07	Speed Panda	65.2	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+42	1:07	Kite Noodle	65.4	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+42	1:07	Kiara Blaiddyd	65.7	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+42	1:07	Kitana Kahn	65.8	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
 42	1:08	Absolute Gigachad	66.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 42	1:08	Absolute Gigalad	66.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 43	1:59	Loki Doki	118.0	Sacred Sever	raw	resolve	role	Loki Doki 33; Spring Nymphar 33; Party mitigation 33	
@@ -294,28 +294,28 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 44	2:12	Loki Doki	130.6	Hiemal Storm	fail	missing	hit-list	Speed Panda 50; Loki Doki 25 (via Kitana Kahn); Spring Nymphar 25 (via Kitana Kahn)	
 44	2:18	Absolute Gigalad	136.7	Eternal Conviction	fail	empty	hit-list	Speed Panda 25 (via Loki Doki); Absolute Gigachad 16; Spring Nymphar 29 (via Kitana Kahn, Loki Doki); Kite Noodle 16; Loki Doki 12 (via Kitana Kahn)	
 44	2:18	Kiara Blaiddyd	136.7	Eternal Conviction	fail	empty	hit-list	Speed Panda 25 (via Loki Doki); Absolute Gigachad 16; Spring Nymphar 29 (via Kitana Kahn, Loki Doki); Kite Noodle 16; Loki Doki 12 (via Kitana Kahn)	
-45	0:16	Absolute Gigachad	14.7	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigachad 100	ability 25545
-45	0:16	Kiara Blaiddyd	14.7	Ascalon's Mercy Concealed	fail	personal	hit	Kiara Blaiddyd 100	ability 25545
+45	0:16	Absolute Gigachad	14.7	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigachad 100	
+45	0:16	Kiara Blaiddyd	14.7	Ascalon's Mercy Concealed	fail	personal	hit	Kiara Blaiddyd 100	
 45	0:20	Kite Noodle	18.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
 45	0:20	Spring Nymphar	18.5	Deathwall	fail	after	no-packet	Spring Nymphar 50; Earlier mistake 50	
 45	0:21	Kitana Kahn	19.5	Deathwall	fail	after	no-packet	Kitana Kahn 50; Earlier mistake 50	
 45	0:21	Loki Doki	19.5	Deathwall	fail	after	no-packet	Loki Doki 50; Earlier mistake 50	
 45	0:24	Speed Panda	22.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
 45	0:27	Absolute Gigalad	25.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
-46	0:48	Kitana Kahn	46.8	Heavy Impact	fail	personal	hit	Kitana Kahn 100	ability 25560
-46	0:51	Spring Nymphar	49.6	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
+46	0:48	Kitana Kahn	46.8	Heavy Impact	fail	personal	hit	Kitana Kahn 100	
+46	0:51	Spring Nymphar	49.6	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
 46	0:55	Loki Doki	53.5	Deathwall	fail	after	no-packet	Loki Doki 50; Earlier mistake 50	
 46	0:56	Speed Panda	54.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
 46	0:57	Kiara Blaiddyd	55.5	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
 46	0:58	Absolute Gigachad	56.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 46	0:58	Kite Noodle	56.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
 46	1:00	Absolute Gigalad	58.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
-47	1:07	Spring Nymphar	65.1	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-47	1:07	Kitana Kahn	65.3	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-47	1:07	Kite Noodle	65.4	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-47	1:07	Kiara Blaiddyd	65.7	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-47	1:07	Speed Panda	65.8	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
-47	1:08	Loki Doki	66.1	Eternal Conviction	fail	tower	label	Missed soak 50	ability 25567
+47	1:07	Spring Nymphar	65.1	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+47	1:07	Kitana Kahn	65.3	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+47	1:07	Kite Noodle	65.4	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+47	1:07	Kiara Blaiddyd	65.7	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+47	1:07	Speed Panda	65.8	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
+47	1:08	Loki Doki	66.1	Eternal Conviction	fail	empty	hit-list	Spring Nymphar 100	
 47	1:09	Absolute Gigalad	67.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 47	1:13	Absolute Gigachad	71.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 48	1:57	Spring Nymphar	115.7	Shining Blade	fail	personal	debuff	Spring Nymphar 100	
@@ -343,21 +343,21 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 50	2:12	Speed Panda	130.2	Hiemal Storm	fail	personal	hit	Speed Panda 100	
 50	2:12	Absolute Gigalad	130.3	Hiemal Storm	fail	personal	hit	Absolute Gigalad 100	
 51	1:02	Loki Doki	60.1	Dragon's Rage	raw	missing	hit-list	Absolute Gigachad 50; Absolute Gigalad 50	
-51	1:07	Kiara Blaiddyd	65.2	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	ability 25567
-51	1:07	Kitana Kahn	65.3	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	ability 25567
-51	1:07	Kite Noodle	65.6	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	ability 25567
-51	1:07	Speed Panda	65.7	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	ability 25567
-51	1:07	Spring Nymphar	66.0	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	ability 25567
+51	1:07	Kiara Blaiddyd	65.2	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	
+51	1:07	Kitana Kahn	65.3	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	
+51	1:07	Kite Noodle	65.6	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	
+51	1:07	Speed Panda	65.7	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	
+51	1:07	Spring Nymphar	66.0	Eternal Conviction	fail	empty	hit-list	Absolute Gigachad 50 (via Loki Doki); Absolute Gigalad 50 (via Loki Doki)	
 51	1:08	Absolute Gigalad	66.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 51	1:11	Absolute Gigachad	69.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
-52	0:51	Spring Nymphar	49.8	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
+52	0:51	Spring Nymphar	49.8	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
 52	1:01	Kitana Kahn	59.5	Skyward Leap	fail	marker	position	Kitana Kahn 100	
 52	1:01	Kiara Blaiddyd	59.8	Dragon's Rage	raw	missing	hit-list	Spring Nymphar 50; Kitana Kahn 50	
 52	1:02	Absolute Gigalad	60.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 52	1:03	Speed Panda	61.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
 52	1:05	Kite Noodle	63.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
-52	1:07	Absolute Gigachad	65.0	Eternal Conviction	fail	empty	hit-list	Speed Panda 25; Spring Nymphar 37 (via Kiara Blaiddyd); Kitana Kahn 37 (via Kiara Blaiddyd)	ability 25567
-52	1:07	Loki Doki	65.1	Eternal Conviction	fail	empty	hit-list	Speed Panda 25; Spring Nymphar 37 (via Kiara Blaiddyd); Kitana Kahn 37 (via Kiara Blaiddyd)	ability 25567
+52	1:07	Absolute Gigachad	65.0	Eternal Conviction	fail	empty	hit-list	Speed Panda 25; Spring Nymphar 37 (via Kiara Blaiddyd); Kitana Kahn 37 (via Kiara Blaiddyd)	
+52	1:07	Loki Doki	65.1	Eternal Conviction	fail	empty	hit-list	Speed Panda 25; Spring Nymphar 37 (via Kiara Blaiddyd); Kitana Kahn 37 (via Kiara Blaiddyd)	
 57	2:19	Speed Panda	137.5	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100	
 57	2:19	Kiara Blaiddyd	137.6	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100	
 57	2:19	Kitana Kahn	137.8	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100	
@@ -379,9 +379,9 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 59	1:02	Absolute Gigachad	60.1	Holy Shield Bash	fail	marker	position	Absolute Gigachad 100	
 59	1:04	Kite Noodle	62.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
 59	1:06	Speed Panda	64.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
-59	1:07	Loki Doki	65.2	Eternal Conviction	fail	empty	hit-list	Kite Noodle 33; Kitana Kahn 66 (via Kiara Blaiddyd)	ability 25567
-59	1:07	Spring Nymphar	65.2	Eternal Conviction	fail	empty	hit-list	Kite Noodle 33; Kitana Kahn 66 (via Kiara Blaiddyd)	ability 25567
-59	1:07	Absolute Gigalad	65.4	Eternal Conviction	fail	empty	hit-list	Kite Noodle 33; Kitana Kahn 66 (via Kiara Blaiddyd)	ability 25567
+59	1:07	Loki Doki	65.2	Eternal Conviction	fail	empty	hit-list	Kite Noodle 25; Kitana Kahn 50 (via Kiara Blaiddyd); Loki Doki 25	
+59	1:07	Spring Nymphar	65.2	Eternal Conviction	fail	empty	hit-list	Kite Noodle 25; Kitana Kahn 50 (via Kiara Blaiddyd); Loki Doki 25	
+59	1:07	Absolute Gigalad	65.4	Eternal Conviction	fail	empty	hit-list	Kite Noodle 25; Kitana Kahn 50 (via Kiara Blaiddyd); Loki Doki 25	
 60	1:23	Absolute Gigalad	81.7	Heavenly Heel	fail	personal	hit	Absolute Gigalad 100	
 60	1:57	Loki Doki	115.9	Sacred Sever	raw	resolve	role	Loki Doki 33; Spring Nymphar 33; Party mitigation 33	
 60	1:58	Kitana Kahn	116.1	Sacred Sever	raw	resolve	role	Loki Doki 16; Spring Nymphar 50 (via Loki Doki); Party mitigation 33	
@@ -399,7 +399,7 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 61	2:19	Loki Doki	137.7	Eternal Conviction	fail	empty	hit-list	Speed Panda 33; Absolute Gigalad 33; Kitana Kahn 33	
 61	2:19	Kiara Blaiddyd	137.8	Eternal Conviction	fail	empty	hit-list	Speed Panda 33; Absolute Gigalad 33; Kitana Kahn 33	
 61	2:19	Spring Nymphar	137.8	Eternal Conviction	fail	empty	hit-list	Speed Panda 33; Absolute Gigalad 33; Kitana Kahn 33	
-62	2:18	Kitana Kahn	136.1	Burns	fail	personal	hit	Kitana Kahn 100	ability 1002945
+62	2:18	Kitana Kahn	136.1	Burns	fail	personal	hit	Kitana Kahn 100	
 62	2:18	Kiara Blaiddyd	136.7	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100	
 62	2:18	Kite Noodle	137.0	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100	
 62	2:19	Spring Nymphar	137.1	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100	
@@ -414,7 +414,7 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 63	1:02	Spring Nymphar	60.0	Dragon's Rage	fail	marker	position	Kiara Blaiddyd 100	
 63	1:02	Absolute Gigalad	60.1	Holy Shield Bash	fail	marker	position	Kiara Blaiddyd 100	
 63	1:02	Kitana Kahn	60.1	Dragon's Rage	fail	marker	position	Kiara Blaiddyd 100	
-63	1:07	Loki Doki	65.1	Eternal Conviction	fail	empty	hit-list	Kiara Blaiddyd 100 (via Speed Panda, Spring Nymphar, Kite Noodle, Kitana Kahn)	ability 25567
+63	1:07	Loki Doki	65.1	Eternal Conviction	fail	empty	hit-list	Kiara Blaiddyd 100 (via Speed Panda, Spring Nymphar, Kite Noodle, Kitana Kahn)	
 64	2:15	Kiara Blaiddyd	133.5	Frostbite	fail	personal	hit	Kiara Blaiddyd 100	
 64	2:19	Loki Doki	137.5	Eternal Conviction	fail	empty	hit-list	Kiara Blaiddyd 100	
 64	2:19	Speed Panda	137.6	Eternal Conviction	fail	empty	hit-list	Kiara Blaiddyd 100	
@@ -432,8 +432,8 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 65	2:19	Kite Noodle	137.5	Eternal Conviction	fail	empty	hit-list	Kite Noodle 50 (via Spring Nymphar, Kitana Kahn); Kitana Kahn 50 (via Spring Nymphar)	
 65	2:19	Speed Panda	137.6	Eternal Conviction	fail	empty	hit-list	Kite Noodle 50 (via Spring Nymphar, Kitana Kahn); Kitana Kahn 50 (via Spring Nymphar)	
 65	2:19	Absolute Gigalad	137.9	Eternal Conviction	fail	empty	hit-list	Kite Noodle 50 (via Spring Nymphar, Kitana Kahn); Kitana Kahn 50 (via Spring Nymphar)	
-66	2:24	Speed Panda	142.7	Burns	fail	personal	hit	Speed Panda 100	ability 1002945
-66	2:27	Kitana Kahn	145.9	Burns	fail	personal	hit	Kitana Kahn 100	ability 1002945
+66	2:24	Speed Panda	142.7	Burns	fail	personal	hit	Speed Panda 100	
+66	2:27	Kitana Kahn	145.9	Burns	fail	personal	hit	Kitana Kahn 100	
 66	2:30	Spring Nymphar	148.1	Holy Impact	fail	dropped	position	Kiara Blaiddyd 100	
 66	2:30	Kiara Blaiddyd	148.2	Holy Impact	fail	dropped	position	Kiara Blaiddyd 100	
 66	2:30	Absolute Gigalad	148.3	Holy Impact	fail	dropped	position	Kiara Blaiddyd 100	
@@ -448,9 +448,9 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 67	2:23	Spring Nymphar	141.4	Holy Impact	fail	dropped	position	Kiara Blaiddyd 100	
 67	2:23	Kitana Kahn	141.7	Holy Impact	fail	dropped	position	Kiara Blaiddyd 100	
 67	2:23	Absolute Gigachad	141.8	Holy Impact	fail	dropped	position	Kiara Blaiddyd 100	
-68	0:16	Loki Doki	14.5	Ascalon's Mercy Concealed	fail	personal	hit	Loki Doki 100	ability 25545
-68	0:48	Kite Noodle	46.9	Heavy Impact	fail	personal	hit	Kite Noodle 100	ability 25560
-68	0:51	Spring Nymphar	49.7	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	ability 25545
+68	0:16	Loki Doki	14.5	Ascalon's Mercy Concealed	fail	personal	hit	Loki Doki 100	
+68	0:48	Kite Noodle	46.9	Heavy Impact	fail	personal	hit	Kite Noodle 100	
+68	0:51	Spring Nymphar	49.7	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
 68	0:55	Absolute Gigachad	53.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 68	0:56	Absolute Gigalad	54.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 68	0:57	Loki Doki	55.5	Deathwall	fail	after	no-packet	Loki Doki 50; Earlier mistake 50	
