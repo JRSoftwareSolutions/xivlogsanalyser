@@ -1,17 +1,17 @@
 {
  "rules": "31a0eba724499654",
- "engine": "39e91bf2890a11d4",
+ "engine": "07bdc6277f4438ce",
  "log": "fc1e894e4c5b8e98",
  "outputs": {
-  "facts.json": "513212bdcfcc0d28",
-  "judgments.json": "9fe547836a6f14a9",
-  "calls.tsv": "737321160789bafb",
-  "session.html": "164154560db97ec2",
+  "facts.json": "14ef73cb8080a5d7",
+  "judgments.json": "569518256d9a9b9d",
+  "calls.tsv": "26ca53573e9dbb8b",
+  "session.html": "c27fe3d16cf8e1d8",
   "inputs.json": "10ec06e3083cfeef"
  },
  "counts": {
-  "raw": 42,
-  "fail": 382,
+  "raw": 48,
+  "fail": 376,
   "low": 7,
   "environment": 0,
   "unknown": 0
@@ -25,8 +25,8 @@
   "day": "2026-09-30",
   "dayLabel": "Wed 30 Sep 2026",
   "timeLabel": "21:44\u201300:03",
-  "raw": 42,
-  "fail": 382,
+  "raw": 48,
+  "fail": 376,
   "low": 7,
   "detail": "",
   "overview": {
@@ -1468,7 +1468,7 @@
     "phase": 2,
     "starts": 105.0,
     "reached": 13,
-    "mistakes": 13
+    "mistakes": 12
    },
    {
     "id": "meteors",
@@ -1815,27 +1815,27 @@
    "owned": [
     [
      "Spring Nymphar",
-     89.7
+     86.6
     ],
     [
      "Kitana Kahn",
-     82.2
+     81.5
     ],
     [
      "Kiara Blaiddyd",
-     69.2
+     69.7
     ],
     [
      "Loki Doki",
-     51.3
+     52.5
     ],
     [
      "Absolute Gigalad",
-     37.0
+     38.6
     ],
     [
      "Absolute Gigachad",
-     31.5
+     33.6
     ],
     [
      "Speed Panda",
@@ -1843,11 +1843,11 @@
     ],
     [
      "Kite Noodle",
-     18.4
+     15.6
     ],
     [
      "Missing bodies",
-     2.0
+     2.5
     ]
    ]
   }

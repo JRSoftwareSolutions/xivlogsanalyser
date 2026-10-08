@@ -1119,10 +1119,12 @@ def _missing_bodies(
         if needs.marked_out:
             excused = _marker_holders(marker_casts or {}, fight_id, needs.marked_out, at, names_by_id)
             needed = [name for name in needed if name not in excused]
+        # Just raised and still invulnerable counts as dead, the same as for the ice pairs.
+        risen = _holders(table, [TRANSCENDENT], at, names_by_id) if table else set()
         fact.down = [
             name for name in needed
             if name in died and name not in victims
-            and not any(died[name] < raised <= at for raised in raises.get(name, []))
+            and (name in risen or not any(died[name] < raised <= at for raised in raises.get(name, [])))
         ]
         if needs.soak and complete:
             fact.unsoaked = [name for name in needed if name not in soaked and name not in fact.down]

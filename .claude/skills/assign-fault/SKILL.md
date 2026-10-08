@@ -93,7 +93,7 @@ Each flag is an open question, not a verdict:
 - `raw-after-death`: a raw death after someone already died. Was the party short?
 - `thin-split`: three or more players share it. Is one of them the real cause?
 - `degraded`: the call was made without an input it reads. Fetch it (`check`) and reanalyze.
-- `mass-wall`: the pull's first mistake is three or more players dying with no packet at once. Was it the deathwall, or a hit the log did not record (8DYNHQx4C7ytdLb9 pull 33, right after Eye of the Tyrant)?
+- `mass-wall`: three or more players dying with no packet at once as a pull's first mistake. Those are now judged as an agreed reset (cause `reset`, no owner), as the person said: the party walls together when something went wrong that the log does not show. The flag stays for any that are still judged as mistakes.
 
 `python -m xivloganalyzer evidence <code> --pull N` prints the pull's hits, markers, and deaths in time order, then each call with its `basis`: what decided the owner (their own hit, a debuff, positions, who the cast hit, a role rule, no packet, or a label). A `role` or `label` basis, or a call with `missing` inputs, is the weakest. Record each call you checked with `confirm` (`review-new-log`).
 

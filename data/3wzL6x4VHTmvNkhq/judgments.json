@@ -3809,7 +3809,7 @@
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
-    "happened": "Took 143,889 at 93% HP. The hit was 222,051 before mitigation. A tank takes about 26k.",
+    "happened": "Took 143,889 at 93% HP. It would have killed them from full HP.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Absolute Gigalad took a failed Dragon's Rage.",
     "cause": "personal",
@@ -21167,10 +21167,10 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [],
-    "unsoaked": [
+    "down": [
       "Kiara Blaiddyd"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -21191,7 +21191,7 @@
     "outcome": "raw",
     "happened": "Took 78,112 at full HP. Shared by 4 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 4 of 5 because Kiara Blaiddyd was not in it.",
+    "went_wrong": "The stack was 4 of 5 because Kiara Blaiddyd was already dead.",
     "cause": "missing",
     "blames": [
       {
@@ -22506,18 +22506,26 @@
     "off_tank": "",
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
-    "outcome": "fail",
-    "happened": "Took 167,489 at 62% HP. A DPS takes about 40\u201364k on a share of 4.",
+    "outcome": "raw",
+    "happened": "Took 167,489 at 62% HP. Shared by 1 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "Kite Noodle stood too close to Ser Zephirin's landing.",
-    "cause": "personal",
+    "went_wrong": "The stack was 1 of 4 because 3 players were missing.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kite Noodle",
-        "confidence": 100
+        "who": "Spring Nymphar",
+        "confidence": 33
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 33
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 33
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
     "first_causes": [
@@ -27119,10 +27127,10 @@
         "via": "Eternal Conviction"
       }
     ],
-    "down": [],
-    "unsoaked": [
+    "down": [
       "Kiara Blaiddyd"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -27146,7 +27154,7 @@
     "outcome": "fail",
     "happened": "Took 97,254 at 21% HP. It would have killed them from full HP.",
     "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
-    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "cause": "empty",
     "blames": [
       {
@@ -27202,10 +27210,10 @@
         "via": "Eternal Conviction"
       }
     ],
-    "down": [],
-    "unsoaked": [
+    "down": [
       "Kiara Blaiddyd"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -27231,7 +27239,7 @@
     "outcome": "fail",
     "happened": "Took 89,994 at 63% HP. It would have killed them from full HP.",
     "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
-    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "cause": "empty",
     "blames": [
       {
@@ -27301,10 +27309,10 @@
         "via": "Eternal Conviction"
       }
     ],
-    "down": [],
-    "unsoaked": [
+    "down": [
       "Kiara Blaiddyd"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -27331,7 +27339,7 @@
     "outcome": "fail",
     "happened": "Took 52,072 at 4% HP.",
     "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
-    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "cause": "empty",
     "blames": [
       {
@@ -27401,10 +27409,10 @@
         "via": "Eternal Conviction"
       }
     ],
-    "down": [],
-    "unsoaked": [
+    "down": [
       "Kiara Blaiddyd"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -27432,7 +27440,7 @@
     "outcome": "fail",
     "happened": "Took 43,803 at 16% HP.",
     "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
-    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "cause": "empty",
     "blames": [
       {
@@ -27488,10 +27496,10 @@
         "via": "Eternal Conviction"
       }
     ],
-    "down": [],
-    "unsoaked": [
+    "down": [
       "Kiara Blaiddyd"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -27520,7 +27528,7 @@
     "outcome": "fail",
     "happened": "Took 103,744 at 61% HP. It would have killed them from full HP.",
     "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
-    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "cause": "empty",
     "blames": [
       {
@@ -27576,10 +27584,10 @@
         "via": "Eternal Conviction"
       }
     ],
-    "down": [],
-    "unsoaked": [
+    "down": [
       "Kiara Blaiddyd"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -27609,7 +27617,7 @@
     "outcome": "fail",
     "happened": "Took 97,559 at 52% HP. It would have killed them from full HP.",
     "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
-    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "cause": "empty",
     "blames": [
       {
@@ -27665,10 +27673,10 @@
         "via": "Eternal Conviction"
       }
     ],
-    "down": [],
-    "unsoaked": [
+    "down": [
       "Kiara Blaiddyd"
     ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -27699,7 +27707,7 @@
     "outcome": "fail",
     "happened": "Took 96,952 at 41% HP. It would have killed them from full HP.",
     "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
-    "went_wrong": "Kiara Blaiddyd was not in a tower, so it was empty.",
+    "went_wrong": "Kiara Blaiddyd was already dead, so a tower was empty.",
     "cause": "empty",
     "blames": [
       {
@@ -30401,18 +30409,18 @@
     "off_tank": "",
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
-    "outcome": "fail",
-    "happened": "Took 75,807 at full HP. The hit was 89,185 before mitigation. A DPS takes about 40\u201364k on a share of 4.",
+    "outcome": "raw",
+    "happened": "Took 75,807 at full HP. Shared by 2 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "Kitana Kahn stood too close to Ser Zephirin's landing.",
-    "cause": "personal",
+    "went_wrong": "The stack was 2 of 4.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 100
+        "who": "Missing bodies",
+        "confidence": 50
       }
     ],
-    "basis": "hit",
+    "basis": "label",
     "first": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
@@ -31107,11 +31115,11 @@
       }
     ],
     "down": [
-      "Absolute Gigalad"
+      "Absolute Gigalad",
+      "Loki Doki"
     ],
     "unsoaked": [
-      "Absolute Gigachad",
-      "Loki Doki"
+      "Absolute Gigachad"
     ],
     "doubled": [],
     "marked": [],
@@ -31131,18 +31139,26 @@
     "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
-    "outcome": "fail",
-    "happened": "Took 147,120 at 86% HP. The hit was 163,467 before mitigation. A DPS takes about 67k.",
+    "outcome": "raw",
+    "happened": "Took 147,120 at 86% HP. Shared by 2 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kite Noodle took a failed Dragon's Rage.",
-    "cause": "personal",
+    "went_wrong": "The stack was 2 of 5 because 3 players were missing.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kite Noodle",
-        "confidence": 100
+        "who": "Absolute Gigalad",
+        "confidence": 33
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 33
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 33
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
@@ -31205,11 +31221,11 @@
       }
     ],
     "down": [
-      "Absolute Gigalad"
+      "Absolute Gigalad",
+      "Loki Doki"
     ],
     "unsoaked": [
-      "Absolute Gigachad",
-      "Loki Doki"
+      "Absolute Gigachad"
     ],
     "doubled": [],
     "marked": [],
@@ -31228,18 +31244,26 @@
     "off_tank": "",
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
-    "outcome": "fail",
-    "happened": "Took 139,987 at 89% HP. The hit was 155,542 before mitigation. A healer takes about 63k.",
+    "outcome": "raw",
+    "happened": "Took 139,987 at 89% HP. Shared by 2 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Spring Nymphar took a failed Dragon's Rage.",
-    "cause": "personal",
+    "went_wrong": "The stack was 2 of 5 because 3 players were missing.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 100
+        "who": "Absolute Gigalad",
+        "confidence": 33
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 33
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 33
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
     "first_causes": [
@@ -31466,23 +31490,35 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kite Noodle",
-        "confidence": 20
+        "who": "Absolute Gigalad",
+        "confidence": 13,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 33,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 13,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Speed Panda",
         "confidence": 20
       },
       {
-        "who": "Spring Nymphar",
-        "confidence": 20
-      },
-      {
         "who": "Kiara Blaiddyd",
-        "confidence": 20
-      },
-      {
-        "who": "Loki Doki",
         "confidence": 20
       }
     ],
@@ -31572,23 +31608,35 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kite Noodle",
-        "confidence": 20
+        "who": "Absolute Gigalad",
+        "confidence": 13,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 33,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 13,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Speed Panda",
         "confidence": 20
       },
       {
-        "who": "Spring Nymphar",
-        "confidence": 20
-      },
-      {
         "who": "Kiara Blaiddyd",
-        "confidence": 20
-      },
-      {
-        "who": "Loki Doki",
         "confidence": 20
       }
     ],
@@ -31694,23 +31742,35 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kite Noodle",
-        "confidence": 20
+        "who": "Absolute Gigalad",
+        "confidence": 13,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 33,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 13,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Speed Panda",
         "confidence": 20
       },
       {
-        "who": "Spring Nymphar",
-        "confidence": 20
-      },
-      {
         "who": "Kiara Blaiddyd",
-        "confidence": 20
-      },
-      {
-        "who": "Loki Doki",
         "confidence": 20
       }
     ],
@@ -31816,23 +31876,35 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kite Noodle",
-        "confidence": 20
+        "who": "Absolute Gigalad",
+        "confidence": 13,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 33,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 13,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Speed Panda",
         "confidence": 20
       },
       {
-        "who": "Spring Nymphar",
-        "confidence": 20
-      },
-      {
         "who": "Kiara Blaiddyd",
-        "confidence": 20
-      },
-      {
-        "who": "Loki Doki",
         "confidence": 20
       }
     ],
@@ -37975,18 +38047,22 @@
     "off_tank": "",
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
-    "outcome": "fail",
-    "happened": "Took 172,742 at 41% HP. A healer takes about 43\u201367k on a share of 4.",
+    "outcome": "raw",
+    "happened": "Took 172,742 at 41% HP. Shared by 1 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "Spring Nymphar stood too close to Ser Zephirin's landing.",
-    "cause": "personal",
+    "went_wrong": "The stack was 1 of 4 because Kiara Blaiddyd and Absolute Gigalad were already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 100
+        "who": "Kiara Blaiddyd",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 50
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
     "first_causes": [
@@ -45603,14 +45679,13 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
+      "Kite Noodle",
       "Speed Panda",
       "Kitana Kahn",
       "Spring Nymphar",
       "Loki Doki"
     ],
-    "unsoaked": [
-      "Kite Noodle"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -45636,9 +45711,13 @@
     "outcome": "fail",
     "happened": "Took 93,865 at 88% HP. It would have killed them from full HP.",
     "should_have_been": "The six non-tanks each soak one of Ser Hermenost's Strength towers, about 63 seconds. An empty or shared tower explodes for the raid about 2 seconds later: tanks take about 61\u201367k, everyone else about 90\u2013108k, and the survivors get Damage Down and Paralysis. It does not land when every tower is soaked. The non-tank who missed a tower owns it. A player who was already dead left their tower empty, and that death owns it.",
-    "went_wrong": "4 players were dead and Kite Noodle was out of the towers.",
+    "went_wrong": "5 players were already dead, so a tower was empty.",
     "cause": "empty",
     "blames": [
+      {
+        "who": "Kite Noodle",
+        "confidence": 20
+      },
       {
         "who": "Kitana Kahn",
         "confidence": 60,
@@ -45649,10 +45728,6 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 20
-      },
-      {
-        "who": "Kite Noodle",
         "confidence": 20
       }
     ],
@@ -46147,18 +46222,30 @@
     "off_tank": "",
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
-    "outcome": "fail",
-    "happened": "Took 91,429 at full HP. A healer takes about 43\u201367k on a share of 4.",
+    "outcome": "raw",
+    "happened": "Took 91,429 at full HP. Shared by 2 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "Spring Nymphar stood too close to Ser Zephirin's landing.",
-    "cause": "personal",
+    "went_wrong": "The stack was 2 of 4 because Kiara Blaiddyd and Kite Noodle were already dead.",
+    "cause": "missing",
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 100
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd",
+          "Kite Noodle"
+        ]
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd",
+          "Kite Noodle"
+        ]
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
     "first_causes": [
@@ -46314,7 +46401,7 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 50,
+        "confidence": 42,
         "via": [
           "Kite Noodle",
           "Kiara Blaiddyd",
@@ -46325,10 +46412,11 @@
       },
       {
         "who": "Absolute Gigachad",
-        "confidence": 28,
+        "confidence": 35,
         "via": [
           "Kite Noodle",
-          "Kiara Blaiddyd"
+          "Kiara Blaiddyd",
+          "Spring Nymphar"
         ]
       },
       {

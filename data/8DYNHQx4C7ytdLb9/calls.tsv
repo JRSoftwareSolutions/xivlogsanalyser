@@ -224,14 +224,14 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 31	0:49	Spring Nymphar	47.0	Heavy Impact	fail	personal	hit	Spring Nymphar 100	
 31	0:50	Kite Noodle	48.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
 31	0:55	Kiara Blaiddyd	53.5	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
-33	3:48	Absolute Gigachad	31.6	Deathwall	fail	personal	no-packet	Absolute Gigachad 100	
-33	3:48	Kiara Blaiddyd	31.6	Deathwall	fail	personal	no-packet	Kiara Blaiddyd 100	
-33	3:48	Kitana Kahn	31.6	Deathwall	fail	personal	no-packet	Kitana Kahn 100	
-33	3:48	Loki Doki	31.6	Deathwall	fail	personal	no-packet	Loki Doki 100	
-33	3:48	Spring Nymphar	31.6	Deathwall	fail	personal	no-packet	Spring Nymphar 100	
+33	3:48	Absolute Gigachad	31.6	Deathwall	environment	reset			
+33	3:48	Kiara Blaiddyd	31.6	Deathwall	environment	reset			
+33	3:48	Kitana Kahn	31.6	Deathwall	environment	reset			
+33	3:48	Loki Doki	31.6	Deathwall	environment	reset			
+33	3:48	Spring Nymphar	31.6	Deathwall	environment	reset			
 33	3:54	Kite Noodle	37.4	Darkdragon Dive	fail	personal	hit	Kite Noodle 100	ability 26385
 33	3:54	Speed Panda	37.4	Darkdragon Dive	fail	personal	hit	Speed Panda 100	ability 26385
-33	3:56	Absolute Gigalad	39.2	Darkdragon Dive	fail	empty	hit-list	Kitana Kahn 33; Loki Doki 33; Spring Nymphar 33	ability 26395
+33	3:56	Absolute Gigalad	39.2	Darkdragon Dive	fail	empty	label	Group reset 50 (via Kitana Kahn, Loki Doki, Spring Nymphar)	ability 26395
 34	1:01	Absolute Gigachad	59.5	Deathwall	fail	personal	no-packet	Absolute Gigachad 100	
 34	1:01	Kitana Kahn	59.8	Skyward Leap	fail	marker	position	Kitana Kahn 100	
 34	1:02	Kite Noodle	60.2	Dragon's Rage	raw	missing	hit-list	Kitana Kahn 33; Absolute Gigachad 33; Absolute Gigalad 33	
@@ -257,7 +257,7 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 36	3:58	Speed Panda	39.2	Darkdragon Dive	fail	tower	label	Missed soak 50	ability 26395
 36	3:58	Kiara Blaiddyd	39.3	Darkdragon Dive	fail	tower	label	Missed soak 50	ability 26395
 36	4:04	Absolute Gigachad	44.8	Geirskogul	fail	personal	hit	Absolute Gigachad 100	ability 26378
-36	2:01	Kite Noodle	119.0	Sacred Sever	fail	personal	hit	Kite Noodle 100	
+36	2:01	Kite Noodle	119.0	Sacred Sever	raw	missing	hit-list	Absolute Gigalad 33; Spring Nymphar 33; Kitana Kahn 33	
 37	2:17	Kiara Blaiddyd	135.6	Frostbite	fail	personal	hit	Kiara Blaiddyd 100	
 37	2:19	Kite Noodle	137.2	Eternal Conviction	fail	empty	hit-list	Kiara Blaiddyd 100	
 37	2:19	Loki Doki	137.4	Eternal Conviction	fail	empty	hit-list	Kiara Blaiddyd 100	

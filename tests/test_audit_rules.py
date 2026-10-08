@@ -125,6 +125,50 @@ class DragonsRageStackTest(unittest.TestCase):
                     self.assertNotIn("Missing bodies", [blame.who for blame in item.blames], (code, item.fact.fight))
 
 
+class ShortStackTest(unittest.TestCase):
+    """The role cap is for a full stack. The same cast split fewer ways is a short stack, owned by who was missing."""
+
+    def test_a_lone_jump_at_the_normal_total_is_a_short_share(self):
+        kite = _one("8DYNHQx4C7ytdLb9", 36, "Kite Noodle", "Sacred Sever")
+        self.assertEqual(kite.fact.stack, 1)
+        self.assertEqual((kite.outcome, kite.cause), ("raw", "missing"))
+        self.assertEqual(sorted(blame.who for blame in kite.blames), ["Absolute Gigalad", "Kitana Kahn", "Spring Nymphar"])
+
+    def test_a_dragons_rage_pair_is_a_short_stack(self):
+        for name in ("Kite Noodle", "Spring Nymphar"):
+            item = _one("3wzL6x4VHTmvNkhq", 38, name, "Dragon's Rage")
+            self.assertEqual((item.outcome, item.cause), ("raw", "missing"))
+            # Loki was just raised (Transcendent), so his gap passes on to his own Heavy Impact death.
+            self.assertIn("Loki Doki", item.fact.down)
+
+    def test_a_full_stack_far_over_the_share_is_still_too_close(self):
+        for name in ("Kite Noodle", "Spring Nymphar", "Absolute Gigachad"):
+            item = _one("3wzL6x4VHTmvNkhq", 50, name, "Sacred Sever")
+            self.assertEqual(item.outcome, "fail")
+
+
+class GroupResetTest(unittest.TestCase):
+    """Several players walking into the wall together as the pull's first event agreed to reset."""
+
+    def test_a_group_walk_first_is_nobodys_mistake(self):
+        rows = [item for item in _judged("8DYNHQx4C7ytdLb9")[4] if item.fact.fight == 33]
+        resets = [item for item in rows if item.cause == "reset"]
+        self.assertEqual(len(resets), 5)
+        for item in resets:
+            self.assertEqual(item.outcome, "environment")
+            self.assertEqual(item.blames, [])
+            self.assertFalse(item.first)
+        self.assertEqual(rows[0].first_causes, [{"mechanic": "Group reset", "owners": ["Group reset"]}])
+
+    def test_a_wall_after_a_mistake_is_still_a_fail(self):
+        walls = [
+            item for item in _judged("8DYNHQx4C7ytdLb9")[4]
+            if item.fact.fight == 7 and item.mechanic_id == "deathwall"
+        ]
+        self.assertTrue(walls)
+        self.assertTrue(all(item.outcome == "fail" for item in walls))
+
+
 class OffTankTest(unittest.TestCase):
     def test_the_off_tank_is_the_tank_heel_lands_on(self):
         for code in CODES:

@@ -183,7 +183,7 @@ def _beyond_role(fact: DeathFact, mechanic: Mechanic, cleave: bool = False) -> s
 
     `cleave` is a cast judged a cleave as a whole, where this one hit can be under the cap.
     """
-    cap = mechanic.cap_for(fact.role)
+    cap = mechanic.cap_for_stack(fact.role, fact.stack)
     hit = _hit(fact)
     lived = mechanic.lived_for(fact.role)
     if cap is None or not _band(lived) or (hit <= cap and not cleave):
@@ -419,7 +419,7 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
             fact, mechanic, "fail", _oversized(fact, mechanic),
             _oversized_cause(fact, mechanic), pack,
         )
-    cap = mechanic.cap_for(fact.role)
+    cap = mechanic.cap_for_stack(fact.role, fact.stack)
     if cap is None:
         return _done(
             fact, mechanic, "unknown",
@@ -530,7 +530,7 @@ def _cast_verdicts(facts: list[DeathFact], pack: FightPack) -> dict[int, bool]:
             continue
         if _vuln(fact) or fact.clipped_by:
             continue
-        cap = mechanic.cap_for(fact.role)
+        cap = mechanic.cap_for_stack(fact.role, fact.stack)
         if not cap or (mechanic.fail_above is not None and _hit(fact) > mechanic.fail_above):
             continue
         groups[(fact.fight, fact.guid, tuple(sorted(fact.cohort)))].append((fact, _hit(fact) / cap))
@@ -964,6 +964,11 @@ def _moment_causes(deaths: list[Judgment], debuffs: list[dict], pack: FightPack)
     """What the first mistake was, per mechanic, and who owns it."""
     causes: dict[str, list[str]] = {}
     for item in deaths:
+        if item.cause == "reset":
+            owners = causes.setdefault("Group reset", [])
+            if "Group reset" not in owners:
+                owners.append("Group reset")
+            continue
         named = [blame.who for blame in item.blames if blame.who not in CONTEXT_SHARES]
         owners = causes.setdefault(item.mechanic, [])
         owners += [who for who in named or [item.fact.name] if who not in owners]
@@ -979,7 +984,9 @@ def _moment_text(deaths: list[Judgment], debuffs: list[dict], wall_id: str) -> s
     groups: dict[str, list[str]] = {}
     for item in deaths:
         others = _hit_by_others(item)
-        if item.mechanic_id == wall_id:
+        if item.cause == "reset":
+            verb = "walking into the deathwall together to reset"
+        elif item.mechanic_id == wall_id:
             verb = "walking into the deathwall"
         elif others:
             verb = f"dying to {' and '.join(others)}'s {item.mechanic}"
@@ -1058,6 +1065,39 @@ def _first_moments(judgments: list[Judgment], pack: FightPack) -> dict[int, _Fir
     return found
 
 
+# Three or more players with no packet this close together, starting the pull, walked in on purpose.
+RESET_PLAYERS = 3
+RESET_S = 3.0
+
+
+def _mark_resets(judgments: list[Judgment], firsts: dict[int, "_FirstMoment"], pack: FightPack) -> None:
+    """Several players walking into the deathwall together as the pull's first event is an
+    agreed reset after something the log does not show, such as a bad opener or a spilled
+    drink. It is nobody's mistake, so it has no owner. A later death it left short passes
+    on to "Group reset"."""
+    wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
+    pulls: dict[int, list[Judgment]] = defaultdict(list)
+    for item in judgments:
+        pulls[item.fact.fight].append(item)
+    for fight, rows in pulls.items():
+        moment = firsts.get(fight)
+        if moment is None or moment.debuffs:
+            continue
+        walls = [
+            item for item in rows
+            if item.mechanic_id == wall_id and item.fact.phase == moment.phase
+            and moment.start <= item.fact.t <= moment.start + RESET_S
+        ]
+        if len(walls) < RESET_PLAYERS or any(item.mechanic_id != wall_id for item in moment.deaths):
+            continue
+        for item in walls:
+            item.outcome = "environment"
+            item.cause = "reset"
+            item.went_wrong = "The party walked into the deathwall together to reset."
+            item.happened = "Nothing hit them. Several players walked in at once."
+            item.blames = []
+
+
 def _mark_after_walls(
     judgments: list[Judgment], firsts: dict[int, _FirstMoment], pack: FightPack,
 ) -> None:
@@ -1069,7 +1109,7 @@ def _mark_after_walls(
     wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
     for item in judgments:
         moment = firsts[item.fact.fight]
-        if item.mechanic_id != wall_id or moment.holds(item.fact.phase, item.fact.t):
+        if item.mechanic_id != wall_id or item.cause == "reset" or moment.holds(item.fact.phase, item.fact.t):
             continue
         if _own_hysteria(item.fact) or _only_own_before(item, judgments):
             continue
@@ -1107,7 +1147,7 @@ def _mark_first_mistakes(
     causes = {fight: _moment_causes(moment.deaths, moment.debuffs, pack) for fight, moment in firsts.items()}
     for item in judgments:
         moment = firsts[item.fact.fight]
-        item.first = moment.holds(item.fact.phase, item.fact.t) and not _hit_by_others(item)
+        item.first = moment.holds(item.fact.phase, item.fact.t) and not _hit_by_others(item) and item.cause != "reset"
         item.first_mistake = texts[item.fact.fight]
         item.first_causes = causes[item.fact.fight]
 
@@ -1121,6 +1161,7 @@ _EMPTY_GROUPS = {"tower": "Missed soak", "prey": "Prey markers"}
 # Labels that stand in for players the log did not name.
 GROUP_LABELS = frozenset({
     *_EMPTY_GROUPS.values(),
+    "Group reset",
     "Missing bodies",
     "Miscommunication",
     "Out of position",
@@ -1280,6 +1321,8 @@ def _death_owners(item: Judgment) -> list[str]:
 
 def _death_shares(item: Judgment) -> dict[str, float]:
     """Who owns this death and how much of it, without the shares that only sit beside an owner."""
+    if item.cause == "reset":
+        return {"Group reset": 1.0}
     named = [(blame.who, blame.confidence) for blame in item.blames if blame.who not in CONTEXT_SHARES]
     if not named:
         return {item.fact.name: 1.0}
@@ -1510,6 +1553,7 @@ def judge_report(
         return judgments
     _mark_empty_soaks(judgments)
     firsts = _first_moments(judgments, pack)
+    _mark_resets(judgments, firsts, pack)
     _mark_after_walls(judgments, firsts, pack)
     if roster is None or not len(roster):
         people = _roster_from_facts(facts)

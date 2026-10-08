@@ -1,19 +1,19 @@
 {
  "rules": "31a0eba724499654",
- "engine": "39e91bf2890a11d4",
+ "engine": "07bdc6277f4438ce",
  "log": "f136dbe8abc107ba",
  "outputs": {
   "facts.json": "dbea120c2b662a9e",
-  "judgments.json": "254c83d6fc438e1d",
-  "calls.tsv": "6f3dd0bec7a82230",
-  "session.html": "977e458eb6ad7480",
+  "judgments.json": "adf9d3d8d13d6c47",
+  "calls.tsv": "b25113e6231596da",
+  "session.html": "a6aa82995bb736d2",
   "inputs.json": "f3a858e502fbae22"
  },
  "counts": {
-  "raw": 27,
-  "fail": 363,
+  "raw": 28,
+  "fail": 357,
   "low": 3,
-  "environment": 0,
+  "environment": 5,
   "unknown": 0
  },
  "summary": {
@@ -25,8 +25,8 @@
   "day": "2026-10-05",
   "dayLabel": "Mon 5 Oct 2026",
   "timeLabel": "21:31\u201300:14",
-  "raw": 27,
-  "fail": 363,
+  "raw": 28,
+  "fail": 357,
   "low": 3,
   "detail": "",
   "overview": {
@@ -1230,7 +1230,7 @@
     "phase": 2,
     "starts": 105.0,
     "reached": 26,
-    "mistakes": 10
+    "mistakes": 9
    },
    {
     "id": "meteors",
@@ -1253,6 +1253,7 @@
    "pulls": 47,
    "labels": [
     "Earlier deaths",
+    "Group reset",
     "Miscommunication",
     "Missed soak",
     "Missing bodies"
@@ -1281,40 +1282,6 @@
      ]
     },
     {
-     "mechanic": "Deathwall",
-     "pulls": 8,
-     "owners": [
-      [
-       "Kitana Kahn",
-       4
-      ],
-      [
-       "Absolute Gigachad",
-       3
-      ],
-      [
-       "Loki Doki",
-       2
-      ],
-      [
-       "Absolute Gigalad",
-       1
-      ],
-      [
-       "Kite Noodle",
-       1
-      ],
-      [
-       "Kiara Blaiddyd",
-       1
-      ],
-      [
-       "Spring Nymphar",
-       1
-      ]
-     ]
-    },
-    {
      "mechanic": "Bright Flare",
      "pulls": 7,
      "owners": [
@@ -1336,6 +1303,32 @@
       ],
       [
        "Absolute Gigalad",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Deathwall",
+     "pulls": 7,
+     "owners": [
+      [
+       "Kitana Kahn",
+       3
+      ],
+      [
+       "Absolute Gigachad",
+       2
+      ],
+      [
+       "Absolute Gigalad",
+       1
+      ],
+      [
+       "Kite Noodle",
+       1
+      ],
+      [
+       "Loki Doki",
        1
       ]
      ]
@@ -1457,7 +1450,15 @@
        1
       ],
       [
-       "Kite Noodle",
+       "Absolute Gigalad",
+       1
+      ],
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Kitana Kahn",
        1
       ]
      ]
@@ -1559,6 +1560,16 @@
      ]
     },
     {
+     "mechanic": "Group reset",
+     "pulls": 1,
+     "owners": [
+      [
+       "Group reset",
+       1
+      ]
+     ]
+    },
+    {
      "mechanic": "Dragon's Glory",
      "pulls": 1,
      "owners": [
@@ -1590,23 +1601,23 @@
     ],
     [
      "Loki Doki",
-     10
+     9
     ],
     [
      "Kiara Blaiddyd",
-     10
+     9
     ],
     [
      "Absolute Gigalad",
-     7
+     8
     ],
     [
      "Absolute Gigachad",
-     4
+     3
     ],
     [
      "Kite Noodle",
-     4
+     3
     ],
     [
      "Speed Panda",
@@ -1615,36 +1626,40 @@
     [
      "Missing bodies",
      1
+    ],
+    [
+     "Group reset",
+     1
     ]
    ],
    "owned": [
     [
      "Loki Doki",
-     63.1
+     61.7
     ],
     [
      "Spring Nymphar",
-     62.4
+     61.4
     ],
     [
      "Kitana Kahn",
-     41.1
+     40.1
     ],
     [
      "Kiara Blaiddyd",
-     38.1
+     37.1
     ],
     [
      "Absolute Gigachad",
-     32.0
+     31.0
     ],
     [
      "Kite Noodle",
-     30.8
+     29.8
     ],
     [
      "Absolute Gigalad",
-     28.3
+     28.6
     ],
     [
      "Speed Panda",
@@ -1665,6 +1680,10 @@
     [
      "Miscommunication",
      1.0
+    ],
+    [
+     "Group reset",
+     0.5
     ]
    ]
   }

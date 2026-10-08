@@ -150,6 +150,16 @@ class Mechanic:
     # "{name} stood too close to Ser Zephirin's landing." Without it, the category's line.
     too_much: str = ""
 
+    def cap_for_stack(self, role: str, stack: int | None) -> int | None:
+        """The role cap for this many players in the stack. The caps are set for a full
+        stack; the same cast split fewer ways is bigger per player, so the cap scales up."""
+        cap = self.cap_for(role)
+        if cap is None or not self.scales_with_stack or not self.typical_targets or not stack:
+            return cap
+        if stack >= self.typical_targets:
+            return cap
+        return round(cap * self.typical_targets / stack)
+
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
         return band.unmitigated_max if band else None

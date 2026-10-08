@@ -5533,7 +5533,7 @@
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
-    "happened": "Took 333,516 at 90% HP. A DPS takes about 67k.",
+    "happened": "Took 333,516 at 90% HP. It would have killed them from full HP.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Kiara Blaiddyd took a failed Dragon's Rage.",
     "cause": "personal",
@@ -23106,29 +23106,20 @@
     "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
+    "outcome": "environment",
+    "happened": "Nothing hit them. Several players walked in at once.",
     "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Absolute Gigachad walked into the deathwall.",
-    "cause": "personal",
-    "blames": [
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 100
-      }
-    ],
-    "basis": "no-packet",
-    "first": true,
-    "first_mistake": "5 players walking into the deathwall at 31.6s into Nidhogg",
+    "went_wrong": "The party walked into the deathwall together to reset.",
+    "cause": "reset",
+    "blames": [],
+    "basis": "",
+    "first": false,
+    "first_mistake": "5 players walking into the deathwall together to reset at 31.6s into Nidhogg",
     "first_causes": [
       {
-        "mechanic": "Deathwall",
+        "mechanic": "Group reset",
         "owners": [
-          "Absolute Gigachad",
-          "Kiara Blaiddyd",
-          "Kitana Kahn",
-          "Loki Doki",
-          "Spring Nymphar"
+          "Group reset"
         ]
       }
     ]
@@ -23174,29 +23165,20 @@
     "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
+    "outcome": "environment",
+    "happened": "Nothing hit them. Several players walked in at once.",
     "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kiara Blaiddyd walked into the deathwall.",
-    "cause": "personal",
-    "blames": [
-      {
-        "who": "Kiara Blaiddyd",
-        "confidence": 100
-      }
-    ],
-    "basis": "no-packet",
-    "first": true,
-    "first_mistake": "5 players walking into the deathwall at 31.6s into Nidhogg",
+    "went_wrong": "The party walked into the deathwall together to reset.",
+    "cause": "reset",
+    "blames": [],
+    "basis": "",
+    "first": false,
+    "first_mistake": "5 players walking into the deathwall together to reset at 31.6s into Nidhogg",
     "first_causes": [
       {
-        "mechanic": "Deathwall",
+        "mechanic": "Group reset",
         "owners": [
-          "Absolute Gigachad",
-          "Kiara Blaiddyd",
-          "Kitana Kahn",
-          "Loki Doki",
-          "Spring Nymphar"
+          "Group reset"
         ]
       }
     ]
@@ -23254,29 +23236,20 @@
     "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
+    "outcome": "environment",
+    "happened": "Nothing hit them. Several players walked in at once.",
     "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Kitana Kahn walked into the deathwall.",
-    "cause": "personal",
-    "blames": [
-      {
-        "who": "Kitana Kahn",
-        "confidence": 100
-      }
-    ],
-    "basis": "no-packet",
-    "first": true,
-    "first_mistake": "5 players walking into the deathwall at 31.6s into Nidhogg",
+    "went_wrong": "The party walked into the deathwall together to reset.",
+    "cause": "reset",
+    "blames": [],
+    "basis": "",
+    "first": false,
+    "first_mistake": "5 players walking into the deathwall together to reset at 31.6s into Nidhogg",
     "first_causes": [
       {
-        "mechanic": "Deathwall",
+        "mechanic": "Group reset",
         "owners": [
-          "Absolute Gigachad",
-          "Kiara Blaiddyd",
-          "Kitana Kahn",
-          "Loki Doki",
-          "Spring Nymphar"
+          "Group reset"
         ]
       }
     ]
@@ -23334,29 +23307,20 @@
     "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
+    "outcome": "environment",
+    "happened": "Nothing hit them. Several players walked in at once.",
     "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Loki Doki walked into the deathwall.",
-    "cause": "personal",
-    "blames": [
-      {
-        "who": "Loki Doki",
-        "confidence": 100
-      }
-    ],
-    "basis": "no-packet",
-    "first": true,
-    "first_mistake": "5 players walking into the deathwall at 31.6s into Nidhogg",
+    "went_wrong": "The party walked into the deathwall together to reset.",
+    "cause": "reset",
+    "blames": [],
+    "basis": "",
+    "first": false,
+    "first_mistake": "5 players walking into the deathwall together to reset at 31.6s into Nidhogg",
     "first_causes": [
       {
-        "mechanic": "Deathwall",
+        "mechanic": "Group reset",
         "owners": [
-          "Absolute Gigachad",
-          "Kiara Blaiddyd",
-          "Kitana Kahn",
-          "Loki Doki",
-          "Spring Nymphar"
+          "Group reset"
         ]
       }
     ]
@@ -23414,29 +23378,20 @@
     "off_tank": "",
     "mechanic_id": "deathwall",
     "mechanic": "Deathwall",
-    "outcome": "fail",
-    "happened": "Nothing hit them.",
+    "outcome": "environment",
+    "happened": "Nothing hit them. Several players walked in at once.",
     "should_have_been": "Nobody touches the edge of the arena. Walking into the deathwall kills with no damage packet, and it is always a mistake. Before any other death, Damage Down, or Hysteria in the pull it is that player's own mistake. After one, it is still a mistake, but the first mistake of the pull usually caused it.",
-    "went_wrong": "Spring Nymphar walked into the deathwall.",
-    "cause": "personal",
-    "blames": [
-      {
-        "who": "Spring Nymphar",
-        "confidence": 100
-      }
-    ],
-    "basis": "no-packet",
-    "first": true,
-    "first_mistake": "5 players walking into the deathwall at 31.6s into Nidhogg",
+    "went_wrong": "The party walked into the deathwall together to reset.",
+    "cause": "reset",
+    "blames": [],
+    "basis": "",
+    "first": false,
+    "first_mistake": "5 players walking into the deathwall together to reset at 31.6s into Nidhogg",
     "first_causes": [
       {
-        "mechanic": "Deathwall",
+        "mechanic": "Group reset",
         "owners": [
-          "Absolute Gigachad",
-          "Kiara Blaiddyd",
-          "Kitana Kahn",
-          "Loki Doki",
-          "Spring Nymphar"
+          "Group reset"
         ]
       }
     ]
@@ -23516,16 +23471,12 @@
     ],
     "basis": "hit",
     "first": false,
-    "first_mistake": "5 players walking into the deathwall at 31.6s into Nidhogg",
+    "first_mistake": "5 players walking into the deathwall together to reset at 31.6s into Nidhogg",
     "first_causes": [
       {
-        "mechanic": "Deathwall",
+        "mechanic": "Group reset",
         "owners": [
-          "Absolute Gigachad",
-          "Kiara Blaiddyd",
-          "Kitana Kahn",
-          "Loki Doki",
-          "Spring Nymphar"
+          "Group reset"
         ]
       }
     ]
@@ -23604,16 +23555,12 @@
     ],
     "basis": "hit",
     "first": false,
-    "first_mistake": "5 players walking into the deathwall at 31.6s into Nidhogg",
+    "first_mistake": "5 players walking into the deathwall together to reset at 31.6s into Nidhogg",
     "first_causes": [
       {
-        "mechanic": "Deathwall",
+        "mechanic": "Group reset",
         "owners": [
-          "Absolute Gigachad",
-          "Kiara Blaiddyd",
-          "Kitana Kahn",
-          "Loki Doki",
-          "Spring Nymphar"
+          "Group reset"
         ]
       }
     ]
@@ -23692,30 +23639,23 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 33
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 33
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      }
-    ],
-    "basis": "hit-list",
-    "first": false,
-    "first_mistake": "5 players walking into the deathwall at 31.6s into Nidhogg",
-    "first_causes": [
-      {
-        "mechanic": "Deathwall",
-        "owners": [
-          "Absolute Gigachad",
-          "Kiara Blaiddyd",
+        "who": "Group reset",
+        "confidence": 50,
+        "via": [
           "Kitana Kahn",
           "Loki Doki",
           "Spring Nymphar"
+        ]
+      }
+    ],
+    "basis": "label",
+    "first": false,
+    "first_mistake": "5 players walking into the deathwall together to reset at 31.6s into Nidhogg",
+    "first_causes": [
+      {
+        "mechanic": "Group reset",
+        "owners": [
+          "Group reset"
         ]
       }
     ]
@@ -25362,25 +25302,35 @@
     "off_tank": "",
     "mechanic_id": "sacred-sever",
     "mechanic": "Sacred Sever",
-    "outcome": "fail",
-    "happened": "Took 163,034 at full HP. The hit was 181,150 before mitigation. A DPS takes about 40\u201364k on a share of 4.",
+    "outcome": "raw",
+    "happened": "Took 163,034 at full HP. Shared by 1 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "Kite Noodle stood too close to Ser Zephirin's landing.",
-    "cause": "personal",
+    "went_wrong": "The stack was 1 of 4 because 3 players were not in it.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kite Noodle",
-        "confidence": 100
+        "who": "Absolute Gigalad",
+        "confidence": 33
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 33
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 33
       }
     ],
-    "basis": "hit",
-    "first": true,
-    "first_mistake": "Kite Noodle dying to Sacred Sever at 119.0s into Thordan",
+    "basis": "hit-list",
+    "first": false,
+    "first_mistake": "Kite Noodle dying to Absolute Gigalad and Spring Nymphar and Kitana Kahn's Sacred Sever at 119.0s into Thordan",
     "first_causes": [
       {
         "mechanic": "Sacred Sever",
         "owners": [
-          "Kite Noodle"
+          "Absolute Gigalad",
+          "Spring Nymphar",
+          "Kitana Kahn"
         ]
       }
     ]
@@ -25493,12 +25443,14 @@
     ],
     "basis": "role",
     "first": false,
-    "first_mistake": "Kite Noodle dying to Sacred Sever at 119.0s into Thordan",
+    "first_mistake": "Kite Noodle dying to Absolute Gigalad and Spring Nymphar and Kitana Kahn's Sacred Sever at 119.0s into Thordan",
     "first_causes": [
       {
         "mechanic": "Sacred Sever",
         "owners": [
-          "Kite Noodle"
+          "Absolute Gigalad",
+          "Spring Nymphar",
+          "Kitana Kahn"
         ]
       }
     ]
@@ -25622,12 +25574,14 @@
     ],
     "basis": "role",
     "first": false,
-    "first_mistake": "Kite Noodle dying to Sacred Sever at 119.0s into Thordan",
+    "first_mistake": "Kite Noodle dying to Absolute Gigalad and Spring Nymphar and Kitana Kahn's Sacred Sever at 119.0s into Thordan",
     "first_causes": [
       {
         "mechanic": "Sacred Sever",
         "owners": [
-          "Kite Noodle"
+          "Absolute Gigalad",
+          "Spring Nymphar",
+          "Kitana Kahn"
         ]
       }
     ]
@@ -25751,12 +25705,14 @@
     ],
     "basis": "label",
     "first": false,
-    "first_mistake": "Kite Noodle dying to Sacred Sever at 119.0s into Thordan",
+    "first_mistake": "Kite Noodle dying to Absolute Gigalad and Spring Nymphar and Kitana Kahn's Sacred Sever at 119.0s into Thordan",
     "first_causes": [
       {
         "mechanic": "Sacred Sever",
         "owners": [
-          "Kite Noodle"
+          "Absolute Gigalad",
+          "Spring Nymphar",
+          "Kitana Kahn"
         ]
       }
     ]
@@ -25871,12 +25827,14 @@
     ],
     "basis": "label",
     "first": false,
-    "first_mistake": "Kite Noodle dying to Sacred Sever at 119.0s into Thordan",
+    "first_mistake": "Kite Noodle dying to Absolute Gigalad and Spring Nymphar and Kitana Kahn's Sacred Sever at 119.0s into Thordan",
     "first_causes": [
       {
         "mechanic": "Sacred Sever",
         "owners": [
-          "Kite Noodle"
+          "Absolute Gigalad",
+          "Spring Nymphar",
+          "Kitana Kahn"
         ]
       }
     ]
@@ -25984,12 +25942,14 @@
     ],
     "basis": "role",
     "first": false,
-    "first_mistake": "Kite Noodle dying to Sacred Sever at 119.0s into Thordan",
+    "first_mistake": "Kite Noodle dying to Absolute Gigalad and Spring Nymphar and Kitana Kahn's Sacred Sever at 119.0s into Thordan",
     "first_causes": [
       {
         "mechanic": "Sacred Sever",
         "owners": [
-          "Kite Noodle"
+          "Absolute Gigalad",
+          "Spring Nymphar",
+          "Kitana Kahn"
         ]
       }
     ]
@@ -26102,12 +26062,14 @@
     ],
     "basis": "label",
     "first": false,
-    "first_mistake": "Kite Noodle dying to Sacred Sever at 119.0s into Thordan",
+    "first_mistake": "Kite Noodle dying to Absolute Gigalad and Spring Nymphar and Kitana Kahn's Sacred Sever at 119.0s into Thordan",
     "first_causes": [
       {
         "mechanic": "Sacred Sever",
         "owners": [
-          "Kite Noodle"
+          "Absolute Gigalad",
+          "Spring Nymphar",
+          "Kitana Kahn"
         ]
       }
     ]
@@ -26223,12 +26185,14 @@
     ],
     "basis": "label",
     "first": false,
-    "first_mistake": "Kite Noodle dying to Sacred Sever at 119.0s into Thordan",
+    "first_mistake": "Kite Noodle dying to Absolute Gigalad and Spring Nymphar and Kitana Kahn's Sacred Sever at 119.0s into Thordan",
     "first_causes": [
       {
         "mechanic": "Sacred Sever",
         "owners": [
-          "Kite Noodle"
+          "Absolute Gigalad",
+          "Spring Nymphar",
+          "Kitana Kahn"
         ]
       }
     ]
@@ -26334,12 +26298,14 @@
     ],
     "basis": "hit",
     "first": false,
-    "first_mistake": "Kite Noodle dying to Sacred Sever at 119.0s into Thordan",
+    "first_mistake": "Kite Noodle dying to Absolute Gigalad and Spring Nymphar and Kitana Kahn's Sacred Sever at 119.0s into Thordan",
     "first_causes": [
       {
         "mechanic": "Sacred Sever",
         "owners": [
-          "Kite Noodle"
+          "Absolute Gigalad",
+          "Spring Nymphar",
+          "Kitana Kahn"
         ]
       }
     ]
