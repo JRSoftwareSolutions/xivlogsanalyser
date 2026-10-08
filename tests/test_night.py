@@ -7,6 +7,7 @@ from test_audit_rules import PACK, _judged
 
 from xivloganalyzer.brief import brief_text
 from xivloganalyzer.evidence import evidence_text
+from xivloganalyzer.judge import GROUP_LABELS
 from xivloganalyzer.night import night_tally
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,7 +47,7 @@ class NightTest(unittest.TestCase):
         self.assertEqual(tally["pulls"], 55)
         self.assertGreaterEqual(sum(row["pulls"] for row in tally["started"]), 55)
         self.assertEqual(tally["started"][0]["mechanic"], "Ascalon's Mercy Concealed")
-        self.assertIn("Missing bodies", tally["labels"])
+        self.assertTrue(set(tally["labels"]) <= GROUP_LABELS, tally["labels"])
         owned = dict(tally["owned"])
         self.assertNotIn("Party mitigation", owned)
 

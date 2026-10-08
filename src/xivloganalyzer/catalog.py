@@ -119,6 +119,37 @@ class Drops:
 
 
 @dataclass
+class Stun:
+    """A status that stops the player from moving, put on them by a hit aimed at someone else.
+
+    `debuff` is the stun. `casts` are the hits on the players who caused it, such as
+    the Holy Shield Bash on a tether holder, landing up to `within` seconds before the stun.
+    A player stunned this way could not dodge, so whoever drew that hit owns the death.
+    """
+
+    debuff: int
+    casts: list[int]
+    within: float
+
+
+@dataclass
+class Baited:
+    """Cones each aimed at one player, who all stand together but one, such as the opener's
+    Ascalon's Mercy Concealed: everyone stacks behind the boss and one tank in front.
+
+    Up to `until` seconds into the phase. Each cone locks on its player `lock` seconds
+    before it hits. A cone that points neither at the stack nor at the front was baited
+    by the player standing within `aim` degrees of it, and a player who dies within
+    `width` degrees of it was hit by that cone.
+    """
+
+    until: float
+    lock: float
+    aim: float
+    width: float
+
+
+@dataclass
 class Mechanic:
     id: str
     name: str
@@ -136,6 +167,8 @@ class Mechanic:
     requires_personal_mit: bool = False
     # Only the report's off tank takes it. Who that is comes from the log (`extract.off_tank`).
     off_tank: bool = False
+    # Only the report's main tank takes it, the same way (`extract.main_tank`).
+    main_tank: bool = False
     marker_owns_clip: bool = False
     spots: MarkerSpots | None = None
     moments: list[Moment] = field(default_factory=list)
@@ -146,6 +179,16 @@ class Mechanic:
     alternating: bool = False
     # Each circle is shared by one support and one DPS, such as Hiemal Storm's ice.
     pairs: bool = False
+    # A player stunned by a hit aimed at someone else could not dodge this.
+    stun: Stun | None = None
+    # One hit for each player, such as Lightning Storm's bolts. A dead player's goes to
+    # someone alive, who then takes two that hit nobody else.
+    one_each: bool = False
+    # The landing knocks back everyone it hits, so a player it hit who dies at the edge
+    # right after was knocked into the deathwall by whoever it landed on.
+    knockback: bool = False
+    # A cone baited from outside the stack is also the baiter's mistake.
+    baited: Baited | None = None
     # What went wrong when a hit is bigger than the role takes, with {name}, such as
     # "{name} stood too close to Ser Zephirin's landing." Without it, the category's line.
     too_much: str = ""
@@ -387,6 +430,27 @@ def _drops(raw: dict | None) -> Drops | None:
     )
 
 
+def _baited(raw: dict | None) -> Baited | None:
+    if not raw:
+        return None
+    return Baited(
+        until=float(raw["until"]),
+        lock=float(raw.get("lock", 1.2)),
+        aim=float(raw.get("aim", 10)),
+        width=float(raw.get("width", 20)),
+    )
+
+
+def _stun(raw: dict | None) -> Stun | None:
+    if not raw:
+        return None
+    return Stun(
+        debuff=int(raw["debuff"]),
+        casts=[int(guid) for guid in raw["casts"]],
+        within=float(raw.get("within", 3)),
+    )
+
+
 def _deathwall(raw: dict | None) -> Mechanic | None:
     """The arena edge. It has no phase and no packet, so it is not in `mechanics`."""
     if not raw:
@@ -427,6 +491,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 one_target=bool(raw.get("one_target", False)),
                 requires_personal_mit=bool(raw.get("requires_personal_mit", False)),
                 off_tank=bool(raw.get("off_tank")),
+                main_tank=bool(raw.get("main_tank")),
                 marker_owns_clip=bool(raw.get("marker_owns_clip", False)),
                 spots=_spots(raw.get("spots")),
                 moments=[
@@ -450,6 +515,10 @@ def load_pack(fight_dir: Path) -> FightPack:
                 drops=_drops(raw.get("drops")),
                 alternating=bool(raw.get("alternating", False)),
                 pairs=bool(raw.get("pairs", False)),
+                stun=_stun(raw.get("stun")),
+                one_each=bool(raw.get("one_each", False)),
+                knockback=bool(raw.get("knockback", False)),
+                baited=_baited(raw.get("baited")),
                 too_much=str(raw.get("too_much") or ""),
             )
         )

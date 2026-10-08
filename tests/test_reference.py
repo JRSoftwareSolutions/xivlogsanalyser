@@ -182,17 +182,17 @@ class ReferenceReportTest(unittest.TestCase):
         self.assertEqual(one(14, "Kiara Blaiddyd", "Eternal Conviction").outcome, "fail")
         # Six players were dead before the towers. Each gap belongs to whoever owned that death:
         # Kite and Spring died to the short stack Kitana left, so theirs are Kitana's. Loki's ice
-        # had no partner because Kite and Kitana were dead, so Loki's gap is Kitana's too.
-        # Four of the six gaps are Kitana's.
+        # had no partner because Kite and Kitana were dead, and the ice of Spring, dead, doubled
+        # up on Speed and Gigachad, so those three gaps are Kitana's too. All six are Kitana's.
         self.assertEqual(
             owners(one(14, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Speed Panda", 16), ("Absolute Gigachad", 16), ("Kitana Kahn", 66)],
+            [("Kitana Kahn", 100)],
         )
         # Kitana and Spring died to a jump the healers did not heal them for, so their gaps are the healers'.
-        # Speed's and Loki's gaps are their own; Kitana's and Spring's are split between the two healers.
+        # Speed and Loki took the surplus ice the dead pair left, so their gaps are the same healers'.
         self.assertEqual(
             owners(one(26, "Kiara Blaiddyd", "Eternal Conviction")),
-            [("Speed Panda", 25), ("Loki Doki", 50), ("Spring Nymphar", 25)],
+            [("Loki Doki", 50), ("Spring Nymphar", 50)],
         )
         # Kitana's ice had no partner because Gigalad and Loki doubled up in another one,
         # so the tower Kitana should have stood in is theirs. Gigachad's own gap is the other half.

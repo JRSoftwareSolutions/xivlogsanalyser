@@ -384,6 +384,19 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
     if _vuln(fact) and not _expected_amp(fact, pack, mechanic):
         return _done(fact, mechanic, "fail", _amp(fact, mechanic), "personal", pack)
     hit = _hit(fact)
+    if fact.stunned_by and fact.role != "tank":
+        return _done(
+            fact, mechanic, "fail",
+            f"The bash on {_joined(fact.stunned_by)} stunned {fact.name} in the cone.",
+            "stunned", pack,
+        )
+    if (
+        mechanic.main_tank and fact.main_tank and fact.role == "tank"
+        and fact.name != fact.main_tank and fact.main_tank in fact.dead
+    ):
+        # The main tank was dead, so the other tank had to take it.
+        fact.down = [fact.main_tank]
+        return _done(fact, mechanic, "fail", "", "redirected", pack)
     if mechanic.tanks_only and fact.role != "tank":
         return _done(fact, mechanic, "fail", _not_a_tank(fact, mechanic), "personal", pack)
     if mechanic.off_tank and fact.off_tank and fact.name != fact.off_tank:
@@ -411,9 +424,19 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
             )
         if mechanic.id == "holy-impact":
             return _done(fact, mechanic, "fail", *_comets(fact), pack)
+        if fact.baited_by:
+            return _done(
+                fact, mechanic, "fail",
+                f"{fact.name} was in the cone {_joined(fact.baited_by)} baited outside the stack.",
+                "baited", pack,
+            )
         return _done(fact, mechanic, "fail", _personal(fact, mechanic), "personal", pack)
     if mechanic.pairs and fact.group == [fact.name] and (fact.down or fact.unsoaked or fact.doubled):
         return _done(fact, mechanic, "fail", "The ice had no partner.", "missing", pack)
+    if mechanic.pairs and len(fact.group) > 1 and fact.down:
+        return _done(fact, mechanic, "fail", "The pair took a second ice.", "missing", pack)
+    if mechanic.one_each and fact.down and len(fact.cohort) < 2:
+        return _done(fact, mechanic, "fail", "They took two hits.", "missing", pack)
     failed = _failed_moment(mechanic, fact, hit)
     if failed:
         return _done(
@@ -501,6 +524,17 @@ def _own_hysteria(fact: DeathFact) -> bool:
 def _deathwall(fact: DeathFact, mechanic: Mechanic) -> Judgment:
     """No killing blow is the arena edge. It is always a mistake."""
     happened = "Nothing hit them."
+    if fact.knocked_by:
+        return Judgment(
+            fact=fact,
+            mechanic_id=mechanic.id,
+            mechanic=mechanic.name,
+            outcome="fail",
+            happened="A landing knocked them back just before they died at the edge.",
+            should_have_been=mechanic.should_have_been,
+            went_wrong=f"{_joined(fact.knocked_by)}'s landing knocked {fact.name} into the deathwall.",
+            cause="knocked",
+        )
     if _own_hysteria(fact):
         wrong = f"{fact.name} looked at the gaze and walked into the deathwall with Hysteria."
         happened = "Nothing hit them. They still had Hysteria from the gaze."
@@ -856,9 +890,11 @@ def _own_damage(fact: DeathFact) -> dict | None:
     """
     if not fact.self_hits or not _known_hp(fact):
         return None
-    taken = sum(hit["amount"] for hit in fact.self_hits)
-    # They could not have had more than full HP back.
-    if min(fact.hp + taken, fact.max_hp) < _landed(fact):
+    hp = sum(hit.get("hp", hit["amount"]) for hit in fact.self_hits)
+    shield = sum(hit.get("shield", 0) for hit in fact.self_hits)
+    # They could not have had more than full HP back, but the shield their own hit
+    # ate would have met this hit on top of that.
+    if min(fact.hp + hp, fact.max_hp) + shield < _landed(fact):
         return None
     return max(fact.self_hits, key=lambda hit: hit["amount"])
 
@@ -919,8 +955,9 @@ def _people(names: list[str]) -> str:
 
 
 def passes_on(item: Judgment) -> bool:
-    """The death belongs to other players: the ones missing from the mechanic, or whose drops it was."""
-    return item.cause in {"dropped", "marked", *_PASSED_ON}
+    """The death belongs to other players: the ones missing from the mechanic, whose drops
+    it was, or whose hit stunned them."""
+    return item.cause in {"dropped", "marked", "stunned", "knocked", *_PASSED_ON}
 
 
 def empty_owners(item: Judgment) -> list[str]:
@@ -929,6 +966,10 @@ def empty_owners(item: Judgment) -> list[str]:
         return list(item.fact.dropped_by)
     if item.cause == "marked":
         return list(item.fact.marked)
+    if item.cause == "stunned":
+        return list(item.fact.stunned_by)
+    if item.cause == "knocked":
+        return list(item.fact.knocked_by)
     if item.cause not in _PASSED_ON:
         return []
     return [who for who in item.owners if who not in GROUP_LABELS]
@@ -940,7 +981,7 @@ def _hit_by_others(item: Judgment) -> list[str]:
     A player in the landing of an arrow taken to the wrong side was hit by that diver.
     A player in place for an empty tower was hit by whoever was missing from it.
     """
-    if item.cause in {"dropped", "marked", *_PASSED_ON}:
+    if passes_on(item):
         owners = empty_owners(item)
     elif item.cause == "arrow":
         owners = [diver["name"] for diver in _wrong_arrows(item.fact)]
@@ -1002,6 +1043,8 @@ def _moment_text(deaths: list[Judgment], debuffs: list[dict], wall_id: str) -> s
         others = _hit_by_others(item)
         if item.cause == "reset":
             verb = "walking into the deathwall together to reset"
+        elif item.cause == "knocked":
+            verb = f"knocked into the deathwall by {' and '.join(others)}'s landing"
         elif item.mechanic_id == wall_id:
             verb = "walking into the deathwall"
         elif others:
@@ -1102,9 +1145,11 @@ def _mark_resets(judgments: list[Judgment], firsts: dict[int, "_FirstMoment"], p
         walls = [
             item for item in rows
             if item.mechanic_id == wall_id and item.fact.phase == moment.phase
-            and moment.start <= item.fact.t <= moment.start + RESET_S
+            and moment.start <= item.fact.t <= moment.start + RESET_S and item.cause != "knocked"
         ]
-        if len(walls) < RESET_PLAYERS or any(item.mechanic_id != wall_id for item in moment.deaths):
+        if len(walls) < RESET_PLAYERS or any(
+            item.mechanic_id != wall_id or item.cause == "knocked" for item in moment.deaths
+        ):
             continue
         for item in walls:
             item.outcome = "environment"
@@ -1125,7 +1170,7 @@ def _mark_after_walls(
     wall_id = pack.deathwall.id if pack.deathwall else "deathwall"
     for item in judgments:
         moment = firsts[item.fact.fight]
-        if item.mechanic_id != wall_id or item.cause == "reset" or moment.holds(item.fact.phase, item.fact.t):
+        if item.mechanic_id != wall_id or item.cause in {"reset", "knocked"} or moment.holds(item.fact.phase, item.fact.t):
             continue
         if _own_hysteria(item.fact) or _only_own_before(item, judgments):
             continue
@@ -1203,7 +1248,7 @@ def _mark_empty_soaks(judgments: list[Judgment]) -> None:
             _empty_text(item, down, out, doubled)
         elif item.cause == "missing" and (down or out or doubled):
             item.went_wrong = _missing_text(item, down, out, doubled)
-        elif item.cause == "redirected" and item.fact.off_tank:
+        elif item.cause == "redirected" and (item.fact.off_tank or item.fact.main_tank):
             item.went_wrong = f"{_was(down)} dead, so {item.fact.name} had to take {item.mechanic}."
         elif item.cause == "redirected":
             item.went_wrong = f"{_was(down)} dead, so {item.mechanic} hit the other group."
@@ -1211,7 +1256,7 @@ def _mark_empty_soaks(judgments: list[Judgment]) -> None:
 
 def _missing_text(item: Judgment, down: list[str], out: list[str], doubled: list[str] = ()) -> str:
     """One sentence: how short the stack was, and who was missing from it."""
-    stack = item.went_wrong if item.went_wrong.startswith("The ") else "The stack was short."
+    stack = item.went_wrong if item.went_wrong.startswith(("The ", "They ")) else "The stack was short."
     stack = stack.rstrip(".")
     if sum(map(bool, (down, out, doubled))) > 1:
         why = f"{_people([*down, *out, *doubled])} were missing"
@@ -1275,6 +1320,9 @@ def _flare_overlap(fact: DeathFact) -> bool:
 
 def _overlap_names(item: Judgment, cohort: list[Judgment]) -> list[str]:
     if item.mechanic_id == "bright-flare" and item.fact.cohort:
+        return [item.fact.name] + [name for name in item.fact.cohort if name != item.fact.name]
+    if item.mechanic_id == "lightning-storm" and len(item.fact.cohort) > 1:
+        # One bolt on two players: both of them, whoever lived.
         return [item.fact.name] + [name for name in item.fact.cohort if name != item.fact.name]
     ordered = sorted(cohort, key=lambda other: (other.fact.name != item.fact.name, other.fact.name))
     names: list[str] = []
@@ -1477,6 +1525,12 @@ def _owners_for(
             item.blames = _weighted(weights)
     elif item.cause == "orphan":
         item.blames = _group("Earlier deaths", 1)
+    elif item.cause == "stunned":
+        item.blames = _shares(list(item.fact.stunned_by))
+    elif item.cause == "knocked":
+        item.blames = _shares(list(item.fact.knocked_by))
+    elif item.cause == "baited":
+        item.blames = _shares([item.fact.name, *item.fact.baited_by])
     elif item.cause == "overlap":
         cohort = [other for other in judgments if _same_cast(item, other)]
         item.blames = _shares(_overlap_names(item, cohort))
@@ -1540,6 +1594,8 @@ def _basis(item: Judgment) -> str:
         return ""
     if not named:
         return "label"
+    if cause == "knocked":
+        return "hit-list"
     if item.fact.guid == 0 or cause == "after":
         return "no-packet"
     if cause in {"personal", "self"}:
@@ -1547,8 +1603,10 @@ def _basis(item: Judgment) -> str:
     if cause == "marker":
         people = [*item.fact.clipped_by, item.fact.name]
         return "position" if all(name in item.fact.in_spot for name in people) else "debuff"
-    if cause in {"dropped", "overlap", "arrow"}:
+    if cause in {"dropped", "overlap", "arrow", "baited"}:
         return "position"
+    if cause == "stunned":
+        return "debuff"
     if cause in {"marked"}:
         return "debuff"
     if cause in {"empty", "redirected", "missing"}:

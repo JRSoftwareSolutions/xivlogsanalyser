@@ -1,19 +1,19 @@
 {
- "rules": "ab572d81a6eef524",
- "engine": "f2910622144d6dc9",
+ "rules": "ce8c75194b55b050",
+ "engine": "a4ad0e63c3e033fd",
  "log": "16dcfb6841a6438b",
  "outputs": {
-  "facts.json": "eafd63837897ec4c",
-  "judgments.json": "6d7bdc37cd43f21e",
-  "calls.tsv": "726fb26517d1293d",
-  "session.html": "420a729ac20c9d9e",
+  "facts.json": "193dfe739c52ecdc",
+  "judgments.json": "27293eb8723d75ab",
+  "calls.tsv": "678a2b5c84af90f3",
+  "session.html": "b7af66d4ba08b9cc",
   "inputs.json": "f48daa99d0ac1b58"
  },
  "counts": {
   "raw": 18,
-  "fail": 370,
+  "fail": 375,
   "low": 0,
-  "environment": 5,
+  "environment": 0,
   "unknown": 0
  },
  "summary": {
@@ -26,7 +26,7 @@
   "dayLabel": "Mon 5 Oct 2026",
   "timeLabel": "21:31\u201300:14",
   "raw": 18,
-  "fail": 370,
+  "fail": 375,
   "low": 0,
   "detail": "",
   "overview": {
@@ -1253,9 +1253,7 @@
    "pulls": 47,
    "labels": [
     "Earlier deaths",
-    "Group reset",
-    "Miscommunication",
-    "Missing bodies"
+    "Miscommunication"
    ],
    "started": [
     {
@@ -1267,16 +1265,42 @@
        5
       ],
       [
-       "Absolute Gigalad",
-       2
+       "Kitana Kahn",
+       3
       ],
       [
-       "Kitana Kahn",
+       "Absolute Gigalad",
        2
       ],
       [
        "Kiara Blaiddyd",
        2
+      ]
+     ]
+    },
+    {
+     "mechanic": "Deathwall",
+     "pulls": 8,
+     "owners": [
+      [
+       "Kitana Kahn",
+       3
+      ],
+      [
+       "Absolute Gigalad",
+       2
+      ],
+      [
+       "Absolute Gigachad",
+       2
+      ],
+      [
+       "Kite Noodle",
+       1
+      ],
+      [
+       "Loki Doki",
+       1
       ]
      ]
     },
@@ -1302,32 +1326,6 @@
       ],
       [
        "Absolute Gigalad",
-       1
-      ]
-     ]
-    },
-    {
-     "mechanic": "Deathwall",
-     "pulls": 7,
-     "owners": [
-      [
-       "Kitana Kahn",
-       3
-      ],
-      [
-       "Absolute Gigachad",
-       2
-      ],
-      [
-       "Absolute Gigalad",
-       1
-      ],
-      [
-       "Kite Noodle",
-       1
-      ],
-      [
-       "Loki Doki",
        1
       ]
      ]
@@ -1395,10 +1393,6 @@
        1
       ],
       [
-       "Kitana Kahn",
-       1
-      ],
-      [
        "Absolute Gigachad",
        1
       ],
@@ -1445,11 +1439,11 @@
      "pulls": 2,
      "owners": [
       [
-       "Missing bodies",
+       "Absolute Gigachad",
        1
       ],
       [
-       "Absolute Gigalad",
+       "Kitana Kahn",
        1
       ],
       [
@@ -1457,7 +1451,7 @@
        1
       ],
       [
-       "Kitana Kahn",
+       "Absolute Gigalad",
        1
       ]
      ]
@@ -1559,16 +1553,6 @@
      ]
     },
     {
-     "mechanic": "Group reset",
-     "pulls": 1,
-     "owners": [
-      [
-       "Group reset",
-       1
-      ]
-     ]
-    },
-    {
      "mechanic": "Dragon's Glory",
      "pulls": 1,
      "owners": [
@@ -1596,7 +1580,11 @@
     ],
     [
      "Kitana Kahn",
-     14
+     15
+    ],
+    [
+     "Absolute Gigalad",
+     9
     ],
     [
      "Loki Doki",
@@ -1607,12 +1595,8 @@
      9
     ],
     [
-     "Absolute Gigalad",
-     8
-    ],
-    [
      "Absolute Gigachad",
-     3
+     4
     ],
     [
      "Kite Noodle",
@@ -1621,40 +1605,32 @@
     [
      "Speed Panda",
      2
-    ],
-    [
-     "Missing bodies",
-     1
-    ],
-    [
-     "Group reset",
-     1
     ]
    ],
    "owned": [
     [
      "Loki Doki",
-     61.5
+     61.0
     ],
     [
      "Spring Nymphar",
-     59.7
-    ],
-    [
-     "Absolute Gigachad",
-     42.7
+     56.8
     ],
     [
      "Kitana Kahn",
-     42.0
+     47.3
     ],
     [
-     "Kiara Blaiddyd",
-     38.7
+     "Absolute Gigachad",
+     44.1
     ],
     [
      "Absolute Gigalad",
-     31.0
+     37.0
+    ],
+    [
+     "Kiara Blaiddyd",
+     36.4
     ],
     [
      "Kite Noodle",
@@ -1662,23 +1638,15 @@
     ],
     [
      "Speed Panda",
-     28.3
+     28.8
     ],
     [
      "Earlier deaths",
      1.0
     ],
     [
-     "Missing bodies",
-     1.0
-    ],
-    [
      "Miscommunication",
      1.0
-    ],
-    [
-     "Group reset",
-     0.5
     ]
    ]
   }

@@ -68,6 +68,12 @@
     "ts": 445428,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [
+      "Absolute Gigachad"
+    ],
     "amp_via": "",
     "amp_ms": null
   },
@@ -138,6 +144,12 @@
     "ts": 445383,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [
+      "Absolute Gigachad"
+    ],
     "amp_via": "",
     "amp_ms": null
   },
@@ -213,6 +225,10 @@
     "ts": 447430,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -287,6 +303,10 @@
     "ts": 447385,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -363,6 +383,10 @@
     "ts": 449122,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -440,6 +464,10 @@
     "ts": 449211,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -505,6 +533,10 @@
     "ts": 450819,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -554,6 +586,10 @@
     "ts": 459227,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -596,7 +632,15 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -618,6 +662,10 @@
     "ts": 473944,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -674,6 +722,10 @@
     "ts": 512027,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -730,6 +782,10 @@
     "ts": 512027,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -760,7 +816,10 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -777,6 +836,10 @@
     "ts": 540589,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -807,7 +870,10 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -824,6 +890,10 @@
     "ts": 540589,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -882,6 +952,10 @@
     "ts": 547231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -941,6 +1015,10 @@
     "ts": 547231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -1003,12 +1081,18 @@
         "ability": "Heavy Impact",
         "guid": 25560,
         "ago": 2.9,
-        "amount": 27586
+        "amount": 27586,
+        "hp": 27586,
+        "shield": 0
       }
     ],
     "ts": 547276,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -1067,6 +1151,10 @@
     "ts": 556187,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -1128,6 +1216,10 @@
     "ts": 556812,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 492
   },
@@ -1184,6 +1276,10 @@
     "ts": 621355,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -1253,6 +1349,10 @@
     "ts": 651117,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -1313,6 +1413,10 @@
     "ts": 653702,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -1374,6 +1478,10 @@
     "ts": 656558,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -1447,6 +1555,10 @@
     "ts": 666182,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535
   },
@@ -1516,6 +1628,10 @@
     "ts": 666140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 493
   },
@@ -1581,6 +1697,10 @@
     "ts": 666140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 493
   },
@@ -1646,6 +1766,10 @@
     "ts": 666140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 493
   },
@@ -1743,10 +1867,11 @@
     "down": [
       "Kiara Blaiddyd",
       "Kitana Kahn",
-      "Absolute Gigalad",
       "Loki Doki"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -1768,12 +1893,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.3,
-        "amount": 35265
+        "amount": 35265,
+        "hp": 35265,
+        "shield": 0
       }
     ],
     "ts": 666538,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 891
   },
@@ -1818,6 +1949,10 @@
     "ts": 705703,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -1877,6 +2012,10 @@
     "ts": 734257,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -1938,6 +2077,10 @@
     "ts": 734389,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2002,6 +2145,10 @@
     "ts": 750554,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 536
   },
@@ -2071,6 +2218,10 @@
     "ts": 750513,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 495
   },
@@ -2139,6 +2290,10 @@
     "ts": 750513,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 495
   },
@@ -2191,7 +2346,6 @@
       }
     ],
     "down": [
-      "Kiara Blaiddyd",
       "Speed Panda",
       "Absolute Gigalad"
     ],
@@ -2216,6 +2370,10 @@
     "ts": 750910,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2303,12 +2461,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 3.8,
-        "amount": 13800
+        "amount": 13800,
+        "hp": 8360,
+        "shield": 5440
       }
     ],
     "ts": 754431,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2376,6 +2540,10 @@
     "ts": 755991,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5973
   },
@@ -2424,6 +2592,10 @@
     "ts": 791835,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2468,6 +2640,10 @@
     "ts": 791793,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2513,6 +2689,10 @@
     "ts": 791793,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2568,7 +2748,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -2584,6 +2766,10 @@
     "ts": 820348,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2656,6 +2842,10 @@
     "ts": 821551,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2766,12 +2956,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.3,
-        "amount": 23908
+        "amount": 23908,
+        "hp": 8595,
+        "shield": 15313
       }
     ],
     "ts": 836967,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2864,6 +3060,10 @@
     "ts": 840539,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -2951,6 +3151,10 @@
     "ts": 842098,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5976
   },
@@ -3038,6 +3242,10 @@
     "ts": 842098,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5976
   },
@@ -3127,6 +3335,10 @@
     "ts": 842232,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6110
   },
@@ -3181,12 +3393,18 @@
         "ability": "Heavy Impact",
         "guid": 25560,
         "ago": 2.9,
-        "amount": 36180
+        "amount": 36180,
+        "hp": 36180,
+        "shield": 0
       }
     ],
     "ts": 917394,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -3264,6 +3482,10 @@
     "ts": 927023,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535
   },
@@ -3329,10 +3551,11 @@
       }
     ],
     "down": [
-      "Kitana Kahn",
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -3351,6 +3574,10 @@
     "ts": 927422,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -3416,10 +3643,11 @@
       }
     ],
     "down": [
-      "Kitana Kahn",
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -3437,6 +3665,10 @@
     "ts": 927378,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -3542,6 +3774,10 @@
     "ts": 932505,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -3623,6 +3859,10 @@
     "ts": 932505,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6017
   },
@@ -3704,6 +3944,10 @@
     "ts": 932505,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6017
   },
@@ -3785,6 +4029,10 @@
     "ts": 932505,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6017
   },
@@ -3829,6 +4077,10 @@
     "ts": 973454,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -3887,6 +4139,10 @@
     "ts": 1003220,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -3936,6 +4192,10 @@
     "ts": 1008701,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -4008,6 +4268,10 @@
     "ts": 1008656,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -4072,6 +4336,10 @@
     "ts": 1008747,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -4119,6 +4387,10 @@
     "ts": 1016287,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -4248,6 +4520,10 @@
     "ts": 1018248,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 491
   },
@@ -4332,6 +4608,10 @@
     "ts": 1018293,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 536
   },
@@ -4397,6 +4677,10 @@
     "ts": 1018250,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 493
   },
@@ -4441,6 +4725,10 @@
     "ts": 1060579,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -4518,6 +4806,10 @@
     "ts": 1105367,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490
   },
@@ -4597,6 +4889,10 @@
     "ts": 1105411,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 534
   },
@@ -4680,6 +4976,10 @@
     "ts": 1105859,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -4778,6 +5078,10 @@
     "ts": 1110895,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6018
   },
@@ -4865,6 +5169,10 @@
     "ts": 1110895,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -4965,6 +5273,10 @@
     "ts": 1111027,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -5067,6 +5379,10 @@
     "ts": 1111161,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -5181,6 +5497,10 @@
     "ts": 1111427,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -5251,6 +5571,10 @@
     "ts": 1189205,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -5343,6 +5667,10 @@
     "ts": 1198876,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 576
   },
@@ -5412,6 +5740,10 @@
     "ts": 1198876,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 576
   },
@@ -5498,10 +5830,11 @@
     },
     "prior_debuffs": [],
     "down": [
-      "Kiara Blaiddyd",
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -5522,6 +5855,10 @@
     "ts": 1199276,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 976
   },
@@ -5576,10 +5913,11 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kiara Blaiddyd",
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -5598,6 +5936,10 @@
     "ts": 1199186,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -5652,10 +5994,11 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kiara Blaiddyd",
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -5675,6 +6018,10 @@
     "ts": 1199231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -5734,6 +6081,10 @@
     "ts": 1204310,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6010
   },
@@ -5793,6 +6144,10 @@
     "ts": 1204310,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6010
   },
@@ -5844,6 +6199,10 @@
     "ts": 1297327,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490
   },
@@ -5922,6 +6281,10 @@
     "ts": 1297371,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 534
   },
@@ -6025,6 +6388,10 @@
     "ts": 1297816,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 979
   },
@@ -6098,9 +6465,7 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [
-      "Absolute Gigachad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -6120,6 +6485,10 @@
     "ts": 1297771,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 934
   },
@@ -6176,6 +6545,10 @@
     "ts": 1302851,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -6233,6 +6606,10 @@
     "ts": 1302852,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -6317,6 +6694,10 @@
     "ts": 1302986,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -6375,6 +6756,10 @@
     "ts": 1302986,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6149
   },
@@ -6419,6 +6804,10 @@
     "ts": 1368998,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -6477,6 +6866,10 @@
     "ts": 1401331,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -6557,6 +6950,10 @@
     "ts": 1413843,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535
   },
@@ -6611,8 +7008,7 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kitana Kahn",
-      "Absolute Gigalad"
+      "Kitana Kahn"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -6633,6 +7029,10 @@
     "ts": 1414155,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -6707,8 +7107,7 @@
     },
     "prior_debuffs": [],
     "down": [
-      "Kitana Kahn",
-      "Absolute Gigalad"
+      "Kitana Kahn"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -6731,6 +7130,10 @@
     "ts": 1414246,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 938
   },
@@ -6774,8 +7177,7 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kitana Kahn",
-      "Absolute Gigalad"
+      "Kitana Kahn"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -6797,6 +7199,10 @@
     "ts": 1414201,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -6857,6 +7263,10 @@
     "ts": 1418833,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -6915,6 +7325,10 @@
     "ts": 1419279,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5971
   },
@@ -6973,6 +7387,10 @@
     "ts": 1419279,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5971
   },
@@ -7017,6 +7435,10 @@
     "ts": 1462503,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -7084,6 +7506,10 @@
     "ts": 1507329,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 492
   },
@@ -7158,6 +7584,10 @@
     "ts": 1507329,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 492
   },
@@ -7209,6 +7639,10 @@
     "ts": 1507329,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 492
   },
@@ -7273,6 +7707,10 @@
     "ts": 1507767,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -7340,6 +7778,10 @@
     "ts": 1512805,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -7406,6 +7848,10 @@
     "ts": 1512803,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -7488,6 +7934,10 @@
     "ts": 1512943,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -7583,6 +8033,10 @@
     "ts": 1513077,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -7627,6 +8081,10 @@
     "ts": 1582686,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -7739,6 +8197,10 @@
     "ts": 1592346,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 537
   },
@@ -7819,6 +8281,10 @@
     "ts": 1592386,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 577
   },
@@ -7938,12 +8404,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.1,
-        "amount": 20403
+        "amount": 20403,
+        "hp": 13045,
+        "shield": 7358
       }
     ],
     "ts": 1592437,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 628
   },
@@ -8015,8 +8487,7 @@
       }
     ],
     "down": [
-      "Kiara Blaiddyd",
-      "Absolute Gigalad"
+      "Kiara Blaiddyd"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -8039,6 +8510,10 @@
     "ts": 1592659,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 850
   },
@@ -8110,8 +8585,7 @@
       }
     ],
     "down": [
-      "Kiara Blaiddyd",
-      "Absolute Gigalad"
+      "Kiara Blaiddyd"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -8135,6 +8609,10 @@
     "ts": 1592708,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 899
   },
@@ -8230,6 +8708,10 @@
     "ts": 1597820,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -8313,6 +8795,10 @@
     "ts": 1597820,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6011
   },
@@ -8434,12 +8920,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.4,
-        "amount": 28564
+        "amount": 28564,
+        "hp": 0,
+        "shield": 28564
       }
     ],
     "ts": 1710950,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 935
   },
@@ -8523,6 +9015,10 @@
     "ts": 1713539,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -8605,6 +9101,10 @@
     "ts": 1713892,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -8700,6 +9200,10 @@
     "ts": 1715317,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -8789,6 +9293,10 @@
     "ts": 1715991,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -8867,6 +9375,10 @@
     "ts": 1716117,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6102
   },
@@ -8946,6 +9458,10 @@
     "ts": 1716256,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6241
   },
@@ -9026,6 +9542,10 @@
     "ts": 1716389,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6374
   },
@@ -9093,6 +9613,10 @@
     "ts": 1813688,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -9156,6 +9680,10 @@
     "ts": 1823342,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 529
   },
@@ -9218,6 +9746,10 @@
     "ts": 1823303,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490
   },
@@ -9337,12 +9869,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.4,
-        "amount": 17069
+        "amount": 17069,
+        "hp": 831,
+        "shield": 16238
       }
     ],
     "ts": 1823744,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 931
   },
@@ -9428,6 +9966,10 @@
     "ts": 1823704,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -9513,6 +10055,10 @@
     "ts": 1828606,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -9582,6 +10128,10 @@
     "ts": 1828779,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -9652,6 +10202,10 @@
     "ts": 1828917,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6104
   },
@@ -9696,6 +10250,10 @@
     "ts": 1863511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -9763,6 +10321,10 @@
     "ts": 1898700,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -9828,6 +10390,10 @@
     "ts": 1908731,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -9910,6 +10476,10 @@
     "ts": 1913678,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -9989,6 +10559,10 @@
     "ts": 1913807,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -10068,6 +10642,10 @@
     "ts": 1913807,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6015
   },
@@ -10173,6 +10751,10 @@
     "ts": 1914079,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -10255,6 +10837,10 @@
     "ts": 1914344,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6552
   },
@@ -10338,6 +10924,10 @@
     "ts": 1914477,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6685
   },
@@ -10463,6 +11053,10 @@
     "ts": 2008074,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 979
   },
@@ -10537,9 +11131,7 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -10558,6 +11150,10 @@
     "ts": 2008074,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 979
   },
@@ -10632,9 +11228,7 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -10651,6 +11245,10 @@
     "ts": 2008025,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 930
   },
@@ -10737,6 +11335,10 @@
     "ts": 2013103,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6008
   },
@@ -10836,6 +11438,10 @@
     "ts": 2013232,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -10936,6 +11542,10 @@
     "ts": 2013504,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6409
   },
@@ -11010,6 +11620,10 @@
     "ts": 2013504,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6409
   },
@@ -11077,6 +11691,10 @@
     "ts": 2016651,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -11144,6 +11762,10 @@
     "ts": 2087099,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -11252,6 +11874,10 @@
     "ts": 2102204,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5974
   },
@@ -11338,6 +11964,10 @@
     "ts": 2102332,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -11425,6 +12055,10 @@
     "ts": 2102605,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -11536,6 +12170,10 @@
     "ts": 2102867,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6637
   },
@@ -11648,6 +12286,10 @@
     "ts": 2103006,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6776
   },
@@ -11737,6 +12379,10 @@
     "ts": 2103637,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -11846,6 +12492,10 @@
     "ts": 2118678,
     "missing": [],
     "off_tank": "Absolute Gigachad",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -11914,12 +12564,18 @@
         "ability": "Heavy Impact",
         "guid": 25559,
         "ago": 4.7,
-        "amount": 44856
+        "amount": 44856,
+        "hp": 44856,
+        "shield": 0
       }
     ],
     "ts": 2193484,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -12008,6 +12664,10 @@
     "ts": 2203165,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 579
   },
@@ -12140,12 +12800,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.4,
-        "amount": 16565
+        "amount": 16565,
+        "hp": 7669,
+        "shield": 8896
       }
     ],
     "ts": 2203521,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 935
   },
@@ -12225,6 +12891,10 @@
     "ts": 2206107,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -12320,6 +12990,10 @@
     "ts": 2208602,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -12416,6 +13090,10 @@
     "ts": 2208604,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6018
   },
@@ -12498,6 +13176,10 @@
     "ts": 2208604,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6018
   },
@@ -12620,6 +13302,10 @@
     "ts": 2208876,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -12716,6 +13402,10 @@
     "ts": 2294560,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -12803,6 +13493,10 @@
     "ts": 2294693,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -12902,6 +13596,10 @@
     "ts": 2294961,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -12991,6 +13689,10 @@
     "ts": 2295229,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6638
   },
@@ -13092,6 +13794,10 @@
     "ts": 2295361,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6770
   },
@@ -13205,6 +13911,10 @@
     "ts": 2295494,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6903
   },
@@ -13287,6 +13997,10 @@
     "ts": 2314157,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -13354,6 +14068,10 @@
     "ts": 2323968,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -13423,6 +14141,10 @@
     "ts": 2406499,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -13511,6 +14233,10 @@
     "ts": 2416155,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490
   },
@@ -13600,6 +14326,10 @@
     "ts": 2416199,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 534
   },
@@ -13687,6 +14417,10 @@
     "ts": 2416466,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -13746,6 +14480,10 @@
     "ts": 2421412,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -13838,6 +14576,10 @@
     "ts": 2421634,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -13904,6 +14646,10 @@
     "ts": 2421634,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6013
   },
@@ -13987,12 +14733,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 5.6,
-        "amount": 20596
+        "amount": 20596,
+        "hp": 0,
+        "shield": 20596
       }
     ],
     "ts": 2421767,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14063,6 +14815,7 @@
     "dead": [],
     "group": [
       "Speed Panda",
+      "Kitana Kahn",
       "Spring Nymphar",
       "Absolute Gigachad"
     ],
@@ -14070,6 +14823,10 @@
     "ts": 2567361,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1746
   },
@@ -14134,6 +14891,10 @@
     "ts": 2568426,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2900
   },
@@ -14183,6 +14944,10 @@
     "ts": 2568382,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2946
   },
@@ -14248,6 +15013,10 @@
     "ts": 2568471,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2990
   },
@@ -14300,6 +15069,10 @@
     "ts": 2568516,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2946
   },
@@ -14351,14 +15124,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigachad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 2570831,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3609
   },
@@ -14411,14 +15188,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigachad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 2570876,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3565
   },
@@ -14478,6 +15259,10 @@
     "ts": 2583232,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12312
   },
@@ -14524,6 +15309,10 @@
     "ts": 2739648,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14569,6 +15358,10 @@
     "ts": 2739648,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14617,6 +15410,10 @@
     "ts": 2739693,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14663,6 +15460,10 @@
     "ts": 2743511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14710,6 +15511,10 @@
     "ts": 2744511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14757,6 +15562,10 @@
     "ts": 2744511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14804,6 +15613,10 @@
     "ts": 2744511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14854,6 +15667,10 @@
     "ts": 2754511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14924,6 +15741,10 @@
     "ts": 2845982,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -14996,6 +15817,10 @@
     "ts": 2846114,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -15083,6 +15908,10 @@
     "ts": 2846514,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -15193,6 +16022,10 @@
     "ts": 2846647,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6689
   },
@@ -15293,6 +16126,10 @@
     "ts": 2846782,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6824
   },
@@ -15394,6 +16231,10 @@
     "ts": 2846916,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6958
   },
@@ -15460,6 +16301,10 @@
     "ts": 2851607,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -15527,6 +16372,10 @@
     "ts": 2853607,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -15571,6 +16420,10 @@
     "ts": 2920173,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -15629,6 +16482,10 @@
     "ts": 2934933,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -15720,6 +16577,10 @@
     "ts": 2940014,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -15797,6 +16658,10 @@
     "ts": 2940014,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6017
   },
@@ -15864,6 +16729,10 @@
     "ts": 2940146,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -15946,6 +16815,10 @@
     "ts": 2940279,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -16015,6 +16888,10 @@
     "ts": 2940413,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6416
   },
@@ -16085,6 +16962,10 @@
     "ts": 2940680,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6683
   },
@@ -16167,6 +17048,10 @@
     "ts": 2940680,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6683
   },
@@ -16223,6 +17108,10 @@
     "ts": 3077861,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55548
   },
@@ -16271,6 +17160,10 @@
     "ts": 3078623,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2944
   },
@@ -16332,6 +17225,10 @@
     "ts": 3078623,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1029
   },
@@ -16382,6 +17279,10 @@
     "ts": 3078667,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2899
   },
@@ -16445,6 +17346,10 @@
     "ts": 3078667,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1118
   },
@@ -16497,6 +17402,10 @@
     "ts": 3078711,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2987
   },
@@ -16528,8 +17437,8 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Spring Nymphar",
-      "Kitana Kahn"
+      "Kitana Kahn",
+      "Spring Nymphar"
     ],
     "unsoaked": [
       "Absolute Gigachad"
@@ -16550,14 +17459,18 @@
     ],
     "group": [
       "Kite Noodle",
-      "Absolute Gigachad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 3081031,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3571
   },
@@ -16608,6 +17521,10 @@
     "ts": 3087932,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -16685,6 +17602,10 @@
     "ts": 3234594,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 491
   },
@@ -16808,6 +17729,10 @@
     "ts": 3234638,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535
   },
@@ -16914,6 +17839,10 @@
     "ts": 3240124,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6021
   },
@@ -17031,6 +17960,10 @@
     "ts": 3240124,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17150,6 +18083,10 @@
     "ts": 3240257,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17259,6 +18196,10 @@
     "ts": 3240391,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17381,6 +18322,10 @@
     "ts": 3240658,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17456,6 +18401,10 @@
     "ts": 3243871,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17500,6 +18449,10 @@
     "ts": 3281391,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17547,6 +18500,10 @@
     "ts": 3283345,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17577,7 +18534,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -17594,6 +18553,10 @@
     "ts": 3284996,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17640,6 +18603,10 @@
     "ts": 3286546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17687,6 +18654,10 @@
     "ts": 3288546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17735,6 +18706,10 @@
     "ts": 3289546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17783,6 +18758,10 @@
     "ts": 3289546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17833,6 +18812,10 @@
     "ts": 3291546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -17877,6 +18860,10 @@
     "ts": 3443463,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 980
   },
@@ -17923,15 +18910,19 @@
       "Spring Nymphar"
     ],
     "group": [
-      "Kitana Kahn",
-      "Absolute Gigalad",
       "Kite Noodle",
-      "Spring Nymphar"
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 3445908,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3559
   },
@@ -17979,15 +18970,19 @@
       "Spring Nymphar"
     ],
     "group": [
-      "Kitana Kahn",
-      "Absolute Gigalad",
       "Kite Noodle",
-      "Spring Nymphar"
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 3445953,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3514
   },
@@ -18018,7 +19013,11 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -18032,11 +19031,18 @@
       "Kitana Kahn",
       "Spring Nymphar"
     ],
-    "group": [],
+    "group": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd"
+    ],
     "self_hits": [],
     "ts": 3460124,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 14128
   },
@@ -18067,7 +19073,11 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -18083,11 +19093,18 @@
       "Absolute Gigalad",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd"
+    ],
     "self_hits": [],
     "ts": 3460168,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12437
   },
@@ -18141,6 +19158,10 @@
     "ts": 3460124,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12438
   },
@@ -18210,6 +19231,10 @@
     "ts": 3466402,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 18627
   },
@@ -18278,6 +19303,10 @@
     "ts": 3466401,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 18581
   },
@@ -18322,6 +19351,10 @@
     "ts": 3541990,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -18378,6 +19411,10 @@
     "ts": 3586793,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490
   },
@@ -18440,6 +19477,10 @@
     "ts": 3587194,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -18497,6 +19538,10 @@
     "ts": 3592308,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -18554,6 +19599,10 @@
     "ts": 3592308,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6005
   },
@@ -18611,6 +19660,10 @@
     "ts": 3592308,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6005
   },
@@ -18671,6 +19724,10 @@
     "ts": 3592441,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -18746,6 +19803,10 @@
     "ts": 3592574,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -18833,6 +19894,10 @@
     "ts": 3592574,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -18877,6 +19942,10 @@
     "ts": 3627180,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -18990,12 +20059,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.3,
-        "amount": 37953
+        "amount": 37953,
+        "hp": 20879,
+        "shield": 17074
       }
     ],
     "ts": 3672338,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -19147,12 +20222,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.4,
-        "amount": 16426
+        "amount": 16426,
+        "hp": 7478,
+        "shield": 8948
       }
     ],
     "ts": 3672382,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 934
   },
@@ -19276,6 +20357,10 @@
     "ts": 3677447,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -19400,6 +20485,10 @@
     "ts": 3677580,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6132
   },
@@ -19536,6 +20625,10 @@
     "ts": 3677580,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -19662,6 +20755,10 @@
     "ts": 3677713,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6265
   },
@@ -19789,6 +20886,10 @@
     "ts": 3677846,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6398
   },
@@ -19880,6 +20981,10 @@
     "ts": 3683210,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -19924,6 +21029,10 @@
     "ts": 3748926,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -19985,6 +21094,10 @@
     "ts": 3768949,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -20048,6 +21161,10 @@
     "ts": 3769083,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -20126,6 +21243,10 @@
     "ts": 3769216,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -20205,6 +21326,10 @@
     "ts": 3769350,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -20271,6 +21396,10 @@
     "ts": 3769484,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6674
   },
@@ -20338,6 +21467,10 @@
     "ts": 3769618,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6808
   },
@@ -20406,6 +21539,10 @@
     "ts": 3769751,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6941
   },
@@ -20465,6 +21602,10 @@
     "ts": 3775427,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -20528,6 +21669,10 @@
     "ts": 3860782,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -20635,6 +21780,10 @@
     "ts": 3865933,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -20721,6 +21870,10 @@
     "ts": 3866066,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6173
   },
@@ -20819,6 +21972,10 @@
     "ts": 3866333,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -20893,6 +22050,10 @@
     "ts": 3866600,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6707
   },
@@ -20993,6 +22154,10 @@
     "ts": 3866735,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6842
   },
@@ -21059,6 +22224,10 @@
     "ts": 3867495,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -21126,6 +22295,10 @@
     "ts": 3871495,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -21170,6 +22343,10 @@
     "ts": 3924440,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -21249,6 +22426,10 @@
     "ts": 3969242,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 491
   },
@@ -21341,6 +22522,10 @@
     "ts": 3969286,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535
   },
@@ -21461,12 +22646,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.0,
-        "amount": 15780
+        "amount": 15780,
+        "hp": 1720,
+        "shield": 14060
       }
     ],
     "ts": 3969374,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 623
   },
@@ -21537,10 +22728,10 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -21560,6 +22751,10 @@
     "ts": 3969685,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 934
   },
@@ -21630,10 +22825,10 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -21655,6 +22850,10 @@
     "ts": 3969775,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 1024
   },
@@ -21725,10 +22924,10 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -21749,6 +22948,10 @@
     "ts": 3969730,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 979
   },
@@ -21888,10 +23091,10 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -21914,6 +23117,10 @@
     "ts": 3969818,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 1067
   },
@@ -21997,6 +23204,10 @@
     "ts": 3974810,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6059
   },
@@ -22093,6 +23304,9 @@
     ],
     "dead": [],
     "group": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
       "Absolute Gigachad"
     ],
     "self_hits": [
@@ -22100,12 +23314,18 @@
         "ability": "Dragon's Gaze",
         "guid": 25553,
         "ago": 0.2,
-        "amount": 42449
+        "amount": 42449,
+        "hp": 42449,
+        "shield": 0
       }
     ],
     "ts": 4107337,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 53425
   },
@@ -22204,6 +23424,10 @@
     "ts": 4107470,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 90
   },
@@ -22315,6 +23539,10 @@
     "ts": 4107869,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 712
   },
@@ -22410,6 +23638,10 @@
     "ts": 4108527,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -22489,7 +23721,10 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -22505,13 +23740,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kite Noodle",
       "Kitana Kahn",
-      "Absolute Gigachad"
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 4109023,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55111
   },
@@ -22609,6 +23850,10 @@
     "ts": 4109527,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -22709,6 +23954,10 @@
     "ts": 4109646,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2355
   },
@@ -22803,12 +24052,12 @@
       }
     ],
     "down": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
       "Spring Nymphar",
       "Absolute Gigalad",
-      "Loki Doki",
-      "Kiara Blaiddyd",
-      "Kite Noodle",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -22827,17 +24076,21 @@
       "Loki Doki"
     ],
     "group": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
       "Spring Nymphar",
       "Absolute Gigalad",
-      "Loki Doki",
-      "Kiara Blaiddyd",
-      "Kite Noodle",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 4110532,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1553
   },
@@ -22882,6 +24135,10 @@
     "ts": 4190248,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -22951,6 +24208,10 @@
     "ts": 4193090,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -23038,6 +24299,10 @@
     "ts": 4203140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -23113,6 +24378,10 @@
     "ts": 4203097,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -23202,6 +24471,10 @@
     "ts": 4204823,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -23296,6 +24569,10 @@
     "ts": 4208293,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -23364,6 +24641,10 @@
     "ts": 4208293,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6084
   },
@@ -23448,6 +24729,10 @@
     "ts": 4208427,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6218
   },
@@ -23532,6 +24817,10 @@
     "ts": 4208427,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6218
   },
@@ -23622,6 +24911,10 @@
     "ts": 4288880,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -23726,6 +25019,10 @@
     "ts": 4293988,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5864
   },
@@ -23831,6 +25128,10 @@
     "ts": 4294122,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -23937,6 +25238,10 @@
     "ts": 4294388,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -24019,6 +25324,10 @@
     "ts": 4294655,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6752
   },
@@ -24127,6 +25436,10 @@
     "ts": 4294788,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6885
   },
@@ -24201,6 +25514,10 @@
     "ts": 4296801,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -24288,6 +25605,10 @@
     "ts": 4308801,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -24355,6 +25676,10 @@
     "ts": 4388469,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -24433,6 +25758,10 @@
     "ts": 4403585,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6001
   },
@@ -24527,6 +25856,10 @@
     "ts": 4403717,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -24622,6 +25955,10 @@
     "ts": 4403984,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6400
   },
@@ -24718,6 +26055,10 @@
     "ts": 4404118,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -24815,6 +26156,10 @@
     "ts": 4404383,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6799
   },
@@ -24899,6 +26244,10 @@
     "ts": 4404518,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6934
   },
@@ -24973,6 +26322,10 @@
     "ts": 4406136,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -25048,6 +26401,10 @@
     "ts": 4409136,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -25144,6 +26501,10 @@
     "ts": 4494440,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -25242,6 +26603,10 @@
     "ts": 4494573,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -25329,6 +26694,10 @@
     "ts": 4494708,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6325
   },
@@ -25429,6 +26798,10 @@
     "ts": 4494975,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -25518,6 +26891,10 @@
     "ts": 4495109,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6726
   },
@@ -25608,6 +26985,10 @@
     "ts": 4495376,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6993
   },
@@ -25697,6 +27078,10 @@
     "ts": 4500003,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -25763,6 +27148,10 @@
     "ts": 4500003,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -25843,6 +27232,10 @@
     "ts": 4571302,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -25943,6 +27336,10 @@
     "ts": 4581359,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 845
   },
@@ -26016,6 +27413,10 @@
     "ts": 4586429,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -26090,6 +27491,10 @@
     "ts": 4586561,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6136
   },
@@ -26165,6 +27570,10 @@
     "ts": 4586562,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6048
   },
@@ -26255,6 +27664,10 @@
     "ts": 4586695,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -26331,6 +27744,10 @@
     "ts": 4586695,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -26409,6 +27826,10 @@
     "ts": 4586962,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6537
   },
@@ -26476,6 +27897,10 @@
     "ts": 4587804,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -26606,12 +28031,18 @@
         "ability": "Dragon's Gaze",
         "guid": 25553,
         "ago": 1.1,
-        "amount": 44750
+        "amount": 44750,
+        "hp": 37400,
+        "shield": 7350
       }
     ],
     "ts": 4723034,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -26737,6 +28168,10 @@
     "ts": 4723256,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -26878,12 +28313,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 0.9,
-        "amount": 42307
+        "amount": 42307,
+        "hp": 30626,
+        "shield": 11681
       }
     ],
     "ts": 4723837,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -27011,6 +28452,10 @@
     "ts": 4724256,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -27122,7 +28567,9 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [
       "Absolute Gigalad"
     ],
@@ -27141,6 +28588,7 @@
     ],
     "group": [
       "Kite Noodle",
+      "Kitana Kahn",
       "Absolute Gigalad",
       "Loki Doki"
     ],
@@ -27148,6 +28596,10 @@
     "ts": 4725577,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3569
   },
@@ -27259,7 +28711,9 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [
       "Absolute Gigalad"
     ],
@@ -27279,6 +28733,7 @@
     ],
     "group": [
       "Kite Noodle",
+      "Kitana Kahn",
       "Absolute Gigalad",
       "Loki Doki"
     ],
@@ -27286,6 +28741,10 @@
     "ts": 4725621,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3524
   },
@@ -27419,12 +28878,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 3.8,
-        "amount": 29236
+        "amount": 29236,
+        "hp": 29236,
+        "shield": 0
       }
     ],
     "ts": 4726156,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 4104
   },
@@ -27538,6 +29003,7 @@
     ],
     "down": [
       "Kiara Blaiddyd",
+      "Speed Panda",
       "Spring Nymphar"
     ],
     "unsoaked": [],
@@ -27558,6 +29024,7 @@
     ],
     "group": [
       "Kiara Blaiddyd",
+      "Speed Panda",
       "Spring Nymphar",
       "Absolute Gigachad"
     ],
@@ -27565,6 +29032,10 @@
     "ts": 4727358,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3477
   },
@@ -27647,6 +29118,10 @@
     "ts": 4841957,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -27722,6 +29197,10 @@
     "ts": 4867598,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -27815,6 +29294,10 @@
     "ts": 4869296,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1113
   },
@@ -27908,6 +29391,10 @@
     "ts": 4870498,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 535
   },
@@ -28001,12 +29488,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 3.1,
-        "amount": 38736
+        "amount": 38736,
+        "hp": 38736,
+        "shield": 0
       }
     ],
     "ts": 4870453,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3963
   },
@@ -28101,6 +29594,10 @@
     "ts": 4870542,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 491
   },
@@ -28196,6 +29693,10 @@
     "ts": 4870587,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 581
   },
@@ -28281,6 +29782,7 @@
     ],
     "down": [
       "Kiara Blaiddyd",
+      "Speed Panda",
       "Absolute Gigalad"
     ],
     "unsoaked": [],
@@ -28300,13 +29802,18 @@
     ],
     "group": [
       "Kiara Blaiddyd",
-      "Absolute Gigalad",
-      "Spring Nymphar"
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 4871703,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3477
   },
@@ -28401,12 +29908,18 @@
         "ability": "Bright Flare",
         "guid": 25295,
         "ago": 1.7,
-        "amount": 61200
+        "amount": 61200,
+        "hp": 61200,
+        "shield": 0
       }
     ],
     "ts": 4872372,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2454
   },
@@ -28469,6 +29982,10 @@
     "ts": 5065518,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 179
   },
@@ -28542,6 +30059,10 @@
     "ts": 5066341,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -28607,15 +30128,19 @@
       "Loki Doki"
     ],
     "group": [
-      "Loki Doki",
-      "Speed Panda",
       "Kiara Blaiddyd",
-      "Absolute Gigalad"
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5068941,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3555
   },
@@ -28680,15 +30205,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Loki Doki",
-      "Speed Panda",
       "Kiara Blaiddyd",
-      "Absolute Gigalad"
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5068899,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3603
   },
@@ -28772,6 +30301,10 @@
     "ts": 5083249,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12536
   },
@@ -28819,7 +30352,12 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -28834,11 +30372,18 @@
       "Absolute Gigalad",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "self_hits": [],
     "ts": 5083249,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12492
   },
@@ -28909,7 +30454,12 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -28926,11 +30476,18 @@
       "Absolute Gigalad",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "self_hits": [],
     "ts": 5083293,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12491
   },
@@ -28998,6 +30555,10 @@
     "ts": 5087021,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 16353
   },
@@ -29043,6 +30604,10 @@
     "ts": 5377899,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29087,6 +30652,10 @@
     "ts": 5377899,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29132,6 +30701,10 @@
     "ts": 5381231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29178,6 +30751,10 @@
     "ts": 5382231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29225,6 +30802,10 @@
     "ts": 5383231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29272,6 +30853,10 @@
     "ts": 5383231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29321,6 +30906,10 @@
     "ts": 5384231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29371,6 +30960,10 @@
     "ts": 5385231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29443,8 +31036,9 @@
     ],
     "down": [],
     "unsoaked": [
-      "Spring Nymphar",
+      "Speed Panda",
       "Kitana Kahn",
+      "Spring Nymphar",
       "Absolute Gigachad"
     ],
     "doubled": [],
@@ -29455,14 +31049,19 @@
     ],
     "dead": [],
     "group": [
-      "Spring Nymphar",
+      "Speed Panda",
       "Kitana Kahn",
+      "Spring Nymphar",
       "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 5519253,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 53369
   },
@@ -29524,6 +31123,10 @@
     "ts": 5519481,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29572,7 +31175,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -29587,13 +31192,18 @@
     ],
     "group": [
       "Kite Noodle",
-      "Absolute Gigalad",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5524413,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3559
   },
@@ -29642,7 +31252,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -29658,13 +31270,18 @@
     ],
     "group": [
       "Kite Noodle",
-      "Absolute Gigalad",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5524502,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3559
   },
@@ -29741,6 +31358,10 @@
     "ts": 5528481,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -29788,7 +31409,13 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -29805,11 +31432,18 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
     "self_hits": [],
     "ts": 5537083,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12626
   },
@@ -29857,7 +31491,13 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -29873,11 +31513,18 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
     "self_hits": [],
     "ts": 5537039,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 14403
   },
@@ -29945,6 +31592,10 @@
     "ts": 5542990,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 20265
   },
@@ -30048,6 +31699,10 @@
     "ts": 5687492,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -30152,12 +31807,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 1.5,
-        "amount": 44523
+        "amount": 44523,
+        "hp": 44523,
+        "shield": 0
       }
     ],
     "ts": 5688060,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55142
   },
@@ -30255,12 +31916,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 1.9,
-        "amount": 28755
+        "amount": 28755,
+        "hp": 28755,
+        "shield": 0
       }
     ],
     "ts": 5688771,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 667
   },
@@ -30358,6 +32025,10 @@
     "ts": 5689129,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 981
   },
@@ -30455,9 +32126,9 @@
       "Absolute Gigachad"
     ],
     "unsoaked": [
-      "Loki Doki",
       "Kite Noodle",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "doubled": [],
     "marked": [],
@@ -30473,15 +32144,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Absolute Gigachad",
-      "Loki Doki",
       "Kite Noodle",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5689616,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1424
   },
@@ -30563,9 +32238,9 @@
     ],
     "down": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -30587,14 +32262,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5691441,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 5025
   },
@@ -30676,9 +32355,9 @@
     ],
     "down": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -30698,14 +32377,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5691351,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 4980
   },
@@ -30801,9 +32484,9 @@
     ],
     "down": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -30824,14 +32507,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5691396,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 5068
   },
@@ -30876,6 +32563,10 @@
     "ts": 5727814,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -30923,6 +32614,10 @@
     "ts": 5825677,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 45
   },
@@ -30972,6 +32667,10 @@
     "ts": 5825811,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 222
   },
@@ -31022,6 +32721,10 @@
     "ts": 5825945,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 401
   },
@@ -31073,6 +32776,10 @@
     "ts": 5826078,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 580
   },
@@ -31118,10 +32825,10 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -31140,15 +32847,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5828838,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1426
   },
@@ -31194,10 +32905,10 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -31217,15 +32928,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5828883,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1559
   },
@@ -31271,10 +32986,10 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -31295,15 +33010,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5828928,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1560
   },
@@ -31349,10 +33068,10 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -31374,15 +33093,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5828973,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1694
   },
@@ -31463,6 +33186,10 @@
     "ts": 5975320,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -31542,8 +33269,8 @@
     ],
     "down": [],
     "unsoaked": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "doubled": [],
     "marked": [],
@@ -31557,13 +33284,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5975633,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -31654,8 +33387,8 @@
     ],
     "down": [],
     "unsoaked": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "doubled": [],
     "marked": [],
@@ -31670,13 +33403,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5975678,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -31756,8 +33495,8 @@
     ],
     "down": [],
     "unsoaked": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "doubled": [],
     "marked": [],
@@ -31773,13 +33512,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5975722,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -31888,12 +33633,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 0.9,
-        "amount": 36724
+        "amount": 36724,
+        "hp": 28448,
+        "shield": 8276
       }
     ],
     "ts": 5977367,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55121
   },
@@ -32003,12 +33754,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 0.9,
-        "amount": 37514
+        "amount": 37514,
+        "hp": 29182,
+        "shield": 8332
       }
     ],
     "ts": 5977501,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -32120,6 +33877,10 @@
     "ts": 5978434,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 978
   },
@@ -32232,6 +33993,10 @@
     "ts": 5978478,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1066
   },
@@ -32276,6 +34041,10 @@
     "ts": 6014813,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -32351,6 +34120,10 @@
     "ts": 6113808,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -32489,6 +34262,10 @@
     "ts": 6115689,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1511
   },
@@ -32617,6 +34394,10 @@
     "ts": 6115734,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1601
   },
@@ -32747,6 +34528,10 @@
     "ts": 6115822,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1555
   },
@@ -32876,6 +34661,10 @@
     "ts": 6115777,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1554
   },
@@ -32982,12 +34771,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 3.6,
-        "amount": 40914
+        "amount": 40914,
+        "hp": 40914,
+        "shield": 0
       }
     ],
     "ts": 6116134,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3736
   },
@@ -33095,6 +34890,10 @@
     "ts": 6116444,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3957
   },
@@ -33213,12 +35012,18 @@
         "ability": "Bright Flare",
         "guid": 25295,
         "ago": 1.0,
-        "amount": 60471
+        "amount": 60471,
+        "hp": 60471,
+        "shield": 0
       }
     ],
     "ts": 6117508,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 5066
   },
@@ -33261,6 +35066,10 @@
     "ts": 6193485,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -33320,10 +35129,7 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": [
-      "Absolute Gigachad",
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -33343,6 +35149,10 @@
     "ts": 6199927,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 932
   },
@@ -33407,10 +35217,7 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": [
-      "Absolute Gigachad",
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -33429,6 +35236,10 @@
     "ts": 6199882,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 887
   },
@@ -33588,6 +35399,10 @@
     "ts": 6199972,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 977
   },
@@ -33758,6 +35573,10 @@
     "ts": 6199972,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 977
   },
@@ -33822,10 +35641,7 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": [
-      "Absolute Gigachad",
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -33848,6 +35664,10 @@
     "ts": 6199973,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 978
   },
@@ -33908,6 +35728,10 @@
     "ts": 6202485,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -33957,6 +35781,10 @@
     "ts": 6203485,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -34029,6 +35857,10 @@
     "ts": 6205070,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6075
   },
@@ -34082,6 +35914,10 @@
     "ts": 8345610,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -34137,6 +35973,10 @@
     "ts": 8345654,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55158
   },
@@ -34183,15 +36023,19 @@
       "Kiara Blaiddyd"
     ],
     "group": [
+      "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
       "Absolute Gigalad",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 8347397,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3573
   },
@@ -34240,15 +36084,19 @@
       "Kitana Kahn"
     ],
     "group": [
+      "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
       "Absolute Gigalad",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 8347530,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3660
   },
@@ -34296,15 +36144,19 @@
       "Kitana Kahn"
     ],
     "group": [
+      "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
       "Absolute Gigalad",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 8347442,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3485
   },
@@ -34336,8 +36188,8 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kiara Blaiddyd",
-      "Kite Noodle"
+      "Kite Noodle",
+      "Kiara Blaiddyd"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -34355,13 +36207,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kite Noodle",
       "Kiara Blaiddyd",
-      "Kite Noodle"
+      "Spring Nymphar",
+      "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 8349140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -34411,6 +36269,10 @@
     "ts": 8356889,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null
   },
@@ -34471,6 +36333,10 @@
     "ts": 8367945,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 20460
   }

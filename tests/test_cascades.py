@@ -106,20 +106,22 @@ class JumpGroupTest(unittest.TestCase):
             )
             self.assertEqual(_owners(item), [("Spring Nymphar", 50), ("Absolute Gigachad", 50)])
 
-    def test_a_short_stack_with_nobody_missing_from_its_group_stays_unnamed(self):
+    def test_a_seat_no_jump_filled_goes_to_its_player(self):
+        # Every jump hit three of Speed, Kitana and Gigachad's group. The healer seat was
+        # empty: Spring was the other group's jump target, so it was Loki's, who stood in
+        # the other group's stack twice and then walked into the wall.
         for item in _deaths("XVz8bCqgPw1KRh9d", 49, "Sacred Sever"):
-            self.assertEqual(_owners(item), [("Missing bodies", 100)])
+            self.assertEqual(sorted(item.fact.group), ["Absolute Gigachad", "Kitana Kahn", "Loki Doki", "Speed Panda"])
+            self.assertEqual(_owners(item), [("Loki Doki", 100)])
 
 
 class PassedOnTest(unittest.TestCase):
     def test_an_empty_tower_left_by_a_killed_player_belongs_to_the_killer(self):
         # Kitana and Spring died to the same jump. Their deaths were the healers', so their towers are too.
-        # Each dead player is one share: Speed's and Loki's own, and Kitana's and Spring's split between the healers.
+        # Speed and Loki died to the surplus ice their dead pair left them, so theirs are the same healers'.
         item = _one("XVz8bCqgPw1KRh9d", 26, "Kite Noodle", "Eternal Conviction")
         self.assertEqual(item.fact.down, ["Speed Panda", "Spring Nymphar", "Kitana Kahn", "Loki Doki"])
-        self.assertEqual(
-            _owners(item), [("Speed Panda", 25), ("Loki Doki", 50), ("Spring Nymphar", 25)],
-        )
+        self.assertEqual(_owners(item), [("Loki Doki", 50), ("Spring Nymphar", 50)])
 
     def test_dead_threes_leave_the_first_dive_towers_empty(self):
         # Loki and Speed held the 3s and died to Eye of the Tyrant with no shield. Those were the healers'.

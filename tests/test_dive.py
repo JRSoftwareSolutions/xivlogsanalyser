@@ -38,12 +38,12 @@ class DiveFromGraceTest(unittest.TestCase):
 
     def test_phase_three_counts(self):
         counts = Counter(item.outcome for item in self.phase3)
-        self.assertEqual(counts["fail"], 52)
+        self.assertEqual(counts["fail"], 57)
         self.assertEqual(counts["raw"], 8)
         self.assertEqual(counts["low"], 0)
         self.assertEqual(counts["unknown"], 0)
-        # Pull 33: five players walked into the wall together to reset, nobody's mistake.
-        self.assertEqual(counts["environment"], 5)
+        # Pull 33: Gigalad's circle landed in the north stack and knocked five players into the wall.
+        self.assertEqual(counts["environment"], 0)
         walls = [item for item in self.phase3 if item.mechanic_id == "deathwall"]
         self.assertEqual(len(walls), 8)
         # Final Chorus is the opening raidwide. The first auto-attack is a frontal cleave.

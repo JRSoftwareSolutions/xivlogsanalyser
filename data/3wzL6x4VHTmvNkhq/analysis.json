@@ -1,12 +1,12 @@
 {
- "rules": "ab572d81a6eef524",
- "engine": "f2910622144d6dc9",
+ "rules": "ce8c75194b55b050",
+ "engine": "a4ad0e63c3e033fd",
  "log": "e8a8e43e5c52b904",
  "outputs": {
-  "facts.json": "1b2faa7bd21f4e0f",
-  "judgments.json": "c59882a52891ded3",
-  "calls.tsv": "26ca53573e9dbb8b",
-  "session.html": "4ae54644bf508374",
+  "facts.json": "7589cc34d45fe6fe",
+  "judgments.json": "cc4a3c3871b34491",
+  "calls.tsv": "c7120b800674db20",
+  "session.html": "a677d3d3f1107696",
   "inputs.json": "e064c893006a2472"
  },
  "counts": {
@@ -1489,9 +1489,7 @@
   ],
   "night": {
    "pulls": 51,
-   "labels": [
-    "Missing bodies"
-   ],
+   "labels": [],
    "started": [
     {
      "mechanic": "Ascalon's Mercy Concealed",
@@ -1516,6 +1514,10 @@
       [
        "Speed Panda",
        2
+      ],
+      [
+       "Absolute Gigachad",
+       1
       ],
       [
        "Kite Noodle",
@@ -1804,50 +1806,46 @@
      8
     ],
     [
-     "Kite Noodle",
+     "Absolute Gigachad",
      5
     ],
     [
-     "Absolute Gigachad",
-     4
+     "Kite Noodle",
+     5
     ]
    ],
    "owned": [
     [
      "Spring Nymphar",
-     86.6
+     94.6
     ],
     [
      "Kitana Kahn",
-     81.5
+     80.7
     ],
     [
      "Kiara Blaiddyd",
-     69.7
+     69.2
     ],
     [
      "Loki Doki",
-     52.5
+     51.1
     ],
     [
      "Absolute Gigalad",
-     38.6
+     35.0
     ],
     [
      "Absolute Gigachad",
-     33.6
+     31.1
     ],
     [
      "Speed Panda",
-     23.7
+     27.8
     ],
     [
      "Kite Noodle",
-     15.6
-    ],
-    [
-     "Missing bodies",
-     2.5
+     15.3
     ]
    ]
   }

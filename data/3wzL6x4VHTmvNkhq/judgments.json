@@ -68,6 +68,12 @@
     "ts": 445428,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [
+      "Absolute Gigachad"
+    ],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -75,15 +81,19 @@
     "outcome": "fail",
     "happened": "Took 188,336 at full HP. A one-shot.",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Kitana Kahn got hit by the cone.",
-    "cause": "personal",
+    "went_wrong": "Kitana Kahn was in the cone Absolute Gigachad baited outside the stack.",
+    "cause": "baited",
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 100
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 50
       }
     ],
-    "basis": "hit",
+    "basis": "position",
     "first": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -91,6 +101,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kitana Kahn",
+          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -163,6 +174,12 @@
     "ts": 445383,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [
+      "Absolute Gigachad"
+    ],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -170,15 +187,19 @@
     "outcome": "fail",
     "happened": "Took 194,299 at 90% HP. It would have killed them from full HP.",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Loki Doki got hit by the cone.",
-    "cause": "personal",
+    "went_wrong": "Loki Doki was in the cone Absolute Gigachad baited outside the stack.",
+    "cause": "baited",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 100
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 50
       }
     ],
-    "basis": "hit",
+    "basis": "position",
     "first": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -186,6 +207,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kitana Kahn",
+          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -263,6 +285,10 @@
     "ts": 447430,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -286,6 +312,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kitana Kahn",
+          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -362,6 +389,10 @@
     "ts": 447385,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -385,6 +416,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kitana Kahn",
+          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -463,6 +495,10 @@
     "ts": 449122,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -486,6 +522,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kitana Kahn",
+          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -565,6 +602,10 @@
     "ts": 449211,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -588,6 +629,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kitana Kahn",
+          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -655,6 +697,10 @@
     "ts": 450819,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -667,7 +713,14 @@
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 33
+        "confidence": 16
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 16,
+        "via": [
+          "Loki Doki"
+        ]
       },
       {
         "who": "Spring Nymphar",
@@ -686,6 +739,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kitana Kahn",
+          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -737,6 +791,10 @@
     "ts": 459227,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -764,6 +822,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kitana Kahn",
+          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -808,7 +867,15 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -830,22 +897,63 @@
     "ts": 473944,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
     "happened": "Took 450,860 at 33% HP. A healer takes about 40k.",
-    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430\u2013470k, and both players own it.",
-    "went_wrong": "Loki Doki got clipped by Lightning Storm.",
-    "cause": "overlap",
+    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is one bolt on two players, about 430\u2013470k, and both players own it. A dead player's bolt still falls on someone alive, who takes two: that belongs to the dead player.",
+    "went_wrong": "They took two hits because 7 players were already dead.",
+    "cause": "missing",
     "blames": [
       {
+        "who": "Kite Noodle",
+        "confidence": 14
+      },
+      {
+        "who": "Kiara Blaiddyd",
+        "confidence": 14
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 14
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 7
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 10,
+        "via": [
+          "Kitana Kahn"
+        ]
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 21,
+        "via": [
+          "Absolute Gigachad"
+        ]
+      },
+      {
         "who": "Loki Doki",
-        "confidence": 100
+        "confidence": 3,
+        "via": [
+          "Absolute Gigachad"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 14
       }
     ],
-    "basis": "position",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -853,6 +961,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kitana Kahn",
+          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -911,6 +1020,10 @@
     "ts": 512027,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -992,6 +1105,10 @@
     "ts": 512027,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -1047,7 +1164,10 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -1064,26 +1184,30 @@
     "ts": 540589,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
     "happened": "Took 295,615 at 71% HP. A tank takes about 27k.",
-    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430\u2013470k, and both players own it.",
-    "went_wrong": "Absolute Gigalad got clipped by Lightning Storm.",
-    "cause": "overlap",
+    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is one bolt on two players, about 430\u2013470k, and both players own it. A dead player's bolt still falls on someone alive, who takes two: that belongs to the dead player.",
+    "went_wrong": "They took two hits because Kiara Blaiddyd and Spring Nymphar were already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Absolute Gigalad",
+        "who": "Kiara Blaiddyd",
         "confidence": 50
       },
       {
-        "who": "Kite Noodle",
+        "who": "Spring Nymphar",
         "confidence": 50
       }
     ],
-    "basis": "position",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
@@ -1123,7 +1247,10 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -1140,26 +1267,30 @@
     "ts": 540589,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
     "happened": "Took 474,694 at 36% HP. A DPS takes about 42k.",
-    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430\u2013470k, and both players own it.",
-    "went_wrong": "Kite Noodle got clipped by Lightning Storm.",
-    "cause": "overlap",
+    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is one bolt on two players, about 430\u2013470k, and both players own it. A dead player's bolt still falls on someone alive, who takes two: that belongs to the dead player.",
+    "went_wrong": "They took two hits because Kiara Blaiddyd and Spring Nymphar were already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kite Noodle",
+        "who": "Kiara Blaiddyd",
         "confidence": 50
       },
       {
-        "who": "Absolute Gigalad",
+        "who": "Spring Nymphar",
         "confidence": 50
       }
     ],
-    "basis": "position",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
     "first_causes": [
@@ -1227,6 +1358,10 @@
     "ts": 547231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -1311,6 +1446,10 @@
     "ts": 547231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -1398,12 +1537,18 @@
         "ability": "Heavy Impact",
         "guid": 25560,
         "ago": 2.9,
-        "amount": 27586
+        "amount": 27586,
+        "hp": 27586,
+        "shield": 0
       }
     ],
     "ts": 547276,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -1487,6 +1632,10 @@
     "ts": 556187,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -1577,6 +1726,10 @@
     "ts": 556812,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 492,
     "mechanic_id": "skyward-leap",
@@ -1662,6 +1815,10 @@
     "ts": 621355,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -1755,6 +1912,10 @@
     "ts": 651117,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "spiral-thrust",
@@ -1839,6 +2000,10 @@
     "ts": 653702,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "heavy-impact",
@@ -1924,6 +2089,10 @@
     "ts": 656558,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -2021,6 +2190,10 @@
     "ts": 666182,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535,
     "mechanic_id": "skyward-leap",
@@ -2118,6 +2291,10 @@
     "ts": 666140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 493,
     "mechanic_id": "skyward-leap",
@@ -2207,6 +2384,10 @@
     "ts": 666140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 493,
     "mechanic_id": "skyward-leap",
@@ -2296,6 +2477,10 @@
     "ts": 666140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 493,
     "mechanic_id": "skyward-leap",
@@ -2417,10 +2602,11 @@
     "down": [
       "Kiara Blaiddyd",
       "Kitana Kahn",
-      "Absolute Gigalad",
       "Loki Doki"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -2442,12 +2628,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.3,
-        "amount": 35265
+        "amount": 35265,
+        "hp": 35265,
+        "shield": 0
       }
     ],
     "ts": 666538,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 891,
     "mechanic_id": "dragons-rage",
@@ -2520,6 +2712,10 @@
     "ts": 705703,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -2603,13 +2799,17 @@
     "ts": 734257,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
     "happened": "Took 419,704 at full HP. The hit was 466,338 before mitigation. A DPS takes about 42k.",
-    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430\u2013470k, and both players own it.",
+    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is one bolt on two players, about 430\u2013470k, and both players own it. A dead player's bolt still falls on someone alive, who takes two: that belongs to the dead player.",
     "went_wrong": "Speed Panda got clipped by Lightning Storm.",
     "cause": "overlap",
     "blames": [
@@ -2692,13 +2892,17 @@
     "ts": 734389,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
     "happened": "Took 261,748 at 81% HP. The hit was 290,832 before mitigation. A tank takes about 27k.",
-    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430\u2013470k, and both players own it.",
+    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is one bolt on two players, about 430\u2013470k, and both players own it. A dead player's bolt still falls on someone alive, who takes two: that belongs to the dead player.",
     "went_wrong": "Absolute Gigalad got clipped by Lightning Storm.",
     "cause": "overlap",
     "blames": [
@@ -2784,6 +2988,10 @@
     "ts": 750554,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 536,
     "mechanic_id": "skyward-leap",
@@ -2877,6 +3085,10 @@
     "ts": 750513,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 495,
     "mechanic_id": "skyward-leap",
@@ -2973,6 +3185,10 @@
     "ts": 750513,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 495,
     "mechanic_id": "skyward-leap",
@@ -3053,7 +3269,6 @@
       }
     ],
     "down": [
-      "Kiara Blaiddyd",
       "Speed Panda",
       "Absolute Gigalad"
     ],
@@ -3078,6 +3293,10 @@
     "ts": 750910,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -3085,26 +3304,19 @@
     "outcome": "raw",
     "happened": "Took 105,449 at full HP. Shared by 3 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5 because 3 players were already dead.",
+    "went_wrong": "The stack was 3 of 5 because Speed Panda and Absolute Gigalad were already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 33,
-        "via": [
-          "Kiara Blaiddyd"
-        ]
-      },
-      {
         "who": "Speed Panda",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Absolute Gigalad"
         ]
       },
       {
         "who": "Absolute Gigalad",
-        "confidence": 33,
+        "confidence": 50,
         "via": [
           "Speed Panda"
         ]
@@ -3206,19 +3418,25 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 3.8,
-        "amount": 13800
+        "amount": 13800,
+        "hp": 8360,
+        "shield": 5440
       }
     ],
     "ts": 754431,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "low",
     "happened": "Took 13,154 at 2% HP (1,779 of 99,211). Dimensional Collapse had taken 13,800 3.8s before.",
-    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Absolute Gigachad was still low from Dimensional Collapse.",
     "cause": "self",
     "blames": [
@@ -3303,6 +3521,10 @@
     "ts": 755991,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5973,
     "mechanic_id": "eternal-conviction",
@@ -3331,22 +3553,21 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 26,
+        "confidence": 20,
         "via": [
-          "Kiara Blaiddyd",
-          "Spring Nymphar"
+          "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Speed Panda",
-        "confidence": 16,
+        "confidence": 20,
         "via": [
           "Spring Nymphar"
         ]
       },
       {
         "who": "Absolute Gigalad",
-        "confidence": 16,
+        "confidence": 20,
         "via": [
           "Speed Panda",
           "Spring Nymphar"
@@ -3410,6 +3631,10 @@
     "ts": 791835,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -3480,6 +3705,10 @@
     "ts": 791793,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -3551,6 +3780,10 @@
     "ts": 791793,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -3632,7 +3865,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Speed Panda"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -3648,22 +3883,26 @@
     "ts": 820348,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "lightning-storm",
     "mechanic": "Lightning Storm",
     "outcome": "fail",
     "happened": "Took 381,887 at 58% HP. The hit was 424,319 before mitigation. A DPS takes about 42k.",
-    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430\u2013470k, and both players own it.",
-    "went_wrong": "Kitana Kahn got clipped by Lightning Storm.",
-    "cause": "overlap",
+    "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26\u201329k, everyone else about 38\u201345k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is one bolt on two players, about 430\u2013470k, and both players own it. A dead player's bolt still falls on someone alive, who takes two: that belongs to the dead player.",
+    "went_wrong": "They took two hits because Speed Panda was already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kitana Kahn",
+        "who": "Speed Panda",
         "confidence": 100
       }
     ],
-    "basis": "position",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
@@ -3746,6 +3985,10 @@
     "ts": 821551,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "spiral-thrust",
@@ -3882,12 +4125,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.3,
-        "amount": 23908
+        "amount": 23908,
+        "hp": 8595,
+        "shield": 15313
       }
     ],
     "ts": 836967,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -4006,13 +4255,17 @@
     "ts": 840539,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "low",
     "happened": "Took 13,709 at 2% HP (1,996 of 99,211).",
-    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Absolute Gigachad was already low.",
     "cause": "low",
     "blames": [
@@ -4127,6 +4380,10 @@
     "ts": 842098,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5976,
     "mechanic_id": "eternal-conviction",
@@ -4143,11 +4400,10 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 33
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 66,
+        "via": [
+          "Kitana Kahn"
+        ]
       }
     ],
     "basis": "hit-list",
@@ -4248,6 +4504,10 @@
     "ts": 842098,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5976,
     "mechanic_id": "eternal-conviction",
@@ -4264,11 +4524,10 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 33
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 66,
+        "via": [
+          "Kitana Kahn"
+        ]
       }
     ],
     "basis": "hit-list",
@@ -4371,6 +4630,10 @@
     "ts": 842232,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6110,
     "mechanic_id": "eternal-conviction",
@@ -4387,11 +4650,10 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 33
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 33
+        "confidence": 66,
+        "via": [
+          "Kitana Kahn"
+        ]
       }
     ],
     "basis": "hit-list",
@@ -4459,12 +4721,18 @@
         "ability": "Heavy Impact",
         "guid": 25560,
         "ago": 2.9,
-        "amount": 36180
+        "amount": 36180,
+        "hp": 36180,
+        "shield": 0
       }
     ],
     "ts": 917394,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -4566,6 +4834,10 @@
     "ts": 927023,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535,
     "mechanic_id": "skyward-leap",
@@ -4655,10 +4927,11 @@
       }
     ],
     "down": [
-      "Kitana Kahn",
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -4677,6 +4950,10 @@
     "ts": 927422,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -4684,15 +4961,15 @@
     "outcome": "raw",
     "happened": "Took 100,582 at full HP. Shared by 3 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5 because Kitana Kahn and Absolute Gigachad were already dead.",
+    "went_wrong": "The stack was 3 of 5 because Absolute Gigachad and Kitana Kahn were missing.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Kitana Kahn",
+        "who": "Absolute Gigachad",
         "confidence": 50
       },
       {
-        "who": "Absolute Gigachad",
+        "who": "Kitana Kahn",
         "confidence": 50
       }
     ],
@@ -4770,10 +5047,11 @@
       }
     ],
     "down": [
-      "Kitana Kahn",
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
+    "unsoaked": [
+      "Kitana Kahn"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -4791,6 +5069,10 @@
     "ts": 927378,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -4798,15 +5080,15 @@
     "outcome": "raw",
     "happened": "Took 93,171 at full HP. Shared by 3 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5 because Kitana Kahn and Absolute Gigachad were already dead.",
+    "went_wrong": "The stack was 3 of 5 because Absolute Gigachad and Kitana Kahn were missing.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Kitana Kahn",
+        "who": "Absolute Gigachad",
         "confidence": 50
       },
       {
-        "who": "Absolute Gigachad",
+        "who": "Kitana Kahn",
         "confidence": 50
       }
     ],
@@ -4924,6 +5206,10 @@
     "ts": 932505,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -4935,16 +5221,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 50,
+        "who": "Absolute Gigachad",
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
         ]
       },
       {
-        "who": "Absolute Gigachad",
-        "confidence": 25,
+        "who": "Kitana Kahn",
+        "confidence": 50,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
@@ -5045,6 +5331,10 @@
     "ts": 932505,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6017,
     "mechanic_id": "eternal-conviction",
@@ -5056,16 +5346,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 50,
+        "who": "Absolute Gigachad",
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
         ]
       },
       {
-        "who": "Absolute Gigachad",
-        "confidence": 25,
+        "who": "Kitana Kahn",
+        "confidence": 50,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
@@ -5166,6 +5456,10 @@
     "ts": 932505,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6017,
     "mechanic_id": "eternal-conviction",
@@ -5177,16 +5471,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 50,
+        "who": "Absolute Gigachad",
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
         ]
       },
       {
-        "who": "Absolute Gigachad",
-        "confidence": 25,
+        "who": "Kitana Kahn",
+        "confidence": 50,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
@@ -5287,6 +5581,10 @@
     "ts": 932505,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6017,
     "mechanic_id": "eternal-conviction",
@@ -5298,16 +5596,16 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 50,
+        "who": "Absolute Gigachad",
+        "confidence": 25,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
         ]
       },
       {
-        "who": "Absolute Gigachad",
-        "confidence": 25,
+        "who": "Kitana Kahn",
+        "confidence": 50,
         "via": [
           "Kiara Blaiddyd",
           "Spring Nymphar"
@@ -5371,6 +5669,10 @@
     "ts": 973454,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -5453,6 +5755,10 @@
     "ts": 1003220,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "spiral-thrust",
@@ -5526,6 +5832,10 @@
     "ts": 1008701,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -5622,6 +5932,10 @@
     "ts": 1008656,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -5710,6 +6024,10 @@
     "ts": 1008747,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -5781,6 +6099,10 @@
     "ts": 1016287,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -5938,6 +6260,10 @@
     "ts": 1018248,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 491,
     "mechanic_id": "skyward-leap",
@@ -6046,6 +6372,10 @@
     "ts": 1018293,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 536,
     "mechanic_id": "skyward-leap",
@@ -6135,6 +6465,10 @@
     "ts": 1018250,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 493,
     "mechanic_id": "skyward-leap",
@@ -6207,6 +6541,10 @@
     "ts": 1060579,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -6308,6 +6646,10 @@
     "ts": 1105367,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490,
     "mechanic_id": "skyward-leap",
@@ -6415,6 +6757,10 @@
     "ts": 1105411,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 534,
     "mechanic_id": "skyward-leap",
@@ -6526,6 +6872,10 @@
     "ts": 1105859,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-shield-bash",
@@ -6648,6 +6998,10 @@
     "ts": 1110895,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6018,
     "mechanic_id": "eternal-conviction",
@@ -6773,6 +7127,10 @@
     "ts": 1110895,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -6911,6 +7269,10 @@
     "ts": 1111027,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -7051,6 +7413,10 @@
     "ts": 1111161,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -7203,6 +7569,10 @@
     "ts": 1111427,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -7311,6 +7681,10 @@
     "ts": 1189205,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -7427,6 +7801,10 @@
     "ts": 1198876,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 576,
     "mechanic_id": "skyward-leap",
@@ -7524,6 +7902,10 @@
     "ts": 1198876,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 576,
     "mechanic_id": "dimensional-collapse",
@@ -7634,10 +8016,11 @@
     },
     "prior_debuffs": [],
     "down": [
-      "Kiara Blaiddyd",
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -7658,6 +8041,10 @@
     "ts": 1199276,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 976,
     "mechanic_id": "dragons-rage",
@@ -7736,10 +8123,11 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kiara Blaiddyd",
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -7758,6 +8146,10 @@
     "ts": 1199186,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -7765,7 +8157,7 @@
     "outcome": "raw",
     "happened": "Took 110,290 at full HP. Shared by 3 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5 because Kiara Blaiddyd and Absolute Gigachad were already dead.",
+    "went_wrong": "The stack was 3 of 5 because Kiara Blaiddyd and Absolute Gigachad were missing.",
     "cause": "missing",
     "blames": [
       {
@@ -7773,15 +8165,8 @@
         "confidence": 50
       },
       {
-        "who": "Loki Doki",
-        "confidence": 25,
-        "via": [
-          "Absolute Gigachad"
-        ]
-      },
-      {
         "who": "Absolute Gigachad",
-        "confidence": 25
+        "confidence": 50
       }
     ],
     "basis": "hit-list",
@@ -7847,10 +8232,11 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kiara Blaiddyd",
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -7870,6 +8256,10 @@
     "ts": 1199231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -7877,7 +8267,7 @@
     "outcome": "raw",
     "happened": "Took 106,612 at full HP. Shared by 3 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5 because Kiara Blaiddyd and Absolute Gigachad were already dead.",
+    "went_wrong": "The stack was 3 of 5 because Kiara Blaiddyd and Absolute Gigachad were missing.",
     "cause": "missing",
     "blames": [
       {
@@ -7885,15 +8275,8 @@
         "confidence": 50
       },
       {
-        "who": "Loki Doki",
-        "confidence": 25,
-        "via": [
-          "Absolute Gigachad"
-        ]
-      },
-      {
         "who": "Absolute Gigachad",
-        "confidence": 25
+        "confidence": 50
       }
     ],
     "basis": "hit-list",
@@ -7964,6 +8347,10 @@
     "ts": 1204310,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6010,
     "mechanic_id": "eternal-conviction",
@@ -7983,20 +8370,16 @@
         ]
       },
       {
-        "who": "Loki Doki",
-        "confidence": 30,
+        "who": "Absolute Gigachad",
+        "confidence": 20,
         "via": [
           "Kite Noodle",
           "Speed Panda"
         ]
       },
       {
-        "who": "Absolute Gigachad",
-        "confidence": 10,
-        "via": [
-          "Kite Noodle",
-          "Speed Panda"
-        ]
+        "who": "Loki Doki",
+        "confidence": 20
       },
       {
         "who": "Spring Nymphar",
@@ -8071,6 +8454,10 @@
     "ts": 1204310,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6010,
     "mechanic_id": "eternal-conviction",
@@ -8090,20 +8477,16 @@
         ]
       },
       {
-        "who": "Loki Doki",
-        "confidence": 30,
+        "who": "Absolute Gigachad",
+        "confidence": 20,
         "via": [
           "Kite Noodle",
           "Speed Panda"
         ]
       },
       {
-        "who": "Absolute Gigachad",
-        "confidence": 10,
-        "via": [
-          "Kite Noodle",
-          "Speed Panda"
-        ]
+        "who": "Loki Doki",
+        "confidence": 20
       },
       {
         "who": "Spring Nymphar",
@@ -8170,6 +8553,10 @@
     "ts": 1297327,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490,
     "mechanic_id": "skyward-leap",
@@ -8284,6 +8671,10 @@
     "ts": 1297371,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 534,
     "mechanic_id": "skyward-leap",
@@ -8423,6 +8814,10 @@
     "ts": 1297816,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 979,
     "mechanic_id": "holy-shield-bash",
@@ -8532,9 +8927,7 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [
-      "Absolute Gigachad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -8554,6 +8947,10 @@
     "ts": 1297771,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 934,
     "mechanic_id": "dragons-rage",
@@ -8646,6 +9043,10 @@
     "ts": 1302851,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -8743,6 +9144,10 @@
     "ts": 1302852,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -8867,6 +9272,10 @@
     "ts": 1302986,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -8965,6 +9374,10 @@
     "ts": 1302986,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6149,
     "mechanic_id": "eternal-conviction",
@@ -9049,6 +9462,10 @@
     "ts": 1368998,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -9131,6 +9548,10 @@
     "ts": 1401331,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "heavy-impact",
@@ -9235,6 +9656,10 @@
     "ts": 1413843,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535,
     "mechanic_id": "skyward-leap",
@@ -9313,8 +9738,7 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kitana Kahn",
-      "Absolute Gigalad"
+      "Kitana Kahn"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -9335,6 +9759,10 @@
     "ts": 1414155,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -9342,16 +9770,12 @@
     "outcome": "raw",
     "happened": "Took 78,328 at 90% HP. Shared by 4 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 4 of 5 because Kitana Kahn and Absolute Gigalad were already dead.",
+    "went_wrong": "The stack was 4 of 5 because Kitana Kahn was already dead.",
     "cause": "missing",
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "basis": "hit-list",
@@ -9437,8 +9861,7 @@
     },
     "prior_debuffs": [],
     "down": [
-      "Kitana Kahn",
-      "Absolute Gigalad"
+      "Kitana Kahn"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -9461,6 +9884,10 @@
     "ts": 1414246,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 938,
     "mechanic_id": "dragons-rage",
@@ -9528,8 +9955,7 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kitana Kahn",
-      "Absolute Gigalad"
+      "Kitana Kahn"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -9551,6 +9977,10 @@
     "ts": 1414201,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -9558,16 +9988,12 @@
     "outcome": "raw",
     "happened": "Took 86,344 at 91% HP. Shared by 4 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 4 of 5 because Kitana Kahn and Absolute Gigalad were already dead.",
+    "went_wrong": "The stack was 4 of 5 because Kitana Kahn was already dead.",
     "cause": "missing",
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "basis": "hit-list",
@@ -9639,6 +10065,10 @@
     "ts": 1418833,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -9725,6 +10155,10 @@
     "ts": 1419279,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5971,
     "mechanic_id": "eternal-conviction",
@@ -9737,15 +10171,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 50,
-        "via": [
-          "Speed Panda",
-          "Loki Doki"
-        ]
-      },
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 25,
+        "confidence": 75,
         "via": [
           "Speed Panda",
           "Loki Doki"
@@ -9823,6 +10249,10 @@
     "ts": 1419279,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5971,
     "mechanic_id": "eternal-conviction",
@@ -9835,15 +10265,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 50,
-        "via": [
-          "Speed Panda",
-          "Loki Doki"
-        ]
-      },
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 25,
+        "confidence": 75,
         "via": [
           "Speed Panda",
           "Loki Doki"
@@ -9907,6 +10329,10 @@
     "ts": 1462503,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -9998,6 +10424,10 @@
     "ts": 1507329,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 492,
     "mechanic_id": "skyward-leap",
@@ -10100,6 +10530,10 @@
     "ts": 1507329,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 492,
     "mechanic_id": "skyward-leap",
@@ -10175,6 +10609,10 @@
     "ts": 1507329,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 492,
     "mechanic_id": "skyward-leap",
@@ -10263,6 +10701,10 @@
     "ts": 1507767,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -10361,6 +10803,10 @@
     "ts": 1512805,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -10463,6 +10909,10 @@
     "ts": 1512803,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -10581,6 +11031,10 @@
     "ts": 1512943,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -10712,6 +11166,10 @@
     "ts": 1513077,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -10792,6 +11250,10 @@
     "ts": 1582686,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -10928,6 +11390,10 @@
     "ts": 1592346,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 537,
     "mechanic_id": "skyward-leap",
@@ -11032,6 +11498,10 @@
     "ts": 1592386,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 577,
     "mechanic_id": "skyward-leap",
@@ -11175,12 +11645,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.1,
-        "amount": 20403
+        "amount": 20403,
+        "hp": 13045,
+        "shield": 7358
       }
     ],
     "ts": 1592437,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 628,
     "mechanic_id": "skyward-leap",
@@ -11280,8 +11756,7 @@
       }
     ],
     "down": [
-      "Kiara Blaiddyd",
-      "Absolute Gigalad"
+      "Kiara Blaiddyd"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -11304,6 +11779,10 @@
     "ts": 1592659,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 850,
     "mechanic_id": "dragons-rage",
@@ -11399,8 +11878,7 @@
       }
     ],
     "down": [
-      "Kiara Blaiddyd",
-      "Absolute Gigalad"
+      "Kiara Blaiddyd"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -11424,6 +11902,10 @@
     "ts": 1592708,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 899,
     "mechanic_id": "dragons-rage",
@@ -11543,6 +12025,10 @@
     "ts": 1597820,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -11663,6 +12149,10 @@
     "ts": 1597820,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6011,
     "mechanic_id": "eternal-conviction",
@@ -11821,12 +12311,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.4,
-        "amount": 28564
+        "amount": 28564,
+        "hp": 0,
+        "shield": 28564
       }
     ],
     "ts": 1710950,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 935,
     "mechanic_id": "holy-shield-bash",
@@ -11940,13 +12436,17 @@
     "ts": 1713539,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
     "happened": "Took 27,345 at 41% HP.",
-    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Spring Nymphar stood in the cone.",
     "cause": "personal",
     "blames": [
@@ -12052,6 +12552,10 @@
     "ts": 1713892,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "strength-conviction",
@@ -12185,13 +12689,17 @@
     "ts": 1715317,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "low",
     "happened": "Took 12,539 at 11% HP (11,262 of 99,211).",
-    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Absolute Gigachad was already low.",
     "cause": "low",
     "blames": [
@@ -12312,6 +12820,10 @@
     "ts": 1715991,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -12420,6 +12932,10 @@
     "ts": 1716117,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6102,
     "mechanic_id": "eternal-conviction",
@@ -12529,6 +13045,10 @@
     "ts": 1716256,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6241,
     "mechanic_id": "eternal-conviction",
@@ -12639,6 +13159,10 @@
     "ts": 1716389,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6374,
     "mechanic_id": "eternal-conviction",
@@ -12736,6 +13260,10 @@
     "ts": 1813688,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -12823,6 +13351,10 @@
     "ts": 1823342,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 529,
     "mechanic_id": "skyward-leap",
@@ -12909,6 +13441,10 @@
     "ts": 1823303,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490,
     "mechanic_id": "skyward-leap",
@@ -13052,12 +13588,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.4,
-        "amount": 17069
+        "amount": 17069,
+        "hp": 831,
+        "shield": 16238
       }
     ],
     "ts": 1823744,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 931,
     "mechanic_id": "dragons-rage",
@@ -13167,6 +13709,10 @@
     "ts": 1823704,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -13276,13 +13822,17 @@
     "ts": 1828606,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "low",
     "happened": "Took 14,695 at 6% HP (7,325 of 118,362).",
-    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Absolute Gigalad was already low.",
     "cause": "low",
     "blames": [
@@ -13376,6 +13926,10 @@
     "ts": 1828779,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -13484,6 +14038,10 @@
     "ts": 1828917,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6104,
     "mechanic_id": "eternal-conviction",
@@ -13566,6 +14124,10 @@
     "ts": 1863511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -13657,6 +14219,10 @@
     "ts": 1898700,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -13746,6 +14312,10 @@
     "ts": 1908731,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -13852,13 +14422,17 @@
     "ts": 1913678,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "low",
     "happened": "Took 15,537 at 7% HP (8,351 of 118,362).",
-    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Absolute Gigalad was already low.",
     "cause": "low",
     "blames": [
@@ -13963,6 +14537,10 @@
     "ts": 1913807,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -14069,6 +14647,10 @@
     "ts": 1913807,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6015,
     "mechanic_id": "eternal-conviction",
@@ -14201,6 +14783,10 @@
     "ts": 1914079,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -14310,6 +14896,10 @@
     "ts": 1914344,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6552,
     "mechanic_id": "eternal-conviction",
@@ -14420,6 +15010,10 @@
     "ts": 1914477,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6685,
     "mechanic_id": "eternal-conviction",
@@ -14572,6 +15166,10 @@
     "ts": 2008074,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 979,
     "mechanic_id": "holy-shield-bash",
@@ -14676,9 +15274,7 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -14697,6 +15293,10 @@
     "ts": 2008074,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 979,
     "mechanic_id": "dragons-rage",
@@ -14801,9 +15401,7 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -14820,6 +15418,10 @@
     "ts": 2008025,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 930,
     "mechanic_id": "dragons-rage",
@@ -14936,6 +15538,10 @@
     "ts": 2013103,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6008,
     "mechanic_id": "eternal-conviction",
@@ -15069,6 +15675,10 @@
     "ts": 2013232,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -15203,6 +15813,10 @@
     "ts": 2013504,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6409,
     "mechanic_id": "eternal-conviction",
@@ -15311,6 +15925,10 @@
     "ts": 2013504,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6409,
     "mechanic_id": "eternal-conviction",
@@ -15412,6 +16030,10 @@
     "ts": 2016651,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -15513,6 +16135,10 @@
     "ts": 2087099,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -15645,6 +16271,10 @@
     "ts": 2102204,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5974,
     "mechanic_id": "eternal-conviction",
@@ -15755,6 +16385,10 @@
     "ts": 2102332,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -15866,6 +16500,10 @@
     "ts": 2102605,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -16001,6 +16639,10 @@
     "ts": 2102867,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6637,
     "mechanic_id": "eternal-conviction",
@@ -16137,6 +16779,10 @@
     "ts": 2103006,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6776,
     "mechanic_id": "eternal-conviction",
@@ -16250,6 +16896,10 @@
     "ts": 2103637,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -16387,6 +17037,10 @@
     "ts": 2118678,
     "missing": [],
     "off_tank": "Absolute Gigachad",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "heavenly-heel",
@@ -16479,12 +17133,18 @@
         "ability": "Heavy Impact",
         "guid": 25559,
         "ago": 4.7,
-        "amount": 44856
+        "amount": 44856,
+        "hp": 44856,
+        "shield": 0
       }
     ],
     "ts": 2193484,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -16597,6 +17257,10 @@
     "ts": 2203165,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 579,
     "mechanic_id": "dimensional-collapse",
@@ -16753,12 +17417,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.4,
-        "amount": 16565
+        "amount": 16565,
+        "hp": 7669,
+        "shield": 8896
       }
     ],
     "ts": 2203521,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 935,
     "mechanic_id": "holy-shield-bash",
@@ -16862,13 +17532,17 @@
     "ts": 2206107,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
     "happened": "Took 29,292 at 17% HP.",
-    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Kiara Blaiddyd stood in the cone.",
     "cause": "personal",
     "blames": [
@@ -16981,6 +17655,10 @@
     "ts": 2208602,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -17109,6 +17787,10 @@
     "ts": 2208604,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6018,
     "mechanic_id": "eternal-conviction",
@@ -17223,6 +17905,10 @@
     "ts": 2208604,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6018,
     "mechanic_id": "eternal-conviction",
@@ -17377,6 +18063,10 @@
     "ts": 2208876,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -17505,6 +18195,10 @@
     "ts": 2294560,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -17621,6 +18315,10 @@
     "ts": 2294693,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -17749,6 +18447,10 @@
     "ts": 2294961,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -17867,6 +18569,10 @@
     "ts": 2295229,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6638,
     "mechanic_id": "eternal-conviction",
@@ -17997,6 +18703,10 @@
     "ts": 2295361,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6770,
     "mechanic_id": "eternal-conviction",
@@ -18139,6 +18849,10 @@
     "ts": 2295494,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6903,
     "mechanic_id": "eternal-conviction",
@@ -18250,6 +18964,10 @@
     "ts": 2314157,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -18357,6 +19075,10 @@
     "ts": 2323968,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -18455,6 +19177,10 @@
     "ts": 2406499,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -18567,6 +19293,10 @@
     "ts": 2416155,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490,
     "mechanic_id": "skyward-leap",
@@ -18680,6 +19410,10 @@
     "ts": 2416199,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 534,
     "mechanic_id": "skyward-leap",
@@ -18791,6 +19525,10 @@
     "ts": 2416466,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -18874,13 +19612,17 @@
     "ts": 2421412,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-bladedance",
     "mechanic": "Holy Bladedance",
     "outcome": "fail",
     "happened": "Took 32,056 at 18% HP.",
-    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+    "should_have_been": "The cone after each tether. That tank takes several hits around 20\u201322k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
     "went_wrong": "Kite Noodle stood in the cone.",
     "cause": "personal",
     "blames": [
@@ -18990,6 +19732,10 @@
     "ts": 2421634,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -19090,6 +19836,10 @@
     "ts": 2421634,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6013,
     "mechanic_id": "eternal-conviction",
@@ -19207,12 +19957,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 5.6,
-        "amount": 20596
+        "amount": 20596,
+        "hp": 0,
+        "shield": 20596
       }
     ],
     "ts": 2421767,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -19317,6 +20073,7 @@
     "dead": [],
     "group": [
       "Speed Panda",
+      "Kitana Kahn",
       "Spring Nymphar",
       "Absolute Gigachad"
     ],
@@ -19324,6 +20081,10 @@
     "ts": 2567361,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1746,
     "mechanic_id": "sacred-sever",
@@ -19419,6 +20180,10 @@
     "ts": 2568426,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2900,
     "mechanic_id": "shining-blade",
@@ -19499,6 +20264,10 @@
     "ts": 2568382,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2946,
     "mechanic_id": "shining-blade",
@@ -19595,6 +20364,10 @@
     "ts": 2568471,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2990,
     "mechanic_id": "shining-blade",
@@ -19678,6 +20451,10 @@
     "ts": 2568516,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2946,
     "mechanic_id": "shining-blade",
@@ -19760,14 +20537,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigachad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 2570831,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3609,
     "mechanic_id": "sacred-sever",
@@ -19851,14 +20632,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigachad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 2570876,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3565,
     "mechanic_id": "sacred-sever",
@@ -19949,6 +20734,10 @@
     "ts": 2583232,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12312,
     "mechanic_id": "hiemal-storm",
@@ -20037,6 +20826,10 @@
     "ts": 2739648,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -20108,6 +20901,10 @@
     "ts": 2739648,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -20182,6 +20979,10 @@
     "ts": 2739693,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -20254,6 +21055,10 @@
     "ts": 2743511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -20331,6 +21136,10 @@
     "ts": 2744511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -20408,6 +21217,10 @@
     "ts": 2744511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -20485,6 +21298,10 @@
     "ts": 2744511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -20565,6 +21382,10 @@
     "ts": 2754511,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -20665,6 +21486,10 @@
     "ts": 2845982,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -20761,6 +21586,10 @@
     "ts": 2846114,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -20872,6 +21701,10 @@
     "ts": 2846514,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -21006,6 +21839,10 @@
     "ts": 2846647,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6689,
     "mechanic_id": "eternal-conviction",
@@ -21130,6 +21967,10 @@
     "ts": 2846782,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6824,
     "mechanic_id": "eternal-conviction",
@@ -21255,6 +22096,10 @@
     "ts": 2846916,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6958,
     "mechanic_id": "eternal-conviction",
@@ -21345,6 +22190,10 @@
     "ts": 2851607,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -21440,6 +22289,10 @@
     "ts": 2853607,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -21512,6 +22365,10 @@
     "ts": 2920173,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "heavy-impact",
@@ -21594,6 +22451,10 @@
     "ts": 2934933,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -21709,6 +22570,10 @@
     "ts": 2940014,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -21813,6 +22678,10 @@
     "ts": 2940014,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6017,
     "mechanic_id": "eternal-conviction",
@@ -21907,6 +22776,10 @@
     "ts": 2940146,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -22016,6 +22889,10 @@
     "ts": 2940279,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -22112,6 +22989,10 @@
     "ts": 2940413,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6416,
     "mechanic_id": "eternal-conviction",
@@ -22209,6 +23090,10 @@
     "ts": 2940680,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6683,
     "mechanic_id": "eternal-conviction",
@@ -22318,6 +23203,10 @@
     "ts": 2940680,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6683,
     "mechanic_id": "eternal-conviction",
@@ -22401,6 +23290,10 @@
     "ts": 3077861,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55548,
     "mechanic_id": "bright-flare",
@@ -22483,6 +23376,10 @@
     "ts": 3078623,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2944,
     "mechanic_id": "shining-blade",
@@ -22578,6 +23475,10 @@
     "ts": 3078623,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1029,
     "mechanic_id": "shining-blade",
@@ -22662,6 +23563,10 @@
     "ts": 3078667,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2899,
     "mechanic_id": "shining-blade",
@@ -22759,6 +23664,10 @@
     "ts": 3078667,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1118,
     "mechanic_id": "shining-blade",
@@ -22845,6 +23754,10 @@
     "ts": 3078711,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2987,
     "mechanic_id": "shining-blade",
@@ -22910,8 +23823,8 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Spring Nymphar",
-      "Kitana Kahn"
+      "Kitana Kahn",
+      "Spring Nymphar"
     ],
     "unsoaked": [
       "Absolute Gigachad"
@@ -22932,14 +23845,18 @@
     ],
     "group": [
       "Kite Noodle",
-      "Absolute Gigachad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 3081031,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3571,
     "mechanic_id": "sacred-sever",
@@ -22951,11 +23868,11 @@
     "cause": "missing",
     "blames": [
       {
-        "who": "Spring Nymphar",
+        "who": "Kitana Kahn",
         "confidence": 33
       },
       {
-        "who": "Kitana Kahn",
+        "who": "Spring Nymphar",
         "confidence": 33
       },
       {
@@ -23032,6 +23949,10 @@
     "ts": 3087932,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -23147,6 +24068,10 @@
     "ts": 3234594,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 491,
     "mechanic_id": "skyward-leap",
@@ -23294,6 +24219,10 @@
     "ts": 3234638,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535,
     "mechanic_id": "skyward-leap",
@@ -23424,6 +24353,10 @@
     "ts": 3240124,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6021,
     "mechanic_id": "eternal-conviction",
@@ -23568,6 +24501,10 @@
     "ts": 3240124,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -23714,6 +24651,10 @@
     "ts": 3240257,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -23850,6 +24791,10 @@
     "ts": 3240391,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -23999,6 +24944,10 @@
     "ts": 3240658,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -24101,6 +25050,10 @@
     "ts": 3243871,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -24173,6 +25126,10 @@
     "ts": 3281391,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -24244,6 +25201,10 @@
     "ts": 3283345,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -24298,7 +25259,9 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Absolute Gigalad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -24315,6 +25278,10 @@
     "ts": 3284996,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -24322,15 +25289,15 @@
     "outcome": "fail",
     "happened": "Took 64,894 at 56% HP. No personal mitigation.",
     "should_have_been": "The main tank takes the three hits with personal mitigation, about 71\u201386k. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
-    "went_wrong": "Absolute Gigachad died to Ascalon's Might without mitigation.",
-    "cause": "personal",
+    "went_wrong": "Absolute Gigalad was dead, so Absolute Gigachad had to take Ascalon's Might.",
+    "cause": "redirected",
     "blames": [
       {
-        "who": "Absolute Gigachad",
+        "who": "Absolute Gigalad",
         "confidence": 100
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
     "first_causes": [
@@ -24385,6 +25352,10 @@
     "ts": 3286546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -24460,6 +25431,10 @@
     "ts": 3288546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -24536,6 +25511,10 @@
     "ts": 3289546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -24612,6 +25591,10 @@
     "ts": 3289546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -24690,6 +25673,10 @@
     "ts": 3291546,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -24762,6 +25749,10 @@
     "ts": 3443463,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 980,
     "mechanic_id": "dragons-glory",
@@ -24832,15 +25823,19 @@
       "Spring Nymphar"
     ],
     "group": [
-      "Kitana Kahn",
-      "Absolute Gigalad",
       "Kite Noodle",
-      "Spring Nymphar"
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 3445908,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3559,
     "mechanic_id": "sacred-sever",
@@ -24912,15 +25907,19 @@
       "Spring Nymphar"
     ],
     "group": [
-      "Kitana Kahn",
-      "Absolute Gigalad",
       "Kite Noodle",
-      "Spring Nymphar"
+      "Kitana Kahn",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 3445953,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3514,
     "mechanic_id": "sacred-sever",
@@ -24975,7 +25974,11 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -24989,11 +25992,18 @@
       "Kitana Kahn",
       "Spring Nymphar"
     ],
-    "group": [],
+    "group": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd"
+    ],
     "self_hits": [],
     "ts": 3460124,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 14128,
     "mechanic_id": "hiemal-storm",
@@ -25001,15 +26011,19 @@
     "outcome": "fail",
     "happened": "Took 731,296 at 74% HP. A tank takes about 14\u201325k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Absolute Gigalad failed the ice soak.",
-    "cause": "personal",
+    "went_wrong": "The pair took a second ice because 3 players were already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Absolute Gigalad",
-        "confidence": 100
+        "who": "Spring Nymphar",
+        "confidence": 100,
+        "via": [
+          "Kite Noodle",
+          "Kitana Kahn"
+        ]
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
@@ -25048,7 +26062,11 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -25064,11 +26082,18 @@
       "Absolute Gigalad",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Absolute Gigalad",
+      "Kiara Blaiddyd"
+    ],
     "self_hits": [],
     "ts": 3460168,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12437,
     "mechanic_id": "hiemal-storm",
@@ -25076,15 +26101,19 @@
     "outcome": "fail",
     "happened": "Took 1,148,704 at 9% HP. A DPS takes about 26\u201340k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Kiara Blaiddyd failed the ice soak.",
-    "cause": "personal",
+    "went_wrong": "The pair took a second ice because 3 players were already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kiara Blaiddyd",
-        "confidence": 100
+        "who": "Spring Nymphar",
+        "confidence": 100,
+        "via": [
+          "Kite Noodle",
+          "Kitana Kahn"
+        ]
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
     "first_causes": [
@@ -25146,6 +26175,10 @@
     "ts": 3460124,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12438,
     "mechanic_id": "hiemal-storm",
@@ -25243,6 +26276,10 @@
     "ts": 3466402,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 18627,
     "mechanic_id": "eternal-conviction",
@@ -25255,20 +26292,14 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 66,
+        "confidence": 100,
         "via": [
           "Kite Noodle",
+          "Kiara Blaiddyd",
           "Kitana Kahn",
+          "Absolute Gigalad",
           "Loki Doki"
         ]
-      },
-      {
-        "who": "Kiara Blaiddyd",
-        "confidence": 16
-      },
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 16
       }
     ],
     "basis": "hit-list",
@@ -25348,6 +26379,10 @@
     "ts": 3466401,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 18581,
     "mechanic_id": "eternal-conviction",
@@ -25360,20 +26395,14 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 66,
+        "confidence": 100,
         "via": [
           "Kite Noodle",
+          "Kiara Blaiddyd",
           "Kitana Kahn",
+          "Absolute Gigalad",
           "Loki Doki"
         ]
-      },
-      {
-        "who": "Kiara Blaiddyd",
-        "confidence": 16
-      },
-      {
-        "who": "Absolute Gigalad",
-        "confidence": 16
       }
     ],
     "basis": "hit-list",
@@ -25429,6 +26458,10 @@
     "ts": 3541990,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -25509,6 +26542,10 @@
     "ts": 3586793,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 490,
     "mechanic_id": "skyward-leap",
@@ -25599,6 +26636,10 @@
     "ts": 3587194,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -25688,6 +26729,10 @@
     "ts": 3592308,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -25781,6 +26826,10 @@
     "ts": 3592308,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6005,
     "mechanic_id": "eternal-conviction",
@@ -25874,6 +26923,10 @@
     "ts": 3592308,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6005,
     "mechanic_id": "eternal-conviction",
@@ -25970,6 +27023,10 @@
     "ts": 3592441,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -26081,6 +27138,10 @@
     "ts": 3592574,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -26204,6 +27265,10 @@
     "ts": 3592574,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -26284,6 +27349,10 @@
     "ts": 3627180,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -26421,28 +27490,34 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.3,
-        "amount": 37953
+        "amount": 37953,
+        "hp": 20879,
+        "shield": 17074
       }
     ],
     "ts": 3672338,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
-    "happened": "Took 62,668 at 66% HP. Shared by 4 of 5.",
+    "happened": "Took 62,668 at 66% HP (40,736 of 61,615). Dimensional Collapse had taken 37,953 0.3s before.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 4 of 5 because Absolute Gigachad was not in it.",
-    "cause": "missing",
+    "went_wrong": "Spring Nymphar was still low from Dimensional Collapse.",
+    "cause": "self",
     "blames": [
       {
-        "who": "Absolute Gigachad",
+        "who": "Spring Nymphar",
         "confidence": 100
       }
     ],
-    "basis": "hit-list",
+    "basis": "hit",
     "first": false,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
     "first_causes": [
@@ -26602,12 +27677,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.4,
-        "amount": 16426
+        "amount": 16426,
+        "hp": 7478,
+        "shield": 8948
       }
     ],
     "ts": 3672382,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 934,
     "mechanic_id": "holy-shield-bash",
@@ -26759,6 +27840,10 @@
     "ts": 3677447,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -26770,11 +27855,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Absolute Gigachad",
-        "confidence": 50,
-        "via": [
-          "Spring Nymphar"
-        ]
+        "who": "Spring Nymphar",
+        "confidence": 50
       },
       {
         "who": "Kitana Kahn",
@@ -26914,6 +27996,10 @@
     "ts": 3677580,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6132,
     "mechanic_id": "eternal-conviction",
@@ -26925,11 +28011,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Absolute Gigachad",
-        "confidence": 50,
-        "via": [
-          "Spring Nymphar"
-        ]
+        "who": "Spring Nymphar",
+        "confidence": 50
       },
       {
         "who": "Kitana Kahn",
@@ -27081,6 +28164,10 @@
     "ts": 3677580,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -27092,11 +28179,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Absolute Gigachad",
-        "confidence": 50,
-        "via": [
-          "Spring Nymphar"
-        ]
+        "who": "Spring Nymphar",
+        "confidence": 50
       },
       {
         "who": "Kitana Kahn",
@@ -27238,6 +28322,10 @@
     "ts": 3677713,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6265,
     "mechanic_id": "eternal-conviction",
@@ -27249,11 +28337,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Absolute Gigachad",
-        "confidence": 50,
-        "via": [
-          "Spring Nymphar"
-        ]
+        "who": "Spring Nymphar",
+        "confidence": 50
       },
       {
         "who": "Kitana Kahn",
@@ -27396,6 +28481,10 @@
     "ts": 3677846,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6398,
     "mechanic_id": "eternal-conviction",
@@ -27407,11 +28496,8 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Absolute Gigachad",
-        "confidence": 50,
-        "via": [
-          "Spring Nymphar"
-        ]
+        "who": "Spring Nymphar",
+        "confidence": 50
       },
       {
         "who": "Kitana Kahn",
@@ -27518,6 +28604,10 @@
     "ts": 3683210,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -27590,6 +28680,10 @@
     "ts": 3748926,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "heavy-impact",
@@ -27675,6 +28769,10 @@
     "ts": 3768949,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -27762,6 +28860,10 @@
     "ts": 3769083,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -27864,6 +28966,10 @@
     "ts": 3769216,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -27967,6 +29073,10 @@
     "ts": 3769350,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -28057,6 +29167,10 @@
     "ts": 3769484,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6674,
     "mechanic_id": "eternal-conviction",
@@ -28148,6 +29262,10 @@
     "ts": 3769618,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6808,
     "mechanic_id": "eternal-conviction",
@@ -28240,6 +29358,10 @@
     "ts": 3769751,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6941,
     "mechanic_id": "eternal-conviction",
@@ -28323,6 +29445,10 @@
     "ts": 3775427,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -28414,6 +29540,10 @@
     "ts": 3860782,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -28545,6 +29675,10 @@
     "ts": 3865933,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -28658,6 +29792,10 @@
     "ts": 3866066,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6173,
     "mechanic_id": "eternal-conviction",
@@ -28783,6 +29921,10 @@
     "ts": 3866333,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -28884,6 +30026,10 @@
     "ts": 3866600,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6707,
     "mechanic_id": "eternal-conviction",
@@ -29011,6 +30157,10 @@
     "ts": 3866735,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6842,
     "mechanic_id": "eternal-conviction",
@@ -29104,6 +30254,10 @@
     "ts": 3867495,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -29199,6 +30353,10 @@
     "ts": 3871495,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -29271,6 +30429,10 @@
     "ts": 3924440,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -29374,6 +30536,10 @@
     "ts": 3969242,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 491,
     "mechanic_id": "skyward-leap",
@@ -29490,6 +30656,10 @@
     "ts": 3969286,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 535,
     "mechanic_id": "skyward-leap",
@@ -29634,12 +30804,18 @@
         "ability": "Dimensional Collapse",
         "guid": 25564,
         "ago": 0.0,
-        "amount": 15780
+        "amount": 15780,
+        "hp": 1720,
+        "shield": 14060
       }
     ],
     "ts": 3969374,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 623,
     "mechanic_id": "skyward-leap",
@@ -29738,10 +30914,10 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -29761,6 +30937,10 @@
     "ts": 3969685,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 934,
     "mechanic_id": "dragons-rage",
@@ -29855,10 +31035,10 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -29880,6 +31060,10 @@
     "ts": 3969775,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 1024,
     "mechanic_id": "dragons-rage",
@@ -29974,10 +31158,10 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -29998,6 +31182,10 @@
     "ts": 3969730,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 979,
     "mechanic_id": "dragons-rage",
@@ -30161,10 +31349,10 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [
+    "down": [],
+    "unsoaked": [
       "Absolute Gigachad"
     ],
-    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -30187,6 +31375,10 @@
     "ts": 3969818,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 1067,
     "mechanic_id": "dragons-rage",
@@ -30294,6 +31486,10 @@
     "ts": 3974810,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6059,
     "mechanic_id": "eternal-conviction",
@@ -30424,6 +31620,9 @@
     ],
     "dead": [],
     "group": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
       "Absolute Gigachad"
     ],
     "self_hits": [
@@ -30431,12 +31630,18 @@
         "ability": "Dragon's Gaze",
         "guid": 25553,
         "ago": 0.2,
-        "amount": 42449
+        "amount": 42449,
+        "hp": 42449,
+        "shield": 0
       }
     ],
     "ts": 4107337,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 53425,
     "mechanic_id": "sacred-sever",
@@ -30572,6 +31777,10 @@
     "ts": 4107470,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 90,
     "mechanic_id": "dragons-glory",
@@ -30720,6 +31929,10 @@
     "ts": 4107869,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 712,
     "mechanic_id": "dragons-glory",
@@ -30852,6 +32065,10 @@
     "ts": 4108527,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -30968,7 +32185,10 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -30984,13 +32204,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kite Noodle",
       "Kitana Kahn",
-      "Absolute Gigachad"
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 4109023,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55111,
     "mechanic_id": "sacred-sever",
@@ -30998,15 +32224,19 @@
     "outcome": "raw",
     "happened": "Took 75,807 at full HP. Shared by 2 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 2 of 4.",
+    "went_wrong": "The stack was 2 of 4 because Kite Noodle and Loki Doki were already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Kite Noodle",
+        "confidence": 50
+      },
+      {
+        "who": "Loki Doki",
         "confidence": 50
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
     "first_causes": [
@@ -31125,6 +32355,10 @@
     "ts": 4109527,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -31262,6 +32496,10 @@
     "ts": 4109646,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2355,
     "mechanic_id": "bright-flare",
@@ -31393,12 +32631,12 @@
       }
     ],
     "down": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
       "Spring Nymphar",
       "Absolute Gigalad",
-      "Loki Doki",
-      "Kiara Blaiddyd",
-      "Kite Noodle",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -31417,17 +32655,21 @@
       "Loki Doki"
     ],
     "group": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
       "Spring Nymphar",
       "Absolute Gigalad",
-      "Loki Doki",
-      "Kiara Blaiddyd",
-      "Kite Noodle",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 4110532,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1553,
     "mechanic_id": "sacred-sever",
@@ -31439,6 +32681,18 @@
     "cause": "redirected",
     "blames": [
       {
+        "who": "Kite Noodle",
+        "confidence": 16
+      },
+      {
+        "who": "Kiara Blaiddyd",
+        "confidence": 16
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 16
+      },
+      {
         "who": "Spring Nymphar",
         "confidence": 16
       },
@@ -31448,18 +32702,6 @@
       },
       {
         "who": "Loki Doki",
-        "confidence": 16
-      },
-      {
-        "who": "Kiara Blaiddyd",
-        "confidence": 16
-      },
-      {
-        "who": "Kite Noodle",
-        "confidence": 16
-      },
-      {
-        "who": "Speed Panda",
         "confidence": 16
       }
     ],
@@ -31529,6 +32771,10 @@
     "ts": 4190248,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "heavy-impact",
@@ -31622,6 +32868,10 @@
     "ts": 4193090,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -31733,6 +32983,10 @@
     "ts": 4203140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -31840,6 +33094,10 @@
     "ts": 4203097,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
@@ -31961,6 +33219,10 @@
     "ts": 4204823,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -32083,6 +33345,10 @@
     "ts": 4208293,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -32203,6 +33469,10 @@
     "ts": 4208293,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6084,
     "mechanic_id": "eternal-conviction",
@@ -32339,6 +33609,10 @@
     "ts": 4208427,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6218,
     "mechanic_id": "eternal-conviction",
@@ -32475,6 +33749,10 @@
     "ts": 4208427,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6218,
     "mechanic_id": "eternal-conviction",
@@ -32617,6 +33895,10 @@
     "ts": 4288880,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "holy-shield-bash",
@@ -32751,6 +34033,10 @@
     "ts": 4293988,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 5864,
     "mechanic_id": "eternal-conviction",
@@ -32886,6 +34172,10 @@
     "ts": 4294122,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -33022,6 +34312,10 @@
     "ts": 4294388,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -33134,6 +34428,10 @@
     "ts": 4294655,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6752,
     "mechanic_id": "eternal-conviction",
@@ -33272,6 +34570,10 @@
     "ts": 4294788,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6885,
     "mechanic_id": "eternal-conviction",
@@ -33376,6 +34678,10 @@
     "ts": 4296801,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -33497,6 +34803,10 @@
     "ts": 4308801,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -33598,6 +34908,10 @@
     "ts": 4388469,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -33700,6 +35014,10 @@
     "ts": 4403585,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6001,
     "mechanic_id": "eternal-conviction",
@@ -33818,6 +35136,10 @@
     "ts": 4403717,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -33937,6 +35259,10 @@
     "ts": 4403984,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6400,
     "mechanic_id": "eternal-conviction",
@@ -34057,6 +35383,10 @@
     "ts": 4404118,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -34178,6 +35508,10 @@
     "ts": 4404383,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6799,
     "mechanic_id": "eternal-conviction",
@@ -34286,6 +35620,10 @@
     "ts": 4404518,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6934,
     "mechanic_id": "eternal-conviction",
@@ -34384,6 +35722,10 @@
     "ts": 4406136,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -34487,6 +35829,10 @@
     "ts": 4409136,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -34611,6 +35957,10 @@
     "ts": 4494440,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -34733,6 +36083,10 @@
     "ts": 4494573,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -34844,6 +36198,10 @@
     "ts": 4494708,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6325,
     "mechanic_id": "eternal-conviction",
@@ -34968,6 +36326,10 @@
     "ts": 4494975,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -35081,6 +36443,10 @@
     "ts": 4495109,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6726,
     "mechanic_id": "eternal-conviction",
@@ -35195,6 +36561,10 @@
     "ts": 4495376,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6993,
     "mechanic_id": "eternal-conviction",
@@ -35308,6 +36678,10 @@
     "ts": 4500003,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -35402,6 +36776,10 @@
     "ts": 4500003,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -35510,6 +36888,10 @@
     "ts": 4571302,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -35634,6 +37016,10 @@
     "ts": 4581359,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 845,
     "mechanic_id": "holy-shield-bash",
@@ -35731,6 +37117,10 @@
     "ts": 4586429,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -35837,6 +37227,10 @@
     "ts": 4586561,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6136,
     "mechanic_id": "eternal-conviction",
@@ -35944,6 +37338,10 @@
     "ts": 4586562,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6048,
     "mechanic_id": "eternal-conviction",
@@ -36066,6 +37464,10 @@
     "ts": 4586695,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -36174,6 +37576,10 @@
     "ts": 4586695,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "eternal-conviction",
@@ -36284,6 +37690,10 @@
     "ts": 4586962,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6537,
     "mechanic_id": "eternal-conviction",
@@ -36383,6 +37793,10 @@
     "ts": 4587804,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -36541,12 +37955,18 @@
         "ability": "Dragon's Gaze",
         "guid": 25553,
         "ago": 1.1,
-        "amount": 44750
+        "amount": 44750,
+        "hp": 37400,
+        "shield": 7350
       }
     ],
     "ts": 4723034,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "dragons-glory",
@@ -36705,6 +38125,10 @@
     "ts": 4723256,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -36879,12 +38303,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 0.9,
-        "amount": 42307
+        "amount": 42307,
+        "hp": 30626,
+        "shield": 11681
       }
     ],
     "ts": 4723837,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "sacred-sever",
@@ -37045,6 +38475,10 @@
     "ts": 4724256,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -37189,7 +38623,9 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [
       "Absolute Gigalad"
     ],
@@ -37208,6 +38644,7 @@
     ],
     "group": [
       "Kite Noodle",
+      "Kitana Kahn",
       "Absolute Gigalad",
       "Loki Doki"
     ],
@@ -37215,6 +38652,10 @@
     "ts": 4725577,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3569,
     "mechanic_id": "sacred-sever",
@@ -37222,12 +38663,16 @@
     "outcome": "raw",
     "happened": "Took 84,248 at 25% HP. Shared by 2 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 2 of 4 because Absolute Gigalad was not in it.",
+    "went_wrong": "The stack was 2 of 4 because Kitana Kahn and Absolute Gigalad were missing.",
     "cause": "missing",
     "blames": [
       {
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
         "who": "Absolute Gigalad",
-        "confidence": 100
+        "confidence": 50
       }
     ],
     "basis": "hit-list",
@@ -37359,7 +38804,9 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kitana Kahn"
+    ],
     "unsoaked": [
       "Absolute Gigalad"
     ],
@@ -37379,6 +38826,7 @@
     ],
     "group": [
       "Kite Noodle",
+      "Kitana Kahn",
       "Absolute Gigalad",
       "Loki Doki"
     ],
@@ -37386,6 +38834,10 @@
     "ts": 4725621,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3524,
     "mechanic_id": "sacred-sever",
@@ -37393,12 +38845,16 @@
     "outcome": "raw",
     "happened": "Took 85,659 at 73% HP. Shared by 2 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 2 of 4 because Absolute Gigalad was not in it.",
+    "went_wrong": "The stack was 2 of 4 because Kitana Kahn and Absolute Gigalad were missing.",
     "cause": "missing",
     "blames": [
       {
+        "who": "Kitana Kahn",
+        "confidence": 50
+      },
+      {
         "who": "Absolute Gigalad",
-        "confidence": 100
+        "confidence": 50
       }
     ],
     "basis": "hit-list",
@@ -37552,12 +39008,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 3.8,
-        "amount": 29236
+        "amount": 29236,
+        "hp": 29236,
+        "shield": 0
       }
     ],
     "ts": 4726156,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 4104,
     "mechanic_id": "bright-flare",
@@ -37704,6 +39166,7 @@
     ],
     "down": [
       "Kiara Blaiddyd",
+      "Speed Panda",
       "Spring Nymphar"
     ],
     "unsoaked": [],
@@ -37724,6 +39187,7 @@
     ],
     "group": [
       "Kiara Blaiddyd",
+      "Speed Panda",
       "Spring Nymphar",
       "Absolute Gigachad"
     ],
@@ -37731,6 +39195,10 @@
     "ts": 4727358,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3477,
     "mechanic_id": "sacred-sever",
@@ -37738,16 +39206,20 @@
     "outcome": "raw",
     "happened": "Took 107,481 at full HP. Shared by 1 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 1 of 4 because Kiara Blaiddyd and Spring Nymphar were already dead.",
+    "went_wrong": "The stack was 1 of 4 because 3 players were already dead.",
     "cause": "missing",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 33
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 50
+        "confidence": 33
       }
     ],
     "basis": "hit-list",
@@ -37850,6 +39322,10 @@
     "ts": 4841957,
     "missing": [],
     "off_tank": "",
+    "main_tank": "Absolute Gigalad",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
@@ -37954,6 +39430,10 @@
     "ts": 4867598,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -38072,6 +39552,10 @@
     "ts": 4869296,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1113,
     "mechanic_id": "shining-blade",
@@ -38190,6 +39674,10 @@
     "ts": 4870498,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 535,
     "mechanic_id": "bright-flare",
@@ -38324,12 +39812,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 3.1,
-        "amount": 38736
+        "amount": 38736,
+        "hp": 38736,
+        "shield": 0
       }
     ],
     "ts": 4870453,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3963,
     "mechanic_id": "bright-flare",
@@ -38465,6 +39959,10 @@
     "ts": 4870542,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 491,
     "mechanic_id": "bright-flare",
@@ -38601,6 +40099,10 @@
     "ts": 4870587,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 581,
     "mechanic_id": "bright-flare",
@@ -38727,6 +40229,7 @@
     ],
     "down": [
       "Kiara Blaiddyd",
+      "Speed Panda",
       "Absolute Gigalad"
     ],
     "unsoaked": [],
@@ -38746,13 +40249,18 @@
     ],
     "group": [
       "Kiara Blaiddyd",
-      "Absolute Gigalad",
-      "Spring Nymphar"
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 4871703,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3477,
     "mechanic_id": "sacred-sever",
@@ -38760,16 +40268,48 @@
     "outcome": "raw",
     "happened": "Took 172,742 at 41% HP. Shared by 1 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 1 of 4 because Kiara Blaiddyd and Absolute Gigalad were already dead.",
+    "went_wrong": "The stack was 1 of 4 because 3 players were already dead.",
     "cause": "missing",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 50
+        "confidence": 33
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 6
+      },
+      {
+        "who": "Kite Noodle",
+        "confidence": 6,
+        "via": [
+          "Speed Panda"
+        ]
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 6,
+        "via": [
+          "Speed Panda"
+        ]
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 6,
+        "via": [
+          "Speed Panda"
+        ]
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 6,
+        "via": [
+          "Speed Panda"
+        ]
       },
       {
         "who": "Absolute Gigalad",
-        "confidence": 50
+        "confidence": 33
       }
     ],
     "basis": "hit-list",
@@ -38876,12 +40416,18 @@
         "ability": "Bright Flare",
         "guid": 25295,
         "ago": 1.7,
-        "amount": 61200
+        "amount": 61200,
+        "hp": 61200,
+        "shield": 0
       }
     ],
     "ts": 4872372,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 2454,
     "mechanic_id": "bright-flare",
@@ -38969,6 +40515,10 @@
     "ts": 5065518,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 179,
     "mechanic_id": "dragons-glory",
@@ -39072,6 +40622,10 @@
     "ts": 5066341,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -39167,15 +40721,19 @@
       "Loki Doki"
     ],
     "group": [
-      "Loki Doki",
-      "Speed Panda",
       "Kiara Blaiddyd",
-      "Absolute Gigalad"
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5068941,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3555,
     "mechanic_id": "sacred-sever",
@@ -39274,15 +40832,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Loki Doki",
-      "Speed Panda",
       "Kiara Blaiddyd",
-      "Absolute Gigalad"
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5068899,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3603,
     "mechanic_id": "sacred-sever",
@@ -39400,6 +40962,10 @@
     "ts": 5083249,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12536,
     "mechanic_id": "hiemal-storm",
@@ -39487,7 +41053,12 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -39502,11 +41073,18 @@
       "Absolute Gigalad",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "self_hits": [],
     "ts": 5083249,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12492,
     "mechanic_id": "hiemal-storm",
@@ -39514,15 +41092,27 @@
     "outcome": "fail",
     "happened": "Took 1,101,384 at 67% HP. A healer takes about 23\u201338k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Spring Nymphar failed the ice soak.",
-    "cause": "personal",
+    "went_wrong": "The pair took a second ice because 4 players were already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Spring Nymphar",
-        "confidence": 100
+        "who": "Speed Panda",
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd",
+          "Loki Doki"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd",
+          "Loki Doki"
+        ]
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
@@ -39607,7 +41197,12 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -39624,11 +41219,18 @@
       "Absolute Gigalad",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "self_hits": [],
     "ts": 5083293,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12491,
     "mechanic_id": "hiemal-storm",
@@ -39636,15 +41238,27 @@
     "outcome": "fail",
     "happened": "Took 1,093,339 at 51% HP. A DPS takes about 26\u201340k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Kitana Kahn failed the ice soak.",
-    "cause": "personal",
+    "went_wrong": "The pair took a second ice because 4 players were already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kitana Kahn",
-        "confidence": 100
+        "who": "Speed Panda",
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd",
+          "Loki Doki"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd",
+          "Loki Doki"
+        ]
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
     "first_causes": [
@@ -39726,6 +41340,10 @@
     "ts": 5087021,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 16353,
     "mechanic_id": "frostbite",
@@ -39801,6 +41419,10 @@
     "ts": 5377899,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -39870,6 +41492,10 @@
     "ts": 5377899,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -39940,6 +41566,10 @@
     "ts": 5381231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -40015,6 +41645,10 @@
     "ts": 5382231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -40091,6 +41725,10 @@
     "ts": 5383231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -40167,6 +41805,10 @@
     "ts": 5383231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -40245,6 +41887,10 @@
     "ts": 5384231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -40324,6 +41970,10 @@
     "ts": 5385231,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -40425,8 +42075,9 @@
     ],
     "down": [],
     "unsoaked": [
-      "Spring Nymphar",
+      "Speed Panda",
       "Kitana Kahn",
+      "Spring Nymphar",
       "Absolute Gigachad"
     ],
     "doubled": [],
@@ -40437,14 +42088,19 @@
     ],
     "dead": [],
     "group": [
-      "Spring Nymphar",
+      "Speed Panda",
       "Kitana Kahn",
+      "Spring Nymphar",
       "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 5519253,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 53369,
     "mechanic_id": "sacred-sever",
@@ -40542,6 +42198,10 @@
     "ts": 5519481,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -40626,7 +42286,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -40641,13 +42303,18 @@
     ],
     "group": [
       "Kite Noodle",
-      "Absolute Gigalad",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5524413,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3559,
     "mechanic_id": "sacred-sever",
@@ -40655,15 +42322,15 @@
     "outcome": "raw",
     "happened": "Took 45,390 at 22% HP. Shared by 3 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 3 of 4.",
+    "went_wrong": "The stack was 3 of 4 because Spring Nymphar was not in it.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
         "confidence": 100
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
@@ -40732,7 +42399,9 @@
       }
     ],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Spring Nymphar"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -40748,13 +42417,18 @@
     ],
     "group": [
       "Kite Noodle",
-      "Absolute Gigalad",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5524502,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3559,
     "mechanic_id": "sacred-sever",
@@ -40762,15 +42436,15 @@
     "outcome": "raw",
     "happened": "Took 58,507 at 31% HP. Shared by 3 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 3 of 4.",
+    "went_wrong": "The stack was 3 of 4 because Spring Nymphar was not in it.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
         "confidence": 100
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
@@ -40867,6 +42541,10 @@
     "ts": 5528481,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -40954,7 +42632,13 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -40971,11 +42655,18 @@
       "Spring Nymphar",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
     "self_hits": [],
     "ts": 5537083,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 12626,
     "mechanic_id": "hiemal-storm",
@@ -40983,15 +42674,31 @@
     "outcome": "fail",
     "happened": "Took 764,460 at 74% HP. A tank takes about 14\u201325k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Absolute Gigalad failed the ice soak.",
-    "cause": "personal",
+    "went_wrong": "The pair took a second ice because 5 players were already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Absolute Gigalad",
-        "confidence": 100
+        "who": "Spring Nymphar",
+        "confidence": 40,
+        "via": [
+          "Kite Noodle",
+          "Kiara Blaiddyd"
+        ]
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 20
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 20
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 20
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
@@ -41059,7 +42766,13 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -41075,11 +42788,18 @@
       "Kitana Kahn",
       "Loki Doki"
     ],
-    "group": [],
+    "group": [
+      "Absolute Gigalad",
+      "Spring Nymphar"
+    ],
     "self_hits": [],
     "ts": 5537039,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 14403,
     "mechanic_id": "hiemal-storm",
@@ -41087,15 +42807,31 @@
     "outcome": "fail",
     "happened": "Took 1,084,517 at full HP. A healer takes about 23\u201338k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "Spring Nymphar failed the ice soak.",
-    "cause": "personal",
+    "went_wrong": "The pair took a second ice because 5 players were already dead.",
+    "cause": "missing",
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 100
+        "confidence": 40,
+        "via": [
+          "Kite Noodle",
+          "Kiara Blaiddyd"
+        ]
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 20
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 20
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 20
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
@@ -41183,6 +42919,10 @@
     "ts": 5542990,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 20265,
     "mechanic_id": "frostbite",
@@ -41322,6 +43062,10 @@
     "ts": 5687492,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -41458,12 +43202,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 1.5,
-        "amount": 44523
+        "amount": 44523,
+        "hp": 44523,
+        "shield": 0
       }
     ],
     "ts": 5688060,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55142,
     "mechanic_id": "sacred-sever",
@@ -41593,12 +43343,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 1.9,
-        "amount": 28755
+        "amount": 28755,
+        "hp": 28755,
+        "shield": 0
       }
     ],
     "ts": 5688771,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 667,
     "mechanic_id": "bright-flare",
@@ -41728,6 +43484,10 @@
     "ts": 5689129,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 981,
     "mechanic_id": "bright-flare",
@@ -41857,9 +43617,9 @@
       "Absolute Gigachad"
     ],
     "unsoaked": [
-      "Loki Doki",
       "Kite Noodle",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "doubled": [],
     "marked": [],
@@ -41875,15 +43635,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Absolute Gigachad",
-      "Loki Doki",
       "Kite Noodle",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5689616,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1424,
     "mechanic_id": "sacred-sever",
@@ -41997,9 +43761,9 @@
     ],
     "down": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -42021,14 +43785,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5691441,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 5025,
     "mechanic_id": "sacred-sever",
@@ -42044,19 +43812,19 @@
         "confidence": 25
       },
       {
-        "who": "Absolute Gigalad",
-        "confidence": 25
+        "who": "Absolute Gigachad",
+        "confidence": 25,
+        "via": [
+          "Kitana Kahn"
+        ]
       },
       {
         "who": "Spring Nymphar",
         "confidence": 25
       },
       {
-        "who": "Absolute Gigachad",
-        "confidence": 25,
-        "via": [
-          "Kitana Kahn"
-        ]
+        "who": "Absolute Gigalad",
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -42157,9 +43925,9 @@
     ],
     "down": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -42179,14 +43947,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5691351,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 4980,
     "mechanic_id": "sacred-sever",
@@ -42202,19 +43974,19 @@
         "confidence": 25
       },
       {
-        "who": "Absolute Gigalad",
-        "confidence": 25
+        "who": "Absolute Gigachad",
+        "confidence": 25,
+        "via": [
+          "Kitana Kahn"
+        ]
       },
       {
         "who": "Spring Nymphar",
         "confidence": 25
       },
       {
-        "who": "Absolute Gigachad",
-        "confidence": 25,
-        "via": [
-          "Kitana Kahn"
-        ]
+        "who": "Absolute Gigalad",
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -42329,9 +44101,9 @@
     ],
     "down": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -42352,14 +44124,18 @@
     ],
     "group": [
       "Speed Panda",
-      "Absolute Gigalad",
+      "Kitana Kahn",
       "Spring Nymphar",
-      "Kitana Kahn"
+      "Absolute Gigalad"
     ],
     "self_hits": [],
     "ts": 5691396,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 5068,
     "mechanic_id": "sacred-sever",
@@ -42375,19 +44151,19 @@
         "confidence": 25
       },
       {
-        "who": "Absolute Gigalad",
-        "confidence": 25
+        "who": "Absolute Gigachad",
+        "confidence": 25,
+        "via": [
+          "Kitana Kahn"
+        ]
       },
       {
         "who": "Spring Nymphar",
         "confidence": 25
       },
       {
-        "who": "Absolute Gigachad",
-        "confidence": 25,
-        "via": [
-          "Kitana Kahn"
-        ]
+        "who": "Absolute Gigalad",
+        "confidence": 25
       }
     ],
     "basis": "hit-list",
@@ -42451,6 +44227,10 @@
     "ts": 5727814,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -42522,6 +44302,10 @@
     "ts": 5825677,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 45,
     "mechanic_id": "dragons-glory",
@@ -42595,6 +44379,10 @@
     "ts": 5825811,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 222,
     "mechanic_id": "dragons-glory",
@@ -42669,6 +44457,10 @@
     "ts": 5825945,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 401,
     "mechanic_id": "dragons-glory",
@@ -42744,6 +44536,10 @@
     "ts": 5826078,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 580,
     "mechanic_id": "dragons-glory",
@@ -42813,10 +44609,10 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -42835,15 +44631,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5828838,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1426,
     "mechanic_id": "sacred-sever",
@@ -42855,6 +44655,10 @@
     "cause": "redirected",
     "blames": [
       {
+        "who": "Kiara Blaiddyd",
+        "confidence": 25
+      },
+      {
         "who": "Speed Panda",
         "confidence": 25
       },
@@ -42864,10 +44668,6 @@
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
-      },
-      {
-        "who": "Kiara Blaiddyd",
         "confidence": 25
       }
     ],
@@ -42925,10 +44725,10 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -42948,15 +44748,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5828883,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1559,
     "mechanic_id": "sacred-sever",
@@ -42968,6 +44772,10 @@
     "cause": "redirected",
     "blames": [
       {
+        "who": "Kiara Blaiddyd",
+        "confidence": 25
+      },
+      {
         "who": "Speed Panda",
         "confidence": 25
       },
@@ -42977,10 +44785,6 @@
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
-      },
-      {
-        "who": "Kiara Blaiddyd",
         "confidence": 25
       }
     ],
@@ -43038,10 +44842,10 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -43062,15 +44866,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5828928,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1560,
     "mechanic_id": "sacred-sever",
@@ -43082,6 +44890,10 @@
     "cause": "redirected",
     "blames": [
       {
+        "who": "Kiara Blaiddyd",
+        "confidence": 25
+      },
+      {
         "who": "Speed Panda",
         "confidence": 25
       },
@@ -43091,10 +44903,6 @@
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
-      },
-      {
-        "who": "Kiara Blaiddyd",
         "confidence": 25
       }
     ],
@@ -43152,10 +44960,10 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -43177,15 +44985,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kiara Blaiddyd",
       "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5828973,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1694,
     "mechanic_id": "sacred-sever",
@@ -43197,6 +45009,10 @@
     "cause": "redirected",
     "blames": [
       {
+        "who": "Kiara Blaiddyd",
+        "confidence": 25
+      },
+      {
         "who": "Speed Panda",
         "confidence": 25
       },
@@ -43206,10 +45022,6 @@
       },
       {
         "who": "Loki Doki",
-        "confidence": 25
-      },
-      {
-        "who": "Kiara Blaiddyd",
         "confidence": 25
       }
     ],
@@ -43302,6 +45114,10 @@
     "ts": 5975320,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "shining-blade",
@@ -43413,8 +45229,8 @@
     ],
     "down": [],
     "unsoaked": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "doubled": [],
     "marked": [],
@@ -43428,13 +45244,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5975633,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "sacred-sever",
@@ -43557,8 +45379,8 @@
     ],
     "down": [],
     "unsoaked": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "doubled": [],
     "marked": [],
@@ -43573,13 +45395,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5975678,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "sacred-sever",
@@ -43691,8 +45519,8 @@
     ],
     "down": [],
     "unsoaked": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "doubled": [],
     "marked": [],
@@ -43708,13 +45536,19 @@
       "Absolute Gigalad"
     ],
     "group": [
-      "Loki Doki",
-      "Kiara Blaiddyd"
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 5975722,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "sacred-sever",
@@ -43855,12 +45689,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 0.9,
-        "amount": 36724
+        "amount": 36724,
+        "hp": 28448,
+        "shield": 8276
       }
     ],
     "ts": 5977367,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55121,
     "mechanic_id": "sacred-sever",
@@ -44002,12 +45842,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 0.9,
-        "amount": 37514
+        "amount": 37514,
+        "hp": 29182,
+        "shield": 8332
       }
     ],
     "ts": 5977501,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "sacred-sever",
@@ -44151,6 +45997,10 @@
     "ts": 5978434,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 978,
     "mechanic_id": "shining-blade",
@@ -44295,6 +46145,10 @@
     "ts": 5978478,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1066,
     "mechanic_id": "shining-blade",
@@ -44371,6 +46225,10 @@
     "ts": 6014813,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "ascalons-mercy-concealed",
@@ -44470,6 +46328,10 @@
     "ts": 6113808,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -44632,6 +46494,10 @@
     "ts": 6115689,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1511,
     "mechanic_id": "sacred-sever",
@@ -44784,6 +46650,10 @@
     "ts": 6115734,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1601,
     "mechanic_id": "sacred-sever",
@@ -44938,6 +46808,10 @@
     "ts": 6115822,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1555,
     "mechanic_id": "sacred-sever",
@@ -45091,6 +46965,10 @@
     "ts": 6115777,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 1554,
     "mechanic_id": "sacred-sever",
@@ -45221,12 +47099,18 @@
         "ability": "Dragon's Glory",
         "guid": 25554,
         "ago": 3.6,
-        "amount": 40914
+        "amount": 40914,
+        "hp": 40914,
+        "shield": 0
       }
     ],
     "ts": 6116134,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3736,
     "mechanic_id": "bright-flare",
@@ -45358,6 +47242,10 @@
     "ts": 6116444,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3957,
     "mechanic_id": "bright-flare",
@@ -45504,12 +47392,18 @@
         "ability": "Bright Flare",
         "guid": 25295,
         "ago": 1.0,
-        "amount": 60471
+        "amount": 60471,
+        "hp": 60471,
+        "shield": 0
       }
     ],
     "ts": 6117508,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 5066,
     "mechanic_id": "sacred-sever",
@@ -45582,6 +47476,10 @@
     "ts": 6193485,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -45665,10 +47563,7 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": [
-      "Absolute Gigachad",
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -45688,6 +47583,10 @@
     "ts": 6199927,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 932,
     "mechanic_id": "dragons-rage",
@@ -45776,10 +47675,7 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": [
-      "Absolute Gigachad",
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -45798,6 +47694,10 @@
     "ts": 6199882,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 887,
     "mechanic_id": "dragons-rage",
@@ -45981,6 +47881,10 @@
     "ts": 6199972,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 977,
     "mechanic_id": "holy-shield-bash",
@@ -46175,6 +48079,10 @@
     "ts": 6199972,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 977,
     "mechanic_id": "holy-shield-bash",
@@ -46263,10 +48171,7 @@
     "down": [
       "Kite Noodle"
     ],
-    "unsoaked": [
-      "Absolute Gigachad",
-      "Absolute Gigalad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -46289,6 +48194,10 @@
     "ts": 6199973,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 978,
     "mechanic_id": "dragons-rage",
@@ -46373,6 +48282,10 @@
     "ts": 6202485,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -46450,6 +48363,10 @@
     "ts": 6203485,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -46550,6 +48467,10 @@
     "ts": 6205070,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 6075,
     "mechanic_id": "eternal-conviction",
@@ -46639,6 +48560,10 @@
     "ts": 8345610,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "sacred-sever",
@@ -46723,6 +48648,10 @@
     "ts": 8345654,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Skyward Leap",
     "amp_ms": 55158,
     "mechanic_id": "sacred-sever",
@@ -46798,15 +48727,19 @@
       "Kiara Blaiddyd"
     ],
     "group": [
+      "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
       "Absolute Gigalad",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 8347397,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3573,
     "mechanic_id": "sacred-sever",
@@ -46888,15 +48821,19 @@
       "Kitana Kahn"
     ],
     "group": [
+      "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
       "Absolute Gigalad",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 8347530,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3660,
     "mechanic_id": "sacred-sever",
@@ -46977,15 +48914,19 @@
       "Kitana Kahn"
     ],
     "group": [
+      "Speed Panda",
       "Kitana Kahn",
-      "Loki Doki",
       "Absolute Gigalad",
-      "Speed Panda"
+      "Loki Doki"
     ],
     "self_hits": [],
     "ts": 8347442,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 3485,
     "mechanic_id": "sacred-sever",
@@ -47050,8 +48991,8 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [
-      "Kiara Blaiddyd",
-      "Kite Noodle"
+      "Kite Noodle",
+      "Kiara Blaiddyd"
     ],
     "unsoaked": [],
     "doubled": [],
@@ -47069,13 +49010,19 @@
       "Loki Doki"
     ],
     "group": [
+      "Kite Noodle",
       "Kiara Blaiddyd",
-      "Kite Noodle"
+      "Spring Nymphar",
+      "Absolute Gigachad"
     ],
     "self_hits": [],
     "ts": 8349140,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "sacred-sever",
@@ -47083,23 +49030,23 @@
     "outcome": "raw",
     "happened": "Took 91,429 at full HP. Shared by 2 of 4.",
     "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
-    "went_wrong": "The stack was 2 of 4 because Kiara Blaiddyd and Kite Noodle were already dead.",
+    "went_wrong": "The stack was 2 of 4 because Kite Noodle and Kiara Blaiddyd were already dead.",
     "cause": "missing",
     "blames": [
       {
         "who": "Spring Nymphar",
         "confidence": 50,
         "via": [
-          "Kiara Blaiddyd",
-          "Kite Noodle"
+          "Kite Noodle",
+          "Kiara Blaiddyd"
         ]
       },
       {
         "who": "Absolute Gigachad",
         "confidence": 50,
         "via": [
-          "Kiara Blaiddyd",
-          "Kite Noodle"
+          "Kite Noodle",
+          "Kiara Blaiddyd"
         ]
       }
     ],
@@ -47162,6 +49109,10 @@
     "ts": 8356889,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "",
     "amp_ms": null,
     "mechanic_id": "deathwall",
@@ -47251,6 +49202,10 @@
     "ts": 8367945,
     "missing": [],
     "off_tank": "",
+    "main_tank": "",
+    "stunned_by": [],
+    "knocked_by": [],
+    "baited_by": [],
     "amp_via": "Sacred Sever",
     "amp_ms": 20460,
     "mechanic_id": "eternal-conviction",

@@ -1,5 +1,6 @@
 """Rules the pull-by-pull blame audit settled, pinned on the saved logs."""
 
+import copy
 import json
 import shutil
 import tempfile
@@ -124,11 +125,20 @@ class CastVerdictTest(unittest.TestCase):
 class DragonsRageStackTest(unittest.TestCase):
     """Everyone without a Skyward Leap marker stacks, both tanks too. A short stack names who was not in it."""
 
-    def test_a_living_player_away_from_the_stack_owns_it(self):
-        # Gigachad stood in a Dimensional Collapse puddle instead of the stack.
+    def test_own_puddle_that_ate_the_shield_comes_before_the_missing_player(self):
+        # Gigachad stood in a Dimensional Collapse puddle instead of the stack, but Spring
+        # stood in one too. It ate her 17k shield at full HP; with it she would have lived.
         spring = _one("3wzL6x4VHTmvNkhq", 33, "Spring Nymphar", "Dragon's Rage")
         self.assertEqual(spring.fact.unsoaked, ["Absolute Gigachad"])
-        self.assertEqual(_owners(spring), [("Absolute Gigachad", 100)])
+        self.assertEqual(spring.fact.self_hits[0]["shield"], 17074)
+        self.assertEqual((spring.outcome, spring.cause), ("raw", "self"))
+        self.assertEqual(_owners(spring), [("Spring Nymphar", 100)])
+
+    def test_a_living_player_away_from_the_stack_owns_it(self):
+        for code in CODES:
+            for item in _judged(code)[4]:
+                if item.mechanic_id == "dragons-rage" and item.cause == "missing" and item.fact.unsoaked and not item.fact.down:
+                    self.assertEqual([who for who, _share in _owners(item)], item.fact.unsoaked, (code, item.fact.fight))
 
     def test_a_dead_player_passes_it_on(self):
         loki = _one("3wzL6x4VHTmvNkhq", 17, "Loki Doki", "Dragon's Rage")
@@ -168,7 +178,11 @@ class GroupResetTest(unittest.TestCase):
     """Several players walking into the wall together as the pull's first event agreed to reset."""
 
     def test_a_group_walk_first_is_nobodys_mistake(self):
-        rows = [item for item in _judged("8DYNHQx4C7ytdLb9")[4] if item.fact.fight == 33]
+        # Pull 33's five wall deaths without the landing that knocked them there: a group walk.
+        facts = [copy.deepcopy(fact) for fact in _judged("8DYNHQx4C7ytdLb9")[2] if fact.fight == 33]
+        for fact in facts:
+            fact.knocked_by = []
+        rows = judge_report(facts, PACK, roster_from_meta(_judged("8DYNHQx4C7ytdLb9")[1], PACK))
         resets = [item for item in rows if item.cause == "reset"]
         self.assertEqual(len(resets), 5)
         for item in resets:
@@ -176,6 +190,16 @@ class GroupResetTest(unittest.TestCase):
             self.assertEqual(item.blames, [])
             self.assertFalse(item.first)
         self.assertEqual(rows[0].first_causes, [{"mechanic": "Group reset", "owners": ["Group reset"]}])
+
+    def test_a_knockback_into_the_wall_is_not_a_reset(self):
+        # Gigalad's circle landed in the north stack and knocked five players into the wall.
+        rows = [item for item in _judged("8DYNHQx4C7ytdLb9")[4] if item.fact.fight == 33 and item.fact.t < 40]
+        walls = [item for item in rows if item.mechanic_id == "deathwall"]
+        self.assertEqual(len(walls), 5)
+        for item in walls:
+            self.assertEqual((item.outcome, item.cause, item.basis), ("fail", "knocked", "hit-list"))
+            self.assertEqual(_owners(item), [("Absolute Gigalad", 100)])
+            self.assertEqual(item.went_wrong, f"Absolute Gigalad's landing knocked {item.fact.name} into the deathwall.")
 
     def test_a_wall_after_a_mistake_is_still_a_fail(self):
         walls = [

@@ -78,6 +78,14 @@ class DeathFact:
     missing: list[str] = field(default_factory=list)
     # The report's off tank, on deaths to a hit only the off tank takes.
     off_tank: str = ""
+    # The report's main tank, on deaths to a hit only the main tank takes.
+    main_tank: str = ""
+    # Who drew the hit that stunned them in place, such as the tether holder whose bash hit them.
+    stunned_by: list[str] = field(default_factory=list)
+    # On a death at the deathwall: whose landing knocked them into it.
+    knocked_by: list[str] = field(default_factory=list)
+    # Who baited the cone that hit them from outside the stack.
+    baited_by: list[str] = field(default_factory=list)
     # The ability that put the latest Vulnerability Up on them before the hit, such as "Darkdragon Dive",
     # and how many milliseconds before the death it landed.
     amp_via: str = ""
@@ -640,8 +648,9 @@ def _self_hits(
                 if event is killing or event.get("fight") != fight or event.get("targetID") != target:
                     continue
                 # A shield it used up is a shield the next hit did not meet.
-                taken = int(event.get("amount") or 0) + int(event.get("absorbed") or 0)
-                if event.get("overkill") or taken <= 0:
+                hp = int(event.get("amount") or 0)
+                shield = int(event.get("absorbed") or 0)
+                if event.get("overkill") or hp + shield <= 0:
                     continue
                 ago = timestamp - event["timestamp"]
                 if 0 < ago <= SELF_HIT_MS:
@@ -649,7 +658,9 @@ def _self_hits(
                         "ability": mechanic.name,
                         "guid": guid,
                         "ago": round(ago / 1000, 1),
-                        "amount": taken,
+                        "amount": hp + shield,
+                        "hp": hp,
+                        "shield": shield,
                     })
     return sorted(found, key=lambda hit: hit["ago"], reverse=True)
 
@@ -813,15 +824,27 @@ def _skip_rows(skipped: list | None, meta: dict, fight: dict, html: str, reason:
 def off_tank(report: Path, meta: dict, pack: FightPack, by_guid: dict[int, list[dict]]) -> str:
     """The report's off tank: `assignments.off_tank` in session.json, or else the
     tank the off-tank hit (Heavenly Heel) landed on in the most pulls."""
+    return _assigned_tank(report, meta, pack, by_guid, "off_tank")
+
+
+def main_tank(report: Path, meta: dict, pack: FightPack, by_guid: dict[int, list[dict]]) -> str:
+    """The report's main tank: `assignments.main_tank` in session.json, or else the
+    tank the main-tank hit (Ascalon's Might) landed on in the most pulls."""
+    return _assigned_tank(report, meta, pack, by_guid, "main_tank")
+
+
+def _assigned_tank(
+    report: Path, meta: dict, pack: FightPack, by_guid: dict[int, list[dict]], seat: str,
+) -> str:
     sidecar = report / "session.json"
     if sidecar.is_file():
-        named = (json.loads(sidecar.read_text(encoding="utf-8")).get("assignments") or {}).get("off_tank")
+        named = (json.loads(sidecar.read_text(encoding="utf-8")).get("assignments") or {}).get(seat)
         if named:
             return named
     tanks = {actor["id"]: actor["name"] for actor in players(meta) if pack.role_of(actor.get("type") or "") == "tank"}
     pulls: dict[str, set[int]] = defaultdict(set)
     for mechanic in pack.mechanics:
-        if not mechanic.off_tank:
+        if not getattr(mechanic, seat):
             continue
         for guid in mechanic.guids:
             for event in by_guid.get(guid, []):
@@ -865,6 +888,8 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
     auras = aura_names(report, mitigation_tables)
     fetched = fetched_guids(report)
     assigned_off_tank = off_tank(report, meta, pack, by_guid)
+    seats = _seat_partners(pack, snapshots, by_guid, names_by_id)
+    assigned_main_tank = main_tank(report, meta, pack, by_guid)
     hit_lists = {**_replay_hits(mitigation_tables, fetched), **by_guid}
     base_hp = max_hp_bases(party, _base_max_hp(by_guid, names_by_id, mitigation_tables, pack.max_hp_buffs))
     marker_casts = _marker_packets(report, pack)
@@ -929,6 +954,7 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                 )
                 fact.prior_debuffs = _prior_debuffs(debuffs, windows, timestamp)
                 fact.ts = timestamp
+                fact.knocked_by = _knocked_by(pack, snapshots, by_guid, fight["id"], target, timestamp, names_by_id)
                 fact.missing = _gaps(report, fight["id"], mitigation_tables, fact, None)
                 facts.append(fact)
                 timed.append((timestamp, fact))
@@ -993,6 +1019,18 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
             mechanic = pack.mechanic_for(guid, phase.id)
             if mechanic and mechanic.off_tank:
                 fact.off_tank = assigned_off_tank
+            if mechanic and mechanic.main_tank:
+                fact.main_tank = assigned_main_tank
+            if mechanic and mechanic.baited:
+                fact.baited_by = _baited_by(
+                    mechanic.baited, event, snapshots.get(guid, []), _positions(report, fight["id"], places),
+                    fight["id"], target, timestamp, fact.t, names_by_id,
+                )
+            if mechanic and mechanic.stun:
+                fact.stunned_by = _stunned_by(
+                    mechanic.stun, mitigation_tables.get(fight["id"]), snapshots, by_guid, positions,
+                    fight["id"], target, timestamp, names_by_id,
+                )
             if mechanic and mechanic.dive_markers:
                 fact.divers = _divers(
                     mitigation_tables, _positions(report, fight["id"], places), fight["id"],
@@ -1026,13 +1064,18 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
             timed, pack, hit_lists, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
             mitigation_tables.get(fight["id"]),
             {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
-            fetched, marker_casts,
+            fetched, marker_casts, snapshots,
+        )
+        _extra_hits(
+            timed, pack, snapshots, fight["id"], _fight_roster(meta, fight["id"]), raises,
+            mitigation_tables.get(fight["id"]), names_by_id,
         )
         _drop_owners(
             timed, pack, fight["id"], positions, mitigation_tables.get(fight["id"]), raises, names_by_id,
         )
         _alternating_groups(
             timed, pack, snapshots, by_guid, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
+            seats,
         )
         _ice_pairs(
             timed, pack, snapshots, fight["id"],
@@ -1074,12 +1117,15 @@ def _missing_bodies(
     roles: dict[str, str] | None = None,
     fetched: set[int] = frozenset(),
     marker_casts: dict[tuple, list[tuple]] | None = None,
+    snapshots: dict[int, list[dict]] | None = None,
 ) -> None:
     """Who was missing from a mechanic that needs every player, or every holder of a debuff.
 
     `down` is dead and not raised when the cast landed. With a soak, the cast landed
     at its first soak hit, `unsoaked` is everyone alive who that soak missed, and
-    `doubled` are the players who shared one soak, such as two in one tower.
+    `doubled` are the players who shared one soak, such as two in one tower. A stack
+    is shared when it snapshots, so a player in its snapshot took a share even when
+    they died before the damage landed.
     """
     for timestamp, fact in timed:
         if timestamp is None:
@@ -1107,6 +1153,13 @@ def _missing_bodies(
             ]
             # A stack is the killing cast itself: its hits land a few milliseconds apart around the deaths.
             until = first + STACK_SLACK_MS if needs.stack else first
+            if needs.stack:
+                window += [
+                    event
+                    for guid in needs.soak
+                    for event in (snapshots or {}).get(guid, [])
+                    if event.get("fight") == fight_id
+                ]
             hits = [event for event in window if at <= event["timestamp"] <= until]
             # This cast's towers came from a fetched file, or no tower file of this set is missing.
             if hits:
@@ -1193,6 +1246,184 @@ def _holders(table: dict | None, guids: list[int], at: int, names_by_id: dict[in
     return {name for name, holding in held.items() if holding}
 
 
+def _bearing(origin: tuple, point: tuple) -> float:
+    """Compass degrees from one replay point to another: 0 is east, 90 south."""
+    return math.degrees(math.atan2(point[1] - origin[1], point[0] - origin[0])) % 360
+
+
+def _apart(left: float, right: float) -> float:
+    return abs((left - right + 180) % 360 - 180)
+
+
+def _sample(places: dict[int, list], actor: int, timestamp: int, slack_ms: int = 1500) -> tuple | None:
+    """Where the actor was at this moment, between the samples either side of it.
+
+    A player is sampled about once a second, so a player on the move is placed on
+    the line between the two samples. With a sample on one side only, the nearest one.
+    """
+    rows = sorted(row for row in places.get(actor) or [] if abs(row[0] - timestamp) <= slack_ms)
+    if not rows:
+        return None
+    before = [row for row in rows if row[0] <= timestamp]
+    after = [row for row in rows if row[0] > timestamp]
+    if before and after:
+        left, right = before[-1], after[0]
+        share = (timestamp - left[0]) / (right[0] - left[0])
+        return left[1] + (right[1] - left[1]) * share, left[2] + (right[2] - left[2]) * share
+    _ts, x, y, _facing = min(rows, key=lambda row: abs(row[0] - timestamp))
+    return x, y
+
+
+def _baited_by(
+    baited,
+    event: dict | None,
+    snapshots: list[dict],
+    places: dict[int, list],
+    fight_id: int,
+    target: int | None,
+    timestamp: int | None,
+    t: float,
+    names_by_id: dict[int, str],
+) -> list[str]:
+    """Who baited the cone that hit this player from outside the stack.
+
+    At the snapshot each cone faces the player it locked on. Most face the stack and
+    one faces the front tank. A cone facing anywhere else was baited by the player
+    standing in that direction when the cones locked. When this player died inside
+    such a cone and it was not their own, its baiter shares the death.
+    """
+    if t > baited.until or event is None or target is None or timestamp is None:
+        return []
+    source = event.get("sourceID")
+    rows = [
+        row for row in snapshots
+        if row.get("fight") == fight_id and row.get("targetID") == target and row.get("sourceID") == source
+        and 0 <= timestamp - row["timestamp"] <= 2500
+    ]
+    snap = max((row["timestamp"] for row in rows), default=event["timestamp"])
+    boss = [row for row in places.get(source) or [] if abs(row[0] - snap) <= 100 and row[3] is not None]
+    if len(boss) < 3:
+        return []
+    origin = (boss[0][1], boss[0][2])
+    facings = [math.degrees(row[3] / 100) % 360 for row in boss]
+    stack = max(facings, key=lambda facing: sum(_apart(facing, other) <= 15 for other in facings))
+    front = (stack + 180) % 360
+    stray = sorted({round(facing, 1) for facing in facings if _apart(facing, stack) > 20 and _apart(facing, front) > 30})
+    here = _sample(places, target, snap)
+    if not stray or here is None:
+        return []
+    lock = snap - round(baited.lock * 1000)
+    bearings = {}
+    for actor, name in names_by_id.items():
+        there = _sample(places, actor, lock)
+        if there is not None:
+            bearings[name] = _bearing(origin, there)
+    owners: list[str] = []
+    for facing in stray:
+        if _apart(_bearing(origin, here), facing) > baited.width:
+            continue
+        aimed = sorted((_apart(bearing, facing), name) for name, bearing in bearings.items())
+        if not aimed or aimed[0][0] > baited.aim:
+            continue
+        baiter = aimed[0][1]
+        if baiter != names_by_id.get(target) and baiter not in owners:
+            owners.append(baiter)
+    return owners
+
+
+# A deathwall death's time is only good to about a second, so a knockback is matched this far back.
+KNOCKED_MS = 2500
+
+
+def _knocked_by(
+    pack: FightPack,
+    snapshots: dict[int, list[dict]],
+    by_guid: dict[int, list[dict]],
+    fight_id: int,
+    target: int | None,
+    timestamp: int | None,
+    names_by_id: dict[int, str],
+) -> list[str]:
+    """Whose landing knocked this player into the deathwall.
+
+    A knockback landing hit them just before they died at the edge, and it was
+    not their own: someone else was first in its hit list.
+    """
+    if target is None or timestamp is None:
+        return []
+    owners: list[str] = []
+    for mechanic in pack.mechanics:
+        if not mechanic.knockback:
+            continue
+        for guid in mechanic.guids:
+            events = [*snapshots.get(guid, []), *by_guid.get(guid, [])]
+            packets: dict[int, list[dict]] = defaultdict(list)
+            for event in events:
+                if event.get("fight") == fight_id and event.get("packetID") is not None:
+                    packets[event["packetID"]].append(event)
+            for rows in packets.values():
+                rows.sort(key=lambda row: row["timestamp"])
+                hit = [row for row in rows if row.get("targetID") == target]
+                if not hit or not -KNOCKED_MS <= hit[0]["timestamp"] - timestamp <= 1000:
+                    continue
+                holder = names_by_id.get(rows[0].get("targetID"))
+                if holder and rows[0].get("targetID") != target and holder not in owners:
+                    owners.append(holder)
+    return owners
+
+
+def _stunned_by(
+    stun,
+    table: dict | None,
+    snapshots: dict[int, list[dict]],
+    by_guid: dict[int, list[dict]],
+    positions: _Positions,
+    fight_id: int,
+    target: int | None,
+    timestamp: int | None,
+    names_by_id: dict[int, str],
+) -> list[str]:
+    """Who drew the hit that stunned this player, when it was aimed at someone else.
+
+    The stun is still on them at the death. The players hit by `stun.casts` just
+    before it are who drew it. With more than one, the one standing nearest the
+    stunned player when it landed. Empty when the player drew it themselves, or
+    when positions cannot tell who it was.
+    """
+    if target is None or timestamp is None or not table:
+        return []
+    applied = None
+    for aura in sorted(table.get("auras") or [], key=lambda row: row[0]):
+        if aura[2] != stun.debuff or aura[5] != target or aura[0] > timestamp:
+            continue
+        if aura[1] in ("applydebuff", "refreshdebuff"):
+            applied = aura[0]
+        elif aura[1] == "removedebuff" and aura[0] < timestamp - 500:
+            applied = None
+    if applied is None:
+        return []
+    drew: set[int] = set()
+    for guid in stun.casts:
+        for event in [*snapshots.get(guid, []), *by_guid.get(guid, [])]:
+            if event.get("fight") != fight_id or event.get("targetID") not in names_by_id:
+                continue
+            if applied - stun.within * 1000 <= event["timestamp"] <= applied + 500:
+                drew.add(event["targetID"])
+    if not drew or target in drew:
+        return []
+    if len(drew) == 1:
+        return [names_by_id[next(iter(drew))]]
+    here = positions.at(fight_id, target, applied, 1500)
+    if here is None:
+        return []
+    near = []
+    for actor in drew:
+        there = positions.at(fight_id, actor, applied, 1500)
+        if there is not None:
+            near.append((math.dist(here, there), names_by_id[actor]))
+    return [min(near)[1]] if near else []
+
+
 def _casts(events: list[dict], fight_id: int, names_by_id: dict[int, str]) -> list[tuple[int, list[str]]]:
     """Each cast of one ability in a pull, as its first hit and its targets, in order.
 
@@ -1215,6 +1446,134 @@ def _casts(events: list[dict], fight_id: int, names_by_id: dict[int, str]) -> li
     return sorted(casts)
 
 
+@dataclass
+class _Seats:
+    """Each player's opposite number in a cast that alternates between two groups, and how
+    often each two players shared a full cast over the report."""
+
+    partners: dict[str, str]
+    together: Counter
+    # One of the two groups the players most often stack in.
+    usual: frozenset[str] = frozenset()
+
+
+def _seat_partners(
+    pack: FightPack,
+    snapshots: dict[int, list[dict]],
+    by_guid: dict[int, list[dict]],
+    names_by_id: dict[int, str],
+) -> _Seats | None:
+    """For a cast that alternates between two groups, each player's opposite number.
+
+    Each group has one player of each seat, such as one tank, one healer, one melee,
+    and one ranged, and a swap trades a player for their opposite number. So the two
+    players of one seat are almost never in the same full cast. The seats are the
+    pairing of the report's players that shares the fewest full casts. None when
+    there are too few full casts, or two pairings fit as well.
+    """
+    together: Counter = Counter()
+    players: set[str] = set()
+    groups: Counter = Counter()
+    full = 0
+    for mechanic in pack.mechanics:
+        if not mechanic.alternating or not mechanic.typical_targets:
+            continue
+        events = [event for guid in mechanic.guids for event in snapshots.get(guid, [])]
+        events = events or [event for guid in mechanic.guids for event in by_guid.get(guid, [])]
+        packets: dict[tuple, set[str]] = defaultdict(set)
+        for event in events:
+            name = names_by_id.get(event.get("targetID"))
+            if name and event.get("packetID") is not None:
+                packets[(event.get("fight"), event["packetID"])].add(name)
+        for names in packets.values():
+            if len(names) != mechanic.typical_targets:
+                continue
+            full += 1
+            players |= names
+            groups[frozenset(names)] += 1
+            for left in names:
+                for right in names:
+                    if left != right:
+                        together[(left, right)] += 1
+    if full < 4 or len(players) % 2 or len(players) > 12:
+        return None
+    costs = sorted(
+        (sum(together[pair] for pair in pairing), pairing)
+        for pairing in _pairings(sorted(players))
+    )
+    if len(costs) > 1 and costs[0][0] == costs[1][0]:
+        return None
+    partners = {}
+    for left, right in costs[0][1]:
+        partners[left], partners[right] = right, left
+    return _Seats(partners, together, groups.most_common(1)[0][0])
+
+
+def _pairings(players: list[str]):
+    """Every way to split these players into pairs."""
+    if not players:
+        yield []
+        return
+    first, rest = players[0], players[1:]
+    for at, other in enumerate(rest):
+        for pairing in _pairings(rest[:at] + rest[at + 1:]):
+            yield [(first, other), *pairing]
+
+
+def _cast_group(casts: list[tuple[int, list[str]]], index: int, roster: list[str]) -> list[str] | None:
+    """Whoever took the cast two before this one, or for the first two casts, everyone
+    the other group's cast did not hit."""
+    if index >= 2:
+        return list(casts[index - 2][1])
+    if index + 2 < len(casts) and index == 0:
+        return list(casts[index + 2][1])
+    other = casts[index - 1][1] if index else (casts[index + 1][1] if index + 1 < len(casts) else None)
+    if other is None:
+        return None
+    return [name for name in roster if name not in other]
+
+
+def _seat_group(
+    group: list[str], other: list[str], casts: list[tuple[int, list[str]]], index: int,
+    seats: _Seats, roster: list[str], size: int,
+) -> list[str]:
+    """This cast's group from the hit lists, with each seat it has nobody in filled,
+    while it has fewer than `size` players.
+
+    A cast that hit three of its group says nothing of the fourth. The fourth is the
+    player of the empty seat who is not in the other group. When both or neither
+    are, the one a cast of the other group landed on first (its target) stays there,
+    and otherwise the one whose usual group this is.
+    """
+    if any(seats.partners.get(name) not in roster for name in roster):
+        return group
+    targets_mine = {targets[0] for at, (_first, targets) in enumerate(casts) if at % 2 == index % 2}
+    targets_theirs = {targets[0] for at, (_first, targets) in enumerate(casts) if at % 2 != index % 2}
+    filled = list(group)
+    for name in roster:
+        partner = seats.partners[name]
+        if len(filled) >= size:
+            break
+        if name > partner or name in group or partner in group:
+            continue
+        if (partner in other) != (name in other):
+            filled.append(partner if name in other else name)
+        elif (name in targets_theirs) != (partner in targets_theirs):
+            filled.append(partner if name in targets_theirs else name)
+        elif (name in targets_mine) != (partner in targets_mine):
+            filled.append(name if name in targets_mine else partner)
+        else:
+            usual = seats.usual
+            mine = sum(member in usual for member in group) - sum(member not in usual for member in group)
+            if mine and (name in usual) != (partner in usual):
+                filled.append(name if (name in usual) == (mine > 0) else partner)
+            else:
+                here = sum(seats.together[(name, member)] for member in group)
+                there = sum(seats.together[(partner, member)] for member in group)
+                filled.append(name if here >= there else partner)
+    return [name for name in roster if name in filled]
+
+
 def _alternating_groups(
     timed: list[tuple[int | None, DeathFact]],
     pack: FightPack,
@@ -1224,14 +1583,16 @@ def _alternating_groups(
     roster: list[str],
     raises: dict[str, list[int]],
     names_by_id: dict[int, str],
+    seats: _Seats | None = None,
 ) -> None:
     """Who should have taken a cast that alternates between two groups, and who was missing.
 
     The same players take every other cast, so the group for a cast is whoever took
-    the one two casts earlier. The first two casts have nothing that early: their
-    group is everyone the other group's cast did not hit. `group` is that group.
-    `down` are its players already dead, and `unsoaked` are the ones alive and not
-    in this cast.
+    the one two casts earlier. The first two casts, with nothing that early, take
+    everyone the other group's cast did not hit. With each player's opposite number
+    known (`_seat_partners`), a seat that group has nobody in is filled
+    (`_seat_group`). `group` is that group. `down` are its players already dead, and
+    `unsoaked` are the ones alive and not in this cast.
     """
     for timestamp, fact in timed:
         mechanic = pack.mechanic_for(fact.guid, fact.phase)
@@ -1245,15 +1606,13 @@ def _alternating_groups(
             continue
         index = landed[-1]
         targets = casts[index][1]
-        if index >= 2:
-            group = list(casts[index - 2][1])
-        elif index + 2 < len(casts) and index == 0:
-            group = list(casts[index + 2][1])
-        else:
-            other = casts[index - 1][1] if index else (casts[index + 1][1] if index + 1 < len(casts) else None)
-            if other is None:
-                continue
-            group = [name for name in roster if name not in other]
+        group = _cast_group(casts, index, roster)
+        if group is None:
+            continue
+        if seats:
+            beside = index + 1 if index % 2 == 0 and index + 1 < len(casts) else index - 1
+            other = _cast_group(casts, beside, roster) if beside >= 0 else None
+            group = _seat_group(group, other or [], casts, index, seats, roster, mechanic.typical_targets or 0)
         fact.group = group
         fact.down = [
             name for name in group
@@ -1279,13 +1638,18 @@ def _ice_pairs(
     table: dict | None,
     names_by_id: dict[int, str],
 ) -> None:
-    """Who should have shared a pair circle with a player who was alone in it.
+    """Who should have shared a pair circle with a player who was alone in it, or
+    who left a pair with two circles on it.
 
     Each circle is one support and one DPS. A circle is one caster instance in the
     snapshot. For a player alone in one circle, the partner was a player of the
     other group who was dead (or raised and still Transcendent), alive and in no
     circle, or the extra body in a circle of three. `group` is the circle,
     `down`, `unsoaked`, and `doubled` are those partners.
+
+    A dead holder's ice goes to a living player, so with someone dead a pair can
+    take two circles. That surplus ice belongs to everyone missing from the
+    circles: `group` is both circles, `down` the dead, `unsoaked` the living in none.
     """
     for timestamp, fact in timed:
         mechanic = pack.mechanic_for(fact.guid, fact.phase)
@@ -1304,13 +1668,23 @@ def _ice_pairs(
             if name and name not in circles[(event.get("sourceID"), event.get("sourceInstance"))]:
                 circles[(event.get("sourceID"), event.get("sourceInstance"))].append(name)
         mine = [members for members in circles.values() if fact.name in members]
+        anywhere = {name for members in circles.values() for name in members}
+        resting = _holders(table, [TRANSCENDENT], snap, names_by_id)
+        if len(mine) >= 2:
+            down = [
+                name for name in roles
+                if name not in anywhere and (_still_dead(name, timed, snap, raises) or name in resting)
+            ]
+            if down:
+                fact.group = sorted({name for members in mine for name in members})
+                fact.down = down
+                fact.unsoaked = [name for name in roles if name not in anywhere and name not in down]
+            continue
         if len(mine) != 1 or len(mine[0]) != 1:
             continue
         fact.group = [fact.name]
         side = roles.get(fact.name) in SUPPORT
         partners = [name for name, role in roles.items() if (role in SUPPORT) != side]
-        anywhere = {name for members in circles.values() for name in members}
-        resting = _holders(table, [TRANSCENDENT], snap, names_by_id)
         fact.down = [
             name for name in partners
             if name not in anywhere and (_still_dead(name, timed, snap, raises) or name in resting)
@@ -1319,6 +1693,49 @@ def _ice_pairs(
         fact.doubled = [
             name for name in partners
             if any(name in members and len(members) >= 3 for members in circles.values())
+        ]
+
+
+def _extra_hits(
+    timed: list[tuple[int | None, DeathFact]],
+    pack: FightPack,
+    snapshots: dict[int, list[dict]],
+    fight_id: int,
+    roster: list[str],
+    raises: dict[str, list[int]],
+    table: dict | None,
+    names_by_id: dict[int, str],
+) -> None:
+    """A hit that comes once for each player, which killed a player who took two.
+
+    Neither of their hits fell on anyone else, so nobody clipped them: a dead
+    player's hit went to them. `down` is who was dead (or raised and still
+    Transcendent) at the cast.
+    """
+    for timestamp, fact in timed:
+        mechanic = pack.mechanic_for(fact.guid, fact.phase)
+        if timestamp is None or mechanic is None or not mechanic.one_each or len(fact.cohort) > 1:
+            continue
+        rows = [
+            event for guid in mechanic.guids for event in snapshots.get(guid, [])
+            if event.get("fight") == fight_id and abs(event["timestamp"] - timestamp) <= 2500
+        ]
+        if not rows:
+            continue
+        snap = min(event["timestamp"] for event in rows)
+        hits: dict[tuple, set[str]] = defaultdict(set)
+        for event in rows:
+            name = names_by_id.get(event.get("targetID"))
+            if name:
+                hits[(event.get("sourceID"), event.get("sourceInstance"))].add(name)
+        mine = [names for names in hits.values() if fact.name in names]
+        if len(mine) < 2 or any(len(names) > 1 for names in mine):
+            continue
+        anywhere = {name for names in hits.values() for name in names}
+        resting = _holders(table, [TRANSCENDENT], snap, names_by_id)
+        fact.down = [
+            name for name in roster
+            if name not in anywhere and (_still_dead(name, timed, snap, raises) or name in resting)
         ]
 
 

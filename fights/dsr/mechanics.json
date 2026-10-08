@@ -154,7 +154,8 @@
       "scales_with_stack": false,
       "tanks_only": true,
       "requires_personal_mit": true,
-      "should_have_been": "The cone after each tether. That tank takes several hits around 20–22k with personal mitigation. Anyone else in the cone owns that hit. A tank who dies on the real hits without personal mitigation owns that death.",
+      "should_have_been": "The cone after each tether. That tank takes several hits around 20–22k with personal mitigation. Anyone else in the cone owns that hit, unless the bash on a tether holder standing next to them stunned them first: then the tether holder owns it. A tank who dies on the real hits without personal mitigation owns that death.",
+      "stun": {"debuff": 1003165, "casts": [25297], "within": 3},
       "roles": {
         "tank": {"unmitigated_max": 55000, "lived": "about 21k"},
         "healer": {"unmitigated_max": 50000, "lived": "not a healer hit"},
@@ -168,7 +169,8 @@
       "guids": [25549],
       "category": "spread",
       "scales_with_stack": false,
-      "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26–29k, everyone else about 38–45k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is about 430–470k, and both players own it.",
+      "one_each": true,
+      "should_have_been": "Each safe triangle is healer in front, melee left, ranged right, tank in back. One hit each: tanks about 26–29k, everyone else about 38–45k. Two of the same non-tank role on one side, a player out of that spot, or two players clipping are mistakes. A clip is one bolt on two players, about 430–470k, and both players own it. A dead player's bolt still falls on someone alive, who takes two: that belongs to the dead player.",
       "roles": {
         "tank": {"unmitigated_max": 40000, "lived": "about 27k"},
         "healer": {"unmitigated_max": 55000, "lived": "about 40k"},
@@ -200,7 +202,8 @@
       "tanks_only": true,
       "one_target": true,
       "requires_personal_mit": true,
-      "should_have_been": "One tank takes the three hits with personal mitigation. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
+      "main_tank": true,
+      "should_have_been": "The main tank takes the three hits with personal mitigation. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death. When the main tank is dead and the other tank has to take it, the dead main tank owns that.",
       "roles": {
         "tank": {"unmitigated_max": 110000, "lived": "about 71–86k"},
         "healer": {"unmitigated_max": 110000, "lived": "not a healer hit"},
@@ -214,6 +217,7 @@
       "guids": [25545],
       "category": "dodge",
       "any_hit_is_fail": true,
+      "baited": {"until": 30, "lock": 1.5, "aim": 10, "width": 20},
       "should_have_been": "Nobody is hit."
     },
     {
@@ -394,7 +398,8 @@
       "category": "spread",
       "scales_with_stack": false,
       "fail_above": 150000,
-      "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9–23k. Arrows face east: an up arrow resolves west and a down arrow east, and a 2 goes northwest or northeast. An arrow holder on the wrong side owns the landing. With only circles diving, the overlap is a miscommunication.",
+      "knockback": true,
+      "should_have_been": "The circle dive. The marked player is alone on their Easthogg spot, and the tower drops where they stand. A landing people lived is about 9–23k. Arrows face east: an up arrow resolves west and a down arrow east, and a 2 goes northwest or northeast. An arrow holder on the wrong side owns the landing. With only circles diving, the overlap is a miscommunication. The landing knocks back everyone it hits: a player knocked into the deathwall belongs to whoever it landed on.",
       "dive_markers": {
         "1002755": {"name": "circle"},
         "1002756": {"name": "up arrow", "side": "west", "facing": "east"},
