@@ -51,6 +51,15 @@ class NightTest(unittest.TestCase):
         owned = dict(tally["owned"])
         self.assertNotIn("Party mitigation", owned)
 
+    def test_a_share_through_an_earlier_death_is_counted_apart(self):
+        # Kitana Kahn's Bright Flare in pull 61 is hers. The empty ice and tower after it are
+        # hers too, but passed on, so they do not add to the deaths she owns by her own mistake.
+        rows = [item.to_dict() for item in _judged(CODE)[4] if item.fact.fight == 61]
+        tally = night_tally(rows)
+        self.assertEqual(dict(tally["owned"])["Kitana Kahn"], 1)
+        # Two Hiemal Storm deaths and four Eternal Conviction deaths.
+        self.assertEqual(dict(tally["passed_on"])["Kitana Kahn"], 6)
+
     def test_the_brief_leads_with_the_night(self):
         text = brief_text(ROOT / "data" / CODE)
         self.assertIn("What started each pull (55 pulls", text)

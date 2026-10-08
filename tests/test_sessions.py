@@ -307,14 +307,39 @@ class PullCardsTest(unittest.TestCase):
             if card["id"] == "strength-of-the-ward"
         ]
         self.assertEqual(strength["reached"], len(cards))
-        # The towers at 63s are part of Strength, and an empty tower is a mistake.
-        self.assertEqual((strength["reached"], strength["mistakes"]), (53, 23))
+        # The towers at 63s are part of Strength, and an empty tower is a mistake. A pull whose
+        # only empty tower was left by a player already dead is not a mistake on Strength.
+        self.assertEqual((strength["reached"], strength["mistakes"]), (53, 21))
         self.assertEqual(by_id["dive-from-grace"]["reached"], 0)
         summary = session_summary(self.payload, "")
         self.assertEqual(
             next(row for row in summary["mechanics"] if row["id"] == "strength-of-the-ward")["mistakes"],
-            23,
+            21,
         )
+
+    def test_a_player_already_dead_fails_only_the_mechanic_that_killed_them(self):
+        # Pull 61: Kitana Kahn died to Bright Flare. Her ice and her tower were empty after,
+        # and those deaths are still hers, but she failed Bright Flare, not the later two.
+        card = self._card(61, "meteors")
+        parts = {part["id"]: _seats(part) for part in card["parts"]}
+        flare = self._card(61, "sanctity-of-the-ward")
+        self.assertFalse(_seats(next(p for p in flare["parts"] if p["id"] == "bright-flare"))["Kitana Kahn"].get("earlier"))
+        for part in ("hiemal-storm", "eternal-conviction"):
+            seat = parts[part]["Kitana Kahn"]
+            self.assertFalse(seat["passed"])
+            self.assertTrue(seat["earlier"])
+        deaths = [row for row in self._pull(61)["deaths"] if row["componentId"] == "hiemal-storm"]
+        self.assertTrue(deaths)
+        for row in deaths:
+            self.assertEqual(row["carried"], ["Kitana Kahn"])
+            self.assertEqual([blame["who"] for blame in row["blames"]], ["Kitana Kahn"])
+
+    def test_a_player_alive_and_out_of_place_still_fails_it(self):
+        # Pull 47: Spring Nymphar was alive and in no Strength tower.
+        card = self._card(47, "strength-of-the-ward")
+        towers = _seats(next(part for part in card["parts"] if part["id"] == "eternal-conviction"))
+        self.assertFalse(towers["Spring Nymphar"]["passed"])
+        self.assertNotIn("earlier", towers["Spring Nymphar"])
 
 
 class UnscoredPullTest(unittest.TestCase):

@@ -97,6 +97,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -207,6 +208,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -318,6 +320,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -428,6 +431,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -540,6 +544,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -653,6 +658,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -752,6 +758,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -839,6 +846,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -960,6 +968,11 @@
         "confidence": 14
       }
     ],
+    "carried": [
+      "Absolute Gigachad",
+      "Kitana Kahn",
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -1050,6 +1063,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -1139,6 +1153,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -1226,6 +1241,10 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -1312,6 +1331,10 @@
         "who": "Spring Nymphar",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -1404,6 +1427,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -1496,6 +1520,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -1599,6 +1624,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -1694,6 +1720,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -1792,6 +1819,10 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "basis": "role",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -1887,6 +1918,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -1989,6 +2021,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -2082,6 +2115,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -2176,6 +2210,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -2286,6 +2321,9 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Kite Noodle"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -2388,6 +2426,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -2486,6 +2525,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -2584,6 +2624,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -2752,6 +2793,9 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Kite Noodle"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -2829,6 +2873,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -2924,6 +2969,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -3021,6 +3067,9 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Speed Panda"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -3116,6 +3165,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "position",
     "first": false,
@@ -3222,6 +3274,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "role",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -3326,6 +3379,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "role",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -3443,6 +3497,10 @@
           "Speed Panda"
         ]
       }
+    ],
+    "carried": [
+      "Speed Panda",
+      "Absolute Gigalad"
     ],
     "basis": "hit-list",
     "first": false,
@@ -3571,6 +3629,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -3704,6 +3763,13 @@
         ]
       }
     ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar",
+      "Kitana Kahn",
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -3790,6 +3856,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -3869,6 +3936,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -3955,6 +4023,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -4070,6 +4139,10 @@
         ]
       }
     ],
+    "carried": [
+      "Speed Panda",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -4177,6 +4250,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -4348,6 +4422,11 @@
         "confidence": 25
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -4484,6 +4563,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -4620,6 +4700,11 @@
         ]
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -4755,6 +4840,11 @@
           "Speed Panda"
         ]
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -4894,6 +4984,11 @@
         ]
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -4991,6 +5086,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
@@ -5100,6 +5196,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
@@ -5224,6 +5321,10 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
@@ -5346,6 +5447,10 @@
         "who": "Kitana Kahn",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -5500,6 +5605,10 @@
         "confidence": 25
       }
     ],
+    "carried": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
@@ -5628,6 +5737,10 @@
         "who": "Loki Doki",
         "confidence": 25
       }
+    ],
+    "carried": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -5758,6 +5871,10 @@
         "confidence": 25
       }
     ],
+    "carried": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
@@ -5887,6 +6004,10 @@
         "confidence": 25
       }
     ],
+    "carried": [
+      "Absolute Gigachad",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Damage Down on Absolute Gigachad from Heavy Impact at 47.0s into Thordan",
@@ -5963,6 +6084,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -6053,6 +6175,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -6134,6 +6257,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -6238,6 +6362,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -6334,6 +6459,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -6417,6 +6543,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -6578,6 +6705,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -6694,6 +6822,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Absolute Gigachad"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -6795,6 +6926,10 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "basis": "role",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -6871,6 +7006,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -6984,6 +7120,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -7098,6 +7235,9 @@
         "who": "Kitana Kahn",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "position",
     "first": false,
@@ -7214,6 +7354,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -7358,6 +7499,11 @@
         ]
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -7490,6 +7636,11 @@
           "Kitana Kahn"
         ]
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -7636,6 +7787,11 @@
           "Kitana Kahn"
         ]
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -7784,6 +7940,11 @@
           "Kitana Kahn"
         ]
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -7945,6 +8106,11 @@
         ]
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.3s into Thordan",
@@ -8047,6 +8213,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
@@ -8175,6 +8342,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
@@ -8276,6 +8444,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
@@ -8419,6 +8588,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
@@ -8531,6 +8701,10 @@
         "who": "Absolute Gigachad",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
     ],
     "basis": "hit-list",
     "first": false,
@@ -8646,6 +8820,10 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
@@ -8756,6 +8934,11 @@
         "who": "Spring Nymphar",
         "confidence": 20
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -8868,6 +9051,11 @@
         "confidence": 20
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Absolute Gigachad",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.1s into Thordan",
@@ -8951,6 +9139,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
@@ -9073,6 +9262,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
@@ -9220,6 +9410,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "position",
     "first": true,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
@@ -9357,6 +9550,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "position",
     "first": true,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
@@ -9460,6 +9656,9 @@
           "Loki Doki"
         ]
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -9565,6 +9764,9 @@
           "Loki Doki"
         ]
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -9698,6 +9900,9 @@
         ]
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
@@ -9804,6 +10009,9 @@
         ]
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda and Spring Nymphar dying to Skyward Leap, Absolute Gigachad dying to Holy Shield Bash and Loki Doki dying to Dragon's Rage at 59.5s into Thordan",
@@ -9892,6 +10100,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -9982,6 +10191,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -10094,6 +10304,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -10200,6 +10411,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -10330,6 +10544,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -10427,6 +10642,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -10523,6 +10741,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -10620,6 +10839,10 @@
         "who": "Spring Nymphar",
         "confidence": 25
       }
+    ],
+    "carried": [
+      "Kitana Kahn",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -10719,6 +10942,10 @@
         "confidence": 25
       }
     ],
+    "carried": [
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
@@ -10795,6 +11022,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
@@ -10898,6 +11126,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "role",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
@@ -11004,6 +11233,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
@@ -11087,6 +11317,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
@@ -11189,6 +11420,9 @@
         "who": "Party mitigation",
         "confidence": 33
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "role",
     "first": false,
@@ -11301,6 +11535,10 @@
         ]
       }
     ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
@@ -11410,6 +11648,10 @@
           "Loki Doki"
         ]
       }
+    ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -11536,6 +11778,10 @@
           "Loki Doki"
         ]
       }
+    ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -11676,6 +11922,10 @@
         ]
       }
     ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.8s into Thordan",
@@ -11752,6 +12002,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -11896,6 +12147,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -12007,6 +12259,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "position",
     "first": false,
@@ -12171,6 +12426,9 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -12296,6 +12554,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "position",
     "first": false,
@@ -12423,6 +12684,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "position",
     "first": false,
@@ -12564,6 +12828,10 @@
         "confidence": 16
       }
     ],
+    "carried": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -12691,6 +12959,10 @@
         "who": "Loki Doki",
         "confidence": 16
       }
+    ],
+    "carried": [
+      "Kitana Kahn",
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -12853,6 +13125,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
@@ -12974,6 +13247,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
@@ -13101,6 +13375,9 @@
         "who": "Earlier damage",
         "confidence": 33
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "role",
     "first": false,
@@ -13243,6 +13520,9 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "role",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
@@ -13370,6 +13650,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
@@ -13485,6 +13768,9 @@
         "who": "Spring Nymphar",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -13602,6 +13888,9 @@
         "who": "Spring Nymphar",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -13721,6 +14010,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.7s into Thordan",
@@ -13826,6 +14118,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -13921,6 +14214,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -14015,6 +14309,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -14174,6 +14469,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -14290,6 +14588,9 @@
         "who": "Spring Nymphar",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -14415,6 +14716,9 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "role",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -14529,6 +14833,10 @@
         "who": "Kitana Kahn",
         "confidence": 20
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -14646,6 +14954,11 @@
         "confidence": 20
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -14722,6 +15035,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -14821,6 +15135,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -14917,6 +15232,9 @@
         "who": "Spring Nymphar",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -15040,6 +15358,9 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "role",
     "first": false,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -15154,6 +15475,9 @@
         ]
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -15267,6 +15591,9 @@
           "Kiara Blaiddyd"
         ]
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -15408,6 +15735,9 @@
         ]
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kite Noodle dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -15524,6 +15854,9 @@
           "Kiara Blaiddyd"
         ]
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -15642,6 +15975,9 @@
           "Kiara Blaiddyd"
         ]
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -15800,6 +16136,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
@@ -15931,6 +16268,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
@@ -16060,6 +16398,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
@@ -16187,6 +16526,9 @@
           "Spring Nymphar"
         ]
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -16328,6 +16670,9 @@
           "Spring Nymphar"
         ]
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -16471,6 +16816,9 @@
         ]
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
@@ -16587,6 +16935,9 @@
         ]
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
@@ -16696,6 +17047,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Holy Shield Bash and Kiara Blaiddyd and Spring Nymphar dying to Dragon's Rage at 59.9s into Thordan",
@@ -16801,6 +17153,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -16941,6 +17294,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -17058,6 +17414,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -17177,6 +17536,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -17320,6 +17682,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -17465,6 +17830,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -17590,6 +17958,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -17731,6 +18100,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Absolute Gigachad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -17839,6 +18211,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
@@ -17959,6 +18332,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
@@ -18131,6 +18505,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
@@ -18242,6 +18617,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
@@ -18376,6 +18752,11 @@
         "who": "Loki Doki",
         "confidence": 33
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -18513,6 +18894,11 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
@@ -18634,6 +19020,11 @@
         "who": "Loki Doki",
         "confidence": 33
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -18797,6 +19188,11 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Damage Down on Spring Nymphar from Heavy Impact at 45.4s into Thordan",
@@ -18929,6 +19325,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "hit-list",
     "first": true,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
@@ -19052,6 +19449,9 @@
         "who": "Loki Doki",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -19189,6 +19589,9 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": true,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
@@ -19314,6 +19717,10 @@
         "who": "Loki Doki",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -19452,6 +19859,10 @@
         "who": "Loki Doki",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -19603,6 +20014,10 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
@@ -19733,6 +20148,10 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Loki Doki"
+    ],
     "basis": "role",
     "first": false,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
@@ -19837,6 +20256,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki and Kiara Blaiddyd dying to Eternal Conviction and 4 players dying to Kiara Blaiddyd and Loki Doki's Eternal Conviction at 64.1s into Thordan",
@@ -19939,6 +20359,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -20059,6 +20480,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -20180,6 +20602,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -20299,6 +20724,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -20390,6 +20818,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -20524,6 +20953,10 @@
         ]
       }
     ],
+    "carried": [
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -20631,6 +21064,10 @@
           "Loki Doki"
         ]
       }
+    ],
+    "carried": [
+      "Kitana Kahn",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -20765,6 +21202,10 @@
         ]
       }
     ],
+    "carried": [
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
@@ -20875,6 +21316,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "debuff",
     "first": true,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
@@ -20978,6 +21420,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
@@ -21066,6 +21509,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
@@ -21170,6 +21614,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
@@ -21261,6 +21706,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
@@ -21358,6 +21804,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -21457,6 +21906,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -21567,6 +22019,11 @@
         ]
       }
     ],
+    "carried": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Sacred Sever and Absolute Gigalad and Kite Noodle dying to Shining Blade at 114.3s into Thordan",
@@ -21652,6 +22109,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -21731,6 +22189,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -21813,6 +22272,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -21897,6 +22357,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -21982,6 +22443,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -22067,6 +22529,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -22152,6 +22615,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -22240,6 +22704,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -22344,6 +22809,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit-list",
     "first": true,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
@@ -22447,6 +22913,9 @@
         "who": "Loki Doki",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -22566,6 +23035,9 @@
         "who": "Loki Doki",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -22709,6 +23181,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
@@ -22840,6 +23315,9 @@
         "who": "Loki Doki",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -22974,6 +23452,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
@@ -23076,6 +23557,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
@@ -23179,6 +23661,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki dying to Eternal Conviction and 5 players dying to Loki Doki's Eternal Conviction at 64.9s into Thordan",
@@ -23255,6 +23738,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
@@ -23344,6 +23828,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -23471,6 +23958,9 @@
         ]
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
@@ -23583,6 +24073,9 @@
         ]
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
@@ -23684,6 +24177,9 @@
           "Kitana Kahn"
         ]
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -23802,6 +24298,9 @@
         ]
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
@@ -23905,6 +24404,9 @@
           "Kitana Kahn"
         ]
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -24010,6 +24512,9 @@
           "Kitana Kahn"
         ]
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -24128,6 +24633,9 @@
         ]
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.1s into Thordan",
@@ -24216,6 +24724,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
@@ -24306,6 +24815,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
@@ -24409,6 +24919,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "debuff",
     "first": true,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
@@ -24501,6 +25012,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
@@ -24606,6 +25118,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "debuff",
     "first": true,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
@@ -24700,6 +25213,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
@@ -24811,6 +25325,10 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Kitana Kahn",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
@@ -24907,6 +25425,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Speed Panda dying to Bright Flare and 5 players dying to Shining Blade at 114.4s into Thordan",
@@ -25026,6 +25545,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": true,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
@@ -25181,6 +25701,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "position",
     "first": true,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
@@ -25321,6 +25844,9 @@
           "Speed Panda"
         ]
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -25473,6 +25999,9 @@
           "Speed Panda"
         ]
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -25628,6 +26157,9 @@
         ]
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
@@ -25771,6 +26303,9 @@
           "Speed Panda"
         ]
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -25929,6 +26464,9 @@
         ]
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
@@ -26040,6 +26578,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kitana Kahn and Speed Panda dying to Skyward Leap at 59.2s into Thordan",
@@ -26116,6 +26655,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
@@ -26195,6 +26735,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
@@ -26275,6 +26816,9 @@
         "who": "Absolute Gigalad",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Absolute Gigalad"
     ],
     "basis": "hit-list",
     "first": false,
@@ -26358,6 +26902,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
@@ -26441,6 +26986,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
@@ -26525,6 +27071,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
@@ -26609,6 +27156,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
@@ -26695,6 +27243,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 16.3s into Thordan",
@@ -26771,6 +27320,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
@@ -26857,6 +27407,9 @@
         "who": "Spring Nymphar",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -26945,6 +27498,9 @@
         "who": "Spring Nymphar",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -27037,6 +27593,9 @@
           "Kitana Kahn"
         ]
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -27132,6 +27691,9 @@
         ]
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
@@ -27220,6 +27782,9 @@
           "Kitana Kahn"
         ]
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -27329,6 +27894,9 @@
         ]
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
@@ -27436,6 +28004,9 @@
         ]
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Dragon's Glory at 113.4s into Thordan",
@@ -27512,6 +28083,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -27604,6 +28176,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "role",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -27706,6 +28279,7 @@
         "confidence": 33
       }
     ],
+    "carried": [],
     "basis": "role",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -27806,6 +28380,10 @@
           "Speed Panda"
         ]
       }
+    ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -27908,6 +28486,10 @@
         ]
       }
     ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -28008,6 +28590,10 @@
           "Speed Panda"
         ]
       }
+    ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -28112,6 +28698,10 @@
           "Speed Panda"
         ]
       }
+    ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -28231,6 +28821,10 @@
           "Speed Panda"
         ]
       }
+    ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -28363,6 +28957,10 @@
         ]
       }
     ],
+    "carried": [
+      "Loki Doki",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
@@ -28439,6 +29037,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -28592,6 +29191,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -28787,6 +29387,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -28945,6 +29546,9 @@
         "who": "Kitana Kahn",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -29105,6 +29709,9 @@
         "who": "Kitana Kahn",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -29278,6 +29885,9 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -29439,6 +30049,10 @@
         "who": "Kitana Kahn",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Spring Nymphar",
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -29603,6 +30217,10 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -29730,6 +30348,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Speed Panda dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -29806,6 +30425,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
@@ -29898,6 +30518,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -29993,6 +30616,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -30103,6 +30729,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -30215,6 +30844,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
@@ -30312,6 +30944,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -30411,6 +31046,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -30512,6 +31150,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
@@ -30607,6 +31248,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Heavy Impact at 45.0s into Thordan",
@@ -30702,6 +31344,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
@@ -30844,6 +31487,9 @@
         ]
       }
     ],
+    "carried": [
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
@@ -30964,6 +31610,9 @@
           "Kiara Blaiddyd"
         ]
       }
+    ],
+    "carried": [
+      "Absolute Gigalad"
     ],
     "basis": "hit-list",
     "first": false,
@@ -31098,6 +31747,9 @@
         ]
       }
     ],
+    "carried": [
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
@@ -31206,6 +31858,9 @@
           "Kiara Blaiddyd"
         ]
       }
+    ],
+    "carried": [
+      "Absolute Gigalad"
     ],
     "basis": "hit-list",
     "first": false,
@@ -31342,6 +31997,9 @@
         ]
       }
     ],
+    "carried": [
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
@@ -31444,6 +32102,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
@@ -31547,6 +32206,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Absolute Gigalad's Dragon's Rage at 59.8s into Thordan",
@@ -31623,6 +32283,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -31734,6 +32395,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -31857,6 +32519,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "position",
     "first": false,
@@ -32022,6 +32687,9 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -32146,6 +32814,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "position",
     "first": false,
@@ -32274,6 +32945,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -32399,6 +33073,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "position",
     "first": false,
@@ -32597,6 +33274,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -32721,6 +33401,9 @@
         "who": "Kite Noodle",
         "confidence": 16
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -32868,6 +33551,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
@@ -33011,6 +33695,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
@@ -33167,6 +33852,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
@@ -33307,6 +33993,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
@@ -33463,6 +34150,10 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Kite Noodle",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
@@ -33605,6 +34296,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
@@ -33750,6 +34442,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
@@ -33944,6 +34637,14 @@
         "confidence": 16
       }
     ],
+    "carried": [
+      "Kite Noodle",
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kite Noodle dying to Sacred Sever, Speed Panda and Spring Nymphar dying to Dragon's Glory and Damage Down and Hysteria on Kite Noodle from Dragon's Gaze at 112.1s into Thordan",
@@ -34033,6 +34734,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
@@ -34134,6 +34836,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
@@ -34261,6 +34964,10 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Absolute Gigalad",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
@@ -34375,6 +35082,10 @@
         "who": "Absolute Gigachad",
         "confidence": 33
       }
+    ],
+    "carried": [
+      "Absolute Gigalad",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -34501,6 +35212,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
@@ -34655,6 +35367,12 @@
         "confidence": 20
       }
     ],
+    "carried": [
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Speed Panda"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
@@ -34782,6 +35500,12 @@
         "who": "Kiara Blaiddyd",
         "confidence": 20
       }
+    ],
+    "carried": [
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Speed Panda"
     ],
     "basis": "hit-list",
     "first": false,
@@ -34927,6 +35651,12 @@
         "confidence": 20
       }
     ],
+    "carried": [
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Speed Panda"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
@@ -35071,6 +35801,12 @@
         "confidence": 20
       }
     ],
+    "carried": [
+      "Absolute Gigalad",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Speed Panda"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Loki Doki dying to Heavy Impact at 46.9s into Thordan",
@@ -35193,6 +35929,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
@@ -35334,6 +36071,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -35477,6 +36217,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -35622,6 +36365,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
@@ -35741,6 +36487,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -35888,6 +36637,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
@@ -36004,6 +36756,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
@@ -36133,6 +36886,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Holy Shield Bash and Damage Down on Absolute Gigalad from Dimensional Collapse at 59.2s into Thordan",
@@ -36238,6 +36992,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -36348,6 +37103,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -36474,6 +37230,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -36601,6 +37358,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -36728,6 +37486,9 @@
         "who": "Kitana Kahn",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -36858,6 +37619,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -36974,6 +37738,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -37084,6 +37851,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -37195,6 +37963,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
@@ -37323,6 +38092,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit-list",
     "first": true,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
@@ -37453,6 +38223,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
@@ -37571,6 +38344,9 @@
         "who": "Spring Nymphar",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -37704,6 +38480,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
@@ -37824,6 +38603,9 @@
         "who": "Spring Nymphar",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -37946,6 +38728,9 @@
         "who": "Spring Nymphar",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -38072,6 +38857,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
@@ -38174,6 +38960,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Eternal Conviction and 5 players dying to Spring Nymphar's Eternal Conviction at 64.9s into Thordan",
@@ -38286,6 +39073,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -38418,6 +39206,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -38530,6 +39319,9 @@
         "who": "Spring Nymphar",
         "confidence": 33
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -38645,6 +39437,9 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -38759,6 +39554,9 @@
         "who": "Spring Nymphar",
         "confidence": 33
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -38890,6 +39688,10 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -39005,6 +39807,10 @@
         "who": "Spring Nymphar",
         "confidence": 33
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Spring Nymphar"
     ],
     "basis": "hit-list",
     "first": false,
@@ -39124,6 +39930,11 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -39227,6 +40038,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kiara Blaiddyd dying to Ascalon's Mercy Concealed at 50.0s into Thordan",
@@ -39397,6 +40209,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
@@ -39563,6 +40376,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
@@ -39753,6 +40567,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
@@ -39921,6 +40736,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
@@ -40105,6 +40921,9 @@
         "who": "Absolute Gigalad",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Kitana Kahn"
     ],
     "basis": "hit-list",
     "first": false,
@@ -40292,6 +41111,9 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Kitana Kahn"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
@@ -40474,6 +41296,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
@@ -40665,6 +41488,11 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Damage Down and Hysteria on Speed Panda from Dragon's Gaze and Damage Down and Hysteria on 4 players from Dragon's Glory at 112.2s into Thordan",
@@ -40792,6 +41620,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "role",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
@@ -40900,6 +41729,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
@@ -41026,6 +41856,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "debuff",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
@@ -41167,6 +41998,9 @@
         "who": "Absolute Gigachad",
         "confidence": 20
       }
+    ],
+    "carried": [
+      "Kite Noodle"
     ],
     "basis": "position",
     "first": false,
@@ -41318,6 +42152,7 @@
         "confidence": 20
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
@@ -41460,6 +42295,10 @@
         "who": "Absolute Gigachad",
         "confidence": 20
       }
+    ],
+    "carried": [
+      "Kite Noodle",
+      "Kitana Kahn"
     ],
     "basis": "position",
     "first": false,
@@ -41604,6 +42443,11 @@
         "who": "Absolute Gigachad",
         "confidence": 20
       }
+    ],
+    "carried": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki"
     ],
     "basis": "position",
     "first": false,
@@ -41787,6 +42631,15 @@
         "confidence": 33
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
@@ -41922,6 +42775,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Ascalon's Might at 87.9s into Thordan",
@@ -42017,6 +42871,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
@@ -42128,6 +42983,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": true,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
@@ -42244,6 +43100,10 @@
         "confidence": 50
       }
     ],
+    "carried": [
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
@@ -42358,6 +43218,10 @@
         "who": "Absolute Gigalad",
         "confidence": 50
       }
+    ],
+    "carried": [
+      "Speed Panda",
+      "Absolute Gigalad"
     ],
     "basis": "hit-list",
     "first": false,
@@ -42490,6 +43354,10 @@
         ]
       }
     ],
+    "carried": [
+      "Absolute Gigalad",
+      "Speed Panda"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
@@ -42614,6 +43482,10 @@
           "Loki Doki"
         ]
       }
+    ],
+    "carried": [
+      "Speed Panda",
+      "Absolute Gigalad"
     ],
     "basis": "hit-list",
     "first": false,
@@ -42765,6 +43637,10 @@
         ]
       }
     ],
+    "carried": [
+      "Speed Panda",
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
@@ -42870,6 +43746,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Speed Panda dying to Dragon's Glory and Absolute Gigalad walking into the deathwall at 112.7s into Thordan",
@@ -42953,6 +43830,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
@@ -43030,6 +43908,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
@@ -43112,6 +43991,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
@@ -43195,6 +44075,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
@@ -43279,6 +44160,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
@@ -43363,6 +44245,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
@@ -43449,6 +44332,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
@@ -43536,6 +44420,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.2s into Thordan",
@@ -43663,6 +44548,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
@@ -43768,6 +44654,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": true,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
@@ -43884,6 +44771,9 @@
         "who": "Loki Doki",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -44002,6 +44892,9 @@
         "who": "Loki Doki",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -44127,6 +45020,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
@@ -44245,6 +45139,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Spring Nymphar"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
@@ -44362,6 +45259,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
@@ -44473,6 +45371,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
@@ -44620,6 +45519,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": true,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
@@ -44772,6 +45672,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
@@ -44917,6 +45818,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
@@ -45054,6 +45956,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
@@ -45217,6 +46120,9 @@
         "who": "Absolute Gigachad",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Absolute Gigachad"
     ],
     "basis": "hit-list",
     "first": false,
@@ -45386,6 +46292,12 @@
         "confidence": 25
       }
     ],
+    "carried": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
@@ -45551,6 +46463,12 @@
         "who": "Absolute Gigalad",
         "confidence": 25
       }
+    ],
+    "carried": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
     ],
     "basis": "hit-list",
     "first": false,
@@ -45733,6 +46651,12 @@
         "confidence": 25
       }
     ],
+    "carried": [
+      "Speed Panda",
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Absolute Gigalad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Absolute Gigachad walking into the deathwall and Damage Down and Hysteria on 3 players from Dragon's Glory at 112.6s into Thordan",
@@ -45817,6 +46741,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -45896,6 +46821,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -45977,6 +46903,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -46059,6 +46986,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -46142,6 +47070,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -46261,6 +47190,12 @@
         "who": "Loki Doki",
         "confidence": 25
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -46383,6 +47318,12 @@
         "confidence": 25
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -46504,6 +47445,12 @@
         "who": "Loki Doki",
         "confidence": 25
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,
@@ -46628,6 +47575,12 @@
         "confidence": 25
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd",
+      "Speed Panda",
+      "Kitana Kahn",
+      "Loki Doki"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
@@ -46740,6 +47693,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
@@ -46884,6 +47838,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
@@ -47040,6 +47995,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
@@ -47186,6 +48142,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
@@ -47342,6 +48299,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
@@ -47499,6 +48457,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
@@ -47650,6 +48609,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "debuff",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
@@ -47802,6 +48762,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "debuff",
     "first": false,
     "first_mistake": "Absolute Gigalad dying to Shining Blade and 3 players dying to Sacred Sever at 112.0s into Thordan",
@@ -47886,6 +48847,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": true,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -47993,6 +48955,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -48163,6 +49126,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -48322,6 +49288,9 @@
         "who": "Kiara Blaiddyd",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kiara Blaiddyd"
     ],
     "basis": "hit-list",
     "first": false,
@@ -48485,6 +49454,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -48646,6 +49618,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -48792,6 +49767,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "hit",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -48935,6 +49911,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "position",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -49099,6 +50076,9 @@
         ]
       }
     ],
+    "carried": [
+      "Kiara Blaiddyd"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.5s into Thordan",
@@ -49173,6 +50153,7 @@
         "confidence": 100
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": true,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
@@ -49283,6 +50264,9 @@
         "who": "Kite Noodle",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kite Noodle"
     ],
     "basis": "position",
     "first": false,
@@ -49398,6 +50382,9 @@
         "who": "Kite Noodle",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kite Noodle"
     ],
     "basis": "position",
     "first": false,
@@ -49591,6 +50578,9 @@
         "who": "Kite Noodle",
         "confidence": 100
       }
+    ],
+    "carried": [
+      "Kite Noodle"
     ],
     "basis": "position",
     "first": false,
@@ -49796,6 +50786,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kite Noodle"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
@@ -49915,6 +50908,9 @@
         "confidence": 100
       }
     ],
+    "carried": [
+      "Kite Noodle"
+    ],
     "basis": "position",
     "first": false,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
@@ -50011,6 +51007,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
@@ -50096,6 +51093,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
@@ -50209,6 +51207,10 @@
         "confidence": 20
       }
     ],
+    "carried": [
+      "Kite Noodle",
+      "Spring Nymphar"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kite Noodle walking into the deathwall at 53.5s into Thordan",
@@ -50298,6 +51300,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
@@ -50390,6 +51393,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
@@ -50486,6 +51490,7 @@
         "confidence": 33
       }
     ],
+    "carried": [],
     "basis": "role",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
@@ -50584,6 +51589,7 @@
         "confidence": 33
       }
     ],
+    "carried": [],
     "basis": "role",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
@@ -50681,6 +51687,7 @@
         "confidence": 33
       }
     ],
+    "carried": [],
     "basis": "role",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
@@ -50785,6 +51792,10 @@
         ]
       }
     ],
+    "carried": [
+      "Spring Nymphar",
+      "Absolute Gigachad"
+    ],
     "basis": "hit-list",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
@@ -50871,6 +51882,7 @@
         "confidence": 50
       }
     ],
+    "carried": [],
     "basis": "no-packet",
     "first": false,
     "first_mistake": "Kiara Blaiddyd and Kite Noodle dying to Spring Nymphar and Absolute Gigachad's Sacred Sever at 114.2s into Thordan",
@@ -50987,6 +51999,11 @@
           "Kitana Kahn"
         ]
       }
+    ],
+    "carried": [
+      "Spring Nymphar",
+      "Absolute Gigachad",
+      "Loki Doki"
     ],
     "basis": "hit-list",
     "first": false,

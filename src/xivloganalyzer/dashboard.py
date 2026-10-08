@@ -324,6 +324,9 @@ def _pull_cards(
     A death clipped by someone's marker sits under that marker, and the marker
     holder failed it, not the player who died. A dive landing caused by an arrow on
     the wrong side is failed by that arrow holder. Everyone else in the party passed.
+    A player named only because a death left the mechanic short, the dead player or
+    whoever owned that death, is marked `earlier`: their mistake was an earlier
+    mechanic, so it does not count as failing this one.
     A pull that dies in a later phase still shows the earlier phase, and the later
     phase gets its own cards.
     """
@@ -347,24 +350,32 @@ def _pull_cards(
             if not rows and duration + _REACH_SLACK < _part_gate(mech, part):
                 continue
             failed: dict[str, str] = {}
+            own: set[str] = set()
             for row in rows:
                 if row["outcome"] != "fail":
                     continue
+                carried = set(row.get("carried") or [])
                 for name in row.get("culprits") or [row["name"]]:
                     failed.setdefault(name, row["job"] if name == row["name"] else "")
-            seats = [
-                {"name": player["name"], "job": player["job"], "passed": player["name"] not in failed}
-                for player in roster
-            ]
+                    if name not in carried:
+                        own.add(name)
+            seats = [_seat(player["name"], player["job"], failed, own) for player in roster]
             known = {seat["name"] for seat in seats}
             for name, job in failed.items():
                 if name not in known:
-                    seats.append({"name": name, "job": job, "passed": False})
+                    seats.append(_seat(name, job, failed, own))
                     known.add(name)
             parts_out.append({"id": part["id"], "name": part["name"], "seats": seats})
         if parts_out:
             cards.append({"id": mech["id"], "name": mech["name"], "parts": parts_out})
     return cards
+
+
+def _seat(name: str, job: str, failed: dict[str, str], own: set[str]) -> dict:
+    seat = {"name": name, "job": job, "passed": name not in failed}
+    if name in failed and name not in own:
+        seat["earlier"] = True
+    return seat
 
 
 def attach_debuffs(report: Path, payload: dict, pack: FightPack, meta: dict) -> None:
@@ -527,6 +538,7 @@ def session_payload(
                 "blames": [blame.to_dict() for blame in item.blames],
                 "basis": item.basis,
                 "culprits": culprits,
+                "carried": [name for name in culprits if name in item.carried()],
                 "first": item.first,
             }
         )
@@ -549,7 +561,7 @@ def session_payload(
     counts = Counter(item.outcome for item in judgments)
     night = night_tally([
         {"fight": item.fact.fight, "outcome": item.outcome, "first_causes": item.first_causes,
-         "blames": [blame.to_dict() for blame in item.blames]}
+         "blames": [blame.to_dict() for blame in item.blames], "carried": item.carried()}
         for item in judgments
     ])
     return {
@@ -584,7 +596,10 @@ def _pull_index(pull: dict) -> dict:
 
 
 def _card_failed(card: dict) -> bool:
-    return any(not seat["passed"] for part in card["parts"] for seat in part["seats"])
+    """A player failed a component of it themselves, not only through an earlier death."""
+    return any(
+        not seat["passed"] and not seat.get("earlier") for part in card["parts"] for seat in part["seats"]
+    )
 
 
 def _mechanic_index(mech: dict) -> dict:

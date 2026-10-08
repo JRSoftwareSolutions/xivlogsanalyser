@@ -52,6 +52,15 @@ class Judgment:
     # The pull's first mistake, per mechanic: [{"mechanic", "owners"}]. The same on every death of the pull.
     first_causes: list[dict] = field(default_factory=list)
 
+    def carried(self) -> list[str]:
+        """Owners who are on this death only through an earlier death.
+
+        A player who was already dead, or whoever owned that death, left this mechanic
+        short. Their mistake was the earlier one, not this mechanic.
+        """
+        gone = {*self.fact.down, *self.fact.orphan, *self.fact.dead}
+        return [blame.who for blame in self.blames if blame.via or blame.who in gone]
+
     def to_dict(self) -> dict:
         payload = asdict(self.fact)
         payload.update(
@@ -64,6 +73,7 @@ class Judgment:
                 "went_wrong": self.went_wrong,
                 "cause": self.cause,
                 "blames": [blame.to_dict() for blame in self.blames],
+                "carried": self.carried(),
                 "basis": self.basis,
                 "first": self.first,
                 "first_mistake": self.first_mistake,

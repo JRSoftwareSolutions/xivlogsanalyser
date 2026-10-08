@@ -960,13 +960,11 @@ def attach_frames(report: Path, payload: dict, pack: FightPack) -> None:
             if mech is None:
                 continue
             for part in card.get("parts") or []:
-                failed = [
-                    seat["name"]
-                    for seat in part.get("seats") or []
-                    if not seat.get("passed")
-                ]
-                if not failed:
+                seats = [seat for seat in part.get("seats") or [] if not seat.get("passed")]
+                if not seats:
                     continue
+                # A seat on it only through an earlier death did not fail this mechanic.
+                failed = [seat["name"] for seat in seats if not seat.get("earlier")]
                 frames = []
                 moments = clock.times(pull["id"], card["id"], part["id"])
                 if not moments:

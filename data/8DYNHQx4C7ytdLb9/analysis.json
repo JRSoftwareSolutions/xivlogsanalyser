@@ -1,12 +1,12 @@
 {
  "rules": "0ef58f8181144124",
- "engine": "ab5d65860d38d526",
+ "engine": "e2e5ab64e1f69e43",
  "log": "16dcfb6841a6438b",
  "outputs": {
   "facts.json": "b1dd0a2a52b2dcab",
-  "judgments.json": "976e1cc8d3e0dfbe",
+  "judgments.json": "4a092c37458f088c",
   "calls.tsv": "fa2d73d297e99b93",
-  "session.html": "b8e57e54f9895011",
+  "session.html": "3bafed4b46b65fdd",
   "inputs.json": "f48daa99d0ac1b58"
  },
  "counts": {
@@ -1214,7 +1214,7 @@
     "phase": 2,
     "starts": 40.0,
     "reached": 41,
-    "mistakes": 16
+    "mistakes": 15
    },
    {
     "id": "heavenly-heel-swap",
@@ -1238,7 +1238,7 @@
     "phase": 2,
     "starts": 125.0,
     "reached": 26,
-    "mistakes": 18
+    "mistakes": 14
    },
    {
     "id": "dive-from-grace",
@@ -1594,36 +1594,70 @@
    ],
    "owned": [
     [
-     "Loki Doki",
-     65.0
-    ],
-    [
-     "Spring Nymphar",
-     54.0
-    ],
-    [
-     "Kitana Kahn",
-     47.2
-    ],
-    [
      "Absolute Gigachad",
-     42.4
+     27.3
     ],
     [
      "Absolute Gigalad",
-     38.9
+     25.8
     ],
     [
-     "Kiara Blaiddyd",
-     35.9
+     "Kitana Kahn",
+     24.3
+    ],
+    [
+     "Spring Nymphar",
+     22.5
+    ],
+    [
+     "Loki Doki",
+     22.3
     ],
     [
      "Speed Panda",
-     32.3
+     18.8
+    ],
+    [
+     "Kiara Blaiddyd",
+     17.3
     ],
     [
      "Kite Noodle",
-     29.8
+     14.0
+    ]
+   ],
+   "passed_on": [
+    [
+     "Loki Doki",
+     42.7
+    ],
+    [
+     "Spring Nymphar",
+     31.5
+    ],
+    [
+     "Kitana Kahn",
+     22.9
+    ],
+    [
+     "Kiara Blaiddyd",
+     18.6
+    ],
+    [
+     "Kite Noodle",
+     15.8
+    ],
+    [
+     "Absolute Gigachad",
+     15.1
+    ],
+    [
+     "Speed Panda",
+     13.6
+    ],
+    [
+     "Absolute Gigalad",
+     13.1
     ]
    ]
   }

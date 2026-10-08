@@ -1,8 +1,13 @@
 """What started each pull of a night, and who owns its deaths.
 
 Built from the saved calls: each judgment's `first_causes` (the pull's first
-mistake per mechanic, with its owners) and `blames`. The brief prints it and
-the session page shows it above the pulls.
+mistake per mechanic, with its owners), `blames`, and `carried`. The brief prints
+it and the session page shows it above the pulls.
+
+A share that came through an earlier death, such as an empty tower left by a
+player who was already dead, is counted apart from the deaths a player owns by
+their own mistake. One mistake can leave several later mechanics short, and
+counting those as theirs too makes them look like they fail more mechanics.
 """
 
 from __future__ import annotations
@@ -27,13 +32,20 @@ def night_tally(rows: list[dict]) -> dict:
             in_pull.update(cause["owners"])
         starters.update(in_pull)
     owned: Counter[str] = Counter()
+    passed_on: Counter[str] = Counter()
     for row in rows:
         if row.get("outcome") not in {"fail", "raw", "low"}:
             continue
+        carried = set(row.get("carried") or [])
         for blame in row.get("blames") or []:
-            if blame["who"] not in CONTEXT_SHARES:
-                owned[blame["who"]] += (blame.get("confidence") or 0) / 100
-    named = set(starters) | set(owned) | {who for counter in owners_of.values() for who in counter}
+            if blame["who"] in CONTEXT_SHARES:
+                continue
+            tally = passed_on if blame["who"] in carried else owned
+            tally[blame["who"]] += (blame.get("confidence") or 0) / 100
+    named = (
+        set(starters) | set(owned) | set(passed_on)
+        | {who for counter in owners_of.values() for who in counter}
+    )
     return {
         "pulls": len(causes),
         # Owners that are a group label, not a player.
@@ -44,6 +56,7 @@ def night_tally(rows: list[dict]) -> dict:
         ],
         "starters": starters.most_common(),
         "owned": [(who, round(share, 1)) for who, share in owned.most_common()],
+        "passed_on": [(who, round(share, 1)) for who, share in passed_on.most_common()],
     }
 
 
@@ -74,6 +87,10 @@ def night_lines(rows: list[dict]) -> list[str]:
     lines.append("Who started pulls")
     lines += _people(tally["starters"], str)
     lines.append("")
-    lines.append("Deaths owned, by share")
+    lines.append("Deaths owned by their own mistake, by share")
     lines += _people(tally["owned"], _number)
+    if tally["passed_on"]:
+        lines.append("")
+        lines.append("Passed on from an earlier death, by share")
+        lines += _people(tally["passed_on"], _number)
     return lines
