@@ -104,12 +104,12 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 21	1:07	Absolute Gigalad	65.0	Eternal Conviction	fail	empty	hit-list	Speed Panda 16; Spring Nymphar 16; Loki Doki 50 (via Kite Noodle, Kitana Kahn); Kiara Blaiddyd 16	
 22	2:00	Absolute Gigalad	118.8	Bright Flare	fail	personal	hit	Absolute Gigalad 100	
 22	2:00	Kitana Kahn	118.8	Bright Flare	fail	personal	hit	Kitana Kahn 100	
-22	2:12	Absolute Gigachad	130.6	Hiemal Storm	fail	missing	hit-list	Absolute Gigalad 33; Kitana Kahn 33; Kite Noodle 33	
+22	2:12	Absolute Gigachad	130.6	Hiemal Storm	fail	missing	hit-list	Absolute Gigalad 50; Kitana Kahn 50	
 22	2:12	Loki Doki	130.6	Hiemal Storm	fail	missing	hit-list	Kitana Kahn 50; Kite Noodle 50	
-22	2:12	Speed Panda	130.6	Hiemal Storm	fail	missing	hit-list	Absolute Gigalad 33; Kitana Kahn 33; Kite Noodle 33	
-22	2:18	Spring Nymphar	136.8	Eternal Conviction	fail	empty	hit-list	Absolute Gigalad 33 (via Speed Panda, Absolute Gigachad); Kitana Kahn 43 (via Speed Panda, Absolute Gigachad, Loki Doki); Kite Noodle 23 (via Speed Panda, Absolute Gigachad, Loki Doki)	
-22	2:18	Kiara Blaiddyd	136.9	Eternal Conviction	fail	empty	hit-list	Absolute Gigalad 33 (via Speed Panda, Absolute Gigachad); Kitana Kahn 43 (via Speed Panda, Absolute Gigachad, Loki Doki); Kite Noodle 23 (via Speed Panda, Absolute Gigachad, Loki Doki)	
-22	2:18	Kite Noodle	136.9	Eternal Conviction	fail	empty	hit-list	Absolute Gigalad 33 (via Speed Panda, Absolute Gigachad); Kitana Kahn 43 (via Speed Panda, Absolute Gigachad, Loki Doki); Kite Noodle 23 (via Speed Panda, Absolute Gigachad, Loki Doki)	
+22	2:12	Speed Panda	130.6	Hiemal Storm	fail	missing	hit-list	Absolute Gigalad 50; Kitana Kahn 50	
+22	2:18	Spring Nymphar	136.8	Eternal Conviction	fail	empty	hit-list	Absolute Gigalad 40 (via Speed Panda, Absolute Gigachad); Kitana Kahn 50 (via Speed Panda, Absolute Gigachad, Loki Doki); Kite Noodle 10 (via Loki Doki)	
+22	2:18	Kiara Blaiddyd	136.9	Eternal Conviction	fail	empty	hit-list	Absolute Gigalad 40 (via Speed Panda, Absolute Gigachad); Kitana Kahn 50 (via Speed Panda, Absolute Gigachad, Loki Doki); Kite Noodle 10 (via Loki Doki)	
+22	2:18	Kite Noodle	136.9	Eternal Conviction	fail	empty	hit-list	Absolute Gigalad 40 (via Speed Panda, Absolute Gigachad); Kitana Kahn 50 (via Speed Panda, Absolute Gigachad, Loki Doki); Kite Noodle 10 (via Loki Doki)	
 23	0:16	Loki Doki	14.9	Ascalon's Mercy Concealed	fail	personal	hit	Loki Doki 100	
 23	0:16	Spring Nymphar	14.9	Ascalon's Mercy Concealed	fail	personal	hit	Spring Nymphar 100	
 23	0:20	Kiara Blaiddyd	18.5	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
@@ -392,13 +392,13 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 60	2:03	Absolute Gigalad	121.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 60	2:03	Kiara Blaiddyd	121.5	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
 61	2:01	Kitana Kahn	119.3	Bright Flare	fail	personal	hit	Kitana Kahn 100	
-61	2:13	Absolute Gigalad	131.5	Hiemal Storm	fail	missing	hit-list	Kitana Kahn 50; Absolute Gigachad 50	
-61	2:13	Speed Panda	131.6	Hiemal Storm	fail	missing	hit-list	Kitana Kahn 50; Absolute Gigachad 50	
+61	2:13	Absolute Gigalad	131.5	Hiemal Storm	fail	missing	hit-list	Kitana Kahn 100	
+61	2:13	Speed Panda	131.6	Hiemal Storm	fail	missing	hit-list	Kitana Kahn 100	
 61	2:18	Absolute Gigachad	136.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
-61	2:19	Kite Noodle	137.7	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 66 (via Speed Panda, Absolute Gigalad); Absolute Gigachad 33 (via Speed Panda, Absolute Gigalad)	
-61	2:19	Loki Doki	137.7	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 66 (via Speed Panda, Absolute Gigalad); Absolute Gigachad 33 (via Speed Panda, Absolute Gigalad)	
-61	2:19	Kiara Blaiddyd	137.8	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 66 (via Speed Panda, Absolute Gigalad); Absolute Gigachad 33 (via Speed Panda, Absolute Gigalad)	
-61	2:19	Spring Nymphar	137.8	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 66 (via Speed Panda, Absolute Gigalad); Absolute Gigachad 33 (via Speed Panda, Absolute Gigalad)	
+61	2:19	Kite Noodle	137.7	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100 (via Speed Panda, Absolute Gigalad)	
+61	2:19	Loki Doki	137.7	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100 (via Speed Panda, Absolute Gigalad)	
+61	2:19	Kiara Blaiddyd	137.8	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100 (via Speed Panda, Absolute Gigalad)	
+61	2:19	Spring Nymphar	137.8	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100 (via Speed Panda, Absolute Gigalad)	
 62	2:18	Kitana Kahn	136.1	Burns	fail	personal	hit	Kitana Kahn 100	
 62	2:18	Kiara Blaiddyd	136.7	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100	
 62	2:18	Kite Noodle	137.0	Eternal Conviction	fail	empty	hit-list	Kitana Kahn 100	

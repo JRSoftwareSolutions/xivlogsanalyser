@@ -1,17 +1,17 @@
 {
  "rules": "0ef58f8181144124",
- "engine": "e4946022ea80eda5",
+ "engine": "4d677559b7b99236",
  "log": "16dcfb6841a6438b",
  "outputs": {
   "facts.json": "3b3e0ad4685c911a",
-  "judgments.json": "bb2ae89d77724138",
-  "calls.tsv": "37d009f331953605",
-  "session.html": "275cbefce6fde957",
+  "judgments.json": "814d980f92ce49ea",
+  "calls.tsv": "5bb7049f2f413ecb",
+  "session.html": "3a7dd9afd28d6300",
   "inputs.json": "f48daa99d0ac1b58"
  },
  "counts": {
-  "raw": 18,
-  "fail": 375,
+  "raw": 19,
+  "fail": 374,
   "low": 0,
   "environment": 0,
   "unknown": 0
@@ -25,8 +25,8 @@
   "day": "2026-10-05",
   "dayLabel": "Mon 5 Oct 2026",
   "timeLabel": "21:31\u201300:14",
-  "raw": 18,
-  "fail": 375,
+  "raw": 19,
+  "fail": 374,
   "low": 0,
   "detail": "",
   "overview": {
@@ -1605,27 +1605,27 @@
    "owned": [
     [
      "Loki Doki",
-     65.0
+     65.2
     ],
     [
      "Spring Nymphar",
-     54.1
+     54.3
     ],
     [
      "Kitana Kahn",
-     47.3
+     47.4
     ],
     [
      "Absolute Gigachad",
-     42.1
+     42.3
     ],
     [
      "Absolute Gigalad",
-     37.0
+     37.1
     ],
     [
      "Kiara Blaiddyd",
-     36.9
+     35.9
     ],
     [
      "Speed Panda",
@@ -1633,7 +1633,7 @@
     ],
     [
      "Kite Noodle",
-     28.8
+     29.0
     ],
     [
      "Miscommunication",

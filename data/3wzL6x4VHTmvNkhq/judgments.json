@@ -719,33 +719,18 @@
     "amp_ms": null,
     "mechanic_id": "ascalons-might",
     "mechanic": "Ascalon's Might",
-    "outcome": "low",
-    "happened": "Took 60,159 at 3% HP (2,759 of 99,211).",
+    "outcome": "fail",
+    "happened": "Took 60,159 at 3% HP. No personal mitigation.",
     "should_have_been": "The main tank takes the three hits with personal mitigation, about 71\u201386k. Anyone who is not a tank getting hit is their mistake. A tank who dies to the real hits without personal mitigation owns that death.",
-    "went_wrong": "Absolute Gigachad was already low.",
-    "cause": "low",
+    "went_wrong": "Absolute Gigachad died to Ascalon's Might without mitigation.",
+    "cause": "personal",
     "blames": [
       {
-        "who": "Loki Doki",
-        "confidence": 16
-      },
-      {
         "who": "Absolute Gigachad",
-        "confidence": 16,
-        "via": [
-          "Loki Doki"
-        ]
-      },
-      {
-        "who": "Spring Nymphar",
-        "confidence": 33
-      },
-      {
-        "who": "Earlier damage",
-        "confidence": 33
+        "confidence": 100
       }
     ],
-    "basis": "role",
+    "basis": "hit",
     "first": false,
     "first_mistake": "Kitana Kahn and Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -947,24 +932,14 @@
       },
       {
         "who": "Absolute Gigachad",
-        "confidence": 10,
+        "confidence": 21,
         "via": [
           "Kitana Kahn"
         ]
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 21,
-        "via": [
-          "Absolute Gigachad"
-        ]
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 3,
-        "via": [
-          "Absolute Gigachad"
-        ]
+        "confidence": 14
       },
       {
         "who": "Absolute Gigalad",
@@ -1854,7 +1829,9 @@
     "main_tank": "",
     "stunned_by": [],
     "knocked_by": [],
-    "baited_by": [],
+    "baited_by": [
+      "Out of position"
+    ],
     "orphan": [],
     "stacked_by": [],
     "amp_via": "",
@@ -1864,22 +1841,27 @@
     "outcome": "fail",
     "happened": "Took 208,186 at full HP. A one-shot.",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Loki Doki got hit by the cone.",
-    "cause": "personal",
+    "went_wrong": "Loki Doki was in the cone Out of position baited outside the stack.",
+    "cause": "baited",
     "blames": [
       {
         "who": "Loki Doki",
-        "confidence": 100
+        "confidence": 50
+      },
+      {
+        "who": "Out of position",
+        "confidence": 50
       }
     ],
-    "basis": "hit",
+    "basis": "position",
     "first": true,
     "first_mistake": "Loki Doki dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
       {
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
-          "Loki Doki"
+          "Loki Doki",
+          "Out of position"
         ]
       }
     ]
@@ -1978,7 +1960,8 @@
       {
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
-          "Loki Doki"
+          "Loki Doki",
+          "Out of position"
         ]
       }
     ]
@@ -2068,7 +2051,8 @@
       {
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
-          "Loki Doki"
+          "Loki Doki",
+          "Out of position"
         ]
       }
     ]
@@ -2159,7 +2143,8 @@
       {
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
-          "Loki Doki"
+          "Loki Doki",
+          "Out of position"
         ]
       }
     ]
@@ -2266,7 +2251,8 @@
       {
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
-          "Loki Doki"
+          "Loki Doki",
+          "Out of position"
         ]
       }
     ]
@@ -2365,7 +2351,8 @@
       {
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
-          "Loki Doki"
+          "Loki Doki",
+          "Out of position"
         ]
       }
     ]
@@ -2460,7 +2447,8 @@
       {
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
-          "Loki Doki"
+          "Loki Doki",
+          "Out of position"
         ]
       }
     ]
@@ -2555,7 +2543,8 @@
       {
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
-          "Loki Doki"
+          "Loki Doki",
+          "Out of position"
         ]
       }
     ]
@@ -2720,7 +2709,8 @@
       {
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
-          "Loki Doki"
+          "Loki Doki",
+          "Out of position"
         ]
       }
     ]
@@ -3706,7 +3696,9 @@
     "main_tank": "",
     "stunned_by": [],
     "knocked_by": [],
-    "baited_by": [],
+    "baited_by": [
+      "Kitana Kahn"
+    ],
     "orphan": [],
     "stacked_by": [],
     "amp_via": "",
@@ -3716,15 +3708,19 @@
     "outcome": "fail",
     "happened": "Took 205,800 at full HP. A one-shot.",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Kiara Blaiddyd got hit by the cone.",
-    "cause": "personal",
+    "went_wrong": "Kiara Blaiddyd was in the cone Kitana Kahn baited outside the stack.",
+    "cause": "baited",
     "blames": [
       {
         "who": "Kiara Blaiddyd",
-        "confidence": 100
+        "confidence": 50
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 50
       }
     ],
-    "basis": "hit",
+    "basis": "position",
     "first": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
@@ -3732,6 +3728,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -3808,6 +3805,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -3859,7 +3857,9 @@
     "main_tank": "",
     "stunned_by": [],
     "knocked_by": [],
-    "baited_by": [],
+    "baited_by": [
+      "Kitana Kahn"
+    ],
     "orphan": [],
     "stacked_by": [],
     "amp_via": "",
@@ -3869,15 +3869,19 @@
     "outcome": "fail",
     "happened": "Took 200,750 at full HP. A one-shot.",
     "should_have_been": "One tank stands in front of the boss. Everyone else stacks tight behind the boss, then dodges together. Nobody is hit. A cone baited from outside the stack is also the baiter's mistake.",
-    "went_wrong": "Speed Panda got hit by the cone.",
-    "cause": "personal",
+    "went_wrong": "Speed Panda was in the cone Kitana Kahn baited outside the stack.",
+    "cause": "baited",
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 100
+        "confidence": 50
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 50
       }
     ],
-    "basis": "hit",
+    "basis": "position",
     "first": true,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
@@ -3885,6 +3889,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -3979,7 +3984,14 @@
     "blames": [
       {
         "who": "Speed Panda",
-        "confidence": 100
+        "confidence": 50
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 50,
+        "via": [
+          "Speed Panda"
+        ]
       }
     ],
     "basis": "hit-list",
@@ -3990,6 +4002,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -4094,6 +4107,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -4225,18 +4239,36 @@
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
-    "outcome": "fail",
-    "happened": "Took 143,889 at 93% HP. It would have killed them from full HP.",
+    "outcome": "raw",
+    "happened": "Took 143,889 at 93% HP. Shared by 1 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Absolute Gigalad took a failed Dragon's Rage.",
-    "cause": "personal",
+    "went_wrong": "The stack was 1 of 5 because 4 players were missing.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Absolute Gigalad",
-        "confidence": 100
+        "who": "Kiara Blaiddyd",
+        "confidence": 25
+      },
+      {
+        "who": "Speed Panda",
+        "confidence": 25,
+        "via": [
+          "Kitana Kahn"
+        ]
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 25,
+        "via": [
+          "Speed Panda"
+        ]
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 25
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "3 players dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
@@ -4244,6 +4276,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -4376,6 +4409,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -4488,9 +4522,16 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 66,
+        "confidence": 33,
         "via": [
           "Kitana Kahn"
+        ]
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 33,
+        "via": [
+          "Speed Panda"
         ]
       }
     ],
@@ -4502,6 +4543,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -4614,9 +4656,16 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 66,
+        "confidence": 33,
         "via": [
           "Kitana Kahn"
+        ]
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 33,
+        "via": [
+          "Speed Panda"
         ]
       }
     ],
@@ -4628,6 +4677,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -4742,9 +4792,16 @@
       },
       {
         "who": "Speed Panda",
-        "confidence": 66,
+        "confidence": 33,
         "via": [
           "Kitana Kahn"
+        ]
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 33,
+        "via": [
+          "Speed Panda"
         ]
       }
     ],
@@ -4756,6 +4813,7 @@
         "mechanic": "Ascalon's Mercy Concealed",
         "owners": [
           "Kiara Blaiddyd",
+          "Kitana Kahn",
           "Loki Doki",
           "Speed Panda"
         ]
@@ -43386,13 +43444,7 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [
-      "Kite Noodle",
-      "Kiara Blaiddyd",
-      "Speed Panda",
-      "Kitana Kahn",
-      "Loki Doki"
-    ],
+    "down": [],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -43422,7 +43474,9 @@
     "knocked_by": [],
     "baited_by": [],
     "orphan": [],
-    "stacked_by": [],
+    "stacked_by": [
+      "Spring Nymphar"
+    ],
     "amp_via": "Sacred Sever",
     "amp_ms": 12626,
     "mechanic_id": "hiemal-storm",
@@ -43430,31 +43484,15 @@
     "outcome": "fail",
     "happened": "Took 764,460 at 74% HP. A tank takes about 14\u201325k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "The pair took a second ice because 5 players were already dead.",
-    "cause": "missing",
+    "went_wrong": "Spring Nymphar brought a second ice onto the pair.",
+    "cause": "stacked",
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 40,
-        "via": [
-          "Kite Noodle",
-          "Kiara Blaiddyd"
-        ]
-      },
-      {
-        "who": "Speed Panda",
-        "confidence": 20
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 20
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 20
+        "confidence": 100
       }
     ],
-    "basis": "hit-list",
+    "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [
@@ -43522,13 +43560,7 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [
-      "Kite Noodle",
-      "Kiara Blaiddyd",
-      "Speed Panda",
-      "Kitana Kahn",
-      "Loki Doki"
-    ],
+    "down": [],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -43557,7 +43589,9 @@
     "knocked_by": [],
     "baited_by": [],
     "orphan": [],
-    "stacked_by": [],
+    "stacked_by": [
+      "Spring Nymphar"
+    ],
     "amp_via": "Sacred Sever",
     "amp_ms": 14403,
     "mechanic_id": "hiemal-storm",
@@ -43565,31 +43599,15 @@
     "outcome": "fail",
     "happened": "Took 1,084,517 at full HP. A healer takes about 23\u201338k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "The pair took a second ice because 5 players were already dead.",
-    "cause": "missing",
+    "went_wrong": "Spring Nymphar brought a second ice onto the pair.",
+    "cause": "stacked",
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 40,
-        "via": [
-          "Kite Noodle",
-          "Kiara Blaiddyd"
-        ]
-      },
-      {
-        "who": "Speed Panda",
-        "confidence": 20
-      },
-      {
-        "who": "Kitana Kahn",
-        "confidence": 20
-      },
-      {
-        "who": "Loki Doki",
-        "confidence": 20
+        "confidence": 100
       }
     ],
-    "basis": "hit-list",
+    "basis": "position",
     "first": false,
     "first_mistake": "Loki Doki dying to Sacred Sever, Speed Panda walking into the deathwall and Damage Down and Hysteria on Speed Panda from Dragon's Glory at 112.3s into Thordan",
     "first_causes": [

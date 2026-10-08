@@ -465,7 +465,8 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
             f"{fact.name} took a second Skyward Leap whose marker holder was already dead.",
             "orphan", pack,
         )
-    if mechanic.fail_above is not None and hit > mechanic.fail_above:
+    above = mechanic.fail_above_for(fact.stack)
+    if above is not None and hit > above:
         if mechanic.dive_markers:
             wrong, cause = _landing(fact)
             return _done(fact, mechanic, "fail", wrong, cause, pack)
@@ -490,17 +491,19 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
                 fact, mechanic, "low" if fact.hp is not None and fact.hp < pack.low_hp else "raw",
                 f"{fact.name} was still low from {own['ability']}.", "self", pack,
             )
-        if fact.hp is not None and fact.hp < pack.low_hp:
-            return _done(
-                fact, mechanic, "low",
-                f"{fact.name} was already low.",
-                "low", pack,
-            )
+        # A tank low from earlier hits of the same buster without mitigation is short the
+        # mitigation, not the heals.
         if mechanic.requires_personal_mit and fact.role == "tank" and not _personal_mit(fact, pack):
             return _done(
                 fact, mechanic, "fail",
                 f"{fact.name} died to {mechanic.name} without mitigation.",
                 "personal", pack,
+            )
+        if fact.hp is not None and fact.hp < pack.low_hp:
+            return _done(
+                fact, mechanic, "low",
+                f"{fact.name} was already low.",
+                "low", pack,
             )
         if mechanic.id == "skyward-leap":
             return _done(
@@ -596,7 +599,8 @@ def _cast_verdicts(facts: list[DeathFact], pack: FightPack) -> dict[int, bool]:
         if _vuln(fact) or fact.clipped_by:
             continue
         cap = mechanic.cap_for_stack(fact.role, fact.stack)
-        if not cap or (mechanic.fail_above is not None and _hit(fact) > mechanic.fail_above):
+        above = mechanic.fail_above_for(fact.stack)
+        if not cap or (above is not None and _hit(fact) > above):
             continue
         groups[(fact.fight, fact.guid, tuple(sorted(fact.cohort)))].append((fact, _hit(fact) / cap))
     verdicts: dict[int, bool] = {}

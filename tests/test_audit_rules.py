@@ -317,6 +317,27 @@ class AdjudicatedTest(unittest.TestCase):
         for name in ("Loki Doki", "Kitana Kahn"):
             item = _one("3wzL6x4VHTmvNkhq", 3, name, "Ascalon's Mercy Concealed")
             self.assertEqual(_owners(item), [(name, 50), ("Absolute Gigachad", 50)])
+        # One cone hit both Speed and Kiara; Kitana baited it from her spot outside the stack.
+        for name in ("Speed Panda", "Kiara Blaiddyd"):
+            item = _one("3wzL6x4VHTmvNkhq", 7, name, "Ascalon's Mercy Concealed")
+            self.assertEqual(_owners(item), [(name, 50), ("Kitana Kahn", 50)])
+        # Two players stood on the line of the cone that hit Loki when it locked.
+        loki = _one("3wzL6x4VHTmvNkhq", 5, "Loki Doki", "Ascalon's Mercy Concealed")
+        self.assertEqual(_owners(loki), [("Loki Doki", 50), ("Out of position", 50)])
+
+    def test_a_short_stack_on_one_tank_is_raw_not_a_cleave(self):
+        # 222k on one tank is the whole Dragon's Rage: four bodies were missing.
+        gigalad = _one("3wzL6x4VHTmvNkhq", 7, "Absolute Gigalad", "Dragon's Rage")
+        self.assertEqual((gigalad.outcome, gigalad.cause), ("raw", "missing"))
+
+    def test_a_tank_low_from_unmitigated_hits_of_the_same_buster_is_missing_mitigation(self):
+        gigachad = _one("3wzL6x4VHTmvNkhq", 3, "Absolute Gigachad", "Ascalon's Might")
+        self.assertEqual((gigachad.outcome, _owners(gigachad)), ("fail", [("Absolute Gigachad", 100)]))
+
+    def test_a_surplus_ice_belongs_to_the_dead_not_the_living_in_no_circle(self):
+        for name in ("Absolute Gigalad", "Speed Panda"):
+            item = _one("XVz8bCqgPw1KRh9d", 61, name, "Hiemal Storm")
+            self.assertEqual(_owners(item), [("Kitana Kahn", 100)])
 
     def test_a_tether_taken_for_a_dead_tank_is_that_tanks(self):
         kitana = _one("XVz8bCqgPw1KRh9d", 30, "Kitana Kahn", "Holy Shield Bash")

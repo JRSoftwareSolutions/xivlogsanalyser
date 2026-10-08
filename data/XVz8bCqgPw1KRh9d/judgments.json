@@ -11778,9 +11778,7 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
-    "unsoaked": [
-      "Kite Noodle"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -11813,20 +11811,16 @@
     "outcome": "fail",
     "happened": "Took 788,720 at full HP. A tank takes about 14\u201325k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "The pair took a second ice because 3 players were missing.",
+    "went_wrong": "The pair took a second ice because Absolute Gigalad and Kitana Kahn were already dead.",
     "cause": "missing",
     "blames": [
       {
         "who": "Absolute Gigalad",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
-      },
-      {
-        "who": "Kite Noodle",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "hit-list",
@@ -12003,9 +11997,7 @@
       "Absolute Gigalad",
       "Kitana Kahn"
     ],
-    "unsoaked": [
-      "Kite Noodle"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -12040,20 +12032,16 @@
     "outcome": "fail",
     "happened": "Took 1,219,410 at 56% HP. A DPS takes about 26\u201340k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "The pair took a second ice because 3 players were missing.",
+    "went_wrong": "The pair took a second ice because Absolute Gigalad and Kitana Kahn were already dead.",
     "cause": "missing",
     "blames": [
       {
         "who": "Absolute Gigalad",
-        "confidence": 33
+        "confidence": 50
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 33
-      },
-      {
-        "who": "Kite Noodle",
-        "confidence": 33
+        "confidence": 50
       }
     ],
     "basis": "hit-list",
@@ -12160,7 +12148,7 @@
     "blames": [
       {
         "who": "Absolute Gigalad",
-        "confidence": 33,
+        "confidence": 40,
         "via": [
           "Speed Panda",
           "Absolute Gigachad"
@@ -12168,7 +12156,7 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 43,
+        "confidence": 50,
         "via": [
           "Speed Panda",
           "Absolute Gigachad",
@@ -12177,10 +12165,8 @@
       },
       {
         "who": "Kite Noodle",
-        "confidence": 23,
+        "confidence": 10,
         "via": [
-          "Speed Panda",
-          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -12281,7 +12267,7 @@
     "blames": [
       {
         "who": "Absolute Gigalad",
-        "confidence": 33,
+        "confidence": 40,
         "via": [
           "Speed Panda",
           "Absolute Gigachad"
@@ -12289,7 +12275,7 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 43,
+        "confidence": 50,
         "via": [
           "Speed Panda",
           "Absolute Gigachad",
@@ -12298,10 +12284,8 @@
       },
       {
         "who": "Kite Noodle",
-        "confidence": 23,
+        "confidence": 10,
         "via": [
-          "Speed Panda",
-          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -12402,7 +12386,7 @@
     "blames": [
       {
         "who": "Absolute Gigalad",
-        "confidence": 33,
+        "confidence": 40,
         "via": [
           "Speed Panda",
           "Absolute Gigachad"
@@ -12410,7 +12394,7 @@
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 43,
+        "confidence": 50,
         "via": [
           "Speed Panda",
           "Absolute Gigachad",
@@ -12419,10 +12403,8 @@
       },
       {
         "who": "Kite Noodle",
-        "confidence": 23,
+        "confidence": 10,
         "via": [
-          "Speed Panda",
-          "Absolute Gigachad",
           "Loki Doki"
         ]
       }
@@ -44071,9 +44053,7 @@
     "down": [
       "Kitana Kahn"
     ],
-    "unsoaked": [
-      "Absolute Gigachad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -44105,16 +44085,12 @@
     "outcome": "fail",
     "happened": "Took 784,822 at full HP. A tank takes about 14\u201325k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "The pair took a second ice because Kitana Kahn and Absolute Gigachad were missing.",
+    "went_wrong": "The pair took a second ice because Kitana Kahn was already dead.",
     "cause": "missing",
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "basis": "hit-list",
@@ -44159,9 +44135,7 @@
     "down": [
       "Kitana Kahn"
     ],
-    "unsoaked": [
-      "Absolute Gigachad"
-    ],
+    "unsoaked": [],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -44194,16 +44168,12 @@
     "outcome": "fail",
     "happened": "Took 1,227,577 at 45% HP. A DPS takes about 26\u201340k.",
     "should_have_been": "Pairs share the placed ice. Tanks take about 14\u201325k. Healers take about 23\u201338k. DPS take about 26\u201340k. It does not split further. A puddle that covers a tower is a wrong drop.",
-    "went_wrong": "The pair took a second ice because Kitana Kahn and Absolute Gigachad were missing.",
+    "went_wrong": "The pair took a second ice because Kitana Kahn was already dead.",
     "cause": "missing",
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 50
-      },
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 50
+        "confidence": 100
       }
     ],
     "basis": "hit-list",
@@ -44369,15 +44339,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 66,
-        "via": [
-          "Speed Panda",
-          "Absolute Gigalad"
-        ]
-      },
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 33,
+        "confidence": 100,
         "via": [
           "Speed Panda",
           "Absolute Gigalad"
@@ -44467,15 +44429,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 66,
-        "via": [
-          "Speed Panda",
-          "Absolute Gigalad"
-        ]
-      },
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 33,
+        "confidence": 100,
         "via": [
           "Speed Panda",
           "Absolute Gigalad"
@@ -44567,15 +44521,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 66,
-        "via": [
-          "Speed Panda",
-          "Absolute Gigalad"
-        ]
-      },
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 33,
+        "confidence": 100,
         "via": [
           "Speed Panda",
           "Absolute Gigalad"
@@ -44667,15 +44613,7 @@
     "blames": [
       {
         "who": "Kitana Kahn",
-        "confidence": 66,
-        "via": [
-          "Speed Panda",
-          "Absolute Gigalad"
-        ]
-      },
-      {
-        "who": "Absolute Gigachad",
-        "confidence": 33,
+        "confidence": 100,
         "via": [
           "Speed Panda",
           "Absolute Gigalad"

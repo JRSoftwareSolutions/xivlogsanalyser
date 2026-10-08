@@ -1277,6 +1277,10 @@ def _apart(left: float, right: float) -> float:
     return abs((left - right + 180) % 360 - 180)
 
 
+# Samples farther apart than this are not interpolated.
+GAP_MS = 1600
+
+
 def _sample(places: dict[int, list], actor: int, timestamp: int, slack_ms: int = 1500) -> tuple | None:
     """Where the actor was at this moment, between the samples either side of it.
 
@@ -1288,7 +1292,8 @@ def _sample(places: dict[int, list], actor: int, timestamp: int, slack_ms: int =
         return None
     before = [row for row in rows if row[0] <= timestamp]
     after = [row for row in rows if row[0] > timestamp]
-    if before and after:
+    # Across a longer gap the path between the samples is a guess.
+    if before and after and after[0][0] - before[-1][0] <= GAP_MS:
         left, right = before[-1], after[0]
         share = (timestamp - left[0]) / (right[0] - left[0])
         return left[1] + (right[1] - left[1]) * share, left[2] + (right[2] - left[2]) * share
@@ -1310,9 +1315,10 @@ def _baited_by(
     """Who baited the cone that hit this player from outside the stack.
 
     At the snapshot each cone faces the player it locked on. Most face the stack and
-    one faces the front tank. A cone facing anywhere else was baited by the player
-    standing in that direction when the cones locked. When this player died inside
-    such a cone and it was not their own, its baiter shares the death.
+    one faces the front tank. The cone that hit this player is the one that points
+    at everyone its instance hit. When it faces neither the stack nor the front, it
+    was baited by the player standing in that direction when the cones locked, and
+    that player shares the death. Two players on that line: "Out of position".
     """
     if t > baited.until or event is None or target is None or timestamp is None:
         return []
@@ -1322,35 +1328,58 @@ def _baited_by(
         if row.get("fight") == fight_id and row.get("targetID") == target and row.get("sourceID") == source
         and 0 <= timestamp - row["timestamp"] <= 2500
     ]
-    snap = max((row["timestamp"] for row in rows), default=event["timestamp"])
+    if not rows:
+        return []
+    hit = max(rows, key=lambda row: row["timestamp"])
+    snap = hit["timestamp"]
     boss = [row for row in places.get(source) or [] if abs(row[0] - snap) <= 100 and row[3] is not None]
     if len(boss) < 3:
         return []
     origin = (boss[0][1], boss[0][2])
     facings = [math.degrees(row[3] / 100) % 360 for row in boss]
-    stack = max(facings, key=lambda facing: sum(_apart(facing, other) <= 15 for other in facings))
-    front = (stack + 180) % 360
-    stray = sorted({round(facing, 1) for facing in facings if _apart(facing, stack) > 20 and _apart(facing, front) > 30})
-    here = _sample(places, target, snap)
-    if not stray or here is None:
-        return []
     lock = snap - round(baited.lock * 1000)
-    bearings = {}
+    # The stack is where most players stood when the cones locked.
+    party = sorted(
+        _bearing(origin, spot) for spot in (_sample(places, actor, lock) for actor in names_by_id) if spot
+    )
+    if len(party) < 3:
+        return []
+    stack = min(party, key=lambda bearing: sum(_apart(bearing, other) for other in party))
+    front = (stack + 180) % 360
+    # Everyone this cone's instance hit, where they stood when it hit.
+    struck = [
+        row["targetID"] for row in snapshots
+        if row.get("fight") == fight_id and row.get("sourceID") == source
+        and row.get("sourceInstance") == hit.get("sourceInstance") and abs(row["timestamp"] - snap) <= 100
+    ] or [target]
+    spots = [spot for spot in (_sample(places, actor, snap) for actor in set(struck)) if spot is not None]
+    if not spots:
+        return []
+    bearings_hit = [_bearing(origin, spot) for spot in spots]
+    facing = min(facings, key=lambda face: sum(_apart(face, bearing) for bearing in bearings_hit))
+    if sum(_apart(facing, bearing) for bearing in bearings_hit) / len(bearings_hit) > baited.width:
+        return []
+    if _apart(facing, stack) <= 20 or _apart(facing, front) <= 30:
+        return []
+    # The lock is only known to about a third of a second, so each player is placed at three moments.
+    aimed = []
     for actor, name in names_by_id.items():
-        there = _sample(places, actor, lock)
-        if there is not None:
-            bearings[name] = _bearing(origin, there)
-    owners: list[str] = []
-    for facing in stray:
-        if _apart(_bearing(origin, here), facing) > baited.width:
-            continue
-        aimed = sorted((_apart(bearing, facing), name) for name, bearing in bearings.items())
-        if not aimed or aimed[0][0] > baited.aim:
-            continue
+        seen = [_sample(places, actor, moment) for moment in (lock - 300, lock, lock + 300)]
+        seen = [spot for spot in seen if spot is not None]
+        if seen:
+            aimed.append((min(_apart(_bearing(origin, spot), facing) for spot in seen), name))
+    aimed.sort()
+    if not aimed or aimed[0][0] > baited.aim:
+        return []
+    if len(aimed) > 1 and aimed[1][0] <= baited.aim and aimed[1][0] - aimed[0][0] < AIM_TIE:
+        baiter = "Out of position"
+    else:
         baiter = aimed[0][1]
-        if baiter != names_by_id.get(target) and baiter not in owners:
-            owners.append(baiter)
-    return owners
+    return [] if baiter == names_by_id.get(target) else [baiter]
+
+
+# Two players this close to a stray cone's line when it locked cannot be told apart.
+AIM_TIE = 2.5
 
 
 # A deathwall death's time is only good to about a second, so a knockback is matched this far back.
@@ -1671,8 +1700,8 @@ def _ice_pairs(
     `down`, `unsoaked`, and `doubled` are those partners.
 
     A dead holder's ice goes to a living player, so with someone dead a pair can
-    take two circles. That surplus ice belongs to everyone missing from the
-    circles: `group` is both circles, `down` the dead, `unsoaked` the living in none.
+    take two circles. That surplus ice belongs to the dead: `group` is both
+    circles and `down` the dead.
     With nobody dead, two holders brought their circles to one spot: `stacked_by`
     is the one who got there last, or both when positions cannot tell.
     """
@@ -1696,16 +1725,19 @@ def _ice_pairs(
         anywhere = {name for members in circles.values() for name in members}
         resting = _holders(table, [TRANSCENDENT], snap, names_by_id)
         if len(mine) >= 2:
+            # Each circle's first row is the player it is placed on. The ices go to one role,
+            # so a circle on the other role is a dead holder's ice handed on.
+            placed = [members[0] for members in circles.values()]
+            handed_on = len({roles.get(name) in SUPPORT for name in placed}) > 1
             down = [
                 name for name in roles
                 if name not in anywhere and (_still_dead(name, timed, snap, raises) or name in resting)
-            ]
+            ] if handed_on else []
             fact.group = sorted({name for members in mine for name in members})
             if down:
+                # The surplus ice is the dead holder's, so only the dead own it.
                 fact.down = down
-                fact.unsoaked = [name for name in roles if name not in anywhere and name not in down]
             else:
-                # Each circle's first row is the player it is placed on.
                 holders = list(dict.fromkeys(members[0] for members in mine))
                 fact.stacked_by = _last_to_arrive(holders, positions, fight_id, snap) if len(holders) > 1 else []
             continue

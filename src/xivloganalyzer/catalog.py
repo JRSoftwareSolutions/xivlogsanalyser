@@ -205,6 +205,15 @@ class Mechanic:
             return cap
         return round(cap * self.typical_targets / stack)
 
+    def fail_above_for(self, stack: int | None) -> int | None:
+        """The hit no share reaches, for this many players in the stack. Like the role cap,
+        it is set for a full stack and scales up when the same cast splits fewer ways."""
+        if self.fail_above is None or not self.scales_with_stack or not self.typical_targets or not stack:
+            return self.fail_above
+        if stack >= self.typical_targets:
+            return self.fail_above
+        return round(self.fail_above * self.typical_targets / stack)
+
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
         return band.unmitigated_max if band else None

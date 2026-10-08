@@ -5983,18 +5983,38 @@
     "amp_ms": null,
     "mechanic_id": "dragons-rage",
     "mechanic": "Dragon's Rage",
-    "outcome": "fail",
-    "happened": "Took 333,516 at 90% HP. It would have killed them from full HP.",
+    "outcome": "raw",
+    "happened": "Took 333,516 at 90% HP. Shared by 1 of 5.",
     "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "Kiara Blaiddyd took a failed Dragon's Rage.",
-    "cause": "personal",
+    "went_wrong": "The stack was 1 of 5 because 6 players were already dead.",
+    "cause": "missing",
     "blames": [
       {
-        "who": "Kiara Blaiddyd",
-        "confidence": 100
+        "who": "Kite Noodle",
+        "confidence": 16
+      },
+      {
+        "who": "Kitana Kahn",
+        "confidence": 16
+      },
+      {
+        "who": "Loki Doki",
+        "confidence": 16
+      },
+      {
+        "who": "Spring Nymphar",
+        "confidence": 16
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 16
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 16
       }
     ],
-    "basis": "hit",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn dying to Ascalon's Mercy Concealed at 14.6s into Thordan",
     "first_causes": [

@@ -1315,7 +1315,9 @@
     "main_tank": "",
     "stunned_by": [],
     "knocked_by": [],
-    "baited_by": [],
+    "baited_by": [
+      "Out of position"
+    ],
     "orphan": [],
     "stacked_by": [],
     "amp_via": "",
@@ -2667,7 +2669,9 @@
     "main_tank": "",
     "stunned_by": [],
     "knocked_by": [],
-    "baited_by": [],
+    "baited_by": [
+      "Kitana Kahn"
+    ],
     "orphan": [],
     "stacked_by": [],
     "amp_via": "",
@@ -2768,7 +2772,9 @@
     "main_tank": "",
     "stunned_by": [],
     "knocked_by": [],
-    "baited_by": [],
+    "baited_by": [
+      "Kitana Kahn"
+    ],
     "orphan": [],
     "stacked_by": [],
     "amp_via": "",
@@ -32163,13 +32169,7 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [
-      "Kite Noodle",
-      "Kiara Blaiddyd",
-      "Speed Panda",
-      "Kitana Kahn",
-      "Loki Doki"
-    ],
+    "down": [],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -32199,7 +32199,9 @@
     "knocked_by": [],
     "baited_by": [],
     "orphan": [],
-    "stacked_by": [],
+    "stacked_by": [
+      "Spring Nymphar"
+    ],
     "amp_via": "Sacred Sever",
     "amp_ms": 12626
   },
@@ -32247,13 +32249,7 @@
         "via": "the Dragon's Glory"
       }
     ],
-    "down": [
-      "Kite Noodle",
-      "Kiara Blaiddyd",
-      "Speed Panda",
-      "Kitana Kahn",
-      "Loki Doki"
-    ],
+    "down": [],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -32282,7 +32278,9 @@
     "knocked_by": [],
     "baited_by": [],
     "orphan": [],
-    "stacked_by": [],
+    "stacked_by": [
+      "Spring Nymphar"
+    ],
     "amp_via": "Sacred Sever",
     "amp_ms": 14403
   },
