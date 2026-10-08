@@ -4745,20 +4745,18 @@
    "time": "2:01",
    "name": "Kite Noodle",
    "mechanic": "Sacred Sever",
+   "outcome": "raw",
+   "owners": [
+    "Kite Noodle"
+   ],
    "by": "review",
+   "why": "Person's rule: if the sword holder ran off on his own while the rest of the group was in a safe spot waiting for the stack, he was wrong. Spring, Gigalad and Kitana moved together to the usual east spot; Kite went north-west alone.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "raw",
-   "owners": [
-    "Absolute Gigalad",
-    "Kitana Kahn",
-    "Spring Nymphar"
-   ],
-   "why": "A skeptic upheld the judge. The judge applied the binding rule: a short stack names who was not in it, and the group's living players who were not in the stack own the gap (dsr-sacred-sever). The outcome is raw on both sides. Jump 4 hit only Kite for 181k, the normal cast taken alone, so Gigalad, Spring an…"
+   }
   },
   {
    "fight": 36,
@@ -6188,21 +6186,97 @@
   {
    "fight": 46,
    "time": "4:10",
+   "name": "Absolute Gigachad",
+   "mechanic": "Dark High Jump",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad",
+    "Speed Panda"
+   ],
+   "by": "user",
+   "why": "Dives in the stack are the fault of the people who were marked as the dive targets, because dive targets should never be in the stack. Not a miscommunication.",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Miscommunication"
+    ]
+   }
+  },
+  {
+   "fight": 46,
+   "time": "4:10",
+   "name": "Absolute Gigalad",
+   "mechanic": "Dark High Jump",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad",
+    "Speed Panda"
+   ],
+   "by": "user",
+   "why": "Dives in the stack are the fault of the people who were marked as the dive targets, because dive targets should never be in the stack. Not a miscommunication.",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Miscommunication"
+    ]
+   }
+  },
+  {
+   "fight": 46,
+   "time": "4:10",
    "name": "Loki Doki",
    "mechanic": "Dark High Jump",
-   "by": "review",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad",
+    "Speed Panda"
+   ],
+   "by": "user",
+   "why": "Dives in the stack are the fault of the people who were marked as the dive targets, because dive targets should never be in the stack. Not a miscommunication.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
+   }
+  },
+  {
+   "fight": 46,
+   "time": "4:10",
+   "name": "Speed Panda",
+   "mechanic": "Dark High Jump",
    "outcome": "fail",
    "owners": [
-    "Miscommunication"
+    "Absolute Gigalad",
+    "Speed Panda"
    ],
-   "why": "Adjudicated against the judge. Loki was not knocked into the wall. He died to the damage of the 3s' overlapping circle landings, and his damage row is missing from the log. The ability file ab_26382 for fight 46 shows the snapshot at P3 51.343. Packet 25262 is Nidhogg 61 instance 3, and its first row is Absol…",
-   "rule_gap": "A deaths-table row with no killing blow is not the deathwall (and not a knockback) when the player is in a calculateddamage snapshot of at least their HP, from a packet whose damage rows resolve at their death. Time the death from the burst of aura removals, not the clock minus 1.5 s. The damage row is simply missing, so judge the death as that hit, with the same outcome and owners as the packet'…"
+   "by": "user",
+   "why": "Dives in the stack are the fault of the people who were marked as the dive targets, because dive targets should never be in the stack. Not a miscommunication.",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Miscommunication"
+    ]
+   }
+  },
+  {
+   "fight": 46,
+   "time": "4:10",
+   "name": "Spring Nymphar",
+   "mechanic": "Dark High Jump",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigalad",
+    "Speed Panda"
+   ],
+   "by": "user",
+   "why": "Dives in the stack are the fault of the people who were marked as the dive targets, because dive targets should never be in the stack. Not a miscommunication.",
+   "first_pass": {
+    "outcome": "fail",
+    "owners": [
+     "Miscommunication"
+    ]
+   }
   },
   {
    "fight": 46,

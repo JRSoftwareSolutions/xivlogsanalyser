@@ -72,7 +72,7 @@ Most mechanics are one of these shapes. The question to ask is the same for each
 | Drops | Each marked player's drops land apart | Whoever dropped the two that landed too close: one player's own pair, or both players at 50. A dead holder passes it on. |
 | Tankbuster | The right tank, with personal mitigation | A non-tank who took it, the wrong tank, or a tank without mitigation. When the right tank was dead, such as Heavenly Heel's off tank, that tank owns it, passed on. |
 | Dodge, gaze, cone, puddle | Nobody hit | The player who was hit. |
-| Raidwide | Everyone lives with mitigation and HP | The healers and the party's mitigation, unless the party was short or already low. Then pass it on to whoever made it short or low. Low from their own gaze, dodge, puddle, or orb a few seconds before is that player's own. |
+| Raidwide | Everyone lives with mitigation and HP | The healers and the party's mitigation, unless the party was short or already low. Then pass it on to whoever made it short or low. Low from their own gaze, dodge, cone, puddle, or orb in the 15 seconds before is that player's own. |
 | No packet | Nobody touches the wall | The player, alone before the first mistake, shared with "Earlier mistake" after it. |
 
 ## Checking a session

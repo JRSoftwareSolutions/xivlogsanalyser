@@ -257,7 +257,7 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 36	3:58	Speed Panda	39.2	Darkdragon Dive	fail	empty	hit-list	Loki Doki 33; Spring Nymphar 33; Absolute Gigachad 33	
 36	3:58	Kiara Blaiddyd	39.3	Darkdragon Dive	fail	empty	hit-list	Loki Doki 33; Spring Nymphar 33; Absolute Gigachad 33	
 36	4:04	Absolute Gigachad	44.8	Geirskogul	fail	personal	hit	Absolute Gigachad 100	
-36	2:01	Kite Noodle	119.0	Sacred Sever	raw	missing	hit-list	Kitana Kahn 33; Spring Nymphar 33; Absolute Gigalad 33	
+36	2:01	Kite Noodle	119.0	Sacred Sever	raw	missing	hit-list	Kite Noodle 100	
 37	2:17	Kiara Blaiddyd	135.6	Frostbite	fail	personal	hit	Kiara Blaiddyd 100	
 37	2:19	Kite Noodle	137.2	Eternal Conviction	fail	empty	hit-list	Kiara Blaiddyd 100	
 37	2:19	Loki Doki	137.4	Eternal Conviction	fail	empty	hit-list	Kiara Blaiddyd 100	
@@ -325,11 +325,11 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 45	2:19	Spring Nymphar	137.9	Eternal Conviction	fail	empty	hit-list	Loki Doki 50; Spring Nymphar 50 (via Loki Doki)	
 45	2:24	Absolute Gigalad	142.1	Holy Impact	fail	empty	hit-list	Absolute Gigachad 100	
 46	3:56	Kitana Kahn	37.5	Darkdragon Dive	fail	personal	hit	Kitana Kahn 100	
-46	4:10	Loki Doki	51.8	Dark High Jump	fail	miscommunication	label	Miscommunication 20	
-46	4:10	Absolute Gigalad	51.9	Dark High Jump	fail	miscommunication	label	Miscommunication 20	
-46	4:10	Absolute Gigachad	52.0	Dark High Jump	fail	miscommunication	label	Miscommunication 20	
-46	4:10	Speed Panda	52.0	Dark High Jump	fail	miscommunication	label	Miscommunication 20	
-46	4:10	Spring Nymphar	52.1	Dark High Jump	fail	miscommunication	label	Miscommunication 20	
+46	4:10	Loki Doki	51.8	Dark High Jump	fail	dove	hit-list	Speed Panda 50; Absolute Gigalad 50	
+46	4:10	Absolute Gigalad	51.9	Dark High Jump	fail	dove	hit-list	Speed Panda 50; Absolute Gigalad 50	
+46	4:10	Absolute Gigachad	52.0	Dark High Jump	fail	dove	hit-list	Speed Panda 50; Absolute Gigalad 50	
+46	4:10	Speed Panda	52.0	Dark High Jump	fail	dove	hit-list	Speed Panda 50; Absolute Gigalad 50	
+46	4:10	Spring Nymphar	52.1	Dark High Jump	fail	dove	hit-list	Speed Panda 50; Absolute Gigalad 50	
 46	4:13	Kite Noodle	54.9	Geirskogul	fail	personal	hit	Kite Noodle 100	
 46	4:16	Kiara Blaiddyd	57.8	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
 46	1:01	Absolute Gigalad	59.6	Holy Shield Bash	fail	marker	position	Kitana Kahn 100	

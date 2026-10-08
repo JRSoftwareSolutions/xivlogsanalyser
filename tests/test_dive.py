@@ -142,17 +142,17 @@ class DiveFromGraceTest(unittest.TestCase):
                 for guid in column.labels:
                     self.assertTrue((icons / f"{guid}.png").is_file(), f"{cluster.id} {guid}")
 
-    def test_circles_in_one_landing_are_a_miscommunication(self):
+    def test_circles_landing_in_the_stack_belong_to_their_divers(self):
+        # Speed's and Gigalad's circles came down in the north stack. Dive targets never
+        # belong in the stack, so it is theirs, not a miscommunication.
         jumps = [
             item for item in self.phase3 if item.fact.fight == 46 and item.fact.guid == 26382
         ]
         self.assertEqual(len(jumps), 5)
         self.assertIn("Loki Doki", [item.fact.name for item in jumps])
-        self.assertTrue(all(item.cause == "miscommunication" for item in jumps))
-        self.assertTrue(
-            all(blame.to_dict() == {"who": "Miscommunication", "confidence": 20}
-                for item in jumps for blame in item.blames)
-        )
+        self.assertTrue(all(item.cause == "dove" for item in jumps))
+        for item in jumps:
+            self.assertEqual(sorted(blame.who for blame in item.blames), ["Absolute Gigalad", "Speed Panda"])
 
     def test_towers_split_debuff_soak_from_empty_tower(self):
         debuff = self._one(27, "Speed Panda", 26385)

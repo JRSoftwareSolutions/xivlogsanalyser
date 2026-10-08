@@ -403,6 +403,12 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
         # The main tank was dead, so the other tank had to take it.
         fact.down = [fact.main_tank]
         return _done(fact, mechanic, "fail", "", "redirected", pack)
+    if fact.cleaved_by and fact.role != "tank":
+        return _done(
+            fact, mechanic, "fail",
+            f"{_joined(fact.cleaved_by)} brought {mechanic.name} into the party.",
+            "cleaved", pack,
+        )
     if mechanic.covers_dead_tanks and fact.role != "tank" and fact.down:
         # A tank was dead, so their tether fell to someone else.
         return _done(fact, mechanic, "fail", "", "redirected", pack)
@@ -833,6 +839,8 @@ def _landing(fact: DeathFact) -> tuple[str, str]:
             return f"{name} took the {mine['marker']} to the {_side(mine)} side.", "arrow"
         owners = " and ".join(diver["name"] for diver in wrong)
         return f"{name} got hit by {owners}'s dive.", "arrow"
+    if fact.dove_by:
+        return f"{_joined(fact.dove_by)} dove into the stack.", "dove"
     if _sides_known(fact):
         return f"{name} stood in the dive, a miscommunication.", "miscommunication"
     return f"{name} stood in the dive.", "overlap"
@@ -976,7 +984,9 @@ def _people(names: list[str]) -> str:
 def passes_on(item: Judgment) -> bool:
     """The death belongs to other players: the ones missing from the mechanic, whose drops
     it was, or whose hit stunned them."""
-    return item.cause in {"dropped", "marked", "stunned", "knocked", "orphan", "stacked", *_PASSED_ON}
+    return item.cause in {
+        "dropped", "marked", "stunned", "knocked", "orphan", "stacked", "dove", "cleaved", *_PASSED_ON,
+    }
 
 
 def empty_owners(item: Judgment) -> list[str]:
@@ -991,6 +1001,10 @@ def empty_owners(item: Judgment) -> list[str]:
         return list(item.fact.knocked_by)
     if item.cause == "stacked":
         return list(item.fact.stacked_by)
+    if item.cause == "dove":
+        return list(item.fact.dove_by)
+    if item.cause == "cleaved":
+        return list(item.fact.cleaved_by)
     if item.cause == "orphan":
         return [who for who in item.owners if who not in GROUP_LABELS]
     if item.cause not in _PASSED_ON:
@@ -1559,6 +1573,10 @@ def _owners_for(
         item.blames = _shares(list(item.fact.knocked_by))
     elif item.cause == "stacked":
         item.blames = _shares(list(item.fact.stacked_by))
+    elif item.cause == "dove":
+        item.blames = _shares(list(item.fact.dove_by))
+    elif item.cause == "cleaved":
+        item.blames = _shares(list(item.fact.cleaved_by))
     elif item.cause == "baited":
         item.blames = _shares([item.fact.name, *item.fact.baited_by])
     elif item.cause == "overlap":
@@ -1633,13 +1651,13 @@ def _basis(item: Judgment) -> str:
     if cause == "marker":
         people = [*item.fact.clipped_by, item.fact.name]
         return "position" if all(name in item.fact.in_spot for name in people) else "debuff"
-    if cause in {"dropped", "overlap", "arrow", "baited", "stacked"}:
+    if cause in {"dropped", "overlap", "arrow", "baited", "stacked", "cleaved"}:
         return "position"
     if cause == "stunned":
         return "debuff"
     if cause in {"marked"}:
         return "debuff"
-    if cause in {"empty", "redirected", "missing"}:
+    if cause in {"empty", "redirected", "missing", "dove"}:
         return "hit-list"
     if cause == "orphan":
         return "position"

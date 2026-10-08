@@ -36,7 +36,7 @@ Pull 14 is the fail shape for the second cast: the paladin had already taken Hea
 
 ## Fault
 
-Non-tank: `{player}` got Ascalon's Might. Only a tank takes this.
+Non-tank: `{player}` got Ascalon's Might. Only a tank takes this. When a tank walked it into the party, that tank owns it (`cleaved`): the off tank holding the boss while the main tank was alive, or a tank standing within 30 degrees of the party's direction from the boss. `3wzL6x4VHTmvNkhq` pull 3, Absolute Gigachad.
 
 Second body: only one tank takes Ascalon's Might. `{player}` ate the extra hit. After Heavenly Heel, that includes the off tank who already took the heel. Pull 14 is Absolute Gigachad at about 153k, in it with the warrior.
 

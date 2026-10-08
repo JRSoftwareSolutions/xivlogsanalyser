@@ -155,14 +155,15 @@ The person could not say, so these come from the three logs and the public guide
 
 Report `8DYNHQx4C7ytdLb9`. Eight pulls reached Nidhogg. The strat is LPDU Easthogg. Ability files for these guids are not stored, and the packets have no unmitigated amount, so the number is the total hit. This is the baseline, not a cast survey.
 
-Arrows resolve facing east. An up arrow goes west, a down arrow goes east, and a 2 goes northwest or northeast on the same rule. The mitigations replay stores the number and arrow debuffs, and the positions replay stores where each diver stood and faced at the snapshot. The facing decides where the tower drops. A circle has no side, so circles sharing a landing are a miscommunication.
+Arrows resolve facing east. An up arrow goes west, a down arrow goes east, and a 2 goes northwest or northeast on the same rule. The mitigations replay stores the number and arrow debuffs, and the positions replay stores where each diver stood and faced at the snapshot. The facing decides where the tower drops. A circle has no side, so circles sharing a landing are a miscommunication. A circle that landed in the stack is its diver's: dive targets never stand in the stack.
 
 Final Chorus and the auto cleave are not this stop. A blank killing blow at the dive, with the dive in the last hits, is the knock into the wall. Pull 33. It is a Deathwall fail.
 
 | Guid | What the hit is | Call |
 |---|---|---|
 | 26382, 26384 | Over 150k, an arrow on the wrong side | Fail. The arrow holder owns every death in that landing. Pull 27, Loki Doki took the down arrow west, facing west, onto Spring Nymphar's up arrow. |
-| 26382, 26384 | Over 150k, only circles out of place | Fail. Miscommunication, split across the landing. Pull 46. |
+| 26382, 26384 | Over 150k, in the stack | Fail. The dive targets who dove into the stack, split evenly. Pull 46, Speed Panda and Absolute Gigalad. |
+| 26382, 26384 | Over 150k, only circles out of place, outside the stack | Fail. Miscommunication, split across the landing. |
 | 26388 | About 37–70k | Raw when they were healthy. The healers, and party mitigation when the mit is unknown. |
 | 26388 | Over 100k | Fail. Short stack. The 2s and 3s stack, and a dead one owns the gap, passed on. Pull 16. |
 | 26389, 26390 | About 12–23k | Fail. Wrong side of the in-and-out. Still a fail under 15k HP. |

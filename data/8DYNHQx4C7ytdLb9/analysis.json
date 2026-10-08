@@ -1,12 +1,12 @@
 {
  "rules": "0ef58f8181144124",
- "engine": "9bc483b0d1bdab71",
+ "engine": "ab5d65860d38d526",
  "log": "16dcfb6841a6438b",
  "outputs": {
-  "facts.json": "164551a1b2b68eaa",
-  "judgments.json": "73f2711a7841be55",
-  "calls.tsv": "43751477fdf8f015",
-  "session.html": "0b15245ec7ddb144",
+  "facts.json": "b1dd0a2a52b2dcab",
+  "judgments.json": "976e1cc8d3e0dfbe",
+  "calls.tsv": "fa2d73d297e99b93",
+  "session.html": "b8e57e54f9895011",
   "inputs.json": "f48daa99d0ac1b58"
  },
  "counts": {
@@ -1251,9 +1251,7 @@
   ],
   "night": {
    "pulls": 47,
-   "labels": [
-    "Miscommunication"
-   ],
+   "labels": [],
    "started": [
     {
      "mechanic": "Ascalon's Mercy Concealed",
@@ -1438,15 +1436,7 @@
        1
       ],
       [
-       "Kitana Kahn",
-       1
-      ],
-      [
-       "Spring Nymphar",
-       1
-      ],
-      [
-       "Absolute Gigalad",
+       "Kite Noodle",
        1
       ]
      ]
@@ -1571,15 +1561,11 @@
    "starters": [
     [
      "Kitana Kahn",
-     15
-    ],
-    [
-     "Spring Nymphar",
      14
     ],
     [
-     "Absolute Gigalad",
-     9
+     "Spring Nymphar",
+     13
     ],
     [
      "Loki Doki",
@@ -1590,15 +1576,19 @@
      9
     ],
     [
+     "Absolute Gigalad",
+     8
+    ],
+    [
      "Absolute Gigachad",
      4
     ],
     [
-     "Speed Panda",
-     2
+     "Kite Noodle",
+     3
     ],
     [
-     "Kite Noodle",
+     "Speed Panda",
      2
     ]
    ],
@@ -1609,11 +1599,11 @@
     ],
     [
      "Spring Nymphar",
-     54.3
+     54.0
     ],
     [
      "Kitana Kahn",
-     47.5
+     47.2
     ],
     [
      "Absolute Gigachad",
@@ -1621,7 +1611,7 @@
     ],
     [
      "Absolute Gigalad",
-     36.7
+     38.9
     ],
     [
      "Kiara Blaiddyd",
@@ -1629,15 +1619,11 @@
     ],
     [
      "Speed Panda",
-     29.8
+     32.3
     ],
     [
      "Kite Noodle",
-     28.8
-    ],
-    [
-     "Miscommunication",
-     1.0
+     29.8
     ]
    ]
   }

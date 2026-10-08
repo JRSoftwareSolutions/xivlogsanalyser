@@ -45,7 +45,7 @@ A dive and a soak each leave Fire Resistance Down II and Physical Vulnerability 
 
 Apply these to the killing blow.
 
-- Dark High Jump `26382` or Dark Elusive Jump `26384`, over 150,000: someone stood in the landing. Read the divers whose markers resolved there. An arrow diver within 6 yalms of the player who died, standing on the wrong half (more than 2 yalms off the north–south line), owns every death in that landing. Pull 27: Loki Doki had the down arrow and stood west, facing west, on Spring Nymphar's correct up arrow. Loki owns both deaths. Spring is not the pull's first mistake. The first-mistake line says Spring died to Loki's dive. When no arrow is out of place, only circles collided, and the overlap is a miscommunication. Pull 46, four players, the 3s' circles. Without the replays, each player in the burst owns an equal share.
+- Dark High Jump `26382` or Dark Elusive Jump `26384`, over 150,000: someone stood in the landing. Read the divers whose markers resolved there. An arrow diver within 6 yalms of the player who died, standing on the wrong half (more than 2 yalms off the north–south line), owns every death in that landing. Pull 27: Loki Doki had the down arrow and stood west, facing west, on Spring Nymphar's correct up arrow. Loki owns both deaths. Spring is not the pull's first mistake. The first-mistake line says Spring died to Loki's dive. A landing that hit the stack (more than two players) belongs to its dive targets, the first target of each such landing: a dive target never stands in the stack, so it is not a miscommunication. Pull 46, five players, Speed Panda's and Absolute Gigalad's circles in the stack. When no arrow is out of place and the landing missed the stack, only circles collided, and the overlap is a miscommunication. Without the replays, each player in the burst owns an equal share.
 - Those guids at about 9–23k: the landing connected. A death there is raw, or low if they were already under 15,000 HP. This log has no such death. The circle has lived hits in that band. The down arrow has no small hit stored.
 - A death with no killing blow, at the same moment, last hit the dive: the knock into the wall. The row has no packet, so it is a Deathwall fail. Pull 33 is that case.
 - Eye of the Tyrant `26388` at or under the role cap: the stack of five. Tanks about 37–48k. Everyone else about 50–70k. Dying there from a healthy bar is the healers. Pull 26, three players from full HP at about 71k with no shield.
@@ -62,7 +62,9 @@ Standing on the wrong clock spot, while the tower still lands on a soakable tile
 
 Dive landing over 150,000, arrow on the wrong side: `{holder}` took the arrow to the wrong side, facing where they faced. Everyone else that landing killed got hit by `{holder}`'s dive. The holder owns it at 100, and only the holder fails it on the pull card.
 
-Dive landing over 150,000, no arrow out of place: `{player}` stood in the dive, a miscommunication. "Miscommunication" at the landing's share.
+Dive landing over 150,000 in the stack: `{diver}` dove into the stack. The dive targets own it, split evenly.
+
+Dive landing over 150,000, no arrow out of place, outside the stack: `{player}` stood in the dive, a miscommunication. "Miscommunication" at the landing's share.
 
 Eye of the Tyrant inside the cap: the resolve. Name the shield and the mit. Party mitigation joins the healers when the mit is unknown.
 

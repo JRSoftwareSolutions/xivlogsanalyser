@@ -159,7 +159,9 @@ class ShortStackTest(unittest.TestCase):
         kite = _one("8DYNHQx4C7ytdLb9", 36, "Kite Noodle", "Sacred Sever")
         self.assertEqual(kite.fact.stack, 1)
         self.assertEqual((kite.outcome, kite.cause), ("raw", "missing"))
-        self.assertEqual(sorted(blame.who for blame in kite.blames), ["Absolute Gigalad", "Kitana Kahn", "Spring Nymphar"])
+        # Kite held the sword and went north-west alone while the other three walked
+        # together to the group's east spot, so the short stack is his (the person's rule).
+        self.assertEqual(sorted(blame.who for blame in kite.blames), ["Kite Noodle"])
 
     def test_a_dragons_rage_pair_is_a_short_stack(self):
         for name in ("Kite Noodle", "Spring Nymphar"):
@@ -355,3 +357,19 @@ class AdjudicatedTest(unittest.TestCase):
         kite = _one("8DYNHQx4C7ytdLb9", 34, "Kite Noodle", "Dragon's Rage")
         self.assertNotIn("Kitana Kahn", kite.fact.down)
         self.assertEqual(sorted(_owners(kite)), [("Absolute Gigachad", 50), ("Absolute Gigalad", 50)])
+
+    def test_a_dive_in_the_stack_belongs_to_its_dive_targets(self):
+        # Dive targets never belong in the stack (the person's rule).
+        for name in ("Loki Doki", "Absolute Gigalad", "Absolute Gigachad", "Speed Panda", "Spring Nymphar"):
+            item = _one("8DYNHQx4C7ytdLb9", 46, name, "Dark High Jump")
+            self.assertEqual(item.cause, "dove")
+            self.assertEqual(sorted(_owners(item)), [("Absolute Gigalad", 50), ("Speed Panda", 50)])
+
+    def test_a_tank_who_walks_the_cleave_into_the_party_owns_it(self):
+        for name in ("Speed Panda", "Kiara Blaiddyd", "Kite Noodle", "Spring Nymphar"):
+            item = _one("3wzL6x4VHTmvNkhq", 3, name, "Ascalon's Might")
+            self.assertEqual((item.cause, _owners(item)), ("cleaved", [("Absolute Gigachad", 100)]))
+
+    def test_low_from_your_own_cone_is_yours(self):
+        gigachad = _one("3wzL6x4VHTmvNkhq", 7, "Absolute Gigachad", "Holy Bladedance")
+        self.assertEqual((gigachad.outcome, _owners(gigachad)), ("low", [("Absolute Gigachad", 100)]))

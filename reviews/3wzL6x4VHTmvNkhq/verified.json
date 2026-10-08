@@ -43,72 +43,72 @@
    "time": "0:18",
    "name": "Kiara Blaiddyd",
    "mechanic": "Ascalon's Might",
-   "by": "review",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigachad"
+   ],
+   "by": "user",
+   "why": "If the tank walked the slashes into the group then it's clearly that tank's fault. Gigachad held Thordan inside the party.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kiara Blaiddyd"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kiara Blaiddyd"
-   ],
-   "why": "A skeptic upheld the judge. Same packet 7589, 127k on a Dancer, over the 110k cap. AGENTS.md says a non-tank hit by Ascalon's Might still owns it, and the skill and mechanics.json say anyone who is not a tank getting hit made their own mistake. Kiara standing in line behind Gigachad, along Thordan's facing…"
+   }
   },
   {
    "fight": 3,
    "time": "0:18",
    "name": "Speed Panda",
    "mechanic": "Ascalon's Might",
-   "by": "review",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigachad"
+   ],
+   "by": "user",
+   "why": "If the tank walked the slashes into the group then it's clearly that tank's fault. Gigachad held Thordan inside the party.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Speed Panda"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Speed Panda"
-   ],
-   "why": "A skeptic upheld the judge. Binding rule, AGENTS.md: Ascalon's Might belongs to the main tank, and 'A non-tank it hits still owns that.' mechanics.json and the dsr-ascalons-might skill agree: anyone who is not a tank getting hit made their own mistake. Speed is a Viper who took 121k from packet 7589, over …"
+   }
   },
   {
    "fight": 3,
    "time": "0:20",
    "name": "Kite Noodle",
    "mechanic": "Ascalon's Might",
-   "by": "review",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigachad"
+   ],
+   "by": "user",
+   "why": "If the tank walked the slashes into the group then it's clearly that tank's fault. Gigachad held Thordan inside the party.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Kite Noodle"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Kite Noodle"
-   ],
-   "why": "A skeptic upheld the judge. Packet 7599, 124k on a Ninja, over the 110k cap. Kite stood at (97.60,108.79), about 2 y from Gigachad (99.57,108.75), with Thordan turning toward them. Under the binding rule a non-tank hit by Ascalon's Might owns it, even when a tank walks the cleave onto them. They can see th…"
+   }
   },
   {
    "fight": 3,
    "time": "0:20",
    "name": "Spring Nymphar",
    "mechanic": "Ascalon's Might",
-   "by": "review",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigachad"
+   ],
+   "by": "user",
+   "why": "If the tank walked the slashes into the group then it's clearly that tank's fault. Gigachad held Thordan inside the party.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Spring Nymphar"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Spring Nymphar"
-   ],
-   "why": "A skeptic upheld the judge. Packet 7599, 129k on a Scholar, over the cap. The binding AGENTS.md rule ('A non-tank it hits still owns that') and the skill ('Only a tank takes this') make a healer hit by Ascalon's Might her own fail, whether or not she stood in her usual spot. The adjudicator's wrong-tank pa…"
+   }
   },
   {
    "fight": 3,
@@ -152,24 +152,20 @@
    "time": "0:45",
    "name": "Loki Doki",
    "mechanic": "Lightning Storm",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigachad",
+    "Kitana Kahn",
+    "Absolute Gigalad"
+   ],
    "by": "review",
+   "why": "Seven dead players' bolts fell on Loki; each passes on through its death, and four of those deaths are Gigachad's after the person's ruling that he walked Ascalon's Might into the party.",
    "first_pass": {
     "outcome": "fail",
     "owners": [
      "Loki Doki"
     ]
-   },
-   "outcome": "fail",
-   "owners": [
-    "Absolute Gigachad",
-    "Absolute Gigalad",
-    "Kiara Blaiddyd",
-    "Kitana Kahn",
-    "Kite Noodle",
-    "Speed Panda",
-    "Spring Nymphar"
-   ],
-   "why": "A skeptic upheld the judge. The recorded call (Loki 100, overlap) was wrong. ab_25549 shows 8 bolts at 473720, all on Loki: his own bolt (17/9, 42k) and 26/1-7 at 423-454k. He was the only player alive, so he took the seven dead players' bolts (`one_each`). The current judge already calls this fail/missing…"
+   }
   },
   {
    "fight": 4,
@@ -801,6 +797,25 @@
    ],
    "why": "Adjudicated against the judge. The Dragon's Rage at 59.6s hit only Gigalad: 222,051 unmitigated, x0.65, no vulnerability, 144k landed on 109,767/118,362 with Rampart and Bloodwhetting. 222k on one tank is the whole stack: his own 5-stack shares in this log are about 40-44k unmitigated, and 5 x 44k = 222k. The…",
    "rule_gap": "fail_above (200,000) is checked as a fixed number before the stack-size scaling, so any 1- or 2-body short stack whose normal total exceeds 200k becomes a personal failed hit. fail_above must scale with stack size the same way the role cap does (x typical_targets/stack), or be applied per expected share. Only a vulnerability multiplier or a hit over the scaled cap makes it a cleave."
+  },
+  {
+   "fight": 7,
+   "time": "1:05",
+   "name": "Absolute Gigachad",
+   "mechanic": "Holy Bladedance",
+   "outcome": "low",
+   "owners": [
+    "Absolute Gigachad"
+   ],
+   "by": "user",
+   "why": "If he got hit by the cone for not dodging properly, it's his fault. His own failed Ascalon's Mercy Concealed dodge at 49.6s left him low.",
+   "first_pass": {
+    "outcome": "low",
+    "owners": [
+     "Loki Doki",
+     "Spring Nymphar"
+    ]
+   }
   },
   {
    "fight": 7,

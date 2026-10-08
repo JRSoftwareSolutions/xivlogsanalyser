@@ -86,6 +86,11 @@ class DeathFact:
     knocked_by: list[str] = field(default_factory=list)
     # Who baited the cone that hit them from outside the stack.
     baited_by: list[str] = field(default_factory=list)
+    # Dive targets whose landing came down in the stack and hit them.
+    dove_by: list[str] = field(default_factory=list)
+    # The tank who brought a tank's cleave into the party: holding the boss out of turn,
+    # or standing among the party.
+    cleaved_by: list[str] = field(default_factory=list)
     # The dead marker holders whose leap fell on someone else and hit them.
     orphan: list[str] = field(default_factory=list)
     # The ice holder who brought a second circle onto a pair with nobody dead.
@@ -115,7 +120,7 @@ RAISE_GUID = 1000043
 # Deaths to one cast land within this much of each other.
 CAST_MS = 3000
 # A hit they lived this long before dying can still be why they were low.
-SELF_HIT_MS = 10000
+SELF_HIT_MS = 15000
 # Mechanics where any hit is the player's own mistake.
 SELF_CATEGORIES = {"gaze", "dodge", "puddle", "orb"}
 
@@ -927,6 +932,8 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
         debuffs = _cascade_debuffs(mitigation_tables.get(fight["id"]), pack, names_by_id)
         boss_pct = round(fight.get("bossPercentage", 0) / 100, 1)
         timed: list[tuple[int | None, DeathFact]] = []
+        # Non-tanks killed by a main tank's cleave, judged once everyone's deaths are known.
+        cleaves: list[tuple[DeathFact, dict, int | None]] = []
         for row in ROW_RE.findall(html):
             name_match = NAME_RE.search(row)
             time_match = TIME_RE.search(row)
@@ -985,6 +992,9 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                         fact.divers = _divers(
                             mitigation_tables, _positions(report, fight["id"], places), fight["id"],
                             target, timestamp, hit_mechanic.dive_markers, names_by_id,
+                        )
+                        fact.dove_by = _dove_by(
+                            hit_mechanic, snapshots, by_guid, fight["id"], target, timestamp, names_by_id,
                         )
                 fact.missing = _gaps(report, fight["id"], mitigation_tables, fact, None)
                 facts.append(fact)
@@ -1052,6 +1062,8 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                 fact.off_tank = assigned_off_tank
             if mechanic and mechanic.main_tank:
                 fact.main_tank = assigned_main_tank
+                if fact.role != "tank" and event is not None:
+                    cleaves.append((fact, event, timestamp))
             if mechanic and mechanic.baited:
                 fact.baited_by = _baited_by(
                     mechanic.baited, event, snapshots.get(guid, []), _positions(report, fight["id"], places),
@@ -1067,6 +1079,7 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                     mitigation_tables, _positions(report, fight["id"], places), fight["id"],
                     target, timestamp, mechanic.dive_markers, names_by_id,
                 )
+                fact.dove_by = _dove_by(mechanic, snapshots, by_guid, fight["id"], target, timestamp, names_by_id)
             if clip is not None:
                 fact.clipped_by = [names_by_id[holder] for holder in clip.holders]
                 fact.clip_guid = clip.guid
@@ -1091,6 +1104,12 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
                     name for name in roster
                     if name != fact.name and _still_dead(name, timed, timestamp, raises)
                 ]
+        for fact, event, timestamp in cleaves:
+            fact.cleaved_by = _cleaved_by(
+                fact, event, _positions(report, fight["id"], places), fight["id"], timestamp,
+                {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
+                names_by_id,
+            )
         dead_holders = _orphan_leaps(
             timed, pack, marker_casts, positions, fight["id"],
             {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
@@ -1116,7 +1135,7 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
         )
         _alternating_groups(
             timed, pack, snapshots, by_guid, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
-            seats,
+            seats, positions,
         )
         _ice_pairs(
             timed, pack, snapshots, fight["id"],
@@ -1411,6 +1430,74 @@ AIM_TIE = 2.5
 KNOCKED_MS = 2500
 
 
+# A tank this close in bearing to the middle of the party is standing among them.
+AMONG_DEGREES = 30
+
+
+def _cleaved_by(
+    fact: DeathFact, event: dict | None, places: dict[int, list], fight_id: int,
+    timestamp: int | None, roles: dict[str, str], names_by_id: dict[int, str],
+) -> list[str]:
+    """The tank who walked a tank's cleave into the party, on a non-tank it killed.
+
+    The boss turns its cleave on the tank it targets, who is in the same packet. That
+    tank brought it to the party when they held the boss while the main tank was alive,
+    or when they stood among the party, in its middle as seen from the boss.
+    """
+    tanks = [name for name in fact.cohort if roles.get(name) == "tank"]
+    if len(tanks) != 1 or event is None or timestamp is None:
+        return []
+    tank = tanks[0]
+    if fact.main_tank and tank != fact.main_tank and fact.main_tank not in fact.dead:
+        return [tank]
+    ids = {name: actor for actor, name in names_by_id.items()}
+    boss = _sample(places, event.get("sourceID"), timestamp)
+    here = _sample(places, ids.get(tank), timestamp)
+    if boss is None or here is None:
+        return []
+    party = sorted(
+        _bearing(boss, spot) for name, role in roles.items()
+        if role != "tank" and name not in fact.dead and name in ids
+        for spot in [_sample(places, ids[name], timestamp)] if spot is not None
+    )
+    if len(party) < 3:
+        return []
+    middle = min(party, key=lambda bearing: sum(_apart(bearing, other) for other in party))
+    return [tank] if _apart(_bearing(boss, here), middle) <= AMONG_DEGREES else []
+
+
+# A landing that hit this many players besides its own diver came down in the stack.
+STACK_LANDING = 2
+
+
+def _dove_by(
+    mechanic, snapshots: dict[int, list[dict]], by_guid: dict[int, list[dict]],
+    fight_id: int, target: int | None, timestamp: int | None, names_by_id: dict[int, str],
+) -> list[str]:
+    """Dive targets whose landing came down in the stack and hit this player.
+
+    A landing lands on its diver, first in its hit list. Dive targets never belong in
+    the stack, so a landing that hit several other players was brought there by its diver.
+    """
+    if target is None or timestamp is None:
+        return []
+    packets: dict[int, list[dict]] = defaultdict(list)
+    for guid in mechanic.guids:
+        for event in [*snapshots.get(guid, []), *by_guid.get(guid, [])]:
+            if event.get("fight") == fight_id and event.get("packetID") is not None:
+                if abs(event["timestamp"] - timestamp) <= 2500:
+                    packets[event["packetID"]].append(event)
+    divers: list[str] = []
+    for rows in packets.values():
+        rows.sort(key=lambda row: row["timestamp"])
+        hit = list(dict.fromkeys(row.get("targetID") for row in rows if row.get("targetID") in names_by_id))
+        if target in hit and len(hit) > STACK_LANDING:
+            diver = names_by_id[hit[0]]
+            if diver not in divers:
+                divers.append(diver)
+    return divers
+
+
 def _lethal_hit(
     pack: FightPack,
     snapshots: dict[int, list[dict]],
@@ -1647,6 +1734,42 @@ def _pairings(players: list[str]):
             yield [(first, other), *pairing]
 
 
+# Players this close to the middle of their group stood together.
+TOGETHER_YALMS = 5.0
+# A target this far from the rest of their group was not with them.
+APART_YALMS = 6.0
+# A group walking from one spot to the next is placed between samples this far apart.
+WALK_GAP_MS = 5000
+
+
+def _between(positions: _Positions, fight_id: int, name: str, at: int) -> tuple[float, float] | None:
+    """Where a player was at this moment, on the line between their samples either side."""
+    rows = positions.named(fight_id, name)
+    before = [row for row in rows if row[0] <= at]
+    after = [row for row in rows if row[0] > at]
+    if before and after and after[0][0] - before[-1][0] <= WALK_GAP_MS:
+        left, right = before[-1], after[0]
+        share = (at - left[0]) / (right[0] - left[0])
+        return left[1] + (right[1] - left[1]) * share, left[2] + (right[2] - left[2]) * share
+    near = [row for row in rows if abs(row[0] - at) <= 1500]
+    if not near:
+        return None
+    row = min(near, key=lambda row: abs(row[0] - at))
+    return row[1], row[2]
+
+
+def _ran_off(positions: _Positions, fight_id: int, target: str, rest: list[str], at: int) -> bool:
+    """The target stood apart from the rest of their group, who stood together."""
+    spots = [_between(positions, fight_id, name, at) for name in rest]
+    here = _between(positions, fight_id, target, at)
+    if here is None or any(spot is None for spot in spots):
+        return False
+    middle = (sum(spot[0] for spot in spots) / len(spots), sum(spot[1] for spot in spots) / len(spots))
+    if any(math.dist(spot, middle) > TOGETHER_YALMS for spot in spots):
+        return False
+    return math.dist(here, middle) > APART_YALMS
+
+
 def _cast_group(casts: list[tuple[int, list[str]]], index: int, roster: list[str]) -> list[str] | None:
     """Whoever took the cast two before this one, or for the first two casts, everyone
     the other group's cast did not hit."""
@@ -1711,6 +1834,7 @@ def _alternating_groups(
     raises: dict[str, list[int]],
     names_by_id: dict[int, str],
     seats: _Seats | None = None,
+    positions: _Positions | None = None,
 ) -> None:
     """Who should have taken a cast that alternates between two groups, and who was missing.
 
@@ -1756,6 +1880,12 @@ def _alternating_groups(
             name for name in group
             if name not in targets and name not in fact.down
         ]
+        # The jump follows its target. A target who ran off on their own, while the rest
+        # of the group stood together waiting for it, left them out.
+        alone = [name for name in targets if name in group] == [targets[0]]
+        if positions is not None and alone and len(fact.unsoaked) > 1:
+            if _ran_off(positions, fight_id, targets[0], fact.unsoaked, casts[index][0]):
+                fact.unsoaked = [targets[0]]
 
 
 TRANSCENDENT = 1000418
