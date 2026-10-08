@@ -65,3 +65,5 @@ A second tank in the heel: the off tank takes Heavenly Heel. `{player}` ate the 
 The off tank who already took the heel is in the three hits: the main tank takes those. `{player}` ate the extra Ascalon's Might.
 
 Low: the hit was the normal tankbuster and the off tank was already under 15,000 HP.
+
+Personal mitigation is the tank's own cooldowns: what the replay shows they put on themselves (by and on are the same player). A co-tank's or a healer's single-target cooldown on them (Intervention, The Blackest Night, Heart of Corundum, Exaltation, Aquaveil) is not personal; it counts only through the hit's multiplier, where 0.75 or less is mitigated. The names in `personal_mit` in `fights/dsr/fight.json` are used only when a pull has no replay. In all three logs no tank death to Ascalon's Might or Heavenly Heel had a co-tank cooldown on it.

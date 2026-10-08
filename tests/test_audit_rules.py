@@ -80,7 +80,8 @@ class CastVerdictTest(unittest.TestCase):
         self.assertEqual(sorted(item.fact.name for item in cast), ["Kiara Blaiddyd", "Kite Noodle", "Loki Doki"])
         for item in cast:
             self.assertEqual(item.outcome, "fail")
-            self.assertEqual(item.went_wrong, f"{item.fact.name} got cleaved.")
+            # The jump was short: the group stood about 31 yalms from Ser Zephirin instead of 34-35.
+            self.assertEqual(item.went_wrong, f"{item.fact.name} stood too close to Ser Zephirin's landing.")
             self.assertRegex(item.happened, r"A (tank|healer|DPS) takes about")
         kite = next(item for item in cast if item.fact.name == "Kite Noodle")
         self.assertIn("The rest of the stack took more.", kite.happened)
@@ -97,10 +98,31 @@ class CastVerdictTest(unittest.TestCase):
                     continue
                 if item.cause not in {"personal", "resolve", "missing"}:
                     continue
-                cleaved = item.went_wrong.endswith("got cleaved.")
+                cleaved = item.went_wrong.endswith(("got cleaved.", "stood too close to Ser Zephirin's landing."))
                 casts.setdefault((fact.fight, fact.guid, tuple(sorted(fact.cohort))), set()).add(cleaved)
             split = {key: seen for key, seen in casts.items() if len(seen) > 1}
             self.assertEqual(split, {}, code)
+
+
+class DragonsRageStackTest(unittest.TestCase):
+    """Everyone without a Skyward Leap marker stacks, both tanks too. A short stack names who was not in it."""
+
+    def test_a_living_player_away_from_the_stack_owns_it(self):
+        # Gigachad stood in a Dimensional Collapse puddle instead of the stack.
+        spring = _one("3wzL6x4VHTmvNkhq", 33, "Spring Nymphar", "Dragon's Rage")
+        self.assertEqual(spring.fact.unsoaked, ["Absolute Gigachad"])
+        self.assertEqual(_owners(spring), [("Absolute Gigachad", 100)])
+
+    def test_a_dead_player_passes_it_on(self):
+        loki = _one("3wzL6x4VHTmvNkhq", 17, "Loki Doki", "Dragon's Rage")
+        self.assertEqual(loki.fact.down, ["Spring Nymphar"])
+        self.assertEqual(_owners(loki), [("Spring Nymphar", 100)])
+
+    def test_marker_holders_are_not_missing(self):
+        for code in CODES:
+            for item in _judged(code)[4]:
+                if item.mechanic_id == "dragons-rage" and item.cause == "missing":
+                    self.assertNotIn("Missing bodies", [blame.who for blame in item.blames], (code, item.fact.fight))
 
 
 class OffTankTest(unittest.TestCase):

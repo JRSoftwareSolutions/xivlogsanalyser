@@ -183,7 +183,10 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -205,7 +208,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 850,399 at 54% HP. Had Magic Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Spring Nymphar was out of position and clipped Speed Panda.",
     "cause": "marker",
     "blames": [
@@ -445,7 +448,10 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -468,7 +474,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 855,360 at 50% HP. Had Magic Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Spring Nymphar was out of position and clipped Kiara Blaiddyd.",
     "cause": "marker",
     "blames": [
@@ -560,7 +566,10 @@
     },
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -585,7 +594,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 742,491 at 85% HP. Had Magic Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Spring Nymphar was out of position and clipped Kitana Kahn.",
     "cause": "marker",
     "blames": [
@@ -1987,8 +1996,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -2009,16 +2022,20 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 87,094 at 92% HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because Spring Nymphar and Absolute Gigalad were missing.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.2s into Thordan",
     "first_causes": [
@@ -2394,11 +2411,14 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd"
+        ]
       },
       {
-        "who": "Missing bodies",
-        "confidence": 33,
+        "who": "Absolute Gigalad",
+        "confidence": 16,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -2555,11 +2575,14 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd"
+        ]
       },
       {
-        "who": "Missing bodies",
-        "confidence": 33,
+        "who": "Absolute Gigalad",
+        "confidence": 16,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -2728,11 +2751,14 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd"
+        ]
       },
       {
-        "who": "Missing bodies",
-        "confidence": 33,
+        "who": "Absolute Gigalad",
+        "confidence": 16,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -2916,11 +2942,14 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 50,
+        "via": [
+          "Kiara Blaiddyd"
+        ]
       },
       {
-        "who": "Missing bodies",
-        "confidence": 33,
+        "who": "Absolute Gigalad",
+        "confidence": 16,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -5465,7 +5494,14 @@
         "via": "Dimensional Collapse"
       }
     ],
-    "down": [],
+    "down": [
+      "Kite Noodle",
+      "Kitana Kahn",
+      "Loki Doki",
+      "Spring Nymphar",
+      "Absolute Gigalad",
+      "Absolute Gigachad"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -5498,7 +5534,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 333,516 at 90% HP. A DPS takes about 67k.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Kiara Blaiddyd took a failed Dragon's Rage.",
     "cause": "personal",
     "blames": [
@@ -20120,7 +20156,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 51,938 at 71% HP. Shared by 3 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 3 of 4.",
     "cause": "missing",
     "blames": [
@@ -23738,7 +23774,7 @@
     ],
     "basis": "no-packet",
     "first": true,
-    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Dragon's Rage at 59.5s into Thordan",
+    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Kitana Kahn and Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
         "mechanic": "Deathwall",
@@ -23755,7 +23791,9 @@
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Kitana Kahn",
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -23826,7 +23864,7 @@
     ],
     "basis": "position",
     "first": true,
-    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Dragon's Rage at 59.5s into Thordan",
+    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Kitana Kahn and Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
         "mechanic": "Deathwall",
@@ -23843,7 +23881,9 @@
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Kitana Kahn",
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -23875,8 +23915,13 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -23898,18 +23943,26 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 109,905 at full HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because 3 players were missing.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 33
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 33
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 33
       }
     ],
-    "basis": "label",
-    "first": true,
-    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Dragon's Rage at 59.5s into Thordan",
+    "basis": "hit-list",
+    "first": false,
+    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Kitana Kahn and Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
         "mechanic": "Deathwall",
@@ -23926,7 +23979,9 @@
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Kitana Kahn",
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -23958,8 +24013,13 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Kitana Kahn",
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -23982,18 +24042,26 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 106,579 at full HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because 3 players were missing.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50
+        "who": "Kitana Kahn",
+        "confidence": 33
+      },
+      {
+        "who": "Absolute Gigachad",
+        "confidence": 33
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 33
       }
     ],
-    "basis": "label",
-    "first": true,
-    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Dragon's Rage at 59.5s into Thordan",
+    "basis": "hit-list",
+    "first": false,
+    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Kitana Kahn and Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
         "mechanic": "Deathwall",
@@ -24010,7 +24078,9 @@
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Kitana Kahn",
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -24101,7 +24171,7 @@
     ],
     "basis": "no-packet",
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Dragon's Rage at 59.5s into Thordan",
+    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Kitana Kahn and Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
         "mechanic": "Deathwall",
@@ -24118,7 +24188,9 @@
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Kitana Kahn",
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -24188,16 +24260,28 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Kitana Kahn",
+        "confidence": 41,
         "via": [
           "Kite Noodle",
           "Spring Nymphar"
         ]
       },
       {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "who": "Absolute Gigachad",
+        "confidence": 16,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 16,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Speed Panda",
@@ -24206,7 +24290,7 @@
     ],
     "basis": "hit-list",
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Dragon's Rage at 59.5s into Thordan",
+    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Kitana Kahn and Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
         "mechanic": "Deathwall",
@@ -24223,7 +24307,9 @@
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Kitana Kahn",
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -24293,16 +24379,28 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Kitana Kahn",
+        "confidence": 41,
         "via": [
           "Kite Noodle",
           "Spring Nymphar"
         ]
       },
       {
-        "who": "Kitana Kahn",
-        "confidence": 25
+        "who": "Absolute Gigachad",
+        "confidence": 16,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 16,
+        "via": [
+          "Kite Noodle",
+          "Spring Nymphar"
+        ]
       },
       {
         "who": "Speed Panda",
@@ -24311,7 +24409,7 @@
     ],
     "basis": "hit-list",
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Dragon's Rage at 59.5s into Thordan",
+    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Kitana Kahn and Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
         "mechanic": "Deathwall",
@@ -24328,7 +24426,9 @@
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Kitana Kahn",
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -24399,7 +24499,7 @@
     ],
     "basis": "no-packet",
     "first": false,
-    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Dragon's Rage at 59.5s into Thordan",
+    "first_mistake": "Absolute Gigachad walking into the deathwall, Kitana Kahn dying to Skyward Leap and Kite Noodle and Spring Nymphar dying to Kitana Kahn and Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 59.5s into Thordan",
     "first_causes": [
       {
         "mechanic": "Deathwall",
@@ -24416,7 +24516,9 @@
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Kitana Kahn",
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -25262,8 +25364,8 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 163,034 at full HP. The hit was 181,150 before mitigation. A DPS takes about 40\u201364k on a share of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kite Noodle got cleaved.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
+    "went_wrong": "Kite Noodle stood too close to Ser Zephirin's landing.",
     "cause": "personal",
     "blames": [
       {
@@ -28627,7 +28729,9 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -28647,16 +28751,16 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 79,837 at full HP. Shared by 4 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 4 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 4 of 5 because Absolute Gigachad was not in it.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Absolute Gigachad",
         "confidence": 100
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -28818,14 +28922,14 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Absolute Gigachad",
+        "confidence": 100,
         "via": [
           "Kiara Blaiddyd"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -28909,14 +29013,14 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Absolute Gigachad",
+        "confidence": 100,
         "via": [
           "Kiara Blaiddyd"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -29027,14 +29131,14 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Absolute Gigachad",
+        "confidence": 100,
         "via": [
           "Kiara Blaiddyd"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -29227,14 +29331,14 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Absolute Gigachad",
+        "confidence": 100,
         "via": [
           "Kiara Blaiddyd"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -29324,14 +29428,14 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Absolute Gigachad",
+        "confidence": 100,
         "via": [
           "Kiara Blaiddyd"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 14.7s into Thordan",
     "first_causes": [
@@ -34429,8 +34533,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -34451,16 +34559,20 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 111,922 at full HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because Spring Nymphar and Absolute Gigalad were missing.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.5s into Thordan",
     "first_causes": [
@@ -34544,8 +34656,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -34567,16 +34683,20 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 108,501 at full HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because Spring Nymphar and Absolute Gigalad were missing.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.5s into Thordan",
     "first_causes": [
@@ -34858,8 +34978,16 @@
         "confidence": 25
       },
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Spring Nymphar",
+        "confidence": 25,
+        "via": [
+          "Kitana Kahn",
+          "Kiara Blaiddyd"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd"
@@ -34986,8 +35114,16 @@
         "confidence": 25
       },
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Spring Nymphar",
+        "confidence": 25,
+        "via": [
+          "Kitana Kahn",
+          "Kiara Blaiddyd"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd"
@@ -35091,8 +35227,16 @@
         "confidence": 25
       },
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Spring Nymphar",
+        "confidence": 25,
+        "via": [
+          "Kitana Kahn",
+          "Kiara Blaiddyd"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd"
@@ -35193,8 +35337,16 @@
         "confidence": 25
       },
       {
-        "who": "Missing bodies",
-        "confidence": 50,
+        "who": "Spring Nymphar",
+        "confidence": 25,
+        "via": [
+          "Kitana Kahn",
+          "Kiara Blaiddyd"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
+        "confidence": 25,
         "via": [
           "Kitana Kahn",
           "Kiara Blaiddyd"

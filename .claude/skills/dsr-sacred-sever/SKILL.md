@@ -16,8 +16,9 @@ This is a stack and it scales. The usual share is 4. A lived share of 4 is tanks
 
 - At or under the role cap on a share of 4: the real stack.
 - A share of 1 or 2 around 85–104k, still at or under the role cap: the same mechanic with missing bodies. It stays raw.
-- Cleaves in the millions, or any hit over the role cap: the failed cleave, not a short share.
-- Share or cleave is decided once per cast. Every death in one packet gets the verdict of the middle victim's hit against their role cap. A vulnerability, a marker clip, or a hit over `fail_above` is still judged on its own. Reference pull 35: Kite Noodle's 81,519 was under the DPS cap, but the cast was a cleave, so all three were cleaved.
+- The damage falls the farther Ser Zephirin jumps, so each group waits across the arena from him. In all three logs a full group 34–35 yalms from him takes about 43k each before mitigation. On reference pull 35 the first group stood about 31 yalms away and took 82–99k; on pull 27 about 6 yalms and took about 400k. A hit over the role cap on a full stack with no vulnerability is the group standing too close: `{player} stood too close to Ser Zephirin's landing.` Each player in it owns their own death.
+- Hits in the millions with Physical Vulnerability Up are a jump on the wrong group (`alternating`).
+- Share or too close is decided once per cast. Every death in one packet gets the verdict of the middle victim's hit against their role cap. A vulnerability, a marker clip, or a hit over `fail_above` is still judged on its own. Reference pull 35: Kite Noodle's 81,519 was under the DPS cap, but the cast was too close, so all three failed it.
 
 ## Fault
 

@@ -132,13 +132,19 @@ Dive from Grace: the first towers, before 42 seconds, need the 3s, and the 2s an
 
 A deathwall walk after other players' mistakes is shared with "Earlier mistake". When every death and Damage Down or Hysteria earlier in the pull was the walker's own, it is theirs at 100 (`8DYNHQx4C7ytdLb9` pull 18).
 
+## Settled from the logs and the guides
+
+The person could not say, so these come from the three logs and the public guides.
+
+- Dragon's Rage is shared by everyone without a blue marker, both tanks included: 5 people. Materia Raiding has the stack shared with both tanks, and every 5-stack in the three logs is both tanks plus the three unmarked non-tanks. A short stack names who was not in it.
+- Sacred Sever's damage falls the farther Ser Zephirin jumps. On every normal first jump the group stood 34–35 yalms from him and took about 43k each; the one 27-yalm later jump took 63k. Pull 35's first group stood 31 yalms away and took 82–99k, pull 27's 6 yalms and about 400k. A big hit on a full stack is the group standing too close, a fail each player in it owns.
+- Personal mitigation is what the tank put on themselves. A co-tank's or healer's cooldown counts only through the multiplier. No tank death in the three logs had a co-tank cooldown on it.
+
 ## Still open
 
 - Dimensional Collapse `25564` is a failed puddle: Heavy and Damage Down. It has no lived baseline, so the one death stays a fail.
-- Dragon's Rage: the person does not know whether the tanks belong in the stack. Lived hits are usually the three unmarked non-tanks plus both tanks, so a share of 5 stays full and a share of 3 stays short.
 - Skyward Leap at 59–70k is the blue marker. A death on it is a healer mistake or a missing mitigation. The 600–760k hits are not towers. Each is a second leap on a player in the same instant as the markers. The positions say who was off their spot.
 - Sacred Sever's per-player hit is about the same total split by the stack: a non-tank takes about 43k in a 4, 57k in a 3, 81–91k in a 2, and 160–181k alone. The role caps (DPS 85k, healer 90k) were set from the 4-share and the tanks' lone shares, so a healer's 91k in a 2 and a non-tank's 160–181k alone are called cleaves. `dsr-sacred-sever` names the 181k on `8DYNHQx4C7ytdLb9` pull 36 a cleave. Which it is decides whether a lone jump is the marked player running the wrong way or missing bodies. The person has not said.
-- The first jump, about 112 seconds, is sometimes far larger than its stack: four players at about 400k on pull 27, and 71–99k in a 4 on pull 35, where one of the four is under the DPS cap. The cast is judged once, so all three deaths are a cleave. No amp shows on those packets. The cause is not known.
 - Deathwall walks right after an early death of both healers, or of most of the party, look like deliberate resets: the rest of the party walks in within a few seconds (pulls 23, 31, 33, 45). They stay fails shared with "Earlier mistake", as the person decided.
 - Party mit and shields are missing on many damage packets, so a vuln that never landed on the packet would be missed.
 - Strength Eternal Conviction, around 63 seconds, is the explosion of an empty Strength tower, not a raidwide. No healer or DPS lived it. `XVz8bCqgPw1KRh9d` and `8DYNHQx4C7ytdLb9` have no Conviction `25567` file, so a Strength tower with nobody dead stays Missed soak until that file is fetched. Sanctity Eternal Conviction is the empty tower and is a fail. Holy Impact is the comet overlap and is a fail. Whoever dropped the two comets owns Holy Impact. Missed soak owns the empty tower only when the log names nobody.

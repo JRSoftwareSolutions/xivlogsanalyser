@@ -49,7 +49,7 @@ class HappenedTest(unittest.TestCase):
     def test_a_cleave_compares_the_hit_to_what_the_role_takes(self):
         cleaves = [
             item for item in self.thordan
-            if item.mechanic_id == "sacred-sever" and item.went_wrong.endswith("got cleaved.")
+            if item.mechanic_id == "sacred-sever" and item.went_wrong.endswith("stood too close to Ser Zephirin's landing.")
         ]
         self.assertTrue(cleaves)
         for item in cleaves:

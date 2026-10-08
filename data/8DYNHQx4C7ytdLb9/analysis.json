@@ -1,12 +1,12 @@
 {
- "rules": "6784acd4603f0984",
- "engine": "371e5244968cf08f",
+ "rules": "31a0eba724499654",
+ "engine": "39e91bf2890a11d4",
  "log": "f136dbe8abc107ba",
  "outputs": {
-  "facts.json": "22eec345f47e9ae7",
-  "judgments.json": "aa6f9121277e464f",
-  "calls.tsv": "27a1e58b00d37a7a",
-  "session.html": "799ac95f61633d0d",
+  "facts.json": "dbea120c2b662a9e",
+  "judgments.json": "254c83d6fc438e1d",
+  "calls.tsv": "6f3dd0bec7a82230",
+  "session.html": "977e458eb6ad7480",
   "inputs.json": "f3a858e502fbae22"
  },
  "counts": {
@@ -1403,7 +1403,15 @@
        1
       ],
       [
-       "Missing bodies",
+       "Kitana Kahn",
+       1
+      ],
+      [
+       "Absolute Gigachad",
+       1
+      ],
+      [
+       "Absolute Gigalad",
        1
       ]
      ]
@@ -1590,7 +1598,7 @@
     ],
     [
      "Absolute Gigalad",
-     6
+     7
     ],
     [
      "Absolute Gigachad",
@@ -1606,7 +1614,7 @@
     ],
     [
      "Missing bodies",
-     2
+     1
     ]
    ],
    "owned": [
@@ -1616,35 +1624,31 @@
     ],
     [
      "Spring Nymphar",
-     59.2
+     62.4
     ],
     [
      "Kitana Kahn",
-     40.1
+     41.1
     ],
     [
      "Kiara Blaiddyd",
      38.1
     ],
     [
+     "Absolute Gigachad",
+     32.0
+    ],
+    [
      "Kite Noodle",
      30.8
     ],
     [
+     "Absolute Gigalad",
+     28.3
+    ],
+    [
      "Speed Panda",
      27.9
-    ],
-    [
-     "Absolute Gigachad",
-     25.0
-    ],
-    [
-     "Absolute Gigalad",
-     24.2
-    ],
-    [
-     "Missing bodies",
-     11.3
     ],
     [
      "Missed soak",
@@ -1652,6 +1656,10 @@
     ],
     [
      "Earlier deaths",
+     1.0
+    ],
+    [
+     "Missing bodies",
      1.0
     ],
     [

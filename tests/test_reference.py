@@ -170,7 +170,8 @@ class ReferenceReportTest(unittest.TestCase):
             owners(one(10, "Absolute Gigachad", "Sacred Sever")),
             [("Spring Nymphar", 50), ("Kite Noodle", 50)],
         )
-        self.assertEqual(owners(one(12, "Loki Doki", "Dragon's Rage")), [("Missing bodies", 50)])
+        # Everyone without a Skyward Leap marker stacks, tanks too. Spring and Kiara were dead.
+        self.assertEqual(owners(one(12, "Loki Doki", "Dragon's Rage")), [("Spring Nymphar", 50), ("Kiara Blaiddyd", 50)])
 
         # Spring died to the cone at 48s, so the tower Spring should have stood in was empty.
         self.assertEqual(
@@ -217,10 +218,11 @@ class ReferenceReportTest(unittest.TestCase):
             one(67, "Absolute Gigachad", "Holy Impact").went_wrong,
             "Kiara Blaiddyd dropped two comets too close.",
         )
-        # Loki Doki was already dead to a short Dragon's Rage, so his share passes on.
+        # Loki Doki was already dead to a short Dragon's Rage, so his share passes on, to Spring
+        # and Kiara who were missing from that stack.
         self.assertEqual(
             owners(one(12, "Absolute Gigalad", "Holy Bladedance")),
-            [("Missing bodies", 33), ("Spring Nymphar", 33), ("Earlier damage", 33)],
+            [("Spring Nymphar", 50), ("Kiara Blaiddyd", 16), ("Earlier damage", 33)],
         )
 
         for item in judgments:

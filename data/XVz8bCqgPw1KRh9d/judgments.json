@@ -369,7 +369,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,781,730 at 37% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar and Kite Noodle were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -528,7 +528,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,686,910 at 44% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar and Kite Noodle were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -690,7 +690,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 2,597,586 at 93% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar and Kite Noodle were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -851,7 +851,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,393,111 at 44% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar and Kite Noodle were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -1135,7 +1135,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 102,145 at full HP. Shared by 1 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 1 of 4 because 4 players were already dead.",
     "cause": "missing",
     "blames": [
@@ -1384,7 +1384,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 35,368 at 41% HP (25,358 of 61,737). Dragon's Glory had taken 40,197 1.3s before.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kitana Kahn was still low from Dragon's Glory.",
     "cause": "self",
     "blames": [
@@ -1510,7 +1510,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 32,799 at 39% HP (26,467 of 68,259). Dragon's Glory had taken 42,474 1.1s before.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Speed Panda was still low from Dragon's Glory.",
     "cause": "self",
     "blames": [
@@ -1645,7 +1645,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 5,558,927 at 49% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kite Noodle was dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -1781,7 +1781,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 2,947,560 at 90% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kite Noodle was dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -1918,7 +1918,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 5,859,399 at 64% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kite Noodle was dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -2044,7 +2044,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 87,600 at 37% HP. Shared by 2 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 2 of 4 because 5 players were already dead.",
     "cause": "missing",
     "blames": [
@@ -2538,7 +2538,10 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Spring Nymphar",
+      "Kiara Blaiddyd"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -2561,16 +2564,20 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 101,856 at 88% HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because Spring Nymphar and Kiara Blaiddyd were already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Kiara Blaiddyd",
         "confidence": 50
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Kitana Kahn and Spring Nymphar dying to Ascalon's Mercy Concealed at 14.4s into Thordan",
     "first_causes": [
@@ -2737,15 +2744,18 @@
     "cause": "low",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 33,
+        "who": "Spring Nymphar",
+        "confidence": 50,
         "via": [
           "Loki Doki"
         ]
       },
       {
-        "who": "Spring Nymphar",
-        "confidence": 33
+        "who": "Kiara Blaiddyd",
+        "confidence": 16,
+        "via": [
+          "Loki Doki"
+        ]
       },
       {
         "who": "Earlier damage",
@@ -2849,15 +2859,18 @@
     "cause": "low",
     "blames": [
       {
-        "who": "Missing bodies",
-        "confidence": 33,
+        "who": "Spring Nymphar",
+        "confidence": 50,
         "via": [
           "Loki Doki"
         ]
       },
       {
-        "who": "Spring Nymphar",
-        "confidence": 33
+        "who": "Kiara Blaiddyd",
+        "confidence": 16,
+        "via": [
+          "Loki Doki"
+        ]
       },
       {
         "who": "Earlier damage",
@@ -3967,7 +3980,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 55,664 at 66% HP. Shared by 3 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 3 of 4 because Kitana Kahn was not in it.",
     "cause": "missing",
     "blames": [
@@ -4067,7 +4080,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 58,737 at 73% HP. Shared by 3 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 3 of 4 because Kitana Kahn was not in it.",
     "cause": "missing",
     "blames": [
@@ -6365,7 +6378,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 45,821 at 46% HP (28,456 of 61,737). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kitana Kahn died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -6473,7 +6486,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 42,408 at 64% HP (39,875 of 62,101). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Loki Doki died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -6559,7 +6572,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 43,755 at 58% HP (39,503 of 68,259). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Speed Panda died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -6649,7 +6662,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 36,544 at 42% HP (28,502 of 68,662). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kiara Blaiddyd died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -6740,7 +6753,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 35,845 at 42% HP (28,734 of 68,218). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kite Noodle died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -6832,7 +6845,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 46,553 at 34% HP (21,089 of 61,615). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -8207,8 +8220,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -8229,16 +8246,20 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 99,023 at full HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because Spring Nymphar and Absolute Gigalad were missing.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
@@ -8302,8 +8323,12 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Spring Nymphar"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -8325,16 +8350,20 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 97,484 at full HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because Spring Nymphar and Absolute Gigalad were missing.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.7s into Thordan",
     "first_causes": [
@@ -8461,11 +8490,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 66,
+        "via": [
+          "Kite Noodle",
+          "Loki Doki"
+        ]
       },
       {
-        "who": "Missing bodies",
-        "confidence": 66,
+        "who": "Absolute Gigalad",
+        "confidence": 33,
         "via": [
           "Kite Noodle",
           "Loki Doki"
@@ -8612,11 +8645,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 66,
+        "via": [
+          "Kite Noodle",
+          "Loki Doki"
+        ]
       },
       {
-        "who": "Missing bodies",
-        "confidence": 66,
+        "who": "Absolute Gigalad",
+        "confidence": 33,
         "via": [
           "Kite Noodle",
           "Loki Doki"
@@ -8740,11 +8777,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 66,
+        "via": [
+          "Kite Noodle",
+          "Loki Doki"
+        ]
       },
       {
-        "who": "Missing bodies",
-        "confidence": 66,
+        "who": "Absolute Gigalad",
+        "confidence": 33,
         "via": [
           "Kite Noodle",
           "Loki Doki"
@@ -8868,11 +8909,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 66,
+        "via": [
+          "Kite Noodle",
+          "Loki Doki"
+        ]
       },
       {
-        "who": "Missing bodies",
-        "confidence": 66,
+        "who": "Absolute Gigalad",
+        "confidence": 33,
         "via": [
           "Kite Noodle",
           "Loki Doki"
@@ -8998,11 +9043,15 @@
     "blames": [
       {
         "who": "Spring Nymphar",
-        "confidence": 33
+        "confidence": 66,
+        "via": [
+          "Kite Noodle",
+          "Loki Doki"
+        ]
       },
       {
-        "who": "Missing bodies",
-        "confidence": 66,
+        "who": "Absolute Gigalad",
+        "confidence": 33,
         "via": [
           "Kite Noodle",
           "Loki Doki"
@@ -9177,7 +9226,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 43,076 at 43% HP (29,100 of 68,218). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kite Noodle died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -9263,7 +9312,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 42,974 at 48% HP (29,872 of 61,615). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -9361,7 +9410,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 40,878 at 44% HP (30,119 of 68,662). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kiara Blaiddyd died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -9452,7 +9501,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 42,790 at 34% HP (21,297 of 62,101). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Loki Doki died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -9542,7 +9591,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 43,717 at 44% HP (29,896 of 68,259). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Speed Panda died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -9634,7 +9683,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 44,097 at 35% HP (21,784 of 61,737). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kitana Kahn died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -13831,7 +13880,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 43,815 at 63% HP (39,106 of 61,737). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kitana Kahn died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -13954,7 +14003,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 39,323 at 60% HP (37,260 of 61,615). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -14769,8 +14818,8 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 415,779 at full HP. A DPS takes about 40\u201364k on a share of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kitana Kahn got cleaved.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
+    "went_wrong": "Kitana Kahn stood too close to Ser Zephirin's landing.",
     "cause": "personal",
     "blames": [
       {
@@ -14906,8 +14955,8 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 428,274 at 33% HP. A healer takes about 43\u201367k on a share of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Spring Nymphar got cleaved.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
+    "went_wrong": "Spring Nymphar stood too close to Ser Zephirin's landing.",
     "cause": "personal",
     "blames": [
       {
@@ -15038,8 +15087,8 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 258,617 at full HP. A tank takes about 24\u201348k on a share of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Absolute Gigalad got cleaved.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
+    "went_wrong": "Absolute Gigalad stood too close to Ser Zephirin's landing.",
     "cause": "personal",
     "blames": [
       {
@@ -15169,8 +15218,8 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 408,739 at full HP. A DPS takes about 40\u201364k on a share of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kite Noodle got cleaved.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
+    "went_wrong": "Kite Noodle stood too close to Ser Zephirin's landing.",
     "cause": "personal",
     "blames": [
       {
@@ -15293,7 +15342,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 2,224,464 at full HP. Had Physical Vulnerability Up (232% amp). A one-shot.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -15430,7 +15479,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 5,012,914 at full HP. Had Physical Vulnerability Up (232% amp). A one-shot.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -15568,7 +15617,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,338,031 at 95% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -15707,7 +15756,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,792,474 at 89% HP. Had Physical Vulnerability Up (232% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -15877,8 +15926,13 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -15900,7 +15954,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 773,514 at 52% HP. Had Magic Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Kitana Kahn still had a damage amp.",
     "cause": "personal",
     "blames": [
@@ -15979,8 +16033,13 @@
       "Kite Noodle": true
     },
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -16003,7 +16062,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 789,275 at 71% HP. Had Magic Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Kitana Kahn was out of position and clipped Kite Noodle.",
     "cause": "marker",
     "blames": [
@@ -16368,8 +16427,13 @@
       "Kiara Blaiddyd": true
     },
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Loki Doki"
+    ],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -16393,7 +16457,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 781,240 at 56% HP. Had Magic Vulnerability Up (184% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Kitana Kahn was out of position and clipped Kiara Blaiddyd.",
     "cause": "marker",
     "blames": [
@@ -17310,8 +17374,14 @@
       "Kitana Kahn": true
     },
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Absolute Gigachad",
+      "Kite Noodle",
+      "Kiara Blaiddyd"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -17334,7 +17404,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 3,202,363 at 52% HP. Had Magic Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Speed Panda was out of position and clipped Kitana Kahn.",
     "cause": "marker",
     "blames": [
@@ -17989,7 +18059,11 @@
         "via": "Ascalon's Mercy Concealed"
       }
     ],
-    "down": [],
+    "down": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -18013,7 +18087,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 1,714,952 at 38% HP. Had Magic Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Absolute Gigalad was out of position and clipped Speed Panda.",
     "cause": "marker",
     "blames": [
@@ -18209,7 +18283,11 @@
         "via": "Ascalon's Mercy Concealed"
       }
     ],
-    "down": [],
+    "down": [
+      "Absolute Gigachad",
+      "Spring Nymphar",
+      "Kite Noodle"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -18234,7 +18312,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 1,560,037 at 43% HP. Had Magic Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Absolute Gigalad was out of position and clipped Loki Doki.",
     "cause": "marker",
     "blames": [
@@ -19089,7 +19167,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 45,264 at 71% HP (43,916 of 61,615). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -19205,7 +19283,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 45,222 at 54% HP (33,345 of 61,737). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kitana Kahn died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -21085,7 +21163,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 104,442 at 17% HP. Shared by 1 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 1 of 4 because Kite Noodle and Spring Nymphar were already dead.",
     "cause": "missing",
     "blames": [
@@ -21695,8 +21773,8 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 81,519 at full HP. The rest of the stack took more. A DPS takes about 40\u201364k on a share of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kite Noodle got cleaved.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
+    "went_wrong": "Kite Noodle stood too close to Ser Zephirin's landing.",
     "cause": "personal",
     "blames": [
       {
@@ -21801,8 +21879,8 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 98,786 at full HP. A healer takes about 43\u201367k on a share of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Loki Doki got cleaved.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
+    "went_wrong": "Loki Doki stood too close to Ser Zephirin's landing.",
     "cause": "personal",
     "blames": [
       {
@@ -21897,8 +21975,8 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 89,066 at full HP. A DPS takes about 40\u201364k on a share of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
-    "went_wrong": "Kiara Blaiddyd got cleaved.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
+    "went_wrong": "Kiara Blaiddyd stood too close to Ser Zephirin's landing.",
     "cause": "personal",
     "blames": [
       {
@@ -22095,7 +22173,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,594,567 at 24% HP. Had Physical Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -22220,7 +22298,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 2,566,565 at 77% HP. Had Physical Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -22346,7 +22424,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,318,271 at 38% HP. Had Physical Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -22473,7 +22551,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "fail",
     "happened": "Took 4,335,356 at 26% HP. Had Physical Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "4 players were dead, so Sacred Sever hit the other group.",
     "cause": "redirected",
     "blames": [
@@ -26782,7 +26860,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 46,752 at 72% HP (44,659 of 61,615). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -28505,7 +28583,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 39,011 at 41% HP (25,521 of 62,101). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Loki Doki died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -29343,7 +29421,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 67,071 at 66% HP (40,738 of 61,615). Full HP would not have been enough. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -29490,7 +29568,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 59,646 at 95% HP. Shared by 3 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 3 of 4 because Spring Nymphar was already dead.",
     "cause": "missing",
     "blames": [
@@ -33644,7 +33722,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 41,103 at 53% HP. Shared by 3 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 3 of 4.",
     "cause": "missing",
     "blames": [
@@ -33744,7 +33822,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 53,777 at 43% HP. Shared by 3 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 3 of 4.",
     "cause": "missing",
     "blames": [
@@ -34344,7 +34422,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 43,495 at 69% HP (42,674 of 61,615). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Spring Nymphar died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -34484,7 +34562,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 57,632 at 46% HP. Shared by 3 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 3 of 4.",
     "cause": "missing",
     "blames": [
@@ -34617,7 +34695,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 58,431 at 59% HP. Shared by 3 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 3 of 4.",
     "cause": "missing",
     "blames": [
@@ -35175,7 +35253,10 @@
     "in_spot": {},
     "prior_debuffs": [],
     "down": [],
-    "unsoaked": [],
+    "unsoaked": [
+      "Absolute Gigachad",
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -35194,23 +35275,28 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 91,376 at full HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because Absolute Gigachad and Absolute Gigalad were not in it.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Absolute Gigachad",
+        "confidence": 50
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50
       }
     ],
-    "basis": "label",
-    "first": true,
-    "first_mistake": "Loki Doki dying to Dragon's Rage at 60.1s into Thordan",
+    "basis": "hit-list",
+    "first": false,
+    "first_mistake": "Loki Doki dying to Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 60.1s into Thordan",
     "first_causes": [
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -35342,21 +35428,29 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Absolute Gigachad",
+        "confidence": 50,
+        "via": [
+          "Loki Doki"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50,
         "via": [
           "Loki Doki"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
-    "first_mistake": "Loki Doki dying to Dragon's Rage at 60.1s into Thordan",
+    "first_mistake": "Loki Doki dying to Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 60.1s into Thordan",
     "first_causes": [
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -35455,21 +35549,29 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Absolute Gigachad",
+        "confidence": 50,
+        "via": [
+          "Loki Doki"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50,
         "via": [
           "Loki Doki"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
-    "first_mistake": "Loki Doki dying to Dragon's Rage at 60.1s into Thordan",
+    "first_mistake": "Loki Doki dying to Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 60.1s into Thordan",
     "first_causes": [
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -35591,21 +35693,29 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Absolute Gigachad",
+        "confidence": 50,
+        "via": [
+          "Loki Doki"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50,
         "via": [
           "Loki Doki"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
-    "first_mistake": "Loki Doki dying to Dragon's Rage at 60.1s into Thordan",
+    "first_mistake": "Loki Doki dying to Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 60.1s into Thordan",
     "first_causes": [
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -35740,21 +35850,29 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Absolute Gigachad",
+        "confidence": 50,
+        "via": [
+          "Loki Doki"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50,
         "via": [
           "Loki Doki"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
-    "first_mistake": "Loki Doki dying to Dragon's Rage at 60.1s into Thordan",
+    "first_mistake": "Loki Doki dying to Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 60.1s into Thordan",
     "first_causes": [
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -35878,21 +35996,29 @@
     "cause": "empty",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Absolute Gigachad",
+        "confidence": 50,
+        "via": [
+          "Loki Doki"
+        ]
+      },
+      {
+        "who": "Absolute Gigalad",
         "confidence": 50,
         "via": [
           "Loki Doki"
         ]
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
-    "first_mistake": "Loki Doki dying to Dragon's Rage at 60.1s into Thordan",
+    "first_mistake": "Loki Doki dying to Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 60.1s into Thordan",
     "first_causes": [
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -36013,12 +36139,13 @@
     ],
     "basis": "no-packet",
     "first": false,
-    "first_mistake": "Loki Doki dying to Dragon's Rage at 60.1s into Thordan",
+    "first_mistake": "Loki Doki dying to Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 60.1s into Thordan",
     "first_causes": [
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -36106,12 +36233,13 @@
     ],
     "basis": "no-packet",
     "first": false,
-    "first_mistake": "Loki Doki dying to Dragon's Rage at 60.1s into Thordan",
+    "first_mistake": "Loki Doki dying to Absolute Gigachad and Absolute Gigalad's Dragon's Rage at 60.1s into Thordan",
     "first_causes": [
       {
         "mechanic": "Dragon's Rage",
         "owners": [
-          "Missing bodies"
+          "Absolute Gigachad",
+          "Absolute Gigalad"
         ]
       }
     ]
@@ -36356,7 +36484,10 @@
     "divers": [],
     "in_spot": {},
     "prior_debuffs": [],
-    "down": [],
+    "down": [
+      "Spring Nymphar",
+      "Kitana Kahn"
+    ],
     "unsoaked": [],
     "doubled": [],
     "marked": [],
@@ -36379,16 +36510,20 @@
     "mechanic": "Dragon's Rage",
     "outcome": "raw",
     "happened": "Took 113,372 at 95% HP. Shared by 3 of 5.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
-    "went_wrong": "The stack was 3 of 5.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "went_wrong": "The stack was 3 of 5 because Spring Nymphar and Kitana Kahn were already dead.",
     "cause": "missing",
     "blames": [
       {
-        "who": "Missing bodies",
+        "who": "Spring Nymphar",
+        "confidence": 50
+      },
+      {
+        "who": "Kitana Kahn",
         "confidence": 50
       }
     ],
-    "basis": "label",
+    "basis": "hit-list",
     "first": false,
     "first_mistake": "Spring Nymphar dying to Ascalon's Mercy Concealed at 49.8s into Thordan",
     "first_causes": [
@@ -36761,15 +36896,14 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 25
+        "confidence": 37,
+        "via": [
+          "Kiara Blaiddyd"
+        ]
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 25
-      },
-      {
-        "who": "Missing bodies",
-        "confidence": 25,
+        "confidence": 37,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -36858,15 +36992,14 @@
       },
       {
         "who": "Spring Nymphar",
-        "confidence": 25
+        "confidence": 37,
+        "via": [
+          "Kiara Blaiddyd"
+        ]
       },
       {
         "who": "Kitana Kahn",
-        "confidence": 25
-      },
-      {
-        "who": "Missing bodies",
-        "confidence": 25,
+        "confidence": 37,
         "via": [
           "Kiara Blaiddyd"
         ]
@@ -39737,7 +39870,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 42,834 at 53% HP (32,683 of 62,101). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Loki Doki died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -39844,7 +39977,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 46,519 at 59% HP (36,551 of 61,737). Full HP would have lived. No shield. No party mitigation.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "Kitana Kahn died to the real hit.",
     "cause": "resolve",
     "blames": [
@@ -39947,7 +40080,7 @@
     "mechanic": "Sacred Sever",
     "outcome": "raw",
     "happened": "Took 54,409 at 65% HP. Shared by 3 of 4.",
-    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies. A cleave is not the share.",
+    "should_have_been": "Four players share each jump. The single sword is first, then the double sword, then those two jumps again. Each group waits across the arena from Ser Zephirin: the damage falls the farther he jumps. A full group 34\u201335 yalms away takes about 43k each before mitigation, 31 yalms about twice that, and next to him it kills. A lived share of 4 is tanks about 24\u201348k, healers about 43\u201367k, and DPS about 40\u201364k. A share of 1 or 2 under the role cap is missing bodies.",
     "went_wrong": "The stack was 3 of 4 because Kite Noodle was not in it.",
     "cause": "missing",
     "blames": [
@@ -42293,8 +42426,12 @@
       "Speed Panda": true
     },
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -42319,7 +42456,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 665,690 at 73% HP. Had Magic Vulnerability Up (199% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Kiara Blaiddyd was out of position and clipped Speed Panda.",
     "cause": "marker",
     "blames": [
@@ -42429,8 +42566,12 @@
       "Spring Nymphar": true
     },
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -42456,7 +42597,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 601,786 at 66% HP. Had Magic Vulnerability Up (184% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Kiara Blaiddyd was out of position and clipped Spring Nymphar.",
     "cause": "marker",
     "blames": [
@@ -42768,8 +42909,12 @@
       "Kitana Kahn": true
     },
     "prior_debuffs": [],
-    "down": [],
-    "unsoaked": [],
+    "down": [
+      "Absolute Gigachad"
+    ],
+    "unsoaked": [
+      "Absolute Gigalad"
+    ],
     "doubled": [],
     "marked": [],
     "dropped_by": [],
@@ -42796,7 +42941,7 @@
     "mechanic": "Dragon's Rage",
     "outcome": "fail",
     "happened": "Took 557,109 at 71% HP. Had Magic Vulnerability Up (184% amp). It would have killed them from full HP.",
-    "should_have_been": "The three non-tanks without the blue marker stack under Thordan. A lived share is about 60\u201380k, usually 5 people, those three plus both tanks. Whether the tanks are supposed to share it is not known, so 5 stays the full share. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
+    "should_have_been": "Everyone without a blue marker stacks for it: the three non-tanks and both tanks, 5 people. A lived share is about 60\u201380k. A stack of 3 around 102\u2013113k is that share with two bodies missing.",
     "went_wrong": "Kiara Blaiddyd was out of position and clipped Kitana Kahn.",
     "cause": "marker",
     "blames": [

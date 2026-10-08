@@ -1006,7 +1006,7 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
             timed, pack, hit_lists, fight["id"], _fight_roster(meta, fight["id"]), raises, names_by_id,
             mitigation_tables.get(fight["id"]),
             {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
-            fetched,
+            fetched, marker_casts,
         )
         _drop_owners(
             timed, pack, fight["id"], positions, mitigation_tables.get(fight["id"]), raises, names_by_id,
@@ -1053,6 +1053,7 @@ def _missing_bodies(
     table: dict | None = None,
     roles: dict[str, str] | None = None,
     fetched: set[int] = frozenset(),
+    marker_casts: dict[tuple, list[tuple]] | None = None,
 ) -> None:
     """Who was missing from a mechanic that needs every player, or every holder of a debuff.
 
@@ -1084,7 +1085,9 @@ def _missing_bodies(
                 for event in by_guid.get(guid, [])
                 if event.get("fight") == fight_id
             ]
-            hits = [event for event in window if at <= event["timestamp"] <= first]
+            # A stack is the killing cast itself: its hits land a few milliseconds apart around the deaths.
+            until = first + STACK_SLACK_MS if needs.stack else first
+            hits = [event for event in window if at <= event["timestamp"] <= until]
             # This cast's towers came from a fetched file, or no tower file of this set is missing.
             if hits:
                 complete = all(not event.get("replay") for event in hits)
@@ -1092,6 +1095,8 @@ def _missing_bodies(
                 complete = all(guid in fetched for guid in needs.soak)
             at = min(event["timestamp"] for event in hits) if hits else first - round(needs.lag * 1000)
             soaked = {names_by_id.get(event.get("targetID")) for event in hits}
+            if needs.stack:
+                hits = []
             shared: dict[tuple, set[str]] = defaultdict(set)
             for event in hits:
                 name = names_by_id.get(event.get("targetID"))
@@ -1111,6 +1116,9 @@ def _missing_bodies(
             needed = [name for name in needed if (roles or {}).get(name) in needs.roles]
         if needs.holders:
             needed = [name for name in needed if name in _holders(table, needs.holders, at, names_by_id)]
+        if needs.marked_out:
+            excused = _marker_holders(marker_casts or {}, fight_id, needs.marked_out, at, names_by_id)
+            needed = [name for name in needed if name not in excused]
         fact.down = [
             name for name in needed
             if name in died and name not in victims
@@ -1122,6 +1130,29 @@ def _missing_bodies(
             gap = "ability " + "/".join(str(guid) for guid in needs.soak)
             if gap not in fact.missing:
                 fact.missing.append(gap)
+
+
+# How long before a stack its markers resolve, such as Skyward Leap just before Dragon's Rage.
+MARKED_OUT_MS = 5000
+# A stack's hits land on its players a few milliseconds apart, some after the first death.
+STACK_SLACK_MS = 1000
+
+
+def _marker_holders(
+    marker_casts: dict[tuple, list[tuple]], fight_id: int, guids: list[int], at: int,
+    names_by_id: dict[int, str],
+) -> set[str]:
+    """The holders of these markers that resolved just before `at`: each cast's first target."""
+    found: set[str] = set()
+    for (fight, _source), casts in marker_casts.items():
+        if fight != fight_id:
+            continue
+        for first, guid, targets in casts:
+            if guid in guids and at - MARKED_OUT_MS <= first <= at and targets:
+                name = names_by_id.get(targets[0])
+                if name:
+                    found.add(name)
+    return found
 
 
 def _holders(table: dict | None, guids: list[int], at: int, names_by_id: dict[int, str]) -> set[str]:

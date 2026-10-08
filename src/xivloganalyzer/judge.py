@@ -644,7 +644,11 @@ def _personal_mit(fact: DeathFact, pack: FightPack) -> bool:
     Without it, a known name on the packet or a heavily cut hit counts. With no
     multiplier, no buffs, and no replay rows, nothing says they had none, so it
     counts as had."""
-    if _self_mits(fact) or any(name in fact.buffs for name in pack.personal_mit):
+    if _self_mits(fact):
+        return True
+    # With the replay, only what the tank put on themselves is theirs. A co-tank's or a
+    # healer's cooldown counts only through the multiplier below.
+    if not fact.mitigations and any(name in fact.buffs for name in pack.personal_mit):
         return True
     if fact.multiplier is None:
         return not fact.buffs and not fact.mitigations
@@ -694,6 +698,8 @@ def _short_stack(fact: DeathFact, mechanic: Mechanic) -> str:
 
 def _oversized(fact: DeathFact, mechanic: Mechanic) -> str:
     name = fact.name
+    if mechanic.too_much:
+        return mechanic.too_much.format(name=name)
     if mechanic.id == "eye-of-the-tyrant":
         return _short_stack(fact, mechanic)
     if mechanic.id == "lightning-storm":
@@ -939,12 +945,12 @@ def _debuff_owner(debuff: dict, pack: FightPack) -> str:
     mechanic = pack.mechanic_named(_debuff_source(debuff), debuff.get("phase"))
     if mechanic is None:
         return debuff["name"]
+    if mechanic.scales_with_stack:
+        return "Missing bodies"
     if mechanic.needs_everyone:
         return "Missed soak"
     if mechanic.drops is not None:
         return "Prey markers"
-    if mechanic.scales_with_stack:
-        return "Missing bodies"
     return debuff["name"]
 
 

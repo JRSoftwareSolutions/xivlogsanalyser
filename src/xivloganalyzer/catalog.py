@@ -80,6 +80,11 @@ class NeedsEveryone:
     it to those roles, such as the non-tanks for the Strength towers. `after` and
     `until` are the phase times this set covers, when one ability explodes for
     more than one set of towers.
+
+    `stack` is a soak that is one shared hit, such as a stack marker: everyone in it
+    shares one instance, so nobody doubled up. `marked_out` are marker guids whose
+    holders belong elsewhere, such as the three Skyward Leap holders for the
+    Dragon's Rage stack: the first player each of those casts hit is not needed.
     """
 
     lead: float
@@ -90,6 +95,8 @@ class NeedsEveryone:
     roles: list[str] = field(default_factory=list)
     after: float | None = None
     until: float | None = None
+    stack: bool = False
+    marked_out: list[int] = field(default_factory=list)
 
     def covers(self, t: float) -> bool:
         if self.after is not None and t < self.after:
@@ -139,6 +146,9 @@ class Mechanic:
     alternating: bool = False
     # Each circle is shared by one support and one DPS, such as Hiemal Storm's ice.
     pairs: bool = False
+    # What went wrong when a hit is bigger than the role takes, with {name}, such as
+    # "{name} stood too close to Ser Zephirin's landing." Without it, the category's line.
+    too_much: str = ""
 
     def cap_for(self, role: str) -> int | None:
         band = self.roles.get(role) or self.roles.get("dps")
@@ -349,6 +359,8 @@ def _needs_everyone(raw: dict | list | None) -> list[NeedsEveryone]:
             roles=list(row.get("roles") or []),
             after=float(row["after"]) if row.get("after") is not None else None,
             until=float(row["until"]) if row.get("until") is not None else None,
+            stack=bool(row.get("stack", False)),
+            marked_out=[int(guid) for guid in row.get("marked_out") or []],
         )
         for row in rows
     ]
@@ -428,6 +440,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 drops=_drops(raw.get("drops")),
                 alternating=bool(raw.get("alternating", False)),
                 pairs=bool(raw.get("pairs", False)),
+                too_much=str(raw.get("too_much") or ""),
             )
         )
     return FightPack(
