@@ -86,6 +86,8 @@ class DeathFact:
     knocked_by: list[str] = field(default_factory=list)
     # Who baited the cone that hit them from outside the stack.
     baited_by: list[str] = field(default_factory=list)
+    # The dead marker holders whose leap fell on someone else and hit them.
+    orphan: list[str] = field(default_factory=list)
     # The ability that put the latest Vulnerability Up on them before the hit, such as "Darkdragon Dive",
     # and how many milliseconds before the death it landed.
     amp_via: str = ""
@@ -512,6 +514,22 @@ class _Positions:
         return found
 
 
+def _marks(positions: _Positions, spots: MarkerSpots, fight: int, landed: int) -> list[tuple[float, float]]:
+    """The marker spots at this moment, placed from where the boss stands."""
+    boss = positions.boss(fight, spots.boss, landed)
+    if boss is None:
+        return []
+    heading = math.atan2(boss[1], boss[0])
+    marks: list[tuple[float, float]] = []
+    for angle in spots.angles:
+        for side in (1, -1):
+            turn = heading + side * math.radians(angle)
+            mark = (spots.edge * math.cos(turn), spots.edge * math.sin(turn))
+            if all(math.dist(mark, other) > 0.5 for other in marks):
+                marks.append(mark)
+    return marks
+
+
 def _in_spot(
     positions: _Positions,
     spots: MarkerSpots,
@@ -525,17 +543,9 @@ def _in_spot(
     `people` maps each player to whether they held a marker. A holder should be
     on a spot. Anyone else should be out of reach of every spot.
     """
-    boss = positions.boss(fight, spots.boss, landed)
-    if boss is None:
+    marks = _marks(positions, spots, fight, landed)
+    if not marks:
         return {}
-    heading = math.atan2(boss[1], boss[0])
-    marks = []
-    for angle in spots.angles:
-        for side in (1, -1):
-            turn = heading + side * math.radians(angle)
-            mark = (spots.edge * math.cos(turn), spots.edge * math.sin(turn))
-            if all(math.dist(mark, other) > 0.5 for other in marks):
-                marks.append(mark)
     verdict = {}
     for actor, holds in people.items():
         spot = positions.at(fight, actor, landed, 1000)
@@ -1069,6 +1079,16 @@ def extract_report(report: Path, pack: FightPack, skipped: list | None = None) -
         _extra_hits(
             timed, pack, snapshots, fight["id"], _fight_roster(meta, fight["id"]), raises,
             mitigation_tables.get(fight["id"]), names_by_id,
+        )
+        _dead_tanks(
+            timed, pack,
+            {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
+            raises, mitigation_tables.get(fight["id"]), names_by_id,
+        )
+        _orphan_leaps(
+            timed, pack, marker_casts, positions, fight["id"],
+            {actor["name"]: pack.role_of(actor.get("type") or "") for actor in pull_players(meta, fight["id"])},
+            raises, names_by_id,
         )
         _drop_owners(
             timed, pack, fight["id"], positions, mitigation_tables.get(fight["id"]), raises, names_by_id,
@@ -1737,6 +1757,138 @@ def _extra_hits(
             name for name in roster
             if name not in anywhere and (_still_dead(name, timed, snap, raises) or name in resting)
         ]
+
+
+def _dead_tanks(
+    timed: list[tuple[int | None, DeathFact]],
+    pack: FightPack,
+    roles: dict[str, str],
+    raises: dict[str, list[int]],
+    table: dict | None,
+    names_by_id: dict[int, str],
+) -> None:
+    """On a non-tank's death to a tank's hit that falls to someone else when a tank is
+    dead, such as a Holy Shield Bash tether: `down` is the tanks dead (or raised and still
+    Transcendent) when it hit."""
+    for timestamp, fact in timed:
+        mechanic = pack.mechanic_for(fact.guid, fact.phase)
+        if timestamp is None or mechanic is None or not mechanic.covers_dead_tanks or fact.role == "tank":
+            continue
+        resting = _holders(table, [TRANSCENDENT], timestamp, names_by_id)
+        fact.down = [
+            name for name, role in roles.items()
+            if role == "tank" and (_still_dead(name, timed, timestamp, raises) or name in resting)
+        ]
+
+
+# A leap's first target this close to a spot is that spot's holder.
+CLAIM_YALMS = 6.0
+# A holder who died this close to an empty spot was on their way to it, or on it.
+REACH_YALMS = 10.0
+# Markers go out about this long before their leaps land, so a holder died within it.
+ORPHAN_MS = 12000
+
+
+def _orphan_leaps(
+    timed: list[tuple[int | None, DeathFact]],
+    pack: FightPack,
+    marker_casts: dict[tuple, list[tuple]],
+    positions: _Positions,
+    fight_id: int,
+    roles: dict[str, str],
+    raises: dict[str, list[int]],
+    names_by_id: dict[int, str],
+) -> None:
+    """Marker leaps whose holder died before they landed, and whose deaths they caused.
+
+    A leap lands on its living holder. When the holder died first, it falls on
+    someone else, who then shows first in its hit list though they were not on a
+    spot (or are a tank, who never holds one). The holder is the non-tank who died
+    before it landed, at or on the way to the spot no living first target is on.
+    `orphan` on each death that leap caused names those holders: everyone it hit,
+    the one it fell on included, whom it or its damage amp killed.
+    """
+    ids = {name: actor for actor, name in names_by_id.items()}
+    for mechanic in pack.mechanics:
+        if mechanic.spots is None or not mechanic.marker_owns_clip:
+            continue
+        casts = sorted(
+            (first, targets)
+            for (cast_fight, _source), rows in marker_casts.items() if cast_fight == fight_id
+            for first, guid, targets in rows if guid in mechanic.guids
+        )
+        # One wave of leaps lands within a second or so.
+        waves: list[list[tuple]] = []
+        for first, targets in casts:
+            if waves and first - waves[-1][-1][0] <= CAST_MS:
+                waves[-1].append((first, targets))
+            else:
+                waves.append([(first, targets)])
+        for packets in waves:
+            landed = min(first for first, _targets in packets)
+            marks = _marks(positions, mechanic.spots, fight_id, landed)
+            if not marks:
+                continue
+            claimed: set[int] = set()
+            # Leaps that cannot be their first target's own: on a tank, or a second one on them.
+            certain: list[list[int]] = []
+            # Leaps on a player off every spot that hit others: a dead holder's, or a holder out of place.
+            unsure: list[list[int]] = []
+            leads = Counter(targets[0] for _first, targets in packets)
+            for first, targets in packets:
+                holder = names_by_id.get(targets[0])
+                spot = positions.at(fight_id, targets[0], first, 1000)
+                near = min(range(len(marks)), key=lambda at: math.dist(spot, marks[at])) if spot else None
+                on_spot = near is not None and math.dist(spot, marks[near]) <= CLAIM_YALMS
+                if roles.get(holder) == "tank" or leads[targets[0]] > 1:
+                    certain.append(targets)
+                elif holder and on_spot:
+                    claimed.add(near)
+                elif len(targets) > 1:
+                    unsure.append(targets)
+            if not certain and not unsure:
+                continue
+            open_marks = [mark for at, mark in enumerate(marks) if at not in claimed]
+            holders: list[str] = []
+            for mark in open_marks:
+                best = None
+                for ts, fact in timed:
+                    if ts is None or not 0 < landed - ts <= ORPHAN_MS or roles.get(fact.name) == "tank" or fact.name in holders:
+                        continue
+                    if not _still_dead(fact.name, timed, landed, raises):
+                        continue
+                    last = [row for row in positions.named(fight_id, fact.name) if row[0] <= ts]
+                    if not last:
+                        continue
+                    apart = math.dist(last[-1][1:], mark)
+                    if apart <= REACH_YALMS and (best is None or apart < best[0]):
+                        best = (apart, fact.name)
+                if best:
+                    holders.append(best[1])
+            if not holders:
+                continue
+            # A leap that could be a holder's own counts as a dead holder's only when the dead
+            # holders account for every such leap.
+            stray = certain + unsure if len(holders) >= len(certain) + len(unsure) else certain
+            if not stray:
+                continue
+            for ts, fact in timed:
+                if ts is None or abs(ts - landed) > CLIP_WINDOW_MS or ts < landed - 500:
+                    continue
+                target = ids.get(fact.name)
+                # The leap or its damage amp killed them, on a hit that was not their own mistake.
+                if fact.guid not in mechanic.guids and fact.amp_via != mechanic.name:
+                    continue
+                killer = pack.mechanic_for(fact.guid, fact.phase)
+                if killer and killer.any_hit_is_fail and not (killer.tanks_only and roles.get(fact.name) == "tank"):
+                    continue
+                # The one a leap fell on, killed by a leap of their own size, died to the one they held.
+                second = mechanic.fail_above is None or (fact.unmitigated or fact.total) > mechanic.fail_above
+                if any(
+                    target in targets and (targets[0] != target or fact.guid not in mechanic.guids or second)
+                    for targets in stray
+                ):
+                    fact.orphan = list(holders)
 
 
 def _still_dead(

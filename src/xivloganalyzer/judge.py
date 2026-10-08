@@ -377,6 +377,12 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
             went_wrong=f"{fact.name} died to {fact.ability}.",
             cause="none",
         )
+    if fact.orphan:
+        return _done(
+            fact, mechanic, "fail",
+            f"{_people(fact.orphan)} died holding a marker, so its leap fell on someone else.",
+            "orphan", pack,
+        )
     if fact.clipped_by and (_vuln(fact) or mechanic.marker_owns_clip):
         return _done(fact, mechanic, "fail", _marker_clip(fact, pack), "marker", pack)
     if _vuln(fact) and _redirected(fact, mechanic):
@@ -396,6 +402,9 @@ def judge_fact(fact: DeathFact, pack: FightPack, cleave: bool | None = None) -> 
     ):
         # The main tank was dead, so the other tank had to take it.
         fact.down = [fact.main_tank]
+        return _done(fact, mechanic, "fail", "", "redirected", pack)
+    if mechanic.covers_dead_tanks and fact.role != "tank" and fact.down:
+        # A tank was dead, so their tether fell to someone else.
         return _done(fact, mechanic, "fail", "", "redirected", pack)
     if mechanic.tanks_only and fact.role != "tank":
         return _done(fact, mechanic, "fail", _not_a_tank(fact, mechanic), "personal", pack)
@@ -957,7 +966,7 @@ def _people(names: list[str]) -> str:
 def passes_on(item: Judgment) -> bool:
     """The death belongs to other players: the ones missing from the mechanic, whose drops
     it was, or whose hit stunned them."""
-    return item.cause in {"dropped", "marked", "stunned", "knocked", *_PASSED_ON}
+    return item.cause in {"dropped", "marked", "stunned", "knocked", "orphan", *_PASSED_ON}
 
 
 def empty_owners(item: Judgment) -> list[str]:
@@ -970,6 +979,8 @@ def empty_owners(item: Judgment) -> list[str]:
         return list(item.fact.stunned_by)
     if item.cause == "knocked":
         return list(item.fact.knocked_by)
+    if item.cause == "orphan":
+        return [who for who in item.owners if who not in GROUP_LABELS]
     if item.cause not in _PASSED_ON:
         return []
     return [who for who in item.owners if who not in GROUP_LABELS]
@@ -1248,10 +1259,11 @@ def _mark_empty_soaks(judgments: list[Judgment]) -> None:
             _empty_text(item, down, out, doubled)
         elif item.cause == "missing" and (down or out or doubled):
             item.went_wrong = _missing_text(item, down, out, doubled)
-        elif item.cause == "redirected" and (item.fact.off_tank or item.fact.main_tank):
-            item.went_wrong = f"{_was(down)} dead, so {item.fact.name} had to take {item.mechanic}."
-        elif item.cause == "redirected":
+        elif item.cause == "redirected" and item.fact.group:
             item.went_wrong = f"{_was(down)} dead, so {item.mechanic} hit the other group."
+        elif item.cause == "redirected":
+            took = "had to take" if len(down) == 1 else "took"
+            item.went_wrong = f"{_was(down)} dead, so {item.fact.name} {took} {item.mechanic}."
 
 
 def _missing_text(item: Judgment, down: list[str], out: list[str], doubled: list[str] = ()) -> str:
@@ -1523,6 +1535,10 @@ def _owners_for(
             item.blames = _group(item.owners[0], 2)
         else:
             item.blames = _weighted(weights)
+    elif item.cause == "orphan" and item.fact.orphan:
+        weights = _passed_on(item, item.fact.orphan, latest, via)
+        item.owners = list(weights)
+        item.blames = _weighted(weights)
     elif item.cause == "orphan":
         item.blames = _group("Earlier deaths", 1)
     elif item.cause == "stunned":
@@ -1611,6 +1627,8 @@ def _basis(item: Judgment) -> str:
         return "debuff"
     if cause in {"empty", "redirected", "missing"}:
         return "hit-list"
+    if cause == "orphan":
+        return "position"
     if cause in {"healers", "resolve", "low"}:
         return "role"
     return "label"

@@ -1,12 +1,12 @@
 {
- "rules": "ce8c75194b55b050",
- "engine": "a4ad0e63c3e033fd",
+ "rules": "0ef58f8181144124",
+ "engine": "de426fc90d597bcd",
  "log": "16dcfb6841a6438b",
  "outputs": {
-  "facts.json": "193dfe739c52ecdc",
-  "judgments.json": "27293eb8723d75ab",
-  "calls.tsv": "678a2b5c84af90f3",
-  "session.html": "b7af66d4ba08b9cc",
+  "facts.json": "39a7384f0f5d27da",
+  "judgments.json": "c00fb6070584afe0",
+  "calls.tsv": "55aa3cd1bb97eee6",
+  "session.html": "e12f24ef8ae23265",
   "inputs.json": "f48daa99d0ac1b58"
  },
  "counts": {
@@ -1252,7 +1252,6 @@
   "night": {
    "pulls": 47,
    "labels": [
-    "Earlier deaths",
     "Miscommunication"
    ],
    "started": [
@@ -1610,11 +1609,11 @@
    "owned": [
     [
      "Loki Doki",
-     61.0
+     61.5
     ],
     [
      "Spring Nymphar",
-     56.8
+     55.8
     ],
     [
      "Kitana Kahn",
@@ -1622,7 +1621,7 @@
     ],
     [
      "Absolute Gigachad",
-     44.1
+     42.1
     ],
     [
      "Absolute Gigalad",
@@ -1630,19 +1629,15 @@
     ],
     [
      "Kiara Blaiddyd",
-     36.4
+     36.9
     ],
     [
      "Kite Noodle",
-     29.1
+     30.6
     ],
     [
      "Speed Panda",
-     28.8
-    ],
-    [
-     "Earlier deaths",
-     1.0
+     30.3
     ],
     [
      "Miscommunication",

@@ -233,7 +233,9 @@ class PullCardsTest(unittest.TestCase):
         self.assertTrue(concealed["Loki Doki"]["passed"])
         leap = _seats(by_name["Skyward Leap"])
         self.assertFalse(leap["Kitana Kahn"]["passed"])
-        self.assertFalse(leap["Kiara Blaiddyd"]["passed"])
+        # Kiara was on her spot. The second leap on her was Speed's, who died holding it.
+        self.assertTrue(leap["Kiara Blaiddyd"]["passed"])
+        self.assertFalse(leap["Speed Panda"]["passed"])
         self.assertTrue(leap["Spring Nymphar"]["passed"])
         names = {card["id"] for card in self._pull(68)["cards"]}
         self.assertNotIn("heavenly-heel-swap", names)

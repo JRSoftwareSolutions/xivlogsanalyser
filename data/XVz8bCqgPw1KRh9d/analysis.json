@@ -1,12 +1,12 @@
 {
- "rules": "ce8c75194b55b050",
- "engine": "a4ad0e63c3e033fd",
+ "rules": "0ef58f8181144124",
+ "engine": "de426fc90d597bcd",
  "log": "cbb000a0f2e1a39e",
  "outputs": {
-  "facts.json": "2f77fa28403e9b42",
-  "judgments.json": "1087aa0cec616dea",
-  "calls.tsv": "5a19a6e58ff7a87f",
-  "session.html": "3fe4c459a2a558b0",
+  "facts.json": "8ecd0f55f4b0a71f",
+  "judgments.json": "a8a99a36d8dc161a",
+  "calls.tsv": "b37c073405585ef1",
+  "session.html": "6225aec3720f9853",
   "inputs.json": "2ad291906dbfe108"
  },
  "counts": {
@@ -1546,8 +1546,7 @@
   "night": {
    "pulls": 55,
    "labels": [
-    "Assigned mitigation",
-    "Earlier deaths"
+    "Assigned mitigation"
    ],
    "started": [
     {
@@ -1944,35 +1943,31 @@
     ],
     [
      "Kitana Kahn",
-     73.1
+     67.1
     ],
     [
      "Loki Doki",
-     45.6
+     50.1
+    ],
+    [
+     "Kite Noodle",
+     48.1
     ],
     [
      "Kiara Blaiddyd",
      44.9
     ],
     [
-     "Kite Noodle",
-     41.2
-    ],
-    [
      "Speed Panda",
-     37.2
+     34.9
     ],
     [
      "Absolute Gigachad",
-     31.4
+     32.9
     ],
     [
      "Absolute Gigalad",
-     31.3
-    ],
-    [
-     "Earlier deaths",
-     2.0
+     28.8
     ],
     [
      "Assigned mitigation",

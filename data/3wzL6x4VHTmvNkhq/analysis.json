@@ -1,12 +1,12 @@
 {
- "rules": "ce8c75194b55b050",
- "engine": "a4ad0e63c3e033fd",
+ "rules": "0ef58f8181144124",
+ "engine": "de426fc90d597bcd",
  "log": "e8a8e43e5c52b904",
  "outputs": {
-  "facts.json": "7589cc34d45fe6fe",
-  "judgments.json": "cc4a3c3871b34491",
-  "calls.tsv": "c7120b800674db20",
-  "session.html": "a677d3d3f1107696",
+  "facts.json": "0bf0c3bfefdf2f4c",
+  "judgments.json": "c5558d5458fbe34b",
+  "calls.tsv": "322d476dfb229c88",
+  "session.html": "a0c68377ef71f2d8",
   "inputs.json": "e064c893006a2472"
  },
  "counts": {
@@ -1821,7 +1821,7 @@
     ],
     [
      "Kitana Kahn",
-     80.7
+     75.1
     ],
     [
      "Kiara Blaiddyd",
@@ -1845,7 +1845,7 @@
     ],
     [
      "Kite Noodle",
-     15.3
+     20.9
     ]
    ]
   }

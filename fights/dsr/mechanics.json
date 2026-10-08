@@ -255,7 +255,8 @@
       "category": "dodge",
       "any_hit_is_fail": true,
       "tanks_only": true,
-      "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions."
+      "covers_dead_tanks": true,
+      "should_have_been": "Each tank takes one tether. The hit stuns. A non-tank who takes that stun dies. Stretch the tether and use personal mitigation. A short tether is the failed bash: hundreds of thousands to millions. When a tank is dead, their tether falls to someone else, and the dead tank owns that."
     },
     {
       "id": "shining-blade",

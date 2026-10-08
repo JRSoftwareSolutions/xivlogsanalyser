@@ -151,29 +151,29 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 27	1:58	Speed Panda	116.5	Sacred Sever	fail	redirected	hit-list	Spring Nymphar 25; Absolute Gigalad 25; Kite Noodle 25; Kitana Kahn 25	
 27	1:58	Kiara Blaiddyd	116.6	Sacred Sever	fail	redirected	hit-list	Spring Nymphar 25; Absolute Gigalad 25; Kite Noodle 25; Kitana Kahn 25	
 28	0:59	Loki Doki	57.5	Deathwall	fail	personal	no-packet	Loki Doki 100	
-28	1:01	Kitana Kahn	59.5	Dragon's Rage	fail	personal	debuff	Kitana Kahn 100	
-28	1:01	Kite Noodle	59.5	Dragon's Rage	fail	marker	position	Kitana Kahn 100	
-28	1:01	Absolute Gigachad	59.6	Holy Shield Bash	fail	marker	position	Kitana Kahn 100	
-28	1:01	Absolute Gigalad	59.6	Holy Shield Bash	fail	marker	position	Kitana Kahn 100	
-28	1:01	Kiara Blaiddyd	59.6	Dragon's Rage	fail	marker	position	Kitana Kahn 100	
+28	1:01	Kitana Kahn	59.5	Dragon's Rage	fail	orphan	position	Loki Doki 100	
+28	1:01	Kite Noodle	59.5	Dragon's Rage	fail	orphan	position	Loki Doki 100	
+28	1:01	Absolute Gigachad	59.6	Holy Shield Bash	fail	orphan	position	Loki Doki 100	
+28	1:01	Absolute Gigalad	59.6	Holy Shield Bash	fail	orphan	position	Loki Doki 100	
+28	1:01	Kiara Blaiddyd	59.6	Dragon's Rage	fail	orphan	position	Loki Doki 100	
 28	1:03	Speed Panda	61.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
-28	1:06	Spring Nymphar	64.6	Eternal Conviction	fail	empty	hit-list	Speed Panda 16; Kitana Kahn 50 (via Kite Noodle, Kiara Blaiddyd); Loki Doki 16; Spring Nymphar 16	
+28	1:06	Spring Nymphar	64.6	Eternal Conviction	fail	empty	hit-list	Speed Panda 16; Loki Doki 66 (via Kite Noodle, Kitana Kahn, Kiara Blaiddyd); Spring Nymphar 16	
 29	0:51	Kiara Blaiddyd	49.5	Ascalon's Mercy Concealed	fail	personal	hit	Kiara Blaiddyd 100	
 29	1:00	Absolute Gigachad	58.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
 29	1:00	Kite Noodle	58.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
 29	1:01	Speed Panda	59.2	Dimensional Collapse	fail	personal	hit	Speed Panda 100	
-29	1:01	Loki Doki	59.3	Skyward Leap	fail	marker	position	Speed Panda 100	
-29	1:01	Absolute Gigalad	59.6	Holy Shield Bash	fail	marker	position	Speed Panda 100	
-29	1:01	Kitana Kahn	59.6	Dragon's Rage	fail	marker	position	Speed Panda 100	
-29	1:06	Spring Nymphar	64.6	Eternal Conviction	fail	empty	hit-list	Speed Panda 50 (via Kitana Kahn, Loki Doki); Kite Noodle 16; Kiara Blaiddyd 16; Spring Nymphar 16	
+29	1:01	Loki Doki	59.3	Skyward Leap	fail	orphan	position	Kite Noodle 100	
+29	1:01	Absolute Gigalad	59.6	Holy Shield Bash	fail	orphan	position	Kite Noodle 100	
+29	1:01	Kitana Kahn	59.6	Dragon's Rage	fail	orphan	position	Kite Noodle 100	
+29	1:06	Spring Nymphar	64.6	Eternal Conviction	fail	empty	hit-list	Speed Panda 16; Kite Noodle 50 (via Kitana Kahn, Loki Doki); Kiara Blaiddyd 16; Spring Nymphar 16	
 30	0:51	Absolute Gigachad	49.8	Ascalon's Mercy Concealed	fail	personal	hit	Absolute Gigachad 100	
 30	0:59	Spring Nymphar	57.5	Deathwall	fail	after	no-packet	Spring Nymphar 50; Earlier mistake 50	
 30	1:00	Kite Noodle	58.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
 30	1:01	Kiara Blaiddyd	59.5	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
-30	1:01	Speed Panda	59.8	Dragon's Rage	fail	marker	position	Absolute Gigalad 100	
-30	1:01	Kitana Kahn	59.9	Holy Shield Bash	fail	personal	debuff	Kitana Kahn 100	
-30	1:01	Loki Doki	59.9	Dragon's Rage	fail	marker	position	Absolute Gigalad 100	
-30	1:06	Absolute Gigalad	64.3	Holy Bladedance	fail	personal	debuff	Absolute Gigalad 100	
+30	1:01	Speed Panda	59.8	Dragon's Rage	fail	orphan	position	Kite Noodle 100	
+30	1:01	Kitana Kahn	59.9	Holy Shield Bash	fail	redirected	hit-list	Absolute Gigachad 100	
+30	1:01	Loki Doki	59.9	Dragon's Rage	fail	orphan	position	Kite Noodle 100	
+30	1:06	Absolute Gigalad	64.3	Holy Bladedance	fail	orphan	position	Kite Noodle 100	
 31	0:45	Kite Noodle	43.1	Lightning Storm	fail	overlap	position	Kite Noodle 50; Spring Nymphar 50	
 31	0:45	Spring Nymphar	43.2	Lightning Storm	fail	overlap	position	Spring Nymphar 50; Kite Noodle 50	
 31	0:46	Absolute Gigachad	44.5	Deathwall	fail	after	no-packet	Absolute Gigachad 50; Earlier mistake 50	
@@ -222,7 +222,7 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 36	1:01	Spring Nymphar	59.5	Deathwall	fail	after	no-packet	Spring Nymphar 50; Earlier mistake 50	
 36	1:01	Kiara Blaiddyd	59.7	Skyward Leap	fail	marker	position	Kiara Blaiddyd 50; Kitana Kahn 50	
 36	1:01	Kitana Kahn	59.7	Skyward Leap	fail	marker	position	Kitana Kahn 50; Kiara Blaiddyd 50	
-36	1:02	Loki Doki	60.2	Holy Shield Bash	fail	personal	debuff	Loki Doki 100	
+36	1:02	Loki Doki	60.2	Holy Shield Bash	fail	redirected	hit-list	Absolute Gigachad 50; Absolute Gigalad 50	
 36	1:04	Absolute Gigalad	62.5	Deathwall	fail	after	no-packet	Absolute Gigalad 50; Earlier mistake 50	
 37	2:15	Kitana Kahn	133.0	Frostbite	fail	personal	hit	Kitana Kahn 100	
 37	2:15	Spring Nymphar	133.0	Frostbite	fail	personal	hit	Spring Nymphar 100	
@@ -239,7 +239,7 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 38	0:57	Kitana Kahn	55.5	Deathwall	fail	after	no-packet	Kitana Kahn 50; Earlier mistake 50	
 38	0:57	Kite Noodle	55.5	Deathwall	fail	after	no-packet	Kite Noodle 50; Earlier mistake 50	
 38	0:58	Kiara Blaiddyd	56.5	Deathwall	fail	after	no-packet	Kiara Blaiddyd 50; Earlier mistake 50	
-38	1:01	Loki Doki	59.3	Skyward Leap	fail	orphan	label	Earlier deaths 100	
+38	1:01	Loki Doki	59.3	Skyward Leap	fail	orphan	position	Kitana Kahn 50; Kite Noodle 50	
 39	1:59	Kitana Kahn	117.9	Bright Flare	fail	personal	hit	Kitana Kahn 100	
 39	1:59	Speed Panda	117.9	Bright Flare	fail	personal	hit	Speed Panda 100	
 39	2:15	Kite Noodle	133.4	Frostbite	fail	personal	hit	Kite Noodle 100	
@@ -456,4 +456,4 @@ fight	time	name	t	mechanic	outcome	cause	basis	owners	missing
 68	0:57	Loki Doki	55.5	Deathwall	fail	after	no-packet	Loki Doki 50; Earlier mistake 50	
 68	0:57	Speed Panda	55.5	Deathwall	fail	after	no-packet	Speed Panda 50; Earlier mistake 50	
 68	1:01	Kitana Kahn	59.3	Skyward Leap	fail	mitigation	label	Assigned mitigation 50	
-68	1:01	Kiara Blaiddyd	59.4	Skyward Leap	fail	orphan	label	Earlier deaths 100	
+68	1:01	Kiara Blaiddyd	59.4	Skyward Leap	fail	orphan	position	Speed Panda 100	

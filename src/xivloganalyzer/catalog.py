@@ -189,6 +189,8 @@ class Mechanic:
     knockback: bool = False
     # A cone baited from outside the stack is also the baiter's mistake.
     baited: Baited | None = None
+    # A tank's hit, such as a tether, that falls to someone else when a tank is dead.
+    covers_dead_tanks: bool = False
     # What went wrong when a hit is bigger than the role takes, with {name}, such as
     # "{name} stood too close to Ser Zephirin's landing." Without it, the category's line.
     too_much: str = ""
@@ -519,6 +521,7 @@ def load_pack(fight_dir: Path) -> FightPack:
                 one_each=bool(raw.get("one_each", False)),
                 knockback=bool(raw.get("knockback", False)),
                 baited=_baited(raw.get("baited")),
+                covers_dead_tanks=bool(raw.get("covers_dead_tanks", False)),
                 too_much=str(raw.get("too_much") or ""),
             )
         )
