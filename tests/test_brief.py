@@ -19,7 +19,7 @@ class BriefTest(unittest.TestCase):
         self.assertIn("315 fail", text)
         self.assertIn("101 environment", text)
         self.assertIn("9 Deathwall", text)
-        self.assertIn("28 f7 e1 · first: Loki Doki walking into the deathwall at ", text)
+        self.assertIn("28 f7 e1 · lost to: Loki Doki walking into the deathwall at ", text)
         self.assertIn("left out: 56 deaths after the pull was already lost", text)
         self.assertIn("Raw by mechanic", text)
         self.assertIn("35 Sacred Sever", text)

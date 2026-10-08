@@ -1,7 +1,7 @@
-"""What started each pull of a night, and who owns its deaths.
+"""What lost each pull of a night, and who owns its deaths.
 
-Built from the saved calls: each judgment's `first_causes` (the pull's first
-mistake per mechanic, with its owners), `blames`, and `carried`. The brief prints
+Built from the saved calls: each judgment's `first_causes` (the mistake that lost
+the pull, per mechanic, with its owners), `blames`, and `carried`. The brief prints
 it and the session page shows it above the pulls.
 
 A share that came through an earlier death, such as an empty tower left by a
@@ -91,12 +91,12 @@ def night_lines(rows: list[dict]) -> list[str]:
     tally = night_tally(rows)
     if not tally["started"]:
         return []
-    lines = [f"What started each pull ({tally['pulls']} pulls; a pull can start with two)"]
+    lines = [f"What lost each pull ({tally['pulls']} pulls; a pull can be lost to two at once)"]
     for row in tally["started"]:
         who = ", ".join(f"{name} {count}" for name, count in row["owners"])
         lines.append(f"  {row['pulls']} {row['mechanic']}: {who}")
     lines.append("")
-    lines.append("Who started pulls")
+    lines.append("Who lost pulls")
     lines += _people(tally["starters"], str)
     lines.append("")
     lines.append("Deaths owned by their own mistake while the pull could succeed, by share")

@@ -3787,10 +3787,12 @@
    "time": "2:32",
    "name": "Absolute Gigachad",
    "mechanic": "Deathwall",
-   "outcome": "environment",
-   "owners": [],
-   "by": "user",
-   "why": "Walls after the pull's first death are a reset, not a mistake: the pull was already lost (\"if you need 8 people to succeed with only 7 alive because someone died to a mistake earlier, it is not the fault of the 7\").",
+   "outcome": "fail",
+   "owners": [
+    "Absolute Gigachad"
+   ],
+   "by": "review",
+   "why": "Part of the moment that lost the pull, 0.8s after the empty Meteors tower exploded. Absolute Gigalad's death at 1:26 was recovered from: he was raised and Sanctity went clean with everyone alive, so the pull was not lost before 2:31.",
    "first_pass": {
     "outcome": "fail",
     "owners": [

@@ -1133,26 +1133,78 @@ class _FirstMoment:
     debuffs: list[dict]
 
     def holds(self, phase: int, t: float) -> bool:
-        return phase == self.phase and t <= self.start + _FIRST_S
+        return phase == self.phase and self.start <= t <= self.start + _FIRST_S
 
     def people(self) -> set[str]:
         return {item.fact.name for item in self.deaths} | {debuff["name"] for debuff in self.debuffs}
 
 
-def _first_moments(judgments: list[Judgment], pack: FightPack) -> dict[int, _FirstMoment]:
+def _pull_debuffs(rows: list[Judgment]) -> list[dict]:
+    """Every cascade debuff of one pull, from the deaths that came after it."""
+    seen: set[tuple] = set()
+    debuffs: list[dict] = []
+    for item in rows:
+        for debuff in item.fact.prior_debuffs:
+            key = (debuff["name"], debuff["debuff"], debuff["phase"], debuff["t"])
+            if key not in seen:
+                seen.add(key)
+                debuffs.append(debuff)
+    return debuffs
+
+
+Moment = tuple[float, float]
+
+
+def _stop_windows(pack: FightPack) -> list[tuple[Moment, Moment]]:
+    """Each stop on the session line, from its start to the next stop's in the same phase.
+    The last stop of a phase runs to the phase's end."""
+    ordered = sorted(pack.clusters, key=lambda cluster: (cluster.phase, cluster.starts))
+    windows = []
+    for index, cluster in enumerate(ordered):
+        following = ordered[index + 1] if index + 1 < len(ordered) else None
+        if following is not None and following.phase == cluster.phase:
+            end: Moment = (cluster.phase, following.starts)
+        else:
+            end = (cluster.phase + 1, float("-inf"))
+        windows.append(((cluster.phase, cluster.starts), end))
+    return windows
+
+
+def _recovered_until(rows: list[Judgment], pack: FightPack) -> Moment | None:
+    """The end of the last stop the party did in full after a death, or None.
+
+    A stop went in full when nobody died during it, nobody got a Damage Down or
+    Hysteria in it, and the pull went on past its end. A death before such a stop
+    was recovered from: it is still a mistake, but it is not what lost the pull. A
+    player still dead is not excused: a later stop they left short passes on to them.
+    """
+    deaths = [(item.fact.phase, item.fact.t) for item in rows]
+    debuffs = [(debuff["phase"], debuff["t"]) for debuff in _pull_debuffs(rows)]
+    last = max(deaths)
+    found = None
+    for start, end in _stop_windows(pack):
+        if min(deaths) >= start or last < end:
+            continue
+        if not any(start <= when < end for when in deaths + debuffs):
+            found = end
+    return found
+
+
+def _first_moments(
+    judgments: list[Judgment], pack: FightPack, recovered: bool = True,
+) -> dict[int, _FirstMoment]:
+    """The first death, Damage Down, or Hysteria of each pull. With `recovered`, the first
+    one after the last stop the party did in full: the mistake that lost the pull."""
     pulls: dict[int, list[Judgment]] = {}
     for item in judgments:
         pulls.setdefault(item.fact.fight, []).append(item)
     found = {}
     for fight, rows in pulls.items():
-        seen: set[tuple] = set()
-        debuffs: list[dict] = []
-        for item in rows:
-            for debuff in item.fact.prior_debuffs:
-                key = (debuff["name"], debuff["debuff"], debuff["phase"], debuff["t"])
-                if key not in seen:
-                    seen.add(key)
-                    debuffs.append(debuff)
+        debuffs = _pull_debuffs(rows)
+        after = _recovered_until(rows, pack) if recovered else None
+        if after is not None:
+            rows = [item for item in rows if (item.fact.phase, item.fact.t) >= after]
+            debuffs = [debuff for debuff in debuffs if (debuff["phase"], debuff["t"]) >= after]
         moments = [(item.fact.phase, item.fact.t) for item in rows]
         moments += [(debuff["phase"], debuff["t"]) for debuff in debuffs]
         phase, start = min(moments)
@@ -1210,16 +1262,22 @@ def _mark_resets(judgments: list[Judgment], firsts: dict[int, "_FirstMoment"], p
             item.blames = []
 
 
-def _mark_late(judgments: list[Judgment]) -> None:
-    """A pull is lost at its first death. Anything more than a second after it is late."""
-    first: dict[int, tuple[int, float]] = {}
+def _mark_late(judgments: list[Judgment], firsts: dict[int, _FirstMoment]) -> None:
+    """A pull is lost at its first death after the last stop the party did in full.
+    Anything more than a second after that death is late."""
     for item in judgments:
-        when = (item.fact.phase, item.fact.t)
-        if item.fact.fight not in first or when < first[item.fact.fight]:
-            first[item.fact.fight] = when
-    for item in judgments:
-        phase, start = first[item.fact.fight]
-        item.late = (item.fact.phase, item.fact.t) > (phase, start + _FIRST_S)
+        moment = firsts[item.fact.fight]
+        lost = min(
+            ((other.fact.phase, other.fact.t) for other in moment.deaths),
+            default=None,
+        )
+        if lost is None:
+            lost = min(
+                (other.fact.phase, other.fact.t) for other in judgments
+                if other.fact.fight == item.fact.fight
+                and (other.fact.phase, other.fact.t) >= (moment.phase, moment.start)
+            )
+        item.late = (item.fact.phase, item.fact.t) > (lost[0], lost[1] + _FIRST_S)
 
 
 def _mark_after_walls(
@@ -1270,7 +1328,8 @@ def _only_own_before(item: Judgment, judgments: list[Judgment]) -> bool:
 def _mark_first_mistakes(
     judgments: list[Judgment], firsts: dict[int, _FirstMoment], pack: FightPack,
 ) -> None:
-    """The first death, Damage Down, or Hysteria of a pull. Later deaths often cascade from it.
+    """The mistake that lost the pull: its first death, Damage Down, or Hysteria after the
+    last stop the party did in full. Later deaths often cascade from it.
 
     A player killed by someone else's mistake is not marked first. The text names whose it was.
     """
@@ -1714,9 +1773,9 @@ def judge_report(
     if not judgments:
         return judgments
     _mark_empty_soaks(judgments)
+    _mark_resets(judgments, _first_moments(judgments, pack, recovered=False), pack)
     firsts = _first_moments(judgments, pack)
-    _mark_resets(judgments, firsts, pack)
-    _mark_late(judgments)
+    _mark_late(judgments, firsts)
     _mark_after_walls(judgments, firsts, pack)
     if roster is None or not len(roster):
         people = _roster_from_facts(facts)

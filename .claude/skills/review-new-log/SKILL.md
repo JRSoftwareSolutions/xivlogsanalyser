@@ -47,7 +47,7 @@ python -m unittest discover -s tests
 python -m xivloganalyzer brief <code> --detail none
 ```
 
-The brief opens with what started each pull, who started pulls, and each player's share of the night's deaths. That is the answer to "what went wrong tonight". The pull lines say each pull's first mistake. Lead with those, not with the death totals: most deaths cascade from the first mistake.
+The brief opens with what lost each pull, who lost pulls, and each player's share of the night's deaths. That is the answer to "what went wrong tonight". The pull lines say the mistake each pull was lost to; a death the party recovered from does not count. Lead with those, not with the death totals: most deaths cascade from the mistake that lost the pull.
 
 ## 4. Check the weak calls
 

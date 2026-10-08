@@ -1,12 +1,12 @@
 {
  "rules": "68430eea8b48cddd",
- "engine": "968e8001ebc4eb62",
+ "engine": "135e3af9e0ff6d28",
  "log": "e8a8e43e5c52b904",
  "outputs": {
   "facts.json": "df16516b7611c024",
-  "judgments.json": "73f97e973feaa2fd",
+  "judgments.json": "688489e2c5b05f75",
   "calls.tsv": "35739de9bbc25b3e",
-  "session.html": "22103c36330e70f3",
+  "session.html": "282698479bbb30de",
   "inputs.json": "e064c893006a2472"
  },
  "counts": {
@@ -1468,7 +1468,7 @@
     "phase": 2,
     "starts": 105.0,
     "reached": 13,
-    "mistakes": 8
+    "mistakes": 9
    },
    {
     "id": "meteors",
@@ -1496,15 +1496,15 @@
    "started": [
     {
      "mechanic": "Ascalon's Mercy Concealed",
-     "pulls": 24,
+     "pulls": 22,
      "owners": [
-      [
-       "Spring Nymphar",
-       10
-      ],
       [
        "Loki Doki",
        9
+      ],
+      [
+       "Spring Nymphar",
+       8
       ],
       [
        "Kiara Blaiddyd",
@@ -1534,14 +1534,18 @@
     },
     {
      "mechanic": "Dragon's Glory",
-     "pulls": 6,
+     "pulls": 8,
      "owners": [
       [
        "Speed Panda",
-       4
+       6
       ],
       [
        "Spring Nymphar",
+       3
+      ],
+      [
+       "Kiara Blaiddyd",
        3
       ],
       [
@@ -1550,14 +1554,14 @@
       ],
       [
        "Kitana Kahn",
-       1
-      ],
-      [
-       "Kiara Blaiddyd",
-       1
+       2
       ],
       [
        "Absolute Gigachad",
+       1
+      ],
+      [
+       "Loki Doki",
        1
       ]
      ]
@@ -1790,27 +1794,27 @@
    "starters": [
     [
      "Spring Nymphar",
-     20
+     18
     ],
     [
      "Loki Doki",
-     15
+     16
     ],
     [
      "Kiara Blaiddyd",
-     12
+     14
+    ],
+    [
+     "Kitana Kahn",
+     10
+    ],
+    [
+     "Speed Panda",
+     10
     ],
     [
      "Absolute Gigalad",
      10
-    ],
-    [
-     "Kitana Kahn",
-     9
-    ],
-    [
-     "Speed Panda",
-     8
     ],
     [
      "Absolute Gigachad",
@@ -1832,19 +1836,19 @@
     ],
     [
      "Loki Doki",
-     13.0
+     14.0
     ],
     [
      "Kiara Blaiddyd",
-     12.0
+     14.0
     ],
     [
      "Kitana Kahn",
-     9.5
+     10.5
     ],
     [
      "Speed Panda",
-     7.5
+     8.5
     ],
     [
      "Absolute Gigalad",
@@ -1901,7 +1905,7 @@
      2.5
     ]
    ],
-   "late": 128
+   "late": 123
   }
  }
 }

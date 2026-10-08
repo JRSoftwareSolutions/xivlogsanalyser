@@ -71,9 +71,9 @@ class NightTest(unittest.TestCase):
 
     def test_the_brief_leads_with_the_night(self):
         text = brief_text(ROOT / "data" / CODE)
-        self.assertIn("What started each pull (55 pulls", text)
-        self.assertIn("Who started pulls", text)
-        self.assertLess(text.index("Who started pulls"), text.index("Raw by mechanic"))
+        self.assertIn("What lost each pull (55 pulls", text)
+        self.assertIn("Who lost pulls", text)
+        self.assertLess(text.index("Who lost pulls"), text.index("Raw by mechanic"))
 
 
 class EvidenceTest(unittest.TestCase):

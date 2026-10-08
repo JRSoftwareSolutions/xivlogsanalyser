@@ -159,5 +159,49 @@ class PassedOnTest(unittest.TestCase):
         self.assertEqual(_owners(item), [])
 
 
+
+class RecoveryTest(unittest.TestCase):
+    def test_a_death_the_party_recovered_from_did_not_lose_the_pull(self):
+        # Pull 29: Gigalad died to Ascalon's Might at 1:26, then Sanctity went by with nobody
+        # dying. The pull was lost at the empty Meteors towers at 2:31.
+        might = _one("8DYNHQx4C7ytdLb9", 29, "Absolute Gigalad", "Ascalon's Might")
+        self.assertEqual(might.outcome, "fail")
+        self.assertFalse(might.first)
+        self.assertFalse(might.late)
+        towers = _deaths("8DYNHQx4C7ytdLb9", 29, "Eternal Conviction")
+        self.assertTrue(towers[0].first)
+        self.assertFalse(any(item.late for item in towers))
+        self.assertEqual(
+            [cause["mechanic"] for cause in might.first_causes], ["Eternal Conviction", "Deathwall"],
+        )
+        # Gigachad walked in 0.8s after the towers: part of the moment that lost the pull.
+        wall = _one("8DYNHQx4C7ytdLb9", 29, "Absolute Gigachad", "Deathwall")
+        self.assertEqual((wall.outcome, wall.cause, wall.first), ("fail", "personal", True))
+        # Gigalad walked in seven seconds later, after the pull was lost.
+        late = [
+            item for item in _deaths("8DYNHQx4C7ytdLb9", 29, "Deathwall")
+            if item.fact.name == "Absolute Gigalad"
+        ]
+        self.assertEqual([(item.cause, item.late) for item in late], [("reset", True)])
+
+    def test_a_stop_done_while_someone_is_dead_still_recovers(self):
+        # Pull 36: Kite died to Sacred Sever at 2:01 and was not raised, but Meteors went by
+        # with nobody dying. The pull was lost in Nidhogg, not to Kite's death.
+        kite = _one("8DYNHQx4C7ytdLb9", 36, "Kite Noodle", "Sacred Sever")
+        self.assertFalse(kite.first)
+        self.assertFalse(kite.late)
+        self.assertNotIn("Sacred Sever", [cause["mechanic"] for cause in kite.first_causes])
+        self.assertTrue(kite.first_mistake.endswith("into Nidhogg"))
+
+    def test_no_clean_stop_means_the_first_death_lost_the_pull(self):
+        # Pull 12 of the reference log: the opener deaths, then Kiara's at 0:51 in Strength.
+        # No stop went by clean, so the opener lost the pull.
+        opener = _deaths("XVz8bCqgPw1KRh9d", 12, "Ascalon's Mercy Concealed")
+        self.assertTrue(opener[0].first)
+        later = [item for item in opener if item.fact.t > 40]
+        self.assertTrue(later)
+        self.assertTrue(all(item.late for item in later))
+
+
 if __name__ == "__main__":
     unittest.main()

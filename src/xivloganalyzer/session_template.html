@@ -703,7 +703,7 @@ function deathCard(row, opts) {
     ? `<div class="death-body">${stillFrame(row.frame)}${body}</div>`
     : body;
   return `<div class="death">
-    <div class="who"><span class="time">${esc(row.time)}</span>${cast}<strong>${esc(row.name)}</strong>${jobMark(row.job)}${row.first ? `<span class="tag raw" title="The first mistake of this pull. Later deaths often cascade from it.">First mistake</span>` : ""}</div>
+    <div class="who"><span class="time">${esc(row.time)}</span>${cast}<strong>${esc(row.name)}</strong>${jobMark(row.job)}${row.first ? `<span class="tag raw" title="The mistake that lost this pull. Later deaths often cascade from it.">Lost the pull</span>` : ""}</div>
     ${framed}
   </div>`;
 }
@@ -1561,9 +1561,9 @@ function nightSection(session) {
   const labels = new Set(night.labels || []);
   return `<section>
       <h2>What went wrong</h2>
-      <p class="meta">The first mistake of each pull, by mechanic, and who owned it. A pull can start with two.</p>
-      <table class="night"><thead><tr><th>Pulls</th><th>First mistake</th><th>Owned by</th></tr></thead><tbody>${rows}</tbody></table>
-      <h3>Who started pulls</h3>
+      <p class="meta">The mistake each pull was lost to, by mechanic, and who owned it: the first death, Damage Down, or Hysteria after the last stop the party did in full. A death the party recovered from does not count. A pull can be lost to two at once.</p>
+      <table class="night"><thead><tr><th>Pulls</th><th>Lost to</th><th>Owned by</th></tr></thead><tbody>${rows}</tbody></table>
+      <h3>Who lost pulls</h3>
       ${peopleChips(night.starters || [], String, labels)}
       <h3>Deaths owned</h3>
       <p class="meta">Each death split between its owners, by their own mistake while the pull could still succeed. Party mitigation and earlier damage are left out.${night.late ? ` ${night.late} ${night.late === 1 ? "death" : "deaths"} after the pull was already lost, at its first death, are left out too.` : ""}</p>
@@ -1747,7 +1747,7 @@ function renderPull(id) {
   for (const cause of pull.firstCauses || []) for (const who of cause.owners) if (!owners.includes(who)) owners.push(who);
   const ownedBy = owners.length ? `<p>Owned by ${owners.map(esc).join(", ")}.</p>` : "";
   const first = pull.firstMistake
-    ? `<section><h2>First mistake</h2><p>${esc(pull.firstMistake)}.</p>${ownedBy}<p class="meta">Later deaths in this pull often cascade from it.</p></section>`
+    ? `<section><h2>Lost to</h2><p>${esc(pull.firstMistake)}.</p>${ownedBy}<p class="meta">Later deaths in this pull often cascade from it. A death before the last stop the party did in full was recovered from.</p></section>`
     : "";
   return `
     <header>

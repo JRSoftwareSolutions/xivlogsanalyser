@@ -1,19 +1,19 @@
 {
  "rules": "68430eea8b48cddd",
- "engine": "968e8001ebc4eb62",
+ "engine": "135e3af9e0ff6d28",
  "log": "16dcfb6841a6438b",
  "outputs": {
   "facts.json": "b1dd0a2a52b2dcab",
-  "judgments.json": "9fd9d965ac616c75",
-  "calls.tsv": "79209f9030fe8da6",
-  "session.html": "d7067c9902f324c9",
+  "judgments.json": "462ac89be5603278",
+  "calls.tsv": "b2ecfe5bc901018d",
+  "session.html": "92bd993a294d41e9",
   "inputs.json": "f48daa99d0ac1b58"
  },
  "counts": {
   "raw": 19,
-  "fail": 284,
+  "fail": 285,
   "low": 0,
-  "environment": 90,
+  "environment": 89,
   "unknown": 0
  },
  "summary": {
@@ -26,7 +26,7 @@
   "dayLabel": "Mon 5 Oct 2026",
   "timeLabel": "21:31\u201300:14",
   "raw": 19,
-  "fail": 284,
+  "fail": 285,
   "low": 0,
   "detail": "",
   "overview": {
@@ -1238,7 +1238,7 @@
     "phase": 2,
     "starts": 125.0,
     "reached": 26,
-    "mistakes": 8
+    "mistakes": 11
    },
    {
     "id": "dive-from-grace",
@@ -1246,7 +1246,7 @@
     "phase": 3,
     "starts": 17.0,
     "reached": 8,
-    "mistakes": 1
+    "mistakes": 4
    }
   ],
   "night": {
@@ -1256,8 +1256,34 @@
    ],
    "started": [
     {
+     "mechanic": "Deathwall",
+     "pulls": 9,
+     "owners": [
+      [
+       "Absolute Gigachad",
+       3
+      ],
+      [
+       "Kitana Kahn",
+       3
+      ],
+      [
+       "Absolute Gigalad",
+       2
+      ],
+      [
+       "Kite Noodle",
+       1
+      ],
+      [
+       "Loki Doki",
+       1
+      ]
+     ]
+    },
+    {
      "mechanic": "Ascalon's Mercy Concealed",
-     "pulls": 11,
+     "pulls": 8,
      "owners": [
       [
        "Spring Nymphar",
@@ -1269,36 +1295,6 @@
       ],
       [
        "Absolute Gigalad",
-       2
-      ],
-      [
-       "Kiara Blaiddyd",
-       2
-      ]
-     ]
-    },
-    {
-     "mechanic": "Deathwall",
-     "pulls": 8,
-     "owners": [
-      [
-       "Kitana Kahn",
-       3
-      ],
-      [
-       "Absolute Gigalad",
-       2
-      ],
-      [
-       "Absolute Gigachad",
-       2
-      ],
-      [
-       "Kite Noodle",
-       1
-      ],
-      [
-       "Loki Doki",
        1
       ]
      ]
@@ -1330,25 +1326,37 @@
      ]
     },
     {
-     "mechanic": "Holy Shield Bash",
-     "pulls": 5,
+     "mechanic": "Holy Impact",
+     "pulls": 6,
      "owners": [
       [
+       "Absolute Gigalad",
+       2
+      ],
+      [
+       "Loki Doki",
+       2
+      ],
+      [
        "Kitana Kahn",
-       3
+       2
+      ],
+      [
+       "Absolute Gigachad",
+       1
       ],
       [
        "Spring Nymphar",
        1
       ],
       [
-       "Loki Doki",
+       "Kite Noodle",
        1
       ]
      ]
     },
     {
-     "mechanic": "Holy Impact",
+     "mechanic": "Holy Shield Bash",
      "pulls": 4,
      "owners": [
       [
@@ -1356,15 +1364,11 @@
        2
       ],
       [
-       "Absolute Gigalad",
+       "Spring Nymphar",
        1
       ],
       [
        "Loki Doki",
-       1
-      ],
-      [
-       "Kite Noodle",
        1
       ]
      ]
@@ -1416,6 +1420,28 @@
      ]
     },
     {
+     "mechanic": "Eternal Conviction",
+     "pulls": 2,
+     "owners": [
+      [
+       "Spring Nymphar",
+       1
+      ],
+      [
+       "Kiara Blaiddyd",
+       1
+      ],
+      [
+       "Loki Doki",
+       1
+      ],
+      [
+       "Speed Panda",
+       1
+      ]
+     ]
+    },
+    {
      "mechanic": "Skyward Leap",
      "pulls": 2,
      "owners": [
@@ -1430,15 +1456,29 @@
      ]
     },
     {
-     "mechanic": "Sacred Sever",
+     "mechanic": "Broad Swing",
      "pulls": 2,
      "owners": [
       [
-       "Absolute Gigachad",
+       "Kitana Kahn",
        1
       ],
       [
-       "Kite Noodle",
+       "Kiara Blaiddyd",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Gnashing Wheel",
+     "pulls": 2,
+     "owners": [
+      [
+       "Loki Doki",
+       1
+      ],
+      [
+       "Absolute Gigalad",
        1
       ]
      ]
@@ -1482,30 +1522,6 @@
      ]
     },
     {
-     "mechanic": "Eternal Conviction",
-     "pulls": 1,
-     "owners": [
-      [
-       "Spring Nymphar",
-       1
-      ],
-      [
-       "Kiara Blaiddyd",
-       1
-      ]
-     ]
-    },
-    {
-     "mechanic": "Broad Swing",
-     "pulls": 1,
-     "owners": [
-      [
-       "Kitana Kahn",
-       1
-      ]
-     ]
-    },
-    {
      "mechanic": "Dark Elusive Jump",
      "pulls": 1,
      "owners": [
@@ -1516,11 +1532,11 @@
      ]
     },
     {
-     "mechanic": "Ascalon's Might",
+     "mechanic": "Sacred Sever",
      "pulls": 1,
      "owners": [
       [
-       "Absolute Gigalad",
+       "Absolute Gigachad",
        1
       ]
      ]
@@ -1535,6 +1551,16 @@
       ],
       [
        "Spring Nymphar",
+       1
+      ]
+     ]
+    },
+    {
+     "mechanic": "Darkdragon Dive",
+     "pulls": 1,
+     "owners": [
+      [
+       "Kitana Kahn",
        1
       ]
      ]
@@ -1562,62 +1588,62 @@
    ],
    "starters": [
     [
+     "Spring Nymphar",
+     14
+    ],
+    [
      "Kitana Kahn",
      14
     ],
     [
-     "Spring Nymphar",
-     13
-    ],
-    [
      "Loki Doki",
-     9
-    ],
-    [
-     "Kiara Blaiddyd",
-     9
+     12
     ],
     [
      "Absolute Gigalad",
      8
     ],
     [
-     "Absolute Gigachad",
-     4
+     "Kiara Blaiddyd",
+     8
     ],
     [
-     "Kite Noodle",
-     3
+     "Absolute Gigachad",
+     6
     ],
     [
      "Speed Panda",
+     3
+    ],
+    [
+     "Kite Noodle",
      2
     ]
    ],
    "owned": [
     [
      "Kitana Kahn",
-     16.0
-    ],
-    [
-     "Loki Doki",
-     11.3
+     17.0
     ],
     [
      "Spring Nymphar",
-     11.2
+     15.3
+    ],
+    [
+     "Absolute Gigachad",
+     15.3
     ],
     [
      "Absolute Gigalad",
-     10.7
+     14.2
+    ],
+    [
+     "Loki Doki",
+     13.8
     ],
     [
      "Kiara Blaiddyd",
      8.5
-    ],
-    [
-     "Absolute Gigachad",
-     4.0
     ],
     [
      "Kite Noodle",
@@ -1625,7 +1651,7 @@
     ],
     [
      "Speed Panda",
-     1.7
+     2.2
     ]
    ],
    "passed_on": [
@@ -1666,7 +1692,7 @@
      7.6
     ]
    ],
-   "late": 84
+   "late": 53
   }
  }
 }

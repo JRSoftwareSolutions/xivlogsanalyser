@@ -101,7 +101,7 @@ def format_death(row: dict) -> str:
     if row.get("missing"):
         lines.append(f"Judged without: {', '.join(row['missing'])}")
     if row.get("first"):
-        lines.append("First mistake of the pull.")
+        lines.append("The mistake that lost the pull.")
     elif row.get("late"):
         lines.append("After the pull was lost.")
     return "\n".join(lines)
@@ -123,7 +123,7 @@ def _pull_line(pull: int, counts: Counter, first: str = "") -> str:
             bits.append(f"{_OUTCOME_SHORT[key]}{n}")
     line = f"{pull} {' '.join(bits)}"
     if first:
-        line += f" · first: {first}"
+        line += f" · lost to: {first}"
     return line
 
 
