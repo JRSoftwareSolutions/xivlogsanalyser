@@ -1,19 +1,19 @@
 {
- "rules": "0ef58f8181144124",
- "engine": "ab5d65860d38d526",
+ "rules": "36b9212dc4107918",
+ "engine": "1aa9a3214224e142",
  "log": "e8a8e43e5c52b904",
  "outputs": {
-  "facts.json": "df16516b7611c024",
-  "judgments.json": "47393b80f5c807e0",
-  "calls.tsv": "b82e59756fab9db6",
-  "session.html": "c831de2109310668",
+  "facts.json": "59b54aeb09c62326",
+  "judgments.json": "5e2961391ef6a1d3",
+  "calls.tsv": "35739de9bbc25b3e",
+  "session.html": "282698479bbb30de",
   "inputs.json": "e064c893006a2472"
  },
  "counts": {
   "raw": 49,
-  "fail": 376,
+  "fail": 333,
   "low": 6,
-  "environment": 0,
+  "environment": 43,
   "unknown": 0
  },
  "summary": {
@@ -26,7 +26,7 @@
   "dayLabel": "Wed 30 Sep 2026",
   "timeLabel": "21:44\u201300:03",
   "raw": 49,
-  "fail": 376,
+  "fail": 333,
   "low": 6,
   "detail": "",
   "overview": {
@@ -1444,7 +1444,7 @@
     "phase": 2,
     "starts": 14.0,
     "reached": 51,
-    "mistakes": 2
+    "mistakes": 1
    },
    {
     "id": "strength-of-the-ward",
@@ -1452,7 +1452,7 @@
     "phase": 2,
     "starts": 40.0,
     "reached": 48,
-    "mistakes": 35
+    "mistakes": 20
    },
    {
     "id": "heavenly-heel-swap",
@@ -1460,7 +1460,7 @@
     "phase": 2,
     "starts": 75.0,
     "reached": 16,
-    "mistakes": 1
+    "mistakes": 0
    },
    {
     "id": "sanctity-of-the-ward",
@@ -1468,7 +1468,7 @@
     "phase": 2,
     "starts": 105.0,
     "reached": 13,
-    "mistakes": 12
+    "mistakes": 9
    },
    {
     "id": "meteors",
@@ -1476,7 +1476,7 @@
     "phase": 2,
     "starts": 125.0,
     "reached": 6,
-    "mistakes": 5
+    "mistakes": 0
    },
    {
     "id": "dive-from-grace",
@@ -1490,20 +1490,21 @@
   "night": {
    "pulls": 51,
    "labels": [
+    "Group reset",
     "Out of position"
    ],
    "started": [
     {
      "mechanic": "Ascalon's Mercy Concealed",
-     "pulls": 24,
+     "pulls": 22,
      "owners": [
-      [
-       "Spring Nymphar",
-       10
-      ],
       [
        "Loki Doki",
        9
+      ],
+      [
+       "Spring Nymphar",
+       8
       ],
       [
        "Kiara Blaiddyd",
@@ -1533,14 +1534,18 @@
     },
     {
      "mechanic": "Dragon's Glory",
-     "pulls": 6,
+     "pulls": 8,
      "owners": [
       [
        "Speed Panda",
-       4
+       6
       ],
       [
        "Spring Nymphar",
+       3
+      ],
+      [
+       "Kiara Blaiddyd",
        3
       ],
       [
@@ -1549,14 +1554,14 @@
       ],
       [
        "Kitana Kahn",
-       1
-      ],
-      [
-       "Kiara Blaiddyd",
-       1
+       2
       ],
       [
        "Absolute Gigachad",
+       1
+      ],
+      [
+       "Loki Doki",
        1
       ]
      ]
@@ -1789,27 +1794,27 @@
    "starters": [
     [
      "Spring Nymphar",
-     20
+     18
     ],
     [
      "Loki Doki",
-     15
+     16
     ],
     [
      "Kiara Blaiddyd",
-     12
+     14
+    ],
+    [
+     "Kitana Kahn",
+     10
+    ],
+    [
+     "Speed Panda",
+     10
     ],
     [
      "Absolute Gigalad",
      10
-    ],
-    [
-     "Kitana Kahn",
-     9
-    ],
-    [
-     "Speed Panda",
-     8
     ],
     [
      "Absolute Gigachad",
@@ -1827,41 +1832,80 @@
    "owned": [
     [
      "Spring Nymphar",
-     92.0
-    ],
-    [
-     "Kitana Kahn",
-     77.4
-    ],
-    [
-     "Kiara Blaiddyd",
-     67.8
+     20.5
     ],
     [
      "Loki Doki",
-     51.7
+     14.0
     ],
     [
-     "Absolute Gigachad",
-     37.9
+     "Kiara Blaiddyd",
+     14.0
     ],
     [
-     "Absolute Gigalad",
-     34.0
+     "Kitana Kahn",
+     10.5
     ],
     [
      "Speed Panda",
-     24.6
+     8.5
+    ],
+    [
+     "Absolute Gigalad",
+     7.0
+    ],
+    [
+     "Absolute Gigachad",
+     5.0
     ],
     [
      "Kite Noodle",
-     19.7
+     5.0
     ],
     [
      "Out of position",
      0.5
     ]
-   ]
+   ],
+   "passed_on": [
+    [
+     "Spring Nymphar",
+     52.5
+    ],
+    [
+     "Kitana Kahn",
+     49.8
+    ],
+    [
+     "Kiara Blaiddyd",
+     40.0
+    ],
+    [
+     "Loki Doki",
+     21.0
+    ],
+    [
+     "Absolute Gigalad",
+     11.9
+    ],
+    [
+     "Absolute Gigachad",
+     8.2
+    ],
+    [
+     "Kite Noodle",
+     8.2
+    ],
+    [
+     "Speed Panda",
+     7.8
+    ],
+    [
+     "Group reset",
+     2.5
+    ]
+   ],
+   "late": 123
   }
  }
 }

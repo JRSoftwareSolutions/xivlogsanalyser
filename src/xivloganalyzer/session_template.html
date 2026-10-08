@@ -267,6 +267,7 @@
   }
   .seat.ok { background: var(--ok-bg); border-color: #3f6a5e; color: var(--ok); }
   .seat.fail { background: var(--fail-bg); border-color: #6d624c; color: var(--fail); }
+  .seat.earlier, .seat.late { background: var(--env-bg); border-color: var(--line); color: var(--env); }
   .seat .job-icon { width: 24px; height: 24px; }
   .seat-name { color: var(--ink); font-weight: 650; }
   .mark { width: 16px; height: 16px; display: block; flex: 0 0 auto; }
@@ -702,7 +703,7 @@ function deathCard(row, opts) {
     ? `<div class="death-body">${stillFrame(row.frame)}${body}</div>`
     : body;
   return `<div class="death">
-    <div class="who"><span class="time">${esc(row.time)}</span>${cast}<strong>${esc(row.name)}</strong>${jobMark(row.job)}${row.first ? `<span class="tag raw" title="The first mistake of this pull. Later deaths often cascade from it.">First mistake</span>` : ""}</div>
+    <div class="who"><span class="time">${esc(row.time)}</span>${cast}<strong>${esc(row.name)}</strong>${jobMark(row.job)}${row.first ? `<span class="tag raw" title="The mistake that lost this pull. Later deaths often cascade from it.">Lost the pull</span>` : ""}</div>
     ${framed}
   </div>`;
 }
@@ -1560,13 +1561,16 @@ function nightSection(session) {
   const labels = new Set(night.labels || []);
   return `<section>
       <h2>What went wrong</h2>
-      <p class="meta">The first mistake of each pull, by mechanic, and who owned it. A pull can start with two.</p>
-      <table class="night"><thead><tr><th>Pulls</th><th>First mistake</th><th>Owned by</th></tr></thead><tbody>${rows}</tbody></table>
-      <h3>Who started pulls</h3>
+      <p class="meta">The mistake each pull was lost to, by mechanic, and who owned it: the first death, Damage Down, or Hysteria after the last stop the party did in full. A death the party recovered from does not count. A pull can be lost to two at once.</p>
+      <table class="night"><thead><tr><th>Pulls</th><th>Lost to</th><th>Owned by</th></tr></thead><tbody>${rows}</tbody></table>
+      <h3>Who lost pulls</h3>
       ${peopleChips(night.starters || [], String, labels)}
       <h3>Deaths owned</h3>
-      <p class="meta">Each death split between its owners. Party mitigation and earlier damage are left out.</p>
+      <p class="meta">Each death split between its owners, by their own mistake while the pull could still succeed. Party mitigation and earlier damage are left out.${night.late ? ` ${night.late} ${night.late === 1 ? "death" : "deaths"} after the pull was already lost, at its first death, are left out too.` : ""}</p>
       ${peopleChips(night.owned || [], share, labels)}
+      ${(night.passed_on || []).length ? `<h3>Passed on from an earlier death</h3>
+      <p class="meta">Deaths a player owns only because they, or someone they killed, were already dead and left a later mechanic short.</p>
+      ${peopleChips(night.passed_on, share, labels)}` : ""}
     </section>`;
 }
 function renderAll() {
@@ -1644,8 +1648,13 @@ function seatMark(seat, partName) {
   const passed = Boolean(seat.passed);
   const word = passed ? "passed" : "failed";
   const name = passed ? "" : `<span class="seat-name">${esc(seat.name)}</span>`;
-  const said = esc(`${seat.name} ${word} ${partName}`);
-  return `<span class="seat ${passed ? "ok" : "fail"}" title="${said}">
+  const said = esc(seat.earlier
+    ? `${partName} was short through an earlier death that ${seat.name} owns. It does not count as failing it.`
+    : seat.late
+      ? `${seat.name} failed ${partName} after the pull was already lost. It does not count.`
+      : `${seat.name} ${word} ${partName}`);
+  const look = passed ? "ok" : seat.earlier ? "earlier" : seat.late ? "late" : "fail";
+  return `<span class="seat ${look}" title="${said}">
     ${jobMark(seat.job)}
     ${markIcon(passed)}
     ${name}
@@ -1655,11 +1664,20 @@ function seatMark(seat, partName) {
 function componentDeaths(pull, card, part) {
   return judged(pull.deaths).filter(row => row.mechanicId === card.id && row.componentId === part.id);
 }
+// A seat marked `earlier` is on the mechanic only because an earlier death left it short.
+// A seat marked `late` failed it only after the pull was lost, at its first death.
+// Neither counts as failing the mechanic.
 function failedSeats(part) {
-  return (part.seats || []).filter(seat => !seat.passed);
+  return (part.seats || []).filter(seat => !seat.passed && !seat.earlier && !seat.late);
+}
+function earlierSeats(part) {
+  return (part.seats || []).filter(seat => !seat.passed && seat.earlier);
+}
+function lateSeats(part) {
+  return (part.seats || []).filter(seat => !seat.passed && seat.late);
 }
 function partMatters(pull, card, part) {
-  return failedSeats(part).length > 0 || componentDeaths(pull, card, part).length > 0;
+  return !part.seats.every(seat => seat.passed) || componentDeaths(pull, card, part).length > 0;
 }
 function shownParts(pull, card) {
   return card.parts.filter(part => partMatters(pull, card, part));
@@ -1685,7 +1703,7 @@ function debuffTable(card) {
 function componentBlock(pull, card, part) {
   const rows = componentDeaths(pull, card, part);
   const solo = card.parts.length === 1 && part.name === card.name;
-  const failed = failedSeats(part);
+  const failed = [...failedSeats(part), ...earlierSeats(part), ...lateSeats(part)];
   const shots = failed.length ? (part.frames || []).map(stillFrame).join("") : "";
   const detail = `${failed.length ? `<div class="seats">${failed.map(seat => seatMark(seat, part.name)).join("")}</div>` : ""}
       ${rows.map(row => deathCard(row, { skipFrame: Boolean(shots), skipCast: true })).join("")}`;
@@ -1709,7 +1727,7 @@ function renderPull(id) {
     return `<section>
       <div class="mech-head">
         <h3><button class="link" data-go="s/${SESSION.code}/mechanic/${card.id}">${esc(card.name)}</button></h3>
-        ${failStamp(failedNames(card))}
+        ${failStamp(failedNames(card), card)}
       </div>
       ${debuffTable(card)}
       ${parts}
@@ -1729,7 +1747,7 @@ function renderPull(id) {
   for (const cause of pull.firstCauses || []) for (const who of cause.owners) if (!owners.includes(who)) owners.push(who);
   const ownedBy = owners.length ? `<p>Owned by ${owners.map(esc).join(", ")}.</p>` : "";
   const first = pull.firstMistake
-    ? `<section><h2>First mistake</h2><p>${esc(pull.firstMistake)}.</p>${ownedBy}<p class="meta">Later deaths in this pull often cascade from it.</p></section>`
+    ? `<section><h2>Lost to</h2><p>${esc(pull.firstMistake)}.</p>${ownedBy}<p class="meta">Later deaths in this pull often cascade from it. A death before the last stop the party did in full was recovered from.</p></section>`
     : "";
   return `
     <header>
@@ -1747,14 +1765,27 @@ function renderPull(id) {
 function failedNames(card) {
   const failed = new Set();
   for (const part of card.parts) {
-    for (const seat of part.seats) if (!seat.passed) failed.add(seat.name);
+    for (const seat of failedSeats(part)) failed.add(seat.name);
   }
   return failed;
 }
-function failStamp(failed) {
-  return failed.size
-    ? `<span class="tag fail">${failed.size === 1 ? "1 player failed" : failed.size + " players failed"}</span>`
-    : `<span class="tag ok">Clear</span>`;
+function shortOnly(card) {
+  return !failedNames(card).size && card.parts.some(part => earlierSeats(part).length);
+}
+function lateOnly(card) {
+  return !failedNames(card).size && !shortOnly(card) && card.parts.some(part => lateSeats(part).length);
+}
+function failStamp(failed, card) {
+  if (failed.size) {
+    return `<span class="tag fail">${failed.size === 1 ? "1 player failed" : failed.size + " players failed"}</span>`;
+  }
+  if (card && shortOnly(card)) {
+    return `<span class="tag env" title="Nobody failed it here. An earlier death left it short.">Short from earlier death</span>`;
+  }
+  if (card && lateOnly(card)) {
+    return `<span class="tag env" title="Its mistakes came after the pull was already lost, so they do not count.">After the pull was lost</span>`;
+  }
+  return `<span class="tag ok">Clear</span>`;
 }
 function plural(count, word) {
   return `${count} ${word}${count === 1 ? "" : "s"}`;
@@ -1762,17 +1793,24 @@ function plural(count, word) {
 function cardOf(pull, mechId) {
   return (pull.cards || []).find(card => card.id === mechId);
 }
+// Only a player's own mistake on the mechanic counts. A pull it was short in only
+// because of an earlier death is counted apart, so one mistake is not counted again
+// on every mechanic it left short.
 function mechanicTally(mech, reached) {
   return (mech.parts || []).map(part => {
     let pulls = 0;
     let failedPulls = 0;
+    let shortPulls = 0;
+    let latePulls = 0;
     const misses = new Map();
     for (const pull of reached) {
       const seen = cardOf(pull, mech.id).parts.find(item => item.id === part.id);
       if (!seen) continue;
       pulls += 1;
-      const failed = seen.seats.filter(seat => !seat.passed);
+      const failed = failedSeats(seen);
       if (failed.length) failedPulls += 1;
+      else if (earlierSeats(seen).length) shortPulls += 1;
+      else if (lateSeats(seen).length) latePulls += 1;
       for (const seat of failed) {
         const miss = misses.get(seat.name) || { name: seat.name, job: seat.job, count: 0 };
         miss.count += 1;
@@ -1780,15 +1818,19 @@ function mechanicTally(mech, reached) {
       }
     }
     const ranked = [...misses.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
-    return { part, pulls, failedPulls, misses: ranked };
+    return { part, pulls, failedPulls, shortPulls, latePulls, misses: ranked };
   }).filter(row => row.pulls);
 }
 function tallySection(rows) {
   if (!rows.length) return "";
   const lines = rows.map(row => {
-    const outcome = row.failedPulls
+    let outcome = row.failedPulls
       ? `failed on ${row.failedPulls} of ${plural(row.pulls, "pull")}`
-      : `clean on ${row.pulls === 1 ? "the 1 pull" : `all ${row.pulls} pulls`}`;
+      : row.shortPulls || row.latePulls
+        ? `nobody failed it on ${plural(row.pulls, "pull")}`
+        : `clean on ${row.pulls === 1 ? "the 1 pull" : `all ${row.pulls} pulls`}`;
+    if (row.shortPulls) outcome += `; short from an earlier death on ${row.shortPulls}`;
+    if (row.latePulls) outcome += `; failed only after the pull was lost on ${row.latePulls}`;
     const chips = row.misses.map(miss => {
       const title = `${miss.name} failed ${row.part.name} on ${plural(miss.count, "pull")}`;
       return `<span class="seat fail" title="${esc(title)}">${jobMark(miss.job)}<span class="seat-name">${esc(miss.name)}</span><b class="tally-count">×${miss.count}</b><span class="sr">${esc(title)}</span></span>`;
@@ -1798,17 +1840,21 @@ function tallySection(rows) {
       ${chips ? `<div class="seats">${chips}</div>` : ""}
     </li>`;
   }).join("");
-  return `<section><h2>Who failed it</h2><ul class="tally">${lines}</ul></section>`;
+  return `<section><h2>Who failed it</h2>
+    <p class="meta">Each player's own mistakes here while the pull could still succeed. A pull is lost at its first death, so later mistakes are left out. A player who was already dead, and whoever caused that death, are counted on the mechanic where it happened.</p>
+    <ul class="tally">${lines}</ul></section>`;
 }
 const reviewOpen = {};
 function reviewWho(card) {
   const solo = card.parts.length === 1;
   const bits = [];
   for (const part of card.parts) {
-    for (const seat of part.seats) {
-      if (!seat.passed) bits.push(solo ? seat.name : `${seat.name} (${part.name})`);
+    for (const seat of failedSeats(part)) {
+      bits.push(solo ? seat.name : `${seat.name} (${part.name})`);
     }
   }
+  if (!bits.length && shortOnly(card)) return "Short from an earlier death";
+  if (!bits.length && lateOnly(card)) return "After the pull was lost";
   return bits.join(", ");
 }
 function reviewBody(pull, card) {
@@ -1827,7 +1873,7 @@ function pullReview(pull, mech) {
     <summary>
       <span class="review-title">Pull ${pull.id} <span class="meta">${pull.when ? esc(pull.when) + " · " : ""}${pull.bossPct}%</span></span>
       <span class="review-who" title="${esc(who)}">${esc(who)}</span>
-      ${failStamp(failedNames(card))}
+      ${failStamp(failedNames(card), card)}
     </summary>
     <div class="review-body">${open ? reviewBody(pull, card) : ""}</div>
   </details>`;

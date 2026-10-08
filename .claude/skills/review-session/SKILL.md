@@ -53,8 +53,8 @@ output; read `brief.txt` only when it is already current.
 3. Answer from the digest. Default detail is **unknown** and **raw** only.
    Fail stays in the counts and pull index. A deathwall death is a fail. Do not
    paste the whole raw list into the reply unless the person asked for it. For
-   a pull, lead with its first mistake; each death line says whether it was the
-   first mistake or came after it.
+   a pull, lead with the mistake that lost it; each death line says whether it
+   lost the pull or came after it.
 
 4. Open a mechanic skill only when:
    - the digest lists an **unknown** (use the guid + `review-mechanic` index)

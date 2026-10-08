@@ -51,11 +51,29 @@ class NightTest(unittest.TestCase):
         owned = dict(tally["owned"])
         self.assertNotIn("Party mitigation", owned)
 
+    def test_a_share_through_an_earlier_death_is_counted_apart(self):
+        # Kitana Kahn's Bright Flare in pull 61 is hers. The empty ice and tower after it are
+        # hers too, but passed on, so they do not add to the deaths she owns by her own mistake.
+        rows = [item.to_dict() for item in _judged(CODE)[4] if item.fact.fight == 61]
+        tally = night_tally(rows)
+        self.assertEqual(dict(tally["owned"])["Kitana Kahn"], 1)
+        self.assertEqual(tally["late"], 0)
+        # Two Hiemal Storm deaths and four Eternal Conviction deaths.
+        self.assertEqual(dict(tally["passed_on"])["Kitana Kahn"], 6)
+
+    def test_a_mistake_after_the_pull_was_lost_is_left_out(self):
+        # Pull 14 was lost at Gigachad's Ascalon's Might. Kitana's Bright Flare after it is
+        # hers, but it is left out of the deaths owned.
+        rows = [item.to_dict() for item in _judged(CODE)[4] if item.fact.fight == 14]
+        tally = night_tally(rows)
+        self.assertEqual(dict(tally["owned"]), {"Absolute Gigachad": 1})
+        self.assertGreaterEqual(tally["late"], 1)
+
     def test_the_brief_leads_with_the_night(self):
         text = brief_text(ROOT / "data" / CODE)
-        self.assertIn("What started each pull (55 pulls", text)
-        self.assertIn("Who started pulls", text)
-        self.assertLess(text.index("Who started pulls"), text.index("Raw by mechanic"))
+        self.assertIn("What lost each pull (55 pulls", text)
+        self.assertIn("Who lost pulls", text)
+        self.assertLess(text.index("Who lost pulls"), text.index("Raw by mechanic"))
 
 
 class EvidenceTest(unittest.TestCase):
